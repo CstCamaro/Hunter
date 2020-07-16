@@ -1,0 +1,280 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/jieqi/xiaoshu/20190707-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="小暑，防晒，暴雨，炎热，腾讯网，时光画轴，节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 20:23:58';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-07-07", //日期，格式为 年-月-日
+	"cmd_id": "3991646765", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "xiaoshu2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="xiaoshu2019" style="display:none;">
+<p>小暑是农历二十四节气中的第十一个节气，夏天的第五个节气，表示季夏时节的正式开始。暑，表示炎热的意思，小暑为小热，还不十分热。意指天气开始炎热，但还没到最热，全国大部分地区基本符合。</p>
+<p>《月令七十二候集解》：“六月节……暑，热也，就热之中分为大小，月初为小，月中为大，今则热气犹小也。”小暑虽不是一年中最炎热的季节，但紧接着就是一年中最热的季节大暑，民间有“小暑大暑，上蒸下煮”之说。由于出汗多，消耗大，再加之劳累，人们就更不能忽略对身体的养护。</p>
+<h2>气候与农事</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1ic4JQ3yW8roL7OG7A1DIL7hHrOeghTIxXF6iamNahUchQ5qEh6Dhh0hoQ/640?wx_fmt=jpeg" title="小暑1">
+<p>小暑开始，江淮流域梅雨先后结束，我国东部淮河、秦岭一线以北的广大地区开始了来自太平洋的东南季风雨季，降水明显增加，且雨量比较集中;而长江中下游地区则一般为副热带高压控制下的高温少雨天气，常常出现的伏旱对农业生产影响很大，及早蓄水防旱显得十分重要。农谚说：“伏天的雨，锅里的米”，这时出现的雷雨，热带风暴或台风带来的降水虽对水稻等作物生长十分有利，但有时也会给棉花、大豆等旱作物及蔬菜造成不利影响。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1ichNcEBZCGqdH2kYhF5oibBVEePV64m43ibicpuibjTZP6Lja4VTekn01TOA/640?wx_fmt=jpeg" title="小暑2">
+<p>南方地区小暑时平均气温为26℃左右，已是盛夏，颇感炎热，但还未到最热的时候。常年7月中旬，华南东南低海拔河谷地区，可开始出现日平均气温高于30℃、日最高气温高于35 ℃的集中时段，这对杂交水稻抽穗扬花不利。除了事先在作布局上应该充分考虑这个因素外，已经栽插的要采取相应的补救措施。在西北高原北部，此时仍可见霜雪，相当于华南初春时节景象。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1iciawshPicxibtxTdceUsP5BO3YhWqqk8hvibYRGCcT8M02wyu5KoNEFVk2A/640?wx_fmt=jpeg" title="小暑3">
+<p>此时，华南西部进入暴雨最多季节，常年7、8两月的暴雨日数可占全年的75%以上，一般为3天左右。在地势起伏较大的地方，常有山洪暴发，甚至引起泥石流。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1icnPqfUg5jqjW6q6HT1kxq0H1KoEgwqQuQbvDXCwSuV9QxWibnGwxE59w/640?wx_fmt=jpeg" title="小暑4">
+<p>小暑前后，除东北与西北地区收割冬、春小麦等作物外，农业生产上主要是忙着田间管理了。早稻处于灌浆后期，早熟品种大暑前就要成熟收获，要保持田间干干湿湿。中稻已拔节，进入孕穗期，应根据长势追施穗肥，促穗大粒多。单季晚稻正在分蘖，应及早施好分蘖肥。双晚秧苗要防治病虫，于栽秧前5—7天施足“送嫁肥”。“小暑天气热，棉花整枝不停歇。”大部分棉区的棉花开始开花结铃，生长最为旺盛，在重施花铃肥的同时，要及时整枝、打杈、去老叶，以协调植株体内养分分配，增强通风透光，改善群体小气候，减少蕾铃脱落。盛夏高温是蚜虫、红蜘蛛等多种害虫盛发的季节，适时防治病虫是田间管理上的又一重要环节。”</p>
+<h2>传说与习俗</h2>
+<h3>“六月六”传说</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1icGpJVUfaDJU0hRyMZkd1HSyYwUNSEe4CSe3SLfEEm6iaXIcJR62WVBjA/640?wx_fmt=jpeg" title="小暑5">
+<p>民间说“六月六”百索子撂上屋。“相传传天上的牛郎星和织女星被银河分割在两岸，一年中只有”七月初七”这一天可以相会。但在他们中间却横阻着一条银河，又没有渡船，怎么办呢？所以六月六这一天，天下的儿童多要将端午节戴在手上、脚上的“百索子”撂上屋让喜鹊衔去，在银河上架起一座像彩虹一样美丽的桥，以便牛郎和织女相会。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1icnTfSE2pFGZxm2SXZR9PCorWgecemPXWB9NrGZSbM7u0icG7SalxJLnQ/640?wx_fmt=jpeg" title="小暑6">
+<p>同时这一天也相传是“小白龙”回家的日子。因为“小白龙”犯了天条，被龙王父亲囚禁在很远的一个小岛上，失去了行动自由。唯有六月六这一天，龙王恩准其回家探母。“小白龙”由于探母心切，所以一路上昼夜兼程，带来了惊雷闪电，狂风暴雨。</p>
+<h2>小暑习俗</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1iccWdpQ8lHl548icW1gDfbnhqiaK6InadFljyHcHgT50U8CMN5rhcSebEg/640?wx_fmt=jpeg" title="小暑7">
+<p>头伏吃饺子是传统习俗，伏日人们食欲不振，往往比常日消瘦，俗谓之苦夏，而饺子在传统习俗里正是开胃解馋的食物山东有的地方吃生黄瓜和煮鸡蛋来治苦夏，入伏的早晨吃鸡蛋，不吃别的食物。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1iceetaWibVZduHXibkDz8N97U3Hlib3EcHsenzEbdm0YVve81E3yPJgEWpw/640?wx_fmt=jpeg" title="小暑8">
+<p>徐州人入伏吃羊肉，称为吃伏羊这种习俗可上溯到尧舜时期，在民间有彭城伏羊一碗汤，不用神医开药方之说法。徐州人对吃伏羊的喜爱莫过于当地民谣：“六月六接姑娘，新麦饼羊肉汤。”伏日吃面习俗至少三国时期就已开始了。魏氏春秋：“伏日食汤饼，取巾拭汗，面色皎然，”这里的汤饼就是热汤面。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1icW1JDxMCUQSouYtc4nwPS5BrU1IEcGZ0GSE3nIJo1FpqB2eFoSMdu6A/640?wx_fmt=jpeg" title="小暑9">
+<p>另外山东临沂地区有给牛改善饮食的习俗。伏日煮麦仁汤给牛喝，据说牛喝了身子壮，能干活，不淌汗民谣：春牛鞭，舐牛汉(公牛)，麦仁汤，舐牛饭，舐牛喝了不淌汗，熬到六月再一遍。</p>
+<h2>小暑养生</h2>
+<h3>平心静气以养心</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1icrCz9fUBvGvS8Bib58coBhu5gqdc2VGGyUiaNksQdXibdOUGVsD3XQmFkw/640?wx_fmt=jpeg" title="小暑10">
+<p>小暑时节，天气炎热，人们容易烦躁不安，爱犯困，少精神。所以，对应这一时节的特点，在养生健康方面，应该根据季节与五脏的对应关系，养护好心脏。心为五脏六腑之首，有“心动则五脏六腑皆摇”之说，心脏的养护尤为重要。中医认为，平心静气，可以舒缓紧张的情绪，使心情舒畅、气血和缓；既有助于心脏机能的旺盛，也符合“春夏养阳”的原则。所以，夏季养生以“心静”为宜，心静自然凉。</p>
+<h3>饮食卫生，清淡适量</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1icqujhKw46ehiaia85XiaOzTkIUhrltJaPv7HU6FVURt0uVAMIia8Q6lfkGg/640?wx_fmt=jpeg" title="小暑11">
+<p>小暑时节的多雨、高温，更使得本来就在夏季属于高发症的消化道疾病，更加多发频发。所以，这一时节的饮食，一定要注意饮食卫生，而且饮食要节制，不可贪食、过量；而且饮食以清淡，富有营养为宜。</p>
+<h3>做好防暑</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1icYNtHVeOamuHKOBtkic7vQbS7zF1QiadzjI3PuQXBg1279gxcSkHgY2bw/640?wx_fmt=jpeg" title="小暑12">
+<p>中暑是夏季的常见病，小暑时节的天气特点更是容易发生中暑。所以大家外出时一定要做好防暑工作，带好遮阳伞、遮阳帽等工具，多喝水，并尽量避开午后太阳热辣时外出。</p>
+<h3>莫贪凉，少进冷食</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1icrM6iacWJvFJk8cQ2ibKJUsF6pN0VkD4ul6UTC29bQh4bthkYibxvp5iaqA/640?wx_fmt=jpeg" title="小暑13">
+<p>天热了，人们就喜欢吃冷饮，冰淇淋、雪糕、冰镇饮品很受大家的青睐；有的人从外面一回来就冲澡，还喜欢冲凉水澡。殊不知，这些对身体健康非常不利，很容易引发身体不适，或者埋下健康隐患。</p>
+<h2>节气饮食</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1icrVaEibVYk7P1T0xicYPenQjVx5Bs0zXXa3GJs5HtfocREeL6B7DcPpmA/640?wx_fmt=jpeg" title="小暑14">
+<p>炒绿豆芽</p>
+<blockquote>配料：新鲜绿豆芽500克，花椒少许几粒，植物油、白醋、食盐、味精适量。</blockquote>
+<blockquote>做法：豆芽洗净水淋干，油锅烧热，花椒入锅，烹出香味，将豆芽下锅爆炒几下，倒入白醋继续翻炒数分钟，起锅时放入食盐、味精，装盘即可。</blockquote>
+<blockquote>功效：清热解毒，疗疮疡。</blockquote>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1ic8YF5HhUZTGWic5N1QJo6RvXoib6mibL2zg5xU5AcmaQib0icpaTqbkLTLHQ/640?wx_fmt=jpeg" title="小暑15">
+<p>素炒豆皮</p>
+<blockquote>配料：豆皮二张，植物油、食盐、葱、味精各适量。</blockquote>
+<blockquote>做法：豆皮切丝，葱洗净切丝。油锅烧至6成热，葱丝下锅，烹出香味，将豆皮丝入锅翻炒，随后加食盐，炒数分钟后，加味精，淋上香油搅匀起锅。</blockquote>
+<blockquote>功效：补虚，止汗。适合多汗、自汗、盗汗者食用。</blockquote>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1icL8Q1Q2KKftiaUxMUVFpGrCL6sMzZjVDx1uWur8bkg9zfb8Tgj3GcXJw/640?wx_fmt=jpeg" title="小暑16">
+<p>蚕豆炖牛肉</p>
+<blockquote>配料：鲜蚕豆或水发蚕豆120克，瘦牛肉250克，食盐少许，味精、香油适量。</blockquote>
+<blockquote>做法：牛肉切小块，先在水锅内氽一下，捞出淋水，将沙锅内放入适量的水，待水温时，牛肉入锅，炖至六成熟，将蚕豆入锅，开锅后改文火，放盐煨炖至肉、豆熟透，加味精、香油，出锅即可。</blockquote>
+<blockquote>功效：健脾利湿，补虚强体。</blockquote>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmgQdOhQn66aSW51k8S8O1icI0iaIUpLM11pUE8lQRQgTbyMydW27mbO6OcjYmzEPB2gticDdVROZL6A/640?wx_fmt=jpeg" title="小暑17">
+<p>西瓜番茄汁</p>
+<blockquote>配料：西瓜半个，番茄3个大小适中。</blockquote>
+<blockquote>做法：西瓜去皮、去籽，番茄沸水冲烫，剥皮去籽。二者同时绞汁，两液合并，随量饮用。</blockquote>
+<blockquote>功效：清热、生津、止渴。对于夏季感冒，口渴、烦躁，食欲不振，消化不良，小便赤热者尤为适宜。</blockquote></div><!--[if !IE]>|xGv00|ce16150dbf5de61e99f5ecc3c9c4b09a<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|1447e094e9c3fefc31ec6cb685096e86<![endif]-->

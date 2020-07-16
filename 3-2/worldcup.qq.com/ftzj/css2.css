@@ -1,0 +1,30 @@
+/*Style by Artis*/
+body{margin:0;padding:0;background:#1a354f;}
+form,input,select,ul,li,p,h1,h2,h3,h4,h5,h6,p,dd,dt,dl{margin:0;padding:0;}
+ul,ol,li{list-style:none;}
+body,table,select,input,div{font-size:12px;color:#333}
+img{border:none;}
+a{color:#75a0b2;text-decoration:none;}
+a:hover{color:#75a0b2;text-decoration:underline;}
+
+.nl,.nl a,.nl a:hover,a.nl,a.nl:hover{text-decoration:none;}
+.ul,.ul a,.ul a:hover,a.ul,a.ul:hover{text-decoration:underline;}
+
+.clear{clear:both;overflow:hidden;font-size:0;height:0px;}
+
+/* BACKGROUND */
+#topBg{background:url(//mat1.gtimg.com/worldcup/ftzj/topbg.jpg) center top no-repeat;}
+
+/* ÄÚÈÝÇø */
+.box{width:960px;margin:0 auto;}
+#flash1{float:left;width:471px;height:454px;background:url(//mat1.gtimg.com/worldcup/ftzj/flash1_bg.jpg) no-repeat;}
+.videobg{width:477px;height:350px;float:right;background:url(//mat1.gtimg.com/worldcup/ftzj/videobg.jpg) no-repeat;padding:104px 0 0 12px;}
+#video{background:#000;width:381px;height:350px;}
+#flash2{width:960px;height:280px;margin:0 auto;}
+.cont{width:960px;margin:0 auto;height:311px;background:#14365c url(//mat1.gtimg.com/worldcup/ftzj/t_01.jpg) repeat-x;overflow:hidden;}
+.cont ul{width:952px;margin:0 auto;}
+.cont li{float:left;width:102px;padding:0 8px 0 9px;position:relative;height:124px;text-align:center;}
+.cont li p{line-height:23px;}
+.cont li .img{border:1px solid #4f7992;width:100px;height:80px;}
+.cont li .video{background:url("//mat1.gtimg.com/worldcup/video/qiudui/video.png") no-repeat scroll left top transparent;display:block;height:25px;left:15px;position:absolute;top:50px;width:25px;}
+/*  |xGv00|c9f28f16e2e8f6a7f84fded77d8ea66c */

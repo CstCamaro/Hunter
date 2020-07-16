@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>超级企鹅篮球名人赛</title>
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="skeetershi" />
+    <link rel="stylesheet" href="//mat1.gtimg.com/sports/skeetershi/superpenguin/css/index.2.css">
+    <style type="text/css">
+    .home .down {
+        bottom: 95px;
+    }
+
+    .home .info {
+        padding-top: 210px;
+    }
+
+    .home .super {
+        padding-top: 90px;
+    }
+
+    .home_ad_top {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        z-index: 999;
+        margin-left: -620px;
+        height: 90px;
+        overflow: hidden;
+    }
+
+    .home_ad_bottom {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        z-index: 999;
+        margin-left: -620px;
+        height: 90px;
+        overflow: hidden;
+    }
+
+    .home_ad .close {
+        position: absolute;
+        z-index: 2;
+        font-size: 29px;
+        color: #fff;
+        top: 2px;
+        right: 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .footer {
+        height: 98px;
+    }
+    </style>
+    <script type="text/javascript" src="//mat1.gtimg.com/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    try {
+        document.domain = 'qq.com';
+    } catch (e) {
+
+    }
+    </script>
+    <style>
+ .nav .con ul li,
+    .nav .con ul div {
+        overflow: inherit!important;
+        margin-right: 25px!important;
+    }
+  .nav .con ul .li .ico,
+    .nav .con ul li .ico {
+        display: none;
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        margin-left: -7px;
+        z-index: 3;
+        width: 14px;
+        height: 7px;
+        background: url(//mat1.gtimg.com/sports/v_cxyu/super/ico.png) center bottom no-repeat;
+    }
+
+    .nav .con ul li:hover .ico , .nav .con ul .li:hover .ico {
+        display: block;
+    }
+
+    .nav2 {
+        position: absolute;
+        display: block;
+        width: 100px;
+        left: 0px;
+        top: 74px;
+        color: #fff;
+        margin-right: 0px!important;
+        z-index: 2;
+    }
+  .nav1 {
+        left: 0px;
+        width: 102px;
+    }
+
+    .nav3 {
+        left: 0px;
+        width: 152px;
+    }
+
+    .nav4 {
+        left: 0px;
+        width: 160px;
+    }
+
+
+    .nav2 p {
+        height: 36px;
+        font: 14px/36px "microsoft yahei";
+    }
+
+    .nav2 p a {
+      background-color: #535353!important;
+        padding: 0px !important;
+    }
+
+    .nav2 p a:hover {
+        background-color: #0c6bc9!important;
+    }
+
+    .nav .con ul li.active .page6 {
+        width: 86px!important;
+        background-color: #f33b3d
+    }
+
+    .nav .con ul a {
+        padding: 22px 33px; 
+    }
+    .nav .con ul li.active a { background-color: #f33b3d; }
+.community .con {
+    margin: 16px auto 0;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="loading">
+        <div class="con">
+            <img src="http://img1.gtimg.com/sports/pics/hv1/242/62/2238/145542002.png" alt="loading">
+            <p>Loading <em>0%</em></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="big_bg">
+            <div class="s bg1"></div>
+            <div class="s bg2"></div>
+            <div class="s bg3"></div>
+            <div class="s bg4"></div>
+            <div class="s bg5"></div>
+            <div class="s bg6"></div>
+        </div>
+        <div class="nav">
+            <div class="bg"></div>
+            <div class="con">
+                <div class="ss clearfix">
+                    <h2><img _src="//mat1.gtimg.com/sports/skeetershi/superpenguin/img/logo.png" alt="NBA名人堂"></h2>
+                    <div class="current"></div>
+                    <ul class="clearfix" id="nav">
+                        <li data-menuanchor="page1">
+                            <a href="#page1">
+                                <p class="chin">首页</p>
+                                <p class="eng">HOME</p>
+                            </a>
+                        </li>
+                        <li data-menuanchor="page2">
+                            <a href="http://sports.qq.com/p/topic/20170830100880/index.html" target="_blank">
+                                <p class="chin">新闻</p>
+                                <p class="eng">NEWS</p>
+                            </a>
+                            <span class="ico"></span>
+                            <span class="nav2 nav1" style="display:none">
+                                <p><a href="#page2">头条</a></p>
+                            </span>
+                        </li>
+                        <li data-menuanchor="page3">
+                            <a href="#page3">
+                                <p class="chin">视频</p>
+                                <p class="eng">VIDEO</p>
+                            </a>
+                        </li>
+                        <li data-menuanchor="page4">
+                            <a href="#page4">
+                                <p class="chin">图片</p>
+                                <p class="eng">PICTURE</p>
+                            </a>
+                        </li>
+                     <div class="li">
+                            <a>
+                                <p class="chin">数据</p>
+                                <p class="eng">DATA</p>
+                            </a>
+                            <span class="ico"></span>
+                            <span class="nav2" style="display:none">
+                                <p><a href="http://sports.qq.com/super/data.htm?mid=2016436" target="_blank">2017届数据</a></p>
+                                <p><a href="http://nba.stats.qq.com/nbascore/?mid=1469967" target="_blank">2016届数据 </a></p>
+                            </span>
+                        </div>
+                        <li data-menuanchor="page5">
+                            <a class="page6">
+                                <p class="chin">社交媒体</p>
+                                <p class="eng">SOCIAL MEDIA</p>
+                            </a>
+                            <span class="ico"></span>
+                            <span class="nav2 nav3" style="display:none">
+                                <p class="sheq"><a href="#page5">社区</a></p>
+                                <p class="weib"><a href="#page5">微博</a></p>
+                            </span>
+                        </li>
+                        <div class="li">
+                            <a class="page6">
+                                <p class="chin">赛事介绍</p>
+                                <p class="eng">INTRODUCTION</p>
+                            </a>
+                            <span class="ico"></span>
+                            <span class="nav2 nav4" style="display:none">
+                                <p><a href="http://sports.qq.com/super/intro.htm" target="_blank">名人赛简介</a></p>
+                                <p><a href="http://sports.qq.com/super/lineup.htm" target="_blank">2017届参赛阵容</a></p>
+                                <p><a href="http://sports.qq.com/a/20160910/029173.htm" target="_blank">2016届回顾</a></p>
+                                <p><a href="http://sports.qq.com/super/tickets.htm
+
+" target="_blank">票务销售</a></p>
+                                <p><a href="http://mall.jd.com/view_page-78105018.html" target="_blank">周边商品</a></p>
+                                <p><a href="http://sports.qq.com/super/bd.htm" target="_blank">商务合作</a></p>
+                            </span>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+        $("#nav li").hover(function() {
+            $(this).find(".nav2").show();
+        }, function() {
+            $(this).find(".nav2").hide();
+        });
+ $("#nav .li").hover(function() {
+            $(this).find(".nav2").show();
+        }, function() {
+            $(this).find(".nav2").hide();
+        });
+  $(".sheq a").click(function() {
+            $(".weibo").parents(".section").animate({ 'margin-top': '-10px' })
+        })
+        $(".weib a").click(function() {
+            $(".weibo").parents(".section").animate({ 'margin-top': '-50px' })
+        })
+        </script>
+        <div class="main">
+            <!-- 首页 -->
+             <div class="section home">
+                <div class="home_ad home_ad_top">
+                 <!--    <a href="http://datacollect.vmall.com:28080/clickv1?sid=54121473240656&cid=42478&url=http://www.vmall.com/product/186517099.html%23cid=42478" target="_blank"><img _src="http://img1.gtimg.com/nba/pics/hv1/96/67/2126/138260331.jpg" alt="" /></a> -->
+                    <a href="javascript:;" onClick="this.parentNode.style.display='none'" class="close">×</a>
+                </div>
+                <div class="info">
+                 <!--    <img _src="//mat1.gtimg.com/sports/skeetershi/superpenguin/img/rongyao.png" alt="" style="margin-left:87px; margin-bottom: 8px;"> -->
+                    <img _src="http://img1.gtimg.com/sports/pics/hv1/82/211/2237/145514812.png" alt="篮球名人赛">
+                  <p> 万众期待的体育+娱乐年度盛会闪耀归来，红蓝大战第二季-2017超级企鹅篮球名人赛完美闭幕。</p>
+                    <p><a href="http://sports.qq.com/a/20170910/032461.htm" target="_blank">【张哲瀚34分获MVP吴亦凡两双 红队胜蓝队】</br>
+
+                    </a><br>
+  这不只是一场篮球赛，更是一场超级嘉年华。文体明星红毯秀、名人赛酒会、吴亦凡、王嘉尔领衔12位娱乐明星3V3大战，NBA传奇球星阿伦-艾弗森现场助阵，"亚洲新天王"李荣浩中场秀表演、神秘美女啦啦队热舞表演……这是首届超级企鹅名人赛的豪华升级版。</br>
+
+<br>2017超级企鹅篮球名人赛红蓝大战明星阵容——
+<br>红队：吴亦凡，皮尔斯，郭艾伦，大鹏，董力，乔杉，张哲瀚，王阳明，许诺，邵婷
+<br>蓝队：雷阿伦，张丰毅，蒋劲夫，王嘉尔，袁弘，刘帅良，张宁江，赵爽，苏醒，赵继伟</br>
+
+                    </p>
+  </div>
+                <div class="mlogo" style="margin-top: 149px;">
+                    <ul class="clearfix">
+                        <li>
+                            <img _src="http://img1.gtimg.com/sports/pics/hv1/94/227/2237/145518904.png" alt="超级企鹅">
+                        </li>
+                        <li class="qrcode">
+                            <img _src="//mat1.gtimg.com/sports/v_cxyu/super/ewm_super.png" alt="二维码">
+                            <div class="desc">
+                                <em></em>
+                                <p>扫我买票啦</p>
+                                <p>吴亦凡、皮尔斯在球场等你！</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="super">
+                    <div class="carousel">
+                        <div class="con">
+                            <ul>
+
+     <li class="" data-username="吴亦凡">
+                                    <a href="http://sports.qq.com/a/20170910/033191.htm" target="_blank">
+										<img _src="http://img1.gtimg.com/sports/pics/hv1/228/202/2235/145382613.png" alt="http://sports.qq.com/a/20170802/048017.htm">
+									</a>
+                                </li>
+
+   <li class="" data-username="艾弗森">
+                                    <a href="http://sports.qq.com/a/20170910/031409.htm" target="_blank">
+										<img _src="http://img1.gtimg.com/sports/pics/hv1/11/135/2236/145430336.png" alt="http://sports.qq.com/a/20170802/048017.htm">
+									</a>
+                                </li>
+
+
+
+
+     <li class="" data-username="皮尔斯">
+                                    <a href="http://sports.qq.com/a/20170910/033410.htm" target="_blank">
+										<img _src="http://img1.gtimg.com/sports/pics/hv1/1/20/2231/145075876.png" alt="http://sports.qq.com/a/20170802/048017.htm">
+									</a>
+                                </li>
+
+
+
+
+                                <li class="" data-username="雷-阿伦">
+                                    <a href="http://sports.qq.com/a/20170910/033531.htm" target="_blank">
+										<img _src="http://img1.gtimg.com/sports/pics/hv1/201/238/2231/145131666.png" alt="http://sports.qq.com/a/20170802/048017.htm">
+									</a>
+                                </li>
+
+                                <li class="" data-username="王嘉尔">
+                                    <a href="http://sports.qq.com/a/20170910/034317.htm" target="_blank">
+										<img _src="http://img1.gtimg.com/sports/pics/hv1/90/83/2229/144961980.png" alt="http://sports.qq.com/a/20170802/048017.htm">
+									</a>
+                                </li>
+                                <li class="allen" data-username="董力">
+                                    <a href="http://sports.qq.com/a/20170910/033754.htm" target="_blank">
+										<img _src="http://img1.gtimg.com/sports/pics/hv1/145/210/2229/144994420.png" alt="http://sports.qq.com/a/20170711/035545.htm">
+									</a>
+                                </li>
+
+                                <li class="allen" data-username="袁弘">
+                                    <a href="http://sports.qq.com/a/20170910/034561.htm" target="_blank">
+										<img _src="http://img1.gtimg.com/sports/pics/hv1/16/211/2229/144994546.png" alt="http://sports.qq.com/a/20170721/013155.htm">
+									</a>
+                                </li>
+                                <li class="allen" data-username="苏醒">
+                                    <a href="http://sports.qq.com/a/20170910/033932.htm" target="_blank">
+										<img _src="http://img1.gtimg.com/sports/pics/hv1/54/216/2230/145060884.png" alt="">
+									</a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                        <div class="username">
+                            <div class="title">巨星<em>×</em>阵容</div>
+                            <div class="ucon">KOBE</div>
+                        </div>
+                        <div class="dot"></div>
+                        <a href="javascript:;" class="arrow arrow_left"></a>
+                        <a href="javascript:;" class="arrow arrow_right"></a>
+                    </div>
+                </div>
+                <div class="down"></div>
+                <div class="home_ad home_ad_bottom">
+                 <!--    <a href="http://clickc.admaster.com.cn/c/a73943,b1279152,c440,i0,m101,8a1,8b2,h[M_IESID]" target="_blank"><img _src="//mat1.gtimg.com/sports/skeetershi/superpenguin/img/ad_img.jpg" alt="" /></a> -->
+                    <a href="javascript:;" onClick="this.parentNode.style.display='none'" class="close">×</a>
+                </div>
+            </div><!--[if !IE]>|xGv00|0cf164a3c49d9446104ea032b95f598b<![endif]-->
+         
+            <!-- 首页 end -->
+            <!-- 头条 -->
+            <div class="section focus">
+				<div class="clearfix">
+					<div class="aside">
+						<div class="pic">
+							<img _src="//mat1.gtimg.com/sports/skeetershi/superpenguin/img/focus_title.png" alt="头条">
+						</div>
+						<div class="info">
+							<div class="num"><span class="cur">1</span><em>/</em><span class="count">1</span></div>
+							<div class="t"></div>
+							<div class="desc">打得不好，请指教！超级企鹅名人赛是一场汇集顶尖篮球明星和娱乐大咖的超级赛事，是中国体育史上"球技+颜值"均排第一的比赛，是一场最重磅、最好看、最好玩、最专业的原创超级视听盛宴。</div>
+						</div>
+					</div>
+					<div class="super">
+						<div class="carousel">
+							<div class="con">
+				<ul>
+
+
+
+<li class="cur" data-first="红蓝大战第二季激情上演 成国内原创赛事新标杆" data-second=" " data-desc="">
+										<a href="http://sports.qq.com/a/20170911/036386.htm" target="_blank"><img _src="http://img1.gtimg.com/sports/pics/hv1/107/193/2238/145575272.png" alt=""></a>
+								  </li>
+
+
+
+ <li class="cur" data-first="名人赛-张哲瀚34分获MVP吴亦凡两双 红队胜蓝队" data-second=" " data-desc="">
+										<a href="http://sports.qq.com/a/20170910/032461.htm" target="_blank"><img _src="http://img1.gtimg.com/sports/pics/hv1/247/108/2238/145553737.jpg" alt=""></a>
+								  </li>
+
+
+<li class="cur" data-first="横空出世！张哲瀚暴砍34分 弹无虚发收获MVP" data-second="" data-desc="">
+										<a href="http://sports.qq.com/a/20170910/033281.htm" target="_blank"><img _src="http://img1.gtimg.com/sports/pics/hv1/4/110/2238/145554004.png" alt=""></a>
+									</li>
+
+
+
+<li class="cur" data-first="吴亦凡闪耀明星3V3先锋战 险包办全队全部得分" data-second=" " data-desc="">
+										<a href="http://sports.qq.com/a/20170910/023588.htm" target="_blank"><img _src="http://img1.gtimg.com/sports/pics/hv1/84/108/2238/145553574.png" alt=""></a>
+								  </li>
+
+
+<li class="cur" data-first="超级企鹅名人赛中场秀 李荣浩开唱燃爆全场" data-second=" " data-desc="">
+										<a href="http://sports.qq.com/a/20170910/030492.htm" target="_blank"><img _src="http://img1.gtimg.com/sports/pics/hv1/111/109/2238/145553856.png" alt=""></a>
+								  </li>
+
+
+<li class="cur" data-first="皮队晒照贺与雷-阿伦重聚 球迷：看这图我哭了！" data-second=" " data-desc="">
+										<a href="http://sports.qq.com/a/20170910/015786.htm" target="_blank"><img _src="http://img1.gtimg.com/sports/pics/hv1/248/101/2238/145551953.jpg" alt=""></a>
+								  </li>
+
+
+
+
+              
+
+ 
+                           	<li class="cur" data-first="红蓝大战你支持谁？名人赛限量版球衣T恤开售！
+" data-second="" data-desc="">
+										<a href="https://mall.jd.com/view_page-78105018.html" target="_blank"><img _src="http://img1.gtimg.com/sports/pics/hv1/166/212/2236/145450126.jpg" alt=""></a>
+									</li>
+
+
+
+
+
+	<li class="cur" data-first="首届企鹅名人赛-孙杨22+18夺MVP 吴亦凡两双
+" data-second="" data-desc="">
+										<a href="http://sports.qq.com/a/20160910/029173.htm" target="_blank"><img _src="http://img1.gtimg.com/sports/pics/hv1/141/212/2236/145450101.jpg" alt=""></a>
+									</li>
+
+
+                               
+
+<li class="cur" data-first=" 中国梦·梦之蓝 -- 中秋团圆的礼物
+" data-second="" data-desc="">
+										<a href="https://sujiu.jd.com/ " target="_blank"><img _src="http://img1.gtimg.com/sports/pics/hv1/69/83/2238/145547184.jpg" alt=""></a>
+								  </li>
+
+
+     <li class="cur" data-first="" data-second=" " data-desc="">
+										<a href="https://sale.jd.com/act/IGkuoN1Bt5r7YE.html" target="_blank"><img _src="http://img1.gtimg.com/sports/pics/hv1/139/59/2238/145541134.jpg" alt=""></a>
+								  </li>
+                                  
+                                  
+
+
+							
+							  </ul>
+							</div>
+							<div class="dot"></div>
+							<a href="javascript:;" class="arrow arrow_left"></a>
+							<a href="javascript:;" class="arrow arrow_right"></a>
+						</div>
+					</div>
+				</div>
+			</div><!--[if !IE]>|xGv00|ab8c2f31fba051ac64263c0bf8e901fa<![endif]-->
+          
+            <!-- 头条 end -->
+            <!-- 视频 -->
+            <div class="section video">
+				<div class="con">
+					<div class="clearfix">
+						<div class="player">
+							<h2><a href="https://v.qq.com/x/cover/derj8vqi5qpxatj/m0024o4srbr.html"target="_blank" >吴亦凡帅气潮搭压轴登场 剑指MVP迷妹尖叫不断</a></h2>
+							<div id="mod_player" class="mod_player" data-vid="m0024o4srbr" data-pic="http://img1.gtimg.com/sports/pics/hv1/105/106/2238/145553085.jpg"></div>
+						</div>
+						<div class="list">
+							<a href="https://v.qq.com/x/cover/derj8vqi5qpxatj/m0024o4srbr.html" target="_blank" class="more">更多</a>
+							<ul class="clearfix"></ul>
+						</div>
+					</div>
+					<div class="more_div">
+						<div class="morelist list">
+							<ul class="clearfix"></ul>
+						</div>
+					</div>
+					<div class="openbtn"><a href="javascript:;">展开</a></div>
+				</div>
+			</div><!--[if !IE]>|xGv00|04cd4ff29336720af3a31e6816b22029<![endif]-->
+           
+            <!-- 视频 end -->
+            <!-- 图片 -->
+            <div class="section photo">
+				<div class="con">
+					<div class="content">
+						<table>
+							<tr>
+								<td class="td_0">
+									<div class="item">
+										<a href="http://sports.qq.com/a/20170907/072068.htm#p=3" target="_blank">
+											<img _src="http://img1.gtimg.com/sports/pics/hv1/102/49/2238/145538547.jpg" width="180" height="180" alt="">
+
+											<div class="overlay">
+												<div class="bg"></div>
+												<div class="tt">
+													<em></em>皮尔斯潮气十足
+												</div>
+											</div>
+										</a>
+									</div>
+								</td>
+								<td class="td_1">
+									<div class="item big">
+										<a href="http://sports.qq.com/a/20170909/030932.htm" target="_blank">
+											<img _src="http://img1.gtimg.com/sports/pics/hv1/213/50/2238/145538913.jpg" width="180" height="360"alt="">
+											<div class="overlay">
+												<div class="bg"></div>
+												<div class="tt"><em></em>名人赛球衣一览</div>
+											</div>
+										</a>
+									</div>
+								</td>
+								<td class="td_2">
+									<div class="blue_item clearfix">
+										<div class="item">
+											<a href="http://zqnba.qq.com/act/a20170712yy/index.htm?ADTAG=media.nbasports.ad1" target="_blank">
+												<img _src="http://img1.gtimg.com/sports/pics/hv1/205/95/2238/145550380.png"width="180" height="180" alt="">
+												<div class="overlay">
+													<div class="bg"></div>
+													<div class="tt">
+														<em></em>													</div>
+												</div>
+											</a>
+										</div>
+										<div class="item">
+											<a href="https://sujiu.jd.com/" target="_blank">
+												<img _src="http://img1.gtimg.com/sports/pics/hv1/107/83/2238/145547222.jpg"width="180" height="180" alt="">
+												<div class="overlay">
+													<div class="bg"></div>
+													<div class="tt">
+														<em></em>										</div>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="clearfix">
+										<div class="item">
+											<a href="http://sports.qq.com/a/20170910/020843.htm" target="_blank">
+												<img _src="http://img1.gtimg.com/sports/pics/hv1/46/107/2238/145553281.png"width="180" height="180" alt="">
+												<div class="overlay">
+													<div class="bg"></div>
+													<div class="tt">
+														<em></em>红毯秀吴亦凡登场						</div>
+												</div>
+											</a>
+										</div>
+										<div class="item big">
+											<a href="http://sports.qq.com/a/20170909/019650.htm" target="_blank">
+												<img _src="http://img1.gtimg.com/sports/pics/hv1/156/86/2238/145548036.png" width="360" height="180"alt="" >
+												<div class="overlay">
+													<div class="bg"></div>
+													<div class="tt"><em></em>
+														<p>皮尔斯阿伦时隔5年再拥抱</p>
+														
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="item">
+											<a href="http://sports.qq.com/a/20170910/033511.htm" target="_blank">
+												<img _src="http://img1.gtimg.com/nba/pics/hv1/110/110/2238/145554110.png" width="180" height="180" alt="">
+												<div class="overlay">
+													<div class="bg"></div>
+													<div class="tt"><em></em>
+			<p>NBA啦啦队助阵</p>													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="clearfix">
+									</div>
+
+									<div class="clearfix">
+										<div class="item">
+											<a href="http://sports.qq.com/a/20170910/022521.htm" target="_blank">
+												<img _src="http://img1.gtimg.com/sports/pics/hv1/55/107/2238/145553290.png"width="180" height="180" alt="">
+												<div class="overlay">
+													<div class="bg"></div>
+													<div class="tt">
+														<em></em>3V3蒋劲夫出战												</div>
+												</div>
+											</a>
+										</div>
+	<div class="item">
+											<a href="http://sports.qq.com/a/20160910/029149.htm" target="_blank">
+												<img _src="http://img1.gtimg.com/sports/pics/hv1/90/83/2238/145547205.jpg"width="180" height="180" alt="">
+												<div class="overlay">
+													<div class="bg"></div>
+													<div class="tt">
+														<em></em>阿伦与球迷嗨翻天												</div>
+												</div>
+											</a>
+										</div>
+										<div class="item">
+											<a href="http://sports.qq.com/a/20170909/022063.htm" target="_blank">
+												<img _src="http://img1.gtimg.com/sports/pics/hv1/158/86/2238/145548038.png"width="180" height="180" alt="">
+												<div class="overlay">
+													<div class="bg"></div>
+													<div class="tt">
+														<em></em>名人赛99公益场												</div>
+												</div>
+											</a>
+										</div>
+									
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div><!--[if !IE]>|xGv00|492a0262f0e4c6f6051bb7be4f33fcea<![endif]-->
+          
+            <!-- 图片end -->
+            <!-- 数据 -->
+             <!-- <div class="section data" style="display:none !important">
+                <div class="con">
+                    <div class="people clearfix">
+                        <div class="team a_team">
+                            <div class="ss">
+                                <ul></ul>
+                            </div>
+                            <a href="javascript:;" class="arrow arrow_up"></a>
+                            <a href="javascript:;" class="arrow arrow_down"></a>
+                        </div>
+                        <div class="mid">
+                            <div class="score">
+                                <p class="t">支持率</p>
+                                <p class="t_num">70<em>%</em></p>
+                                <p class="up_num"><span>498721</span>人</p>
+                                <ul style="display:none;">
+                                    <li class="sco">
+                                        <span>得分</span><em>27</em>
+                                    </li>
+                                    <li class="foul">
+                                        <span>犯规</span><em>03</em>
+                                    </li>
+                                    <li class="steal">
+                                        <span>抢断</span><em>06</em>
+                                    </li>
+                                    <li class="last_li pending">
+                                        <span>待定</span><em>05</em>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pic">
+                                <img _src="//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png" alt="科比">
+                            </div>
+                            <div class="btn">
+                                <a href="javascript:;">支持</a>
+                            </div>
+                        </div>
+                        <div class="team b_team">
+                            <div class="ss">
+                                <ul></ul>
+                            </div>
+                            <a href="javascript:;" class="arrow arrow_up"></a>
+                            <a href="javascript:;" class="arrow arrow_down"></a>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="name clearfix">
+                            <span class="a_name">A队</span>
+                            <span class="b_name">B队</span>
+                        </div>
+                        <div class="progress clearfix">
+                            <div class="a_pro"><em></em></div>
+                            <div class="b_pro"><em></em></div>
+                        </div>
+                        <div class="btn clearfix">
+                            <div class="a_btn">
+                                <span>60<em>%</em></span>
+                                <a href="javascript:;" data-optid="1713733">支持</a>
+                            </div>
+                            <div class="b_btn">
+                                <span>40<em>%</em></span>
+                                <a href="javascript:;" data-optid="1713731">支持</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- 数据 end -->
+            <!-- 社区 -->
+            <div class="section community page5">
+				<div class="con">
+					<div class="commu clearfix">
+						<div class="tt"></div>
+						<div class="carousel">
+							<div class="content">
+								<ul>
+									<li>
+										<a href="http://fans.sports.qq.com/post.htm?id=1578150843279999038&mid=182#1_allWithElite">
+											<img _src="http://img1.gtimg.com/sports/pics/hv1/65/114/2238/145555085.png" alt="">
+											<div class="overlay">
+												<div class="bgs"></div>
+												<div class="ss">全能！名人赛MVP张哲瀚若在野球场 你打得过吗？ </div>
+											</div>
+										</a>
+									</li>
+
+                                                                                                                      <li>
+										<a href="http://fans.sports.qq.com/post.htm?id=1578245891238658112&mid=182#1_allWithElite">
+											<img _src="http://img1.gtimg.com/nba/pics/hv1/79/191/2238/145574734.jpg" alt="">
+											<div class="overlay">
+												<div class="bgs"></div>
+												<div class="ss">社区网友偶遇刘帅良！“樱木花道”为这次比赛真拼了</div>
+											</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="http://fans.sports.qq.com/post.htm?id=1577941641754312768&mid=182#1_allWithElite" target="_blank">
+											<img _src="http://img1.gtimg.com/sports/pics/hv1/185/23/2238/145532000.jpg" alt="">
+											<div class="overlay">
+												<div class="bgs"></div>
+												<div class="ss">让皮尔斯教你如何持球进攻，做一名合格的进攻者！</div>
+											</div>
+										</a>
+									</li>
+																	</ul>
+							</div>
+
+							<div class="dot"></div>
+						</div>
+					</div>
+
+					<!-- 微博 -->
+					<div class="weibo">
+						<ul class="clearfix"><li class="title"></li></ul>
+					</div>
+					<!-- 微博 end -->
+				</div>
+        <!-- 广告 开始 -->
+ <style>
+                .mod_hzzq {
+                    clear: both;
+                    width: 1000px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                }
+
+                .mod_hzzq .inner {
+                    width: 105%;
+                }
+
+                .mod_hzzq a {
+                    margin-top: 12px;
+                    display: block;
+                    float: left;
+                    margin-right: 15px;
+                    width: 128px;
+                    height: 48px;
+                    border: 1px solid #4c4c4c;
+    background-color: #fff;
+                }
+                </style>
+                <div class="mod_hzzq">
+                    <div class="inner">
+                        <a href="http://z.qzone.com" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/186/253/2236/145460601.png"></a>
+
+        <a><img src="http://img1.gtimg.com/sports/pics/hv1/193/29/2237/145468513.png"></a>
+   <a href="http://zb.vip.qq.com/index?_wv=16778243&asyncMode=1&_wwv=4&_nav_txtclr=ffffff&_nav_titleclr=ffffff&btest=1" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/135/126/2237/145493190.jpg"></a>
+
+
+                        <a><img src="http://img1.gtimg.com/sports/pics/hv1/189/253/2236/145460604.png"></a>
+                
+             
+
+                     <a><img src="http://img1.gtimg.com/sports/pics/hv1/223/70/2237/145478998.jpg"></a>
+
+
+
+          <a href="https://www.panda.tv" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/125/61/2238/145541630.png"></a>
+
+          <a href="https://sujiu.jd.com/" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/124/83/2238/145547239.png"></a>
+
+ <a href="http://zqnba.qq.com/act/a20170712yy/index.htm?ADTAG=media.nbasports.ad1" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/72/96/2238/145550502.jpg
+"></a>
+                        <a href="https://sujiu.jd.com/" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/124/83/2238/145547239.png"></a>
+
+ <a href="https://sale.jd.com/act/IGkuoN1Bt5r7YE.html" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/35/160/2238/145566785.jpg
+"></a>
+
+                    </div>
+                </div><!--[if !IE]>|xGv00|7fb958b69c89ca84b66e01bec56e71bd<![endif]-->
+
+ <!-- 广告 结束 -->
+				<div class="bus_div">
+					<div class="business">
+						<ul class="clearfix">
+						
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer">
+					        <script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+        <style>
+          .tcopyright {
+            width: 960px;
+            margin: 0 auto;
+            padding: 8px 0;
+            font-size: 12px;
+            line-height: 28px;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+            clear: both;
+          }
+
+          .tcopyright .en {
+            font-family: Arial;
+          }
+
+          .tcopyright a {
+            color: #333;
+            text-decoration: none;
+          }
+
+          .tcopyright a:hover {
+            color: #bd0a01;
+            text-decoration: underline;
+          }
+          .footernew {
+              color: #515151;
+              font-size: 12px;
+              height: 70px;
+              line-height: 24px;
+              margin: 12px auto 0;
+              overflow: hidden;
+              text-align: center;
+              width: 1000px;
+          }
+          .footernew .footernewdiv {
+              margin: 0 auto;
+              width: 680px;
+          }
+          .footernew p {
+              border: 1px solid #D2D2D2;
+              float: left;
+              font-size: 12px;
+              height: 50px;
+              line-height: 20px;
+              margin: 6px;
+              padding: 0;
+              width: 120px;
+              overflow: hidden;
+          }
+          .footernew .fl {
+              padding: 3px;
+          }
+          .qq-footer .footernew .fr {
+              padding: 5px 3px 0;
+              width: 72px;
+          }
+          .qq-footer .footernew a {
+  color: #515151;
+  text-decoration: none;
+}
+        </style>
+        <div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a
+              href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a
+              href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a
+              href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a
+              href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a
+              href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a
+              href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/"
+              target="_blank" rel="nofollow">腾讯公益</a> | <a href="https://cloud.tencent.com/?from=txwdibu"
+              target="_blank" rel="nofollow">腾讯云</a> | <a href="http://service.qq.com/" target="_blank"
+              rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+              <br/>
+              <a href="http://szwljb.sz.gov.cn/" target="_blank" rel="nofollow">深圳举报中心</a> |
+              <a href="http://ga.sz.gov.cn" target="_blank" rel="nofollow">深圳公安局</a> | 
+              <a href="http://www.qq.com/dzwfggcns.htm" target="_blank" rel="nofollow">抵制违法广告承诺书</a> |
+              <a href="http://www.qq.com/copyright.shtml" target="_blank" rel="nofollow">版权保护投诉指引</a> |
+              <a href="https://gdca.miit.gov.cn/" target="_blank" rel="nofollow">广东省通管局</a>
+              <br>
+              <span>
+                <a href="http://www.qq.com/culture.shtml" target="_blank" rel="nofollow">粤网文[2017]6138-1456号</a> 
+                <a href="http://www.qq.com/internet_licence.htm" target="_blank" rel="nofollow">新出网证（粤）字010号</a> 
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                增值电信业务经营许可证：<a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">粤B2-20090059</a> 
+                <a href="http://www.qq.com/icp1.shtml" target="_blank" rel="nofollow">B2-20090028</a>
+              </span>
+              <br>
+              <a href="http://www.qq.com/scio.htm" target="_blank" rel="nofollow">新闻信息服务许可证</a>
+              <a href="http://www.qq.com/xwdz.shtml" target="_blank" rel="nofollow">粤府新函[2001]87号</a> 违法和不良信息举报电话：0755-83765566-9 
+              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002000001">
+                <span>粤公网安备44030002000001号</span>
+              </a>
+              <br>
+              <a href="http://www.qq.com/spyp.htm" target="_blank">互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a>
+              <br>
+              <div class="footernew">
+                <div class="footernewdiv">
+                <p>
+                  <span class="fl"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" target="_blank" rel="nofollow"><img width="35" height="43" border="0" alt="经营性网站备案信息" src="//mat1.gtimg.com/www/images/qq2012/ind36.gif"></a></span>
+                  <span class="fr"><a target="_blank" class="lcblack" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" rel="nofollow">经营性网站<br>
+                  备案信息</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.12377.cn/" target="_blank" rel="nofollow"><img width="44" height="44" border="0" alt="中国互联网举报中心" src="//mat1.gtimg.com/www/images/qq2012/buliang.png"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.12377.cn/" target="_blank" rel="nofollow">中国互联网<br>
+                  举报中心</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.wenming.cn" target="_blank" rel="nofollow"><img width="44" height="42" border="0" alt="中国文明网传播文明" src="//mat1.gtimg.com/www/images/qq2012/wmlogo.gif"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.wenming.cn" target="_blank" rel="nofollow">中国文明网<br>传播文明</a></span>
+                </p>
+                <p style="width:128px;height:52px;border:0;">
+                  <span style="padding:0;" class="fl"><a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&amp;ct=df&amp;a=1&amp;pa=337337" target="_blank" rel="nofollow"><img border="0" alt="诚信网站" src="//mat1.gtimg.com/www/images/qq2012/cxrz5.png"></a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow"><img src="//mat1.gtimg.com/www/images/qq2012/gswj2015.jpg" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow">工商网监<br>电子标识</a></span>
+                </p>
+                </div>
+              </div>
+
+          </div>
+          <div class="en">Copyright &copy; 1998 -
+            
+            2020 Tencent. All Rights Reserved</div>
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a
+              href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+          </div>
+        </div>
+<!--[if !IE]>|xGv00|1946a31bc73a15246842877bdfa16df2<![endif]-->
+				</div>
+			</div><!--[if !IE]>|xGv00|3e954c4fd0bb2653bec3affa3ae55fd2<![endif]-->
+            <!-- 社区 end -->
+        </div>
+    </div>
+    <div class="totop"><a href="javascript:;">TOP</a></div>
+</body>
+
+<script type="text/javascript">
+// 视频右侧的4个信息
+	var video = {
+		list : [
+	{
+				url:  'https://v.qq.com/x/cover/derj8vqi5qpxatj/j00241zzrzy.html',
+				img: 'http://img1.gtimg.com/sports/pics/hv1/101/106/2238/145553081.jpg',
+				title : '主持人都HOLD不住了 艾弗森招牌嘻哈风现身红毯'
+			},
+{
+			url: 'http://v.qq.com/x/page/e0024ip9pls.html',
+				img: 'http://img1.gtimg.com/sports/pics/hv1/52/74/2238/145544872.jpg',
+				title : '皮尔斯亮相球迷见面会 热情互动与阿伦冰释前嫌'
+ 			},
+{
+					url:'http://v.qq.com/x/page/m00248aieno.html',
+				img:'http://img1.gtimg.com/sports/pics/hv1/78/10/2238/145528578.jpg',
+				title : '艾弗森抵沪引追捧 狂热球迷酒店蹲守高喊忠艾一生'
+			},
+		
+			
+			{
+				url: 'http://v.qq.com/x/page/g0024et3qes.html',
+				img:  'http://img1.gtimg.com/sports/pics/hv1/51/74/2238/145544871.jpg',
+				title : '雷阿伦见面会与球迷嗨翻全场 球迷不舍偶像激动落泪' 		},			
+		]},
+
+	// 将要展开的视频信息
+	more_video = {
+		list : [
+			{
+				url:  'https://v.qq.com/x/cover/xl0z9p23tythwu2/x0024z1cqiy.html',
+				img: 'http://img1.gtimg.com/sports/pics/hv1/51/118/2237/145491066.jpg',
+				title :  '男篮双星助阵名人赛！郭艾伦赵继伟叱咤CBA赛场集锦'
+			},
+			{
+				url: 'http://v.qq.com/x/page/h0024frlgop.html',
+				img: 'http://img1.gtimg.com/sports/pics/hv1/52/118/2237/145491067.jpg',
+				title :  '名人赛两大关键先生对决！雷阿伦vs皮尔斯生死时刻五佳球'
+			},
+			{
+				
+                                url:'http://v.qq.com/x/page/q002478v619.html',
+				img: 'http://img1.gtimg.com/sports/pics/hv1/203/40/2237/145471328.jpg',
+				title : '谁才是名人赛史上最强后卫？麦蒂和艾弗森经典对决' 
+			},
+			
+				{
+				url: 'http://v.qq.com/x/page/b0024ct4r18.html',
+				img: 'http://img1.gtimg.com/sports/pics/hv1/202/40/2237/145471327.jpg',
+				title : '美女前国手将再次亮相名人赛 许诺身材纤瘦笑容美腻'
+			},
+			
+				{
+				url: 'http://v.qq.com/x/page/z0024qqw7g1.html',
+				img: 'http://img1.gtimg.com/sports/pics/hv1/178/112/2227/144839413.jpg',
+				title : '超级企鹅快报 蒋劲夫加盟超级企鹅篮球名人赛'
+			},
+			{
+				url: 'http://v.qq.com/x/page/r03177ecymm.html',
+				img: 'http://img1.gtimg.com/sports/pics/hv1/252/118/2111/137298117.jpg',
+				title : '吴亦凡solo球技 娱乐界篮球一哥'
+			},
+		
+			{
+				url: 'http://v.qq.com/x/page/o00238q9lm3.html',
+				img: 'http://img1.gtimg.com/sports/pics/hv1/192/112/2227/144839427.jpg',
+				title : '超级企鹅快报 大鹏乔杉加盟超级企鹅篮球名人赛'	
+			},
+			{
+					url: 'http://v.qq.com/x/page/z0023n5elsn.html',
+				img: 'http://img1.gtimg.com/sports/pics/hv1/215/112/2227/144839450.jpg',
+				title : '众星聚力超级企鹅篮球名人赛 2017再燃热血'			}
+		]
+		
+						
+	
+	},
+
+
+
+
+<!--[if !IE]>|xGv00|9204d80cf9cd888b76834885053eddfb<![endif]-->
+
+    // A队的人物
+    a_team = {
+        list: [{
+                uid: 'u123', // 用户编号
+                img: 'http://tacs_v1.oa.com/img.php?60*60', // 头像
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png', // 大图
+                engname: 'KOBE', // 英文名字
+                chinname: '科比', // 中文名字
+                optid: '1713731', // 投票id
+                data: {
+                    score: 30, // 得分
+                    foul: 6, // 犯规
+                    steal: 5, // 抢断
+                    pending: 7 // 待定
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713732',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713733',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713733',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713733',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713733',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713733',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            }
+        ]
+    },
+
+    // B队的人物
+    b_team = {
+        list: [{
+                uid: 'u123', // 用户编号
+                img: 'http://tacs_v1.oa.com/img.php?60*60', // 头像
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png', // 大图
+                engname: 'KOBE', // 英文名字
+                chinname: '科比', // 中文名字
+                optid: '1713733',
+                data: {
+                    score: 30, // 得分
+                    foul: 6, // 犯规
+                    steal: 5, // 抢断
+                    pending: 7 // 待定
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713733',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713733',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713733',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713733',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713733',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            },
+            {
+                uid: 'u123',
+                img: 'http://tacs_v1.oa.com/img.php?60*60',
+                bigimg: '//mat1.gtimg.com/sports/skeetershi/superpenguin/img/kobe.png',
+                engname: 'GGGG',
+                chinname: '科比',
+                optid: '1713733',
+                data: {
+                    score: 30,
+                    foul: 6,
+                    steal: 5,
+                    pending: 7
+                }
+            }
+        ]
+    },
+
+    // 名人微博
+    weibo = {
+        list: [
+
+            {
+                url: 'http://weibo.com/tengxuntiyu?refer_flag=1001030101_',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/165/163/2112/137374530.jpg',
+                username: '腾讯体育'
+            },
+
+            {
+                url: 'http://weibo.com/u/5885931990?refer_flag=1001030101_',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/212/162/2112/137374322.jpg',
+                username: '腾讯NBA'
+            },
+
+            {
+                url: 'http://weibo.com/u/3591355593?refer_flag=1001030101_&is_all=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/99/159/2112/137373444.jpg',
+                username: '吴亦凡 '
+            },
+            {
+                url: 'http://weibo.com/jumpjiang?topnav=1&wvr=6&topsug=1&is_hot=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/230/39/2231/145080950.jpg',
+                username: '蒋劲夫'
+            },
+
+            {
+                url: ' http://weibo.com/jacksonwangG7?topnav=1&wvr=6&topsug=1#!/p/1005055888671022/home?from=page_100505&mod=TAB&is_hot=1#place ',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/86/110/2231/145098911.jpg',
+                username: '王嘉尔'
+            },
+
+            {
+                url: 'http://weibo.com/u/2010226570?topnav=1&wvr=6&topsug=1#!/u/2010226570?topnav=1&wvr=6&topsug=1&is_hot=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/203/112/2231/145099538.jpg',
+                username: '董力'
+            },
+
+
+            {
+                url: 'http://weibo.com/suxing?topnav=1&wvr=6&topsug=1#!/suxing?topnav=1&wvr=6&topsug=1&is_hot=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/226/112/2231/145099561.jpg',
+                username: '苏醒'
+            },
+
+            {
+                url: 'http://weibo.com/yuanhong?refer_flag=1001030201_#!/yuanhong?refer_flag=1001030201_&is_hot=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/37/113/2231/145099627.jpg',
+                username: '袁弘'
+            },
+
+            {
+                url: 'http://weibo.com/dapengpeng?refer_flag=1001030101_#!/dapengpeng?refer_flag=1001030101_&is_hot=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/104/113/2231/145099694.jpg',
+                username: '大鹏'
+            },
+            {
+                url: 'http://weibo.com/u/1850101627?topnav=1&wvr=6&topsug=1#!/u/1850101627?topnav=1&wvr=6&topsug=1&is_hot=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/187/114/2231/145100032.jpg',
+                username: '张哲瀚'
+            },
+
+            {
+                url: 'http://weibo.com/u/1853227831?topnav=1&wvr=6&topsug=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/230/114/2231/145100075.jpg',
+                username: '刘帅良'
+            },
+
+
+            {
+                url: 'http://weibo.com/hhsunzfy?from=usercardnew&refer_flag=0000020001_#!/hhsunzfy?from=usercardnew&refer_flag=0000020001_&is_all=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/251/114/2231/145100096.jpg',
+                username: '张丰毅'
+            },
+
+            {
+                url: 'http://weibo.com/qiaoshan0628?refer_flag=1001030101_#!/qiaoshan0628?refer_flag=1001030101_&is_hot=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/88/115/2231/145100188.jpg',
+                username: '乔杉'
+            },
+
+
+
+            {
+                url: 'http://weibo.com/leeyoungho?topnav=1&wvr=6&topsug=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/233/39/2231/145080953.jpg',
+                username: '李荣浩'
+            },
+
+            {
+                url: 'http://weibo.com/guoailun12?topnav=1&wvr=6&topsug=1&is_hot=1',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/63/114/2231/145099908.jpg',
+                username: '郭艾伦'
+            },
+
+
+            {
+                url: 'http://weibo.com/u/5866576206?refer_flag=1001030201_#!/u/5866576206?refer_flag=1001030201_&is_hot=1#_rnd1502440091373',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/2/113/2231/145099592.jpg',
+                username: '艾弗森'
+            },
+
+
+            {
+                url: 'http://weibo.com/p/1003061863047190/home?from=page_100306_profile&wvr=6&mod=data&is_all=1#place',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/232/39/2231/145080952.jpg',
+                username: '皮尔斯'
+            },
+            {
+                url: 'http://weibo.com/p/1005055142730902/home?from=page_100505&mod=TAB&is_hot=1#place',
+                img: 'http://img1.gtimg.com/sports/pics/hv1/118/37/2231/145080328.jpg',
+                username: '雷阿伦'
+            }
+
+        ]
+    }
+</script>
+<script type="text/javascript" src="//imgcache.qq.com/tencentvideo_v1/tvp/js/tvp.player_v2_jq.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/sports/skeetershi/superpenguin/js/art_template.js"></script>
+<script type="text/html" id="video_list">
+    {{each list}}
+    <li>
+        <a href="{{$value.url}}" target="_blank">
+                <img _src="{{$value.img}}" alt="{{$value.title}}">
+                <div class="info">
+                    <div class="bgs"></div>
+                    <div class="s">{{$value.title}}</div>
+                </div>
+            </a>
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="data_li">
+    {{each list}}
+    <li class="clearfix">
+        <a href="javascript:;" class="opt_{{$value.optid}}" data-uid="{{$value.uid}}" data-bigimg="{{$value.bigimg}}" data-optid="{{$value.optid}}" data-score="{{$value.data.score}}" data-foul="{{$value.data.foul}}" data-steal="{{$value.data.steal}}" data-pending="{{$value.data.pending}}">
+            <div class="pic">
+                <img _src="{{$value.img}}" alt="{{$value.engname}}">
+            </div>
+            <div class="info">
+                <p class="chin">{{$value.engname}}</p>
+                <p class="eng">{{$value.chinname}}</p>
+            </div>
+            <em></em>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="weibo_list">
+    {{each list}}
+    <li>
+        <a href="{{$value.url}}" target="_blank">
+            <div class="clearfix">
+                <div class="pic"><img _src="{{$value.img}}" alt="{{$value.username}}"></div>
+                <div class="username">{{$value.username}}</div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script type="text/javascript" src="//mat1.gtimg.com/sports/skeetershi/superpenguin/js/fullpage.min.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/sports/skeetershi/superpenguin/js/vote.js"></script>
+<!-- <script type="text/javascript" src="//mat1.gtimg.com/sports/skeetershi/superpenguin/js/index.3.js"></script> -->
+<script type="text/javascript" src="//mat1.gtimg.com/sports/v_cxyu/super/index.js"></script>
+<!--pgv 20160801 by 39815--><script charset="gbk" src="http://pingjs.qq.com/ping.js"></script>
+
+<script>!function(t,e){"use strict";function a(){var t,e,a=(""+p.catalog_full).replace(/-/g,".").replace(/_/g,"-");p.topic&&p.topic.name&&p.topic.name.length>0?(t="L.",e="Z."+a+"."+p.topic.name):(t="L."+a,e="Z.");var n="W."+p.type,o="M."+p.tpl.type+p.tpl.stype,i="P."+(""+p.site).replace(/_/g,"-"),c="F."+f,l=t+"_"+e+"_"+n+"_"+o+"_"+i+"_"+c;l&&r({pgUserType:l})}function n(t){o(e,"click",function(e){var a=e.target;"img"===a.tagName&&(a=a.parentNode);var n=a.tagName.toLowerCase(),o=a.getAttribute("href");if(!o||o.indexOf("qqcom_pgv_from=")>-1)return!1;if("a"===n&&a.hostname&&a.hostname.indexOf("qq.com")>-1){var r=o+(a.search?"&":"?")+"qqcom_pgv_from="+t;a.setAttribute("href",r)}})}function o(a,n,o){var r=function(a){return a=a||t.event,a.target||(a.target=a.srcElement||e),3===a.target.nodeType&&(a.target=a.target.parentNode),a};return a.addEventListener?a.addEventListener(n,function(t){o.call(t.currentTarget,r(t))},!1):a.attachEvent("on"+n,function(t){o.call(a,r(t))}),!0}if(!t||!t.location||"function"!=typeof t.pgvMain)return!1;var r=function(){var e=arguments;setTimeout(function(){t.pgvMain.apply(this,e)},0)},i=location.search.replace(/adtag=client\.qq\.\d+_\.0/i,"from=tips"),c=["aio","tips"],f="def";location.search.indexOf("qqcom_pgv_from=")>-1&&(f=location.host+location.pathname+location.search);var p=t.ARTICLE_INFO||null,l=p&&p.catalog_full;if(l)for(var g=0;g<c.length;g+=1)if(i.indexOf(c[g])>-1){n(c[g]);break}l&&a(),l||("undefined"!=typeof whatCatalog&&(t.pvCSTM=t.whatCatalog),r({pgUserType:"F."+f}))}(window,document);</script><!--/pgv 20160801-->
+<!-- 视频来源ptag --><script src="//mat1.gtimg.com/v/ptag/ptag_1.2.js" async="true"></script>
+<!--[if !IE]>|xGv00|a1d505b81f0731c97405c05986e06bb8<![endif]-->
+<!--[if !IE]>|xGv00|e495268dae03726664c77551e8df25e2<![endif]-->
+<script>
+setTimeout(function() {
+    var _h = $(".section").height();
+    if (_h <= 950) {
+        $('.community .weibo').css({ 'height': '95px', 'overflow': 'hidden' });
+        $('.community .footer').css({ 'bottom': '25px' })
+    } else {
+        $('.community .weibo').css({ 'height': 'auto', 'overflow': 'hidden' });
+        $('.community .footer').css({ 'bottom': '70px' })
+    }
+}, 1000)
+</script>
+</html><!--[if !IE]>|xGv00|4210805a58cb832e246b99cea8694daf<![endif]-->

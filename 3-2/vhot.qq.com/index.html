@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<title>v榜_腾讯网</title>
+<script>window.location.href="https://new.qq.com/omv"</script>
+<meta name="keywords" content="腾讯视频,腾讯网,短视频,个性化,奇趣,萌宝,体育,娱乐,新闻,QQ,V.QQ">
+<meta name="description" content="视频V榜，是一款基于短视频兴趣推荐产品，它为用户推荐有价值、个性的短视频。包括了兴趣推荐、奇趣、呆萌秀、纯爷们儿四大维度，覆盖了娱乐、体育、时尚、萌宠、科技、新闻、游戏、财经、搞笑、奇趣、青春、生活、自拍等全面的优质短视频。">
+<link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico">
+<!-- 公用样式 -->
+<link type="text/css" rel="stylesheet" href="//mat1.gtimg.com/vhot/css/global.css"><!--[if !IE]>|xGv00|6214f03da9cabe16c8820823f52df8fd<![endif]-->
+<script type="text/javascript" src="//js.aq.qq.com/js/aq_common.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/vhot/js/mousewheel.min.js"></script>
+</head>
+<body>
+
+<!-- 视频窗口 -->
+<!--视频播放小窗口-->
+<div id="playBox"></div>
+
+<!--视频播放大窗口-->
+<div class="videoPlayBox hidden" id="videoPlayBox">
+	<div class="videoConMod" id="videoConMod">
+		<div class="left">
+			<div class="pic hidden">
+				<a href="javascript:">
+					<div class="zzImg"></div>
+					<img width="156" height="88" />
+					<p></p>
+				</a>
+			</div>
+		</div>
+		<div class="center">
+			<div class="videoShow">
+				<h2><strong></strong><span id="videoPlayBoxClose" class="close" title="关闭"></span></h2>
+				<div id="playBoxMax"></div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="pic hidden">
+				<a href="javascript:">
+					<div class="zzImg"></div>
+					<img width="156" height="88" />
+					<p></p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div><!--[if !IE]>|xGv00|8abc4b4ba5f32a85d657ba2d1e3b3847<![endif]-->
+
+<!--顶栏-->
+<div class="topBox">
+	<div class="layout">
+		<!-- 导航 -->
+		<div class="logoMod"><a href="http://vhot.qq.com" title="V榜">V榜</a></div>
+<div class="navMod">
+	<div class="left">
+		<a href="http://www.qq.com" target="_blank" bosszone="vhot_nav_qq">腾讯网</a>&nbsp;|&nbsp;<a href="http://v.qq.com" target="_blank" bosszone="vhot_nav_v">腾讯视频</a>	 
+	</div>
+	<div class="right">
+		<div class="navTabMod" id="navTabMod">
+			<ul>
+				<li><a href="index.htm" bosszone="vhot_nav_1" class="tabA"><span class="icon"></span>推荐</a></li>
+				<li><a href="fun.htm" bosszone="vhot_nav_2">奇趣一刻</a></li>
+				<li><a href="baby.htm" bosszone="vhot_nav_3">呆萌秀</a></li>
+				<li><a href="man.htm" bosszone="vhot_nav_4">纯爷们儿</a></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			/*navNow*/
+			(function(){
+				var _pageName = window.location.href.replace(/(.*\/)*([^.]+).*/ig,"$2"),
+					_li = document.getElementById("navTabMod").getElementsByTagName("li");
+				if(_pageName == "fun"){
+					_li[1].className = "now";
+				}else if(_pageName == "baby"){
+					_li[2].className = "now";
+				}else if(_pageName == "man"){
+					_li[3].className = "now";
+				}else{
+					_li[0].className = "now";
+				};
+			})();
+		</script>
+	</div>
+</div><!--[if !IE]>|xGv00|cff88346a609b1ac4d4b74c7290dcc4d<![endif]-->
+		<div class="logonMod">
+			<!-- 登录 -->
+			<!-- 全站一键登录 -->
+<style type="text/css">
+ul,li{margin:0;padding:0;}
+li{list-style:none;}
+.fl{float:left;}
+.fr{float:right;}
+.dis{display:block;}
+.undis{display:none;}
+.loginSmartTop,.loginSmartBottom{background-image:url(http://mat1.gtimg.com/www/images/qq2012/qqbg_1.5.2.png); background-repeat:no-repeat;}
+a.login,a.login:hover,a.weiboLogin,a.weiboLogin:hover,a.qzoneLogin,a.qzoneLogin:hover,a.mailLogin,a.mailLogin:hover,a.pengyouLogin,a.pengyouLogin:hover,.mininavRight .weibo,.mininavRight .weibo:hover,.mininavRight .qzone,.mininavRight .qzone:hover,.mininavRight .mail,.mininavRight .mail:hover,.mininavRight .pengyou,.mininavRight .pengyou:hover{background-image:url(http://mat1.gtimg.com/www/images/qq2012/loginall_1.2.png); background-repeat:no-repeat;}
+a.login{width:70px;height:28px;display:block;float:right;background-position:left -450px;}
+a.login:hover{background-position:left -500px;}
+a.weiboLogin{width:30px;height:28px;display:block;float:right;background-position:left -50px;}
+a.weiboLogin:hover{background-position:right -50px;}
+a.qzoneLogin{width:30px;height:28px;display:block;float:right;background-position:left -100px;}
+a.qzoneLogin:hover{background-position:right -100px;}
+a.mailLogin{width:30px;height:28px;display:block;float:right;background-position:left -150px;}
+a.mailLogin:hover{background-position:right -150px;}
+a.pengyouLogin{width:28px;height:28px;display:block;float:right;background-position:left -200px;}
+a.pengyouLogin:hover{background-position:right -200px;}
+.mininavRight{font-size:12px;}
+.mininavRight .weibo{background-position:7px -243px;}
+.mininavRight .weibo:hover{background-position:-79px -243px;}
+.mininavRight .qzone{background-position:7px -294px;}
+.mininavRight .qzone:hover{background-position:-74px -294px;}
+.mininavRight .mail{background-position:7px -340px;}
+.mininavRight .mail:hover{background-position:-77px -340px;}
+.mininavRight .pengyou{background-position:7px -394px;}
+.mininavRight .pengyou:hover{background-position:-76px -394px;}
+.mininavRight{float:right;color:#c7c7c7;line-height:28px;}
+.mininavRight a{color:#666;}
+.mininavRight .qqNameLayout{margin-right:4px;color:#c7c7c7;}
+.mininavRight .qqName{margin-right:12px;color:#666;float:left;}
+.mininavRight .weibo{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:17px;}
+.mininavRight .weibo:hover{color:#fff;background-color:#458fce;}
+.mininavRight .qzone{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:22px;}
+.mininavRight .qzone:hover{color:#fff;background-color:#458fce;}
+.mininavRight .mail{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:19px;}
+.mininavRight .mail:hover{color:#fff;background-color:#458fce;}
+.mininavRight .pengyou{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:20px;}
+.mininavRight .pengyou:hover{color:#fff;background-color:#458fce;}
+.loginSmartBox{width:120px;height:auto;background:#fffbef;position:absolute;top:28px;z-index:100;}
+.loginSmartTop{width:120px;height:3px;overflow:hidden;background-position:-350px -210px;}
+.loginSmartBottom{width:120px;height:3px;overflow:hidden;background-position:-350px -230px;}
+.loginSmartContent{width:118px;border-left:1px solid #f1f1f1;border-right:1px solid #f1f1f1;}
+.loginSmartInner{width:116px;border-left:1px solid #f4d9a4;border-right:1px solid #f4d9a4;}
+.loginSmartInner ul{width:100%;padding:2px 0;}
+.loginSmartInner li{width:100%;height:20px;line-height:20px;color:#666;text-indent:8px;text-align:left;}
+.loginSmartInner li a{color:#666;}
+.loginSmartInner li a:hover span{color:#cd0200;}
+.loginSmartInner li a span,.loginSmartInner li a:hover span{font-family:Tahoma;}
+#pengyouIcon{position:relative;z-index:10000;}
+#mailIcon{position:relative;z-index:10000;}
+#qzoneIcon{position:relative;z-index:10000;}
+#weiboIcon{position:relative;z-index:10000;}
+#loginOut:hover{text-decoration:underline;color:#cd0200;}
+.loginBg{width:100%;min-width:1024px;position:absolute;top:0;left:0;z-index:8888;display:none;background:url(http://mat1.gtimg.com/www/images/qq2012/alphabg.png); _background:#000;_opacity:0.3_;filter:alpha(opacity=30);}
+
+.mininavRight .qzone{width:auto;}
+.mininavLeft div{line-height:14px;}
+.mininavRight div{line-height:28px;}
+</style>
+
+<div class="mininavRight" id="logkey">
+	<div id="loginAll" class="fr">
+		<!--
+		<a href="http://www.pengyou.com" class="pengyouLogin" id="friend" target="_blank"></a>
+		-->
+		<a href="http://mail.qq.com" class="mailLogin" id="qmail" target="_blank"></a>
+		<a href="http://qzone.qq.com" class="qzoneLogin" id="qzone" target="_blank"></a>
+<!--
+		<a href="http://t.qq.com?pref=qqcom.home.weiboIN" class="weiboLogin" id="weibo" target="_blank"></a>
+-->
+		<a href="javascript:void(0);" class="login" onclick="userLogin();" target="_self" id="onekey"></a>
+	</div>
+	<div id="logined" class="fr" style="display:none;">
+		<!--
+		<div id="pengyouIcon" class="fr">
+			<a href="http://www.pengyou.com" class="pengyou" id="pengyouNum" style="padding:0 16px 0 15px;" target="_blank"></a>
+			<div class="loginSmartBox undis" id="pengyouSmart" style="right:0;">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="pengyouTitle">朋友网:</li>
+							<li id="pengyouPassiveLi" class="undis"><a href="http://www.pengyou.com" target="_blank">我的动态 (<span id="pengyouPassiveNum"></span>)</a></li>
+							<li id="pengyouInitLi" class="undis"><a href="http://www.pengyou.com" target="_blank">朋友动态 (<span id="pengyouInitNum"></span>)</a></li>
+							<li id="pengyouAboutLi" class="undis"><a href="http://www.pengyou.com" target="_blank">我的参与 (<span id="pengyouAboutNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+		-->
+		<div id="mailIcon" class="fr">
+			<a href="http://mail.qq.com" class="mail" id="mailNum" style="padding:0 15px;" target="_blank"></a>
+			<div class="loginSmartBox undis" id="mailSmart" style="right:0;">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="mailTitle">QQ邮箱:</li>
+							<li id="inboxLi" class="undis"><a href="http://mail.qq.com" target="_blank">未读邮件 (<span id="inboxNum"></span>)</a></li>
+							<li id="bottleLi" class="undis"><a href="http://mail.qq.com" target="_blank">漂流瓶 (<span id="bottleNum"></span>)</a></li>
+							<li id="gmailLi" class="undis"><a href="http://mail.qq.com" target="_blank">群邮件 (<span id="gmailNum"></span>)</a></li>
+							<li id="dmailLi" class="undis"><a href="http://mail.qq.com" target="_blank">文件夹 (<span id="dmailNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+		<div id="qzoneIcon" class="fr">
+			<a href="http://qzone.qq.com" class="qzone" id="qzoneNum" style="padding:0 16px;" target="_blank"></a>
+			<div class="loginSmartBox undis" id="qzoneSmart" style="right:0;">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="qzoneTitle">QQ空间:</li>
+							<li id="passiveLi" class="undis"><a href="http://qzone.qq.com" target="_blank">我的动态 (<span id="passiveNum"></span>)</a></li>
+							<li id="InitLi" class="undis"><a href="http://qzone.qq.com" target="_blank">好友动态 (<span id="InitNum"></span>)</a></li>
+							<li id="AboutLi" class="undis"><a href="http://qzone.qq.com" target="_blank">我的参与 (<span id="AboutNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+<!--
+		<div id="weiboIcon" class="fr">
+			<a href="http://t.qq.com?pref=qqcom.home.weiboenter" class="weibo" id="weiboNum" style="padding:0 14px;" target="_blank"></a>
+			<div class="loginSmartBox undis" id="weiboSmart" style="left:0;">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="weiboTitle">腾讯微博:</li>
+							<li id="msgLi" class="undis"><a href="http://t.qq.com/messages/inbox?pref=qqcom.home.wbinbox" target="_blank">私信 (<span id="msgNum"></span>)</a></li>
+							<li id="atLi" class="undis"><a href="http://t.qq.com/at?pref=qqcom.home.wbat" target="_blank">提到我的 (<span id="atNum"></span>)</a></li>
+							<li id="fansLi" class="undis"><a href="http://t.qq.com/follower.php?pref=qqcom.home.wbfollow" target="_blank">新增听众 (<span id="fansNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+-->
+		<div class="qqNameLayout fr">
+			<span class="qqName">您好，<span id="userName"></span> <span>[</span><a href="javascript:void(0);" id="loginOut" target="_self">退出</a><span>]</span></span>|
+		</div>
+	</div>
+</div>
+
+<div id="loginBg" class="loginBg"></div>
+<div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+	<iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+</div> 
+
+<script type="text/javascript">var MI = {};(function(b){var a=document.createElement("script");a.setAttribute("charset","utf-8");a.setAttribute("type","text/javascript");a.setAttribute("src",b);document.getElementsByTagName("head")[0].appendChild(a)})("http://mat1.gtimg.com/www/mb/js/portal/mi.MiniNav__v1.0.0.js");</script>
+
+<script type="text/javascript">
+//<![CDATA[ 
+document.domain="qq.com";
+function ptlogin2_onResize(width, height) {
+	//获得浮动Div对象
+	login_wnd = document.getElementById("login_div");
+	if (login_wnd)  {
+		//重新设置大小注意，一定要加px，否则firefox下有问题
+		login_wnd.style.width = width + "px";
+		login_wnd.style.height = height + "px";
+		//最好重新调整登录框的位置， 这儿略....
+		//先隐藏，在显示，这样可以避免滚动条的出现
+		login_wnd.style.visibility = "hidden"
+		login_wnd.style.visibility = "visible"
+		login_wnd.style.marginLeft = "-"+parseInt(width/2) + 'px';
+		login_wnd.style.marginTop = "-"+parseInt(height/2) + 'px';
+	}
+}
+function ptlogin2_onClose(){
+	document.getElementById("login_div").style.left = "-9999px";
+	document.getElementById("loginBg").style.display = "none";
+}
+function userLogin(){
+	document.getElementById("login_frame").src = "http://ui.ptlogin2.qq.com/cgi-bin/login?hide_title_bar=0&low_login=0&qlogin_auto_login=1&no_verifyimg=1&link_target=blank&appid=636014201&target=self&s_url=http%3A//www.qq.com/qq2012/loginSuccess.htm";
+	document.getElementById("login_div").style.left = "50%";
+	document.getElementById("loginBg").style.display = "block";
+	document.getElementById("loginBg").style.width= document.body.clientWidth + "px";
+	document.getElementById("loginBg").style.height= document.body.clientHeight + "px";
+}
+/*一键登录数据*/
+function loginAll(obj){
+	if(obj.result == 0){
+		MblogTotalnum = obj.info.Mblog.totalnum || 0; QQ.localData.set('Mblog-totalnum', obj.info.Mblog.totalnum); 
+		MblogMsgnum = obj.info.Mblog.msgnum || 0; QQ.localData.set('Mblog-msgnum', obj.info.Mblog.msgnum);
+		MblogAtnum = obj.info.Mblog.atnum || 0; QQ.localData.set('Mblog-atnum', obj.info.Mblog.atnum);
+		MblogFansnum = obj.info.Mblog.fansnum || 0; QQ.localData.set('Mblog-fansnum', obj.info.Mblog.fansnum);
+		QZoneTotalnum = obj.info.QZone.totalnum || 0; QQ.localData.set('QZone-totalnum', obj.info.QZone.totalnum);
+		QZonePassivenum = obj.info.QZone.passivenum || 0; QQ.localData.set('QZone-passivenum', obj.info.QZone.passivenum);
+		QZoneInitnum = obj.info.QZone.initnum || 0; QQ.localData.set('QZone-initnum', obj.info.QZone.initnum);
+		QZoneAboutnum = obj.info.QZone.aboutnum || 0; QQ.localData.set('QZone-aboutnum', obj.info.QZone.aboutnum);
+		QMailTotalnum = obj.info.QMail.totalnum || 0; QQ.localData.set('QMail-totalnum', obj.info.QMail.totalnum);
+		QMailInboxnum = obj.info.QMail.inboxnum || 0; QQ.localData.set('QMail-inboxnum', obj.info.QMail.inboxnum);
+		QMailBottlenum = obj.info.QMail.bottlenum || 0; QQ.localData.set('QMail-bottlenum', obj.info.QMail.bottlenum);
+		QMailGmailnum = obj.info.QMail.gmailnum || 0; QQ.localData.set('QMail-gmailnum', obj.info.QMail.gmailnum);
+		QMailDmailnum = obj.info.QMail.dmailnum || 0; QQ.localData.set('QMail-dmailnum', obj.info.QMail.dmailnum);
+		/*
+		FriendTotalnum = obj.info.Friend.totalnum || 0; QQ.localData.set('Friend-totalnum', obj.info.Friend.totalnum);
+		FriendPassivenum = obj.info.Friend.passivenum || 0; QQ.localData.set('Friend-passivenum', obj.info.Friend.passivenum);
+		FriendInitnum = obj.info.Friend.initnum || 0; QQ.localData.set('Friend-initnum', obj.info.Friend.initnum);
+		FriendAboutnum = obj.info.Friend.aboutnum || 0; QQ.localData.set('Friend-aboutnum', obj.info.Friend.aboutnum);
+		*/
+		userInfoUin = uin; QQ.localData.set('Uin', uin);
+		nick = userInfoName = obj.nick.replace(/</,"&lt;").replace(/>/,"&gt;"); QQ.localData.set('nick', userInfoName);
+		userInfoVip = obj.Vip; QQ.localData.set('Vip', userInfoVip || 0);
+		Face = userInfoFace = obj.Face || 'http://mat1.gtimg.com/news/dc/temp/c1.jpg'; QQ.localData.set('Face', userInfoFace || 'http://mat1.gtimg.com/news/dc/temp/c1.jpg');
+		
+		//UI && UI.getScript("http://mini.t.qq.com/mini/mycheck.php?r=" + (new Date).getTime());//add 20130226
+/*
+		if(MblogTotalnum){
+			if(MblogTotalnum > 99){
+				document.getElementById("weiboNum").innerHTML = "99+";
+			}else{
+				document.getElementById("weiboNum").innerHTML = MblogTotalnum;
+			}
+			document.getElementById("weiboNum").style.padding = "0 7px";
+			if(MblogMsgnum != ""){
+				document.getElementById("msgNum").innerHTML = MblogMsgnum;
+				document.getElementById("msgLi").style.display = "block";
+			}
+			if(MblogAtnum != ""){
+				document.getElementById("atNum").innerHTML = MblogAtnum;
+				document.getElementById("atLi").style.display = "block";
+			}
+			if(MblogFansnum != ""){
+				document.getElementById("fansNum").innerHTML = MblogFansnum;
+				document.getElementById("fansLi").style.display = "block";
+			}
+		}else{
+			document.getElementById("weiboTitle").innerHTML = "<a href='http://t.qq.com' target='_blank'>点击查看腾讯微博</a>";
+		}
+*/
+		if(QZoneTotalnum){
+			if(QZoneTotalnum > 99){
+				document.getElementById("qzoneNum").innerHTML = "99+";
+			}else{
+				document.getElementById("qzoneNum").innerHTML = QZoneTotalnum;
+			}
+			document.getElementById("qzoneNum").style.padding = "0 7px";
+			if(QZonePassivenum != ""){
+				document.getElementById("passiveNum").innerHTML = QZonePassivenum;
+				document.getElementById("passiveLi").style.display = "block";
+			}
+			if(QZoneInitnum != ""){
+				document.getElementById("InitNum").innerHTML = QZoneInitnum;
+				document.getElementById("InitLi").style.display = "block";
+			}
+			if(QZoneAboutnum != ""){
+				document.getElementById("AboutNum").innerHTML = QZoneAboutnum;
+				document.getElementById("AboutLi").style.display = "block";
+			}
+		}else{
+			document.getElementById("qzoneTitle").innerHTML = "<a href='http://qzone.qq.com' target='_blank'>点击查看QQ空间</a>";
+		}
+		if(QMailTotalnum){
+			if(QMailTotalnum > 99){
+				document.getElementById("mailNum").innerHTML = "99+";
+			}else{
+				document.getElementById("mailNum").innerHTML = QMailTotalnum;
+			}
+			document.getElementById("mailNum").style.padding = "0 7px";
+			weiDu = QMailTotalnum - QMailInboxnum - QMailBottlenum - QMailGmailnum - QMailDmailnum;
+			if(QMailInboxnum != ""){
+				if(weiDu != 0){
+					document.getElementById("inboxNum").innerHTML = Number(QMailInboxnum) + Number(weiDu);
+					document.getElementById("inboxLi").style.display = "block";
+				}else{
+					document.getElementById("inboxNum").innerHTML = QMailInboxnum;
+					document.getElementById("inboxLi").style.display = "block";
+				}
+			}else if(weiDu != 0){
+				document.getElementById("inboxNum").innerHTML = weiDu;
+				document.getElementById("inboxLi").style.display = "block";
+			}
+			if(QMailBottlenum != ""){
+				document.getElementById("bottleNum").innerHTML = QMailBottlenum;
+				document.getElementById("bottleLi").style.display = "block";
+			}
+			if(QMailGmailnum != ""){
+				document.getElementById("gmailNum").innerHTML = QMailGmailnum;
+				document.getElementById("gmailLi").style.display = "block";
+			}
+			if(QMailDmailnum != ""){
+				document.getElementById("dmailNum").innerHTML = QMailDmailnum;
+				document.getElementById("dmailLi").style.display = "block";
+			}
+			if(QMailInboxnum == "" && QMailBottlenum == "" && QMailGmailnum == "" && QMailDmailnum == ""){
+				document.getElementById("mailTitle").innerHTML = "<a href='http://mail.qq.com' target='_blank'>点击查看QQ邮箱</a>";
+			}
+		}else{
+			document.getElementById("mailTitle").innerHTML = "<a href='http://mail.qq.com' target='_blank'>点击查看QQ邮箱</a>";
+		}
+		/*
+		if(FriendTotalnum){
+			if(FriendTotalnum > 99){
+				document.getElementById("pengyouNum").innerHTML = "99+";
+			}else{
+				document.getElementById("pengyouNum").innerHTML = FriendTotalnum;
+			}
+			document.getElementById("pengyouNum").style.padding = "0 7px";
+			if(FriendPassivenum != ""){
+				document.getElementById("pengyouPassiveNum").innerHTML = FriendPassivenum;
+				document.getElementById("pengyouPassiveLi").style.display = "block";
+			}
+			if(FriendInitnum != ""){
+				document.getElementById("pengyouInitNum").innerHTML = FriendInitnum;
+				document.getElementById("pengyouInitLi").style.display = "block";
+			}
+			if(FriendAboutnum != ""){
+				document.getElementById("pengyouAboutNum").innerHTML = FriendAboutnum;
+				document.getElementById("pengyouAboutLi").style.display = "block";
+			}
+		}else{
+			document.getElementById("pengyouTitle").innerHTML = "<a href='http://www.pengyou.com' target='_blank'>点击查看朋友网</a>";
+		}
+		
+		document.getElementById("pengyouIcon").onmouseover = function(){
+			document.getElementById("pengyouSmart").style.display = "block";
+		}
+		document.getElementById("pengyouIcon").onmouseout = function(){
+			document.getElementById("pengyouSmart").style.display = "none";
+		}
+		*/
+		document.getElementById("mailIcon").onmouseover = function(){
+			document.getElementById("mailSmart").style.display = "block";
+		}
+		document.getElementById("mailIcon").onmouseout = function(){
+			document.getElementById("mailSmart").style.display = "none";
+		}
+		document.getElementById("qzoneIcon").onmouseover = function(){
+			document.getElementById("qzoneSmart").style.display = "block";
+		}
+		document.getElementById("qzoneIcon").onmouseout = function(){
+			document.getElementById("qzoneSmart").style.display = "none";
+		}
+/*
+		document.getElementById("weiboIcon").onmouseover = function(){
+			document.getElementById("weiboSmart").style.display = "block";
+		}
+		document.getElementById("weiboIcon").onmouseout = function(){
+			document.getElementById("weiboSmart").style.display = "none";
+		}
+*/
+		document.getElementById("userName").innerHTML = userInfoName;
+		document.getElementById("logined").style.display = "block";
+		document.getElementById("loginAll").style.display = "none";
+		document.getElementById("loginOut").onclick = function(){
+			login.loginOut();
+			//MI &&　MI.Login.logout();//打通微博一键登录
+			//新版评论add
+			if(window['ifr_cmt_status'] && document.getElementById('commentIframe')){
+				 document.getElementById('commentIframe').contentWindow.publicLogout();
+				 //registerCoralEvent.publicLogout();
+			}
+			return false;
+		}
+		if(typeof loginAllCallBack=="function"){
+			loginAllCallBack(userInfoName);
+		}
+	}
+	
+	//新版评论add
+	if(window['ifr_cmt_status'] && document.getElementById('commentIframe')){
+		//registerCoralEvent.publicLogined(uin, nick, Face);
+		document.getElementById('commentIframe').contentWindow.publicLogined(uin, nick, Face);
+	}
+}
+function reloadLoginInfo(){
+var _obj = {"result":"0","Uin":QQ.localData.get('Uin'),"nick":QQ.localData.get('nick'),"Vip":QQ.localData.get('Vip'),"Face":QQ.localData.get('Face'),"info":{"QZone":{"totalnum":parseInt(QQ.localData.get('QZone-totalnum')),"passivenum":parseInt(QQ.localData.get('QZone-passivenum')),"initnum":parseInt(QQ.localData.get('QZone-initnum')),"aboutnum":parseInt(QQ.localData.get('QZone-aboutnum'))},/*"Friend":{"totalnum":parseInt(QQ.localData.get('Friend-totalnum')),"passivenum":parseInt(QQ.localData.get('Friend-passivenum')),"initnum":parseInt(QQ.localData.get('Friend-initnum')),"aboutnum":parseInt(QQ.localData.get('Friend-aboutnum'))},*/"QMail":{"totalnum":parseInt(QQ.localData.get('QMail-totalnum')),"inboxnum":parseInt(QQ.localData.get('QMail-inboxnum')),"bottlenum":parseInt(QQ.localData.get('QMail-bottlenum')),"gmailnum":parseInt(QQ.localData.get('QMail-gmailnum')),"dmailnum":parseInt(QQ.localData.get('QMail-dmailnum'))},"Mblog":{"totalnum":parseInt(QQ.localData.get('Mblog-totalnum')),"msgnum":parseInt(QQ.localData.get('Mblog-msgnum')),"atnum":parseInt(QQ.localData.get('Mblog-atnum')),"fansnum":parseInt(QQ.localData.get('Mblog-fansnum'))}}}
+	loginAll(_obj);
+}
+window.QQ = {};
+QQ.localData = {
+	 hname:location.hostname ? location.hostname : 'localStatus',
+	 isLocalStorage:window.localStorage ? true : false,
+	 dataDom:null,
+	 initDom:function(){ //初始化userData
+		 if(!this.dataDom){
+			 try{
+				 this.dataDom = document.createElement('input');//这里使用hidden的input元素
+				 this.dataDom.type = 'hidden';
+				 this.dataDom.style.display = "none";
+				 this.dataDom.addBehavior('#default#userData');//这是userData的语法
+				 document.body.appendChild(this.dataDom);
+				 var exDate = new Date();
+				 exDate = exDate.getDate()+30;
+				 this.dataDom.expires = exDate.toUTCString();//设定过期时间
+			 }catch(ex){
+				 return false;
+			 }
+		 }
+		 return true;
+	 },
+	 set:function(key,value){
+		 if(this.isLocalStorage){
+			 window.localStorage.setItem(key,value);
+		 }else{
+			 if(this.initDom()){
+				 this.dataDom.load(this.hname);
+				 this.dataDom.setAttribute(key,value);
+				 this.dataDom.save(this.hname)
+			 }
+		 }
+	 },
+	 get:function(key){
+		 if(this.isLocalStorage){
+			 return window.localStorage.getItem(key);
+		 }else{
+			 if(this.initDom()){
+				 this.dataDom.load(this.hname);
+				 return this.dataDom.getAttribute(key);
+			 }
+		 }
+	 },
+	 remove:function(key){
+		 if(this.isLocalStorage){
+			 localStorage.removeItem(key);
+		 }else{
+			 if(this.initDom()){
+				 this.dataDom.load(this.hname);
+				 this.dataDom.removeAttribute(key);
+				 this.dataDom.save(this.hname)
+			 }
+		 }
+	 }
+}
+QQ.Cookie={
+	set:function(name,value,expires,path,domain){
+		if(typeof expires=="undefined"){
+			expires=new Date(new Date().getTime()+3600*1000);
+		}
+		document.cookie=name+"="+escape(value)+((expires)?"; expires="+expires.toGMTString():"")+((path)?"; path="+path:"; path=/")+((domain)?";domain="+domain:"");
+	},
+	get:function(name){
+		var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+		if(arr!=null){
+			return unescape(arr[2]);
+		}
+		return null;
+	},
+	clear:function(name,path,domain){
+		if(this.get(name)){
+			document.cookie=name+"="+((path)?"; path="+path:"; path=/")+((domain)?"; domain="+domain:"")+";expires=Fri, 02-Jan-1970 00:00:00 GMT";
+		}
+	}
+};
+function getExpires(a){//a:hour
+	var expires=new Date(new Date().getTime()+(a?a:1)*24*3600*1000);
+	return expires;
+}
+
+window["login"] = {
+	loginCheck:function(){
+		if(QQ.Cookie.get("skey")){
+			uin = Number(QQ.Cookie.get("uin").substring(1));
+			skey = QQ.Cookie.get("skey");
+			try{
+				var loginScript = document.createElement ("script");
+				loginScript.charset="utf-8";
+				loginScript.src = "http://qfwd.qq.com/?uin=" + uin + "&skey=" + skey + "&func=loginAll&refresh=0&ran="+Math.random();
+				document.getElementsByTagName('head')[0].appendChild(loginScript);
+				QQ.localData.set("loginTime", (new Date()).getTime());
+			}catch(e){}
+		}
+	},
+	loginCountCheck:function(obj){
+		if(document.getElementById(obj).innerHTML != ""){
+			document.getElementById(obj).innerHTML = "";
+			document.getElementById(obj).parentNode.parentNode.style.display = "none";
+		}
+	},
+	loginOut:function(){
+		//var _this = this;
+		UI.getScript('https://ui.ptlogin2.qq.com/js/ptloginout.js', function(){
+			pt_logout.logout(function(n){
+				if(!n){
+					//fail
+				}
+				else{
+					//success
+					login.loginOutCall();
+				}
+			});
+		});
+	},
+	loginOutCall: function(){
+		var d = (new Date).getTime();
+		//QQ.Cookie.clear("skey", '/', "qq.com");
+		document.getElementById("logined").style.display = "none";
+		document.getElementById("loginAll").style.display = "block";
+		login.loginCountCheck("weiboNum");
+		login.loginCountCheck("msgNum");
+		login.loginCountCheck("atNum");
+		login.loginCountCheck("fansNum");
+		login.loginCountCheck("qzoneNum");
+		login.loginCountCheck("passiveNum");
+		login.loginCountCheck("InitNum");
+		login.loginCountCheck("AboutNum");
+		login.loginCountCheck("mailNum");
+		login.loginCountCheck("inboxNum");
+		login.loginCountCheck("bottleNum");
+		login.loginCountCheck("gmailNum");
+		login.loginCountCheck("dmailNum");
+		/*
+		login.loginCountCheck("pengyouNum");
+		login.loginCountCheck("pengyouPassiveNum");
+		login.loginCountCheck("pengyouInitNum");
+		login.loginCountCheck("pengyouAboutNum");
+		*/
+		document.getElementById("weiboTitle").innerHTML = "腾讯微博:";
+		document.getElementById("qzoneTitle").innerHTML = "QQ空间:";
+		document.getElementById("mailTitle").innerHTML = "QQ邮箱:";
+		//document.getElementById("pengyouTitle").innerHTML = "朋友网:";
+		
+		document.getElementById("weiboNum").style.padding = "0 14px";
+		document.getElementById("qzoneNum").style.padding = "0 16px";
+		document.getElementById("mailNum").style.padding = "0 15px";
+		//document.getElementById("pengyouNum").style.padding = "0 16px 0 15px";
+		if(typeof loginOutCallBack=="function"){
+			loginOutCallBack();
+		}
+		login.cbArr = [];
+		login.cleanCbLogin();
+	},
+	loginSuccess:function(){
+		document.getElementById("loginBg").style.display = "none";
+		document.getElementById("login_div").style.left = "-9999px";
+		document.getElementById("logined").style.display = "block";
+		document.getElementById("loginAll").style.display = "none";
+		//加载回调
+		if(login.cbArr.length > 0){
+			for(var i = login.cbArr.length-1; i >= 0; i--){
+				login.cbArr[i]();
+			}
+		}
+		//点击回调
+		login.loginCheck();
+		login.cbLogin();
+		login.cleanCbLogin();
+		
+	},
+	cbArr : new Array(),//加载回调
+	cbLogin : function(){},//点击回调
+	cleanCbLogin : function(){
+		this.cbLogin = function(){}
+	}
+}
+function EA( node, type, listener ) { 
+    if (node.addEventListener) {
+        node.addEventListener( type, listener, false );
+        return true;
+    } else if(node.attachEvent) {
+        node['e'+type+listener] = listener;
+        node[type+listener] = function(){node['e'+type+listener]( window.event );}
+        node.attachEvent( 'on'+type, node[type+listener] );
+        return true;
+    }
+    return false;
+}
+//登录本地存储
+EA(window, "load", function(){
+	if(QQ.Cookie.get("skey")){
+		var _t = QQ.localData.get('loginTime') || 0, t = new Date().getTime();
+		if(t - _t > 60000 || QQ.Cookie.get("uin") != QQ.localData.get('Uin')) {
+			login.loginCheck();
+		}else{
+			reloadLoginInfo();
+		}
+	}
+});
+//]]>
+</script><!--[if !IE]>|xGv00|12fcba7306cd1d96dcbe43551e758b35<![endif]-->
+
+<div id="logonBtn">
+	<a href="javascript:void(0);" onclick="userLogin();" bosszone="vhot_logon_right"></a>
+</div>
+<div id="userFace">
+	<img />
+	<a href="javascript:void(0);" onclick="login.loginOut();">退出</a>
+</div>
+<script type="text/javascript">
+	//是否登录
+	if(QQ.Cookie.get("skey") && QQ.Cookie.get("uin")){
+		//获取用户头像并显示
+		if(QQ.localData.get("Face") == null){
+			document.getElementById("userFace").getElementsByTagName("img")[0].src = "http://mat1.gtimg.com/news/dc/temp/c1.jpg";
+		}else{
+			document.getElementById("userFace").getElementsByTagName("img")[0].src = QQ.localData.get("Face");
+		};
+		document.getElementById("userFace").style.display = "block";
+		document.getElementById("userFace").onmouseover = function(){
+				document.getElementById("userFace").getElementsByTagName("a")[0].style.display = "block";
+		};
+		document.getElementById("userFace").onmouseout = function(){
+				document.getElementById("userFace").getElementsByTagName("a")[0].style.display = "none";
+		};			
+	}else{
+		document.getElementById("logonBtn").style.display = "block";
+	};
+
+	//页面刷新
+	var pageReload = function(){
+		if(QQ.Cookie.get("loginKG")){
+			QQ.Cookie.clear("loginKG");
+		}else{
+			QQ.Cookie.set("loginKG");
+			window.location.reload();			
+		};
+	};
+
+	//登录成功回调
+	login.cbArr.push(pageReload);
+
+	//登录退出回调
+	window.loginOutCallBack = function(){
+		document.getElementById("logkey").style.display = "none";
+		window.location.reload();
+	};
+</script><!--[if !IE]>|xGv00|20d44ed0bdb8757bf7c48ac37dad73b9<![endif]-->
+		</div>
+	</div>
+</div>
+
+<!--内容区-->
+<div class="conBox clear">
+	<div class="left">
+		<!--tips-->
+		<div class="tipsMod hidden" id="tipsMod">为您推荐了<span>8</span>条视频</div>	
+
+		<!--视频列表数据-->
+		<div class="videoListDataMod" id="videoListDataMod"><ul></ul></div>	
+
+		<!--数据全部加载完成-->
+		<div class="dataOver hidden" id="dataOver">数据已全部加载完毕，去看看其它频道..</div>	
+	</div>
+	<div class="right">
+		<div class="rightMod1" bosszone="vhot_1_1">
+			<h2>热门精选<a href="//v.qq.com/" target="_blank">更多</a></h2>
+			<div class="list" id="rmjxMod"></div>
+		</div>
+		<div class="rightMod2" bosszone="vhot_1_2">
+			<h2>热门自媒体<a href="//v.qq.com/videoplus/" target="_blank">更多</a></h2>
+			<div class="list" id="rmzmtMod"></div>
+		</div>
+	</div>
+</div>
+
+<!--底栏-->
+<div class="bottomBox">
+	<!-- 版权模块 -->
+	<script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+<style>
+.tcopyright {width:960px;margin:0 auto;padding:8px 0;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both;}
+.tcopyright .en{font-family:Arial;}
+.tcopyright a{color:#333;text-decoration: none;}
+.tcopyright a:hover{color:#bd0a01;text-decoration: underline;}
+</style>
+<div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+	<div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+	</div>
+  	<div class="en">Copyright &copy; 1998 - 2020 Tencent. All Rights Reserved</div>
+    <div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+	</div>
+</div><!--[if !IE]>|xGv00|b6614ae390f3ba6a8cbcc269055b42da<![endif]-->
+</div>
+
+<!--视频移动模块-->
+<div class="videoMobile" id="videoMobile">
+	<div class="closeBtn" title="关闭视频">X</div>
+</div>
+
+<!-- pgv -->
+<!--ol20130819-->
+<!--pgv 20160801 by 39815--><script charset="gbk" src="http://pingjs.qq.com/ping.js"></script>
+
+<script>!function(t,e){"use strict";function a(){var t,e,a=(""+p.catalog_full).replace(/-/g,".").replace(/_/g,"-");p.topic&&p.topic.name&&p.topic.name.length>0?(t="L.",e="Z."+a+"."+p.topic.name):(t="L."+a,e="Z.");var n="W."+p.type,o="M."+p.tpl.type+p.tpl.stype,i="P."+(""+p.site).replace(/_/g,"-"),c="F."+f,l=t+"_"+e+"_"+n+"_"+o+"_"+i+"_"+c;l&&r({pgUserType:l})}function n(t){o(e,"click",function(e){var a=e.target;"img"===a.tagName&&(a=a.parentNode);var n=a.tagName.toLowerCase(),o=a.getAttribute("href");if(!o||o.indexOf("qqcom_pgv_from=")>-1)return!1;if("a"===n&&a.hostname&&a.hostname.indexOf("qq.com")>-1){var r=o+(a.search?"&":"?")+"qqcom_pgv_from="+t;a.setAttribute("href",r)}})}function o(a,n,o){var r=function(a){return a=a||t.event,a.target||(a.target=a.srcElement||e),3===a.target.nodeType&&(a.target=a.target.parentNode),a};return a.addEventListener?a.addEventListener(n,function(t){o.call(t.currentTarget,r(t))},!1):a.attachEvent("on"+n,function(t){o.call(a,r(t))}),!0}if(!t||!t.location||"function"!=typeof t.pgvMain)return!1;var r=function(){var e=arguments;setTimeout(function(){t.pgvMain.apply(this,e)},0)},i=location.search.replace(/adtag=client\.qq\.\d+_\.0/i,"from=tips"),c=["aio","tips"],f="def";location.search.indexOf("qqcom_pgv_from=")>-1&&(f=location.host+location.pathname+location.search);var p=t.ARTICLE_INFO||null,l=p&&p.catalog_full;if(l)for(var g=0;g<c.length;g+=1)if(i.indexOf(c[g])>-1){n(c[g]);break}l&&a(),l||("undefined"!=typeof whatCatalog&&(t.pvCSTM=t.whatCatalog),r({pgUserType:"F."+f}))}(window,document);</script><!--/pgv 20160801-->
+<!-- 视频来源ptag --><script src="//mat1.gtimg.com/v/ptag/ptag_1.2.js" async="true"></script>
+<!--[if !IE]>|xGv00|a1d505b81f0731c97405c05986e06bb8<![endif]-->
+<!--[if !IE]>|xGv00|e495268dae03726664c77551e8df25e2<![endif]--><!--[if !IE]>|xGv00|d9b659574fdddcc561d144559cab7281<![endif]-->
+<!-- boss -->
+<!-- bosszone 相关 -->
+<script>var bossData={pageType:"",vertical:""};</script>
+<script>
+//点击触发点击上报
+if(document.addEventListener){
+	document.addEventListener("click", registerZone2, false);
+}else if(document.attachEvent){
+	document.attachEvent("onclick", registerZone2);
+}else{
+	document.onclick = registerZone2;
+};
+var gImage;
+//点击上报
+function registerZone2(param,clickType){
+    var loopTryNum = 10;//向上查询级数
+    var loop=4;//标签向上查询的级数
+    var bossID = 1337; //上报ID，通常固定
+    var pwd='0';//和bossId对应
+    var pageType=bossData && bossData.pageType || '';
+    var vertical=bossData && bossData.vertical || '';
+    var purl='';
+    var zoneId='';
+    try{
+		var num=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+		var iQQ=(num==null?"":unescape(num[2]));
+		if(typeof clickType == 'undefined'){//页面结构上加bosszone触发上报
+			var ev = window.event || param;
+	        var et = ev.srcElement || ev.target;
+	        //向上查找A标签
+	        while(loop-- > 0){
+				if("A"==et.tagName || "BODY"==et.tagName){
+					break;
+				}else{
+					et = et.parentNode;
+				}
+			};
+		    var type=et.tagName;
+		    if (type != "A") {return;}
+		    //获取点击链接
+		    purl = et.href;
+		    for(var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode){
+		        if(tagNode.attributes['bossZone']){
+		            zoneId = tagNode.attributes['bossZone'].nodeValue;
+			    }else if(tagNode.attributes['bosszone']){
+			        zoneId = tagNode.attributes['bosszone'].nodeValue;
+			    }else if(tagNode.attributes['BossZone']){
+			        zoneId = tagNode.attributes['BossZone'].nodeValue;
+			    }else if(tagNode.attributes['Bosszone']){
+			        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+			    }
+		        if(zoneId) break; 
+		    }
+		    if(!zoneId){return;}
+		    
+		}else{//js手动触发上报
+			zoneId = param.bossZone;
+			purl = param.url || '';
+		}
+		var localUrl = location.href;//当前页面url
+		var iurl = 'http://btrace.qq.com/kvcollect?BossId='+bossID+'&Pwd='+pwd+'&sop='+zoneId+'&QQ='+iQQ+'&pageType='+pageType+'&vertical='+vertical+'&ip=&ftime=&count=&url='+escape(location.href)+'&ran='+Math.random();
+		gImage = new Image(1,1);
+		gImage.src = iurl;
+    }catch(e){}
+};
+//曝光上报
+function ExposureBoss(id,name){
+    var bossID = 1337;
+    var pwd='0';
+    var pageType=bossData && bossData.pageType || '';
+    var vertical=bossData && bossData.vertical || 'OGS';	
+	try{
+		var num = document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+		var iQQ = (num==null?"":unescape(num[2]));
+		var iurl = 'http://btrace.qq.com/kvcollect?BossId='+bossID+'&Pwd='+pwd+'&sOp='+name+'&iQQ='+iQQ+'&pageType='+pageType+'&vertical='+vertical+'&ip=&ftime=&count=&sUrl='+escape(location.href)+'&ran='+Math.random();
+		gImage = new Image(1,1);
+		gImage.src = iurl;		
+	}catch(e){}
+};
+</script><!--[if !IE]>|xGv00|dd82a6023b36d1ef1e21269f6043b35e<![endif]-->
+<!-- 公用脚本 -->
+<script type="text/javascript" src="http://mat1.gtimg.com/vhot/js/global.js"></script><!--[if !IE]>|xGv00|5e5522bffed114d5b392aa68f09cc82c<![endif]-->
+<script type="text/javascript" src="//mat1.gtimg.com/vhot/js/index-page.js"></script>
+<!-- 返回顶部模块 -->
+<a class="gotopMod" id="gotopMod" bosszone="vhot_back" href="javascript:">TOP</a>
+<script type="text/javascript">gotoTop("gotopMod",50,100,200);</script><!--[if !IE]>|xGv00|9ae0a3f02b9a9c24c0622a170ec60084<![endif]-->
+
+<!-- 引导登录 -->
+<div id="logonGuideBg"></div>
+<div id="logonGuide"></div>
+<script type="text/javascript">
+(function(){
+	//页面DOM加载后执行
+	$(document).ready(function(){  
+		var _logonGuide = $("#logonGuide"),
+		_logonGuideBg = $("#logonGuideBg");
+
+		//未登录
+		if(!(QQ.Cookie.get("skey") && QQ.Cookie.get("uin"))){
+			var _ycxs = setTimeout(function(){
+				//_logonGuideBg.css({"width":$(window).width(),"height":$(window).height()}).show();
+				_logonGuideBg.css({"width":$(window).width(),"height":"9633px"}).show();			
+				_logonGuide.show();
+
+				var logonGuideJT = setTimeout(function(){
+					_logonGuide.hide();
+					_logonGuideBg.hide();
+				},4000);
+			},1000);
+		};
+
+		_logonGuide.on("click",function(){
+			_logonGuide.hide();
+			_logonGuideBg.hide();
+			userLogin();
+
+			//引导登录上报
+			registerZone2({bossZone:'vhot_logon_left'},1);
+		});
+	});
+})();
+</script>
+
+</body>
+</html><!--[if !IE]>|xGv00|5b72f0516f6938afa1124bc18a287c94<![endif]-->

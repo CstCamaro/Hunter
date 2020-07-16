@@ -1,0 +1,95 @@
+body{margin:0;padding:0; font-size:12px;}
+form,p,div,ul,li,input,select,pre{margin:0;padding:0;}
+td,body,{font-size:12px; text-decoration: none;}
+a{color:#333; text-decoration: none;}
+a:hover{color: #FF0000; text-decoration: underline;}
+img{border:none; padding:0; margin:0;}
+ul,li{list-style:none;}
+.dis{display:block;}
+.undis{display:none;}
+	
+.bai,.bai a{color:#fff;}
+	.bai a:hover{color: #FF0000;}
+	
+.lan,.lan a{color:#2a507d;}
+	.lan a:hover{color: #FF0000;}
+	
+.hong,.hong a{color:#e31b1b;}
+	.hong a:hover{color: #FF0000;}
+	
+.jhong,.jhong a{color:#f65706;}
+	.jhong a:hover{color: #FF0000;}
+	
+.huang,.huang a{color:#fffc00;}
+	.huang a:hover{color: #FF0000;}
+		
+.lv,.lv a{color:#13810b;}
+	.lv a:hover{color: #FF0000;}
+	
+.hui,.hui a{color:#686868;}
+	.hui a:hover{color: #FF0000;}
+	
+.qhui,.qhui a{color:#9d9d9d;}
+	.qhui a:hover{color: #FF0000;}
+	
+.ftsz14{font-size:14px;}	
+.ht18{font-family:"黑体"; font-size:18px;}
+
+.ti_2{text-indent:2em;}
+		
+.lh_24{line-height:24px;}
+.lh_30{line-height:30px;}
+.lh_26{line-height:26px;}
+.lh_22{line-height:22px;}
+.lh_20{line-height:20px;}
+
+.mgt_10{margin-top:10px;}
+.mgt_15{margin-top:15px;}
+.mgt_20{margin-top:20px;}
+
+.bg_tx{background-position:top; background-repeat:repeat-x;}
+.bg_ly{background-position:left; background-repeat:repeat-y;}
+.bg_bx{background-position:bottom; background-repeat:repeat-x;}
+.bg_tln{background-position:top left; background-repeat:no-repeat;}
+.bg_trn{background-position:top right; background-repeat:no-repeat;}
+
+.bd{border:1px solid #e5e4e9;}
+.bd_1{border:1px solid #e5e4e9; border-top:none;}
+.bd_2{border-bottom:1px dashed #d2d1d9;}
+.bd_3{border:1px solid #e4f1e4; border-top:none;}
+.bd_4{border-left:1px solid #d8dfe9; border-right:1px solid #d8dfe9;}
+.bd_5{border:1px solid #d8dfe9; border-top:none;}
+.bd_6{border-left:1px solid #d8dfe9;}
+.bd_7{border-right:1px solid #d8dfe9;}
+.bd_8{border:1px solid #e5e4e9; border-top:2px solid #545454;}
+.bd_9{border:1px solid #e5e4e9; border-top:2px solid #337caf;}
+.bd_10{border:1px solid #e5e4e9; border-top:2px solid #2b9823;}
+
+
+.pic_1 img{border:1px solid #d6d6d6; padding:2px; background:#fff;}
+.pic_2 img{border:1px solid #d6d6d6;}
+
+.fl{float:left;}
+.fr{float:right;}
+
+/*焦点图*/
+#focus{width:636px; height:429px; position:relative;}
+#fc{position:absolute; top:4px; left:4px;}
+.beijingceng{width:628px; height:40px; position:absolute; top:290px; left:4px; background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/focbg.png); *background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/worldcup/2010photo/PhotoStation/focbg.png', sizingMethod='scale');}
+#con{width:628px; height:36px; position:absolute; top:290px; left:4px; text-align:center; padding-top:4px; line-height:36px; font-size:14px; cursor:pointer;}
+#con .a{display:block; color:#fff;}
+#con .b{display:none; color:#fff;}
+#num{width:636px; height:91px; position:absolute; top:338px; left:0px; padding-left:1px;}
+#num li{float:left; width:127px; text-align:center; cursor:hand;}
+#num .nos img{background:url(Internet 临时文件/Content.IE5/BWU6X5SZ/images/jd_bg_02.jpg); padding:15px 6px 8px;}
+#num .s{padding-top:13px;}
+#num .s img{border:1px solid #d5d7d4; padding:1px; background:#fff;}
+
+/*网友评论*/
+.wypl td{line-height:26px; border-bottom:1px ;}
+.wypl .pl_wy{padding-left:18px; color:#2a517c;}
+.wypl .pl_wy a{color:#2a517c;}
+.wypl .pl_nr{padding:0 13px 0 40px;}
+/*球员名单*/
+.qymd td{border-bottom:1px solid #d8d8d8;}
+/*  |xGv00|e2ae5d497f0e56dde821745a88b4285f */

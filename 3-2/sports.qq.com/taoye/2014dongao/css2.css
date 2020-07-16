@@ -1,0 +1,284 @@
+/*kennanwang*/
+body, td, selezs, input, div { font-size:12px; color:#333; font-family:"ËÎÌå"; }
+body { background:#fff }
+a:link, a:visited { text-decoration:none; color:#333; }
+a:hover { color:#BC0904!important; text-decoration:underline; }
+.Nborder { border:0px!important }
+.mb0 { margin-bottom:0px!important }
+
+#content{ width:100%; margin:0px auto; overflow:hidden; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/bgr.png) repeat}
+.content{ background:url(//mat1.gtimg.com/sports/taoye/2014dongao/bg.jpg) no-repeat top center}
+/*main*/
+.main{ width:1000px; margin:0px auto 30px; padding:0px 20px; overflow:hidden; background:#fff}
+/*banner*/
+.banner{ position:relative; width:1000px; height:180px; margin:0px auto; overflow:hidden; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/banner.jpg) no-repeat top center }
+.banner h1{ display:none}
+.banner .zhanshi{ position:absolute; left:700px; top:0px; width:310px; height:180px; overflow:hidden;}
+.zhanshi01{ background:url(//mat1.gtimg.com/sports/taoye/2014dongao/zhanshi01.jpg) no-repeat top right}
+.zhanshi02{ background:url(//mat1.gtimg.com/sports/taoye/2014dongao/zhanshi03.jpg) no-repeat top right}
+.banner dl{ width:286px; height:135px; margin:32px 0px 0px; overflow:hidden}
+.banner dl dt img{ display:block; float:left; width:130px; height:125px; margin-right:10px;}
+.banner dl dd span{ margin:40px 0px 0px; font-size:18px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal}
+.banner dl dd{ line-height:20px; font-size:12px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#666}
+.banner dl dd a{ color:#666}
+.banner dl dd.mt20{ margin:40px 0px 7px; color:#333}
+.banner dl dd.mt20 a{ color:#333}
+/*nav*/
+.nav{ width:1000px; height:34px; margin:0px auto 20px; background:#246cb7}
+.nav ul{ width:985px; height:34px; padding-left:15px;}
+.nav ul li{ position:relative; float:left; display:inline-block; height:34px; line-height:34px; padding:0px 15px; text-align:center; font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#fff; z-index:999}
+.nav a{ color:#fff!important; text-decoration:none}
+.nav ul li.line{ width:1px; height:34px; padding:0px; margin:0px 15px; background:#fff}
+.nav ul li div{ display:none; position:absolute; width:600px; bottom:-34px; left:0px; height:34px; line-height:34px; background:#000; font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; z-index:999}
+.nav ul li div a{ float:left; display:inline-block; padding:0px 15px;}
+.nav ul li.current{ background:#000}
+.nav ul li.current div{ display:block}
+/*box1*/
+.box1{ width:1000px; margin:0px auto; overflow:hidden}
+.topBox1{ overflow:visible}
+.main .left{ float:left; width:700px}
+.main .right{ float:right; width:300px}
+.box1 .left{ float:left; width:700px}
+/*½¹µãÍ¼*/
+.focus{width:680px;height:420px;overflow:hidden; zoom: 1;position: relative; z-index:98 }
+.focus ul{width:680px;height:420px;overflow:hidden;position:relative; }
+.focus li{width:680px;height:420px;float:left;position:relative;}
+.focus li a{display:block;cursor:pointer;}
+.focus .tit{width:680px;position:absolute;left:0;bottom:29px;text-align:center;z-index:1;}
+.focus h3{ font-size:24px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal;}
+.focus .tit a{color:#fff;}
+.focus li a:hover{ color:#fff!important}
+.focus .tit a:hover{text-decoration:none;}
+.focus .bg{width:680px;height:70px;position:absolute;left:0;bottom:0;background:#000;opacity:0.7;filter:alpha(opacity=70);}
+.focus .foucsTit{width:680px;height:22px;left:0;position:absolute;bottom:3px;text-align:center;}
+.focus .foucsTit span{display:inline-block;width:7px;height:7px;margin: 0 5px;line-height:0;font-size:0;background:url(//mat1.gtimg.com/sports/taoye/2014dongao/iconD.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/iconD.png',sizingMethod='crop');cursor:pointer;overflow:hidden;}
+.focus .foucsTit span.on{background:url(//mat1.gtimg.com/sports/taoye/2014dongao/iconDon.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/iconDon.png',sizingMethod='crop');}
+.focus .focusBtnL,
+.focus .focusBtnR{width:40px;height:56px;padding:7px;margin-top:-70px;position:relative;z-index:1;}
+.focus .focusBtnL{float:left;}
+.focus .focusBtnR{float:right;}
+.focus .focusBtnL img{float:right;}
+.focus .focusBtnL img,
+.focus .focusBtnR img{display:none;cursor:pointer;}
+.focus .focusBtnL span{display:inline;width:23px;height:45px;margin:14px 5px 0;cursor:pointer;overflow:hidden;}
+.focus .focusBtnR span{display:inline;width:23px;height:45px;margin:14px 0px 0;cursor:pointer;overflow:hidden;}
+.focus .focusBtnL span{float:left;background:url(//mat1.gtimg.com/sports/taoye/2014dongao/left.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/left.png',sizingMethod='crop');}
+.focus .focusBtnR span{float:right;background:url(//mat1.gtimg.com/sports/taoye/2014dongao/right.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/right.png',sizingMethod='crop');}
+.focus .focusBtnLHover,
+.focus .focusBtnRHover{width:146px;background:#246cb7;overflow:hidden;}
+.focus .focusBtnLHover img,
+.focus .focusBtnRHover img{display:inline;}
+.focus .play{ position:absolute; left:15px; bottom:85px; width:69px; height:69px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/play01.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/play01.png',sizingMethod='crop'); z-index:10}
+.focus .play a{ display:block; width:69px; height:69px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/play01.png) no-repeat scroll -9999px 0px}
+.toutiaoBox{ width:670px; margin:23px 0 0px; padding-left:10px; overflow:hidden}
+.toutiaoBox h2{ font-size:24px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#246CB7}
+.toutiaoBox h2 a{ color:#246CB7}
+.toutiaoBox ul{ width:670px;}
+.toutiaoBox ul li{ width:670px; margin:15px auto 0px; overflow:hidden; }
+.toutiaoBox ul li .xm{ float:left; width:60px; text-align:left; font-size:14px; line-height:27px; font-weight:bold;background:url(//mat1.gtimg.com/sports/taoye/2014dongao/right.png) no-repeat scroll -99999px 0px;}
+.toutiaoBox ul li .txt{ float:left; width:610px; font-size:14px; line-height:27px;}
+.toutiaoBox ul li .txt a{ margin-right:7px;}
+.toutiaoBox ul li .txt span{ margin-right:10px;}
+.iconVideo{ padding-left:20px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/iconVideo.png) no-repeat scroll 0px 1px; vertical-align:middle}
+.dujia{ display:inline-block; padding:0px 6px; margin-right:5px; vertical-align:middle; line-height:22px!important; text-align:center; font-size:12px; color:#fff!important; background:#246cb7}
+.dujia:hover{ color:#fff!important; text-decoration:none}
+.box1 .lBox{ width:700px; margin:30px auto 0px; overflow:hidden}
+.box1 .lBox .hd{ width:680px; height:30px; line-height:30px; overflow:hidden; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll 90px -125px}
+.box1 .lBox .hd h2{ font-size:18px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#246CB7; line-height:37px;}
+.box1 .lBox .hd h2 a{ color:#246CB7}
+.box1 .lBox .bd{ width:700px; overflow:hidden}
+#jcsp{ margin:30px auto 0px;}
+.jcspUl{ width:700px;}
+.jcspUl li{ position:relative; float:left; width:212px; height:130px; margin:21px 21px 0px 0px; overflow:hidden}
+.jcspUl li .bg{ position:absolute; left:0px; bottom:0px; width:100%; height:27px; background:#000; opacity:0.6; filter:Alpha(Opacity=60); z-index:9}
+.jcspUl li .txt{ position:absolute; left:0px; bottom:0px; width:100%; height:27px; line-height:27px; text-indent:2.5em; text-align:left; color:#fff; z-index:10}
+.jcspUl li .txt a,.jcspUl li .txt a:hover{ color:#fff!important; text-decoration:none}
+.jcspUl li .play{ position:absolute; left:5px; bottom:5px; width:17px; height:17px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/play02.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/play02.png',sizingMethod='crop'); z-index:10}
+.box1 .lBox .imgArea{ float:left; width:360px;}
+.imgArea .imgUl{ width:360px;}
+.imgArea .imgUl li{ display:inline; float:left; width:160px; margin:20px 20px 0px 0px; overflow:hidden}
+.imgArea .imgUl li .tu{ position:relative; width:160px; height:120px; margin-bottom:10px}
+.imgArea .imgUl li .tu img{ width:160px; height:120px;}
+.imgArea .imgUl li .tu .bg{ position:absolute; left:0px; bottom:0px; width:100%; height:27px; background:#000; opacity:0.6; filter:Alpha(Opacity=60); z-index:9}
+.imgArea .imgUl li .tu .play{ position:absolute; left:5px; bottom:5px; width:17px; height:17px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/play02.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/play02.png',sizingMethod='crop'); z-index:10}
+.imgArea .imgUl li p{ text-align:center;}
+.txtArea{ float:left; width:320px;}
+.txtUl{ width:320px; margin:25px 0px 0px; overflow:hidden}
+.txtUl li{ font-size:14px; line-height:25px;}
+.lBox .xiangmu{ float:left; width:340px;}
+.lBox .xiangmu h3{ width:340px; margin:18px 0px 0px; font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal;}
+.lBox .xiangmu ul{ margin-top:15px;}
+
+/*right*/
+
+.box1 .right{ float:right; width:300px;}
+.box1 .rBox,.right .rBox{ width:298px; margin:0px auto 10px; overflow:hidden; border:1px solid #DBE5EF}
+.box1 .rBox .hd,.right .rBox .hd{ width:298px; height:36px; line-height:36px; overflow:hidden;}
+.box1 .rBox .hd h2,.right .rBox .hd h2{ margin-left:10px; font-size:16px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#246CB7}
+.box1 .rBox .hd h2 a,.right .rBox .hd h2 a{ color:#246CB7}
+.box1 .rBox .bd,.right .rBox .bd{ width:298px; padding-bottom:15px}
+#qieji{ height:266px;}
+#qieji .bd,#hero .bd,#yubao .bd,#yubao2 .bd,#jpb .bd{ padding-bottom:0px}
+.qiejiDl{ width:280px; margin:5px auto 0px; overflow:hidden}
+.qiejiDl dt{ margin-bottom:5px; font-size:16px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal;}
+.qiejiDl dt img{ display:block; width:280px; height:110px; margin-bottom:10px;}
+.qiejiDl dd{ color:#666; line-height:22px;}
+#hero{ height:190px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/jinpaiBg.png) no-repeat top right}
+#ScA2{ position:relative; width:298px; height:154px; }   
+#ScA2 .scwr{ position:relative; top:15px; left:35px; overflow: hidden; zoom: 1; width:228px; height:120px; } /*¿ÉÊÓ¿í¶Èwidth,heightÐèÉèÖÃÕýÈ· */    
+#ScA2 .split{ float:left; width:228px; height:120px; }
+#ScA2 .split .img{ float:left; width:110px;}
+#ScA2 .split .img img{ width:110px; height:120px;}
+#ScA2 .split .txt{ float:right; width:102px; padding-left:10px; overflow:hidden} 
+#ScA2 .split .txt .jin{ font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; }
+#ScA2 .split .txt .jin em{ font-size:20px; font-weight:bold; margin:0px 5px}
+#ScA2 .split .txt .player{ font-size:18px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; margin:15px 0px 10px; padding-bottom:10px; border-bottom:1px solid #DEDEDE}
+.congshi{ color:#666}
+#ScA2 .prev, #ScA2 .next{ position:absolute; cursor:pointer; display:block; width:15px; height:30px; top:56px; }  
+#ScA2 .prev{ left:5px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll 0px -178px }    
+#ScA2 .next{ right:5px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll -15px -178px }     
+#ScA2 .prev:hover{ background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll -30px -178px}   /*Êó±ê»®¹ý×´Ì¬*/  
+#ScA2 .next:hover{ background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll -45px -178px}  /*Êó±ê»®¹ý×´Ì¬*/  
+#yubao{ height:144px}
+#yubao .bd,#yubao2 .bd{ margin-top:5px; overflow:hidden}
+.yubaoUl{ width:278px; margin:0px auto 5px;}
+.yubaoUl li{ width:278px; margin-bottom:10px; font-size:14px; height:23px; line-height:23px; overflow:hidden;}
+.yubaoUl li .guankan{ float:right; display:inline-block; width:55px; height:23px; line-height:23px; overflow:hidden; font-size:12px; text-align:left; text-indent:0.2cm; color:#246CB7; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll -60px -178px; vertical-align:middle}
+.yubaoUl li .guankan:hover{ text-decoration:none; color:#fff!important; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll -115px -178px}
+#yubao2{ height:220px;}
+#jpb{ width:300px; border:0px;}
+#jpb .hd{ width:298px; border:1px solid #DBE5EF; border-bottom:0px}
+#jpb .bd{ width:300px;}
+#jpb table{ width:300px}
+#jpb table tr td{ height:28px; text-align:center; border:1px solid #DBE5EF; background:#F1FBFF}
+#jpb table tr.touTr td{ background:#fff; color:#666}
+#jpb table tr td.bold{ font-weight:bold}
+#jpb table tr td.textL{ text-align:left}
+#jpb table tr td.textL span{ margin-left:10px}
+#jpb table tr td span.num{ font-family:Arial, Helvetica, sans-serif}
+.jiangpai{ float:right; width:120px; height:36px; margin-right:32px}
+.jiangpai span{ display:inline-block; width:18px; height:18px; margin:10px 0px 0px 14px;}
+.jiangpai span.jinpai{ background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll -170px -178px}
+.jiangpai span.yinpai{ background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll -188px -178px}
+.jiangpai span.tongpai{ background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll -206px -178px}
+.guansaiUl{ width:298px; overflow:hidden}
+.guansaiUl li{ display:inline; float:left; width:50px; margin:15px 0px 0px 35px; overflow:hidden}
+.guansaiUl li p{ color:#666; text-align:center}
+.guansaiUl li p a{ color:#666}
+.guansai01,.guansai02,.guansai03,.guansai04,.guansai05,.guansai06,.guansai01:hover,.guansai02:hover,.guansai03:hover,.guansai04:hover,.guansai05:hover,.guansai06:hover{ background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat}
+.guansai01{ display:block; width:38px; height:36px; margin:0px auto 5px; background-position:-224px -208px}
+.guansai02{ display:block; width:38px; height:36px; margin:0px auto 5px; background-position:-262px -208px}
+.guansai03{ display:block; width:38px; height:36px; margin:0px auto 5px; background-position:-300px -208px}
+.guansai04{ display:block; width:38px; height:36px; margin:0px auto 5px; background-position:-338px -208px}
+.guansai05{ display:block; width:38px; height:36px; margin:0px auto 5px; background-position:-376px -208px}
+.guansai06{ display:block; width:38px; height:36px; margin:0px auto 5px; background-position:-414px -208px}
+.guansai01:hover{ background-position:-224px -244px}
+.guansai02:hover{ background-position:-262px -244px}
+.guansai03:hover{ background-position:-300px -244px}
+.guansai04:hover{ background-position:-338px -244px}
+.guansai05:hover{ background-position:-376px -244px}
+.guansai06:hover{ background-position:-414px -244px}
+.yuanchuangDl{ width:278px; margin:10px auto 0px; overflow:hidden}
+.yuanchuangDl dt img{ display:block; float:left; width:120px; height:90px; margin-right:10px;}
+.yuanchuangDl dt{ margin-bottom:5px; font-size:14px; font-weight:bold; color:#000}
+.yuanchuangDl dt a{ color:#000}
+.yuanchuangDl dd{ color:#666; line-height:22px}
+.yuanchuangDl dd a{ color:#666}
+.zuozhe{ margin:5px 10px 0px 0px; text-align:right; color:#666}
+.zuozhe a{ color:#666}
+.wbUl{ width:298px;}
+.wbUl li{ display:inline; float:left; width:50px; margin:14px 0px 0px 19px; overflow:hidden}
+.wbUl li img{ display:block; width:50px; height:50px; margin:0px auto 5px}
+.wbUl li p{ text-align:center}
+.scsg{ margin-top:5px; color:#0F63BA}
+.scsg a{ color:#0F63BA}
+#mrhg .bd{ padding-bottom:5px}
+.huiguTable{ width:288px; margin:0px auto;}
+.huiguTable tr td{ height:40px; font-size:14px; text-align:center; font-family:Arial, Helvetica, sans-serif}
+.huiguTable tr.touTr td{ font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal;}
+.huiguTable tr td a{ display:block; width:40px; height:40px; background:#EEF5FC; text-align:center; line-height:40px;}
+.huiguTable tr td a:hover{ color:#fff!important; text-decoration:none; background:#246CB7}
+.huiguTable tr td a.blue{ color:#246CB7}
+.guanfangUl{ width:298px;}
+.guanfangUl li{ display:inline; float:left; width:120px; margin:5px 0px 0px 19px; overflow:hidden}
+.guanfangUl li img{ display:block; width:118px; height:88px; margin-bottom:5px; border:1px solid #DBE5EF}
+.guanfangUl li p{ text-align:center; color:#666}
+.guanfangUl li p a{ color:#666}
+.huiguTable2{ width:288px; margin:0px auto;}
+.huiguTable2 tr td{ height:40px; font-size:14px; text-align:center; font-family:Arial, Helvetica, sans-serif}
+.huiguTable2 tr.touTr td{ font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal;}
+.huiguTable2 tr td a{ display:block; width:40px; height:40px; background:#EEF5FC; text-align:center; line-height:40px;}
+.huiguTable2 tr td a:hover{ color:#fff!important; text-decoration:none; background:#246CB7}
+.huiguTable2 tr td a.blue{ color:#246CB7}
+/*box2*/
+.box2{ width:1000px; margin:30px auto 0px; overflow:hidden}
+.box2 .hd{ height:35px; line-height:37px; overflow:hidden}
+.box2 .hd h2{ font-size:24px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#246CB7}
+.box2 .hd h2 a{ color:#246CB7}
+#sqzj .hd{ width:1000px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll 120px 10px;}
+#zhuanji_mod_player{ width:1000px; margin:15px auto 0px; overflow:hidden}
+#zhuanji_mod_player .left{ float:left; width:680px; height:465px}
+#zhuanji_mod_player .left .title{ width:680px; height:39px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/heitiao.png) no-repeat}
+#zhuanji_mod_player .left .qishu{ float:left; width:92px; height:39px; line-height:39px; text-align:left; text-indent:0.4cm; font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#fff}
+#titleUl{ float:left; width:588px; height:39px; overflow:hidden}
+#titleUl li{ display:none; line-height:39px; font-size:16px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#C2C2C2}
+#titleUl li a{ color:#C2C2C2}
+#titleUl li.current{ display:block}
+#zhuanji{ width:680px; height:426px; background:#000}
+#zhuanji_mod_player .right{ float:left; width:320px}
+#zhuanji_mod_player .right .tit{ width:320px; height:39px; background:#313131}
+#zhuanji_mod_player .right .tit h3{ display:inline; line-height:39px; padding-right:25px; margin-left:30px; font-size:16px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#C2C2C2; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/iconX.png) no-repeat right 5px}
+#zhuanji_mod_player .right .tit h3 a{ color:#C2C2C2}
+.list{ position:relative; width:300px; height:426px; background:#313131; border-right:20px solid #434343; }
+.list li{ width:300px; height:90px; padding:10px 0px; overflow:hidden; border-bottom:1px solid #242424; cursor:pointer; opacity:0.7; filter:Alpha(Opacity=70);}
+.list li .img{ display:inline; float:left; width:120px; height:90px; margin:0px 10px 0px 30px; overflow:hidden}
+.list li .img img{ width:120px; height:90px}
+.list li .img .play{ display:none; position:absolute; top:30px; left:42px; width:32px; height:32px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/play03.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/play03.png',sizingMethod='crop'); z-index:10}
+.list li.s{ background:#000; opacity:1; filter:Alpha(Opacity=100);}
+.list li:hover{ opacity:1; filter:Alpha(Opacity=100);}
+.list li .txt{ float:left; width:126px; height:90px;}
+.list li .txt p{ color:#999; line-height:22px; font-size:14px; margin-bottom:30px;}
+.list li .txt .time{ color:#666}
+.scrollContent { width:300px; height:426px; overflow:hidden;}
+.scrollBar {width:20px; height:20px; background:#656565; position:absolute; right:-20px; top:0; z-index:999; cursor:pointer }
+.box2 .lBox{ float:left; width:680px; }
+.box2 .lBox .hd{ width:680px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll 120px -42px;}
+.box2 .lBox .bd{ width:680px; margin-top:15px;}
+.fs_A1{ height:370px; position:relative; width:680px; position:relative;}  
+.fs_A1 .A1fBt{ position:absolute; bottom:8px; right:10px; overflow:hidden; zoom:1;  height:16px; z-index:10; }  
+.fs_A1 .shadow{ width:100%; position:absolute; bottom:0px; left:0px; z-index:10; height:34px; background:rgba(0,0,0,0.6);    
+filter:progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#80000000',endColorstr = '#80000000')\9;  display:block; line-height:34px; text-align:left; }  
+.fs_A1 .shadow a{ text-decoration:none; color:#fff; font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; overflow:hidden; margin-left:10px; }
+.fs_A1 .shadow a:hover{ color:#fff!important; text-decoration:none}  
+.fs_A1 .fcon{ position:relative; width:100%; float:left;  display:none;  }  
+.fs_A1 .A1fBt i{font-style:normal }    
+.fs_A1 .A1fBt a{display:inline-block;width:7px;height:7px;margin: 0 5px;line-height:0;font-size:0;background:url(//mat1.gtimg.com/sports/taoye/2014dongao/iconD.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/iconD.png',sizingMethod='crop');cursor:pointer;overflow:hidden;}  
+.fs_A1 .A1fBt a:hover,.fs_A1 .A1fBt a.current{ background:url(//mat1.gtimg.com/sports/taoye/2014dongao/iconDon.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/iconDon.png',sizingMethod='crop')}  
+.fs_A1 .fcon img{ display:block; width:680px; height:370px; } 
+.box2 .rBox{ float:right; width:320px; }
+.box2 .rBox .hd{ width:300px; margin-left:20px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll 120px -89px;} 
+.box2 .rBox .bd,.zutuUl{ width:320px;}
+.zutuUl li{ display:inline; float:left; width:130px; margin:15px 0px 0px 30px; overflow:hidden}
+.zutuUl li img{ display:block; width:130px; height:90px; margin-bottom:5px;}
+.zutuUl li p{ text-align:center; color:#666}
+.zutuUl li p a{ color:#666}
+#spjx .hd{ width:1000px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/cssSprite.png) no-repeat scroll 120px 10px;}
+.spjxUl{ position:relative; width:1000px; height:310px; margin:25px auto 0px; overflow:hidden}
+.spjxUl li{ position:absolute;}
+.spjxDiv{ position:relative; width:100%; height:100%;}
+.spjxDiv .bg{ position:absolute; left:0px; bottom:0px; width:100%; height:27px; background:#000; opacity:0.6; filter:Alpha(Opacity=60); z-index:9}
+.spjxDiv .txt{ position:absolute; left:0px; bottom:0px; width:100%; height:27px; line-height:27px; text-align:left; text-indent:2.5em; color:#fff; z-index:10}
+.spjxDiv .txt a,.spjxDiv .txt a:hover{ color:#fff!important; text-decoration:none}
+.spjxDiv .play{  position:absolute; left:5px; bottom:5px; width:17px; height:17px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/play02.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/play02.png',sizingMethod='crop'); z-index:10}
+.spjx01 .spjxDiv .txt{ text-align:center; text-indent:0em;}
+.spjx01 .spjxDiv .play{ left:252px; top:120px; bottom:0px; width:38px; height:38px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/play04.png) no-repeat; _background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/taoye/2014dongao/play04.png',sizingMethod='crop');}
+.spjx01 .spjxDiv .play a{ display:block; width:38px; height:38px; background:url(//mat1.gtimg.com/sports/taoye/2014dongao/play04.png) no-repeat scroll -9999px 0px}
+.spjx01{ left:0px; top:0px; width:544px; height:310px;}
+.spjx02{ left:556px; top:0px; width:173px; height:97px;}
+.spjx03{ left:556px; top:107px; width:173px; height:97px;}
+.spjx04{ left:556px; bottom:0px; width:173px; height:97px;}
+.spjx05{ right:0px; top:0px; width:260px; height:150px;}
+.spjx06{ right:0px; bottom:0px; width:260px; height:150px;}
+/*toTop*/
+#toTop { background:url(//mat1.gtimg.com/sports/taoye/2014dongao/toTop.png) no-repeat; bottom:45px; display:none; height:54px; opacity:0.3; filter:Alpha(Opacity=30); position:fixed; right:50%; margin-right:-600px; width:54px; _position:absolute; }
+#toTop:hover { opacity:1; filter:Alpha(Opacity=100); }/*  |xGv00|52b7197defdebee3e06b91cccaa042aa */

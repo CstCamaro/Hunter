@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>上海抗战历史地图系列 一 抗日救亡</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="Keywords" content="上海抗战历史地图系列,抗日救亡,抗战纪念" />
+<meta name="description" content="上海师范大学人文与传播学院、都市文化研究中心、腾讯大申网、腾讯地图 联合制作上海抗战历史地图系列" />
+<style type="text/css">
+html,body{width:100%;height:100%;overflow: hidden;}
+*{margin:0px;padding:0px;}
+body{font: 12px/16px "微软雅黑",Verdana, Helvetica, Arial, sans-serif;position: relative;}
+p{width:603px;padding-top:3px;overflow:hidden;}
+h1{font-size:20px;color:#fff;line-height: 28px;}
+.kzpoint{}
+.kzpoint>h2{font-size: 16px;font-weight: normal;color:#000;}
+.kzpoint>div{font-size: 14px;line-height: 150%;margin-top:10px;color:#666;}
+#points_list {color:#fff;}
+#points_list li{list-style: none;font-size: 14px;line-height: 120%;padding:10px 10px;border-bottom: 1px solid #fff;}
+#points_list li:hover{background-color:#f8f8ff;}
+#points_list li.on{background-color:#663333 !important;}
+#points_list li:last-child{border-bottom: 0;}
+.btn{width:142px;}
+.arrow_bottom {position: absolute;bottom: -15px;left:42%; border-left:15px solid transparent;border-right:15px solid transparent;border-top:15px solid #cccc99;width:0;height: 0;}
+.arrow_right {position: absolute;bottom:14%;left:-22px; background-image: url("//mat1.gtimg.com/sh/20140626/slider_btn.png");background-repeat: no-repeat;height: 36px;width: 22px;background-color: #cccc99;background-size: 85px 112px;background-position: -22px 0px;cursor: pointer;border-top-left-radius: 5px;border-bottom-left-radius: 5px;}
+.close {background-position: -22px -44px;}
+</style>
+</head>
+<body>
+<div style="width:100%;height:100%" id="container"></div>
+<div style="position:absolute;top:0;z-index:1000;left:100px;width:320px;height:64px;background-color:#000;background-color:rgba(0,0,0,.5);line-height:120%;text-align:center;display:none;" id="map-title-id">
+	<h1>上海抗战历史地图系列 一 抗日救亡</h1>
+	<p style="width:100%;color:#fff;font-size:12px;">上海师范大学人文与传播学院、都市文化研究中心、<br />腾讯大申网、腾讯地图 联合制作</p>
+</div>
+<div style="width:208px;height:220px;z-index:1000;position:absolute;bottom:0;right:0;" id="map-area-id">
+	<img src="//mat1.gtimg.com/sh/20140626/tuli.png" style="width:100%;" />
+</div>
+<div style="width:200px;z-index:1000;position:absolute;top:40px;right:0;border-top:1px solid #cccc99;border-left:1px solid #cccc99;border-bottom:1px solid #cccc99;background-color:#fff;" id="point-list-id">
+	<h2 style="font-size:16px;padding:10px;border-bottom:1px solid #999;background-color:#f0f0f0;">名人故居/社会机构</h2>
+	<div style="overflow-y:scroll;overflow-x:hidden;background-color: #cccc99;" id="map-list-id">
+		<ul id="points_list"></ul>
+	</div>
+	<div class="arrow_bottom"></div>
+	<div class="arrow_right close" id="btn_arrow_right"></div>
+</div>
+<script type="text/javascript" src="//mat1.gtimg.com/sh/cdn/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/sh/20140626/points.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+var mapinit = function() {
+	var mapcenter = new qq.maps.LatLng(31.231706, 121.472644);
+	var click = 'ontouchend' in window?'ontouchend':'click';
+	var map = new qq.maps.Map(document.getElementById("container"), {
+		zoom: 14,
+		center: mapcenter,
+		mapTypeId: qq.maps.MapTypeId.ROADMAP
+	});
+	var winfo = new qq.maps.InfoWindow({
+		map:map
+	});
+	var markers = [], labels=[], loop = 0, len = qq_map_points.length;
+	var mhandle = function(){
+		var p = qq_map_points[this.id];
+		winfo.open();
+		winfo.setContent('<div class="kzpoint"><h2>'+p.title+'</h2><div>'+ p.descript+'</div></div>');
+		winfo.setPosition(this);
+	};
+	$('#points_list').delegate('li', 'click', function(){
+		var self = markers[$(this).attr('data-id')];
+		var p = qq_map_points[self.id];
+		winfo.open();
+		winfo.setContent('<div class="kzpoint"><h2>'+p.title+'</h2><div>'+ p.descript+'</div></div>');
+		winfo.setPosition(self);
+		var tt = this;
+		$('#points_list li').removeClass();
+		$(this).addClass('on');
+	});
+    var Label=function(opts){
+    	qq.maps.Overlay.call(this, opts);
+    };
+	Label.prototype = new qq.maps.Overlay();
+	Label.prototype.construct = function() {
+		this.dom = document.createElement('div');
+		this.dom.style.cssText = 
+			'color:#'+this.color+';position:absolute;' + 
+			'text-align:left;width:300px;font-size:16px;text-shadow:0 0 1px #ffffff;';
+		this.dom.innerHTML = this.text;
+		this.getPanes().overlayLayer.appendChild(this.dom);
+	};
+	Label.prototype.draw = function() {
+	    var position = this.get('position');
+		if (position) {
+			var pixel = this.getProjection().fromLatLngToDivPixel(position);
+			this.dom.style.left = pixel.getX() + 'px';
+			this.dom.style.top = pixel.getY() + 'px';
+		}
+	};
+	Label.prototype.destroy = function() {
+		this.dom.parentNode.removeChild(this.dom);
+	};
+	var blue = new qq.maps.MarkerImage('//mat1.gtimg.com/sh/20140626/position_blue.png');
+	var purple = new qq.maps.MarkerImage('//mat1.gtimg.com/sh/20140626/position_red.png');
+	/**
+	var lis = $('#points_list');
+	var geocoder = new qq.maps.Geocoder({
+        complete : function(r){
+        	var marker = new qq.maps.Marker({
+				map:map,
+				id:geocoder.loadid,
+				animation:qq.maps.MarkerAnimation.DROP,
+				position:r.detail.location
+			});
+			qq_map_points[geocoder.loadid].lat = r.detail.location.lat;
+			qq_map_points[geocoder.loadid].lng = r.detail.location.lng;
+			var label;
+			if(geocoder.loadid < 22){
+				if(qq_map_points[geocoder.loadid].exist == 1){
+					lis.append('<li data-id="'+geocoder.loadid+'" style="background-color:#cccc99;">'+qq_map_points[geocoder.loadid].title+'</li>');
+				}else{
+					lis.append('<li data-id="'+geocoder.loadid+'" style="background-color:#999999;">'+qq_map_points[geocoder.loadid].title+'</li>');
+				}
+				marker.setIcon(purple);
+			}else{
+				if(qq_map_points[geocoder.loadid].exist == 1){
+					lis.append('<li data-id="'+geocoder.loadid+'" style="background-color:#cccc99;">'+qq_map_points[geocoder.loadid].title+'</li>');
+				}else{
+					lis.append('<li data-id="'+geocoder.loadid+'" style="background-color:#999999;">'+qq_map_points[geocoder.loadid].title+'</li>');
+				}
+				marker.setIcon(blue);
+			}
+			markers.push(marker);
+			labels.push(label);
+			qq.maps.event.addListener(marker, click, mhandle);
+			geocoder.loadid+=1;
+			if(geocoder.loadid < len){
+				geocoder.getLocation(qq_map_points[geocoder.loadid].address);
+			}else{
+
+			console.log(JSON.stringify(qq_map_points));
+			}
+        }
+    });
+    geocoder.loadid = 0;
+    **/
+	var tout = setTimeout(function(){
+		//geocoder.getLocation(qq_map_points[geocoder.loadid].address);
+		var l = qq_map_points.length, lis = [];
+		for(var i=0; i<l; i++){
+			var marker = new qq.maps.Marker({
+				map:map,
+				id:i,
+				animation:qq.maps.MarkerAnimation.DROP,
+				position:new qq.maps.LatLng(qq_map_points[i].lat, qq_map_points[i].lng)
+			});
+			if(i < 21){
+				if(qq_map_points[i].exist == 1){
+					lis.push('<li data-id="'+i+'" style="background-color:#cccc99;">'+qq_map_points[i].title+'</li>');
+				}else{
+					lis.push('<li data-id="'+i+'" style="background-color:#999999;">'+qq_map_points[i].title+'</li>');
+				}
+				marker.setIcon(purple);
+			}else{
+				if(qq_map_points[i].exist == 1){
+					lis.push('<li data-id="'+i+'" style="background-color:#cccc99;">'+qq_map_points[i].title+'</li>');
+				}else{
+					lis.push('<li data-id="'+i+'" style="background-color:#999999;">'+qq_map_points[i].title+'</li>');
+				}
+				marker.setIcon(blue);
+			}
+			markers.push(marker);
+			qq.maps.event.addListener(marker, click, mhandle);
+		}
+		$('#points_list').html(lis);
+		$('#point-list-id').animate({
+			right:-200
+		}, 500 );
+		$('#map-area-id').animate({
+			right:-200
+		}, 500);
+		$('#btn_arrow_right').on('click', function(e){
+			if($(this).hasClass('close')){
+				$('#point-list-id').animate({
+					right:0
+				}, 500 );
+				$('#map-area-id').animate({
+					right:0
+				}, 500);
+				$(this).removeClass('close');
+			}else{
+				$('#point-list-id').animate({
+					right:-200
+				}, 500 );
+				$('#map-area-id').animate({
+					right:-200
+				}, 500);
+				$(this).addClass('close');
+			}
+		});
+		clearTimeout(tout);
+	}, 1000);
+};
+window.onload = function(){
+	var d = document;
+	var tt = d.getElementById('map-title-id');
+	var ww = $(d).width(), hh = $(d).height();
+	if(ww == 0) ww = 1000;
+	if(hh == 0) hh = 500;
+	tt.style['left'] = ((ww - 320)/2) + 'px';
+	tt.style['display'] = 'block';
+	var mli = $('#map-list-id');
+	mli.height(hh - $('#map-area-id').height() - 74);
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src = "http://map.qq.com/api/js?v=2.exp&callback=mapinit";
+	document.body.appendChild(script);
+};
+
+</script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45754601" charset="UTF-8"></script>
+</body>
+</html><!--[if !IE]>|xGv00|b0fe0f6b1855d609df0cde3516f21894<![endif]-->

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-itunes-app" content="app-id=570608623">
+    <link rel="shortcut icon" href="//mat1.gtimg.com/sports/kbsweb/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//mat1.gtimg.com/sports/sportAppWeb/kbsshare/styles/css_39600b.css"><script type="text/javascript" src="//js.aq.qq.com/js/aq_common.js"></script>
+    <title>球员信息</title>
+</head>
+<body data-page="9">
+<style>
+    .nav {
+        display: none;
+        position: static;
+        width: 100%;
+        height: auto;
+        min-width: 310px;
+        min-height: 44px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-size: 16px;
+        /*background-color: #1c90f2;*/
+        color: #000;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        font-family: 'Helvetica Neue', Helvetica, 'STHeiTi Light', sans-serif;
+    }
+    .nav.nav-shadow {
+        box-shadow: #f0f0f0 0 3px 5px;
+    }
+    .nav a {
+        outline: none;
+        text-decoration: none;
+        color: inherit;
+    }
+    .nav .hide {
+        display: none;
+    }
+    .nav-title {
+        background: url("//mat1.gtimg.com/sports/sportAppWeb/kbsshare/statics/icon-logo40x40_6cc48e.png") no-repeat 10px center;
+        background-size: 24px;
+        background-color: #1c90f2;
+        height: 44px;
+        line-height: 44px;
+        color: #FFF;
+        font-size: 0;
+        overflow: hidden;
+    }
+    .nav-title h1 {
+        float: left;
+        height: 100%;
+        border-right: solid 1px #61b2f6;
+        font-size: inherit;
+    }
+    .nav-title h1 a {
+        display: inline-block;
+        height: 100%;
+        line-height: 44px;
+        padding-right: 10px;
+        border-right: solid 1px #066dc4;
+        text-indent: 43px;
+        font-size: 16px;
+    }
+    .nav-title h2 {
+        float: left;
+        height: 100%;
+        font-size: inherit;
+    }
+    .nav-title .hide {
+        display: none;
+    }
+    .nav-title-txt {
+        display: inline-block;
+        height: 100%;
+        padding: 0 10px;
+        line-height: 44px;
+        font-size: 16px;
+    }
+    .nav-group-fold {
+        float: right;
+        background: url("//mat1.gtimg.com/sports/sportAppWeb/kbsshare/statics/btn-nav-fold_b389a1.png") no-repeat 10px center;
+        background-size: 24px;
+        width: 44px;
+        height: 44px;;
+    }
+    .nav-group-fold:active {
+        background-color: #2692DA;
+    }
+    .nav-login {
+        float: right;
+        padding: 0 15px 0 0;
+        font-size: 16px;
+        height: 100%;
+        line-height: 44px;
+    }
+    .nav-avatar {
+        float: right;
+        width: 24px;
+        font-size: 0;
+    }
+    .nav-avatar img {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        border-radius: 12px;
+    }
+    .nav-group-1st {
+        background-color: #f7f7f7;
+    }
+    .nav-group-1st ul {
+        padding: 5px 0;
+        border-bottom: solid 1px #DDD;
+    }
+    .nav-group-1st li {
+        position: relative;
+        float: left;
+        width: 16%;
+        line-height: 37px;
+        text-align: center;
+        list-style-type: none;
+    }
+    .nav-group-1st li.first {
+        margin-left: 2%;
+    }
+    .nav-group-1st li.x2 {
+        width: 32%;
+    }
+    .nav-group-1st li.x3 {
+        width: 48%;
+    }
+    .nav-group-1st li.x4 {
+        width: 64%;
+    }
+    .nav-group-1st li.x5 {
+        width: 80%;
+    }
+    .nav-group-1st li.x6 {
+        width: 96%;
+    }
+    .nav-group-1st a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        color: #000;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    .nav-group-1st a:active {
+        background-color: #DDD;
+    }
+    .nav-group-1st a:visited {
+        color: #000;
+        background-color: #F7F7F7;
+    }
+    .nav-group-1st ul::after {
+        content: '.';
+        display: block;
+        height: 0;
+        clear: both;
+        overflow:hidden;
+    }
+    .nav-group-1st a.fold::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        top: 9px;
+        border: solid 5px rgba(0,0,0,0);
+        border-bottom: solid 5px #000;
+    }
+    .nav-group-1st a.unfold::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        top: 2px;
+        margin-top: 15px;
+        border: solid 5px rgba(0,0,0,0);
+        border-top: solid 5px #000;
+    }
+    .nav-group-2nd {
+        height: 39px;
+        background-color: #f7f7f7;
+        border-bottom: solid 1px #dddddd;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    .nav-group-2nd li {
+        float: left;
+        width: 20%;
+        margin: 0 2.5%;
+        line-height: 39px;
+        text-align: center;
+    }
+    .nav-group-2nd a {
+        position: relative;
+        display: inline-block;
+        width: 62.5px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 19px;
+        color: #000;
+        background-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    .nav-group-2nd a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 120%;
+        left: -10%;
+        top: -7px;
+        height: 39px;
+    }
+    .nav-group-2nd a:active {
+        background-color: #DDD;
+    }
+    .nav-group-2nd a:visited {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .nav-group-2nd a.cur {
+        background-color: #1c90f2;
+        color: #FFF;
+    }
+</style>
+<header class="nav">
+    <div class="nav-title">
+        <h1>
+            <a href="gamelist.htm">腾讯体育</a>
+        </h1>
+        <h2><a href="javascript:;" class="nav-title-txt"></a></h2>
+        <a href="javascript:;" class="nav-group-fold"></a>
+        <a href="javascript:;" class="nav-login hide">登录</a>
+        <a href="javascript:;" class="nav-avatar hide">
+            <img alt="">
+        </a>
+    </div>
+    <!-- 一级导航 -->
+    <div class="nav-group-1st hide">
+        <ul>
+            <li><a href="#nav-nba">NBA</a></li>
+            <li><a href="#nav-ucl">欧冠</a></li>
+            <li><a href="#nav-cba">CBA</a></li>
+            <li><a href="#nav-pl">英超</a></li>
+            <li><a href="#nav-seriea">意甲</a></li>
+            <li>
+                <a href="javascript:;" class="btn-more unfold">更多</a>
+                <a href="javascript:;" class="btn-more fold hide">收起</a>
+            </li>
+            <li class="fold-item"><a href="#nav-6">欧联杯</a></li>
+            <li class="fold-item"><a href="#nav-csl">中超</a></li>
+            <li class="fold-item"><a href="#nav-afc">亚冠</a></li>
+            <li class="fold-item"><a href="#nav-bundesliga">德甲</a></li>
+            <li class="fold-item"><a href="#nav-l1">法甲</a></li>
+            <li class="fold-item"><a href="#nav-14">苏超</a></li>
+            <li class="fold-item"><a href="#nav-4">世界杯</a></li>
+            <li class="fold-item"><a href="#nav-nfl">NFL</a></li>
+            <li class="fold-item"><a href="#nav-nhl">NHL</a></li>
+            <li><a href="#nav-laliga">西甲</a></li>
+            <li><a href="#nav-esports">电竞</a></li>
+            <li><a href="#nav-others">综合</a></li>
+            <li><a href="#nav-ncaa">NCAA</a></li>
+            <li><a href="index.htm">社区</a></li>
+            <li><a href="/kbs/m.htm">下载</a></li>
+        </ul>
+    </div>
+    <!-- 二级导航 -->
+    <div class="nav-group-2nd hide">
+        <ul></ul>
+    </div>
+</header>
+<script type="text/javascript">
+window.COMPETITION_CONFIG = [{
+    id: 'hot',
+    name: '热门',
+    hash: '#hot',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/download-logo_e044f6.png',
+    isSpecial: true,
+},
+{
+    id: 'subscribe',
+    name: '赛事预约',
+    hash: '#nav-subscribe',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/download-logo_e044f6.png',
+    isSpecial: true,
+},
+{
+    id: 'vip',
+    name: '会员专享',
+    hash: '#nav-vip',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/download-logo_e044f6.png',
+},
+{
+    id: '100000',
+    name: 'NBA',
+    hash: '#nav-nba',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/NBA.png',
+},
+{
+    id: '100008',
+    name: 'CBA',
+    hash: '#nav-cba',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/CBA.png',
+},
+{
+    id: '5',
+    name: '欧冠',
+    hash: '#nav-ucl',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/ouguan.png',
+},
+{
+    id: '6',
+    name: '欧联杯',
+    hash: '#nav-6',
+    icon: 'http://mat1.gtimg.com/sports/sportapp/liansai_logo/oulianbei.png',
+},
+{
+    id: '605',
+    name: '亚冠',
+    hash: '#nav-afc',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/yaguan.png',
+},
+{
+    id: '24',
+    name: '法甲',
+    hash: '#nav-l1',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/fajia.png',
+},
+{
+    id: '208',
+    name: '中超',
+    hash: '#nav-csl',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/zhongchao.png',
+},
+{
+    id: '100005',
+    name: 'NFL',
+    hash: '#nav-nfl',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/NFL.png',
+},  // 美国橄榄球联赛
+{
+    id: '100006',
+    name: 'NHL',
+    hash: '#nav-nhl',
+    icon: 'http://mat1.gtimg.com/sports/sportapp/columns/nhl.png',
+},  // 北美冰球职业联赛
+{
+    id: '100002',
+    name: '综合',
+    hash: '#nav-others',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/zonghe.png',
+},
+{
+    id: '3',
+    name: '欧洲杯',
+    hash: '#nav-ec',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/ouzhoubei.png',
+},
+
+// 一些小型的杯赛、联赛配置(可能会有变化)
+// 英国
+{
+    id: '8',
+    name: '英超',
+    hash: '#nav-pl',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/yingchao.png',
+},    // 英国赛事栏目，英超
+{
+    id: '1',
+    name: '英超',
+    hash: '#nav-pl',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/yingchao.png',
+},    // 足总杯
+{
+    id: '2',
+    name: '英超',
+    hash: '#nav-pl',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/yingchao.png',
+},    // 联赛杯
+{
+    id: '38',
+    name: '英超',
+    hash: '#nav-pl',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/yingchao.png',
+},   // 社区盾杯
+// 德国
+{
+    id: '22',
+    name: '德甲',
+    hash: '#nav-bundesliga',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/dejia.png',
+}, // 德国赛事栏目，德甲
+{
+    id: '231',
+    name: '德甲',
+    hash: '#nav-bundesliga',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/dejia.png',
+},   // 德国杯
+// 西班牙
+{
+    id: '23',
+    name: '西甲',
+    hash: '#nav-laliga',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/xijia.png',
+},   // 西班牙赛事栏目，西甲
+{
+    id: '331',
+    name: '西甲',
+    hash: '#nav-laliga',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/xijia.png',
+},   // 国王杯
+// 意大利
+{
+    id: '21',
+    name: '意甲',
+    hash: '#nav-seriea',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/yijia.png',
+},   // 意大利赛事栏目，意甲
+{
+    id: '259',
+    name: '意甲',
+    hash: '#nav-seriea',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/yijia.png',
+},   // 意大利杯
+{
+    id: '4',
+    name: '世界杯',
+    hash: '#nav-4',
+    icon: 'http://mat1.gtimg.com/sports/sportapp/liansai_logo/shijiebei.png',
+},
+// 世界杯预选赛
+{
+    id: '336',
+    name: '欧洲世预赛',
+    hash: '#nav-wcp-eu',
+    icon: 'http://mat1.gtimg.com/sports/sportapp/liansai_logo/shijiebei.png',
+},   // 世界杯预选赛欧洲区
+{
+    id: '341',
+    name: '亚洲世预赛',
+    hash: '#nav-wcp-as',
+    icon: 'http://mat1.gtimg.com/sports/sportapp/liansai_logo/shijiebei.png',
+},   // 世界杯预选赛亚洲区
+{
+    id: '342',
+    name: '南美世预赛',
+    hash: '#nav-wcp-sa',
+    icon: 'http://mat1.gtimg.com/sports/sportapp/liansai_logo/shijiebei.png',
+},   // 世界杯预选赛南美区
+{
+    id: '330',
+    name: '联合会杯',
+    hash: '#nav-fifacc',
+    icon: 'http://img1.gtimg.com/sports/pics/hv1/145/93/2212/143859160.png',
+},   // 联合会杯
+// 电子竞技
+{
+    id: '100101',
+    name: '电竞',
+    hash: '#nav-esports',
+    icon: 'http://mat1.gtimg.com/sports/sportapp/liansai_logo/esports-new.png',
+},   // 电竞
+{
+    id: '100110',
+    name: 'NCAA',
+    hash: '#nav-ncaa',
+    icon: 'http://mat1.gtimg.com/sports/kbsweb/statics/liansai_logo/ncaa.png',
+},   // 电竞
+{
+    id: '100310',
+    name: '女排大奖赛',
+    hash: '#nav-npdjs',
+    icon: 'http://img1.gtimg.com/sports/pics/hv1/191/117/2222/144515576.png',
+},
+// 法网
+{
+    id: '100301',
+    name: '法网',
+    hash: '#nav-fo',
+    icon: 'http://img1.gtimg.com/sports/pics/hv1/251/25/2209/143646851.png',
+},
+{
+    id: '100302',
+    name: '温网',
+    hash: '#nav-wimbledon',
+    icon: 'http://img1.gtimg.com/sports/pics/hv1/71/240/2220/144416771.png',
+},
+{
+    id: '100320',
+    name: '女篮亚洲杯',
+    hash: '#nav-100320',
+    icon: 'http://mat1.gtimg.com/sports/sportapp/liansai_logo/women_asia_cup.png',
+},
+{
+    id: '100321',
+    name: '男篮亚洲杯',
+    hash: '#nav-100321',
+    icon: 'http://mat1.gtimg.com/sports/sportapp/liansai_logo/man_asia_cup.png',
+},
+{
+    id: '100324',
+    name: '男篮亚冠',
+    hash: '#nav-100324',
+    icon: 'http://img1.gtimg.com/sports/pics/hv1/181/28/2240/145663321.png',
+},
+{
+    id: '14',
+    name: '苏超',
+    hash: '#nav-14',
+    icon: 'http://mat1.gtimg.com/sports/sportapp/liansai_logo/suchao.png',
+},
+{
+    id: '100500',
+    name: '冬奥会',
+    hash: '#nav-100500',
+    icon: 'http://mat1.gtimg.com/sports/2018wintergames/logonews.png',
+},
+{
+    id: '100330',
+    name: '全运会',
+    hash: '#nav-100330',
+    icon: 'http://img1.gtimg.com/sports/pics/hv1/123/198/2233/145251438.png',
+},
+{
+    id: '379',
+    name: '男足亚洲杯',
+    hash: '#nav-379',
+    icon: 'https://mat1.gtimg.com/sports/nba/pic/player/2019asiancup.png',
+},
+{
+    id: '128',
+    name: '美洲杯',
+    hash: '#nav-128',
+    icon: 'http://img1.gtimg.com/sports/pics/hv1/78/107/2311/150300138.png',
+}];
+</script>
+<!--[if !IE]>|xGv00|768349e9e9aa320b5a85c79a7c85ed27<![endif]-->
+<section id="playerHead" class="hide">
+</section>
+<section id="tab">
+    <div><span class="current js-data">数据</span><span class="js-material">资料</span></div>
+</section>
+<section class="content">
+    <section id="dataBox">
+
+    </section>
+    <section id="materialBox" class="hide">
+        <div class="players-basicinfo"></div>
+        <div class="career-info"></div>
+        <div class="player-honor"></div>
+    </section>
+    <div class="default_bg"><img src="//mat1.gtimg.com/sports/sportAppWeb/kbsshare/statics/loading_73365e.png" style="width: 65px"></div>
+    <div class="no-data" style="display: none"><img src="//mat1.gtimg.com/sports/sportAppWeb/kbsshare/statics/no-content_66431c.png" width="81"></div>
+</section>
+<div id="appAd">
+</div>
+<script src="//mat1.gtimg.com/sports/kbsweb2/qosboss.js?app=h5_player"></script>
+<script src="//mat1.gtimg.com/sports/sportAppWeb/tua-app-sdk/tua-mlogin.js" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8" data-mainentry_3ec76c="/src/scripts/player" src="//mat1.gtimg.com/sports/sportAppWeb/kbsshare/scripts/js_b1421f.js" async></script><script type="text/javascript" charset="UTF-8">
+    (function () {
+        try {
+            /*----------------------------------
+             pgvMain arguments
+             -----------------------------------*/
+            var pgvMainArgs = {
+                virtualDomain: "content.sports.qq.com"
+            };
+
+            var node = document.createElement('script'),
+                    script = document.getElementsByTagName('script')[0];
+            node.src = "//pingjs.qq.com/ping_video.js";
+            node.type = 'text/javascript';
+            node.onload = node.onerror = node.onreadystatechange = function () {
+                /loaded|complete|undefined/.test(node.readyState) && function () {
+                    node.onload = node.onerror = node.onreadystatechange = null;
+                    node.parentNode.removeChild(node);
+                    node = undefined;
+                    pgvMain(pgvMainArgs);
+                }();
+            };
+            script.parentNode.insertBefore(node, script);
+        } catch (e) {
+
+        }
+    })();
+</script>
+<script>
+!function(){try{for(var e=[/projection\-detail/i],t=function(){return/qqsports/i.test(navigator.userAgent)},n=function(){function e(){for(var e=0,t={};e<arguments.length;e++){var n=arguments[e];for(var o in n)t[o]=n[o]}return t}return function t(n){function o(t,i,r){var a;if("undefined"!=typeof document){if(arguments.length>1){if("number"==typeof(r=e({path:"/"},o.defaults,r)).expires){var c=new Date;c.setMilliseconds(c.getMilliseconds()+864e5*r.expires),r.expires=c}r.expires=r.expires?r.expires.toUTCString():"";try{a=JSON.stringify(i),/^[\{\[]/.test(a)&&(i=a)}catch(e){}i=n.write?n.write(i,t):encodeURIComponent(String(i)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),t=(t=(t=encodeURIComponent(String(t))).replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent)).replace(/[\(\)]/g,escape);var l="";for(var s in r)r[s]&&(l+="; "+s,!0!==r[s]&&(l+="="+r[s]));return document.cookie=t+"="+i+l}t||(a={});for(var p=document.cookie?document.cookie.split("; "):[],d=/(%[0-9A-Z]{2})+/g,u=0;u<p.length;u++){var f=p[u].split("="),m=f.slice(1).join("=");this.json||'"'!==m.charAt(0)||(m=m.slice(1,-1));try{var g=f[0].replace(d,decodeURIComponent);if(m=n.read?n.read(m,g):n(m,g)||m.replace(d,decodeURIComponent),this.json)try{m=JSON.parse(m)}catch(e){}if(t===g){a=m;break}t||(a[g]=m)}catch(e){}}return a}}return o.set=o,o.get=function(e){return o.call(o,e)},o.getJSON=function(){return o.apply({json:!0},[].slice.call(arguments))},o.defaults={},o.remove=function(t,n){o(t,"",e(n,{expires:-1}))},o.withConverter=t,o}(function(){})}(),o={path:"/",domain:"sports.qq.com"},i=function(e,t){var n,o;/iphone|ipad|ipod|ios/i.test(navigator.userAgent)?function(e,t){t&&t.callback&&(t.callbackName="jsBridgeCallback___100",window[t.callbackName]=function(e){t.callback(e),window[t.callbackName]=void 0});var n=[];for(var o in t)"callback"!=o&&n.push(o+"="+encodeURIComponent(t[o]));var i="http://sports.qq.com/jsBridge/"+e+"?"+n.join("&"),r=document.createElement("iframe");r.src=i,r.style.width="0",r.style.height="0",r.style.border="none",r.style.visibility="hidden",document.body.appendChild(r),setTimeout(function(){r.parentNode.removeChild(r)},1e3)}(e,t):/android/i.test(navigator.userAgent)&&(n=e,(o=t)&&o.callback&&(o.callbackName="jsBridgeCallback___100",window[o.callbackName]=function(e){o.callback(e),window[o.callbackName]=void 0}),alert("js_"+n+"("+JSON.stringify(o)+")"))},r=function(){return e="h5_page_step",+n.get(e)||0;var e},a=!1,c=function(){return a?r():r()+1},l=function(){var e,t;e="h5_page_step",t=c(),n.set(e,t,o),a=!0},s=function(){if(t()){var e={};e.h5_page_name=location.pathname.replace(/\/|\.htm|\.html/g,"_").replace(/index_$/,""),e.h5_page_step=c(),i("setLog",e)}},p=0;p<e.length;p++)if(e[p]&&e[p].test&&e[p].test(location.pathname))return;t()&&setTimeout(function(){s(),l()},0)}catch(e){}}();</script>
+<!--[if !IE]>|xGv00|6f5abd60baedf0c432e910d2fd0ebb99<![endif]-->
+<!--[if !IE]>|xGv00|1f85c69f0ebcfb75062b7132950f19e7<![endif]-->
+</body>
+</html>
+<!--[if !IE]>|xGv00|513a942b0892edf6b17191f4808ab183<![endif]-->

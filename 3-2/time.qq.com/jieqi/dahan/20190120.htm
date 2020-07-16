@@ -1,0 +1,258 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/jieqi/dahan/20190120-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="大寒，下雪，降温，寒冷，腾讯网，时光画轴，节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 20:33:09';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-01-20", //日期，格式为 年-月-日
+"cmd_id": "3662132917", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "dahan2019" //内容节点id，格式为 专题拼音标题 + 年份，同步到移动版
+	// 如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	/*
+	"title": " ", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="dahan2019" style="display:none;"><p>大寒是二十四节气的最后一个节气。《月令七十二候集解》：“十二月中，解见前（小寒）。”《授时通考·天时》引《三礼义宗》：“大寒为中者，上形于小寒，故谓之大……寒气之逆极，故谓大寒。”这时寒潮南下频繁，是中国大部分地区一年中的最冷时期，风大，低温，地面积雪不化，呈现出冰天雪地、天寒地冻的严寒景象。这个时期，铁路、邮电、石油、海上运输等部门要特别注意及早采取预防大风降温、大雪等灾害性天气的措施，农业上要加强牲畜和越冬作物的防寒防冻。大寒的风俗食物是腊八粥，风俗活动是尾牙祭。</p>
+<h2>季节特征</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_png/M75eP40ibXmkibB58icicu8fWtxOnINguTu0PjCfm2QmMT30GLtZQoHD1oqofMrDzbJY0jAlEU293IMp7nR19eOEPg/640?wx_fmt=png">
+<p>大寒节气，大气环流比较稳定，环流调整周期大约为20天左右。此种环流平静书斋调整时，常出现大范围雨雪天气和大风降温。当东经80度以西为长波脊，东亚为沿海大槽，我国受西北风气流控制及不断补充的冷空气影响便会出现持续低温。同小寒一样，大寒也是表示天气寒冷程度的节气。近代气象观测记录虽然表明，在我国部分地区，大寒不如小寒冷，但是，在某些年份和沿海少数地方，全年最低气温仍然会出现在大寒节气内。所以，应继续做好农作物防寒，特别应注意保护牲畜安全过冬。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkibB58icicu8fWtxOnINguTu0CtCEKkd2giavj2iacqgLyy2aoC5LE7JouqY6qd4PZKv2aZ74X0sIeWIw/640?wx_fmt=jpeg">
+<p>对于某些作物来说，在一定生育期内需要有适当的低温。冬性较强的小麦、油菜，通过春化阶段就要求较低的温度，否则不能正常生长发育。中国南方大部分地区常年冬暖，过早播种的小麦、油菜，往往长势太旺，提前拔节、抽苔，抗寒能力大大减弱，容易遭受低温霜冻的危害。可见，因地制宜选择作物品种，适时播栽，并采取有效的促进和控制措施，乃是夺取高产的重要一环。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkibB58icicu8fWtxOnINguTu0owHZziaesXcGcbe3gjR2EViaKYiaXWXbibguYu5cciciatgSTYCPnK3qrVTA/640?wx_fmt=jpeg">
+<p>小寒、大寒是一年中雨水最少的时段。常年大寒节气，中国南方大部分地区雨量仅较前期略有增加，华南大部分地区为5至10毫米，西北高原山地一般只有1至5毫米。华南冬干，越冬作的这段时间耗水量较小，农田水分供求矛盾一般并不突出。不过“苦寒勿怨天雨雪，雪来遗到明年麦”。在雨雪稀少的情况下，不同地区按照不同的耕作习惯和条件，适时浇灌，对小麦作物生长无疑是大有好处的。这时期寒潮南下频繁，是我国大部地区一年中的相当冷时期，铁路、邮电、石油、海上运输等部门要特别注意及早采取预防大风降温、大雪等灾害性天气的措施。农业上要加强牲畜和越冬作物的防寒防冻。</p>
+<h2>大寒农事</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkibB58icicu8fWtxOnINguTu09bo9rYhxvqYUTibb5zeObJZjcL46gD53xI3EMfx3IURTD908TEyVsGg/640?wx_fmt=jpeg">
+<p>大寒节气里，各地农活依旧很少。北方地区老百姓多忙于积肥堆肥，为开春作准备；或者加强牲畜的防寒防冻。南方地区则仍加强小麦及其他作物的田间管理。广东岭南地区有大寒联合捉田鼠的习俗。因为这时作物已收割完毕，平时看不到的田鼠窝多显露出来，大寒也成为岭南当地集中消灭田鼠的重要时机。除此以外，各地人们还以大寒气候的变化预测来年雨水及粮食丰歉情况，便于及早安排农事。如“大寒天若雨，正二三月雨水多”（广西）、“大寒见三白，农民衣食足”（江西）、“大寒不寒，人马不安”（福建）、“大寒白雪定丰年”（贵州）、“大寒无风伏干旱”。</p>
+<h2>各地习俗</h2>
+<h3>尾牙祭</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkibB58icicu8fWtxOnINguTu0WuEpfyeGbBUCibSCpu63MEDKHb9SJ2o9AOSzuhmO0Q0wYjDYk5SBp4g/640?wx_fmt=jpeg">
+<p>按我国的风俗，特别是在农村，每到大寒节，人们便开始忙着除旧布新，腌制年肴，准备年货。在大寒至立春这段时间，有很多重要的民俗和节庆。如尾牙祭、祭灶和除夕等，有时甚至连我国最大的节庆春节也处于这一节气中。大寒节气中充满了喜悦与欢乐的气氛，是一个欢快轻松的节气。尾牙源自于拜土地公做“牙”的习俗。所谓二月二为头牙，以后每逢初二和十六都要做“牙”到了农历十二月十六日正好是尾牙。尾牙同二月二一样有春饼(南方叫润饼)吃，这一天买卖人要设宴，白斩鸡为宴席上不可缺的一道菜。据说鸡头朝谁，就表示老板第二年要解雇谁。因此有些老板一般将鸡头朝向自己，以使员工们能放心地享用佳肴，回家后也能过个安稳年。</p>
+<h3>饮食变化</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkibB58icicu8fWtxOnINguTu0eCC7BRUkVOLjf1CTatdD2HBuVhVbFovfwlVqicyx60UfxwiboJk9uS4w/640?wx_fmt=jpeg">
+<p>大寒节气，时常与岁末时间相重合，2009年春节就包含在大寒节气里。因此这样的大寒节气里，除干农活顺应节气外，还要为过年奔波――赶年集、买年货，写春联，准备各种祭祀供品，扫尘洁物，除旧布新，准备年货，腌制各种腊肠、腊肉，或煎炸烹制鸡鸭鱼肉等各种年肴。同时祭祀祖先及各种神灵，祈求来年风调雨顺。此外，旧时大寒时节的街上还常有人们争相购买芝麻秸的影子。因为“芝麻开花节节高”，除夕夜，人们将芝麻秸洒在行走之外的路上，供孩童踩碎，谐音吉祥意“踩岁”，同时以“碎”、“岁”谐音寓意“岁岁平安”，求得新年节好口彩。这也使得大寒驱凶迎祥的节日意味更加浓厚。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkibB58icicu8fWtxOnINguTu0YsKj9raOibfOvyYVkvEUFoRIcoNfq5PCFHy6jEWdMe8ib7AacGBb0uicw/640?wx_fmt=jpeg">
+<p>又因为大寒与立春相交接，讲究的人家在饮食上也顺应季节的变化。大寒进补的食物量逐渐减少，多添加些具有升散性质的食物，以适应春天万物的升发。广东佛山民间有大寒节瓦锅蒸煮糯米饭的习俗，糯米味甘，性温，食之具有御寒滋补功效。安徽安庆有大寒炸春卷的做法。</p>
+<h3>饮食安利</h3>
+<blockquote style="text-align:center">一丨八宝饭</blockquote>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkibB58icicu8fWtxOnINguTu0VWqhJQwfQ09iabl7oIcReJibU47gBNGxPAA81oicribU5eZ1ibf41cicCmzQ/640?wx_fmt=jpeg" title="babaofan">
+<p>糯米100克、大米100克、赤小豆50克、薏米50克、莲子20克、枸杞子20克、桂圆肉20克、大枣50克。 将赤小豆、薏米、莲子用清水洗净，浸泡2小时，再加入糯米、大米等，用旺火蒸熟，加白糖适量食用。 有健脾益气、养血安神的作用，适用于身体虚弱、倦怠乏力等气血两虚的人群。</p>
+<blockquote style="text-align:center">二丨芪杞炖子鸡</blockquote>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkibB58icicu8fWtxOnINguTu04xqgfic1ibECib9AV8pVYUOEAnlqx7lWCDjHXSl6TUAI9fnib0YIjjSL1w/640?wx_fmt=jpeg">
+<p>童子鸡1只（约500克）、黄芪30克、枸杞子30克、白术10克，调料适量。 将童子鸡洗净，切为小块，加入诸补益中药和葱姜蒜盐酒等调料，用文火慢炖1小时，食肉喝汤。 有补中益气、滋阴助阳、增强机体抗病能力的作用，适用于体质虚弱、易患风寒感冒者。</p>
+<blockquote style="text-align:center">三丨发散风寒汤</blockquote>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkibB58icicu8fWtxOnINguTu0OguxIZNsibIzgwqIALlhXVMbicUt640pVbnprbae8XyicAFgIkCRf6SBw/640?wx_fmt=jpeg">
+<p>鸡蛋1个、香菜10克、葱白5克、生姜5克，盐味精等调料适量。 鸡蛋搅拌均匀，香菜、葱白、生姜洗净后切为碎末。将清水在锅中烧开，加入少许水淀粉，使水略稠后，将搅拌好的鸡蛋慢慢倒入，使之成片状。再加入香菜、葱姜及盐味精等调料，出锅前加入香油少许。 有祛风散寒、发汗解表的作用，适用于轻度感冒初期。</p>
+<h2>节气养生</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkibB58icicu8fWtxOnINguTu0KqDNIqwcoFG5h68p4iaMSqB5T0ZxctGKCzkI75gJLynV2NCbdiacUWlw/640?wx_fmt=jpeg">
+<p>冬三月是生机潜伏、万物蛰藏的时令，此时人体的阴阳消长代谢也处于相当缓慢的时候，所以此时应该早睡晚起，不要轻易扰动阳气，凡事不要过度操劳，要使神志深藏于内，避免急躁发怒。大寒是冬季六节气之一，此时天气寒冷已极，故名大寒。大寒的养生，要着眼于“藏”。意思是说，人们在此期间要控制自己的精神活动，保持精神安静，把神藏于内不要暴露于外。这样才有利于安度冬季。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkibB58icicu8fWtxOnINguTu0RzGUhNrRUKk0hiaW6rKhxrGFfWicVthXenMVOiaIp3ZcicfCmv0egZt8Kw/640?wx_fmt=jpeg">
+<p>《灵枢·本神》曰：“智者之养神也，必顺四时而适寒暑，和喜怒而安居处，节阴阳而调刚柔，如是僻邪不至，长生久视”《吕氏春秋·尽数》提到：“天生阴阳寒暑燥湿，四时之化，万物之变，莫不为利，莫不为害。圣人察阴阳之宜，辩万物之利，以便生，故精神安乎形，而寿长焉”。就是说顺应自然规律并非被动的适应，而是采取积极主动的态度，首先要掌握自然界变化的规律，以其防御外邪的侵袭。古有“大寒大寒，防风御寒，早喝人参、黄芪酒，晚服杞菊地黄丸”。这是劳动人民在生活中的总结，也说明了人们对身体调养的重视。</p></div><!--[if !IE]>|xGv00|fdf6d186fa8d0570e7ba7538483c66b0<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|757ec972894d5dee897f1024138a0328<![endif]-->

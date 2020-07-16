@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>中央空调询价-腾讯大浙网-家居频道</title>
+    <meta name="keyword" content="中央空调询价-腾讯大浙网-家居频道" />
+    <meta name="description" content="中央空调询价-腾讯大浙网-家居频道"/>
+    <!--<link rel="stylesheet" href="//mat1.gtimg.com/zj/yuwanli/dzw1608/home/css/style1.min.css"/>-->
+    <link rel="stylesheet" href="//mat1.gtimg.com/zj/yuwanli/dzw1706/calculate/css/style1.css"/>
+</head>
+<body>
+<script language="javascript" src="//mat1.gtimg.com/ping.js"></script>
+<script>
+    //db.house.qq.com --> db-house
+    var colSite = window.location.host.replace(/.qq.com$/,'').replace(/\./g, '-');
+    var pgvInfo = "L.";
+
+    //增加栏目信息
+    //注意:
+    //（1）、bpgv-XXX1是栏目名，请用你自已定义的栏目名替换其中的XXX1
+    //（2）、自定义栏目最多只支持3级，如下面的bpgv-XXX1，bpgv-XXX2，bpgv-XXX3
+    //（3）、自定义栏目名必须以bpgv-做为前缀，且其中不能含有点(.)，下划线(_)
+    //（4）、自定义栏目名必须发给PGV这边备案，可以联系alvazhang
+    pgvInfo = pgvInfo + colSite + ".bpgv-home.bpgv-zt";
+
+    //增加专题信息，增加如下代码，并替换相应的专题名bpgv-XXX1
+    //pgvInfo = pgvInfo + "_Z."+colSite+".bpgv-XXX1.bpgv-XXX2.bpgv-XXX3";
+    //特别注意：如需精确计算某一专题系列，请在各频道栏目管理中建立相应栏目，将所有专题栏目计算指向相应栏目即可。如有问题请咨询产品技术部，谢谢！！
+
+
+    if(typeof(pgvMain) == 'function'){
+        if (typeof(pgvInfo) != 'undefined') {
+            pgvMain({pgUserType:pgvInfo});
+        } else {
+            pgvMain();
+        }
+    }
+</script>
+    <div class="container">
+        <h1>中央空调询价</h1>
+
+        <form method="post" class="form-horizontal" action="" id="reg_form">
+
+            <div class="control-group text">
+                <label class="control-label">房屋面积<span class="required-icon-1">*</span></label>
+
+                <div class="controls">
+                    <select name="data[field_1]">
+                        <option value="">请选择房屋面积</option>
+                        <option value="30㎡～50㎡">30㎡～50㎡</option>
+                        <option value="50㎡～80㎡">50㎡～80㎡</option>
+                        <option value="80㎡～100㎡">80㎡～100㎡</option>
+                        <option value="100㎡～120㎡">100㎡～120㎡</option>
+                        <option value="120㎡～150㎡">120㎡～150㎡</option>
+                        <option value="150㎡以上">150㎡以上</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group tel">
+                <label class="control-label">空调品牌<span class="required-icon-1">*</span></label>
+
+                <div class="controls">
+                    <select name="data[name]" id="brand">
+
+                    </select>
+                </div>
+            </div>
+            <div class="control-group tel">
+                <label class="control-label">款式<span class="required-icon-1">*</span></label>
+
+                <div class="controls">
+                    <select name="data[field_2]" id="type">
+
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="control-group text">
+                <label class="control-label">手机<span class="required-icon-1">*</span></label>
+
+                <div class="controls">
+                    <input id="mobile" type="text" name="data[mobile]" data-must="1" placeholder="请填写手机号">
+                </div>
+            </div>
+
+            <div class="control-group text">
+                <label class="control-label">验证码<span class="required-icon-1">*</span></label>
+
+                <div class="controls phone">
+                    <input style="width: 200px" id="prove" type="text" name="data[prove]" data-must="1" placeholder="请填写验证码">
+                    <input style="width: 80px" type="button" class="btn btn-sm btn-phone" onclick="sendprove('3888')" value="获取验证码" id="send_prove">
+                </div>
+            </div>
+
+            <div class="submit">
+                <input type="button" name="btn-submit" class="btn btn-submit" value="获得报价" onclick="count('3888')">
+                <i></i>
+                <h1>本报价为工厂体系报价，当地经销商优惠请留意客服回电</h1>
+                <p></p>
+            </div>
+        </form>
+
+    </div>
+    <script type="text/javascript" src="//mat1.gtimg.com/www/asset/lib/jquery/jquery/jquery-1.11.1.min.js"></script>
+    <script language=javascript src='//mat1.gtimg.com/zj/zjqq_vip/layer/layer.js'></script>
+    <script>
+        var jsonData = [
+            {
+                "name":"大金中央空调",
+                "install":1200,
+                "type":[
+                    {
+                        "name":"一拖二",
+                        "price":[16000,19000]
+                    },
+                    {
+                        "name":"一拖三",
+                        "price":[22000,34000]
+                    },
+                    {
+                        "name":"一拖四",
+                        "price":[26000,43000]
+                    },
+                    {
+                        "name":"一拖五",
+                        "price":[38000,53000]
+                    },
+                    {
+                        "name":"一拖六",
+                        "price":[42000,65000]
+                    },
+                    {
+                        "name":"一拖七",
+                        "price":[47000,78000]
+                    },
+                ]
+            },
+            {//格力中央空调
+                "name":"格力中央空调",
+                "install":1100,
+                "type":[
+                    {
+                        "name":"一拖二",
+                        "price":[15000,17000]
+                    },
+                    {
+                        "name":"一拖三",
+                        "price":[18000,22000]
+                    },
+                    {
+                        "name":"一拖四",
+                        "price":[21000,28000]
+                    },
+                    {
+                        "name":"一拖五",
+                        "price":[27000,32000]
+                    },
+                    {
+                        "name":"一拖六",
+                        "price":[29000,36000]
+                    },
+                    {
+                        "name":"一拖七",
+                        "price":[31000,42000]
+                    },
+                ]
+            },
+            {//TCL中央空调
+                "name":"TCL中央空调",
+                "install":1100,
+                "type":[
+                    {
+                        "name":"一拖二",
+                        "price":[14000,17000]
+                    },
+                    {
+                        "name":"一拖三",
+                        "price":[16000,22000]
+                    },
+                    {
+                        "name":"一拖四",
+                        "price":[19000,26000]
+                    },
+                    {
+                        "name":"一拖五",
+                        "price":[23000,28000]
+                    },
+                    {
+                        "name":"一拖六",
+                        "price":[26000,33000]
+                    },
+                    {
+                        "name":"一拖七",
+                        "price":[28000,38000]
+                    },
+                ]
+            },
+            {//日立中央空调
+                "name":"日立中央空调",
+                "install":1100,
+                "type":[
+                    {
+                        "name":"一拖二",
+                        "price":[15200,18050]
+                    },
+                    {
+                        "name":"一拖三",
+                        "price":[20900,32300]
+                    },
+                    {
+                        "name":"一拖四",
+                        "price":[24700,40850]
+                    },
+                    {
+                        "name":"一拖五",
+                        "price":[36100,50350]
+                    },
+                    {
+                        "name":"一拖六",
+                        "price":[39900,61750]
+                    },
+                    {
+                        "name":"一拖七",
+                        "price":[44650,74100]
+                    },
+                ]
+            },
+            {//东芝中央空调
+                "name":"东芝中央空调",
+                "install":1100,
+                "type":[
+                    {
+                        "name":"一拖二",
+                        "price":[17600,20900]
+                    },
+                    {
+                        "name":"一拖三",
+                        "price":[24200,37400]
+                    },
+                    {
+                        "name":"一拖四",
+                        "price":[28600,47300]
+                    },
+                    {
+                        "name":"一拖五",
+                        "price":[41800,58300]
+                    },
+                    {
+                        "name":"一拖六",
+                        "price":[46200,71500]
+                    },
+                    {
+                        "name":"一拖七",
+                        "price":[51700,85800]
+                    },
+                ]
+            },
+            {//三菱重工
+                "name":"三菱重工",
+                "install":1100,
+                "type":[
+                    {
+                        "name":"一拖二",
+                        "price":[16800,19950]
+                    },
+                    {
+                        "name":"一拖三",
+                        "price":[23100,35700]
+                    },
+                    {
+                        "name":"一拖四",
+                        "price":[27300,45150]
+                    },
+                    {
+                        "name":"一拖五",
+                        "price":[39900,55650]
+                    },
+                    {
+                        "name":"一拖六",
+                        "price":[44100,68250]
+                    },
+                    {
+                        "name":"一拖七",
+                        "price":[49350,81900]
+                    },
+                ]
+            },
+            {//海信
+                "name":"海信",
+                "install":1100,
+                "type":[
+                    {
+                        "name":"一拖二",
+                        "price":[15000,18000]
+                    },
+                    {
+                        "name":"一拖三",
+                        "price":[19000,23000]
+                    },
+                    {
+                        "name":"一拖四",
+                        "price":[23000,27000]
+                    },
+                    {
+                        "name":"一拖五",
+                        "price":[29000,34000]
+                    },
+                    {
+                        "name":"一拖六",
+                        "price":[32000,38000]
+                    }
+                ]
+            },
+            {//海尔
+                "name":"海尔",
+                "install":1100,
+                "type":[
+                    {
+                        "name":"一拖二",
+                        "price":[15700,18900]
+                    },
+                    {
+                        "name":"一拖三",
+                        "price":[20000,24100]
+                    },
+                    {
+                        "name":"一拖四",
+                        "price":[24000,28000]
+                    },
+                    {
+                        "name":"一拖五",
+                        "price":[30500,35700]
+                    },
+                    {
+                        "name":"一拖六",
+                        "price":[33600,40000]
+                    }
+                ]
+            },
+        ]
+    </script>
+    <script>
+        localhostPaht =  "http://vip.zjqq.mobi";
+        var reg_host = localhostPaht+"/index.php/";
+        var reg_host_img = localhostPaht+"/";
+        var total;
+        var brandId = 0;
+        var typeId = -1;
+        var result = '';
+        /*判断设备来源*/
+        function check_source(){
+            if(window.TencentNews){
+                signSource = 1;		//判断是否来自腾讯客户端
+            }else if(typeof WeixinJSBridge !== 'undefined'){
+                signSource = 3;		//判断是否来自微信
+            }/*else if(browser.versions.mobile){
+             signSource = 2;		//判断是否来自手机端
+             }*/else if(navigator.userAgent){
+                signSource = 4;		//判断是否来自微信pc
+            }else{
+                signSource = 0;
+            }
+            return signSource;
+        }
+        //利用ajax post提交报名信息
+        function reg_new(activity_id){
+            $('#' + activity_id + '_reg_button').attr('disabled', 'disabled');
+            var url = reg_host + 'sign/submit/' + activity_id;
+            var signSource = check_source();
+            $.ajax({
+                cache: false,
+                type: "get",
+                url:url,
+                data:$('#reg_form').serialize()+ '&data[signsource]='+ signSource + '&callback=reg_success_callback',
+                //async: false,
+                dataType:'json',
+                error: function(request) {
+                    layer.alert("提交失败，请重试", {icon: 2});
+                    $('#' + activity_id + '_reg_button').removeAttr('disabled');
+                },
+                success: function(data) {
+                    //data = JSON.parse(data);
+                    if(data.result == 'success'){
+                        $(".container form .submit p").html(result);
+                    }else{
+                        layer.alert(data.result, {icon: 2});
+                    }
+                    $('#' + activity_id + '_reg_button').removeAttr('disabled');
+                }
+            });
+
+        }
+        function check_tel(val,name){
+            if ( val == "" ){
+                var msg = "请填写"+name;
+            }else{
+                var regu = /^[1][0-9][0-9]{9}$/;
+                var re = new RegExp(regu);
+                if(re.test(val)){
+                    var msg = true;
+                }else{
+                    var msg = "请填写正确的"+name;
+                }
+            }
+            return msg;
+        }
+        function sendprove(activity_id){
+            var tel = $('#mobile').val();
+            var msg = check_tel(tel,'手机号码')
+            if(msg===true){
+                $('#send_prove').attr('disabled', 'disabled');
+
+                var c=10;
+                var id='send_prove';
+                var message = 's后再获取';
+                var jump = setInterval(function(){
+                    c--;
+                    $('#' + id).val('请'+c+message);
+                    if(c<=0){
+                        clearInterval(jump);
+                        $('#' + id).val('获取验证码');
+                        $('#send_prove').removeAttr('disabled', 'disabled');
+                    }
+                },1000)
+
+                var url = reg_host + 'pub/sendProve';
+                $.ajax({
+                    cache: true,
+                    type: "get",
+                    url:url,
+                    data:'id=' + activity_id + '&mobile='+ tel,
+                    dataType:"jsonp",
+                    jsonp: "callback",
+                    jsonpCallback:"send_success",
+                    async: false,
+                    error: function(request) {
+                        layer.alert("提交失败，请重试", {icon: 2});
+                    },
+                    success: function(data) {
+                        data;
+                    }
+                });
+            }else{
+                layer.alert(msg);
+            }
+        }
+        function check_val(){
+            var prove = $("#prove").val();
+            if(typeId == -1){
+                layer.alert("请选择你的款式", {icon: 2});
+            }else if(!prove){
+                layer.alert("请输入手机验证码", {icon: 2});
+            } else{
+                result = (jsonData[brandId].type[typeId].price[0]+jsonData[brandId].install)+'元～'+(jsonData[brandId].type[typeId].price[1]+jsonData[brandId].install)+'元'
+                return true;
+            }
+        }
+        function count(id){
+            if(check_val()){
+                reg_new(id);
+            }
+        }
+        function initData() {
+            var str = ''
+            for(var i = 0;i<jsonData.length;i++){
+                if(i == 0){
+                    str += '<option data-id="'+i+'" value="'+jsonData[i].name+'" selected>'+jsonData[i].name+'</option>'
+                }else{
+
+                }
+                str += '<option data-id="'+i+'" value="'+jsonData[i].name+'">'+jsonData[i].name+'</option>'
+            }
+            $("#brand").html(str);
+            initType()
+        }
+        function initType() {
+            var str = '<option value="">请选择款式</option>';
+            for(var i = 0;i<jsonData[brandId].type.length;i++){
+                str += '<option data-id="'+i+'" value="'+jsonData[brandId].type[i].name+'">'+jsonData[brandId].type[i].name+'</option>'
+            }
+            $("#type").html(str)
+        }
+        $(function(){
+            initData()
+            $("#brand").change(function () {
+                brandId = $(this).children('option:selected').attr("data-id");
+                typeId = -1;
+                initType()
+            })
+            $("#type").change(function () {
+                typeId = $(this).children('option:selected').attr("data-id");
+            })
+        })
+    </script>
+</body>
+</html><!--[if !IE]>|xGv00|e7d6520164ee23691d0bc41019fb760c<![endif]-->

@@ -1,0 +1,44 @@
+/* 通用 */
+html { margin: 0; padding: 0; }
+body { font-family: SimSun; color: #000; background: #FFF; }
+body, input, textarea, select { font-size: 12px; }
+body, h1, h2, h3, h4, ul, li, dl, dt, dd, p, form { display: block; margin: 0; padding: 0; }
+a { color: #00F; text-decoration: underline; cursor: pointer; }
+a:hover { color: #333; text-decoration: none; }
+img { border: none; display: block; }
+ul { list-style-type: none; }
+/* 内容 */
+.wrap { padding: 0; }
+.area { width: 1000px; margin: 0 auto; position: relative; }
+.area img, .area object, .area embed { display: block; margin: 0 auto; }
+/* 报名 */
+#JoinBar { width: 920px; height: 60px; position: absolute; top: 50px; left: 50%; margin: 0 0 0 -460px; z-index: 1; }
+#JoinBox { width: 920px; height: 60px; line-height: 60px; overflow: hidden; }
+#JoinBg { background: url(//mat1.gtimg.com/hb/house/hffc/val2011/AD/120507/SAGJ/join_bg.png) no-repeat center !important; _background: transparent; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/hb/house/hffc/val2011/AD/120507/SAGJ/join_bg.png', sizingMethod='image');width: 920px; height: 60px; position: absolute; top: -2px; left: 0; }
+.form_survey { width: 750px; height: 25px; position: absolute; top: 16px; left: 130px; }
+.form_survey .inpt { display: inline-block; width: 222px; height: 14px; line-height: 14px; padding: 2px; margin: 1px 0 0 80px; float: left; }
+.form_survey .btn { display: block; width: 100px; height: 25px; float: right; }
+/* 返回顶部 */
+.backToTop { width: 21px; height: 85px; position: fixed; _position: absolute; right: 10px; bottom: 50px; _bottom: "auto"; }
+.backToTop a { display: block; width: 21px; height: 85px; background: url(images/top.gif) no-repeat 0 0; }
+.backToTop a:hover { background: url(images/top.gif) no-repeat -21px 0; }
+/* 顶部 */
+.sys-header { background: #FFF; height: 40px; }
+.sys-header .dcheader { width: 1000px; margin: 0 auto; clear: both; overflow: hidden; }
+.sys-header .dclogo { float: left; padding: 1px 0 0 0; }
+.sys-header .dclogo img { border: 0px; }
+.sys-header .dcnav { color: #CCC; font-size: 12px; line-height: 40px; float: right; padding: 0 5px 0 0; }
+.sys-header .dcnav a { color: #333; text-decoration: none; padding: 0px 3px; }
+.sys-header .dcnav a:hover { color: #F00; text-decoration: underline; }
+/* 底部 */
+.sys-footer { color: #666; background: #FFF; clear: both; overflow: hidden; }
+.sys-footer a { color: #333; text-decoration: none; }
+.sys-footer a:hover { color: #F00; text-decoration: underline; }
+.sys-footer .inner { width: 1000px; margin: 0 auto; text-align: center; }
+.sys-footer .avow { padding: 20px 0 0 0; border-top: 1px solid #DDD; }
+.sys-footer .icon { width: 680px; margin: 10px auto; clear: both; overflow: hidden; }
+.sys-footer .icon p { float: left; width: 120px; height: 50px; border: 1px solid #d2d2d2; padding: 0; line-height: 20px; margin: 6px; font-size: 12px; }
+.sys-footer .icon p .fl { float: left; padding: 3px; }
+.sys-footer .icon p .fr { float: right; width: 72px; padding: 5px 3px 0 3px; }/*  |xGv00|6d270e4341649254cbc38c0c7bb56609 */
+
+/*  |xGv00|eae8c4aad319660746c9e37701c5ef98 */

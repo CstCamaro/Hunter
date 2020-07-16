@@ -1,0 +1,486 @@
+@charset "gb2312";
+/* CSS Document */
+
+html, body, div, span, em, p, strong, i, ul, ol, dl, dt, dd, h1, h2, h3 {
+	margin:0px;
+	padding:0px;
+}
+html.body{background:rgb(125,180,35); }
+em, i {
+	font-style:normal;
+}
+img {
+	border:0 none;
+	vertical-align:top;
+}
+ul, ol, dl {
+	list-style:none;
+}
+a {
+	color:#3d3d3d;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+body {
+	font-family:"΢���ź�";
+	margin:0px auto;
+	background:url(//mat1.gtimg.com/zj/images/2014worldcup/bg.jpg) -1px;
+}
+/*bg*/
+.bg {
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	background:url(//mat1.gtimg.com/zj/images/2014worldcup/top_bg.jpg) center top no-repeat;
+}
+.logobox {
+	width:470px;
+	height:60px;
+	margin:0 auto;
+	margin-top:100px;
+}
+.clockbox {
+	width:960px;
+	height:100px;
+	margin:0 auto;
+	margin-top:160px;
+}
+.timebox {
+	width:350px;
+	height:30px;
+	line-height:30px;
+	margin-left:220px;
+	text-align:center;
+	font-family:MicroSoft YaHei;
+	font-size:26px;
+	font-weight:bolder;
+	margin-top:10px;
+}
+.mainbox {
+	width:960px;
+	margin:0 auto;
+	margin-top:18px;
+	background:#fff;
+}
+.timelist {
+	width:960px;
+	height:130px;
+	background:#cfcfcf;
+	overflow:hidden;
+}
+.timelogo {
+	width:130px;
+	height:130px;
+	float:left;
+	overflow:hidden;
+	background:#194863;
+	font-family:MicroSoft YaHei;
+	font-size:22px;
+	color:#fff;
+	font-weight:bolder;
+	text-align:center;
+	line-height:130px;
+}
+.listBox {
+	width:830px;
+	height:130px;
+	overflow:hidden;
+	float:left;
+}
+.leftbtn {
+	width:36px;
+	height:102px;
+	overflow:hidden;
+	border-right:1px solid #fff;
+	margin-top:15px;
+	float:left;
+}
+.leftbtn a {
+	width:36px;
+	height:102px;
+	background:url(//mat1.gtimg.com/zj/images/2014worldcup/arrow_left.jpg);
+	display:block;
+}
+.leftbtn a:hover {
+	background:url(//mat1.gtimg.com/zj/images/2014worldcup/arrow_left.jpg) left bottom;
+}
+.listbox01 {
+	width:755px;
+	height:102px;
+	overflow:hidden;
+	float:left;
+	margin-top:15px;
+}
+.rightbtn {
+	width:36px;
+	height:102px;
+	overflow:hidden;
+	border-left:1px solid #fff;
+	margin-top:15px;
+	float:left;
+}
+.rightbtn a {
+	width:36px;
+	height:102px;
+	background:url(//mat1.gtimg.com/zj/images/2014worldcup/arrow_right.jpg);
+	display:block;
+}
+.rightbtn a:hover {
+	background:url(//mat1.gtimg.com/zj/images/2014worldcup/arrow_right.jpg) left bottom;
+}
+.saiBox {
+	width:141px;
+	height:102px;
+	margin-left:5px;
+	margin-right:5px;
+	float:left;
+	background:#fff;
+}
+.teamname {
+	width:90%;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin:0 auto;
+	border-bottom:1px dotted #cfcfcf;
+	border-top:1px dotted #cfcfcf;
+	text-align:center;
+	font-family:MicroSoft YaHei;
+	font-size:14px;
+	font-weight:bolder;
+	color:#194863;
+}
+.teamname span {
+	margin-left:5px;
+	margin-right:5px;
+}
+.timedate {
+	width:80%;
+	margin:0 auto;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	margin-top:0px;
+}
+.fen {
+	width:80%;
+	margin:0 auto;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size:24px;
+}
+.fen span {
+	margin-left:5px;
+	margin-right:5px;
+}
+.fentxt {
+	width:90%;
+	margin:0 auto;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size:14px;
+	color:#878787;
+}
+/*���ֲ�*/
+.dzimgBox {
+	width:550px;
+	height:340px;
+	position:relative;
+	overflow:hidden;
+	top:0px;
+	padding:0px
+}
+.msBg {
+	width:550px;
+	height:340px;
+	position:relative;
+	overflow:hidden;
+	top:0px;
+	padding:0px;
+}
+.msList {
+	position:absolute;
+	left:0;
+	top:0;
+	height:340px;
+	width:10000px;
+	padding:0px;
+}
+.msList a {
+	width:550px;
+	height:340px;
+	display:block;
+	float:left;
+	_margin-top:-15px;
+}
+.msList a img {
+	width:550px;
+	height:340px;
+}
+.msTitle {
+	width:550px;
+	height:30px;
+	overflow:hidden;
+	background:url(http://img1.gtimg.com/zj/pics/hv1/55/161/1396/90816010.png) repeat;
+	position:relative;
+	top:-30px;
+	z-index:1001;
+}
+.msTitlebg {
+	width:245px;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	display:block;
+	position:relative;
+}
+.pnlink {
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:232px;
+	cursor:pointer;
+	z-index:2000;
+	display:block;
+	line-height:30px;
+	color:#bec0bf;
+	font-size:32px;
+	font-family:'����';
+	text-align:center;
+	top:145px;
+	font-weight:bold;
+	display:none;
+}
+.pnlink:hover {
+	text-decoration:none;
+	color:#93b7f3;
+}
+.prev {
+	left:0px;
+}
+.next {
+	right:0px;
+}
+.titleList {
+	position:absolute;
+	left:0;
+	top:0;
+	width:10000px;
+}
+.titleList a {
+	display:block;
+	height:30px;
+	width:245px;
+	float:left;
+	color:#fff;
+	font:14px/30px '����';
+	text-indent:5px;
+}
+.tgr {
+	width:70px;
+	height:20px;
+	overflow:hidden;
+	position:absolute;
+	bottom:1px;
+	right:0px;
+	z-index:1000;
+}
+.tgr .dot {
+	width:10px;
+	height:10px;
+	display:inline-block;
+	overflow:hidden;
+	background:#8d8d8f;
+	cursor:pointer;
+	float:left;
+	margin-right:4px;
+}
+.tgr .dot.current {
+	background:#93b7f3;
+}
+/**/
+.newsright {
+	width:340px;
+	height:340px;
+	margin-left:20px;
+	float:left;
+}
+.topnews {
+	width:100%;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	font-weight:bolder;
+	font-family:MicroSoft YaHei;
+	color:#dc452a;
+}
+.topnewinfo {
+	line-height:22px;
+	width:100%;
+	font-size:12px;
+	color:#878787;
+	padding-bottom:10px;
+	padding-top:5px;
+	border-bottom:1px dotted #cfcfcf;
+}
+.topnewinfo a {
+	text-decoration:none;
+	color:#dc452a;
+}
+.topnewinfo a:hover {
+	color:#194863;
+}
+.newslist {
+	width:100%;
+	height:185px;
+	line-height:38px;
+	font-size:14px;
+	color:#4a4a4a;
+}
+.newslist span {
+	margin-right:5px;
+	color:#878787;
+}
+.newslist a {
+	color:#4a4a4a;
+	text-decoration:none;
+}
+.newslist a:hover {
+	color:#dc452a;
+}
+.content02left {
+	width:590px;
+	height:630px;
+	float:left;
+	background:#fff;
+}
+.title01 {
+	width:100%;
+	height:40px;
+	color:#000;
+	line-height:40px;
+	font-family:MicroSoft YaHei;
+	font-size:18px;
+	font-weight:bolder;
+	background:#fbf200;
+	text-indent:1em;
+}
+.vidbox {
+	width:190px;
+	height:130px;
+	overflow:hidden;
+	position:relative;
+	margin-left:15px;
+	float:left;
+	margin-top:15px;
+	}
+.vidtxt {
+	width:190px;
+	height:30px;
+	background:#000;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	filter:alpha(opacity=80);  /* ie ��Ч*/
+	-moz-opacity:0.8; /* Firefox  ��Ч*/
+	opacity: 0.8; /* ͨ�ã����������? ��Ч*/
+	font-size:12px;
+	color:#fff;
+	text-align:center;
+	line-height:30px;
+	}
+.vidbox i {
+	width:34px;
+	height:34px;
+	background:url(//mat1.gtimg.com/zj/images/2014worldcup/playbtn.jpg);
+	position:absolute;
+	overflow:hidden;
+	left:5px;
+	top:60px;
+	}
+.tiebox {
+	width:320px;
+	margin-left:15px;
+	margin-top:15px;
+	height:110px;
+	overflow:hidden;
+	}
+.tiebox ul {
+	float:left;
+	}
+.txtname {
+	width:200px;
+	margin-left:10px;
+	font-family:MicroSoft YaHei;
+	font-size:14px;
+	color:#000;
+	line-height:20px;
+	height:40px;
+	}
+.tieinfo {
+	height:70px;
+	width:200px;
+	margin-left:10px;
+	line-height:23px;
+	color:#878787;
+	font-size:12px;
+	}
+.tieinfo a {
+	color:#77b121;
+	text-decoration:none;
+	}
+.tieinfo a:hover {
+	color:#dc452a;
+	}
+.pername {
+	width:90%;
+	height:30px;
+	line-height:30px;
+	margin:0 auto;
+	color:#194863;
+	font-size:14px;
+	}
+
+.txtinfo {
+width:90%;
+padding-bottom:5px;
+font-size:12px;
+	line-height:25px;
+	margin:0 auto;
+	color:#878787;
+	border-bottom:1px dotted #878787;
+	margin-bottom:10px;
+	}
+.imgnews {
+	width:960px;
+	overflow:hidden;
+	margin:0 auto;
+	margin-top:20px;	
+	}
+.imgnews li {
+	width:310px;
+	overflow:hidden;
+	height:208px;
+	float:left;
+	margin-right:15px;
+	}
+.pnlink1 {	width:30px;
+	height:30px;
+	position:absolute;
+	top:232px;
+	cursor:pointer;
+	z-index:2000;
+	display:block;
+	line-height:30px;
+	color:#bec0bf;
+	font-size:32px;
+	font-family:'����';
+	text-align:center;
+	top:145px;
+	font-weight:bold;
+	display:none;
+}
+/*  |xGv00|f050c477ae7e91d386595cee65c17806 */

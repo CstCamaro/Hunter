@@ -1,0 +1,264 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/jieqi/mangzhong/20190606-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="芒种，种植，小麦，水稻，升温，腾讯网，时光画轴，节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 19:37:21';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-06-06", //日期，格式为 年-月-日
+	"cmd_id": "3926304230", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "mangzhong2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="mangzhong2019" style="display:none;">
+<p>芒种是二十四节气之一，其字面的意思是“有芒的麦子快收，有芒的稻子可种”。《月令七十二侯集解》：“五月节，谓有芒之种谷可稼种矣。”意指大麦、小麦等有芒作物种子已经成熟，抢收十分急迫。晚谷、黍、稷等夏播作物也正是播种最忙的季节，故又称“芒种”。春争日，夏争时，“争时”即指这个时节的收种农忙。人们常说“三夏”大忙季节，即指忙于夏收、夏种和春播作物的夏管。</p>
+<p>“芒种”到来预示着农民开始了忙碌的田间生活。此时中国长江中下游地区将进入多雨的黄梅时节。</p>
+<h2>气候特征</h2>
+<p>芒种时节雨量充沛，气温显著升高。常见的天气灾害有龙卷风、冰雹、大风、暴雨、干旱等。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wFeIQOfLnCJDFjXB88sZZHiaZ7ucky42PkSQzdkUiaKNEYF7qoq49oicSzg/640?wx_fmt=jpeg" title="芒种1">
+<p>芒种时节沿江多雨，黄淮平原也即将进入雨季。华南东南季风雨带稳定，是一年中降水量最多的时节。长江中下游地区先后进入梅雨季节，雨日多，雨量大，日照少，有时还伴有低温。西南地区从6月份也开始进入了一年中的多雨季节。此时，西南西部的高原地区冰雹天气开始增多。宋人范成大的《芒种后积雨骤冷》诗：“梅霖倾泻九河翻，百渎交流海面宽。良苦吴农田下湿，年年披絮播秧寒。”绘出了阴雨连绵不止，河满沟平，农夫冒着寒冷身披棉絮播秧忙的画面。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wFBhSaYpHPtOKacgyAcryicic7w1oWiapoIS3MLPQZSxXvgOE26ibS3zF4UQ/640?wx_fmt=jpeg" title="芒种2">
+<p>在此期间，除了青藏高原和黑龙江最北部的一些地区，还没有真正进入夏季以外，大部分地区的人们，一般来说都能够体验到夏天的炎热。位于黑龙江北部的嫩江，在1971～2000年30年间，最热的一天37.1℃，就出现芒种期间。黄淮地区、西北地区东部可能出现40℃以上的高温天气，但一般不是持续性的高温。 在华南的台湾、海南、福建、两广等地，6月的平均气温都在28℃左右。</p>
+<h2>芒种农事</h2>
+<p>对中国大部分地区来说，芒种一到，夏熟作物要收获，夏播秋收作物要下地，春种的庄稼要管理，收、种、管交叉，是一年中最忙的季节。长江流域“栽秧割麦两头忙”，华北地区“收麦种豆不让晌”，真是样样都”忙”。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wFspgmOSJGAxUzV0J2lhLKyBVQHAN2vNnD5ozLtIqXPZAicmic8AcjKYrg/640?wx_fmt=jpeg" title="芒种3">
+<p>“收麦如救火，龙口把粮夺”的农谚正形象地说明了麦收季节的紧张气氛，必须抓紧一切有利时机，抢割、抢运、抢脱粒。“春争日，夏争时”，一般而言，夏播作物播种期以麦收后越早越好，以保证到秋前有足够的生长期。小麦成熟期短，收获的时间性强，天气的变化对小麦最终产量的影响极大。这时沿江多雨，黄淮平原也即将进入雨季，芒种前后若遇连阴雨天气及风、雹等，往往使小麦不能及时收割、脱粒和贮藏而导致麦株倒伏、落粒、穗上发芽霉变及“烂麦场”等，使眼看到手的庄稼毁于一旦。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wFdCkxoHmDESHsKpxxAtlzoaIZhDNXh2INfyhBqOg2ErjN9omGgwh9jA/640?wx_fmt=jpeg" title="芒种4">
+<p>大量的试验和生产实际表明，夏大豆、夏玉米、夏甘薯等作物的产量均随播(栽)期的推迟而明显降低，播(栽)过迟的甚至不能成熟，得不到任何效益。“芒种栽薯重十斤，夏至栽薯光根根”、“种豆不怕早，麦后有雨赶快搞”。麦收以后应抓紧抢种抢栽，时间就是产量，即使遇上干旱，也要积极抗旱造墒播种，切不可消极等雨，错过时机。“芒种忙，下晚秧”，南方的双季晚稻育秧要抓紧进行，要特别注意稻蓟马等病虫的防治工作。东北、西北地区的雨水仍然不多，冬、春、小麦要适时浇水追肥，做好生长后期的管理工作。大部分茶区的夏茶采制已经开始，由于气温高，芽头长得快，容易粗老，一定要及时采摘，加工细制，提高品质。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wFBsuNztxreKzxgU03jBEInQYNbmttUuh7riaFy5HB8vd8IO2hEib1g1xQ/640?wx_fmt=jpeg" title="芒种6">
+<p>芒种时节，水稻、棉花等农作物生长旺盛，需水量多，适中的梅雨对农业生产十分有利；梅雨过迟或梅雨过少甚至“空梅”的年份作物会受到干旱的威胁。但若梅雨过早，雨日过多，长期阴雨寡照，对农业生产也有不良影响，尤其是雨量过于集中或暴雨还会造成洪涝灾害。“圩田好作， 五月难过”的农谚体现了在抗灾能力极低的旧社会农民对梅雨成灾的忧虑。在“样样都忙”的芒种之时，防汛抗灾工作千万不可放松。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wFor9D6raBV1B2pQKE4PJwIibcHrUBic7Nxvl4yGNvfzuOhe2Hw6Lo8MIg/640?wx_fmt=jpeg" title="芒种7">
+<p>“芒种糜子急种谷”，糜子是一种生长期最短的禾本科植物，早熟品种80 天可以成熟，即使晚熟品种，也不超过100 天就能成熟。它是秋天作物最后播种的庄稼。所以华北地区遇到天早无雨，其它作物误了节气时，多用它来弥补，同样能获得好收成。在正常的情况下，芒种种糜子时，种谷也可以成熟，但谷子比糜子生长期长，有可能遭受冻害，因此说“芒种糜子急种谷”。</p>
+<h2>芒种民俗</h2>
+<h3>送花神</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wFAjRXnoLQwJdzAG8ch7webZjF5BvstvRvkvcugFR4q0xydfSGic5fAtA/640?wx_fmt=jpeg" title="芒种8">
+<p>农历二月初二日花朝节上迎花神。芒种已近五月间，百花开始凋残、零落，民间多在芒种日举行祭祀花神仪式，饯送花神归位，同时表达对花神的感激之情，盼望来年再次相会。此俗今已不存，但从著名小说家曹雪芹的《红楼梦》第二十七回中可窥见一斑：“（大观园中）那些女孩子们，或用花瓣柳枝编成轿马的，或用绫锦纱罗叠成千旄旌幢的，都用彩线系了。每一棵树上，每一枝花上，都系了这些物事。满园里绣带飘飘，花枝招展，更兼这些人打扮得桃羞杏让，燕妒莺惭，一时也道不尽。……”“千旄旌幢”中“千”即盾牌；旄，旌，幢，都是古代的旗子。由此可见大户人家芒种节为花神饯行的热闹场面。</p>
+<h3>安苗</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wF2Kuj9Xngp1KynlpHicynVQJkQz1fx6FUQC21fvRmEdRNsVXgDQ0fvCA/640?wx_fmt=jpeg" title="芒种9">
+<p>芒种安苗习俗安苗系皖南的农事习俗活动，始于明初。每到芒种时节，种完水稻，为祈求秋天有个好收成，各地都要举行安苗祭祀活动。家家户户用新麦面蒸发包，把面捏成五谷六畜、瓜果蔬菜等形状，然后用蔬菜汁染上颜色，作为祭祀供品，祈求五谷丰登、村民平安。</p>
+<h3>打泥巴仗</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wF2YvYoojTeNdwKb3HelPndNFwQcKZVjyibwONKSKiaEvtyDW4WYwb46PQ/640?wx_fmt=jpeg" title="芒种10">
+<p>贵州东南部一带的侗族青年男女，每年芒种前后都要举办打泥巴仗节。当天，新婚夫妇由要好的男女青年陪同，集体插秧，边插秧边打闹，互扔泥巴。活动结束，检查战果，身上泥巴最多的，就是最受欢迎的人。</p>
+<h3>煮梅</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wFl7m5ZHR6EMh0efOgFHFw7wNRcakIwLcCyyLnwRVDg4152AeBsMDvOQ/640?wx_fmt=jpeg" title="芒种11">
+<p>在南方，每年五、六月是梅子成熟的季节，三国时有“青梅煮酒论英雄”的典故。青梅含有多种天然优质有机酸和丰富的矿物质，具有净血、整肠、降血脂、消除疲劳、美容、调节酸碱平衡，增强人体免疫力等独特营养保健功能。但是，新鲜梅子大多味道酸涩，难以直接入口，需加工后方可食用，这种加工过程便是煮梅。</p>
+<h2>芒种养生</h2>
+<p>芒种时节，我国长江中、下游地区开始进人梅雨季节，持续阴雨，雨量增多，气温升高，空气非常潮湿，天气十分闷热，各种物品容易发霉，蚊虫开始孳生，极易传染疾病。</p>
+<p>根据这一气候特点，这一时期的健身养生应注意以下几个方面：</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wFqBIqsGqibZpibPf304zkRy0MmV7reLetGBuOa1ckPDXEwmR4jwSVEziaQ/640?wx_fmt=jpeg" title="芒种12">
+<p>养生tips：</p>
+<blockquote>1. 精神调养方面，应使自己保持轻松愉快的心情，忌恼怒忧郁，这样可使气机得以宣畅、通泄得以自如。</blockquote>
+<blockquote>2. 起居方面，要顺应昼长夜短的季节特点，晚睡早起，适当地接受阳光照射但要避开太阳直射、注意防暑，以顺应旺盛的阳气，利于气血运行、振奋精神；中午最好能小睡一会，时间以30分钟至1个小时为宜，以解除疲劳，利于健康。</blockquote>
+<blockquote>3. 天热易出汗，衣服要勤洗勤换，要“汗出不见湿”，因为若“汗出见湿，乃生痤疮”。</blockquote>
+<blockquote>4. 要经常洗澡，但出汗时不能立刻用冷水冲澡。</blockquote>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmTwOjKU9PUU7eRoAGGr2wFbBMXb6B3Nia3R94kQHShARr6ib7w5LDjZ11OOhFO9fvxQS5N9sWuD70g/640?wx_fmt=jpeg" title="芒种13">
+<p>进入芒种以后，尽管天气已经炎热起来，但由于我国经常受来自北方的冷空气影响，有些地区的气温有时仍很不稳定。比如东北地区在此期间有时还会出现4℃以下的低温，华北地区有时也可出现10℃左右的低温，即使是长江下游地区也曾出现过12℃以下的低温，因此在芒种时节春天御寒的衣服不要过早地收藏起来，必要时还要穿着，以免受凉。</p></div><!--[if !IE]>|xGv00|1e95feb9ab5951fff6855492090bf66b<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|90cef4bc77e69a94f70fbe7dc875d4cc<![endif]-->

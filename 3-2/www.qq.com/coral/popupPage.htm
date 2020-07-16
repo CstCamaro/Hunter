@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>牛评-个人信息弹出框</title>
+
+<link href="//mat1.gtimg.com/www/niuping2013/coral-iframe-v3.0.css" rel="stylesheet" type="text/css" media="screen"/>
+<script type="text/javascript" src="//mat1.gtimg.com/www/js/tcomment/jquery-1.6.2.min.js"></script>
+</head>
+
+<body style="background-color=transparent;overflow-y:hidden"> 
+
+
+		<div id="popupContainer" style='overflow:hidden;'>  <!--弹出框容器-->
+					
+
+<!--遮罩层-->
+<div class = 'maskObj' id = 'maskObj'>
+	
+	
+	
+</div>					
+					
+					<!--弹出层-->
+<div class='popObj' id ='popObj' style='block'>
+	
+		<div class ='head'>
+		
+			<div class='info'>	
+		
+				<div class ='userPic'>
+					<a href="javascript:void(0)"><img src="" width=80></a>
+				</div>
+				
+				<div class ="name">
+				
+				  <div class="upandnum">
+					 <strong></strong>
+					
+					 <span class='area'></span><span class="upvote">被顶(<i></i>)</span><span class="num"><i></i>条评论</span>
+					 
+				   </div>		
+				</div>
+				
+			
+			</div>
+
+			<div class="close"></div>
+		</div>
+		
+		
+	
+		
+		<div class ="popContent " id="popContent">
+		
+			<div class="popInner">
+			
+				<div id="div2">	
+			
+					<div id="div3">
+			
+						<div class="my-comments">
+			
+					             <div id="my-notice" class="my-notification ">
+								 
+									<div class="tipInfo waitting">
+						
+						
+						
+									</div>
+								 
+								 
+									<ul id="popInfo" class="post-list">
+									
+									 
+									  
+									</ul>
+									<div class="loadMore" id="loadPopInfo" style="display:none"><span>加载更多</span><em style="display:none; background:#ccc;"></em></div>
+								</div>
+						
+		
+					     </div>
+		
+					</div>
+				
+				</div>
+				
+				<div id="parent">
+					
+					<div id="div1">
+					
+					</div>
+				
+					<div class="bottom">
+					
+					
+					</div>
+				
+				</div>
+		
+		
+			</div>
+
+		</div>
+	
+	</div>
+
+
+		</div>
+		
+		
+		<script type='text/javascript'>
+				
+				document.domain = 'qq.com';
+					
+					
+					function loadJs(){
+					
+							//var nowId = $(parent.document.body).find('#commentIframe').attr('data');
+							
+							
+							var nowId = $(top.document.body).find('#popUpmask').attr('data');
+							
+							//console.log(nowId);
+					
+							// 获取父窗口
+
+							/*********** 初始化 **************/
+							
+							var windowHeight = $(top.window).height();
+							var bodyHeight =  $(top.document.body).height();
+							var maxHeight = bodyHeight > windowHeight ? bodyHeight : windowHeight; // 获取当前页面高度最大值 
+						
+							// 初始化样式表
+							
+							if(parent.registerCoralEvent){
+								
+								if(parent.registerCoralEvent.ownStyle){
+
+									$('head').append('<link href="'+ parent.registerCoralEvent.ownStyle +'" rel="stylesheet" type="text/css" media="screen"/>');
+								
+								}
+							
+							}else{
+							
+								if(top.document.getElementById('main_frame')){
+									
+									$('head').append('<link href="'+ top.document.getElementById('main_frame').contentWindow.document.getElementById('detial_frame').contentWindow.registerCoralEvent.ownStyle +'" rel="stylesheet" type="text/css" media="screen"/>');
+								
+								}
+
+							}
+													
+							$(top.document.body).find('#popUpmask').height(windowHeight);
+							
+							$('#maskObj').height(windowHeight).show();
+							$('#popObj').height($(top.window).height()*0.8);
+
+							//alert(nowId);
+
+							if(nowId){
+							
+								$('#popInfo').html('');
+													
+								if(parent.document.getElementById('commentIframe')){
+									
+									parent.document.getElementById('commentIframe').contentWindow.popupContent(nowId);
+								
+								}else{  // 兼容电脑管家
+								
+										top.document.getElementById('main_frame').contentWindow.document.getElementById('detial_frame').contentWindow.document.getElementById('commentIframe').contentWindow.popupContent(nowId);
+										
+								}
+						
+							}
+							
+							
+							
+							$('#loadPopInfo>span').unbind().click(function(){     // 更多个人评论 弹出框
+								
+									$('#loadPopInfo>span').hide();
+									$('#loadPopInfo>em').css('display','block').html('加载中...');
+									
+									if(parent.document.getElementById('commentIframe')){
+										parent.document.getElementById('commentIframe').contentWindow.clickLoadMroe(nowId,1);	
+									
+									}else{   // 兼容电脑管家
+									
+											top.document.getElementById('main_frame').contentWindow.document.getElementById('detial_frame').contentWindow.document.getElementById('commentIframe').contentWindow.clickLoadMroe(nowId,1);	
+										
+									}
+																	
+									//parent.document.getElementById('commentIframe').contentWindow.clickLoadMroe(nowId,1);	
+	
+							});
+							
+							
+							
+							/* 初始化 */
+							
+							$('#loadPopInfo').hide();
+							$('#loadPopInfo>span').css('display','block');
+							
+							$('#popObj .userPic').find('img').attr('src','//mat1.gtimg.com/news/dc/images/user.png'); 
+							$('#parent').hide();
+							$('#div1').css('top','0px');
+							$('#div3').css('top','0px');
+							
+							
+							var meanwhile = function(){
+								
+									$('#popContent').height($('#popObj').height()- 120);
+									$('#popContent .popInner').height($('#popObj').height()- 140);
+									$('#div2').height($('#popContent .popInner').height());
+									$('#parent').height($('#popContent .popInner').height());
+									$('#div1').css('height',$('#parent').height()*$('#div2').height()/$('#div3').height());
+									$('#div1').css('top','0px');
+								    $('#div3').css('top','0px');										
+							}
+							
+							
+							if ($.browser.msie && ($.browser.version == '6.0') && !$.support.style) {  //  ie6 兼容
+							
+									$(top.document.body).find('#popUpmask').height($(top.document.body).height());
+									$(top.document.body).find('#popUpmask').css('top',$(top.window).scrollTop());	
+									$(top.window).scroll(function(){
+
+										$(top.document.getElementById('popUpmask')).css('top',$(top.window).scrollTop());	
+							
+									});	
+
+									meanwhile();
+	
+							}
+
+							/*********** 窗口大小发生改变 重置方法 **************/// 
+							
+							$(top.window).resize(function(){	
+							
+								$('#popObj').height($(top.window).height()*0.8);
+								
+                                $('#popObj').css('top',$(top.window).height()*0.1);									
+							
+								 if($(top.document.getElementById('popUpmask'))){
+									$(top.document.getElementById('popUpmask')).height($(top.window).height());	 
+								 }
+								 
+								 $('#maskObj').height($(top.window).height()).show();
+								 meanwhile();
+								
+							});
+
+							/*********** 弹出评论框 **************/// 
+							
+							$('#popObj').css('top',$(top.window).height());
+							
+							$('#popObj').stop().animate({top:$(top.window).height()*0.1},300).show();
+
+							
+							
+							$('#popInfo').delegate('.spreadMoreBtn','click',function(){
+									$(this).prev().css('height','');
+									$(this).hide();
+									//_this.iframeHeight();
+							});
+							
+							
+							
+							
+							/*********** 关闭评论框 **************/// 
+							
+							
+							var popClose = function(){
+										
+											
+											if($.browser.msie && ($.browser.version == '6.0') && !$.support.style){
+												
+												$('#popObj').stop().animate({top:$(top.window).scrollTop() + $(top.window).height()},300).show();
+												
+											}else{
+											
+												$('#popObj').stop().animate({top:windowHeight},300); 
+											}
+											
+											setTimeout(function(){$('#popObj').hide()},301);  // 兼容ie6
+											
+											$(top.document.getElementById('popUpmask')).hide(); // 删除弹出的iframe
+
+										
+							}
+							
+							$('#maskObj').unbind().click(function(){	
+											popClose();
+							});
+							$('#popObj').find('.close').unbind().click(function(){ 								
+											popClose();
+										
+							});
+							
+							meanwhile();
+							popScroll();
+							
+							
+					}
+					
+					
+					function popScroll(){
+							
+								var oDiv=$('#div1');
+								var oDiv2=$('#div2');
+								var oDiv3=$('#div3');
+								var oParent=$('#parent');
+								oParent.bind('mousewheel',function(ev){onMouseWheel(ev)});  // ie & chrome
+								oParent.bind('DOMMouseScroll',function(ev){onMouseWheel(ev)});
+								oDiv3.bind('mousewheel',function(ev){onMouseWheel(ev)});
+								oDiv3.bind('DOMMouseScroll',function(ev){onMouseWheel(ev)});
+
+								function onMouseWheel(ev)
+								{
+									//ev=ev||window.event;
+									var bDown=true;
+									if(ev.originalEvent.wheelDelta){
+										bDown=ev.originalEvent.wheelDelta<0;
+									}
+									else{
+										bDown=ev.originalEvent.detail>0;
+									}
+									var l=0;
+									if(bDown){
+										if(oDiv3.height()>oDiv2.height()){
+											l=oDiv3.position().top-20;
+										}else{return;
+										}
+									}
+									else{
+										if(oDiv3.height()>oDiv2.height()){
+											l=oDiv3.position().top+20;
+										}else{return;	
+										}
+									}
+									moveSlide(l);
+									if(ev.preventDefault)
+									{
+										ev.preventDefault();
+									}
+								}
+								function moveSlide(l)  // 滚动
+								{
+									if( -l < 0 ){
+										l = 0;
+									}
+									else if( -l > oDiv3.height()- oDiv2.height())
+									{
+										l = -(oDiv3.height()- oDiv2.height());
+									}
+									
+									oDiv3.css('top',l);
+									
+									var scale= -(l)/(oDiv3.height()- oDiv2.height());
+									oDiv.css('top',(oParent.height() - oDiv.height())*scale);
+								}
+								
+								 function moveDownSlide(l) // 拖动
+									{
+										if(l<0)
+										{
+											l=0;
+										}
+										else if(l > oParent.height()-oDiv.height())
+										{
+											l=oParent.height()-oDiv.height();
+										}
+										oDiv.css('top',l);
+										var scale=l/(oParent.height()-oDiv.height());
+										oDiv3.css('top',-(oDiv3.height()-oDiv2.height())*scale);
+									}
+								
+								//原来的滚动条
+								
+								
+								oDiv.bind('mousedown',function(ev){
+								
+									ev=ev||window.event;
+									var disY=ev.clientY-oDiv.position().top;
+									$(document).bind('mousemove',function(ev){
+									
+										ev=ev||window.event;
+										
+										var l=ev.clientY-disY;
+										
+										moveDownSlide(l);  // 调用拖动
+									
+									});
+									
+									$(document).bind('mouseup',function(ev){
+										$(document).unbind('mousemove');
+										$(document).unbind('mouseup');
+									});
+									$(document).bind('selectstart',function(ev){  // 防止页面内容被选中 IE 
+										return false;
+									});
+									
+								});
+								
+								$(document).bind('mouseup',function(ev){
+								
+									$(document).unbind('selectstart');
+								
+								});
+							}
+
+							
+					
+					
+				
+				    loadJs($(parent.document.body).find('#commentIframe').attr('data'));
+				
+		
+		
+		</script>
+
+
+</body>
+</html><!--[if !IE]>|xGv00|af864198c92275421730c2d96e0f2fd7<![endif]-->

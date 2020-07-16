@@ -1,0 +1,167 @@
+BODY {
+	FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 21px; background-color:#F0F0F0
+}
+
+TD {
+	FONT-SIZE: 12px;  LINE-HEIGHT: 21px
+}
+SELECT {
+	FONT-SIZE: 12px; LINE-HEIGHT: 21px
+}
+DIV {
+	FONT-SIZE: 12px;  LINE-HEIGHT: 21px 
+}
+INPUT {
+	FONT-SIZE: 12px; 
+}
+A {
+	TEXT-DECORATION: none
+}
+
+A {	COLOR: #000000
+}
+A:visited {
+	COLOR: #000000
+}
+A:hover {
+	TEXT-DECORATION: underline; color:#ff0000
+}
+H2 {COLOR: #000000;}
+
+.font_w_b {
+	FONT-WEIGHT: bold
+}
+.color_red {
+	COLOR: #CC0000
+}
+A.color_red {
+	COLOR: #CC0000
+}
+A.color_red:hover {
+	COLOR: #CC0000
+}
+A.color_red:active {
+	COLOR: #CC0000
+}
+A.color_red:visited {
+	COLOR: #CC0000
+}
+.color_black {
+	COLOR: #000000
+}
+A.color_black {
+	COLOR: #000000
+}
+A.color_black:active {
+	COLOR: #000000
+}
+A.color_black:hover {
+	COLOR: #000000
+}
+A.color_black:visited {
+	COLOR: #000000
+}
+.zt_banner {
+	
+}
+.zt_banner IMG {
+	
+}
+.zt_nav {
+	COLOR: #efefef; LINE-HEIGHT: 30px; HEIGHT: 32px; BACKGROUND-COLOR: #002E4B
+}
+.zt_nav A:link {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; COLOR: #fff; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+.zt_nav A:visited {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; COLOR: #fff; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+.zt_nav A:hover {
+	BACKGROUND: #4C4C4C
+}
+
+/* 有标题有边框1 */
+
+.zt_u_1 { border:none
+}
+.zt_u_1 .zt_u_title {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style4/t_bg.gif) ; HEIGHT: 34px
+}
+.zt_u_1 .zt_u_title .zt_u_name {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style4/t_title1.gif) no-repeat;PADDING-LEFT: 32px; color:#333333; FONT-WEIGHT: bold; FONT-SIZE: 14px; FLOAT: left; LINE-HEIGHT: 34px
+}
+.zt_u_1 .zt_u_title .zt_u_more {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style4/t_title2.gif) no-repeat right; PADDING-RIGHT: 15px; FONT-SIZE: 12px; FLOAT: right; LINE-HEIGHT: 34px
+}
+.zt_u_1 .zt_u_body {
+	BORDER-RIGHT: #E5E5E5 1px solid; BORDER-TOP: #E5E5E5 1px solid; BORDER-LEFT: #E5E5E5 1px solid; BORDER-BOTTOM: #E5E5E5 1px solid
+}
+/* 有标题有边框2 */
+
+.zt_u_1a {border:none; background-color:#FFFFFF
+}
+.zt_u_1a .zt_u_title {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style4/t_bg2.gif) ; HEIGHT: 34px
+}
+.zt_u_1a .zt_u_title .zt_u_name {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style4/t_title3.gif) no-repeat;PADDING-LEFT: 22px;color:#333333; FONT-WEIGHT: bold; FONT-SIZE: 12px; FLOAT: left; LINE-HEIGHT: 34px
+}
+.zt_u_1a .zt_u_title .zt_u_more {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style4/t_title4.gif) no-repeat right; PADDING-RIGHT: 15px; FONT-SIZE: 12px; FLOAT: right; LINE-HEIGHT: 34px
+}
+.zt_u_1a .zt_u_title .zt_u_more a {
+	color:#333333; 
+}
+.zt_u_1a .zt_u_body {
+	BORDER-RIGHT: #E5E5E5 1px solid; BORDER-TOP: #E5E5E5 1px solid; BORDER-LEFT: #E5E5E5 1px solid; BORDER-BOTTOM: #E5E5E5 1px solid
+}
+
+/* 有标题无边框1 */
+
+.zt_u_2 {
+	
+}
+.zt_u_2 .zt_u_title {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style4/t_bg3.gif)  ; HEIGHT: 27px
+}
+.zt_u_2 .zt_u_title .zt_u_name {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style4/t_title5.gif) no-repeat;PADDING-LEFT: 15px; color:#333333; FONT-WEIGHT: bold; FONT-SIZE: 14px; FLOAT: left; LINE-HEIGHT: 27px
+}
+.zt_u_2 .zt_u_title .zt_u_more {
+	PADDING-RIGHT: 15px; FONT-SIZE: 12px; FLOAT: right; LINE-HEIGHT: 27px;
+}
+/* 有标题无边框2 */
+
+.zt_u_2a { background-color:#FFFFFF
+	
+}
+.zt_u_2a .zt_u_title {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style4/t_bg4.gif)  ; HEIGHT: 34px
+}
+.zt_u_2a .zt_u_title .zt_u_name {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style4/t_title6.gif) no-repeat;PADDING-LEFT: 30px; color:#333333; FONT-WEIGHT: bold; FONT-SIZE: 12px; FLOAT: left; LINE-HEIGHT: 34px
+}
+.zt_u_2a .zt_u_title .zt_u_more {
+	PADDING-RIGHT: 15px; FONT-SIZE: 12px; FLOAT: right; LINE-HEIGHT: 34px;
+}
+/* 无标题有边框 */
+
+.zt_u_3 {
+	BORDER-RIGHT: #E5E5E5 1px solid; BORDER-TOP: #E5E5E5 1px solid; BORDER-LEFT: #E5E5E5 1px solid; BORDER-BOTTOM: #E5E5E5 1px solid;BACKGROUND: url(//mat1.gtimg.com/news/2009/0906/mb/bg01.gif)  no-repeat; background-color:#FFFFFF
+}
+.zt_u_3 .zt_u_body {
+	
+}
+
+/* 无标题无边框 */
+
+.zt_u_4 { background-color:#FFFFFF
+	
+}
+.zt_u_4 .zt_u_body {
+	
+}
+.zt_u_sp {
+	CLEAR: both; OVERFLOW: hidden; HEIGHT: 10px
+}
+/*  |xGv00|41563161f92704cdf7510e2b7aaa39c8 */

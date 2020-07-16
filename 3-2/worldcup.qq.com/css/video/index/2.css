@@ -1,0 +1,96 @@
+body{margin:0;padding:0; font-size:12px;}
+form,p,div,ul,li,input,select,pre{margin:0;padding:0;}
+td,body,{font-size:12px; text-decoration: none;}
+a{color:#333; text-decoration: none;}
+a:hover{color: #FF0000; text-decoration: underline;}
+img{border:none; padding:0; margin:0;}
+ul,li{list-style:none;}
+.dis{display:block;}
+.undis{display:none;}
+	
+.bai,.bai a{color:#fff;}
+	.bai a:hover{color: #FF0000;}
+	
+.lan,.lan a{color:#2a507d;}
+	.lan a:hover{color: #FF0000;}
+	
+.hong,.hong a{color:#e31b1b;}
+	.hong a:hover{color: #FF0000;}
+	
+.lv,.lv a{color:#13810b;}
+	.lv a:hover{color: #FF0000;}
+	
+.hui,.hui a{color:#686868;}
+	.hui a:hover{color: #FF0000;}
+	
+.qhui,.qhui a{color:#9d9d9d;}
+	.qhui a:hover{color: #FF0000;}
+	
+.ftsz14{font-size:14px;}	
+.ht18{font-family:"∫⁄ÃÂ"; font-size:18px;}
+
+.ti_2{text-indent:2em;}
+		
+.lh_24{line-height:24px;}
+.lh_30{line-height:30px;}
+.lh_26{line-height:26px;}
+.lh_22{line-height:22px;}
+.lh_20{line-height:20px;}
+
+.mgt_10{margin-top:10px;}
+.mgt_15{margin-top:15px;}
+.mgt_20{margin-top:20px;}
+
+.bg_tx{background-position:top; background-repeat:repeat-x;}
+.bg_bx{background-position:bottom; background-repeat:repeat-x;}
+.bg_tln{background-position:top left; background-repeat:no-repeat;}
+.bg_trn{background-position:top right; background-repeat:no-repeat;}
+
+.bd_1{border:1px solid #e5e4e9; border-top:none;}
+.bd_2{border-bottom:1px dashed #d2d1d9;}
+.bd_3{border:1px solid #e4f1e4; border-top:none;}
+.bd_4{border-left:1px solid #d8dfe9; border-right:1px solid #d8dfe9;}
+.bd_5{border:1px solid #d8dfe9; border-top:none;}
+.bd_6{border-left:1px solid #d8dfe9;}
+.bd_7{border-right:1px solid #d8dfe9;}
+
+
+.pic_1 img{border:1px solid #d6d6d6; padding:2px; background:#fff;}
+.pic_2 img{border:1px solid #d6d6d6;}
+
+.fl{float:left;}
+.fr{float:right;}
+/* ”∆µlogo*/
+.box_1{position:relative;}
+.box_1 img{border:1px solid #d6d6d6; padding:2px; background:#fff;}
+.box_1 .pic_logo{width:25px; height:25px; background:url(//mat1.gtimg.com/worldcup/video/newindex/splogo.png) !important; background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/worldcup/video/newindex/splogo.png', sizingMethod='scale'); position:absolute; bottom:11px; left:8px; cursor:pointer;}
+.box_2{position:relative; width:226px; height:86px;}
+.box_2 img{border:1px solid #d6d6d6; padding:2px; background:#fff;}
+.box_2 .pic_logo{width:45px; height:45px; background:url(//mat1.gtimg.com/worldcup/video/newindex/splogo_b.png) !important; background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/worldcup/video/newindex/splogo_b.png', sizingMethod='scale'); position:absolute; bottom:20px; left:91px;cursor:pointer;}
+
+/*Ωπµ„Õº*/
+#focus{width:530px; height:495px; position:relative;}
+#fc{position:absolute; top:5px; left:5px;}
+.beijingceng{width:520px; height:60px; position:absolute; top:334px; left:5px; background:url(//mat1.gtimg.com/worldcup/video/newindex/bg_1.png) !important; background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/worldcup/video/newindex/bg_1.png', sizingMethod='scale');}
+.shipinlogo{width:45px; height:45px; background:url(//mat1.gtimg.com/worldcup/video/newindex/splogo_b.png) !important; background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/worldcup/video/newindex/splogo_b.png', sizingMethod='scale'); position:absolute; top:176px; left:242px;}
+#con{width:520px; height:60px; position:absolute; top:334px; left:5px;}
+#con .a{display:block; color:#fff;}
+#con .b{display:none; color:#fff;}
+#num{width:525px; height:94px; position:absolute; top:401px; left:0px; padding-left:5px;}
+#num li{float:left; width:130px; text-align:center; cursor:hand;}
+#num .nos img{background:url(//mat1.gtimg.com/worldcup/video/newindex/jd_bg_1.jpg); padding:15px 8px 8px;}
+#num .s{padding-top:12px;}
+#num .s img{border:1px solid #d5d7d4; padding:2px; background:#fff;}
+
+#tab1{width:335px; height:30px; background:url(//mat1.gtimg.com/worldcup/video/newindex/bg_23.jpg) right bottom no-repeat; margin:0 auto;}
+#tab1 div{width:90px; height:27px; padding-top:3px; line-height:27px; text-align:center; color:#2b527b; font-size:14px; cursor:pointer; float:left;}
+#tab1 span{width:3px; height:30px; background:url(//mat1.gtimg.com/worldcup/video/newindex/bg_19.jpg); float:left;}
+#tab1 .over{background:url(//mat1.gtimg.com/worldcup/video/newindex/bg_18.jpg); font-weight:bold;}
+#tab1 .out{background:url(//mat1.gtimg.com/worldcup/video/newindex/bg_20.jpg);}
+#tabb1{width:335px; margin:0 auto;}
+
+#tab2,#tab3{width:150px; height:30px;}
+#tab2 span,#tab3 span{width:1px; height:30px; background:url(//mat1.gtimg.com/worldcup/video/newindex/bg_65.jpg); float:left;}
+#tab2 div,#tab3 div{width:49px; height:27px; padding-top:3px; line-height:27px; text-align:center; cursor:pointer; float:left;}
+#tab2 .over,#tab3 .over{background:url(//mat1.gtimg.com/worldcup/video/newindex/bg_67.jpg);}
+/*  |xGv00|aec7b3611660113f829f6aba15494379 */

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>企鹅号</title>
+<link rel="shortcut icon" href="//mat1.gtimg.com/om/om_2.0/images/favicon_om.ico"/>
+<link rel="stylesheet" href="https://mat1.gtimg.com/om/detail/css/cyshare.min.css"/>
+<link rel="stylesheet" href="https://mat1.gtimg.com/om/detail/css/player_inews.min.css"/>
+
+</head>
+<body ontouchstart="">
+
+	
+<div class="container">
+
+	<div class="info-404">
+		<div class="infoBox">
+	        <div class="backpng">
+	          <img src="https://mat1.gtimg.com/www/images/newsapp/cyshare/404.png">
+	        </div>
+	        <div class="des1">内容被删除</div>
+	        <p class="des2">这篇文章从地球上消失了</p> 
+        </div>  
+      </div>
+
+</div>
+<!-- container/ -->
+
+
+
+
+</body>
+</html>

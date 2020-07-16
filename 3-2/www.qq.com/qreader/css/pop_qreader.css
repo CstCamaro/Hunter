@@ -1,0 +1,59 @@
+/* 
+@charset "utf-8";
+=======================================================
+	文件名：pop_share.css
+	作者：g_ISRD_Web_Rebuilder Jeanne
+	说明：分享弹出层
+=======================================================
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0; }
+ul, ul li { list-style-type:none; }
+fieldset, img { border:0 none; }
+fieldset legend, table caption { display:none; }
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; }
+button, label { cursor:pointer; border:0 none; }
+table { border-collapse:collapse; border-spacing:0; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+body, input, textarea, button, select { font-size:12px; font-family:Arial, Sans-Serif; }
+.none { display:none !important; }
+* html{overflow:hidden;overflow-y:auto;}
+html,body{overflow:hidden;overflow-y:auto;}
+/*=S 浮动层 */
+.share_layer { overflow:hidden; padding:7px; position:absolute; z-index:999;zoom:1;}
+.share_layer_main{ border:1px solid #CED3E4; background-color:#FAFCFF; position:relative; z-index:5; height:225px; }
+.share_layer_title { height:32px; background:#F5F5FB url(//mat1.gtimg.com/www/qreader/images/pop_bg.png) repeat-x; cursor:move; border-bottom:1px solid #CED3E4; }
+.share_layer_title h3 { float:left; height:28px; color:#0B3B8C; font-size:13px; text-indent:8px; line-height:32px; overflow:hidden; font-family:Arial, Helvetica, sans-serif; }
+.share_layer_title button { background:url(//mat1.gtimg.com/www/qreader/images/pop_bg.png) no-repeat 0 -39px; float:right; width:9px; height:10px; margin-right:5px;*margin-right:10px; /*line-height:100px;*/ cuusor:pointer; margin-top:10px; }
+.share_layer_cont a:link, .share_layer_cont a:visited { color:#5F5F5F; text-decoration:underline; }
+.share_layer_cont a:hover, .share_layer_cont a:active { color:#494949; }
+.share_layer_cont { color:#000000; background-color:#FAFCFF;}
+.share_layer_hint { color:#9E9E9E; font-style:normal; }
+.global_tip_button { text-align:center; clear:both; width:100%;}
+.bt_tip_sure, .bt_tip_cancel { background-image:url(//mat1.gtimg.com/www/qreader/images/pop_bg.png); background-repeat:no-repeat; background-position:0 -58px; font-size:12px; line-height:19px; width:48px; height:23px; margin-right:6px; *overflow:visible;
+_padding-top:3px; _line-height:12px; cursor:pointer; }
+*:lang(zh) .bt_tip_sure, .bt_tip_cancel {padding-top /*\**/:4px\9}
+.bt_tip_cancel { color:#4D637F; background-color:#F3F4F5; background-position:-54px -58px; }
+.icon_hint_warn, .icon_hint_succeed { background:transparent url(//mat1.gtimg.com/www/qreader/images/pop_bg.png) no-repeat; display:-moz-inline-stack; display:inline-block; height:15px; width:15px; vertical-align:middle; }
+.icon_hint_warn { background-position:-39px -37px; _vertical-align:-2px; }
+.icon_hint_succeed { background-position:-18px -37px; }
+.layer_popup { background-color:#FFFFFF; border:2px solid #6792bc; }
+.icon_hint_warn span, .icon_hint_succeed span { display:none; }
+.share_layer .bg {position:absolute;top:0;left:0;height:100%;padding:500px;background:rgba(33,33,33,0.2);*background-color:#333333;*filter:alpha(opacity=30);zoom:1;}
+/*=E 浮动层 */
+.share_cont_input { padding:25px 20px 15px; }
+.share_cont_input .share_tit { zoom:1; overflow:hidden; display:block; text-overflow:ellipsis; -o-text-overflow:ellipsis; word-break:keep-all; white-space:nowrap; white-space:nowrap; -icab-text-overflow: ellipsis; -khtml-text-overflow: ellipsis; -moz-text-overflow: ellipsis; -webkit-text-overflow: ellipsis; word-break:keep-all; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; *width:356px;}
+*:lang(zh) .share_cont_input .share_tit {height /*\**/:13px\9}
+
+.form_share_option { position:relative; border:1px solid #A3B6D3; background-color:#FFFFFF; padding:0 1px; margin-top:10px; overflow:hidden;}
+.form_share_option textarea { width:100%;*width:100%;_width:350px;border:0 none;overflow-x:hidden; overflow-y:auto; color:#000000; background-color:#FFFFFF; }
+.form_share_option .form_watermark { position:absolute; top:4px; left:3px; color:#C9C7C7; }
+.textarea_warning { border:1px solid #EEB21E; }
+
+.share_layout_tips { margin-top:10px; text-align:center; font-family:Tahoma, Geneva, sans-serif; }
+.share_cont_status { padding-top:60px; text-align:center; }
+.share_cont_status .share_layout_tips { font-size:14px; }
+.share_cont_status .share_layout_tips a:link, .share_cont_status .share_layout_tips a:visited { color:#097FD1; text-decoration:none; }
+.share_cont_status .share_layout_tips .icon_hint_succeed { vertical-align:-2px;}
+.share_cont_status .share_cont_status_tips { color:#808080; margin-top:16px; }
+/*  |xGv00|845c055fa58ca0106037d4b527af88be */

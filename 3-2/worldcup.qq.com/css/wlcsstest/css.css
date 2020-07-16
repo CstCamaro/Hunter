@@ -1,0 +1,63 @@
+body,div,h1,h2,h3,ul,li,table,td,th,img{margin:0px; padding:0px}
+body{font:12px/1.75 "宋体",Verdana,sans-serif; line-height:21px; color:#333; background-color:#fff; }
+img{border:0px; padding:0px}
+ul,li{list-style:none}
+p{display:inline}
+h1,h2,h3,th{font-size:100%; font-weight:normal}
+/***********************************************/
+
+/*******************通用定义*********************/
+a{color:#333;text-decoration:none}
+a:hover{color:#f00;text-decoration:none}
+
+div.sdmenu {
+	width: 162px; font-size:14px; color:#238817;
+}
+div.sdmenu div {
+	background: url(//mat1.gtimg.com/worldcup/wltestdiceng/_fold_10.jpg) no-repeat;overflow: hidden;color:#238817; width:162px;
+}
+* html div.sdmenu div{
+    float:left
+}
+div.sdmenu div.collapsed {
+	height: 31px;
+}
+div.sdmenu div span {
+	display: block;line-height:31px;width:140px;font-weight: bold;color: #238817;cursor: pointer; margin-left:10px;
+}
+/*div.sdmenu div span a{
+    padding:0; background:none; border:0; font-size:14px;line-height:32px;display:block
+}*/
+
+div.sdmenu div.collapsed {
+	background: url(//mat1.gtimg.com/worldcup/wltestdiceng/_extend_10.jpg) no-repeat; width:162px; color:#238817
+}/*未展开那些一级菜单的样式*/
+div.sdmenu div.collapsed span{
+    color:#238817; line-height:31px
+}/*一级菜单点击之后样式*/
+/*div.sdmenu div.collapsed span a.current{
+    color:#ad8634;
+}*/
+
+
+div.sdmenu div a {
+	padding-left:16px;display: block;color: #333;font-size:12px;  line-height:24px; text-align:left; cursor:pointer; line-height:24px
+}/*二级菜单本身样式*/
+div.sdmenu div a:hover{text-decoration:none}
+
+div.sdmenu div a.current {
+	height:24px; line-height:24px; background:url(//mat1.gtimg.com/worldcup/wltestdiceng/onbg.jpg) no-repeat; cursor:pointer; padding-left:16px; font-weight:bold; color:#fff
+}/*二级菜单点击之后样式*/
+
+/*div.sdmenu div span a.current {
+	background:url(//mat1.gtimg.com/worldcup/wltestdiceng/no1_03.jpg) no-repeat; color:#fff
+}*/
+div.sdmenu div a.onmouse {background:url(//mat1.gtimg.com/worldcup/wltestdiceng/bgon2.jpg) no-repeat}
+div.sdmenu div a.offmouse {background:none}
+
+/*div.sdmenu div a:hover {
+	height:24px; line-height:24px; background:url(//mat1.gtimg.com/worldcup/wltestdiceng/bgon2.jpg) no-repeat; cursor:pointer; padding-left:16px;
+}*/
+/*div.sdmenu div span a:hover {
+	height:24px; line-height:24px; background:url(//mat1.gtimg.com/worldcup/wltestdiceng/onbg.jpg) no-repeat; cursor:pointer; padding-left:16px; font-weight:bold; color:#fff
+}*//*  |xGv00|4eee245744b618d2636d89d04ff67cbf */

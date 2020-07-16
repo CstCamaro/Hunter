@@ -1,0 +1,83 @@
+@charset "gb2312";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,button,textarea,select,p,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+img{border:0}
+em,input,option,select,strong,textarea,th{font:inherit}
+ul,ol,li{list-style:none}
+th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+a{color:#7e7e7e;text-decoration:none}
+a:hover{color:#c00;text-decoration:none}
+.cf:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+.cf{*zoom:1}
+.fl{float:left}
+.fr{float:right}
+body{background:#000;font:12px "ËÎÌå","Arial Narrow",HELVETICA;}
+.layout{width:1000px;margin:0 auto;}
+.top_bar{position:relative;height:56px;background:url(//mat1.gtimg.com/yslp/images/top_bar.jpg) repeat-y center top;position:fixed;width:100%;z-index:100;}
+.top_logo_box{position:relative;padding-left:81px;width:210px;height:56px;margin-left:17px;}
+.top_logo{position:absolute;top:0;left:0;height:88px;width:80px;background:url(//mat1.gtimg.com/yslp/images/top_logo.png) no-repeat scroll 0 0;}
+.top_yslp{display:inline-block;width:110px;height:56px;background:url(//mat1.gtimg.com/yslp/images/ori_non.jpg) no-repeat scroll 0 0;vertical-align:top;}
+.top_yslp_en{display:inline-block;width:90px;margin-left:8px;vertical-align:bottom;color:#7a4e2d;padding-bottom:5px;font-family: Arial, Helvetica, sans-serif;}
+.top_nav{display:block;}
+.top_nav li{display:block;float:left;height:56px;}
+.top_nav li a{display:inline-block;height:56px;line-height:56px;color:#ddd;padding:0 25px;}
+.top_nav li a:hover,.top_nav li a.active{background-color:#489719;}
+.top_nav li.disable a{color:#7A4E2D;}
+.top_nav li.disable a:hover{background:none;cursor:default;}
+
+.bg_1{height:550px;background:url(//mat1.gtimg.com/yslp/images/bg_1.jpg) no-repeat scroll center 0;position:relative;}
+.bg_1 .zpj_btn{background-color:#378C12;border-radius:8px;color:#FFFFFF;display:block;font:20px/52px "Î¢ÈíÑÅºÚ";height:52px;left:90px;padding-right:10px;position:absolute;text-align:center;top:441px;width:168px;position:absolute;left:50%;margin-left:-135px;}
+.bg_1 .zpj_btn:hover{background-color:#296D0B;}
+
+.bg_2{height:473px;background:url(//mat1.gtimg.com/yslp/images/bg_2.jpg) no-repeat scroll center 0}
+.bg_3{height:500px;background:url(//mat1.gtimg.com/yslp/images/bg_3.jpg) no-repeat scroll center 0}
+.bg_4{background:url(//mat1.gtimg.com/yslp/images/bg_4.jpg) no-repeat scroll center 0 #000}
+
+.con_box{padding-left:275px}
+.con_box .tit_box{padding:35px 0 8px 107px;}
+.tit_box h2{height:30px;line-height:30px;background:url(//mat1.gtimg.com/yslp/images/s_yslp.png) no-repeat scroll 0 0; text-indent:-9999px;}
+.con_box .p1, .con_box .p2{background-color:#4a4a4a;color:#fff;font:12px/20px "ËÎÌå";display:inline-block;margin-top:10px;padding:0 5px;width:490px;}
+.con_box .p2{background-color:#277305;font-size:14px;}
+.wedo h2{width:180px;}
+.cellect_content h2{width:114px;background-position:0 -60px;}
+.cultural h2{width:230px;background-position:0 -120px;}
+.cultural p{color:#fff;font:12px/20px "ËÎÌå";padding-left:15px;text-indent:2em;margin-top:8px;width:560px;}
+.require h2{width:495px;background-position:0 -180px;}
+.notice h2{width:115px;background-position:0 -240px;}
+.reap h2{width:160px;background-position:0 -300px;}
+.submit h2{width:115px;background-position:0 -360px;}
+.submit{height:217px;position:relative;}
+.submit .download_btn{display:block;height:52px;width:168px;background-color:#378c12;position:absolute;top:80px;left:90px;color:#fff;text-align:center;border-radius:8px;font:20px/52px "Î¢ÈíÑÅºÚ";padding-right:10px;}
+.submit .download_btn .d_triangle{display:block;height:0;width:0;overflow:hidden;size:0;border:8px solid #378c12;border-top:8px solid #fff;position:absolute;top:25px;right:15px;}
+.submit .download_btn:hover{background-color:#296d0b;}
+.submit .download_btn:hover .d_triangle{border:8px solid #296d0b;border-top-color:#fff;}
+.con_box h3{color:#4aaa20;font:14px/24px "ËÎÌå";padding-left:15px;font-weight:bold;}
+.con_box ol{padding-left:35px;width:535px;}
+.con_box ol li{color:#B1B1B1;font:14px/24px "ËÎÌå";text-indent:-1em;}
+.submit ol li{color:#4aaa20;}
+.contact{position:relative;width:725px;height:95px;}
+.contact ul{padding-left:15px;margin-top:36px;}
+.contact ul li{color:#fff;margin-bottom:10px;font-family:"Î¢ÈíÑÅºÚ";background:url(//mat1.gtimg.com/yslp/images/s_yslp.png) no-repeat scroll -475px 0;}
+.contact ul li.time{}
+.contact ul li.email{background-position:-475px -49px}
+.contact ul li.url{background-position:-475px -102px}
+.contact ul li .txt{font-size:16px;margin:0 50px;}
+.contact ul li .con{font-size:18px;}
+.contact ul li .con em{font-size:14px;}
+.contact .gw_btn{display:block;height:52px;width:168px;background-color:#8a5529;position:absolute;top:0;left:90px;color:#fff;text-align:center;border-radius:8px;font:20px/52px "Î¢ÈíÑÅºÚ";}
+.contact .gw_btn:hover{background-color:#653d1c}
+
+.links_box{padding:25px 0 20px;}
+.links_box a{margin-right:35px;}
+.links_box .gap{display:inline-block;height:57px;border-left:1px solid #2e2e2e;overflow:hidden;size:0;margin-right:35px;}
+.mr0{margin-right:0!important;}
+.pics_box{padding:40px 0}
+.pics_box .item{float:left;margin:0 8px 8px 0;}
+.foot_box{padding:20px 0;background-color:#fff;}
+#tcopyright, #tcopyright a{color:#7e7e7e}
+#tcopyright a:hover{color:#bd0a01;}
+
+    
+
+/*  |xGv00|db52d9c7518b83e077c96f9c9f5fe4ce */

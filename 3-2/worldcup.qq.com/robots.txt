@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:  
+Sitemap: http://www.qq.com/sitemap_index.xml
+Sitemap: http://worldcup.qq.com/topic_sitemap.xml
+Sitemap: http://worldcup.qq.com/datalib.xml

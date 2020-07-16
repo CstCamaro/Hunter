@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>搜索_腾讯汽车</title>
+    <meta name="keywords" content="汽车，腾讯汽车，手机，汽车大全，车型大全，汽车报价，汽车图片、汽车评测、汽车资讯，汽车新闻，评测" />
+    <meta name="description" content="腾讯汽车触屏版为您提供厂商名称车系名称系列车型报价，参数配置、图片,经销商、试驾、降价、论坛等信息。" />
+    <meta charset="gbk" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="x5-page-mode" content="app" />
+    <link rel="dns-prefetch" href="//img1.gtimg.com">
+    <link rel="dns-prefetch" href="//mat1.gtimg.com">
+    <link rel="dns-prefetch" href="//auto.qq.com">
+    <link rel="dns-prefetch" href="//d.auto.qq.com">
+    <link rel="dns-prefetch" href="//pingjs.qq.com">
+    <link rel="dns-prefetch" href="//wecar.qq.com">
+    <!--样式文件，如有更新，修改此处版本号即可-->
+    <link type = "text/css" rel="stylesheet" href = "//mat1.gtimg.com/auto/css/mobi/main_180508.css" />
+  </head>
+  <body>
+
+    <!--headTrap<body></body><head></head><html></html>-->
+<script type="text/javascript">
+  function hasClass(el, n){
+    if(!el || !el.className){
+      return false;
+    }
+    return el.className != el.className.replace(new RegExp('\\b' + n + '\\b'),'');
+  }
+
+  function addClass(el, n){
+    if(el){
+      if(!el.className){
+        el.className = n;
+      }
+      else if(!hasClass(el, n)){
+        el.className += ' ' + n;
+      }
+    }
+  }
+function getQs(t,e){e||(e=document.URL),t=t.replace(/[\[\]]/g,"\\$&");var n=new RegExp("[?&]"+t+"(=([^&#]*)|&|#|$)"),r=n.exec(e);return r?r[2]?decodeURIComponent(r[2].replace(/\+/g," ")):"":null}
+  var COMEFROM = getQs('comefrom');
+  var ISNIGHT = location.href.match(/themetype=1/);
+  if(COMEFROM){
+    COMEFROM = COMEFROM[1];
+
+    addClass(document.body, COMEFROM);
+
+    // 快报使用新闻客户端UI
+    if(COMEFROM == 'kb') {
+      addClass(document.body, 'newsApp');
+    }
+  }
+  if(ISNIGHT){//夜间模式
+    addClass(document.body, 'night');
+  }
+
+  var QosSS={};
+  QosSS.t=[];
+  QosSS.t[0]=+new Date();
+</script><!--[if !IE]>|xGv00|11239225d5b48b7d05e2758ed4e46852<![endif]-->
+<header class = "logo">
+  <a href="/" boss="{sOp:'btnLogo'}"><span class = "hdLogo">&nbsp;</span></a>
+  <span class="loc"><em>北京</em><i></i></span>
+  <span class="gochannels"></span>
+  <span class = "hdSearch"></span>
+  <a class = "hdApp" href="qqcar://start" boss="{sOp:'downQQCarTop'}"></a>
+</header>
+     <header class="serialHd">
+      <div><!--<i class = "backIcon"></i>--><a class="backIcon" href="#" _href="http://w.auto.qq.com/"></a>搜索</div>
+    </header>
+    <section class = "input"> 
+	<!--	<input type ="text" style = "display:none;" />	
+	     <input type ="search"  autocomplete="off" class = "inputBox" placeholder = "车型名称/拼音"/>-->
+      <span class="btn"><i class="searchIcon"></i></span>
+ <form  method="get" action = "//w.auto.qq.com/search.shtml">
+      <input type="search" id="txtkeyword" name="txtkeyword" size="10" class="inputBox" placeholder="车型名称/拼音" autocomplete="off">
+      <i class = "delInput"></i>
+
+                <input type ="text" style = "display:none;" />
+      </form>
+    </section>
+    <section class = "searchList">
+       <ul style = "">
+        
+       </ul> 
+    </section>
+    <section class = "navContent">
+        <ul style = "border-top:1px solid #E5E5E5;display:none;">
+        </ul>
+    </section>
+    <section class = "loadMore">
+       
+    </section>
+ <script type="text/javascript">
+var CTRLFLAG = 1;
+</script><!--[if !IE]>|xGv00|5c66d8fa1a1ac9dcedfc73228864b2a6<![endif]-->
+    <script type="text/javascript">
+    var JSCFG ={"pages\/demo":"140922a","core":"180621c","lib\/newsJsBridge":"170522","lib\/kuaibaoJsBridge":"160317","lib\/qqcarJsBridge":"161104a","module\/SideSlide":"151104","module\/CityList":"150512","module\/ImageSlide":"141218","module\/enquiry":"171206","module\/sideDown":"141001","module\/carModel":"140929","module\/Checker":"150506","module\/AppGuide":"150205","module\/SearchPlug":"151125","module\/PopUp":"150115","module\/BrandList":"151208","module\/God":"180621","module\/TouchSlide":"160616","pages\/select_filter":"160322","pages\/brand_filter":"160505","pages\/serial_summary":"180901","pages\/serial_config":"180621a","pages\/serial_images":"160412","pages\/image_show":"170516","pages\/model_summary":"180123a","pages\/onsales_detail":"170905","pages\/search":"160713","pages\/icar":"160712","pages\/home":"181217","pages\/news":"160405","pages\/newsdetail":"160701","pages\/photo":"170419","pages\/club_detail":"170713","pages\/baike":"171026","router\/index":"180621b","module.AppGuide":"160405","module.Checker":"170711a","module.Loc":"180621","module.tips":"150804","module.ImageSlide":"160704a"}
+    var pageType = 8001;
+    function getParam(name){
+      var reg = new RegExp("(^|&|\\?|#)" + name + "=([^&#]*)(&|$|#)", ""); 
+      var r = arguments[1] ? arguments[1].match(reg) : window.location.search.match(reg); 
+      if (r!=null) return unescape(r[2]); return null; 
+    }
+    var keyword = getParam('txtkeyword');
+    if(keyword){
+      document.getElementsByTagName('form')[0].childNodes[1].value = decodeURIComponent(keyword);
+    }
+    </script>
+  <script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript" src="//tajs.qq.com/h5?sId=500000560"></script>
+<script language="javascript" src="//mat1.gtimg.com/auto/js/common/module.badjs.js"></script>
+<script language="javascript" src="//mat1.gtimg.com/auto/js/lib/mobiJsBridge_161214.js"></script>
+<script type="text/javascript">
+  function loadScript(src, callback, charset){
+    var el=document.createElement('script');
+
+    if(callback){
+      el.onload=el.onerror=el.onreadystatechange=function(){
+        var s=this.readyState;
+        if(!s || (s && (s == 'loaded' || s == 'complete'))){
+          callback(src);
+        }
+      }
+    }
+
+    el.type='text/javascript';
+    el.src=src;
+    el.async='true';
+    if(charset){
+      el.charset = charset;
+    }
+
+    document.getElementsByTagName('head')[0].appendChild(el);
+  }
+  
+  function addSheet(url){
+    var css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.type = 'text/css';
+    css.href = url;
+    
+    document.getElementsByTagName('head')[0].appendChild(css);
+  }
+  
+  function NanoEvtProxy(){
+      this.handlers={};
+      this.isbinded={};
+  }
+  
+  NanoEvtProxy.prototype={
+    constructor:NanoEvtProxy,
+    on:function(type,handler){
+      if(typeof this.handlers[type]=='undefined'){
+        this.handlers[type]=new Array();
+      }
+      this.handlers[type].push(handler);
+    },
+    off:function(type,handler){
+      if(this.handlers[type] instanceof Array){
+        var handlers=this.handlers[type];
+        for(var i=0,len=handlers.length;i<len;i++){
+          if(handler[i]==handler){
+            handlers.splice(i,1);
+            break;
+          }
+        }
+      }
+    },
+    trigger:function(type, data){
+      if(this.handlers[type] instanceof Array){
+        var handlers=this.handlers[type];
+        for(var i=0,len=handlers.length;i<len;i++){
+          handlers[i](data);
+        }
+      }
+      this.isbinded[type] = true;
+    },
+    detect:function(type){
+      return this.isbinded[type];
+    }
+  }
+  
+  var nanoEvtProxy = new NanoEvtProxy();
+
+  if(window.COMEFROM == 'newsApp'){
+    //提供给ios调用的方法
+    var mutex = false;
+    window.onJsBridgeReady = function(){
+      if(mutex){
+        return;
+      }
+      try{
+        nanoEvtProxy.on('iosnews:settit', function(data){
+          jsBridge.postNotification('setTitle', {
+            title : data.value
+          });
+        });
+        nanoEvtProxy.trigger('iosnews:ready');
+      }catch(e){
+
+      }
+      mutex = true;
+    }
+  }
+
+  window.versionCb=function(vers, css){//获取版本号
+    var jsConf={
+      base : '//mat1.gtimg.com/auto/js/',
+      vers : vers
+    };
+    var core_key='core';
+    var cdn = (!window.sBiz ? 'mobi/' : window.sBiz + '/');
+    var mobiBase = jsConf.base + cdn;
+    var core_src=[mobiBase, core_key, '_', vers[core_key] + '.js'].join('');
+    
+    //页面未输出js配置，默认为测试环境
+    if(!window.JSCFG){
+      addSheet('//mat1.gtimg.com/auto/css/mobi/main_' + css.main + '.css');
+      document.body.style.display = 'block';
+    }
+    if(window.singlejs){//单js文件
+      var jssrc = [mobiBase, window.singlejs, '_', vers[window.singlejs] + '.js'].join('');
+      loadScript(jssrc, function(){
+        seajs.use(window.singlejs, function(Page){
+          Page.init();
+        });
+      });
+    }
+    else{
+      loadScript(core_src, function(){
+        var vers={};
+        //seajs配置
+        $.each(jsConf.vers, function(idx, ver){
+          var value = idx + '_' + ver + '.js';
+          if(/^lib\/.*/.test(idx)){//"lib/xxx"模块放在公共目录中
+            value = jsConf.base + value;
+          }
+          else if(/^module\..*/.test(idx)){//"module.xxx"公共模块
+            value = jsConf.base + 'common/' + value;
+          }
+          vers[idx]=value;
+        });
+        seajs.config({
+          base : mobiBase,
+          alias : vers
+        });
+
+        //程序入口
+        seajs.use(window.entry ? window.entry : 'router/index', function(entry){
+          var page = (typeof pageType == 'undefined' ? '' : pageType)
+          entry.init(page);
+        });
+      });
+    }
+  }
+
+  //CTRLFLAG - 1:走页面配置;其他:走接口
+  if(window.JSCFG && window.CTRLFLAG == 1){
+    versionCb(window.JSCFG);
+  }
+  else{
+    loadScript('//d.auto.qq.com/getjs/index?callback=versionCb&biz=' + window.sBiz);
+  }
+
+  if(typeof(pgvMain) == 'function'){
+    pgvMain();
+  }
+</script>
+<!--tailTrap<body></body><head></head><html></html>--><!--[if !IE]>|xGv00|47ab4d261a68bc3657e9e63e14f18da0<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html><!--[if !IE]>|xGv00|8362af9cdd711ea20578f7a0cb80b6b6<![endif]-->

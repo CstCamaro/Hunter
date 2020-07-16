@@ -1,0 +1,1741 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="keywords" content="施瓦格勒，施瓦格勒，瑞士，Pirmin Schwegler，世界杯，南非世界杯，施瓦格勒简介，施瓦格勒资料，施瓦格勒图片，施瓦格勒近况，2010世界杯,2010南非世界杯,足球,worldcup">
+<meta name="description" content="腾讯2010南非世界杯专题, 提供最快速最全面最直观的世界杯新闻报道, 最专业最精确的球队球员资料和数据, 这里还有梅西独家中文博客，让您和国际巨星零距离交流">
+<link href="//mat1.gtimg.com/worldcup/css/datalib/index.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="http://www.qq.com/js/datalib/ui.js?v=100308"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/www/js/swfobjectopt.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/news/js/TencentJS.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/worldcup/js/datalib/ScrollPic.js"></script>
+<script language="javascript">
+var $ = function (d){
+    typeof d == "string" &&(d = document.getElementById(d)); 
+    return $.fn.call(d);
+};
+$.fn = function (){
+	this.$ADD = function (fn){CLS.add(this,fn)};
+	this.addEvent = function (sEventType,fnHandler){
+		if (this.addEventListener) {this.addEventListener(sEventType, fnHandler, false);} 
+	    else if (this.attachEvent) {this.attachEvent("on" + sEventType, fnHandler);} 
+	    else {this["on" + sEventType] = fnHandler;}
+	}
+	this.removeEvent = function (sEventType,fnHandler){
+		if (this.removeEventListener) {this.removeEventListener(sEventType, fnHandler, false);} 
+	    else if (this.detachEvent) {this.detachEvent("on" + sEventType, fnHandler);} 
+	    else { this["on" + sEventType] = null;}
+	}
+	return this;
+};
+var Class = {create: function() {return function() { this.initialize.apply(this, arguments); }}};
+var Bind = function (obj,fun,arr){return function() {return fun.apply(obj,arr);}}
+var Marquee = Class.create();
+Marquee.prototype = {
+  initialize: function(id,name,out,speed) {
+    this.name = name;
+	this.box = $(id);
+	this.out  = 10;//滚动间隔时间,单位秒
+	this.speed = speed;
+	this.box.style.position = "relative";
+	this.box.scrollTop = 0;
+	var _li = this.box.firstChild;
+	while(typeof(_li.tagName)=="undefined")_li = _li.nextSibling;
+	this.lis = this.box.getElementsByTagName(_li.tagName);
+	this.len = this.lis.length;	
+	this.d = this.len;
+	for(var i=0;i<this.lis.length;i++){
+	    var __li = document.createElement(_li.tagName);
+		__li.innerHTML = this.lis[i].innerHTML;
+		this.box.appendChild(__li);
+		if(this.lis[i].offsetTop>=this.box.offsetHeight)break;
+	}
+	this.Start();
+	this.box.addEvent("mouseover",Bind(this,function(){clearTimeout(this.timeout);},[]));
+	this.box.addEvent("mouseout",Bind(this,this.Start,[]));
+  },
+  Start:function (){
+	  clearTimeout(this.timeout);
+	  this.timeout = setTimeout(this.name+".Up()",this.out*1000)
+  },
+  Up:function(){
+	  clearInterval(this.interval);
+	  this.interval = setInterval(this.name+".Fun()",10);
+  },
+  Fun:function (){
+      this.box.scrollTop-=this.speed;
+	  if(this.lis[this.d].offsetTop >= this.box.scrollTop){
+	    clearInterval(this.interval);
+		this.box.scrollTop = this.lis[this.d].offsetTop;
+		this.Start();
+		this.d--;
+	  }
+	  if(this.d <= 1){
+	     this.d = this.len;
+	     this.box.scrollTop = 0;
+	  }
+  }
+};
+$(window).addEvent("load",function (){
+marquee = new Marquee("message_marquee","marquee",1,1);
+});
+</script>
+
+<style>
+/*******************重定义*********************/
+body,div,h1,h2,h3,ul,li,td,th,img{margin:0px; padding:0px}
+body{font:12px/1.75 "宋体",Verdana,sans-serif; line-height:21px; color:#333; background-color:#fff; }
+img{border:1px #CCCCCC solid; background:#fff; padding:1px}
+ul,li{list-style:none}
+h1,h2,h3,th{font-size:100%; font-weight:normal}
+/***********************************************/
+
+/*******************通用定义*********************/
+a{color:#333;text-decoration:none}
+a:hover{color:#f00;text-decoration:underline}
+.alleft td{text-align:left}
+.alcenter td{text-align:center}
+.alcenter{text-align:center}
+.alright td{text-align:right}
+strong{font-weight:bold}
+.ti2{text-indent:2em}
+.heiti{font-family:"黑体"}
+.tohoma{font-family:"tahoma"}
+.verdana{font-family:"Verdana"}
+.cwhite{color:#fff}
+.bgcol666{background-color:#f5f5f5}
+.cschoolname{color:#015098}
+.cschoolname a{color:#015098}
+.cschoolname a:hover{color:#f00}
+.tdheng{width:608px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/tdheng_07.gif) repeat-y}
+.thheng{width:608px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/thheng_07.gif) repeat-y}
+.dis{display:block}
+.undis{display:none}
+.oh{overflow:hidden}
+.fl{float:left}
+.fr{float:right}
+.f10{font-size:10px}
+.f12{font-size:12px}
+.f14{font-size:14px}
+.f14 a{font-size:14px}
+.f14 a:hover{font-size:14px}
+.f16{font-size:16px}
+.f18{font-size:18px}
+.f20{font-size:20px}
+.fwb{font-weight:bold}
+.fwn{font-weight:normal}
+.mt5{margin-top:5px}
+.ml5{margin-left:5px}
+.mt10{margin-top:10px}
+.mt14{margin-top:14px}
+.mt15{margin-top:15px}
+.ml10{margin-left:10px}
+.ml14{margin-left:14px}
+.ml15{margin-left:15px}
+.ml9{margin-left:9px}
+.pt9{padding-top:9px}
+.pt2{padding-top:2px}
+.pt3{padding-top:3px}
+.pt6{padding-top:6px}
+.pl10{padding-left:10px}
+.pl12{padding-left:12px}
+.pl13{padding-left:13px}
+.pl15{padding-left:15px}
+.pl18{padding-left:18px}
+.pl22{padding-left:22px}
+.pl45{padding-left:45px}
+.pl6{padding-left:6px}
+.pl5{padding-left:5px}
+.pr10{padding-right:10px}
+.pr12{padding-right:12px}
+.pr30{padding-right:30px}
+.pl30{padding-left:30px}
+.pb4{padding-bottom:4px}
+.mb10{margin-bottom:10px}
+.pr5{padding-right:5px}
+.pt11{padding-top:11px}
+
+.lh12{line-height:12px}
+.lh16{line-height:16px}
+.lh18{line-height:18px}
+.lh19{line-height:19px}
+.lh20{line-height:20px}
+.lh22{line-height:22px}
+.lh23{line-height:23px}
+.lh24{line-height:24px}
+.lh25{line-height:25px}
+.lh26{line-height:26px}
+.lh27{line-height:27px}
+.lh28{line-height:28px}
+.lh29{line-height:29px}
+.lh30{line-height:26px}
+.lh31{line-height:31px}
+.lh38{line-height:38px}
+.lh32{line-height:32px}
+.lh33{line-height:33px}
+.lh36{line-height:36px}
+.lh40{line-height:40px}
+.lh46{line-height:46px}
+
+.clr{width:100%;line-height:0;height:0;font-size:0;clear:both;}
+.wrap{width:960px; margin:0 auto}
+.blankd10{height:10px}
+.yingwen{font-family:"verdanna"}
+.col666{color:#666666}
+.col666 a{color:#666}
+.col666 a:hover{color:#f00}
+.lc{color:#1044BA}
+.lc a{color:#1044BA}
+.lc a:hover{color:#1044BA}
+.lc2{color:#333}
+.lc2 a{color:#333}
+.lc2 a:hover{color:#1044BA}
+/**************/
+.headnav{width:960px; height:40px;}
+.headnav img{border:0px; padding:0px}
+.rigco{color:#999999}
+.qiuyuanbanner{width:570px; height:43px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/gq/t_t497.png) no-repeat; padding-top:15px; padding-left:70px; font-size:14px; color:#fff; font-weight:bold}
+.headpic{width:122px; height:162px}
+.left1{width:610px; border:1px #D8D8D8 solid; padding:14px}
+.left11{width:122px; float:left}
+.zhichita{width:122px; height:67px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/zhichitabg_18.jpg) no-repeat}
+.canjia{width:122px; height:109px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/zhibobg_20.gif) no-repeat}
+.canjia img{border:1px #CCCCCC solid; padding:0px}
+.nob img{border:0px; padding:0px}
+.left12{width:473px;float:left; margin-left:15px; padding-top:7px}
+.linebg1{width:473px; height:24px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/linebg1_11.gif) no-repeat}
+.qiuyuanjianjie{width:473px}
+.qiuyuanwenzi{width:473px; height:91px}
+.left12 ul{height:68px; line-height:22px;}
+.left12 li{height:22px; background:url(//mat1.gtimg.com/worldcup/images/datalib/tibg_03.gif) left center no-repeat; padding-left:2px; line-height:22px; *line-height:21px; _line-height:21px;padding-top:1px;*padding-top:2px;_padding-top:3px; overflow:hidden}
+.benjiebiaoxian{width:473px; height:98px; padding-top:9px}
+.left2,.left3,.left4,.left5{width:640px; margin-top:10px}
+.mode_col_l .hd{width:625px; height:33px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/lefthdbg_15.gif) no-repeat; font-size:14px;padding-left:15px; line-height:33px; font-weight:bold}
+.mode_col_l .bd{width:610px; border:1px #d8d8d8 solid; border-top:0px; padding:14px}
+.bt{border:1px #d8d8d8 solid}
+.mode_col_r .bd .weibo{width:290px; height:360px; overflow:hidden}
+.mode_col_r .bd .weibo div{width:290px; padding-top:10px; padding-bottom:10px;  border-bottom:1px solid #999; border-bottom-style:dotted}
+.mode_col_r .bd .weibo a:link{color:#1044BA}
+.mode_col_r .bd .weibo a:visited{color:#1044BA}
+.bt_nb{border:1px #d8d8d8 solid; border-bottom:0px}
+.mode_col_l .tuwen{width:610px}
+.mode_col_l .wenzi{width:486px; float:right}
+.line2{width:610px; height:1px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/leftline_23.gif) no-repeat; margin-top:15px; margin-bottom:10px}
+.left2 span{float:right;font-family:"tahoma"; font-size:12px; color:#666666}
+.left2 li{height:24px}
+.shipin{width:325px; height:291px; float:left; padding-top:5px}
+.optlist{width:279px; float:right}
+.optoff{width:270px; height:69px;clear:both;float:left;background-color:#fff; padding-left:9px; padding-top:5px; cursor:pointer}
+.opton{width:270px; height:69px;clear:both;float:left;background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/onbg_31.gif) no-repeat; padding-left:9px; padding-top:5px; cursor:pointer}
+.tex{width:178px; float:right;}
+.left4 .hd1{width:638px; border:1px #d8d8d8 solid; border-bottom:0px;}
+.left4 .hd1on{width:80px; height:32px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/off1bg_35.gif) no-repeat; text-align:center; font-weight:bold; float:left; line-height:32px; cursor:pointer}
+.left4 .hd1off{width:80px; height:32px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/on1bg_34.gif) no-repeat; text-align:center; font-weight:normal; float:left; line-height:32px; cursor:pointer}
+.left4 .hd1right{width:478px; height:32px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/rightbg_36.gif) no-repeat; float:left}
+.bdb td{border-bottom:1px #D8D8D8 solid}
+.colorchange{background-color:#E9E9E9}
+.right1{width:310px;}
+.mode_col_r .hd{width:295px; height:33px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/righthd_03.gif) no-repeat;font-size:14px;padding-left:15px; line-height:35px;overflow:hidden; font-weight:bold}
+.mode_col_r .bd{width:290px; background-color:#F4F4F4; padding:10px}
+.mode_col_r .bder{width:278px; background-color:#F4F4F4;padding:14px 16px}
+.mode_col_r .hder{width:280px; height:32px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/righthd2_05.gif) no-repeat; font-size:12px; padding-left:30px; line-height:35px;overflow:hidden; font-weight:bold}
+.mode_col_r .tuwen{width:290px;}
+.mode_col_r .wenzi{width:229px; float:right; color:#666}
+.scrollbox img{border:0px; padding:0px;}
+.lioff{background-color:#F5F5F5}
+.lion{background-color:#E9E9E9}
+.line3{width:290px; height:1px; margin-top:10px; margin-bottom:10px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/line2_11.gif); overflow:hidden}
+.blankd14{height:14px};
+.picbox{width:290px;}
+.picbox1{width:74px; height:104px; float:left; text-align:center; line-height:30px; overflow:hidden;}
+.shuxianbg{width:34px; height:104px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/shuxianbg_03.gif) no-repeat; float:left}
+.line4{width:290px; height:3px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/line3_20.gif) no-repeat}
+.mode_col_r .hder1{width:310px; height:33px; line-height:35px; overflow:hidden}
+.mode_col_r .hderon{width:66px; height:33px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/rightonbg_22.gif) no-repeat; font-weight:bold; text-align:center; float:left; cursor:pointer}
+.mode_col_r .hderoff{width:66px; height:33px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/rightoffbg_23.gif) no-repeat; font-weight:normal; text-align:center; float:left; cursor:pointer}
+.mode_col_r .hderright{width:112px; height:33px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/rightright_24.gif) no-repeat; float:left}
+.piaoshu{color:#D0221C; font-size:14px; font-weight:bold;line-height:21px;overflow:hidden;}
+.zhichitaoff{width:112px; height:27px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/zhichitaoff_18.gif) no-repeat; text-align:center; font-size:14px; font-weight:bold; padding-top:5px; cursor:pointer}
+.zhichitaon{width:112px; height:27px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/zhichitaon_18.gif) no-repeat; text-align:center; font-size:14px; font-weight:bold; padding-top:5px; cursor:pointer}
+.scrollbox{ width:610px; border:1px solid #E1E1E1; border-top:0px;clear:both; overflow:hidden; position:relative; padding:14px; padding-bottom:0px}
+.pane {border:none;clear:both;margin-bottom:10px;overflow:hidden;position:relative; width:2000px; margin:0px; padding:0px}
+.pane .pohto .box:hover,.pane .pohto .on .box {background-color:#E9E9E9;border:1px #CEDAEA solid;zoom:1;}
+.pane .pohto .box {display:block;width:140px;height:140px;padding:0px;border:1px solid #E9E9E9;text-align:center;position:relative;background:#FFF 50% 50% no-repeat;overflow:hidden;}
+.pane .pohto li {float:left;zoom:1;margin-right:14px;text-align:center;display:inline; margin-left:0px; }
+.buttonarea{width:60px;}
+.buttonarea img{border:0px; padding:0px}
+.pr14{padding-right:14px}
+.mysearch{height:27px; width:310px; padding-top:4px; position:relative; padding-top:10px}
+.mysearch input{width:220px; height:19px; float:left; border:1px #D3D3D1 solid; line-height:21px; overflow:hidden}
+.mysearch button{width:80px; float:right;}
+.mysearch label{position:absolute; left:3px; line-height:25px; color:#666}
+.optlist li{margin:0px;}
+.rightbuqi{width:310px; height:556px; background-color:#f4f4f4}
+.flashc{width:325px; height:291px; float:left; padding-top:5px}
+
+.hack1{margin-top:0;*margin-top:-20px;font-size:12px}
+.cp{cursor:pointer}
+.button1{background:url(//mat1.gtimg.com/worldcup/images/datalib/qy/buttonbg_03.gif) no-repeat; width:79px; height:21px; line-height:21px; text-align:center; border:0px;}
+.mode_col_21{background:url(//mat1.gtimg.com/worldcup/images/datalib/daheng_03.gif) top center repeat-y}
+</style>
+<script>
+function paimingshow(i)
+	{
+							for (x=1;x<=3;x++)
+								{
+									document.getElementById("hder"+x).className=(x==i)?"hderon":"hderoff";
+									document.getElementById("tablewl"+x).className=(x==i)?"dis":"undis";
+									}
+						}
+function changecolor(o){   
+								  for(var i=0;i<o.cells.length;i++)
+     									o.cells[i].style.backgroundColor="#E9E9E9";     
+								  }   
+							  function backcolor(o){   
+								  for(var i=0;i<o.cells.length;i++)
+     									o.cells[i].style.backgroundColor=""; 
+								  }
+function show2(i)
+							{
+								setTimeout(function(){
+								for (x=1;x<=2;x++)
+								{
+								document.getElementById("tupian"+x).className=(x==i)?"hd1on":"hd1off";
+								document.getElementById("pane"+x).className=(x==i)?"dis pane":"undis pane";
+								document.getElementById("bt"+x).className=(x==i)?"buttonarea fr pr14 dis":"buttonarea fr pr14 undis";
+								}
+								},300);
+							}  
+							function changeon(o,lr)
+							{
+								o.src="//mat1.gtimg.com/worldcup/images/datalib/qy/to"+lr+"on"+"_03.gif";
+							}
+							function changeoff(o,lr)
+							{
+								o.src="//mat1.gtimg.com/worldcup/images/datalib/qy/to"+lr+"off"+"_03.gif";
+							}
+function nope(o)
+						{
+							document.getElementById("labelnope").style.display='none';	
+						}
+</script>
+
+
+<title>施瓦格勒_球员库_2010南非世界杯_腾讯网</title>
+</head>
+
+<body>
+<style>
+/*导航 */
+.daohang2{width:100%;margin:0 auto;overflow:hidden;zoom:1;background:#fff;}
+#topNavShow{font-size:12px;}
+#topNavShow ul,#topNavShow li{list-style:none;margin:0;padding:0;}
+#topNavShow a{font-size:12px;text-decoration:none;}
+#topNavShow img{border:none;}
+
+.dis{display:block;}
+.undis{display:none;}
+
+.ar_box{width:960px;margin:0 auto;background:#fff;}
+.ar_box .linkmap{float:left;padding-left:3px;}
+.ar_box .linkmap img{display:block;border:0;}
+.cl{clear:both;}
+.ar_topNav{height:60px;background:url(//mat1.gtimg.com/worldcup/daohang2/nav07.png) repeat-x;}
+.ar_navLink{background:#edf4f9;width:152px;height:18px;line-height:18px;float:right;text-align:center;color:#b8b8b8;margin:8px 10px 0 0;}
+.ar_navLink a{font-size:12px;color:#575757;text-decoration:none;}.ar_navLink a:hover{color:#c00;text-decoration:none;}
+#ar_Fod_list div{float:left;}
+#ar_navT2{width:44px;}
+#ar_navT3{width:66px;}
+#ar_navT4{width:82px;}
+#ar_navT5{width:96px;}
+#ar_navT7{width:90px;}
+#ar_navT2 a,#ar_navT3 a,#ar_navT4 a,#ar_navT5 a,#ar_navT7 a{text-align:center;color:#fff;display:block;font-size:14px;height:30px;line-height:30px;}
+#ar_Fod_list div.soly2,#ar_Fod_list div.soly2 a,#ar_Fod_list div.soly2 a:hover{background:#fff;color:#333;font-weight:bold;text-decoration:none;}
+.ar_topNav li{line-height:29px;color:#b0c1cd;}
+.ar_topNav .green{color:#1b5800;}
+.ar_topNav ul a{color:#1b5800;}
+.ar_topNav ul a:hover{color:#0c4c99;text-decoration:none;}
+</style>
+<!--导航 -->
+<div class="daohang2">
+<div class="ar_box">
+	<div class="linkmap"><img src="//mat1.gtimg.com/worldcup/images/imgcss_article_qq/danhang2_top.png" width="516" height="45" border="0" usemap="#Map">
+		<map name="Map" id="Map">
+			<area shape="rect" coords="1,5,105,40" href="http://www.qq.com/" target="_blank"/>
+			<area shape="rect" coords="118,2,504,43" href="http://worldcup.qq.com" target="_blank"/>
+		</map>
+	</div>
+	<div class="ar_navLink"><a href="http://www.qq.com/">腾讯网首页</a> | <a href="http://3gqq.qq.com/portal/index.jsp?type=worldcup">手机世界杯</a></div>
+	
+</div>
+<div class="cl"></div>
+<div class="ar_topNav" id="topNavShow">
+<table width="960" border="0"  cellpadding="0" cellspacing="0" align="center" style="margin:0 auto">
+				<tr>
+					<td height="30" align="center" id="ar_Fod_list" style="padding-left:8px;">
+					<div onMouseOver="fodoly2(this)" class="soly2" id="ar_navT5"><a href="http://worldcup.qq.com/">世界杯首页</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/l/news.htm">新闻</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/picture/">图片</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/video/">视频</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/zhibo/">直播</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/schedule/">赛程</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/master/">数据</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT7"><a href="http://worldcup.qq.com/goalflash/">3D模拟进球</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT3"><a href="http://worldcup.qq.com/data/">资料库</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT4"><a href="http://worldcup.qq.com/qxzj/">前线直击</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT5"><a href="http://worldcup.qq.com/interview/">第一演播厅</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://blog.qq.com/worldcup/">博客</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/comment/">评论</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://blog.qq.com/t/2010worldcup/">微博</a></div>
+                    <div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/subjects/">专题</a></div>
+                    <div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT4"><a href="//my.worldcup.qq.com/">球迷中心</a></div>
+					</td>
+				</tr>
+				<tr>
+					<td height="29" align="center">
+					
+<!--世界杯首页-->
+<ul class="dis">
+<li>
+<a href="http://sports.qq.com/" target="_blank">体育首页</a> |  
+<a href="http://worldcup.qq.com/zt2010/messi_kaka/" target="_blank">梅西卡卡独家代言腾讯</a> |  
+<a href="http://worldcup.qq.com/bbs/" target="_blank">世界杯论坛</a> |  
+<a href="http://worldcup.qq.com/zt/travel/" target="_blank">南非旅游指南</a> |  
+<a href="http://worldcup.qq.com/draw/" target="_blank">分组抽签专题回顾</a> | 
+<a href="http://worldcup.qq.com/subjects/tencent/" target="_blank">腾讯世界杯战略</a></li>
+</ul>
+				
+<!--新闻-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/hotnews/" target="_blank">新闻排行榜</a> | 
+<a href="http://worldcup.qq.com/team/brazil/" target="_blank">巴西</a> | 
+<a href="http://worldcup.qq.com/team/argentina/" target="_blank">阿根廷</a> | 
+<a href="http://worldcup.qq.com/team/italy/" target="_blank">意大利</a> | 
+<a href="http://worldcup.qq.com/team/spain/" target="_blank">西班牙</a> | 
+<a href="http://worldcup.qq.com/team/england/" target="_blank">英格兰</a> | 
+<a href="http://worldcup.qq.com/team/france/" target="_blank">法国</a> | 
+<a href="http://worldcup.qq.com/team/germany/" target="_blank">德国</a> | 
+<a href="http://worldcup.qq.com/team/netherland/" target="_blank">荷兰</a> | 
+<a href="http://worldcup.qq.com/team/portugal/" target="_blank">葡萄牙</a> | 
+<a href="http://worldcup.qq.com/l/news/groupa/scroll.htm" target="_blank">A组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupb/scroll.htm" target="_blank">B组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupc/scroll.htm" target="_blank">C组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupd/scroll.htm" target="_blank">D组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupe/scroll.htm" target="_blank">E组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupf/scroll.htm" target="_blank">F组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupg/scroll.htm" target="_blank">G组</a> | 
+<a href="http://worldcup.qq.com/l/news/grouph/scroll.htm" target="_blank">H组</a></li>
+</ul>
+
+<!--图片-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/l/picture/gd/list2010068185649.htm" target="_blank">滚动图集</a> | 
+<a href="http://worldcup.qq.com/picture/vivid/" target="_blank">高清幻灯</a> | 
+<a href="http://worldcup.qq.com/l/picture/highlight/list20100514154913.htm" target="_blank">精彩赛况</a> | 
+<a href="http://worldcup.qq.com/l/picture/dujiatupian/list20100517111140.htm" target="_blank">独家聚焦</a> | 
+<a href="http://worldcup.qq.com/l/picture/beauty/list20100517111737.htm" target="_blank">型男靓女</a> | 
+<a href="http://worldcup.qq.com/l/picture/feature/list20100517111011.htm" target="_blank">赛场花絮</a> | 
+<a href="http://worldcup.qq.com/l/picture/bagua/list2010051711552.htm" target="_blank">八卦新闻</a> | 
+<a href="http://worldcup.qq.com/l/picture/qiudui/list20100517111629.htm" target="_blank">列强风采</a> | 
+<a href="http://worldcup.qq.com/l/picture/qiumi/list20100517111222.htm" target="_blank">球迷特写</a> | 
+<a href="http://worldcup.qq.com/l/picture/liumang/list20100517111540.htm" target="_blank">足球流氓</a> | 
+<a href="http://worldcup.qq.com/picture/wallpaper.htm" target="_blank">壁纸下载</a> | 
+<a href="http://worldcup.qq.com/l/picture/classic/list20100514155529.htm" target="_blank">经典回眸</a></li>
+</ul>
+
+<!--视频-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/zt2010/2010goal/" target="_blank">全进球一览</a> | 
+<a href="http://worldcup.qq.com/l/video/news.htm" target="_blank">视频滚动</a> | 
+<a href="http://worldcup.qq.com/video/zt2010.htm" target="_blank">视频特刊</a> | 
+<a href="http://worldcup.qq.com/zt2010/star/" target="_blank">巨星零距离</a> | 
+<a href="http://worldcup.qq.com/video/d/" target="_blank">独家策划</a> | 
+<a href="http://worldcup.qq.com/video/f/" target="_blank">视频花絮</a> |  
+<a href="http://worldcup.qq.com/video/match.htm" target="_blank">64场激战全场回放</a>
+</li>
+</ul>
+
+<!--直播-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/zhibo/" target="_blank">直播大厅</a> | 
+<a href="http://worldcup.qq.com/zhibo/hudong.htm" target="_blank">互动直播汇总</a> | 
+<a href="http://worldcup.qq.com/zhibo/banlv.htm" target="_blank">电视伴侣汇总</a> 
+</li>
+</ul>
+
+<!--赛程-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/schedule/" target="_blank">全部赛程</a> | 
+<a href="http://worldcup.qq.com/schedule/index.htm?tab=2" target="_blank">小组赛赛程</a> | 
+<a href="http://worldcup.qq.com/schedule/index.htm?tab=3" target="_blank">淘汰赛赛程</a> | 
+<a href="http://worldcup.qq.com/schedule/tv.htm" target="_blank">电视直播表</a>
+</li>
+</ul>
+
+
+<!--数据-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/master/" target="_blank">数据分析大师</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm" target="_blank">射手榜</a> | 
+<a href="http://worldcup.qq.com/master/standing.htm" target="_blank">积分榜</a> | 
+<a href="http://worldcup.qq.com/lottery/" target="_blank">世界杯彩票</a> | 
+<span class="green">球员：</span><a href="http://worldcup.qq.com/master/allrank.htm?tab=p_total_pass" target="_blank">传球</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_touches" target="_blank">触球</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_total_tackle" target="_blank">抢断</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_total_contest" target="_blank">突破</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_was_fouled" target="_blank">被侵犯</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_total_clearance" target="_blank">解围</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_won_contest" target="_blank">门将</a>
+<span class="green">球队：</span><a href="http://worldcup.qq.com/master/allrank.htm?tab=t_accurate_pass" target="_blank">传球</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=t_accurate_pass" target="_blank">传球成功率</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=t_total_offside" target="_blank">越位</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=t_total_contest" target="_blank">突破</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=t_total_att" target="_blank">射门次数</a>
+</li>
+</ul>
+
+<!--进球Flash-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/l/goalflash/3d/list20100612212113.htm" target="_blank">64战进球一览</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/finals1/list20100712114612.htm" target="_blank">决赛</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/semifinal/list201007861548.htm" target="_blank">半决赛</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/3D41/list201007621742.htm" target="_blank">1/4决赛</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/3Deighth/list201007621857.htm" target="_blank">1/8决赛</a> | 
+<a href="http://worldcup.qq.com/goalflash/3D.htm" target="_blank">小组赛</a> | 
+<a href="http://worldcup.qq.com/goalflash/day.htm" target="_blank">按日期查询</a> | 
+
+<a href="http://worldcup.qq.com/l/goalflash/stars/bly/list2010062261409.htm" target="_blank">射手榜之比利亚</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/stars/Klose1/list201007623213.htm" target="_blank">克洛泽</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/stars/ThomasMuller/list201007623121.htm" target="_blank">穆勒</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/stars/Sneijder/list201007623145.htm" target="_blank">斯内德</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/stars/Higuain1/list20100617213022.htm" target="_blank">伊瓜因</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/G10/Spain1/list2010062261525.htm" target="_blank">豪门之西班牙</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/G10/Netherlands1/list2010061413528.htm" target="_blank">荷兰</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/G10/Germany1/list2010061452725.htm" target="_blank">德国</a> 
+</li>
+</ul>
+
+<!--资料库-->
+<ul class="undis">
+<li>
+
+<a href="http://worldcup.qq.com/team/" target="_blank">世界杯32强</a> | 
+<a href="http://worldcup.qq.com/data/coaches.htm" target="_blank">主帅资料库</a> | 
+<a href="http://worldcup.qq.com/players/" target="_blank">球员资料库</a> | 
+<a href="http://worldcup.qq.com/data/refrees.htm" target="_blank">裁判资料库</a></li>
+</ul>
+
+<!--前线直击-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/qxzj/hxcz/" target="_blank">火线传真</a> | 
+<a href="http://worldcup.qq.com/qxzj/jzbk/" target="_blank">前线记者独家博客</a> | 
+<a href="http://worldcup.qq.com/qxzj/nffq/" target="_blank">南非风情</a> | 
+<a href="http://worldcup.qq.com/qxzj/xsnf/" target="_blank">行色南非</a> | 
+<a href="http://worldcup.qq.com/qxzj/wb/" target="_blank">微博南非</a> | 
+<a href="http://worldcup.qq.com/qxzj/xwgng/" target="_blank">小薇逛南非</a></li>
+</ul>
+
+<!--独家访谈-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/interview/totalstar/" target="_blank">绝对巨星</a> | 
+<a href="http://worldcup.qq.com/interview/ljh_viewpoint/index.html" target="_blank">宏观世界杯</a> | 
+<a href="http://worldcup.qq.com/interview/dx_talkshow/index.html" target="_blank">南非喧传语</a> | 
+<a href="http://worldcup.qq.com/interview/pseudo_fans/index.html" target="_blank">文道伪球迷</a> | 
+<a href="http://worldcup.qq.com/interview/hq_talkshow/index.html" target="_blank">海泉世界波</a> | 
+<a href="http://worldcup.qq.com/interview/betpreview/index.html" target="_blank">明帅解盘</a> |  
+<a href="http://worldcup.qq.com/interview/f_analysis/index.html" target="_blank">李明布阵</a> | 
+<a href="http://worldcup.qq.com/interview/realtimecomment/index.html" target="_blank">名家评球</a> | 
+<a href="http://worldcup.qq.com/interview/f_worldcup/index.html" target="_blank">时尚世界杯</a> | 
+<a href="http://worldcup.qq.com/interview/gh__talkshow/" target="_blank">广沪开讲</a> | 
+<a href="http://worldcup.qq.com/interview/worldcupforum/index.html" target="_blank">大家论坛</a> | 
+<a href="http://worldcup.qq.com/interview/face/index.htm" target="_blank">巨星面对面</a>
+</li>
+</ul>
+
+<!--博客-->
+<ul class="undis">
+<li>
+<a href="http://messi.qzone.qq.com/ " target="_blank">梅西博客</a> | 
+<a href="http://622001200.qzone.qq.com/" target="_blank">卡卡博客</a> | 
+<a href="http://duanxuan.qzone.qq.com/ " target="_blank">段暄博客</a> | 
+<a href="http://blog.qq.com/qzone/622004856/1276731787.htm" target="_blank">阿来博客</a> | 
+<a href="http://madexing.qzone.qq.com/ " target="_blank">马德兴博客</a> | 
+<a href="http://250607350.qzone.qq.com/ " target="_blank">许绍连博客</a> | 
+<a href="http://blog.qq.com/worldcup/Specialist/" target="_blank">观察家</a> | 
+<a href="http://blog.qq.com/worldcup/Celebrity/" target="_blank">明星圈</a> | 
+<a href="http://blog.qq.com/worldcup/qqatworldcup/" target="_blank">我在现场</a> | 
+<a href="http://blog.qq.com/worldcup/footballfans/" target="_blank">七嘴八舌</a> | 
+<a href="http://blog.qq.com/worldcup/Colorful2010/" target="_blank">花花世界杯</a> | 
+<a href="http://blog.qq.com/worldcup/Cartoon/" target="_blank">漫画世界杯</a>
+</li>
+</ul>
+
+<!--评论-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/comment/zhubi/more.htm" target="_blank">腾讯主笔</a> | 
+<a href="http://worldcup.qq.com/comment/comzhuanti/huizong.htm" target="_blank">专题策划</a> | 
+<a href="http://worldcup.qq.com/comment/only/coolvoices/" target="_blank">每日最强音</a> | 
+<a href="http://book.qq.com/zt/2010/wxworldcup/index.htm" target="_blank">文学世界杯</a> | 
+<a href="http://worldcup.qq.com/l/comment/papercom/list20100517112145.htm" target="_blank">媒体评论</a> | 
+<a href="http://worldcup.qq.com/l/comment/foreigncom/list20100517112252.htm" target="_blank">外电评述</a> | 
+<a href="http://worldcup.qq.com/l/comment/procom/list20100517112320.htm" target="_blank">专家观点</a> | 
+<a href="http://worldcup.qq.com/l/comment/starsblog/list20100517112433.htm" target="_blank">名人声音</a> | 
+<a href="http://worldcup.qq.com/l/comment/wangyoucom/list20100517112537.htm" target="_blank">草根意见</a> | 
+<a href="http://worldcup.qq.com/l/comment/commic/list20100517115402.htm" target="_blank">漫画世界杯</a> | 
+<a href="http://worldcup.qq.com/comment/only/pkzones/" target="_blank">PK台</a> | 
+<a href="http://worldcup.qq.com/comment/only/beautypro/" target="_blank">美女与教授</a>
+</li>
+</ul>
+
+<!--微薄-->
+<ul class="undis">
+<li>
+<a href="http://t.qq.com" target="_blank">我的微博</a> | 
+<a href="http://t.qq.com/duanxuan" target="_blank">段暄微博</a> | 
+<a href="http://t.qq.com/yu_hua" target="_blank">余华</a> | 
+<a href="http://t.qq.com/chi_li" target="_blank">池莉</a> | 
+<a href="http://t.qq.com/laishu" target="_blank">阿来</a> | 
+<a href="http://t.qq.com/chengfei" target="_blank">程菲</a> | 
+<a href="http://t.qq.com/lenahewenna" target="_blank">何雯娜</a> | 
+<a href="http://t.qq.com/chenyibing" target="_blank">陈一冰</a> | 
+<a href="http://t.qq.com/madexing" target="_blank">马德兴</a> | 
+<a href="http://worldcup.qq.com/zt2010/yuweisjb/" target="_blank">“余”味世界杯</a> | 
+<a href="http://worldcup.qq.com/zt2010/alnf/" target="_blank">“来”看南非</a> | 
+<a href="http://t.qq.com/k/世界杯" target="_blank">世界杯话题</a> | 
+<a href="http://worldcup.qq.com/twitter/32fansmore.htm" target="_blank">32强粉丝团</a>
+</li>
+</ul>
+
+<!--专题-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/subjects/pandian.htm" target="_blank">风云64战</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangchaguan.htm" target="_blank">微博茶馆</a> | 
+<a href="http://worldcup.qq.com/subjects/best/index.htm" target="_blank">每日最佳</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangpandian.htm" target="_blank">每日盘点</a> | 
+<a href="http://worldcup.qq.com/comment/comzhuanti/huizong.htm" target="_blank">非闻研究</a> | 
+<a href="http://worldcup.qq.com/zt2010/bigstar/index.htm" target="_blank">巨星聚集腾讯网</a> | 
+<a href="http://worldcup.qq.com/zt/warringteams/" target="_blank">战国策</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangqiushi.htm" target="_blank">球·事系列</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangfan.htm" target="_blank">Fan足球系列</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangxiake.htm" target="_blank">侠客行系列</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangshijiao.htm" target="_blank">Q视角系列</a>
+</li>
+</ul>
+
+<!--球迷中心-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/tuiyan/" target="_blank">我的冠军推演</a> | 
+<a href="http://worldcup.qq.com/guess/" target="_blank">有奖竞猜</a> | 
+<a href="http://2010.qq.com/worldcup/index.htm" target="_blank">世博杯</a> | 
+<a href="http://lady.qq.com/zt/2010/2010baobei/" target="_blank">美女世界杯</a> | 
+<a href="http://worldcup.qq.com/zt/2010/fansdream/index.htm" target="_blank">我的足球梦</a> | 
+<a href="http://worldcup.qq.com/zt/zhengwen/index.htm" target="_blank">世界杯征文</a> | 
+<a href="http://worldcup.qq.com/myteam/" target="_blank">草根球队</a>
+</li>
+</ul>
+
+					</td>
+				</tr>
+			</table>
+</div>
+</div>
+<script language="javascript">
+var okok = function(o){return (typeof o == "object") ? o: document.getElementById(o)};
+
+function addEventHandler(oTarget, sEventType, fnHandler) {
+
+         if (oTarget.addEventListener) {
+
+                   oTarget.addEventListener(sEventType, fnHandler, false);
+
+         } else if (oTarget.attachEvent) {
+
+                   oTarget.attachEvent("on" + sEventType, fnHandler);
+
+         } else {
+
+                   oTarget["on" + sEventType] = fnHandler;
+
+         }
+
+}
+
+var tempList = [];
+
+function showElements() {
+
+         var parsentObj = okok('topNavShow');
+
+         var lens0 = parsentObj.childNodes.length;
+
+         for (i=0; i<lens0; i++) {
+
+                   var objcc0 = parsentObj.childNodes[i];
+
+                   var lens1 =objcc0.childNodes.length;
+
+                   tempList.push(objcc0);
+
+                   for (j=0; j < lens1; j++) {
+
+                            var objcc1 = objcc0.childNodes[j];
+
+                            var lens2 = objcc1.childNodes.length;
+
+                            tempList.push(objcc1);
+
+                            for (k=0; k < lens2; k++) {
+
+                                     var objcc2 = objcc1.childNodes[k];
+
+                                     var lens3 = objcc2.childNodes.length;
+
+                                     tempList.push(objcc2);
+
+                                     for (c=0; c < lens3; c++) {
+
+                                               var objcc3 = objcc2.childNodes[c];
+
+                                               var lens4 = objcc3.childNodes.length;
+
+                                               tempList.push(objcc3);
+
+                                               for (cl = 0; cl < lens4; cl++) {
+
+                                                        var objcc4 = objcc3.childNodes[cl];
+
+                                                        var lens5 = objcc4.childNodes.length;
+
+                                                        tempList.push(objcc4);
+
+                                                        for (ci=0; ci < lens5; ci++) {
+
+                                                                 var objcc5 = objcc4.childNodes[ci];
+
+                                                                 tempList.push(objcc5);
+
+                                                                 var lens6 = objcc5.childNodes.length;
+
+                                                                 for (cij=0; ci < lens6; ci++) {
+
+                                                                           var objcc6 = objcc5.childNodes[ci];
+
+                                                                           tempList.push(objcc6);
+
+                                                                 }
+
+                                                        }
+
+                                               }
+
+                                     }
+
+                            }
+
+                   }
+
+         }
+
+
+}
+
+showElements();
+
+addEventHandler(document.body, 'mouseover', reBackUrlHandler);
+
+function reBackUrlHandler(event) {  
+
+         var lens = tempList.length;
+
+         var divObj = event.srcElement ? event.srcElement : event.target;
+
+         var objNums = 0;
+
+         for (var i=0; i < lens; i++) {
+
+                   if (tempList[i] == divObj) {
+
+                            objNums++;
+
+                   }
+
+         }
+
+         if (objNums == 0) {
+
+                   getUrl();
+
+         }
+
+}
+
+		  function fodoly2(obj)
+		  {
+			var poly2 = obj.parentNode.parentNode.parentNode.parentNode;
+			var poly21 = obj.parentNode.getElementsByTagName("div");
+			var toly2 = poly2.getElementsByTagName("tr")[1].getElementsByTagName("ul");
+			var noly2 = poly21.length;
+			for(i=0;i<noly2;i++)
+			{
+				if(poly21[i] == obj)
+				{
+					poly21[i].className = "soly2";
+					toly2[i].className = "dis";
+				}
+				else
+				{
+					poly21[i].className = "";
+					toly2[i].className = "undis";				
+				}
+			}
+		  }	
+var tags = okok("ar_Fod_list").getElementsByTagName("div");		  
+function getUrl(){
+	var now = 0;
+	var url = document.location.href;
+	var urlArr = url.split("/");
+	var nowStr = urlArr[3];
+	switch(nowStr){ 
+			//世界杯首页
+			case 'index':
+			now=0;break;
+			
+			//新闻
+			case 'news':
+			now=1;break;
+			
+			//图片
+			case 'picture':
+			now=2;break;
+			
+			//视频
+			case 'video':
+			now=3;break;
+			
+			//直播
+			case 'zhibo':
+			now=4;break;
+			
+			//赛程
+			case 'schedule':
+			now=5;break;
+			
+			//数据
+			case 'master':
+			now=6;break;
+			
+			//进球flash
+			case 'goalflash':
+			now=7;break;
+			
+			//资料库
+			case 'data':
+			now=8;break;
+			
+			//前线直击
+			case 'qxzj':
+			now=9;break;
+
+			
+			//独家访谈
+			case 'interview':
+			now=10;break;
+			
+			//博客
+			case 'index':
+			now=11;break;
+				
+			//评论
+			case 'comment':
+			now=12;break;
+		
+			//微博
+			case 'index':
+			now=13;break;
+			
+			//专题
+			case 'subjects':
+			now=14;break;
+			
+			//球迷中心
+			case 'index':
+			now=15;break;			
+			
+			default:
+			now=0;
+		}		
+fodoly2(tags[now])
+}
+getUrl()  
+</script>
+<!--[if !IE]>|xGv00|108e063e2f627e53ad97c5d85df84b10<![endif]-->
+<div align="center" style="padding-top:5px;">
+<OBJECT classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"    
+codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"    
+WIDTH="960" HEIGHT="80">    
+<PARAM NAME=movie VALUE="//mat1.gtimg.com/worldcup/ad/lechi0611.swf">    
+<PARAM NAME=quality VALUE=high>    
+<PARAM NAME=bgcolor VALUE=#FFFFFF>    
+<EMBED src="//mat1.gtimg.com/worldcup/ad/lechi0611.swf" quality=high bgcolor=#FFFFFF WIDTH="960" HEIGHT="80"    
+ ALIGN="" TYPE="application/x-shockwave-flash"    
+PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">    
+</EMBED>    
+</OBJECT> 
+</div>
+
+<!--[if !IE]>|xGv00|025929ca57467ce41d8840bead0bed70<![endif]--><div class='mode_col_1'><div class="headnav lh31" vid="1">
+<div class="fl"><a href="http://worldcup.qq.com/data/" target="_blank"><img src="//mat1.gtimg.com/worldcup/images/datalib/qy/newhder_03.jpg" width="215" height="40" /></a></div>
+        	<div class="fl lh29 pt11">
+				<span class="lc"><a href="http://worldcup.qq.com/data">世界杯资料库</a> <span class="rigco">></span> <a href="/d/teams/1/27/">瑞士</a></span> > 施瓦格勒
+                </div>
+        	        	<style>
+<!--
+input,select,textarea{padding:0;margin:0}
+button{border:none; padding:0px; margin:0px;cursor:pointer;font-size:12px;background-color:transparent;}
+.search_box{width:290px; background-color:#fff; padding:10px;padding-top:4px;*padding-top:14px; float:right}
+		.search_box input{border:1px solid #D3D3D1; height:17px; padding-top:1px; *height:15px; *padding-top:3px; width:210px; font-size:12px}
+		.search_box .bt_search{background:url(images/buttonbg_03.jpg) no-repeat; width:68px; height:22px; line-height:21px; text-align:center}
+		.search_box select{width:101px;*width:104px; float:left}
+-->
+			</style>
+			<script type="text/javascript" src="//mat1.gtimg.com/www/apps/js/app.platform.smartbox.v6.js"></script>
+<div class="search_box">
+            <form id="search_s" method="get" target="_self" action="" onsubmit="return false;">
+            <p style="margin-bottom:10px">
+            <button type="button" class="button1 fr"  onclick="if (document.getElementById('search_content').value=='搜球员/球队/比赛'){ document.getElementById('search_content').focus();}return AppPlatform.SmartBox.searchclick();">搜索</button>
+            <input type="text" id="search_content" value="搜球员/球队/比赛" style="color:#666666; float:left;width:200px;text-indent:4px;"  onfocus="this.value=''" onblur="this.value='搜球员/球队/比赛'"/>
+            <div class="clr"></div>
+            </p>
+            <script>AppPlatform.SmartBox.init(16,'search_content', 10, 'top');</script>
+			</form>
+</div>			
+            <div class="fr lh29 pt11" style="margin-right:10px">
+    	<span class="lc"><a href="http://support.qq.com/portal/discuss_pdt/432_1.html" target="_blank">意见反馈</a></span>
+    </div>
+    	</div>
+    	
+    	
+    	<!--[if !IE]>|xGv00|903efd58d474bf4513e19979e350d093<![endif]--></div><div class='mode_col_21'><div class='mode_col_l'><div id="myml">
+            	<div class="qiuyuanbanner">施瓦格勒 （Pirmin Schwegler）</div>
+            
+            	<div class="left1 mt5">
+            		<div class="left11">
+					<div class="headpic"><a href="piclib.shtml" target="_blank"><img src="http://img2.gtimg.com/worldcup/d/players/picinfo/20100512/14576e618b0df40d93d9a746e4689025.jpg" width="118" height="158" onerror="this.src='//mat1.gtimg.com/worldcup/images/datalib/headpic1.gif'"/></a></div>
+                	<div class="zhichita">
+                    	<table width="122" border="0" cellpadding="0" cellspacing="0">
+                        	<tr><td height="5"></td></tr>
+                            <tr>
+                                <td height="62" class="lh23 col666" align="center">
+                                     <span id="apps_svy_opt_count_77926_0" class="piaoshu verdana">64</span>人支持<br /><div  id="apps_svy_opt_title_77926_0" doneText="<div style='display:none;'></div>"><div class="zhichitaoff lh25 col666" onmouseover="zhichitaon(this)" onmouseout="zhichitaoff(this)" onclick="window.open('http://my.worldcup.qq.com/?c=open');return false;"></div></div>
+                                </td>
+                            </tr>
+                                        <script language="javascript">
+
+										function zhichitaon(o)
+										{
+											o.className="zhichitaon lh23 col666";
+											}
+										function zhichitaoff(o)
+										{
+											o.className="zhichitaoff lh23 col666";
+											}
+										</script>
+                          </table>
+                        <!--支持-->
+                    </div><!--[if !IE]>|xGv00|9a3b51996458791545f7d75e4f6ad9a0<![endif]-->                                        <div class="canjia dis">
+                    	<table width="122" border="0" cellpadding="0" cellspacing="0">
+                        	<tr><td height="11"></td></tr>
+                            <tr><td id="tdzzcj" height="29" class="col666 lh29 pl10">上一场比赛</td></tr>
+                            <tr><td height="38">
+                            		<table width="122" border="0" cellpadding="0" cellspacing="0">
+                                    	<tr>
+                                        	<td width="1" height="38"></td>
+											<td width="50" align="center">
+                                       	<a href="/d/teams/1/27/"><img src="//mat1.gtimg.com/worldcup/images/datalib/qd/gq/s_t497.gif" width="19" height="13" /></a><br />
+                                                <span class="lh24 lc" title="瑞士">
+                                                <a href="/d/teams/1/27/">
+                                                瑞士
+                                                </a></span>
+                                            </td>
+                                          <td width="23" align="center" class="lc lh38 tohoma"><a href="#">0-0</a></td>
+                                      <td width="50" align="center">
+                                       	<a href="/d/teams/1/28/"><img src="//mat1.gtimg.com/worldcup/images/datalib/qd/gq/s_t847.gif" width="19" height="13" /></a><br />
+                                                <span class="lh24 lc" title="洪都拉斯">
+                                                <a href="/d/teams/1/28/">
+                                                洪都拉斯
+                                                </a></span>
+                                            </td>
+                                      </tr>
+                                    </table>
+                            </td></tr>
+                            <tr><td height="3"></td></tr>
+                            <tr><td height="28" class=" nob lh28 tohoma" style="text-align:center"></td></tr>
+                        </table>
+                        <!--参加-->
+                    </div>
+                                    </div>
+                    <div class="left12">
+                        <div class="qiyuanjianjie">
+                            <table width="473" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="9" height="20"></td>
+                                    <td width="121">国家队：<span class="lc"><a href="/d/teams/1/27/">瑞士</a></span></td>
+                                    <td width="174">体重：<span class="col666">68kg</span></td>
+                                    <td width="169">生日：<span class="col666">1987-03-09(23岁)</span></td>
+                                </tr>
+                                <tr>
+                                    <td width="9" height="20"></td>
+                                    <td width="121">位置：<span class="col666">中场</span></td>
+                                    <td width="174">身高：<span class="col666">179cm</span></td>
+                                    <td width="169">现效力俱乐部：<span class="col666" title="法兰克福">法兰克福</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="linebg1"></div>
+                        <div class="qiuyuanwenzi ti2 col666">
+    施瓦格勒的职业足球生涯始于卢塞恩，2003年施瓦格勒加盟卢塞恩，在卢塞恩的2个赛季中，施瓦格勒出场40次，打入3球。2006年转会至德甲的勒沃库森，2009年转会法兰克福队。
+                        </div>
+                        <ul class="col666">
+                            <li><span class="cwhite" >俱乐部生涯</span> <span title="曾效力于卢塞恩、勒沃库森，2009年转会法兰克福">曾效力于卢塞恩、勒沃库森，2009年转会法兰克福</span></li>
+                            <li><span class="cwhite" >国家队履历</span> <span title="2009年首次代表国家队出场，至今共出场2次">2009年首次代表国家队出场，至今共出场2次</span></li>
+                            <li><span class="cwhite" >世界杯荣誉</span> <span title="首次代表国家队出战世界杯">首次代表国家队出战世界杯</span><span  class="lc"><a href="details.shtml" target="_blank">[详细资料]</a></span></li>
+                        </ul>
+                        <div class="benjiebiaoxian">
+                            <table width="473" border="0" cellpadding="0" cellspacing="0">
+                                <tr><td height="27" background="//mat1.gtimg.com/worldcup/images/datalib/qy/benjiebiaoxian_14.gif" class="pl10 fwb lh29 oh" colspan="5">本届表现</td></tr>
+                                <tr bgcolor="#FFFFFF" class="col666 lh23 alcenter">
+                                    <td width="84" height="23">出场/首发</td>
+                                    <td width="92">出场时间</td>
+                                    <td width="97">传球</td>
+                                    <td width="91">进球</td>
+                                    <td width="109">射手榜</td>
+                                </tr>
+                                <tr bgcolor="#E9E9E9" class="lh23 f14 verdana  alcenter">
+                                    <td width="84" height="23"  >0/ 0</td>
+                                    <td width="92"  > 0'</td>
+                                    <td width="97"  > 0</td>
+                                    <td width="91"  > 0</td>
+                                    <td width="109"  > 227</td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                	<div class="clr"></div>
+            	</div><!--[if !IE]>|xGv00|0e868bfa906941cdc6900d19f60efbf2<![endif]--><div class="left2">
+                	<div class="hd">
+                    	<span class="fr pr10 lc f12 fwn"><a class="f12" href="news.shtml">更多</a></span>最新动态
+                    </div>
+                    <div class="bd">
+                                                <div class="tuwen">
+                        	<a href="http://worldcup.qq.com/a/20100711/003253.htm"><img src="//mat1.gtimg.com/worldcup/images/datalib/morentu.gif" class="fl" width="110" height="85" onerror="this.src='//mat1.gtimg.com/worldcup/images/datalib/morentu.gif'"/></a>
+                            <div class="wenzi col666">
+                            	<h2 class="f14 fwb lc"><span class="fwn fr">[2010-07-11 18:08:52]</span><a href="http://worldcup.qq.com/a/20100711/003253.htm" target="_blank" title="西班牙人讨厌决赛主裁 输给瑞士全“赖”韦伯">西班牙人讨厌决赛主裁 输给瑞士全“赖”韦伯</a></h2>
+
+                            </div>
+                            <div class="clr"></div>
+                        </div>
+                    	
+                        <div class="line2"></div>
+                        <ul class="col666 f14 lc lh24">
+                                
+                                                        	<li><span>[2010-07-11 06:25:42]</span>·<a href="http://worldcup.qq.com/a/20100711/001569.htm" target="_blank" title="韦伯：不解瑞士爆冷西班牙 判罚出红牌不手软">韦伯：不解瑞士爆冷西班牙 判罚出红牌不手软</a></li>
+                                                    	<li><span>[2010-07-06 15:21:03]</span>·<a href="http://worldcup.qq.com/a/20100706/001436.htm" target="_blank" title="FIFA新闻：足球先生金球二合一 首奖瑞士诞生">FIFA新闻：足球先生金球二合一 首奖瑞士诞生</a></li>
+                                                    	<li><span>[2010-07-06 08:22:57]</span>·<a href="http://worldcup.qq.com/a/20100706/000617.htm" target="_blank" title="瑞士球迷狂按车喇叭酿悲剧 八旬老汉拔枪怒射">瑞士球迷狂按车喇叭酿悲剧 八旬老汉拔枪怒射</a></li>
+                                                    	<li><span>[2010-07-05 09:47:42]</span>·<a href="http://worldcup.qq.com/a/20100705/000903.htm" target="_blank" title="郑大世开启朝鲜赴欧之门 主力后卫赴瑞士淘金">郑大世开启朝鲜赴欧之门 主力后卫赴瑞士淘金</a></li>
+                                                    </ul>
+                                            </div>
+                </div><!--[if !IE]>|xGv00|39937bac83679c4a926c2fac426a9c4d<![endif]--><div class="left3">
+                	<div class="hd">
+                    	<span class="fr pr10 lc f12 fwn"><a href="http://worldcup.qq.com/l/video/t/swtv/list.htm" target="_blank">更多</a></span>精彩视频
+                    </div>
+                      	
+                      
+                                                <div class="bd">
+                        <div id="flashC" class="flashc"></div>
+                        <div class="optlist" id="list">
+                        	<ul id="fod1">
+                        	                                	        <li id="divopt1" class="opton" name="6BNEKi9khjK">
+                                        <img src="http://img1.gtimg.com/worldcup/pics/hv1/226/90/571/37152451.jpg" class="fl" width="80" height="60" onerror="this.src='//mat1.gtimg.com/worldcup/images/datalib/videomorentu.jpg'"/>
+                                        <div class="tex">
+                                        <span class="fwb" title="视频：西班牙晋级之路 首战0-1意外负于瑞士">视频：西班牙晋级之路 首战..</span><br />
+                                        <span class="col666"></span>
+                                        </div>
+                                        </li>
+                        	                                	        <li id="divopt1" class="opton" name="6vxbDnNE9Ym">
+                                        <img src="http://img1.gtimg.com/worldcup/pics/hv1/159/114/568/36963429.jpg" class="fl" width="80" height="60" onerror="this.src='//mat1.gtimg.com/worldcup/images/datalib/videomorentu.jpg'"/>
+                                        <div class="tex">
+                                        <span class="fwb" title="视频：西班牙晋级之路 首战意外负于瑞士">视频：西班牙晋级之路 首战..</span><br />
+                                        <span class="col666"></span>
+                                        </div>
+                                        </li>
+                        	                                	        <li id="divopt1" class="opton" name="6PvjZQa5Ind">
+                                        <img src="http://img1.gtimg.com/worldcup/pics/hv1/242/231/564/36733247.jpg" class="fl" width="80" height="60" onerror="this.src='//mat1.gtimg.com/worldcup/images/datalib/videomorentu.jpg'"/>
+                                        <div class="tex">
+                                        <span class="fwb" title="视频：乌拉圭40年等待 激情点燃南美小瑞士">视频：乌拉圭40年等待 激情..</span><br />
+                                        <span class="col666"></span>
+                                        </div>
+                                        </li>
+                        	                                	        <li id="divopt1" class="opton" name="6J3uFppGxKr">
+                                        <img src="http://img1.gtimg.com/worldcup/pics/hv1/155/156/558/36323885.jpg" class="fl" width="80" height="60" onerror="this.src='//mat1.gtimg.com/worldcup/images/datalib/videomorentu.jpg'"/>
+                                        <div class="tex">
+                                        <span class="fwb" title="视频：瑞士小组赛从大喜到大悲 球迷失望至极">视频：瑞士小组赛从大喜到..</span><br />
+                                        <span class="col666">腾讯体育讯本次世界杯，瑞士经历了从大喜到大悲的过程..</span>
+                                        </div>
+                                        </li>
+                        	        
+                            </ul>
+                        </div>
+                        <div class="clr"></div>
+                        <script>
+	var playerLianBo = new Object();
+		playerLianBo = {
+		$:function(v){return document.getElementById(v)},
+		getELE:function(id,ele){return this.$(id).getElementsByTagName(ele);},
+		defPlayer:new Object(),
+		initId:"flashC",
+		listId:"list",
+		defListTag:"li",
+		isAuto:"0",
+		statTag:"div",
+		thisPlayer:function(curr){return this.getELE(this.listId,this.defListTag)[curr].attributes['name'].nodeValue;},
+		init:function(n){
+		this.defPlayer = new SWFObject("http://cache.tv.qq.com/qqplayerout.swf?v="+this.thisPlayer(n),"payerC","100%","100%", "9.0.28", "#FFFFFF")
+		this.defPlayer.addParam("allowScriptAccess", "always"); 
+		this.defPlayer.addParam("allowFullScreen", "true"); 
+		this.defPlayer.addParam("scale", "noscale");
+		this.defPlayer.addParam("wmode", "transparent");
+		this.defPlayer.addVariable("auto",this.isAuto);
+		this.defPlayer.addVariable("pic","http://img1.gtimg.com/worldcup/pics/hv1/226/90/571/37152451.jpg");
+		this.defPlayer.addVariable("list","2");
+		this.defPlayer.write(this.initId); 
+		this.stats(n);
+        this.isAuto = '1';
+		},
+		click:function(){
+			var ele = this.getELE(this.listId,this.defListTag);
+			for(var i=0;i<ele.length;i++){
+				(function(){
+					var p =i;
+					ele[p].onclick = function(){
+						playerLianBo.init(p);
+					}
+				})(i);
+			}
+		},stats:function(n){
+			var ele = this.getELE(this.listId,this.defListTag);
+			for(var i=0;i<ele.length;i++){
+				if(n==i){
+					ele[i].className = "opton";
+				}else{
+					ele[i].className = "optoff";
+				}
+			}
+		}
+
+	}
+
+playerLianBo.initId = "flashC";//FLASH容器
+playerLianBo.listId = "list";//列表容器
+playerLianBo.defListTag = "li";//列表标签
+playerLianBo.statTag = "div";//状态标签
+playerLianBo.init(0);
+playerLianBo.click();
+
+</script>
+</div>
+
+                 
+                    
+                </div><!--[if !IE]>|xGv00|ba9f3350976c3286fe1cd0f862f3540d<![endif]--><div class="left4">
+                	<div class="hd1">
+                    	<div class="hd1on" id="tupian1" onmouseover="show2(1)">历史瞬间</div>
+<div class="hd1off" id="tupian2" onmouseover="show2(2)">最新图片</div>
+                        <div class="hd1right">
+                        	<div id="bt1" class="buttonarea fr pr14 dis">
+                            	<div class="bttol fl pt6"><img src="//mat1.gtimg.com/worldcup/images/datalib/qy/toleftoff_03.gif" width="22" height="22"  id="scl1"  /></div>
+                            	<div class="bttor fr pt6"><img src="//mat1.gtimg.com/worldcup/images/datalib/qy/torightoff_03.gif" width="22" height="22"  id="scr1" /></div>
+                            </div><!--[if !IE]>|xGv00|d616cabee7390d55e59bafb78c68c6cb<![endif]--><div id="bt2" class="buttonarea fr pr14 undis">
+                            	<div class="bttol fl pt6"><img src="//mat1.gtimg.com/worldcup/images/datalib/qy/toleftoff_03.gif" width="22" height="22"  id="scl2"  /></div>
+                            	<div class="bttor fr pt6"><img src="//mat1.gtimg.com/worldcup/images/datalib/qy/torightoff_03.gif" width="22" height="22"  id="scr2" /></div>
+                            </div><!--[if !IE]>|xGv00|fedc394662bb3c92f13286f19d2ce698<![endif]--></div> 
+                        <div class="clr"></div>
+                    </div>
+						<div class="scrollbox">
+                            <div id="pane1" class="pane dis">
+                                
+
+<ul id="sc1" class="pohto s_150_150" style="display:none;"></ul>
+<ul class="pohto s_150_150">
+<li><a href="/d/players/1/780/piclib.shtml#typeid=18&picid=4029" class="box"  style="background-image:url(http://img2.gtimg.com//worldcup/d/players/piclib/20100512/aa5d5c67bd2446fb8dd35f8bcf22aabc2.jpg)" ><img src="http://img2.gtimg.com//worldcup/d/players/piclib/20100512/aa5d5c67bd2446fb8dd35f8bcf22aabc2.jpg" alt="施维格勒激烈拼抢" /></a><span class="lc2"><a href="/d/players/1/780/piclib.shtml#typeid=18&picid=4029" target="_blank" class="txt" title="施维格勒激烈拼抢">施维格勒激烈拼抢</a></span></li>
+<li><a href="/d/players/1/780/piclib.shtml#typeid=18&picid=4030" class="box"  style="background-image:url(http://img2.gtimg.com//worldcup/d/players/piclib/20100512/7c15b3b5dde30450d5fb95216f38724f2.jpg)" ><img src="http://img2.gtimg.com//worldcup/d/players/piclib/20100512/7c15b3b5dde30450d5fb95216f38724f2.jpg" alt="施维格勒激烈拼抢" /></a><span class="lc2"><a href="/d/players/1/780/piclib.shtml#typeid=18&picid=4030" target="_blank" class="txt" title="施维格勒激烈拼抢">施维格勒激烈拼抢</a></span></li>
+<li><a href="/d/players/1/780/piclib.shtml#typeid=18&picid=4031" class="box"  style="background-image:url(http://img2.gtimg.com//worldcup/d/players/piclib/20100512/0b3695941722c07f90eba0627eea8af62.jpg)" ><img src="http://img2.gtimg.com//worldcup/d/players/piclib/20100512/0b3695941722c07f90eba0627eea8af62.jpg" alt="施维格勒庆祝进球" /></a><span class="lc2"><a href="/d/players/1/780/piclib.shtml#typeid=18&picid=4031" target="_blank" class="txt" title="施维格勒庆祝进球">施维格勒庆祝进球</a></span></li>
+</ul> 
+
+									
+
+                                
+                            </div><!--[if !IE]>|xGv00|6056ea5e9ae7218ae941ec63e1fb8ebe<![endif]--><div id="pane2" class="pane undis">
+                                
+									
+<ul id="sc2" class="pohto s_150_150">
+</ul>
+暂无本届最新图片。
+                                
+                            </div>
+						</div>
+               </div>
+<script>
+var scrollPic_02 = new ScrollPic();
+scrollPic_02.scrollContId   = "sc1"; //内容容器ID
+scrollPic_02.arrLeftId      = "scl1";//左箭头ID
+scrollPic_02.arrRightId     = "scr1"; //右箭头ID
+
+scrollPic_02.frameWidth     = 610;//显示框宽度
+scrollPic_02.pageWidth      = 624; //翻页宽度
+
+scrollPic_02.speed          = 10; //移动速度(单位毫秒，越小越快)
+scrollPic_02.space          = 10; //每次移动像素(单位px，越大越快)
+scrollPic_02.autoPlay       = false; //自动播放
+scrollPic_02.autoPlayTime   = 3; //自动播放间隔时间(秒)
+
+scrollPic_02.initialize(); //初始化
+
+scrollPic_03 = new ScrollPic();
+scrollPic_03.scrollContId   = "sc2"; //内容容器ID
+scrollPic_03.arrLeftId      = "scl2";//左箭头ID
+scrollPic_03.arrRightId     = "scr2"; //右箭头ID
+
+scrollPic_03.frameWidth     = 610;//显示框宽度
+scrollPic_03.pageWidth      = 624; //翻页宽度
+
+scrollPic_03.speed          = 10; //移动速度(单位毫秒，越小越快)
+scrollPic_03.space          = 10; //每次移动像素(单位px，越大越快)
+scrollPic_03.autoPlay       = false; //自动播放
+scrollPic_03.autoPlayTime   = 3; //自动播放间隔时间(秒)
+
+scrollPic_03.initialize(); //初始化
+</script><!--[if !IE]>|xGv00|3c4a14e8f2bf81b67de62c506a4a9104<![endif]--><div class="left5" vid="1">
+<div class="hd">施瓦格勒最新数据</div>
+<div class="bd">
+<table width="610" border="0" cellpadding="0" cellspacing="0" class="bt_nb tohoma alcenter bdb">
+<tr>
+<td  height="25" bgcolor="#E9E9E9">时间</td>
+<td  bgcolor="#DADADA" >比赛双方</td>
+<td  bgcolor="#E9E9E9">首发</td>
+<td bgcolor="#DADADA">进球</td>
+<td bgcolor="#E9E9E9">助攻</td>
+<td bgcolor="#DADADA">射门</td>
+<td bgcolor="#E9E9E9">角球</td>
+<td bgcolor="#DADADA">越位</td>
+<td bgcolor="#E9E9E9" >犯规</td>
+<td  bgcolor="#DADADA">拦截</td>
+<td bgcolor="#E9E9E9" >黄牌</td>
+<td  bgcolor="#DADADA" >红牌</td>
+<td bgcolor="#E9E9E9">扑救</td>
+</tr>
+						
+						
+
+
+<tr class="col666" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+<td  height="25" >06-26 02:30</td>
+<td  class="lc" bgcolor="#F5F5F5"><a href="/d/match/1/48/index2.shtml">瑞士 - 洪都拉斯</a></td>
+<td >否</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td>0</td>
+</tr>
+
+
+<tr class="col666" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+<td  height="25" >06-21 22:00</td>
+<td  class="lc" bgcolor="#F5F5F5"><a href="/d/match/1/31/index2.shtml">智利 - 瑞士</a></td>
+<td >否</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td>0</td>
+</tr>
+
+
+<tr class="col666" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+<td  height="25" >06-16 22:00</td>
+<td  class="lc" bgcolor="#F5F5F5"><a href="/d/match/1/16/index2.shtml">西班牙 - 瑞士</a></td>
+<td >否</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td >0</td>
+<td  bgcolor="#F5F5F5">0</td>
+<td>0</td>
+</tr>
+                    
+
+	
+</table>			
+<table width="610" class="col666"><tr><td style="align:right;text-align:right;">*数据来自OPTA</td></tr></table>
+                    </div>
+                </div><!--[if !IE]>|xGv00|5d75e7d8f5e80f700377beaf5772874c<![endif]--></div><!--[if !IE]>|xGv00|9476a785d8167f6df91f279cadd2d323<![endif]--></div><div class='mode_col_r'><div id="mymr"><!--[if !IE]>|xGv00|0e3e50724ce6a5169aa0ca6c1763b334<![endif]--><div class="hd"><span class="lc fr pr10 fwn f12 lh34 oh"><a href="/d/teams/1/27/">更多</a></span>施瓦格勒队友</div>
+<div class="bd">
+
+<div class="picbox">
+<div class="picbox1">
+	<a href="/d/players/1/282/"><img src="http://img2.gtimg.com/worldcup/d/players/picinfo/20100420/6b9d8d27d51a4f19581262bff5852306.jpg" width="70" height="70" /></a><br />
+    <span class="lc"><a href="/d/players/1/282/">马格宁</a></span>
+</div>
+<div class="shuxianbg"></div>
+<div class="picbox1">
+	<a href="/d/players/1/264/"><img src="http://img2.gtimg.com/worldcup/d/players/picinfo/20100420/3e696c78d4c46960561cce5cc9b75230.jpg" width="70" height="70" /></a><br />
+    <span class="lc"><a href="/d/players/1/264/">贝纳利奥</a></span>
+</div>
+
+<div class="shuxianbg"></div>
+ <div class="picbox1">
+	<a href="/d/players/1/268/"><img src="http://img2.gtimg.com/worldcup/d/players/picinfo/20100416/4a39e7d502b39906625fcb2585a79b1d.gif" width="70" height="70" /></a><br />
+    <span class="lc"><a href="/d/players/1/268/">沃尔夫利</a></span>
+</div>
+<div class="clr"></div>
+</div>
+<div class="line4"></div>
+<ul class="mt10">
+	<li class="lc">
+<a href="/d/players/1/289/">森德罗斯</a>
+<a href="/d/players/1/296/">利希施泰纳</a>
+<a href="/d/players/1/311/">胡格尔</a>
+<a href="/d/players/1/323/">巴内塔</a>
+<a href="/d/players/1/330/">因勒</a>
+<a href="/d/players/1/338/">雅金</a>
+<a href="/d/players/1/344/">费尔南德斯</a>
+<a href="/d/players/1/354/">贝赫拉米</a>
+<a href="/d/players/1/364/">弗雷</a>
+<a href="/d/players/1/374/">恩库夫</a>
+<a href="/d/players/1/414/">德尔迪约克</a>
+<a href="/d/players/1/727/">里奥尼</a>
+<a href="/d/players/1/732/">埃吉曼</a>
+</li>
+</ul>
+</div><!--[if !IE]>|xGv00|0a9603863edbc9a807f65c160dd209c2<![endif]--><div class="right1">
+                
+                	<div class="hd">观点·观察</div>
+                    <div class="hder"><span class="lc fr pr10 fwn"><a href="http://t.qq.com/k/%25E7%2591%259E%25E5%25A3%25AB%25E9%2598%259F" target="_blank">查看更多</a></span>微博在说</div>
+                    <div class="bd" style="padding-top:0px" >
+                    	<div class="weibo" id="message_marquee" >
+                    	        
+                    	        
+                    	                                                                 <div >
+                                <a target="_blank" href="http://t.qq.com/linfengfei"><img src="http://t1.qlogo.cn/mbloghead/2048e5ebd5b59dfbb61c/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/linfengfei">林风飞</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E7%2591%259E%25E5%25A3%25AB%25E9%2598%259F">#瑞士队#</a><br>2010-07-01 11:07:11
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div >
+                                <a target="_blank" href="http://t.qq.com/lwy513"><img src="/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/lwy513">lwy</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E7%2591%259E%25E5%25A3%25AB%25E9%2598%259F">#瑞士队#</a>加油~~~~<br>2010-06-21 13:03:15
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div >
+                                <a target="_blank" href="http://t.qq.com/bishi-you"><img src="http://t1.qlogo.cn/mbloghead/aa1443bf353f7d034fe0/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/bishi-you">姑妈</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E7%2591%259E%25E5%25A3%25AB%25E9%2598%259F">#瑞士队#</a>    杀尽一切文艺小青年<br>2010-06-21 05:33:00
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div >
+                                <a target="_blank" href="http://t.qq.com/yjj19920530"><img src="http://t0.qlogo.cn/mbloghead/5d448c683e95f03e31fa/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/yjj19920530">宝贝晶</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E7%2591%259E%25E5%25A3%25AB%25E9%2598%259F">#瑞士队#</a>   加油咯，我支持你们的咯！  GO GO 加油！<br>2010-06-19 13:17:32
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div >
+                                <a target="_blank" href="http://t.qq.com/macfee"><img src="http://t0.qlogo.cn/mbloghead/97ecc033415221f1979e/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/macfee">macfee</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E7%2591%259E%25E5%25A3%25AB%25E9%2598%259F">#瑞士队#</a>打醋酸辣苦甜冬天来临<br>2010-06-18 20:45:24
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div >
+                                <a target="_blank" href="http://t.qq.com/liyuqi875283569"><img src="http://t1.qlogo.cn/mbloghead/398cd1913cf01770dbf6/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/liyuqi875283569">李玉琦</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E7%2591%259E%25E5%25A3%25AB%25E9%2598%259F">#瑞士队#</a><br>2010-06-17 15:05:54
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div >
+                                <a target="_blank" href="http://t.qq.com/aliaszhang"><img src="http://t3.qlogo.cn/mbloghead/ea012975347b340c7d7c/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/aliaszhang">张谦</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E7%2591%259E%25E5%25A3%25AB%25E9%2598%259F">#瑞士队#</a>打酱油也有春天！<br>2010-06-16 23:54:04
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div >
+                                <a target="_blank" href="http://t.qq.com/Jonas_lee"><img src="http://t2.qlogo.cn/mbloghead/8ab907cea00051e3eb02/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/Jonas_lee">Jonas</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E7%2591%259E%25E5%25A3%25AB%25E9%2598%259F">#瑞士队#</a>门柱球啊~~太可惜了！瑞士要顶死<a target="_blank" href="http://t.qq.com/k/%25E8%25A5%25BF%25E7%258F%25AD%25E7%2589%2599%25E9%2598%259F">#西班牙队#</a>了。哈哈<br>2010-06-16 23:36:01
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div >
+                                <a target="_blank" href="http://t.qq.com/zhang285277628"><img src="http://t0.qlogo.cn/mbloghead/acbb4171f79ad9be19a2/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/zhang285277628">YH-张</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E7%2591%259E%25E5%25A3%25AB%25E9%2598%259F">#瑞士队#</a>瑞士的德尔迪约克是个很有潜力的球员，西班牙得当心这个小伙子<br>2010-06-16 01:00:00
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                                                     
+                        </div>
+                    </div>
+                   <!--[if !IE]>|xGv00|b324bc0c0f571cf038671b3ad6bf791e<![endif]--><div class="hder">媒体热评</div>
+                    <div class="bder">
+<ul class="lc lh22">
+<li><span class="fr col666 tohoma">07-12</span><a href="http://worldcup.qq.com/a/20100712/002866.htm" target="_blank" title="东方体育日报：西班牙夺冠要感谢瑞士">东方体育日报：西班牙夺冠要感谢瑞士</a></li>
+<li><span class="fr col666 tohoma">07-04</span><a href="http://worldcup.qq.com/a/20100704/000961.htm" target="_blank" title="半场快评：巴拉圭学习瑞士好榜样 爆大冷有戏">半场快评：巴拉圭学习瑞士好榜样 爆大冷..</a></li>
+<li><span class="fr col666 tohoma">06-27</span><a href="http://worldcup.qq.com/a/20100627/002357.htm" target="_blank" title="扬子晚报：中超球员战平瑞士 韦迪偷偷笑了">扬子晚报：中超球员战平瑞士 韦迪偷偷笑..</a></li>
+<li><span class="fr col666 tohoma">06-27</span><a href="http://worldcup.qq.com/a/20100627/002285.htm" target="_blank" title="京华时报：洪都拉斯中超三人大闹瑞士">京华时报：洪都拉斯中超三人大闹瑞士</a></li>
+<li><span class="fr col666 tohoma">06-27</span><a href="http://worldcup.qq.com/a/20100627/000437.htm" target="_blank" title="半岛晨报：瑞士保送西班牙 精彩毁于默契">半岛晨报：瑞士保送西班牙 精彩毁于默契..</a></li>
+</ul>
+
+                    	                    </div><!--[if !IE]>|xGv00|f2d82eef5d6cc741cc67e1428bc7fc45<![endif]--><div class="hder1 mt10" tid="1">
+<div class="hderon" id="hder1" onmouseover="paimingshow(1)">射手榜</div>
+<div class="hderoff" id="hder2" onmouseover="paimingshow(2)">传球榜</div>
+<div class="hderoff" id="hder3" onmouseover="paimingshow(3)">抢断榜</div>
+<div class="hderright"><span class="fr pr10 lc"><a href="http://worldcup.qq.com/master/rank.htm" target="_blank">更多</a></span></div>
+<div class="clr"></div>
+</div>
+<div class="bd">
+
+    
+ <table id="tablewl1" width="290" border="0" cellpadding="0" cellspacing="0" background="//mat1.gtimg.com/worldcup/images/datalib/qy/paimingbg_27.gif" class="dis">
+	<tr class="col666">
+    	<td width="53" height="26" class="pl10">排名</td>
+        <td width="109">球员</td>
+        <td width="85">球队</td>
+        <td width="33" class="alcenter">进球</td>
+    </tr>
+    <tr >
+    	<td width="63" height="24"></td>
+        <td width="109" class="lc"><a href="/d/players/1/626/">穆勒</a></td>
+        <td width="85">德国</td>
+        <td width="33" class="alcenter">5</td>
+    </tr>
+        <tr >
+    	<td width="63" height="24"></td>
+        <td width="109" class="lc"><a href="/d/players/1/234/">比利亚</a></td>
+        <td width="85">西班牙</td>
+        <td width="33" class="alcenter">5</td>
+    </tr>
+        <tr >
+    	<td width="63" height="24"></td>
+        <td width="109" class="lc"><a href="/d/players/1/77/">斯内德</a></td>
+        <td width="85">荷兰</td>
+        <td width="33" class="alcenter">5</td>
+    </tr>
+        <tr >
+    	<td width="63" height="24"></td>
+        <td width="109" class="lc"><a href="/d/players/1/563/">弗兰</a></td>
+        <td width="85">乌拉圭</td>
+        <td width="33" class="alcenter">5</td>
+    </tr>
+        <tr >
+    	<td width="63" height="24"></td>
+        <td width="109" class="lc"><a href="/d/players/1/147/">克洛泽</a></td>
+        <td width="85">德国</td>
+        <td width="33" class="alcenter">4</td>
+    </tr>
+        <tr >
+    	<td width="63" height="24"></td>
+        <td width="109" class="lc"><a href="/d/players/1/21/">伊瓜因</a></td>
+        <td width="85">阿根廷</td>
+        <td width="33" class="alcenter">4</td>
+    </tr>
+        <tr >
+    	<td width="63" height="24"></td>
+        <td width="109" class="lc"><a href="/d/players/1/39/">维特克</a></td>
+        <td width="85">斯洛伐克</td>
+        <td width="33" class="alcenter">4</td>
+    </tr>
+        <tr >
+    	<td width="63" height="24"></td>
+        <td width="109" class="lc"><a href="/d/players/1/559/">苏亚雷斯</a></td>
+        <td width="85">乌拉圭</td>
+        <td width="33" class="alcenter">3</td>
+    </tr>
+        <tr >
+    	<td width="63" height="24"></td>
+        <td width="109" class="lc"><a href="/d/players/1/523/">阿萨莫阿·吉安</a></td>
+        <td width="85">加纳</td>
+        <td width="33" class="alcenter">3</td>
+    </tr>
+        <tr >
+    	<td width="63" height="24"></td>
+        <td width="109" class="lc"><a href="/d/players/1/302/">多诺万</a></td>
+        <td width="85">美国</td>
+        <td width="33" class="alcenter">3</td>
+    </tr>
+    </table>
+<!--[if !IE]>|xGv00|ca6e6f233d55abc7bc5bcfba660b7ddd<![endif]--><table id="tablewl2" width="290" border="0" cellpadding="0" cellspacing="0" background="//mat1.gtimg.com/worldcup/images/datalib/qy/paimingbg_27.gif" class="undis">
+<tr class="col666">
+<td width="53" height="26" class="pl10">排名</td>
+<td width="109">球员</td>
+<td width="85">球队</td>
+<td width="33" class="alcenter">传球</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/180/">哈维</a></td>
+<td width="85">西班牙</td>
+<td width="33" class="alcenter">657</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/197/">布斯克茨</a></td>
+<td width="85">西班牙</td>
+<td width="33" class="alcenter">538</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/207/">阿隆索</a></td>
+<td width="85">西班牙</td>
+<td width="33" class="alcenter">518</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/111/">施魏因斯泰格</a></td>
+<td width="85">德国</td>
+<td width="33" class="alcenter">516</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/124/">皮克</a></td>
+<td width="85">西班牙</td>
+<td width="33" class="alcenter">460</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/83/">拉姆</a></td>
+<td width="85">德国</td>
+<td width="33" class="alcenter">360</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/159/">卡普德维拉</a></td>
+<td width="85">西班牙</td>
+<td width="33" class="alcenter">359</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/176/">伊涅斯塔</a></td>
+<td width="85">西班牙</td>
+<td width="33" class="alcenter">358</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/22/">范博梅尔</a></td>
+<td width="85">荷兰</td>
+<td width="33" class="alcenter">357</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/168/">拉莫斯</a></td>
+<td width="85">西班牙</td>
+<td width="33" class="alcenter">346</td>
+</tr>
+</table>
+<!--[if !IE]>|xGv00|67e8359a0f039e40c5100b065c091aa8<![endif]--><table id="tablewl3" width="290" border="0" cellpadding="0" cellspacing="0" background="//mat1.gtimg.com/worldcup/images/datalib/qy/paimingbg_27.gif" class="undis">
+<tr class="col666">
+<td width="53" height="26" class="pl10">排名</td>
+<td width="109">球员</td>
+<td width="85">球队</td>
+<td width="33" class="alcenter">抢断</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/550/">佩雷斯</a></td>
+<td width="85">乌拉圭</td>
+<td width="33" class="alcenter">41</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/22/">范博梅尔</a></td>
+<td width="85">荷兰</td>
+<td width="33" class="alcenter">35</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/770/">里奥斯</a></td>
+<td width="85">乌拉圭</td>
+<td width="33" class="alcenter">27</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/111/">施魏因斯泰格</a></td>
+<td width="85">德国</td>
+<td width="33" class="alcenter">27</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/219/">里维罗斯</a></td>
+<td width="85">巴拉圭</td>
+<td width="33" class="alcenter">22</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/197/">布斯克茨</a></td>
+<td width="85">西班牙</td>
+<td width="33" class="alcenter">21</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/423/">托拉多</a></td>
+<td width="85">墨西哥</td>
+<td width="33" class="alcenter">20</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/570/">富西莱</a></td>
+<td width="85">乌拉圭</td>
+<td width="33" class="alcenter">20</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/79/">马斯切拉诺</a></td>
+<td width="85">阿根廷</td>
+<td width="33" class="alcenter">20</td>
+</tr>
+<tr >
+<td width="63" height="24"></td>
+<td width="109" class="lc"><a href="/d/players/1/207/">阿隆索</a></td>
+<td width="85">西班牙</td>
+<td width="33" class="alcenter">20</td>
+</tr>
+</table>
+
+</div>
+</div>
+</div><!--[if !IE]>|xGv00|1002a1ca88bb5dee627a1f2d5f74f6d0<![endif]--></div><!--[if !IE]>|xGv00|9476a785d8167f6df91f279cadd2d323<![endif]--></div></div><div class='mode_col_1'></div><div class="mode_col_1">
+	<div class="ft">
+		<p><a href="http://www.tencent.com/">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml">About Tencent</a> | <a href="http://www.qq.com/contract.shtml">服务条款</a> | <a href="http://www.tencentmind.com/">广告服务</a> | <a href="http://hr.tencent.com/">腾讯招聘</a> | <a href="http://gongyi.qq.com/">腾讯公益</a> | <a href="http://service.qq.com/">客服中心</a> | <a href="http://www.qq.com/map/">网站导航</a></p>
+		<p>Copyright &copy; 1998 - 2010 Tencent. All Rights Reserved <a href="http://www.sznet110.gov.cn/netalarm/index.jsp" target="_blank"><img src="http://img1.qq.com/www/pics/816/816587.gif" align="absmiddle" border="0" hspace="5"></a></p>
+		<p>腾讯公司 <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank">版权所有</a></p>
+	</div>
+</div>
+<script language="javascript" src="http://pingjs.qq.com/ping.js"></script>
+<script language="javascript">
+if(typeof(pgvMain) == 'function')
+{
+pvCurDomain = "data.worldcup.qq.com";
+pvCurUrl = window.location.href.substring(window.location.href.indexOf(".com") + 4);
+pgvMain();
+}
+</script>
+<!-- START NNR Site Census V5.1 -->
+<!-- COPYRIGHT 2004 Nielsen // Netratings -->
+<script language="JavaScript" type="text/javascript">
+<!--
+var _rsCI="cn-tencent";
+var _rsCG="0";
+var _rsDT=0;
+var _rsDU=0; 
+var _rsDO=0; 
+var _rsX6=0;  
+var _rsSI=escape(window.location);
+var _rsLP=location.protocol.indexOf('https')>-1?'https:':'http:';
+var _rsRP=escape(document.referrer);
+var _rsND=_rsLP+'//secure-cn.imrworldwide.com/';
+
+if (parseInt(navigator.appVersion)>=4)
+{
+	var _rsRD=(new Date()).getTime();
+	var _rsSE=1;	
+	var _rsSV="";
+	var _rsSM=0.01;
+	_rsCL='<scr'+'ipt language="JavaScript" type="text/javascript" src="'+_rsND+'v51.js"><\/scr'+'ipt>';
+}
+else
+{
+	_rsCL='<img src="'+_rsND+'cgi-bin/m?ci='+_rsCI+'&cg='+_rsCG+'&si='+_rsSI+'&rp='+_rsRP+'">';
+}
+document.write(_rsCL);
+//-->
+</script>
+<noscript>
+<img src="//secure-cn.imrworldwide.com/cgi-bin/m?ci=cn-tencent&cg=0" alt="">
+</noscript>
+<!-- END NNR Site Census V5.1 -->
+<!--chg20110812 js1.0.4 byAustin-->
+<script>
+var SCRIPT_TIMEOUT = 20000;
+var QVPL_PATH = "//mat1.gtimg.com/www/html5js/QVPL1.0.4.js";
+function loadHelper (jsurl) {
+	var oScriptEl, oTimeoutHDL, oHead;
+	oScriptEl = document.createElement("script");
+	oScriptEl.type = "text/javascript";
+	oScriptEl.language = "javascript";
+	oScriptEl.src = jsurl;
+	oScriptEl.onreadystatechange = doCallback;
+
+	oScriptEl.onload = function()
+	{
+		this.readyState = "complete";
+		doCallback(); 
+		if(typeof(lianbo) == "object"){
+			lianbo.init(window.QVPL);
+		}
+	};
+
+	oTimeoutHDL = window.setTimeout(doError,SCRIPT_TIMEOUT);
+	document.getElementsByTagName("head")[0].appendChild(oScriptEl);
+
+	function doCallback()
+	{
+		if (oScriptEl.readyState == "complete" || oScriptEl.readyState == "loaded")
+		{
+			oScriptEl.onload = oScriptEl.onreadystatechange = new Function();
+			window.clearTimeout(oTimeoutHDL);
+		}
+	};
+
+	function doError()
+	{
+		oScriptEl.parentNode.removeChild(oScriptEl);
+	};
+}
+
+loadHelper(QVPL_PATH);
+</script><!--[if !IE]>|xGv00|5995073237d8e5e398160263691fadb1<![endif]-->
+</body>
+</html><!--[if !IE]>|xGv00|52aba1ebf869424876b86b714b17f8b5<![endif]--><!--[if !IE]>|xGv00|25b9aafc9d930263852662e85f5a6f75<![endif]-->

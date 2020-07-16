@@ -1,0 +1,270 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/jieqi/xiaoman/20190521-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="小满，麦穗，水稻，降水，夏季，时光画轴，腾讯网，节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 21:45:24';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-05-21", //日期，格式为 年-月-日
+	"cmd_id": "3897475826", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "xiaoman2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="xiaoman2019" style="display:none;">
+<p>小满，是二十四节气之一，夏季的第二个节气。小满——其含义是夏熟作物的籽粒开始灌浆饱满，但还未成熟，只是小满，还未大满。</p>
+<p>我国古代将小满分为三候：“一候苦菜秀，二候靡草死, 三候麦秋至。”是说小满节气后，苦菜已经枝叶繁茂；之后，喜阴的一些枝条细软的草类在强烈的阳光下开始枯死;在小满的最后一个时段， 麦子开始成熟。《月令七十二候集解》：“四月中，小满者，物致于此小得盈满。”这时全国北方地区麦类等夏熟作物籽粒已开始饱满, 但还没有成熟，约相当乳熟后期，所以叫小满。从气候特征来看，在小满节气到下一个芒种节气期间，全国各地都是渐次进入了夏季，南北温差进一步缩小,降水进一步增多。</p>
+<h2>气候特点</h2>
+<h3>南方地区</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJzE30IhAkDjZ2tFVLVBPPIb8KqPXKibxsppmz71lY0bNRnLH8UIJnlfw/640?wx_fmt=jpeg" title="小满1">
+<p>“小满大满江河满”反映了这一地区降雨多、雨量大的气候特征。一般来说，如果此时北方冷空气可以深入到我国较南的地区，南方暖湿气流也强盛的话，那么就很容易在华南一带造成暴雨或特大暴雨。因此，小满节气的后期往往是这些地区防汛的紧张阶段。</p>
+<h3>长江中下游</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJCylTnuNibvDbVXDdk4Upa1ia4ayniavOsGKLtfTvISzPorD15LPh4utbw/640?wx_fmt=jpeg" title="小满2">
+<p>“小满不下，黄梅偏少”、“小满无雨，芒种无水”...对于长江中下游地区来说，如果这个阶段雨水偏少，可能是太平洋上的副热带高压势力较弱，位置偏南，意味着到了黄梅时节，降水可能就会偏少。因此有民谚说“小满不下，黄梅偏少”；“小满无雨，芒种无水”。</p>
+<h3>黄河中下游</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJB2uITB4ugJicRSXFw133SgKc94KQycooZ00eibLwNKzibcPgYia5icwy3sA/640?wx_fmt=jpeg" title="小满3">
+<p>“小满不满，麦有一险”。小满节气时，黄河中下游等地区还流传着这样的说法："小满不满，麦有一险"。这"一险"就是指小麦在此时刚刚进入乳熟阶段，非常容易遭受干热风的侵害，从而导致小麦灌浆不足、粒籽干瘪而减产。防御干热风的方法很多，比如营造防护林带、喷洒化学药物等都是十分有效的措施。</p>
+<h3>江南地区</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJ6hicXDBJdGVzWgAT8rOPQjjrNkSCsTSPJHzc6b0M5dY8TQDja1VkNHQ/640?wx_fmt=jpeg" title="小满4">
+<p>小满节气期间江南地区往往也是江河湖满，如果不满，必是遇上干旱少雨年。“小满动三车，忙得不知他”。这里的三车指的是水车、油车和丝车。此时，农田里的庄稼需要充裕的水分，农民们便忙着踏水车翻水；收割下来的油菜籽也等待着农人们去舂(chong)打，做成清香四溢的菜籽油；田里的农活自然不能耽误。可家里的蚕宝宝也要细心照料，小满前后，蚕要开始结茧了，养蚕人家忙着摇动丝车缫(sao)丝。</p>
+<h2>节气农事</h2>
+<p>我国南北地域跨度大，各地的气候、农业生产、主要农作物品种及其生长状况有明显的不同，左河水“江南沃野过插秧，江北麦麸便灌浆。西子湖边人好客，茶商脚走款丝商。”之句，则道出了小满时节大江两岸水稻小麦的生产生长状况。</p>
+<h3>小麦产区</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJf2k9n2OwD3BmW5fNmB43sf4BVtm7nGIrdny6veoJOhKEamqyGmE09w/640?wx_fmt=jpeg" title="小满5">
+<p>此时宜抓紧麦田虫害的防治，预防干热风和突如其来的雷雨大风、冰雹的袭击。南方宜抓紧水稻的追肥、耘禾，抓紧晴天进行夏熟作物的收打和晾晒。这一时期，一定要注意浇好“麦黄水”，抓紧麦田虫害的防治，以增强麦子的长势，同时还应采取一些有效的防风措施预防干热风和突如其来的雷雨大风的袭击。</p>
+<h3>水稻产区</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJcFTZnrOX8fUzbvSFjvuicfjaAn4lZ81jOTM4SqFqYk4fCp6vNeqF9kw/640?wx_fmt=jpeg" title="小满6">
+<p>因为“立夏小满正栽秧”，“秧奔小满谷奔秋”，小满正是适宜水稻栽插的季节。华南的夏旱严重与否，和水稻栽插面积的多少，有直接的关系；而栽插的迟早，又与水稻单产的高低密切相关。华南中部和西部，常有冬干春旱，大雨来临又较迟，有些年份要到6月大雨才姗姗而来，最晚甚至可迟至7月。加之常年小满节气雨量不多，平均仅40毫米左右，自然降雨量不能满足栽秧需水量，使得水源缺乏的华南中部夏旱更为严重。俗话说：“蓄水如蓄粮”，"保水如保粮"。</p>
+<p>为了抗御干旱，除了改进耕作栽培措施和加快植树造林外，特别需要注意抓好头年的蓄水保水工作。但是，也要注意可能出现的连续阴雨天气，对小春作物收晒的影响。西北高原山地区，这时多已进入雨季，作物生长旺盛，欣欣向荣。但有较强冷空气南下时，使赣、浙、闽、粤等省5月下旬至6月上旬出现连续3天以上日平均气温低于20℃，日最低气温低于17℃的低温阴雨天气，会影响这些地区的早稻稻穗发育和扬花受粉。俗称"五月寒"，又称为"小满寒"。</p>
+<h2>食苦苦菜</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJn5poZMPmlLnibjzn2AhmRJpuknzpjAtG6Ngu15FVymYJtrvEqicFcnGw/640?wx_fmt=jpeg" title="小满7">
+<p>《周书》：“小满之日苦菜秀。”苦菜是中国人最早食用的野菜之一，苦中带涩，涩中带甜，新鲜爽口，清凉嫩香，营养丰富，含有人体所需要的多种维生素、矿物质、胆碱、糖类、核黄素和甘露醇等，具有清热、凉血和解毒的功能。《本草纲目》：（苦苦菜）久服，安心益气，轻身、耐老。医学上多用苦苦菜来治疗热症，古人还用它醒酒。宁夏人喜欢把苦菜烫熟，冷淘凉拌，调以盐、醋、辣油或蒜泥，清凉辣香，吃馒头、米饭，使人食欲大增。也有用黄米汤将苦苦菜腌成黄色，吃起来酸中带甜，脆嫩爽口。有的人还将苦苦菜用开水烫熟，挤出苦汁，用以做汤、做馅、热炒、煮面，各具风味。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJ15LDl04XjXYK1iaaRMBdLH0dbkU5lOnk0DuQ8XEvH8PUAEL9M81OgyQ/640?wx_fmt=jpeg" title="小满8">
+<p>《诗经》：“采苦采苦，首阳之下。”旧社会农民每年春天青黄不接之时，要靠苦苦菜充饥。苦苦菜，带苦尝，虽逆口，胜空肠。当年红军长征途中，曾以苦苦菜充饥，渡过了一个个难关，江西苏区有歌谣唱：苦苦菜，花儿黄，又当野菜又当粮，红军吃了上战场，英勇杀敌打胜仗。苦苦菜被誉为“红军菜”，“长征菜”。</p>
+<h2>节气习俗</h2>
+<h3>祭车神</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJdE5dTFeXC6TxA0DIRDiaUFa7seL6knGwbUyC5ick4e8zpxicfhwBgEEbg/640?wx_fmt=jpeg" title="小满9">
+<p>祭车神是一些农村地区古老的小满习俗。在相关的传说里二车神，是一条白龙在小满时节，人们在水车蓦上放上鱼肉、香烛等物品祭拜，最有趣的地方是，在祭品中会有一杯白水，祭拜时将白水泼入田中，有祝福水砚涌旺的意思。</p>
+<h3>祭蚕</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJRnulWwKcZhYZej239EpvLOQn2HkHdunia83jQvpf62feE44m1W3LTeg/640?wx_fmt=jpeg" title="小满10">
+<p>相传小满为蚕神诞辰，因此江浙一带在小满节气期间有一个祈蚕节。蚕是娇养的“宠物”，很难养活。气温、湿度，桑叶的冷、熟、干、湿等均影响蚕的生存。由于蚕难养，古代把蚕视作“天物”。为了祈求“天物”的宽恕和养蚕有个好的收成，因此人们在四月放蚕时节举行祈蚕节。</p>
+<h2>节气养生</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJvLAOMN9eacIOHJL2dkXYY9ggl7Lt3qrJRTsPdUJ0oib8XPlOrq8iaLqg/640?wx_fmt=jpeg" title="小满11">
+<p>小满时节高温多雨, 在这种高温高湿、湿热交加的环境中, 人体感觉湿热难耐, 却又无法通过水分蒸发来保持热量的平衡。这种体温调节上的保障, 会导致机体出现胸闷、心悸、精神不振、全身乏力等一系列的不适症状。中医把对人们的身体健康有负面影响的高温高湿称为“热邪”和“温邪”, 把人体阴阳气血、脏腑功能活动称为正气, 热邪和湿邪都能侵害人们的身体健康。当“邪气”盛于正气时, 人就会患病。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJLyR5K7H1cO4qbwcatLCIe9qnIq53jVhLK7iawcRcaeAFU75Bia44Kz8g/640?wx_fmt=jpeg" title="小满12">
+<p>夏季如长时间涉水淋雨、久卧湿地或居室潮湿, 就极有可能引发下肢溃疡、湿性脚气、妇女带下等病症。“湿邪”侵入关节, 会导致风湿或类风湿性关节炎、关节疼痛、伸屈不利、肌肤麻木。“湿邪”侵入脾胃, 会引起腹泻、水肿、食欲不振、恶心等病症。所以, 小满时节养生要注意防“湿”, 尤其是南方地区。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJiaOp4CaRLGV2UjhHaiao5NVujTP1licTIXXVqcAicwHmgjuhUA3p7w0iavg/640?wx_fmt=jpeg" title="小满13">
+<p>首先, 要改善居住环境, 避免潮湿。研究表明, 居室里适宜的气候条件是:室温达18℃时, 相对湿度控制在30%~40%;室温达25℃时, 相对湿度控制在40%~50%为宜。为了维持这种小气候, 在阴雨或雾天里要少开窗户, 避免湿气进入;室外艳阳高照时, 要开窗通风;要经常利用空调的抽湿功能, 保证室内空气湿度不高于60%。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJ2AoSrky6Tq5x471UEwvMBM6McmL8hlcujlyEzbLUkQqvZ4Eh8Geic5g/640?wx_fmt=jpeg" title="小满14">
+<p>其次, 饮食宜清淡, 以便于消化。要多食用消热利湿的食物, 如绿豆粥、荷叶粥、赤豆粥等, 以方便将体内湿热之邪排出体外。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnNILCd5vyFfs3kLUcU0ATJJPzF8b5UtySVrTm0ruQ6uMIveQ3GA5jDl9dyLVfBWlLibddIVriat3rA/640?wx_fmt=jpeg" title="小满15">
+<p>值得注意的是, 雨天要及时避雨, 湿邪正是在人不注意的时候入侵人体的。如果涉水淋雨, 回家后应及时换上干衣, 并饮服姜糖水。要是感到头重、身热, 就应服用藿香正气丸等药。另外, 衣服汗湿后, 应及时洗澡更衣, 平时要注意保持衣服干燥。阴雨过后, 一定要晾晒衣被, 以驱潮防霉。</p>
+<p>总之, 小满时节的湿气很重, 要尽量避免身体处于潮湿的环境中, 这样才能不受湿邪的侵袭, 保证身体健康。</p></div><!--[if !IE]>|xGv00|edc368b00be6d76e6ece26b7eeaa8530<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|47a7212c39edc9eddb7e726bd1cae191<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|b2a4d5deda9060fc18282f0ffd7a6f13<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|73112d46fb4bddd1cee24bb159fdb0c3<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|eb35ab5d6d37684abbafae3526fe2faa<![endif]-->

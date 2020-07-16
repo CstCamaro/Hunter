@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>评论-腾讯视频</title>
+    <base target="_blank">
+    
+      
+        <link href="//vm.gtimg.cn/tencentvideo/frames/coral/style/video.7edcaf34.css" rel="stylesheet" type="text/css" />
+      
+    
+      
+      <script type="text/javascript">
+        window.externalstyle = '//vm.gtimg.cn/tencentvideo/frames/coral/style/external.b4980ce4.css';
+      </script>
+      
+    
+  </head>
+  <body>
+    <div class="header" id="J_Header"></div>
+    <div class="box" id="J_Post"></div>
+    
+      <div class="comment-deep" id="J_Deep"></div>
+    
+    <div class="comment-short" id="J_Short"></div>
+    <script type="text/javascript">document.domain = 'qq.com';</script>
+    <script type="text/javascript" src="//mats.gtimg.com/v/coral/libs/jquery-1.12.4.min.js"></script>
+    
+      
+      <script src="//vm.gtimg.cn/tencentvideo/frames/coral/js/common.d10ed800.js" type="text/javascript"></script>
+      
+    
+      
+      <script src="//vm.gtimg.cn/tencentvideo/frames/coral/js/video.c25dcec1.js" type="text/javascript"></script>
+      
+    
+      
+    
+
+    <!-- mta 统计 -->
+    <script type="text/javascript">
+      var _mtac = {"performanceMonitor":1,"senseQuery":1};
+      (function() {
+        var mta = document.createElement("script");
+        mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "500656298");
+        mta.setAttribute("cid", "500656299");
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+      })();
+    </script>
+
+    <!-- 性能监控 -->
+    <script type="text/javascript">
+      (function (options) {
+        if (!window.performance || !window.performance.timing) {
+          return;
+        }
+
+        var pointer = {
+          unloadEventStart: 1,
+          unloadEventEnd: 2,
+          redirectStart: 3,
+          redirectEnd: 4,
+          fetchStart: 5,
+          domainLookupStart: 6,
+          domainLookupEnd: 7,
+          connectStart: 8,
+          connectEnd: 9,
+          requestStart: 10,
+          responseStart: 11,
+          responseEnd: 12,
+          domLoading: 13,
+          domInteractive: 14,
+          domContentLoadedEventStart: 15,
+          domContentLoadedEventEnd: 16,
+          domComplete: 17,
+          loadEventStart: 18,
+          loadEventEnd: 19
+        };
+
+        var appid = options.appid,
+            platform = options.platform,
+            flag1 = options.flag1,
+            flag2 = options.flag2,
+            flag3 = options.flag3;
+
+        window.addEventListener('load', function () {
+          var timing = window.performance.timing;
+          var navigationStart = timing.navigationStart;
+          var flag4 = [];
+
+          for (var key in pointer) {
+            var time = timing[key] - navigationStart;
+            time = time > 0 ? time : 0;
+            flag4.push(pointer[key] + '=' + time);
+          }
+
+          var speedparams = 'flag1=' + flag1 + '&flag2=' + flag2 + '&flag3=' + flag3 + '&' + flag4.join('&');
+          var url = '//report.huatuo.qq.com/report.cgi?appid=' + appid + '&platform=' + platform + '&speedparams=' + encodeURIComponent(speedparams) + '&t=' + new Date().getTime();
+          new Image().src = url;
+        });
+      })({
+        appid: 20620,
+        platform: 'pc',
+        flag1: 22314,
+        flag2: 1,
+        flag3: 3,
+      });
+    </script>
+  </body>
+</html>

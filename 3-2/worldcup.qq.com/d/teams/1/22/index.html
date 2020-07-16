@@ -1,0 +1,2144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="keywords" content="朝鲜，North Korea，洪映早，世界杯，南非世界杯，朝鲜简介，朝鲜资料，朝鲜图片，朝鲜近况，2010世界杯,2010南非世界杯,足球,worldcup">
+<meta name="description" content="腾讯2010南非世界杯专题, 提供最快速最全面最直观的世界杯新闻报道, 最专业最精确的球队球员资料和数据, 这里还有梅西独家中文博客，让您和国际巨星零距离交流">
+<link href="//mat1.gtimg.com/worldcup/css/datalib/qd/index.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="http://www.qq.com/js/datalib/ui.js?v=100308"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/www/js/swfobjectopt.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/news/js/TencentJS.js"></script>
+<script language="javascript">
+var $ = function (d){
+    typeof d == "string" &&(d = document.getElementById(d)); 
+    return $.fn.call(d);
+};
+$.fn = function (){
+	this.$ADD = function (fn){CLS.add(this,fn)};
+	this.addEvent = function (sEventType,fnHandler){
+		if (this.addEventListener) {this.addEventListener(sEventType, fnHandler, false);} 
+	    else if (this.attachEvent) {this.attachEvent("on" + sEventType, fnHandler);} 
+	    else {this["on" + sEventType] = fnHandler;}
+	}
+	this.removeEvent = function (sEventType,fnHandler){
+		if (this.removeEventListener) {this.removeEventListener(sEventType, fnHandler, false);} 
+	    else if (this.detachEvent) {this.detachEvent("on" + sEventType, fnHandler);} 
+	    else { this["on" + sEventType] = null;}
+	}
+	return this;
+};
+var Class = {create: function() {return function() { this.initialize.apply(this, arguments); }}};
+var Bind = function (obj,fun,arr){return function() {return fun.apply(obj,arr);}}
+var Marquee = Class.create();
+Marquee.prototype = {
+  initialize: function(id,name,out,speed) {
+    this.name = name;
+	this.box = $(id);
+	this.out  = 10;//滚动间隔时间,单位秒
+	this.speed = speed;
+	this.box.style.position = "relative";
+	this.box.scrollTop = 0;
+	var _li = this.box.firstChild;
+	while(typeof(_li.tagName)=="undefined")_li = _li.nextSibling;
+	this.lis = this.box.getElementsByTagName(_li.tagName);
+	this.len = this.lis.length;	
+	this.d = this.len;
+	for(var i=0;i<this.lis.length;i++){
+	    var __li = document.createElement(_li.tagName);
+		__li.innerHTML = this.lis[i].innerHTML;
+		this.box.appendChild(__li);
+		if(this.lis[i].offsetTop>=this.box.offsetHeight)break;
+	}
+	this.Start();
+	this.box.addEvent("mouseover",Bind(this,function(){clearTimeout(this.timeout);},[]));
+	this.box.addEvent("mouseout",Bind(this,this.Start,[]));
+  },
+  Start:function (){
+	  clearTimeout(this.timeout);
+	  this.timeout = setTimeout(this.name+".Up()",this.out*1000)
+  },
+  Up:function(){
+	  clearInterval(this.interval);
+	  this.interval = setInterval(this.name+".Fun()",10);
+  },
+  Fun:function (){
+      this.box.scrollTop-=this.speed;
+	  if(this.lis[this.d].offsetTop >= this.box.scrollTop){
+	    clearInterval(this.interval);
+		this.box.scrollTop = this.lis[this.d].offsetTop;
+		this.Start();
+		this.d--;
+	  }
+	  if(this.d <= 1){
+	     this.d = this.len;
+	     this.box.scrollTop = 0;
+	  }
+  }
+};
+$(window).addEvent("load",function (){
+marquee = new Marquee("message_marquee","marquee",1,1);
+});
+</script>
+
+
+<style>
+
+/*******************重定义*********************/
+body,div,h1,h2,h3,ul,li,td,th,img{margin:0px; padding:0px}
+body{font:12px/1.75 "宋体",Verdana,sans-serif; line-height:21px; color:#333; background-color:#fff; }
+table{border-collapse:collapse;border-spacing:0}
+img{border:1px #CCCCCC solid; padding:1px}
+ul,li{list-style:none}
+h1,h2,h3,th{font-size:100%; font-weight:normal}
+/***********************************************/
+
+/*******************通用定义*********************/
+a{color:#333;text-decoration:none}
+a:hover{color:#f00;text-decoration:underline}
+strong{font-weight:bold}
+.ti2{text-indent:2em}
+.heiti{font-family:"黑体"}
+.tohoma{font-family:"tahoma"}
+.verdana{font-family:"Verdana"}
+
+
+
+.alcenter{text-align:center}
+.alleft{text-align:left}
+.alright{text-align:right}
+.cwhite{color:#fff}
+.cschoolname{color:#015098}
+.cschoolname a{color:#015098}
+.cschoolname a:hover{color:#f00}
+.dis{display:block}
+.undis{display:none}
+.fl{float:left}
+.fr{float:right}
+.f10{font-size:10px}
+.f11{font-size:11px}
+.f12{font-size:12px}
+.f14{font-size:14px}
+.f14 a{font-size:14px}
+.f18{font-size:18px}
+.f20{font-size:20px}
+.fwb{font-weight:bold}
+.fwn{font-weight:normal}
+.mt5{margin-top:5px}
+.ml5{margin-left:5px}
+.mt10{margin-top:10px}
+.mt14{margin-top:14px}
+.mt15{margin-top:15px}
+.ml10{margin-left:10px}
+.ml14{margin-left:14px}
+.ml15{margin-left:15px}
+.ml9{margin-left:9px}
+.pt9{padding-top:9px}
+.pt2{padding-top:2px}
+.pt3{padding-top:3px}
+.pt6{padding-top:6px}
+.pt11{padding-top:11px}
+.pl10{padding-left:10px}
+.pl11{padding-left:11px}
+.pl12{padding-left:12px}
+.pl13{padding-left:13px}
+.pl15{padding-left:15px}
+.pl18{padding-left:18px}
+.pl22{padding-left:22px}
+.pl45{padding-left:45px}
+.pl6{padding-left:6px}
+.pl5{padding-left:5px}
+.pr10{padding-right:10px}
+.pr12{padding-right:12px}
+.pr30{padding-right:30px}
+.pl30{padding-left:30px}
+.pb4{padding-bottom:4px}
+.mb10{margin-bottom:10px}
+.pr5{padding-right:5px}
+
+.lh12{line-height:12px}
+.lh16{line-height:16px}
+.lh18{line-height:18px}
+.lh19{line-height:19px}
+.lh20{line-height:20px}
+.lh22{line-height:22px}
+.lh23{line-height:23px}
+.lh24{line-height:24px}
+.lh25{line-height:25px}
+.lh26{line-height:26px}
+.lh27{line-height:27px}
+.lh28{line-height:28px}
+.lh29{line-height:29px}
+.lh30{line-height:30px}
+.lh31{line-height:31px}
+.lh32{line-height:32px}
+.lh33{line-height:33px}
+.lh34{line-height:34px}
+.lh36{line-height:36px}
+.lh38{line-height:38px}
+.lh46{line-height:46px}
+
+.oh{overflow:hidden}
+
+.tdheng{width:608px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/tdsx_11.gif) repeat-y}
+.thheng{width:608px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/thsx_11.gif) repeat-y}
+.smyth{width:608px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/smyth_14.gif) repeat-y}
+.smytd{width:608px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/smytd_14.gif) repeat-y}
+.clr{width:100%;line-height:0;height:0;font-size:0;clear:both;}
+.wrap{width:960px; margin:0 auto}
+.blankd10{height:10px}
+.yingwen{font-family:"verdanna"}
+.col666{color:#666666}
+.col666 a{color:#666}
+.col666 a:hover{color:#f00}
+.lc{color:#1044BA}
+.lc a{color:#1044BA}
+.lc a:hover{color:#1044BA}
+.lc2{color:#333}
+.lc2 a{color:#333}
+.lc2 a:hover{color:#1044BA}
+/**************/
+
+.rigco{color:#999999}
+.mysearch{height:31px;}
+
+.qiuyuanbanner{width:570px; height:43px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/gq/t_t1801.png) no-repeat; padding-top:15px; padding-left:70px; font-size:14px; color:#fff; font-weight:bold}
+.left1{width:610px; border:1px #D8D8D8 solid; padding:14px}
+.left11{width:149px; float:left}
+.qiuduipic{width:149px; height:114px}
+.zhichita{width:149px; height:67px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/a_zhichibg_07.gif) no-repeat}
+.canjia{width:149px; height:109px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/a_canjiabg_09.gif) no-repeat}
+.canjia img{border:1px #CCCCCC solid; padding:0px}
+.canjia .img1{border:0px; padding:0px}
+.nob img{border:0px; padding:0px}
+.left12{width:446px;float:left; margin-left:15px; padding-top:7px}
+.linebg1{width:446px; height:24px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/linebg1_11.gif) no-repeat}
+.qiuyuanjianjie{width:473px; line-height:20px; height:40px}
+.qiuyuanwenzi{width:446px; height:46px}
+.left12 ul{height:64px;}
+.left12 li{height:19px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/a_titlebg_14.gif) left center no-repeat; line-height:21px; overflow:hidden; padding-left:1px}
+.benjiebiaoxian{width:446px; padding-top:9px}
+
+.left2,.left2n,.left3,.left4,.left5{width:640px; margin-top:10px}
+.left2n1{width:221px; height:314px; float:left; background:url(http://img1.gtimg.com/worldcup/d/teams/picinfo/20100609/9b4f815e5d4ccb8245dc3b96e82a9ab0.gif) top center no-repeat}
+.left2n2{width:372px; float:right}
+.mode_col_l .hd{width:625px; height:33px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/lefthdbg_15.gif) no-repeat; font-size:14px;padding-left:15px; line-height:35px; font-weight:bold; overflow:hidden;}
+.mode_col_l .bd{width:610px; border:1px #d8d8d8 solid; border-top:0px; padding:14px}
+.bt{border:1px #d8d8d8 solid}
+.bt_nb{border:1px #d8d8d8 solid; border-bottom:0px}
+.mode_col_l .tuwen{width:610px}
+.mode_col_l .wenzi{width:486px; float:right}
+.line2{width:610px; height:1px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/leftline_23.gif) no-repeat; margin-top:15px; margin-bottom:10px}
+.left2 span{float:right;font-family:"tahoma"; font-size:12px; color:#666666}
+.left2 li{height:24px}
+
+.shipin{width:325px; height:291px; float:left; padding-top:5px}
+.optlist{width:279px; float:right}
+.optoff{width:270px; height:69px;clear:both;float:left;background-color:#fff; padding-left:9px; padding-top:5px; cursor:pointer}
+.opton{width:270px; height:69px;clear:both;float:left;background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/onbg_31.gif) no-repeat; padding-left:9px; padding-top:5px; cursor:pointer}
+.tex{width:178px; float:right; line-height:21px}
+
+.left4 .hd1{width:638px; border:1px #d8d8d8 solid; border-bottom:0px;}
+.left4 .hd1on{width:80px; height:32px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/off1bg_35.gif) no-repeat; text-align:center; font-weight:bold; float:left; line-height:32px; cursor:pointer}
+.left4 .hd1off{width:80px; height:32px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/on1bg_34.gif) no-repeat; text-align:center; font-weight:normal; float:left; line-height:32px; cursor:pointer}
+.left4 .hd1right{width:478px; height:32px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/rightbg_36.gif) no-repeat; float:left}
+.bdb td{border-bottom:1px #D8D8D8 solid}
+.bdb tr{border-bottom:1px #D8D8D8 solid}
+.bdb{border-bottom:1px #D8D8D8 solid}
+.colorchange{background-color:#E9E9E9}
+
+.right1{width:310px;}
+.mode_col_r .hd{width:295px; height:33px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/righthd_03.gif) no-repeat;font-size:14px;padding-left:15px; line-height:35px; font-weight:bold}
+.mode_col_r .bd{width:290px; background-color:#F4F4F4; padding:10px}
+.mode_col_r .bd .weibo{width:290px; height:360px; overflow:hidden}
+.mode_col_r .bd .weibo div{width:290px; padding-top:10px; padding-bottom:10px;  border-bottom:1px solid #999; border-bottom-style:dotted}
+.mode_col_r .bd .weibo a:link{color:#1044BA}
+.mode_col_r .bd .weibo a:visited{color:#1044BA}
+.mode_col_r .bder{width:278px; background-color:#F4F4F4;padding:14px 16px}
+.mode_col_r .hder{width:280px; height:32px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/righthd2_05.gif) no-repeat; font-size:12px; padding-left:30px; line-height:34px; font-weight:bold}
+.mode_col_r .tuwen{width:290px;}
+.mode_col_r .wenzi{width:229px; float:right; color:#666}
+.scrollbox img{border:0px; padding:0px;}
+.lioff{background-color:#F5F5F5}
+.lion{background-color:#E9E9E9}
+.line3{width:290px; height:1px; margin-top:10px; margin-bottom:10px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/line2_11.gif); overflow:hidden}
+.blankd14{height:14px}
+.picbox{width:74px; height:104px; float:left; text-align:center; line-height:30px}
+.shuxianbg{width:34px; height:104px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/shuxianbg_03.gif) no-repeat; float:left}
+.line4{width:290px; height:3px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/line3_20.gif) no-repeat}
+.mode_col_r .hder1{width:310px; height:33px; line-height:33px}
+.mode_col_r .hderon{width:66px; height:33px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/rightonbg_22.gif) no-repeat; font-weight:bold; text-align:center; float:left; cursor:pointer}
+.mode_col_r .hderoff{width:66px; height:33px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/rightoffbg_23.gif) no-repeat; font-weight:normal; text-align:center; float:left; cursor:pointer}
+.mode_col_r .hderright{width:112px; height:33px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/rightright_24.gif) no-repeat; float:left}
+
+.piaoshu{color:#D0221C; font-size:14px; font-weight:bold;line-height:21px;overflow:hidden;}
+.zhichitaoff{width:112px; height:27px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/zhichitaoff_18.gif) no-repeat; text-align:center; font-size:14px; font-weight:bold; padding-top:5px; cursor:pointer}
+.zhichitaon{width:112px; height:27px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/zhichitaon_18.gif) no-repeat; text-align:center; font-size:14px; font-weight:bold; padding-top:5px; cursor:pointer}
+.scrollbox{ width:610px; border:1px solid #E1E1E1; border-top:0px;clear:both; overflow:hidden; position:relative; padding:14px; padding-bottom:0px}
+.pane {border:none;clear:both;margin-bottom:10px;overflow:hidden;position:relative; width:2000px; margin:0px; padding:0px}
+.pane .pohto .box:hover,.pane .pohto .on .box {background-color:#E9E9E9;border:1px #CEDAEA solid;zoom:1;}
+.pane .pohto .box {display:block;width:140px;height:140px;padding:0px;border:1px solid #E9E9E9;text-align:center;position:relative;background:#FFF 50% 50% no-repeat;overflow:hidden;}
+.pane .pohto li {float:left;zoom:1;margin-right:14px;text-align:center;display:inline; margin-left:0px; }
+.buttonarea{width:60px;}
+.buttonarea img{border:0px; padding:0px}
+.pr14{padding-right:14px}
+.mysearch{height:27px; width:310px; padding-top:4px; position:relative}
+.mysearch input{width:220px; height:19px; float:left; border:1px #D3D3D1 solid; line-height:21px}
+.mysearch button{width:80px; float:right;}
+.mysearch label{position:absolute; left:3px; line-height:25px; color:#666; overflow:hidden}
+
+.bghui{width:200px; height:13px; background-color:#e9e9e9}
+.jindu{width:0px; height:11px; padding-top:1px; padding-left:1px; background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/a_jindu01_03.gif) repeat-x}
+.rightbuqi{width:310px; height:1119px; background-color:#f4f4f4}
+
+.smysj{height:32px; line-height:32px; padding-left:2px}
+.flashc{width:325px; height:291px; float:left; padding-top:5px}
+.hack1{margin-top:0;*margin-top:-20px;font-size:12px}
+.dandubg{background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/hhdd_05.gif) top no-repeat;}
+.stt{background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/stt_06.gif) left top repeat-x}
+.cp{cursor:pointer}
+.headnav{width:960px; height:40px;}
+.headnav img{border:0px; padding:0px}
+.mysearch{height:27px; width:310px; padding-top:4px; position:relative; padding-top:10px}
+.mysearch input{width:220px; height:19px; float:left; border:1px #D3D3D1 solid; line-height:21px; overflow:hidden}
+.mysearch button{width:80px; float:right;}
+.mysearch label{position:absolute; left:3px; line-height:25px; color:#666}
+.button1{background:url(//mat1.gtimg.com/worldcup/images/datalib/qd/buttonbg_03.gif) no-repeat; width:79px; height:21px; line-height:21px; text-align:center; border:0px;}
+.mode_col_21{background:url(//mat1.gtimg.com/worldcup/images/datalib/daheng_03.gif) top center repeat-y}
+</style>
+<script language="javascript" src="//mat1.gtimg.com/worldcup/js/datalib/qd/ScrollPic.js"></script>
+<title>朝鲜_球队库_2010南非世界杯_腾讯网</title>
+</head>
+
+<body>
+<style>
+/*导航 */
+.daohang2{width:100%;margin:0 auto;overflow:hidden;zoom:1;background:#fff;}
+#topNavShow{font-size:12px;}
+#topNavShow ul,#topNavShow li{list-style:none;margin:0;padding:0;}
+#topNavShow a{font-size:12px;text-decoration:none;}
+#topNavShow img{border:none;}
+
+.dis{display:block;}
+.undis{display:none;}
+
+.ar_box{width:960px;margin:0 auto;background:#fff;}
+.ar_box .linkmap{float:left;padding-left:3px;}
+.ar_box .linkmap img{display:block;border:0;}
+.cl{clear:both;}
+.ar_topNav{height:60px;background:url(//mat1.gtimg.com/worldcup/daohang2/nav07.png) repeat-x;}
+.ar_navLink{background:#edf4f9;width:152px;height:18px;line-height:18px;float:right;text-align:center;color:#b8b8b8;margin:8px 10px 0 0;}
+.ar_navLink a{font-size:12px;color:#575757;text-decoration:none;}.ar_navLink a:hover{color:#c00;text-decoration:none;}
+#ar_Fod_list div{float:left;}
+#ar_navT2{width:44px;}
+#ar_navT3{width:66px;}
+#ar_navT4{width:82px;}
+#ar_navT5{width:96px;}
+#ar_navT7{width:90px;}
+#ar_navT2 a,#ar_navT3 a,#ar_navT4 a,#ar_navT5 a,#ar_navT7 a{text-align:center;color:#fff;display:block;font-size:14px;height:30px;line-height:30px;}
+#ar_Fod_list div.soly2,#ar_Fod_list div.soly2 a,#ar_Fod_list div.soly2 a:hover{background:#fff;color:#333;font-weight:bold;text-decoration:none;}
+.ar_topNav li{line-height:29px;color:#b0c1cd;}
+.ar_topNav .green{color:#1b5800;}
+.ar_topNav ul a{color:#1b5800;}
+.ar_topNav ul a:hover{color:#0c4c99;text-decoration:none;}
+</style>
+<!--导航 -->
+<div class="daohang2">
+<div class="ar_box">
+	<div class="linkmap"><img src="//mat1.gtimg.com/worldcup/images/imgcss_article_qq/danhang2_top.png" width="516" height="45" border="0" usemap="#Map">
+		<map name="Map" id="Map">
+			<area shape="rect" coords="1,5,105,40" href="http://www.qq.com/" target="_blank"/>
+			<area shape="rect" coords="118,2,504,43" href="http://worldcup.qq.com" target="_blank"/>
+		</map>
+	</div>
+	<div class="ar_navLink"><a href="http://www.qq.com/">腾讯网首页</a> | <a href="http://3gqq.qq.com/portal/index.jsp?type=worldcup">手机世界杯</a></div>
+	
+</div>
+<div class="cl"></div>
+<div class="ar_topNav" id="topNavShow">
+<table width="960" border="0"  cellpadding="0" cellspacing="0" align="center" style="margin:0 auto">
+				<tr>
+					<td height="30" align="center" id="ar_Fod_list" style="padding-left:8px;">
+					<div onMouseOver="fodoly2(this)" class="soly2" id="ar_navT5"><a href="http://worldcup.qq.com/">世界杯首页</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/l/news.htm">新闻</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/picture/">图片</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/video/">视频</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/zhibo/">直播</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/schedule/">赛程</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/master/">数据</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT7"><a href="http://worldcup.qq.com/goalflash/">3D模拟进球</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT3"><a href="http://worldcup.qq.com/data/">资料库</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT4"><a href="http://worldcup.qq.com/qxzj/">前线直击</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT5"><a href="http://worldcup.qq.com/interview/">第一演播厅</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://blog.qq.com/worldcup/">博客</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/comment/">评论</a></div>
+					<div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://blog.qq.com/t/2010worldcup/">微博</a></div>
+                    <div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT2"><a href="http://worldcup.qq.com/subjects/">专题</a></div>
+                    <div onMouseOver="fodoly2(this)" class="cardoly2" id="ar_navT4"><a href="//my.worldcup.qq.com/">球迷中心</a></div>
+					</td>
+				</tr>
+				<tr>
+					<td height="29" align="center">
+					
+<!--世界杯首页-->
+<ul class="dis">
+<li>
+<a href="http://sports.qq.com/" target="_blank">体育首页</a> |  
+<a href="http://worldcup.qq.com/zt2010/messi_kaka/" target="_blank">梅西卡卡独家代言腾讯</a> |  
+<a href="http://worldcup.qq.com/bbs/" target="_blank">世界杯论坛</a> |  
+<a href="http://worldcup.qq.com/zt/travel/" target="_blank">南非旅游指南</a> |  
+<a href="http://worldcup.qq.com/draw/" target="_blank">分组抽签专题回顾</a> | 
+<a href="http://worldcup.qq.com/subjects/tencent/" target="_blank">腾讯世界杯战略</a></li>
+</ul>
+				
+<!--新闻-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/hotnews/" target="_blank">新闻排行榜</a> | 
+<a href="http://worldcup.qq.com/team/brazil/" target="_blank">巴西</a> | 
+<a href="http://worldcup.qq.com/team/argentina/" target="_blank">阿根廷</a> | 
+<a href="http://worldcup.qq.com/team/italy/" target="_blank">意大利</a> | 
+<a href="http://worldcup.qq.com/team/spain/" target="_blank">西班牙</a> | 
+<a href="http://worldcup.qq.com/team/england/" target="_blank">英格兰</a> | 
+<a href="http://worldcup.qq.com/team/france/" target="_blank">法国</a> | 
+<a href="http://worldcup.qq.com/team/germany/" target="_blank">德国</a> | 
+<a href="http://worldcup.qq.com/team/netherland/" target="_blank">荷兰</a> | 
+<a href="http://worldcup.qq.com/team/portugal/" target="_blank">葡萄牙</a> | 
+<a href="http://worldcup.qq.com/l/news/groupa/scroll.htm" target="_blank">A组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupb/scroll.htm" target="_blank">B组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupc/scroll.htm" target="_blank">C组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupd/scroll.htm" target="_blank">D组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupe/scroll.htm" target="_blank">E组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupf/scroll.htm" target="_blank">F组</a> | 
+<a href="http://worldcup.qq.com/l/news/groupg/scroll.htm" target="_blank">G组</a> | 
+<a href="http://worldcup.qq.com/l/news/grouph/scroll.htm" target="_blank">H组</a></li>
+</ul>
+
+<!--图片-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/l/picture/gd/list2010068185649.htm" target="_blank">滚动图集</a> | 
+<a href="http://worldcup.qq.com/picture/vivid/" target="_blank">高清幻灯</a> | 
+<a href="http://worldcup.qq.com/l/picture/highlight/list20100514154913.htm" target="_blank">精彩赛况</a> | 
+<a href="http://worldcup.qq.com/l/picture/dujiatupian/list20100517111140.htm" target="_blank">独家聚焦</a> | 
+<a href="http://worldcup.qq.com/l/picture/beauty/list20100517111737.htm" target="_blank">型男靓女</a> | 
+<a href="http://worldcup.qq.com/l/picture/feature/list20100517111011.htm" target="_blank">赛场花絮</a> | 
+<a href="http://worldcup.qq.com/l/picture/bagua/list2010051711552.htm" target="_blank">八卦新闻</a> | 
+<a href="http://worldcup.qq.com/l/picture/qiudui/list20100517111629.htm" target="_blank">列强风采</a> | 
+<a href="http://worldcup.qq.com/l/picture/qiumi/list20100517111222.htm" target="_blank">球迷特写</a> | 
+<a href="http://worldcup.qq.com/l/picture/liumang/list20100517111540.htm" target="_blank">足球流氓</a> | 
+<a href="http://worldcup.qq.com/picture/wallpaper.htm" target="_blank">壁纸下载</a> | 
+<a href="http://worldcup.qq.com/l/picture/classic/list20100514155529.htm" target="_blank">经典回眸</a></li>
+</ul>
+
+<!--视频-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/zt2010/2010goal/" target="_blank">全进球一览</a> | 
+<a href="http://worldcup.qq.com/l/video/news.htm" target="_blank">视频滚动</a> | 
+<a href="http://worldcup.qq.com/video/zt2010.htm" target="_blank">视频特刊</a> | 
+<a href="http://worldcup.qq.com/zt2010/star/" target="_blank">巨星零距离</a> | 
+<a href="http://worldcup.qq.com/video/d/" target="_blank">独家策划</a> | 
+<a href="http://worldcup.qq.com/video/f/" target="_blank">视频花絮</a> |  
+<a href="http://worldcup.qq.com/video/match.htm" target="_blank">64场激战全场回放</a>
+</li>
+</ul>
+
+<!--直播-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/zhibo/" target="_blank">直播大厅</a> | 
+<a href="http://worldcup.qq.com/zhibo/hudong.htm" target="_blank">互动直播汇总</a> | 
+<a href="http://worldcup.qq.com/zhibo/banlv.htm" target="_blank">电视伴侣汇总</a> 
+</li>
+</ul>
+
+<!--赛程-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/schedule/" target="_blank">全部赛程</a> | 
+<a href="http://worldcup.qq.com/schedule/index.htm?tab=2" target="_blank">小组赛赛程</a> | 
+<a href="http://worldcup.qq.com/schedule/index.htm?tab=3" target="_blank">淘汰赛赛程</a> | 
+<a href="http://worldcup.qq.com/schedule/tv.htm" target="_blank">电视直播表</a>
+</li>
+</ul>
+
+
+<!--数据-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/master/" target="_blank">数据分析大师</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm" target="_blank">射手榜</a> | 
+<a href="http://worldcup.qq.com/master/standing.htm" target="_blank">积分榜</a> | 
+<a href="http://worldcup.qq.com/lottery/" target="_blank">世界杯彩票</a> | 
+<span class="green">球员：</span><a href="http://worldcup.qq.com/master/allrank.htm?tab=p_total_pass" target="_blank">传球</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_touches" target="_blank">触球</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_total_tackle" target="_blank">抢断</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_total_contest" target="_blank">突破</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_was_fouled" target="_blank">被侵犯</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_total_clearance" target="_blank">解围</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=p_won_contest" target="_blank">门将</a>
+<span class="green">球队：</span><a href="http://worldcup.qq.com/master/allrank.htm?tab=t_accurate_pass" target="_blank">传球</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=t_accurate_pass" target="_blank">传球成功率</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=t_total_offside" target="_blank">越位</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=t_total_contest" target="_blank">突破</a> | 
+<a href="http://worldcup.qq.com/master/allrank.htm?tab=t_total_att" target="_blank">射门次数</a>
+</li>
+</ul>
+
+<!--进球Flash-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/l/goalflash/3d/list20100612212113.htm" target="_blank">64战进球一览</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/finals1/list20100712114612.htm" target="_blank">决赛</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/semifinal/list201007861548.htm" target="_blank">半决赛</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/3D41/list201007621742.htm" target="_blank">1/4决赛</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/3Deighth/list201007621857.htm" target="_blank">1/8决赛</a> | 
+<a href="http://worldcup.qq.com/goalflash/3D.htm" target="_blank">小组赛</a> | 
+<a href="http://worldcup.qq.com/goalflash/day.htm" target="_blank">按日期查询</a> | 
+
+<a href="http://worldcup.qq.com/l/goalflash/stars/bly/list2010062261409.htm" target="_blank">射手榜之比利亚</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/stars/Klose1/list201007623213.htm" target="_blank">克洛泽</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/stars/ThomasMuller/list201007623121.htm" target="_blank">穆勒</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/stars/Sneijder/list201007623145.htm" target="_blank">斯内德</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/stars/Higuain1/list20100617213022.htm" target="_blank">伊瓜因</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/G10/Spain1/list2010062261525.htm" target="_blank">豪门之西班牙</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/G10/Netherlands1/list2010061413528.htm" target="_blank">荷兰</a> | 
+<a href="http://worldcup.qq.com/l/goalflash/G10/Germany1/list2010061452725.htm" target="_blank">德国</a> 
+</li>
+</ul>
+
+<!--资料库-->
+<ul class="undis">
+<li>
+
+<a href="http://worldcup.qq.com/team/" target="_blank">世界杯32强</a> | 
+<a href="http://worldcup.qq.com/data/coaches.htm" target="_blank">主帅资料库</a> | 
+<a href="http://worldcup.qq.com/players/" target="_blank">球员资料库</a> | 
+<a href="http://worldcup.qq.com/data/refrees.htm" target="_blank">裁判资料库</a></li>
+</ul>
+
+<!--前线直击-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/qxzj/hxcz/" target="_blank">火线传真</a> | 
+<a href="http://worldcup.qq.com/qxzj/jzbk/" target="_blank">前线记者独家博客</a> | 
+<a href="http://worldcup.qq.com/qxzj/nffq/" target="_blank">南非风情</a> | 
+<a href="http://worldcup.qq.com/qxzj/xsnf/" target="_blank">行色南非</a> | 
+<a href="http://worldcup.qq.com/qxzj/wb/" target="_blank">微博南非</a> | 
+<a href="http://worldcup.qq.com/qxzj/xwgng/" target="_blank">小薇逛南非</a></li>
+</ul>
+
+<!--独家访谈-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/interview/totalstar/" target="_blank">绝对巨星</a> | 
+<a href="http://worldcup.qq.com/interview/ljh_viewpoint/index.html" target="_blank">宏观世界杯</a> | 
+<a href="http://worldcup.qq.com/interview/dx_talkshow/index.html" target="_blank">南非喧传语</a> | 
+<a href="http://worldcup.qq.com/interview/pseudo_fans/index.html" target="_blank">文道伪球迷</a> | 
+<a href="http://worldcup.qq.com/interview/hq_talkshow/index.html" target="_blank">海泉世界波</a> | 
+<a href="http://worldcup.qq.com/interview/betpreview/index.html" target="_blank">明帅解盘</a> |  
+<a href="http://worldcup.qq.com/interview/f_analysis/index.html" target="_blank">李明布阵</a> | 
+<a href="http://worldcup.qq.com/interview/realtimecomment/index.html" target="_blank">名家评球</a> | 
+<a href="http://worldcup.qq.com/interview/f_worldcup/index.html" target="_blank">时尚世界杯</a> | 
+<a href="http://worldcup.qq.com/interview/gh__talkshow/" target="_blank">广沪开讲</a> | 
+<a href="http://worldcup.qq.com/interview/worldcupforum/index.html" target="_blank">大家论坛</a> | 
+<a href="http://worldcup.qq.com/interview/face/index.htm" target="_blank">巨星面对面</a>
+</li>
+</ul>
+
+<!--博客-->
+<ul class="undis">
+<li>
+<a href="http://messi.qzone.qq.com/ " target="_blank">梅西博客</a> | 
+<a href="http://622001200.qzone.qq.com/" target="_blank">卡卡博客</a> | 
+<a href="http://duanxuan.qzone.qq.com/ " target="_blank">段暄博客</a> | 
+<a href="http://blog.qq.com/qzone/622004856/1276731787.htm" target="_blank">阿来博客</a> | 
+<a href="http://madexing.qzone.qq.com/ " target="_blank">马德兴博客</a> | 
+<a href="http://250607350.qzone.qq.com/ " target="_blank">许绍连博客</a> | 
+<a href="http://blog.qq.com/worldcup/Specialist/" target="_blank">观察家</a> | 
+<a href="http://blog.qq.com/worldcup/Celebrity/" target="_blank">明星圈</a> | 
+<a href="http://blog.qq.com/worldcup/qqatworldcup/" target="_blank">我在现场</a> | 
+<a href="http://blog.qq.com/worldcup/footballfans/" target="_blank">七嘴八舌</a> | 
+<a href="http://blog.qq.com/worldcup/Colorful2010/" target="_blank">花花世界杯</a> | 
+<a href="http://blog.qq.com/worldcup/Cartoon/" target="_blank">漫画世界杯</a>
+</li>
+</ul>
+
+<!--评论-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/comment/zhubi/more.htm" target="_blank">腾讯主笔</a> | 
+<a href="http://worldcup.qq.com/comment/comzhuanti/huizong.htm" target="_blank">专题策划</a> | 
+<a href="http://worldcup.qq.com/comment/only/coolvoices/" target="_blank">每日最强音</a> | 
+<a href="http://book.qq.com/zt/2010/wxworldcup/index.htm" target="_blank">文学世界杯</a> | 
+<a href="http://worldcup.qq.com/l/comment/papercom/list20100517112145.htm" target="_blank">媒体评论</a> | 
+<a href="http://worldcup.qq.com/l/comment/foreigncom/list20100517112252.htm" target="_blank">外电评述</a> | 
+<a href="http://worldcup.qq.com/l/comment/procom/list20100517112320.htm" target="_blank">专家观点</a> | 
+<a href="http://worldcup.qq.com/l/comment/starsblog/list20100517112433.htm" target="_blank">名人声音</a> | 
+<a href="http://worldcup.qq.com/l/comment/wangyoucom/list20100517112537.htm" target="_blank">草根意见</a> | 
+<a href="http://worldcup.qq.com/l/comment/commic/list20100517115402.htm" target="_blank">漫画世界杯</a> | 
+<a href="http://worldcup.qq.com/comment/only/pkzones/" target="_blank">PK台</a> | 
+<a href="http://worldcup.qq.com/comment/only/beautypro/" target="_blank">美女与教授</a>
+</li>
+</ul>
+
+<!--微薄-->
+<ul class="undis">
+<li>
+<a href="http://t.qq.com" target="_blank">我的微博</a> | 
+<a href="http://t.qq.com/duanxuan" target="_blank">段暄微博</a> | 
+<a href="http://t.qq.com/yu_hua" target="_blank">余华</a> | 
+<a href="http://t.qq.com/chi_li" target="_blank">池莉</a> | 
+<a href="http://t.qq.com/laishu" target="_blank">阿来</a> | 
+<a href="http://t.qq.com/chengfei" target="_blank">程菲</a> | 
+<a href="http://t.qq.com/lenahewenna" target="_blank">何雯娜</a> | 
+<a href="http://t.qq.com/chenyibing" target="_blank">陈一冰</a> | 
+<a href="http://t.qq.com/madexing" target="_blank">马德兴</a> | 
+<a href="http://worldcup.qq.com/zt2010/yuweisjb/" target="_blank">“余”味世界杯</a> | 
+<a href="http://worldcup.qq.com/zt2010/alnf/" target="_blank">“来”看南非</a> | 
+<a href="http://t.qq.com/k/世界杯" target="_blank">世界杯话题</a> | 
+<a href="http://worldcup.qq.com/twitter/32fansmore.htm" target="_blank">32强粉丝团</a>
+</li>
+</ul>
+
+<!--专题-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/subjects/pandian.htm" target="_blank">风云64战</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangchaguan.htm" target="_blank">微博茶馆</a> | 
+<a href="http://worldcup.qq.com/subjects/best/index.htm" target="_blank">每日最佳</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangpandian.htm" target="_blank">每日盘点</a> | 
+<a href="http://worldcup.qq.com/comment/comzhuanti/huizong.htm" target="_blank">非闻研究</a> | 
+<a href="http://worldcup.qq.com/zt2010/bigstar/index.htm" target="_blank">巨星聚集腾讯网</a> | 
+<a href="http://worldcup.qq.com/zt/warringteams/" target="_blank">战国策</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangqiushi.htm" target="_blank">球·事系列</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangfan.htm" target="_blank">Fan足球系列</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangxiake.htm" target="_blank">侠客行系列</a> | 
+<a href="http://worldcup.qq.com/subjects/daohangshijiao.htm" target="_blank">Q视角系列</a>
+</li>
+</ul>
+
+<!--球迷中心-->
+<ul class="undis">
+<li>
+<a href="http://worldcup.qq.com/tuiyan/" target="_blank">我的冠军推演</a> | 
+<a href="http://worldcup.qq.com/guess/" target="_blank">有奖竞猜</a> | 
+<a href="http://2010.qq.com/worldcup/index.htm" target="_blank">世博杯</a> | 
+<a href="http://lady.qq.com/zt/2010/2010baobei/" target="_blank">美女世界杯</a> | 
+<a href="http://worldcup.qq.com/zt/2010/fansdream/index.htm" target="_blank">我的足球梦</a> | 
+<a href="http://worldcup.qq.com/zt/zhengwen/index.htm" target="_blank">世界杯征文</a> | 
+<a href="http://worldcup.qq.com/myteam/" target="_blank">草根球队</a>
+</li>
+</ul>
+
+					</td>
+				</tr>
+			</table>
+</div>
+</div>
+<script language="javascript">
+var okok = function(o){return (typeof o == "object") ? o: document.getElementById(o)};
+
+function addEventHandler(oTarget, sEventType, fnHandler) {
+
+         if (oTarget.addEventListener) {
+
+                   oTarget.addEventListener(sEventType, fnHandler, false);
+
+         } else if (oTarget.attachEvent) {
+
+                   oTarget.attachEvent("on" + sEventType, fnHandler);
+
+         } else {
+
+                   oTarget["on" + sEventType] = fnHandler;
+
+         }
+
+}
+
+var tempList = [];
+
+function showElements() {
+
+         var parsentObj = okok('topNavShow');
+
+         var lens0 = parsentObj.childNodes.length;
+
+         for (i=0; i<lens0; i++) {
+
+                   var objcc0 = parsentObj.childNodes[i];
+
+                   var lens1 =objcc0.childNodes.length;
+
+                   tempList.push(objcc0);
+
+                   for (j=0; j < lens1; j++) {
+
+                            var objcc1 = objcc0.childNodes[j];
+
+                            var lens2 = objcc1.childNodes.length;
+
+                            tempList.push(objcc1);
+
+                            for (k=0; k < lens2; k++) {
+
+                                     var objcc2 = objcc1.childNodes[k];
+
+                                     var lens3 = objcc2.childNodes.length;
+
+                                     tempList.push(objcc2);
+
+                                     for (c=0; c < lens3; c++) {
+
+                                               var objcc3 = objcc2.childNodes[c];
+
+                                               var lens4 = objcc3.childNodes.length;
+
+                                               tempList.push(objcc3);
+
+                                               for (cl = 0; cl < lens4; cl++) {
+
+                                                        var objcc4 = objcc3.childNodes[cl];
+
+                                                        var lens5 = objcc4.childNodes.length;
+
+                                                        tempList.push(objcc4);
+
+                                                        for (ci=0; ci < lens5; ci++) {
+
+                                                                 var objcc5 = objcc4.childNodes[ci];
+
+                                                                 tempList.push(objcc5);
+
+                                                                 var lens6 = objcc5.childNodes.length;
+
+                                                                 for (cij=0; ci < lens6; ci++) {
+
+                                                                           var objcc6 = objcc5.childNodes[ci];
+
+                                                                           tempList.push(objcc6);
+
+                                                                 }
+
+                                                        }
+
+                                               }
+
+                                     }
+
+                            }
+
+                   }
+
+         }
+
+
+}
+
+showElements();
+
+addEventHandler(document.body, 'mouseover', reBackUrlHandler);
+
+function reBackUrlHandler(event) {  
+
+         var lens = tempList.length;
+
+         var divObj = event.srcElement ? event.srcElement : event.target;
+
+         var objNums = 0;
+
+         for (var i=0; i < lens; i++) {
+
+                   if (tempList[i] == divObj) {
+
+                            objNums++;
+
+                   }
+
+         }
+
+         if (objNums == 0) {
+
+                   getUrl();
+
+         }
+
+}
+
+		  function fodoly2(obj)
+		  {
+			var poly2 = obj.parentNode.parentNode.parentNode.parentNode;
+			var poly21 = obj.parentNode.getElementsByTagName("div");
+			var toly2 = poly2.getElementsByTagName("tr")[1].getElementsByTagName("ul");
+			var noly2 = poly21.length;
+			for(i=0;i<noly2;i++)
+			{
+				if(poly21[i] == obj)
+				{
+					poly21[i].className = "soly2";
+					toly2[i].className = "dis";
+				}
+				else
+				{
+					poly21[i].className = "";
+					toly2[i].className = "undis";				
+				}
+			}
+		  }	
+var tags = okok("ar_Fod_list").getElementsByTagName("div");		  
+function getUrl(){
+	var now = 0;
+	var url = document.location.href;
+	var urlArr = url.split("/");
+	var nowStr = urlArr[3];
+	switch(nowStr){ 
+			//世界杯首页
+			case 'index':
+			now=0;break;
+			
+			//新闻
+			case 'news':
+			now=1;break;
+			
+			//图片
+			case 'picture':
+			now=2;break;
+			
+			//视频
+			case 'video':
+			now=3;break;
+			
+			//直播
+			case 'zhibo':
+			now=4;break;
+			
+			//赛程
+			case 'schedule':
+			now=5;break;
+			
+			//数据
+			case 'master':
+			now=6;break;
+			
+			//进球flash
+			case 'goalflash':
+			now=7;break;
+			
+			//资料库
+			case 'data':
+			now=8;break;
+			
+			//前线直击
+			case 'qxzj':
+			now=9;break;
+
+			
+			//独家访谈
+			case 'interview':
+			now=10;break;
+			
+			//博客
+			case 'index':
+			now=11;break;
+				
+			//评论
+			case 'comment':
+			now=12;break;
+		
+			//微博
+			case 'index':
+			now=13;break;
+			
+			//专题
+			case 'subjects':
+			now=14;break;
+			
+			//球迷中心
+			case 'index':
+			now=15;break;			
+			
+			default:
+			now=0;
+		}		
+fodoly2(tags[now])
+}
+getUrl()  
+</script>
+<!--[if !IE]>|xGv00|108e063e2f627e53ad97c5d85df84b10<![endif]-->
+<div align="center" style="padding-top:5px;">
+<OBJECT classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"    
+codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"    
+WIDTH="960" HEIGHT="80">    
+<PARAM NAME=movie VALUE="//mat1.gtimg.com/worldcup/ad/lechi0611.swf">    
+<PARAM NAME=quality VALUE=high>    
+<PARAM NAME=bgcolor VALUE=#FFFFFF>    
+<EMBED src="//mat1.gtimg.com/worldcup/ad/lechi0611.swf" quality=high bgcolor=#FFFFFF WIDTH="960" HEIGHT="80"    
+ ALIGN="" TYPE="application/x-shockwave-flash"    
+PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">    
+</EMBED>    
+</OBJECT> 
+</div><!--[if !IE]>|xGv00|cd4f0707ad8633b85b89d1e155c7faea<![endif]--><div class='mode_col_1'><div class="headnav lh31">
+<div class="fl"><a href="http://worldcup.qq.com/data/" target="_blank"><img src="//mat1.gtimg.com/worldcup/images/datalib/qy/newhder_03.jpg" width="215" height="40" /></a></div>
+        	<div class="fl lh29 pt11">
+				<span class="lc"><a href="http://worldcup.qq.com/data">世界杯资料库</a></span> <span class="rigco">></span> 朝鲜
+                </div>
+        	        	<style>
+<!--
+input,select,textarea{padding:0;margin:0}
+button{border:none; padding:0px; margin:0px;cursor:pointer;font-size:12px;background-color:transparent;}
+.search_box{width:290px; background-color:#fff; padding:10px;padding-top:4px;*padding-top:14px; float:right}
+		.search_box input{border:1px solid #D3D3D1; height:17px; padding-top:1px; *height:15px; *padding-top:3px; width:210px; font-size:12px}
+		.search_box .bt_search{background:url(images/buttonbg_03.jpg) no-repeat; width:68px; height:22px; line-height:21px; text-align:center}
+		.search_box select{width:101px;*width:104px; float:left}
+-->
+			</style>
+			<script type="text/javascript" src="//mat1.gtimg.com/www/apps/js/app.platform.smartbox.v6.js"></script>
+<div class="search_box">
+            <form id="search_s" method="get" target="_self" action="" onsubmit="return false;">
+            <p style="margin-bottom:10px">
+             <button type="button" class="button1 fr"  onclick="if (document.getElementById('search_content').value=='搜球员/球队/比赛'){ document.getElementById('search_content').focus();}return AppPlatform.SmartBox.searchclick();">搜索</button>
+            <input type="text" id="search_content" value="搜球员/球队/比赛" style="color:#666666; float:left;width:200px;text-indent:4px;"  onfocus="this.value=''" onblur="this.value='搜球员/球队/比赛'"/>
+            <div class="clr"></div>
+            </p>
+            <script>AppPlatform.SmartBox.init(16,'search_content', 10, 'top');</script>
+			</form>
+</div>			
+            <div class="fr lh29 pt11" style="margin-right:10px">
+    	<span class="lc"><a href="http://support.qq.com/portal/discuss_pdt/432_1.html" target="_blank">意见反馈</a></span>
+    </div>
+    	</div><!--[if !IE]>|xGv00|3d2f2360180f89ff7b526e7c577b06cb<![endif]--></div><div class='mode_col_21'><div class='mode_col_l'><div class="qiuyuanbanner">朝鲜（North Korea）<div style="float:right;margin-top:-20px;margin-right:75px">FIFA排名:105</div></div>
+            
+            	<div class="left1 mt5">
+            		<div class="left11">
+					<div class="qiuduipic"><a href="#"><img src="http://img2.gtimg.com/worldcup/d/teams/picinfo/20100610/d29f6322717d61ea23a7fb5661cb638e.jpg" width="145" height="110" /></a></div>
+                	<div class="zhichita">
+                    	<table width="149" border="0" cellpadding="0" cellspacing="0">
+							 <tr><td height="5"></td></tr>
+							 <tr>
+                                <td height="62" class="lh23 col666" align="center">
+                                     <span id="apps_svy_opt_count_77926_0" class="piaoshu verdana">331456</span>人支持<br /><div  id="apps_svy_opt_title_77926_0" doneText="<div style='display:none;'></div>"><div class="zhichitaoff lh25 col666" onmouseover="zhichitaon(this)" onmouseout="zhichitaoff(this)" onclick="window.open('http://my.worldcup.qq.com/?c=open');return false;"></div></div>
+                                </td>
+                            </tr>
+                                        <script language="javascript">
+function zhichitaon(o)
+										{
+											o.className="zhichitaon lh25 col666";
+											}
+										function zhichitaoff(o)
+										{
+											o.className="zhichitaoff lh25 col666";
+											}
+										</script>
+                          </table>
+                        <!--支持-->
+                    </div><!--[if !IE]>|xGv00|41094297724f0d765885742494d8da4a<![endif]-->                    
+                                        <div class="canjia dis">
+                    	<table width="149" border="0" cellpadding="0" cellspacing="0">
+                        	<tr><td height="11"></td></tr>
+                            <tr><td id="tdzzcj" height="29" class="col666 lh29 pl10">上一场比赛</td></tr>
+                            <tr><td height="38">
+                            		<table width="149" border="0" cellpadding="0" cellspacing="0">
+                                    	<tr>
+                                            <td width="50" height="38" align="right">
+                                            	<a href="/d/teams/1/22/"><img src="//mat1.gtimg.com/worldcup/images/datalib/qd/gq/s_t1801.gif" width="19" height="13" /></a><br />
+                                                <span class="lh24 lc" title="朝鲜"> 
+                                                <a href="/d/teams/1/22/">
+                                                        朝鲜
+</a>
+                                                        </span>
+                                            </td>
+                                            <td width="40" align="center" class="lc lh38"><span class="tohoma"><a href="/d/match/1/46/index2.shtml" target="_blank">0-3</a></span></td>
+                                            <td width="50">
+                                            	<a href="/d/teams/1/25/"><img src="//mat1.gtimg.com/worldcup/images/datalib/qd/gq/s_t1221.gif" width="19" height="13" /></a><br />
+                                                <span class="lh24 lc" title="科特迪瓦">
+                                                <a href="/d/teams/1/25/">
+                                                        科特迪瓦
+                                                        </a></span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                            </td></tr>
+                            <tr><td height="3"></td></tr>
+                            <tr><td height="28" align="center"></td></tr>
+                        </table>
+                        <!--参加-->
+                    </div>
+                                        
+                    
+                    <div class="clr"></div>
+                </div>
+                
+                    <div class="left12">
+                        <div class="qiyuanjianjie">
+                            <table width="446" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                   <td width="8" height="20"></td>
+                                  <td width="132">教练：<span class="lc" title="金永勋 "><a href="http://worldcup.qq.com/a/20100426/000110.htm" target="_blank">金永勋 </a></span></td>
+                                  <td width="159">世界杯参赛次数：<span class="col666" title="2">2</span></td>
+                                  <td width="147">核心球员：<span class="lc" title="洪映早"><a href="http://worldcup.qq.com/d/players/1/241/" target="_blank">洪映早</a></span></td>
+                              </tr>
+                                <tr>
+                                   <td width="8" height="20"></td>
+                                  <td width="132">队长：<span class="lc" title="洪映早"><a href="http://worldcup.qq.com/d/players/1/241/" target="_blank">洪映早</a></span></td>
+                                  <td width="159">上届战绩：<span class="col666" title="未参加">未参加</span></td>
+                                  <td width="147">进球最多：<span class="lc" title="郑大世(12)"><a href="http://worldcup.qq.com/d/players/1/246/" target="_blank">郑大世(12)</a></span></td>
+                              </tr>
+                            </table>
+                        </div>
+                        <div class="linebg1"></div>
+                        <div class="qiuyuanwenzi ti2 col666">
+    朝鲜队近20年很少踏足国际赛程，他们曾是亚洲足球的代表，在1966年世界杯上力克意大利队，闯进八强。时隔44年，再次进入世界杯决赛圈
+                        </div>
+                        <ul class="col666">
+                            <li><span class="cwhite">最佳战绩</span> <span title="1966年世界杯8强">1966年世界杯8强</span></li>
+                            <li><span class="cwhite">传奇人物</span> <span title="朴斗益">朴斗益</span></li>
+                            <li><span class="cwhite">本届表现</span> <span title="朝鲜队3战皆负，进1球丢12球小组垫底出局">朝鲜队3战皆负，进1球丢12球小组垫底出局</span><span  class="lc"><a href="details.shtml" target="_blank">[详细资料]</a></span></span></li>
+                        </ul>
+                        <div class="benjiebiaoxian">
+                                                <table width="446" border="0" cellpadding="0" cellspacing="0">
+                                <tr><td height="27" background="//mat1.gtimg.com/worldcup/images/datalib/qd/benjiebiaoxian_14.gif" class="pl10 fwb" colspan="6">本届表现</td></tr>
+                                <tr bgcolor="#FFFFFF" class="col666 lh23">
+                                   <td width="68" height="23" class="alcenter">日期</td>
+                                  <td width="158" class="alcenter" >对阵</td>
+                                  <td width="48" class="alcenter">控球率</td>
+                                  <td width="70" class="alcenter">射门/射正</td>
+                                  <td width="50" class="alcenter">传球数</td>
+                                  <td width="60" class="alcenter">成功传球</td>
+                              </tr>
+                              
+                                                                                            <tr bgcolor="#E9E9E9" class="lh23">
+                                                                   <td width="68" height="23" class="alcenter"><span class="tohoma">06-25</span></td>
+									<td width="148">
+				<table width="158" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="158" class="alright lc" height="23" style="align:center;text-align:center;"><a href="/d/match/1/46/index2.shtml" target="_blank" title="朝鲜 0-3 科特迪瓦">朝鲜 0-3 科特迪瓦</a></td>
+											</tr>
+				</table>
+			                </td>
+                                  <td width="48" class="alcenter"><span class="tohoma">34.5%</span></td>
+                                  <td width="70" class="alcenter"><span class="tohoma">9/4</span></td>
+                                  <td width="50" class="alcenter"><span class="tohoma">308</span></td>
+                                  <td width="60" class="alcenter"><span class="tohoma">230</span></td>
+                              </tr>
+                              
+                                                                                           <tr bgcolor="#FFFFFF" class="lh23">
+                                                                   <td width="68" height="23" class="alcenter"><span class="tohoma">06-21</span></td>
+									<td width="148">
+				<table width="158" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="158" class="alright lc" height="23" style="align:center;text-align:center;"><a href="/d/match/1/30/index2.shtml" target="_blank" title="葡萄牙 7-0 朝鲜">葡萄牙 7-0 朝鲜</a></td>
+											</tr>
+				</table>
+			                </td>
+                                  <td width="48" class="alcenter"><span class="tohoma">41.4%</span></td>
+                                  <td width="70" class="alcenter"><span class="tohoma">15/3</span></td>
+                                  <td width="50" class="alcenter"><span class="tohoma">341</span></td>
+                                  <td width="60" class="alcenter"><span class="tohoma">254</span></td>
+                              </tr>
+                              
+                                                                                            <tr bgcolor="#E9E9E9" class="lh23">
+                                                                   <td width="68" height="23" class="alcenter"><span class="tohoma">06-16</span></td>
+									<td width="148">
+				<table width="158" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="158" class="alright lc" height="23" style="align:center;text-align:center;"><a href="/d/match/1/14/index2.shtml" target="_blank" title="巴西 2-1 朝鲜">巴西 2-1 朝鲜</a></td>
+											</tr>
+				</table>
+			                </td>
+                                  <td width="48" class="alcenter"><span class="tohoma">27.5%</span></td>
+                                  <td width="70" class="alcenter"><span class="tohoma">11/2</span></td>
+                                  <td width="50" class="alcenter"><span class="tohoma">241</span></td>
+                                  <td width="60" class="alcenter"><span class="tohoma">185</span></td>
+                              </tr>
+                              
+                                                            
+                        </table>
+                        
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                	<div class="clr"></div>
+            	</div><!--[if !IE]>|xGv00|6edfdf5017661fe231d350b609eb0df3<![endif]--><div class="left2n">
+                	<div class="hd">
+                    	<span class="fr pr10 lc f12 fwn"></span>主力阵容
+                    </div>
+                    <div class="bd">
+                    	<div class="left2n1">
+                    	</div>
+                    	<div class="left2n2">
+                        	<table width="375" border="0" cellpadding="0" cellspacing="0" class="stt">
+                        	<tr class=" col666">
+                            		<td  width="10" height="26"> </td>
+                                    <td  width="30" class="alcenter">号码</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87">球员</td>
+                                    <td  width="59">位置</td>
+                                    <td  width="30" class="alcenter">号码</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87">球员</td>
+                                    <td  width="44">位置</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">1</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="李明国"><a href="/d/players/1/205/">李明国</a></span></td>
+                                    <td  width="59">门将</td>
+                                                            	                        	                        	
+                        	                        	    <td  width="30" class="alcenter">2</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="车正赫"><a href="/d/players/1/209/">车正赫</a></span></td>
+                                    <td  width="44">后卫</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">3</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="李俊日"><a href="/d/players/1/211/">李俊日</a></span></td>
+                                    <td  width="59">后卫</td>
+                                                            	                        	                        	
+                        	                        	    <td  width="30" class="alcenter">4</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="朴南哲"><a href="/d/players/1/213/">朴南哲</a></span></td>
+                                    <td  width="44">中场</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">5</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="李光川"><a href="/d/players/1/215/">李光川</a></span></td>
+                                    <td  width="59">后卫</td>
+                                                            	                        	                        	
+                        	                        	    <td  width="30" class="alcenter">6</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="金锦一"><a href="/d/players/1/247/">金锦一</a></span></td>
+                                    <td  width="44">前锋</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">7</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="安哲赫"><a href="/d/players/1/221/">安哲赫</a></span></td>
+                                    <td  width="59">前锋</td>
+                                                            	                        	                        	
+                        	                        	    <td  width="30" class="alcenter">8</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="志尹南"><a href="/d/players/1/224/">志尹南</a></span></td>
+                                    <td  width="44">中场</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">9</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="郑大世"><a href="/d/players/1/246/">郑大世</a></span></td>
+                                    <td  width="59">前锋</td>
+                                                            	                        	                        	
+                        	                        	    <td  width="30" class="alcenter">10</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="洪映早"><a href="/d/players/1/241/">洪映早</a></span></td>
+                                    <td  width="44">前锋</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">11</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="文仁国"><a href="/d/players/1/242/">文仁国</a></span></td>
+                                    <td  width="59">中场</td>
+                                                            	                        	                        	
+                        	                        	    <td  width="30" class="alcenter">12</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="崔金哲"><a href="/d/players/1/250/">崔金哲</a></span></td>
+                                    <td  width="44">前锋</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">13</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="朴哲镇"><a href="/d/players/1/253/">朴哲镇</a></span></td>
+                                    <td  width="59">后卫</td>
+                                                            	                        	                        	
+                        	                        	    <td  width="30" class="alcenter">14</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="朴男哲"><a href="/d/players/1/259/">朴男哲</a></span></td>
+                                    <td  width="44">后卫</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">15</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="金永俊"><a href="/d/players/1/847/">金永俊</a></span></td>
+                                    <td  width="59">中场</td>
+                                                            	                        	                        	
+                        	                        	    <td  width="30" class="alcenter">16</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="南成哲"><a href="/d/players/1/217/">南成哲</a></span></td>
+                                    <td  width="44">后卫</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">17</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="安英学"><a href="/d/players/1/232/">安英学</a></span></td>
+                                    <td  width="59">中场</td>
+                                                            	                        	                        	
+                        	                        	    <td  width="30" class="alcenter">18</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="金明吉"><a href="/d/players/1/208/">金明吉</a></span></td>
+                                    <td  width="44">门将</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">19</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="李哲明"><a href="/d/players/2/1028/">李哲明</a></span></td>
+                                    <td  width="59">中场</td>
+                                                            	                        	                        	
+                        	                        	    <td  width="30" class="alcenter">20</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="金明元"><a href="/d/players/2/1026/">金明元</a></span></td>
+                                    <td  width="44">门将</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">21</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="李光赫"><a href="/d/players/1/230/">李光赫</a></span></td>
+                                    <td  width="59">后卫</td>
+                                                            	                        	                        	
+                        	                        	    <td  width="30" class="alcenter">22</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="金京一"><a href="/d/players/1/870/">金京一</a></span></td>
+                                    <td  width="44">中场</td>
+                                </tr>
+                        	                        	                        	
+                        	                        	
+                        	<tr  class=" col666">
+                                	<td  width="10" height="24"> </td>
+                                    <td  width="30" class="alcenter">23</td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc" title="朴胜赫"><a href="/d/players/2/1027/">朴胜赫</a></span></td>
+                                    <td  width="59">后卫</td>
+                                                                        <td  width="30" class="alcenter"> </td>
+                                    <td  width="14"> </td>
+                                    <td  width="87"><span class="lc2"><a href="#"> </a></span></td>
+                                    <td  width="44"> </td>
+                                                            	                        	                            </table>
+                        </div>
+                    	<div class="clr"></div>
+                    
+                    </div>
+                </div><!--[if !IE]>|xGv00|64c1da4b2ce324f1977a39f754900d17<![endif]--><div class="left2">
+                	<div class="hd">
+                    	<span class="fr pr10 lc f12 fwn"><a class="f12" href="news.shtml">更多</a></span>最新动态
+                    </div>
+                    <div class="bd">
+                                                <div class="tuwen">
+                        	<a href="http://worldcup.qq.com/a/20100714/000033.htm"><img src="//mat1.gtimg.com/worldcup/images/datalib/morentu.gif" class="fl" width="110" height="85" onerror="this.src='//mat1.gtimg.com/worldcup/images/datalib/morentu.gif'"/></a>
+                            <div class="wenzi col666">
+                            	<h2 class="f14 fwb lc"><span class="fwn fr">[2010-07-14 14:17:58]</span><a href="http://worldcup.qq.com/a/20100714/000033.htm" target="_blank" title="亚洲雄起！韩日皆杀入16强 朝鲜打出血勇之战">亚洲雄起！韩日皆杀入16强 朝鲜打出血勇之战</a></h2>
+
+                            </div>
+                            <div class="clr"></div>
+                        </div>
+                    	
+                        <div class="line2"></div>
+                        <ul class="col666 f14 lc lh24">
+                                
+                                                        	<li><span>[2010-07-12 11:29:52]</span>·<a href="http://worldcup.qq.com/a/20100712/003145.htm" target="_blank" title="世界杯美女秀场：乳神出风头 朝鲜啦啦队惹眼">世界杯美女秀场：乳神出风头 朝鲜啦啦队惹眼</a></li>
+                                                    	<li><span>[2010-07-12 10:26:39]</span>·<a href="http://worldcup.qq.com/a/20100712/002990.htm" target="_blank" title="回首29夜南非那些事：悲剧很多只有朝鲜动人">回首29夜南非那些事：悲剧很多只有朝鲜动人</a></li>
+                                                    	<li><span>[2010-07-12 07:47:27]</span>·<a href="http://worldcup.qq.com/a/20100712/002610.htm" target="_blank" title="南非世界杯32强最终排名 西班牙第一朝鲜垫底">南非世界杯32强最终排名 西班牙第一朝鲜垫底</a></li>
+                                                    	<li><span>[2010-07-11 22:52:52]</span>·<a href="http://worldcup.qq.com/a/20100711/003445.htm" target="_blank" title="波鸿宣布签约郑大世 朝鲜鲁尼正式登陆德乙">波鸿宣布签约郑大世 朝鲜鲁尼正式登陆德乙</a></li>
+                                                    </ul>
+                                            </div>
+                </div><!--[if !IE]>|xGv00|afb0cf3afc5818e56d4c8e4b794cb4e5<![endif]--><div class="left3">
+                	<div class="hd">
+                    	<span class="fr pr10 lc f12 fwn"><a href="http://worldcup.qq.com/l/video/t/dprk/list.htm" target="_blank">更多</a></span>精彩视频
+                    </div>
+                    
+                                        
+                    <div class="bd">
+						<div id="flashC" style="width:325px; height:291px; float:left; padding-top:5px"></div>
+                        <div class="optlist" id="list">
+                        	<ul id="fod1">
+                        	                                	        <li id="divopt1" class="opton"  name="6tpTfLnoXVv">
+                                        <img src="http://img1.gtimg.com/worldcup/pics/hv1/129/110/564/36702279.jpg" class="fl" width="80" height="60" onerror="this.src='//mat1.gtimg.com/worldcup/images/datalib/videomorentu.jpg'"/>
+                                        <div class="tex">
+                                        <span class="fwb" title="视频：最令人期待黑马朝鲜 3场比赛竟失12球">视频：最令人期待黑马朝</span><br />
+                                        <span class="col666"></span>
+                                        </div>
+                                        <div class="clr"></div>
+                                        </li>
+                        	                                	        <li id="divopt1" class="opton"  name="68b5PERqgSW">
+                                        <img src="http://img1.gtimg.com/sports/pics/hv1/247/13/559/36352537.jpg" class="fl" width="80" height="60" onerror="this.src='//mat1.gtimg.com/worldcup/images/datalib/videomorentu.jpg'"/>
+                                        <div class="tex">
+                                        <span class="fwb" title="海泉世界波19期：后舍赞朝鲜踢的不是球是魂">海泉世界波19期：后舍赞</span><br />
+                                        <span class="col666">6月28日腾讯《海泉世界波》邀请到了网络红人后舍男生做..</span>
+                                        </div>
+                                        <div class="clr"></div>
+                                        </li>
+                        	                                	        <li id="divopt1" class="opton"  name="6UP3pmO46oa">
+                                        <img src="http://img1.gtimg.com/worldcup/pics/hv1/84/166/558/36326364.jpg" class="fl" width="80" height="60" onerror="this.src='//mat1.gtimg.com/worldcup/images/datalib/videomorentu.jpg'"/>
+                                        <div class="tex">
+                                        <span class="fwb" title="李明布阵16期:朝鲜斗志用尽科特迪瓦赢得轻松">李明布阵16期:朝鲜斗志用</span><br />
+                                        <span class="col666">6月26日，腾讯第一演播厅《李明布阵》节目再次和大家见..</span>
+                                        </div>
+                                        <div class="clr"></div>
+                                        </li>
+                        	                                	        <li id="divopt1" class="opton"  name="6oaCKB3jDBD">
+                                        <img src="http://img1.gtimg.com/worldcup/pics/hv1/231/160/558/36324981.jpg" class="fl" width="80" height="60" onerror="this.src='//mat1.gtimg.com/worldcup/images/datalib/videomorentu.jpg'"/>
+                                        <div class="tex">
+                                        <span class="fwb" title="视频：朝鲜南非世界杯之旅 战绩不佳精神不差">视频：朝鲜南非世界杯之</span><br />
+                                        <span class="col666">北京时间6月25日晚，在南非世界杯G组第三轮的一场交锋..</span>
+                                        </div>
+                                        <div class="clr"></div>
+                                        </li>
+                        	                                    </ul>
+                        </div>
+                        <div class="clr"></div>
+                        <script>
+	var playerLianBo = new Object();
+		playerLianBo = {
+		$:function(v){return document.getElementById(v)},
+		getELE:function(id,ele){return this.$(id).getElementsByTagName(ele);},
+		defPlayer:new Object(),
+		initId:"flashC",
+		listId:"list",
+		defListTag:"li",
+		isAuto:"0",
+		statTag:"div",
+		thisPlayer:function(curr){return this.getELE(this.listId,this.defListTag)[curr].attributes['name'].nodeValue;},
+		init:function(n){
+		this.defPlayer = new SWFObject("http://cache.tv.qq.com/qqplayerout.swf?v="+this.thisPlayer(n),"payerC","100%","100%", "9.0.28", "#FFFFFF")
+		this.defPlayer.addParam("allowScriptAccess", "always"); 
+		this.defPlayer.addParam("allowFullScreen", "true"); 
+		this.defPlayer.addParam("scale", "noscale");
+		this.defPlayer.addParam("wmode", "transparent");
+		this.defPlayer.addVariable("auto",this.isAuto);
+		this.defPlayer.addVariable("pic","http://img1.gtimg.com/worldcup/pics/hv1/129/110/564/36702279.jpg");
+		this.defPlayer.addVariable("list","2");
+		this.defPlayer.write(this.initId); 
+		this.stats(n);
+        this.isAuto = '1';
+		},
+		click:function(){
+			var ele = this.getELE(this.listId,this.defListTag);
+			for(var i=0;i<ele.length;i++){
+				(function(){
+					var p =i;
+					ele[p].onclick = function(){
+						playerLianBo.init(p);
+					}
+				})(i);
+			}
+		},stats:function(n){
+			var ele = this.getELE(this.listId,this.defListTag);
+			for(var i=0;i<ele.length;i++){
+				if(n==i){
+					ele[i].className = "opton";
+				}else{
+					ele[i].className = "optoff";
+				}
+			}
+		}
+
+	}
+
+playerLianBo.initId = "flashC";//FLASH容器
+playerLianBo.listId = "list";//列表容器
+playerLianBo.defListTag = "li";//列表标签
+playerLianBo.statTag = "div";//状态标签
+playerLianBo.init(0);
+playerLianBo.click();
+
+
+
+</script>
+                 
+                    </div>
+                    <div class="clr"></div>
+                                    </div><!--[if !IE]>|xGv00|7a18a39961379d644c698cd600414f32<![endif]--><div class="left5" tid="1">
+                	<div class="hd"><span class="fr pr10 lc f12 fwn"><a href="#"></a></span>最新数据</div>
+                    <div class="bd alcenter">
+                    	<table width="610" border="0" cellpadding="0" cellspacing="0" class="bt_nb lh25 col666 bdb tohoma">
+                          
+                          <tr>
+                              <td height="25" bgcolor="#EEEEEE">球员</td>
+                              <td bgcolor="#E2E2E2" >号码</td>
+                           	  <td bgcolor="#EEEEEE">位置</td>
+                           	  <td bgcolor="#E2E2E2" >出场(分)</td>
+                              <td bgcolor="#EEEEEE">进球</td>
+                              <td bgcolor="#E2E2E2">射门</td>
+                              <td bgcolor="#EEEEEE">射正</td>
+                              <td bgcolor="#E2E2E2" >助攻</td>
+                              <td bgcolor="#EEEEEE">抢断</td>
+                              <td bgcolor="#E2E2E2" >长传</td>
+                              <td bgcolor="#EEEEEE">拦截</td>
+                              <td bgcolor="#E2E2E2" >越位</td>
+                              <td bgcolor="#EEEEEE">犯规</td>
+                              <td bgcolor="#E2E2E2" >黄牌</td>
+                              <td bgcolor="#EEEEEE">红牌</td>
+                          </tr>
+						
+			
+									<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/209/" title="车正赫">车正赫</a></td>
+                              <td bgcolor="#F7F7F7" >2</td>
+                           	  <td>后卫</td>
+                           	  <td bgcolor="#F7F7F7" >258'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >4</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >5</td>
+                              <td bgcolor="#F7F7F7">5</td>
+                              <td >3</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>1</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/211/" title="李俊日">李俊日</a></td>
+                              <td bgcolor="#F7F7F7" >3</td>
+                           	  <td>后卫</td>
+                           	  <td bgcolor="#F7F7F7" >273'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >1</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >1</td>
+                              <td bgcolor="#F7F7F7">21</td>
+                              <td >11</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>1</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/213/" title="朴南哲">朴南哲</a></td>
+                              <td bgcolor="#F7F7F7" >4</td>
+                           	  <td>中场</td>
+                           	  <td bgcolor="#F7F7F7" >241'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >1</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >7</td>
+                              <td bgcolor="#F7F7F7">10</td>
+                              <td >9</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>6</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/215/" title="李光川">李光川</a></td>
+                              <td bgcolor="#F7F7F7" >5</td>
+                           	  <td>后卫</td>
+                           	  <td bgcolor="#F7F7F7" >273'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >1</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >4</td>
+                              <td bgcolor="#F7F7F7">6</td>
+                              <td >9</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>3</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/247/" title="金锦一">金锦一</a></td>
+                              <td bgcolor="#F7F7F7" >6</td>
+                           	  <td>前锋</td>
+                           	  <td bgcolor="#F7F7F7" >47'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/221/" title="安哲赫">安哲赫</a></td>
+                              <td bgcolor="#F7F7F7" >7</td>
+                           	  <td>前锋</td>
+                           	  <td bgcolor="#F7F7F7" >0'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/224/" title="志尹南">志尹南</a></td>
+                              <td bgcolor="#F7F7F7" >8</td>
+                           	  <td>中场</td>
+                           	  <td bgcolor="#F7F7F7" >273'</td>
+                              <td >1</td>
+                              <td  bgcolor="#F7F7F7" >3</td>
+                              <td >1</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >11</td>
+                              <td bgcolor="#F7F7F7">13</td>
+                              <td >8</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>1</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/246/" title="郑大世">郑大世</a></td>
+                              <td bgcolor="#F7F7F7" >9</td>
+                           	  <td>前锋</td>
+                           	  <td bgcolor="#F7F7F7" >273'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >14</td>
+                              <td >5</td>
+                              <td bgcolor="#F7F7F7" >1</td>
+                              <td >2</td>
+                              <td bgcolor="#F7F7F7">5</td>
+                              <td >2</td>
+                              <td  bgcolor="#F7F7F7" >4</td>
+                              <td>5</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/241/" title="洪映早">洪映早</a></td>
+                              <td bgcolor="#F7F7F7" >10</td>
+                           	  <td>前锋</td>
+                           	  <td bgcolor="#F7F7F7" >273'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >5</td>
+                              <td >2</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >3</td>
+                              <td bgcolor="#F7F7F7">5</td>
+                              <td >3</td>
+                              <td  bgcolor="#F7F7F7" >1</td>
+                              <td>4</td>
+                              <td  bgcolor="#F7F7F7">1</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/242/" title="文仁国">文仁国</a></td>
+                              <td bgcolor="#F7F7F7" >11</td>
+                           	  <td>中场</td>
+                           	  <td bgcolor="#F7F7F7" >205'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >3</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >7</td>
+                              <td bgcolor="#F7F7F7">5</td>
+                              <td >5</td>
+                              <td  bgcolor="#F7F7F7" >1</td>
+                              <td>0</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/250/" title="崔金哲">崔金哲</a></td>
+                              <td bgcolor="#F7F7F7" >12</td>
+                           	  <td>前锋</td>
+                           	  <td bgcolor="#F7F7F7" >24'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >1</td>
+                              <td >1</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/253/" title="朴哲镇">朴哲镇</a></td>
+                              <td bgcolor="#F7F7F7" >13</td>
+                           	  <td>后卫</td>
+                           	  <td bgcolor="#F7F7F7" >273'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >5</td>
+                              <td bgcolor="#F7F7F7">7</td>
+                              <td >5</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>4</td>
+                              <td  bgcolor="#F7F7F7">1</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/259/" title="朴男哲">朴男哲</a></td>
+                              <td bgcolor="#F7F7F7" >14</td>
+                           	  <td>后卫</td>
+                           	  <td bgcolor="#F7F7F7" >0'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/847/" title="金永俊">金永俊</a></td>
+                              <td bgcolor="#F7F7F7" >15</td>
+                           	  <td>中场</td>
+                           	  <td bgcolor="#F7F7F7" >33'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >1</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">1</td>
+                              <td >1</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/217/" title="南成哲">南成哲</a></td>
+                              <td bgcolor="#F7F7F7" >16</td>
+                           	  <td>后卫</td>
+                           	  <td bgcolor="#F7F7F7" >16'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td >1</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/232/" title="安英学">安英学</a></td>
+                              <td bgcolor="#F7F7F7" >17</td>
+                           	  <td>中场</td>
+                           	  <td bgcolor="#F7F7F7" >273'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >1</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >12</td>
+                              <td bgcolor="#F7F7F7">8</td>
+                              <td >12</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>1</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/2/1028/" title="李哲明">李哲明</a></td>
+                              <td bgcolor="#F7F7F7" >19</td>
+                           	  <td>中场</td>
+                           	  <td bgcolor="#F7F7F7" >0'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/230/" title="李光赫">李光赫</a></td>
+                              <td bgcolor="#F7F7F7" >21</td>
+                           	  <td>后卫</td>
+                           	  <td bgcolor="#F7F7F7" >0'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/1/870/" title="金京一">金京一</a></td>
+                              <td bgcolor="#F7F7F7" >22</td>
+                           	  <td>中场</td>
+                           	  <td bgcolor="#F7F7F7" >0'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+						<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td width="60" height="25" class="pl15 lc alleft"><a href="/d/players/2/1027/" title="朴胜赫">朴胜赫</a></td>
+                              <td bgcolor="#F7F7F7" >23</td>
+                           	  <td>后卫</td>
+                           	  <td bgcolor="#F7F7F7" >0'</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                              <td  bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td  bgcolor="#F7F7F7">0</td>
+                              <td >0</td>
+                          </tr>
+			
+									</table><!--[if !IE]>|xGv00|ec6438763145eecf1f56760321e1278e<![endif]--><div tid="1" class="smysj" style="align:left;text-align:left">守门员数据</div>
+                        <table width="610" border="0" cellpadding="0" cellspacing="0" class="bt_nb lh25 col666 bdb tohoma">
+			
+			<tr>
+                            	<td height="25" bgcolor="#EEEEEE">球员</td>
+                              <td bgcolor="#E2E2E2">号码</td>
+                              <td bgcolor="#EEEEEE">首发</td>
+                              <td bgcolor="#E2E2E2">出场</td>
+                              <td bgcolor="#EEEEEE">扑救</td>
+                              <td bgcolor="#E2E2E2">扑出点球</td>
+                              <td bgcolor="#EEEEEE">触球</td>
+                              <td bgcolor="#E2E2E2">失球</td>
+                              <td bgcolor="#EEEEEE">发球门球</td>
+                              <td bgcolor="#E2E2E2">扑单刀</td>
+                              <td bgcolor="#EEEEEE">扑出必进球</td>
+                              <td bgcolor="#E2E2E2">黄牌</td>
+                              <td bgcolor="#EEEEEE">红牌</td>
+                          </tr>
+			
+									
+			<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td height="25" width="60" class="pl15 lc alleft"><a href="/d/players/1/205/" title="李明国">李明国</a></td>
+                              <td  bgcolor="#F7F7F7" >1</td>
+                              <td >3</td>
+                              <td bgcolor="#F7F7F7">273'</td>
+                              <td>19</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td>169</td>
+                              <td bgcolor="#F7F7F7">12</td>
+                              <td>48</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td>0</td>
+                          </tr>
+						
+			<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td height="25" width="60" class="pl15 lc alleft"><a href="/d/players/1/208/" title="金明吉">金明吉</a></td>
+                              <td  bgcolor="#F7F7F7" >18</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">0'</td>
+                              <td>0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td>0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td>0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td>0</td>
+                          </tr>
+						
+			<tr class="tohoma" onmouseover="changecolor(this)" onmouseout="backcolor(this)">
+                            	<td height="25" width="60" class="pl15 lc alleft"><a href="/d/players/2/1026/" title="金明元">金明元</a></td>
+                              <td  bgcolor="#F7F7F7" >20</td>
+                              <td >0</td>
+                              <td bgcolor="#F7F7F7">0'</td>
+                              <td>0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td>0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td>0</td>
+                              <td bgcolor="#F7F7F7" >0</td>
+                              <td>0</td>
+                              <td bgcolor="#F7F7F7">0</td>
+                              <td>0</td>
+                          </tr>
+						                        </table>
+<table width="610" class="col666"><tr><td style="align:right;text-align:right;">*数据来自OPTA</td></tr></table>
+                      <script>
+							  function changecolor(o){   
+								  for(var i=0;i<o.cells.length;i++)
+     									o.cells[i].style.backgroundColor="#E9E9E9";     
+								  }   
+							  function backcolor(o){   
+								  for(var i=0;i<o.cells.length;i++)
+     									o.cells[i].style.backgroundColor=""; 
+								  }
+						</script>
+                    </div>
+                </div><!--[if !IE]>|xGv00|9531511cd753264bf9f71e8ce838ccac<![endif]--></div><div class='mode_col_r'><div class="right1n">
+<div class="hd"><span class="lc fr pr10 fwn lh34 f12 oh"><a href="http://worldcup.qq.com/master/standing.htm" target="_blank">更多</a></span>G组排名</div>
+<div class="bd">
+
+
+<table id="tablewl1" width="290" border="0" cellpadding="0" cellspacing="0" background="//mat1.gtimg.com/worldcup/images/datalib/qd/a_paimingbg_03.gif" class="dis tohoma lh24">
+<tr class="col666">
+<td width="37" height="26" class="pl10">排名</td>
+<td width="62">国家队</td>
+<td width="30" align="center">胜</td>
+<td width="28" align="center">平</td>
+<td width="29" align="center">负</td>
+<td width="30" align="center">进球</td>
+<td width="32" align="center">失球</td>
+<td width="32" align="center">积分</td>
+</tr>
+<tr >
+<td width="37" height="24"></td>
+<td width="62" class="lc"><a href="/d/teams/1/8/">巴西</a></td>
+<td width="30" align="center">2</td>
+<td width="28" align="center">1</td>
+<td width="29" align="center">0</td>
+<td width="30" align="center">5</td>
+<td width="32" align="center">2</td>
+<td width="32" align="center">7</td>
+</tr>
+<tr >
+<td width="37" height="24"></td>
+<td width="62" class="lc"><a href="/d/teams/1/24/">葡萄牙</a></td>
+<td width="30" align="center">1</td>
+<td width="28" align="center">2</td>
+<td width="29" align="center">0</td>
+<td width="30" align="center">7</td>
+<td width="32" align="center">0</td>
+<td width="32" align="center">5</td>
+</tr>
+<tr >
+<td width="37" height="24"></td>
+<td width="62" class="lc"><a href="/d/teams/1/25/">科特迪瓦</a></td>
+<td width="30" align="center">1</td>
+<td width="28" align="center">1</td>
+<td width="29" align="center">1</td>
+<td width="30" align="center">4</td>
+<td width="32" align="center">3</td>
+<td width="32" align="center">4</td>
+</tr>
+<tr >
+<td width="37" height="24"></td>
+<td width="62" class="lc"><a href="/d/teams/1/22/">朝鲜</a></td>
+<td width="30" align="center">0</td>
+<td width="28" align="center">0</td>
+<td width="29" align="center">3</td>
+<td width="30" align="center">1</td>
+<td width="32" align="center">12</td>
+<td width="32" align="center">0</td>
+</tr>
+
+</table>
+</div><!--[if !IE]>|xGv00|5372964e5a4fa1ccf2fe2a68d5ac7c5b<![endif]--><div class="blankw10"></div>
+                    <div class="hd"><span class="lc fr pr10 fwn lh34 oh f12"><a href="http://worldcup.qq.com/tuiyan/inference.htm" target="_blank">我要参加</a></span>网友推演</div>
+                    <div class="bd">
+						
+                    	<table width="290" border="0" cellpadding="0" cellspacing="0" class="tohoma lh25">
+                        	<tr>
+                       		  	<td width="40">冠军</td>
+                            	<td width="205"><div class="bghui"><div class="jindu" id="guanjun"></div></div></td>
+                            	<td width="45" align="right" id="gj1"></td>
+                            </tr>
+                            <tr>
+                       		  	<td width="40">亚军</td>
+                            	<td width="205"><div class="bghui"><div class="jindu" id="yajun"></div></div></td>
+                            	<td width="45" align="right" id="yj1"></td>
+                            </tr>
+                            <tr>
+                       		  	<td width="40">季军</td>
+                            	<td width="205"><div class="bghui"><div class="jindu" id="jijun"></div></div></td>
+                            	<td width="45" align="right" id="jj1"></td>
+                            </tr>
+                            <tr>
+                       		  	<td width="40">四强</td>
+                            	<td width="205"><div class="bghui"><div class="jindu" id="siqiang"></div></div></td>
+                            	<td width="45" align="right" id="sq1"></td>
+                            </tr>
+                            <tr>
+                       		  	<td width="40">八强</td>
+                            	<td width="205"><div class="bghui"><div class="jindu" id="baqiang"></div></div></td>
+                            	<td width="45" align="right" id="bq1"></td>
+                            </tr>
+                            <tr>
+                       		  	<td width="40">十六强</td>
+                            	<td width="205"><div class="bghui"><div class="jindu" id="shiliuqiang"></div></div></td>
+                            	<td width="45" align="right" id="slq1"></td>
+                            </tr>
+                            <tr>
+                            	<td colspan="3" class="col666" align="right">共<span id="renshu"></span>名网友参与</td></tr>    
+                      </table>
+					  <script>
+								var gj="0.15%";//冠军
+								var yj="0.16%";//亚军
+								var jj="0.20%";//季军
+								var sq="0.81%";//四强
+								var bq="1.70%";//八强
+								var slq="6.26%";//十六强
+								var renshu=2982317;//参与人数
+								document.getElementById("guanjun").style.width=document.getElementById("gj1").innerHTML=gj;
+								document.getElementById("yajun").style.width=document.getElementById("yj1").innerHTML=yj;
+								document.getElementById("jijun").style.width=document.getElementById("jj1").innerHTML=jj;
+								document.getElementById("siqiang").style.width=document.getElementById("sq1").innerHTML=sq;
+								document.getElementById("baqiang").style.width=document.getElementById("bq1").innerHTML=bq;
+								document.getElementById("shiliuqiang").style.width=document.getElementById("slq1").innerHTML=slq;
+								document.getElementById("renshu").innerHTML=renshu;
+						</script>
+                    </div> 
+                <div class="clr"></div>
+                </div><!--[if !IE]>|xGv00|0213379c38cdd3a9ced5bb67edc8a561<![endif]-->            	<div class="right1 mt10">
+                	<div class="hd">观点·观察</div>
+<div class="hder"><span class="lc fr pr10 fwn"><a href="http://t.qq.com/k/%25E6%259C%259D%25E9%25B2%259C%25E9%2598%259F" target="_blank">查看更多</a></span>微博在说</div>
+                    <div class="bd" style="padding-top:0px" >
+                    	<div class="weibo" id="message_marquee">
+                    	        
+                    	        
+                    	                                                                 <div>
+                                <a target="_blank" href="http://t.qq.com/uk24cd"><img src="http://t2.qlogo.cn/mbloghead/269c4e349146a5e12d28/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/uk24cd">阿楞</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E6%259C%259D%25E9%25B2%259C%25E9%2598%259F">#朝鲜队#</a><a href="http://url.cn/3fIQlL" target="_blank">http://url.cn/3fIQlL</a>  卖茶叶啦~~~ 优质茶叶有的卖啦~~~但是<br>2010-08-24 08:53:24
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div>
+                                <a target="_blank" href="http://t.qq.com/xuwayne"><img src="http://t2.qlogo.cn/mbloghead/92b7be11b767170aa9c8/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/xuwayne">哈里波特别大</a></span>：回国后，<a target="_blank" href="http://t.qq.com/k/%25E6%259C%259D%25E9%25B2%259C%25E9%2598%259F">#朝鲜队#</a>立即接受了长达6个小时的调查，而球员也被要求批评主教练金正勋。最后决定处罚金正勋到建筑工地进行强制劳动，每天工作时间长达14个小时以上。<br>2010-08-03 12:17:55
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div>
+                                <a target="_blank" href="http://t.qq.com/ban-zhuan"><img src="http://t0.qlogo.cn/mbloghead/8911d2b46ef141f44bfa/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/ban-zhuan">板儿砖</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E6%259C%259D%25E9%25B2%259C%25E9%2598%259F">#朝鲜队#</a>中国什么时候也学下朝鲜，让我们的难足去挖煤。<br>2010-07-29 11:58:49
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div>
+                                <a target="_blank" href="http://t.qq.com/Chair_ou"><img src="http://t1.qlogo.cn/mbloghead/2afd8d76ce8d93a95d3e/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/Chair_ou">Chair</a></span>：没有出处，无法证实||<a target="_blank" href="http://t.qq.com/slashxu" title="slash(@slashxu)" rel="@slashxu">slash</a>(@slashxu)</em>: 看来有其事 || <a target="_blank" href="http://t.qq.com/bingoyao" title="姚文彬(@bingoyao)" rel="@bingoyao">姚文彬</a>(@bingoyao)</em>: ?<a href="http://url.cn/4EH93a" target="_blank">http://url.cn/4EH93a</a> || <a target="_blank" href="http://t.qq.com/slashxu" title="slash(@slashxu)" rel="@slashxu">slash</a>(@slashxu)</em>: 这个转一下，求证 || <a target="_blank" href="http://t.qq.com/janvizhong" title="山卡拉(@janvizhong)" rel="@janvizhong">山卡拉</a>(@janvizhong)</em>: ?消息不可靠吧 || <a target="_blank" href="http://t.qq.com/bingoyao" title="姚文彬(@bingoyao)" rel="@bingoyao">姚文彬</a>(@bingoyao)</em>: <a target="_blank" href="http://t.qq.com/k/%25E6%259C%259D%25E9%25B2%259C%25E9%2598%259F">#朝鲜队#</a>挖煤一说，原来不是玩笑？<br>2010-07-29 11:36:22
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div>
+                                <a target="_blank" href="http://t.qq.com/slashxu"><img src="http://t1.qlogo.cn/mbloghead/4ea92cb95ab2ed5c3cd4/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/slashxu">slash</a></span>：看来有其事 || <a target="_blank" href="http://t.qq.com/bingoyao" title="姚文彬(@bingoyao)" rel="@bingoyao">姚文彬</a>(@bingoyao)</em>: ?<a href="http://url.cn/4EH93a" target="_blank">http://url.cn/4EH93a</a> || <a target="_blank" href="http://t.qq.com/slashxu" title="slash(@slashxu)" rel="@slashxu">slash</a>(@slashxu)</em>: 这个转一下，求证 || <a target="_blank" href="http://t.qq.com/janvizhong" title="山卡拉(@janvizhong)" rel="@janvizhong">山卡拉</a>(@janvizhong)</em>: ?消息不可靠吧 || <a target="_blank" href="http://t.qq.com/bingoyao" title="姚文彬(@bingoyao)" rel="@bingoyao">姚文彬</a>(@bingoyao)</em>: <a target="_blank" href="http://t.qq.com/k/%25E6%259C%259D%25E9%25B2%259C%25E9%2598%259F">#朝鲜队#</a>挖煤一说，原来不是玩笑？ || <a target="_blank" href="http://t.qq.com/allenzhang" title="allen(@allenzhang)" rel="@allenzhang">allen</a>(@allenzhang)</em>:<br>2010-07-29 11:32:26
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div>
+                                <a target="_blank" href="http://t.qq.com/bingoyao"><img src="http://t3.qlogo.cn/mbloghead/210a2198c041c5d23680/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/bingoyao">姚文彬</a></span>：<a href="http://url.cn/4EH93a" target="_blank">http://url.cn/4EH93a</a> || @slashxu 这个转一下，求证 || <a target="_blank" href="http://t.qq.com/janvizhong" title="山卡拉(@janvizhong)" rel="@janvizhong">山卡拉</a>(@janvizhong)</em>: ?消息不可靠吧 || <a target="_blank" href="http://t.qq.com/bingoyao" title="姚文彬(@bingoyao)" rel="@bingoyao">姚文彬</a>(@bingoyao)</em>: <a target="_blank" href="http://t.qq.com/k/%25E6%259C%259D%25E9%25B2%259C%25E9%2598%259F">#朝鲜队#</a>挖煤一说，原来不是玩笑？ || <a target="_blank" href="http://t.qq.com/allenzhang" title="allen(@allenzhang)" rel="@allenzhang">allen</a>(@allenzhang)</em>:<br>2010-07-29 11:26:21
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div>
+                                <a target="_blank" href="http://t.qq.com/slashxu"><img src="http://t1.qlogo.cn/mbloghead/4ea92cb95ab2ed5c3cd4/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/slashxu">slash</a></span>：这个转一下，求证 || <a target="_blank" href="http://t.qq.com/janvizhong" title="山卡拉(@janvizhong)" rel="@janvizhong">山卡拉</a>(@janvizhong)</em>: ?消息不可靠吧 || <a target="_blank" href="http://t.qq.com/bingoyao" title="姚文彬(@bingoyao)" rel="@bingoyao">姚文彬</a>(@bingoyao)</em>: <a target="_blank" href="http://t.qq.com/k/%25E6%259C%259D%25E9%25B2%259C%25E9%2598%259F">#朝鲜队#</a>挖煤一说，原来不是玩笑？ || <a target="_blank" href="http://t.qq.com/allenzhang" title="allen(@allenzhang)" rel="@allenzhang">allen</a>(@allenzhang)</em>:<br>2010-07-29 11:23:56
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div>
+                                <a target="_blank" href="http://t.qq.com/janvizhong"><img src="http://t0.qlogo.cn/mbloghead/5dc04f69000000008de4/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/janvizhong">山卡拉</a></span>：消息不可靠吧 || <a target="_blank" href="http://t.qq.com/bingoyao" title="姚文彬(@bingoyao)" rel="@bingoyao">姚文彬</a>(@bingoyao)</em>: <a target="_blank" href="http://t.qq.com/k/%25E6%259C%259D%25E9%25B2%259C%25E9%2598%259F">#朝鲜队#</a>挖煤一说，原来不是玩笑？ || <a target="_blank" href="http://t.qq.com/allenzhang" title="allen(@allenzhang)" rel="@allenzhang">allen</a>(@allenzhang)</em>: <br>2010-07-29 11:11:44
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div>
+                                <a target="_blank" href="http://t.qq.com/lkggnh"><img src="http://t0.qlogo.cn/mbloghead/83c8349b59b4b360a4c8/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/lkggnh">李康</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E6%259C%259D%25E9%25B2%259C%25E9%2598%259F">#朝鲜队#</a>据外媒报道，7月2日在平壤人民文化宫召开的一个秘密批斗会上，朝鲜国家队队员和教练因在世界杯上成绩不佳遭到了来自全国体育界400余名代表的批判。会后，主帅金正勋也被送往了矿山接受劳动改造……
+<a href="http://url.cn/4EH93a" target="_blank">http://url.cn/4EH93a</a><br>2010-07-29 08:39:48
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                        <div>
+                                <a target="_blank" href="http://t.qq.com/zhangxiaole1982"><img src="http://t0.qlogo.cn/mbloghead/aa3d1f47c913e9cbd052/50" width="50" height="50" class="fl" onerror="this.src='//mat1.gtimg.com/www/mb/images/head_50.jpg'"/></a>
+                                <p class="wenzi">
+                                    <span class="lc"><a target="_blank" href="http://t.qq.com/zhangxiaole1982">张孟</a></span>：<a target="_blank" href="http://t.qq.com/k/%25E4%25B8%2596%25E7%2595%258C%25E6%259D%25AF">#世界杯#</a>贵州！！！！<br>2010-08-26 16:21:55
+                                </p>
+                                <p class="clr"></p>
+                            </div>
+                                                                                     
+                        </div>
+                    </div>
+                  <!--[if !IE]>|xGv00|3c561070d6584b2961c790e8d82c1f47<![endif]--> <div class="hder">媒体热评</div>
+                    <div class="bder">
+
+<ul class="lc lh22">
+<li><span class="fr col666 tohoma">07-12</span><a href="http://worldcup.qq.com/a/20100712/002595.htm" target="_blank" title="特评：朝鲜演绎传奇成最没天理的集体YY？">特评：朝鲜演绎传奇成最没天理的集体YY..</a></li>
+<li><span class="fr col666 tohoma">07-10</span><a href="http://worldcup.qq.com/a/20100710/000027.htm" target="_blank" title="波鸿官方宣布郑大世加盟 朝鲜鲁尼正式战德乙">波鸿官方宣布郑大世加盟 朝鲜鲁尼正式战..</a></li>
+<li><span class="fr col666 tohoma">07-06</span><a href="http://worldcup.qq.com/a/20100706/001791.htm" target="_blank" title="齐鲁晚报：朝鲜足球与世界差距越来越大">齐鲁晚报：朝鲜足球与世界差距越来越大</a></li>
+</ul>
+
+                    	                    
+</div>                    <!--[if !IE]>|xGv00|1646d93ebd7c1f1480b05d558266b6f4<![endif]--></div></div><div class='mode_col_1'></div><div class="mode_col_1">
+	<div class="ft">
+		<p><a href="http://www.tencent.com/">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml">About Tencent</a> | <a href="http://www.qq.com/contract.shtml">服务条款</a> | <a href="http://www.tencentmind.com/">广告服务</a> | <a href="http://hr.tencent.com/">腾讯招聘</a> | <a href="http://gongyi.qq.com/">腾讯公益</a> | <a href="http://service.qq.com/">客服中心</a> | <a href="http://www.qq.com/map/">网站导航</a></p>
+		<p>Copyright &copy; 1998 - 2010 Tencent. All Rights Reserved <a href="http://www.sznet110.gov.cn/netalarm/index.jsp" target="_blank"><img src="http://img1.qq.com/www/pics/816/816587.gif" align="absmiddle" border="0" hspace="5"></a></p>
+		<p>腾讯公司 <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank">版权所有</a></p>
+	</div>
+</div>
+<script language="javascript" src="http://pingjs.qq.com/ping.js"></script>
+<script language="javascript">
+if(typeof(pgvMain) == 'function')
+{
+pvCurDomain = "data.worldcup.qq.com";
+pvCurUrl = window.location.href.substring(window.location.href.indexOf(".com") + 4);
+pgvMain();
+}
+</script>
+<!-- START NNR Site Census V5.1 -->
+<!-- COPYRIGHT 2004 Nielsen // Netratings -->
+<script language="JavaScript" type="text/javascript">
+<!--
+var _rsCI="cn-tencent";
+var _rsCG="0";
+var _rsDT=0;
+var _rsDU=0; 
+var _rsDO=0; 
+var _rsX6=0;  
+var _rsSI=escape(window.location);
+var _rsLP=location.protocol.indexOf('https')>-1?'https:':'http:';
+var _rsRP=escape(document.referrer);
+var _rsND=_rsLP+'//secure-cn.imrworldwide.com/';
+
+if (parseInt(navigator.appVersion)>=4)
+{
+	var _rsRD=(new Date()).getTime();
+	var _rsSE=1;	
+	var _rsSV="";
+	var _rsSM=0.01;
+	_rsCL='<scr'+'ipt language="JavaScript" type="text/javascript" src="'+_rsND+'v51.js"><\/scr'+'ipt>';
+}
+else
+{
+	_rsCL='<img src="'+_rsND+'cgi-bin/m?ci='+_rsCI+'&cg='+_rsCG+'&si='+_rsSI+'&rp='+_rsRP+'">';
+}
+document.write(_rsCL);
+//-->
+</script>
+<noscript>
+<img src="//secure-cn.imrworldwide.com/cgi-bin/m?ci=cn-tencent&cg=0" alt="">
+</noscript>
+<!-- END NNR Site Census V5.1 -->
+<!--chg20110812 js1.0.4 byAustin-->
+<script>
+var SCRIPT_TIMEOUT = 20000;
+var QVPL_PATH = "//mat1.gtimg.com/www/html5js/QVPL1.0.4.js";
+function loadHelper (jsurl) {
+	var oScriptEl, oTimeoutHDL, oHead;
+	oScriptEl = document.createElement("script");
+	oScriptEl.type = "text/javascript";
+	oScriptEl.language = "javascript";
+	oScriptEl.src = jsurl;
+	oScriptEl.onreadystatechange = doCallback;
+
+	oScriptEl.onload = function()
+	{
+		this.readyState = "complete";
+		doCallback(); 
+		if(typeof(lianbo) == "object"){
+			lianbo.init(window.QVPL);
+		}
+	};
+
+	oTimeoutHDL = window.setTimeout(doError,SCRIPT_TIMEOUT);
+	document.getElementsByTagName("head")[0].appendChild(oScriptEl);
+
+	function doCallback()
+	{
+		if (oScriptEl.readyState == "complete" || oScriptEl.readyState == "loaded")
+		{
+			oScriptEl.onload = oScriptEl.onreadystatechange = new Function();
+			window.clearTimeout(oTimeoutHDL);
+		}
+	};
+
+	function doError()
+	{
+		oScriptEl.parentNode.removeChild(oScriptEl);
+	};
+}
+
+loadHelper(QVPL_PATH);
+</script><!--[if !IE]>|xGv00|5995073237d8e5e398160263691fadb1<![endif]-->
+</body>
+</html><!--[if !IE]>|xGv00|52aba1ebf869424876b86b714b17f8b5<![endif]--><!--[if !IE]>|xGv00|c800197e7221984cb28e03b4d585543c<![endif]-->

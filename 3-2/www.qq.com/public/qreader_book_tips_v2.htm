@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-ISRD" />
+<meta name="Copyright" content="Tencent" />
+<title>腾讯订阅</title>
+<link rel="stylesheet" rev="stylesheet" href="http://www.qq.com/qreader/css/pop_qreader.css" type="text/css" media="screen"/>
+<style>
+.dy_bt{margin-top:10px;}
+.dy_bt a{margin:auto;font-size:14px;font-weight:bold;color:#fff;line-height:32px;display:block;width:140px;height:32px;padding:0;background:url(//mat1.gtimg.com/news/imgcss_article_qq/bg_bt_g.png);cursor:pointer;text-decoration:none;}
+body{background-color:#fff}
+</style>
+</head>
+<body>
+<div id="notifyPanel" class="share_cont_status" style="display:none;padding-top:20px;">	
+	<div id="errorTips" class="share_layout_tips" style="display:none;"><strong class="icon_hint_warn"><span>提示</span></strong> 服务繁忙暂时无法订阅，请稍后<a id="retryLink">重试</a></div>
+	<div id="successTips" style="display:none;font-size:16px;font-weight:bold;">您已订阅成功</div>
+	<div class="share_cont_status_tips">每日精华，轻松阅读</div>
+	<div class="dy_bt"><a id="viewLink" target="_blank">去腾讯订阅看看</a></div>
+	<div class="share_cont_status_tips" style="margin-top:10px;"><span id="countDown"></span>秒后自动关闭</div>
+</div>
+<iframe id="loginPanel" frameborder="0" allowtransparency="yes" style="display:none;width:100%;"></iframe>
+<script type="text/javascript">
+(function(){
+	document.domain = 'qq.com';
+	var baseTools=function(a){return document.getElementById(a)}
+	baseTools.getCookieVal=function(offset){
+		var endstr=document.cookie.indexOf(";",offset);
+		if(endstr==-1)endstr=document.cookie.length;
+		return unescape(document.cookie.substring(offset,endstr));
+	}
+	baseTools.getCookie=function(name){
+		var arg=name+"=",alen=arg.length,clen=document.cookie.length;
+		var i=0;
+		while(i<clen){
+			var j=i+alen;
+			if(document.cookie.substring(i,j)==arg)return $.getCookieVal(j);
+			i=document.cookie.indexOf(" ",i)+1;
+			if(i==0)break;
+		}
+		return "";
+	}
+	baseTools.setCookie=function(name,value){
+		var argv=arguments;
+		var argc=argv.length;
+		var date = new Date();
+		date.setTime(date.getTime()+31536000);
+		var expires=(2<argc)?argv[2]:date;
+		var path="/";
+		var domain=null;
+		var secure=false;
+		document.cookie=name+"="+escape(value)+((expires==null)?"":("; expires="+expires.toGMTString()))+((path==null)?"":("; path="+path))+((domain==null)?"":("; domain="+domain))+((secure==true)?"; secure":"");
+	}
+	baseTools.Browser = function() {}
+	baseTools.Browser.prototype.Name = window.navigator.appName;
+	baseTools.Browser.prototype.IsIE = window.navigator.appName == 'Microsoft Internet Explorer'? true : false;
+	baseTools.Browser.prototype.IsNetscape = window.navigator.appName == 'Netscape'? true : false;
+
+	baseTools.Library = function(){};
+	baseTools.Library.prototype.Url = '';
+	baseTools.Library.prototype.OnLoadCompleted = null;
+
+	function ie_callback() {
+		if(this.readyState == 'loaded' && this.sourceObj.OnLoadCompleted != null)
+			this.sourceObj.OnLoadCompleted();
+	};
+
+	function netscape_callback() {
+		if(this.sourceObj.OnLoadCompleted != null)
+			this.sourceObj.OnLoadCompleted();
+	};
+
+	baseTools.Library.prototype.getScript = function(url) {
+		this.Url = url;
+		
+		var scriptBlock = document.createElement("script");
+		scriptBlock.setAttribute("type", "text/javascript");
+		scriptBlock.setAttribute("src", url);
+		scriptBlock.sourceObj = this;
+		// set callback function
+		var browser = new $.Browser();
+		if(browser.IsIE) {
+			// ie callback
+			scriptBlock.onreadystatechange = ie_callback;
+		}
+		else if(browser.IsNetscape) {
+			// firefox callback
+			scriptBlock.onload = netscape_callback;
+		}
+		else {
+			// no implement
+		}
+		browser = null; // free
+		document.getElementsByTagName('head')[0].appendChild(scriptBlock);
+	};
+	window["$"] = baseTools;
+})()
+var bookreader = new function(){	
+	this.init = function(){		
+		var dataContext = {};
+		dataContext.qq = parseInt($.getCookie("uin").replace(/[^\d]/g, ""), 10);
+		
+		var newsPage = parent;
+		while (!newsPage.qreaderbook) {
+			newsPage = newsPage.parent;
+			if (newsPage == top) {
+				break;
+			}
+		}
+		var QreaderIFr = newsPage.QreaderIFr;
+		QreaderIFr.resizePopup({
+			height: 180
+		});
+		//var sourceobj = obj;
+		//QreaderIFr.dataCenter = QreaderIFr.dataCenter || new newsPage.Object();
+		QreaderIFr.dataCenter = QreaderIFr.dataCenter || {};
+		var notifyPanel = $('notifyPanel');
+				  
+		var showLoginPanel = function() {
+			location.href = ['http://ui.ptlogin2.qq.com/cgi-bin/login?', 'hide_title_bar=1', '&no_verifyimg=1', '&link_target=blank', '&appid=638003502', '&target=self', '&f_url=http%3A%2F%2Fnews.qq.com%2Fnpublic%2Floginerr.html', '&s_url=', encodeURIComponent(location.href)].join('');
+		};
+		var showNotifyPanel = function(isError) {
+			notifyPanel.style.display = '';
+			dataContext.countDown = 5;
+			if (isError) {
+				var retryLink = $('retryLink');
+				retryLink.href = 'javascript:;';
+				retryLink.onclick = function() {
+					location.reload();
+					return false;
+				};
+				var errorTips = $('errorTips');
+				errorTips.style.display = '';
+			} else {
+				var viewLink = $('viewLink');
+				viewLink.href = QreaderIFr.dataCenter.viewLinkUrl = QreaderIFr.dataCenter.viewLinkUrl || ['http://u.qq.com/qreader/qreader.html', '?uin=',parseInt($.getCookie("uin").replace(/[^\d]/g, ""), 10)].join('');
+				var successTips = $('successTips');
+				successTips.style.display = '';
+				QreaderIFr.dataCenter.srcObj.onclick = null;
+				//QreaderIFr.dataCenter.srcObj.parentNode.className = " dy_done";
+				//QreaderIFr.dataCenter.srcObj.parentNode.innerHTML = '<span>（已订阅）</span>'; 
+				
+			}
+			var countDown = $('countDown');
+			var countingDown = setInterval(function() {
+				countDown.innerHTML = --QreaderIFr.dataCenter.countDown;
+				if (QreaderIFr.dataCenter.countDown <= 0) {
+					clearInterval(countingDown);
+					QreaderIFr.closePopup();
+				}
+			},
+			1000);
+			countDown.innerHTML = QreaderIFr.dataCenter.countDown;
+		};
+		var booksource = function() {			
+			var url = ['http://u.qq.com/qreader/php/rss_book.php?qq=',dataContext.qq,'&tp=',QreaderIFr.dataCenter.tp,'&site=',QreaderIFr.dataCenter.site,'&cn=',QreaderIFr.dataCenter.cn,'&cata=',QreaderIFr.dataCenter.cata,'&c=',QreaderIFr.dataCenter.c ,'&from=5&op=0&jv=1&ver=',Math.random()].join('');
+			var bookLib = new $.Library();
+			bookLib.SourceObj = this;
+			bookLib.OnLoadCompleted = function(){
+				var data = json;
+				if(data.code!=0){
+					showNotifyPanel("订阅失败");
+					return;
+				}
+				else{
+					showNotifyPanel();
+				}
+			}
+			bookLib.getScript(url);
+		}
+		var t = parseInt($.getCookie("uin").replace(/[^\d]/g, ""), 10);
+		if (!isNaN(t) && (t > 10000)) {
+			booksource();
+		} else
+			showLoginPanel();
+	};
+	
+}
+//function callback(obj){
+	bookreader.init();
+//}
+</script>
+</body>
+<!--[if !IE]>|xGv00|dfd2e2052635946cf0ce42408f593175<![endif]-->

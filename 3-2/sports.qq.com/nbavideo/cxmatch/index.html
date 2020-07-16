@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>NBA纯享赛事 - 腾讯网</title>
+    <meta name="Keywords" content="NBA总决赛,勒布朗-詹姆斯,库里,骑士,勇士,汤普森,视频,直播,数据,比分,球队,赛程,湖人,科比,热火,詹姆斯,火箭,哈登,杜兰特,库里,林书豪,姚明,马刺">
+    <meta name="description" content="腾讯NBA频道是NBA官方合作伙伴，覆盖最新的NBA赛况，呈现海量NBA资讯，全方位报道30支球队以及科比、詹姆斯、库里、杜兰特、哈登、霍华德、林书豪、汤普森等NBA球星动态，提供直播、视频、数据、图片、专题、评论等各类信息，收录球队、球员、比分、赛程赛果等各类数据。">
+    <link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/sports/nbavideo/common/styles/reset-0a5db03b3e.css">
+    <link rel="stylesheet" href="//mat1.gtimg.com/sports/nbavideo/cxmatch/styles/index-1279937726.css">
+</head>
+
+<body>
+    <!-- NBA个性导航 -->
+    <div class="nav_simplify">
+        <div class="wrapper">
+            <div class="fixation">
+                <a class="link link-nba" target="_blank" href="http://sports.qq.com/nba">腾讯NBA</a>
+                <a class="link link-nba-video" target="_blank" href="http://sports.qq.com/nbavideo/">视频</a>
+            </div>
+            <ul class="navigate_list">
+                <li class="item"><a target="_blank" _hot="cover3.nba.nav.10" href="http://sports.qq.com/nbavideo/match.htm">比赛库</a></li>
+<li class="item"><a target="_blank" _hot="cover3.nba.nav.3" href="http://sports.qq.com/nbavideo/topsk/">top时刻</a></li>
+<li class="item"><a target="_blank" _hot="cover3.nba.nav.4" href="http://sports.qq.com/nbavideo/huifang/">全场回放</a></li>
+<li class="item"><a target="_blank" _hot="cover3.nba.nav.5" href="http://sports.qq.com/nbavideo/jdjx/">绝对巨星</a></li>
+<li class="item"><a target="_blank" _hot="cover3.nba.nav.6" href="http://sports.qq.com/nbavideo/nbajdjd/">NBA经典</a></li>
+<li class="item"><a target="_blank" _hot="cover3.nba.nav.8" href="http://sports.qq.com/nbavideo/ssnb/">NBA美女</a></li><!--[if !IE]>|xGv00|86ff97eafee9a279b62b92876d185963<![endif]-->
+            </ul>
+            <div class="login">
+                <a class="avatar" herf="javascript:;" target="_self">登录</a>
+            </div>
+        </div>
+    </div>
+    <!-- NBA个性导航 结束 -->
+    <div class="top">
+        <h1 class="title container"><i class="logo"></i>纯享赛事</h1>
+        <div class="container" id="ct-match">
+            <div class="mod_player">
+                <div class="small-head">
+                    <div class="title-tip">您正在观看的视频</div>
+                    <div class="close"></div>
+                    <div class="nomore"><i></i>不再出现</div>
+                </div>
+                <div id="big-player"></div>
+            </div>
+            <div id="right-part">
+                <div id="ct-vs-info">
+                    <div class="team-info">
+                        <img class="team-logo" id="teamlpic" src="">
+                        <p class="team-name" id="teamlname"></p>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team-info">
+                        <img class="team-logo" id="teamrpic" src="">
+                        <p class="team-name" id="teamrname"></p>
+                    </div>
+                </div>
+                <p id="match-title"></p>
+                <div id="ct-ctrl-play">
+                    <a class="btn" id="btn-essence" bosszone="VCX_bfq_15" href="javascript:;"><i class="icon"></i>比赛精华版</a>
+                    <a class="btn" id="btn-all" bosszone="VCX_bfq_hf" href="javascript:;"><i class="icon"></i>全场回放版</a>
+                </div>
+                <div id="ct-vip">
+                    <div class="huiyuan">
+                        <span class="logo">腾讯体育会员</span>
+                        <a bosszone="VCX_vip_more" class="more" target="_blank" href="http://sports.qq.com/vip/">更多特权 》</a>
+                    </div>
+                    <div class="option">
+                        <a class="item" id="op1" target="_blank" bosszone="VCX_vip" href="http://sports.qq.com/vip/">
+                            <p>NBA
+                                <br>独家直播</p>
+                        </a>
+                        <a class="item" id="op2" target="_blank" bosszone="VCX_vip" href="http://sports.qq.com/vip/">
+                            <p>1080P
+                                <br>蓝光画质</p>
+                        </a>
+                        <a class="item" id="op3" target="_blank" bosszone="VCX_vip" href="http://sports.qq.com/vip/">
+                            <p>远离广告
+                                <br>无干扰</p>
+                        </a>
+                        <a class="item" id="op4" target="_blank" bosszone="VCX_vip" href="http://sports.qq.com/vip/">
+                            <p>高速通道
+                                <br>会员专享</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="logo-big left-gray-logo" src="" />
+    <img class="logo-big right-gray-logo" src="" />
+    <div class="container" id="search">
+        <h3 id="title"><i class="icon"></i>更多纯享赛事</h3>
+        <div id="ct-date-ctrl"></div>
+        <div id="ct-team-ctrl">
+            <a id="current-team">全部球队</a>
+            <div id="ct-teams">
+                <ul class="tab">
+                    <li><a href="javascript:;" data-ref="east" class="east current"><i class="logo"></i>东部</a></li>
+                    <li><a href="javascript:;" data-ref="west" class="west"><i class="logo"></i>西部</a></li>
+                </ul>
+                <div class="con">
+                    <ul class="east">
+                        <li class="team" data-id="hawks"><a href="javascript:;" class="team-logo-40 hawks">老鹰</a></li>
+                        <li class="team" data-id="cavaliers"><a href="javascript:;" class="team-logo-40 cavaliers">骑士</a></li>
+                        <li class="team" data-id="bulls"><a href="javascript:;" class="team-logo-40 bulls">公牛</a></li>
+                        <li class="team" data-id="raptors"><a href="javascript:;" class="team-logo-40 raptors">猛龙</a></li>
+                        <li class="team" data-id="wizards"><a href="javascript:;" class="team-logo-40 wizards">奇才</a></li>
+                        <li class="team" data-id="bucks"><a href="javascript:;" class="team-logo-40 bucks">雄鹿</a></li>
+                        <li class="team" data-id="celtics"><a href="javascript:;" class="team-logo-40 celtics">凯尔特人</a></li>
+                        <li class="team" data-id="nets"><a href="javascript:;" class="team-logo-40 nets">篮网</a></li>
+                        <li class="team" data-id="pacers"><a href="javascript:;" class="team-logo-40 pacers">步行者</a></li>
+                        <li class="team" data-id="heat"><a href="javascript:;" class="team-logo-40 heat">热火</a></li>
+                        <li class="team" data-id="hornets"><a href="javascript:;" class="team-logo-40 hornets">黄蜂</a></li>
+                        <li class="team" data-id="pistons"><a href="javascript:;" class="team-logo-40 pistons">活塞</a></li>
+                        <li class="team" data-id="magic"><a href="javascript:;" class="team-logo-40 magic">魔术</a></li>
+                        <li class="team" data-id="sixers"><a href="javascript:;" class="team-logo-40 sixers">76人</a></li>
+                        <li class="team" data-id="knicks"><a href="javascript:;" class="team-logo-40 knicks">尼克斯</a></li>
+                    </ul>
+                    <ul class="west" style="display:none">
+                        <li class="team" data-id="warriors"><a href="javascript:;" class="team-logo-40 warriors">勇士</a></li>
+                        <li class="team" data-id="rockets"><a href="javascript:;" class="team-logo-40 rockets">火箭</a></li>
+                        <li class="team" data-id="clippers"><a href="javascript:;" class="team-logo-40 clippers">快船</a></li>
+                        <li class="team" data-id="blazers"><a href="javascript:;" class="team-logo-40 blazers">开拓者</a></li>
+                        <li class="team" data-id="grizzlies"><a href="javascript:;" class="team-logo-40 grizzlies">灰熊</a></li>
+                        <li class="team" data-id="spurs"><a href="javascript:;" class="team-logo-40 spurs">马刺</a></li>
+                        <li class="team" data-id="mavericks"><a href="javascript:;" class="team-logo-40 mavericks">小牛</a></li>
+                        <li class="team" data-id="pelicans"><a href="javascript:;" class="team-logo-40 pelicans">鹈鹕</a></li>
+                        <li class="team" data-id="thunder"><a href="javascript:;" class="team-logo-40 thunder">雷霆</a></li>
+                        <li class="team" data-id="suns"><a href="javascript:;" class="team-logo-40 suns">太阳</a></li>
+                        <li class="team" data-id="jazz"><a href="javascript:;" class="team-logo-40 jazz">爵士</a></li>
+                        <li class="team" data-id="nuggets"><a href="javascript:;" class="team-logo-40 nuggets">掘金</a></li>
+                        <li class="team" data-id="kings"><a href="javascript:;" class="team-logo-40 kings">国王</a></li>
+                        <li class="team" data-id="lakers"><a href="javascript:;" class="team-logo-40 lakers">湖人</a></li>
+                        <li class="team" data-id="timberwolves"><a href="javascript:;" class="team-logo-40 timberwolves">森林狼</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ct-matches" class="container">
+        <ul id="ls-match"></ul>
+        <div id="ct-page-ctrl" class="page">
+            <a href="javascript:;" class="btn prev"><i class="icon"></i>上一页</a>
+            <ul id="ls-pages"></ul>
+            <a href="javascript:;" class="btn next">下一页<i class="icon"></i></a>
+        </div>
+    </div>
+
+    <!-- NP BEGIN -->
+    <p id="tip-wx-comment">腾讯公告：非常抱歉，评论模块暂不支持微信登录用户使用！</p>
+    <div id="np_frame" class="container"></div>
+    <!-- NP END -->
+    
+    <div class="elevator" bosszone="VCX_ back" style="z-index:1000;">
+        <a href="https://support.qq.com/products/4328" target="_blank" class="feedback">用户<br>反馈</a>
+        <a href="javascript:window.scrollTo(0,0);" target="_self" class="gotop"></a>
+    </div>
+
+    <!-- 公共页脚 -->
+    
+    <!-- NBA公共页脚 开始 -->
+<style>
+.nba-footer{border-top:3px solid #d43456;background-color:#005897;font-family:"\5FAE\8F6F\96C5\9ED1",sans-serif;min-width:1000px}.nba-footer a,.nba-footer div,.nba-footer h1,.nba-footer h2,.nba-footer h3,.nba-footer h4,.nba-footer h5,.nba-footer li,.nba-footer ol,.nba-footer p,.nba-footer ul{margin:0;padding:0}.nba-footer ol,.nba-footer ul{list-style:none}.nba-footer .nba-footer-layout{margin:0 auto}.nba-footer .nba-footer-links{height:64px;line-height:64px;border-bottom:1px solid #00487a}.nba-footer .nba-footer-links .nba-footer-gotop{display:block;float:right;width:40px;height:40px;margin-top:12px;background-color:#00487a;background-image:url(//img1.gtimg.com/sports/pics/hv1/28/162/1889/122873563.png);background-position:center center;background-repeat:no-repeat}.nba-footer .nba-footer-links ul li,.nba-footer .nba-footer-main ul.nba-links li{float:left;display:block}.nba-footer .nba-footer-links ul{display:block;height:64px;position:relative;overflow:hidden}.nba-footer .nba-footer-links ul li a{display:block;font-size:16px;color:#5398e0;text-decoration:none}.nba-footer .nba-footer-links ul li a:hover{color:#FFF}.nba-footer .nba-footer-main{margin-top:40px}.nba-footer .nba-footer-main ul.nba-links li h4{color:#fff;font-size:18px;font-weight:400;line-height:1;margin-bottom:10px}.nba-footer .nba-footer-main ul.nba-links li ul li{float:none;line-height:20px}.nba-footer .nba-footer-main ul.nba-links li ul li a{font-size:12px;color:#5398e0;text-decoration:none}.nba-footer .nba-footer-main ul.nba-links li ul li a:hover{color:#fff;text-decoration:none}.nba-footer .nba-footer-main .app{float:right;text-align:center}.nba-footer .nba-footer-main .app h4{color:#fff;font-size:18px;font-weight:400}.nba-footer .nba-footer-main .app .qrimg{margin-top:20px}.nba-footer .nba-footer-main .app .qrimg img{background-color:#fff;border:6px solid #004f87}.nba-footer #tcopyright,.nba-footer .tcopyright{display:block;margin:0 auto;padding:50px 0 30px;text-align:center;font-size:12px;font-family:SimSun,sans-serif;color:#5398e0;line-height:24px}.nba-footer #tcopyright a,.nba-footer .tcopyright a{color:#5398e0;text-decoration:none}.nba-footer #tcopyright a:hover,.nba-footer .tcopyright a:hover{color:#FFF;text-decoration:none}.nba-footer-wide .nba-footer-layout{width:1240px}.nba-footer-wide .nba-footer-links ul{left:-25px}.nba-footer-wide .nba-footer-links ul li a{padding:0 25px}.nba-footer-wide .nba-footer-main .app{margin-left:20px}.nba-footer-wide .nba-footer-main ul.nba-links li{width:165px}@media only screen and (max-width:1260px){.nba-footer-wide .nba-footer-layout{width:1000px}.nba-footer-wide .nba-footer-links ul{left:-15px}.nba-footer-wide .nba-footer-links ul li a{padding:0 15px}.nba-footer-wide .nba-footer-main .app{margin-left:20px}.nba-footer-wide .nba-footer-main ul.nba-links li{width:125px}}.nba-footer-thin .nba-footer-layout{width:1000px}.nba-footer-thin .nba-footer-links ul{left:-15px}.nba-footer-thin .nba-footer-links ul li a{padding:0 15px}.nba-footer-thin .nba-footer-main .app{margin-left:20px}.nba-footer-thin .nba-footer-main ul.nba-links li{width:125px}@media only screen and (min-width:1260px){.nba-footer-thin .nba-footer-layout{width:1240px}.nba-footer-thin .nba-footer-links ul{left:-25px}.nba-footer-thin .nba-footer-links ul li a{padding:0 25px}.nba-footer-thin .nba-footer-main .app{margin-left:16px}.nba-footer-thin .nba-footer-main ul.nba-links li{width:165px}}
+</style>
+
+
+
+
+<div class="nba-footer nba-footer-wide">
+    <div class="nba-footer-links" bosszone="SY_Bottomnav">
+        <div class="nba-footer-layout">
+            <a href="javascript:window.scrollTo(0,0);" class="nba-footer-gotop" target="_self"></a>
+            <ul>
+                <li><a href="http://sports.qq.com/nba/">首页</a></li>
+<li><a href="http://sports.qq.com/nbavideo/">视频</a></li>
+<li><a href="http://kbs.sports.qq.com/#nba">直播</a></li>
+<li><a href="http://sports.qq.com/l/basket/basketpic/list20181018154845.htm">图片</a></li>
+<li><a href="http://sports.qq.com/l/basket/nba/list20181018164449.htm">新闻</a></li>
+<li><a href="http://nbadata.sports.qq.com/player/playersearch.html">球员</a></li>
+<li><a href="http://nba.stats.qq.com/team/list.htm">球队</a></li>
+<li><a href="http://nba.stats.qq.com/schedule/">赛程</a></li>
+<li><a href="http://nba.stats.qq.com/stats/">数据</a></li>
+<li><a href="http://nba.stats.qq.com/standings/">排名</a></li>
+<li><a href="http://sports.qq.com/fans/">社区</a></li>
+<li><a href="http://sports.qq.com/nbavideo/shenji/">节目</a></li>
+<li><a href="http://sports.qq.com/l/basket/nba/jingh/list20171117111436.htm">评论</a></li><!--[if !IE]>|xGv00|1e3c6df57b965278cd420b6e847c4994<![endif]-->
+            </ul>
+        </div>
+    </div>
+
+    <div class="nba-footer-main" bosszone="SY_Bottomcoo">
+        <div class="nba-footer-layout">
+            <div class="app">
+                <h4>腾讯NBA微信订阅号</h4>
+                <div class="qrimg">
+
+                    <img src="//img1.gtimg.com/sports/pics/hv1/130/5/1892/123028705.jpg" alt="腾讯NBA微信订阅号">
+
+                </div>
+            </div>
+            <div class="app">
+                <h4>手机看比赛 下载腾讯体育</h4>
+                <div class="qrimg">
+          
+                        <img src="//img1.gtimg.com/sports/pics/hv1/251/92/2217/144184136.png" alt="看比赛APP">
+           
+                </div>
+            </div>
+
+
+            <ul class="nba-links">
+                
+
+<!-- 第一列 -->
+<li>
+    <h4>关于</h4>
+    <ul>
+        <li><a href="http://sports.qq.com/a/20150521/056103.htm">关于腾讯NBA</a></li>
+        <li><a href="mailto:1820184934@qq.com">联系我们</a></li>
+<li><a href="http://sports.qq.com/a/20150824/017602.htm">微信订阅</a></li>
+    </ul>
+</li>
+<!-- 第二列 -->
+<li>
+    <h4>重大赛事</h4>
+    <ul>
+<li><a href="http://view.inews.qq.com/a/NBA2019052800395900">2019年总决赛</a></li>
+<li><a href="http://view.inews.qq.com/a/NBA2019010400925500">2019年全明星</a></li>
+       <li><a href="http://view.inews.qq.com/a/NBA2018062503228400">2018年颁奖礼</a></li>
+        <li><a href="http://view.inews.qq.com/a/NBA2018061601908500">2018年选秀大会</a></li>
+   <li><a href="http://view.inews.qq.com/a/NBA2018062504510600">2018年总决赛</a></li>
+
+<li><a href="http://view.inews.qq.com/a/NBA2017121902796800">2018年全明星</a></li>
+      <li><a href="http://view.inews.qq.com/a/NBA2018092800567500">2018年中国赛</a></li>
+<li><a href="http://sports.qq.com/super/index.htm">超级企鹅名人赛第二季</a></li>
+<li><a href="http://sports.qq.com/basket/page/super.htm">超级企鹅名人赛第一季</a></li>
+
+
+
+   
+     
+  
+     
+ 
+
+
+
+
+
+    </ul>
+</li>
+<!-- 第三列 -->
+<li>
+    <h4>NBA规则</h4>
+    <ul>
+        <li><a href="http://sports.qq.com/a/20150824/053545.htm">24秒违例</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/053740.htm">走步违例</a></li>
+<li><a href="http://sports.qq.com/a/20150824/054568.htm">回场违例</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/053913.htm">3秒违例</a></li>
+<li><a href="http://sports.qq.com/a/20150824/054551.htm">8秒违例</a></li>
+
+        <li><a href="http://sports.qq.com/a/20150824/053926.htm">技术犯规</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/054016.htm">恶意犯规</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/054042.htm">个人犯规</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/054063.htm">干扰球</a></li>
+
+
+    </ul>
+</li>
+<!-- 第四列 -->
+<li>
+    <h4>NBA资料</h4>
+    <ul>
+        <li><a href="http://sports.qq.com/a/20150819/057018.htm">历届总冠军</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/022024.htm">历届常规赛MVP</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/026656.htm">历届总决赛MVP</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/027590.htm">历届最佳新秀</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/028448.htm">历届最佳教练</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/030317.htm">历届选秀状元</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/031009.htm">历届得分王</a></li>
+<li><a href="http://sports.qq.com/a/20150824/032123.htm">历届篮板王</a></li>
+<li><a href="http://sports.qq.com/a/20150824/032661.htm">历届助攻王</a></li>
+    </ul>
+</li>
+<!-- 第五列 -->
+<li>
+    <h4>NBA纪录</h4>
+    <ul>
+        <li><a href="http://sports.qq.com/a/20150824/045439.htm">球队连胜纪录</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/051396.htm">球队常规赛得分纪录</a></li>
+        <li><a href="http://sports.qq.com/a/20150824/050289.htm">球队季后赛得分纪录</a></li>
+<li><a href="http://sports.qq.com/a/20150824/045531.htm">个人单场得分纪录</a></li>
+<li><a href="http://sports.qq.com/a/20150824/038368.htm">个人总决赛得分纪录</a></li>
+<li><a href="http://sports.qq.com/a/20150824/042623.htm">个人生涯总得分纪录</a></li>
+<li><a href="http://sports.qq.com/a/20150824/053862.htm">个人生涯总篮板纪录</a></li>
+<li><a href="http://sports.qq.com/a/20150824/051905.htm">个人生涯总助攻纪录</a></li>
+<li><a href="http://sports.qq.com/a/20150824/053440.htm">个人生涯总盖帽纪录</a></li>
+
+    </ul>
+</li><!--[if !IE]>|xGv00|1c13bd8b1cd5396597b9bbd829c80a30<![endif]-->
+            </ul>
+        </div>
+    </div>
+
+            <script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+        <style>
+          .tcopyright {
+            width: 960px;
+            margin: 0 auto;
+            padding: 8px 0;
+            font-size: 12px;
+            line-height: 28px;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+            clear: both;
+          }
+
+          .tcopyright .en {
+            font-family: Arial;
+          }
+
+          .tcopyright a {
+            color: #333;
+            text-decoration: none;
+          }
+
+          .tcopyright a:hover {
+            color: #bd0a01;
+            text-decoration: underline;
+          }
+          .footernew {
+              color: #515151;
+              font-size: 12px;
+              height: 70px;
+              line-height: 24px;
+              margin: 12px auto 0;
+              overflow: hidden;
+              text-align: center;
+              width: 1000px;
+          }
+          .footernew .footernewdiv {
+              margin: 0 auto;
+              width: 680px;
+          }
+          .footernew p {
+              border: 1px solid #D2D2D2;
+              float: left;
+              font-size: 12px;
+              height: 50px;
+              line-height: 20px;
+              margin: 6px;
+              padding: 0;
+              width: 120px;
+              overflow: hidden;
+          }
+          .footernew .fl {
+              padding: 3px;
+          }
+          .qq-footer .footernew .fr {
+              padding: 5px 3px 0;
+              width: 72px;
+          }
+          .qq-footer .footernew a {
+  color: #515151;
+  text-decoration: none;
+}
+        </style>
+        <div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a
+              href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a
+              href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a
+              href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a
+              href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a
+              href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a
+              href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/"
+              target="_blank" rel="nofollow">腾讯公益</a> | <a href="https://cloud.tencent.com/?from=txwdibu"
+              target="_blank" rel="nofollow">腾讯云</a> | <a href="http://service.qq.com/" target="_blank"
+              rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+              <br/>
+              <a href="http://szwljb.sz.gov.cn/" target="_blank" rel="nofollow">深圳举报中心</a> |
+              <a href="http://ga.sz.gov.cn" target="_blank" rel="nofollow">深圳公安局</a> | 
+              <a href="http://www.qq.com/dzwfggcns.htm" target="_blank" rel="nofollow">抵制违法广告承诺书</a> |
+              <a href="http://www.qq.com/copyright.shtml" target="_blank" rel="nofollow">版权保护投诉指引</a> |
+              <a href="https://gdca.miit.gov.cn/" target="_blank" rel="nofollow">广东省通管局</a>
+              <br>
+              <span>
+                <a href="http://www.qq.com/culture.shtml" target="_blank" rel="nofollow">粤网文[2017]6138-1456号</a> 
+                <a href="http://www.qq.com/internet_licence.htm" target="_blank" rel="nofollow">新出网证（粤）字010号</a> 
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                增值电信业务经营许可证：<a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">粤B2-20090059</a> 
+                <a href="http://www.qq.com/icp1.shtml" target="_blank" rel="nofollow">B2-20090028</a>
+              </span>
+              <br>
+              <a href="http://www.qq.com/scio.htm" target="_blank" rel="nofollow">新闻信息服务许可证</a>
+              <a href="http://www.qq.com/xwdz.shtml" target="_blank" rel="nofollow">粤府新函[2001]87号</a> 违法和不良信息举报电话：0755-83765566-9 
+              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002000001">
+                <span>粤公网安备44030002000001号</span>
+              </a>
+              <br>
+              <a href="http://www.qq.com/spyp.htm" target="_blank">互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a>
+              <br>
+              <div class="footernew">
+                <div class="footernewdiv">
+                <p>
+                  <span class="fl"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" target="_blank" rel="nofollow"><img width="35" height="43" border="0" alt="经营性网站备案信息" src="//mat1.gtimg.com/www/images/qq2012/ind36.gif"></a></span>
+                  <span class="fr"><a target="_blank" class="lcblack" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" rel="nofollow">经营性网站<br>
+                  备案信息</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.12377.cn/" target="_blank" rel="nofollow"><img width="44" height="44" border="0" alt="中国互联网举报中心" src="//mat1.gtimg.com/www/images/qq2012/buliang.png"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.12377.cn/" target="_blank" rel="nofollow">中国互联网<br>
+                  举报中心</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.wenming.cn" target="_blank" rel="nofollow"><img width="44" height="42" border="0" alt="中国文明网传播文明" src="//mat1.gtimg.com/www/images/qq2012/wmlogo.gif"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.wenming.cn" target="_blank" rel="nofollow">中国文明网<br>传播文明</a></span>
+                </p>
+                <p style="width:128px;height:52px;border:0;">
+                  <span style="padding:0;" class="fl"><a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&amp;ct=df&amp;a=1&amp;pa=337337" target="_blank" rel="nofollow"><img border="0" alt="诚信网站" src="//mat1.gtimg.com/www/images/qq2012/cxrz5.png"></a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow"><img src="//mat1.gtimg.com/www/images/qq2012/gswj2015.jpg" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow">工商网监<br>电子标识</a></span>
+                </p>
+                </div>
+              </div>
+
+          </div>
+          <div class="en">Copyright &copy; 1998 -
+            
+            2020 Tencent. All Rights Reserved</div>
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a
+              href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+          </div>
+        </div>
+<!--[if !IE]>|xGv00|1946a31bc73a15246842877bdfa16df2<![endif]-->
+
+</div>
+<!-- NBA公共页脚 结束 -->
+<!--[if !IE]>|xGv00|e9241fd07cee8da7d9804b6b6deaf3e7<![endif]-->
+    <!-- /公共页脚 -->
+    <script>
+    //boss统计维度数据
+    var bossData = {
+        pageType: "VCX", //页面类型，用于区分底层页、首页等，具体查看boss系统
+        vertical: "NBA" //垂直底层，区分NBA、中超等，具体查看boss系统
+    };
+    </script>
+    <!-- PGV统计 -->
+    <!--pgv 20160801 by 39815--><script charset="gbk" src="http://pingjs.qq.com/ping.js"></script>
+
+<script>!function(t,e){"use strict";function a(){var t,e,a=(""+p.catalog_full).replace(/-/g,".").replace(/_/g,"-");p.topic&&p.topic.name&&p.topic.name.length>0?(t="L.",e="Z."+a+"."+p.topic.name):(t="L."+a,e="Z.");var n="W."+p.type,o="M."+p.tpl.type+p.tpl.stype,i="P."+(""+p.site).replace(/_/g,"-"),c="F."+f,l=t+"_"+e+"_"+n+"_"+o+"_"+i+"_"+c;l&&r({pgUserType:l})}function n(t){o(e,"click",function(e){var a=e.target;"img"===a.tagName&&(a=a.parentNode);var n=a.tagName.toLowerCase(),o=a.getAttribute("href");if(!o||o.indexOf("qqcom_pgv_from=")>-1)return!1;if("a"===n&&a.hostname&&a.hostname.indexOf("qq.com")>-1){var r=o+(a.search?"&":"?")+"qqcom_pgv_from="+t;a.setAttribute("href",r)}})}function o(a,n,o){var r=function(a){return a=a||t.event,a.target||(a.target=a.srcElement||e),3===a.target.nodeType&&(a.target=a.target.parentNode),a};return a.addEventListener?a.addEventListener(n,function(t){o.call(t.currentTarget,r(t))},!1):a.attachEvent("on"+n,function(t){o.call(a,r(t))}),!0}if(!t||!t.location||"function"!=typeof t.pgvMain)return!1;var r=function(){var e=arguments;setTimeout(function(){t.pgvMain.apply(this,e)},0)},i=location.search.replace(/adtag=client\.qq\.\d+_\.0/i,"from=tips"),c=["aio","tips"],f="def";location.search.indexOf("qqcom_pgv_from=")>-1&&(f=location.host+location.pathname+location.search);var p=t.ARTICLE_INFO||null,l=p&&p.catalog_full;if(l)for(var g=0;g<c.length;g+=1)if(i.indexOf(c[g])>-1){n(c[g]);break}l&&a(),l||("undefined"!=typeof whatCatalog&&(t.pvCSTM=t.whatCatalog),r({pgUserType:"F."+f}))}(window,document);</script><!--/pgv 20160801-->
+<!-- 视频来源ptag --><script src="//mat1.gtimg.com/v/ptag/ptag_1.2.js" async="true"></script>
+<!--[if !IE]>|xGv00|a1d505b81f0731c97405c05986e06bb8<![endif]-->
+<!--[if !IE]>|xGv00|e495268dae03726664c77551e8df25e2<![endif]-->
+    <!--boss统计模型脚本-->
+    <script>
+//点击触发点击上报
+if(document.addEventListener){
+	document.addEventListener("click", registerZone2, false);
+}else if(document.attachEvent){
+	document.attachEvent("onclick", registerZone2);
+}else{
+	document.onclick = registerZone2;
+}
+    
+var gImage;
+//点击上报
+function registerZone2(param,clickType){
+    var loopTryNum = 10;//向上查询级数
+    var loop=4;//标签向上查询的级数
+    var bossID = 3177; //上报ID，通常固定
+    var pwd='763290108';//和bossId对应
+    var pageType=bossData && bossData.pageType || '';
+    var vertical=bossData && bossData.vertical || '';
+    var purl='';
+    var zoneId='';
+    try{
+		var num=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+		var iQQ=(num==null?"":unescape(num[2]));
+		if(typeof clickType == 'undefined'){//页面结构上加bosszone触发上报
+			var ev = window.event || param;
+	        var et = ev.srcElement || ev.target;
+	        //向上查找A标签
+	        while(loop-- > 0){
+				if("A"==et.tagName || "BODY"==et.tagName){
+					break;
+				}else{
+					et = et.parentNode;
+				}
+			}
+		    var type=et.tagName;
+		    if (type != "A") {return;}
+		    //获取点击链接
+		    purl = et.href;
+		    for(var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode){
+		        if(tagNode.attributes['bossZone']){
+		            zoneId = tagNode.attributes['bossZone'].nodeValue;
+			    }else if(tagNode.attributes['bosszone']){
+			        zoneId = tagNode.attributes['bosszone'].nodeValue;
+			    }else if(tagNode.attributes['BossZone']){
+			        zoneId = tagNode.attributes['BossZone'].nodeValue;
+			    }else if(tagNode.attributes['Bosszone']){
+			        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+			    }
+		        if(zoneId) break; 
+		    }
+		    if(!zoneId){return;}
+		    
+		}else{//js手动触发上报
+			zoneId = param.bossZone;
+			purl = param.url || '';
+		}
+		var localUrl = location.href;//当前页面url
+		var iurl = 'http://btrace.qq.com/kvcollect?BossId='+bossID+'&Pwd='+pwd+'&sOp='+zoneId+'&iQQ='+iQQ+'&pageType='+pageType+'&vertical='+vertical+'&sIp=&ftime=&sUrl='+escape(purl)+'&sLocUrl='+escape(location.href)+'&ran='+Math.random();
+		gImage = new Image(1,1);
+		gImage.src = iurl;
+
+    }catch(e){}
+    
+}
+
+//曝光上报
+function ExposureBoss(id,name){
+    var bossID = 3175; //上报ID，通常固定
+    var pwd='1745364445';//和bossId对应
+    var pageType=bossData && bossData.pageType || '';
+    var vertical=bossData && bossData.vertical || '';
+	
+	try{
+		var num = document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+		var iQQ = (num==null?"":unescape(num[2]));
+		var iurl = 'http://btrace.qq.com/kvcollect?BossId='+bossID+'&Pwd='+pwd+'&sOp='+name+'&iQQ='+iQQ+'&pageType='+pageType+'&vertical='+vertical+'&sIp=&ftime=&sUrl='+escape(location.href)+'&ran='+Math.random();
+		gImage = new Image(1,1);
+		gImage.src = iurl;
+		
+	}catch(e){}
+
+}
+</script>
+
+
+<!--[if !IE]>|xGv00|d0820941d8645d8db9be4d7b52c7ecf9<![endif]-->
+    <script>
+    try {
+        ExposureBoss(null, "VCX__nav_expo");
+    } catch (e) {}
+    </script>
+    <!-- require模块配置文件 -->
+    <script charset="utf-8" src="//mat1.gtimg.com/sports/nbavideo/common/scripts/config-21d1a756e2.js"></script>
+    <!-- 脚本入口 -->
+    <script data-main="//mat1.gtimg.com/sports/nbavideo/cxmatch/scripts/index-7ccfabb0f2.js" src="//mat1.gtimg.com/sports/js/bundesliga/lib/require.min.js"></script>
+</body>
+
+</html>
+<!--[if !IE]>|xGv00|c8cbbe654d2f37ab066f97a304bca539<![endif]-->

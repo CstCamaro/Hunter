@@ -1,0 +1,245 @@
+/*
+头部通用css
+更新时间:2013-11-14
+版本:css0.0.1
+作者:ryanguo
+*/
+body{font-family:宋体, Arial, Helvetica, sans-serif; font-size:12px;-webkit-text-size-adjust:none;}
+a{text-decoration:none; color:#333;}
+a:hover{text-decoration:underline; color:#e25732;}
+h2,h3{font-weight:normal;}
+/* Clear Fix */ 
+.cl{zoom:1;}
+.cl:after{content:"　";display:block;clear:both;height:0;}
+
+.hei,.hei a{color:#000; text-decoration:none;}
+.hei a:hover{color:#e25732; text-decoration:underline;}
+.bai,.bai a{color:#fff; text-decoration:none;}
+.bai a:hover{color:#fff; text-decoration:underline;}
+.lv,.lv a{color:#2ea921; text-decoration:none;}
+.lv a:hover{color:#e25732; text-decoration:underline;}
+.fen,.fen a{color:#ec008c; text-decoration:none;}
+.fen a:hover{color:#e25732; text-decoration:underline;}
+.lan,.lan a{color:#2887df; text-decoration:none;}
+.lan a:hover{color:#e25732; text-decoration:underline;}
+.hui,.hui a{color:#a4a4a4; text-decoration:none;}
+.hui a:hover{color:#e25732; text-decoration:underline;}
+
+h1,h2,h3,.ft_wryh{font-family:"微软雅黑"; font-weight:normal;}
+
+.Q-tList{margin:0;}
+.lh15{height:15px; line-height:15px; overflow:hidden;}
+.lh10{height:10px; line-height:10px; overflow:hidden;}
+.lh23{height:23px; line-height:10px; overflow:hidden;}
+
+.mininav{width:100%; height:30px;}
+
+#channel_nav{width:1000px; margin:0 auto;}
+#channel_nav .hd{height:55px; overflow:hidden;}
+#channel_nav .hd .logo{padding-top:15px; float:left;}
+#channel_nav .hd ul{width:703px; padding-top:24px; float:right; overflow:hidden;}
+#channel_nav .hd li{padding:0 2px; font-size:14px; font-family:"微软雅黑"; font-weight:normal; float:left;}
+#channel_nav .hd li a{padding:0 5px; line-height:22px; color:#333;}
+#channel_nav .hd li a:hover{background:#408ed6; color:#fff; text-decoration:none;}
+#channel_nav .bd{height:40px; background:#2887df;}
+#channel_nav .bd li{line-height:40px; font-size:14px; color:#fff; float:left;}
+#channel_nav .bd li a,
+#channel_nav .bd li a:hover{display:inline-block; padding:0 15px;color:#fff; text-decoration:none; border-right:1px solid #2478c6; border-left:1px solid #2293fb;}
+#channel_nav .bd li a:hover{background:#51a1ec; border-right:1px solid #51a1ec; border-left:1px solid #51a1ec;}
+#channel_nav .bd .index a,
+#channel_nav .bd .index a:hover{background:#e25732; border-right:0; border-left:0;}
+#channel_nav .bd .end a{border-right:0;}
+#channel_nav .ft{background:url(//mat1.gtimg.com/sports/xiaobai/20131115/nav_bg_01.jpg) -12px 0 no-repeat #4e5462; height:30px; padding-left:10px;}
+#channel_nav .ft li{padding:0 10px; line-height:30px; float:left;}
+#channel_nav .ft a{color:#fff;}
+#channel_nav .ft a:hover{color:#dfeffe; text-decoration:underline;}
+
+
+.focus_box{width:1000px; height:380px; background:#484d59; margin:10px auto 0; overflow:hidden;}
+.focus_box .left{width:680px; float:left;}
+.focus_box .right{width:320px; float:left; overflow:hidden;}
+/*焦点图*/
+.focus{width:680px;height:380px;overflow:hidden; zoom: 1;position: relative; }
+.focus ul{width:680px;height:380px;overflow:hidden;position:relative; }
+.focus li{width:680px;height:380px;float:left;position:relative;}
+.focus li a{display:block;cursor:pointer;}
+.focus .tit{width:680px;position:absolute;left:0;bottom:35px;text-align:center;z-index:1;}
+.focus .tit a{color:#fff;}
+.focus .tit a:hover{text-decoration:none;}
+.focus .bg{width:680px;height:70px;position:absolute;left:0;bottom:0;background:#000;opacity:0.7;filter:alpha(opacity=70);}
+.focus .foucsTit{width:680px;height:22px;left:0;position:absolute;bottom:3px;text-align:center;}
+.focus .foucsTit span{display:inline-block;width:7px;height:7px;margin: 0 5px;line-height:0;font-size:0;background:url(//mat1.gtimg.com/sports/xiaobai/20131115/icons_v8.png) -160px -90px no-repeat;cursor:pointer;overflow:hidden;}
+.focus .foucsTit span.on{background:url(//mat1.gtimg.com/sports/xiaobai/20131115/icons_v8.png) -170px -90px no-repeat;}
+.focus .focusBtnL,
+.focus .focusBtnR{width:40px;height:56px;padding:7px;margin-top:-70px;position:relative;z-index:1;}
+.focus .focusBtnL{float:left;}
+.focus .focusBtnR{float:right;}
+.focus .focusBtnL img{float:right;}
+.focus .focusBtnL img,
+.focus .focusBtnR img{display:none;cursor:pointer;}
+.focus .focusBtnL span,
+.focus .focusBtnR span{display:inline;width:23px;height:45px;margin:7px 5px 0;cursor:pointer;overflow:hidden;background:url(//mat1.gtimg.com/sports/xiaobai/20131115/icons_v8.png) 0 0 no-repeat;}
+.focus .focusBtnL span{float:left;background-position:0 -90px;}
+.focus .focusBtnR span{float:right;background-position:-30px -90px;}
+.focus .focusBtnLHover span{background-position:-60px -90px;}
+.focus .focusBtnRHover span{background-position:-90px -90px;}
+.focus .focusBtnLHover,
+.focus .focusBtnRHover{width:146px;background:#408ed6;overflow:hidden;}
+.focus .focusBtnLHover img,
+.focus .focusBtnRHover img{display:inline;}
+
+#ssk{padding-left:10px;}
+#ssk .hd{height:44px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/tit_bg_01.jpg); padding:0 12px 0 24px; color:#fff; line-height:44px;}
+#ssk .hd h2{font-size:18px;}
+#ssk .hd .fr i{display:none;}
+#ssk .hd .fr a{display:block; width:13px; height:44px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/gd_01.jpg);}
+#ssk .hd .fr a:hover{background:url(//mat1.gtimg.com/sports/xiaobai/20131115/gd_02.jpg);}
+#ssk .bd li{width:310px; height:31px; line-height:31px; background:#67b4f2; border-bottom:1px solid #5a93d3; border-top:1px solid #8eceff; clear:both; overflow:hidden; float:left;}
+#ssk .bd .time,
+#ssk .bd .title,
+#ssk .bd .sp,
+#ssk .bd .title a,
+#ssk .bd .sp a{display:block; font-style:normal; float:left;}
+#ssk .bd .time{width:74px; height:32px; background:#51a3e2; color:#bae7ff; text-align:center;}
+#ssk .bd .title{width:188px; height:32px; padding-left:6px;}
+#ssk .bd .sp{width:32px; height:23px; margin-top:5px;}
+#ssk .bd .sp a{width:32px; height:23px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/sp_an_01.jpg);}
+#ssk .bd .sp a:hover{background:url(//mat1.gtimg.com/sports/xiaobai/20131115/sp_an_02.jpg);}
+#ssk .bd .sp i{display:none;}
+
+.contont{width:1000px; margin:20px auto 0;}
+.contont .main{width:700px; float:left; overflow:hidden;}
+.contont .sub{width:300px; float:right; overflow:hidden;}
+
+#top_news{width:660px;}
+#top_news .hd{height:43px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/tit_bg_02.jpg); padding-left:14px;}
+#top_news .hd h2{font-size:20px; line-height:38px;}
+#top_news .hot_box{padding:20px 0;}
+#top_news .hot_box ul{padding-top:6px;}
+#top_news .hot_box li{line-height:26px; font-size:14px; clear:both;}
+#top_news .hot_box i{font-style:normal; width:74px; float:left;}
+#top_news .hot_box p{color:#d5d5d5; margin-left:74px; *float:left;_float:left; *margin-left:0; _margin-left:0;}
+#top_news .line_x{height:1px; line-height:1px; overflow:hidden; border-bottom:1px dotted #d5d5d5;}
+
+.cnt_m_box{width:660px; margin-top:20px;}
+.cnt_m_box .hd{height:43px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/tit_bg_03.jpg); padding:0 10px 0 14px; line-height:38px;}
+.cnt_m_box .hd h2{font-size:20px; line-height:36px;}
+.cnt_m_box .hd h2 a{color:#ffffff; text-decoration:none;}
+.cnt_m_box .hd h2 a:hover{color:#daedff; text-decoration:none;}
+.cnt_m_box .hd .fr{color:#a0a0a0;}
+.cnt_m_box .hd .fr a{margin:0 4px;}
+.cnt_m_box .bd{padding-top:10px;}
+.cnt_m_box .bd .t_list li{font-size:14px; line-height:26px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/ico_dian.jpg) 0 14px no-repeat; padding-left:14px;}
+#zxxx .bd .t_list li{width:316px; float:left;}
+
+#kxtp .bd{padding-top:20px;}
+#kxtp .bd .pt_list{width:660px; overflow:hidden;}
+#kxtp .bd .pt_list ul{width:678px;}
+#kxtp .bd .pt_list li{width:205px; height:195px; border:1px solid #d5d5d5; position:relative; margin:0 19px 24px 0; float:left;}
+#kxtp .bd .pt_list .pic{display:block; width:195px; height:120px; padding:5px; text-align:center; overflow:hidden;}
+#kxtp .bd .pt_list p{line-height:20px; margin:0 5px;}
+#kxtp .bd .pt_list em{display:block; width:200px; height:20px; line-height:20px; padding-left:5px; position:absolute; left:0; bottom:0; background:#ededed; color:#8c8c8c;}
+
+
+#jcsp .bd{overflow:hidden;}
+#jcsp .bd  .pt_list{width:807px; padding-top:6px; overflow:hidden;}
+#jcsp .bd  .pt_list li{width:195px; height:180px; padding:0 37px 25px 0; float:left;}
+#jcsp .bd  .pt_list .pt_box{display:block; width:195px; height:110px; position:relative;}
+#jcsp .bd  .pt_list .pt_box i,
+#jcsp .bd  .pt_list .pt_box b,
+#jcsp .bd  .pt_list .pt_box em{display:block; position:absolute;}
+#jcsp .bd  .pt_list .pt_box i{width:21px; height:21px; position:absolute; top:86px; left:6px; background: url(//mat1.gtimg.com/sports/xiaobai/20131115/sp_ico_02.png) no-repeat !important; background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/xiaobai/20131115/sp_ico_02.png', sizingMethod='scale');}
+#jcsp .bd  .pt_list .pt_box b{width:100%; height:28px; background:#000;opacity:0.7;filter:alpha(opacity=70); bottom:0; left:0;}
+#jcsp .bd  .pt_list .pt_box em{width:124px; height:28px; bottom:0; right:0; line-height:28px;}
+#jcsp .bd  .pt_list p,
+#jcsp .bd  .pt_list span{line-height:20px; margin-top:5px;}
+
+.cnt_m_box02{width:660px;}
+.cnt_m_box02 .tit_list{width:324px; padding-top:36px;}
+.cnt_m_box02 .tit_list .hd{height:42px; padding:0 10px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/tit_bg_07.jpg);}
+.cnt_m_box02 .tit_list .hd .fr{line-height:40px;}
+.cnt_m_box02 .tit_list .hd .fr a{margin:0 4px;}
+.cnt_m_box02 .tit_list .bd ul{padding-top:18px;}
+.cnt_m_box02 .tit_list .bd li{font-size:14px; line-height:26px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/ico_dian.jpg) 0 14px no-repeat; padding-left:14px;}
+
+
+.cnt_s_box01 .hd{height:42px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/tit_bg_04.jpg); padding-left:10px; line-height:36px;}
+.cnt_s_box01 .hd h2{font-size:16px; color:#fff;}
+.cnt_s_box01 .hd .fr a{display:block; width:26px; height:37px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/gd_03.jpg);}
+.cnt_s_box01 .hd .fr a:hover{background:url(//mat1.gtimg.com/sports/xiaobai/20131115/gd_04.jpg);}
+.cnt_s_box01 .hd .fr i{display:none;}
+.cnt_s_box01 .bd{padding-top:14px;}
+.cnt_s_box01 .bd .pti_box{padding-bottom:30px;}
+.cnt_s_box01 .bd .pti_box i{display:block; width:54px; padding-left:5px; height:19px; line-height:19px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/tit_ico_01.jpg); font-style:normal; color:#fff; float:left; margin-top:4px;}
+.cnt_s_box01 .bd .pti_box .pic{width:90px; height:90px; float:left;}
+.cnt_s_box01 .bd .pti_box .ti_box{width:200px; float:right;}
+.cnt_s_box01 .bd .pti_box .ti_box h3{font-size:14px; line-height:26px;}
+.cnt_s_box01 .bd .pti_box .ti_box p{color:#8c8c8c; line-height:22px;}
+.cnt_s_box01 .bd .pt_list{width:330px; padding-top:6px; overflow:hidden; float:left;}
+.cnt_s_box01 .bd .t_list{width:330px; float:right;}
+.cnt_s_box01 .bd .pt_list .pt_box{display:block; width:140px; height:136px; margin-right:20px; position:relative; float:left;}
+
+.cnt_s_box01 .bd .pt_list .pt_box i,
+.cnt_s_box01 .bd .pt_list .pt_box b{display:block; position:absolute;}
+.cnt_s_box01 .bd .pt_list .pt_box i{width:21px; height:21px; position:absolute; top:53px; left:6px; background: url(//mat1.gtimg.com/sports/xiaobai/20131115/sp_ico_02.png) no-repeat !important; background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/xiaobai/20131115/sp_ico_02.png', sizingMethod='scale');}
+.cnt_s_box01 .bd .pt_list .pt_box b{width:100%; height:16px; background:#000;opacity:0.7;filter:alpha(opacity=70); top:63px; left:0;}
+.cnt_s_box01 .bd .pt_list .pt_box em{ display:inherit; width:100%; margin-top:4px; line-height:20px;}
+.cnt_s_box01 .bd .t_list li{font-size:14px; line-height:26px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/ico_dian.jpg) 0 14px no-repeat; padding-left:14px;}
+#hzzq .bd{padding-bottom:20px;}
+#hzzq p{margin-top:8px; text-align:center;}
+
+.cnt_s_box02 .hd{height:43px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/tit_bg_05.jpg); line-height:36px;}
+.cnt_s_box02 .hd h2{font-size:16px;}
+.cnt_s_box02 .hd .fr a{display:block; width:26px; height:36px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/gd_05.jpg);}
+.cnt_s_box02 .hd .fr a:hover{background:url(//mat1.gtimg.com/sports/xiaobai/20131115/gd_06.jpg);}
+.cnt_s_box02 .hd .fr i{display:none;}
+.cnt_s_box02 .bd{padding-top:14px;}
+.cnt_s_box02 .bd .t_list{padding-bottom:20px;}
+.cnt_s_box02 .bd .t_list li{line-height:24px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/ico_dian.jpg) 0 14px no-repeat; padding-left:14px;}
+.cnt_s_box02 .bd .pt_list{width:300px; overflow:hidden;}
+.cnt_s_box02 .bd .pt_list ul{width:320px;}
+.cnt_s_box02 .bd .pt_list li{width:160px; height:180px; float:left;}
+.cnt_s_box02 .bd .pt_list .pt_box{display:block; width:140px; height:160px; position:relative;}
+.cnt_s_box02 .bd .pt_list .pt_box b,
+.cnt_s_box02 .bd .pt_list .pt_box em{display:block; position:absolute; left:0; bottom:0; width:100%; height:35px; line-height:35px; text-align:center;}
+.cnt_s_box02 .bd .pt_list .pt_box b{background:#000;opacity:0.7;filter:alpha(opacity=70);}
+.cnt_s_box02 .bd .pt_list02{width:300px; overflow:hidden;}
+.cnt_s_box02 .bd .pt_list02 ul{width:320px;}
+.cnt_s_box02 .bd .pt_list02 li{width:138px; height:138px; border:1px solid #d5d5d5; margin-right:20px; position:relative; float:left}
+.cnt_s_box02 .bd .pt_list02 em{display:block; width:138px; height:20px; text-align:center; background:#ededed; position:absolute; left:0; bottom:0; line-height:20px;}
+
+#weibo_01 .bd{width:300px; overflow:hidden;}
+#weibo_01 .bd ul{width:318px; margin-left:-8px;}
+#weibo_01 .bd li{width:80px; padding:14px 0 0 24px; line-height:22px; float:left;}
+#weibo_01 .bd li img{margin-bottom:4px; padding:3px; border:1px solid #d2d2d2;}
+#weibo_01 .ft{width:300px; padding:20px 0;}
+#weibo_01 .ft a{display:block; width:100px; height:30px; text-align:center; line-height:30px; background:#1ea4f9; color:#fff; text-decoration:none; cursor:pointer; font-family:"微软雅黑"; font-size:16px; margin:0 auto;}
+#weibo_01 .ft a:hover{background:#e25732;text-decoration:none;}
+#weibo_01 .ft a.followed{background:#adc2dc; cursor:auto;}
+
+#gflj .bd{padding-bottom:20px;}
+
+#sjpm .hd{background:url(//mat1.gtimg.com/sports/xiaobai/20131115/tit_bg_06.jpg);}
+#sjpm .bd{background:url(//mat1.gtimg.com/sports/xiaobai/20131115/bd_bg_01.jpg); padding-top:0;}
+#sjpm .bd i{display:block; text-align:center; font-style:normal; float:left;}
+#sjpm .bd .tbody{height:32px; line-height:32px; font-size:14px;}
+#sjpm .bd .pm{width:54px;}
+#sjpm .bd .xs{width:136px;}
+#sjpm .bd .gj{width:100px;}
+#sjpm .bd .t_list{width:300px; height:240px; padding-top:3px; background:url(//mat1.gtimg.com/sports/xiaobai/20131115/list_bg_01.jpg) no-repeat; overflow:hidden;}
+#sjpm .bd .t_list li{line-height:52px; padding-left:42px; background:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  |xGv00|c6d338e3eb47e7a7cbc8c75f5e38dc06 */

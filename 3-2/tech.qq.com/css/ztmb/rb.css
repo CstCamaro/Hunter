@@ -1,0 +1,123 @@
+body{margin:0;padding:0;background-color:#FFF;}
+form,p{margin:0;padding:0;}
+body,select,input{font-size:12px; color:#000;}
+img{border:none;}
+h1,h2,h3,h4,h5,h6{ margin:0px; padding:0px;}
+.navdiv{width:910px; height:30px; margin-top:-30px;  margin-left:auto; margin-right:auto; z-index:5px;}
+p{ text-indent:2em}
+.input{ border:#A1A1A1 1px solid; height:14px;}
+.img1{border:# 1px solid;}
+.imgjz{vertical-align:middle}
+.imgbor1{ border:1px solid #59B8D4}
+.imgbor2{ border:1px solid #CC0001}
+.imgbor3{ border:1px solid #C2C2C2}
+.bbut1{ background:url(../images/bbut1.gif) no-repeat; width:36px; height:19px; border:0px; color:#fff; line-height:19px;}
+.bbut2{ background:url(../images/bbut2.gif) no-repeat; width:80px; height:19px; border:0px; color:#fff; line-height:19px;}
+.bbut3{ background:url(../images/bbut3.gif) no-repeat; width:47px; height:19px; border:0px; color:#fff; line-height:19px;}
+.rbut1{ background:url(../images/rbut1.gif) no-repeat; width:36px; height:19px; border:0px; color:#fff; line-height:19px;}
+.rbut2{ background:url(../images/rbut2.gif) no-repeat; width:80px; height:19px; border:0px; color:#fff; line-height:19px;}
+.rbut3{ background:url(../images/rbut3.gif) no-repeat; width:47px; height:19px; border:0px; color:#fff; line-height:19px;}
+.fonttitle{font-family:ºÚÌå;font-size:18px;line-height:28px;}
+
+.h26{line-height:26px;}
+
+h3{font-size:20px;font-family:"ºÚÌå";font-weight:100;}
+h4{font-size:18px;font-family:"ºÚÌå";font-weight:100;}
+.fontblack{color:#000;}
+.fontwhite{color:#FFF;}
+.fontred{ color:#c00}
+.fontgrey{color:#888888;}
+.fontgreen{ color:#226A00;}
+.fontqgreen{ color:#7EB301}
+.fontqblue{ color:#3386CC}
+.fontlblue{ color:#0002FF}
+.fonglred{ color:#FE0000}
+.fontl16{line-height:16px;}
+.fontl18{line-height:18px;}
+.fontl20{line-height:20px;}
+.fontl21{line-height:21px;}
+.fontl22{line-height:22px;}
+.fontl24{line-height:24px;}
+.fontl26{line-height:26px;}
+.fontl27{line-height:27px;}
+.fontl28{line-height:28px;}
+
+.font2em{text-indent:2em;}
+
+.font14{font-size:14px;}
+
+.fontbold{font-weight:bold;}
+
+.fontpp6{padding-left:6px;padding-right:6px;}
+
+a.whitenl{color:#FFF; text-decoration: none;}
+a.whitenl:hover {text-decoration: underline;}
+
+a.blacknl{color:#000; text-decoration: none;}
+a.blacknl:hover {text-decoration: underline;}
+
+a.blackrednl {color:#000; text-decoration: none;}
+a.blackrednl:hover {color:#CC0000;	text-decoration: underline;}
+
+a.blackred {color:#000; text-decoration: none;}
+a.blackred:hover {color:#CC0000;	text-decoration: underline;}
+
+a.qhblue{ color:#000099}
+a.qhblue:hover{ color:#000099}
+
+a.qhred{ color:#CC0000}
+a.qhred:hover{ color:#CC0000}
+
+a.bluelink{ color:#0055A6}
+
+a.redlink{ color:#CC0000}
+
+a.nline{text-decoration: none;}
+a.nline:hover {text-decoration: underline;}
+
+a.uline{text-decoration: underline;}
+a.uline:hover {text-decoration: none;}
+.textare{ background: url(../images/textaerbg.jpg) no-repeat right top; width:880px; }
+.buto{ background:#F6F6F7; height:22px; border:1px solid #cdcdcd;}
+.inputbor{ border:1px solid #CDCDCD}
+.wzsp{width:20px; margin-top:10px; margin-left:auto; margin-right:auto; height:88px;writing-mode:lr-tb;}
+.wzsp2{width:20px; margin-top:5px; padding-top:10px; margin-left:auto; margin-right:auto; border-right:1px dashed #474747; height:102px;writing-mode:lr-tb;}
+.fl{float: left;}
+.fr{float: right;}
+.gray{}
+.gray a{ color:#CCCCCC}
+.gray a hover{ color:#CCCCCC}
+
+.white { color:#FFF}
+.white a{ color:#fff;}
+.white a hover{ color:#fff}
+
+.marb2{margin-bottom:2px;}
+.mart4{margin-top:4px;}
+.marb4{margin-bottom:4px;}
+.mart6{margin-top:6px;}
+.marb6{margin-bottom:6px;}
+.marb8{margin-bottom:8px;}
+.marb10{margin-bottom:10px;}
+.padlr3{ padding-left:3px; padding-right:3px;}
+.padl10{ padding-left:10px;}
+.padt3{ padding-top:3px;}
+.pad5{ padding:5px;}
+.brtdborblxx{ border-bottom:1px dashed #0254A6}
+.brtdborgrey{ border:1px solid #C2C2C2}
+.brtdlrbborgrey{ border:1px solid #C2C2C2; border-top:none}
+.brtdtrbborgrey{ border:1px solid #C2C2C2; border-left:none}
+
+
+.btdborql{ border:1px solid #C0E6EF}
+.btdlrbborql{ border:1px solid #C0E6EF; border-top:none}
+
+.btdborsl{ border:1px solid #4E9AD6}
+.btdtrbborsl{ border:1px solid #4E9AD6; border-left:none}
+.btdlrbborsl{ border:1px solid #4E9AD6; border-top:none}
+.btdtbborsl{ border-top:1px solid #4E9AD6;  border-bottom:1px solid #4E9AD6;}
+
+.rtdborqh{ border:1px solid #FF9885}
+.rtdtrbborqh{ border:1px solid #FF9885; border-left:none}
+.rtdtbborqh{ border-top:1px solid #FF9885;  border-bottom:1px solid #FF9885;}
+.rtdlrbborqh{ border:1px solid #FF9885; border-top:none}

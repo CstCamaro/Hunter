@@ -1,0 +1,79 @@
+body{margin:0 auto;font-family:"ËÎÌå";font-size:12px;color:#333;line-height:21px;background:#fff;}
+input{vertical-align:middle;}
+#nav{color:#fff;line-height:32px;}
+#nav a{color:#fff;padding:0 10px;text-decoration:none;display:block;float:left;}
+#nav a:hover{color:#f00;padding:0 10px;text-decoration:none;}
+#nav .this{padding:0 10px;background:#e1e1e1;color:#333;display:block;float:left;}
+
+a{color:#333;text-decoration:none}
+a:hover{color:#a00;text-decoration:underline}
+img{border:0;}
+
+.main960{width:960px;margin:0 auto;clear:both;}
+.left,.mid,.right,.left2,.left3,.left4{float:left;}
+.left{width:301px;background:#0069ae;padding:7px 6px;}
+.left2{width:698px;padding-right:10px;}
+.mid{width:395px;}
+.right{width:250px;border:1px solid #caced0;background:#fffae5;}
+.left3{width:344px;padding-right:10px;}
+.left4{width:344px;}
+
+.box_h6{clear:both;width:100%;height:6px;line-height:0;font-size:0;}
+.pdl22{padding-left:22px;}
+.pdl39{padding-left:39px;}
+.pdl30{padding-left:30px;}
+.fb{font-weight:bold;}
+.f14{font-size:14px;}
+.lh24{line-height:24px;}
+
+.f752{color:#752c00;}
+.f752 a{color:#752c00;}
+.f752 a:hover{color:#a00;}
+
+.f005{color:#005e9d;}
+.f005 a{color:#005e9d;}
+.f005 a:hover{color:#a00;}
+
+.fce3{color:#ce3f00;}
+.fce3 a{color:#ce3f00;}
+.fce3 a:hover{color:#a00;}
+
+.f939{color:#939191;}
+.f939 a{color:#939191;}
+.f939 a:hover{color:#a00;}
+
+.f47{color:#474747;}
+.f47 a{color:#474747;}
+.f47 a:hover{color:#a00;}
+
+.big{color:#c40000;font-size:20px;font-family:"ºÚÌå";line-height:35px;}
+.big a{color:#c40000;}
+.big a:hover{color:#f00;}
+
+.ff{color:#fff;}
+.ff a{color:#fff;}
+.ff a:hover{color:#ff0;}
+
+.bor1{border:1px solid #e1e1e1;border-top:1px;}
+.bor2{border-bottom:1px solid #0069ae;}
+.bor3{border:1px solid #d6dcde;}
+.bor4{border:1px solid #0069ae;border-top:none;}
+.bor6{border:1px solid #0069ae;}
+.bor5{border:1px solid #e1e1e1;}
+
+.input1{width:79px;}
+.bgrt{background-position:top;background-repeat:repeat-x;}
+.bgrc{background-position:center;background-repeat:repeat-x;}
+.tabs div{float:left;width:98px;height:25px;background:url(//mat1.gtimg.com/sports/caipiao/tab-2.gif);line-height:25px;text-align:center;font-size:14px;font-weight:bold;color:#545454;margin-right:7px;}
+.tabs .on{background:url(//mat1.gtimg.com/sports/caipiao/tab-1.gif);color:#fff;}
+.dis{display:block;}
+.undis{display:none;}
+
+.tabs2 div{margin-right:13px;width:75px;height:23px;text-align:center;font-weight:bold;color:#fff;float:left;font-size:14px;}
+.tabs2 .on{background:#fffae5;color:#086eb1;}
+
+.tables td{padding-left:8px;}
+.fr{float:right;}
+
+#tab5 td{border-left:1px solid #caced0;border-top:1px solid #caced0;}
+#tab5 .on{background:#fffff2;}/*  |xGv00|d9a9d32b0bc27bcea7fa0fe164e0661c */

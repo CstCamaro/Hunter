@@ -1,0 +1,163 @@
+@charset "gb2312";
+/* CSS Document */
+body  { background: #efeee9 url(//mat1.gtimg.com/sh/images/gonglue/talk_body_bg_b.png) center -5px no-repeat;}
+
+.df {filter:alpha(opacity=30); /* IE6 */ -moz-opacity:0.3; /* Mozilla */ -khtml-opacity:0.3; /* Safari */ opacity:0.3; }
+/*头部*/
+.talk-header {height:305px; padding:1px;} 
+a {color:#333333;}
+a:hover {color:#cc0000;}
+.fd {font-weight:bold;}
+.talk-header-text {color:#fff; width:538px; margin-top:112px; height:110px; padding:16px 18px;  line-height:30px; font-size:16px; font-family:Microsoft Yahei,\9ed1\4f53,\5b8b\4f53;}
+.talk-header-bg {width:572px; height:256px; padding:1px; margin:18px 11px 12px 385px; background:url(//mat1.gtimg.com/sh/images/gonglue/talk_h_right.png) no-repeat;}
+/*幻灯片*/
+.talk-slide {height:320px;}
+.tslide-lt,.tslide-md,.tslide-rt {position:relative; }
+.slide-tip { height:40px; margin-top:-40px; background:#000;filter:alpha(opacity=60); /* IE6 */ -moz-opacity:0.6; /* Mozilla */ -khtml-opacity:0.6; /* Safari */ opacity:0.6; }
+.silde-title { height:40px; bottom:0px; width:340px; overflow:hidden; padding:0px 10px;text-align:right; position:absolute;line-height:40px; font: 16px/40px Microsoft Yahei,\9ed1\4f53,\5b8b\4f53;}
+.silde-title a,.silde-title a:hover {color:#fff;}
+.slide230px {width:210px;}
+.tslide-lt {width:230px;}
+.tslide-md {width:360px; margin:0px 5px; display:inline;}
+.tslide-rt {width:360px;}
+/*vote*/
+#apps_svy_digg{margin:0px auto;width:323px;}
+#apps_svy_digg .option{margin:0px 2px;float:left;width:98px;height:98px;}
+#apps_svy_digg .talk-vote-red { background:url(//mat1.gtimg.com/sh/images/gonglue/talk_vote_red.png) no-repeat;}
+#apps_svy_digg .talk-vote-green {background:url(//mat1.gtimg.com/sh/images/gonglue/talk_vote_green.png) no-repeat;}
+#apps_svy_digg .talk-vote-huise {background:url(//mat1.gtimg.com/sh/images/gonglue/talk_vote_hui.png) no-repeat;}
+#apps_svy_digg .count{text-align:center;font-family:Verdana,\9ed1\4f53,\5b8b\4f53;font-size:20px;color:#fff;line-height:26px}
+#apps_svy_digg .digg{text-align:center;margin-top:16px;font-size:20px;color:#ccc;line-height:26px; font-family: Microsoft Yahei,\9ed1\4f53,\5b8b\4f53;}
+#apps_svy_digg .digg a{color:#fff;text-decoration:none}
+#apps_svy_digg .digg a:hover{text-decoration:underline}
+
+/*整体样式*/
+.t-warp h2 {height:66px; text-indent:-9999em;}
+/*focus*/
+.focus-hd {background:url(//mat1.gtimg.com/sh/images/gonglue/talk_focus.png) no-repeat;}
+.focus-bd-right,.focus-bd-left {border-bottom:1px #d4d0c5 solid;border-left:1px #d4d0c5 solid;border-right:1px #d4d0c5 solid;}
+
+/**达人推荐**/
+.f-bd-daren { width:268px; height:288px; background:#f7f6f1;border-right:1px #d4d0c5 solid;}
+.focus-bd-left .f-bd-daren {border-right:none;border-left:1px #d4d0c5 solid;}
+.f-bd-daren h3 {text-indent:-9999em; height:48px; background:url(//mat1.gtimg.com/sh/images/gonglue/talk_drtj.png) no-repeat;}
+.daren-list  { margin:14px 14px 0px 14px; }
+.list-left {width:56px; height:95px;text-align:center; margin-right:9px; display:inline;}
+.list-right {width:157px;min-height:90px; height:auto!important; height:90px; padding:2px 7px 2px 7px; position:relative; background:#FFF; line-height:20px; border:1px #ddd5bd solid; }
+.list-right a,.list-right a:hover {color:#977e53;}
+.list-right .sj-ioc {width:7px; height:11px; background:url(//mat1.gtimg.com/sh/images/gonglue/ico_left.png) no-repeat; top:22px;left:-7px; position:absolute;}
+.list-right .sj-ioc-right {width:7px; height:11px; background:url(//mat1.gtimg.com/sh/images/gonglue/ico_right.png) no-repeat;top:22px;right:-7px; position:absolute;}
+
+
+
+.list-right p {color:#797979; font-size:12px;}
+.list-right .fd-title {color:#333333; font-weight:bold;}
+.list-left img { background:#FFF; padding:4px; border:1px #dadada  solid; width:46px; height:46px;}
+.list-left p {color:#977e53; margin:4px 0px;}
+.r-bd-sty {background:#efeee9; width:440px; padding:0px 20px;}
+.r-bd-sty h3 {color:#33333; font-size:14px; margin-bottom:10px; padding-top:25px;}
+.r-bd-sty p a,.r-bd-sty p a:hover  {color:#977E53;}
+.r-bd-sty p {color:#797979; line-height:20px; margin-bottom:10px;}
+.r-bd-sty em {background:#fb4831; font-size:12px; color:#FFF; padding:1px 2px; font-weight:bold;}
+.bd-sty-vote .vote-tp{width:323px; height:99px; overflow:hidden;}
+.bd-sty-vote .vote-yhs { margin-top:30px; width:106px; height:48px; float:left; text-indent:-99999em; overflow:hidden; background:url(//mat1.gtimg.com/sh/images/gonglue/talk_yhs.png) no-repeat;}
+.r-bd-pic {width:200px; margin-top:15px;}
+
+
+.attentBoxWrap {width:50px; height:17px;}
+.attentBoxWrap  a {width:50px; height:17px; display:block;line-height:17px;}
+.attentBoxWrap  .addAttention { background:url(//mat1.gtimg.com/sh/images/gonglue/talk_st.png) no-repeat; text-indent:-9999em;}
+.attentBoxWrap  .delAttention { text-align:center; text-indent:0em;color:#ccc;} 
+
+
+/**story**/
+.talk-story h2 { background:url(//mat1.gtimg.com/sh/images/gonglue/talk_story.png) no-repeat;}
+.story-left  {width:620px; padding-top:18px;}
+.Q-tpList .pic {margin-right:15px;}
+.story-left .Q-tpList p {color:#797979;}
+.story-left .Q-tpList p a,.story-left .Q-tpList p a:hover {color:#977e53;}
+.b-weibo { background:url(//mat1.gtimg.com/sh/images/gonglue/talk_weibo.png) 0px 4px  no-repeat; display:inline; height:14px; width:10px; _display:inline-block; padding:2px 7px;_padding:2px 2px;}
+.tplis-right {margin-top:23px;}
+.tplis-right  .pic {margin-left:15px;}
+.tplis-right  .pic  {float:right;}
+
+.story-right {width:303px; height:286px; background:url(//mat1.gtimg.com/sh/images/gonglue/talk_pbg.png) no-repeat;}
+.story-pic { margin:39px 6px 0px; display:inline;}
+.story-pic-1 { margin:68px 7px 0px; display:inline;}
+
+/**T.com**/
+.talk-Tcom  h2 { background:url(//mat1.gtimg.com/sh/images/gonglue/tcom.png) no-repeat;}
+.com-bd {border-left:1px #d4d0c5 solid;border-right:1px #d4d0c5 solid;border-bottom:1px #d4d0c5 solid;}
+.com-bd-left {width:659px; height:409px; padding:15px 20px;}
+
+.bd-list-com { margin-top:30px;}
+.com-bd-right {width:258px;_width:250px; height:440px; background:#FFF; border-left:1px #d4d0c5 solid;}
+.com-bd-right h3  {color:#333333; font-weigh:bold; font-size:14px;  padding-left:20px;height:53px; line-height:53px;}
+.ul-bd-list { margin:0px 5px; height:380px; overflow:hidden;}
+.ul-bd-list li {height:40px; padding-left:8px; margin-bottom:8px; *margin-bottom:4px; _margin-bottom:4px;border-bottom:1px #d4d0c5 dotted;}
+.ul-bd-list li span {float:left;}
+.ul-bd-list .posit {width:15px; height:15px;  line-height:15px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-weight:bold; background:#c5beac; color:#FFF;}
+.ul-bd-list .positRed {width:15px; height:15px;  line-height:15px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-weight:bold; background:#fb4831; color:#FFF;}
+.ul-bd-list .s-pic {width:30px;height:30px; display:inline; margin:0px 8px;}
+.ul-bd-list .p-title { font-size:12px;}
+.ul-bd-list .p-title a,.ul-bd-list .p-title a:hover {color:#0095cd;}
+.ul-bd-list .shuzi {color:#797979;}
+
+/**show**/
+.talk-show  h2  { background:url(//mat1.gtimg.com/sh/images/gonglue/talk_show.png) no-repeat;}
+.talk-show-bd {padding-top:22px;}
+.talk-show-bd li  {width:90px; cursor:pointer; height:90px; position:relative; margin-bottom:20px; float:left; display:inline; margin-right:18px;}
+.show-tip {width:90px; height:90px; position:relative; margin-top:-90px;}
+.show-tip  .show-tip-bg {width:90px; height:90px; background:#000;filter:alpha(opacity=40);opacity:0.4;}
+.show-tip  .show-tip-title { position:absolute;width:70px; color:#FFF; height:70px; overflow:hidden; line-height:20px; padding:10px; top:0px; }
+
+
+/*visual blog*/
+.talk-blog  h2 {border-bottom:3px #000 solid; height:20px;}
+.talk-blog-bd { padding-top:23px; background:url(//mat1.gtimg.com/sh/images/gonglue/talk_blog.png)  0px 23px no-repeat;}
+.talk-blog-bd  h3 {font-size:14px;}
+.blog-left-1 {width:173px; height:377px; float:left; margin-top:56px;}
+.blog-left-2 {width:197px; float:left; display:inline; margin-left:12px;}
+.left-2-top {width:170px; height:190px; margin:103px auto 0px  auto; overflow:hidden;}
+.left-2-top h3 {padding-top:12px;}
+.left-2-top h3 a,.left-2-top h3 a:hover {color:#333333;}
+.left-2-top p {color:#797979; font-family:Arial;}
+.left-2-top p a,.left-2-top p a:hover {color:#977e53;}
+.left-2-bottom {height:140px; width:197px;}
+.blog-left-3 {width:173px; height:280px; margin-left:13px;}
+.blog-left-4 {width:378px; margin-left:13px;}
+.left-4-tile {margin:0px 12px; height:115px; overflow:hidden;}
+.left-4-tile h3 {margin-bottom:4px;}
+.left-4-tile h3 a,.left-4-tile h3 a:hover {color:#333333;}
+.left-4-tile p  {color:#797979; font-family:Arial}
+.left-4-tile p a,.blog-left-4 p a:hover {color:#977e53;}
+.left-4-pic {}
+.pic-right-top {height:192px; height:165px;margin-left:13px;}
+.pic-right-bottom {height:192px; height:140px; margin-top:12px; margin-left:13px;}
+/*.blog-left-1,.left-2-bottom,.blog-left-3,.4-pic-left,.pic-right-top,.pic-right-bottom {position:relative;}*/
+.s4-pic-left,.pic-right-bottom ,.pic-right-top {overflow:hidden;}
+.s4-pic-left {width:173px;}
+.show-tp {width:100%; height:30px; line-height:30px; position:relative; margin-top:-30px;}
+.show-tp .show-tip-bg { height:30px; background:#000; filter:alpha(opacity=40);opacity:0.4;}
+.show-tp .show-tip-text { width:182px; overflow:hidden; padding:0px 5px; margin:0px auto; position:absolute;top:0px; text-align:center; height:30px; line-height:30px; color:#FFF;font-size:14px; font-weight:bold;}
+.show-tp .show-tip-text a,.show-tp .show-tip-text a:hover {color:#FFF;}
+
+/*往期回顾*/
+.talk-wqhg  h2 { background:url(//mat1.gtimg.com/sh/images/gonglue/talk_wqhg.jpg) no-repeat;}
+.talk-wqhg-bd  {margin-right:-20px; overflow:hidden; height:208px; border-bottom:1px #d4d0c7 solid; padding-top:20px;}
+.talk-wqhg-bd li {width:120px; float:left; display:inline; margin-right:20px; }
+.talk-wqhg-bd li img {width:120px; height:160px; display:block; background:#d4d0c5;}
+.talk-wqhg-bd li p {height:30px; line-height:30px; text-align:center; overflow:hidden;}
+.talk-wqhg-bd  a,.talk-wqhg-bd  a:hover {color:#333333;}
+
+
+	.r-bd-sty h3 {font-size:22px; padding-top:17px;}
+	.t-warp h2 {text-indent:0em;} 
+	.untext {line-height:0px; height:0px; font-size:0px; display:none; text-indent:-9999em; overflow:hidden;}
+	.talk-blog-bd {position:relative;}
+	.blod-bd-pic {width:383px; height:102px; position:absolute;  top:23px; left:0px;}
+	.talk-header-bg {background:none;} 
+    .talk-header-bg {position:relative;}
+	.talk-header-text {position:absolute; margin-top:0px; top:112px; right:0px;}
+	.t-warp h2  img {display:block;}
+/*  |xGv00|3763d7f8acd9841292791b4061bb5f23 */

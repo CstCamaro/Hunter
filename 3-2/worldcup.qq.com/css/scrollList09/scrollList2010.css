@@ -1,0 +1,196 @@
+/*Reset Css by YUI*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset, img{border:0}
+address, caption, cite, code, dfn, em, strong, th, var{font-style:normal;font-weight:normal}
+ol, ul{list-style:none}
+caption, th{text-align:left}
+h1, h2, h3, h4, h5, h6{font-size:100%;font-weight:normal}
+q:before, q:after{content:''}
+abbr, acronym{border:0}
+fieldset{display:inline}
+button{line-height:1.2;vertical-align:middle;cursor:pointer}
+strong{font-weight:800}
+/*全局*/
+body{font:12px/1.75 "宋体", arial, sans-serif;background:#fff;color:#000 }
+a:link{color:#0B3B8C;text-decoration:none }
+a:visited{color:#0B3B8C;text-decoration:none }
+a:hover, a:active{text-decoration:underline}
+.wrapper{width:960px;margin:0 auto}
+.wrapperBg{background:url(//mat1.gtimg.com/news/scrollList09/prolist_cbg.gif) repeat-y}
+.hd, .bd, .ft{width:100%;overflow:hidden;zoom:1}
+.bdbg{background:url(//mat1.gtimg.com/news/scrollList09/prolist_fbg.gif) left bottom no-repeat}
+.wrapper:after,.bdbg:after{content:'';clear:both;display:block;height:0}
+.wrapper,.bdbg{overflow:auto;zoom:1}
+.main{width:640px;float:left;border-top:1px solid #D3DBE6}
+.side{width:310px;float:right;background:#FFF}
+.block{display:block}
+.none{display:none}
+.img1{float:left;width:90px;height:65px;margin-right:8px;border:#ddd 1px solid}
+.float_l{float:left}
+.box_hr12{height:11px;clear:both;margin:0 auto;overflow:hidden;font-size:0;line-height:0}
+.font_w_b{font-weight:bold}
+.color_666{color:#343434}
+.h183{height:183px}
+
+.mod-right{width:310px}
+.mod-right .hd{width:310px;height:29px;background:url(//mat1.gtimg.com/news/scrollList09/prolist_bg.png) no-repeat;line-height:29px}
+.mod-right h2{font-size:14px;color:#1B2C58;padding-left:12px}
+.mod-right h2 a:visited{color:#0B3B8C}
+.mod-right .bd{width:308px;border:1px solid #D9E4F3;border-top:0px;background:#F3F8FF;padding:10px 0px 0px}
+.mod-right .bd li{line-height:21px;color:#0B3B8C}
+.mod-right .ft{width:308px;border:1px solid #D9E4F3;border-top:0px;background:#F3F8FF;padding:0px 0px}
+.mod-right .innerBox{width:286px;margin:0 auto;background:#F3F8FF;padding-top:10px;}
+.redFont:link,.redFont,.redFont a:link,.redFont a:visited,.redFont a:hover,.redFont a:active{color:#CC0000}
+.gray{color:#898A8C}
+/*顶部导航*/
+#Top-Article-QQ{height:22px;background:#F8F8F8;border-bottom:1px solid #E6E6E6}
+#Top-Article-QQ li{float:right;color:#A1A0A0}
+#Top-Article-QQ li span{padding:0px 6px}
+#Top-Article-QQ a{color:#A1A0A0}
+#Top-Article-QQ #setIndex{height:22px;background:url(//mat1.gtimg.com/news/2009/tomies/split_v1.png) no-repeat -299px -68px;margin-left:10px;margin-right:12px;_display:inline}
+#Top-Article-QQ #setIndex a{padding-left:13px}
+/*面包屑*/
+.Crumbs-Article-QQ {float:left;padding-left:4px;padding-top:9px;padding-bottom:3px}
+.Crumbs-Article-QQ img{float:left;margin:0}
+.Crumbs-Article-QQ span {float:left;height:22px;padding-left:14px;padding-top:9px;color:#000}
+.Crumbs-Article-QQ span em{color:#7E7E7E}
+.Crumbs-Article-QQ span a:visited{color:#0B3B8C}
+.Form-Crumbs-Article-QQ {float:right;padding-top:12px}
+.Form-Crumbs-Article-QQ .submit {float:right;width:75px;height:22px;background:url(//mat1.gtimg.com/news/2009/tomies/split_v1.png) no-repeat 0px -372px;border:0px;line-height:21px;padding-top:1px;font-size:12px;cursor:pointer}
+.Form-Crumbs-Article-QQ .inputWarp {float:right;width:202px;height:21px;background:url(//mat1.gtimg.com/news/2009/tomies/split_v1.png) no-repeat 0px -344px;margin-right:3px;margin-left:5px;_display:inline;padding-top:1px;text-align:center}
+.Form-Crumbs-Article-QQ .txtArea {width:190px;border:0px;height:16px;margin:2px auto 0px auto}
+.Form-Crumbs-Article-QQ .SosoLogo {float:right;width:16px;height:16px;background:url(//mat1.gtimg.com/news/2009/tomies/split_v1.png) no-repeat -5px -320px;margin-top:3px}
+.Form-Crumbs-Article-QQ .SosoLogo span {display:none}
+/*导航*/
+.nav{clear:both;width:938px;height:32px;padding:0 17px 0 5px;margin:0 auto 8px;overflow:hidden;background:url(//mat1.gtimg.com/news/images1/index09/news_nbg2.gif) no-repeat}
+.nav ul{float:left;width:825px;margin:0;padding:0;padding-top:7px}
+.nav li{float:left;padding:0 5px;height:19px;overflow:hidden}
+.nav li.sep{width:2px;padding:0;font-size:1px;background:url(//mat1.gtimg.com/news/images1/index09/news_nbg2.gif) 0 -39px no-repeat}
+.nav li a,.nav li a:visited{padding:3px 5px 3px 6px;font-size:14px;color:#F2F2F2;line-height:21px;background:none}
+.nav .txtlink{float:right;width:113px;padding-top:8px;height:17px;overflow:hidden;text-align:right}
+.nav .txtlink a,.nav .txtlink a:visited{padding:3px 2px 3px 3px;color:#E6CAC3;line-height:19px;background:none}
+.nav li a:hover,.nav .txtlink a:hover{color:#F2F2F2;background:#900002;text-decoration:none}
+.nav .txtlink span{margin-left:6px}
+/*右侧矩形~side区块*/
+.Day-Article-QQ ul.toplist{margin-bottom:10px}
+.Day-Article-QQ h3 a{font-size:14px;font-weight:bold}
+.Day-Article-QQ h3 span{font-weight:normal}
+
+
+/*login*/
+.login-Article-QQ .bd {border-top:#D9E4F3 1px solid;padding:12px 0 12px 0;}
+.login-Article-QQ .innerBox .img{float:left;margin:0 10px 0 4px;}
+.login-Article-QQ .innerBox .img img{width:50px;height:50px;padding:1px;background:#fff;border:#cdcdcf 1px solid;}
+.login-Article-QQ .innerBox .txt{float:left;width:212px;}
+.login-Article-QQ .innerBox .txt li{padding-bottom:4px;line-height:22px;color:#010005;}
+.login-Article-QQ .innerBox .txt .login a{text-decoration:underline;}
+.login-Article-QQ .innerBox .txt .flag{padding-top:8px;background:url(//mat1.gtimg.com/worldcup/images/imgcss_article_qq/split_v_wc1.png) no-repeat 0 -604px;}
+.login-Article-QQ .innerBox .txt .flag em{display:bolck;float:left;}
+.login-Article-QQ .innerBox .txt .aflag a{display:bolck;float:left;width:19px;height:13px;margin-top:2px;margin-right:14px;line-height:1px;font-size:1px;border:#cdcec8 1px solid;}
+
+.logined-Article-QQ .bd {border-top:#D9E4F3 1px solid;padding:12px 0 12px 0;}
+.logined-Article-QQ .innerBox .img{float:left;margin:0 10px 0 4px;}
+.logined-Article-QQ .innerBox .img img{width:50px;height:50px;padding:1px;background:#fff;border:#cdcdcf 1px solid;}
+.logined-Article-QQ .innerBox .txt{float:left;width:200px;}
+.logined-Article-QQ .innerBox .txt li{padding-bottom:4px;line-height:22px;color:#010005;}
+.logined-Article-QQ .innerBox .txt .flag{padding-top:8px;background:url(//mat1.gtimg.com/worldcup/images/imgcss_article_qq/split_v_wc1.png) no-repeat 0 -604px;}
+.logined-Article-QQ .innerBox .txt .flag em{display:bolck;float:right;}
+.logined-Article-QQ .innerBox .txt .aflag a{display:bolck;float:left;width:19px;height:13px;margin-top:2px;margin-right:14px;line-height:1px;font-size:1px;border:#cdcec8 1px solid;}
+.logined-Article-QQ .txt li{clear:both;}
+.logined-Article-QQ .txt .uname{float:left;font-weight:bold;}
+.logined-Article-QQ .txt .udata{float:right;}
+.logined-Article-QQ .txt .udata em{color:#008E1E;}
+/*国旗*/
+.fra,.mex,.rsa,.uru,.arg,.gre,.kor,.nga,.alg,.eng,.svn,.usa,.aus,.ger,.gha,.srb,.cmr,.den,.jpn,.ned,.ita,.nzl,.par,.svk,.bra,.civ,.por,.prk,.chi,.esp,.hon,.sui{ background-image:url(//mat1.gtimg.com/worldcup/images/imgcss_article_qq/flag_32.png); background-repeat:no-repeat;}
+
+/*A组*/
+.fra{background-position: 0 0;}/*法国*/
+.mex{background-position: -25px 0;}/*墨西哥*/
+.rsa{background-position: -50px 0;}/*南非*/
+.uru{background-position:- 75px 0;}/*乌拉圭*/
+/*B组*/
+.arg{background-position: 0 -20px;}/*阿根廷*/
+.gre{background-position: -25px -20px;}/*希腊*/
+.kor{background-position: -50px -20px;}/*韩国*/
+.nga{background-position: -75px -20px;}/*尼日利亚*/
+/*C组*/
+.alg{background-position: 0 -40px;}/*阿尔及利亚*/
+.eng{background-position: -25px -40px;}/*英格兰*/
+.svn{background-position: -50px -40px;}/*斯洛文尼亚*/
+.usa{background-position: -75px -40px;}/*美国*/
+/*D组*/
+.aus{background-position: 0 -60px;}/*澳大利亚*/
+.ger{background-position: -25px -60px;}/*德国*/
+.gha{background-position: -50px -60px;}/*加纳*/
+.srb{background-position: -75px -60px;}/*塞尔维亚*/
+/*E组*/
+.cmr{background-position: 0 -80px;}/*喀麦隆*/
+.den{background-position: -25px -80px;}/*丹麦*/
+.jpn{background-position: -50px -80px;}/*日本*/
+.ned{background-position: -75px -80px;}/*荷兰*/
+/*F组*/
+.ita{background-position: 0 -100px;}/*意大利*/
+.nzl{background-position: -25px -100px;}/*新西兰*/
+.par{background-position: -50px -100px;}/*巴拉圭*/
+.svk{background-position: -75px -100px;}/*斯洛伐克*/
+/*G组*/
+.bra{background-position: 0 -120px;}/*巴西*/
+.civ{background-position: -25px -120px;}/*科特迪瓦*/
+.por{background-position: -50px -120px;}/*葡萄牙*/
+.prk{background-position: -75px -120px;}/*朝鲜*/
+/*H组*/
+.chi{background-position: 0 -140px;}/*智利*/
+.esp{background-position: -25px -140px;}/*西班牙*/
+.hon{background-position: -50px -140px;}/*洪都拉斯*/
+.sui{background-position: -75px -140px;}/*瑞士*/
+
+/*hot*/
+.hot-Article-QQ{margin-top:8px;}
+.hot-Article-QQ .bd {border-bottom:0;}
+.hot-Article-QQ .bd ul{padding-left:5px;}
+.hot-Article-QQ .bd li{float:left;padding:0 2px;text-align:center} 
+.hot-Article-QQ .bd img{width:90px;height:60px;margin-bottom:3px;border:#cdcdcf 1px solid;}
+
+.hot-Article-QQ .ft{padding-bottom:8px;}
+.hot-Article-QQ .ft li{float:left;width:95px;text-align:center;}
+.hot-Article-QQ .ft a{display:block;width:89px;height:31px;margin:4px auto;background:url(//mat1.gtimg.com/worldcup/images/imgcss_article_qq/split_v_wc1.png) 0 -430px no-repeat; line-height:30px;text-align:center; }
+.hot-Article-QQ .ft a:hover{position:relative;top:1px;left:1px;text-decoration:none;}
+
+
+/*view*/
+.view-Article-QQ{margin-top:8px;}
+.view-Article-QQ .bd {border-bottom:0;}
+.view-Article-QQ .bd ul{padding-left:5px;}
+.view-Article-QQ .bd li{float:left;padding:0 2px;text-align:center} 
+.view-Article-QQ .bd img{width:90px;height:60px;margin-bottom:3px;border:#cdcdcf 1px solid;}
+
+.view-Article-QQ .ft{padding-bottom:8px;}
+.view-Article-QQ .ft li{float:left;width:136px;padding-right:4px;color:#0B3B8C;}
+
+/*vod*/
+.vod-Article-QQ{margin-top:8px;}
+.vod-Article-QQ .bd{padding:10px 0 10px 0;}
+.vod-Article-QQ .innerBox{width:286px;}
+.vod-Article-QQ .innerBox .img{float:left;width:128px;padding-left:16px;}
+.vod-Article-QQ .innerBox .img li{position:relative;float:left;margin-bottom:6px;padding:2px;background:#fff;border:#cdcdcf 1px solid;text-align:center;}
+.vod-Article-QQ .innerBox .img img{width:100px;height:80px;margin-bottom:2px;}
+.vod-Article-QQ .innerBox .txt{float:left;}
+.vod-Article-QQ .innerBox .txt li{padding-left:24px;background:url(//mat1.gtimg.com/worldcup/images/imgcss_article_qq/split_v_wc1.png) -280px -396px no-repeat; }
+.vod-Article-QQ .vbutton {display:block;position:absolute;left:15px;top:50px;width:25px;height:25px;
+background:url("//mat1.gtimg.com/worldcup/video/qiudui/video.png") no-repeat ;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/worldcup/video/qiudui/video.png',sizingMethod='scale');}
+
+
+
+/*排行*/
+.place-Article-QQ{margin-top:8px;}
+.place-Article-QQ h2{width:89px;float:left}
+.place-Article-QQ .tabTit{float:right;width:200px;overflow:hidden;zoom:1;margin-right:1px;_display:inline}
+.place-Article-QQ .tabTit span{width:50px;height:29px;float:right;text-align:center;background:url(//mat1.gtimg.com/news/scrollList09/prolist_bg.png) 0 -31px no-repeat;cursor:pointer}
+.place-Article-QQ .tabTit span.select{background-position:-60px -31px}
+.place-Article-QQ ol{margin-left:11px}
+.place-Article-QQ li,.zt-Article-QQ ol li{float:left;width:100%;height:21px;overflow:hidden;zoom:1}
+.place-Article-QQ li em,.zt-Article-QQ ol li em{width:16px;height:15px;background:url(//mat1.gtimg.com/news/scrollList09/prolist_bg.png) no-repeat -294px -51px;float:left;text-align:center;line-height:15px;font-family:Arial;color:#fff;font-size:10px;margin-right:9px;_display:inline;margin-top:2px}
+.place-Article-QQ li em.hot,.zt-Article-QQ ol li em.hot{background-position:-294px -31px}
+.place-Article-QQ li a,.zt-Article-QQ ol li a{float:left}
+.place-Article-QQ .bd{padding:10px 0px}/*  |xGv00|942d56aab38b7849e92cf914b2343f8d */

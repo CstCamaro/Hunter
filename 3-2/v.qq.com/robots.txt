@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://v.qq.com/sitemap/sitemap_all.xml

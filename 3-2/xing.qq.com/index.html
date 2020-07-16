@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html class="" style="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>星钻贵族</title>
+    <meta name="keywords" content="星钻,年费星钻,星钻贵族,年费星钻贵族,星钻活动,专属装扮,超级访客,专属客服,成长值加速,黄钻成长值,绿钻成长值,黄钻,绿钻,黄钻特权,绿钻特权,QQ空间,QQ音乐,LV8,LV等级,super,空间背景音乐,QQ,腾讯,Tencent">
+    <meta name="description" itemprop="description" content="星钻贵族（xing.qq.com）是腾讯为QQ空间和QQ音乐用户提供的一项增值服务,不仅拥有绿钻和黄钻百余项特权,还可享受星钻专属服务。其中包括星钻专属装扮,成长值加速,超级访客,专属客服等特权。" />    <link rel="Shortcut Icon" href="https://qzonestyle.gtimg.cn/qz-proj/qz-super/img/ico-star-mini.32@2x.ico" type="image/x-icon" />
+    <script>
+        document.domain = "qq.com";
+        var HYB = {
+            loadTimes :{startLoad:+new Date()},
+            _domains:{},
+            jsVersion : "1",
+            cssVersion : "1",
+            jqueryVersion : "1.10.2"
+        };
+        (function() {
+            var hasJsError = false;
+            var hasReportJsError = false;
+
+            function report(code) {
+                var ua = navigator.userAgent || '';
+                var qzoneArray = /Qzone\/(\S+)/.exec(ua);
+                var qqArray = /V\S+_\S+_\S+_\S+_\S+_\S+_\S+/.exec(ua);
+                var apnArray = /NetType\/(\S+)/.exec(ua);
+                var uinArray = /uin=o0*(\S+);/.exec(document.cookie || '');
+                var ieInfo = /(msie) ([\w.]+)/.exec((ua || '').toLowerCase()) || [];
+
+                var qua = qzoneArray && qzoneArray[1] || qqArray && qqArray[0];
+                var apn = apnArray && apnArray[1];
+                var uin = uinArray && uinArray[1];
+                if(ieInfo.length > 2 && parseInt(ieInfo[2]) <= 8){
+                    return;
+                }
+
+                var data = {
+                    appid: '1000361',
+                    releaseversion: qua,
+                    commandid: 'xing-pc/' + (location.pathname|| '').replace(/^\/+|\/+$|\.html/g, ''),
+                    apn: apn,
+                    resultcode: code,
+                    touin: uin
+                };
+                var url = location.protocol === 'https:' ? 'https://h5.qzone.qq.com/wspeed.qq.com/w.cgi':  'http://wspeed.qq.com/w.cgi';
+                var params = [];
+
+                for (var key in data) {
+                    if (data.hasOwnProperty(key)) {
+                        params.push(key + '=' + encodeURIComponent(data[key]));
+                    }
+                }
+                params = params.join('&');
+                url = url + '?' + params;
+                new Image().src = url;
+            }
+
+            window.onerror = function(errorMessage, scriptURI, lineNumber, columnNumber, errorObj) {
+                hasJsError = true;
+
+                if(hasReportJsError) {
+                    return;
+                }
+                hasReportJsError = true;
+
+                var result = (location.pathname || '').replace(/^\/+|\/+$|\.html/g, '');
+                var url = '//h5.qzone.qq.com/log/post/jserror/xing-pc/'+ result;
+                var errMsg = errorMessage + ";\nurl:" + location.href + ";";
+                if(scriptURI) {
+                    errMsg += "\nscriptURI:" + scriptURI + ";";
+                }
+                if(lineNumber) {
+                    errMsg += "\nlineNumber:" + lineNumber + ";";
+                }
+                if(columnNumber) {
+                    errMsg += "\ncolumnNumber:" + columnNumber + ";";
+                }
+
+                var xhr = new XMLHttpRequest();
+                if('withCredentials' in xhr){
+                    xhr.open('post', url, true);
+                    xhr.withCredentials = true;
+                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                    xhr.send(errMsg);
+                }else{
+                    if( 'XDomainRequest' in window){
+                        var xdr = new XDomainRequest();
+                        xdr.open("post", url);
+                        setTimeout(function () {
+                            xdr.send(errMsg);
+                        }, 0);
+                    }
+                }
+            };
+            window.onload = function() {
+                report(hasJsError ? 1 : 0);
+            };
+        })();
+    </script><style data-url="//qzonestyle.gtimg.cn/qz-proj/xing-pc/pc-index.css">
+.ellipsis,.mod-nav .info .info-name{white-space:nowrap;text-overflow:ellipsis}a,address,b,blockquote,body,dd,div,dl,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,label,legend,li,ol,p,s,span,table,tbody,td,tfoot,th,thead,tr,ul{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:microsoft yahei,Helvetica,Arial,sans-serif}ol,ul{list-style:none}a img{border:none;vertical-align:top}a,a:hover{text-decoration:none;outline:0}button{overflow:visible}button::-moz-focus-inner{padding:0}table{border-collapse:collapse;border-spacing:0}.ellipsis{overflow:hidden;max-width:100%;_width:100%}.no-bor{border:none!important}.mod-nav{height:80px;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;width:100%;position:relative;z-index:5}.mod-nav:hover{-webkit-transition:all .6s;-moz-transition:all .6s;transition:all .6s}.mod-nav .mod-main{width:1080px;margin:0 auto;position:relative;height:100%}.mod-nav .logo{position:relative;float:left;width:166px;height:37px;font-size:0;text-indent:-999em;top:22px;margin:0 59px 0 8px;background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/sprite/pc-index-dag161008105838.png);background-position:0 -38px}.mod-nav .nav-item{opacity:.6;float:left;margin:29px 22px 0;position:relative;line-height:22px}.mod-nav .nav-item i{width:100%;display:block;height:2px;opacity:0;position:absolute;bottom:-6px;filter:alpha(opacity=0);-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-transition:all .3s,opacity .01s;transition:all .3s,opacity .01s}.mod-nav .nav-item.active,.mod-nav .nav-item:hover,.mod-nav .nav-item:hover i{opacity:1;filter:alpha(opacity=100)}.mod-nav .nav-item:hover i{-webkit-transform:scaleX(1);transform:scaleX(1)}.mod-nav .info{width:300px;float:right;height:100%}.mod-nav .info .info-main{padding-top:17px;height:63px}.mod-nav .info .info-avatar{width:44px;height:44px;background-size:100% 100%;border-radius:999px;vertical-align:middle;border:2px solid transparent;margin-left:15px}.mod-nav .info .info-name{color:rgb(204 ,164 ,63);font-size:16px;height:46px;line-height:46px;display:inline-block;*zoom:1;*display:inline;vertical-align:middle;word-wrap:normal;overflow:hidden;max-width:65px;*width:60px;padding:0 5px}.mod-nav .info .j-nav-login{color:#3e3e3e;cursor:pointer;padding:0 10px;margin-left:-5px;opacity:.6}.mod-nav .info .j-nav-login:hover{color:rgb(204 ,164 ,63);opacity:1}.mod-nav .info .btn-open{width:140px;height:44px;font-size:17px;cursor:pointer;line-height:44px;border-radius:54px;text-align:center;position:absolute;right:15px;color:#9A5B13;background-color:#E9CB7A;margin-top:2px;-webkit-transition:.3s ease;transition:.3s ease}.mod-nav .info .btn-open:hover{background-color:#E7C365}.mod-nav .info-dropdown{background-color:#fff;color:#909090;-webkit-transition:all .6s;transition:all .6s;position:relative;-webkit-box-shadow:0 2px 3px rgba(0,0,0,.1);-moz-box-shadow:0 2px 3px rgba(0,0,0,.1);box-shadow:0 2px 3px rgba(0,0,0,.1);border-radius:0 0 2px 2px;overflow:hidden;opacity:0;filter:alpha(opacity=0);display:none}.mod-banner .banner-bg,.mod-banner .banner-item,.mod-nav .nav-item.active{opacity:1;filter:alpha(opacity=100)}.mod-nav .info-leave{-webkit-transition:all .3s;transition:all .3s}.mod-nav .info-dropdown .timeout{height:32px;line-height:32px;font-size:15px;padding:13px 7px 20px 19px;border-bottom:1px solid #eaeaea;overflow:hidden}.mod-nav .info-dropdown .timeout img{width:auto;height:32px;vertical-align:middle;position:relative;top:-5px;margin-right:7px}.mod-nav .info-dropdown .timeout .year{width:46px}.mod-nav .info-dropdown .btn-logout{float:right;cursor:pointer;*position:absolute;*right:15px;padding:0 8px}.mod-nav .info-dropdown .btn-logout:hover{color:rgb(204 ,164 ,63)}.mod-nav .info-dropdown .detail{overflow:hidden;padding-bottom:17px;position:relative;z-index:2;background-color:#fff}.mod-nav .info-dropdown .detail .item{float:left;width:50%;font-size:13px;margin:12px 0 0;text-align:center;padding:9px 0 1px}.mod-nav .info-dropdown .detail .left{border-right:1px solid #eaeaea;margin-left:-1px}.mod-nav .info-dropdown .detail .item-txt{font-size:22px;color:#000;display:block;line-height:24px}.mod-nav .info-dropdown .detail .item-title{display:block}.mod-nav{background-color:#fff}.mod-nav .btn-open:hover,.mod-nav .nav-item i{background-color:#e9cb7a}.mod-nav .nav-item{color:#3e3e3e}.mod-nav .info:hover .info-avatar{border-color:rgb(204 ,164 ,63)}.mod-login .info:hover .info-avatar{border-color:transparent}.mod-nav .info-name{color:rgb(204 ,164 ,63)}.mod-nav .btn-open{color:rgb(154 ,91 ,19)}.mod-nav .btn-open:hover{color:#9a5b13}.mod-footer{text-align:center;border-top:1px solid #eaeaea;padding-top:85px;padding-bottom:20px}.mod-footer a:hover{text-decoration:underline}.mod-footer .mod-logo{height:95px;margin-bottom:40px;position:relative}.mod-footer .mod-logo .logo-item{vertical-align:top;position:relative;top:27px;font-size:0;padding:0 27px 0 0;display:inline-block;*zoom:1;*display:inline}.mod-footer .mod-logo .logo-code{padding:0 0 0 19px;border-left:1px solid #eaeaea;top:0;text-decoration:none}.mod-footer .mod-logo .logo-code img{float:left}.mod-footer .mod-logo .logo-code span{font-size:17px;left:-1px;color:#3e3e3e;text-align:left;position:relative;top:20px;width:230px}.mod-footer .mod-logo .logo-code .gray{font-size:13px;color:#909090;display:block;left:8px}.mod-footer .mod-link,.mod-footer .mod-link a{font-size:13px;color:#3e3e3e;line-height:35px}.mod-footer .mod-link a{padding:0 5px;margin-left:-3px}.mod-footer .mod-copyright,.mod-footer .mod-copyright a{font-size:12px;color:#909090;line-height:24px}.page-home .mod-nav .info .info-name,.page-home .mod-nav .nav-item{color:#fff}.mod-footer .mod-copyright a{padding:0 2px;margin-left:-3px}.btn-dress,.btn-open,.btn-pay,.btn-wear{display:none!important}body{margin:0}.hide{width:0;height:0;display:block;text-indent:-9999px;font-size:0;overflow:hidden}.page-home .mod-nav{background:0 0}.page-home .mod-nav .logo{background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/sprite/pc-index-dag161008105838.png);background-position:0 0}.page-home .mod-nav .btn-open{background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/paybutton.png);background-repeat:no-repeat;background-color:transparent;color:#e9cb66}.page-home .mod-nav:hover{background-color:#fff}.page-home .mod-nav:hover .logo{background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/sprite/pc-index-dag161008105838.png);background-position:0 -38px}.page-home .mod-nav:hover .nav-item{color:#3e3e3e}.page-home .mod-nav:hover .nav-item i{background-color:#e9cb7a}.page-home .mod-nav:hover .info-name{color:rgb(204 ,164 ,63)}.page-home .mod-nav:hover .j-nav-login{color:rgb(62 ,62 ,62)}.page-home .mod-nav:hover .btn-open{background:#E9CB7A;color:#9A5B13}.page-home .mod-nav .btn-open:hover{background-color:#E7C365}.page-home .mod-nav .j-nav-login:hover{color:rgb(204 ,164 ,63)}.mod-main{width:1080px;margin:0 auto;position:relative}.mod-banner{padding-top:48px;height:576px;position:relative}.mod-banner .banner-bg{position:absolute;width:100%;height:100%;top:-128px;left:0}.mod-banner .banner-item{width:1080px;height:576px;position:absolute}.mod-banner .banner-item img{width:100%;height:100%}.mod-banner .banner-item a{display:block;width:100%;height:100%}.mod-banner .banner-btn{position:absolute;z-index:5;width:100%;text-align:center;bottom:20px}.mod-banner .btn-item{display:inline-block;width:6px;height:6px;border:2px solid #fff;border-radius:999px;cursor:pointer;margin:0 2px;background:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/bg-opacity.png) no-repeat}.mod-banner .btn-item.active{background-color:#fff}.mod-banner .mod-main{position:relative;z-index:4;height:100%}.mod-section{text-align:center}.mod-section .section{padding-top:64px}.mod-section .sec-title{font-size:45px;font-weight:400;line-height:63px;color:#3e3e3e;padding-bottom:24px}.mod-section .sec-subTitle{font-size:24px;font-weight:400;line-height:33px;color:#3e3e3e}.mod-section .section-welfare{padding-bottom:128px;overflow:hidden}.mod-section .section-welfare .welfare-slogan{color:#3e3e3e;font-size:24px;line-height:36px;width:540px;margin:40px auto 64px}.mod-section .section-welfare .welfare-slogan .i-left{position:absolute;width:19px;height:17px;background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/sprite/pc-index-dag161008105838.png);background-position:-54px -76px;left:-72px;top:-17px}.mod-section .section-welfare .welfare-slogan .i-right{position:absolute;width:19px;height:17px;background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/sprite/pc-index-dag161008105838.png);background-position:-74px -76px;right:-72px;bottom:-17px}.mod-section .section-welfare .btn-open{position:relative;font-size:22px;width:260px;height:49px;border-radius:54px;color:#9A5B13;background-color:#E9CB7A;display:block;line-height:49px;margin:0 auto;-webkit-transition:all .3s;transition:all .3s}.mod-section .section-welfare .btn-open:hover{background-color:#E7C365;cursor:pointer}.mod-section .section-welfare .welfare-list{padding-top:74px}.mod-section .section-welfare .welfare{text-align:left;color:#fff;position:relative;display:inline-block;*zoom:1;*display:inline;width:216px;height:256px;margin:0 4px;overflow:hidden;background:#D7C79B;background:-webkit-gradient(linear,0 0,0 100%,from(#D7C79B),to(#e1d4b2),color-stop(.6,#D7C79B));background:-moz-gradient(linear,0 0,0 100%,from(#D7C79B),to(#e1d4b2),color-stop(.6,#D7C79B))}.mod-section .section-welfare .sec-subTitle,.mod-section .section-welfare .welfare .back-bg *,.mod-section .section-welfare .welfare-slogan p{display:none}.mod-section .section-welfare .welfare:hover{cursor:pointer;background:#E8CA79;background:-webkit-gradient(linear,0 0,0 100%,from(#E8CA79),to(#EED796),color-stop(.6,#E8C977));background:-moz-gradient(linear,0 0,0 100%,from(#E8CA79),to(#EED796),color-stop(.6,#E8C977))}.mod-section .section-welfare .welfare:hover .front-bg{-webkit-transform:rotate(-10deg) scale(1.03);transform:rotate(-10deg) scale(1.03)}.mod-section .section-welfare .welfare .front-bg{position:absolute;top:60px;left:0;-webkit-transition:all .8s;transition:all .8s}.mod-section .section-welfare .welfare .back-bg{width:216px;padding-left:22px;background-repeat:no-repeat;height:155px}.mod-section .section-welfare .welfare .number{font-size:40px;float:left;border-bottom:1px solid #fff;line-height:44px;padding-top:16px}.mod-section .section-welfare .welfare .name{color:#3e3e3e;font-size:30px;clear:left;line-height:42px}.mod-section .section-welfare .welfare .detail{font-size:20px;line-height:28px}.mod-section .section-welfare .sec-title{width:640px;height:250px;margin:50px auto 3px;font-size:0;text-indent:-999em;background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/img/txt/welfare-head.png)}.mod-section .section-welfare .welfare-slogan{position:absolute;left:50%;margin-left:-270px;height:72px;top:100px}.mod-section .section-privilege{background-color:#f7f7f7;overflow:hidden}.mod-section .section-privilege .privilege-list{padding-top:70px;overflow:hidden;margin-right:-12px;padding-bottom:125px}.mod-section .section-privilege .privilege{height:256px;width:540px;float:left;margin:3px;position:relative;overflow:hidden;border-radius:2px;-webkit-transition:all .3s ease;transition:all .3s ease}.mod-section .section-privilege .privilege-bg{height:100%}.mod-section .section-privilege .privilege-info{width:275px;height:91px;position:absolute;color:#fff;top:93px;left:50px;text-align:left;z-index:2;-webkit-transition:all 1s linear;transition:all 1s linear}.mod-section .section-privilege .privilege-info img{width:100%;display:block}.mod-section .section-privilege .privilege-1 .main{color:#e09926}.mod-section .section-privilege .privilege-2 .main{color:#20a4b0}.mod-section .section-privilege .privilege-3 .main{color:#a3824d}.mod-section .section-privilege .privilege-4 .main{color:#3ab575}.mod-section .section-privilege .privilege-img{position:absolute;right:0;top:0;-webkit-transition:all 1s linear;transition:all 1s linear}.mod-section .section-privilege .privilege:hover{cursor:pointer}.mod-section .section-privilege .privilege-1:hover{-webkit-box-shadow:0 2px 10px #e7c770;-moz-box-shadow:0 2px 10px #e7c770;box-shadow:0 2px 10px #e7c770}.mod-section .section-privilege .privilege-2:hover{-webkit-box-shadow:0 2px 10px #92e3df;-moz-box-shadow:0 2px 10px #92e3df;box-shadow:0 2px 10px #92e3df}.mod-section .section-privilege .privilege-3:hover{-webkit-box-shadow:0 2px 10px #d8c89c;-moz-box-shadow:0 2px 10px #d8c89c;box-shadow:0 2px 10px #d8c89c}.mod-section .section-privilege .privilege-4:hover{-webkit-box-shadow:0 2px 10px #6cdeab;-moz-box-shadow:0 2px 10px #6cdeab;box-shadow:0 2px 10px #6cdeab}.mod-section .section-privilege .sec-title{width:640px;height:250px;margin:-64px auto -90px;font-size:0;text-indent:-999em;background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/img/txt/privilege-head.png)}.mod-section .section-privilege .sec-subTitle{display:none}.mod-section .section-dress{background-color:#212028;overflow:hidden;height:704px}.section-dress .sec-subTitle,.section-dress .sec-title{color:#fff}.mod-section .section-dress .dress{width:260px;height:320px;float:left;margin:0 3px;position:relative;-webkit-transition:all .5s;transition:all .5s;top:0;overflow:hidden}.mod-section .section-dress .dress-list{height:415px;padding-top:58px;width:1064px;margin:0 auto;overflow:hidden}.mod-section .section-dress .dress-cover{position:absolute;width:100%;height:100%;top:0;left:0;z-index:1}.mod-section .section-dress .dress-deviation{position:absolute;top:50%;left:50%;margin:-207px 0 0 -137.5px;-webkit-transition:all .5s;transition:all .5s}.mod-section .section-dress .dress-cover img{display:block;-webkit-transition:all .5s;transition:all .5s}.mod-section .section-dress .dress-cover:after{content:'';display:block;position:absolute;width:100%;height:100%;background-color:rgba(0,0,0,.2)}.mod-section .section-dress .dress-info{border:2px solid #dfdfdf;margin:8px;height:300px;position:relative;-webkit-transition:all .5s;transition:all .5s;color:#fff;font-size:15px;line-height:22px;width:240px;z-index:2}.mod-section .section-dress .dress-info p{padding:0 10px;position:relative;top:208px;-webkit-transition:all .5s;transition:all .5s}.mod-section .section-dress .dress-info .cover-name{font-size:24px;line-height:33px;padding-bottom:8px}.mod-section .section-dress .btn-dress,.mod-section .section-dress .btn-open{width:156px;height:40px;border:2px solid #e9cb7a;border-radius:54px;display:block;line-height:40px;bottom:-50px;position:absolute;left:50%;margin-left:-80px;-webkit-transition:all .5s;transition:all .5s;opacity:0;font-size:18px;z-index:2;color:#9A5B13}.mod-section .section-dress .btn-open{background-color:#E9CB7A}.mod-section .section-dress .btn-dress{border:2px solid #fff;color:#fff}.mod-section .section-dress .btn-open:hover{background-color:#E7C365;border-color:#E7C365;cursor:pointer}.mod-section .section-dress .btn-dress:hover{background-color:#fff;color:#000;cursor:pointer}.mod-section .section-dress .qr-code{height:134px;position:absolute;bottom:-134px;left:0;width:100%;opacity:0;-webkit-transition:all .5s;transition:all .5s;z-index:2}.mod-section .section-dress .qr-code img{width:96px;height:96px;display:block;margin:0 auto}.mod-section .section-dress .qr-code p{line-height:14px;font-size:14px;padding-top:4px;color:#fff}.mod-section .section-dress .dress:hover{height:414px;top:-19px}.mod-section .section-dress .dress:hover .dress-info{height:394px}.mod-section .section-dress .dress:hover .dress-info p{top:170px}.mod-section .section-dress .dress:hover .btn-dress,.mod-section .section-dress .dress:hover .btn-open{bottom:35px;opacity:1}.mod-section .section-dress .dress:hover .qr-code{bottom:0;opacity:1}.mod-section .section-dress .dress:hover .dress-deviation{margin-top:-235px}.mod-section .section-dress .dress:hover .dress-cover img{-webkit-transform:scale(1.05);transform:scale(1.05);-webkit-transition:all 2.3s;transition:all 2.3s}.mod-section .section-dress .sec-title{width:640px;height:250px;margin:-64px auto -90px;font-size:0;text-indent:-999em;background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/img/txt/dress-head.png)}.mod-section .section-dress .sec-subTitle{display:none}.mod-section .section-growth{overflow:hidden}.mod-section .section-growth .mod-main{width:auto}.mod-section .section-growth .growth-list{padding:74px 0 117px}.mod-section .section-growth .growth{display:inline-block;*zoom:1;*display:inline;width:260px;height:396px;border:1px solid #eaeaea;margin:0 4px;position:relative;-webkit-transition:all .8s;transition:all .8s}.mod-section .section-growth .front-bg{position:relative;top:80px;opacity:1;-webkit-transition:all .8s;transition:all .8s}.mod-section .section-growth .front-bg .growth-img{margin-bottom:34px}.mod-section .section-growth .front-bg .growth-title{font-size:28px;line-height:40px}.mod-section .section-growth .front-bg .growth-subTitle{font-size:18px;line-height:25px;padding-top:5px;color:#909090}.mod-section .section-growth .back-bg{position:absolute;width:100%;padding-top:65px;top:0;left:0;opacity:0;-webkit-transition:all .8s;transition:all .8s;display:none\9}.mod-section .section-growth .lv-item{padding-left:26px;height:53px;padding-bottom:26px}.mod-section .section-growth .lv-tab{float:left}.mod-section .section-growth .lv-tab .icon{display:block;width:53px;height:38px;background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/sprite/pc-index-dag161008105838.png);background-position:0 -76px}.mod-section .section-growth .lv-tab .lv-txt{font-size:17px;line-height:17px;color:#3e3e3e}.mod-section .section-growth .progress{position:relative;width:120px;height:9px;background-color:#e5e5e5;border-radius:10px;margin:0 0 0 70px;top:43px}.mod-section .section-growth .progress .value{position:absolute;border-radius:10px;top:0;left:0;height:9px;background-color:#ffdb51}.mod-section .section-growth .progress .value span{position:absolute;width:59px;height:35px;right:-33px;top:-44px;font-size:18px;line-height:30px;text-align:center;background:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/img/slice/growth/icon-bg.png) no-repeat}.mod-section .section-growth .btn-open{position:relative;margin:20px auto 0;font-size:18px;width:160px;height:44px;border-radius:54px;background-color:#E9CB7A;color:#9A5B13;display:block;line-height:44px;-webkit-transition:all .3s;transition:all .3s}.mod-section .section-growth .btn-open:hover{background-color:#E7C365;cursor:pointer}.mod-section .section-growth .growth:hover{-webkit-box-shadow:0 3px 8px rgba(0,0,0,.15);-moz-box-shadow:0 3px 8px rgba(0,0,0,.15);box-shadow:0 3px 8px rgba(0,0,0,.15)}.mod-section .section-growth .growth:hover .front-bg{opacity:0}.mod-section .section-growth .growth:hover .back-bg{opacity:1;display:block\9;background-color:#fff}.mod-section .section-growth .sec-title{width:640px;height:250px;margin:-64px auto -90px;font-size:0;text-indent:-999em;background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/img/txt/growth-head.png)}.mod-section .section-growth .sec-subTitle{display:none}.mod-section .section-open{border-top:1px solid #eaeaea;padding:0;background-color:#fff;position:relative;display:none}.mod-section .section-open .open-box{width:880px;margin:0 auto;overflow:hidden;padding:100px 0 104px;position:relative}.mod-section .section-open .slogen{position:absolute;height:110px;top:74px;left:0;width:100%;text-align:left}.mod-section .section-open .slogen img{float:left;margin-right:45px}.mod-section .section-open .slogen .slogen-name{line-height:54px}.mod-section .section-open .slogen .slogen-txt{font-size:21px;line-height:48px;color:#909090}.mod-section .section-open .btn-open{position:relative;float:right;font-size:22px;width:260px;height:49px;border-radius:54px;background-color:#E9CB7A;color:#9A5B13;display:block;line-height:49px;-webkit-transition:all .3s;transition:all .3s}.mod-section .section-open .btn-open:hover{background-color:#E7C365;cursor:pointer}.mod-section .section-open .slogen .slogen-name{width:353px;height:94px;background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/img/txt/open-head.png);font-size:0;text-indent:-999em;margin:8px 0 0 170px}.mod-fixed .op-item.op-qa i,.mod-fixed .op-item.op-qa:hover i,.mod-fixed .op-item.op-top i,.mod-fixed .op-item.op-top:hover i{background-image:url(//qzonestyle.gtimg.cn/qz-proj/xing-pc/sprite/pc-index-dag161008105838.png)}.mod-section .section-open .slogen .slogen-txt{display:none}.mod-fixed{position:fixed;right:50px;bottom:100px}.mod-fixed .op-list{border-bottom:1px solid #eaeaea;position:relative}.mod-fixed .op-list:after{content:'';height:2px;width:100%;position:absolute;bottom:-1px;background-color:rgba(0,0,0,.25);-webkit-filter:blur(3px);-moz-filter:blur(3px);-ms-filter:blur(3px)}.mod-fixed .op-item{display:block;width:50px;height:54px;border:1px solid #f1f1f1;border-bottom:none;border-top-color:#eaeaea;background-color:#fff;position:relative;z-index:2;font-size:0;text-indent:-999em;cursor:pointer}.mod-fixed .op-item i{display:block;width:40px;height:40px;margin:7px 0 0 5px}.mod-fixed .op-item.op-top i{background-position:0 -115px}.mod-fixed .op-item.op-top:hover i{background-position:-41px -115px}.mod-fixed .op-item.op-qa i{background-position:-82px -115px}.mod-fixed .op-item.op-qa:hover i{background-position:-123px -115px}.mod-section .mod-animate{-webkit-transform:translateY(400px);-moz-transform:translateY(400px);transform:translateY(400px);-webkit-transition:all .5s cubic-bezier(.39,.58,.57,1);-moz-transition:all .5s cubic-bezier(.39,.58,.57,1);transition:all .5s cubic-bezier(.39,.58,.57,1);opacity:0}.section-show .mod-animate{-webkit-transform:translateY(0);-moz-transform:translateY(0);transform:translateY(0);opacity:1}
+/* kaka:161008112500,danzizhong */
+</style>    <script>
+        HYB.loadTimes.syncCssLoad = +new Date();
+    </script>
+</head>
+<body class="page-home" style="">
+    <!--wnsdiff-body-->                <div class="mod-nav mod-login">
+        <div class="mod-main">
+            <h1 class="logo">星钻logo</h1>
+            <div class="nav-list">
+                <a class="nav-item active" href="/"><i></i>首页</a>
+                <a class="nav-item " href="/intro.html"><i></i>功能特权</a>
+                <a class="nav-item " href="/system.html"><i></i>成长体系</a>
+                <a class="nav-item " href="/dress.html"><i></i>装扮专区</a>
+                <a class="nav-item " href="/actlist.html"><i></i>活动专区</a>
+            </div>
+            <div class="info" id="J-user-info">
+                <div class="info-main">
+                    <img class="info-avatar" src="https://qzonestyle.gtimg.cn/aoi/sola/20150909151829_pCvGoMB2aa.png">
+                    <span class="info-name  j-nav-login" style="cursor: pointer;">登录</span>
+                    <a class="btn-open" data-hottag="xing.home.pc.index.top-open-vip"  data-pay="month" data-aid="pcgwhenglankt">开通星钻</a>
+                </div>
+                <div class="info-dropdown"></div>
+            </div>
+        </div>
+    </div>    <div class="mod-header">
+        <div class="mod-banner">            <div class="banner-bg" style="z-index:3; background-color: rgb(6,4,41)"></div>            <div class="banner-bg" style=" background-color: #AF986A"></div>            <div class="mod-main">
+                <div class="banner-slide">                    <div class="banner-item" style="opacity:1;z-index:2;filter:alpha(opacity=100)">                        <a data-hottag="xing.home.pc.index.banner-1" href="javascript:void(0);" target="_blank" title="星钻首页">
+                            <img src="https://qzonestyle.gtimg.cn/aoi/sola/20160930130146_7KzO9ERJ2V.jpg" style="background:#fff">
+                        </a>                    </div>                    <div class="banner-item" style="">                        <a data-hottag="xing.home.pc.index.banner-2" href="javascript:void(0);" target="_blank" title="公告">
+                            <img src="https://qzonestyle.gtimg.cn/aoi/sola/20161020203201_F5YN2O4T1M.jpg" style="background:#fff">
+                        </a>                    </div>                </div>
+                <div class="banner-btn">                    <span data-hottag="xing.home.pc.index.banner-dot-1" class="btn-item active"></span>                    <span data-hottag="xing.home.pc.index.banner-dot-2" class="btn-item "></span>                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mod-section">
+        <!--星钻福利-->
+        <div class="section section-welfare">
+            <div class="mod-main">
+                <h2 class="sec-title">星钻福利</h2>
+                <div class="welfare-slogan">
+                    <i class="i-left"></i>
+                    <p>我们希望你感受到的不仅是优惠和便利，更是一份被优待感</p>
+                    <i class="i-right"></i>
+                </div>
+                <a class="btn-open" data-hottag="xing.home.pc.index.welfare-open" data-pay="month" data-aid="pcgwfulikt">开通星钻</a>
+                <div class="welfare-list mod-animate">                    <a class="welfare" data-hottag="xing.home.pc.index.welfare-1" href="http://act.qzone.qq.com/meteor/pc/index.html?sid=&rid=990" target="_blank">
+                        <div class="front-bg">
+                            <img class="welfare-img" src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/welfare-1.png"/>
+                        </div>
+                        <div class="back-bg" style="background-image: url(https://qzonestyle.gtimg.cn/aoi/sola/20160926175230_Oe4ugSwaYk.png)">
+                            <p class="number">01</p>
+                            <p class="name">付费音乐</p>
+                            <p class="detail">免费下载</p>
+                        </div>
+                    </a>                    <a class="welfare" data-hottag="xing.home.pc.index.welfare-2" href="javascript:void(0);" target="_blank">
+                        <div class="front-bg">
+                            <img class="welfare-img" src="https://qzonestyle.gtimg.cn/aoi/sola/20160720175627_Yx2jaXRtzH.png"/>
+                        </div>
+                        <div class="back-bg" style="background-image: url(https://qzonestyle.gtimg.cn/aoi/sola/20160720175758_eEO7J8LOT9.png)">
+                            <p class="number">02</p>
+                            <p class="name">手机流量</p>
+                            <p class="detail">专享折扣</p>
+                        </div>
+                    </a>                    <a class="welfare" data-hottag="xing.home.pc.index.welfare-3" href="javascript:void(0);" target="_blank">
+                        <div class="front-bg">
+                            <img class="welfare-img" src="https://qzonestyle.gtimg.cn/aoi/sola/20160926175230_1QYBtb5Qob.png"/>
+                        </div>
+                        <div class="back-bg" style="background-image: url(https://qzonestyle.gtimg.cn/aoi/sola/20160926175230_pm1f6uVZ6y.png)">
+                            <p class="number">03</p>
+                            <p class="name">明星周边</p>
+                            <p class="detail">免费抢</p>
+                        </div>
+                    </a>                    <a class="welfare" data-hottag="xing.home.pc.index.welfare-4" href="javascript:void(0);" target="_blank">
+                        <div class="front-bg">
+                            <img class="welfare-img" src="https://qzonestyle.gtimg.cn/aoi/sola/20160926175230_xLL1A1EtLZ.png"/>
+                        </div>
+                        <div class="back-bg" style="background-image: url(https://qzonestyle.gtimg.cn/aoi/sola/20160926175230_k1TlZiKWwL.png)">
+                            <p class="number">04</p>
+                            <p class="name">游戏特权</p>
+                            <p class="detail">每周抢</p>
+                        </div>
+                    </a>                </div>
+            </div>
+        </div>
+        <!--星钻特权-->
+        <div class="section section-privilege">
+            <div class="mod-main">
+                <h2 class="sec-title">星钻特权</h2>
+                <p class="sec-subTitle">我们一直致力于给你带来更多、更爽、更不一样的体验</p>
+                <div class="privilege-list mod-animate">                        <a class="privilege privilege-1" title="专属装扮"  href="http://xing.qq.com/dress.html" >
+                            <div class="privilege-bg" style="background-image: url(https://qzonestyle.gtimg.cn/aoi/sola/20160719101223_ELUK8K3wq2.png)"></div>
+                        </a>                        <a class="privilege privilege-2" title="个性弹幕"  href="http://xing.qq.com/intro/47.html" >
+                            <div class="privilege-bg" style="background-image: url(https://qzonestyle.gtimg.cn/aoi/sola/20160719101223_RZdlKaCk2i.png)"></div>
+                        </a>                </div>
+            </div>
+        </div>
+        <!--星钻装扮-->
+        <div class="section section-dress">
+            <div class="mod-main">
+                <h2 class="sec-title">最新装扮</h2>
+                <p class="sec-subTitle">让偶像驻进你的“家”</p>
+                <div class="dress-list mod-animate">                    <div class="dress">
+                        <div class="dress-cover">
+                            <div class="dress-deviation">
+                                <img src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/dress-1.jpg">
+                            </div>
+                        </div>
+                        <div class="dress-info">
+                            <p class="cover-name">鹿晗</p>
+                            <p>有只小鹿萌萌哒</p>
+                        </div>                        <a class="btn-dress" data-hottag="xing.home.pc.index.dress1-set-113573" data-type="StaticCover" data-id="113573" data-cover="http://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/dress-1.jpg">立即穿上</a>                    </div>                    <div class="dress">
+                        <div class="dress-cover">
+                            <div class="dress-deviation">
+                                <img src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/dress-2.jpg">
+                            </div>
+                        </div>
+                        <div class="dress-info">
+                            <p class="cover-name">BIGBANG</p>
+                            <p>亚洲天团中国三巡专题</p>
+                        </div>                        <a class="btn-dress" data-hottag="xing.home.pc.index.dress2-set-109381" data-type="StaticCover" data-id="109381" data-cover="http://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/dress-2.jpg">立即穿上</a>                    </div>                    <div class="dress">
+                        <div class="dress-cover">
+                            <div class="dress-deviation">
+                                <img src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/dress-3.jpg">
+                            </div>
+                        </div>
+                        <div class="dress-info">
+                            <p class="cover-name">李宇春</p>
+                            <p>《野蛮生长》定制背景装扮</p>
+                        </div>                        <a class="btn-dress" data-hottag="xing.home.pc.index.dress3-set-116179" data-type="StaticCover" data-id="116179" data-cover="http://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/dress-3.jpg">立即穿上</a>                    </div>                    <div class="dress">
+                        <div class="dress-cover">
+                            <div class="dress-deviation">
+                                <img src="https://qzonestyle.gtimg.cn/aoi/sola/20160810154851_jeNXC2xgXN.jpg">
+                            </div>
+                        </div>
+                        <div class="dress-info">
+                            <p class="cover-name">张杰</p>
+                            <p>你的心声就是我的歌声</p>
+                        </div>                        <a class="btn-dress" data-hottag="xing.home.pc.index.dress4-set-117515" data-type="StaticCover" data-id="117515" data-cover="http://qzonestyle.gtimg.cn/aoi/sola/20160810154851_jeNXC2xgXN.jpg">立即穿上</a>                    </div>                </div>
+            </div>
+        </div>
+        <!--成长速度-->
+        <div class="section section-growth">
+            <div class="mod-main">
+                <h2 class="sec-title">每日成长速度</h2>
+                <p class="sec-subTitle">等级加速，聪明人懂得后来居上</p>
+                <div class="growth-list mod-animate">
+                    <div class="growth">
+                        <div class="front-bg">
+                            <img class="growth-img" src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/growth-1.png"/>
+                            <p class="growth-title">年费</p>
+                            <p class="growth-subTitle">按年支付</p>
+                        </div>
+                        <div class="back-bg">
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV1-4</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:60px;">
+                                        <span>19/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV5-6</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:70px;">
+                                        <span>23/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV7-8</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:120px;">
+                                        <span>27/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn-open" data-pay="year" data-hottag="xing.home.pc.index.growth-type-year"
+                               data-aid="pcgwchegnzhangkt">开通星钻</a>
+                        </div>
+                    </div>
+                    <div class="growth">
+                        <div class="front-bg">
+                            <img class="growth-img" src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/growth-2.png"/>
+                            <p class="growth-title">财付通/微信</p>
+                            <p class="growth-subTitle">按月支付</p>
+                        </div>
+                        <div class="back-bg">
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV1-4</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:45px;">
+                                        <span>16/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV5-6</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:55px;">
+                                        <span>18/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV7-8</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:65px;">
+                                        <span>20/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn-open" data-pay="month" data-channel="weixin" data-hottag="xing.home.pc.index.growth-type-weixin"
+                               data-aid="pcgwchegnzhangkt">开通星钻</a>
+                        </div>
+                    </div>
+                    <div class="growth">
+                        <div class="front-bg">
+                            <img class="growth-img" src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/growth-3.png"/>
+                            <p class="growth-title">Q币</p>
+                            <p class="growth-subTitle">按月支付</p>
+                        </div>
+                        <div class="back-bg">
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV1-4</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:40px;">
+                                        <span>15/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV5-6</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:50px;">
+                                        <span>17/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV7-8</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:60px;">
+                                        <span>19/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn-open" data-pay="month" data-hottag="xing.home.pc.index.growth-type-qbi"
+                               data-aid="pcgwchegnzhangkt">开通星钻</a>
+                        </div>
+                    </div>
+                    <div class="growth">
+                        <div class="front-bg">
+                            <img class="growth-img" src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/growth-4.png"/>
+                            <p class="growth-title">手机渠道</p>
+                            <p class="growth-subTitle">按月支付</p>
+                        </div>
+                        <div class="back-bg">
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV1-4</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:30px;">
+                                        <span>13/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV5-6</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:40px;">
+                                        <span>15/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lv-item">
+                                <div class="lv-tab">
+                                    <i class="icon"></i>
+                                    <p class="lv-txt">LV7-8</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="value" style="width:50px;">
+                                        <span>17/天</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn-open" data-pay="month" data-channel="uniphone" data-hottag="xing.home.pc.index.growth-type-uniphone"
+                               data-aid="pcgwchegnzhangkt">开通星钻</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--开通星钻模块-->
+        <div class="section section-open">
+            <div class="mod-main">
+                <div class="open-box">
+                    <div class="slogen">
+                        <img src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/icon/ico-l.png"/>
+                        <p class="slogen-name">星钻贵族</p>
+                        <p class="slogen-txt">成为星钻，享受最嗨最炫的社交娱乐体验，就是现在！</p>
+                    </div>
+                    <a class="btn-open" data-pay="month" data-hottag="xing.home.pc.index.open-vip" data-aid="pcgwdibukt">开通星钻</a>
+                </div>
+            </div>
+        </div>
+    </div>        <div class="mod-footer">
+        <div class="mod-main">
+            <div class="mod-logo">
+                <a href="http://qzone.qq.com/" target="_blank" class="logo-item logo-qzone"><img src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/logo-qz.png"/></a>
+                <a href="http://y.qq.com/" target="_blank" class="logo-item logo-music"><img src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/logo-yy.png"/></a>
+                <!--<a href="http://kg.qq.com/" target="_blank" class="logo-item logo-Ksong"><img src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/logo-kg.png"/></a>-->
+                <a class="logo-item logo-code">
+                    <img src="https://qzonestyle.gtimg.cn/qz-proj/xing-pc/img/home/logo-code.png"/>
+                    <span>星钻手Q公众号</span>
+                    <span class="gray">扫描二维码，星钻福利抢先知</span>
+                </a>
+                <a class="logo-item logo-code no-bor">
+                    <img src="https://qzonestyle.gtimg.cn/aoi/sola/20160815113910_RrQthTTrGm.jpg">
+                    <span>星钻微信公众号</span>
+                    <span class="gray">扫描二维码，一起来玩耍</span>
+                </a>
+            </div>
+            <div class="mod-link">
+                <p>
+                    <span>友情链接：</span>                    <a href="http://qzone.qq.com/" title="QQ空间" target="_blank">QQ空间</a> |                                         <a href="http://y.qq.com/" title="QQ音乐" target="_blank">QQ音乐</a> |                                         <a href="http://z.qzone.com/" title="手机QQ空间" target="_blank">手机QQ空间</a> |                                         <a href="http://fm.qq.com/" title="企鹅FM" target="_blank">企鹅FM</a> |                                         <a href="http://huabao.qzone.qq.com/" title="画报" target="_blank">画报</a> |                                         <a href="http://act.qzone.qq.com/" title="黄钻活动" target="_blank">黄钻活动</a> |                                         <a href="http://support.qq.com/write.shtml?fid=1165&ADPUBNO=" title="用户反馈" target="_blank">用户反馈</a> |                                         <a href="http://bbs.qcloud.com/" title="腾讯云论坛" target="_blank">腾讯云论坛</a> |                                         <a href="http://mtv.qq.com/" title="企鹅MV" target="_blank">企鹅MV</a> |                                         <a href="http://im.qq.com" title="QQ官网下载" target="_blank">QQ官网下载</a>                                    </p>
+            </div>
+            <div class="mod-copyright">
+                <p>
+                    <a href="http://www.tencent.com/" target="new" title="关于腾讯">关于腾讯</a>|
+                    <a href="http://www.tencent.com/index_e.shtml" target="new" title="About Tencent">About Tencent</a>|
+                    <a href="http://www.qq.com/contract.shtml" target="new" title="服务协议">服务协议</a>|
+                    <a href="http://open.qq.com/" target="new" title="开放平台">开放平台</a>|
+                    <a href="http://www.tencentmind.com/" target="new" title="广告服务">广告服务</a>|
+                    <a href="http://www.tencent.com/about/corp.shtml" target="new" title="商务洽谈">商务洽谈</a>|
+                    <a href="http://hr.tencent.com/" target="new" title="腾讯招聘">腾讯招聘</a>|
+                    <a href="http://www.qq.com" target="new" title="腾讯网">腾讯网</a>|
+                    <a href="http://gongyi.qq.com/" target="new" title="腾讯公益">腾讯公益</a>|
+                    <a href="http://service.qq.com/" target="new" title="客服中心">客服中心</a>|
+                    <a href="http://www.qq.com/map/" target="new" title="网站导航">网站导航</a>|
+                    <a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="new" title="版权所有">版权所有</a>
+                </p>
+                <p>Copyright © 1998 - 2016 Tencent. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>    <div class="mod-fixed">
+        <div class="op-list">
+            <a class="op-item op-top" href="#" data-hottag="xing.home.pc.index.go-top" title="回到顶部"><i></i>回到顶部</a>
+            <a class="op-item op-qa " target="_blank" data-hottag="xing.home.pc.index.go-kefu" href="http://kf.qq.com/faq/150929En2YvI151012eiYjQ3.html"
+               title="联系客服"><i></i>联系客服</a>
+        </div>
+    </div>    <script>
+        (function() {            window.syncData ={"isLogin":false,"curPage":"index","imgcacheDomain":"https://qzonestyle.gtimg.cn","isHttps":true,"lvScore":[0,1,400,800,1600,3000,5000,7000,25000],"lvSpeed":[0,19,19,19,19,23,23,27,27]};
+            })();
+    </script>
+    <!--wnsdiff-body-end-->    <script>
+        (function(t,u){function v(b){return function(c){return Object.prototype.toString.call(c)==="[object "+b+"]"}}function Q(){return w++}function I(b,c){var a;a=b.charAt(0);if(R.test(b))a=b;else if("."===a){a=(c?c.match(E)[0]:h.cwd)+b;for(a=a.replace(S,"/");a.match(J);)a=a.replace(J,"/")}else a="/"===a?(a=h.cwd.match(T))?a[0]+b.substring(1):b:h.base+b;return a}function K(b,c){if(!b)return"";var a=b,d=h.alias,a=b=d&&F(d[a])?d[a]:a,d=h.paths,g;if(d&&(g=a.match(U))&&F(d[g[1]]))a=d[g[1]]+g[2];g=a;var e=h.vars;
+            e&&-1<g.indexOf("{")&&(g=g.replace(V,function(a,b){return F(e[b])?e[b]:a}));a=g.length-1;d=g.charAt(a);b="#"===d?g.substring(0,a):".js"===g.substring(a-2)||0<g.indexOf("?")||".css"===g.substring(a-3)||"/"===d?g:g+".js";g=I(b,c);var a=h.map,l=g;if(a)for(var d=0,f=a.length;d<f&&!(l=a[d],l=x(l)?l(g)||g:g.replace(l[0],l[1]),l!==g);d++);return l}function L(b,c){var a=b.sheet,d;if(M)a&&(d=!0);else if(a)try{a.cssRules&&(d=!0)}catch(g){"NS_ERROR_DOM_SECURITY_ERR"===g.name&&(d=!0)}setTimeout(function(){d?
+                c():L(b,c)},20)}function W(){if(y)return y;if(z&&"interactive"===z.readyState)return z;for(var b=s.getElementsByTagName("script"),c=b.length-1;0<=c;c--){var a=b[c];if("interactive"===a.readyState)return z=a}}function e(b,c){this.uri=b;this.dependencies=c||[];this.exports=null;this.status=0;this._waitings={};this._remain=0}if(!t.seajs){var f=t.seajs={version:"2.1.1"},h=f.data={},X=v("Object"),F=v("String"),A=Array.isArray||v("Array"),x=v("Function"),w=0,p=h.events={};f.on=function(b,c){(p[b]||(p[b]=
+                [])).push(c);return f};f.off=function(b,c){if(!b&&!c)return p=h.events={},f;var a=p[b];if(a)if(c)for(var d=a.length-1;0<=d;d--)a[d]===c&&a.splice(d,1);else delete p[b];return f};var m=f.emit=function(b,c){var a=p[b],d;if(a)for(a=a.slice();d=a.shift();)d(c);return f},E=/[^?#]*\//,S=/\/\.\//g,J=/\/[^/]+\/\.\.\//,U=/^([^/:]+)(\/.+)$/,V=/{([^{]+)}/g,R=/^\/\/.|:\//,T=/^.*?\/\/.*?\//,n=document,q=location,B=q.href.match(E)[0],k=n.getElementsByTagName("script"),k=n.getElementById("seajsnode")||k[k.length-
+                1],k=((k.hasAttribute?k.src:k.getAttribute("src",4))||B).match(E)[0],s=n.getElementsByTagName("head")[0]||n.documentElement,N=s.getElementsByTagName("base")[0],O=/\.css(?:\?|$)/i,Y=/^(?:loaded|complete|undefined)$/,y,z,M=536>1*navigator.userAgent.replace(/.*AppleWebKit\/(\d+)\..*/,"$1"),Z=/"(?:\\"|[^"])*"|'(?:\\'|[^'])*'|\/\*[\S\s]*?\*\/|\/(?:\\\/|[^\/\r\n])+\/(?=[^\/])|\/\/.*|\.\s*require|(?:^|[^$])\brequire\s*\(\s*(["'])(.+?)\1\s*\)/g,$=/\\\\/g,r=f.cache={},C,G={},H={},D={},j=e.STATUS={FETCHING:1,
+            SAVED:2,LOADING:3,LOADED:4,EXECUTING:5,EXECUTED:6};e.prototype.resolve=function(){for(var b=this.dependencies,c=[],a=0,d=b.length;a<d;a++)c[a]=e.resolve(b[a],this.uri);return c};e.prototype.load=function(){if(!(this.status>=j.LOADING)){this.status=j.LOADING;var b=this.resolve();m("load",b);for(var c=this._remain=b.length,a,d=0;d<c;d++)a=e.get(b[d]),a.status<j.LOADED?a._waitings[this.uri]=(a._waitings[this.uri]||0)+1:this._remain--;if(0===this._remain)this.onload();else{for(var g={},d=0;d<c;d++)a=
+                r[b[d]],a.status<j.FETCHING?a.fetch(g):a.status===j.SAVED&&a.load();for(var h in g)if(g.hasOwnProperty(h))g[h]()}}};e.prototype.onload=function(){this.status=j.LOADED;this.callback&&this.callback();var b=this._waitings,c,a;for(c in b)if(b.hasOwnProperty(c)&&(a=r[c],a._remain-=b[c],0===a._remain))a.onload();delete this._waitings;delete this._remain};e.prototype.fetch=function(b){function c(){var a=g.requestUri,b=g.onRequest,c=g.charset,d=O.test(a),e=n.createElement(d?"link":"script");if(c&&(c=x(c)?
+                        c(a):c))e.charset=c;var f=e;d&&(M||!("onload"in f))?setTimeout(function(){L(f,b)},1):f.onload=f.onerror=f.onreadystatechange=function(){Y.test(f.readyState)&&(f.onload=f.onerror=f.onreadystatechange=null,!d&&!h.debug&&s.removeChild(f),f=null,b())};d?(e.rel="stylesheet",e.href=a):(e.async=!0,e.src=a);y=e;N?s.insertBefore(e,N):s.appendChild(e);y=null}function a(){delete G[f];H[f]=!0;C&&(e.save(d,C),C=null);var a,b=D[f];for(delete D[f];a=b.shift();)a.load()}var d=this.uri;this.status=j.FETCHING;var g=
+        {uri:d};m("fetch",g);var f=g.requestUri||d;!f||H[f]?this.load():G[f]?D[f].push(this):(G[f]=!0,D[f]=[this],m("request",g={uri:d,requestUri:f,onRequest:a,charset:h.charset}),g.requested||(b?b[g.requestUri]=c:c()))};e.prototype.exec=function(){function b(a){return e.get(b.resolve(a)).exec()}if(this.status>=j.EXECUTING)return this.exports;this.status=j.EXECUTING;var c=this.uri;b.resolve=function(a){return e.resolve(a,c)};b.async=function(a,g){e.use(a,g,c+"_async_"+w++);return b};var a=this.factory,a=
+                x(a)?a(b,this.exports={},this):a;a===u&&(a=this.exports);null===a&&!O.test(c)&&m("error",this);delete this.factory;this.exports=a;this.status=j.EXECUTED;m("exec",this);return a};e.resolve=function(b,c){var a={id:b,refUri:c};m("resolve",a);return a.uri||K(a.id,c)};e.define=function(b,c,a){var d=arguments.length;1===d?(a=b,b=u):2===d&&(a=c,A(b)?(c=b,b=u):c=u);if(!A(c)&&x(a)){var g=[];a.toString().replace($,"").replace(Z,function(a,b,c){c&&g.push(c)});c=g}d={id:b,uri:e.resolve(b),deps:c,factory:a};if(!d.uri&&
+                n.attachEvent){var f=W();f&&(d.uri=f.src)}m("define",d);d.uri?e.save(d.uri,d):C=d};e.save=function(b,c){var a=e.get(b);a.status<j.SAVED&&(a.id=c.id||b,a.dependencies=c.deps||[],a.factory=c.factory,a.status=j.SAVED)};e.get=function(b,c){return r[b]||(r[b]=new e(b,c))};e.use=function(b,c,a){var d=e.get(a,A(b)?b:[b]);d.callback=function(){for(var a=[],b=d.resolve(),e=0,f=b.length;e<f;e++)a[e]=r[b[e]].exec();c&&c.apply(t,a);delete d.callback};d.load()};e.preload=function(b){var c=h.preload,a=c.length;
+            a?e.use(c,function(){c.splice(0,a);e.preload(b)},h.cwd+"_preload_"+w++):b()};f.use=function(b,c){e.preload(function(){e.use(b,c,h.cwd+"_use_"+w++)});return f};e.define.cmd={};t.define=e.define;f.Module=e;h.fetchedList=H;h.cid=Q;f.resolve=K;f.require=function(b){return(r[e.resolve(b)]||{}).exports};h.base=(k.match(/^(.+?\/)(\?\?)?(seajs\/)+/)||["",k])[1];h.dir=k;h.cwd=B;h.charset="utf-8";var B=h,P=[],q=q.search.replace(/(seajs-\w+)(&|$)/g,"$1=1$2"),q=q+(" "+n.cookie);q.replace(/(seajs-\w+)=1/g,function(b,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       c){P.push(c)});B.preload=P;f.config=function(b){for(var c in b){var a=b[c],d=h[c];if(d&&X(d))for(var e in a)d[e]=a[e];else A(d)?a=d.concat(a):"base"===c&&("/"===a.slice(-1)||(a+="/"),a=I(a)),h[c]=a}m("config",b);return f}}})(this);
+</script>    <script>
+        HYB.loadTimes.commonJsEnd = +new Date();
+        HYB.jsHttps = true;
+        (function() {
+            var CDN = 'https://qzonestyle.gtimg.cn';
+
+           var parseUrl = function (url) {
+                var a = document.createElement('a'),
+                        rs;
+                a.href = url;
+                rs = {
+                    href: url,
+                    origin: undefined,
+                    protocol: a.protocol.replace(':', ''),
+                    hostname: a.hostname,
+                    host: a.hostname,
+                    port: a.port,
+                    search: a.search,
+                    hash: a.hash,
+                    pathname: a.pathname.replace(/^([^\/])/, '/$1'),
+                    params: (function () {
+                        var ret = {},
+                                seg = a.search.replace(/^\?/, '').split('&'),
+                                len = seg.length, i = 0;
+                        for (; i < len; i++) {
+                            if (!seg[i]) {
+                                continue;
+                            }
+                            var pos = seg[i].indexOf('=');
+                            ret[seg[i].substr(0, pos)] = decodeURIComponent(seg[i].substr(pos + 1));
+                        }
+                        return ret;
+                    })()
+                };
+                return rs;
+            };
+            var toUrlParam = function(obj) {
+                var res = [];
+                if(!obj) {
+                    return '';
+                }
+                for(var p in obj) {
+                    if(obj.hasOwnProperty(p)) {
+                        if(typeof obj[p] == 'string' && obj[p] || typeof obj[p] == 'number') {
+                            res.push(p + '=' + encodeURIComponent(obj[p]));
+                        }
+                    }
+                }
+                return res.join('&');
+            };
+            var urlRes = parseUrl(location.href) || {},
+                params = urlRes.params|| {};
+            if(!seajs){
+                if(!params.noseajs){
+                    params.noseajs = 1;
+                    location.href = urlRes.protocol + '://' + urlRes. hostname + urlRes.pathname + '?' + toUrlParam(params)+urlRes.hash;
+                }
+            }
+
+            seajs && seajs.config({
+                charset: 'utf-8',
+                timeout: 5 * 60 * 1000,
+                debug: 0,
+                paths: {
+                    "hybridPath": CDN + "/qzone/hybrid",
+                    'xingPath': CDN + '/qzone/xing',
+                    'v8': CDN+'/qzone/v8',
+                    'mall.v8': CDN+"/qzone/mall/v8",
+                    'qzact.v8': CDN + '/qzone/qzact',
+                    'qzact': CDN + '/qzone/qzact',
+                    'cssBase': CDN
+                },
+                alias: {
+                    "zepto": CDN + "/ac/lib/zepto/zepto-1.1.4.js?_bid=333",                    "jquery": CDN + "/ac/lib/jquery/jquery-" + HYB.jqueryVersion + ".js?_bid=332",                    'qzact.lib': 'xingPath/home/lib/index.js',
+                    'qcloud.speed':CDN +'/qzone/hybrid/lib/src/qcloud.speed.js',
+                    'qqapi' : location.protocol+'//pub.idqqimg.com/qqmobile/qqapi.js?_bid=152',
+                    'wx_jssdk' : location.protocol+'//res.wx.qq.com/open/js/jweixin-1.0.0.js',
+                    'qzoneapi' : location.protocol+'//qzonestyle.gtimg.cn/qzone/phone/m/v4/widget/mobile/jsbridge.js?_bid=339'
+                },
+                map:[
+                    [/^(.+\/qzone\/photo\/hybrid\/.+\.js)$/i, '$1?ver=' + HYB.jsVersion + ''],
+                    [/^(.+\/touch\/proj-qzone-app\/[^\/]+\.css)$/i,'$1?ver=' + HYB.cssVersion]
+                ]
+            });
+        })();
+    </script>        <script>
+    window.isSync = true;
+    (function () {
+        seajs && seajs.use(['jquery', 'qzact.lib', 'xingPath/home/pc/index/index.js'], function ($, L, mod) {
+            if ($ && L && mod) {
+                mod.init();
+            } else {
+                L && L.stat && L.stat.reportHotClick("xingHome.report.jsloaderr", 'm.qzone.com', 'xing-home-m');
+            }
+        });
+    })();
+</script>        <script>
+        HYB.loadTimes.domReady = +new Date();
+        setTimeout(function(){
+            seajs && seajs.use('https://qzonestyle.gtimg.cn/qzone/hybrid/common/security/aq.js');
+        });
+    </script>
+    <script type="text/javascript" src="//tajs.qq.com/stats?sId=52550401" charset="UTF-8"></script></body>
+</html>

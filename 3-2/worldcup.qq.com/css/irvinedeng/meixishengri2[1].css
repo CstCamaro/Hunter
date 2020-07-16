@@ -1,0 +1,105 @@
+body{font-family:"ËÎÌå";font-size:12px;background:#DCDCDC;color:#2D2D2D;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd{margin:0;padding:0;border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,p,select{margin:0;padding:0;font-size:12px;}
+a{color:#2D2D2D;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.left,.fleft{float:left;}
+.right,.fright{float:right;}
+.clear{clear:both;height:0;overflow:hidden;}
+.dis,.block{display:block!important;}
+.undis,.none{display:none;}
+.noborder{border:0!important;}
+.nobg{background:none!important;}
+.tleft{text-align:left!important;}
+.box10,.wrap,.wrap2,.wrap3,.wrap4,.wrap5{width:946px;margin:0 auto;background:#fff;padding:0 7px;}
+.box10{height:10px;clear:both;overflow:hidden;}
+.bg{width:100%;margin:0 auto;padding-top:236px;background:url(http://img1.gtimg.com/0/65/6598/659883_3000x3000_0.jpg) no-repeat top center;}
+.wrap{background:none;}
+.wrap .left{width:310px;}
+.wrap .left #focus{width:310px;float:left;}
+.wrap .left .video{width:310px;float:left;margin-top:10px;}
+.wrap .center{width:327px;height:490px;padding:0 19px;border:1px solid #DCDCDC;border-top:0;float:left;margin:14px 0 0 10px;display:inline;}
+.wrap .center .hd{width:100%;float:left;}
+.wrap .center .hd h2{width:100%;float:left;text-align:center;color:#BA0109;font:20px/40px "ºÚÌå";}
+.wrap .center .hd h2 a{color:#BA0109;}
+.wrap .center .hd p{width:100%;float:left;text-indent:24px;line-height:18px;}
+.wrap .center .hd p .s{color:#BA0109;}
+.wrap .center .hd p .s a{color:#BA0109;font-weight:bold;}
+.wrap .center .bd{width:100%;float:left;margin-top:15px;padding-top:10px;border-top:1px dotted #BFBFBF;}
+.wrap .center .bd h2{width:100%;float:left;text-align:center;color:#BA0109;font:18px/36px "ºÚÌå";}
+.wrap .center .bd h2 a{color:#BA0109;}
+.wrap .center .bd .blog{width:100%;float:left;padding:10px 0;}
+.wrap .center .bd .blog img{width:50px;height:50px;float:left;border:1px solid #C8C8C8;}
+.wrap .center .bd .blog dl{width:265px;float:right;line-height:18px;}
+.wrap .center .bd .blog dt{float:left;font-weight:bold;}
+.wrap .center .bd .blog dt a{color:#2D2D2D;}
+.wrap .center .bd .blog dd{float:right;color:#969696;}
+.wrap .center .bd .blog p{width:265px;float:right;line-height:17px;height:34px;overflow:hidden;}
+.wrap .right{width:249px;}
+.wrap .right .ziliao{width:100%;float:left;}
+.wrap .right .ziliao .hd{width:100%;float:left;line-height:28px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/messi/ziliao_hd.jpg) no-repeat left top;}
+.wrap .right .ziliao .hd h2{float:left;text-indent:18px;}
+.wrap .right .ziliao .bd{width:217px;float:left;border-left:1px solid #ECEDE5;border-right:1px solid #ECEDE5;padding:16px 14px 10px 16px;}
+.wrap .right .ziliao .bd img{width:86px;height:75px;border:1px solid #C8C8C8;float:left;}
+.wrap .right .ziliao .bd dl{width:122px;float:right;}
+.wrap .right .ziliao .bd dt{width:100%;float:left;font-weight:bold;line-height:23px;}
+.wrap .right .ziliao .bd dd{width:100%;float:left;line-height:18px;color:#6C6B6A;}
+.wrap .right .ziliao .bd dd .s{color:#BA0109;}
+.wrap .right .ziliao .bd dd .s a{color:#BA0109;}
+.wrap .right .ziliao .bd p{width:100%;line-height:18px;color:#6C6B6A;text-indent:24px;margin-top:10px;}
+.wrap .right .aixin{width:247px;float:left;border:1px solid #ECEDE5;border-top:1px solid #F1E7DF;}
+.wrap .right .aixin .hd{width:100%;float:left;line-height:27px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/messi/aixin_hd.jpg) no-repeat left top;}
+.wrap .right .aixin .hd h2{float:left;text-indent:18px;}
+.wrap .right .aixin .bd{width:100%;float:left;padding:4px 0;}
+.wrap .right .aixin .bd dl{width:123px;float:left;text-align:center;margin-top:8px;}
+.wrap .right .aixin .bd dt{width:100%;float:left;}
+.wrap .right .aixin .bd dt img{width:54px;height:54px;padding:2px;border:1px solid #ddd;}
+.wrap .right .aixin .bd dd{width:100%;float:left;line-height:20px;}
+.wrap .right .aixin .bd dd .s{color:#BA0109;}
+.shengriyuanwang{width:944px;float:left;border:1px solid #DCDCDC;border-top:2px solid #CB431A;}
+.shengriyuanwang .hd{width:900px;float:left;padding:0 22px;height:39px;line-height:39px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/messi/wrap2_hd.jpg) no-repeat left top;}
+.shengriyuanwang .hd a{float:right;color:#C02B2A;font-weight:bold;}
+.shengriyuanwang .bd{width:928px;height:391px;float:left;padding:5px 0;display:inline;margin:0 8px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/messi/yuanwang_bg.jpg) no-repeat left top;overflow:hidden;}
+.shengriyuanwang .bd .yuanwang{width:249px;float:left;height:115px;padding:40px 30px;overflow:hidden;}
+.shengriyuanwang .bd .yuanwang .left{width:116px;overflow:hidden;}
+.shengriyuanwang .bd .yuanwang .left img{width:110px;height:85px;padding:2px;border:1px solid #E6E5ED;float:left;}
+.shengriyuanwang .bd .yuanwang .left .zhichi{width:98px;height:20px;line-height:22px;text-indent:24px;float:left;display:inline;margin:5px 6px 0;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/messi/zhichi_bg.jpg) no-repeat left top;overflow:hidden;}
+.shengriyuanwang .bd .yuanwang .left .zhichi .s{color:#E8001A;padding-left:2px;}
+.shengriyuanwang .bd .yuanwang h3{width:125px;float:right;font-size:14px;line-height:22px;color:#BA0109;}
+.shengriyuanwang .bd .yuanwang p{width:125px;float:right;line-height:20px;}
+.shengriyuanwang .bd .yuanwang p .s{color:#BA0109;}
+.shengriyuanwang .bd .yuanwang p .s a{color:#BA0109;}
+.jingcaishunjian{width:944px;float:left;border:1px solid #DCDCDC;border-top:2px solid #CB431A;}
+.jingcaishunjian .hd{width:900px;float:left;padding:0 22px;height:39px;line-height:39px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/messi/wrap3_hd.jpg) no-repeat left top;}
+.jingcaishunjian .hd a{float:right;color:#C02B2A;font-weight:bold;}
+.jingcaishunjian .bd{width:944px;float:left;}
+.meixigushi{width:944px;height:468px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/messi/meixigushi.jpg) no-repeat left top;border:1px solid #DCDCDC;border-top:2px solid #CB431A;}
+.meixigushi .hd{width:900px;float:left;padding:0 22px;height:40px;line-height:40px;}
+.meixigushi .hd a{float:right;color:#C02B2A;font-weight:bold;}
+.meixigushi .xingzuo{width:288px;height:126px;float:left;padding:75px 0 0 60px;}
+.meixigushi .xingzuo p{width:100%;float:left;font-weight:bold;font-size:14px;line-height:28px;}
+.meixigushi .qita{width:288px;height:126px;float:right;padding:75px 45px 0 0;}
+.meixigushi .qita p{width:100%;float:left;font-size:14px;line-height:28px;}
+.meixigushi .weilai{width:288px;height:126px;font-size:14px;float:left;padding:84px 0 0 60px;}
+.meixigushi .weilai ul{width:100%;float:left;}
+.meixigushi .weilai li{width:100%;float:left;line-height:26px;}
+.meixigushi .jiaren{width:288px;height:126px;font-size:14px;float:right;padding:84px 45px 0 0;}
+.meixigushi .jiaren ul{width:100%;float:left;}
+.meixigushi .jiaren li{width:100%;float:left;line-height:26px;}
+.wrap5 .left{width:364px;border:1px solid #DCDCDC;}
+.wrap5 .left .hd{width:314px;padding:0 18px 0 32px;float:left;height:30px;line-height:30px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/messi/wrap5_hd.jpg) no-repeat left top;}
+.wrap5 .left .hd h2{float:left;font-size:14px;color:#000;}
+.wrap5 .left .hd .more{float:right;color:#000;}
+.wrap5 .left .bd{padding:14px;float:left;width:336px;}
+.wrap5 .left .bd .top{width:100%;float:left;}
+.wrap5 .left .bd .top img{width:130px;height:88px;float:left;padding:2px;border:1px solid #E5E7EE;}
+.wrap5 .left .bd .top h3{width:190px;float:right;line-height:22px;}
+.wrap5 .left .bd .top p{width:190px;float:right;line-height:18px;}
+.wrap5 .left .bd ul{width:100%;float:left;margin-top:10px;}
+.wrap5 .left .bd li{width:100%;float:left;line-height:22px;}
+.wrap5 .right{width:567px;border:1px solid #DCDCDC;}
+.wrap5 .right .hd{width:517px;padding:0 18px 0 32px;float:left;height:30px;line-height:30px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/messi/wrap5_hd.jpg) no-repeat left top;}
+.wrap5 .right .hd h2{float:left;font-size:14px;color:#000;}
+.wrap5 .right .hd .more{float:right;color:#000;}
+.wrap5 .right .bd{padding:10px;float:left;width:547px;}/*  |xGv00|64d008680bf9e6eaa34203b1bc3f522e */

@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<!--[if lte IE 6 ]> <html class="ie ie6 lte_ie7 lte_ie8 lte_ie9" lang="zh-CN"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie ie7 lte_ie7 lte_ie8 lte_ie9" lang="zh-CN"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie ie8 lte_ie8 lte_ie9" lang="zh-CN"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9 lte_ie9" lang="zh-CN"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="zh-CN"> <!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <title>最具人气榜月榜-腾讯视频doki星耀榜</title>
+    <meta name="keywords" content="最具人气榜、星耀榜、腾讯视频星耀榜、doki榜单、doki星耀榜、肖战、王一博、硬糖少女303陈卓璇、R1SE周震南、硬糖少女303希林娜依·高、硬糖少女303赵粤、硬糖少女303郑乃馨、华晨宇、李现、硬糖少女303王艺瑾"/>
+    <meta name="description" content="腾讯视频doki星耀榜：值得关注的热点明星都在这里，最具人气明星榜单、最佳新秀榜单、艺能飙升榜、最具影响力榜单、明星发糖榜单等多维度热点榜单。"/>
+    <link rel="shortcut icon" href="//v.qq.com/favicon.ico"/>
+    
+<link rel="stylesheet" href="//vm.gtimg.cn/c/=/tencentvideo/vstyle/web/v5/style/css/base.css,head_simple.css,head_drawer.css?max_age=604800&v=20180713" r-notemplate="true"/>
+<link rel="stylesheet" href="//vm.gtimg.cn/c/=/tencentvideo/vstyle/web/v6/style/css/stars/rank.css?max_age=604800&v=20180713" />
+
+<!--[if lte IE 8]><script type="text/javascript">document.createElement('svg');document.createElement('path');document.createElement('use');document.createElement('symbol');document.createElement('circle');document.createElement('defs');document.createElement('polygon');document.createElement('linearGradient')</script><![endif]-->
+<script type="text/javascript">
+    try {
+        document.domain = "qq.com";
+    } catch (e) {
+    }
+    function picerr(obj, num) {
+        obj.onerror = null;
+        var p = "blank";
+        if (typeof num == "number") {
+            if (num == 2 || num == 5 || num == 9 || num == 11 || num == 12 || num == 14 || num == 15 || num == 16 || num == 19) {
+                p = "pic_h";
+            } else if (num == 1 || num == 6 || num == 7 || num == 13 || num == 17) {
+                p = "pic_v";
+            } else {
+                p = "pic_s";
+            }
+        } else {
+            if (num == "h" || num == "v" || num == "s") {
+                p = "pic_" + num;
+            } else if (num == "a") {
+                p = "avatar";
+            }
+        }
+        obj.src = "//i.gtimg.cn/qqlive/images/20150608/" + p + ".png";
+    }
+</script>
+
+    <!--[if lte IE 8]><script type="text/javascript">document.createElement('svg');document.createElement('path');document.createElement('use');document.createElement('symbol');document.createElement('circle');document.createElement('defs');document.createElement('polygon');document.createElement('linearGradient')</script><![endif]-->
+</head>
+
+<body>
+<div r-component="p-doki2017" class="site_head_white" id="_body">
+    <div class="site_channel_common" r-notemplate="true">
+
+<div class="site_head" id="new_vs_header">
+    <svg class="txp_svg_sprite txp_svg_sprite_head" display="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="svg_icon_vip_flat" viewBox="0 0 20 20">
+            <path d="M18.65 8.855l-3.507 3.798.572 5.185-.019.015c.009.054.033.104.033.16a.991.991 0 0 1-1.367.912l-.015.012L9.5 16.774l-4.805 2.115-.011-.007a.986.986 0 0 1-.448.118.992.992 0 0 1-.997-.986c0-.041.019-.076.023-.115l-.012-.009.188-1.626a20.747 20.747 0 0 0 2.1-.681l-.089.764L9.5 14.578l3.996 1.766-.456-4.417 2.979-3.099-1.231-.25c.444-.591.856-1.205 1.237-1.842l2.193.417.008.025c.44.102.774.475.774.942 0 .297-.14.554-.35.735zm-2.557-4.417C13.523 9.924 8.525 14 2.481 15.391a.978.978 0 0 1-.481.14 1 1 0 0 1-1-1c0-.473.335-.851.777-.955l-.009-.039a17.968 17.968 0 0 0 12.494-9.905.997.997 0 0 1 1.926.368c0 .156-.043.3-.107.432l.012.006zM9.5 4.059L7.365 7.932l-4.353.833 2.365 2.533c-.65.314-1.319.594-2.012.824L.352 8.857A.968.968 0 0 1 0 8.12c0-.443.3-.804.707-.928l.011-.044 5.333-.997 2.537-4.618h.041A.986.986 0 0 1 9.5 1c.378 0 .696.217.865.525h.038l1.954 3.552a16.898 16.898 0 0 1-1.316 1.822L9.5 4.059z"></path>
+        </symbol>
+        <symbol id="svg_icon_client" viewBox="0 0 20 20">
+            <path d="M16 15H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2zm0-10H4v8h12V5zM7 16h6a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2z"></path>
+        </symbol>
+        <symbol id="svg_icon_upload" viewBox="0 0 20 20">
+            <path d="M17.818 14.444A8.987 8.987 0 0 1 10 19c-3.241 0-6.063-1.725-7.648-4.294a.99.99 0 0 1-.316-.723 1 1 0 0 1 1-1c.383 0 .706.223.874.54l.058-.029C5.179 15.58 7.413 17 10 17c2.58 0 4.809-1.412 6.022-3.489l.043.021a.988.988 0 0 1 .865-.528 1 1 0 0 1 1 1 .957.957 0 0 1-.112.44zm-5.572-7.769L11 5.429V12a1 1 0 0 1-2 0V5.469L7.765 6.704a1.04 1.04 0 0 1-1.469-1.47l2.938-2.938c.211-.211.491-.303.767-.293.282-.015.568.076.784.292l2.92 2.92a1.033 1.033 0 0 1-1.459 1.46z"></path>
+        </symbol>
+        <symbol id="svg_icon_time" viewBox="0 0 20 20">
+            <path d="M10 12a1 1 0 0 1-1-1V6a1 1 0 0 1 2 0v4h2a1 1 0 0 1 0 2h-3zm7.911 2.253a.988.988 0 0 1-.949.747 1 1 0 0 1-1-1c0-.204.076-.382.18-.54l-.068-.042c.572-1.015.926-2.17.926-3.418a7 7 0 1 0-7 7c1.284 0 2.472-.371 3.507-.975l.022.04a.97.97 0 0 1 .471-.134 1 1 0 0 1 1 1c0 .37-.21.679-.508.852l.003.006c-.015.009-.032.015-.047.023-.032.017-.061.034-.095.047A8.924 8.924 0 0 1 10 19a9 9 0 0 1-9-9 9 9 0 0 1 18 0 8.931 8.931 0 0 1-1.089 4.253z"></path>
+        </symbol>
+        <symbol id="svg_icon_search" viewBox="0 0 20 20">
+            <path d="M18.7 18.7c-.4.4-1.1.4-1.5 0l-3.9-3.9c-.4-.4-.4-1.1 0-1.5l-.1-.1c2.3-2.3 2.3-6.1 0-8.5-2.3-2.3-6.1-2.3-8.5 0-2.3 2.3-2.3 6.1 0 8.5C5.9 14.4 7.4 15 9 15c.4 0 .7-.1 1.1-.1 1.2-.2 1.4 1.7-.3 2.1H9C4.6 17 1 13.4.9 9c0-4.4 3.6-8 8-8.1 4.4 0 8 3.6 8.1 8 0 1.8-.6 3.5-1.7 4.9l3.4 3.4c.4.4.4 1.1 0 1.5z"></path>
+        </symbol>
+        <symbol id="svg_icon_menu_sm" viewBox="0 0 16 16">
+            <path d="M13,15h-2c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v2C15,14.1,14.1,15,13,15z M13,11h-2v2h2V11z M13,7h-2C9.9,7,9,6.1,9,5V3c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v2C15,6.1,14.1,7,13,7z M5,15H3c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2 h2c1.1,0,2,0.9,2,2v2C7,14.1,6.1,15,5,15z M5,7H3C1.9,7,1,6.1,1,5V3c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v2C7,6.1,6.1,7,5,7z"></path>
+        </symbol>
+        <symbol id="svg_icon_close_em_sm" viewBox="0 0 16 16">
+            <path d="M14 2h-2L8 6 4 2H2v2l4 4-4 4v2h2l4-4 4 4h2v-2l-4-4 4-4z"></path>
+        </symbol>
+        <symbol id="svg_icon_wechat" viewBox="0 0 20 20">
+            <path d="M13.4 7.6h.7c-.6-2.7-3.6-4.8-7.1-4.8-3.9 0-7 2.6-7 6 0 1.9 1.1 3.5 2.8 4.7l-.7 2.1 2.5-1.2c.9.2 1.6.4 2.5.4h.7c-.1-.5-.2-1-.2-1.5-.1-3.2 2.5-5.7 5.8-5.7zM9.7 5.7c.5 0 .9.3.9.9 0 .5-.3.9-.9.9-.5 0-1.1-.4-1.1-.9s.5-.9 1.1-.9zm-5 1.8c-.5 0-1.1-.4-1.1-.9s.5-.9 1.1-.9.9.3.9.9c0 .5-.3.9-.9.9z"></path><path  d="M19.8 13.1c0-2.8-2.8-5.1-6-5.1-3.3 0-6 2.3-6 5.1s2.6 5.1 6 5.1c.7 0 1.4-.2 2.1-.4l1.9 1.1-.5-1.8c1.5-1 2.5-2.4 2.5-4zm-7.9-.9c-.3 0-.7-.3-.7-.7 0-.3.4-.7.7-.7.5 0 .9.4.9.7 0 .4-.3.7-.9.7zm3.9 0c-.3 0-.7-.3-.7-.7 0-.3.4-.7.7-.7.5 0 .9.4.9.7 0 .4-.4.7-.9.7z"></path>
+        </symbol>
+        <symbol id="svg_icon_qq" viewBox="0 0 20 20">
+            <path d="M16.3 13.7c-.3.7-.7 1.3-1.2 1.8 1.1.3.8.9.8.9.5.3.5 2-2.3 2-1.8 0-2.6-.5-2.9-.9H10c-.3 0-.6 0-.9-.1-.3.3-1.1.9-2.9.9-2.7 0-2.7-1.7-2.2-2 0 0-.3-.6 1-.9-.5-.6-.9-1.2-1.2-2-1.1 2-1.7.7-1.6-.9.1-1.4 1.3-2.9 1.6-3.3V9c0-.3.1-.6.4-.9v-.2c0-.3.2-.6.4-.8V7c0-3 2.5-5.5 5.6-5.5S15.7 4 15.7 7v.3c.2.2.3.4.3.6v.2c.2.2.4.5.4.8 0 .2 0 .3-.1.5.3.4 1.5 1.9 1.6 3.3-.1 1.5-.6 2.8-1.6 1z"></path>
+        </symbol>
+        <symbol id="svg_icon_collect" viewBox="0 0 20 20">
+            <path d="M19 15h-2v2a1 1 0 0 1-2 0v-2h-2a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2zm-.067-7c0 .049-.021.091-.028.138-.004.021 0 .042-.004.063l-.008-.001a.986.986 0 0 1-.96.8 1 1 0 0 1-1-1c0-.054.022-.101.031-.153l-.019-.003c.184-.882.057-1.979-.881-2.927-.471-.476-1.418-.91-2.252-.91-1.427 0-2.266 1.172-3.131 1.802L9.496 6.894 8.287 5.828c-.594-.561-1.746-1.823-3.144-1.823-.834 0-1.679.316-2.253.897-1.31 1.323-1.105 3.318-.176 4.34l6.751 6.069.016-.015 1.153 1.037-.017.017a.985.985 0 0 1 .254.649 1 1 0 0 1-1 1 .988.988 0 0 1-.647-.252l-.005.004-.037-.033c-.008-.008-.017-.014-.024-.022l-7.65-6.781c-2.013-2.054-2.013-5.349-.03-7.373A5.074 5.074 0 0 1 5.131 2c1.383 0 2.681.548 3.655 1.543l.706.722.707-.722A5.072 5.072 0 0 1 13.853 2c1.383 0 2.681.548 3.654 1.543 1.17 1.195 1.624 2.831 1.413 4.389.001.024.013.044.013.068zm-9.441 9.994l-.033-.029h.065l-.032.029z"></path>
+        </symbol>
+        <symbol id="svg_icon_mark_new" viewBox="0 0 23 14">
+            <path d="M21 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h19a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" fill="#fa5058"/><path d="M7 8H6v2h1v1h1V3H7v5zM4 4V3H3v8h1V6h1V4H4zm1 2v2h1V6H5zm4 5h5v-1h-4V7h4V6h-4V4h4V3H9v8zm6-8v7h1V3h-1zm3 8h1v-1h-1v1zm1-8v7h1V3h-1zm-2 1v6h1V4h-1zm-1 7h1v-1h-1v1z" fill="#fff"/>
+        </symbol>
+        <symbol id="svg_icon_play" viewBox="0 0 20 20">
+            <path d="M13.494 10.384v.014l-4.639 2.921a.495.495 0 0 1-.842-.284l-.014-.005V7.093l.006-.003c0-.01-.006-.019-.006-.028a.5.5 0 0 1 .5-.5.49.49 0 0 1 .296.107l.02-.01 4.697 2.957v.011a.493.493 0 0 1 .174.373.49.49 0 0 1-.192.384zm4.417 3.868a.988.988 0 0 1-.949.748 1 1 0 0 1-1-1c0-.204.076-.382.18-.54l-.068-.042c.572-1.016.926-2.17.926-3.418a7 7 0 1 0-7 7c1.284 0 2.472-.371 3.507-.975l.022.039A.97.97 0 0 1 14 15.93a1 1 0 0 1 1 1c0 .37-.21.679-.508.853l.003.006c-.015.009-.032.015-.047.023-.032.016-.061.034-.095.047A8.924 8.924 0 0 1 10 19c-4.971 0-9-4.029-9-9s4.029-9 9-9a9 9 0 0 1 9 9 8.925 8.925 0 0 1-1.089 4.252z"></path>
+        </symbol>
+        <symbol id="svg_icon_bubble" viewBox="0 0 20 20">
+            <path d="M7 10h3a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2zm0-3h6a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2zm9.801 7.858a.982.982 0 0 1-.801.432 1 1 0 0 1-1-1c0-.282.119-.535.307-.717l-.017-.019A5.614 5.614 0 0 0 17 9.5C17 6.462 14.676 4 11.809 4H8.191C5.324 4 3 6.462 3 9.5 3 12.537 5.324 15 8.191 15h3.618c.065 0 .126-.018.191-.02v.013c.299-.018.604.077.833.305l1.835 1.835a1.084 1.084 0 1 1-1.534 1.534L11.466 17H8.242C4.242 17 1 13.642 1 9.5S4.242 2 8.242 2h3.517C15.758 2 19 5.357 19 9.5a7.587 7.587 0 0 1-2.199 5.358z"></path>
+        </symbol>
+        <symbol id="svg_icon_share" viewBox="0 0 20 20">
+            <path d="M19 8c0 .552-.448 1-1 1s-1-.448-1-1v-3.466l-6.133 6.133c-.424.424-1.11.424-1.534 0-.423-.423-.424-1.11 0-1.534l6.133-6.133h-3.466c-.552 0-1-.448-1-1s.448-1 1-1h5.75c.206-.034.419-.011.614.073.258.102.462.305.563.563.049.114.066.234.072.354l.001.01-.002.008.002.159v5.833zm-9-7l.065.003h-.13l.065-.003zm-2.693 2.526l.005.012c-2.531 1.054-4.312 3.548-4.312 6.462 0 3.866 3.134 7 7 7 2.938 0 5.444-1.815 6.482-4.381.148-.366.505-.625.924-.625.552 0 1 .448 1 1 0 .145-.034.281-.089.405l.012.005c-1.342 3.281-4.563 5.596-8.329 5.596-4.97 0-9-4.029-9-9 0-3.759 2.306-6.976 5.579-8.323.122-.053.255-.084.397-.084.552 0 1 .448 1 1 0 .435-.281.795-.669.933z"></path>
+        </symbol>
+        <symbol id="svg_icon_date" viewBox="0 0 20 20">
+            <path d="M17 19h-14c-1.104 0-2-.895-2-2v-12c0-1.104.896-2 2-2h2c0-.552.448-1 1-1s1 .447 1 1h6c0-.552.448-1 1-1s1 .447 1 1h2c1.104 0 2 .896 2 2v12c0 1.104-.896 2-2 2zm0-14h-1v-2h-1v2c0 .552-.448 1-1 1s-1-.448-1-1v-2h-1v2h-4v-2h-1v2c0 .552-.448 1-1 1s-1-.448-1-1v-2h-1v2h-1v12h14v-12zm-11 4c.552 0 1 .448 1 1s-.448 1-1 1c-.553 0-1-.448-1-1s.447-1 1-1zm0 4c.552 0 1 .447 1 1 0 .552-.448 1-1 1-.553 0-1-.448-1-1 0-.553.447-1 1-1zm4-4c.552 0 1 .448 1 1s-.448 1-1 1c-.553 0-1-.448-1-1s.447-1 1-1zm0 4c.552 0 1 .447 1 1 0 .552-.448 1-1 1-.553 0-1-.448-1-1 0-.553.447-1 1-1zm4-4c.552 0 1 .448 1 1s-.448 1-1 1c-.553 0-1-.448-1-1s.447-1 1-1zm0 4c.552 0 1 .447 1 1 0 .552-.448 1-1 1-.553 0-1-.448-1-1 0-.553.447-1 1-1z"></path>
+        </symbol>
+        <symbol id="svg_icon_vcoin" viewBox="0 0 20 20">
+            <path d="M3 10c0-3.866 3.134-7 7-7s7 3.134 7 7-3.134 7-7 7-7-3.134-7-7zm-2 0c0 4.971 4.029 9 9 9s9-4.029 9-9-4.029-9-9-9-9 4.029-9 9zm12.609-1.562s.453-.938-.453-1.328c-.922-.313-1.156.515-1.156.515l-2 3.813-2-3.813s-.203-.844-1.156-.516c-.906.391-.453 1.329-.453 1.329l2.609 4.671s.281.734 1 .734l1-.734 2.609-4.671z"></path>
+        </symbol>
+        <symbol id="svg_icon_home_sm" viewBox="0 0 16 16">
+            <path d="M15.718 8.695a.991.991 0 0 1-1.403 0L8 2.375 4 6.378V12h8v-1a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8.38l-.315.315a.991.991 0 0 1-1.403 0 .995.995 0 0 1 0-1.405L7.298.268a.992.992 0 0 1 1.404 0l7.016 7.022a.995.995 0 0 1 0 1.405z"></path>
+        </symbol>
+        <!-- 搜索框 start-->
+        <symbol id="svg_icon_search_hot" viewBox="0 0 20 20">
+            <path d="M16 6h-1c-.553 0-1 .447-1 1v12h3v-12c0-.553-.447-1-1-1zm-6-5h-1c-.552 0-1 .447-1 1v17h3v-17c0-.553-.448-1-1-1zm-6 9h-1c-.552 0-1 .447-1 1v8h3v-8c0-.553-.448-1-1-1z"></path>
+        </symbol>
+        <symbol id="svg_icon_trash_sm" viewBox="0 0 16 16">
+            <path d="M14 6H2a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2zM9 3H7a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zm-4 8V8a1 1 0 0 1 2 0v3a1 1 0 0 1-2 0zm4 0V8a1 1 0 0 1 2 0v3a1 1 0 0 1-2 0zM2 8a1 1 0 0 1 2 0V12.999h8V8a1 1 0 0 1 2 0V12.999a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6-.004V8z"></path>
+        </symbol>
+        <symbol id="svg_icon_down_sm" viewBox="0 0 16 16">
+            <path d="M12.71 7.716L8.716 11.71a1.003 1.003 0 0 1-.716.295c-.259 0-.519-.097-.716-.295L3.289 7.716a1.01 1.01 0 0 1 1.427-1.427L8 9.573l3.284-3.284a1.01 1.01 0 1 1 1.426 1.427z"></path>
+        </symbol>
+        <symbol id="svg_icon_up_sm" viewBox="0 0 16 16">
+            <path d="M12.71 9.71a1.01 1.01 0 0 1-1.427 0L8 6.427 4.716 9.71a1.01 1.01 0 0 1-1.427-1.427l3.995-3.995c.197-.197.457-.295.716-.294.259-.001.518.097.716.295l3.994 3.995a1.008 1.008 0 0 1 0 1.426z"></path>
+        </symbol>
+        <symbol id="svg_icon_right_sm" width="16" height="16" viewBox="0 0 16 16">
+            <path d="M11.71 8.716L7.716 12.71a1.01 1.01 0 0 1-1.427-1.427L9.573 8 6.289 4.716a1.01 1.01 0 0 1 1.427-1.427l3.994 3.994c.198.198.296.458.295.717.001.259-.097.518-.295.716z"></path>
+        </symbol>
+        <symbol id="svg_icon_search_hot_sm" viewBox="0 0 16 16">
+            <path d="M14 7h-1c-.553 0-1 .447-1 1v7h3v-7c0-.553-.447-1-1-1zm-5-6h-1c-.552 0-1 .447-1 1v13h3v-13c0-.553-.447-1-1-1zm-5 4h-1c-.552 0-1 .447-1 1v9h3v-9c0-.553-.448-1-1-1z"></path>
+        </symbol>
+        <!-- 搜索框 end-->
+    </svg>
+    <div class="head_inner">
+        <h1 class="site_logo"><a href="https://v.qq.com/" class="link_logo"><strong class="link_inner">腾讯视频</strong></a></h1>
+
+        <div class="site_channel">
+            
+                <a href="https://v.qq.com/channel/tv" class="channel_nav channel_nav_0" _stat="new_vs_header:pop_电视剧" data-key="电视剧" target="_blank">电视剧
+                    
+                        <i class="triangle_up"><i class="triangle_inner"></i></i>
+                    
+                </a>
+            
+                <a href="https://v.qq.com/channel/variety" class="channel_nav channel_nav_1" _stat="new_vs_header:pop_综艺" data-key="综艺" target="_blank">综艺
+                    
+                        <i class="triangle_up"><i class="triangle_inner"></i></i>
+                    
+                </a>
+            
+                <a href="https://v.qq.com/channel/movie" class="channel_nav channel_nav_2" _stat="new_vs_header:pop_电影" data-key="电影" target="_blank">电影
+                    
+                        <i class="triangle_up"><i class="triangle_inner"></i></i>
+                    
+                </a>
+            
+                <a href="http://film.qq.com/" class="channel_nav channel_nav_3" _stat="new_vs_header:pop_VIP影院" data-key="VIP影院" target="_blank">VIP影院
+                    
+                        <i class="triangle_up"><i class="triangle_inner"></i></i>
+                    
+                </a>
+            
+                <a href="https://v.qq.com/channel/cartoon" class="channel_nav channel_nav_4" _stat="new_vs_header:pop_动漫" data-key="动漫" target="_blank">动漫
+                    
+                        <i class="triangle_up"><i class="triangle_inner"></i></i>
+                    
+                </a>
+            
+            <a href="javascript:void(0);" class="channel_more _header_channel_more" title="点击展开更多频道" _stat="new_vs_header:channel_more">
+                <i class="icon_sm icon_menu_sm"><svg class="svg_icon" viewBox="0 0 16 16" width="16" height="16"><use class="svg_use_before" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_menu_sm"></use><use class="svg_use_after" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_close_em_sm"></use></svg><svg class="svg_icon svg_icon_menu_animation" viewBox="0 0 16 16" width="16" height="16"><clipPath id="icon_menu_mask"> <path fill="#FF6428" d="M13,15h-2c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v2C15,14.1,14.1,15,13,15z M13,7h-2 C9.9,7,9,6.1,9,5V3c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v2C15,6.1,14.1,7,13,7z M5,15H3c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h2 c1.1,0,2,0.9,2,2v2C7,14.1,6.1,15,5,15z M5,7H3C1.9,7,1,6.1,1,5V3c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v2C7,6.1,6.1,7,5,7z"></path> </clipPath> <path class="icon_menu_body" fill="#fff" d="M13,15h-2c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v2C15,14.1,14.1,15,13,15z M13,11h-2v2h2V11z M13,7h-2C9.9,7,9,6.1,9,5V3c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v2C15,6.1,14.1,7,13,7z M5,15H3c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2 h2c1.1,0,2,0.9,2,2v2C7,14.1,6.1,15,5,15z M5,7H3C1.9,7,1,6.1,1,5V3c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v2C7,6.1,6.1,7,5,7z"></path> <g class="icon_menu_animation" clip-path="url(#icon_menu_mask)"> <circle class="_ma1" cx="8" cy="8" r="10" fill="#F9D009"></circle> <circle class="_ma2" cx="8" cy="8" r="10" fill="#FF6428"></circle> <circle class="_ma3" cx="8" cy="8" r="10" fill="#F93850"></circle> <circle class="_ma4" cx="8" cy="8" r="10" fill="#F9D009"></circle> <circle class="_ma5" cx="8" cy="8" r="10" fill="#FF6428"></circle> <circle class="_ma6" cx="8" cy="8" r="10" fill="#F93850"></circle> <circle class="_ma7" cx="8" cy="8" r="20" fill="#ffffff"></circle> </g></svg></i>
+            </a>
+            <div class="nav_sub_wrap">
+                
+                    
+                        <div class="nav_sub_area" data-navtitle="电视剧">
+                            <div class="nav_sub_inner">
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc00200iq4oevy.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">锦绣南歌</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc002004g4ghbt.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">不说谎恋人</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc00200kb47lro.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">局中人</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc002005vjz76n.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">燕云台</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/jcd28a9gu8hww4g.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">咖啡遇上香草</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc00200kj8jhvs.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">蜗牛与黄鹂鸟</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc00200j9nfmie.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">在那白雪皑皑的季节</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc002001h5rbfx.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">时间倒数遇见你</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc00200k0uad8t.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">玫瑰奇缘</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc002009vrbkl4.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">痕迹</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc00200064yp7j.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">凤归四时歌</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc002004bo7xdg.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">少年游之一寸相思</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc00200802q01o.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">你是我的命中注定</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc00200m1ytn5i.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">月上重火</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/mzc00200q3ctjw0.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">传闻中的陈芊芊</a>
+                                
+                                
+                                    <a href="https://v.qq.com/x/list/tv" _stat="new_vs_header:全部电视剧" target="_blank" class="btn_nav_normal"><span class="icon_text">全部电视剧</span><i class="icon_sm icon_right_sm"><svg class="svg_icon" viewBox="0 0 16 16" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_right_sm"></use></svg></i></a>
+                                
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="nav_sub_area" data-navtitle="综艺">
+                            <div class="nav_sub_inner">
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/CHUANG2020/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">创造营2020</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/gagman/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">认真的嘎嘎们</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/zhire/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">炙热的我们</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/benpaoba4/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">奔跑吧4</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/rshhk/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">让生活好看</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/bingxiang6/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">拜托了冰箱6</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/qchyj2/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">青春环游记2</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/jxtz6/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">极限挑战6</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/hczz2/index.html?" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">横冲直撞20岁</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/wangpai5/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">王牌对王牌5</a>
+                                
+                                    <a href="https://v.qq.com/detail/8/86289.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">欢乐喜剧人6</a>
+                                
+                                    <a href="https://v.qq.com/detail/8/86432.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">歌手·当打之年</a>
+                                
+                                    <a href="https://v.qq.com/detail/8/86294.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">天赐的声音</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/tcdhd4j/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">吐槽大会4</a>
+                                
+                                    <a href="https://v.qq.com/detail/8/86565.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">笑场</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/action/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">演员请就位</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/gaobai4/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">现在就告白4</a>
+                                
+                                    <a href="https://v.qq.com/detail/8/86552.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">理娱1+1</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/Beauty/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">Beauty小姐2</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/offer/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">令人心动的offer</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/wjsyyzdfdj/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">我就是演员2</a>
+                                
+                                    <a href="https://v.qq.com/detail/8/85195.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">亲爱的客栈3</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/lipstick/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">口红王子2</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/chaoxinxing/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">超新星全运会</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/qyrs2/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">奇遇人生2</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/dalanqiu/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">我要打篮球</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/canting3/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">中餐厅3</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/tkxdh2/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">脱口秀大会2</a>
+                                
+                                    <a href="https://v.qq.com/variety/p/topic/haoshengyin/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">2019中国好声音</a>
+                                
+                                
+                                    <a href="https://v.qq.com/x/list/variety" _stat="new_vs_header:全部综艺" target="_blank" class="btn_nav_normal"><span class="icon_text">全部综艺</span><i class="icon_sm icon_right_sm"><svg class="svg_icon" viewBox="0 0 16 16" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_right_sm"></use></svg></i></a>
+                                
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="nav_sub_area" data-navtitle="电影">
+                            <div class="nav_sub_inner">
+                                
+                                    <a href="https://v.qq.com/x/cover/brp5ky71pvdp2r9.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">七剑下天山之封神骨</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/owyequak2ck3bra.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">“大”人物</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/m871wzl4wsan735.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">地球最后的夜晚</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/3bwbuaw7zs547tk.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">断片之险途夺宝</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/frs5qyzh8aeo7mj.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">来电狂响</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/1dc6xsgwwa0t98c.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">印度暴徒</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/n8op2hejkl4hf87.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">天气预爆</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/7lum0qeoazv8qys.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">印度合伙人</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/2j5kilwvtepehti.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">狗十三</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/tpa0c309erq2p7t.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">无名之辈</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/cbs8caltnjlb6t8.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">你好，之华</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/hdavca20ujfapqy.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">胖子行动队</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/u5swzrxeapydgrp.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">碟中谍6：全面瓦解</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/wagzbx91asjomnu.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">无问西东</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/sxbxm9xaakyynzp.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">蚁人2</a>
+                                
+                                
+                                    <a href="https://v.qq.com/x/list/movie" _stat="new_vs_header:全部电影" target="_blank" class="btn_nav_normal"><span class="icon_text">全部电影</span><i class="icon_sm icon_right_sm"><svg class="svg_icon" viewBox="0 0 16 16" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_right_sm"></use></svg></i></a>
+                                
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="nav_sub_area" data-navtitle="VIP影院">
+                            <div class="nav_sub_inner">
+                                
+                                    <a href="https://v.qq.com/x/cover/rpup19lfbuf2skc.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">将夜</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/0hrejqzlvdyr03k.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">双世宠妃2</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/og0eputlxwet1cn.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">我不是药神</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/b9zi5maye7limaw.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">你和我的倾城时光</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/1wbx6hb4d3icse8.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">如懿传</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/r0yrr58zxbj3v5j.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">凉生，我们可不可以不忧伤</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/z6j3ixjjcokafyc.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">西虹市首富</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/0s8n49g3g1rv1oz.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">星辰变 第1季</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/lcpwn26degwm7t3.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">斗破苍穹</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/dzn1zjs53yvpvij.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">盛唐幻夜</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/79m0lxrtiovlg73.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">沙海</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/m441e3rjq9kwpsc.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">斗罗大陆</a>
+                                
+                                    <a href="http://film.qq.com/theater.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">院线同步</a>
+                                
+                                    <a href="http://film.qq.com/feature.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">特色影厅</a>
+                                
+                                    <a href="http://film.qq.com/paylist/0/pay_-1_-1_-1_-1_0_0_0_30.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">最新上架</a>
+                                
+                                
+                                    <a href="http://film.qq.com/" _stat="new_vs_header:全部VIP影院" target="_blank" class="btn_nav_normal"><span class="icon_text">全部VIP影院</span><i class="icon_sm icon_right_sm"><svg class="svg_icon" viewBox="0 0 16 16" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_right_sm"></use></svg></i></a>
+                                
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="nav_sub_area" data-navtitle="动漫">
+                            <div class="nav_sub_inner">
+                                
+                                    <a href="https://v.qq.com/cartoon/p/topic/guoman2019/index.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">国漫剧场</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/m441e3rjq9kwpsc.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">斗罗大陆</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/jg1skog3zvrv9ur.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">武动乾坤</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/50rljwzmo3ur1xk.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">雄兵连</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/sifd2an7kx2h9h8.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">雪鹰领主</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/0s8n49g3g1rv1oz.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">星辰变</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/8vdu7i5hr7anq5q.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">全职法师</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/j18xzp93h4c1ofn.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">武庚纪</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/8j37ljw0f8hy6ha.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">斗破苍穹</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/hlo45ourdy4rh3t.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">全职高手</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/0gsf9fytppje54d.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">西行纪</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/0913mhn6zhnk66b.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">盛世妆娘</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/0sdnyl7h86atoyt.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">狐妖小红娘</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/t3r079jy8xze9cv.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">帝王攻略</a>
+                                
+                                    <a href="https://v.qq.com/x/cover/wk85h1a859a8350.html" class="nav_link" target="_blank" _stat="new_vs_header:pop_item">非人哉</a>
+                                
+                                
+                                    <a href="http://v.qq.com/x/list/cartoon" _stat="new_vs_header:全部动漫" target="_blank" class="btn_nav_normal"><span class="icon_text">全部动漫</span><i class="icon_sm icon_right_sm"><svg class="svg_icon" viewBox="0 0 16 16" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_right_sm"></use></svg></i></a>
+                                
+                            </div>
+                        </div>
+                    
+                
+            </div>
+        </div>
+        <div class="site_channel_protal">
+            <span class="channel_title"><script>document.write(window.channelName || '');</script></span>
+            <div class="channel_other">
+                <a href="https://v.qq.com/" class="channel_home"><i class="icon_sm icon_home_sm"><svg class="svg_icon" viewBox="0 0 16 16" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_home_sm"></use></svg></i><span class="icon_text">首页</span></a>
+                <a href="javascript:void(0);" class="channel_more _header_channel_more" title="展开更多频道"><i class="icon_sm icon_menu_sm"><svg class="svg_icon" viewBox="0 0 16 16" width="16" height="16"><use class="svg_use_before" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_menu_sm"></use><use class="svg_use_after" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_close_em_sm"></use></svg></i><span class="icon_text">频道</span><i class="triangle_up"></i></a>
+            </div>
+        </div>
+
+        <div class="mod_search">
+            <form id="searchForm" action="//v.qq.com/x/search/" method="get" target="_blank" class="search_form cf">
+                <!-- 顶部搜索框 开始 -->
+                <div class="search_inner">
+                    <label class="search_label" for="keywords">搜索关键词</label>
+                    <div class="search_keywords">
+                        <input type="text" name="q" id="keywords" class="search_input" placeholder="" autocomplete="off">
+                    </div>
+                    <input type="hidden" name="stag">
+                    <input type="hidden" name="smartbox_ab">
+                    <button class="search_btn" type="submit" _stat="new_vs_header:search"><i class="icon icon_search"><svg class="svg_icon svg_icon_search" viewBox="0 0 20 20" width="20" height="20"><use xlink:href="#svg_icon_search"></use></svg></i><span class="btn_inner">全网搜</span></button>
+                    <!-- <a class="btn_search_hot" href="https://v.qq.com/x/hotlist/search/?channel=555&source=common_nav_vs" target="_blank" _stat="new_vs_header:search_hotlist" title="全网热搜榜"><i class="icon icon_search_hot"><svg class="svg_icon" viewBox="0 0 20 20" width="20" height="20"><use xlink:href="#svg_icon_search_hot"></use></svg></i></a> -->
+                    <a class="btn_search_hot" href="https://v.qq.com/x/hotlist/search/?channel=555&source=common_nav_vs" target="_blank" _stat="new_vs_header:search_hotlist"><i class="icon_sm icon_search_hot_sm"><svg class="svg_icon" viewBox="0 0 16 16" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_search_hot_sm"></use></svg></i><i class="icon_search_hot_animation"></i><span class="btn_inner">热搜榜</span></a>
+                </div>
+                <!-- 顶部搜索框 结束 -->
+            </form>
+            <div class="mod_smartbox none" id="smartbox"></div>
+
+        </div>
+        <!-- 快捷入口 开始 -->
+<div class="mod_quick cf">
+    <div class="quick_item quick_vip">
+        <a href="https://film.qq.com/" class="quick_link" target="_blank" _stat="顶部导航区:VIP" title="VIP频道">
+            
+            <i class="icon icon_vip_golden"><img src="//puui.qpic.cn/vupload/0/20190506_1557124625829_rf1s35fyzhs.png/0" alt="" class="icon_vip_pic"></i>
+            
+            <span class="quick_text">VIP</span>
+        </a>
+    </div>
+
+    <!-- 历史浮层 -->
+    <div class="quick_item quick_history" id="modHistory">
+        <a href="https://v.qq.com/biu/u/history/" class="quick_link" target="_blank" _stat="顶部导航区:观看历史">
+        
+        <i class="icon icon_time"><svg class="svg_icon svg_icon_time" viewBox="0 0 20 20" width="20" height="20"><use xlink:href="#svg_icon_time"></use></svg></i>
+        
+        <span class="quick_text">看过</span></a>
+        <!-- 历史播放浮层 开始 -->
+        <link rel="stylesheet" href="//vm.gtimg.cn/tencentvideo/vstyle/web/v6/style/css/head_quick.css" />
+        <div class="mod_quick_pop mod_pop_history" id="history_pop">
+            <div class="quick_pop_tabs" id="quickPopTabs">
+                <button class="pop_tab current" id="btnQuickHistory" data-type="History">看过</button>
+                <button class="pop_tab" id="btnQuickFavs" data-type="Favs">收藏</button>
+                <button class="pop_tab" id="btnQuickSubs" data-type="Subs">订阅</button>
+            </div>
+            <div class="mod_quick_videolist mod_quick_videolist_history" id="modQuickHistory" _wind="columnname=顶部导航区&controlname=看过浮层"></div>
+            <div class="mod_quick_videolist mod_quick_videolist_favs none" id="modQuickFavs" _wind="columnname=顶部导航区&controlname=收藏浮层"></div>
+            <div class="mod_quick_videolist mod_quick_videolist_subs none" id="modQuickSubs" _wind="columnname=顶部导航区&controlname=订阅浮层"></div>
+            <a class="quick_pop_footer quick_pop_footer_disabled" href="#" id="quickHistoryFooterLink"></a>
+        </div>
+        <!-- 历史播放浮层 结束 -->
+    </div>
+
+    <!-- 上传 -->
+    <div class="quick_item quick_upload __lite_hide__">
+        <a href="https://v.qq.com/u/upload.html" target="_blank" class="quick_link" _stat="顶部导航区:上传" title="上传">
+        
+        <i class="icon icon_upload"><svg class="svg_icon svg_icon_upload" viewBox="0 0 20 20" width="20" height="20"><use xlink:href="#svg_icon_upload"></use></svg></i>
+        
+      <span class="quick_text">上传</span></a>
+    </div>
+
+    <!-- pc客户端 -->
+    <div class="quick_item quick_client __lite_hide__" id="pc_client">
+        <a href="https://node.video.qq.com/x/api/download_pc" _hot="顶部导航区:客户端" class="quick_link" _stat="顶部导航区:客户端">
+        
+        <i class="icon icon_client"><svg class="svg_icon svg_icon_client" viewBox="0 0 20 20" width="20" height="20"><use xlink:href="#svg_icon_client"></use></svg></i>
+        
+            <span class="quick_text">下载客户端</span>
+            <i class="triangle_up"><i class="triangle_inner"></i></i>
+            <!-- <span class="mark_events" style="display: none;">抢福利</span> -->
+        </a>
+
+        <div class="mod_quick_pop mod_pop_client">
+            <div class="pop_info_content pop_client_wrap _win">
+                <div class="pop_privilege_line">
+                    <i class="icon icon_hd"><svg class="svg_icon svg_icon_hd" viewBox="0 0 20 20" width="20" height="20"><path d="M13.617 7.979h-1.44v5.042h1.431c.738 0 1.216-.171 1.594-.576.433-.459.657-1.152.657-1.999 0-.855-.207-1.494-.621-1.927-.37-.386-.837-.54-1.621-.54zM17.5 4.5h-15a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h15a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2zm-7.869 9.583H8.29c.054-.352.072-.631.072-1.162v-2.034H4.743v2.034c0 .522.018.793.072 1.162H3.473c.054-.343.072-.631.072-1.162V8.079c0-.531-.018-.811-.072-1.161h1.341a7.501 7.501 0 0 0-.071 1.152v1.737h3.619V8.079c0-.514-.018-.838-.072-1.161h1.341a7 7 0 0 0-.072 1.152v4.851c0 .523.018.783.072 1.162zm6.417-.783c-.576.54-1.297.783-2.359.783h-1.638c-.55 0-.774.009-1.144.026.054-.369.072-.647.072-1.188V8.06a7.67 7.67 0 0 0-.072-1.17c.36.018.576.027 1.144.027h1.629c1.125 0 1.854.233 2.431.792.657.621.999 1.558.999 2.728 0 1.224-.36 2.196-1.062 2.863z"></path></svg></i>
+                    <span class="icon_text">1080P蓝光画质</span>
+                </div>
+                <div class="pop_privilege_line">
+                    <i class="icon_sm icon_lightning_sm"><svg class="svg_icon svg_icon_lightning" viewBox="0 0 16 16" width="16" height="16"><path d="M13.799 6.94a.422.422 0 0 0-.103-.076.406.406 0 0 0-.256-.094H9.419L10.77.678a.441.441 0 0 0 .002-.181.429.429 0 0 0-.121-.287.4.4 0 0 0-.582.003L2.198 8.459a.436.436 0 0 0-.119.333.452.452 0 0 0 .112.326.395.395 0 0 0 .299.135h4.152l-1.384 6a.443.443 0 0 0-.011.102.437.437 0 0 0 .102.436.405.405 0 0 0 .582-.003l7.871-8.245a.434.434 0 0 0-.003-.603z"></path></svg></i>
+                    <span class="icon_text">三倍流畅播放</span>
+                </div>
+                <div class="pop_privilege_line">
+                    <i class="icon_sm icon_4k_sm"><svg class="svg_icon svg_icon_4k" width="19" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M17 0a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h15zM7.75 2.56H6.637L3.004 6.97V8.06h3.591v1.5H7.75v-1.5h1.104v-.912H7.75V2.56zm3.768 0h-1.217v7h1.217V7.148l.906-.833 2.935 3.245h1.645l-3.758-4 3.269-3h-1.54l-3.457 3.304V2.56zM6.595 4.01v3.138H3.993l2.57-3.137h.032z" fill="#FF5C38" fill-rule="evenodd"/></svg></i>
+                    <span class="icon_text">4K超清体验</span>
+                </div>
+                <div class="pop_privilege_btns">
+                    <a href="javascript:;" class="btn_em">立即体验</a>
+                </div>
+            </div>
+            <div class="pop_info_content pop_client_wrap _mac">
+                <div class="pop_privilege_line hl">
+                    <i class="icon icon_hd"><svg class="svg_icon svg_icon_hd" viewBox="0 0 20 20" width="20" height="20"><path d="M13.617 7.979h-1.44v5.042h1.431c.738 0 1.216-.171 1.594-.576.433-.459.657-1.152.657-1.999 0-.855-.207-1.494-.621-1.927-.37-.386-.837-.54-1.621-.54z"></path><path d="M17.5 4.5h-15a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h15a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2zm-7.869 9.583H8.29c.054-.352.072-.631.072-1.162v-2.034H4.743v2.034c0 .522.018.793.072 1.162H3.473c.054-.343.072-.631.072-1.162V8.079c0-.531-.018-.811-.072-1.161h1.341a7.501 7.501 0 0 0-.071 1.152v1.737h3.619V8.079c0-.514-.018-.838-.072-1.161h1.341a7 7 0 0 0-.072 1.152v4.851c0 .523.018.783.072 1.162zm6.417-.783c-.576.54-1.297.783-2.359.783h-1.638c-.55 0-.774.009-1.144.026.054-.369.072-.647.072-1.188V8.06a7.67 7.67 0 0 0-.072-1.17c.36.018.576.027 1.144.027h1.629c1.125 0 1.854.233 2.431.792.657.621.999 1.558.999 2.728 0 1.224-.36 2.196-1.062 2.863z"></path></svg></i>
+                    <span class="icon_text">1080P蓝光画质</span>
+                </div>
+                <div class="pop_privilege_line">
+                    <i class="icon_sm icon_lightning_sm"><svg class="svg_icon svg_icon_lightning" viewBox="0 0 16 16" width="16" height="16"><path d="M13.799 6.94a.422.422 0 0 0-.103-.076.406.406 0 0 0-.256-.094H9.419L10.77.678a.441.441 0 0 0 .002-.181.429.429 0 0 0-.121-.287.4.4 0 0 0-.582.003L2.198 8.459a.436.436 0 0 0-.119.333.452.452 0 0 0 .112.326.395.395 0 0 0 .299.135h4.152l-1.384 6a.443.443 0 0 0-.011.102.437.437 0 0 0 .102.436.405.405 0 0 0 .582-.003l7.871-8.245a.434.434 0 0 0-.003-.603z"></path></svg></i>
+                    <span class="icon_text">三倍流畅播放</span>
+                </div>
+                <div class="pop_privilege_line">
+                    <i class="icon_sm icon_4k_sm"><svg class="svg_icon svg_icon_4k" width="19" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M17 0a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h15zM7.75 2.56H6.637L3.004 6.97V8.06h3.591v1.5H7.75v-1.5h1.104v-.912H7.75V2.56zm3.768 0h-1.217v7h1.217V7.148l.906-.833 2.935 3.245h1.645l-3.758-4 3.269-3h-1.54l-3.457 3.304V2.56zM6.595 4.01v3.138H3.993l2.57-3.137h.032z" fill="#FF5C38" fill-rule="evenodd"/></svg></i>
+                    <span class="icon_text">4K超清体验</span>
+                </div>
+                <div class="pop_privilege_btns">
+                    <a href="javascript:;" class="btn_em">立即体验</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mod_quick_tips none mod_client_bubble">
+            <i class="quick_tips_triangle"></i>
+            <div class="quick_tips_inner">
+                <div class="quick_tips_content">
+                    <a class="tips_txt tips_txt_vip none tips_txt_0" href="//node.video.qq.com/x/api/download_pc" _hot="nav.download.bubble1" _stat="顶部导航区:pc_client_bubble1">
+                        <i class="icon_lg icon_vip_flat_lg"><svg class="svg_icon svg_icon_vip_flat" viewBox="0 0 26 26" width="26" height="26" style="	vertical-align: top; position: relative; top: 6px; margin-right: 5px;color: #ff5c38;width:26px;height:26px;"><g transform="translate(2 1)" fill="none" fill-rule="evenodd"><path d="M18.2.1l-6.8 12h-.1L4.5 0h-4C.3.1 0 .5.3.8l10.7 19c.2.4.7.4.9 0L22.6.8c.1-.3 0-.7-.5-.7h-3.9z" transform="translate(0 3.4)" fill="currentColor" stroke="#FFF" stroke-opacity=".8" stroke-width=".2"></path><path d="M0 0l5.9 10.4L11.8 0z" transform="translate(5.5 3.4)" fill="currentColor" opacity=".3"></path><path d="M1.7 6.2L6 4.3l4.2 1.9 1.6-2.8v-.6-1.3-1c0-.2-.2-.4-.5-.4H11L6 2.4h-.2L.8.1H.6C.3.1 0 .3 0 .6v2.8l1.6 2.8z" transform="translate(5.5)" fill="currentColor" stroke="#FFF" stroke-opacity=".8" stroke-width=".2"></path></g></svg></i>
+                        <span class="txt">PC客户端连续签到</span>
+                        <span class="txt_bold">7天抢福利</span>
+                        <span class="btn_close" _stat="顶部导航区:pc_client_close_bubble1">
+                             <i class="icon_sm icon_close_em_sm">
+                            <svg class="svg_icon svg_icon_close" viewBox="0 0 16 16" width="16" height="16"><use xlink:href="#svg_icon_close_em_sm"></use></svg>
+                            </i>
+                        </span>
+                    </a>
+                    <a class="tips_txt none tips_txt_1 tips_txt_mac_0" href="//node.video.qq.com/x/api/download_pc" _hot="nav.download.bubble2" _stat="顶部导航区:pc_client_bubble2">
+                        <i class="icon_lg icon_hd_lg"><svg class="svg_icon svg_icon_lg svg_icon_hdv" viewBox="0 0 36 36" width="36" height="36"><path d="M30.921 21.237c-.358 1.042-.869 1.885-1.533 2.529-.501.488-1.179.869-2.031 1.143-.638.202-1.491.303-2.559.303h-5.439v-14.317h5.283c1.191 0 2.1.091 2.725.273.84.248 1.559.687 2.158 1.318.599.632 1.055 1.405 1.367 2.319.313.915.469 2.043.469 3.384 0 1.18-.147 2.195-.44 3.048zm-2.841-5.723c-.195-.592-.469-1.055-.82-1.387s-.798-.557-1.338-.674c-.404-.091-1.195-.137-2.373-.137h-1.299v9.482h2.158c.807 0 1.39-.045 1.748-.137.469-.117.857-.315 1.167-.596.309-.28.562-.74.757-1.382.195-.641.293-1.515.293-2.622 0-1.104-.098-1.954-.293-2.547zm-14.147 3.438h-5.664v6.26h-2.891v-14.317h2.891v5.635h5.664v-5.635h2.891v14.316h-2.891v-6.259z"></path></svg></i>
+                        <span class="txt">PC客户端</span>
+                        <span class="txt_bold">免费蓝光播放</span>
+                        <span class="btn_close" _stat="顶部导航区:pc_client_close_bubble2">
+                            <i class="icon_sm icon_close_em_sm">
+                            <svg class="svg_icon svg_icon_close" viewBox="0 0 16 16" width="16" height="16"><use xlink:href="#svg_icon_close_em_sm"></use></svg>
+                            </i>
+                        </span>
+                    </a>
+                    <a class="tips_txt none tips_txt_2 tips_txt_mac_1" href="//node.video.qq.com/x/api/download_pc" _hot="nav.download.bubble3" _stat="顶部导航区:pc_client_bubble3">
+                        <i class="icon_lg icon_lightning_lg"><svg class="svg_icon svg_icon_lg svg_icon_lightning" viewBox="0 0 36 36" width="36" height="36"><path d="M22.118 5l-14.118 14.696h8.235l-2.353 11.304 14.118-14.696h-8.235l2.353-11.304z"></path></svg></i>
+                        <span class="txt">PC客户端</span>
+                        <span class="txt_bold">3倍流畅播放</span>
+                        <span class="btn_close" _stat="顶部导航区:pc_client_close_bubble3">
+                             <i class="icon_sm icon_close_em_sm">
+                            <svg class="svg_icon svg_icon_close" viewBox="0 0 16 16" width="16" height="16"><use xlink:href="#svg_icon_close_em_sm"></use></svg>
+                            </i>
+                        </span>
+                    </a>
+                    <a class="tips_txt none tips_txt_3" href="//node.video.qq.com/x/api/download_pc"  _hot="nav.download.bubble4" _stat="顶部导航区:pc_client_bubble4">
+                        <i class="icon_lg icon_chanting_lg"><svg class="svg_icon svg_icon_lg svg_icon_chanting" viewBox="0 0 36 36" width="36" height="36"><path d="M27.123 23.974c-.08.718-.639 1.284-1.344 1.284-.76 0-1.375-.647-1.375-1.445 0-.347.132-.653.326-.902l-.169-.119c1.055-1.456 1.688-3.267 1.688-5.238 0-4.787-3.693-8.667-8.25-8.667s-8.25 3.88-8.25 8.667c0 4.786 3.694 8.667 8.25 8.667.413 0 .815-.042 1.211-.104l.013.125.15-.032c.759 0 1.375.647 1.375 1.444 0 .798-.616 1.444-1.375 1.444-.123 0-.232-.042-.345-.073-.34.039-.678.085-1.028.085-6.075 0-11-5.173-11-11.555s4.925-11.556 11-11.556 11 5.173 11 11.556c-.001 2.381-.701 4.581-1.877 6.419zm-8.829-3.581l-.27-.053-.123-.06c-.129-.06-.247-.134-.353-.234l-.091-.103-.167-.19-2.746-4.974c-.371-.645-.151-1.468.492-1.84.643-.372 1.465-.151 1.836.493l2.276 4.123h2.883c.81 0 1.466.647 1.466 1.445 0 .797-.657 1.444-1.466 1.444h-3.483l-.254-.051z"></path></svg></i>
+                        <span class="txt">PC客户端</span>
+                        <span class="txt_bold">提前一小时追剧</span>
+                        <span class="btn_close" _stat="顶部导航区:pc_client_close_bubble4">
+                             <i class="icon_sm icon_close_em_sm">
+                            <svg class="svg_icon svg_icon_close" viewBox="0 0 16 16" width="16" height="16"><use xlink:href="#svg_icon_close_em_sm"></use></svg>
+                            </i>
+                        </span>
+                    </a>
+                    <a class="tips_txt none tips_txt_4" href="//node.video.qq.com/x/api/download_pc"  _hot="nav.download.bubble5" _stat="顶部导航区:pc_client_bubble5">
+                        <i class="icon_lg icon_download_lg"><svg class="svg_icon svg_icon_lg svg_icon_download" viewBox="0 0 36 36" width="36" height="36"><path d="M29.634 24.091l.027.012c-2.056 4.086-6.276 6.896-11.162 6.896-4.923 0-9.169-2.853-11.207-6.989l.022-.011c-.091-.192-.149-.4-.149-.625 0-.822.674-1.488 1.506-1.488.562 0 1.033.318 1.292.769l.012-.006c1.541 3.159 4.773 5.341 8.525 5.341 3.61 0 6.742-2.021 8.346-4.988.218-.555.757-.952 1.396-.952.832 0 1.506.667 1.506 1.488 0 .195-.043.381-.114.553zm-9.805-2.904c-.232.473-.726.813-1.329.813-.205 0-.393-.049-.569-.118l-.098-.043c-.136-.064-.258-.144-.365-.241l-.065-.043-.016-.023c-.099-.104-.183-.219-.245-.346l-3.75-3.732c-.569-.566-.569-1.484 0-2.051.569-.566 1.491-.566 2.06 0l1.559 1.551v-8.6c0-.753.666-1.364 1.488-1.364s1.488.611 1.488 1.364v8.579l1.528-1.521c.568-.565 1.489-.565 2.057 0s.568 1.482 0 2.047l-3.743 3.728z"></path></svg></i>
+                        <span class="txt">PC客户端</span>
+                        <span class="txt_bold">自动更新下载剧集</span>
+                        <span class="btn_close" _stat="顶部导航区:pc_client_close_bubble5">
+                             <i class="icon_sm icon_close_em_sm">
+                            <svg class="svg_icon svg_icon_close" viewBox="0 0 16 16" width="16" height="16"><use xlink:href="#svg_icon_close_em_sm"></use></svg>
+                            </i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick_item quick_user" id="mod_head_user">
+        <a href="https://v.qq.com/biu/u/history/" class="quick_link _checklogin" id="mod_head_notice_trigger" target="_blank"  _stat="顶部导航区:头像">
+            <img class="quick_user_avatar" src="//puui.qpic.cn/vupload/0/common_avatar.png/0" data-type="avatar" data-avatarsize="40">
+			    <span class="account_type" data-type="account_type_logo">
+                    <i class="icon icon_qq __account_type_qq none"><svg class="svg_icon svg_icon_qq" viewBox="0 0 20 20" width="8" height="8"><path d="M16.3 13.7c-.3.7-.7 1.3-1.2 1.8 1.1.3.8.9.8.9.5.3.5 2-2.3 2-1.8 0-2.6-.5-2.9-.9H10c-.3 0-.6 0-.9-.1-.3.3-1.1.9-2.9.9-2.7 0-2.7-1.7-2.2-2 0 0-.3-.6 1-.9-.5-.6-.9-1.2-1.2-2-1.1 2-1.7.7-1.6-.9.1-1.4 1.3-2.9 1.6-3.3V9c0-.3.1-.6.4-.9v-.2c0-.3.2-.6.4-.8V7c0-3 2.5-5.5 5.6-5.5S15.7 4 15.7 7v.3c.2.2.3.4.3.6v.2c.2.2.4.5.4.8 0 .2 0 .3-.1.5.3.4 1.5 1.9 1.6 3.3-.1 1.5-.6 2.8-1.6 1z"></path></svg></i>
+                    <i class="icon icon_wechat __account_type_wx none"><svg class="svg_icon svg_icon_wechat" viewBox="0 0 20 20" width="8" height="8"><path d="M13.4 7.6h.7c-.6-2.7-3.6-4.8-7.1-4.8-3.9 0-7 2.6-7 6 0 1.9 1.1 3.5 2.8 4.7l-.7 2.1 2.5-1.2c.9.2 1.6.4 2.5.4h.7c-.1-.5-.2-1-.2-1.5-.1-3.2 2.5-5.7 5.8-5.7zM9.7 5.7c.5 0 .9.3.9.9 0 .5-.3.9-.9.9-.5 0-1.1-.4-1.1-.9s.5-.9 1.1-.9zm-5 1.8c-.5 0-1.1-.4-1.1-.9s.5-.9 1.1-.9.9.3.9.9c0 .5-.3.9-.9.9zM19.8 13.1c0-2.8-2.8-5.1-6-5.1-3.3 0-6 2.3-6 5.1s2.6 5.1 6 5.1c.7 0 1.4-.2 2.1-.4l1.9 1.1-.5-1.8c1.5-1 2.5-2.4 2.5-4zm-7.9-.9c-.3 0-.7-.3-.7-.7 0-.3.4-.7.7-.7.5 0 .9.4.9.7 0 .4-.3.7-.9.7zm3.9 0c-.3 0-.7-.3-.7-.7 0-.3.4-.7.7-.7.5 0 .9.4.9.7 0 .4-.4.7-.9.7z"></path></svg></i>
+                </span>
+                <img src="//puui.qpic.cn/vupload/0/common_blank.png/0" alt="" class="icon_vip_pic none" data-type="viplogo" width="15" />
+            <i class="triangle_up"><i class="triangle_inner"></i></i>
+        </a>
+
+        <!-- 用户信息浮层 开始 -->
+        <div class="mod_quick_pop mod_pop_user" id="mod_head_notice_pop" _stat="顶部导航区:头像浮层">
+            <div class="pop_info_content quick_pop_user">
+                <div class="quick_pop_user_hd">
+                    <span class="account_type __accout_type_name"></span>
+                    <a href="https://v.qq.com/biu/u/history/" _stat="顶部导航区:头像浮层:昵称" class="user_name _nickname"></a>
+                    <a href="https://film.qq.com/vip/my/" class="link_vip_icon" _stat="顶部导航区:头像浮层:vipicon">
+                        <img src="//puui.qpic.cn/vupload/0/common_blank.png/0" alt="" class="icon_vip_pic none" data-type="viplogo" width="24" />
+                    </a>
+                    <a href="javascript:;" class="link_change" data-type="switchlogin" _stat="顶部导航区:头像浮层:切换账号" title="切换账号">切换</a>
+                    <a href="javascript:;" class="link_quit" data-type="logout" _stat="顶部导航区:头像浮层:退出"  title="退出">退出</a>
+                    <div class="quick_vip_meta" id="quick_user_vip" data-version='3'></div>
+                </div>
+                <div class="quick_pop_user_bd">
+                    <div class="quick_features cf">
+                        
+                        <a class="feature_item" href="//v.qq.com/u/comment/" target="_blank" _hot="顶部导航区:头像浮层:user_message" _stat="顶部导航区:头像浮层:user_message">
+                            <img class="icon_feature" src="https://vfiles.gtimg.cn/vupload/20200619/2d581a1592554803839.png" srcset="https://vfiles.gtimg.cn/vupload/20200619/03b8481592559225259.png">
+                            <span class="icon_text">评论消息</span>
+                        </a>
+                        
+                        <a class="feature_item" href="//v.qq.com/u/history/" target="_blank" _hot="顶部导航区:头像浮层:user_history" _stat="顶部导航区:头像浮层:user_history">
+                            <img class="icon_feature" src="https://vfiles.gtimg.cn/vupload/20200619/92045c1592554803837.png" srcset="https://vfiles.gtimg.cn/vupload/20200619/36d2ce1592559225258.png">
+                            <span class="icon_text">云同步观看记录</span>
+                        </a>
+                        
+                        <a class="feature_item" href="//v.qq.com/u/wallet/vbshop.html#tab=lottery" target="_blank" _hot="顶部导航区:头像浮层:user_lottery" _stat="顶部导航区:头像浮层:user_lottery">
+                            <img class="icon_feature" src="https://vfiles.gtimg.cn/vupload/20200619/7ac4091592554803838.png" srcset="https://vfiles.gtimg.cn/vupload/20200619/42c30e1592559225258.png">
+                            <span class="icon_text">免费抽奖</span>
+                        </a>
+                        
+                        <a class="feature_item" href="//node.video.qq.com/x/api/download_pc" target="_blank" _hot="顶部导航区:头像浮层:download" _stat="顶部导航区:头像浮层:download">
+                            <img class="icon_feature" src="https://vfiles.gtimg.cn/vupload/20200619/59554b1592554803837.png" srcset="https://vfiles.gtimg.cn/vupload/20200619/3ac3ad1592559225258.png">
+                            <span class="icon_text">用客户端看抢VIP</span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--未登录会员账号 开始-->
+        <div class="mod_quick_pop mod_pop_user none" id="mod_notlogin_pop">
+            <div class="pop_info_content quick_pop_user">
+                <div class="quick_pop_user_hd">
+                    <span class="account_type">登录之后可以</span>
+                    <div class="quick_vip_meta">
+                        <span class="vip_now">开通VIP/超级影视VIP 看大片</span>
+                        <span class="vip_next">
+                            <a href="javascript:;" class="btn_vip_em __open_vip_notLogin" _stat="顶部导航区:头像浮层:开通vip" >开通</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="quick_pop_user_bd">
+                    <div class="quick_features cf">
+                        
+                        <a class="feature_item" href="//v.qq.com/u/comment/" target="_blank" _hot="顶部导航区:头像浮层:user_message" _stat="顶部导航区:头像浮层:user_message">
+                            <img class="icon_feature" src="https://vfiles.gtimg.cn/vupload/20200619/2d581a1592554803839.png" srcset="https://vfiles.gtimg.cn/vupload/20200619/03b8481592559225259.png">
+                            <span class="icon_text">评论消息</span>
+                        </a>
+                        
+                        <a class="feature_item" href="//v.qq.com/u/history/" target="_blank" _hot="顶部导航区:头像浮层:user_history" _stat="顶部导航区:头像浮层:user_history">
+                            <img class="icon_feature" src="https://vfiles.gtimg.cn/vupload/20200619/92045c1592554803837.png" srcset="https://vfiles.gtimg.cn/vupload/20200619/36d2ce1592559225258.png">
+                            <span class="icon_text">云同步观看记录</span>
+                        </a>
+                        
+                        <a class="feature_item" href="//v.qq.com/u/wallet/vbshop.html#tab=lottery" target="_blank" _hot="顶部导航区:头像浮层:user_lottery" _stat="顶部导航区:头像浮层:user_lottery">
+                            <img class="icon_feature" src="https://vfiles.gtimg.cn/vupload/20200619/7ac4091592554803838.png" srcset="https://vfiles.gtimg.cn/vupload/20200619/42c30e1592559225258.png">
+                            <span class="icon_text">免费抽奖</span>
+                        </a>
+                        
+                        <a class="feature_item" href="//node.video.qq.com/x/api/download_pc" target="_blank" _hot="顶部导航区:头像浮层:download" _stat="顶部导航区:头像浮层:download">
+                            <img class="icon_feature" src="https://vfiles.gtimg.cn/vupload/20200619/59554b1592554803837.png" srcset="https://vfiles.gtimg.cn/vupload/20200619/3ac3ad1592559225258.png">
+                            <span class="icon_text">用客户端看抢VIP</span>
+                        </a>
+                        
+                    </div>
+                    <div class="quick_pop_btn">
+                        <a href="javascript:;" _stat="顶部导航区:头像浮层:立即登录" class="btn_pop_link" data-type="login" data-boss="5">立即登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--未登录会员账号 结束-->
+        
+        <style>
+        .mod_quick .quick_user .quick_link .icon_vip_pic{
+            position: absolute;
+            bottom: 0;
+            left: 42px;
+            width: 15px;
+            height: 10px;
+            border-radius: 0;
+            background: none;
+        }
+        </style>
+        
+        <!-- 用户信息浮层 结束 -->
+    </div>
+</div>
+<!-- 快捷入口 结束 -->
+
+    </div>
+
+    <div class="site_head_nav none">
+        <div class="head_nav_inner">
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142458_27878/0"></span><a href="https://v.qq.com/channel/tv" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_电视剧">电视剧</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10436312_27878/0"></span><a href="https://v.qq.com/channel/variety" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_综艺">综艺</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142488_27878/0"></span><a href="https://v.qq.com/channel/movie" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_电影">电影</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142497_27878/0"></span><a href="http://film.qq.com/" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_VIP影院">VIP影院</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142503_27878/0"></span><a href="https://v.qq.com/channel/cartoon" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_动漫">动漫</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142511_27878/0"></span><a href="https://v.qq.com/channel/child" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_少儿">少儿</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142521_27878/0"></span><a href="https://v.qq.com/channel/ent" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_娱乐">娱乐</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142522_27878/0"></span><a href="https://v.qq.com/channel/music" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_音乐">音乐</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142523_27878/0"></span><a href="https://v.qq.com/livemusic/" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_演唱会">演唱会</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142524_27878/0"></span><a href="https://v.qq.com/channel/usuk" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_海外剧">海外剧</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142527_27878/0"></span><a href="https://v.qq.com/channel/doco" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_纪录片">纪录片</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142617_27878/0"></span><a href="https://v.qq.com/channel/dv" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_网络电影">网络电影</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142616_27878/0"></span><a href="https://v.qq.com/channel/news" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_新闻">新闻</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142615_27878/0"></span><a href="https://v.qq.com/channel/sports" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_体育">体育</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142614_27878/0"></span><a href="http://sports.qq.com/nbavideo/" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_NBA">NBA</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142613_27878/0"></span><a href="https://v.qq.com/channel/fun" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_搞笑">搞笑</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142612_27878/0"></span><a href="http://v.qq.com/games/" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_游戏">游戏</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142611_27878/0"></span><a href="http://v.qq.com/videoplus/" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_原创">原创</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142606_27878/0"></span><a href="https://v.qq.com/channel/fashion" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_时尚">时尚</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142600_27878/0"></span><a href="https://v.qq.com/channel/life" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_生活">生活</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142598_27878/0"></span><a href="https://v.qq.com/channel/auto" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_汽车">汽车</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142592_27878/0"></span><a href="https://v.qq.com/channel/tech" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_科技">科技</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142586_27878/0"></span><a href="https://v.qq.com/channel/finance" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_财经">财经</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142569_27878/0"></span><a href="https://v.qq.com/channel/house" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_房产">房产</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142561_27878/0"></span><a href="http://v.qq.com/x/live/" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_直播">直播</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142548_27878/0"></span><a href="http://yingping.qq.com/?source=1" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_影评">影评</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142540_27878/0"></span><a href="https://v.qq.com/channel/knowledge" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_知识">知识</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142536_27878/0"></span><a href="https://v.qq.com/channel/baby" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_育儿">育儿</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/10142531_27878/0"></span><a href="https://v.qq.com/channel/travel" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_旅游">旅游</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/15548333_27878/0"></span><a href="https://v.qq.com/x/rank/" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_热播榜">热播榜</a></div>
+            
+                <div class="nav_cell"><span class="nav_bg" style="background-image:url('//i.gtimg.cn/qqlive/images/20150608/blank.png')" data-bg="//puui.qpic.cn/tv/0/15548334_27878/0"></span><a href="https://v.qq.com/x/hotlist/search/?channel=555&source=common_nav_vs" target="_blank" class="nav_link" _stat="new_vs_header:channel_more_热搜榜">热搜榜</a></div>
+            
+        </div>
+    </div>
+</div>
+
+
+</div>
+    
+<script type="text/javascript" crossorigin="anonymous" src="//vm.gtimg.cn/tencentvideo_v1/script/txv.core.js?max_age=604800&v=20190402&_corss=1" r-notemplate="true"></script>
+
+    <script r-notemplate="true">
+var RANK_INFO = {"2":{"m9":{"status":0,"rankType":2,"timeType":4,"peri":9,"rankInfo":[{"dwFanTuanId":10409,"dwStarId":1320228,"iStarType":0,"strName":"肖战","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/13202281578387244/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"25644390.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":25644390,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":1,"dwCurRank":1,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"余生，请多指教","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":25644390,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":479210023,"strNick":"程静","strHead":"http://puui.qpic.cn/vshpic/0/yUuJV5NESa2vvoVZu4Sfd5KhPP4pha2jJGXSzurKrPNj7cSh_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":97212,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":489041548,"strNick":"- 陌然ぃ","strHead":"http://puui.qpic.cn/vshpic/0/RVI_Wu2zoMlDVJoesh7_evtvTDCyhfbw_fooLYab9t0EtaO6_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":58699,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":457870141,"strNick":"胡宏杰","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTK7K3BwuHC8E1s0zlmc44xFtpAMKaibicyLWC2r01Pwe0TgicqyRXfMjZnGibvs977aRh7VMXcpmZJJHQ/132","strCity":"舟山","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":42793,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":76927,"dwStarId":1498776,"iStarType":0,"strName":"王一博","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/14987761577324836/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"6788054.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":6788055,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":2,"dwCurRank":2,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"极限青春 第1季","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":25644390,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":1316856810,"strNick":"博此一冉·YIBO","strHead":"http://puui.qpic.cn/vshpic/0/q5o8qrSePnW5Js5TR5apPrctc8oJBJTjh55kCe5Ts_bbGhjF_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":60896,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":2197192980,"strNick":"白泽～伴儿读书","strHead":"http://puui.qpic.cn/vshpic/0/nJWG_5k_rRWazL5Ju_lpH7NiJSw35VFY0eSdsQ5FPBOCyr4A_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":46251,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":703747868,"strNick":"与子成说","strHead":"http://puui.qpic.cn/vshpic/0/eCQY6sovnk_o5_IZebrdDH0oMNHmDjINJ9K_dedYLMbPqSbv_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":23139,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":58261593,"dwStarId":8261593,"iStarType":0,"strName":"硬糖少女303陈卓璇","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/82615931586481510/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"3841137.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3841137,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":3377,"dwCurRank":3,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"创可少女屋","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":6788055,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":454332399,"strNick":"Joey","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eotIkkbOqrQZentyoCjEHlUbCsWb5j2fH3ZMew2ibKFWkc4tDbVicXicq6S2ia7mVicib8HWpQOwaHFibLIg/132","strCity":"杭州","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":34496,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":564162201,"strNick":"vhlx","strHead":"http://puui.qpic.cn/vshpic/0/gDbKVdXn2KnEfvsbpI_eCOVXgyJaZ8KAKSbmdH_85_6nNdZS_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":32326,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":156294291,"strNick":"随缘而遇","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=HTU9VIfcmQ78ywuPic9AibQw&s=140&t=1576487023","strCity":"玉林","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":29532,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":76871,"dwStarId":1571283,"iStarType":0,"strName":"R1SE周震南","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/15712831591956291/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"3757003.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3757003,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":3,"dwCurRank":4,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"明日之子 第4季","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3841137,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":95003076,"strNick":"南囡云淡风轻","strHead":"http://puui.qpic.cn/vshpic/0/AeNFPL5JX-F_yrQj1LVNrecIR_2IG9UlP_GtkekK8uDN-cyM_0/0","strCity":"无锡","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":221751,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":15515194,"strNick":"樱悸_","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=3M06QKOqKYq9Lxml80kNxg&s=140&t=1581040523","strCity":"盐城","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":68578,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":435025359,"strNick":"～猪猪南～","strHead":"http://puui.qpic.cn/vshpic/0/FM_uqZPlUhBJzb3CYHVj1y71MtBkubALJ1IZnt62BxRfWEHK_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":57473,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":51585086,"dwStarId":1585086,"iStarType":0,"strName":"硬糖少女303希林娜依·高","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/15850861586483984/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"3218341.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3218341,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":3740,"dwCurRank":5,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"创可少女屋","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3757003,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":136682623,"strNick":"Vampire","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=BD7YSKmcPBLcj4a7S0Pomw&s=140&t=1483399598","strCity":"台州","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":63904,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":173330134,"strNick":"我爱韵宝","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=Tic53dApzfmGPJMW2bLvpCg&s=140&t=1555304628","strCity":"芜湖","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11334,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":412807420,"strNick":"Elsa","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/RvYgsX5l2zZ3icOtaPxX5zqKeWFLV3MDKM4Uib3p9b1qmiaRapV8LNJcO0ULcg7uTtwqdUia2iaSiamBu6QkDibzDGcrQ/132","strCity":"","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":10942,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":16303,"dwStarId":585720,"iStarType":0,"strName":"硬糖少女303赵粤","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/5857201586481220/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"2636295.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2636295,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":1209,"dwCurRank":6,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"创可少女屋","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3218341,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":931215532,"strNick":"梦想家","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=xsicYic4Yh17sJtImicwng1XA&s=140&t=1556532368","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":20778,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":494781086,"strNick":"令景玥","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLevUE3gfUicnuZACQLkx3uraRkbVv0wbeibE0KXyuSpUCl7mcGpIeMppeL5ZGmkeL612t9YS8Rgfbg/132","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11451,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":446373154,"strNick":"十冇八九","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=oYcD2tNcJLrFlnnmOey9gA&s=140&t=1573891699","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11303,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":58284576,"dwStarId":8284576,"iStarType":0,"strName":"硬糖少女303郑乃馨","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/82845761586484208/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"2360315.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2360315,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":2743,"dwCurRank":7,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"创可少女屋","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2636295,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":418331203,"strNick":"谁解相思寂浓愁","strHead":"http://puui.qpic.cn/vshpic/0/wPBzp06xmV1Z8ObQNd4qFhZTI3NjBRk0E9QIM5Tun6R7p_Kk_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":21099,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":122190077,"strNick":"流星雨","strHead":"http://puui.qpic.cn/vshpic/0/CMxiyBUZO6Y_j2DCA2hPauVjLJ_MlcfBYZXwUkt6lic4TPt6_0/0","strCity":"商丘","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":15560,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":564536714,"strNick":"钱海｜梅村杨棚","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=OyAOEcNvpKNn7eIRQV42qA&s=140&t=1556399144","strCity":"池州","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11538,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":10239,"dwStarId":132497,"iStarType":0,"strName":"华晨宇","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/1324971577244684/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"2227150.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2227150,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":9,"dwCurRank":8,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"歌手·当打之年 2020","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2360315,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":1249782614,"strNick":"烟火里不起眼的尘埃","strHead":"http://puui.qpic.cn/vshpic/0/DYedizKDQRBTp8ZhYT7LlaSO8CJysEiIVkzxO00KNxVOS8HW_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":185519,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":1345484389,"strNick":"甘","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=AQd0uuWx3xn9f5YN5dlf7Q&s=100&t=0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":106282,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":1355823170,"strNick":"浅夏〆忆汐","strHead":"http://puui.qpic.cn/vshpic/1355823170/v4cbJ_9X-0t9uF7q8uzknjDK4YdUVo9woAoX1m7wvazH48kQ_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":20639,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":32522,"dwStarId":75411,"iStarType":0,"strName":"李现","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/754111577324892/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"1860882.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":1860882,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":11,"dwCurRank":9,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"茉茗我就喜欢你","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2227150,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":2114446320,"strNick":"暮暮","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/MPesa5ofWr0iaL3pTLEyTMdjsvicqVAxXGyC3d8LFicRtXYHL457c103C2qwK5lbGqIGLgnibvmaqdHvQFsk0ibjeCg/132","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":258956,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":192278633,"strNick":"木子🌸","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIibGGYv2ibn5Qvnqibt59NCyMvO46USZAiaIHUvVaP6UgoBvMqzvsPCmASlTibLmicRfOaeSuFpB7iaiaib1Q/132","strCity":"合肥","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":167768,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":2249616342,"strNick":"乖乖","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/2AFLibwFfPklufUqyia9jO5ibbEU0bibD1xFI3S7mQCn5KhPIxIkLSJib1GibicicysQS27yNndMVb2TjGQDHblFLzn7CQ/132","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":116370,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":58284669,"dwStarId":8284669,"iStarType":0,"strName":"硬糖少女303王艺瑾","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/82846691586484264/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"1656027.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":1656027,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":4782,"dwCurRank":10,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"创可少女屋","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":1860882,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":2300485094,"strNick":".","strHead":"http://puui.qpic.cn/vshpic/0/Ku0_PZsYziJ1nBZivFLLst8lMAtoYShIzOT64pZZI2wyRGIY_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":17886,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":116973100,"strNick":"瑾艺卫","strHead":"http://puui.qpic.cn/vshpic/0/KgqQcdouMX_5pj_3mDiBgxyUJ_DxzgGkBWj56QHNW9LFP5sV_0/0","strCity":"固原","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11998,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":1053640668,"strNick":"沐阳","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=4X0AduK70xzGEgkXrGPMuQ&s=140&t=1589723538","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11886,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]}],"banner":{"people":"http://puui.qpic.cn/media_img/0/13202281578387531/0","bg":"http://i.gtimg.cn/qqlive/images/20170830/h5_bg_hot.png","name":"http://i.gtimg.cn/qqlive/images/20170911/h5_text_hot.png"},"hasNext":true,"rankTime":1594376687,"time":"month","rank_detail":{"status":0,"rankType":2,"timeType":4,"peri":9,"rankInfo":[{"dwFanTuanId":10409,"dwStarId":1320228,"iStarType":0,"strName":"肖战","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/13202281578387244/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"25644390.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":25644390,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":1,"dwCurRank":1,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"余生，请多指教","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":25644390,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":479210023,"strNick":"程静","strHead":"http://puui.qpic.cn/vshpic/0/yUuJV5NESa2vvoVZu4Sfd5KhPP4pha2jJGXSzurKrPNj7cSh_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":97212,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":489041548,"strNick":"- 陌然ぃ","strHead":"http://puui.qpic.cn/vshpic/0/RVI_Wu2zoMlDVJoesh7_evtvTDCyhfbw_fooLYab9t0EtaO6_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":58699,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":457870141,"strNick":"胡宏杰","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTK7K3BwuHC8E1s0zlmc44xFtpAMKaibicyLWC2r01Pwe0TgicqyRXfMjZnGibvs977aRh7VMXcpmZJJHQ/132","strCity":"舟山","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":42793,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":76927,"dwStarId":1498776,"iStarType":0,"strName":"王一博","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/14987761577324836/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"6788054.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":6788055,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":2,"dwCurRank":2,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"极限青春 第1季","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":25644390,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":1316856810,"strNick":"博此一冉·YIBO","strHead":"http://puui.qpic.cn/vshpic/0/q5o8qrSePnW5Js5TR5apPrctc8oJBJTjh55kCe5Ts_bbGhjF_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":60896,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":2197192980,"strNick":"白泽～伴儿读书","strHead":"http://puui.qpic.cn/vshpic/0/nJWG_5k_rRWazL5Ju_lpH7NiJSw35VFY0eSdsQ5FPBOCyr4A_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":46251,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":703747868,"strNick":"与子成说","strHead":"http://puui.qpic.cn/vshpic/0/eCQY6sovnk_o5_IZebrdDH0oMNHmDjINJ9K_dedYLMbPqSbv_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":23139,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":58261593,"dwStarId":8261593,"iStarType":0,"strName":"硬糖少女303陈卓璇","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/82615931586481510/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"3841137.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3841137,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":3377,"dwCurRank":3,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"创可少女屋","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":6788055,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":454332399,"strNick":"Joey","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eotIkkbOqrQZentyoCjEHlUbCsWb5j2fH3ZMew2ibKFWkc4tDbVicXicq6S2ia7mVicib8HWpQOwaHFibLIg/132","strCity":"杭州","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":34496,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":564162201,"strNick":"vhlx","strHead":"http://puui.qpic.cn/vshpic/0/gDbKVdXn2KnEfvsbpI_eCOVXgyJaZ8KAKSbmdH_85_6nNdZS_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":32326,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":156294291,"strNick":"随缘而遇","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=HTU9VIfcmQ78ywuPic9AibQw&s=140&t=1576487023","strCity":"玉林","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":29532,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":76871,"dwStarId":1571283,"iStarType":0,"strName":"R1SE周震南","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/15712831591956291/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"3757003.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3757003,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":3,"dwCurRank":4,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"明日之子 第4季","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3841137,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":95003076,"strNick":"南囡云淡风轻","strHead":"http://puui.qpic.cn/vshpic/0/AeNFPL5JX-F_yrQj1LVNrecIR_2IG9UlP_GtkekK8uDN-cyM_0/0","strCity":"无锡","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":221751,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":15515194,"strNick":"樱悸_","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=3M06QKOqKYq9Lxml80kNxg&s=140&t=1581040523","strCity":"盐城","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":68578,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":435025359,"strNick":"～猪猪南～","strHead":"http://puui.qpic.cn/vshpic/0/FM_uqZPlUhBJzb3CYHVj1y71MtBkubALJ1IZnt62BxRfWEHK_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":57473,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":51585086,"dwStarId":1585086,"iStarType":0,"strName":"硬糖少女303希林娜依·高","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/15850861586483984/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"3218341.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3218341,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":3740,"dwCurRank":5,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"创可少女屋","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3757003,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":136682623,"strNick":"Vampire","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=BD7YSKmcPBLcj4a7S0Pomw&s=140&t=1483399598","strCity":"台州","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":63904,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":173330134,"strNick":"我爱韵宝","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=Tic53dApzfmGPJMW2bLvpCg&s=140&t=1555304628","strCity":"芜湖","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11334,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":412807420,"strNick":"Elsa","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/RvYgsX5l2zZ3icOtaPxX5zqKeWFLV3MDKM4Uib3p9b1qmiaRapV8LNJcO0ULcg7uTtwqdUia2iaSiamBu6QkDibzDGcrQ/132","strCity":"","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":10942,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":16303,"dwStarId":585720,"iStarType":0,"strName":"硬糖少女303赵粤","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/5857201586481220/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"2636295.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2636295,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":1209,"dwCurRank":6,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"创可少女屋","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":3218341,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":931215532,"strNick":"梦想家","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=xsicYic4Yh17sJtImicwng1XA&s=140&t=1556532368","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":20778,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":494781086,"strNick":"令景玥","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLevUE3gfUicnuZACQLkx3uraRkbVv0wbeibE0KXyuSpUCl7mcGpIeMppeL5ZGmkeL612t9YS8Rgfbg/132","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11451,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":446373154,"strNick":"十冇八九","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=oYcD2tNcJLrFlnnmOey9gA&s=140&t=1573891699","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11303,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":58284576,"dwStarId":8284576,"iStarType":0,"strName":"硬糖少女303郑乃馨","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/82845761586484208/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"2360315.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2360315,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":2743,"dwCurRank":7,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"创可少女屋","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2636295,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":418331203,"strNick":"谁解相思寂浓愁","strHead":"http://puui.qpic.cn/vshpic/0/wPBzp06xmV1Z8ObQNd4qFhZTI3NjBRk0E9QIM5Tun6R7p_Kk_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":21099,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":122190077,"strNick":"流星雨","strHead":"http://puui.qpic.cn/vshpic/0/CMxiyBUZO6Y_j2DCA2hPauVjLJ_MlcfBYZXwUkt6lic4TPt6_0/0","strCity":"商丘","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":15560,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":564536714,"strNick":"钱海｜梅村杨棚","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=OyAOEcNvpKNn7eIRQV42qA&s=140&t=1556399144","strCity":"池州","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11538,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":10239,"dwStarId":132497,"iStarType":0,"strName":"华晨宇","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/1324971577244684/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"2227150.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2227150,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":9,"dwCurRank":8,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"歌手·当打之年 2020","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2360315,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":1249782614,"strNick":"烟火里不起眼的尘埃","strHead":"http://puui.qpic.cn/vshpic/0/DYedizKDQRBTp8ZhYT7LlaSO8CJysEiIVkzxO00KNxVOS8HW_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":185519,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":1345484389,"strNick":"甘","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=AQd0uuWx3xn9f5YN5dlf7Q&s=100&t=0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":106282,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":1355823170,"strNick":"浅夏〆忆汐","strHead":"http://puui.qpic.cn/vshpic/1355823170/v4cbJ_9X-0t9uF7q8uzknjDK4YdUVo9woAoX1m7wvazH48kQ_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":20639,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":32522,"dwStarId":75411,"iStarType":0,"strName":"李现","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/754111577324892/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"1860882.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":1860882,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":11,"dwCurRank":9,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"茉茗我就喜欢你","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":2227150,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":2114446320,"strNick":"暮暮","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/MPesa5ofWr0iaL3pTLEyTMdjsvicqVAxXGyC3d8LFicRtXYHL457c103C2qwK5lbGqIGLgnibvmaqdHvQFsk0ibjeCg/132","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":258956,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":192278633,"strNick":"木子🌸","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIibGGYv2ibn5Qvnqibt59NCyMvO46USZAiaIHUvVaP6UgoBvMqzvsPCmASlTibLmicRfOaeSuFpB7iaiaib1Q/132","strCity":"合肥","strCountry":"中国","strSex":"2","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":167768,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":2249616342,"strNick":"乖乖","strHead":"http://thirdwx.qlogo.cn/mmopen/vi_32/2AFLibwFfPklufUqyia9jO5ibbEU0bibD1xFI3S7mQCn5KhPIxIkLSJib1GibicicysQS27yNndMVb2TjGQDHblFLzn7CQ/132","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":116370,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]},{"dwFanTuanId":58284669,"dwStarId":8284669,"iStarType":0,"strName":"硬糖少女303王艺瑾","strDesc":"","strHeader":"http://puui.qpic.cn/media_img/0/82846691586484264/0","bAttention":0,"stFanTuanScoreInfo":{"dwFanTuanId":0,"strStarTotalScore":"1656027.00","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":1656027,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":4782,"dwCurRank":10,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"strHotShow":"创可少女屋","strDataKey":"","iPosition":0,"iTalentShow":0,"strNoRank":"","stBackGoundScore":{"dwFanTuanId":0,"strStarTotalScore":"","ddwVideoView":0,"ddwSearchCnt":0,"ddwFollowCnt":0,"ddwWeChatIndex":0,"ddwPopularity":1860882,"ddwStarReplyCnt":0,"ddwStarCommentCnt":0,"ddwStarFanPaiCnt":0,"ddwStarOnlineCnt":0,"ddwStarBefallCnt":0,"dwLastRank":0,"dwCurRank":0,"dfVideoScore":0,"dfSearchScore":0,"dfFollowScore":0,"dfWechatScore":0,"ddwStarCommentScore":0,"ddwStarFanPaiScore":0,"ddwStarOnlineScore":0,"ddwStarBefallScore":0,"dwLastInfluenceWeekRank":0,"dwCurInfluenceWeekRank":0},"vecUserInfo":[{"stPersonData":{"lUserid":2300485094,"strNick":".","strHead":"http://puui.qpic.cn/vshpic/0/Ku0_PZsYziJ1nBZivFLLst8lMAtoYShIzOT64pZZI2wyRGIY_0/0","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":17886,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":116973100,"strNick":"瑾艺卫","strHead":"http://puui.qpic.cn/vshpic/0/KgqQcdouMX_5pj_3mDiBgxyUJ_DxzgGkBWj56QHNW9LFP5sV_0/0","strCity":"固原","strCountry":"中国","strSex":"1","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11998,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0},{"stPersonData":{"lUserid":1053640668,"strNick":"沐阳","strHead":"http://thirdqq.qlogo.cn/g?b=sdk&k=4X0AduK70xzGEgkXrGPMuQ&s=140&t=1589723538","strCity":"","strCountry":"","strSex":"","cFrom":0,"dwCreateTime":0,"dwStatus":0,"lGiftPoint":0},"lGiftPoint":11886,"strPersonalLink":"","stBadgeLevelInfo":{"iStarId":0,"iLevelId":0,"strBadgeIcon":"","strLevelIcon_h":"","strLevelIcon_v":"","iFansVal":0,"strLevelName":"","strLevelText":"","iSortKey":0,"iRankNameId":0,"strUrl":"","iFantuanId":0,"strLevelIcon_450_336":"","strLevelIcon_225_168":""},"iRank":0}]}],"banner":{"people":"http://puui.qpic.cn/media_img/0/13202281578387531/0","bg":"http://i.gtimg.cn/qqlive/images/20170830/h5_bg_hot.png","name":"http://i.gtimg.cn/qqlive/images/20170911/h5_text_hot.png"},"hasNext":true,"rankTime":1594376687,"time":"month"}},"current":"m9"}}
+var STAR_INFO = {};
+</script>
+    <svg class="svg_sprite" version="1.1" xmlns="http://www.w3.org/2000/svg" r-notemplate="true">
+	<symbol id="svg_icon_left" viewBox="0 0 20 20">
+		<path d="M5.1 10.5l7.8 7.8c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4L7.2 9.8l7.1-7.1c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0L5.1 9.1c-.4.4-.4 1 0 1.4z"></path>
+	</symbol>
+	<symbol id="svg_icon_right" viewBox="0 0 20 20">
+		<path d="M14.2 9.1L6.5 1.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l7.1 7.1-7.1 7.1c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l7.8-7.8c.3-.4.3-1-.1-1.4z"></path>
+	</symbol>
+	<symbol id="svg_icon_photo" viewBox="0 0 20 20">
+		<path d="M13 7.5c0-.829.671-1.5 1.5-1.5.828 0 1.5.671 1.5 1.5s-.672 1.5-1.5 1.5c-.829 0-1.5-.672-1.5-1.5zm4 9.5h-14c-1.104 0-2-.896-2-2v-4c0-.552.448-1 1-1s1 .448 1 1v4h14v-10h-14v.573l5 5 1.284-1.284c.197-.197.457-.295.716-.295.259 0 .519.098.716.295l2.994 2.995c.394.394.394 1.033 0 1.427-.394.394-1.033.394-1.427 0l-2.283-2.284-1.284 1.284c-.197.198-.457.295-.716.294-.259.001-.519-.097-.716-.294l-5.995-5.995c-.205-.205-.298-.475-.289-.744v-.972c0-1.104.896-2 2-2h14c1.104 0 2 .896 2 2v10c0 1.104-.896 2-2 2z"></path>
+	</symbol>
+	<symbol id="svg_icon_play" viewBox="0 0 20 20">
+		<path d="M13.5 10.4l-4.6 2.9c-.2.2-.5.2-.7 0-.1-.1-.2-.2-.2-.3V7.1c0-.3.2-.5.5-.5.1 0 .2 0 .3.1l4.7 3c.1.1.2.2.2.4 0 .1-.1.2-.2.3zm.9 7.5C13 18.6 11.5 19 10 19c-5.1 0-9.1-4.2-9-9.3.1-4.6 4-8.6 8.7-8.7C14.8.9 19 4.9 19 10c0 1.5-.4 2.9-1.1 4.3-.2.5-.6.7-1.1.7-.6 0-.9-.4-.9-1 0-.2 0-.3.1-.6.9-1.6 1.3-3.6.5-5.8-.8-2.3-2.8-4-5.2-4.5-5-1-9.2 3.3-8.2 8.3.5 2.4 2.2 4.4 4.5 5.2 2.2.8 4.2.4 5.8-.6.1-.1.3-.1.5-.1.6 0 1 .4 1 1 0 .4.1.5-.5 1"></path>
+	</symbol>
+	<symbol id="svg_icon_like" viewBox="0 0 20 20">
+		<path d="M16 18.5H3c-1.1 0-2-.9-2-2v-8c-.1-1 .5-1.9 1.5-2H8l1.7-4.4c.2-.4.5-.6.9-.6h.2s3.6-.1 4.1 1.6c.1 1.1.1 2.3-.3 3.3h1.2c1.6-.1 3 1 3.1 2.6v6.5c.1 1.5-1 2.8-2.5 2.9-.1.1-.2.1-.4.1zM7 8.4H3v8.1h4V8.4zm9 .1h-3.6c.3-1.1.5-2.2.7-3.4.2-1.2-2.1-1.6-2.1-1.6L9 8.8v7.6h7c.4.1.9-.1 1-.6V9.4c.1-.5-.3-1-.8-1-.1.1-.1.1-.2.1z"></path>
+	</symbol>
+	<symbol id="svg_icon_liked" viewBox="0 0 20 20">
+		<path d="M16 18.5H3c-1.1 0-2-.9-2-2v-8c-.1-1 .5-1.9 1.5-2H8l1.7-4.4c.2-.4.5-.6.9-.6h.2s3.6-.1 4.1 1.6c.1 1.1.1 2.3-.3 3.3h1.2c1.6-.1 3 1 3.1 2.6v6.5c.1 1.5-1 2.8-2.5 2.9-.1.1-.2.1-.4.1zM7 8.4H3v8.1h4V8.4zm9 .1h-3.6c.3-1.1.5-2.2.7-3.4.2-1.2-2.1-1.6-2.1-1.6L9 8.8v7.6h7c.4.1.9-.1 1-.6V9.4c.1-.5-.3-1-.8-1-.1.1-.1.1-.2.1z"></path>
+		<path d="M3 8.4h4v8.1H3z" opacity="0.3"></path>
+	</symbol>
+	<symbol id="svg_icon_share" viewBox="0 0 20 20">
+		<path d="M17 14.5c-2.6 3.7-7.8 4.6-11.5 2C1.8 13.8.9 8.7 3.5 5c.5-.7 1-1.3 1.7-1.8.2-.2.5-.4.8-.4.6 0 1 .4 1 1 0 .5-.3.9-.7 1.1-2.7 2.2-3.1 6.1-.9 8.8s6.1 3.1 8.8.9c.4-.3.7-.6 1-1 .2-.4.6-.7 1.1-.8.6 0 1 .4 1 1 0 .3-.1.5-.3.7zM18 8c0 .6-.4 1-1 1s-1-.4-1-1V5.5l-6.1 6.1c-.4.4-1.1.4-1.5 0-.4-.4-.4-1.1 0-1.5L14.5 4H12c-.5.1-1-.3-1.1-.9-.1-.5.3-1 .9-1.1h5c.2 0 .4 0 .6.1.3.1.5.3.6.6V8z"></path>
+	</symbol>
+	<symbol id="svg_icon_message" viewBox="0 0 20 20">
+		<path d="M6 9.5a1.5 1.5 0 1 1 2.999-.001A1.5 1.5 0 0 1 6 9.5zm5 0a1.5 1.5 0 1 1 2.999-.001A1.5 1.5 0 0 1 11 9.5zm5.76 5.404a.98.98 0 0 1-.791.417 1 1 0 0 1-1-1 .98.98 0 0 1 .369-.758l-.025-.028A5.618 5.618 0 0 0 17 9.5C17 6.462 14.676 4 11.809 4H8.191C5.324 4 3 6.462 3 9.5S5.324 15 8.191 15h3.618c.065 0 .126-.018.191-.021v.014c.299-.018.604.076.833.305l1.835 1.835a1.084 1.084 0 1 1-1.534 1.534L11.466 17H8.242C4.242 17 1 13.642 1 9.5S4.242 2 8.242 2h3.517C15.758 2 19 5.358 19 9.5a7.59 7.59 0 0 1-2.24 5.404z"></path>
+	</symbol>
+	<symbol id="svg_icon_upto_xs" viewBox="0 0 10 10">
+		<path d="M4.33 9.686c-.424-.423-.424-1.11 0-1.534l2.167-2.167h-5.5c-.552 0-1-.448-1-1s.448-1 1-1h5.469l-2.136-2.137c-.424-.424-.424-1.111 0-1.534.423-.424 1.11-.424 1.534 0l3.835 3.835c.233.234.325.545.301.851.024.305-.067.617-.301.851l-3.835 3.835c-.424.424-1.111.424-1.534 0z"></path>
+	</symbol>
+	<symbol id="svg_icon_close_xs" viewBox="0 0 10 10">
+		<path d="M7 6h1v1h1v1h1v2h-2v-1h-1v-1h-1v-1h-2v1h-1v1h-1v1h-2v-2h1v-1h1v-1h1v-2h-1v-1h-1v-1h-1v-2h2v1h1v1h1v1h2v-1h1v-1h1v-1h2v2h-1v1h-1v1h-1v2z"></path>
+	</symbol>
+	<symbol id="svg_icon_prev_lg" viewBox="0 0 36 36">
+		<path d="M10.3 18.5l11.5 11.7c.6.4 1.4.4 2 0 .3-.6.3-1.4 0-2L13.9 18l9.8-10.2c.3-.6.3-1.4 0-2-.6-.4-1.4-.4-2 0L10.3 17.5c-.2.1-.3.3-.3.5s.1.4.3.5z"></path>
+	</symbol>
+	<symbol id="svg_icon_next_lg" viewBox="0 0 36 36">
+		<path d="M25 18c0-.2-.1-.4-.3-.5L13.2 5.8c-.6-.4-1.4-.4-2 0-.3.6-.3 1.4 0 2L21.1 18l-9.8 10.2c-.3.6-.3 1.4 0 2 .6.4 1.4.4 2 0l11.5-11.7c.1-.1.2-.3.2-.5z"></path>
+	</symbol>
+	<symbol id="svg_icon_like_sm" viewBox="0 0 16 16">
+		<path d="M12.7 14.6H2.5c-.9 0-1.6-.7-1.6-1.6V6.8c0-.8.4-1.5 1.2-1.5h4.3l1.3-3.4c.2-.3.4-.5.7-.5h.2s2.8-.1 3.2 1.3c.1.9.1 1.8-.2 2.6h.9c1.3-.1 2.3.8 2.4 2v5.1c.1 1.2-.8 2.2-1.9 2.3-.3-.1-.2-.1-.3-.1zM5.6 6.7H2.5V13h3.1V6.7zm7.1.1H9.9c.2-.9.4-1.7.5-2.7S8.8 2.9 8.8 2.9L7.2 7.1V13h5.5c.3.1.7-.1.8-.5v-5c.1-.4-.2-.8-.6-.8-.1.1-.1.1-.2.1z"></path>
+	</symbol>
+	<symbol id="svg_icon_liked_sm" viewBox="0 0 16 16">
+		<path d="M12.7 14.6H2.5c-.9 0-1.6-.7-1.6-1.6V6.8c0-.8.4-1.5 1.2-1.5h4.3l1.3-3.4c.2-.3.4-.5.7-.5h.2s2.8-.1 3.2 1.3c.1.9.1 1.8-.2 2.6h.9c1.3-.1 2.3.8 2.4 2v5.1c.1 1.2-.8 2.2-1.9 2.3-.3-.1-.2-.1-.3-.1zM5.6 6.7H2.5V13h3.1V6.7zm7.1.1H9.9c.2-.9.4-1.7.5-2.7S8.8 2.9 8.8 2.9L7.2 7.1V13h5.5c.3.1.7-.1.8-.5v-5c.1-.4-.2-.8-.6-.8-.1.1-.1.1-.2.1z"></path>
+		<path d="M2.5 6.7h3.1V13H2.5V6.7z" opacity=".3"></path>
+	</symbol>
+	<symbol id="svg_icon_message_sm" viewBox="0 0 16 16">
+		<path d="M10 6a1 1 0 1 0 0 2 1 1 0 1 0 0-2zM9 1H7a6 6 0 0 0 0 12l1 2 1.594-1L8 11H7c-2.367 0-4-1.791-4-4s1.633-4 4-4h2c2.367 0 4 1.791 4 4 0 1.51-.762 2.824-2 3.505v2.155A6 6 0 0 0 9 1zM5 7a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"></path>
+	</symbol>
+	<symbol id="svg_icon_play_sm" viewBox="0 0 16 16">
+		<path d="M10.83 8.31v.022l-4.08 2.539-.005.003-.048.03-.012-.005c-.073.051-.15.101-.246.101-.217 0-.376-.165-.413-.369l-.027-.011V5.461l.009-.005c0-.009-.009-.014-.009-.022 0-.24.197-.435.44-.435.096 0 .174.049.247.101l.031-.017 4.129 2.569v.016a.42.42 0 0 1 .153.317.418.418 0 0 1-.169.325zm3.493 2.604a.986.986 0 0 1-.948.742 1 1 0 0 1-1-1 .98.98 0 0 1 .094-.412l-.019-.01C12.79 9.559 13 8.807 13 8a5 5 0 1 0-5 5c.766 0 1.484-.186 2.133-.494l.013.03a.975.975 0 0 1 .417-.097 1 1 0 0 1 1 1 .987.987 0 0 1-.77.954A6.936 6.936 0 0 1 8 14.999a7 7 0 1 1 7-7c0 1.048-.261 2.024-.677 2.915z"></path>
+	</symbol>
+
+	<symbol id="svg_icon_play_l" viewBox="0 0 50 50">
+		<path d="M25,47C12.85,47,3,37.15,3,25S12.85,3,25,3s22,9.85,22,22S37.15,47,25,47z
+    M25,5C13.954,5,5,13.954,5,25s8.954,20,20,20s20-8.954,20-20S36.046,5,25,5z M30.659,25.914l-0.001,0.025l-8.158,5.29
+   c-0.159,0.165-0.379,0.267-0.623,0.267c-0.443,0-0.794-0.343-0.855-0.781l-0.024-0.01V19.957l0.01-0.005
+   c-0.001-0.017-0.01-0.032-0.01-0.05c0-0.5,0.394-0.906,0.88-0.906c0.199,0,0.373,0.08,0.521,0.195l0.036-0.019l8.258,5.351l0,0.021c0.184,0.166,0.307,0.402,0.307,0.675C30.998,25.505,30.861,25.749,30.659,25.914z"></path>
+	</symbol>
+	<symbol id="svg_icon_rise_xs" viewBox="0 0 10 10">
+		<path d="M9.701 5.666c-.423.424-1.11.424-1.534 0l-2.167-2.167v5.5c0 .552-.448 1-1 1s-1-.448-1-1v-5.469l-2.137 2.136c-.424.424-1.111.424-1.534 0-.424-.423-.424-1.11 0-1.534l3.835-3.835c.234-.233.545-.325.851-.301.305-.024.617.067.851.301l3.835 3.835c.424.424.424 1.111 0 1.534z"></path>
+	</symbol>
+	<symbol id="svg_icon_hold_xs" viewBox="0 0 10 10">
+		<path d="M1.5 3.999h7c.829 0 1.5.671 1.5 1.5 0 .828-.671 1.5-1.5 1.5h-7c-.829 0-1.5-.672-1.5-1.5 0-.829.671-1.5 1.5-1.5z"></path>
+	</symbol>
+	<symbol id="svg_icon_decline_xs" viewBox="0 0 10 10">
+		<path d="M9.67 5.865l-3.836 3.835c-.233.234-.545.326-.851.302-.304.023-.616-.068-.85-.302l-3.835-3.835c-.423-.423-.423-1.111 0-1.534.424-.423 1.11-.423 1.534 0l2.168 2.167v-5.5c0-.552.448-1 1-1s1 .448 1 1v5.469l2.136-2.137c.423-.423 1.11-.423 1.534 0 .423.424.423 1.111 0 1.535z"></path>
+	</symbol>
+	<symbol id="svg_icon_right_sm" viewBox="0 0 16 16">
+		<path d="M11.71 8.716L7.716 12.71a1.01 1.01 0 0 1-1.427-1.427L9.573 8 6.289 4.716a1.01 1.01 0 0 1 1.427-1.427l3.994 3.994c.198.198.296.458.295.717.001.259-.097.518-.295.716z"></path>
+	</symbol>
+	<symbol id="svg_icon_up_sm" viewBox="0 0 16 16">
+        <path d="M12.71 9.71a1.01 1.01 0 0 1-1.427 0L8 6.427 4.716 9.71a1.01 1.01 0 0 1-1.427-1.427l3.995-3.995c.197-.197.457-.295.716-.294.259-.001.518.097.716.295l3.994 3.995a1.008 1.008 0 0 1 0 1.426z"></path>
+    </symbol>
+    <symbol id="svg_icon_down_sm" viewBox="0 0 16 16">
+        <path d="M12.71 7.716L8.716 11.71a1.003 1.003 0 0 1-.716.295c-.259 0-.519-.097-.716-.295L3.289 7.716a1.01 1.01 0 0 1 1.427-1.427L8 9.573l3.284-3.284a1.01 1.01 0 1 1 1.426 1.427z"></path>
+    </symbol>
+    <symbol id="svg_icon_rise" viewBox="0 0 20 20">
+    	<path d="M14.714 8.433l-4.04-4.139c-.372-.381-.975-.381-1.347 0l-4.04 4.139c-.372.381-.372.999 0 1.38.372.381.975.381 1.347 0l2.415-2.474v7.686c0 .539.426.976.953.976.525 0 .952-.437.952-.976v-7.686l2.414 2.474c.372.381.975.381 1.347 0s.371-1-.001-1.38z"></path>
+    </symbol>
+    <symbol id="svg_icon_hot" viewBox="0 0 20 20">
+    	<path d="M15.574 6.487c-.285-.663-.572-1.332-.81-1.985l-.479-1.325s-2.153 1.689-2.459 1.955c-.385-.883-.856-2.216-1.206-3.417-4.899 2.915-6.648 6.701-6.648 9.409 0 3.616 2.914 6.56 6.495 6.56s6.494-2.943 6.494-6.56c0-1.4-.674-2.974-1.387-4.637zm-5.107 9.165c-2.472 0-4.483-2.031-4.483-4.528 0-1.468.586-3.891 3.785-6.153.024.16 1.483 3.469 1.483 3.469s1.743-1.659 2.126-1.969l.35.823c.601 1.4 1.222 2.85 1.222 3.83-.001 2.497-2.011 4.528-4.483 4.528z"></path>
+    </symbol>
+    <symbol id="svg_icon_card" viewBox="0 0 20 20">
+    	<path d="M12 3h-8c-.552 0-1 .447-1 1v12c0 .553.448 1 1 1h8c.553 0 1-.447 1-1v-12c0-.553-.447-1-1-1zm-1 12h-6v-10h6v10zm6.433-8.523l-3.433-1.556v2.188l1.59.721-1.59 3.119v4.527l3.917-7.688c.25-.489.033-1.077-.484-1.311z"></path>
+    </symbol>
+    <symbol id="svg_icon_comment" viewBox="0 0 20 20">
+    	<path d="M16.653 7.012c-.857-2.405-3.162-4.012-5.747-4.008h-2.027c-3.359 0-6.083 2.686-6.083 5.998s2.724 5.999 6.083 5.999l1.014 1.999 1.616-.999-1.616-3h-1.014c-2.4 0-4.055-1.79-4.055-3.999s1.655-3.999 4.055-3.999h2.027c2.4 0 4.055 1.79 4.055 3.999 0 1.51-.771 2.823-2.027 3.505v2.154c3.17-1.099 4.835-4.524 3.719-7.649zm-4.733.991c-.56 0-1.014.447-1.014.999s.454 1 1.014 1c.561 0 1.014-.448 1.014-1s-.454-.999-1.014-.999zm-5.069.999c0 .552.454 1 1.014 1s1.014-.448 1.014-1-.454-.999-1.014-.999-1.014.447-1.014.999z"></path>
+    </symbol>
+    <symbol id="svg_icon_follow" viewBox="0 0 20 20">
+    	<path d="M4.227 5.202c-1.641 1.603-1.641 4.202 0 5.805l4.292 4.192c1.094 1.068 2.868 1.068 3.961 0l3.963-3.87-6.273-6.127c-1.641-1.602-4.302-1.602-5.943 0zm7.593 8.062c-.729.713-1.912.713-2.641 0l-3.632-3.547c-.912-.891-.912-2.334 0-3.225s2.39-.891 3.302 0l4.953 4.837-1.982 1.935zm4.953-8.062c-1.528-1.492-3.93-1.577-5.58-.29l1.32 1.29c.907-.587 2.141-.49 2.939.29s.896 1.984.297 2.87l1.32 1.29c1.318-1.612 1.232-3.958-.296-5.45z"></path>
+    </symbol>
+    <symbol id="svg_icon_microphone" viewBox="0 0 20 20">
+    	<path d="M5.72 15.014l-.753-.753 2.429-2.429c-.462-.55-.821-1.179-1.059-1.856l-2.743 2.744-.002.001c-.809.811-.809 2.124.002 2.933l.733.734.001.001c.811.81 2.124.809 2.933-.001l2.743-2.743c-.678-.238-1.307-.598-1.856-1.06l-2.428 2.429zm6.266-12.029c-2.767 0-5.009 2.242-5.009 5.009s2.243 5.009 5.009 5.009 5.01-2.242 5.01-5.009-2.243-5.009-5.01-5.009zm0 8.014c-1.66 0-3.005-1.345-3.005-3.005s1.346-3.006 3.005-3.006c1.66 0 3.006 1.346 3.006 3.006s-1.346 3.005-3.006 3.005z"></path>
+    </symbol>
+    <symbol id="svg_icon_search" viewBox="0 0 20 20">
+    	<path d="M16.704 15.291l-2.812-2.812c.719-1.009 1.105-2.212 1.105-3.475 0-3.312-2.693-6.004-6.004-6.004s-6.004 2.693-6.004 6.005c0 3.311 2.694 6.004 6.005 6.004.271 0 .537-.019.798-.052.548-.071.935-.574.865-1.121-.071-.549-.586-.93-1.121-.865-.177.023-.358.036-.542.036-2.208 0-4.003-1.795-4.003-4.002s1.795-4.003 4.003-4.003 4.003 1.796 4.003 4.003c0 1.066-.415 2.07-1.17 2.827-.39.391-.39 1.022.001 1.414l3.461 3.46c.195.195.451.293.707.293.257 0 .513-.098.708-.293.392-.391.392-1.024 0-1.415z"></path>
+    </symbol>
+    <symbol id="svg_icon_user" viewBox="0 0 20 20">
+    	<path d="M16.938 15.68c-.675-1.824-2.01-3.273-3.66-4.109 1.108-.895 1.828-2.215 1.828-3.706 0-2.688-2.29-4.875-5.107-4.875-2.816 0-5.108 2.187-5.108 4.875 0 1.491.72 2.811 1.829 3.706-1.651.836-2.986 2.285-3.661 4.108-.188.506.081 1.064.601 1.248.516.185 1.092-.079 1.28-.586.806-2.177 2.769-3.585 5.009-3.606l.05.005.05-.005c2.241.021 4.203 1.43 5.009 3.605.146.397.53.645.94.645.111 0 .227-.018.338-.058.519-.184.789-.741.602-1.247zm-10.047-7.816c0-1.613 1.395-2.925 3.108-2.925s3.108 1.312 3.108 2.925c0 1.597-1.368 2.894-3.058 2.92l-.05-.004-.05.004c-1.69-.026-3.058-1.323-3.058-2.92z"></path>
+    </symbol>
+    <symbol id="svg_icon_wechat" viewBox="0 0 20 20">
+    	<path d="M6.092 9.786c-1.231-.388-2.092-1.264-2.092-2.286 0-1.381 1.567-2.5 3.5-2.5.888 0 1.688.244 2.306.633.71-.289 1.485-.48 2.312-.563-.979-1.243-2.677-2.07-4.618-2.07-3.038 0-5.5 2.015-5.5 4.5 0 1.329.717 2.511 1.836 3.334l-.568 2.897 2.917-1.876.059.01c-.144-.438-.244-.89-.244-1.365 0-.245.052-.479.092-.714zm11.908.714c0-2.485-2.463-4.5-5.5-4.5-3.038 0-5.5 2.015-5.5 4.5s2.462 4.5 5.5 4.5c.211 0 .412-.032.617-.051l3.883 2.051-.798-3.191c1.098-.824 1.798-1.995 1.798-3.309zm-5.5 2.5c-1.933 0-3.5-1.119-3.5-2.5s1.567-2.5 3.5-2.5c1.934 0 3.5 1.119 3.5 2.5s-1.566 2.5-3.5 2.5z"></path>
+    </symbol>
+    <symbol id="svg_icon_prev_lg" viewBox="0 0 36 36">
+		<path d="M10.3 18.5l11.5 11.7c.6.4 1.4.4 2 0 .3-.6.3-1.4 0-2L13.9 18l9.8-10.2c.3-.6.3-1.4 0-2-.6-.4-1.4-.4-2 0L10.3 17.5c-.2.1-.3.3-.3.5s.1.4.3.5z"></path>
+	</symbol>
+	<symbol id="svg_icon_next_lg" viewBox="0 0 36 36">
+		<path d="M25 18c0-.2-.1-.4-.3-.5L13.2 5.8c-.6-.4-1.4-.4-2 0-.3.6-.3 1.4 0 2L21.1 18l-9.8 10.2c-.3.6-.3 1.4 0 2 .6.4 1.4.4 2 0l11.5-11.7c.1-.1.2-.3.2-.5z"></path>
+	</symbol>
+</svg>
+    <div class="mod_rank_head" r-component="c-banner" r-class="{
+			mod_rank_head_affect: curType == 1;
+			mod_rank_head_popu: curType == 2;
+			mod_rank_head_new: curType == 4;
+			mod_rank_head_soar: curType == 8;
+			mod_rank_head_sugar: curType == 16;
+		}" r-data="{
+		curType: '2';
+		bgImg: '//i.gtimg.cn/qqlive/images/20170830/h5_bg_hot.png';
+		nameImg: '//i.gtimg.cn/qqlive/images/20170911/h5_text_hot.png';
+		starImg: '//puui.qpic.cn/media_img/0/13202281578387531/0';
+	}" r-notemplate="true">
+	<div class="banner_bg"></div>
+	<div class="rank_inner">
+		<div class="banner_tit"></div>
+		<div class="star_pic">
+			<img r-attr="{src: starImg}" r-show="{starImg}" />
+		</div>
+		<div class="mod_page_tab">
+			
+			<span _stat="switch:2" class="tab" r-class="{current: '2' == curType}" r-on="{click: switchRank.bind(null, '2', false)}">最具人气榜</span>
+			
+			<span _stat="switch:1" class="tab" r-class="{current: '1' == curType}" r-on="{click: switchRank.bind(null, '1', false)}">最具影响力榜</span>
+			
+		</div>
+	</div>
+</div>
+    <div r-component="c-ranks" class="rank_container" r-data="{
+	curType: '2';
+	curPeri: '9';
+	curTimeType: '4';
+	curTimeItem: '2';
+	}" r-notemplate="true">
+	<div class="rank_container_inner _wrapper">
+		
+			<div class="mod_page_pannel mod_page_pannel_popu">
+	<div class="mod_rank_tit">
+		<div class="rank_tit">
+			
+<div class="rank_tab">
+	
+	<div class="tab_item" r-class="{open: showWeekSelector}" r-on="{click: updateRank.bind(null, {time:1})}">
+		<a href="javascript:;" class="tab_link" r-class="{current: curTimeType == 1}">
+			<span class="tit">周榜</span>
+		</a>
+	</div>
+	
+	
+	<div class="tab_item" r-class="{open: showMonthSelector}" r-on="{click: updateRank.bind(null, {time:4})}">
+		<a href="javascript:;" class="tab_link" r-class="{current: curTimeType == 4}">
+			<span class="tit">月榜</span>
+		</a>
+	</div>
+	
+	
+	<div class="tab_item">
+		<a href="javascript:;" class="tab_link" r-class="{current: curTimeType == 2}" r-on="{click: updateRank.bind(null, {time:2})}"><span class="tit">年度总榜</span></a>
+	</div>	
+	
+	
+	<div class="tab_item" r-class="{open_year: showYearSelector; open_week: showWeekSelector; open_month: showMonthSelector}" r-on="{click: toggleSelector.bind(event, {curTimeType: curTimeType})}">
+		<a href="javascript:;" class="tab_link time_link">
+			<span class="txt _txt">
+				第9期
+			</span>
+			<i class="icon_sm icon_down_sm"><svg class="svg_icon" viewBox="0 0 16 16" width="16px" height="16px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_down_sm"></use></svg></i>
+			<i class="icon_sm icon_up_sm"><svg class="svg_icon" viewBox="0 0 16 16" width="16px" height="16px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_up_sm"></use></svg></i>
+		</a>
+		<div class="tab_time _week_tab_time" >
+			
+		</div>
+		<div class="tab_time _month_tab_time" >
+			
+		</div>
+		<div class="tab_time _year_tab_time" >
+			
+		</div>
+	</div>
+	</div>
+	
+<div class="rank_action">
+	<a href="javascript:;" r-on="{click: showRule}" _stat="rule" class="link award">本月重磅福利</a>
+</div>
+		</div>
+	</div>
+	<div class="mod_rank_list">
+		<ul class="rank_list _rank_list">
+			
+
+<li class="list_item" r-class="{current: highlightId == '1'}" r-on="{mouseover: highlight.bind(null, '1')}">
+	<div class="item_inner">
+		<span class="rank">
+	<span class="num num_1">1</span>
+	
+	<span class="heat">
+	
+		
+			<i class="icon_xs icon_hold_xs"><svg class="svg_icon" viewBox="0 0 10 10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hold_xs"></use></svg></i>
+		
+	
+	</span>
+	
+</span>
+<span class="star">
+	<a class="pic" href="//v.qq.com/doki/star?id=1320228" target="_blank">
+		<img src="//puui.qpic.cn/media_img/0/13202281578387244/0" alt="肖战">
+		
+		<i class="icon_crown icon_crown_1"></i>
+		
+	</a>
+</span>
+<span class="name">
+	<span class="name_flex">
+		<a href="//v.qq.com/doki/star?id=1320228" target="_blank" class="tit">肖战</a>
+		<span class="txt">《余生，请多指教》</span>
+	</span>
+</span>
+		
+		<span class="score">
+			<div class="mod_popu_act">
+				<span class="text">人气值: <span class='_pop_num' data-pop-num='25644390'>2564.4万</span></span>
+			</div>
+			<div class="mod_popu_act_hover">
+				<div class="act_txt">
+					<i class="icon icon_hot">
+						<svg class="svg_icon" viewBox="0 0 20 20">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hot"></use>
+						</svg>
+					</i>
+					<span class="text">人气值: <span class='_pop_num' data-pop-num='25644390'>2564.4万</span></span>
+				</div>
+				<div class="act_tips">该项领先</div>
+			</div>
+			<div class="pop_text _pop_text">+34人气</div>
+		</span>
+		<span class="fans">
+			
+			<span class="act_tips">人气值打榜前三名：</span>
+			<span class="act_user">
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/yUuJV5NESa2vvoVZu4Sfd5KhPP4pha2jJGXSzurKrPNj7cSh_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">1</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/RVI_Wu2zoMlDVJoesh7_evtvTDCyhfbw_fooLYab9t0EtaO6_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">2</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTK7K3BwuHC8E1s0zlmc44xFtpAMKaibicyLWC2r01Pwe0TgicqyRXfMjZnGibvs977aRh7VMXcpmZJJHQ/132" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">3</i>
+				</span>
+				
+			</span>
+			
+		</span>
+		<span class="act">
+			<button _stat="rank:give" class="btn_hit _heartbeat_btn" data-starid="1320228" data-fantuanid="10409">打榜</button>
+			<div class="icon_heart_list">
+				<i class="icon_heart icon_heart1"></i>
+				<i class="icon_heart icon_heart2"></i>
+				<i class="icon_heart icon_heart3"></i>
+				<i class="icon_heart icon_heart4"></i>
+				<i class="icon_heart icon_heart5"></i>
+				<i class="icon_heart icon_heart6"></i>
+			</div>
+		</span>
+		
+	</div>
+</li>
+
+
+
+<li class="list_item" r-class="{current: highlightId == '2'}" r-on="{mouseover: highlight.bind(null, '2')}">
+	<div class="item_inner">
+		<span class="rank">
+	<span class="num num_2">2</span>
+	
+	<span class="heat">
+	
+		
+			<i class="icon_xs icon_hold_xs"><svg class="svg_icon" viewBox="0 0 10 10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hold_xs"></use></svg></i>
+		
+	
+	</span>
+	
+</span>
+<span class="star">
+	<a class="pic" href="//v.qq.com/doki/star?id=1498776" target="_blank">
+		<img src="//puui.qpic.cn/media_img/0/14987761577324836/0" alt="王一博">
+		
+		<i class="icon_crown icon_crown_2"></i>
+		
+	</a>
+</span>
+<span class="name">
+	<span class="name_flex">
+		<a href="//v.qq.com/doki/star?id=1498776" target="_blank" class="tit">王一博</a>
+		<span class="txt">《极限青春 第1季》</span>
+	</span>
+</span>
+		
+		<span class="score">
+			<div class="mod_popu_act">
+				<span class="text">人气值: <span class='_pop_num' data-pop-num='6788055'>678.8万</span></span>
+			</div>
+			<div class="mod_popu_act_hover">
+				<div class="act_txt">
+					<i class="icon icon_hot">
+						<svg class="svg_icon" viewBox="0 0 20 20">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hot"></use>
+						</svg>
+					</i>
+					<span class="text">人气值: <span class='_pop_num' data-pop-num='6788055'>678.8万</span></span>
+				</div>
+				<div class="act_tips">距离上一名还差1885.6万人气</div>
+			</div>
+			<div class="pop_text _pop_text">+34人气</div>
+		</span>
+		<span class="fans">
+			
+			<span class="act_tips">人气值打榜前三名：</span>
+			<span class="act_user">
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/q5o8qrSePnW5Js5TR5apPrctc8oJBJTjh55kCe5Ts_bbGhjF_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">1</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/nJWG_5k_rRWazL5Ju_lpH7NiJSw35VFY0eSdsQ5FPBOCyr4A_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">2</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/eCQY6sovnk_o5_IZebrdDH0oMNHmDjINJ9K_dedYLMbPqSbv_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">3</i>
+				</span>
+				
+			</span>
+			
+		</span>
+		<span class="act">
+			<button _stat="rank:give" class="btn_hit _heartbeat_btn" data-starid="1498776" data-fantuanid="76927">打榜</button>
+			<div class="icon_heart_list">
+				<i class="icon_heart icon_heart1"></i>
+				<i class="icon_heart icon_heart2"></i>
+				<i class="icon_heart icon_heart3"></i>
+				<i class="icon_heart icon_heart4"></i>
+				<i class="icon_heart icon_heart5"></i>
+				<i class="icon_heart icon_heart6"></i>
+			</div>
+		</span>
+		
+	</div>
+</li>
+
+
+
+<li class="list_item" r-class="{current: highlightId == '3'}" r-on="{mouseover: highlight.bind(null, '3')}">
+	<div class="item_inner">
+		<span class="rank">
+	<span class="num num_3">3</span>
+	
+	<span class="heat">
+	
+		
+			<i class="icon_xs icon_rise_xs"><svg class="svg_icon" viewBox="0 0 10 10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_rise_xs"></use></svg></i>
+		
+	
+	</span>
+	
+</span>
+<span class="star">
+	<a class="pic" href="//v.qq.com/doki/star?id=8261593" target="_blank">
+		<img src="//puui.qpic.cn/media_img/0/82615931586481510/0" alt="硬糖少女303陈卓璇">
+		
+		<i class="icon_crown icon_crown_3"></i>
+		
+	</a>
+</span>
+<span class="name">
+	<span class="name_flex">
+		<a href="//v.qq.com/doki/star?id=8261593" target="_blank" class="tit">硬糖少女303陈卓璇</a>
+		<span class="txt">《创可少女屋》</span>
+	</span>
+</span>
+		
+		<span class="score">
+			<div class="mod_popu_act">
+				<span class="text">人气值: <span class='_pop_num' data-pop-num='3841137'>384.1万</span></span>
+			</div>
+			<div class="mod_popu_act_hover">
+				<div class="act_txt">
+					<i class="icon icon_hot">
+						<svg class="svg_icon" viewBox="0 0 20 20">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hot"></use>
+						</svg>
+					</i>
+					<span class="text">人气值: <span class='_pop_num' data-pop-num='3841137'>384.1万</span></span>
+				</div>
+				<div class="act_tips">距离上一名还差294.6万人气</div>
+			</div>
+			<div class="pop_text _pop_text">+34人气</div>
+		</span>
+		<span class="fans">
+			
+			<span class="act_tips">人气值打榜前三名：</span>
+			<span class="act_user">
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eotIkkbOqrQZentyoCjEHlUbCsWb5j2fH3ZMew2ibKFWkc4tDbVicXicq6S2ia7mVicib8HWpQOwaHFibLIg/132" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">1</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/gDbKVdXn2KnEfvsbpI_eCOVXgyJaZ8KAKSbmdH_85_6nNdZS_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">2</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdqq.qlogo.cn/g?b=sdk&k=HTU9VIfcmQ78ywuPic9AibQw&s=140&t=1576487023" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">3</i>
+				</span>
+				
+			</span>
+			
+		</span>
+		<span class="act">
+			<button _stat="rank:give" class="btn_hit _heartbeat_btn" data-starid="8261593" data-fantuanid="58261593">打榜</button>
+			<div class="icon_heart_list">
+				<i class="icon_heart icon_heart1"></i>
+				<i class="icon_heart icon_heart2"></i>
+				<i class="icon_heart icon_heart3"></i>
+				<i class="icon_heart icon_heart4"></i>
+				<i class="icon_heart icon_heart5"></i>
+				<i class="icon_heart icon_heart6"></i>
+			</div>
+		</span>
+		
+	</div>
+</li>
+
+
+
+<li class="list_item" r-class="{current: highlightId == '4'}" r-on="{mouseover: highlight.bind(null, '4')}">
+	<div class="item_inner">
+		<span class="rank">
+	<span class="num">4</span>
+	
+	<span class="heat">
+	
+		
+			<i class="icon_xs icon_decline_xs"><svg class="svg_icon" viewBox="0 0 10 10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_decline_xs"></use></svg></i>
+		
+	
+	</span>
+	
+</span>
+<span class="star">
+	<a class="pic" href="//v.qq.com/doki/star?id=1571283" target="_blank">
+		<img src="//puui.qpic.cn/media_img/0/15712831591956291/0" alt="R1SE周震南">
+		
+	</a>
+</span>
+<span class="name">
+	<span class="name_flex">
+		<a href="//v.qq.com/doki/star?id=1571283" target="_blank" class="tit">R1SE周震南</a>
+		<span class="txt">《明日之子 第4季》</span>
+	</span>
+</span>
+		
+		<span class="score">
+			<div class="mod_popu_act">
+				<span class="text">人气值: <span class='_pop_num' data-pop-num='3757003'>375.7万</span></span>
+			</div>
+			<div class="mod_popu_act_hover">
+				<div class="act_txt">
+					<i class="icon icon_hot">
+						<svg class="svg_icon" viewBox="0 0 20 20">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hot"></use>
+						</svg>
+					</i>
+					<span class="text">人气值: <span class='_pop_num' data-pop-num='3757003'>375.7万</span></span>
+				</div>
+				<div class="act_tips">距离上一名还差8.4万人气</div>
+			</div>
+			<div class="pop_text _pop_text">+34人气</div>
+		</span>
+		<span class="fans">
+			
+			<span class="act_tips">人气值打榜前三名：</span>
+			<span class="act_user">
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/AeNFPL5JX-F_yrQj1LVNrecIR_2IG9UlP_GtkekK8uDN-cyM_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">1</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdqq.qlogo.cn/g?b=sdk&k=3M06QKOqKYq9Lxml80kNxg&s=140&t=1581040523" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">2</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/FM_uqZPlUhBJzb3CYHVj1y71MtBkubALJ1IZnt62BxRfWEHK_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">3</i>
+				</span>
+				
+			</span>
+			
+		</span>
+		<span class="act">
+			<button _stat="rank:give" class="btn_hit _heartbeat_btn" data-starid="1571283" data-fantuanid="76871">打榜</button>
+			<div class="icon_heart_list">
+				<i class="icon_heart icon_heart1"></i>
+				<i class="icon_heart icon_heart2"></i>
+				<i class="icon_heart icon_heart3"></i>
+				<i class="icon_heart icon_heart4"></i>
+				<i class="icon_heart icon_heart5"></i>
+				<i class="icon_heart icon_heart6"></i>
+			</div>
+		</span>
+		
+	</div>
+</li>
+
+
+
+<li class="list_item" r-class="{current: highlightId == '5'}" r-on="{mouseover: highlight.bind(null, '5')}">
+	<div class="item_inner">
+		<span class="rank">
+	<span class="num">5</span>
+	
+	<span class="heat">
+	
+		
+			<i class="icon_xs icon_rise_xs"><svg class="svg_icon" viewBox="0 0 10 10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_rise_xs"></use></svg></i>
+		
+	
+	</span>
+	
+</span>
+<span class="star">
+	<a class="pic" href="//v.qq.com/doki/star?id=1585086" target="_blank">
+		<img src="//puui.qpic.cn/media_img/0/15850861586483984/0" alt="硬糖少女303希林娜依·高">
+		
+	</a>
+</span>
+<span class="name">
+	<span class="name_flex">
+		<a href="//v.qq.com/doki/star?id=1585086" target="_blank" class="tit">硬糖少女303希林娜依·高</a>
+		<span class="txt">《创可少女屋》</span>
+	</span>
+</span>
+		
+		<span class="score">
+			<div class="mod_popu_act">
+				<span class="text">人气值: <span class='_pop_num' data-pop-num='3218341'>321.8万</span></span>
+			</div>
+			<div class="mod_popu_act_hover">
+				<div class="act_txt">
+					<i class="icon icon_hot">
+						<svg class="svg_icon" viewBox="0 0 20 20">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hot"></use>
+						</svg>
+					</i>
+					<span class="text">人气值: <span class='_pop_num' data-pop-num='3218341'>321.8万</span></span>
+				</div>
+				<div class="act_tips">距离上一名还差53.8万人气</div>
+			</div>
+			<div class="pop_text _pop_text">+34人气</div>
+		</span>
+		<span class="fans">
+			
+			<span class="act_tips">人气值打榜前三名：</span>
+			<span class="act_user">
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdqq.qlogo.cn/g?b=sdk&k=BD7YSKmcPBLcj4a7S0Pomw&s=140&t=1483399598" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">1</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdqq.qlogo.cn/g?b=sdk&k=Tic53dApzfmGPJMW2bLvpCg&s=140&t=1555304628" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">2</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdwx.qlogo.cn/mmopen/vi_32/RvYgsX5l2zZ3icOtaPxX5zqKeWFLV3MDKM4Uib3p9b1qmiaRapV8LNJcO0ULcg7uTtwqdUia2iaSiamBu6QkDibzDGcrQ/132" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">3</i>
+				</span>
+				
+			</span>
+			
+		</span>
+		<span class="act">
+			<button _stat="rank:give" class="btn_hit _heartbeat_btn" data-starid="1585086" data-fantuanid="51585086">打榜</button>
+			<div class="icon_heart_list">
+				<i class="icon_heart icon_heart1"></i>
+				<i class="icon_heart icon_heart2"></i>
+				<i class="icon_heart icon_heart3"></i>
+				<i class="icon_heart icon_heart4"></i>
+				<i class="icon_heart icon_heart5"></i>
+				<i class="icon_heart icon_heart6"></i>
+			</div>
+		</span>
+		
+	</div>
+</li>
+
+
+
+<li class="list_item" r-class="{current: highlightId == '6'}" r-on="{mouseover: highlight.bind(null, '6')}">
+	<div class="item_inner">
+		<span class="rank">
+	<span class="num">6</span>
+	
+	<span class="heat">
+	
+		
+			<i class="icon_xs icon_rise_xs"><svg class="svg_icon" viewBox="0 0 10 10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_rise_xs"></use></svg></i>
+		
+	
+	</span>
+	
+</span>
+<span class="star">
+	<a class="pic" href="//v.qq.com/doki/star?id=585720" target="_blank">
+		<img src="//puui.qpic.cn/media_img/0/5857201586481220/0" alt="硬糖少女303赵粤">
+		
+	</a>
+</span>
+<span class="name">
+	<span class="name_flex">
+		<a href="//v.qq.com/doki/star?id=585720" target="_blank" class="tit">硬糖少女303赵粤</a>
+		<span class="txt">《创可少女屋》</span>
+	</span>
+</span>
+		
+		<span class="score">
+			<div class="mod_popu_act">
+				<span class="text">人气值: <span class='_pop_num' data-pop-num='2636295'>263.6万</span></span>
+			</div>
+			<div class="mod_popu_act_hover">
+				<div class="act_txt">
+					<i class="icon icon_hot">
+						<svg class="svg_icon" viewBox="0 0 20 20">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hot"></use>
+						</svg>
+					</i>
+					<span class="text">人气值: <span class='_pop_num' data-pop-num='2636295'>263.6万</span></span>
+				</div>
+				<div class="act_tips">距离上一名还差58.2万人气</div>
+			</div>
+			<div class="pop_text _pop_text">+34人气</div>
+		</span>
+		<span class="fans">
+			
+			<span class="act_tips">人气值打榜前三名：</span>
+			<span class="act_user">
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdqq.qlogo.cn/g?b=sdk&k=xsicYic4Yh17sJtImicwng1XA&s=140&t=1556532368" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">1</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLevUE3gfUicnuZACQLkx3uraRkbVv0wbeibE0KXyuSpUCl7mcGpIeMppeL5ZGmkeL612t9YS8Rgfbg/132" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">2</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdqq.qlogo.cn/g?b=sdk&k=oYcD2tNcJLrFlnnmOey9gA&s=140&t=1573891699" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">3</i>
+				</span>
+				
+			</span>
+			
+		</span>
+		<span class="act">
+			<button _stat="rank:give" class="btn_hit _heartbeat_btn" data-starid="585720" data-fantuanid="16303">打榜</button>
+			<div class="icon_heart_list">
+				<i class="icon_heart icon_heart1"></i>
+				<i class="icon_heart icon_heart2"></i>
+				<i class="icon_heart icon_heart3"></i>
+				<i class="icon_heart icon_heart4"></i>
+				<i class="icon_heart icon_heart5"></i>
+				<i class="icon_heart icon_heart6"></i>
+			</div>
+		</span>
+		
+	</div>
+</li>
+
+
+
+<li class="list_item" r-class="{current: highlightId == '7'}" r-on="{mouseover: highlight.bind(null, '7')}">
+	<div class="item_inner">
+		<span class="rank">
+	<span class="num">7</span>
+	
+	<span class="heat">
+	
+		
+			<i class="icon_xs icon_rise_xs"><svg class="svg_icon" viewBox="0 0 10 10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_rise_xs"></use></svg></i>
+		
+	
+	</span>
+	
+</span>
+<span class="star">
+	<a class="pic" href="//v.qq.com/doki/star?id=8284576" target="_blank">
+		<img src="//puui.qpic.cn/media_img/0/82845761586484208/0" alt="硬糖少女303郑乃馨">
+		
+	</a>
+</span>
+<span class="name">
+	<span class="name_flex">
+		<a href="//v.qq.com/doki/star?id=8284576" target="_blank" class="tit">硬糖少女303郑乃馨</a>
+		<span class="txt">《创可少女屋》</span>
+	</span>
+</span>
+		
+		<span class="score">
+			<div class="mod_popu_act">
+				<span class="text">人气值: <span class='_pop_num' data-pop-num='2360315'>236.0万</span></span>
+			</div>
+			<div class="mod_popu_act_hover">
+				<div class="act_txt">
+					<i class="icon icon_hot">
+						<svg class="svg_icon" viewBox="0 0 20 20">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hot"></use>
+						</svg>
+					</i>
+					<span class="text">人气值: <span class='_pop_num' data-pop-num='2360315'>236.0万</span></span>
+				</div>
+				<div class="act_tips">距离上一名还差27.5万人气</div>
+			</div>
+			<div class="pop_text _pop_text">+34人气</div>
+		</span>
+		<span class="fans">
+			
+			<span class="act_tips">人气值打榜前三名：</span>
+			<span class="act_user">
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/wPBzp06xmV1Z8ObQNd4qFhZTI3NjBRk0E9QIM5Tun6R7p_Kk_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">1</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/CMxiyBUZO6Y_j2DCA2hPauVjLJ_MlcfBYZXwUkt6lic4TPt6_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">2</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdqq.qlogo.cn/g?b=sdk&k=OyAOEcNvpKNn7eIRQV42qA&s=140&t=1556399144" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">3</i>
+				</span>
+				
+			</span>
+			
+		</span>
+		<span class="act">
+			<button _stat="rank:give" class="btn_hit _heartbeat_btn" data-starid="8284576" data-fantuanid="58284576">打榜</button>
+			<div class="icon_heart_list">
+				<i class="icon_heart icon_heart1"></i>
+				<i class="icon_heart icon_heart2"></i>
+				<i class="icon_heart icon_heart3"></i>
+				<i class="icon_heart icon_heart4"></i>
+				<i class="icon_heart icon_heart5"></i>
+				<i class="icon_heart icon_heart6"></i>
+			</div>
+		</span>
+		
+	</div>
+</li>
+
+
+
+<li class="list_item" r-class="{current: highlightId == '8'}" r-on="{mouseover: highlight.bind(null, '8')}">
+	<div class="item_inner">
+		<span class="rank">
+	<span class="num">8</span>
+	
+	<span class="heat">
+	
+		
+			<i class="icon_xs icon_rise_xs"><svg class="svg_icon" viewBox="0 0 10 10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_rise_xs"></use></svg></i>
+		
+	
+	</span>
+	
+</span>
+<span class="star">
+	<a class="pic" href="//v.qq.com/doki/star?id=132497" target="_blank">
+		<img src="//puui.qpic.cn/media_img/0/1324971577244684/0" alt="华晨宇">
+		
+	</a>
+</span>
+<span class="name">
+	<span class="name_flex">
+		<a href="//v.qq.com/doki/star?id=132497" target="_blank" class="tit">华晨宇</a>
+		<span class="txt">《歌手·当打之年 2020》</span>
+	</span>
+</span>
+		
+		<span class="score">
+			<div class="mod_popu_act">
+				<span class="text">人气值: <span class='_pop_num' data-pop-num='2227150'>222.7万</span></span>
+			</div>
+			<div class="mod_popu_act_hover">
+				<div class="act_txt">
+					<i class="icon icon_hot">
+						<svg class="svg_icon" viewBox="0 0 20 20">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hot"></use>
+						</svg>
+					</i>
+					<span class="text">人气值: <span class='_pop_num' data-pop-num='2227150'>222.7万</span></span>
+				</div>
+				<div class="act_tips">距离上一名还差13.3万人气</div>
+			</div>
+			<div class="pop_text _pop_text">+34人气</div>
+		</span>
+		<span class="fans">
+			
+			<span class="act_tips">人气值打榜前三名：</span>
+			<span class="act_user">
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/DYedizKDQRBTp8ZhYT7LlaSO8CJysEiIVkzxO00KNxVOS8HW_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">1</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdqq.qlogo.cn/g?b=sdk&k=AQd0uuWx3xn9f5YN5dlf7Q&s=100&t=0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">2</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/1355823170/v4cbJ_9X-0t9uF7q8uzknjDK4YdUVo9woAoX1m7wvazH48kQ_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">3</i>
+				</span>
+				
+			</span>
+			
+		</span>
+		<span class="act">
+			<button _stat="rank:give" class="btn_hit _heartbeat_btn" data-starid="132497" data-fantuanid="10239">打榜</button>
+			<div class="icon_heart_list">
+				<i class="icon_heart icon_heart1"></i>
+				<i class="icon_heart icon_heart2"></i>
+				<i class="icon_heart icon_heart3"></i>
+				<i class="icon_heart icon_heart4"></i>
+				<i class="icon_heart icon_heart5"></i>
+				<i class="icon_heart icon_heart6"></i>
+			</div>
+		</span>
+		
+	</div>
+</li>
+
+
+
+<li class="list_item" r-class="{current: highlightId == '9'}" r-on="{mouseover: highlight.bind(null, '9')}">
+	<div class="item_inner">
+		<span class="rank">
+	<span class="num">9</span>
+	
+	<span class="heat">
+	
+		
+			<i class="icon_xs icon_rise_xs"><svg class="svg_icon" viewBox="0 0 10 10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_rise_xs"></use></svg></i>
+		
+	
+	</span>
+	
+</span>
+<span class="star">
+	<a class="pic" href="//v.qq.com/doki/star?id=75411" target="_blank">
+		<img src="//puui.qpic.cn/media_img/0/754111577324892/0" alt="李现">
+		
+	</a>
+</span>
+<span class="name">
+	<span class="name_flex">
+		<a href="//v.qq.com/doki/star?id=75411" target="_blank" class="tit">李现</a>
+		<span class="txt">《茉茗我就喜欢你》</span>
+	</span>
+</span>
+		
+		<span class="score">
+			<div class="mod_popu_act">
+				<span class="text">人气值: <span class='_pop_num' data-pop-num='1860882'>186.0万</span></span>
+			</div>
+			<div class="mod_popu_act_hover">
+				<div class="act_txt">
+					<i class="icon icon_hot">
+						<svg class="svg_icon" viewBox="0 0 20 20">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hot"></use>
+						</svg>
+					</i>
+					<span class="text">人气值: <span class='_pop_num' data-pop-num='1860882'>186.0万</span></span>
+				</div>
+				<div class="act_tips">距离上一名还差36.6万人气</div>
+			</div>
+			<div class="pop_text _pop_text">+34人气</div>
+		</span>
+		<span class="fans">
+			
+			<span class="act_tips">人气值打榜前三名：</span>
+			<span class="act_user">
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdwx.qlogo.cn/mmopen/vi_32/MPesa5ofWr0iaL3pTLEyTMdjsvicqVAxXGyC3d8LFicRtXYHL457c103C2qwK5lbGqIGLgnibvmaqdHvQFsk0ibjeCg/132" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">1</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIibGGYv2ibn5Qvnqibt59NCyMvO46USZAiaIHUvVaP6UgoBvMqzvsPCmASlTibLmicRfOaeSuFpB7iaiaib1Q/132" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">2</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdwx.qlogo.cn/mmopen/vi_32/2AFLibwFfPklufUqyia9jO5ibbEU0bibD1xFI3S7mQCn5KhPIxIkLSJib1GibicicysQS27yNndMVb2TjGQDHblFLzn7CQ/132" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">3</i>
+				</span>
+				
+			</span>
+			
+		</span>
+		<span class="act">
+			<button _stat="rank:give" class="btn_hit _heartbeat_btn" data-starid="75411" data-fantuanid="32522">打榜</button>
+			<div class="icon_heart_list">
+				<i class="icon_heart icon_heart1"></i>
+				<i class="icon_heart icon_heart2"></i>
+				<i class="icon_heart icon_heart3"></i>
+				<i class="icon_heart icon_heart4"></i>
+				<i class="icon_heart icon_heart5"></i>
+				<i class="icon_heart icon_heart6"></i>
+			</div>
+		</span>
+		
+	</div>
+</li>
+
+
+
+<li class="list_item" r-class="{current: highlightId == '10'}" r-on="{mouseover: highlight.bind(null, '10')}">
+	<div class="item_inner">
+		<span class="rank">
+	<span class="num">10</span>
+	
+	<span class="heat">
+	
+		
+			<i class="icon_xs icon_rise_xs"><svg class="svg_icon" viewBox="0 0 10 10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_rise_xs"></use></svg></i>
+		
+	
+	</span>
+	
+</span>
+<span class="star">
+	<a class="pic" href="//v.qq.com/doki/star?id=8284669" target="_blank">
+		<img src="//puui.qpic.cn/media_img/0/82846691586484264/0" alt="硬糖少女303王艺瑾">
+		
+	</a>
+</span>
+<span class="name">
+	<span class="name_flex">
+		<a href="//v.qq.com/doki/star?id=8284669" target="_blank" class="tit">硬糖少女303王艺瑾</a>
+		<span class="txt">《创可少女屋》</span>
+	</span>
+</span>
+		
+		<span class="score">
+			<div class="mod_popu_act">
+				<span class="text">人气值: <span class='_pop_num' data-pop-num='1656027'>165.6万</span></span>
+			</div>
+			<div class="mod_popu_act_hover">
+				<div class="act_txt">
+					<i class="icon icon_hot">
+						<svg class="svg_icon" viewBox="0 0 20 20">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_hot"></use>
+						</svg>
+					</i>
+					<span class="text">人气值: <span class='_pop_num' data-pop-num='1656027'>165.6万</span></span>
+				</div>
+				<div class="act_tips">距离上一名还差20.4万人气</div>
+			</div>
+			<div class="pop_text _pop_text">+34人气</div>
+		</span>
+		<span class="fans">
+			
+			<span class="act_tips">人气值打榜前三名：</span>
+			<span class="act_user">
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/Ku0_PZsYziJ1nBZivFLLst8lMAtoYShIzOT64pZZI2wyRGIY_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">1</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//puui.qpic.cn/vshpic/0/KgqQcdouMX_5pj_3mDiBgxyUJ_DxzgGkBWj56QHNW9LFP5sV_0/0" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">2</i>
+				</span>
+				
+				<span class="act_user_item">
+					<img class="act_user_pic" src="//thirdqq.qlogo.cn/g?b=sdk&k=4X0AduK70xzGEgkXrGPMuQ&s=140&t=1589723538" onerror="picerr(this, 'a')" alt=" ">
+					<i class="num">3</i>
+				</span>
+				
+			</span>
+			
+		</span>
+		<span class="act">
+			<button _stat="rank:give" class="btn_hit _heartbeat_btn" data-starid="8284669" data-fantuanid="58284669">打榜</button>
+			<div class="icon_heart_list">
+				<i class="icon_heart icon_heart1"></i>
+				<i class="icon_heart icon_heart2"></i>
+				<i class="icon_heart icon_heart3"></i>
+				<i class="icon_heart icon_heart4"></i>
+				<i class="icon_heart icon_heart5"></i>
+				<i class="icon_heart icon_heart6"></i>
+			</div>
+		</span>
+		
+	</div>
+</li>
+
+
+
+
+
+
+
+		</ul>
+	</div>
+</div>
+		
+	</div>
+</div>
+    <div r-component="c-layer" r-data="{ 
+	curType: '2';
+	curPeri: '9';
+	curTimeType: '4';
+}" r-notemplate="true">
+</div>
+    <div r-component="c-footer" r-data="{
+	rankTxt: '最具人气榜';
+	curType: '2';
+	curPeri: '9';
+	curTimeType: '4';
+	fromStarId: '';
+	fromFantuanId: '';
+}" r-notemplate="true">
+	<div class="mod_rank_fixed">
+		<div class="rank_fixed">
+			<div class="rank_fixed_inner cf" id="_rank_fixed_inner">
+				<div class="rank_tit" r-class="{none: hasLogin}">
+					<i class="icon_doki"></i>
+					<span class="lg_txt"><a class="link" href="javascript:;" r-on="{click: showLogin}">登录</a>后查看你关注的doki明星榜单</span>
+				</div>
+				<div class="rank_tit" r-class="{none: !hasLogin}">
+					<i class="icon_doki"></i>
+					<span class="lg_txt" r-show="{!followStars.length}">关注doki明星，Ta的排名会在这里实时播报</span>
+					<span class="tit" r-show="{followStars.length}" style="display: none">我的doki明星<br><span r-text="{rankTxt}">最具人气榜</span>排名</span>
+				</div>
+				<div class="rank_list_out mod_rank_scroll" r-class="{none: !hasLogin}">
+					<div class="rank_list _rank_list">
+						<ul class="rank_list_inner _rank_list_inner">
+							
+						</ul>
+					</div>
+					<a href="javascript:void(0);" class="btn_prev" r-show="{hasPrev}" title="上一页" r-on="{click: prev}">
+				        <i class="icon_lg icon_prev_lg"><svg class="svg_icon svg_icon_prev_lg" viewBox="0 0 36 36" width="36" height="36"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_prev_lg"></use></svg></i>
+				    </a>
+				    <a href="javascript:void(0);" class="btn_next" r-show="{hasNext}" title="下一页" r-on="{click: next}">
+				        <i class="icon_lg icon_next_lg"><svg class="svg_icon svg_icon_next_lg" viewBox="0 0 36 36" width="36" height="36"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_next_lg"></use></svg></i>
+				    </a>
+				    <a href="javascript:void(0);" class="btn_next" r-show="{!hasNext && pageContext}" title="下一页" r-on="{click: nextRequest}">
+				        <i class="icon_lg icon_next_lg"><svg class="svg_icon svg_icon_next_lg" viewBox="0 0 36 36" width="36" height="36"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_next_lg"></use></svg></i>
+				    </a>
+			    </div>
+			    
+			</div>
+		</div>
+	</div>
+</div>
+    <div r-component="c-rule" r-show="{show || showTips}" style="display: none;" r-data="{
+		curType: '2';
+	}" r-notemplate="true">
+	<div class="mask_layer" r-class="{none: !show && !showTips}" id="mask_layer" r-on="{click: hiden}"></div>
+	<div class="mod_pop_rules _mod_pop_rules ql-snow" r-class="{none: !show}" style="margin-top: -250px;"><div class="mod_pop_inner _mod_pop_inner ql-editor">
+<p style="text-align: center;"><strong style="font-size: 18px;">doki星耀榜7月榜单福利来啦</strong></p><p style="text-align: center;"><span style="font-size: 14px;">粉丝福利升级给你宠爱</span></p><p style="text-align: center;"><strong style="font-size: 16px; color: rgb(0, 102, 204);">抢位福利</strong></p><p style="text-align: center;"><strong style="font-size: 14px;">最具人气榜Top1爱豆奖励&nbsp;</strong></p><p style="text-align: center;"><span style="font-size: 12px;">doki下拉banner、腾讯视频doki微博、doki酱微信*1次</span></p><p style="text-align: center;"><img src="//vfiles.gtimg.cn/wupload/doki_star_rank.star_rank_award_edit/20191201_nh7k2omlni.jpg"></p><p style="text-align: center;"><strong style="font-size: 14px;">最具人气榜Top2爱豆奖励&nbsp;</strong></p><p style="text-align: center;"><span style="font-size: 12px;">doki浮层、腾讯视频doki微博、doki酱微信*1次</span></p><p style="text-align: center;"><img src="https://vfiles.gtimg.cn/wupload/doki_star_rank.award_list/20191129_fs9tchrzhgl.jpg"></p><p style="text-align: center;"><strong style="font-size: 14px;">最具人气榜Top3爱豆奖励&nbsp;</strong></p><p style="text-align: center;"><span style="font-size: 12px;">doki焦点图（APP端）、腾讯视频doki微博、doki酱微信*1次</span></p><p style="text-align: center;"><img src="https://vfiles.gtimg.cn/wupload/doki_star_rank.award_list/20200131_8vwnvj19xuv1.jpg"></p><p style="text-align: center;"><strong style="font-size: 14px;">最具人气榜Top4-20爱豆奖励&nbsp;</strong></p><p style="text-align: center;"><span style="font-size: 12px;">腾讯视频doki微博、doki酱微信*1次</span></p><p style="text-align: center;"><img src="https://vfiles.gtimg.cn/wupload/doki_star_rank.award_list/20191129_yrnbip3y7nm.jpg"></p><p style="text-align: center;"><strong style="font-size: 16px; color: rgb(0, 102, 204);">解锁福利</strong></p><p style="text-align: center;"><strong style="font-size: 14px;">人气值≥5200万</strong></p><p style="text-align: center;"><span style="font-size: 12px;">腾讯视频开屏*1次</span></p><p style="text-align: center;"><img src="https://vfiles.gtimg.cn/wupload/doki_star_rank.award_list/20200529_l4acgfzp4xd.jpg"></p><p style="text-align: center;"><strong style="font-size: 14px;">人气值≥3000万</strong></p><p style="text-align: center;"><span style="font-size: 12px;">doki浮层*1次</span></p><p style="text-align: center;"><img src="https://vfiles.gtimg.cn/wupload/doki_star_rank.award_list/20191031_saff80qvlge.jpg"></p><p style="text-align: center;"><strong style="font-size: 14px;">人气值≥2000万</strong></p><p style="text-align: center;"><span style="font-size: 12px;">doki焦点图（app）*1次</span></p><p style="text-align: center;"><img src="https://vfiles.gtimg.cn/wupload/doki_star_rank.award_list/20200430_lbggew7fm7.jpg"></p><p style="text-align: center;"><strong style="font-size: 14px;">人气值≥900万</strong></p><p style="text-align: center;"><span style="font-size: 12px;">腾讯视频app搜索banner*1次</span></p><p style="text-align: center;"><img src="https://vfiles.gtimg.cn/wupload/doki_star_rank.award_list/20200630_w913in5fs4q.jpg"></p><p style="text-align: center;"><strong style="font-size: 14px;">人气值≥600万</strong></p><p style="text-align: center;"><span style="font-size: 12px;">doki焦点图（PC端）*1次</span></p><p style="text-align: center;"><img src="https://vfiles.gtimg.cn/wupload/doki_star_rank.award_list/20191231_3ccgpx1ewf8.jpg"></p><p style="text-align: center;"><strong style="font-size: 14px;">人气值≥300万</strong></p><p style="text-align: center;"><span style="font-size: 12px;">doki官方置顶帖推荐*1次</span></p><p style="text-align: center;"><img src="https://vfiles.gtimg.cn/wupload/doki_star_rank.award_list/20191231_3imq7sxie2v2.jpg"></p><p style="text-align: center;"><strong style="color: rgb(0, 102, 204);">粉丝特别福利</strong></p><p style="text-align: center;"><span style="font-size: 12px;">随机爱豆签名照</span></p><p style="text-align: center;"><img src="https://vfiles.gtimg.cn/wupload/doki_star_rank.award_list/20200131_kyjx9qjy2es111.jpg"></p><p style="text-align: center;"><strong style="font-size: 16px;">应援规则</strong></p><p><strong style="font-size: 14px;">周期统计</strong></p><p><span style="font-size: 12px;">周榜：以自然周为起止，每周一0:00开始累积数据，每周日23:59截止统计。</span></p><p><span style="font-size: 12px;">月榜：以自然月为起止，每月1日0:00开始累积数据，每月最后一天23:59截止统计。</span></p><p><span style="font-size: 12px;">年榜：累积自榜单设置初始至当前时间点的数据；以自然年为起止。</span></p><p><strong style="font-size: 14px;">计分规则</strong></p><p><span style="font-size: 12px;">分数组成：由粉丝送礼加人气所获的人气值组成，总计100%。</span></p><p><span style="font-size: 12px;">计分公式：计算粉丝送礼贡献人气值。</span></p><p><strong style="font-size: 14px;">福利说明</strong></p><p><span style="font-size: 12px;">1、爱豆抢位福利：以月榜单排名和人气值为准，Top20爱豆自动获得。</span></p><p><span style="font-size: 12px;">2、爱豆解锁福利：以月榜单排名和人气值为准，爱豆人气值达到相应目标值，则解锁对应福利，多项解锁福利不可叠加。</span></p><p><span style="font-size: 12px;">3、粉丝锦鲤福利：月榜Top20爱豆中，月榜粉丝贡献人气值最多的3位粉丝获得签名照随机派送福利，签名照不匹配榜单排名爱豆。</span></p><p><span style="font-size: 12px;">4、周榜限时福利：针对新上榜且榜单表现好的爱豆，会不定时推出限时周榜福利，敬请期待。</span></p><p><span style="font-size: 12px;">5、福利上线排期：榜单资源有效期1个月，运营同学排期上线。粉丝团有预期上线时间可以在月榜公布3天内，微博私信“doki福利喵”沟通。</span></p><p><span style="font-size: 12px;">6、爱豆福利说明：腾讯视频doki微博、doki酱微信为榜单联合播报，其他资源位均为单人推荐。</span></p></div>
+		<button class="pop_close" r-on="{click: hiden}"><i class="icon icon_close"><svg class="svg_icon" viewBox="0 0 20 20" width="20" height="20"><path d="M19.4 18.4l-.9.9-8.5-8.4-8.4 8.4-.9-.9L9.1 10 .6 1.6l.9-.9L10 9.1 18.4.7l.9.9-8.4 8.4 8.5 8.4z"></path></svg></i></button>
+	</div>
+	<div class="x_alert" style="z-index: 9999999;" r-class="{none: !showTips}">
+		<!--[if IE]><iframe src="about:blank" frameborder="0" class="x_iframe_mask"></iframe><![endif]-->
+		<div class="x_alert_bd">
+			<a href="javascript:;" r-on="{click: hidenTips}" class="x_close" title="关闭"><i class="x_iconfont x_icon_close"></i></a>
+			<div class="x_title"><i class="x_iconfont x_icon_warning"></i><span r-text>{tipsData}</span></div>		
+		</div>
+	</div>
+</div>
+    <div r-component="c-layer-follow" r-notemplate="true">
+    <div class="mask_layer none" r-class="{none: !show}"></div>
+    <div class="pop_doki pop_doki_confirm none" r-class="{none: !show}">
+        <div class="pop_content">
+            <div class="pop_doki_top"></div>
+            <div class="title">加入doki，赢心跳打榜</div>
+            <div class="mod_btn_group">
+                <button class="mod_btn mod_btn_s" r-on="{click: confirm}">加入</button>
+                <button class="mod_btn mod_btn_s mod_btn_outline" r-on="{click: hiden}">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- inject:js -->
+<script crossorigin="anonymous" type="text/javascript" src="//vm.gtimg.cn/tencentvideo/script/dkrank/1911051952/dkrank.lib.js?_cross=1"></script>
+<script crossorigin="anonymous" type="text/javascript" src="//vm.gtimg.cn/tencentvideo/script/dkrank/1911051952/dkrank.page.js?_cross=1"></script>
+<!-- endinject -->
+</body>
+</html>

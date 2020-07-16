@@ -1,0 +1,169 @@
+BODY {
+	FONT-SIZE: 12px; COLOR: #333; LINE-HEIGHT: 21px; background-color:#ffffff
+}
+
+TD {
+	FONT-SIZE: 12px;  LINE-HEIGHT: 21px
+}
+SELECT {
+	FONT-SIZE: 12px; LINE-HEIGHT: 21px
+}
+DIV {
+	FONT-SIZE: 12px;  LINE-HEIGHT: 21px 
+}
+INPUT {
+	FONT-SIZE: 12px; 
+}
+A {	TEXT-DECORATION: none
+}
+
+A {	COLOR: #002277; 
+}
+A:visited {
+	COLOR: #002277
+}
+A:hover {
+	TEXT-DECORATION: underline; color:#BC2D09
+}
+
+.font_w_b {
+	FONT-WEIGHT: bold
+}
+.color_red {
+	COLOR: #CC0000
+}
+A.color_red {
+	COLOR: #CC0000
+}
+A.color_red:hover {
+	COLOR: #CC0000
+}
+A.color_red:active {
+	COLOR: #CC0000
+}
+A.color_red:visited {
+	COLOR: #CC0000
+}
+.color_black {
+	COLOR: #000000
+}
+A.color_black {
+	COLOR: #000000
+}
+A.color_black:active {
+	COLOR: #000000
+}
+A.color_black:hover {
+	COLOR: #000000
+}
+A.color_black:visited {
+	COLOR: #000000
+}
+.zt_banner {
+	
+}
+.zt_banner IMG {
+	
+}
+.zt_nav {
+	COLOR: #333; background: url(//mat1.gtimg.com/finance/dawosi/mav2-1.gif) ; LINE-HEIGHT: 34px; HEIGHT: 34px; font-size:14px
+}
+.zt_nav A:link {
+ PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; COLOR: #333; PADDING-TOP: 0px; TEXT-DECORATION: none; font-weight:bold
+;font-size:14px}
+
+
+.zt_nav A:visited {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; COLOR: #333; PADDING-TOP: 0px; TEXT-DECORATION: none;font-weight:bold
+;font-size:14px}
+.zt_nav A:hover {	color: #BC2D09; TEXT-DECORATION: underline;font-weight:bold;font-size:14px
+}
+/* 有标题有边框1 */
+
+.zt_u_1 { BORDER-RIGHT: #BCD4ED 1px solid; BORDER-TOP: #BCD4ED 1px solid; BORDER-LEFT: #BCD4ED 1px solid; BORDER-BOTTOM: #BCD4ED 1px solid
+}
+.zt_u_1 .zt_u_title {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style5/bg2.gif) ; HEIGHT: 30px
+}
+.zt_u_1 .zt_u_title .zt_u_name {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style5/t_title2.gif) no-repeat;PADDING-LEFT: 30px; color:#333333; FONT-WEIGHT: bold; FONT-SIZE: 14px; FLOAT: left; LINE-HEIGHT: 30px
+}
+.zt_u_1 .zt_u_title .zt_u_more {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style5/t_title3.gif) no-repeat right; PADDING-RIGHT: 15px; FONT-SIZE: 12px; FLOAT: right; LINE-HEIGHT: 30px
+}
+.zt_u_1 .zt_u_body { background-color:#F2F7FF
+	
+}
+/* 有标题有边框2 */
+
+.zt_u_1a {border:none; background-color:#FFFFFF
+}
+.zt_u_1a .zt_u_title {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style5/bg3.gif) ; HEIGHT: 27px
+}
+.zt_u_1a .zt_u_title .zt_u_name {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style5/t_title4.gif) no-repeat;PADDING-LEFT: 30px;color:#000; padding-top:5px;FONT-WEIGHT: bold; FONT-SIZE: 14px; FLOAT: left; LINE-HEIGHT: 22px ; width:150px
+}
+.zt_u_1a .zt_u_title .zt_u_more {
+	PADDING-RIGHT: 15px; FONT-SIZE: 12px; FLOAT: right; LINE-HEIGHT: 27px ;text-align:right
+}
+
+.zt_u_1a .zt_u_body {
+	BORDER-RIGHT: #BCD4ED 1px solid; BORDER-TOP: #BCD4ED 1px solid; BORDER-LEFT: #BCD4ED 1px solid; BORDER-BOTTOM: #BCD4ED 1px solid
+}
+
+
+/* 有标题无边框1 */
+
+.zt_u_2 {
+	
+}
+.zt_u_2 .zt_u_title {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style5/bg5.gif); HEIGHT: 28px
+}
+.zt_u_2 .zt_u_title .zt_u_name {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style5/t_title7.gif) no-repeat;PADDING-LEFT: 30px; color:#045AA7; FONT-WEIGHT: bold; FONT-SIZE: 14px; FLOAT: left; LINE-HEIGHT: 20px;vertical-align: top
+}
+.zt_u_2 .zt_u_title .zt_u_more {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style5/t_title8.gif) no-repeat right;PADDING-right: 15px;color:#333333; FONT-SIZE: 12px; FLOAT: right; LINE-HEIGHT: 20px ; text-align:right;vertical-align: top
+}
+
+/* 有标题无边框2 */
+
+.zt_u_2 {	BORDER-RIGHT: #BCD4ED 1px solid; BORDER-TOP: #BCD4ED 1px solid; BORDER-LEFT: #BCD4ED 1px solid; BORDER-BOTTOM: #BCD4ED 1px solid; background-color:#FFFFFF
+}
+.zt_u_2a .zt_u_title {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style5/bg4.gif) ; HEIGHT: 40px
+}
+.zt_u_2a .zt_u_title .zt_u_name {
+	BACKGROUND: url(//mat1.gtimg.com/news/zt/mb/style5/t_title6.gif) no-repeat;PADDING-LEFT: 21px;color:#18267b; font-family:黑体;FONT-WEIGHT: none; FONT-SIZE: 20px; FLOAT: left; LINE-HEIGHT: 40px ; width:122px
+}
+.zt_u_2a .zt_u_title .zt_u_more {
+	PADDING-RIGHT: 15px; FONT-SIZE: 12px; FLOAT: right; LINE-HEIGHT: 40px ; text-align:right
+}
+
+.zt_u_2a .zt_u_body {
+}
+
+
+/* 无标题有边框 */
+
+.zt_u_3 {
+	BORDER-RIGHT: #BCD4ED 1px solid; BORDER-TOP: #BCD4ED 1px solid; BORDER-LEFT: #BCD4ED 1px solid; BORDER-BOTTOM: #BCD4ED 1px solid;BACKGROUND: url(//mat1.gtimg.com/finance/stock/images/black_11.gif) repeat-x top center; background-color:#FFFFFF
+}
+.zt_u_3 .zt_u_body {
+	
+}
+
+/* 无标题无边框 */
+
+.zt_u_4 { background-color:#FFFFFF
+	
+}
+.zt_u_4 .zt_u_body {
+	
+}
+.zt_u_sp {
+	CLEAR: both; OVERFLOW: hidden; HEIGHT: 10px
+}
+/*  |xGv00|e7c91463b4d83b9a1ecd80bcc084cead */

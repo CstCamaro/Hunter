@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>大浙家居 免费验房</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+
+        /**{*/
+            /*margin: 0;*/
+            /*padding: 0;*/
+        /*}*/
+        .fix{
+            position: fixed;
+            top: 50%;
+            right: 50px;
+            width: 360px;
+            margin-top: -200px;
+            padding-top: 15px;
+            background-color: #FFFEED;
+        }
+
+    </style>
+</head>
+<div class="fix">
+<!--一个可用的报名表单包括『CSS样式表』、『HTML代码』，『JS代码』三部分-->
+<!-- 以下为默认『CSS样式表』，如需自定义样式，可取消对该文件的引用，自行替换 -->
+<link rel="Stylesheet" type="text/css" href="//mat1.gtimg.com/tech/css/huiyan/huiyan_style_v1.1.css">
+<link rel="Stylesheet" type="text/css" href="//mat1.gtimg.com/tech/css/huiyan/artDialog.css">
+ <style>
+        .required-icon{
+            display: none;
+        }
+        img{
+            display: block;
+        }
+        .huiyan-form{
+            width: 300px;
+            margin: 10px auto 30px;
+            height: 320px;
+        }
+        .huiyan-form .control-group{
+            height: 34px;
+            margin-bottom: 0;
+            padding: 5px  0;
+            border-top: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            background-color: #fff;
+            text-align: center;
+        }
+        .huiyan-form .control-label{
+            float: left;
+            width: 70px;
+            text-align: right;
+            padding: 0 5px;
+            line-height: 34px;
+            text-indent: 4px;
+            margin-bottom: 0;
+            color: #333;
+        }
+        .huiyan-form .controls{
+            width: 70%;
+            float: left;
+        }
+        .huiyan-form .controls input{
+            border: none;
+            box-shadow: none;
+        }
+        .huiyan-form .controls input[type="radio"]{
+            height: 15px;
+            margin-left: -15px;
+        }
+        .huiyan-form .radio.inline{
+            margin-right: 0;
+            font-size: 12px;
+            line-height: 25px;
+            padding-left: 7px;
+        }
+        .huiyan-form .controls input{
+            height: 34px;
+            float: left;
+            padding: 0 5px;
+        }
+        #submitBtn{
+            background: none;
+            width: 100%;
+            height: 34px;
+            margin: 0 auto;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 20px;
+            background-color: #DD0000;
+            /*background-position: 0;*/
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+<!-- 以下为表单主体『HTML代码』，请勿修改标签中的id和name属性-->
+<!-- 表单主体开始 -->
+<iframe id="id_iframe" name="id_iframe" style="display:none;"></iframe>
+<form name="form1" id="form1" method="post" action="http://huiyan.qq.com/userApply/apply" target="id_iframe" class="huiyan-form" accept-charset="UTF-8">
+<h3>大浙家居公益验房</h3>
+        <input type="hidden" name="activity_id" value="15887">
+	<input type="hidden" name="attr_list" value="70,384,19111,19112">
+	<input type="hidden" name="site" value="dazhewang">
+        <div class="control-group">
+		<label class="control-label">姓名<span class='required-icon'>*</span></label>                   
+		<div class="controls">
+			<input type="text" class="input-xxlarge"  name="form_70_1" myRequired="1" myHidden="0">
+		</div>
+	</div>
+        <div class="control-group">
+		<label class="control-label">手机号码<span class='required-icon'>*</span></label>                   
+		<div class="controls">
+			<input type="text" class="input-xxlarge"  name="form_384_1" myRequired="1" myHidden="0">
+		</div>
+	</div>
+        <div class="control-group">
+		<label class="control-label">小区地址<span class='required-icon'>*</span></label>                   
+		<div class="controls">
+			<input type="text" class="input-xxlarge"  name="form_19111_1" myRequired="1" myHidden="0">
+		</div>
+	</div>
+        <div class="control-group">
+		<label class="control-label">交付时间<span class='required-icon'>*</span></label>                   
+		<div class="controls">
+			<input type="text" class="input-xxlarge"  name="form_19112_1" myRequired="1" myHidden="0">
+		</div>
+	</div>
+	<div class="control-group">                                        
+		<label class="control-label"></label>                       
+		<div class="controls">
+			<button class="btn" id="submitBtn">提交</button>
+		</div>
+	</div>
+</form><!-- 表单主体结束 -->
+
+<!-- 以下为『JS代码』，包括“jQ依赖库”和“个性化脚本”两部分 -->
+<!-- jQuery依赖库，版本号v1.8.3，如页面中已包含jQuery库文件，请取消对该文件的引用-->
+<script type="text/javascript" src="//mat1.gtimg.com/tech/css/huiyan/jquery.min.js"></script>
+
+<!-- 个性化脚本，请勿修改，并确保引入页面-->
+<script>
+	(function($){
+		$.getScript("//mat1.gtimg.com/tech/css/huiyan/huiyan_base_v1.3.min.js?r="+Math.random(),function(){				
+			$(document).ready(function(){
+				$.createToolkit.generatePhoneIdentify();
+			});
+			$("#submitBtn").click(function(event){
+				event.preventDefault();
+				if($.createToolkit.commonCheck()){
+	
+					$.createToolkit.escapeHtml();
+					var originCode=document.charset;
+					if(document.all)
+						document.charset='utf-8';
+					$("#form1").submit();
+					document.charset=originCode;
+					$.createToolkit.unescapeHtml();
+				}
+			
+			});
+		});	
+	})(jQuery);
+	document.domain = "qq.com";
+	
+	//报名成功的回调函数，如有需要可以覆盖修改函数体，保留函数名不变。
+	//注：该函数仅支持慧眼系统同子域名（qq.com）内的回调，跨域回调操作不会被触发。
+	function huiyan_success_callback(){
+		huiyanAlert("您已报名成功，客服会尽快与您电话确认！",function(){
+					});
+	}
+	function huiyan_fail_callback(errorMsg){
+		huiyanAlert(errorMsg);
+	}
+</script>
+	
+
+</div>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Save for Web Slices (jianl-恢复的1.psd) -->
+<table id="__01" width="1440" height="3145" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto">
+    <tr>
+        <td>
+            <img src="http://img1.gtimg.com/zj/pics/hv1/64/215/2264/147271489.jpg" width="1440" height="601" alt=""></td>
+    </tr>
+    <tr>
+        <td>
+            <img src="//mat1.gtimg.com/zj/2017jiaju/mfyf/hz/hzmfyf_02.jpg" width="1440" height="809" alt=""></td>
+    </tr>
+    <tr>
+        <td>
+            <img src="//mat1.gtimg.com/zj/2017jiaju/mfyf/hz/hzmfyf_03.jpg" width="1440" height="650" alt=""></td>
+    </tr>
+    <tr>
+        <td>
+            <img src="//mat1.gtimg.com/zj/2017jiaju/mfyf/hz/hzmfyf_04.jpg" width="1440" height="595" alt=""></td>
+    </tr>
+    <tr>
+        <td>
+            <img src="//mat1.gtimg.com/zj/2017jiaju/mfyf/hz/hzmfyf_05.jpg" width="1440" height="620" alt=""></td>
+    </tr>
+    <tr>
+        
+
+
+                </table>
+
+<!-- End Save for Web Slices -->
+<!--通用底部导航-->
+<style>
+    .tcopyright {width:1000px;margin:-130px auto 130px;;padding:8px 0;font-size:12px;line-height:28px;color:#888; text-align:center; overflow:hidden;clear:both;}
+    .tcopyright .en{font-family:Arial;}
+    .tcopyright a{color:#888;text-decoration: none;}
+    .tcopyright a:hover{color:#00b9ff;text-decoration: underline;}
+</style>
+<div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+    <div><a href=" " target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私权保护</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</ a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a> </div>
+    <div class="en">Copyright &copy; 1998 - 2013 Tencent. All Rights Reserved</div>
+    <div> <a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a> </div>
+</div>
+<!--通用底部导航 结束-->
+</body>
+</html><!--[if !IE]>|xGv00|04433e9d2770532d948c19477eec6c2f<![endif]-->

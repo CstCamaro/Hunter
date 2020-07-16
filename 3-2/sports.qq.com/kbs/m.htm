@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>下载腾讯体育</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+          <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+          <meta content="telephone=no" name="format-detection">
+          <meta content="yes" name="apple-mobile-web-app-capable">
+          <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link href="//mat1.gtimg.com" rel="dns-prefetch">
+    <link href="//sports.qq.com" rel="dns-prefetch">
+    <link rel="shortcut icon" href="//mat1.gtimg.com/sports/kbsweb/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="//mat1.gtimg.com/sports/kbsweb/favicon.ico" type="image/x-icon">
+    <link href="//mat1.gtimg.com/sports/kaibisai/mobi/touch-icon-iphone.png" rel="apple-touch-icon">
+    <link href="//mat1.gtimg.com/sports/kaibisai/mobi/touch-icon-iphone-retina.png" sizes="120x120" rel="apple-touch-icon">
+    <link rel="stylesheet" href="//mat1.gtimg.com/sports/sportAppWeb/kbsshare/styles/css_b771f9.css"><script>
+        ;(function () {
+            // 设计稿宽度 px
+            var designWidth = 750
+            // rem 基准字号 px
+            var baseFontSize = 100
+            // 最大适配宽度 px
+            var maxAdaptWidth = 425
+
+            var adaptDevice = function () {
+                var deviceWidth = document.documentElement.clientWidth
+                deviceWidth = deviceWidth > maxAdaptWidth ? maxAdaptWidth : deviceWidth
+                var scale = deviceWidth / designWidth
+                var adaptRootFontSize = baseFontSize * scale
+                document.querySelector('html').style.fontSize = adaptRootFontSize + 'px'
+            }
+
+            var timer = 0
+            window.addEventListener('resize', function () {
+                if (timer) {
+                    clearTimeout(timer)
+                    timer = 0
+                }
+
+                timer = setTimeout(function () {
+                    adaptDevice()
+                }, 0)
+            })
+
+            adaptDevice()
+        } ())
+    </script>
+</head>
+<body data-page="13">
+    <div class="bg">
+        <div class="man"></div>
+    </div>
+    <div class="mask">
+        <div class="logo"></div>
+        <div class="title"></div>
+        <div class="download">
+            <a href="javascript:void(0)" id="mDownloadBtn" class="btn-download"></a>
+        </div>
+    </div>
+    <script charset="UTF-8" src="//mat1.gtimg.com/sports/sportAppWeb/tua-app-sdk/tua-mlogin.js"></script>
+    <script charset="UTF-8" src="//mat1.gtimg.com/sports/kbsweb2/qosboss.js?app=h5_m_download"></script>
+    <script src="//mat1.gtimg.com/sports/sportAppWeb/tua-app-sdk/bossv2.js" charset="utf-8"></script>
+    <script src="//mat1.gtimg.com/sports/kbsweb2/axios.js" charset="utf-8"></script>
+    <script src="//mat1.gtimg.com/sports/kbsweb2/InstallTrack.umd.min.js" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8" data-mainentry_6688be="/src/scripts/ui/download/index" src="//mat1.gtimg.com/sports/sportAppWeb/kbsshare/scripts/js_8534a3.js" async></script><script type="text/javascript" charset="UTF-8">
+    (function () {
+        try {
+            /*----------------------------------
+             pgvMain arguments
+             -----------------------------------*/
+            var pgvMainArgs = {
+                virtualDomain: "function.sports.qq.com"
+            };
+
+            var node = document.createElement('script'),
+                    script = document.getElementsByTagName('script')[0];
+            node.src = "//pingjs.qq.com/ping_video.js";
+            node.type = 'text/javascript';
+            node.onload = node.onerror = node.onreadystatechange = function () {
+                /loaded|complete|undefined/.test(node.readyState) && function () {
+                    node.onload = node.onerror = node.onreadystatechange = null;
+                    node.parentNode.removeChild(node);
+                    node = undefined;
+                    pgvMain(pgvMainArgs);
+                }();
+            };
+            script.parentNode.insertBefore(node, script);
+        } catch (e) {
+
+        }
+    })();
+</script>
+<script>
+!function(){try{for(var e=[/projection\-detail/i],t=function(){return/qqsports/i.test(navigator.userAgent)},n=function(){function e(){for(var e=0,t={};e<arguments.length;e++){var n=arguments[e];for(var o in n)t[o]=n[o]}return t}return function t(n){function o(t,i,r){var a;if("undefined"!=typeof document){if(arguments.length>1){if("number"==typeof(r=e({path:"/"},o.defaults,r)).expires){var c=new Date;c.setMilliseconds(c.getMilliseconds()+864e5*r.expires),r.expires=c}r.expires=r.expires?r.expires.toUTCString():"";try{a=JSON.stringify(i),/^[\{\[]/.test(a)&&(i=a)}catch(e){}i=n.write?n.write(i,t):encodeURIComponent(String(i)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),t=(t=(t=encodeURIComponent(String(t))).replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent)).replace(/[\(\)]/g,escape);var l="";for(var s in r)r[s]&&(l+="; "+s,!0!==r[s]&&(l+="="+r[s]));return document.cookie=t+"="+i+l}t||(a={});for(var p=document.cookie?document.cookie.split("; "):[],d=/(%[0-9A-Z]{2})+/g,u=0;u<p.length;u++){var f=p[u].split("="),m=f.slice(1).join("=");this.json||'"'!==m.charAt(0)||(m=m.slice(1,-1));try{var g=f[0].replace(d,decodeURIComponent);if(m=n.read?n.read(m,g):n(m,g)||m.replace(d,decodeURIComponent),this.json)try{m=JSON.parse(m)}catch(e){}if(t===g){a=m;break}t||(a[g]=m)}catch(e){}}return a}}return o.set=o,o.get=function(e){return o.call(o,e)},o.getJSON=function(){return o.apply({json:!0},[].slice.call(arguments))},o.defaults={},o.remove=function(t,n){o(t,"",e(n,{expires:-1}))},o.withConverter=t,o}(function(){})}(),o={path:"/",domain:"sports.qq.com"},i=function(e,t){var n,o;/iphone|ipad|ipod|ios/i.test(navigator.userAgent)?function(e,t){t&&t.callback&&(t.callbackName="jsBridgeCallback___100",window[t.callbackName]=function(e){t.callback(e),window[t.callbackName]=void 0});var n=[];for(var o in t)"callback"!=o&&n.push(o+"="+encodeURIComponent(t[o]));var i="http://sports.qq.com/jsBridge/"+e+"?"+n.join("&"),r=document.createElement("iframe");r.src=i,r.style.width="0",r.style.height="0",r.style.border="none",r.style.visibility="hidden",document.body.appendChild(r),setTimeout(function(){r.parentNode.removeChild(r)},1e3)}(e,t):/android/i.test(navigator.userAgent)&&(n=e,(o=t)&&o.callback&&(o.callbackName="jsBridgeCallback___100",window[o.callbackName]=function(e){o.callback(e),window[o.callbackName]=void 0}),alert("js_"+n+"("+JSON.stringify(o)+")"))},r=function(){return e="h5_page_step",+n.get(e)||0;var e},a=!1,c=function(){return a?r():r()+1},l=function(){var e,t;e="h5_page_step",t=c(),n.set(e,t,o),a=!0},s=function(){if(t()){var e={};e.h5_page_name=location.pathname.replace(/\/|\.htm|\.html/g,"_").replace(/index_$/,""),e.h5_page_step=c(),i("setLog",e)}},p=0;p<e.length;p++)if(e[p]&&e[p].test&&e[p].test(location.pathname))return;t()&&setTimeout(function(){s(),l()},0)}catch(e){}}();</script>
+<!--[if !IE]>|xGv00|6f5abd60baedf0c432e910d2fd0ebb99<![endif]-->
+<!--[if !IE]>|xGv00|73635537e5e2a442d7097e8bfd240f55<![endif]-->
+</body>
+</html>
+<!--[if !IE]>|xGv00|8dd048f82d8d0086cef665682c264a37<![endif]-->

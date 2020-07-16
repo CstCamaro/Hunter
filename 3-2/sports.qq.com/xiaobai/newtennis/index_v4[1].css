@@ -1,0 +1,530 @@
+@charset "gb2312";
+/**
+ * author: jianminlu#tencent.com
+ * updata: 2013-03-20 10:35
+ */
+/* cssRset */
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select{margin:0;padding:0;}
+body{font:12px "宋体","Arial Narrow",HELVETICA;background:#FFF;-webkit-text-size-adjust:100%;color:#8C8C8C;background:#FFF;line-height:22px;}
+a{text-decoration:none;color:#333;}
+a:hover{text-decoration:underline;color:#BC0904;}
+em{font-style:normal;}
+li{list-style:none;}
+img{border:0;vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+p{word-wrap:break-word;}
+.undis{display:none;}
+.dis{display:block;}
+.ind{text-indent:2em;}
+.Q-red{color:#BD0A01;}
+.Q-black{color:#000;}
+.cf:after,.layout:after,.hd:after,.bd:after{content:"";display:table;clear:both;}
+.cf,.layout,.hd,.bd{*zoom:1;}
+@media screen{
+.hd h2,.hd h3,
+.fl,.layout .fl,.chief{float:left;display:inline}
+.fr,.layout .fr,.extra{float:right;display:inline}
+.layout{width:1000px;margin:0 auto}
+.f10{font-size:10px;}.f12{font-size:12px;}.f13{font-size:13px;}.f14{font-size:14px;}.f15{font-size:15px;}.f16{font-size:16px;}.f18{font-size:18px;}.f20{font-size:20px;}.f22{font-size:22px;}.f26{font-size:26px;}
+.l16{line-height:16px;}.l17{line-height:17px;}.l18{line-height:18px;}.l19{line-height:19px;}.l20{line-height:20px;}.l21{line-height:21px;}.l22{line-height:22px;}.l23{line-height:23px;}.l24{line-height:24px;}.l25{line-height:25px;}.l26{line-height:26px;}.l27{line-height:27px;}.l28{line-height:28px;}.l29{line-height:29px;}.l30{line-height:30px;}.l32{line-height:32px;}
+.mt10{margin-top:10px;}.mr10{margin-right:10px;}.mr12{margin-right:12px;}.mb10{margin-bottom:10px;}.mb40{margin-bottom:40px;}}
+.posr{position:relative;}
+.posa{position:absolute;}
+.yh{font-family:"Microsoft Yahei","黑体";font-weight:normal;}
+.ari{font-family:"Arial";}
+/* sprite */
+.icons{background:url(//mat1.gtimg.com/sports/index2013/images/icons_v6.png) no-repeat;}
+.icon_more{display:inline-block;width:12px;height:12px;background-position:-180px -85px;margin-top:3px;}
+.icon_more:hover{background-position:-200px -85px;}
+.icon_wb{background-position:-460px -369px;padding-left:16px;}
+.icon_play{background-position:-460px -29px;padding-left:21px;}
+.icon_play1{background-position:-442px -305px;padding-left:22px;}
+.icon_txt{background-position:-442px -335px;padding-left:22px;}
+.icon_zbz{display:inline-block;width:80px;height:36px;background-position:-230px -249px;}
+.icon_play_zb{display:inline-block;width:33px;height:24px;background-position:-230px -90px;}
+.icon_play_zb:hover{background-position:-270px -90px;}
+.icon_play_hg{display:inline-block;width:33px;height:24px;background-position:-270px -120px;}
+.icon_play_hg:hover{background-position:-230px -120px;}
+.icon_play_tx{display:inline-block;width:33px;height:24px;line-height:99px!important;background-position:-230px -150px;overflow:hidden;}
+.icon_play_tx:hover{background-position:-270px -150px;}
+.icon_zbxx{display:inline-block;width:98px;height:21px;margin:12px 0 0 24px;background-position:-60px -40px;}
+.icon_pl{display:inline-block;height:14px;line-height:14px;padding-left:17px;background-position:-460px -400px;font-family:"Arial";color:#1D6CB5;font-size:12px;}
+.icon_pl:hover{background-position:-460px -420px;text-decoration:none;}
+.icon_vote{width:20px;height:20px;line-height:20px;background-position:-460px -456px;}
+.icon_vote a{width:20px;height:20px;line-height:20px;background:url(//mat1.gtimg.com/sports/index2013/images/icons_v6.png) -460px -436px no-repeat;}
+.icon_r_wb{background-position:-460px -75px;padding-left:27px;}
+.icon_tit_wb{background-position:-460px -72px;_background-position:-460px -78px;padding-left:21px;}
+.icon_tit_play{background-position:-460px -18px;padding-left:21px;}
+.icon_r_ht{background-position:-460px -115px;padding-left:27px;}
+.icon_cp_red{background-position:-180px -110px;color:#FFE88B;}
+.icon_cp_blue{background-position:-200px -110px;color:#FFF;}
+.icon_ca_zq{background-position:-460px -150px;padding-left:35px;}
+.icon_ca_lq{background-position:-460px -190px;padding-left:35px;}
+.icon_ca_zh{background-position:-460px -230px;padding-left:35px;}
+.icon_ca_cp{background-position:-460px -270px;padding-left:35px;}
+.icon_tit_video{width:220px;height:88px;background-position:0 -250px;}
+.icon_tit_pic{width:220px;height:88px;background-position:0 -340px;}
+.icon_dujia_big{background-position:-440px -564px;_background-position:-440px -568px;padding-left:65px;}
+.icon_dujia_small{background-position:-440px -620px;padding:1px 0 1px 42px;}
+.icon_ik_green,
+.icon_ik_blue{display:inline-block;height:20px;line-height:18px;padding:0 10px 0 20px;color:#FFF;position:relative;left:-5px;}
+.icon_ik_green{background-position:-230px -180px;}
+.icon_ik_blue{background-position:-230px -210px;}
+.txt_cp{display:inline-block;width:36px;height:19px;background-position:0 -140px;margin:5px 0 0 5px;}
+.txt_dj{width:49px;height:19px;background-position:-40px -140px;}
+.txt_sd{width:47px;height:23px;background-position:-90px -140px;}
+.txt_pl{width:48px;height:20px;background-position:-140px -140px;}
+.txt_mj{width:57px;height:20px;background-position:-90px -200px;}
+.txt_sj{width:63px;height:20px;background-position:0 -170px;}
+.txt_ycsp{display:inline-block;width:89px;height:23px;background-position:0 -170px;margin-top:2px;}
+.txt_tptk{display:inline-block;width:78px;height:22px;background-position:0 -200px;margin-top:4px;}
+.txt_ss{width:57px;height:20px;background-position:-300px 0;}
+.txt_jh{width:57px;height:18px;background-position:-300px -30px;}
+/* ad_txt */
+.ad_icon{background:url(//mat1.gtimg.com/sports/index2013/images/icon_ad.png) no-repeat;}
+.ad_txt_qd1{display:inline-block;width:48px;height:16px;line-height:50px;background-position:0 0;vertical-align:middle;margin:3px -7px 0 15px;overflow:hidden;}
+.ad_txt_qd2{display:inline-block;width:48px;height:16px;line-height:50px;background-position:0 -60px;vertical-align:middle;margin:-1px 3px 0 0;overflow:hidden;}
+.ad_txt_grn{display:inline-block;width:32px;height:16px;line-height:50px;background-position:0 -30px;vertical-align:middle;margin:3px -7px 0 15px;overflow:hidden;}
+/* 看比赛 */
+.icon_kbs{background:url(//mat1.gtimg.com/sports/xiaobai/newtennis/20.jpg) no-repeat;}
+.sp_icon{background:url(//mat1.gtimg.com/sports/index2013/images/sports_icon.png) no-repeat;}
+/* 足球 */
+.sp_icon_zq{background-position:0 0;}
+.sp_zq_dlzb{width:75px;background-position:-157px 0;}
+.sp_zq_dlzb:hover{background-position:-157px -89px;}
+.sp_zq_yc{width:86px;background-position:-232px 0;}
+.sp_zq_yc:hover{background-position:-232px -89px;}
+.sp_zq_yj{width:87px;background-position:-318px 0;}
+.sp_zq_yj:hover{background-position:-318px -89px;}
+.sp_zq_xj{width:86px;background-position:-405px 0;}
+.sp_zq_xj:hover{background-position:-405px -89px;}
+.sp_zq_og{width:86px;background-position:-491px 0;}
+.sp_zq_og:hover{background-position:-491px -89px;}
+.sp_zq_ol{width:80px;background-position:-577px 0;}
+.sp_zq_ol:hover{background-position:-577px -89px;}
+/* 篮球 */
+.sp_icon_lq{background-position:0 -170px;}
+.sp_nba_zb{width:173px;background-position:-157px -170px;}
+.sp_nba_zb:hover{background-position:-157px -259px;}
+.sp_nba_sjk{width:167px;background-position:-330px -170px;}
+.sp_nba_sjk:hover{background-position:-330px -259px;}
+.sp_nba_hytq{width:160px;background-position:-497px -170px;}
+.sp_nba_hytq:hover{background-position:-497px -259px;}
+/* 综合 */
+.sp_icon_zh{background-position:0 -340px;}
+.sp_zh_sc{width:121px;background-position:-157px -340px;}
+.sp_zh_sc:hover{background-position:-157px -429px;}
+.sp_zh_wq{width:130px;background-position:-278px -340px;}
+.sp_zh_wq:hover{background-position:-278px -429px;}
+.sp_zh_gef{width:129px;background-position:-408px -340px;}
+.sp_zh_gef:hover{background-position:-408px -429px;}
+.sp_zh_qp{width:120px;background-position:-537px -340px;}
+.sp_zh_qp:hover{background-position:-537px -429px;}
+/* 彩票 */
+.sp_icon_cp{background-position:0 -510px;}
+.sp_cp_ssq{width:90px;background-position:-157px -510px;}
+.sp_cp_ssq:hover{background-position:-157px -599px;}
+.sp_cp_dlt{width:80px;background-position:-247px -510px;}
+.sp_cp_dlt:hover{background-position:-247px -599px;}
+.sp_cp_zc{width:81px;background-position:-327px -510px;}
+.sp_cp_zc:hover{background-position:-327px -599px;}
+.sp_cp_jc{width:80px;background-position:-408px -510px;}
+.sp_cp_jc:hover{background-position:-408px -599px;}
+.sp_cp_lc{width:80px;background-position:-488px -510px;}
+.sp_cp_lc:hover{background-position:-488px -599px;}
+.sp_cp_k3{width:89px;background-position:-568px -510px;}
+.sp_cp_k3:hover{background-position:-568px -599px;}
+/* png24 */
+.focus_play,
+.play_btn{display:inline-block;position:absolute;left:50%;top:50%;cursor:pointer;}
+.focus_play{width:67px;height:67px;margin:-34px 0 0 -34px;background:url(//mat1.gtimg.com/sports/index2013/images/focus_play.png) no-repeat;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/index2013/images/focus_play.png',sizingMethod='crop');}
+.play_btn{width:50px;height:50px;margin:-25px 0 0 -25px;background:url(//mat1.gtimg.com/sports/index2013/images/play_btn.png) no-repeat;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/index2013/images/play_btn.png',sizingMethod='crop');}
+.icon_hot{display:inline-block;width:9px;height:14px;position:absolute;left:50%;top:0;margin-left:-5px;background:url(//mat1.gtimg.com/sports/index2013/images/icon_hot.png) no-repeat;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/index2013/images/icon_hot.png',sizingMethod='crop');}
+.focus_play{left:20px;top:220px;margin:0;}
+/* picTxt */
+.picTxt{display:block;cursor:pointer;z-index:1;overflow:hidden;}
+.picTxt .shadow{display:block;position:relative;text-align:center;color:#FFF;height:27px;line-height:27px;margin-top:-27px;
+/*background:rgba(0, 0, 0, 0.7);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#B2000000,endColorstr=#B2000000);*/
+background:url(//mat1.gtimg.com/sports/index2013/images/shadowBg.png) repeat;
+_background-image:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/index2013/images/shadowBg.png',sizingMethod='crop');
+}
+.picTxt:hover{text-decoration:none;}
+/* 布局 */
+.site_ad{background:#F4F4F4;text-align:center;overflow:hidden;}
+.site_head{height:53px;}
+.head_logo{padding:12px 0 0 4px;}
+.head_ad{padding:17px 0 0 10px;}
+.head_nav{color:#E5E5E5;padding:20px 15px 0 0;}
+.site_nav{height:71px;margin-bottom:6px;}
+.main_nav{height:41px;}
+.main_nav a:hover{color:#FFF;text-decoration:none;}
+.main_nav li{float:left;}
+.main_nav li .line{width:0;height:18px;border-left:1px solid #AAC6E0;}
+.main_nav .nav_link{display:inline-block;height:22px;padding:0 4px;font-family:"Microsoft Yahei","宋体";}
+.main_nav .nav_link:hover,
+.main_nav .current,
+.main_nav .current a{background:#408ED6;color:#FFF;}
+.main_nav .current .sub_nav{display:block;}
+.main_nav .sub_nav{width:997px;height:27px;left:0;top:41px;z-index:2;padding:3px 0 0 3px;display:none;color:#FFF;}
+.main_nav .sub_nav a{float:left;color:#FFF;padding:0 8px;margin:0 7px;}
+.main_nav .sub_nav a:hover{background:#206BB0;}
+.main_nav .hot,
+.main_nav .hot a{color:#EB3A0B;position:relative;}
+.main_nav .hot a:hover{background:none;color:#CA2A00;}
+.main_nav1{margin-left:1px;}
+.main_nav1 li{margin-left:-1px;}
+.main_nav1 .nav_link{padding:12px 16px 7px;position:relative;color:#2B7DC8;}
+.main_nav1 .nav_link .line{position:absolute;right:0;top:14px;}
+.main_nav1 .nav_link:hover .line,
+.main_nav1 .current .line{display:none;}
+.main_nav2 li{height:22px;padding:12px 3px 0;}
+.main_nav2 .more{padding:12px 8px 0;}
+.main_nav2 .line{margin-right:10px;}
+.sub_nav_bg{min-width:1000px;width:100%;height:29px;background:#408ED6;border-bottom:1px solid #1768B2;}
+.site_focus{margin-bottom:24px;}
+.site_focus .chief{width:680px;}
+.site_focus .extra{width:311px;height:380px;background:#251B18;padding-left:9px;}
+.mod_kbs{height:380px;overflow:hidden;}
+.mod_kbs .hd{height:33px;padding:12px 15px 0 0;background-position:0 0;}
+.mod_kbs .hd h2{padding:0 0 0 27px;color:#FFF;}
+.mod_kbs .hd h2 a{color:#FFF;}
+.mod_kbs .hd h2 a:hover{color:#FFF;text-decoration:none;}
+.mod_kbs .vs_zhibo{height:100px;line-height:30px;padding:22px 17px 0 76px;background-position:0 -50px;position:relative;}
+.mod_kbs .vs_zhibo .zb_tag{width:57px;height:36px;position:absolute;left:6px;top:36px;background-position:-310px -250px;}
+.mod_kbs .vs_zhibo .zb_tag a{display:none;}
+.mod_kbs .vs_zhibo .vs_link{display:inline-block;width:218px;height:94px;overflow:hidden;position:relative;cursor:pointer;}
+.mod_kbs .vs_zhibo .vs_link:hover{text-decoration:none;}
+.mod_kbs .vs_zhibo .vs_item{width:70px;text-align:center;color:#FFF;}
+.mod_kbs .vs_zhibo .vs_item a{color:#FFF;}
+.mod_kbs .vs_zhibo .vs_time{display:none;}
+.mod_kbs .vs_yugao .zb_tag{height:24px;top:42px;background-position:-230px -300px;}
+.mod_kbs .vs_yugao .zb_tag a{display:block;}
+.mod_kbs .vs_yugao .vs_time{display:block;width:77px;height:22px;line-height:22px;position:absolute;top:68px;left:71px;color:#FFDE00;background-position:-310px -300px;text-align:center;}
+.mod_kbs .vs_yugao .icon_play_tx{width:57px;height:24px;background-position:-230px -300px;}
+.mod_kbs .vs_yugao .icon_play_tx:hover{background-position:-330px -210px;}
+.mod_kbs .vs_yugao .icon_play_tx-cancel{width:57px;height:24px;line-height:99px;background-position:-330px -180px;overflow:hidden;}
+.mod_kbs .txt_link{height:26px;padding-left:60px;background-position:0 -180px;color:#0D4F8C;}
+.mod_kbs .txt_link li{float:left;}
+.mod_kbs .txt_link a{display:inline-block;height:24px;padding:0 18px 0 39px;line-height:24px;color:#FFE5A2;border-top:1px solid #0F67AB;}
+.mod_kbs .txt_link a:hover{background-color:#0FAB81;border-top:1px solid #43CF64;text-decoration:none;}
+.mod_kbs .video_list li{height:37px;line-height:36px;padding:0 8px 0 22px;overflow:hidden;}
+.mod_kbs .video_list li span.fr{margin-top:8px;}
+.mod_kbs .video_list li span.fr a{width:33px;padding:0;display:inline-block;text-align:center;}
+.mod_kbs .video_list .icon_play_tx-cancel:hover{background:#818181;}
+.mod_kbs .video_list a{color:#FFF;padding:3px;}
+.mod_kbs .video_list a:hover{text-decoration:none;}
+.mod_kbs .video_list .item_zbz .link:hover{background:#005496;}
+.mod_kbs .video_list .item_hg .link:hover{background:#886B4D;}
+.mod_kbs .video_list .item_zb .link:hover{background:#818181;}
+.mod_kbs .video_list .txt{display:inline-block;width:80px;margin-right:9px;}
+.mod_kbs .video_list .item_hg{color:#D2AD86;background-position:0 -210px;}
+.mod_kbs .video_list .item_zb{color:#BFBFBF;background-position:0 -250px;}
+.mod_kbs .video_list .item_zbz{padding-left:7px;background:#0F67AB;}
+.mod_kbs .video_list .icon_play_tx-cancel{background:none;}
+.mod_kbs .ft{height:39px;line-height:39px;background:#424242;}
+.mod_kbs .ft .txt{padding-left:8px;}
+.mod_kbs .ft a{color:#9B9B9B;}
+.mod_kbs .ft .ad_grn{float:left;width:74px;height:31px;padding:4px 4px 4px 0;background:#251B18;}
+.mod_qr_code{width:72px;line-height:20px;background:#408ED6;right:15px;top:547px;text-align:center;color:#CDE7FF;}
+.mod_qr_code a{color:#CDE7FF;}
+.mod_qr_code a:hover{text-decoration:none;}
+.mod_qr_code img{width:70px;height:70px;border:1px solid #434343;}
+.site_main{padding:0 0 12px;}
+.site_main .chief{width:660px;padding:0 29px 0 0;}
+.site_main .extra{width:300px;}
+.mod_A{margin-bottom:30px;}
+.mod_A .hd{height:88px;padding-top:10px;}
+.mod_A .hd h2 a{display:inline-block;width:157px;height:88px;}
+.mod_A .hd .ca_list a{float:left;height:76px;line-height:999px;overflow:hidden;}
+.mod_A .ca_tit{color:#333;padding:15px 0 0 5px;}
+.mod_A .ca_tit a{color:#333;}
+.mod_A .ca_tit a:hover{color:#0D61AC;text-decoration:none;}
+.mod_A .news_more{display:block;height:25px;line-height:25px;text-align:center;background:#EEF3F8;color:#333;}
+.mod_A .news_more em{color:#1D6CB5;}
+.mod_A .news_more:hover{color:#BC0902;text-decoration:none;background:#D1E0EE;}
+.mod_A .news_more:hover span{color:#333;}
+.mod_A .more_up{background:#D1E0EE;}
+
+.news_list{padding:5px 0 0;}
+.news_list .news_item{border-bottom:1px solid #DDD;padding:18px 0 20px 0;overflow:hidden;}
+.news_list .news_item:hover,
+.news_list .current{background:#F5F5F5;}
+.news_list .news_item h2{height:30px;line-height:30px;padding-bottom:18px;}
+.news_list .news_item h2 a:hover{background-color:#9CC7EE;text-decoration:none;color:#333;}
+.news_list .news_item h3{padding-bottom:10px;}
+.news_list .news_item h3 .icon_play{background-position:-460px -24px;_background-position:-460px -29px;line-height:25px;}
+.news_list .news_item h3 a:hover{background-color:#9CC7EE;text-decoration:none;color:#333;}
+.news_list .news_item .mod_pic{margin:0 17px 0 0;}
+.news_list .news_item .news_txt{height:70px;margin-bottom:7px;overflow:hidden;}
+.news_list .news_item .h_auto{height:auto;}
+.news_list .news_info{height:22px;}
+.news_list .news_info .tag a{color:#1D6CB5;padding:3px 5px;}
+.news_list .news_info .tag a:hover{background:#4192DD;color:#FFF;text-decoration:none;}
+.news_list .news_info .pl_btn{padding:4px 10px 0 0;_display:none;}
+.news_list .big_pic .news_txt{height:auto;}
+.news_list .big_pic .mod_pic{width:660px;margin:0;padding:0 0 10px;float:none;}
+.news_list .big_pic .mod_pic img{margin-bottom:10px;}
+.news_list .area_more{display:none;}
+.hot_news{height:45px;line-height:45px;overflow:hidden;}
+.hot_news h2{width:145px;height:45px;margin-right:18px;background:#408ED6;}
+.hot_news a{color:#1071CB;}
+.hot_news a:hover{color:#1071CB;color:#BC0904;}
+.mod_hot_news .news_item .mod_pic{width:195px;}
+.mod_hot_news .news_item .news_txt{height:auto;margin-bottom:0;}
+/* extra */
+.mod_B{margin-bottom:20px;}
+.mod_B .tit{height:30px;line-height:30px;border-bottom:3px solid #A6D0F7;padding:3px 5px 10px;color:#363535;}
+.mod_B .tit h2 a:hover{color:#0D61AC;text-decoration:none;}
+.mod_B .tit .icon_more{margin:13px 10px 0 0;}
+.mod_B .con{border-top:1px solid #62A2DD;}
+.mod_B .addAttention,
+.mod_B .delAttention{font-size:12px;font-weight:normal;padding:2px 9px;color:#FFF;}
+.mod_B .addAttention{background:#3CB23F;}
+.mod_B .addAttention:hover{background:#1E9A21;text-decoration:none;color:#FFF;}
+.mod_B .delAttention{background:#C6CFD8;padding:2px 3px;}
+.mod_B .delAttention:hover{text-decoration:none;cursor:default;color:#FFF;}
+/* 腾讯体育出品 */
+.mod_ca{padding:20px 0 0;}
+.mod_ca .hd{background:#EEF3F8;}
+.mod_ca .hd .qs{width:45px;height:27px;line-height:27px;padding-left:4px;color:#333;}
+.mod_ca .hd h3{height:27px;line-height:27px;background-position:-460px -520px;padding-left:9px;}
+.mod_ca .hd1{background:none;}
+.mod_ca .hd1 h3{width:251px;padding-left:0;}
+.mod_ca .hd1 a,
+.mod_ca .hd1 i{background:url(//mat1.gtimg.com/sports/index2013/images/icon_txt_v2.png) no-repeat;}
+.mod_ca .hd1 a{display:block;height:27px;line-height:27px;cursor:pointer;}
+.mod_ca .hd1 i{display:inline-block;width:60px;height:20px;line-height:99px;margin:4px 0 0 10px;overflow:hidden;}
+.mod_ca .hd1 a{background-position:0 -120px;}
+.mod_ca .hd1 a:hover{background-position:0 -150px;}
+.mod_ca .new a{background-position:0 -90px;}
+.mod_ca .new .qs{font-family:Tahoma;font-weight:bold;color:#C91111;}
+.mod_ca .hd1 .txt_jh{background-position:0 -30px;}
+.mod_ca .new .txt_jh{background-position:0 0;}
+.mod_ca .hd1 a:hover .txt_jh{background-position:0 -60px;}
+.mod_ca .hd1 .txt_dj{background-position:-60px -30px;}
+.mod_ca .new .txt_dj{background-position:-60px 0;}
+.mod_ca .hd a:hover .txt_dj{background-position:-60px -60px;}
+.mod_ca .hd1 .txt_mj{background-position:-120px -30px;}
+.mod_ca .new .txt_mj{background-position:-120px 0;}
+.mod_ca .hd1 a:hover .txt_mj{background-position:-120px -60px;}
+.mod_ca .hd1 .txt_ss{background-position:-180px -30px;}
+.mod_ca .new .txt_ss{background-position:-180px 0;}
+.mod_ca .hd1 a:hover .txt_ss{background-position:-180px -60px;}
+.mod_ca .hd1 .txt_sd{background-position:-240px -30px;}
+.mod_ca .new .txt_sd{background-position:-240px 0;}
+.mod_ca .hd1 a:hover .txt_sd{background-position:-240px -60px;}
+.mod_ca .hd1 .txt_pl{background-position:-300px -30px;}
+.mod_ca .new .txt_pl{background-position:-300px 0;}
+.mod_ca .hd1 a:hover .txt_pl{background-position:-300px -60px;}
+.mod_ca .bd .item{padding:12px 10px 0 0;position:relative;}
+.mod_ca .bd .item h4{padding-bottom:5px;}
+.mod_ca .bd .item dt{text-align:center;position:relative;z-index:1;}
+.mod_ca .vote_btn{padding-top:2px;}
+.mod_ca .vote_btn a,
+.mod_ca .vote_btn span{display:inline-block;height:20px;line-height:20px;}
+.mod_ca .vote_btn a{width:20px;}
+.mod_ca .tab_hd{text-align:center;color:#D3D2D2;padding:15px 0 5px;}
+.mod_ca .tab_hd span{padding:0 10px;}
+.mod_ca .tab_hd a{color:#1D6CB5;}
+.mod_ca .tab_hd a:hover{text-decoration:none;}
+.mod_ca .tab_hd .current{color:#333;}
+.mod_ca .picTxt{width:295px;}
+/* 右侧广告 */
+.ad_r_60,
+.ad_r_85,
+.ad_r_100{width:295px;text-align:center;margin-top:20px;}
+.ad_r_60{height:60px;}
+.ad_r_85{height:85px;}
+.ad_r_100{height:100px;}
+/* 腾讯出品 */
+.mod_tptk .tab_hd a{color:#333;}
+.mod_tptk .tab_hd a:hover{color:#1D6CB5;}
+.mod_akty .con{padding:14px 0;border:1px solid #CFE1EF;border-top:1px solid #62A2DD;position:relative;}
+.mod_akty .akty_line{width:1px;height:200px;position:absolute;left:-1px;top:-1px;background-position:-440px 0;}
+.mod_akty_list{padding:10px 2px 8px;}
+.mod_akty_list li{padding-left:9px;}
+.mod_akty_list .first_item{border-bottom:1px dotted #E8E8E8;margin-bottom:4px;}
+.mod_akty_list .first_item dl{padding:0 0 13px;}
+.mod_akty_list .first_item dt{margin-right:10px;}
+.mod_akty_list .first_item dd{height:60px;color:#666;}
+.mod_wb{padding:5px 0;}
+.mod_wb .hd,
+.mod_wb .hd a{color:#333;}
+.mod_wb .item{padding:18px 0;}
+.mod_wb .item dd{padding-left:102px}
+.mod_wb .item h3{padding-bottom:6px;margin-top:-4px;}
+.mod_wb .topic_link{padding:5px 0 0;}
+.mod_wb .topic_link a{background:#3CB23F;padding:2px 9px;color:#FFF;}
+.mod_wb .topic_link a:hover{background:#1E9A21;text-decoration:none;}
+.mod_dtty{padding:12px 0;}
+.mod_xyzq .con{padding:17px 0 17px 0;}
+.mod_cpzj .con{width:300px;overflow:hidden;padding:20px 0 20px 0;}
+.mod_cpzj .pic_list{width:316px;padding:0 0 20px;}
+.mod_cpzj .pic_list .item{float:left;width:60px;padding-right:19px;text-align:center;}
+.mod_cpzj .pic_list .item img{margin-bottom:5px;}
+.mod_cpzj .cp_haoma span.icons{float:left;width:18px;height:18px;line-height:17px;text-align:center;margin-right:2px;font-family:"Arial";font-size:12px;}
+.mod_cpzj .cp_ca{color:#333;}
+.mod_cpzj .cp_qh{color:#8C8C8C;}
+.mod_cpzj .cp_btn{padding:2px 5px;background:#1E73C1;color:#FFF;}
+.mod_cpzj .cp_btn:hover{background:#0D61AF;text-decoration:none;color:#FFF;}
+.mod_cpzj .cp_list thead{height:24px;line-height:24px;background:#EEF3F8;color:#333;}
+.mod_cpzj .cp_list tbody tr{height:30px;line-height:30px;border-bottom:1px solid #CADAEA;}
+.mod_rmtz .con{padding-left:0;}
+.mod_rmtz .cp_tab{color:#363535;}
+.mod_rmtz .cp_tab .tabBtn{display:inline-block;height:34px;line-height:34px;padding:0 22px;background:#EEF3F8;border-bottom:1px solid #CCDAE9;}
+.mod_rmtz .cp_tab .current{background:#DAE7F2;border-bottom:1px solid #5696D1;}
+.mod_rmtz .cp_tab .tab_bd td{border-bottom:1px solid #D7E3EF;}
+.mod_rmtz .cp_tab .data{padding:0 10px 0 22px;}
+.mod_rmtz .cp_tab .jc_btn,
+.mod_rmtz .cp_tab .bd_btn{padding:2px 6px;color:#FFF;margin-left:4px;}
+.mod_rmtz .cp_tab .jc_btn{background:#F0850C;}
+.mod_rmtz .cp_tab .bd_btn{background:#1DAEBF;}
+.mod_rmtz .cp_tab .jc_btn:hover{background:#DD7B0A;text-decoration:none;}
+.mod_rmtz .cp_tab .bd_btn:hover{background:#0B97A9;text-decoration:none;}
+.mod_cpgj .con{padding:10px 0 0 15px;}
+.mod_cp_tz{padding:18px 0;}
+.mod_cp_tz .item{width:135px;}
+.mod_cp_tz .item .cp_djs{display:inline-block;width:76px;height:15px;line-height:15px;background:#2B2B2B;color:#EBA91A;text-align:center;}
+.mod_cp_tz .item .tz_btn{display:inline-block;width:76px;height:31px;line-height:31px;background-position:-320px -90px;margin-top:8px;color:#FFF;text-align:center;}
+.mod_cp_tz .item .tz_btn:hover{background-position:-320px -130px;text-decoration:none;}
+.mod_cp_tz .item dt img{margin-bottom:10px;}
+.mod_cp_tz .item dt strong{color:#2B2B2B;}
+.mod_cp_tz .item dd{width:76px;}
+.mod_cp_tz .item dd strong{color:#363535;font-weight:normal;}
+/* 视频精选 */
+.site_videos .tit{min-width:1000px;width:100%;height:102px;padding:14px 0 0;background:#D0D0D0;}
+.site_videos .con{min-width:1000px;width:100%;background:#DCDCDC;padding:25px 0 15px;}
+.site_videos .chief{width:690px;}
+.site_videos .extra{width:310px;}
+.site_videos .con .list1{border-bottom:1px solid #F0F0F0;border-right:1px solid #F0F0F0;padding:0 33px 15px 0;}
+.site_videos .con .list1 li{margin-bottom:27px;}
+.site_videos .con .list1 .item1{width:450px;}
+.site_videos .con .list1 .item2{width:200px;}
+.site_videos .con .list2{padding:45px 0 0;border-right:1px solid #F0F0F0;}
+.site_videos .con .list2 li{width:200px;margin-right:28px;}
+.site_videos .con .list3{padding-left:50px;}
+.site_videos .con .list3 li{margin-bottom:9px;}
+.site_videos .con .list3 .shadow{text-align:left;}
+.site_videos .con .list3 .shadow .icon_play{margin-right:10px;}
+.site_videos .icon_play{float:left;width:17px;height:17px;padding:0;margin:6px 0 0 8px;background-position:-460px -490px;vertical-align:middle;}
+.site_videos .icon_more{width:14px;background-position:-180px -95px;margin:45px 20px 0 0;}
+.site_videos .icon_more:hover{background-position:-200px -95px}
+/* 图片精选 */
+.site_pics .con .list3{padding-bottom:33px;border-bottom:1px solid #F0F0F0;}
+.site_pics .con .list4{padding:45px 0 0 50px;}
+.site_pics .list .picTxt .shadow{height:49px;line-height:49px;margin-top:0;text-align:center;}
+.site_pics .list li{position:relative;}
+.site_pics .list1 li,
+.site_pics .list3 li{height:264px;overflow:hidden;}
+.site_pics .list2 li,
+.site_pics .list4 li{height:120px;overflow:hidden;}
+.site_pics .con .layout{position:relative;}
+.site_pics .picTxt:hover{border:none;}
+.site_pics .picTxt:hover .shadow{margin-top:-49px;}
+.site_pics .picTxt .shadow{transition: margin-top 0.5s;-moz-transition: margin-top 0.5s;-webkit-transition: margin-top 0.5s;-o-transition: margin-top 0.5s;}
+
+.site_footer{min-width:1000px;width:100%;padding:40px 0;background:#408ED6;}
+.site_footer a{color:#CDE6FD;}
+.site_footer .chief{width:660px;}
+.site_footer .extra{width:340px;}
+
+.mod_hzmt{padding:20px 0 20px 25px;background:#2A7ECC;}
+.mod_hzmt .hd{color:#CDE6FD;}
+.mod_hzmt .bd{color:#6FADE7;padding:5px 0 60px}
+.mod_hzmt .bd a{padding:3px;}
+.mod_hzmt .bd a:hover{background:#146CBF;text-decoration:none;}
+.mod_hzmt .item{padding:10px 0 20px;}
+.mod_hzmt .item dt{width:140px;}
+.mod_hzmt .item dd{padding-left:0;}
+.mod_hmzy{padding:20px 0;}
+.mod_hmzy .hd{color:#CDE6FD;}
+.mod_hmzy .bd{color:#CDE6FD;overflow:hidden;}
+.mod_hmzy .bd .list{width:320px;}
+.mod_hmzy .bd .item{width:60px;padding:20px 19px 0 0;text-align:center;}
+.mod_hmzy .bd .list{width:auto;padding:0 0 20px;}
+.mod_hmzy .txt_link a:hover{background:#146CBF;text-decoration:none;}
+.mod_hmzy .txt_link a{padding:3px;}
+.mod_hmzy .home_btn,
+.mod_hmzy .wb_btn{width:16px;height:16px;padding:5px;}
+.mod_hmzy a.home_btn{background-position:5px -35px;}
+.mod_hmzy a.home_btn:hover{background-position:5px -65px;background-color:#1A70BF;}
+.mod_hmzy a.wb_btn{background-position:-25px -35px;}
+.mod_hmzy a.wb_btn:hover{background-position:-25px -65px;background-color:#29BA2E;}
+.mod_hmzy span.home_btn{background-position:-165px -35px;}
+.mod_hmzy span.wb_btn{background-position:-195px -35px;}
+
+/* focus */
+.mod_focus .focus{width:680px;height:380px;overflow:hidden; zoom: 1;position: relative; }
+.mod_focus ul{width:680px;height:380px;overflow:hidden;position:relative; }
+.mod_focus li{width:680px;height:380px;float:left;position:relative;}
+.mod_focus li a{display:block;cursor:pointer;}
+.mod_focus .tit{width:680px;position:absolute;left:0;bottom:35px;text-align:center;z-index:1;}
+.mod_focus .tit a{color:#fff;}
+.mod_focus .tit a:hover{text-decoration:none;}
+.mod_focus .bg{width:680px;height:70px;position:absolute;left:0;;bottom:0;background:#000;opacity:0.7;filter:alpha(opacity=70);}
+.mod_focus .foucsTit{width:680px;height:22px;left:0;position:absolute;bottom:3px;text-align:center;}
+.mod_focus .foucsTit span{display:inline-block;width:7px;height:7px;margin: 0 5px;line-height:0;font-size:0;background:url(//mat1.gtimg.com/sports/index2013/images/icons_v6.png) -160px -90px no-repeat;cursor:pointer;overflow:hidden;}
+.mod_focus .foucsTit span.on{background:url(//mat1.gtimg.com/sports/index2013/images/icons_v6.png) -170px -90px no-repeat;}
+.mod_focus .focusBtnL,
+.mod_focus .focusBtnR{width:40px;height:56px;padding:7px;margin-top:-70px;position:relative;z-index:1;}
+.mod_focus .focusBtnL{float:left;}
+.mod_focus .focusBtnR{float:right;}
+.mod_focus .focusBtnL img{float:right;}
+.mod_focus .focusBtnL img,
+.mod_focus .focusBtnR img{display:none;cursor:pointer;}
+.mod_focus .focusBtnL span,
+.mod_focus .focusBtnR span{display:inline;width:23px;height:45px;margin:7px 5px 0;cursor:pointer;overflow:hidden;background:url(//mat1.gtimg.com/sports/index2013/images/icons_v6.png) 0 0 no-repeat;}
+.mod_focus .focusBtnL span{float:left;background-position:0 -90px;}
+.mod_focus .focusBtnR span{float:right;background-position:-30px -90px;}
+.mod_focus .focusBtnLHover span{background-position:-60px -90px;}
+.mod_focus .focusBtnRHover span{background-position:-90px -90px;}
+.mod_focus .focusBtnLHover,
+.mod_focus .focusBtnRHover{width:146px;background:#408ED6;overflow:hidden;}
+.mod_focus .focusBtnLHover img,
+.mod_focus .focusBtnRHover img{display:inline;}
+/* 图片精选 */
+.mod_scroll .scroll_con{position:relative;width:1000px;height:482px;overflow:hidden;}
+.mod_scroll .pageList{height:482px;position:absolute;overflow:hidden;}
+.mod_scroll .split{float:left;width:1000px;height:482px;position:relative;}
+.mod_scroll .prevBtn,
+.mod_scroll .nextBtn{width:75px;height:75px;position:absolute;top:110px;cursor:pointer;}
+.mod_scroll .prevBtn{left:0;background:url(//mat1.gtimg.com/sports/index2013/images/pics_prev_btn.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/index2013/images/pics_prev_btn.png',sizingMethod='crop');}
+.mod_scroll .nextBtn{right:0;background:url(//mat1.gtimg.com/sports/index2013/images/pics_next_btn.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/index2013/images/pics_next_btn.png',sizingMethod='crop');}
+.mod_scroll .prevBtn:hover{background:url(//mat1.gtimg.com/sports/index2013/images/icons_v6.png) -230px -340px no-repeat;}
+.mod_scroll .nextBtn:hover{background:url(//mat1.gtimg.com/sports/index2013/images/icons_v6.png) -310px -340px no-repeat;}
+.mod_scroll .pageBtn{text-align:center;height:7px;padding-top:10px;}
+.mod_scroll .pageBtn a{display:inline-block;width:7px;height:7px;margin: 0 5px;line-height:0;font-size:0;background:url(//mat1.gtimg.com/sports/index2013/images/icons_v6.png) -180px -170px no-repeat;cursor:pointer;overflow:hidden;}
+.mod_scroll .pageBtn a:hover,
+.mod_scroll .pageBtn a.on{background:url(//mat1.gtimg.com/sports/index2013/images/icons_v6.png) -200px -170px no-repeat;}
+.mod_scroll .prevBtn{transition: left 0.5s;-moz-transition: left 0.5s;-webkit-transition: left 0.5s;-o-transition: left 0.5s;}
+.mod_scroll .nextBtn{transition: right 0.5s;-moz-transition: right 0.5s;-webkit-transition: right 0.5s;-o-transition: right 0.5s;}
+.mod_scroll:hover .prevBtn{left:-38px;}
+.mod_scroll:hover .nextBtn{right:-38px;}
+/* mod_fixed */
+.mod_fixed{width:54px;position:fixed;_position:absolute;right:20px;bottom:101px;_bottom:122px;z-index:999;}
+.mod_fixed a{display:block;width:54px;height:54px;margin-bottom:1px;cursor:pointer;background:url(//mat1.gtimg.com/sports/index2013/images/icon_go_top_v3.png) no-repeat;}
+.mod_fixed a:hover{text-decoration:none;}
+.mod_fixed .go_top{background-position:0 0}
+.mod_fixed .go_top:hover{background-position:-60px 0}
+.mod_fixed .go_zuqiu{background-position:0 -55px;}
+.mod_fixed .go_zuqiu:hover{background-position:-60px -55px;}
+.mod_fixed .go_lanqiu{background-position:0 -110px;}
+.mod_fixed .go_lanqiu:hover{background-position:-60px -110px;}
+.mod_fixed .go_zonghe{background-position:0 -165px;}
+.mod_fixed .go_zonghe:hover{background-position:-60px -165px;}
+.mod_fixed .go_caipiao{background-position:0 -220px;}
+.mod_fixed .go_caipiao:hover{background-position:-60px -220px;}
+.mod_fixed .go_videos{background-position:0 -275px;}
+.mod_fixed .go_videos:hover{background-position:-60px -275px;}
+.mod_fixed .go_pics{background-position:0 -330px;}
+.mod_fixed .go_pics:hover{background-position:-60px -330px;}
+
+/* minsite_n */
+.mininavInner .mininavLeft{line-height:14px;}
+.mininavInner a.pengyouLogin{display:none;}
+.mod_loading{display:none;}
+#pengyouIcon{display:none;}
+
+
+/*  |xGv00|9aa0e8a86195291e5e5b09bdeb85632e */

@@ -1,0 +1,286 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="https://time.qq.com/jieqi/shuangjiang/20191024-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="霜降,秋天,节气,腾讯网,时光画轴">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 19:23:21';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-10-24", //日期，格式为 年-月-日
+	"cmd_id": "4324868450", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "shuangjiang2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="shuangjiang2019" style="display:none;"><blockquote>“霜降三旬后，蓂馀一叶秋”。</blockquote>
+<h2>节气简介</h2>
+<img src=" http://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmEBwvhKkD2DRbib7D1sib2FqH6hVxWhYSkVTVSPMHGCvZ8rBQsITmw64TRy9Bb6MF4PQMvJF5J2Vqw/0?wx_fmt=jpeg" >
+<p>霜降，为二十四节气之一。斗指戌，太阳到达黄经210度时为霜降节气。天气渐寒始于霜降，霜降不是降霜，而是表示天气寒冷，冻则有霜，大地或将产生初霜的现象。霜降是反映温度变化的节气。古籍《二十四节气解》中说：“气肃而霜降，阴始凝也。”可见“霜降”表示天气逐渐变冷，阴气始凝。霜降节气后，常有冷空气侵袭，而使气温骤降,，昼夜温差变化大。“霜降”反映的是气温变化，并不是表示这个节气“降霜”，在气象学上没有“霜降”的概念。气象学上，一般把秋季出现的第一次霜叫做“早霜”或“初霜”，而把春季出现的最后一次霜称为“晚霜”或“终霜”。从终霜到初霜的间隔时期，就是无霜期。霜是天冷的表现，由于冻则有霜，所以把秋霜和春霜统称为霜冻。霜降节气后，深秋景象明显，冷空气越来越频繁。</p>
+<h2>气候特点</h2>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmEBwvhKkD2DRbib7D1sib2FqK0mqYFuVJQf0pLdUVhTXPsDicsgkbmwN2lngeiagYAjsAica0adQ15rFw/640?wx_fmt=jpeg" >
+<p>秋天的主要气候特点是干燥，气温渐渐转冷。霜降后，昼夜温差更大，早晚天气很冷，中午则比较热。秋燥明显。霜降过后，植物渐渐失去生机，大地一片萧索。用科学的眼光来看，“露结为霜”的说法是不准确的。露滴冻结而成的冻露，是坚硬的小冰珠。而霜冻是指由于温度剧降而引起的作物冻害现象，其致害温度因作物、品种和生育期的不同而异；而形成霜，则必须地面或地物的温度降到0 ℃以下，并且贴地层中空气中的水汽含量要达到一定程度。因此，发生霜冻时不一定出现霜，出现霜时也不一定就有霜冻发生；但是，因为见霜时的温度已经比较低，要是继续冷却，便很容易导致霜冻的发生。霜降节气一般是在每年公历的10月23日前后。这时节冷空气南下，天气越来越冻，我国南方地区昼夜温差变化较大；而北方部分地区温度已降到0摄氏度以下，如东北地区的北部、内蒙古东部和西北地区大部平均气温已在0℃以下。</p>
+<h2>节气注意</h2>
+<h3>霜冻影响</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmEBwvhKkD2DRbib7D1sib2Fq4GDmTjOGVU9ZAENeAKWcC1CFP1TEvkBPiav1lOKF3RduCB1rAACkT6A/640?wx_fmt=jpeg" >
+<p>霜”不是从天上降下来，“霜”是地面的水气遇到寒冷天气凝结成的。霜冻在秋、冬、春三季都会出现。霜是接近地层空气中的水汽，直接在地面或近地面的物体上凝华而成的;而温度越低，空气密度就越大，比重也越大。随着空气的流动，最冷、最重的空气就会往最低处流动，到达最低处(洼地)停留后，逐渐积聚凝华成霜，所以洼地就比一般地方容易形成霜，洼地的植物也就特别容易被霜打。</p>
+
+
+
+<p>霜降节气含有天气渐冷、大地或将产生初霜的意思。霜降时节，冷空气南下，凉爽的秋风已吹到花城广州。东北北部、内蒙东部和西北大部平均气温已在0℃以下。我国北方到了霜降前后，夜里散热很快，温度会降到0摄氏度以下，出现雪霜。霜降时节，养生保健尤为重要，民间有谚语“一年补透透，不如补霜降”，足见这个节气对人们的影响。</p>
+
+<h3>农作物变化</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmEBwvhKkD2DRbib7D1sib2FqSiaeXTaSOxgbYPSugttTPw3o10qqgTRxjaaIzhgLsES6q9CxAhN0Cibg/640?wx_fmt=jpeg" >
+<p>
+霜降，北方大部分地区已在秋收扫尾，即使耐寒的葱，也不能再长了，因为“霜降不起葱，越长越要空”。在南方，却是“三秋”大忙季节，单季杂交稻、晚稻才在收割，种早茬麦，栽早茬油菜；摘棉花，拔除棉秸，耕翻整地。“满地秸秆拔个尽，来年少生虫和病”。收获以后的庄稼地，都要及时把秸秆、根茬收回来，因为那里潜藏着许多越冬虫卵和病菌。华北地区大白菜即将收获，要加强后期管理。霜降时节，我国大部分地区进入了干季，要高度重视护林防火工作。</p>
+<p>“霜降杀百草”，深秋的植物，渐失生机。“风刀霜剑严相逼”说明霜是无情的、残酷的。其实，霜和霜冻虽形影相连，但危害庄稼的是"冻"不是"霜"。有人曾经试验：把植物的两片叶子，分别放在同样低温的箱里，其中一片叶子盖满了霜，另一片叶子没有盖霜，结果无霜的叶子受害极重，而盖霜的叶子只有轻微的霜害痕迹。这说明霜不但危害不了庄稼，相反，水汽凝华时，还可放出大量热来，1克0℃的水蒸汽凝华成水，放出气化热是667卡，它会使重霜变轻霜、轻霜变露水，免除冻害。与其说“霜降杀百草”，不如说“霜冻杀百草”。霜是天冷的表现，冻是杀害庄稼的敌人。由于冻则有霜(有时没有霜称黑霜)，所以把秋霜和春霜统称霜冻。
+</p>
+<h3>防冻措施</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmEBwvhKkD2DRbib7D1sib2FqmY0yWKxFe1eo4qOlX1O74AenibicicxMiaX8TuHTr1nV8cq55ZV2UexZiaw/640?wx_fmt=jpeg" >
+<p>①适时早种，错开晚秋霜冻；</p>
+
+<p>②选用早熟高产品种；</p>
+
+<p>③浇水，因为干土比湿土散热快</p>
+
+<p>④熏烟，可在小范围内形成保温云层，减轻冻害；</p>
+
+<p>⑤锄地，“锄头有火”，可提高地温；</p>
+
+<p>⑥施腐植酸钠或磷肥，使作物提前成熟。试验证明：施于山药、玉米、糜谷，可提前成熟5-7天；</p>
+
+<p>⑦最根本是植树造林，它可调节气温，彻底改变环境。</p>
+<h3>药膳与食疗</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmEBwvhKkD2DRbib7D1sib2Fq44TBD6UWdNA72rbHLFwicQBRK4FGvxggufQ7XM4u2YLnwKNiaS2jU6nA/640?wx_fmt=jpeg" >
+<p>霜降时节，养生保健尤为重要，民间有谚语“一年补透透，不如补霜降”，足见这个节气对我们的影响。霜降节气是慢性胃炎和胃十二指肠溃疡病复发的高峰期。老年人也极容易患上“老寒腿”（膝关节骨性关节炎）的毛病，慢性支气管炎也容易复发或加重。这时应该多吃些梨，苹果，白果，洋葱，芥菜(雪里蕻)。</p>
+<p>饮食养生学侧重于根据食物的“性味归经”来调节人体阴阳，滋养五脏六腑和预防疾病。因此，在传统养生学中，食物也根据其“性味归经”而分为了不同的类型。</p>
+<p>霜降作为秋季的最后一个节气，此时天气渐凉，秋燥明显，燥易伤津。霜降养生首先要重视保暖，其次要防秋燥，运动量可适当加大。饮食调养方面，此时宜平补，要注意健脾养胃，调补肝肾，可多吃健脾养阴润燥的食物，玉蜀黍、萝卜、栗子、秋梨、百合、蜂蜜、淮山、奶白菜、牛肉、鸡肉、泥鳅等都不错。</p>
+<h2>节气风俗</h2>
+<h3>吃柿子</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmEBwvhKkD2DRbib7D1sib2Fq3IVfCibKviboDdhMTFtVSmkGnvrPWg92Vfem0fZibyVQXYoCY6dWEmHBQ/640?wx_fmt=jpeg" >
+<p>在中国的一些地方，霜降时节要吃红柿子，在当地人看来，这样不但可以御寒保暖，同时还能补筋骨，是非常不错的霜降食品。泉州老人对于霜降吃柿子的说法是：霜降吃丁柿，不会流鼻涕。有些地方对于这个习俗的解释是：霜降这天要吃杮子，不然整个冬天嘴唇都会裂开。住在农村的人们到了这个时候，则会爬上一棵棵高大的柿子树，摘几个光鲜香甜的柿子吃。</p>
+<h3>赏菊</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmEBwvhKkD2DRbib7D1sib2FqL0ewtNP20ricr3v881unJg8OZxVUoPuRpgZHGWylm4UPL5tnXes6QIQ/640?wx_fmt=jpeg" >
+<p>古有“霜打菊花开”之说，所以登高山，赏菊花，也就成为了霜降这一节令的雅事。南朝梁代吴均的《续齐谐记》上有记载。“霜降之时，唯此草盛茂”，因此菊被古人视为“候时之草”，成为生命力的象征。霜降时节正是秋菊盛开的时候，我国很多地方在这时要举行菊花会，赏菊饮酒，以示对菊花的崇敬和爱戴。古人眼里，菊花有着不寻常的文化意义，被认为是“延寿客”、不老草。《杂五行书》说：在屋舍旁种“白杨、茱萸三根，增年益寿，除患害也。”侵害身体的晚秋寒气在古代常被视为鬼魅恶气，能驱风逐邪祛寒的茱萸，民间作驱病疗疾之用。</p>
+<h3>送芋鬼</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmEBwvhKkD2DRbib7D1sib2FqCTcic3X7DWLlLNvN0ZF6kjRopUviatRvUEKH6Xiby2k6G9yerEegHQ4LQ/640?wx_fmt=jpeg" >
+<p>在广东高明地区，霜降前有“送芋鬼”的习俗。霜降时节，人们会用瓦片堆砌成河内塔，在塔里面放入干柴点燃，火烧得越旺越好，直至瓦片烧红，再将河内塔推倒，用烧红的瓦片热垠芋头，这在当地称为“打芋煲”，最后把瓦片丢到村外，这就是“送芋鬼”。人们以这样的方式，辟凶迎祥。</p>
+
+<h3>扫墓祭祖</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmEBwvhKkD2DRbib7D1sib2FqQIgj9jHEMGmhfSW6Qdq2EC1nvjuQXK1KNvTtjhBaDoYYnGHEbXQdDw/640?wx_fmt=jpeg" >
+<p>古时候，霜降时节有扫墓祭祖的习俗。据《清通礼》中说：“岁寒食及霜降节，拜扫扩荃，届期素服诣墓，具酒撰及菱剪草木之器；周服封树，剪除荆草，故称扫墓。”</p>
+
+<h2>养生知识</h2>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmmEBwvhKkD2DRbib7D1sib2Fq1uyfYrD9zPGgjLybVpVpJ02Sgad7nslWrd1RBu9TCTDKDGw40vVeBw/640?wx_fmt=jpeg" >
+<p>霜降是秋季的最后一个节气，秋令属金，脾胃为后天之本，此时宜平补，尤其应健脾养胃，以养后天。栗子具有养胃健脾、补肾强筋、活血止血、止咳化痰的功效，是这时的进补佳品。霜遍布在草木土石上，俗称打霜，而经过霜覆盖的蔬菜如菠菜、冬瓜，吃起来味道特别鲜美，霜打过的水果，如葡萄就很甜。</p>
+
+<p>古人一般秋补既吃羊肉也吃兔肉。闽台民间在霜降这天，要进食补品，闽南有句谚语“一年补通通，不如补霜降”。　一些地方要吃红柿，认为这样可以御寒，能补筋骨。而泉州老人的说法是：霜降吃丁柿，不会流鼻涕。有些地方的说法是：霜降这天要吃杮子，不然整个冬天嘴唇都会裂开。</p>
+
+<p>《逸周书·周月》：“秋三月中气：处暑、秋分、霜降。”《国语·周语中》：“火见而清风戒寒。”三国吴韦昭注：“谓霜降之后，清风先至，所以戒人为寒备也。”魏巍《东方》第一部第十五章：“论节气，还不到霜降，这里已经下了好几场霜。</p>
+</div><!--[if !IE]>|xGv00|ca37c9ab00f67ff3dac2d206954d6733<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|dc543b5f36598bd4a5f05e779f79208c<![endif]-->

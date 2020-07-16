@@ -1,0 +1,69 @@
+/*
+更新时间:2013-01-15
+版本:css0.0.1
+作者:ryanguo
+*/
+body{font-size:12px;-webkit-text-size-adjust:none;}
+a{text-decoration: none; color:#333;}
+a:hover{text-decoration:underline; color:#ff0000;}
+/* Clear Fix */ 
+.cl{zoom:1;}
+.cl:after{content:"　";display:block;clear:both;height:0;}
+
+.breadcrumb{width:100%; height:30px; background:url(//mat1.gtimg.com/sports/map/nav_bg.jpg) top repeat-x;}
+.breadcrumb p{width:960px; line-height:30px; margin:0 auto;}
+.breadcrumb a{color:#57a7d8; text-decoration:none;}
+.breadcrumb a:hover{color:#57a7d8; text-decoration:underline;}
+.breadcrumb a.map{background:url(//mat1.gtimg.com/sports/map/ico_01.jpg) 0 3px no-repeat; padding-left:10px; color:#333;}
+
+.sitemap{width:960px; margin:10px auto 0;}
+#table{width:624px; border:1px solid #e0dfdf; border-top:2px solid #2595d4; float:left;}
+#table span{display:block;}
+#table .tab_bg .hd{height:33px; border-bottom:1px solid #e0dfdf; line-height:30px; padding:4px 0 0 18px;}
+#table .tab_bg .hd h2{font-size:16px; font-family:"微软雅黑"; font-weight:normal;}
+#table .tab_bg .hd em{display:block; float:left; margin:8px 0 0 8px; width:13px; height:15px; background: url(//mat1.gtimg.com/sports/map/ico_02.png) no-repeat !important; background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/map/ico_02.png', sizingMethod='scale');}
+#table .tab_bg .bd{padding-bottom:18px;}
+#table .tab_bg .bd h3{font-size:14px; font-weight:bold; color:#a46102; line-height:30px; padding:6px 0 0 18px;}
+#table .tab_bg .bd h3 a{color:#a46102; text-decoration:none;}
+#table .tab_bg .bd h3 a:hover{color:#a46102; text-decoration:underline;}
+#table .tab_bg .bd .list{width:604px; margin-left:10px; overflow:hidden;}
+#table .tab_bg .bd ul{width:605px; overflow:hidden; padding:6px 0;}
+#table .tab_bg .bd li{width:120px; border-right:1px solid #c2c3c3; text-align:center; line-height:16px; font-size:14px; float:left;}
+#table .tab_bg .bd li a{color:#36648c; text-decoration:none;}
+#table .tab_bg .bd li a:hover{color:#038bfe; text-decoration:underline;}
+
+#hot{width:324px; float:right;}
+#hot .hd{height:30px; padding:2px 0 0 18px; background:#2686c4;}
+#hot .hd h2{color:#fff; font-size:16px; font-family:"微软雅黑"; font-weight:normal; line-height:30px;}
+#hot .bd{border:1px solid #c6d7e0; border-top:none; padding-bottom:26px;}
+#hot .Q-tpList{padding:18px 10px 0 14px;_padding:18px 10px 0 12px;}
+#hot .Q-tpList .pic{margin-right:6px;}
+#hot .Q-tpList a{color:#36648c; text-decoration:none;}
+#hot .Q-tpList a:hover{color:#ff0000; text-decoration:underline;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  |xGv00|683450ade330d9ca55fc7baa7789b75f */

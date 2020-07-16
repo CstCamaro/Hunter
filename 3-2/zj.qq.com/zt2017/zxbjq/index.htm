@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>装修计算器-腾讯大浙网-家居频道</title>
+    <meta name="keyword" content="装修计算器-腾讯大浙网-家居频道" />
+    <meta name="description" content="装修计算器-腾讯大浙网-家居频道"/>
+    <link rel="stylesheet" href="//mat1.gtimg.com/zj/yuwanli/dzw1706/calculate/css/style1.css"/>
+    <!--<link rel="stylesheet" href="css/style1.css"/>-->
+</head>
+<body>
+<script language="javascript" src="//mat1.gtimg.com/ping.js"></script>
+<script>
+    //db.house.qq.com --> db-house
+    var colSite = window.location.host.replace(/.qq.com$/,'').replace(/\./g, '-');
+    var pgvInfo = "L.";
+
+    //增加栏目信息
+    //注意:
+    //（1）、bpgv-XXX1是栏目名，请用你自已定义的栏目名替换其中的XXX1
+    //（2）、自定义栏目最多只支持3级，如下面的bpgv-XXX1，bpgv-XXX2，bpgv-XXX3
+    //（3）、自定义栏目名必须以bpgv-做为前缀，且其中不能含有点(.)，下划线(_)
+    //（4）、自定义栏目名必须发给PGV这边备案，可以联系alvazhang
+    pgvInfo = pgvInfo + colSite + ".bpgv-home.bpgv-zt";
+
+    //增加专题信息，增加如下代码，并替换相应的专题名bpgv-XXX1
+    //pgvInfo = pgvInfo + "_Z."+colSite+".bpgv-XXX1.bpgv-XXX2.bpgv-XXX3";
+    //特别注意：如需精确计算某一专题系列，请在各频道栏目管理中建立相应栏目，将所有专题栏目计算指向相应栏目即可。如有问题请咨询产品技术部，谢谢！！
+
+
+    if(typeof(pgvMain) == 'function'){
+        if (typeof(pgvInfo) != 'undefined') {
+            pgvMain({pgUserType:pgvInfo});
+        } else {
+            pgvMain();
+        }
+    }
+</script>
+<div class="container">
+    <h1>装修报价器</h1>
+
+    <form method="post" class="form-horizontal" action="" id="2019_reg_form" data-activity-id="2019">
+        <input type="hidden" value="2019" name="id">
+
+        <div class="control-group text" style="display:none;">
+            <label class="control-label">姓名<span class="required-icon-1">*</span></label>
+
+            <div class="controls">
+                <input id="name" type="text" value="50已到" name="data[name]" data-must="1" placeholder="请输入您的姓名" >
+            </div>
+        </div>
+
+        <div class="control-group tel">
+            <label class="control-label">手机<span class="required-icon-1">*</span></label>
+
+            <div class="controls">
+                <input id="mobile" type="text" name="data[mobile]" data-must="1" placeholder="请输入您的手机">
+            </div>
+        </div>
+
+        <div class="control-group text">
+            <label class="control-label">验证码<span class="required-icon-1">*</span></label>
+
+            <div class="controls phone">
+                <input style="width: 200px" id="prove" type="text" name="data[prove]" data-must="1" placeholder="请填写验证码">
+                <input style="width: 80px" type="button" class="btn btn-sm btn-phone" onclick="sendprove('2019')" value="获取验证码" id="send_prove">
+            </div>
+        </div>
+
+        <div class="control-group text" id="area">
+            <label class="control-label">装修面积<span class="required-icon-1">*</span></label>
+
+            <div class="controls">
+                <input style="width: 235px" id="fixture_area" type="text" name="data[fixture_area]" data-must="1" placeholder="请输入您的装修面积">
+                <b style="display: inline-block;width: 30px">m&sup2;</b>
+            </div>
+        </div>
+
+        <div class="control-group text" id="total" style="display: none">
+            <label class="control-label">报价<span class="required-icon-1">*</span></label>
+
+            <div class="controls">
+                <input id="field_1" type="text" value="0" name="data[field_1]" data-must="1" placeholder="请输入您的报价">
+            </div>
+        </div>
+
+        <div class="control-group city">
+            <label class="control-label">城市<span class="required-icon-1">*</span></label>
+
+            <div class="controls">
+                <select name="data[city][]" style="display: none">
+                    <option value="">请选择省</option>
+                    <option value="浙江省" data-cid="12" selected>浙江省</option>
+                </select>
+                <select name="data[city][]" class="city-city" style="width: 45%">
+                    <option value="">请选择市</option>
+                </select>
+                <select name="data[city][]" class="city-county" style="width: 45%">
+                    <option value="">请选择区</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="control-group text">
+            <label class="control-label">户型<span class="required-icon-1">*</span></label>
+
+            <div class="controls">
+                <input id="field_2" type="text" name="data[field_2]" data-must="1" placeholder="如:两室一厅一卫">
+            </div>
+        </div>
+
+        <div class="control-group radio"  id="style">
+            <label class="control-label">装修风格<span class="required-icon-1">*</span></label>
+
+            <div class="controls">
+                <span><input type="radio" value="现代" name="data[fixture_preference]" data-num="1.1">现代</span>
+                <span><input type="radio" value="日式" name="data[fixture_preference]" data-num="1.1">日式</span>
+                <span><input type="radio" value="简约" name="data[fixture_preference]" data-num="1.1">简约</span>
+                <span><input type="radio" value="工业风" name="data[fixture_preference]" data-num="1.1">工业风</span>
+                <span><input type="radio" value="北欧风" name="data[fixture_preference]" data-num="1.1">北欧风</span>
+                <span><input type="radio" value="美式" name="data[fixture_preference]" data-num="1.2">美式</span>
+                <span><input type="radio" value="欧式" name="data[fixture_preference]" data-num="1.3">欧式</span>
+                <span><input type="radio" value="混搭" name="data[fixture_preference]" data-num="1.2">混搭</span>
+                <span><input type="radio" value="中式" name="data[fixture_preference]" data-num="1.2">中式</span>
+                <span><input type="radio" value="地中海" name="data[fixture_preference]" data-num="1.2">地中海</span>
+                <span><input type="radio" value="东南亚" name="data[fixture_preference]" data-num="1.3">东南亚</span>
+                <span><input type="radio" value="古典" name="data[fixture_preference]" data-num="1.3">古典</span>
+                <span><input type="radio" value="乡村田园" name="data[fixture_preference]" data-num="1.3">乡村田园</span>
+                <span><input type="radio" value="其他" name="data[fixture_preference]" data-num="1.2">其他</span>
+            </div>
+        </div>
+
+        <div class="control-group radio" id="level">
+            <label class="control-label">装修档次<span class="required-icon-1">*</span></label>
+
+            <div class="controls">
+                <span><input type="radio" value="简装出租" name="data[field_3]" data-num="470">简装出租</span>
+                <span><input type="radio" value="普通自住" name="data[field_3]" data-num="680">普通自住</span>
+                <span><input type="radio" value="精装搭配" name="data[field_3]" data-num="850">精装搭配</span>
+                <span><input type="radio" value="豪华专享" name="data[field_3]" data-num="1280">豪华专享</span>
+            </div>
+        </div>
+
+        <div class="submit">
+            <input type="button" name="btn-submit" class="btn btn-submit" value="获得报价" onclick="count('2019')" id="2019_reg_button">
+            <i></i>
+            <h1>以上所述为半包预算 报价仅供参考 </h1>
+            <p>000,000,00元</p>
+        </div>
+    </form>
+
+</div>
+<script type="text/javascript" src="//mat1.gtimg.com/www/asset/lib/jquery/jquery/jquery-1.11.1.min.js"></script>
+<script language=javascript src='//mat1.gtimg.com/zj/zjqq_vip/layer/layer.js'></script>
+<script>
+    localhostPaht =  "http://vip.zjqq.mobi";
+    var reg_host = localhostPaht+"/index.php/";
+    var reg_host_img = localhostPaht+"/";
+    var total;
+    /*判断设备来源*/
+    function check_source(){
+        if(window.TencentNews){
+            signSource = 1;		//判断是否来自腾讯客户端
+        }else if(typeof WeixinJSBridge !== 'undefined'){
+            signSource = 3;		//判断是否来自微信
+        }/*else if(browser.versions.mobile){
+         signSource = 2;		//判断是否来自手机端
+         }*/else if(navigator.userAgent){
+            signSource = 4;		//判断是否来自微信pc
+        }else{
+            signSource = 0;
+        }
+        return signSource;
+    }
+
+    //利用ajax post提交报名信息
+    function reg_new(activity_id){
+        $('#' + activity_id + '_reg_button').attr('disabled', 'disabled');
+        var url = reg_host + 'sign/submit/' + activity_id;
+        var signSource = check_source();
+        $.ajax({
+            cache: false,
+            type: "get",
+            url:url,
+            data:$('#' + activity_id + '_reg_form').serialize()+ '&data[signsource]='+ signSource + '&callback=reg_success_callback',
+            //async: false,
+            dataType:'json',
+            error: function(request) {
+                layer.alert("提交失败，请重试", {icon: 2});
+                $('#' + activity_id + '_reg_button').removeAttr('disabled');
+            },
+            success: function(data) {
+                //data = JSON.parse(data);
+                if(data.result == 'success'){
+
+                    $(".container form .submit p").html(total.toFixed(2)+"元");
+//                    layer.alert("提交成功", {icon: 2});
+                }else{
+                    layer.alert(data.result, {icon: 2});
+                }
+
+                $('#' + activity_id + '_reg_button').removeAttr('disabled');
+            }
+        });
+
+    }
+    function check_tel(val,name){
+        if ( val == "" ){
+            var msg = "请填写"+name;
+        }else{
+            var regu = /^[1][0-9][0-9]{9}$/;
+            var re = new RegExp(regu);
+            if(re.test(val)){
+                var msg = true;
+            }else{
+                var msg = "请填写正确的"+name;
+            }
+        }
+        return msg;
+    }
+    function sendprove(activity_id){
+        var tel = $('#mobile').val();
+        var msg = check_tel(tel,'手机号码')
+        if(msg===true){
+            $('#send_prove').attr('disabled', 'disabled');
+
+            var c=10;
+            var id='send_prove';
+            var message = 's后再获取';
+            var jump = setInterval(function(){
+                c--;
+                $('#' + id).val('请'+c+message);
+                if(c<=0){
+                    clearInterval(jump);
+                    $('#' + id).val('获取验证码');
+                    $('#send_prove').removeAttr('disabled', 'disabled');
+                }
+            },1000)
+
+            var url = reg_host + 'pub/sendProve';
+            $.ajax({
+                cache: true,
+                type: "get",
+                url:url,
+                data:'id=' + activity_id + '&mobile='+ tel,
+                dataType:"jsonp",
+                jsonp: "callback",
+                jsonpCallback:"send_success",
+                async: false,
+                error: function(request) {
+                    layer.alert("提交失败，请重试", {icon: 2});
+                },
+                success: function(data) {
+                    data;
+                }
+            });
+        }else{
+            layer.alert(msg);
+        }
+    }
+    function check_val(){
+        var area = $("#area input").val();
+        var style = $("#style input:checked").attr("data-num");
+        var level = $("#level input:checked").attr("data-num");
+        if(!area){
+            layer.alert("请输入你的装修面积", {icon: 2});
+        }else if(!style){
+            layer.alert("请选择你的装修风格", {icon: 2});
+        }else if(!level){
+            layer.alert("请选择你的装修档次", {icon: 2});
+        }else if(isNaN(area)){
+            layer.alert("请选择正确的装修面积", {icon: 2});
+        }else{
+            total = area*style*level;
+            $("#total input").val(total.toFixed(2));
+            return true;
+        }
+    }
+    function setCitySelect(){
+        var areaList = {};
+        $.getJSON(localhostPaht+'/city/cityList?id=2019',function(data){
+            var drawCity = function(data,name,next){
+                var aNum = 0;
+                var opts = '';
+                if(next.indexOf("city-city")>-1){
+                    opts = '<option value="" data-cid="0">请选择城市</option>';
+                }else{
+                    opts = '<option value="">请选择区县</option>';
+                }
+
+                var area = {};
+                $.each(data,function(){
+                    opts += '<option value="' + this.name + '" data-cid="' + this.id + '">' + this.name + '</option>';
+                    if(this.areaList && aNum++ == 0){
+                        area = this.areaList;
+                    }
+                });
+
+                $(next + '[name="' + name + '"]').html(opts);
+                return area;
+            };
+            drawCity(data["city"][12].cityList,"data[city][]",'.city-city');
+            $('.city-province').each(function(){
+                var _this_ = $(this);
+                var name = _this_.attr('name');
+                var cityGroupId = name.substring(name.indexOf('[')+1,name.indexOf(']'));
+                var options = '<option value="" data-cid="0">请选择省份</option>';
+                var firstId = 0;
+                var firstArea = {};
+                var cNum = 0;
+                $.each(data[cityGroupId],function(){
+                    if(cNum++ == 0){
+                        firstId = this.id;
+                    }
+                    options += '<option value="' + this.name + '" data-cid="' + this.id + '">' + this.name + '</option>';
+                });
+                _this_.html(options);
+                /*
+                 firstArea = drawCity(data[cityGroupId][firstId].cityList,name,'.city-city');
+                 if($.isEmptyObject(firstArea)){
+                 $('.city-county[name="' + name + '"]').remove();
+                 }else{
+                 drawCity(firstArea,name,'.city-county');
+                 }
+                 */
+                _this_.on('change',function(){
+
+
+                    var sid = $(this).find("option:selected").attr('data-cid');
+                    var cid = $('.city-city[name="' + name + '"]').find("option:selected").attr('data-cid');
+
+                    if(sid=='0'){
+                        $('.city-city[name="' + name + '"]').html('<option value="" data-cid="0">请选择城市</option>');
+                        $('.city-county[name="' + name + '"]').html('<option value="">请选择区县</option>');
+                        return;
+                    }
+                    var first = drawCity(data[cityGroupId][sid].cityList,name,'.city-city');
+
+                    if($.isEmptyObject(first)){
+                        $('.city-county[name="' + name + '"]').remove();
+                    }else{
+                        //drawCity(first,name,'.city-county');
+                    }
+                });
+            });
+
+            $('.city-city').on('change',function(){
+                var name = $(this).attr('name');
+                var sid = 12;
+                var cid = $(this).find("option:selected").attr('data-cid');
+                var cityGroupId = name.substring(name.indexOf('[')+1,name.indexOf(']'));
+                if(cid=='0'){
+                    $('.city-county[name="' + name + '"]').html('<option value="">请选择区县</option>');
+                    return;
+                }
+                var areaData = data[cityGroupId][sid].cityList[cid].areaList;
+                if(!$.isEmptyObject(areaData)){
+                    drawCity(areaData,name,'.city-county');
+                }
+            });
+
+        });
+
+    }
+    function count(id){
+
+        if(check_val()){
+            reg_new(id);
+        }
+    }
+    $(function(){
+        setCitySelect();
+    })
+</script>
+</body>
+</html><!--[if !IE]>|xGv00|f42717de2d847a655dd119fd6b7aae6c<![endif]-->

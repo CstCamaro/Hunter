@@ -1,0 +1,1132 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="GBK">
+  <title>
+    英超联赛-腾讯体育
+  </title>
+  <meta http-equiv="Content-Language" content="zh-CN">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="腾讯体育英超频道，向您提供高清的视频直播画面，精彩的报道，迅速的英超新闻，权威的足球评论，曼联、曼城、阿森纳、切尔西、利物浦等豪门资讯全部收录。">
+  <meta name="description" content="英超，英超联赛，英超直播，英超视频，英超新闻，曼联，切尔西，阿森纳，利物浦，曼城，鲁尼，阿圭罗，阿扎尔，席尔瓦，穆里尼奥，范加尔，温格">
+  <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon.ico">
+  <link rel="stylesheet" href="//mat1.gtimg.com/pingjs/ext2020/foot_ball/2018/styles/main-b2850be73f.css">
+  <script type="text/javascript" src="//mat1.gtimg.com/libs/jquery/1.11.3/jquery.min.js"></script><!-- ie浏览器升级 S -->
+  <script charset="utf-8" src="//stdl.qq.com/stdl/qqbrowser/floatlayer/js/qb-ie-sports.js"></script><!-- ie浏览器升级 E -->
+  <style>
+    /*头部亚冠联赛文字颜色*/
+
+    .head .name {
+      color: #aea47e;
+    }
+
+    /*nav导航标量*/
+
+    .main_nav>li.cur {
+      background-color: #041450;
+    }
+
+    .cft_nav>li.cur {
+      background-color: #CD0000;
+    }
+
+    /*轮播图点*/
+
+    .focus .tab>li.cur {
+      background: #485bb4;
+    }
+
+    .nav .sub_nav>li>a:hover {
+      color: red !important;
+    }
+
+    /*积分榜名次*/
+
+    .cont .contRig .top-team tbody tr.top i {
+      background: #2243af;
+    }
+
+    a:hover p {
+      color: #0c30a7 !important;
+    }
+
+    .s-mod-hd img {
+      display: inline-block;
+      float: left;
+      margin-top: 2px;
+    }
+
+    /*nav导航一级菜单颜色*/
+
+    .nav_top {
+      background-color: #38003d;
+    }
+
+    /*nav导航二级菜单颜色*/
+
+    .nav_sub {
+      background-color: #e90053;
+    }
+
+    /*头条新闻A标签HOVER效果*/
+
+    .news_txt a:hover {
+      color: #38003d !important;
+    }
+
+    /*头条新闻cur标亮*/
+
+    .newsTab_ul .cur {
+      color: #38003d !important;
+      border-top: 2px solid #38003d !important;
+    }
+
+    /*要闻区域a标签hove效果*/
+
+    .newlist a:hover {
+      color: #38003d !important;
+    }
+
+    /*最新视频图集a标签hove效果*/
+
+    .nv_tit:hover {
+      color: #38003d !important;
+    }
+
+    .nv_t a:hover {
+      color: #38003d !important;
+    }
+
+    /*nav导航标量*/
+
+    .main_nav li.cur {
+      color: #38003d;
+    }
+
+    .cont .contLeft .newsWrap .newsTab_ul.fd {
+      z-index: 999;
+    }
+
+    .cont .contRig .top-team tfoot tr td a:hover {
+      color: < !--#echo var="DOCUMENT_NAVO"--> !important;
+    }
+
+    /**/
+
+    .class3 {
+      background-color: #e90053;
+    }
+
+    /**/
+    .nav .nav_logo>span {
+      background: url(//img1.gtimg.com/sports/pics/hv1/84/93/2311/150296574.png) no-repeat center;
+      background-size: 100% 100%;
+    }
+
+    /* 积分榜显示与隐藏 */
+    #bd {
+      display: (none);
+    }
+
+    /* 赛程显示与隐藏 */
+    #schendule {
+      display: (none);
+    }
+  </style>
+</head>
+
+<body>
+  <!--流量代码统计-->
+  <script charset="gbk" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+    <script type="text/javascript">
+    if (typeof(pgvMain) == 'function') pgvMain();
+    </script><!--[if !IE]>|xGv00|b87153dfeec5ca005fecaa8d2373657c<![endif]-->
+  <!--流量代码统计-->
+  <div class="area">
+    <div class="head">
+      <div class="logo"><img src="//img1.gtimg.com/sports/pics/hv1/196/95/2276/148021321.png" alt=""></div>
+      <div class="name">
+        英超联赛
+      </div>
+      <div class="txt">
+        2019-2020赛季
+      </div>
+      <div id="wrap_sportLoginV1">
+        <div class="loginbox" id="wrap_sportLoginV1"></div>
+      </div>
+    </div>
+  </div><!-- 头部end   -->
+  <!-- 头部导航 -->
+  <div class="area">
+    <div class="nav_top">
+      <div class="nav"><a href="//sports.qq.com" class="nav_logo" target="_blank"><span></span></a>
+        <ul class="main_nav cft_nav">
+          <!-- 菜单导航栏 -->
+          <li class="class2" ><a href="http://sports.qq.com/ucl/" target="_blank">欧冠</a></li>
+<li class="class3"><a href="http://sports.qq.com/premierleague/" target="_blank">英超</a></li>
+<li class="class4"><a href="http://sports.qq.com/bundesliga/" target="_blank">德甲</a></li>
+<li class="class5"><a href="http://sports.qq.com/laliga/" target="_blank">西甲</a></li>
+<li class="class6"><a href="http://sports.qq.com/seriea/" target="_blank">意甲</a></li>
+<li class="class7"><a href="http://sports.qq.com/fans/group.htm?mid=145" target="_blank">球迷社区</a></li>
+<li class="class8"><a href="http://t.cr-nielsen.com/dar?_t=r&type=clk&v=1&_inst=nl&hat_cid=301559&hat_pid=595100&hat_aid=587759&eip=__TXPIP__&imp_id=__TENCENTSOID__&mip=__IP__&r=[timestamp]&_l=aHR0cDovL2NsZWFyc3BvcnRzLnFxLmNvbS8=target="_blank">清扬全场集锦</a></li><!--[if !IE]>|xGv00|fad85328542b90d1708766b9b32613bb<![endif]-->
+          <!--菜单导航栏 end-->
+        </ul>
+      </div>
+    </div>
+    <div class="nav_sub">
+      <div class="nav">
+        <ul class="sub_nav">
+          <!-- 菜单导航栏 -->
+           <li>
+<a href="//soccer.stats.qq.com/table.htm?type=yingchao" target="_blank">积分榜</a>
+<!-- 删除img 开始 -->
+<img src="//img1.gtimg.com/sports/pics/hv1/27/85/2291/148993977.png">
+<!-- 删除img 结束 -->
+</li>  
+<li><a href="//soccer.stats.qq.com/goals.htm?type=yingchao" target="_blank">射手榜</a></li>  
+<li><a href="//soccer.stats.qq.com/schedule.htm?type=yingchao" target="_blank">赛程结果</a></li>  <li><a href="http://sports.qq.com/video/yc/" target="_blank">视频大厅</a></li>  
+
+<li><a href="//sports.qq.com/l/isocce/yingc/list2012032675724.htm" target="_blank">新闻滚动</a></li>
+<style>
+.sub_nav img{display: inline-block;height: 18px;}
+</style>
+<!--[if !IE]>|xGv00|cb874a2d61e3b74c83b4a137189fa8f4<![endif]-->
+          <!--菜单导航栏 end-->
+        </ul>
+      </div>
+    </div>
+  </div><!-- 头部导航end -->
+  <!-- 赛程表 -->
+  <div class="area">
+    <div class="schedul" id="schendule">
+      <div class="schenWrap">
+        <div class="btn-prev"></div>
+        <div class="main"></div>
+        <div class="btn-next"></div>
+      </div>
+    </div>
+  </div><!-- 赛程表end -->
+  <!-- 通栏广告 -->
+  
+  <div class="area">
+        <div class="ad_layout">
+            <a href="http://t.cr-nielsen.com/dar?_t=r&type=clk&v=1&_inst=nl&hat_cid=301559&hat_pid=595100&hat_aid=587759&eip=__TXPIP__&imp_id=__TENCENTSOID__&mip=__IP__&r=%5btimestamp%5d&_l=aHR0cDovL2NsZWFyc3BvcnRzLnFxLmNvbS8" target="_blank">
+ <embed src="//mat1.gtimg.com/sports/qytl/yingchao0430.swf" height="120" width="1240"  />
+</a>
+        </div>
+    </div><!--[if !IE]>|xGv00|4ff8b6f1ee944a43326388e1e913f396<![endif]-->
+  
+  <!-- 通栏广告end -->
+  <!-- 主体内容  -->
+  <div class="area">
+    <div class="cont">
+      <!-- 主体内容左侧  -->
+      <div class="contLeft">
+        <!--轮播图-->
+        <div class="focus" id="focus" bosszone="DJ_focus">
+          <ul class="cont" id="ulcont">
+            <!--请保证至少有两个li 图片开始,第一个style="left:0px",其他li标签style="left:-800px";-->
+
+<li class="slide-item" style="left:0px">
+<a target="_blank" href="http://view.inews.qq.com/a/20200629A01J0000">
+<img src="http://img1.gtimg.com/sports/pics/hv1/78/55/2324/151132203.jpg">
+<p>足总杯-曼城2-0晋级半决赛将战阿森纳 德布劳内生日夜破门 </p>
+</a>
+</li>
+
+
+<li class="slide-item" style="left:-800px">
+<a target="_blank" href="http://view.inews.qq.com/a/20200628A0SOFD00">
+<img src="http://img1.gtimg.com/sports/pics/hv1/77/55/2324/151132202.jpg">
+<p>足总杯-切尔西1-0莱斯特城晋级4强：8年内第3次淘汰对手 </p>
+</a>
+</li>
+
+
+<li class="slide-item" style="left:-800px">
+<a target="_blank" href="http://view.inews.qq.com/a/20200628A0R8I100">
+<img src="http://img1.gtimg.com/sports/pics/hv1/76/55/2324/151132201.jpg">
+<p>这运气！阿森纳2-1进足总杯4强 对手进2球都无效＋91分钟绝杀 </p>
+</a>
+</li>
+
+<li class="slide-item" style="left:-800px">
+<a target="_blank" href="http://view.inews.qq.com/a/20200628A01SOG00">
+<img src="http://img1.gtimg.com/sports/pics/hv1/75/55/2324/151132200.jpg">
+<p>足总杯-伊哈洛破门马奎尔绝杀 曼联加时2-1十人诺维奇进四强 </p>
+</a>
+</li>
+
+
+
+
+<li class="slide-item" style="left:-800px">	
+<a target="_blank" href="http://view.inews.qq.com/a/20200626A02JTD00">
+<img src="http://img1.gtimg.com/sports/pics/hv1/166/46/2324/151129996.jpg">
+<p>一场2-1让利物浦圆梦！一夜冲破30年超级魔咒 又1神迹诞生 </p>
+</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--[if !IE]>|xGv00|173f80c9d5b028dad7fd8d90687bf946<![endif]-->
+            <!--请保证至少有两个li 图片开始-->
+          </ul><a href="javascript:;" class="prev"></a> <a href="javascript:;" class="next"></a>
+          <ul class="tab"></ul>
+        </div><!-- tab內容新聞 -->
+        <div class="newsWrap">
+          <div class="newsTab">
+	<ul class="newsTab_ul focus_con fd">
+	  <li class="item team1" data_num="50" data_name="曼联,曼城,利物浦,切尔西,阿森纳,热刺,莱斯特城,狼队,谢菲联,西汉姆联,伯恩利,水晶宫,阿斯顿维拉,沃特福德,南安普敦,埃弗顿,诺维奇,纽卡斯尔联,伯恩茅斯,布莱顿">头条</li>
+	  <li class="item team1" data_num="50" data_name="曼彻斯特联,曼联,红魔">曼联</li>
+	  <li class="item team2" data_num="50" data_name="曼彻斯特城,曼城,蓝月亮">曼城</li>
+	  <li class="item team3" data_num="50" data_name="切尔西,蓝军">切尔西</li>
+	  <li class="item team4" data_num="50" data_name="利物浦,红军">利物浦</li>
+	  <li class="item team5" data_num="50" data_name="阿森纳,枪手,托特纳姆热刺,热刺,南安普敦,南安,纽卡斯尔联,纽卡,阿斯顿维拉,维拉,伯恩茅斯,布莱顿,伯恩利,水晶宫,埃弗顿,莱斯特城,莱斯特,诺维奇,谢菲尔德联,谢菲联,西汉姆联,西汉姆,沃特福德,狼队,英冠">阿森纳&诸强</li>
+	  	</ul>
+</div>
+
+<div class="newsCont">
+	<div class="areaItem active">
+	  <ul class="arealist area1"></ul>
+	  <div class="addMore"><a class="refresh">点击加载更多</a></div>
+	</div>
+	<div class="areaItem">
+	  <ul class="arealist area2"></ul>
+	  <div class="addMore"><a class="refresh">点击加载更多</a></div>
+	</div>
+	<div class="areaItem">
+	  <ul class="arealist area3"></ul>
+	  <div class="addMore"><a class="refresh">点击加载更多</a></div>
+	</div>
+	<div class="areaItem">
+	  <ul class="arealist area4"></ul>
+	  <div class="addMore"><a class="refresh">点击加载更多</a></div>
+	</div>
+	<div class="areaItem">
+	  <ul class="arealist area5"></ul>
+	  <div class="addMore"><a class="refresh">点击加载更多</a></div>
+	</div>
+	<div class="areaItem">
+	  <ul class="arealist area6"></ul>
+	  <div class="addMore"><a class="refresh">点击加载更多</a></div>
+	</div>
+            </div><!--[if !IE]>|xGv00|50c94a8ef50e604a270ce9235eef3ba2<![endif]-->
+        </div><!-- tab內容新聞end -->
+      </div><!-- 主体内容左侧end -->
+      <!-- 主体内容右侧  -->
+      <div class="contRig">
+        <!-- 要闻区域 -->
+        <div class="newlist" style="display: none">
+          <!-- 要闻区域 -->
+          <div class="newslist">
+
+<h3><a href="https://sports.qq.com/a/20191208/000179.htm" target="_blank"> 曼城1-2负曼联 争冠渺茫</a>    <a href="https://sports.qq.com/a/20191208/000078.htm" target="_blank">利物浦7连胜</a>  </h3>
+
+<p><a href=" http://view.inews.qq.com/a/20191208A01YLV00
+" target="_blank">宇宙级曼城消失！瓜帅英超奇迹变绝迹？根基没了
+</a></p>
+
+<p><a href=" http://view.inews.qq.com/a/20191208A01HZH00
+" target="_blank">7年了！曼联踢出最爽45分钟，77岁的弗格森笑了
+ </a></p>
+
+
+<p><a href=" http://view.inews.qq.com/a/20191208A00YNU00
+" target="_blank">没丢球！利物浦3-0击碎70天怪圈 萨拉赫现神技</a></p>
+
+<p><a href=" http://view.inews.qq.com/a/20191208A01SR900
+" target="_blank">英超争冠悬念一夜消失！利物浦领先14分怎么输？
+</a></p>
+
+
+
+
+
+
+</div>
+
+
+<div class="newslist">
+
+<h3><a href="https://sports.qq.com/a/20191208/000079.htm" target="_blank">热刺5-0横扫伯恩利  </a><a href="https://sports.qq.com/a/20191207/007245.htm" target="_blank">切尔西1-3埃弗顿</a>  </h3>
+
+
+<p><a href="http://view.inews.qq.com/a/20191208A00U1600
+" target="_blank">武磊-孙兴慜 最遥远距离 是中国足球冬天到春天</a></p>
+
+<p><a href=" http://view.inews.qq.com/a/20191208A00X1J00
+" target="_blank">穆帅搂抱孙兴慜！韩国人回应世界波 像卡卡大罗？
+</a></p>
+
+<p><a href=" http://view.inews.qq.com/a/20191208A00TUJ00
+" target="_blank">穆式反击插上韩国翅膀！孙兴慜70米冲刺1挑8</a></p>
+
+<p><a href=" http://view.inews.qq.com/a/20191208A00TNT00
+" target="_blank">孙兴慜谈1V8：想传球传不出，只好自己单干了</a></p>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--[if !IE]>|xGv00|60acdabfbf958e8d51f64d96272da105<![endif]-->
+          <!--要闻区域 end-->
+        </div><!-- 要闻区域 end-->
+        <!-- 积分榜 射手榜联赛-->
+        <div class="s-mod tab" id="bd">
+          <div class="s-mod-hd">
+            <h4 class="cur">积分榜</h4><img src="//img1.gtimg.com/sports/pics/hv1/22/88/2291/148994737.png"> <i>|</i>
+            <h4>射手榜</h4>
+            <!--<span class="right" id="roundNum">截止第25轮</span>-->
+          </div>
+          <div class="s-mod-bd block" id="scoreRank">
+            <table class="top-team">
+              <tfoot>
+                <tr class="nobg">
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <td colspan="4"><a href='http://soccer.stats.qq.com/table.htm?type=yingchao' target="_blank">查看全部 <i></i></a></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="s-mod-bd" id="playerRank">
+            <table class="top-team">
+              <tfoot>
+                <tr class="nobg">
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <td colspan="4"><a href='http://soccer.stats.qq.com/goals.htm?type=yingchao' target="_blank">查看全部 <i></i></a></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div><!-- 积分榜 射手榜联赛 end -->
+        <!-- 广告  -->
+        
+        
+        
+        <!-- 广告end -->
+        <!-- 视频 -->
+        <div class="video">
+          <!--点播台begin-->
+          <div class="tvStation" id="dianbotai">
+            <div class="hd">
+              <h2>精彩回放</h2>
+              <div>自动播放<em class="" node-type="autoPlay"><i></i></em></div>
+            </div>
+            <div class="bd">
+              <div class="playBox" data-node="play">
+                <div class="playLive" data-node="liveBox" style="display: block">
+                  <div id="db_mod_player" style="width: 360px;height: 254px"></div>
+                </div>
+              </div>
+              <div class="listBox">
+                <ul data-node="list"></ul><a href="javascript:;" bosszone="DJ_db_switch" class="btn up"
+                  data-node="slide" data-data="idx=1" style="display:none"><span></span><em></em></a> <a
+                  href="javascript:;" bosszone="DJ_db_switch" class="btn down" data-node="slide"
+                  data-data="idx=-1"><span></span><em></em></a>
+              </div>
+            </div>
+          </div>
+          <!--点播台end-->
+        </div><!-- 视频end -->
+        <!-- 最新视频 -->
+        <!--<div class="nvideo">
+                        <div class="nvideo_tit">最新视频</div>
+                        <ul class="nvideo_ul">
+                            <li>
+                                <a href="#" target="_blank" class="nv_pic">
+                                    <img src="//mat1.gtimg.com/pingjs/ext2020/foot_ball/2018/images/332-eb69b29696.jpg" alt="" />
+                                    <i></i>
+                                </a>
+                                <div class="nv_t">
+                                    <a href="#" target="_blank" class="nv_tit">杨晨重返法兰克福 期待中国球员登陆德甲</a>
+                                    <span class="nv_ti">01:07</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="nv_pic">
+                                    <img src="//mat1.gtimg.com/pingjs/ext2020/foot_ball/2018/images/332-eb69b29696.jpg" alt="" />
+                                    <i></i>
+                                </a>
+                                <div class="nv_t">
+                                    <a href="#" target="_blank" class="nv_tit">杨晨重返法兰克福 期待中国球员登陆德甲</a>
+                                    <span class="nv_ti">01:07</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="nv_pic">
+                                    <img src="//mat1.gtimg.com/pingjs/ext2020/foot_ball/2018/images/332-eb69b29696.jpg" alt="" />
+                                    <i></i>
+                                </a>
+                                <div class="nv_t">
+                                    <a href="#" target="_blank" class="nv_tit">杨晨重返法兰克福 期待中国球员登陆德甲</a>
+                                    <span class="nv_ti">01:07</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="nv_pic">
+                                    <img src="//mat1.gtimg.com/pingjs/ext2020/foot_ball/2018/images/332-eb69b29696.jpg" alt="" />
+                                    <i></i>
+                                </a>
+                                <div class="nv_t">
+                                    <a href="#" target="_blank" class="nv_tit">杨晨重返法兰克福 期待中国球员登陆德甲</a>
+                                    <span class="nv_ti">01:07</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="refresh">点击加载更多</a>
+                            </li>
+                        </ul>
+                    </div>-->
+        <!-- 最新视频end -->
+        <!-- 精彩图集 -->
+        <div class="nvideo block">
+          <div class="nvideo_tit">图集</div>
+          <ul class="nvideo_ul">
+            <!-- 图集 -->
+            <li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20191102/004879.htm"><img src="http://img1.gtimg.com/21/2167/216782/21678273.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20191102/004879.htm">组图：马奎尔怒吼发泄不满 双方险些大打出手</a><span class="nv_ti">2019-11-02 22:56:52</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20191030/000182.htm"><img src="http://img1.gtimg.com/21/2167/216773/21677367.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20191030/000182.htm">高清：沃克与瓜帅击掌相庆 阿圭罗梅开二度喜笑颜开</a><span class="nv_ti">2019-10-30 06:11:04</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20191027/000047.htm"><img src="http://img1.gtimg.com/21/2167/216764/21676437.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20191027/000047.htm">组图：普利西奇完美帽子戏法 赛后将比赛球带回家</a><span class="nv_ti">2019-10-27 02:54:17</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20191026/004403.htm"><img src="http://img1.gtimg.com/21/2167/216763/21676379.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20191026/004403.htm">高清：费鸟席尔瓦击掌致意 热苏斯连失良机郁闷不已</a><span class="nv_ti">2019-10-26 21:50:10</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20191020/000058.htm"><img src="http://img1.gtimg.com/21/2167/216746/21674699.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20191020/000058.htm">组图：热苏斯打电话庆祝 瓜迪奥拉赛后展笑颜</a><span class="nv_ti">2019-10-20 02:39:13</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20191006/000024.htm"><img src="http://img1.gtimg.com/21/2167/216711/21671130.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20191006/000024.htm">组图：米尔纳绝杀抱肩庆祝 “克氏挥拳”重出江湖</a><span class="nv_ti">2019-10-06 00:18:56</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190929/000070.htm"><img src="http://img1.gtimg.com/21/2166/216692/21669222.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190929/000070.htm">组图：曼城神锋头槌破门 北非球王高高跃起庆祝</a><span class="nv_ti">2019-09-29 05:17:47</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190923/000016.htm"><img src="http://img1.gtimg.com/21/2166/216678/21667872.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190923/000016.htm">组图：菲米范迪克激情庆祝 一图证萨拉赫有多快</a><span class="nv_ti">2019-09-23 01:49:49</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190915/000066.htm"><img src="http://img1.gtimg.com/21/2166/216662/21666227.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190915/000066.htm">组图：阿坤席尔瓦击掌致意 诺维奇众将疯狂庆祝</a><span class="nv_ti">2019-09-15 02:36:36</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190915/000003.htm"><img src="http://img1.gtimg.com/21/2166/216662/21666219.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190915/000003.htm">组图：亚伯拉罕激情滑跪 托莫里双手指天</a><span class="nv_ti">2019-09-15 00:12:51</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190901/000009.htm"><img src="http://img1.gtimg.com/21/2166/216619/21661963.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190901/000009.htm">组图：曼城双核深情拥抱 小将跳到队友身上庆祝</a><span class="nv_ti">2019-09-01 00:08:26</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190831/004310.htm"><img src="http://img1.gtimg.com/21/2166/216619/21661932.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190831/004310.htm">组图：曼联妖星内切世界波 对手“高空作业”破门</a><span class="nv_ti">2019-08-31 21:46:28</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190825/004670.htm"><img src="http://img1.gtimg.com/21/2166/216603/21660336.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190825/004670.htm">组图：席尔瓦轻拥阿圭罗 红军租将任意球世界波</a><span class="nv_ti">2019-08-25 23:20:47</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190824/005297.htm"><img src="http://img1.gtimg.com/21/2166/216602/21660213.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190824/005297.htm">组图：感动！蓝军小将进球后深拥主帅兰帕德</a><span class="nv_ti">2019-08-24 21:43:58</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190815/000658.htm"><img src="http://img1.gtimg.com/21/2165/216579/21657950.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190815/000658.htm">组图：再夺一冠！利物浦捧得欧超杯 渣叔挥拳怒吼</a><span class="nv_ti">2019-08-15 07:12:09</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190815/000579.htm"><img src="http://img1.gtimg.com/21/2165/216579/21657932.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190815/000579.htm">组图：吉鲁进球掩面跪地庆祝 女主裁全场抢镜</a><span class="nv_ti">2019-08-15 07:04:50</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190810/005778.htm"><img src="http://img1.gtimg.com/21/2165/216571/21657150.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190810/005778.htm">组图：瓜迪奥拉激情指挥 热苏斯“打电话”庆祝首球</a><span class="nv_ti">2019-08-10 21:47:48</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190623/004150.htm"><img src="http://img1.gtimg.com/21/2164/216439/21643988.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190623/004150.htm">组图：你好骚啊！巴西神锋再展不看球门射门神技</a><span class="nv_ti">2019-06-23 18:37:45</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190602/001141.htm"><img src="http://img1.gtimg.com/21/2163/216369/21636917.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190602/001141.htm">高清：孙兴&#24924;凯恩与大耳朵杯擦身而过 铁卫泪洒球场</a><span class="nv_ti">2019-06-02 08:25:03</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190602/001061.htm"><img src="http://img1.gtimg.com/21/2163/216368/21636872.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190602/001061.htm">高清：嗨爆！利物浦众将把渣叔抛上天 阿诺德亲吻队徽</a><span class="nv_ti">2019-06-02 08:08:05</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190525/004697.htm"><img src="http://img1.gtimg.com/21/2163/216346/21634666.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190525/004697.htm">阿森纳众将出发前往阿塞拜疆 穆斯塔菲为拍照特意摆POSE</a><span class="nv_ti">2019-05-25 20:53:06</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190521/005256.htm"><img src="http://img1.gtimg.com/21/2163/216335/21633548.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190521/005256.htm">组图：利物浦全队前往西班牙集训 渣叔心情大好</a><span class="nv_ti">2019-05-21 13:47:41</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190516/006419.htm"><img src="http://img1.gtimg.com/21/2163/216318/21631886.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190516/006419.htm">曼联2019-20赛季主场球衣发布 致敬1999年传奇三冠王</a><span class="nv_ti">2019-05-16 17:00:29</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190513/000035.htm"><img src="http://img1.gtimg.com/21/2163/216304/21630448.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190513/000035.htm">组图：非洲三杰共举英超金靴 阿利松独捧金手套</a><span class="nv_ti">2019-05-13 00:49:33</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190512/005148.htm"><img src="http://img1.gtimg.com/21/2163/216304/21630438.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190512/005148.htm">组图：利物浦球迷狂热支持 马内进球后虔诚祈祷 </a><span class="nv_ti">2019-05-12 23:44:10</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190505/007862.htm"><img src="http://img1.gtimg.com/21/2162/216280/21628034.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190505/007862.htm">高清：博格巴上演高难度功夫停球 桑切斯受伤痛苦倒地</a><span class="nv_ti">2019-05-05 23:00:19</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190502/004035.htm"><img src="http://img1.gtimg.com/21/2162/216267/21626795.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190502/004035.htm">切尔西官方公布下赛季主场球衣 骚气底纹正式上线</a><span class="nv_ti">2019-05-02 16:00:53</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190502/000246.htm"><img src="http://img1.gtimg.com/21/2162/216267/21626739.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190502/000246.htm">高清：诺坎普马赛克拼图震慑欧洲 梅西怒怼米尔纳</a><span class="nv_ti">2019-05-02 05:25:02</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190429/000158.htm"><img src="http://img1.gtimg.com/21/2162/216257/21625785.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190429/000158.htm">组图：德赫亚失误怅然若失 阿隆索破门怒吼庆祝</a><span class="nv_ti">2019-04-29 02:55:58</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190425/000174.htm"><img src="http://img1.gtimg.com/21/2162/216241/21624125.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190425/000174.htm">高清：曼市德比赛前突降暴雨 大雨滂沱猛浇草坪</a><span class="nv_ti">2019-04-25 02:27:31</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190420/004036.htm"><img src="http://img1.gtimg.com/21/2162/216225/21622578.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190420/004036.htm">高清：曼城00后新星打进处子球镇臂高呼 丁丁再伤退满脸无奈</a><span class="nv_ti">2019-04-20 21:40:12</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190418/006427.htm"><img src="http://img1.gtimg.com/21/2162/216217/21621778.png"></a><div class="nv_t">
+<a target="_blank" href="/a/20190418/006427.htm">利物浦公布2019-20赛季主客场球衣 三叉戟组团亮相拗造型</a><span class="nv_ti">2019-04-18 16:22:16</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190402/000160.htm"><img src="http://img1.gtimg.com/21/2161/216116/21611677.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190402/000160.htm">组图：拉姆塞破门握拳怒吼庆祝 厄齐尔揉眼睛</a><span class="nv_ti">2019-04-02 04:07:34</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190311/000056.htm"><img src="http://img1.gtimg.com/21/2160/216001/21600176.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190311/000056.htm">高清：扎卡拉卡泽特击掌相庆 拉什福德抱头懊悔</a><span class="nv_ti">2019-03-11 02:29:24</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190311/000005.htm"><img src="http://img1.gtimg.com/21/2160/216001/21600172.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190311/000005.htm">高清：阿扎尔补时救主握拳庆祝 若日尼奥垂头丧气</a><span class="nv_ti">2019-03-11 00:08:18</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190310/005404.htm"><img src="http://img1.gtimg.com/21/2160/216000/21600093.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190310/005404.htm">高清：阿利松怒不可遏咆哮裁判 三叉戟破门后相拥庆祝</a><span class="nv_ti">2019-03-10 22:08:17</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190304/000049.htm"><img src="http://img1.gtimg.com/21/2159/215965/21596541.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190304/000049.htm">高清：萨拉赫屡失良机一脸懊丧 皮克福德多次神扑竖起大拇指</a><span class="nv_ti">2019-03-04 02:09:30</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190303/000027.htm"><img src="http://img1.gtimg.com/21/2159/215961/21596136.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190303/000027.htm">组图：丁丁受伤小将摸头安慰 马赫雷斯替补救主</a><span class="nv_ti">2019-03-03 00:59:39</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190302/005610.htm"><img src="http://img1.gtimg.com/21/2159/215961/21596112.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190302/005610.htm">高清：凯恩被侵犯跪在场中孤单又无助 波帅面对失球黯然神伤</a><span class="nv_ti">2019-03-02 22:33:02</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190224/005141.htm"><img src="http://img1.gtimg.com/21/2159/215924/21592422.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190224/005141.htm">组图：伤不起！双红会上半场已伤4人 曼联3人伤退</a><span class="nv_ti">2019-02-24 23:09:32</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190217/000145.htm"><img src="http://img1.gtimg.com/21/2158/215886/21588617.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190217/000145.htm">高清：萨内爆射给对方门将踢出鼻血 萨内斯特林替补席谈笑风生</a><span class="nv_ti">2019-02-17 03:37:40</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190215/009581.htm"><img src="http://img1.gtimg.com/21/2158/215881/21588155.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190215/009581.htm">组图：利物浦海外集训欢乐多 马内“考拉抱”超萌</a><span class="nv_ti">2019-02-15 21:18:54</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190209/004356.htm"><img src="http://img1.gtimg.com/21/2158/215855/21585587.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190209/004356.htm">组图：博格巴又进球了！吮手指+与马夏尔合体庆祝</a><span class="nv_ti">2019-02-09 22:22:17</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190205/000209.htm"><img src="http://img1.gtimg.com/21/2158/215845/21584553.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190205/000209.htm">组图：马内进球滑跪庆祝 小豌豆懊悔成表情包</a><span class="nv_ti">2019-02-05 05:54:42</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190205/000113.htm"><img src="http://img1.gtimg.com/21/2158/215845/21584549.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190205/000113.htm">组图：看着都疼！穆鸟在冰场上不慎失足摔屁墩儿</a><span class="nv_ti">2019-02-05 02:55:33</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190201/009529.htm"><img src="http://img1.gtimg.com/21/2158/215835/21583574.png"></a><div class="nv_t">
+<a target="_blank" href="/a/20190201/009529.htm">十大冬窗转会：米兰新舍瓦+新卡卡 巴萨帝星居首</a><span class="nv_ti">2019-02-01 21:24:03</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190131/000410.htm"><img src="http://img1.gtimg.com/21/2158/215824/21582494.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190131/000410.htm">高清：萨里场边暴怒向裁判怒吼 伊瓜因被替换落寞下场</a><span class="nv_ti">2019-01-31 06:17:02</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190130/000334.htm"><img src="http://img1.gtimg.com/21/2158/215817/21581725.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190130/000334.htm">组图：纽卡全队怒吼庆逆转 瓜帅场边捂脸不忍直视</a><span class="nv_ti">2019-01-30 06:08:02</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190114/000218.htm"><img src="http://img1.gtimg.com/21/2157/215708/21570830.jpg"></a><div class="nv_t">
+<a target="_blank" href="/a/20190114/000218.htm">高清：博格巴搭肩与对手理论 德赫亚霸气怒吼</a><span class="nv_ti">2019-01-14 05:59:24</span>
+</div>
+</li>
+<li class="none2">
+<a target="_blank" class="nv_pic" href="/a/20190112/006459.htm"><img src="http://img1.gtimg.com/21/2157/215701/21570106.png"></a><div class="nv_t">
+<a target="_blank" href="/a/20190112/006459.htm">高清：埃梅里场边怒吼 纳斯里反戈旧主美滋滋</a><span class="nv_ti">2019-01-12 22:49:40</span>
+</div>
+</li>
+<!--[if !IE]>|xGv00|aa78fc23901e2794e6ff6cc716364910<![endif]-->
+            <!-- 图集 -->
+            <li><a href="javascript:;" class="refresh">更多内容加载中</a></li>
+          </ul>
+        </div><!-- 精彩图集end -->
+      </div><!-- 主体内容右侧end -->
+      <div class="clear"></div>
+    </div>
+  </div><!-- 主体内容 -->
+  <!-- 底部版权 -->
+  <div class="area foot">
+    <!--版权页面片 S-->
+            <script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+        <style>
+          .tcopyright {
+            width: 960px;
+            margin: 0 auto;
+            padding: 8px 0;
+            font-size: 12px;
+            line-height: 28px;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+            clear: both;
+          }
+
+          .tcopyright .en {
+            font-family: Arial;
+          }
+
+          .tcopyright a {
+            color: #333;
+            text-decoration: none;
+          }
+
+          .tcopyright a:hover {
+            color: #bd0a01;
+            text-decoration: underline;
+          }
+          .footernew {
+              color: #515151;
+              font-size: 12px;
+              height: 70px;
+              line-height: 24px;
+              margin: 12px auto 0;
+              overflow: hidden;
+              text-align: center;
+              width: 1000px;
+          }
+          .footernew .footernewdiv {
+              margin: 0 auto;
+              width: 680px;
+          }
+          .footernew p {
+              border: 1px solid #D2D2D2;
+              float: left;
+              font-size: 12px;
+              height: 50px;
+              line-height: 20px;
+              margin: 6px;
+              padding: 0;
+              width: 120px;
+              overflow: hidden;
+          }
+          .footernew .fl {
+              padding: 3px;
+          }
+          .qq-footer .footernew .fr {
+              padding: 5px 3px 0;
+              width: 72px;
+          }
+          .qq-footer .footernew a {
+  color: #515151;
+  text-decoration: none;
+}
+        </style>
+        <div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a
+              href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a
+              href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a
+              href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a
+              href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a
+              href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a
+              href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/"
+              target="_blank" rel="nofollow">腾讯公益</a> | <a href="https://cloud.tencent.com/?from=txwdibu"
+              target="_blank" rel="nofollow">腾讯云</a> | <a href="http://service.qq.com/" target="_blank"
+              rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+              <br/>
+              <a href="http://szwljb.sz.gov.cn/" target="_blank" rel="nofollow">深圳举报中心</a> |
+              <a href="http://ga.sz.gov.cn" target="_blank" rel="nofollow">深圳公安局</a> | 
+              <a href="http://www.qq.com/dzwfggcns.htm" target="_blank" rel="nofollow">抵制违法广告承诺书</a> |
+              <a href="http://www.qq.com/copyright.shtml" target="_blank" rel="nofollow">版权保护投诉指引</a> |
+              <a href="https://gdca.miit.gov.cn/" target="_blank" rel="nofollow">广东省通管局</a>
+              <br>
+              <span>
+                <a href="http://www.qq.com/culture.shtml" target="_blank" rel="nofollow">粤网文[2017]6138-1456号</a> 
+                <a href="http://www.qq.com/internet_licence.htm" target="_blank" rel="nofollow">新出网证（粤）字010号</a> 
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                增值电信业务经营许可证：<a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">粤B2-20090059</a> 
+                <a href="http://www.qq.com/icp1.shtml" target="_blank" rel="nofollow">B2-20090028</a>
+              </span>
+              <br>
+              <a href="http://www.qq.com/scio.htm" target="_blank" rel="nofollow">新闻信息服务许可证</a>
+              <a href="http://www.qq.com/xwdz.shtml" target="_blank" rel="nofollow">粤府新函[2001]87号</a> 违法和不良信息举报电话：0755-83765566-9 
+              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002000001">
+                <span>粤公网安备44030002000001号</span>
+              </a>
+              <br>
+              <a href="http://www.qq.com/spyp.htm" target="_blank">互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a>
+              <br>
+              <div class="footernew">
+                <div class="footernewdiv">
+                <p>
+                  <span class="fl"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" target="_blank" rel="nofollow"><img width="35" height="43" border="0" alt="经营性网站备案信息" src="//mat1.gtimg.com/www/images/qq2012/ind36.gif"></a></span>
+                  <span class="fr"><a target="_blank" class="lcblack" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" rel="nofollow">经营性网站<br>
+                  备案信息</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.12377.cn/" target="_blank" rel="nofollow"><img width="44" height="44" border="0" alt="中国互联网举报中心" src="//mat1.gtimg.com/www/images/qq2012/buliang.png"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.12377.cn/" target="_blank" rel="nofollow">中国互联网<br>
+                  举报中心</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.wenming.cn" target="_blank" rel="nofollow"><img width="44" height="42" border="0" alt="中国文明网传播文明" src="//mat1.gtimg.com/www/images/qq2012/wmlogo.gif"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.wenming.cn" target="_blank" rel="nofollow">中国文明网<br>传播文明</a></span>
+                </p>
+                <p style="width:128px;height:52px;border:0;">
+                  <span style="padding:0;" class="fl"><a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&amp;ct=df&amp;a=1&amp;pa=337337" target="_blank" rel="nofollow"><img border="0" alt="诚信网站" src="//mat1.gtimg.com/www/images/qq2012/cxrz5.png"></a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow"><img src="//mat1.gtimg.com/www/images/qq2012/gswj2015.jpg" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow">工商网监<br>电子标识</a></span>
+                </p>
+                </div>
+              </div>
+
+          </div>
+          <div class="en">Copyright &copy; 1998 -
+            
+            2020 Tencent. All Rights Reserved</div>
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a
+              href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+          </div>
+        </div>
+<!--[if !IE]>|xGv00|1946a31bc73a15246842877bdfa16df2<![endif]-->
+    <!--版权页面片 E-->
+  </div><!-- 底部版权end -->
+  <!-- 吐槽与返回首页 -->
+  <div class="elevator"><a href="https://support.qq.com/products/2258" target="_blank" class="support">意见<br>反馈</a> <a
+      id="gotop" href="javascript:window.scrollTo(0,0);" target="_self" class="gotop" style="display: block"><i></i></a>
+  </div>
+  <script>function delQueStr(url, ref) {
+      var str = "";
+      if (url.indexOf('?') != -1) {
+        str = url.substr(url.indexOf('?') + 1);
+      } else {
+        return url;
+      }
+      var arr = "";
+      var returnurl = "";
+      var setparam = "";
+      if (str.indexOf('&') != -1) {
+        arr = str.split('&');
+        for (i in arr) {
+          if (arr[i].split('=')[0] != ref) {
+            returnurl = returnurl + arr[i].split('=')[0] + "=" + arr[i].split('=')[1] + "&";
+          }
+        }
+        return url.substr(0, url.indexOf('?')) + "?" + returnurl.substr(0, returnurl.length - 1);
+      } else {
+        arr = str.split('=');
+        if (arr[0] == ref) {
+          return url.substr(0, url.indexOf('?'));
+        } else {
+          return url;
+        }
+      }
+    }
+
+    var cal = "callback";
+    //赛程id
+    var Schedule_id2 = '//matchweb.sports.qq.com/matchUnion/list?startTime=2019-08-01&amp;endTime=2020-06-30&amp;columnId=8&amp;index=3&amp;timestamp=1521014594682';
+    if (Schedule_id2 == '') {
+      $('#schendule').hide();
+    } else {
+      var Schedule_id3 = Schedule_id2.replace(/&amp;/g, '&');
+      if (Schedule_id3.indexOf(cal) >= 0) {
+        window.Schedule_id = delQueStr(Schedule_id3, cal);
+      } else {
+        window.Schedule_id = Schedule_id3;
+      }
+    }
+
+
+
+    //联赛右侧积分榜
+    var jfbls = '//matchweb.sports.qq.com/team/rank?&amp;competitionId=8&amp;from=sporthp';
+    if (jfbls == '' || jfbls == '#' || jfbls == 'undefined') {
+      $('#bd').hide()
+    } else {
+      var jfbls2 = jfbls.replace(/&amp;/g, '&');
+      if (jfbls2.indexOf(cal) >= 0) {
+        window.jfbls = delQueStr(jfbls2, cal);
+      } else {
+        window.jfbls = jfbls2;
+      }
+    }
+
+    //联赛右侧射手榜
+    var ssbls = '//matchweb.sports.qq.com/player/rank?&amp;competitionId=8&amp;from=sporthp';
+    if (ssbls == '' || ssbls == '#' || ssbls == 'undefined') {
+      $('#bd').hide()
+    } else {
+      var ssbls3 = ssbls.replace(/&amp;/g, '&');
+      if (ssbls3.indexOf(cal) >= 0) {
+        window.ssbls2 = delQueStr(ssbls3, cal);
+      } else {
+        window.ssbls2 = ssbls3;
+      }
+    }
+
+    //精彩视频回放
+    window.video_id = 'mzc00200hd1rjr9';
+
+    // 页面标识
+    window.temp_name = ["英超", "西甲", "意甲", "德甲", "欧冠", "亚冠", "中国足球"];</script>
+  <script charset="utf-8" src="//mat1.gtimg.com/sports/js/lib/require.min.js"></script>
+  <script charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/foot_ball/2018/scripts/main-458d5bb7ca.js"></script>
+</body>
+
+</html><!--[if !IE]>|xGv00|0f4d75d4f0a48254999da974f219f108<![endif]-->
+<!--Sports_YCLM_Couplet_div AD begin...."l=Sports_YCLM_Couplet&log=off"-->
+<div id="Sports_YCLM_Couplet" style="width:110px;height:300px;display:none;" class="l_qq_com"></div>
+<!--Sports_YCLM_Couplet AD end --><!--[if !IE]>|xGv00|e0435a236de3781e03acbc885b765171<![endif]-->
+<script type="text/javascript" src="//imgcache.qq.com/qzone/biz/comm/js/qbs.js"></script>
+<script type="text/javascript">
+var TIME_BEFORE_LOAD_CRYSTAL = (new Date).getTime();
+</script>
+<script src="//ra.gtimg.com/web/crystal/v4.7Beta04Build040/crystal-min.js" id="l_qq_com" arguments="{'extension_js_src':'//ra.gtimg.com/web/crystal/v4.7Beta04Build040/crystal_ext-min.js', 'jsProfileOpen':'true', 'mo_page_ratio':'0.01', 'mo_ping_ratio':'0.01', 'mo_ping_script':'//ra.gtimg.com/sc/mo_ping-min.js'}"></script>
+<script type="text/javascript">
+if(typeof crystal === 'undefined' && Math.random() <= 1) {
+  (function() {
+    var TIME_AFTER_LOAD_CRYSTAL = (new Date).getTime();
+    var img = new Image(1,1);
+    img.src = "//dp3.qq.com/qqcom/?adb=1&dm=sports&err=1002&blockjs="+(TIME_AFTER_LOAD_CRYSTAL-TIME_BEFORE_LOAD_CRYSTAL);
+  })();
+}
+</script>
+<style>.absolute{position:absolute;}</style>
+<!--[if !IE]>|xGv00|aaf8791a6569c52242b88477e7721841<![endif]-->
+<script>
+    if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (
+        /MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+    window.location.href = "	https://xw.qq.com/m/premierleague";
+    }
+</script><!--[if !IE]>|xGv00|d467b7fac0fe8fcff0f04cd2225fbc5f<![endif]-->

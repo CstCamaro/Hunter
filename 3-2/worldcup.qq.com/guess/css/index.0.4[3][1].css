@@ -1,0 +1,98 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+body{font:12px/1.75 "ËÎÌå",Verdana,sans-serif;background:#fff;overflow-x:hidden;color:#333;}
+fieldset{display:inline;}
+button{line-height:1.2;vertical-align:middle;cursor:pointer;}
+strong{font-weight:800;}
+a{color:#333;text-decoration:none;}
+a:hover{color:#c00;text-decoration:underline;}
+
+body{background:#f2f8e7;line-height:21px;}
+input{vertical-align:middle;}
+
+.box10{clear:both;font-size:0;line-height:0;}
+.box10{height:10px;}
+
+.clr{font-size:0;line-height:0;height:0;clear:both;}
+
+/*-----------layouts------------*/
+.wrap{width:960px;margin:0 auto;}
+
+/*------------styles------------------*/
+.fwhite,.fwhite a{color:#fff;}
+.fwhite a:hover{color:#fff;}
+.forange,.forange a{color:#e34f18;}
+.forange a:hover{color:#e34f18;}
+.fgreen,.fgreen a{color:#2b660d;}
+.fgreen a:hover{color:#2b660d;}
+.fyellow,.fyellow a{color:#fff000;}
+.fyellow a:hover{color:#fff000;}
+.flgreen,.flgreen a{color:#a8d781;}
+.flgreen a:hover{color:#ff0000;}
+.fredb,.fredb a{color:#ff0000;font-weight:bold;}
+.fredb a:hover{color:#ff0000;}
+
+.fb{font-weight:bold;}
+.f14{font-size:14px;}
+.lh25{line-height:25px;}
+.lh22{line-height:22px;}
+.text_c{text-align:center;}
+.fhei20{font-size:20px;font-family:"ºÚÌå";}
+.fv{font-family:veradana;}
+
+.dis{display:block;}
+.undis{display:none;}
+
+.fl{float:left;}
+.fr{float:right;}
+
+/*-------------blocks------------*/
+#Banner{background:url(//mat1.gtimg.com/worldcup/guess/images/new_banner.jpg) no-repeat;height:90px;}
+#Banner_links{padding-top:62px;padding-left:34px;height:28px;line-height:28px;color:#529b1d;}
+#Banner_links a{color:#fff;}
+#Banner_links a:hover{color:#ff0;}
+
+
+
+/*------------blocks-------------------*/
+#Numbers{width:300px;height:230px;background:#f9ffee;}
+#Numbers .top1{width:215px;background:url(//mat1.gtimg.com/worldcup/guess/images/bg01.jpg);padding-right:85px;text-align:right;padding-top:16px;height:49px;line-height:28px;font-size:24px;font-family:Arial;font-weight:bold;}
+#Numbers .top2{border-left:1px solid #dde9ca;border-right:1px solid #dde9ca;width:298px;padding-top:5px;height:47px;}
+#Numbers .btn1{width:280px;height:46px;border-bottom:1px solid #c8e4a1;text-align:center;margin:0 auto;}
+#Numbers .foot{border:1px solid #c8e4a1;border-top:none;line-height:22px;padding:15px;20px;height:82px;}
+
+#Nations{background:url(//mat1.gtimg.com/worldcup/guess/images/ryan_bg_01.jpg);height:213px;padding-top:17px; position:relative;}
+
+.title_left{width:270px;height:25px;line-height:25px;padding-top:3px;background:url(//mat1.gtimg.com/worldcup/guess/images/bg05.jpg);padding-left:30px;}
+.list_left{width:287px;border:1px solid #c8e4a1;border-top:none;background:#fff;padding-top:13px;padding-left:11px;color:#99cc99;padding-bottom:14px;}
+.title_right{width:650px;background:url(//mat1.gtimg.com/worldcup/guess/images/bg06.jpg);padding-top:4px;height:24px;}
+.title_right_l{width:140px;line-height:24px;padding-left:20px;float:left;}
+.right_bottom{border:1px solid #c8e4a1;border-top:none;background:#fff;padding-top:5px;padding-bottom:7px;}
+.right_bottom td{text-align:center;font-size:14px;}
+
+#TeamTab{width:400px;height:24px;float:left;}
+#TeamTab div{width:50px;height:24px;line-height:27px;overflow:hidden;float:left;font-size:14px;font-weight:bold;color:#fff;text-align:center;}
+#TeamTab .on{background:url(//mat1.gtimg.com/worldcup/guess/images/bg07.jpg);color:#2b660d;}
+
+/*------------layout------------------*/
+
+.left{width:300px;float:left;}
+.right{width:650px;float:right;}
+
+#TeamCont{font-family:Verdana;}
+
+#Comment_tit{line-height:25px;padding-top:3px;padding-left:30px;width:930px;height:25px;background:url(//mat1.gtimg.com/worldcup/guess/images/newtitle-1.jpg);}
+#Comment_bottom{width:928px;margin:0 auto;border:1px solid #dde9ca;border-top:none;background:#fff;padding:15px;}
+
+
+/*ryanguo*/
+.box_logo_1_bg{position:absolute; top:-11px; left:92px; width:134px; height:71px; background:url(//mat1.gtimg.com/worldcup/guess/images/logo_1.png) !important; background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/worldcup/guess/images/logo_1.png', sizingMethod='scale');}
+.box_logo_1_a{position:absolute; top:-11px; left:92px; width:134px; height:71px;}
+.box_logo_lefttit{width:270px;height:28px;line-height:28px;background:url(//mat1.gtimg.com/worldcup/guess/images/bg05.jpg);padding-left:30px;}
+.box_logo_lefttit img{float:right;}/*  |xGv00|fc4e61385889220f261baacbfdfcd0ae */

@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/*最外部*/
+#wapper{width:100%; height:3264px; margin:0px auto; float:left; position:relative; background:url(//mat1.gtimg.com/sports/2022dongao/images/zbj.jpg) no-repeat top center;}
+#wapper .fc{width:95px; height:310px; margin:0px auto; float:left; padding-left:15px; position:fixed; top:610px; right:8%; background:url(//mat1.gtimg.com/sports/2022dongao/images/fcdt.png) no-repeat top center;}
+#wapper .fc .fcxm a{width:95px; height:18px; float:left; margin-top:15px; margin-bottom:10px; font-size:18px; line-height:18px; color:#fff; text-decoration:none;}
+
+
+
+
+/*顶部*/
+#top{width:100%; height:42px; margin:0px auto; float:left; background:url(//mat1.gtimg.com/sports/2022dongao/images/top.jpg) no-repeat center center;}
+
+
+
+
+/*第一部分*/
+#part01{width:100%; height:1245px; margin:0px auto;float:left;position:relative;}
+#part01 .layer_wrap{position: absolute;left:0px;top:0px;width:100%}
+#part01 .J_box{width:1240px;height:1245px; position:relative; margin:0 auto;}
+#part01 .J_box .people{width:470px;height:380px;top:4%;left:5%;position:absolute;float:left;background:url(//mat1.gtimg.com/sports/2022dongao/images/people.png)no-repeat center center;z-index: 2;}
+#part01 .J_box .sign{width:752px;height:218px;top:0%;right:0%;position:absolute;float:left;background:url(//mat1.gtimg.com/sports/2022dongao/images/biaoti.png)no-repeat center center;}
+#part01 .J_box .tubiao{text-align:center;width:195px;height:66px;top:21%;left:51%;position:absolute;float:left;background:url(//mat1.gtimg.com/sports/2022dongao/images/dltb.png) no-repeat center center;z-index: 2;}
+#part01 .J_box .tubiao a{width:195px;height:66px;font-family: 微软雅黑;font-size:26px;color:#fff;line-height:66px;z-index: 2;text-decoration: none; }
+#part01 .J_box .tunum {width:290px;top:28%;left:49%;position:absolute;font-size:18px;z-index: 2;}
+#part01 .J_box .tunum .nei{font-size: 25px;color:#ff0000;z-index: 2;}
+#part01 .J_box .J_qq{width:279px;height:284px;top:22%;right:0%;position:absolute;float:left;background:url(//mat1.gtimg.com/sports/2022dongao/images/qq.png)no-repeat center center;z-index: 2;}
+#part01 .layer{width:100%; height:1245px;top:0%;left:0%;position:absolute;}
+#part01 .layer .shan{width:100%;height:462px;top:15%;left:0%;position:absolute;float:left;background:url(//mat1.gtimg.com/sports/2022dongao/images/shan01.png)no-repeat center center;z-index: 1;}
+
+
+/*视频区域*/
+#spqy{width:100%; height:760px; margin:0px auto; float:left; position:absolute; top:490px; left:0px;}
+#spqy .spbox{width:1240px; height:auto; margin:0px auto;}
+#spqy .spbox .sp{width:1130px; height:760px; float:left; margin-left:110px; background:url(//mat1.gtimg.com/sports/2022dongao/images/spdt.png)no-repeat center center;}
+#spqy .spbox .sp h2{width:1080px; height:28px; float:left; margin-left:50px; font-size:28px; line-height:28px; color:#fff; margin-top:100px;}
+#spqy .spbox .sp .spzs{width:900px; height:565px; float:left; margin-left:50px; margin-top:15px;}
+
+
+
+
+
+/*第二部分*/
+#part02{width:100%; height:auto; margin:0px auto; float:left;}
+#part02 .part02box{width:1240px; height:auto; margin:0px auto;}
+#part02 .part02box .bt{width:310px; height:40px; float:left; margin-left:465px;}
+#part02 .part02box .list{width:1240px; height:370px; float:left; margin-top:45px;}
+#part02 .part02box .list .left{width:22px; height:43px; float:left; margin-top:163.5px;}
+#part02 .part02box .list .middle{width:1176px; height:370px; float:left; margin-left:13px; margin-right:7px;}
+#part02 .part02box .list .middle ul{width:1176px; height:370px; float:left;}
+#part02 .part02box .list .middle li{width:190px; height:370px; float:left; position:relative; margin-right:6px;}
+#part02 .part02box .list .middle li .tp01{width:190px; height:370px; float:left; position:absolute; left:0px; top:0px;}
+#part02 .part02box .list .middle li .hgxg{width:190px; height:370px; float:left; background:#55b3ed; position:absolute; left:0px; top:0px; display:none;}
+#part02 .part02box .list .middle li .hgxg .jjjs a{width:155px; height:200px; float:left; margin:50px 15px 0px 20px; font-size:24px; line-height:30px; color:#fff; text-decoration:none;}
+#part02 .part02box .list .middle li .hgxg .sptp{width:190px; height:60px; float:left;}
+#part02 .part02box .list .middle li .hgxg .sptp .sp{width:37px; height:60px; float:left; margin-left:29px; margin-right:29px;}
+#part02 .part02box .list .middle li:hover .hgxg{width:190px; height:370px; float:left; position:absolute; left:0px; top:0px; display:block;}
+#part02 .part02box .list .right{width:22px; height:43px; float:left; margin-top:163.5px;}
+
+
+
+
+/*第三部分*/
+#part03{width:100%; height:auto; margin:0px auto; float:left;}
+#part03 .part03box{width:1240px; height:1150px; margin:140px auto 0px auto; position:relative;}
+#part03 .part03box .bt03{width:250px; height:40px; float:left; margin-left:495px; margin-top:35px;}
+/*第三部分（地图）*/
+#part03 .part03box .dt{width:1050px; height:860px; float:left; position:absolute; left:25px; top:0px;}
+/*第三部分（百分比）*/
+#part03 .part03box .bfb{width:260px; height:285px; float:left; position:absolute; right:0px; top:480px;}
+#part03 .part03box .bfb .sj{width:260px; height:22px; float:left; margin-bottom:35px;}
+#part03 .part03box .bfb .sj .sjwz{width:115px; height:22px; float:left; font-size:18px; line-height:22px; margin-right:10px; color:#fff; text-align:right;}
+#part03 .part03box .bfb .sj .sjb01{width:135px; height:22px; float:left; background:#0a326f; border-radius:10px;}
+#part03 .part03box .bfb .sj .sjb02{width:135px; height:22px; float:left; background:#1856b2; border-radius:10px;}
+#part03 .part03box .bfb .sj .sjb03{width:135px; height:22px; float:left; background:#0066ff; border-radius:10px;}
+#part03 .part03box .bfb .sj .sjb04{width:135px; height:22px; float:left; background:#9ed9fc; border-radius:10px;}
+#part03 .part03box .bfb .sj .sjb05{width:135px; height:22px; float:left; background:#fff; border-radius:10px;}
+#part03 .part03box .smlqy{width:209px; height:375px; float:left; position:absolute; right:0px; top:775px;}
+#part03 .part03box .smlqy .sml-tp{width:205px; height:258px; float:left; border:solid 2px #fff;}
+#part03 .part03box .smlqy .dy{width:209px; height:113px; float:left;}
+
+
+
+
+
+
+/*第三部分（热门城市占总数百分比）*/
+#part03 .part03box .rmcs{width:900px; height:295px; float:left; position:absolute; left:80px; top:855px;}
+#part03 .part03box .rmcs .people{width:175px; height:295px; float:left;}
+#part03 .part03box .rmcs .bfbbox{width:725px; height:295px; float:left; }
+#part03 .part03box .rmcs .bfbbox .bfbt{width:120px; height:182px; float:left; margin-right:22px;position:relative;}
+#part03 .part03box .rmcs .bfbbox .bfbt .wz{width:120px;position:absolute;bottom:0px;left:0px; height:26px; float:left; margin-bottom:5px; font-size:26px; line-height:26px; text-align:center; color:#fff;}
+#part03 .part03box .rmcs .bfbbox .bfbt .tx{position:absolute;bottom:0;width:120px; height:157px; float:left;background:#5ddb72;border-top-right-radius:20px; border-top-left-radius:20px;}
+#part03 .part03box .rmcs .bfbbox .bfbt .tx span{position:absolute;bottom:0px;left:41px;float:left;display:inline-block;}
+#part03 .part03box .rmcs .bfbbox .bfbt .dydt{position:absolute;top:180px;left:0px;width:120px; height:70px; float:left; margin-top:2px;}
+#part03 .part03box .rmcs .bfbbox .sml-bt{width:725px; height:26px; float:left; font-size:26px; line-height:26px; text-align:center; color:#fff; position:absolute; left:142px; top:223px; z-index:99;}
+/*#part03 .part03box .rmcs .bfbbox .bfbt .wz{width:120px; height:26px; float:left; margin-bottom:5px; font-size:26px; line-height:26px; text-align:center; color:#fff;}
+#part03 .part03box .rmcs .bfbbox .bfbt .tx{position:relative;width:120px; height:157px; float:left; font-size:20px; line-height:30px; text-align:center; color:#fff; background:#5ddb72; border-top-right-radius:20px; border-top-left-radius:20px;}
+
+
+
+
+#part03 .part03box .rmcs .bfbbox .bfbt .dydt{width:120px; height:70px; float:left; margin-top:2px;}
+#part03 .part03box .rmcs .bfbbox .sml-bt{width:725px; height:26px; float:left; font-size:26px; line-height:26px; text-align:center; color:#fff; position:absolute; left:0px; top:223px; z-index:99;}*/
+
+
+
+
+
+/*尾部*/
+#footer{width:100%; height:auto; margin:0px auto; float:left;}
+#footer .box{width:1240px; height:90px; margin:50px auto 0px auto;}
+
+
+
+
+
+
+
+/*  |xGv00|d822245a9bac434999f5bce1b9ac67f2 */

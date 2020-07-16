@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="all" />
+        <meta name="author" content="Tencent-ISRD" />
+        <meta name="Copyright" content="Tencent" />
+        <meta name="Description" content="" />
+        <meta name="Keywords" content="" />
+        <title>腾讯视频</title>
+        <script language="javascript">document.domain="qq.com";</script>
+    </head>
+    <body>
+        <script language="javascript">
+						String.prototype.getQueryString = function(name) 
+						{ 
+						  var reg = new RegExp("(^|&|\\?)"+ name +"=([^&]*)(&|$)"), r; 
+						  if (r=this.match(reg)) return unescape(r[2]); return null; 
+						};
+						
+						var sSearch=location.search;
+						var jumpurl = sSearch.getQueryString('jumpurl');
+						var clientjumpurl=sSearch.getQueryString("clientjumpurl");
+						if(!jumpurl && !clientjumpurl){
+							parent.window.location.href='http://v.qq.com/';
+							
+						}
+						
+						else{
+							if(jumpurl==''){
+								if(top && parent.ptlogin2_onClose){
+									parent.ptlogin2_onClose(true);
+								}
+								else{
+									if(checkHost(clientjumpurl)){
+										parent.window.location.href=clientjumpurl.replace(/#.*/,"");
+									}
+									else{
+										parent.window.location.href='http://v.qq.com?ADTAG=TXV.LOGIN.REDIREDT.NOT_QQ_2';
+									}
+								}
+							}
+							else if(jumpurl==null){
+								parent.ptlogin2_onClose();
+								parent.__rdt__();
+							}
+							else{
+								while(jumpurl.indexOf('%')!=-1&&jumpurl.indexOf('?')==-1){
+									jumpurl=unescape(jumpurl);
+								}
+								if(!checkHost(jumpurl)){
+									parent.window.location.href='http://v.qq.com?ADTAG=TXV.LOGIN.REDIREDT.NOT_QQ_3';
+								}
+								else {
+									parent.window.location.href=jumpurl.replace(/#.*/,"");
+								}
+							}
+						}
+						function checkHost(url){ 
+							var host = false;
+							if(typeof url == "undefined" || null == url)
+								return false;
+							var regex=/^http(s)?:\/\/((([\w-]+)\.)+[\w-]+)(\/[\w- .\/?%&=]*)?/,_url = url.toLowerCase();
+							if(_url.indexOf('http://')!=0 && _url.indexOf('https://')!=0){
+								url='http://'+url;
+							}
+							var match = url.match(regex);
+							if(typeof match != "undefined"&& null != match){
+								host = getRealHost(_url);
+								host = host.toLowerCase();
+								var arr = host.split(".");
+								if(arr.length>=2 && arr[arr.length-2]=="qq" &&  arr[arr.length-1]=="com"){
+									return true;
+								}
+							}  
+							return false;
+						}
+						
+						function getRealHost(href) {
+							var l = document.createElement("a");
+							l.href = href;
+							return l.hostname
+						};
+						</script>	
+        </body>
+     </html>
+<!--[if !IE]>|xGv00|53a139153866526ff80a3c926b502847<![endif]-->

@@ -1,0 +1,218 @@
+/*kennanwang*/
+body, td, selezs, input, div { font-size:12px; color:#333; font-family:"ËÎÌå"; }
+body { background:#fff; }
+a:link, a:visited { text-decoration:none; color:#333; }
+a:hover { color:#0091DB!important; text-decoration:underline; }
+.Nborder { border:0px!important }
+.mb0 { margin-bottom:0px!important }
+/*sprite*/
+#content { width:100%; margin:0px auto; overflow:hidden; background:url(//mat1.gtimg.com/sports/xiaobai/13ao/bgr.jpg) repeat-x }
+/*banner*/
+#banner { width:100%; height:400px; margin:0px auto 20px; background:url(//mat1.gtimg.com/sports/xiaobai/13ao/bg.jpg) no-repeat top center #0E85DB }
+.banner{ position:relative; width:1000px; height:400px; margin:0px auto;}
+.banner h1,.banner p.instro{ display:none; text-indent:-9999em}
+.fs_D1{ width:1000px;height:360px;position:relative; }  
+.fs_D1 .fPic{ position:absolute; left:0px; top:0px; }  
+.fs_D1 .D1fBt{ overflow:hidden; zoom:1;  height:16px; z-index:10;  }  
+.fs_D1 .shadow{ width:420px; position:absolute; top:90px; right:30px; z-index:10; height:130px; display:block; } 
+.fs_D1 .shadow h2{ text-align:right; margin-bottom:0px; font-size:60px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:bold; color:#fff}
+.fs_D1 .shadow h3{ text-align:right; font-size:40px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:bold; color:#fff}
+.fs_D1 .shadow a,.fs_D1 .shadow a:hover{ text-decoration:none; color:#fff!important;  overflow:hidden; display:inline-block; background:rgba(0,0,0,0.6);    
+filter:progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#80000000',endColorstr = '#80000000')\9; }  
+.fs_D1 .fcon{ position:relative; width:100%; float:left;  display:none; background:#000  }  
+.fs_D1 .fcon .datu{ display:block; width:1000px;height:360px} 
+.sbBox{ position:absolute; width:515px; height:125px; bottom:0px; right:25px; overflow:hidden}
+.sbBoxc{ position:relative; width:515px; height:125px; overflow:hidden}
+.sbBoxc ul{ position:absolute; top:0px; left:0px; width:515px; height:125px; overflow:hidden; z-index:13}
+.sbBoxc ul li{ display:inline; float:left; width:110px; margin:10px 0px 0px 15px; overflow:hidden}
+.sbBoxc ul li .img{ position:relative; width:108px; height:60px; margin-bottom:10px; border:1px solid #3E3E3E; overflow:hidden}
+.sbBoxc ul li .img img{ width:108px; height:60px;}
+.sbBoxc ul li .img .bg { position:absolute; width:100%; height:16px; left:0px; bottom:0px; background:#000; Opacity:0.7; filter: Alpha(Opacity=70); z-index:9 }
+.sbBoxc ul li .img .play { position:absolute; width:21px; height:22px; left:5px; bottom:5px; background:url(//mat1.gtimg.com/sports/xiaobai/13ao/play.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='//mat1.gtimg.com/sports/xiaobai/13ao/play.png');
+z-index:10 }
+.sbBoxc ul li p{ text-align:center; color:#D5EDFF}
+.sbBoxc ul li p a,.sbBoxc ul li p a:hover{ color:#D5EDFF!important; text-decoration:none}
+.sbBoxc .beijing{ position:absolute; top:0px; left:0px; width:515px; height:125px; overflow:hidden; background:#000; Opacity:0.7; filter: Alpha(Opacity=70); z-index:9}
+.awLogo{ position:absolute; top:0px; left:40px; width:156px; height:205px; background:url(//mat1.gtimg.com/sports/xiaobai/13ao/aowang2.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='//mat1.gtimg.com/sports/xiaobai/13ao/aowang2.png');}
+.awLogo a{ display:block; width:156px; height:205px; overflow:hidden; text-indent:-9999em}
+.play2{ position:absolute; top:130px; left:466px; width:67px; height:68px; background:url(//mat1.gtimg.com/sports/xiaobai/13ao/play2.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='//mat1.gtimg.com/sports/xiaobai/13ao/play2.png');}
+.play2 a{ display:block; width:67px; height:68px; text-indent:-9999em}
+.textB{ position:absolute; bottom:0px; right:25px; width:562px; height:80px; overflow:hidden}
+.textBc{ position:relative; width:562px; height:80px; overflow:hidden}
+.textBc p{ position:absolute; top:15px; left:10px; display:block; width:540px; height:42px; overflow:hidden; line-height:22px; color:#333; z-index:10}
+.textBc p a{ color:#333}
+.beijing2{ position:absolute; top:0px; left:0px; width:562px; height:80px; overflow:hidden; background:#fff; Opacity:0.7; filter: Alpha(Opacity=70); z-index:9}
+.fs_D1 .fbg{ width:150px; bottom:5px; right:65px; position:absolute; height:21px; text-align:center; z-index:13  }  
+.fs_D1 .fbg div{margin:4px auto 0;overflow:hidden;zoom:1;height:14px}    
+.fs_D1 .D1fBt a{display:inline-block;background:url(//mat1.gtimg.com/sports/xiaobai/13ao/dian.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='//mat1.gtimg.com/sports/xiaobai/13ao/dian.png');   
+width:14px; height:14px; position:relative; margin:0 2px; outline:0px;  text-decoration:none; cursor:pointer }    
+.fs_D1 .D1fBt .current,.fs_D1 .D1fBt a:hover{background:url(//mat1.gtimg.com/sports/xiaobai/13ao/dianC.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='//mat1.gtimg.com/sports/xiaobai/13ao/dianC.png')}    
+.fs_D1 .D1fBt img{display:none}    
+.fs_D1 .D1fBt i{display:none; font-style:normal; }    
+.fs_D1 .prev{ display:block; position:absolute; width:5px;height:9px;font-size:9px;bottom:10px;right:58px;background:url(//mat1.gtimg.com/sports/xiaobai/13ao/left.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/left.png'); cursor:pointer; z-index:14 }
+.fs_D1 .prev:hover{ background:url(//mat1.gtimg.com/sports/xiaobai/13ao/leftOn.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='//mat1.gtimg.com/sports/xiaobai/13ao/leftOn.png'); }
+.fs_D1 .next{ display:block; position:absolute; width:5px;height:9px;font-size:9px;bottom:10px;right:40px;background:url(//mat1.gtimg.com/sports/xiaobai/13ao/right.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/right.png'); cursor:pointer; z-index:14 } 
+.fs_D1 .next:hover{ background:url(//mat1.gtimg.com/sports/xiaobai/13ao/rightOn.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='//mat1.gtimg.com/sports/xiaobai/13ao/rightOn.png'); }
+.navBox{ width:1000px; height:40px;} 
+.navBox ul li{ position:relative; display:inline; float:left; height:40px; line-height:40px; font-size:14px; padding:0px 10px; color:#D5EDFF}
+.navBox ul li a,.navBox ul li a:hover{ color:#D5EDFF!important; text-decoration:none}
+.navBox ul li.current{ background:#F6871F}
+.navBox ul li.current dl{ display:block}
+.navBox ul li dl{ display:none; position:absolute; top:40px; left:0px; width:100px; overflow:hidden; background:#F6871F}
+.navBox ul li dl dd{ width:90px; height:39px; line-height:39px; padding-left:10px; border-bottom:1px solid #F8963B; text-align:left; color:#fff}
+.navBox ul li dl dd a,.navBox ul li dl dd a:hover{ color:#fff!important; text-decoration:none} 
+/*box1*/
+.main{ width:1000px; margin:0px auto; overflow:hidden}
+.box1{ width:1000px; margin:0px auto 15px; overflow:hidden}
+.box1 .l{ float:left; width:400px; overflow:hidden}
+.hotBox{ width:400px; margin:0px auto 15px; padding-bottom:15px; overflow:hidden; border-bottom:1px dashed #DFDFDF}
+.box1 .l .last{ border-bottom:1px solid #DFDFDF!important}
+.hotBox h2{ margin-bottom:5px; font-size:18px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#0091DB}
+.hotBox h2 a{ color:#0091DB!important}
+.hotBox p{ line-height:23px; }
+.iconWb{ padding-left:15px; background:url(//mat1.gtimg.com/sports/xiaobai/13ao/iconWb.png) no-repeat scroll 0px 0px; vertical-align:middle}
+.iconCamero{ padding-left:20px; background:url(//mat1.gtimg.com/sports/xiaobai/13ao/iconCamero.png) no-repeat scroll 0px 0px; vertical-align:middle}
+.hd{ width:100%; height:42px;}
+.blueH3{ height:42px; line-height:42px; font-size:18px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#0091DB}
+.ibm{ margin:5px 0px 0px 10px; display:inline-block; width:132px; height:30px; background:url(//mat1.gtimg.com/sports/xiaobai/13ao/ibm.png) no-repeat}
+.ibm a{ display:block; width:132px; height:30px; text-indent:-9999em}
+.box1 .lBox{ width:400px; overflow:hidden}
+.box1 .lBox ul li{ font-size:14px; line-height:28px;}
+.box1 .lBox ul li span{ font-size:12px; color:#999999; font-family:Arial, Helvetica, sans-serif}
+.box1 .r{ float:right; width:600px; overflow:hidden}
+.box1 .rBox{ margin-bottom:10px; float:left;}
+.box1 .rBox h3{ margin-left:20px;}
+.box1 .rBox2{ width:440px!important;}
+.rBox3{ display:inline; width:140px!important; margin-left:20px; overflow:hidden}
+.rBox3 dl{ width:140px; overflow:hidden}
+.rBox3 dl dt img{ display:block; width:138px; height:113px; margin-bottom:5px; border:1px solid #000; overflow:hidden}
+.rBox3 dl dd{ text-align:left; line-height:20px; margin:0px}
+.rBox3 h3{ margin-left:0px!important}
+.biaogeBox{ width:580px; padding-left:20px; margin-bottom:10px; overflow:hidden}
+.dzBox{ float:left; width:289px; overflow:hidden; border-right:1px solid #D4E2EC}
+.dzBox h3{ width:279px; font-weight:normal}
+#tab{ width:289px; overflow:hidden}
+#cardBtn1{ width:289px; height:30px; line-height:30px; overflow:hidden; background:#E9F6FF;  z-index:2}  
+#cardBtn1 li{ float:left; display:inline; margin-right:10px; padding:0px 13px; text-align:center; background:#1161B2; color:#fff; cursor:pointer; height:30px; overflow:hidden}  
+#cardBtn1 .current{ background:#F6871F; color:#fff; font-weight:bold}  
+#cardBody1{width:289px; z-index:1;}  
+.biaogeBox dl{ float:left; width:290px; overflow:hidden}
+.biaogeBox dl dt,.dzBox h3{ padding-left:10px; height:30px; line-height:30px; overflow:hidden; background:#DDEDF9; text-align:left; font-size:14px; color:#0091DB}
+.biaogeBox dl dd{ height:30px; line-height:30px; overflow:hidden; background:#fff;}
+.biaogeBox dl dd.lanse{ background:#E9F6FF!important}
+.saiguo{ display:inline-block; height:14px; line-height:14px; padding:2px; margin:0px 54px 0px 5px; _margin:5px 54px 0px 5px; background:#1161B2; text-align:center; color:#fff}
+.saiguo a,.saiguo a:hover{ color:#fff!important; text-decoration:none}
+.biaogeBox .date{ margin:0px 24px 0px 5px; font-family:Arial, Helvetica, sans-serif }
+.biaogeBox .time{ margin:0px 24px 0px 0px; font-family:Arial, Helvetica, sans-serif}
+.biaogeBox .xiangmu{ width:74px; margin:0px 0px 0px 10px;}
+.picUl li{ display:inline; float:left; width:180px; margin:0px 0px 0px 20px; overflow:hidden}
+.picUl li .img{ position:relative; width:178px; height:100px; margin-bottom:10px; border:1px solid #000; overflow:hidden}
+.picUl li .img img{ width:178px; height:100px;}
+.picUl li .img .bg { position:absolute; width:100%; height:16px; left:0px; bottom:0px; background:#000; Opacity:0.7; filter: Alpha(Opacity=70); z-index:9 }
+.picUl li .img .play { position:absolute; width:21px; height:22px; left:5px; bottom:5px; background:url(//mat1.gtimg.com/sports/xiaobai/13ao/play.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='//mat1.gtimg.com/sports/xiaobai/13ao/play.png');
+z-index:10 }
+.picUl li p{ text-align:left; color:#666}
+.picUl li p a{ color:#666}
+.picUl li p em{ margin-right:10px}
+.picUl li p em,.picUl li p em a{ color:#333!important}
+.picUl li p a:hover,.picUl li p em a:hover{ text-decoration:none; color:#0091DB!important}
+.sbBox2{ width:420px; height:175px; margin-left:20px; overflow:hidden}
+.box1 .c{ width:1000px; overflow:hidden}
+.box1 .cBox{ display:inline; float:left; overflow:hidden}
+.cBox01{ width:400px;}
+.cBox .bd,.cBox dl{ width:100%; overflow:hidden}
+.cBox dl dt{ font-size:14px; margin:0px 0px 10px;}
+.cBox dl dt img{ display:block; float:left; width:135px; height:100px; margin-right:10px; border:1px solid #000}
+.cBox dl dd{ line-height:23px; color:#666}
+.cBox dl dd a{ color:#0091DB}
+.cBox02 dl dt img{ width:90px!important}
+.cBox02{ width:580px;}
+.cBox02 .picUl li{ margin:0px 0px 0px 13px!important;}
+.cBox02 .picUl li p{ text-align:center!important}
+.cBox02 h3{ margin-left:15px}
+.box1 .adBox{ float:left; width:250px; height:120px; margin-top:15px;}
+.box1 .adBox img{ width:250px; height:120px;}
+/*box2*/
+.box2{ width:1000px; margin:0px auto 15px; overflow:hidden}
+.box2 .hd{ border-bottom:1px solid #E1E1E1}
+.box2 .hd h3{ border-bottom:1px solid #F6871F}
+.videoBox{ float:left; width:400px; margin-top:10px; overflow:hidden}
+#wjvideo{ width:400px; height:240px; margin-bottom:5px;}
+.videoBox p{ color:#666; text-align:left}
+.videoBox p a{ color:#666}
+#spjj .picUl li{ margin:10px 0px 0px 20px;}
+#awrz .bd{ padding-top:10px; overflow:hidden}
+#awrz ul{ position:relative; width:1000px; height:600px; overflow:hidden}
+#awrz ul li{ position:absolute; top:0px; overflow:hidden}
+#awrz ul li.li01{ left:0px; width:420px; height:600px;}
+#awrz ul li.li02{ left:422px; width:326px; height:198px;}
+#li03{ top:201px!important}
+#li04{ top:402px!important;}
+.li03{ right:0px!important; width:250px; height:299px;}
+#li06{ top:301px!important;}
+#awrz ul li .img{ position:relative;}
+#awrz ul li .img .bg{ position:absolute; left:0px; bottom:0px; width:100%; height:42px; background:#000; Opacity:0.7; filter: Alpha(Opacity=70); z-index:9 }
+#awrz ul li .img .text{ position:absolute; left:0px; bottom:0px; width:100%; height:42px; line-height:42px; overflow:hidden; font-size:14px; color:#fff; text-indent:1em;  z-index:10 }
+#awrz ul li .img .text a,#awrz ul li .img .text a:hover{ color:#fff!important; text-decoration:none}
+.box2 .l{ float:left; width:490px;}
+#gfwb{ float:left; width:217px!important; margin-bottom:10px; overflow:hidden}
+#gfwb dl{ width:210px; margin:10px 0px 0px; overflow:hidden}
+#gfwb dl dt{ font-size:14px; line-height:25px; margin:0px 0px 10px;}
+#gfwb dl dt img{ display:block; float:left; width:100px; height:100px; margin-right:10px; border:1px solid #D2D2D2}
+#gfwb .attentBoxWrap{ width:95px; height:25px; text-align:center; line-height:25px; overflow:hidden; background:#009BDF}
+#gfwb .attentBoxWrap a,#gfwb .attentBoxWrap a:hover{ color:#fff!important; text-decoration:none}
+#wyfy{ float:right; width:263px!important; overflow:hidden}
+.guangbo{ width:263px; height:121px; overflow:hidden}
+#tmzs{ width:490px; overflow:hidden}
+#tmzs .hd{ margin-bottom:15px;}
+.weibo{ width:490px; height:380px; margin:10 auto 0px; overflow:hidden}
+.box2 .r{ float:left; width:510px; overflow:hidden}
+.box2 .rBox{ width:510px; margin-bottom:5px;}
+.box2 .rBox .hd{ width:490px!important; margin-left:20px; }
+.box2 .rBox ul li{ display:inline; float:left; width:61px; margin:10px 0px 0px 11px; overflow:hidden}
+.box2 .rBox ul li img{ display:block; width:45px; height:45px; margin:0px auto; padding:2px; border:1px solid #D2D2D2}
+.box2 .rBox ul li p{ text-align:center; margin:10px auto; overflow:hidden}
+.box2 .rBox ul li .attentBoxWrap{ width:51px; height:22px; margin:0px auto; text-align:center; line-height:22px; overflow:hidden; background:#009BDF}
+.box2 .rBox ul li .attentBoxWrap a,.box2 .rBox ul li .attentBoxWrap a:hover{ color:#fff!important; text-decoration:none}
+.newsBox{ display:inline; float:left; width:490px; margin-bottom:10px; overflow:hidden;}
+.newsBox .hd{ margin-bottom:10px;}
+.mr10{ margin-right:20px;}
+.newsBox ul li{ font-size:14px; line-height:28px;}
+.newsBox ul li span{ margin-right:10px; font-size:12px; color:#999; font-family:Arial, Helvetica, sans-serif}
+.dad{ width:1000px; height:90px; margin:0px auto 30px; overflow:hidden;}
+/*pubuliu*/
+#pbl .bd{ padding-top:10px; overflow:hidden}
+.pblUl{ position:relative; width:1000px; height:782px; overflow:hidden}
+.pblUl li{ position:absolute; overflow:hidden}
+.pblUl li.li01{ left:0px; top:0px; width:673px; height:368px;}
+.pblUl li.li02{ right:0px; width:325px; height:183px;}
+.pblUl li.li03{ width:332px; height:170px;}
+.pblUl li.li04{ width:332px; height:240px;}
+.pblUl li.li05{ width:332px; height:205px;}
+#li1 .play{ left:283px; top:130px; width:67px; height:68px; background:url(//mat1.gtimg.com/sports/xiaobai/13ao/play2.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='//mat1.gtimg.com/sports/xiaobai/13ao/play2.png');}
+#li1 .play a{ display:block; width:67px; height:68px; text-indent:-9999em}
+#li1 .text{ text-indent:1em}
+#li2{ top:0px}
+#li3{ top:184px}
+#li4{ left:0px; top:370px;}
+#li5{ left:0px; top:542px;}
+#li6{ top:370px; left:334px;}
+#li7{ top:577px; left:334px;}
+#li8{ top:370px; right:0px;}
+#li9{ top:612px; right:0px;}
+.pblUl li .img{ position:relative;}
+.pblUl li .img .bg{ position:absolute; left:0px; bottom:0px; width:100%; height:42px; background:#000; Opacity:0.7; filter: Alpha(Opacity=70); z-index:9 }
+.pblUl li .img .text{ position:absolute; left:0px; bottom:0px; width:100%; height:42px; line-height:42px; overflow:hidden; font-size:14px; color:#fff; text-indent:3em;  z-index:11 }
+.pblUl li .img .play{ position:absolute; left:5px; bottom:7px; width:27px; height:27px; background:url(//mat1.gtimg.com/sports/xiaobai/13ao/play3.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='//mat1.gtimg.com/sports/xiaobai/13ao/play3.png'); z-index:10}
+.pblUl li .img .text a,.pblUl li .img .text a:hover{ color:#fff!important; text-decoration:none}
+.pblUl li .img .play a{ display:block; width:27px; height:27px; text-indent:-9999em}
+/*video vikiqin*/
+.hgUl li { float:left; width:160px; margin:15px 40px 0px 0px; }
+.hgUl li .img { position:relative; width:160px; height:90px; margin-bottom:5px; }
+.hgUl li .img img{ width:160px; height:90px}
+.hgUl li .img .bg { position:absolute; left:0px; bottom:0px; width:160px; height:25px; background:#000; opacity:0.5; filter:Alpha(Opacity=50); z-index:9 }
+.hgUl li .img .time { position:absolute; left:10px; bottom:0px; width:100px; height:25px; line-height:25px; text-align:left; color:#fff; font-family:Arial, Helvetica, sans-serif; z-index:10; }
+.hgUl li .img .play { position:absolute; left:5px; bottom:5px; width:25px; height:25px; z-index:10; background:url(//mat1.gtimg.com/news/visual/common/splogo.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='//mat1.gtimg.com/news/visual/common/splogo.png');
+}
+.hgUl li p { text-align:left; }
+.iconVideo{ padding-left:20px; background:url("//mat1.gtimg.com/sports/nbafinals2013/images/iconSprite.png") no-repeat scroll 0px -162px;}/*  |xGv00|686709fff24e29dab2468639a8d88ae1 */

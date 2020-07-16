@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>申诉台_腾讯·大申网</title>
+<meta name="keywords" content="申诉台,315申诉台,315消费维权,上海消费维权,上海消费投诉,大申网申诉台">
+<meta name="description" content="如果您在通信、房产、金融、汽车、家装等消费过程中权利受到了侵害，如果您了解一些行业中不为人知的内幕，我们期待您勇敢地站出来，说出来。">
+<link href="//mat1.gtimg.com/www/base/base.css" rel="stylesheet" type="text/css">
+<style>
+*{margin:0;padding:0;}
+body{font:12px/24px '宋体'}
+.leftBox {
+	margin-top: 8px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+.leftBox h3 {border-bottom:1px solid #BFD0E5;color:#375A82;font-size:14px; padding:8px 0 0 10px;height: 20px;}
+.leftBox h4 {font-size:14px;font-weight:normal; padding:0 0 0 18px;line-height:20px; margin:15px 0 0 18px;  }
+.leftBox h4 span {color:#555;padding:0 0 0 5px; font-size:12px;}
+.leftBox p {line-height:18px;width: 610px;  margin:10px 0 0 20px; }
+.leftBox .follow {text-align:right; margin:5px 15px 10px 0; font-size:14px; font-weight:bold;}
+
+.leftBox table {width: 620px; border-collapse:collapse;}
+.leftBox table td {height: 28px;border-bottom:1px dashed #CBCBCB; padding:0 0 0 10px;  }
+.leftBox table tr:hover {background:#FFFBE9; }
+.leftBox table .theader td {background:#EAF3FA;font-weight:bold; }
+
+.turnPage { padding: 10px 10px 10px 0; height: 23px;line-height:23px;  text-align:right;  font-weight:normal; }
+.turnPage A {border: #dedfde 1px solid; padding:2px 5px;margin: 2px;  color: #0061de; text-align:center; text-decoration:none; }
+.turnPage A:hover {border: #000 1px solid;  color: #fff; background:#0061de;  text-decoration:none; }
+.turnPage A:active {border: #999 1px solid;  color: #fff; background:#0061de;  }
+.turnPage .current { padding: 1px 5px;  font-weight:bold; margin: 2px; color: #FF6600; }
+.turnPage .disabled {border: #eee 1px solid;  padding:2px 5px; margin: 2px; color: #ddd; }
+.bllisttit a{width:400px;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;display:block;}
+</style>
+<script type="text/javascript" src="http://cq.qq.com/js/common/jquery-1.2.6-plus.js"></script>
+<script type="text/javascript" src="http://cq.qq.com/js/common/trimpath-template-1.0.38.js"></script>
+<script type="text/javascript" src="http://cq.qq.com/js/common/baoliao/NewsFeed.js"></script>
+<script language="javascript" src="http://cq.qq.com/js/common/jquery.pageset2.js"></script>
+<script type="text/javascript">var feed_id = 93</script>
+<script>document.domain='qq.com'</script>
+</head>
+
+<body>
+<div id="feed_list" class="leftBox "></div>
+<XMP id="feed_template" style="display:none;">
+<table cellspacing="0" cellpadding="0" border="0" class="w1 list">
+<tr class="theader"  style="font:bolder">
+								
+									<td width="332" class="bllisttit table6" height="25">问题</td>
+									<td width="40" class="bllisttit table6" >日期</td>
+									<td width="30" class="bllisttit table6" >状态</td>
+								  </tr>
+								  {for p in content_list}
+								  <tr>
+									
+									<td width="255" class="bllisttit table6" height="45"><a href="http://sh.qq.com/315/detail.htm?${p.content_id}" target="_blank">${p.title}</a></td>
+									<td width="145" class="bllisttit table6" >${p.c_time}</td>
+									<td width="75" class="bllisttit table6"><span id="status_${p.content_id}">-</span></td>
+								  </tr>
+								  {forelse}
+								  <tr>
+									<td colspan="4">还没有网友发布报料</td>
+								  </tr>
+								  {/for}
+								</table>
+								<div align="right" class=page> <div class="turnPage current"></div></div>
+							  </XMP>
+
+</body>
+</html><!--[if !IE]>|xGv00|1f49ac57688f6be02e5231d0384f00ba<![endif]-->

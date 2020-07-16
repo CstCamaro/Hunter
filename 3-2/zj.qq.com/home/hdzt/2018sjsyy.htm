@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title></title>
+		<link rel="stylesheet" href="//mat1.gtimg.com/zj/zhongmin/siemens/css/pc.css">
+	</head>
+	<style>
+		.left-bottom {
+			padding-top: 0;
+		}
+		
+		.detail {
+			max-height: 120px;
+			margin-bottom: 6px;
+			overflow-y: auto;
+		}
+		.baoming {
+			padding-top: 25px;
+			margin-top: 35px;
+		}
+		.left-top {
+			padding-top: 10px;
+		}
+		.right {
+			padding-top: 30px;
+		}
+	</style>
+	<!-- 家居统计代码 开始 -->
+	<script language="javascript" src="//mat1.gtimg.com/ping.js"></script>
+	<script>
+		//db.house.qq.com --> db-house
+		var colSite = window.location.host.replace(/.qq.com$/, '').replace(/\./g, '-');
+		var pgvInfo = "L.";
+
+		//增加栏目信息
+		//注意:
+		//（1）、bpgv-XXX1是栏目名，请用你自已定义的栏目名替换其中的XXX1
+		//（2）、自定义栏目最多只支持3级，如下面的bpgv-XXX1，bpgv-XXX2，bpgv-XXX3
+		//（3）、自定义栏目名必须以bpgv-做为前缀，且其中不能含有点(.)，下划线(_)
+		//（4）、自定义栏目名必须发给PGV这边备案，可以联系alvazhang
+		pgvInfo = pgvInfo + colSite + ".bpgv-home.bpgv-zt";
+
+		//增加专题信息，增加如下代码，并替换相应的专题名bpgv-XXX1
+		//pgvInfo = pgvInfo + "_Z."+colSite+".bpgv-XXX1.bpgv-XXX2.bpgv-XXX3";
+		//特别注意：如需精确计算某一专题系列，请在各频道栏目管理中建立相应栏目，将所有专题栏目计算指向相应栏目即可。如有问题请咨询产品技术部，谢谢！！
+
+		if(typeof(pgvMain) == 'function') {
+			if(typeof(pgvInfo) != 'undefined') {
+				pgvMain({
+					pgUserType: pgvInfo
+				});
+			} else {
+				pgvMain();
+			}
+		}
+	</script>
+	<!-- 家居统计代码 结束 -->
+
+	<body>
+		<h3 class='formtitle'></h3>
+		<div class="baoming">
+			<div class="right" style="margin-left: 253px;">
+				<h3>全程免费设计 立即预约</h3>
+				<form method="post" class="form-horizontal" action="" id="4778_reg_form" data-activity-id="4778">
+					<input type="hidden" value="4778" name="id">
+					<div class="control-group text">
+						<label class="control-label">你的姓名：</label>
+						<div class="controls">
+							<input id="name" type="text" name="data[name]" data-must="1" placeholder="请输入姓名">
+						</div>
+					</div>
+					<div class="control-group tel">
+						<label class="control-label">联系方式：</label>
+						<div class="controls">
+							<input id="mobile" type="text" name="data[mobile]" data-must="1" placeholder="请输入您的手机">
+						</div>
+					</div>
+					<div class="control-group text">
+						<label class="control-label">小区地址：</label>
+						<div class="controls">
+							<input id="field_1" type="text" name="data[field_1]" data-must="1" placeholder="请输入您的小区地址">
+							<input id="field_2" type="hidden" name="data[field_2]" value="" class="good-name" />
+						</div>
+					</div>
+					<div class="submit">
+						<input type="button" name="btn-submit" class="btn btn-submit" value="免费报名" onclick="reg_new('4778')" id="4778_reg_button">
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='//mat1.gtimg.com/www/asset/lib/jquery/jquery/jquery-1.11.1.min.js'></script>
+		<script type="text/javascript" src="http://vip.zjqq.mobi/themes/public/activity_js/activity_js.js" charset="utf-8"></script>
+		<script type='text/javascript'>
+			var id = 4747; // 活动ID
+			// 成功后的回调函数，可以去掉。也可修改该函数完成报名成功后的操作，但是函数名不能改变
+			function reg_success() {
+				alert('提交成功，谢谢参与!');
+			}
+		</script>
+		<script type="text/javascript" charset="UTF-8">
+			(function($) {
+				var goodsUrl = "//mat1.gtimg.com/zj/2018jiaju/128shejishi/house-sjs.json", // JSON 存放地址
+					cutUrl, $JqMap = {},
+					setJqMap, appInit;
+
+				//截取URL获得参数
+				cutUrl = function(name) {
+					var reg = new RegExp("(^|\\?|&)" + name + "=([^&]*)(\\s|&|$)", "i");
+					if(reg.test(location.href))
+						return decodeURI(RegExp.$2.replace(/\+/g, " "));
+					return "";
+				}
+				setJqMap = function() {
+					$JqMap.$title = $(".formtitle");
+					$JqMap.$intro = $(".intro");
+					$JqMap.$market = $(".market");
+					$JqMap.$special = $(".special");
+					$JqMap.$detail = $(".detail");
+					$JqMap.$explain = $(".explain");
+					$JqMap.$goodName = $(".good-name");
+					$JqMap.$thumb = $(".thumb");
+				}
+
+				appInit = function() {
+					var goodId = cutUrl('goodId');
+					setJqMap();
+					$.ajax({
+						url: goodsUrl,
+						type: "get",
+						dataType: "json",
+						async: true,
+						success: function(goods) {
+							for(var i = 0; i < goods.length; i++) {
+								var good = goods[i];
+								if(goodId === good.goodId) {
+									$('title').text(good.name);
+									$JqMap.$title.text(good.name);
+									$JqMap.$intro.text(good.name);
+									$JqMap.$thumb.attr("src", good.thumb);
+									$JqMap.$goodName.val(good.name);
+									$JqMap.$market.text(good.market);
+									$JqMap.$special.text(good.special);
+									$JqMap.$detail.append(good.detail);
+									$JqMap.$explain.text(good.explain);
+									break;
+								}
+							}
+						},
+						error: function(error) {
+							console.log(error);
+							layer.alert("请重试", {
+								icon: 2
+							});
+						}
+					});
+				}
+
+				$(function() {
+					appInit();
+				})
+
+			})(jQuery)
+		</script>
+	</body>
+
+</html><!--[if !IE]>|xGv00|c2b8e0ef54ff48e582742e3286090ff1<![endif]-->

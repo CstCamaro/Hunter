@@ -1,0 +1,47 @@
+body{margin:0;padding:0; font-size:12px;}
+form,p,div,ul,li,input,select,pre{margin:0;padding:0;}
+td,body,{font-size:12px; text-decoration: none;}
+a{color:#333; text-decoration: none;}
+a:hover{color: #FF0000; text-decoration: underline;}
+img{border:none; padding:0; margin:0;}
+ul,li{list-style:none;}
+	
+.lan,.lan a{color:#2a507d;}
+	.lan a:hover{color: #FF0000;}
+	
+.hong,.hong a{color:#e31b1b;}
+	.hong a:hover{color: #FF0000;}
+	
+.lv,.lv a{color:#13810b;}
+	.lv a:hover{color: #FF0000;}
+	
+.hui,.hui a{color:#9b9b9b;}
+	.hui a:hover{color: #FF0000;}
+	
+.ftsz14{font-size:14px;}	
+.ht18{font-family:"ºÚÌå"; font-size:18px;}
+
+.ti_2{text-indent:2em;}
+		
+.lh_24{line-height:24px;}
+.lh_30{line-height:30px;}
+.lh_26{line-height:26px;}
+.lh_22{line-height:22px;}
+.lh_20{line-height:20px;}
+
+.mgt_10{margin-top:10px;}
+
+.bg_bx{background-position:bottom; background-repeat:repeat-x;}
+.bg_tln{background-position:top left; background-repeat:no-repeat;}
+.bg_trn{background-position:top right; background-repeat:no-repeat;}
+
+.bd_1{border:1px solid #e5e4e9; border-top:none;}
+.bd_2{border-bottom:1px dotted #d3d2da;}
+.bd_3{border-bottom:1px solid #c3d3e2;}
+.bd_4{border:1px solid #e5e4e9;}
+
+.pic_1 img{border:1px solid #d6d6d6; padding:2px;}
+.pic_2 img{border:1px solid #d6d6d6;}
+
+.fl{float:left;}
+.fr{float:right;}/*  |xGv00|107507738e14cd4ec635d2e4295201b9 */

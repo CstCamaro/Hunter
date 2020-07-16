@@ -1,0 +1,157 @@
+body{font-family:"ËÎÌå";font-size:12px;background:#fff;color:#333;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd{margin:0;padding:0;border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,p,select{margin:0;padding:0;font-size:12px;}
+a{color:#0B3B8C;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.dis,.block{display:block!important;}
+.undis,.none{display:none;}
+.nobg{background:none!important;}
+.box10{height:10px;clear:both;overflow:hidden;}
+.banner{width:960px;margin:0 auto;}
+.wrap2,.wrap3,.wrap5,.wrap6,.wrap7,.wrap8,.wrap9,.wrap10,.wrap11,.wrap12,.wrap13,.wrap14{width:958px;margin:0 auto;border:1px solid #E5E5ED;}
+.wrap{width:940px;height:384px;margin:0 auto;padding:10px;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/wrap_bg.jpg) no-repeat;}
+.wrap .left{width:310px;}
+.wrap .right{width:600px;}
+.wrap .right .hd{width:580px;float:left;padding:0 10px;}
+.wrap .right .hd h2{width:100%;float:left;color:#017F01;text-align:center;font:24px/40px "ºÚÌå";margin-top:10px;}
+.wrap .right .hd h2 a{color:#017F01;}
+.wrap .right .hd p{width:100%;float:left;line-height:20px;text-indent:2em;margin-top:5px;}
+.wrap .right .bd{width:100%;float:left;}
+.wrap .right .bd ul{width:100%;float:left;}
+.wrap .right .bd li{width:180px;height:106px;float:left;border:1px solid #E2E6E9;display:inline;margin:15px 9px 0;background:#fff;text-align:center;}
+.wrap .right .bd li img{width:175px;height:80px;margin:2px auto 5px;}
+.wrap2 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap2 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap2 .bd{width:940px;float:left;padding:0 9px;}
+#jingxuan_tab{width:100%;float:left;}
+#jingxuan_tab ul{padding-left:12px;float:left;}
+#jingxuan_tab li{width:111px;height:38px;line-height:38px;float:left;font-weight:bold;font-size:14px;text-align:center;cursor:pointer;display:inline;margin-left:3px;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/jingxuan_tab.jpg) no-repeat;}
+#jingxuan_tab li.current{color:#fff;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/jingxuan_tab_r.jpg) no-repeat;}
+.wrap2 .bd .con{width:100%;float:left;}
+.wrap2 .bd .con ul{width:100%;float:left;}
+.wrap2 .bd .con li{width:164px;height:106px;float:left;border:1px solid #E2E6E9;display:inline;margin:7px 11px;background:#fff;text-align:center;}
+.wrap2 .bd .con li img{width:160px;height:80px;margin:2px auto 5px;}
+.wrap3 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap3 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap3 .bd{width:920px;float:left;padding:0 19px 10px;}
+.wrap3 .bd ul{width:100%;float:left;}
+.wrap3 .bd li{width:164px;height:236px;float:left;border:1px solid #E2E6E9;display:inline;margin:0 9px;background:#fff;text-align:center;}
+.wrap3 .bd li img{width:160px;height:210px;margin:2px auto 5px;}
+.wrap4{width:958px;height:226px;margin:0 auto;padding:1px;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/jijin_bg.jpg) no-repeat;}
+.wrap4 .hd{width:958px;height:33px;float:left;}
+.wrap4 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap4 .bd{width:940px;float:left;padding:0 9px 10px;}
+.wrap4 .bd .con{width:160px;height:180px;float:left;display:inline;margin:0 11px;padding:2px;border:1px solid #E2E6E9;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/jijin_con.jpg) no-repeat center center;}
+.wrap4 .bd .con2{padding:0 2px 4px;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/jijin_con3.jpg) no-repeat center center;}
+.wrap4 .bd .con ul{width:100%;float:left;}
+.wrap4 .bd .con li{width:145px;float:left;height:30px;line-height:30px;padding-left:15px;;font-size:14px;}
+.wrap4 .bd .con2 li{height:26px;line-height:26px;}
+.wrap5 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap5 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap5 .bd{width:940px;float:left;padding:0 9px;}
+.wrap5 .bd .left{width:302px;text-align:center;}
+.wrap5 .bd .left img{width:300px;height:250px;float:left;border:1px solid #E2E6E9;margin-bottom:5px;}
+.wrap5 .bd .right{width:624px;}
+.wrap5 .bd .right ul{width:100%;float:left;}
+.wrap5 .bd .right li{width:142px;height:145px;float:left;display:inline;margin:0 7px;background:#fff;text-align:center;}
+.wrap5 .bd .right li img{width:140px;height:105px;border:1px solid #E2E6E9;float:left;margin-bottom:5px;}
+.wrap5 .ft{width:100%;float:left;background:#F8FCFF;border-top:1px dashed #D1D2D6;padding:10px 0;}
+.wrap5 .ft ul{width:100%;float:left;}
+.wrap5 .ft li{width:299px;height:24px;line-height:24px;padding:0 10px;float:left;color:#0B3B8C;}
+.wrap6 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap6 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap6 .bd{width:940px;float:left;padding:0 9px;}
+.wrap6 .bd .left{width:302px;}
+.wrap6 .bd .left ul{width:100%;float:left;}
+.wrap6 .bd .left li{width:100%;height:23px;line-height:23px;float:left;color:#0B3B8C;}
+.wrap6 .bd .right{width:624px;}
+.wrap6 .bd .right ul{width:100%;float:left;}
+.wrap6 .bd .right li{width:142px;height:145px;float:left;display:inline;margin:0 7px;background:#fff;text-align:center;}
+.wrap6 .bd .right li img{width:140px;height:105px;border:1px solid #E2E6E9;float:left;margin-bottom:5px;}
+.wrap7 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap7 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap7 .bd{width:920px;float:left;padding:0 19px 10px;}
+.wrap7 .bd ul{width:100%;float:left;}
+.wrap7 .bd li{width:164px;height:236px;float:left;border:1px solid #E2E6E9;display:inline;margin:0 9px;background:#fff;text-align:center;}
+.wrap7 .bd li img{width:160px;height:210px;margin:2px auto 5px;}
+.wrap8 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap8 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap8 .bd{width:940px;float:left;padding:0 9px;}
+.wrap8 .bd .left{width:302px;text-align:center;}
+.wrap8 .bd .left ul{width:100%;float:left;padding-left:5px;}
+.wrap8 .bd .left li{width:100%;height:242px;float:left;}
+.wrap8 .bd .left li img{width:300px;height:200px;float:left;border:1px solid #E2E6E9;margin-bottom:5px;}
+.wrap8 .bd .right{width:630px;}
+.wrap8 .bd .right ul{width:100%;float:left;}
+.wrap8 .bd .right li{width:206px;height:160px;float:left;display:inline;margin:0 2px;background:#fff;text-align:center;overflow:hid}
+.wrap8 .bd .right li img{width:200px;height:120px;border:1px solid #E2E6E9;padding:2px;float:left;margin-bottom:5px;}
+.wrap9 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap9 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap9 .bd{width:940px;float:left;padding:0 9px;}
+.wrap9 .bd .left{width:302px;text-align:center;}
+.wrap9 .bd .left img{width:300px;height:250px;float:left;border:1px solid #E2E6E9;margin-bottom:5px;}
+.wrap9 .bd .right{width:624px;}
+.wrap9 .bd .right ul{width:100%;float:left;}
+.wrap9 .bd .right li{width:142px;height:145px;float:left;display:inline;margin:0 7px;background:#fff;text-align:center;}
+.wrap9 .bd .right li img{width:140px;height:105px;border:1px solid #E2E6E9;float:left;margin-bottom:5px;}
+.wrap10 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap10 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap10 .bd{width:940px;float:left;padding:0 9px;}
+.wrap10 .bd .left{width:302px;}
+.wrap10 .bd .left ul{width:100%;float:left;}
+.wrap10 .bd .left li{width:100%;height:23px;line-height:23px;float:left;color:#0B3B8C;}
+.wrap10 .bd .right{width:624px;}
+.wrap10 .bd .right ul{width:100%;float:left;}
+.wrap10 .bd .right li{width:142px;height:145px;float:left;display:inline;margin:0 7px;background:#fff;text-align:center;}
+.wrap10 .bd .right li img{width:140px;height:105px;border:1px solid #E2E6E9;float:left;margin-bottom:5px;}
+.wrap11 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap11 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap11 .bd{width:940px;float:left;padding:0 9px 10px;}
+.wrap11 .bd ul{width:100%;float:left;}
+.wrap11 .bd li{width:164px;height:106px;float:left;border:1px solid #E2E6E9;display:inline;margin:7px 11px;background:#fff;text-align:center;}
+.wrap11 .bd li img{width:160px;height:80px;margin:2px auto 5px;}
+.wrap12 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap12 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap12 .bd{width:940px;float:left;padding:0 9px;}
+.wrap12 .bd .left{width:302px;text-align:center;}
+.wrap12 .bd .left img{width:300px;height:250px;float:left;border:1px solid #E2E6E9;margin-bottom:5px;}
+.wrap12 .bd .center{width:312px;float:left;padding:0 12px;}
+.wrap12 .bd .center ul{width:100%;float:left;}
+.wrap12 .bd .center li{width:142px;height:145px;float:left;display:inline;margin:0 7px;background:#fff;text-align:center;}
+.wrap12 .bd .center li img{width:140px;height:105px;border:1px solid #E2E6E9;float:left;margin-bottom:5px;}
+.wrap12 .bd .right{width:302px;text-align:center;}
+.wrap12 .bd .right img{width:300px;height:250px;float:left;border:1px solid #E2E6E9;margin-bottom:5px;}
+.wrap13 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap13 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap13 .bd{width:940px;float:left;padding:0 9px;}
+.wrap13 .bd .left{width:302px;text-align:center;}
+.wrap13 .bd .left img{width:300px;height:250px;float:left;border:1px solid #E2E6E9;margin-bottom:5px;}
+.wrap13 .bd .right{width:624px;}
+.wrap13 .bd .right ul{width:100%;float:left;}
+.wrap13 .bd .right li{width:142px;height:145px;float:left;display:inline;margin:0 7px;background:#fff;text-align:center;}
+.wrap13 .bd .right li img{width:140px;height:105px;border:1px solid #E2E6E9;float:left;margin-bottom:5px;}
+.wrap14 .hd{width:958px;height:33px;float:left;background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;}
+.wrap14 .hd h2{float:left;font-size:14px;text-indent:2em;line-height:33px;}
+.wrap14 .bd{width:940px;float:left;padding:0 9px;}
+.wrap14 .bd .left{width:302px;text-align:center;}
+.wrap14 .bd .left img{width:300px;height:250px;float:left;border:1px solid #E2E6E9;margin-bottom:5px;}
+.wrap14 .bd .center{width:312px;float:left;padding:0 12px;}
+.wrap14 .bd .center ul{width:100%;float:left;}
+.wrap14 .bd .center li{width:142px;height:145px;float:left;display:inline;margin:0 7px;background:#fff;text-align:center;}
+.wrap14 .bd .center li img{width:140px;height:105px;border:1px solid #E2E6E9;float:left;margin-bottom:5px;}
+.wrap14 .bd .right{width:302px;text-align:center;}
+.wrap14 .bd .right img{width:300px;height:250px;float:left;border:1px solid #E2E6E9;margin-bottom:5px;}
+
+.mm10{margin:10px auto 0;overflow:auto;width:960px;}
+.wcppc_d{border:1px solid #D0D1DE;}
+.wcppc_t2, .wcppc_t3{border-right:1px solid #FFF;overflow:auto;padding-left:24px;}
+.wcppc_t3{background:url(//mat1.gtimg.com/worldcup/2010photo/PhotoStation/pandian/hd_bg.jpg) no-repeat;border:0;}
+.lk0c, .lk0c a{color:#0C4C99;}
+.fl{float:left;}
+.fb14{font-size:14px;font-weight:bold;}
+.saicenglist .lk2b{line-height:22px;padding:0 0 0 2px;font-size:12px;}
+.lk2b, .lk2b a{color:#2B507D;}/*  |xGv00|8d410e325e1de0dfee880e3f7174de0b */

@@ -1,0 +1,143 @@
+body{font-family:"ËÎÌå";font-size:12px;background:#EEFCE5;color:#6E3700;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd{margin:0;padding:0;border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,p,select{margin:0;padding:0;font-size:12px;}
+a{color:#6E3700;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.left,.fleft{float:left;}
+.right,.fright{float:right;}
+.clear{clear:both;}
+.dis,.block{display:block!important;}
+.undis,.none{display:none;}
+.nobg{background:none!important;}
+.box10{width:100%;height:10px;clear:both;overflow:hidden;}
+.wrap,.wrap2,.wrap3,.wrap4,.wrap5{width:960px;margin:0 auto;clear:both;}
+.bg01{width:100%;margin:0 auto;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/bg01.jpg) repeat-x left top;}
+.bg02{width:100%;margin:0 auto;background:url(//mat1.gtimg.com/worldcup/ft/bg02_9.jpg) no-repeat center top;}
+.top{width:960px;height:32px;margin:0 auto;clear:both;overflow:hidden;}
+.top img{float:left;}
+.top .top-nav{float:right;line-height:28px;}
+.top a{color:#5C5C5C;}
+.nav-layout{width:100%;clear:both;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/nav_bg.png) no-repeat center top;}
+.nav{width:896px;margin:0 auto;height:20px;line-height:20px;padding:6px 0 6px 130px;color:#fff;text-align:center;}
+.nav a{color:#fff;height:20px;line-height:20px;padding:0 2px;float:left;display:block;}
+.nav a.current{background:url(//mat1.gtimg.com/worldcup/ft_sjbz/nav_current.jpg) repeat-x;}
+.nav img{float:left;margin:0 3px;}
+.wrap{height:685px;}
+.wrap .left{width:234px;height:185px;display:inline;margin:349px 0 0 26px;padding:47px 8px 0 8px;color:#0C511B;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/qq_t_bg.jpg) no-repeat;}
+.wrap .left img{width:120px;height:150px;float:left;border:1px solid #FBBE2E;}
+.wrap .left h2{width:105px;float:right;line-height:20px;padding:5px 0;color:#FEF1CD;}
+.wrap .left h2 a{color:#FEF1CD;}
+.wrap .left p{width:105px;float:right;line-height:20px;color:#4B2702;}
+.wrap .left p .red{color:#DC350D;}
+.wrap .left p a{color:#DC350D;}
+.wrap .right{width:603px;padding-right:35px;margin-top:160px;}
+.wrap .right .wrap-right-left{width:369px;float:left;}
+.wrap .right .wrap-right-left h2{width:369px;float:left;line-height:31px;height:31px;overflow:hidde;text-align:center;font-size:14px;color:#FFF3F6;}
+.wrap .right .wrap-right-left h2 a{color:#FFF7DF;}
+.wrap .right .wrap-right-left ul{width:369px;float:left;margin-top:10px;}
+.wrap .right .wrap-right-left li{width:184px;float:left;line-height:22px;color:#E4FDFF;}
+.wrap .right .wrap-right-left li a{color:#8E4A05;}
+.wrap .right .wrap-right-left .btn{width:369px;float:left;margin-top:12px;text-align:center;}
+.wrap .right .wrap-right-left .btn img{margin:0 5px;}
+#flashC{width:367px;height:309px;float:left;}
+.wrap .right .wrap-right-right{width:214px;float:right;padding-right:2px;}
+.wrap .right .tips{width:212px;height:198px;float:right;margin-top:13px;}
+.wrap .right .tips dl{width:212px;float:left;padding-bottom:2px;}
+.wrap .right .tips dt{width:212px;height:25px;line-height:25px;float:left;text-indent:12px;color:#FFF7DF;cursor:pointer;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/tips_dt_bg.jpg) no-repeat left top}
+.wrap .right .tips dd{width:194px;float:left;padding:9px;}
+.wrap .right .tips dd .img{width:70px;height:70px;border:1px solid #FBBE2E;float:left;}
+.wrap .right .tips dd p{width:100%;float:right;line-height:22px;color:#4B2702;}
+.wrap .right .tips dd .btn{margin:0 0 0 5px;cursor:pointer;vertical-align:middle;}
+.wrap .right .zhibojian{width:183px;float:right;height:89px;display:inline;margin:65px 20px 0 0;}
+.wrap .right .zhibojian ul{width:133px;float:right;}
+.wrap .right .zhibojian li{width:133px;float:right;line-height:18px;}
+.wrap .right .zhibojian li a{color:#FCEEF4;}
+.wrap .right .zhibojian .btn{float:left;margin-top:13px;}
+.wrap2{width:958px;height:128px;padding:1px 1px 0;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/wrap2_bg.gif) no-repeat left top;}
+.wrap2 .btn{float:left;cursor:pointer;}
+.wrap2 .bd{width:940px;height:128px;float:left;padding:0 1px;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/wrap2_bd_bg.jpg) repeat-x;}
+.wrap2 .bd .wrap2-con{width:72px;float:left;padding:10px 11px 0;}
+.wrap2 .bd .wrap2-con dl{width:72px;float:left;background:#563006;}
+.wrap2 .bd .wrap2-con dl.current{background:#3A2101;}
+.wrap2 .bd .wrap2-con dt{width:72px;height:19px;font:14px/19px Tahoma bold;float:left;text-align:center;color:#E1BE0D;}
+.wrap2 .bd .wrap2-con dl.current dt{color:#FFEA0B;}
+.wrap2 .bd .wrap2-con dd{width:72px;float:left;}
+.wrap2 .bd .wrap2-con dd img{width:70px;height:70px;float:left;border:1px solid #FBBE2E;}
+.wrap2 .bd .wrap2-con .name{width:72px;float:left;line-height:18px;margin-top:4px;text-align:center;color:#EACF93;}
+.wrap3{width:958px;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/wrap3_bg.jpg) repeat-x;}
+.wrap3 .left{width:220px;}
+.wrap3 .left .hd{width:220px;float:left;}
+.wrap3 .left .hd img{float:left;}
+.wrap3 .left .bd{width:220px;float:left;}
+.wrap3 .left .bd .rili{width:212px;float:right;margin-bottom:6px;font-family:Tahoma;}
+.wrap3 .left .bd .rili-hd{width:212px;float:right;height:19px;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/rili_hd_bg.jpg) repeat-x;}
+.wrap3 .left .bd .rili-hd h2{float:left;line-height:19px;color:#fff;text-indent:5px;}
+.wrap3 .left .bd .rili-bd{width:212px;float:right;}
+.wrap3 .left .bd .rili-bd table{width:212px;float:right;border-collapse:collapse;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/rili_bg.jpg) repeat-x;}
+.wrap3 .left .bd .rili-bd table td{height:22px;line-height:22px;padding:0;text-align:center;color:#FEF0C9;}
+.wrap3 .left .bd .rili-bd table td .current{background:#422802;padding:2px 3px;color:#FEF0C9;}
+.wrap3 .left .bd .rili-bd table td.sun{color:#FFE502;}
+.wrap3 .left .bd .rili-bd table td.sun a{color:#FFE502;}
+.wrap3 .left .bd .rili-bd table td.sat{color:#99FF08;}
+.wrap3 .left .bd .rili-bd table td.sat a{color:#99FF08;}
+.wrap3 .left .bd .rili-bd table td a:hover{background:#422802;padding:2px 3px;}
+.wrap3 .left .bd .rili-bd table thead td{font-weight:bold;color:#794701;}
+.wrap3 .left .bd .rili-bd table thead td.sat{color:#01B609;}
+.wrap3 .left .bd .rili-bd table thead td.sun{color:#FFE502;}
+.wrap3 .left .wangqijingxuan{width:220px;float:left;margin-top:10px;}
+.wrap3 .left .wangqijingxuan-hd{width:220px;float:left;height:39px;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/wangqijingxuan_hd.jpg) no-repeat left top;}
+.wrap3 .left .wangqijingxuan-bd{width:220px;float:left;}
+.wrap3 .left .wangqijingxuan-bd ul{width:220px;float:left;margin-top:10px;}
+.wrap3 .left .wangqijingxuan-bd li{width:220px;float:left;line-height:26px;text-indent:10px;}
+.wrap3 .left .wangqijingxuan-bd li a{color:#6E3700;}
+.wrap3 .right{width:731px;}
+.wrap3-right-con{width:731px;}
+.wrap3-right-con .hd{width:731px;height:51px;float:right;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/wrap3_right_hd.jpg) no-repeat;}
+.wrap3-right-con .hd h2{font:18px/40px "ºÚÌå";color:#FEF1CD;float:left;text-indent:80px;}
+.wrap3-right-con .hd h2 a{color:#FEF1CD;}
+.wrap3-right-con .hd h2 .s{color:#FFEA0B;font:bold 14px/40px "ËÎÌå";}
+.wrap3-right-con .hd h2 .s a{color:#FFEA0B;}
+.wrap3-right-con .bd{width:711px;float:left;padding:0 10px;}
+.wrap3-right-con .bd .wrap3-right-left{width:202px;float:left;line-height:18px;color:#0C511B;text-align:center;}
+.wrap3-right-con .bd .wrap3-right-left img{width:200px;height:350px;border:1px solid #FBBE2E;float:left;margin-bottom:5px;}
+.wrap3-right-con .bd .wrap3-right-left a{color:#6E3700;}
+.wrap3-right-con .bd .wrap3-right-center{width:305px;float:left;padding-left:30px;}
+.wrap3-right-con .bd .wrap3-right-center p{width:305px;float:left;line-height:24px;font-size:14px;color:#4B2702;}
+.wrap3-right-con .bd .wrap3-right-center .btn{width:305px;float:left;text-align:center;margin-top:15px;}
+.wrap3-right-con .bd .wrap3-right-center .btn img{margin:0 5px;}
+.wrap3-right-con .bd .wrap3-right-center-bottom{width:305px;float:left;margin-top:5x;}
+.wrap3-right-con .bd .wrap3-right-center-bottom-hd{width:305px;float:left;height:38px;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/yulujingxuan_hd.jpg) no-repeat;}
+.wrap3-right-con .bd .wrap3-right-center-bottom-bd{width:305px;float:left;}
+.wrap3-right-con .bd .wrap3-right-center-bottom-bd ul{width:305px;float:left;margin-top:10px;}
+.wrap3-right-con .bd .wrap3-right-center-bottom-bd li{width:305px;float:left;line-height:14px;padding:6px 0;color:#6E3700;}
+.wrap3-right-con .bd .wrap3-right-center-bottom-bd li a{color:#6E3700;}
+.wrap3-right-con .bd .wrap3-right-right{width:147px;float:right;}
+.wrap3-right-con .bd .wrap3-right-right ul{width:147px;float:left;}
+.wrap3-right-con .bd .wrap3-right-right li{width:147px;padding-bottom:5px;float:left;line-height:18px;text-align:center;position:relative;}
+.wrap3-right-con .bd .wrap3-right-right li .img{width:145px;height:105px;border:1px solid #FBBE2E;float:left;margin-bottom:5px;}
+.wrap3-right-con .bd .wrap3-right-right li .video{width:45px;height:45px;position:absolute;top:30px;left:50px;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/video_icon.png) no-repeat;}
+*html .wrap3-right-con .bd .wrap3-right-right li .video{background: none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/worldcup/video/jinqiu1/video2.png', sizingMethod='scale');}
+.wrap4{width:940px;height:164px;border-top:1px solid #FDCC5A;border-bottom:1px solid #FDCC5A;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/wrap4_bg.jpg) repeat-x;overflow:hidden;}
+.wrap4 .border{width:1px;height:164px;float:left;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/wrap5_border.jpg) no-repeat left top;overflow:hidden;}
+.wrap4-con{width:938px;float:left;}
+.wrap4-con .hd{width:938px;height:32px;float:left;}
+.wrap4-con .bd{width:930px;float:left;padding:0 4px;}
+.wrap4-con .bd ul{width:930px;float:left;}
+.wrap4-con .bd li{width:152px;float:left;text-align:center;line-height:18px;padding:0 17px;}
+.wrap4-con .bd li img{width:150px;height:100px;float:left;border:1px solid #FBBE2E;margin-bottom:5px;}
+.wrap4-con .bd li a{color:#6E3700;}
+.wrap5{width:940px;height:197px;border-top:1px solid #FDCC5A;border-bottom:1px solid #FDCC5A;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/wrap5_bg.jpg) repeat-x;overflow:hidden;}
+.wrap5 .border{width:1px;height:197px;float:left;background:url(//mat1.gtimg.com/worldcup/ft_sjbz/wrap5_border.jpg) no-repeat left top;overflow:hidden;}
+.wrap5-con{width:469px;float:left;}
+.wrap5-con .hd{width:469px;height:32px;float:left;}
+.wrap5-con .hd img{float:left;}
+.wrap5-con .bd{width:448px;float:left;padding:0 8px;}
+.wrap5-con .left{width:202px;}
+.wrap5-con .left img{width:200px;height:150px;float:left;border:1px solid #FBBE2E;}
+.wrap5-con .right{width:240px;color:#E4FDFF;}
+.wrap5-con .right h2{width:230px;float:right;line-height:30px;color:#6E3700;}
+.wrap5-con .right h2 a{color:#6E3700;}
+.wrap5-con .right p{width:230px;float:right;line-height:20px;color:#6E3700;}
+.wrap5-con .right ul{width:240px;float:right;margin-top:4px;}
+.wrap5-con .right li{width:240px;float:right;line-height:24px;}/*  |xGv00|4878558c92bf83efa44ea333dd381faf */

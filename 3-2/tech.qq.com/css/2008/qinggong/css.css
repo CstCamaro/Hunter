@@ -1,0 +1,110 @@
+body{margin:0;padding:0; background: url(http://mat1.qq.com/tech/images/2008/qgh/top_02.jpg) repeat-x}
+form,p,span,div,ul,li,input,dl,dt,dd{margin:0;padding:0;}
+td,body,select{font-size:12px; color:#333333;}
+img{border:none;}
+
+/*导航*/
+.dh ,.dh a{font-family:"宋体"; font-size:14px; color: #fffec2; text-decoration:none}
+.dh a:hover{color:#FFFFFF; font-weight:bold;}
+.dhs {width:60px; display:block}
+.dhss {width:30px; display:block}
+
+/*链接*/
+.titred1,.titred1 a{font-family:"黑体"; font-size:18px ; color: #da2e00; font-weight:200; text-decoration:none}
+.titred1 a:hover {text-decoration:underline}
+
+.titred2,.titred2 a{font-family:"宋体"; font-size:14px; color:#da2e00; font-weight:bold; text-decoration:none}
+.titred2 a:hover{text-decoration:underline}
+
+.titred3,.titred3 a{font-family:"宋体"; font-size:12px; color:#c60e04; font-weight:bold; text-decoration:none}
+.titred3 a:hover{text-decoration:underline}
+
+.titye1,.titye1 a{font-family:"宋体"; font-size:14px; color:#fffee6; font-weight:bold; text-decoration:none}
+.titye1 a:hover{text-decoration:underline}
+
+.titwh1,.titwh1 a{font-family:"宋体"; font-size:14px; color:#ffffff; font-weight:bold; text-decoration:none}
+.titwh1 a:hover{text-decoration:underline}
+
+.red1 a{font-family:"宋体"; font-size:12px; color: #da2e00; text-decoration:none}
+.red1 a:hover{text-decoration:underline}
+
+.ye1 a{font-family:"宋体"; font-size:12px; color: #fffee6; text-decoration:none}
+.ye1 a:hover{text-decoration:underline}
+
+.blk1 a{font-family:"宋体"; font-size:12px; color:#333333; text-decoration:none}
+.blk1 a:hover{color:#FF0000; text-decoration:underline}
+
+.blk2,.blk2 a{font-family:"宋体"; font-size:14px; color:#333333; text-decoration:none}
+.blk2 a:hover{color:#FF0000; text-decoration:underline}
+
+.ga1,.ga1 a{font-family:"宋体"; font-size:12px; color:#8a8a8a; text-decoration:none}
+.ga1 a:hover{text-decoration:underline}
+
+/*文字属性*/
+.font24px {text-indent:24px}
+
+/*间距*/
+.lh16 {line-height:16px}
+.lh20 {line-height:20px}
+.lh22 {line-height:22px}
+.lh24 {line-height:24px}
+.lh26 {line-height:26px}
+.lh30 {line-height:30px}
+
+.pl6 {padding-left:6px}
+.pl9 {padding-left:9px}
+.pl12 {padding-left:12px}
+.pl26 {padding-left:26px}
+.pl80 {padding-left:80px}
+
+.pr6 {padding-right:6px}
+
+.marb7 {margin-bottom:7px}
+.marb8 {margin-bottom:8px}
+.marb10 {margin-bottom:10px}
+.marb11 {margin-bottom:8px}
+.marb12 {margin-bottom:12px}
+.marb14 {margin-bottom:14px}
+.marb15 {margin-bottom:15px}
+
+.marl25 {margin-left:25px}
+
+.mart9 {margin-top:9px}
+.mart10 {margin-top:10px}
+.mart11 {margin-top:11px}
+.mart12 {margin-top:12px}
+.mart14 {margin-top:14px}
+
+/*背景*/
+.bg01 {background:url(http://mat1.qq.com/tech/images/2008/qgh/top_24.jpg) no-repeat top}
+.bg02 {background:url(http://mat1.qq.com/tech/images/2008/qgh/point.gif) repeat-x top}
+.bg03 {background:url(http://mat1.qq.com/tech/images/2008/qgh/top_26.jpg) no-repeat top}
+.bg04 {background:url(http://mat1.qq.com/tech/images/2008/qgh/top_60.jpg) no-repeat center}
+.bg05 {background:url(http://mat1.qq.com/tech/images/2008/qgh/top_62.jpg) no-repeat center top}
+.bg06 {background:url(http://mat1.qq.com/tech/images/2008/qgh/top_70.jpg) repeat-x bottom}
+.bg07 {background:url(http://mat1.qq.com/tech/images/2008/qgh/top_76.jpg) repeat-x bottom}
+.bg08 {background:url(http://mat1.qq.com/tech/images/2008/qgh/top_81.gif) repeat-x bottom}
+.bg09 {background:url(http://mat1.qq.com/tech/images/2008/qgh/top_113.gif) repeat-x top}
+.bg10 {background:url(http://mat1.qq.com/tech/images/2008/qgh/top_120.gif) no-repeat left center}
+
+/*表格边框*/
+.borfocus {border:1px solid #ffd379}
+.bor1 {border-left:1px solid #fbad5a}
+.bor2 {border:1px solid #d8d8d8}
+.bor3 {border-left:1px solid #fbad5a; border-right:1px solid #fbad5a}
+.bor4 {border-left:1px solid #fbad5a; border-bottom:1px solid #fbad5a; border-right:1px solid #fbad5a;}
+.bor5 {border:1px solid #fbb361;}
+.bor6 {border-left:1px solid #e6c48f; border-bottom:1px solid #e6c48f; border-right:1px solid #e6c48f;}
+.bor7 {border-bottom:1px solid #b5b5b5}
+
+/*图片边框*/
+.imgbor1 img{border:1px solid #d8d8d8; padding-left:2px; padding-right:2px; padding-bottom:2px; padding-top:2px; background-color:#ffffff}
+.imgbor2 img{border:1px solid #d8d8d8; padding-left:3px; padding-right:3px; padding-bottom:3px; padding-top:3px; background-color:#ffffff}
+.imgbor3 img{border:1px solid #d8d8d8}
+
+.fl {float:left}
+.fr {float:right}
+
+/*导航*/
+.head,.head a{font-family:"宋体"; font-size:12px; color:#cd935b; text-decoration:none}
+.head a:hover{text-decoration:underline}/*  |xGv00|ce4694e5fe52c0dc8fdfd05d03ed804e */

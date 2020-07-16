@@ -1,0 +1,326 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="https://time.qq.com/jieqi/bailu/20190908-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="白露,凉爽,腾讯网,时光画轴,腾讯,节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 19:25:03';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-09-08", //日期，格式为 年-月-日
+	"cmd_id": "4140545795", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "bailu2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="bailu2019" style="display:none;"><blockquote>“白露暧秋色，月明清漏中”</blockquote>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGAyGdGVl70qHt4Y96p5K6BzVpdhYR8vPm9oNU0eIrMvZrfHcBX3ks2w/640?wx_fmt=jpeg" >
+<p>白露，是二十四节气中的第十五个节气，这个节气表示孟秋时节的结束和仲秋时节的开始，是反映自然界气温变化的重要节令。当太阳到达黄经165度时为白露，于公历9月07－09日交节。古人以四时配五行，秋属金，金色白，故以白形容秋露。到了白露就算是真正入秋了，白露基本结束了暑天的闷热。白露时节，天高云淡，气爽风凉，早晚的温差较大，晚上会感到一丝丝的凉意，明显地感觉到凉爽的秋天已经到来。</p>
+
+<p>
+白露时节，秋风在降温的同时，把空气中的水分也吹干了，这种干燥的气候特点称为“秋燥”，白露的气候特点就是干燥。据《月令七十二候集解》对“白露”的诠释——“水土湿气凝而为露，秋属金，金色白，白者露之色，而气始寒也”。“白露”代表着暑热的结束，而在季节转化过程中，丰收的秋季带给了人们与健康有关的食物以及民俗。
+</p>
+<h2>气候特征</h2>
+<h3>物候</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGN2wv9m5iasAjWgYZUzmaYH3PtEiaaknib64RhrQuQcDKssUn3h1Nf99Cw/640?wx_fmt=jpeg" >
+<p>白露时节，秋风在降温的同时，把空气中的水分也吹干了，这种干燥的气候特点在中医上称为“秋燥”，很多人会出现口干、咽干、眼干、皮肤干等症状。白露的气候特点就是干燥。 
+
+
+
+鸿雁来：鸿大雁小，自北而来南也，不谓南乡，非其居耳。详见雨水节下（雨水三候：“一候獭祭鱼；二候鸿雁来；三候草木萌动“）。 
+
+
+　　玄鸟归：《月令七十二候集解》：“玄鸟解见春分（春分初候，玄鸟至；燕来也），此时自北而往南迁也，燕乃南方之鸟，故曰归。 
+
+
+　　群鸟养羞：三兽以上为群，群者，众也，《礼记》注曰：“羞者，所羹之食。”养羞者，藏之以备冬月之养也。羞”是“馐”的本字。古代“羞”、“馐”通用。养羞是汉语词汇，拼音yǎng xiū，指储藏食物《逸周书·时训》：“白露之日鸿雁来，又五日玄鸟归，又五日羣鸟养羞” 朱右曾 校释：“养羞者，蓄食以备冬，如藏珍羞”
+
+诗《白露》：“衰荷滚玉闪晶光，一夜西风一夜凉。雁阵声声蚊欲静，枣红点点桂流香。”（左河水）
+
+诗《蒹葭》：蒹葭苍苍，白露为霜，所谓伊人，在水一方。《诗经》</p>
+<h3>天气</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGpMgYXmhib5YLlmtolxYO2EejaNLMwVmpQUj17FTI2g1UqEbMTmibccgg/640?wx_fmt=jpeg" >
+<p>白露前后，夏日残留的暑气逐渐消失，天地的阴气上升扩散，天气渐渐转凉，清晨的露水日益加厚，在草叶面上凝结成一层白白的水滴，这也是“白露”名由之一。植物开始有露水进入白露节气后，夏季风逐步被冬季风所代替，冷空气转守为攻，暖空气逐渐退避三舍。冷空气分批南下，往往带来一定范围的降温幅度。人们爱用“白露秋风夜，一夜凉一夜”的谚语来形容气温下降速度加快的情形。
+
+
+
+八月十五雁门开，雁儿头上带霜来”。霜冻是由于冷空气的入侵，日平均气温在0℃以上，地表温度骤降到0℃以下，农作物细胞之间的水分结冰，并不断吸收细胞内部的水分，形成细胞脱水，导致农作物枯萎或死亡的灾害。有时虽然植物表面没有白霜，但由于地表温度在0℃以下，农作物依然受到冻害，称作黑霜，也是霜冻的一种类型。</p>
+<h2>民俗</h2>
+<h3>收清露</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGMFgyFVnfKonhsLmdkliaO0ZSPm0t2e42NqCnDIO6TTXeDG60SBqmP8g/640?wx_fmt=jpeg" >
+<p>我国民间在白露节气有“收清露”的习俗，明朝李时珍的《本草纲目》上记载：“秋露繁时，以盘收取，煎如饴，令人延年不饥。”“百草头上秋露，未唏时收取，愈百病，止消渴，令人身轻不饥，肌肉悦泽。”“百花上露，令人好颜色”。因此，收清露成为白露最特别的一种“仪式”。</p>
+<h3>祭禹王</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTG5WQnU4ibxh6w8LPiaahbMnM9aIEmGeoVj6uQv15s4FWXGiasibExxdacsw/640?wx_fmt=jpeg" >
+<p>禹王是传说中治水英雄大禹，太湖畔渔民称为“水路之神”。每年正月初八、清明、七月初七和白露时节，这里都要举行祭禹王的香会。其中又以清明、白露春秋两祭规模为最大，历时一周。</p>
+<h3>吃龙眼</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGHzYGb4L3UYZyBuJFRSmduZsRDQraic5OalXLxKia13Gy2qt4Zkr2liaXw/640?wx_fmt=jpeg" >
+<p>福建福州有个传统习俗叫“白露必吃龙眼”。民间的意思是，在白露这一天吃龙眼有大补身体的奇效。因为龙眼本身就有益气补脾、养血安神、润肤美容等多种功效，还可以治疗贫血、失眠、神经衰弱等多种疾病。</p>
+<h3>白露茶</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGPuaklFZTCanF46eKHjUMhiaFhk2fmODKzkPtiae6iabu4fGgB2gvPJKMA/640?wx_fmt=jpeg" >
+<p>民间有“春茶苦，夏茶涩，要喝茶，秋白露”的说法，此时的茶树经过夏季的酷热，白露前后正是它生长的极好时期。到了白露节气，秋意渐浓。
+旧时南京人十分重视节气的“来”和“去”，逐渐形成了具有南京地方特色的节气习俗。说到白露，爱喝茶的老南京都十分青睐“白露茶”，此时的茶树经过夏季的酷热，白露前后正是它生长的极好时期。白露茶既不像春茶那样鲜嫩，不经泡，也不像夏茶那样干涩味苦，而是有一种独特甘醇清香味，尤受老茶客喜爱。再者，家中存放的春茶已基本“消耗”得差不多了，此时白露茶正接上，所以到了白露前后，有的茶客就托人买点白露茶。
+</p>
+
+<h3>十样白</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGdlbyhIFiaylnHGjiadQ9wscibaoEtSdVTyJSlbsVEQ7hV17bh1moVCcjA/640?wx_fmt=jpeg" >
+<p>浙江温州等地有过白露节的习俗。苍南、平阳等地民间，人们于此日采集“十样白”(也有“三样白”的说法)，以煨乌骨白毛鸡(或鸭子)，据说食后可滋补身体，去风气(关节炎)。这“十样白”是10种带“白”字的草药，如白木槿、白毛苦等，以与“白露”字面上相应。</p>
+<h2>农事</h2>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGDo6QeqGXToxrLP8XuWVxxpLLph21AP1Q51u7BqOyU4elUoTRAsPVZw/640?wx_fmt=jpeg" >
+<p>农事：这一时节冷空气日趋活跃，常出现秋季低温天气，影响晚稻抽穗扬花，因此要预防低温冷害和病虫害。冷空气入侵时，可采用灌水保温，低温之前灌水二寸以上，可增温1~2℃。低温来时，晴天可日排夜灌浅水；阴雨天则要灌厚水；一般天气应干干湿湿，以湿为主。这个节气暑气渐消，秋高气爽，玉露生凉，丹桂飘香，是黄金旅游季节。“白露”正处夏、秋转折关头，气温日际变化大，“白露身不露”，老、弱、病者要更注意适时增减衣服，以防受凉。</p>
+<h3>蔬菜</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGPibfN1GsRPFLhic7AACW4ea8iaIial0AyiaPwMJsl81gYHwkKFSDKtZvTicw/640?wx_fmt=jpeg" >
+<p>白露后的天气有利于蔬菜生产，蔬菜生产进入了繁忙季节。
+
+⒈培育好壮苗
+
+⑴茄果类。育苗最好在有地模覆盖的大棚内进行。用新园土3/4，腐熟栏肥1/4，草木灰10%，钙镁磷肥5%，代森锌0.03%混配。亩播种量：番茄、茄子25-30克，甜椒30-50克每亩。种子用温汤浸种法凉干播种。精细做畦，播后勤水分管理，以促进全苗壮苗。
+
+⑵绿叶蔬菜。种皮较厚要进行种子处理并浸透水催芽播种，苗床和生产用地要深翻晒白，精细做畦，播后勤水分管理，以促进全苗壮苗。
+
+⒉做好病虫害防治工作
+
+⑴十字花科蔬菜害虫主要有斜纹夜蛾、甜菜夜蛾、小菜蛾、菜青虫等，用除尽或抑太保加杀虫双或农地乐或京保尔（甲维盐）或杜邦安打或海正三令等防治；病害主要有花菜黑玉病，小白菜、大白菜白斑病，用代森锌、百菌清或新万生防治；甘蓝黑腐病和大、小白菜软腐病用农用链霉素，或可杀得或猛克菌加清腐等药剂。
+
+⑵茄果类等秧苗，主要防治猝倒病，定期用托布津或百菌清轮换喷治。
+
+⑶为了让市民吃上“放心菜”，除严禁使用剧毒农药外，采收前必须掌握用药安全间隔期。</p>
+
+<h3>果树</h3>
+
+<p>1.柑橘：
+⑴遇旱及时灌溉，结合树盘覆盖减少裂果。
+⑵抹除晚秋梢，对果多的弱树可喷洒叶面肥1--2次。
+⑶病虫防治重点是红蜘蛛、黑刺粉虱、蚧类及炭疽病；早熟品种还应注意果实黑点病的防治。
+⑷作好抗台风准备。</p>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGsynfdLWMYbQvJytgu2QKMaicUScuHmFZLecPbrIv1c41MfkNibN0znibQ/640?wx_fmt=jpeg" >
+<p>2.杨梅
+⑴继续抓好抗旱防台工作，视旱情浇水保墒，促使秋梢生长充实，促进花芽分化。
+⑵剪除枯枝与自根部及主干上发生的无效萌蘖。
+⑶摘除大蓑蛾护囊，并用速扑杀1500倍液，或杀灭菊酯2000倍液喷雾。蚧壳虫发生严重的应喷药再行防治。捕杀树干基部天牛幼虫。</p>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGhEQplt5muc1acQpYNwelkqmDBsr1Bf3puIL2mz9Uc4uKgU6x8R9now/640?wx_fmt=jpeg" >
+<p>3.葡萄
+以适时采摘为中心，加强霜霉病等病害的防治。葡萄采收后树势较弱的可以施一次补肥。肥料种类最好用进口三要素复合肥或磷酸二氨，每亩地施用量在10--15公斤。</p>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGWQ9bRnHAB9J0wRbPgyyrXIwx3H8AibAqlo2UK70tJicKrBj0E3yayWbQ/640?wx_fmt=jpeg" >
+<p>4.梨
+以治虫保叶为中心，施好根外追肥，重施采后越冬基肥，加强军配虫等为害叶片的病虫防治工作。防止落叶太早而诱发二次开花，影响次年花量和产量。</p>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGplXibSrmVXVW50YNibszL6AsFicDvxSetdhrGxNgQczND6xKaOCSC7e2g/640?wx_fmt=jpeg" >
+<h3>畜牧</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnzcDI5xfJvPib3apcmicsLTGDJsdg9XEYc0OtNyRmoSxtmcYx5DMEqkZMSCEF3PwFicwaLPm88mNJMA/640?wx_fmt=jpeg" >
+<p>九月份中旬以后，天气由热转凉。畜禽生产要注意做好以下几项工作：
+
+是水牛长膘和繁殖的黄金季节，必须及时抓好秋膘，及时做好配种繁殖工作。
+
+秋季天气凉爽，野生青草茂盛，必须做好越冬干草的贮存工作。贮备时要留有余地，尽可能多贮存一些。
+
+是长毛兔繁殖最佳季节，养兔专业户要着手做好秋繁工作，使长毛兔达到全配满怀。要注意采取保温措施。
+
+生猪要做好消毒隔离工作，防止高热症为特征的传染病的发生。山羊做好羊痘疫苗预防接种。
+
+种鹅休蛋期接近尾声，应提高加强营养，保证下一产蛋期的营养。”</p>
+</div><!--[if !IE]>|xGv00|bd43ea8acc4ae1e5b1672a8456fb3f4c<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|47a7212c39edc9eddb7e726bd1cae191<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|b2a4d5deda9060fc18282f0ffd7a6f13<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|73112d46fb4bddd1cee24bb159fdb0c3<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|76db7f5efcee85c4a9312eb8f8bf668f<![endif]-->

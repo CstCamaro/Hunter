@@ -1,0 +1,293 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="https://time.qq.com/jieqi/chushu/20190823-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="处暑,凉爽,腾讯网,时光画轴,腾讯,节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 20:12:03';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          
+<script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-08-23", //日期，格式为 年-月-日
+	"cmd_id": "4088035973", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "chushu2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="chushu2019" style="display:none;"><blockquote>“处暑无三日，新凉直万金”</blockquote>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrPXia6mE8Ar8uZhEJh6kJPGxNwRykWs8nOzRIIWv1yKGMYWDxF0S6GcQ/640?wx_fmt=jpeg" >
+<p>处暑，二十四节气之一，为每年的8月23日或24日。此时太阳到达黄经150°，虽然气温仍高，但是冷空气南下次数开始增多，气温下降会逐渐明显。
+
+处暑以后，中国除华南和西南地区外，大部分地区雨季将结束，降水逐渐减少。尤其是华北、东北和西北地区必须抓紧蓄水、保墒，以防秋种期间出现干旱而延误冬作物的播种期。
+</p>
+<h2>古籍渊源</h2>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrtmmEYWcGibQUbicHGm99K6kib1maRH2oBW0r5icccUUBwCxRFHagO6XFeg/640?wx_fmt=jpeg" >
+<p>《月令七十二候集解》说：“处，去也，暑气至此而止矣。”意思是炎热的夏天将过去了。虽然，处暑前后我国北京、太原、西安、成都和贵阳一线以东及以南的广大地区和新疆塔里木盆地地区日平均气温仍在摄氏二十二度以上，处于夏季，但是这时冷空气南下次数增多，气温下降逐渐明显。
+
+我国古代将处暑分为三候：“一候鹰乃祭鸟；二候天地始肃；三候禾乃登。”此节气中老鹰开始大量捕猎鸟类；天地间万物开始凋零；“禾乃登”的“禾”指的是黍、稷、稻、粱类农作物的总称，“登”即成熟的意思。</p>
+<h2>天气特点</h2>
+<h3>气温下降</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrZicUgFzxBB5DicAbj2ePeNPa2aE5ianicufcmsUTZblZGV8bYJpPVmEgkA/640?wx_fmt=jpeg" >
+<p>8月底到9月初的处暑节气，单单用气温开始走低来描述是不够的。气温走低仅是其中的一个现象。产生这一现象背后的原因，首先应是太阳的直射点继续南移，太阳辐射减弱；二是副热带高压跨越式地向南撤退，蒙古冷高压开始跃跃欲试，出拳出脚，小露锋芒。</p>
+<h3>秋高气爽</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrXSTaCvfaK8qgZLSJ9aUibnEViaedyMQibo250ormibiaUJK9JXzmM3erMnQ/640?wx_fmt=jpeg" >
+<p>开始影响我国的冷高压，在它的控制下，形成的下沉的、干燥的冷空气，先是宣告了中国东北、华北、西北雨季的结束，率先开始了一年之中最美好的天气秋高气爽。处暑期间，真正进入秋季的只是东北和西北地区。但每当冷空气影响我国时，若空气干燥，往往带来刮风天气，若大气中有暖湿气流输送，往往形成一场像样的秋雨。每每风雨过后，特别是下雨过后，人们会感到较明显的降温。故有：“一场秋雨(风)一场寒”之说。北方南部的江淮地区，还有可能出现较大的降水过程。气温下降明显，昼夜温差加大，雨后艳阳当空，人们往往对夏秋之交的冷热变化不很适应，一不小心就容易引发呼吸道、肠胃炎、感冒等疾病，故有“多事之秋”之说。</p>
+<h3>雷暴活动较多</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrAuibV4ax4UnhT755ubtK2OAxJOzLicUDBZJQMv4roCa3CqVs7yWTHxug/640?wx_fmt=jpeg" >
+<p>华南、西南、华西进入9月，雷暴活动不及炎夏那般活跃，但华南、西南和华西地区雷暴活动仍较多。在华南，由于低纬度的暖湿气流还比较活跃，因而产生的雷暴比其它地方多；而西南和华西地区，由于处在副热带高压边缘，加之山地的作用，雷暴的活动也比较多。进入9月，我国大部开始进入少雨期，而华西地区秋雨偏多。它是我国西部地区秋季的一种特殊的天气现象。华西秋雨的范围，除渭水和汉水流域外，还包括四川、贵州大部、云南东部、湖南西部、湖北西部一带发生的秋雨。因秋雨早的年份8月下旬就可以出现。最早出现日期有时可从8月下旬开始，最晚在11月下旬结束。但主要降雨时段是出现在9、10两个月。“华西秋雨”的主要特点是雨日多，而另一个特点是以绵绵细雨为主，所以雨日虽多，但雨量却不很大，一般要比夏季少，强度也弱。</p>
+<h2>处暑农事</h2>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrbhJ4w9gXyfb8cPf3hmBlwxjPAUmf6iaURR0iaND4eriaXSLx2tMIfS20w/640?wx_fmt=jpeg" >
+<p>全国华南处暑平均气温一般较立秋降低1.5℃左右，个别年份8月下旬华南西部可能出现连续3天以上日平均气温在23℃以下的低温，影响杂交水稻开花。但是，由于华南处暑时仍基本上受夏季风控制，所以还常有华南西部最高气温高于30℃、华南东部高于35℃的天气出现。特别是长江沿岸低海拔地区，在伏旱延续的年份里，更感到"秋老虎"的余威。西北高原进入处暑秋意正浓，海拔3500米以上已呈初冬景象，牧草渐萎，霜雪日增。</p>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrPttZPySibRDDRNTnqjOJtsJ55KOaOd72qnBRBia2Y7IUa75Z2qHqGR7w/640?wx_fmt=jpeg" >
+<p>处暑是华南雨量分布由西多东少向东多西少转换的前期。这时华南中部的雨量常是一年里的次高点，比大暑或白露时为多。因此，为了保证冬春农田用水，必须认真抓好这段时间的蓄水工作。高原地区处暑至秋分会出现连续阴雨水天气，对农牧业生产不利。我国南方大部分地区这时也正是收获中稻的大忙时节。一般年辰处暑节气内，华南日照仍然比较充足，除了华南西部以外，雨日不多，有利于中稻割晒和棉花吐絮。可是少数年份也有如杜诗所"三伏适已过，骄阳化为霖"的景况，秋绵雨会提前到来。所以要特别注意天气预报，做好充分准备，抓住每个晴好天气，不失时机地搞好抢收抢晒工作。</p>
+<h2>处暑养生</h2>
+<h3>起居</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPruicnZYJmxvHuGES2Q48zh3c3GOxQibc9h13xuibM0jfuaxIerwZwtfvIg/640?wx_fmt=jpeg" >
+<p>依照自然界规则，秋天阴气增、阳气减，对应人体的阳气也随着内收，为了贮存体内阳气。然而；随着天气转凉，很多人会有懒洋洋的疲劳感，早上不爱起，白天不爱动，这就是“春困秋乏”中所指的“秋乏”。要保证充足睡眠，改掉夏季晚睡习惯，争取晚上10点前入睡，以比夏天增加1小时睡眠为好，并保证早睡早起。另外，适当午睡也利于化解秋乏。三是加强锻炼，以早晚为好。锻炼的方法以经常进行登山、散步、做操等简单运动为好。伸懒腰也可缓解秋乏，特别是下午感到特别疲乏，伸个懒腰就会觉得全身舒展。</p>
+<h3>个人情绪</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrUtz37QL8KRqZVIzWbmLTzeu9Hcq4DKEyAicG49IibyDiaeH6QJjxhuiaFQ/640?wx_fmt=jpeg" >
+<p>秋天主“收”，因此，情绪要慢慢收敛，凡事不躁进亢奋，也不畏缩郁结。“心要清明，性保持安静”，在时令转变中，维持心性平稳，注意身、心、息的调整，才能保生机元气。</p>
+<h3>运动</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrMr5vcuV3prTLavcPTOhqnv5GicicpEdMPQFpKhiatSicwDEfiasWA9JnNwA/640?wx_fmt=jpeg" >
+<p>秋天，秋高气爽，适合户外运动。可根据个人的体质，做一些登山、慢跑、郊游等户外运动。但要多注意滋脾补筋。因为秋天金容易克本，而肝是主筋的。前几天我们就提到过刘翔因伤退赛的原因，就是和筋有关。所以，在运动的时候，要注意不要剧烈，做好准备活动，避免伤筋。</p>
+
+<h3>护脐</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrjOiaAE5S9DLMXpYEY000QXRjDC5vicibIqU0kgmUKcIvggNgCQiaUiaabCg/640?wx_fmt=jpeg" >
+<p>处暑节气过后，天气渐凉，人们也开始从防暑降温逐渐过渡到防寒保暖上来。大家都知道寒从脚上生的道理，却较少注意到肚脐也很容易受寒。肚脐部位的表皮最薄，皮下没有脂肪组织，但有丰富的神经末梢和神经丛，因此对外部刺激特别敏感，并且最容易穿透弥散。若防护不当，比如晚上睡觉暴露腹部，或者年轻爱美的女士穿露脐装，寒气都很容易通过肚脐侵入人体。如果寒气直中肠胃，就会发生急性腹痛、腹泻、呕吐；如果天长日久，寒气逐渐积聚在小腹部位，还会导致泌尿生殖系统的疾病。</p>
+<p>因此，除了根据天气变化增添衣物、晚上睡觉注意覆盖腹部外，还可以按摩肚脐，方法是先将双手掌心搓热，然后上下重叠放在肚脐上，按顺时针和逆时针方向分别揉按100次。如果寒气积聚日久，病症顽固，还可以取粗盐（腌咸菜用的）0.5～1公斤，将盐炒热后装入毛巾缝制的口袋中，放在肚脐上热熨。</p>
+<h2>习俗活动</h2>
+<h3>出游迎秋</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPricad63AlyhNExibWmwJp3NgDSwiaVZOtIwJGTHqcQO42G8WaNnASibb5Ng/640?wx_fmt=jpeg" >
+<p>祭祖、迎秋处暑节气前后的民俗多与祭祖及迎秋有关。处暑前后民间会有庆赞中元的民俗活动，俗称“作七月半”或“中元节”。旧时民间从七月初一起，就有开鬼门的仪式，直到月底关鬼门止，都会举行普渡布施活动。据说普度活动由开鬼门开始，然后竖灯篙，放河灯招致孤魂；而主体则在搭建普度坛,架设孤棚，穿插抢孤等行事，最后以关鬼门结束。至今，已成为祭祖的重大活动时段。此外，处暑之后，秋意渐浓，正是人们畅游郊野迎秋赏景的好时节。处暑过，暑气止，就连天上的那些云彩也显得疏散而自如，不像夏天大暑之时浓云成块[2]。民间向来就有“七月八月看巧云”之说，其间就有“出游迎秋”之意。</p>
+<h3>放河灯</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPribtlddOWfum2lNIS0kBRV767qvJMtLZKMiaAy2s6UJV9fLHQoTWDbDOw/640?wx_fmt=jpeg" >
+<p>河灯也叫“荷花灯”，一般是在底座上放灯盏或蜡烛，中元夜放在江河湖海之中，任其漂泛。放河灯是为了普渡水中的落水鬼和其他孤魂野鬼。肖红《呼兰河传》中的一段文字，是这种习俗的最好注脚：“七月十五是个鬼节；死了的冤魂怨鬼，不得托生，缠绵在地狱里非常苦，想托生，又找不着路。这一天若是有个死鬼托着一盏河灯，就得托生。”</p>
+<h3>开渔节</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPriapO7SA2vx0wQerM1ZoqteU2a0XAeEnksseA7klEbzgGB9ok5TU6pSg/640?wx_fmt=jpeg" >
+<p>对于沿海渔民来说，处暑以后渔业收获的时节，每年处暑期间；在浙江省沿海都要举行一年一度的隆重的开渔节，决定在东海休渔结束的那一天，举行盛大的开渔仪式，欢送渔民开船出海。2006年第九届中国开渔节，在9月6日浙江省象山县举行。因为；这时海域水温依然偏高，鱼群还是会停留在海域周围，鱼虾贝类发育成熟。因此，从这一时间开始，人们往往可以享受到种类繁多的海鲜。</p>
+<h2>饮食综述</h2>
+<h3>饮食</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrEC6jHpngteOoR9LribCa8BL7zY3sAGoZM7jwaQ4RibrXj14UUVWhbcBg/640?wx_fmt=jpeg" >
+<p>处暑节气一般在公历8月22日或23日。意思是炎热的夏天将过去。饮食养生保健的方法对“秋燥”有很好的预防效果，特别提出要多吃一些寒凉多汁的蔬菜水果和流食，如黄瓜、西红柿、冬瓜、百合、白萝卜、胡萝卜及梨、苹果、葡萄、荸荠、甘蔗、柑橘、香蕉、柿子、菠萝、罗汉果、大枣和汤、粥等，这不但有利于维生素的补充，还能够增加水分的摄入。饮食上要尽可能少吃花椒、辣椒等辛热食物，更不宜吃烧烤食品，以加重秋燥的症状。</p>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrquMXmu48NM230vPaXjzXgSjWnD7ibzicaia5BWXmYgGKt1dmHF3PFkj1A/640?wx_fmt=jpeg" >
+<p>增加水和流食的摄入，提倡采用“五一二”的方法：“五一”的意思是5个1杯，即早晨起床后喝1杯白开水，早餐时喝1杯豆浆，午餐时喝1碗汤，晚餐时喝1碗粥，睡前半小时喝1杯牛奶；“二”的意思是上下午各喝两杯茶。</p>
+<h3>处暑吃鸭子</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrefSbxY6ib6rxa7Q3tztZLWL0oCIrIQhdicecALuFK0d7GccibRSX7ev8A/640?wx_fmt=jpeg" >
+<p>老鸭味甘性凉，因此民间有处暑吃鸭子的传统，做法也五花八门，有白切鸭、柠檬鸭、子姜鸭、烤鸭、荷叶鸭、核桃鸭等。北京至今还保留着这一传统，一般处暑这天，北京人都会到店里去买处暑百合鸭等。日本有泼水降温泼水的习俗，从大暑到处暑的一个月时间内，日本各地有组织泼水降温的习俗。</p>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlagfXdrHCLt6P0HkNqYkPrhGcVMAGUaSHPWBrfHGyacMFbqH8OuocWMTtjticw1EV7cEpAkkickxdQ/640?wx_fmt=jpeg" >
+<p>处暑节气正是处在由热转凉的交替时期，自然界的阳气由疏泄趋向收敛，人体内阴阳之气的盛衰也随之转换，此时起居作息也要相应地调整。进入秋季养生，首先调整的是睡眠时间，早睡早起是人所周知的。科学的养生保健更需要全面地掌握睡眠规律及方法。另外，古人在睡眠养生法中还强调了子午觉的重要性(即每天于子时、午时入睡)，认为子午之时，阴阳交接，极盛及衰，体内气血阴阳失衡，必欲静卧，以侯气复。现代研究发现，夜间0至4点，体内各器官的功能都降至最低点；中午12至13点，是人体交感神经最疲劳的时间。有统计表明，老年人睡子午觉可降低心、脑血管病的发病率。
+
+处暑节气宜食清热安神之品，如银耳、百合、莲子、蜂蜜、黄鱼、干贝、海带、海蜇、芹菜、菠菜、糯米、芝麻、豆类及奶类。
+
+</p>
+
+
+
+</div>
+<!--[if !IE]>|xGv00|6538212e8b755a249f090663e2c8e176<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|0eaaf1cf66eba2aca42344f5bfaa3f26<![endif]-->

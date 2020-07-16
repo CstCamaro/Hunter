@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>腾讯视频</title>
+</head>
+<body>
+<script language="javascript">
+var match = document.location.href.match(/(^|&|\\?)vid=([^&]*)(&|$|#)/);
+if (match) {
+var vid = match[2];
+vid = vid.replace(/http(s)?:\/\//ig, "")
+if (typeof vid != "string" || vid.length < 11) {
+document.location.href = "/error.html";
+}
+var arr = [];
+arr[0] = vid.charAt(0), arr[1] = vid.charAt(9), arr[2] = vid.charAt(10), arr[3] = encodeURIComponent(vid);
+document.location.href = "http://v.qq.com/page/" + arr.join("/") + ".html";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 12px "宋体","Arial Narrow",HELVETICA;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+.wryh {
+    font-family: Microsoft Yahei;
+}
+
+.tac {
+    text-align: center;
+}
+
+.por {
+    position: relative;
+}
+
+.poa {
+    position: absolute;
+}
+
+.undis {
+    display: none
+}
+
+.dis {
+    display: block
+}
+
+.ind {
+    text-indent: 2em
+}
+
+.red a, a.red {
+    color: #bd0a01
+}
+
+.black a, a.black {
+    color: #000
+}
+
+@media screen {
+    .fl, .layout .fl, .chief {
+        float: left;
+        display: inline
+    }
+
+    .fr, .layout .fr, .extra {
+        float: right;
+        display: inline
+    }
+
+    .layout {
+        width: 1000px;
+        margin: 0 auto
+    }
+
+    .f12 {
+        font-size: 12px
+    }
+
+    .f14 {
+        font-size: 14px
+    }
+
+    .f16 {
+        font-size: 16px
+    }
+
+    .f18 {
+        font-size: 18px
+    }
+
+    .f20 {
+        font-size: 20px
+    }
+
+    .l16 {
+        line-height: 16px
+    }
+
+    .l17 {
+        line-height: 17px
+    }
+
+    .l18 {
+        line-height: 18px
+    }
+
+    .l19 {
+        line-height: 19px
+    }
+
+    .l20 {
+        line-height: 20px
+    }
+
+    .l21 {
+        line-height: 21px
+    }
+
+    .l22 {
+        line-height: 22px
+    }
+
+    .l23 {
+        line-height: 23px
+    }
+
+    .l24 {
+        line-height: 24px
+    }
+
+    .l25 {
+        line-height: 25px
+    }
+
+    .l26 {
+        line-height: 26px
+    }
+
+    .l27 {
+        line-height: 27px
+    }
+
+    .l28 {
+        line-height: 28px
+    }
+
+    .l29 {
+        line-height: 29px
+    }
+
+    .l30 {
+        line-height: 30px
+    }
+
+    .mt10 {
+        margin-top: 10px
+    }
+
+    .mb10 {
+        margin-bottom: 10px
+    }
+}/*  |xGv00|c05760f949e5b6ba447e6616acfff164 */

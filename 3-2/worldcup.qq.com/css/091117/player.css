@@ -1,0 +1,79 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+body{font:12px/1.75 "ËÎÌו",Verdana,sans-serif;background:#fff;overflow-x:hidden;color:#333;}
+fieldset{display:inline;}
+button{line-height:1.2;vertical-align:middle;cursor:pointer;}
+strong{font-weight:800;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/*layout*/
+.main960{width:960px;clear:both;margin:0 auto;}
+.left{width:720px;float:left;}
+.right{width:230px;float:right;}
+
+.box10{height:10px;line-height:0;font-size:0;clear:both;}
+
+.left_bor{width:692px;border:1px solid #b2c8e3;background:#f9fcff;padding:13px;}
+.right_bor{width:214px;border:1px solid #d8cfb6;background:#fff8e1;padding:0 7px;}
+.main_bor{width:932px;border:1px solid #b2c8e3;background:#f9fcff;padding:13px;}
+
+.fl{float:left;}
+.fr{float:right:}
+.clr{width:100%;height:0;line-height:0;font-size:0;clear:both;}
+
+/*block*/
+#banner{color:#fff;font-size:14px;line-height:34px;}
+#banner a{margin:0 18px;color:#fff}
+#banner a:hover{color:#ff0}
+
+.details{width:553px;padding-left:11px;float:right;}
+.details li,.g_list li,.c_details li{padding-left:10px;}
+.l_blue{line-height:23px;height:23px;background:#ecf6ff;}
+.l_white{line-height:25px;height:25px;}
+
+.g_list{width:100%;}
+.career{width:100%;}
+.career li{overflow:hidden;}
+.career td{padding:0;margin:0;}
+
+.a_news{width:100%;line-height:25px;font-size:14px;}
+.a_news span{float:right;color:#333;font-family:Verdana;font-size:12px;}
+
+.t_member{width:100%;clear:both;line-height:25px;}
+.t_member li{background:url(//mat1.gtimg.com/worldcup/images/091117/player/dot-1.gif) repeat-x bottom;padding-left:8px;}
+
+.left_left{width:347px;float:left;}
+.left_left_top{width:347px;height:48px;clear:both;}
+.left_right{width:334px;float:right;}
+
+.c_details{width:181px;padding-left:11px;float:right;}
+.director{width:195px;padding-left:11px;float:right;}
+
+.member_pic p{width:93px;height:112px;padding-top:3px;line-height:12px;float:left;text-align:center;}
+.member_pic img{border:1px solid #cbcbcb;margin-bottom:8px;}
+
+.tables th{font-weight:bold;}
+/*elements*/
+.fb{font-weight:bold;}
+a{color:#333;}
+a:hover{color:#f00;}
+
+.f_blue,.f_blue a{color:#0058a6;}
+.f_blue a:hover{color:#f00;}
+
+.img1{border:1px solid #cbcbcb;padding:3px;background:#fff;}
+h2{width:708px;padding-left:12px;clear:both;height:33px;line-height:33px;font-size:14px;font-weight:bold;background:url(//mat1.gtimg.com/worldcup/images/091117/player/titbg-1.png) no-repeat;}
+h3{width:218px;padding-left:12px;clear:both;height:33px;line-height:33px;font-size:14px;font-weight:bold;background:url(//mat1.gtimg.com/worldcup/images/091117/player/titbg-2.png) no-repeat;}
+h3 .mor,h4 .mor{float:right;font-size:12px;font-weight:normal;padding-right:12px;}
+h4{width:948px;padding-left:12px;clear:both;height:33px;line-height:33px;font-size:14px;font-weight:bold;background:url(//mat1.gtimg.com/worldcup/images/091117/player/titbg-3.png) no-repeat;}
+
+.fv{font-family:Verdana;}
+.pdl19{padding-left:19px;}/*  |xGv00|b365340c7276f1e13a0e4fe609b5ceec */

@@ -1,0 +1,76 @@
+body{font-family:"ËÎÌו";font-size:12px;background:#fff;color:#333;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd{margin:0;padding:0;border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,p,select{margin:0;padding:0;font-size:12px;}
+a{color:#6E6D68;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.dis{display:block!important;}
+.undis{display:none;}
+.nobg{background:none!important;}
+.box10{height:10px;clear:both;overflow:hidden;}
+.wrap,.wrap2,.wrap3,.wrap6{width:960px;margin:0 auto;}
+.bg{width:100%;margin:0 auto;background:url(//mat1.gtimg.com/worldcup/images/huizong/body_bg.gif) no-repeat center top;}
+.top{width:960px;height:29px;padding:8px 0;margin:0 auto;overflow:hidden;}
+.top .logo{float:left;}
+.top .boc{float:left;margin-left:375px;}
+.top .top-nav{float:right;}
+.top a{color:#575757;}
+.nav{width:100%;height:61px;background:url(//mat1.gtimg.com/worldcup/images/huizong/nav_bg.jpg) repeat-x;clear:both;}
+.nav .hd{height:30px;}
+.nav .hd li{float:left;height:30px;line-height:30px;padding:0 10px;font-size:14px;color:#fff;}
+.nav .hd li a{color:#fff;}
+.nav .hd li.current{background:#F0FDDF;font-weight:bold;color:#000;}
+.nav .hd li.current a{color:#000;}
+.nav .bd{height:31px;line-height:31px;text-align:center;color:#8FBA54;}
+.nav .bd a{color:#1B5800;}
+.wrap2 img{float:left;}
+.wrap3 .hd{width:960px;height:32px;float:left;}
+.wrap3 .hd img{float:left;}
+.wrap3 .left{width:300px;height:396px;border:5px solid #E3E3E3;}
+.wrap3 .right{width:640px;height:406px;overflow:hidden;}
+.wrap3 .right .hd{width:640px;height:40px;float:left;background:url(//mat1.gtimg.com/worldcup/images/huizong/zuixincehua_hd.jpg) no-repeat;}
+.wrap3 .right .bd{border:1px solid #E6E5EE;border-top:0;width:618px;padding:5px 10px;}
+.wrap3 .right .bd .zuixincehua{width:309px;float:left;padding:15px 0;background:url(//mat1.gtimg.com/worldcup/images/huizong/dotted.jpg) repeat-x bottom left;}
+.wrap3 .right .bd .zuixincehua img{width:130px;height:88px;border:1px solid #CBCBCD;float:left;}
+.wrap3 .right .bd .zuixincehua h3{width:143px;float:left;padding-left:10px;line-height:30px;}
+.wrap3 .right .bd .zuixincehua h3 a{color:#2B2B2B;}
+.wrap3 .right .bd .zuixincehua p{width:143px;float:left;padding-left:10px;line-height:20px;}
+.wrap3 .right .bd .zuixincehua p a{color:#2E76B5;}
+.saishizhuanti{height:39px;background:url(//mat1.gtimg.com/worldcup/images/huizong/saishizhuanti_hd.jpg) no-repeat left top;}
+.wrap4{width:958px;margin:0 auto;border-left:1px solid #CDCDCD;border-right:1px solid #CDCDCD;}
+.wrap4 .hd{width:958px;height:32px;float:left;padding-top:7px;border-top:1px solid #1DA70F;background:url(//mat1.gtimg.com/worldcup/images/huizong/saishizhuanti_bg.jpg) repeat-x bottom;}
+.wrap4 .hd h2{height:39px;line-height:32px;float:left;padding:0 25px;font-size:14px;color:#0D4C9B;}
+.wrap4 .hd li{float:left;width:56px;height:32px;line-height:32px;text-align:center;font-weight:bold;color:#333;cursor:pointer;}
+.wrap4 .hd li.current{color:#0C4C99;background:url(//mat1.gtimg.com/worldcup/images/huizong/zhuanti_libg.jpg) no-repeat;}
+.wrap4 .bd{width:936px;float:left;padding:11px;border-bottom:1px solid #CDCDCD;}
+.wrap4 .bd li{width:142px;height:130px;float:left;line-height:18px;text-align:center;padding:7px;}
+.wrap4 .bd li img{width:140px;height:105px;float:left;border:1px solid #CCCDC8;margin-bottom:5px;}
+.wrap4 .bd li a{color:#333;}
+.wrap5{width:958px;margin:0 auto;border:1px solid #CDCDCD;border-top:0;}
+.wrap5 .hd{width:958px;height:32px;float:left;padding-top:7px;border-top:1px solid #1DA70F;background:url(//mat1.gtimg.com/worldcup/images/huizong/saishizhuanti_bg.jpg) repeat-x bottom;}
+.wrap5 .hd h2{height:39px;line-height:32px;float:left;padding:0 25px;font-size:14px;color:#0D4C9B;}
+.wrap5 .hd li{float:left;width:75px;height:32px;line-height:32px;text-align:center;font-weight:bold;color:#333;cursor:pointer;}
+.wrap5 .hd li.current{color:#0C4C99;background:url(//mat1.gtimg.com/worldcup/images/huizong/zhuanti_libg2.jpg) no-repeat;}
+.wrap5 .bd{width:936px;float:left;padding:11px;}
+.wrap5 .bd li{width:142px;height:130px;float:left;line-height:18px;text-align:center;padding:7px;}
+.wrap5 .bd li img{width:140px;height:105px;float:left;border:1px solid #CCCDC8;margin-bottom:5px;}
+.wrap5 .bd li a{color:#333;}
+.wrap6 .hd{width:960px;height:40px;float:left;background:url(//mat1.gtimg.com/worldcup/images/huizong/jingcaicehua_hd.jpg) no-repeat;}
+.wrap6 .bd{width:948px;float:left;background:#F0F9ED;padding:6px;}
+.wrap6 .bd .jingcaicehua{width:302px;float:left;padding:7px;}
+.wrap6 .bd .jingcaicehua .cehua-hd{width:278px;height:31px;line-height:31px;float:left;padding:0 12px;background:url(//mat1.gtimg.com/worldcup/images/huizong/cehua_hd.jpg) no-repeat;}
+.wrap6 .bd .jingcaicehua .cehua-hd h3{float:left;font-size:14px;}
+.wrap6 .bd .jingcaicehua .cehua-hd h3 a{color:#0C6F05;}
+.wrap6 .bd .jingcaicehua .cehua-hd a.more{float:right;color:#121212;}
+.wrap6 .bd .jingcaicehua .cehua-bd{width:276px;float:left;border-left:1px solid #DBDEDE;border-right:1px solid #DBDEDE;padding:10px 12px;}
+.wrap6 .bd .jingcaicehua .cehua-bd dl{width:77px;float:left;padding:5px 8px 10px 7px;}
+.wrap6 .bd .jingcaicehua .cehua-bd dt{width:77px;float:left;}
+.wrap6 .bd .jingcaicehua .cehua-bd dt img{width:73px;height:73px;padding:1px;border:1px solid #D3D7D6;float:left;}
+.wrap6 .bd .jingcaicehua .cehua-bd dd{width:77px;float:left;line-height:20px;text-align:center;}
+.wrap6 .bd .jingcaicehua .cehua-bd dd a{color:#333;}
+.wrap6 .bd .jingcaicehua .cehua-bd li{width:276px;float:left;line-height:20px;color:#000;}
+.wrap6 .bd .jingcaicehua .cehua-bd li a{color:#000;}
+.wrap6 .bd .jingcaicehua .cehua-ft{width:302px;height:4px;float:left;background:url(//mat1.gtimg.com/worldcup/images/huizong/cehua_ft.jpg) no-repeat;overflow:hidden;}/*  |xGv00|1e6dd982c4507a094f45f18fef3b27ca */

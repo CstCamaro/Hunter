@@ -1,0 +1,549 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN' 'http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>图片展示|楼盘动态|房产图库|报价|新房__腾讯房产频道</title>
+<meta http-equiv="content-type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="keywords" content="图片展示,楼盘动态,房产图库,报价,新房__腾讯房产频道">
+<meta name="description" content="图片展示,楼盘动态,房产图库,报价,新房__腾讯房产频道">
+<script type="text/javascript" src="//mat1.gtimg.com/house/js/houseapp/photo/2015pics/aq_common_v2.js"></script><!-- 解决domxss漏洞 -->
+<link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/house/css/2015/pics/pics.min_v10.css"/>
+<script>
+var out = {"baseInfo":{"currentType":1,"currentTypeName":"\u6237\u578b\u56fe","FHouseId":184144,"FHouseName":"\u946b\u78ca\u68ee\u6797\u6e56","FHouseUrl":"zz_184144","FPriceName":"\u5747\u4ef7","FPrice":11800,"FPriceUnit":"\u5143\/\u5e73\u65b9\u7c73"},"cityInfo":{"FCityId":"12","FCityName":"\u90d1\u5dde","FSubName":"zz"},"picTypes":[{"FType":1,"FPicAlbumName":"\u6237\u578b\u56fe","num":39},{"FType":2,"FPicAlbumName":"\u4ea4\u901a\u56fe","num":1},{"FType":3,"FPicAlbumName":"\u5916\u666f\u56fe","num":147},{"FType":4,"FPicAlbumName":"\u5b9e\u666f\u56fe","num":287},{"FType":5,"FPicAlbumName":"\u6548\u679c\u56fe","num":15},{"FType":6,"FPicAlbumName":"\u6837\u677f\u95f4","num":16},{"FType":7,"FPicAlbumName":"\u89c4\u5212\u56fe","num":3},{"FType":8,"FPicAlbumName":"\u914d\u5957\u56fe","num":10},{"FType":11,"FPicAlbumName":"\u6c99\u76d8\u56fe","num":10}],"relatedTags":[{"tagname":"\u540c\u4ef7\u4f4d\u697c\u76d8","bosstagname":"tag_sameprice","tagurl":"http:\/\/db.house.qq.com\/index.php?mod=search&city=zz&NA=9001:12000"},{"tagname":"\u540c\u533a\u57df\u697c\u76d8","bosstagname":"tag_samedistrict","tagurl":"http:\/\/db.house.qq.com\/index.php?mod=search&city=zz&CA=12:3329"}],"promotionInfo":{"hasDiscount":0,"discountInfo":"\u7533\u8bf7\u56e2\u8d2d","kftId":0,"kftRtId":0,"issigned":0,"grouptitle":"\u6c42\u7ec4\u56e2","groupmsg":"\u6ee1100\u4eba\u5373\u53ef\u6210\u56e2","groupsignNum":"1"},"userinfo":{"isLogin":false,"info":{"name":"","sex":"","mobile":"","email":""}}};
+var db_houseid = out.baseInfo.FHouseId;
+
+var baseInfo = out.baseInfo;
+var cityInfo = out.cityInfo;
+var gcityinfo = out.gcityinfo;
+var promotionInfo = out.promotionInfo;
+
+var g_house_info = {
+    'FCity' : out.cityInfo.FSubName,
+    'FCityId' : out.cityInfo.FCityId,
+    'FId' : out.baseInfo.FHouseId,
+    'FName' : out.baseInfo.FHouseName,
+    'FGroupbuyNum' : out.promotionInfo.groupsignNum
+};
+var g_city_info = {'FId' : g_house_info.FCityId};
+var g_house_kft_info = promotionInfo;
+var g_user_info = out.userinfo;
+</script>
+<script language=javascript>
+//获取页面的大小
+function FgetPageSize() {
+    if (FBrowser.isIE6)
+        return {
+            width : document.body.scrollWidth,
+            height : document.body.scrollHeight
+        };
+    if (document.documentElement)
+        return {
+            width : document.documentElement.scrollWidth,
+            height : document.documentElement.scrollHeight
+        };
+    else
+        return {
+            width : document.body.scrollWidth,
+            height : document.body.scrollHeight
+        };
+}
+
+//获取窗口的大小
+function FgetWindowSize() {
+    if (FBrowser.isIE6 || FBrowser.isOpera)
+        return {
+            width : document.body.clientWidth,
+            height : document.documentElement.clientHeight || document.body.clientHeight || 0
+        };
+    else
+        return {
+            width : document.documentElement.clientWidth,
+            height : document.documentElement.clientHeight
+        };
+}
+
+//浏览器类型检测
+var FBrowser=(function(){
+    var ua = navigator.userAgent;
+    var isOpera = Object.prototype.toString.call(window.opera) == '[object Opera]';
+    return {
+        isIE:             !!window.attachEvent && !isOpera,
+        isOpera:          isOpera,
+        isSafari:         ua.indexOf('AppleWebKit/') > -1,
+        isFirefox:        ua.indexOf('Gecko') > -1 && ua.indexOf('KHTML') === -1,
+        MobileSafari:     /Apple.*Mobile.*Safari/.test(ua),
+        isChrome:         !!window.chrome
+    };
+})();
+</script>
+</head>
+<body class="w1000">
+<div id="hd">
+    <div id="header">
+        <a class="f_l" target="_blank" title="腾讯房产" href="http://db.house.qq.com" housebussboss="Breadcrumb_qqhouse|||2634"><img width="128" height="30" alt="腾讯房产" src="//mat1.gtimg.com/house/2015pics/house_logo.png"></a><span  class="f_l" id="nav"></span>
+    </div>
+    <div class="clearfix goback" style=" display:none;"><a href="http://data.auto.qq.com/piclib/index.shtml">&lt;  返回图片列表</a></div>
+</div>
+<div id="bd" class="clearfix">
+    <div class="block with_rt">
+        <div class="main">
+            <div class="wrap">
+                <div id="pic_focus">
+                    <div id="playbox" class="playbg">
+                        <div id="title"></div>
+                        <a id="download" href="" target="_blank" title="查看大图" housebussboss="botton_picsource|||2634"></a>
+                        <a id="downloadBtn" title="点击下载" housebussboss="botton_download|||2634"></a>
+                        <div class="titlebg" style="display:none"></div>
+                        <div id="mouseOverleft" style="width:50%;position:absolute;left:0;">
+                            <div class="pageLeft" style="display:none">
+                                <span><a href="javascript:void(0);" onFocus="this.blur()"></a></span>
+                            </div>
+                            <div class="pageLeft-bg" style="display:none">
+                            </div>
+                        </div>
+                        <div id="mouseOverright" style="width:50%;position:absolute;right:0;">
+                            <div class="pageRight" style="display:none">
+                                <span><a href="javascript:void(0);" onFocus="this.blur()"></a></span>
+                            </div>
+                            <div class="pageRight-bg" style="display:none">
+                            </div>
+                        </div>
+                        <div id="end" style="">
+                            <a href="javascript:void(0)" class="close"></a>
+                            <div class="end-inner">
+                                <div class="info"></div>
+                                <div class="pics">
+                                    <h4>猜你喜欢：</h4>
+                                    <ul id="picslist"></ul>
+                                </div>
+                            </div>
+                            <div class="endbg"></div>
+                        </div>
+
+                        <div class="picWarp">
+                            <div class="picTd">
+                                <img src="" id="PicSrc" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallMain">
+                        <div class="smallPic">
+                            <a href="javascript:void(0);" onFocus="this.blur()" class="f_r" id="goright"  title="下一组"></a><a href="javascript:void(0);" onFocus="this.blur()" class="f_l" id="goleft"  title="上一组"></a>
+
+                            <div class="f_l" id="SmallWarp" style="width: 725px;">
+                                <ul id="Smailllist" class="pic" style="width: 1450px;"></ul>
+                                <a href="javascript:void(0)" onFocus="this.blur()" class="mask" style="left: 580px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="side">
+            <div id="side_info" class="side leftCol">
+                <div class="houseinfo clearfix"></div>
+                <div class="taglist"></div>
+                <p class="mark"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="warp">
+    <div class="picTmp surroundHouse">
+        <div class="hd"><h3>周边楼盘推荐</h3></div>
+
+        <div class="bd">
+            <ul class="picList" id="surround"></ul>
+        </div>
+    </div>
+</div>
+
+
+    <!--楼盘导航开始-->
+    	<!--楼盘导航开始-->
+<div id="floorNav" class="floorNav">
+	<div class="layout">
+        <div class="hd yh">
+            <h2>楼盘导航</h2>
+        </div>
+        <div class="bd">
+            <ul>
+                <li class="cf">
+                    <span class="fl">区县</span>
+                    <p class="fl">
+                            	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo2NyQ2Nw==" bosszone="31">郑州高新区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo1NiQ1Ng==" bosszone="31">二七区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo1NCQ1NA==" bosszone="31">中原区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo2MyQ2Mw==" bosszone="31">新郑市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo1MyQ1Mw==" bosszone="31">金水区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo1MiQ1Mg==" bosszone="31">管城区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo1MSQ1MQ==" bosszone="31">郑东新区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo1MCQ1MA==" bosszone="31">郑州经济技术开发区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo1OCQ1OA==" bosszone="31">惠济区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo1NyQ1Nw==" bosszone="31">中牟县</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo2MiQ2Mg==" bosszone="31">荥阳市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo2MCQ2MA==" bosszone="31">郑上新区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjoyNTYyJDI1NjI=" bosszone="31">航空港区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjoxMjk2JDEyOTY=" bosszone="31">平原新区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjo2OCQ2OA==" bosszone="31">新密市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzc5JDMzNzk=" bosszone="31">焦作市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzc1JDMzNzU=" bosszone="31">濮阳市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzcyJDMzNzI=" bosszone="31">登封</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzY0JDMzNjQ=" bosszone="31">鹤壁市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzYzJDMzNjM=" bosszone="31">周口市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzU5JDMzNTk=" bosszone="31">济源市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzUwJDMzNTA=" bosszone="31">开封</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzQ0JDMzNDQ=" bosszone="31">信阳市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzQzJDMzNDM=" bosszone="31">商丘市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzQyJDMzNDI=" bosszone="31">安阳市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzQxJDMzNDE=" bosszone="31">新乡市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzM1JDMzMzU=" bosszone="31">许昌</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzMyJDMzMzI=" bosszone="31">漯河</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzMxJDMzMzE=" bosszone="31">驻马店</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzMwJDMzMzA=" bosszone="31">平顶山</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzI5JDMzMjk=" bosszone="31">南阳市</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMzI4JDMzMjg=" bosszone="31">洛阳</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMjgyJDMyODI=" bosszone="31">汴西新城</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMjU4JDMyNTg=" bosszone="31">其他</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjozMDg3JDMwODc=" bosszone="31">云南区</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjoyNzc5JDI3Nzk=" bosszone="31">巩义</a>    	<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LUNBMV8xMjoxMDg4JDEwODg=" bosszone="31">海南</a>
+                    </p>
+                </li>
+                <li class="cf">
+                    <span class="fl">价格</span>
+                    <p class="fl">
+                        					<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LU5BMV8wOjcwMDAkMzAwMA==" bosszone="32">7000以下</a>					<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LU5BMV83MDAxOjkwMDAkMzAwMQ==" bosszone="32">7000-9000</a>					<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LU5BMV85MDAxOjEyMDAwJDMwMDI=" bosszone="32">9000-1.2万</a>					<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LU5BMV8xMjAwMToxNTAwMCQzMDAz" bosszone="32">1.2万-1.5万</a>					<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LU5BMV8xNTAwMToyMDAwMCQzMDA0" bosszone="32">1.5万-2万</a>					<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LU5BMV8yMDAwMTo5OTk5OSQzMDA1" bosszone="32">2万以上</a>
+                    </p>
+                </li>
+                <li class="cf">
+                    <span class="fl">特色</span>
+                    <p class="fl">
+                        		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzU5JDU5" bosszone="33">小户型</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzYwJDYw" bosszone="33">loft</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzYzJDYz" bosszone="33">水景地产</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzcxJDcx" bosszone="33">豪华社区</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzcyJDcy" bosszone="33">生态宜居</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzc0JDc0" bosszone="33">旅居地产</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzc1JDc1" bosszone="33">公园地产</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzc3JDc3" bosszone="33">地铁沿线</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzgwJDgw" bosszone="33">花园洋房</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzgyJDgy" bosszone="33">投资地产</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzkwJDkw" bosszone="33">打折优惠</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzk0JDk0" bosszone="33">婚房</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzk1JDk1" bosszone="33">改善住宅</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzk2JDk2" bosszone="33">现房</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzk3JDk3" bosszone="33">低总价</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzk4JDk4" bosszone="33">品牌开发商</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzExMSQxMTE=" bosszone="33">刚需房</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzExMiQxMTI=" bosszone="33">不限购</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzExMyQxMTM=" bosszone="33">养老地产</a>		<a target="_blank" href="http://db.house.qq.com/index.php?mod=search&city=12#LXNtXzEtQ0IxXzExNCQxMTQ=" bosszone="33">海景地产</a>
+                    </p>
+                </li>
+                <li class="state cf">
+                	<i>腾讯声明：</i>本频道旨在为广大网友提供更多信息，不对所刊载的信息的准确性、完整性提供任何保证。所载文章、数据等内容仅供参考，参考本站信息进行房产、家居等交易所造成的任何后果与本网站无关，风险自担。
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!--版权开始-->
+    	<style>
+.tcopyright {width:960px;margin:0 auto;padding:8px 0;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both;}
+.tcopyright .en{font-family:Arial;}
+.tcopyright a{color:#333;text-decoration: none;}
+.tcopyright a:hover{color:#bd0a01;text-decoration: underline;}
+</style>
+<div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+	<div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私权保护</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+	</div>
+  	<div class="en">Copyright &copy; 1998 - 2018 Tencent. All Rights Reserved</div>
+    <div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+	</div>
+</div><!--[if !IE]>|xGv00|57a3dc790eacb5ed09e884cb869826c7<![endif]--><!--[if !IE]>|xGv00|7ab5e828bb7be0b97418f7e89c68132d<![endif]-->
+    <!--版权结束-->
+    <style>
+    .tcopyright {width:1000px;margin:0 auto;padding:18px 0 8px;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both; color:#fff;}
+    .tcopyright .en{font-family:Arial;}
+    .tcopyright a{color:#fff;text-decoration: none;}
+    .tcopyright a:hover{color:#fff;text-decoration: underline;}
+    </style>
+</div>
+<!--楼盘导航结束-->
+<div style="display:none;">
+<script language="JavaScript" type="text/javascript" src="//mat1.gtimg.com/ping.js"></script>
+<script language="javascript">
+	//注意:
+	//（1）、boss-pgv-XXX1是栏目名，请用你自已定义的栏目名替换其中的XXX1
+	//（2）、自定义栏目最多只支持3级，如下面的boss-pgv-XXX1，boss-pgv-XXX2，boss-pgv-XXX3
+	//（3）、自定义栏目名必须以boss-pgv-做为前缀，且其中不能含有点(.)，下划线(_)
+	//（4）、自定义栏目名必须发给PGV这边备案，可以联系alvazhang
+	if(typeof(pgvMain) == 'function'){
+		 if(window.location.host == 'photo.house.qq.com'){
+				var colSite = window.location.host.replace(/.qq.com$/,'').replace(/\./g, '-');
+				pvCurDomain = "photo.house.qq.com";
+				var pgvInfo = "L."+colSite+".bpgv-zz";
+				if (typeof(pgvInfo) != 'undefined') {
+						pgvMain({pgUserType:pgvInfo});
+				} else {
+						pgvMain();
+				}
+				
+		  }else{
+
+			        function inHref(str)
+					{
+					    return (window.location.href.indexOf(str) != -1) ? true : false;
+					}
+					function get_param(sName)
+					{
+					    var reg = new RegExp("(^|&)" + sName + "=([^&]*)(&|$)");
+					    if (window.location.search.substr(1).match(reg))
+					    {
+					        return RegExp.$2;
+					    }else
+					    {
+					        return null;
+					    }
+					}
+					function getCity(url)
+					{
+					    if(typeof g_city_info != 'undefined'){
+					        return g_city_info.FSubName;
+					    }else{
+					        url = url.substring(url.indexOf(".com")+5);
+					        url = url.substring(0,url.indexOf("_"));
+					        if (url == "" || url == null)
+					        {
+					            return get_param("city");
+					        }
+					
+					        return url;
+					    }
+					}
+					function urlPregMatch(patternStr)
+					{
+						var pattern = new RegExp(patternStr);
+						return pattern.test(window.location.href);
+					}
+					function getHouseId()
+					{
+						if(typeof g_house_info != 'undefined'){
+							return g_house_info.FId;
+					    }else{
+					    	var match =  window.location.href.match(/db\.house\.qq\.com\/[a-zA-Z]+\_([0-9a-zA-Z\_\-]+)/);
+					    	return (match==null) ? false : match[1];
+					    }
+					
+					}
+					var housepgv_city = getCity(window.location.href);
+				
+				    var housepgv_houseid = getHouseId();
+				
+				    var housepgv_business = '';
+				
+				    if(inHref("info"))
+				    {
+				    	housepgv_business = "info";
+				    }else if(inHref("news"))
+				    {
+				    	housepgv_business = "news";
+				    }else if(inHref("photo"))
+				    {
+				    	housepgv_business = "photo";
+				    }else if(typeof g_page_type != 'undefined' && g_page_type == 'search')
+				    {
+				    	housepgv_business = "search";
+				    }else if(inHref("pic"))
+				    {
+				    	housepgv_business = "pic";
+				    }else if(inHref("comment_"))
+				    {
+				    	housepgv_business = "commentreply";
+				    }else if(inHref("comment"))
+				    {
+				    	housepgv_business = "comment";
+				    }else if(inHref("price"))
+				    {
+				    	housepgv_business = "price";
+				    }else if(inHref("video"))
+				    {
+				    	housepgv_business = "video";
+				    }else if(inHref("compare"))
+				    {
+				    	housepgv_business = "compare";
+				    }else if(inHref("calculator"))
+				    {
+				    	housepgv_business = "calculator";
+				    }else if(inHref("kanfang"))
+				    {
+				    	housepgv_business = "kanfang";
+				
+				    	if(urlPregMatch('.*kanfangtuan\/?$'))
+				    	{
+				    		housepgv_business += ";kanfang_index";
+				    	}else if(urlPregMatch('.*kanfangtuan\/kft\_[0-9]+\/route\_[0-9]+\/?$'))
+				    	{
+				    		housepgv_business += ";kanfang_route";
+				    	}else if(urlPregMatch('.*kanfangtuan\/mymsg\/?$'))
+				    	{
+				    		housepgv_business += ";kanfang_mymsg";
+				    	}else if(urlPregMatch('.*kanfangtuan\/myhouse\/?$'))
+				    	{
+				    		housepgv_business += ";kanfang_myhouse";
+				    	}
+				
+				    }else
+				    {
+				       housepgv_business = "index";
+				    }
+				
+				    housepgv_business = housepgv_business.split(";");
+				    vsPgvCol = "";
+				    for(var i=0; i<housepgv_business.length; i++)
+				    {
+				    	var business = housepgv_business[i];
+				    	if(vsPgvCol != "")
+				    	{
+				    		vsPgvCol += ";";
+				    	}
+				    	vsPgvCol += "pgv_house_"+business+";pgv_house_"+housepgv_city+"_"+business;
+				    }
+				
+				    vsPgvCol += ";pgv_house_city_" + housepgv_city;
+				
+				    if(housepgv_houseid !== false)
+				    {
+				    	vsPgvCol += ";pgv_house_house_"+housepgv_houseid;
+				    }
+				
+				   pvCurDomain = "db.house.qq.com";
+				    var pgvUrl = window.location.href.substring(window.location.href.indexOf(".com") + 4);
+				  
+				    if(typeof g_page_type != 'undefined' && g_page_type == 'search')
+				    {
+				         pgvUrl = "/search.html";
+					}
+					  var t = pgvUrl.indexOf('pgv_ref=aio');
+				    if( t != -1)
+				    {
+				        pgvUrl = pgvUrl.substring(0, t-1);
+				    }
+				     if(!inHref("info"))
+				    {
+				        pvCurUrl = pgvUrl;
+				    }
+				    if(""=="bsem")
+				    {
+				    
+				         var colSite = window.location.host.replace(/.qq.com$/,'').replace(/\./g, '-');
+				         
+					      if((typeof g_page_type != 'undefined' && g_page_type == 'search') || false==housepgv_houseid)
+						     var pgvInfo = "L."+ colSite +".bpgv-.bpgv-"+ housepgv_city +".bpgv-search";
+						     else
+						     var pgvInfo = "L."+ colSite +".bpgv-.bpgv-"+ housepgv_city +".bpgv-"+ housepgv_houseid;
+					}
+					
+					if (typeof(pgvInfo) != 'undefined') {
+						pgvMain({pgUserType:pgvInfo});
+					} else {
+						pgvMain();
+					}
+				}
+	}
+
+</script>
+</div>
+    <!--楼盘导航结束-->
+
+<!-- 看房团报名 -->
+<!-- 浮层页面代码 s -->
+<style type="text/css">
+html,body{ height:100%;width:100%;}
+.float_layer_box_warp{width:100%; height:100%;  position:fixed; _position:absolute; top:0px; left:0px;  z-index:1001;}
+.float_layer_box_bg{ width:100%; height:100%;  _position:absolute; top:0px; left:0px; background:#000;filter:alpha(opacity=60); /*IE*/ -moz-opacity:0.6; /*MOZ , FF*/opacity:0.6;/*CSS3, FF1.5*/ z-index:1000;}
+.float_layer_box_inner{ width:100%; height:100%;   _position:absolute; top:0px; left:0px;  z-index:1001;}
+.float_layer_box{margin:0px; padding:0px; width:620px; position:absolute; top:50%; margin-top:-300px; left:50%; margin-left:-310px; height:600px;  z-index:1002;}
+.float_layer_box_iframe{ width:100%; height:100%; position:absolute; top:0px; left:0px;filter:alpha(opacity=0);-moz-opacity:0}
+.float_layer_box {height: 200px;left: 50%;margin: -100px 0 0 -153px;padding: 0;position: absolute;top: 50%;width: 306px;z-index: 1002;}
+.bg_white{background-color:#fff}
+</style>
+<div class="float_layer_box_warp" id="alert_float_layer" style="display:none;">
+<div class="float_layer_box_bg"></div>
+<iframe class="float_layer_box_iframe" name="float_layer_box_iframe" id="float_layer_box_iframe" frameborder="0"></iframe>
+<div class="float_layer_box_inner" >
+<div class="float_layer_box">
+</div> <!--float_layer_box end-->
+</div> <!--float_layer_box_inner end-->
+</div> <!--float_layer_box_warp end-->
+<!-- 浮层页面代码 e -->
+<div id="login_div" style="display: none; position: fixed; _position:absolute;_bottom:auto; z-index: 1000000; padding: 0pt; width: 372px; height: 210px; top: 50%; left: -500px; margin: -105px 0px 0px -186px;">
+    <div id="nologin_div" style="display:none;position:absolute;bottom:1px;left:1px;height:30px;overflow:hidden;text-align:center;font:14px/30px '微软雅黑','黑体';background:url(//mat1.gtimg.com/house/datalib/kft/login_bg.png) left top repeat-x;">
+        <iframe width="100%" height="100%" src="" style="display:none;"></iframe>
+        <span style="color:#808080">没有QQ号码？</span><a href="javascript:void(0);" onclick="kft_gb_user_anonymous();return false;" style="color:#3d990f; background:url(//mat1.gtimg.com/house/datalib/kft/login_bg.png) right -30px no-repeat; padding-right:22px;display:inline-block;">快速报名</a>
+    </div>
+	<iframe name="login_frame" id="login_frame" frameborder="0" scrolling="auto" width="100%" height="100%" src=""></iframe>
+</div>
+<!-- 填写资料 s -->
+<div class="pcPop baomin tipsV" id="resgInfo" >
+    <div class="hd">
+        <h2>报名填写资料</h2>
+        <a  title="" href="javascript:;" class="closeBnt" onclick="signup_close();return false;">关闭</a>
+    </div>
+    <div class="bd">
+        <form id="form_gb_signup" action="//db.house.qq.com/index.php?mod=kanfang&act=signup" target="ifr_1" method="post">
+			<input type="hidden" id="gb_cityid" name="gbcityid" value="">
+			<input type="hidden" id="gb_houseid" name="houseid" value="">
+			<input type="hidden" id="gb_kftid" name="kftid" value="">
+			<input type="hidden" id="gb_kftrtid" name="kftrtid" value="">
+			<input type="hidden" id="gb_ut" name="ut" value="1">
+			<input type="hidden" id="gb_refer" name="refer" value="" />
+			<input type="hidden" id="gb_pagetitle" name="pageTitle" value="" />
+            <div class="tbody" ><span class="name"><em>*</em>姓　名：</span><input  id="gb_name" name="name" class="txt" type="text"><label><input  value="1" id="gb_sex_mr" name="sex" type="radio">先生</label><label><input value="2" id="gb_sex_miss" name="sex" type="radio">女士</label></div>
+            <div class="tbody" ><span class="name"><em>*</em>手　机：</span><input  id="gb_mobile" name="mobile" class="txt" type="text"></div>
+            <div class="textIntr" id="gb_errmsg" style="display:none;">请正确填写联系手机号码</div>
+            <div class="bnt"><button onclick="SendBoss2660('house_web', 'signup', '');signup_submit();return false;">报名</button></div>
+            <div class="shenm"><span class="name"></span><input id="gb_announce" name="announce" checked="" type="checkbox">&nbsp;我已阅读并同意<a href="http://house.qq.com/ad/shenming.htm" target="_blank">《腾讯房产活动声明》</a></div>
+        </form>
+    </div>
+</div>
+<!-- 填写资料 e -->
+<div style=" display:none;" class="overFour" id="d_gb_signup_msg">
+	<a href="javascript:void(0)" onclick="_signup_info_msg_clear();return false;" style="z-index:10050; "></a>
+	<div style="padding-top:35px; margin-top:20px;">
+        <span style=" color:#E77826; font-weight:bold;" id="gb_signup_msg">报名成功！</span><br><br>
+   	    <input type="button" value="确 定" style="cursor:pointer;" onclick="_signup_info_msg_clear();return false;">
+    </div>
+</div>
+
+<!-- 看房团报名的iframe -->
+<iframe id="ifr_1" name="ifr_1" src="" style="display:none;"></iframe>
+
+</body>
+<script type="text/javascript" src="//mat1.gtimg.com/house/js/houseapp/photo/2015pics/jquery-1.9.1.min_v1.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/house/js/houseapp/photo/2015pics/core_v21.js" charset="utf-8"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/house/js/houseapp/pics_kft_signup_v3.js"></script>
+
+<script language="javascript"  src="//mat1.gtimg.com/ping.js"></script>
+
+<script language=javascript>
+var bindBossSignup = function(bid,surl,purl,channel,info){
+    if(info == -999 || info == -998){
+	    return false;
+    }
+    bid == undefined && (bid='');
+    surl == undefined && (surl='');
+	purl == undefined && (purl='');
+	channel == undefined && (channel='');
+	info == undefined && (info='');
+	var a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+	var iQQ=(a==null?"":unescape(a[2]));
+	try{
+        var autoBossImg = new Image(1,1);
+		var timestamp = Date.parse(new Date());
+		var autourl = 'http://btrace.qq.com/kvcollect?ftime=&sIp=&iQQ='+iQQ+'&sBiz=house_picbottom&sOp='+purl+'&iSta=&iTy='+bid+'&iFlow='+timestamp+'&sUrl='+escape(surl)+'&sRef=&sPageId='+channel+'&sPos='+info;
+		autoBossImg.src = autourl;
+	} catch (e) {}
+}
+
+//提交结果
+function submit_result(code, msg, data)
+{
+	if(2 == data['gb_ut']){
+		// boss_statistics(1631,'islogin');//携带登录状态的
+	} else if(1 == data['gb_ut']){
+		// boss_statistics(1631,'notlogin');//未携带登录状态的
+	}
+
+	if(0 == code){
+		// boss_statistics(1631,'signupsucess');//携带登录状态的
+		var callback = g_gb_callback;
+		g_gb_callback = '';
+
+		signup_close();
+        bindBossSignup('2634','','data_grouponroll');
+		_signup_info_msg_show("报名成功");
+
+		if('function' == typeof callback)
+		{
+			callback();
+		}
+	}else if(1 == code){
+	}else if(2 == code){
+	}else if(3 == code){
+		// boss_statistics(1631,'signupdup');//携带登录状态的
+		var houseid = FId('gb_houseid').value;
+		var routeid = FId('gb_kftrtid').value;
+
+		_signup_info_err_show(msg);
+	}else if(code < 0){
+		// boss_statistics(1631,'signuperr');//携带登录状态的
+		_signup_msg_show(code);
+	}
+	return false;
+}
+
+/*-- 楼盘报名 --*/
+signup_init_info('homepage', g_city_info, g_house_info, g_house_kft_info, g_user_info);
+</script>
+<script language=javascript>
+    if(typeof(pgvMain) == 'function'){
+        pvCurDomain = "db.house.qq.com";
+        pvCurUrl = "";
+        pgvMain();
+    }
+</script>
+<!-- 用于boss统计的iframe -->
+<iframe id="pgv_iframe" name="pgv_iframe" style="display:none;"></iframe>
+</html><!--[if !IE]>|xGv00|18868cedd51bc6f4ca6c23c8dd17a205<![endif]-->

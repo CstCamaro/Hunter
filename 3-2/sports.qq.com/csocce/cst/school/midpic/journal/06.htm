@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>校园足球——杂志</title>
+<link rel="stylesheet" type="text/css" href="http://sports.qq.com/magazine/curls/magazine.css" />
+<script type="text/javascript" src="http://sports.qq.com/magazine/curls/jquery-1.2.3.pack.js"></script>
+<script type="text/javascript" src="http://sports.qq.com/magazine/curls/jquery.jcarousel.pack.js"></script>
+<script type="text/javascript" src="http://sports.qq.com/magazine/curls/thickbox.js"></script>
+<link rel="stylesheet" type="text/css" href="http://sports.qq.com/magazine/curls/jquery.jcarousel.css" />
+<link rel="stylesheet" type="text/css" href="http://sports.qq.com/magazine/curls/thickbox.css" />
+<link rel="stylesheet" type="text/css" href="http://sports.qq.com/magazine/curls/skin.css" />
+<script type="text/javascript"> 
+ 
+// Set thickbox loading image
+tb_pathToImage = "//mat1.gtimg.com/sports/magazine/curls/loading-thickbox.gif";
+var index_img = '';
+var mycarousel_itemList = [
+    {url: "http://img1.gtimg.com/sports/pics/hv1/27/254/1082/70421847.jpg", title: "title1"},
+    {url: "http://img1.gtimg.com/sports/pics/hv1/144/223/1082/70414059.jpg", title: "title2"},
+    {url: "http://img1.gtimg.com/sports/pics/hv1/153/253/1082/70421718.jpg", title: "title3"},
+    {url: "http://img1.gtimg.com/sports/pics/hv1/200/226/1082/70414880.jpg", title: "title4"},
+    {url: "http://img1.gtimg.com/sports/pics/hv1/149/228/1082/70415339.jpg", title: "title5"},
+    {url: "http://img1.gtimg.com/sports/pics/hv1/30/233/1082/70416495.jpg", title: "title6"},
+    {url: "http://img1.gtimg.com/sports/pics/hv1/238/234/1082/70416958.jpg", title: "title7"},
+    {url: "http://img1.gtimg.com/sports/pics/hv1/224/238/1082/70417964.jpg", title: "title8"},
+    {url: "http://img1.gtimg.com/sports/pics/hv1/227/242/1082/70418987.jpg", title: "title9"},
+    {url: "http://img1.gtimg.com/sports/pics/hv1/189/245/1082/70419714.jpg", title: "title10"},
+	{url: "http://img1.gtimg.com/sports/pics/hv1/66/246/1082/70419846.jpg", title: "title11"},
+	{url: "http://img1.gtimg.com/sports/pics/hv1/146/247/1082/70420181.jpg", title: "title12"},
+	{url: "http://img1.gtimg.com/sports/pics/hv1/173/248/1082/70420463.jpg", title: "title13"},
+	{url: "http://img1.gtimg.com/sports/pics/hv1/117/249/1082/70420662.jpg", title: "title14"},
+	{url: "http://img1.gtimg.com/sports/pics/hv1/171/250/1082/70420971.jpg", title: "title15"},
+	{url: "http://img1.gtimg.com/sports/pics/hv1/94/251/1082/70421149.jpg", title: "title16"},
+	{url: "http://img1.gtimg.com/sports/pics/hv1/103/252/1082/70421413.jpg", title: "title17"}
+	];
+ 
+function mycarousel_itemLoadCallback(carousel, state)
+{
+    for (var i = carousel.first; i <= carousel.last; i++) {
+        if (carousel.has(i)) {
+            continue;
+        }
+        if (i > mycarousel_itemList.length) {
+            break;
+        }
+ 
+        // Create an object from HTML
+        var item = jQuery(mycarousel_getItemHTML(mycarousel_itemList[i-1])).get(0);
+ 
+        // Apply thickbox
+        tb_init(item);
+ 
+        carousel.add(i, item);
+    }
+};
+ 
+/**
+ * Item html creation helper.
+ */
+function mycarousel_getItemHTML(item)
+{
+    var url_m = item.url.replace(/_s.jpg/g, '_m.jpg');
+    return '<a href="' + url_m + '" title="' + item.title + '"><img src="' + item.url + '"  border="0" alt="' + item.title + '" /></a>';
+};
+ 
+jQuery(document).ready(function() {
+								
+	
+	function magazine(n){
+		jQuery('#mycarousel').jcarousel({
+        size: mycarousel_itemList.length,
+		scroll:1,
+		start:n,
+		//buttonNextHTML:'<div>next</div>',
+		//buttonPrevHTML:'<div>prev</div>',
+        itemLoadCallback: {onBeforeAnimation: mycarousel_itemLoadCallback}
+    });
+	};
+	jQuery('#magazine-index').click(function(){
+									//	alert(0);
+		magazine(1);
+		$('#mycarousel').css('left','0');
+	})
+	jQuery('#magazine-footer').click(function(){	
+									//	 alert(1);
+		var l = mycarousel_itemList.length;
+		magazine(l);									
+	});
+	magazine(1);
+});
+
+
+</script>
+</head>
+<body>
+<div class="magazine">
+  <div class="magazine-header">
+    <div class="magazine-tool"> <a href="#" id='magazine-index'><img src="//mat1.gtimg.com/sports/magazine/curls//zashishouye.gif" /></a><a href="#" id='magazine-footer'><img src="//mat1.gtimg.com/sports/magazine/curls//zazhifengdi.gif" /></a> </div>
+  </div>
+  <div class="magazine-con"  id="slider">
+    <ul id="mycarousel" class="jcarousel-skin-ie7">
+      <!-- 内容会被动态加载到这里 -->
+    </ul>
+  </div>
+  <div class="magazine-footer"> </div>
+</div>
+</body>
+</html>
+<!--[if !IE]>|xGv00|f117fbd1c8e62f5f7eebedc2ea6dcdb7<![endif]-->

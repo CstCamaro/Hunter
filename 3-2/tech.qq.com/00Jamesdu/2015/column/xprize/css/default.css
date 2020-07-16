@@ -1,0 +1,328 @@
+/*
+**xprize**
+*/
+h1,h2,h3,h4,h5,h6,a{
+	font-family: Microsoft Yahei;
+}
+a:hover{
+	color: #c00;
+	text-decoration: none;
+}
+.banner{
+	background: #000 url(//mat1.gtimg.com/tech/00Jamesdu/2015/column/xprize/images/triangle-pattern.png) 20% 30% repeat;
+	width: 100%;
+	height: 113px;
+}
+.nav{
+	height: 113px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.nav ul{
+	float: right;
+}
+.nav ul li{
+	float: left;
+	
+	line-height: 113px;
+}
+.nav .logo{
+	float: left;
+	margin: 30px 10px;
+}
+.nav .logo img{
+	width: 300px;height: auto;
+}
+.nav .logo a{
+	overflow: hidden;
+	display: block;
+}
+.nav ul li a.nav_1{
+	border-color:#da442f;
+	border-left:1px solid;
+	border-left-color:#888!important;
+}
+.nav ul li a.nav_2{
+	border-color:#bcd441;
+}
+.nav ul li a.nav_3{
+	border-color:#e28335;
+}
+.nav ul li a.nav_4{
+	border-color:#8635e2;
+}
+.nav ul li a.nav_5{
+	border-color:#2eb2a5;
+}
+.nav ul li a.nav_6{
+	border-color:#fbb82b;
+}
+.nav a:hover{
+	background: #4b4b4f;
+	text-decoration: none;
+}
+.nav a:hover span.toen{
+	color: #fff;
+}
+.nav ul li a{
+	font-size: 16px;
+	color: #fff;
+	font-family: Microsoft Yahei,Airal;
+	height: 110px;
+	border-bottom: 3px solid #888;
+	
+	padding: 0 20px;
+
+	display: block;
+	border-right:1px solid;
+	border-right-color:#888!important;
+
+}
+.nav ul li a span{
+	display: block;
+	text-align: center;
+}
+.nav ul li a span.toen{
+	font-size: 12px;
+	color: #c7c7c7;
+	margin-top: -90px;
+	font-style: italic;
+	
+}
+.nav ul li{
+	position: relative;
+}
+.nav ul li ul{
+	background: #000 url(//mat1.gtimg.com/tech/00Jamesdu/2015/column/xprize/images/triangle-pattern.png)  repeat;
+	display: none;
+	position: absolute;
+	
+	
+
+}
+.nav ul li ul li{
+float: none;
+height: 40px;
+line-height: 40px;
+
+}
+.nav ul li ul li span{
+	display: none;
+}
+.nav ul li ul li a{
+	height: 40px;
+line-height: 40px;
+font-weight: normal;
+border-bottom: 1px dashed #058;
+font-size: 14px;
+color: #888;
+
+}
+.nav ul li ul li a:hover{
+	color: #fff;
+}
+
+/*layout*/
+
+.layout{
+	margin: 30px auto;
+	overflow: hidden;
+}
+.layout .chief{
+	width: 660px;
+}
+.layout .extra{
+	width: 330px;
+}
+.layout .chief h2 a{
+	color: #000;
+	padding: 10px 0;
+	display: block;
+}
+.layout .chief h2 a:hover{
+	color: #c00;
+	text-decoration: none;
+}
+.layout .extra .catbox h3{
+	display: block;
+	border-bottom: 3px solid #2e4d90;
+	padding: 5px 0;
+	margin-bottom: 15px;
+
+}
+.layout .extra .catbox .bd ul li{
+	margin: 10px 0;
+}
+.layout .extra .catbox .bd ul li a{
+	font-size: 16px;
+	background: url(//mat1.gtimg.com/tech/2012/2012keji/dot.png) no-repeat 0 center;
+	padding-left: 15px;
+	display: block;
+	color: #222;
+	margin-bottom: 10px;
+}
+.layout .extra .catbox .bd ul li a:hover{
+	text-decoration: none;
+	color: #c00;
+}
+.layout .extra .catbox .bd ul li span,.layout .extra .catbox .bd ul li span a{
+	display: block;
+	line-height: 1.6em;
+	color: #555;
+	text-indent: 2em;
+	font-size: 12px;
+
+}
+.layout .extra .catbox .bd ul li span a{
+	display: inline;
+	background: none;
+}
+.layout1 h2{
+		display: block;
+	border-bottom: 3px solid #2e4d90;
+	padding: 5px 0;
+	margin-bottom: 15px;
+}
+.prize ul{
+	width: 1020px;
+	margin-right: -20px;
+}
+.prize ul li{
+	width: 490px;
+	margin:10px 20px 10px 0;
+	float: left;
+}
+.prize ul li h3 a{
+	display: block;
+	color: #222;
+}
+.prize ul li h3 a:hover{
+	color: #c00;
+}
+.prize ul li img{
+	padding: 10px 0;
+}
+.prize ul li p{
+	color: #555;
+	line-height: 1.6em;
+}
+
+.float {
+	background: #f1f1f1;
+	padding: 20px;
+	width: 960px;
+}
+.float #f_l{
+ width: 230px;
+ float: left;
+}
+.float #f_l a{
+	display: block;
+	padding: 10px 0 10px 10px;
+	cursor: pointer;
+}
+.float #f_l a.cur,.float #f_l a:hover{
+	background: #ccc;
+	border-bottom:3px solid #2e4d90;
+	padding-bottom: 7px;
+	padding-right: 10px;
+	color: #000;
+}
+.float #f_right{
+	width: 700px;
+	float: right;
+	
+}
+.float #f_right li{
+	display: none;
+}
+.float #f_right li.cur{
+	display: block;
+}
+.float #f_right p{
+	font-size: 14px;
+	line-height: 1.6em;
+	margin-bottom: 10px;
+}
+.catbox .bd .f14{
+	line-height: 1.4em;
+	color: #999;
+}
+
+.container p{
+	font-size: 16px;
+	font-family: Microsoft Yahei;
+	line-height: 1.4em;
+	margin: 10px 0;
+}
+.container p strong{
+	font-size: 20px;
+	margin: 20px 0;
+}
+.article h2{
+	font-size: 24px;
+	padding: 10px 0;
+	border-bottom: 1px solid #f1f1f1;
+}
+.article{
+	margin-bottom: 15px;
+}
+.bbs{
+	margin-top: 30px;
+}
+
+.lasted h3{
+	display: block;
+	border-bottom: 3px solid #2e4d90;
+	padding: 5px 0;
+	margin-bottom: 15px;
+
+}
+.lasted  ul li{
+	margin: 10px 0;
+	padding: 10px 0;
+	border-bottom: 1px dashed #f1f1f1;
+	display: block;
+	overflow: hidden;
+}
+.lasted  ul li a{
+	font-size: 16px;
+	background: url(//mat1.gtimg.com/tech/2012/2012keji/dot.png) no-repeat 0 center;
+	padding-left: 15px;
+	display: block;
+	color: #222;
+	margin-bottom: 10px;
+	margin-left: 180px;
+}
+.lasted  ul li a:hover{
+	text-decoration: none;
+	color: #c00;
+}
+.lasted  .opic{
+	width: 160px;
+	height: 80px;
+	margin-left: 0;
+	float: left;
+	display: block;
+	background: none;
+	padding-left: 0;
+}
+.lasted  .opic img{
+	width: 160px;
+	height: 80px;
+}
+.lasted  ul li span{
+	margin-left: 180px;
+}
+.lasted  ul li span,.lasted  ul li span a{
+	display: block;
+	line-height: 1.6em;
+	color: #555;
+	font-size: 12px;
+
+}
+.lasted  ul li span a{
+	display: inline;
+	background: none;
+}
+/*  |xGv00|eb3eed25dc2b259bb2de1451c53023dd */

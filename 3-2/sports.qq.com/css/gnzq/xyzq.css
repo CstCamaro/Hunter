@@ -1,0 +1,108 @@
+/*Style by Artis*/
+body{margin:0;padding:0;background:#fdffed;}
+form,input,select,ul,li,p,h1,h2,h3,h4,h5,h6,p,dd,dt,dl{margin:0;padding:0;}
+ul,ol,li{list-style:none;}
+body,table,select,input,div{font-size:12px; color:#333}
+img{border:none;}
+a{color:#333; text-decoration:none;}
+a:hover{color:#c00; text-decoration:underline;}
+
+.nl,.nl a,.nl a:hover,a.nl,a.nl:hover{text-decoration: none;}
+.ul,.ul a,.ul a:hover,a.ul,a.ul:hover{text-decoration: underline;}
+
+.font-w-b{font-weight:bold;}
+.font-s-14{font-size:14px;}
+.font-s-16{font-size:16px;}
+.font-s-18{font-size:18px;}
+.font-s-20{font-size:20px;}
+.font-f-ht{font-family:"ºÚÌå";}
+.font-f-v{font-family:Verdana;}
+.text-ind{text-indent:2em;}
+.text-ind2{text-indent:1em;}
+
+.color-white ,.color-white a{color:#fff;}
+.color-white a:hover{color:#fff;}
+.color-black ,.color-black a{color:#333;}
+.color-black a:hover{color:#c00;}
+.color-gray ,.color-gray a{color:#b1b2b0;}
+.color-gray a:hover{color:#c00;}
+.color-orange ,.color-orange a{color:#d66a41;}
+.color-orange a:hover{color:#c00;}
+.color-green ,.color-green a{color:#609e40;}
+.color-green a:hover{color:#c00;}
+.color-red ,.color-red a,.color-red a:hover{color:#c00;}
+.color-blue ,.color-blue a{color:#0b649c;}
+.color-blue a:hover{color:#c00;}
+.color-tt,.color-tt a{color:#b75400;}
+.color-tt a:hover{color:#c00;}
+
+.line-h-21{line-height:21px;}
+.line-h-22{line-height:22px;}
+.line-h-24{line-height:24px;}
+.line-h-25{line-height:25px;}
+.line-h-28{line-height:28px;}
+.line-h-30{line-height:30px;}
+
+.float-l{float:left;}
+.float-r{float:right;}
+
+.text-l{text-align:left;}
+.text-r{text-align:right;}
+.text-c{text-align:center;}
+
+.clear{clear:both; overflow:hidden; font-size:0; height:0px;}
+
+.dis{display:block;}
+.undis{display:none;}
+
+/* CSS¿Õ°× */
+.box-hr10,.box-hr{margin:0 auto;font-size:1px;clear:both;}
+.box-hr10{height:10px;}
+
+/* BACKGROUND */
+#topBg{background:url(//mat1.gtimg.com/sports/images/gnzq/s.jpg) center top no-repeat;overflow:auto;}
+.dot{background:url(//mat1.gtimg.com/sports/images/gnzq/dot.jpg) left bottom repeat-x;}
+.dot2{background:url(//mat1.gtimg.com/sports/images/gnzq/dot.jpg) left top repeat-x;}
+.arr{background:url(//mat1.gtimg.com/sports/images/gnzq/arr.jpg) 10px 14px no-repeat;padding-left:20px;}
+
+/* BORDER */
+.imgbor1 img{border:1px solid #c7c7c7;}
+
+/* MARGIN PADDING*/
+
+/* FOCUS */
+#focus{width:555px;height:250px;padding:5px 5px 6px 7px;background:url(//mat1.gtimg.com/sports/images/gnzq/s_23.jpg) no-repeat;margin-left:9px;}
+
+/* HACK */
+
+/* TABS */
+#tabs{height:40px;padding:6px 0 0 8px;}
+#tabs div{float:left;display:inline;margin-right:2px;width:77px;height:26px; cursor:pointer;}
+#t1{background:url(//mat1.gtimg.com/sports/images/gnzq/t1off.jpg) no-repeat;}
+#t2{background:url(//mat1.gtimg.com/sports/images/gnzq/t2off.jpg) no-repeat;}
+#t3{background:url(//mat1.gtimg.com/sports/images/gnzq/t3off.jpg) no-repeat;}
+#t4{background:url(//mat1.gtimg.com/sports/images/gnzq/t4off.jpg) no-repeat;}
+#t1.on{background:url(//mat1.gtimg.com/sports/images/gnzq/t1on.jpg) no-repeat;}
+#t2.on{background:url(//mat1.gtimg.com/sports/images/gnzq/t2on.jpg) no-repeat;}
+#t3.on{background:url(//mat1.gtimg.com/sports/images/gnzq/t3on.jpg) no-repeat;}
+#t4.on{background:url(//mat1.gtimg.com/sports/images/gnzq/t4on.jpg) no-repeat;}
+
+/* ÄÚÈÝÇø */
+.box{width:960px; margin:0 auto;}
+.box2{width:970px; margin:0 auto;background:url(//mat1.gtimg.com/sports/images/gnzq/s_20.jpg); overflow:auto;}
+.nav{width:126px;float:left;}
+.side{width:844px;float:right;}
+.main{width:839px;float:left;}
+.right-line{width:5px;float:right;height:732px;background:url(//mat1.gtimg.com/sports/images/gnzq/s_22.jpg) no-repeat;}
+.title1{}
+.title1 span{float:left;font-size:14px;font-weight:bold;color:#fdffea;padding-left:25px;line-height:23px;}
+.title1 a{float:right;padding-right:8px;vertical-align:bottom;line-height:21px;}
+.title2{}
+.title2 span{float:left;font-size:14px;font-weight:bold;color:#609e40;padding-left:25px; vertical-align:bottom;line-height:21px;}
+.title2 a{float:right;padding-right:8px;vertical-align:bottom;line-height:21px;font-size:14px;}
+.title3{}
+.title3 span{float:left;font-size:14px;font-weight:bold;color:#fdffea;padding-left:25px; vertical-align:bottom;line-height:30px;}
+.title3 a{float:right;padding-right:8px;vertical-align:bottom;line-height:30px;font-size:14px;}
+.bottom-line{width:970px;margin:0 auto;height:24px;background:url(//mat1.gtimg.com/sports/images/gnzq/s_30.jpg) no-repeat;clear:both;}
+
+.swf_content{width:567px;height:577px;}/*  |xGv00|d105998f9de7ab8e0625a8331859fc12 */

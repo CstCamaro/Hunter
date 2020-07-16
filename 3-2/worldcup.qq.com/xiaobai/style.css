@@ -1,0 +1,75 @@
+/* by curls reset */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li, prefieldset, lengend, button, input, textarea, th, td { 
+    margin: 0;
+    padding: 0;
+}
+body,button, input, select, textarea { font: 12px/21px "\5b8b\4f53", sans-serif; color:#2b2b2b;}
+h1,h2,h3, h4,h5,h6{ font-size: 100%; font-weight:normal;}
+address, cite, dfn, em, var { font-style: normal; }
+small { font-size: 12px; }
+ul, ol { list-style: none; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+legend { color: #000; }
+fieldset, img { border: none; }
+button, input, select, textarea {font-size: 100%;}
+table {border-collapse: collapse;border-spacing: 0;}
+.tc{ text-align:center}
+
+/* global */
+.w960{ width:960px; margin:0 auto;}
+.wrap{background:#d4ba86 url(//mat1.gtimg.com/worldcup/2010/curls/wrap_bg.png) center top no-repeat; margin-top:1px;}
+h2{ font-size:14px; font-weight:700;}
+.head{ background:url(//mat1.gtimg.com/worldcup/2010/curls/banner.png) no-repeat; height:266px; width:960px; margin:0 auto;}
+
+.main{ width:954px; margin:0 auto; border:3px solid #933605;border-top:none; background:#fff}
+.nav{ background:url(//mat1.gtimg.com/worldcup/2010/curls/nav_bg.png); height:44px; text-align:center}
+	.nav a{ display:inline-block;padding:0 21px;color:#d1b57b;line-height:44px; font-size:18px; font-family:"ºÚÌå";}
+	.nav a:hover,.nav a.hover{ background:#fff url(//mat1.gtimg.com/worldcup/2010/curls/ah-bg.png) left top repeat-x;position:relative; text-decoration:none;}
+	a.undef{ color:#b8813f;}
+	a.undef:hover{ background:none;}
+.daodu{ background:#fff url(//mat1.gtimg.com/worldcup/2010/curls/daodu_bg.png) left top no-repeat; margin-bottom:15px;}
+	.daodu_tit{ padding:22px 42px 0 168px; height:90px;}
+	a.detailed{color:#bc441f;}
+	.daodu_bd{padding:0 12px;}
+	.daodu_bd img{border:1px solid #545454;}
+	.daodu_bd_tit{ width:387px;font-size:14px; line-height:25px; color:#2b2b2b; float:right;border-bottom:1px solid #e7dcc9; height:256px;}
+	.daodu_bd_tit h2{ background:url(//mat1.gtimg.com/worldcup/2010/curls/daodu_bd_titbg.png); height:56px; line-height:56px; text-align:center;border-bottom:1px solid #e7dcc9; font-size:16px; color:#730d00; font-family:"ºÚÌå"; }
+	.daodu_bd_tit p{ padding:8px 24px ; text-indent:2em;}
+	.con{ padding:0 12px; overflow:hidden; zoom:1;}
+		.con_l{ width:514px; background:url(//mat1.gtimg.com/worldcup/2010/curls/con_l_bg.png) left top no-repeat;border:2px solid #e6d9c9; padding:0 8px; float:left; margin-bottom:10px;}
+		.con_l_tit{} 
+		.con_l_tit h2{ background: url(//mat1.gtimg.com/worldcup/2010/curls/con_l_titbg1.png) no-repeat left top; height:36px; line-height:36px; font-size:14px;color:#730d00; font-weight:700;}
+		.con_l_tit h2.bg{background: url(//mat1.gtimg.com/worldcup/2010/curls/con_l_titbg.png) no-repeat left top;}
+		.con_l_bd{overflow:hidden;zoom:1;}
+			.con_pic{ width:138px; height:120px; border:1px solid #eedfc6; text-align:center; background:#fff;padding-top:4px; float:left; margin:12px 19px 18px 0;}
+			.border_none{ border:none;}
+			.con_pic p { line-height:28px;}
+			.con_l_text{ margin-top:12px;}
+			.con_l_text h3{ font-size:14px; font-weight:700; line-height:30px;}
+		.con_l_bd hr{ border:1px dashed #e5d0a7; clear:both; height:1px; font-family:"ËÎÌå";}
+		.con_r{ width:387px; float:right; margin-bottom:10px;}
+		.con_r h2{ background:url(//mat1.gtimg.com/worldcup/2010/curls/con_r_bg.png); height:36px;padding-left:28px; line-height:36px;}
+		.con_r .con_r_bd{ background:#f8f3eb; overflow:hidden; zoom:1; margin-bottom:12px;}
+		.con_r_jieshao p{color:#bc441f;}
+		.con_r_text{ float:left; width:210px; margin-top:14px;}
+		.con_r_text h3{ float:left; background:#eedfc6;padding:0 5px;}
+		.con_r_text p{ clear:left;}
+		.con_rpic{ border:1px solid #eedfc6; text-align:center; background:#fff;padding:5px; float:left; display:inline; margin:14px 11px 2px 15px;}
+		.conr_text1{ background:#f0e5d4; clear:both;}
+		.conr_text1 span{ background:#f8f3eb url(//mat1.gtimg.com/worldcup/2010/curls/cor.png) 63px 3px no-repeat; display:block; height:11px;}
+		.conr_text1 p{padding:11px 22px;}
+		.conr_text1 p strong{color:#bc441f;}
+		.conr_text2 p{padding:11px 22px;}
+		.con_r hr{ border:1px solid #e7dcc9; height:1px;clear:both; overflow:hidden; margin-bottom:10px;}
+		.conr_text3{background:#f8f3eb; text-align:center; padding:24px 0;}
+		.con_r form{}
+		.con_r form h3{ display:block; text-align:center; font-weight:700px; font-weight:700;}
+		.con_r form p{ padding:10px 0 10px 80px;}
+		.con_r form .p0{padding:10px 0;}
+		.con_r form label{ display:inline-block; width:125px;}
+		
+	.pinglun{ border:1px solid #cdcdcd; clear:both; margin-bottom:10px;}
+/* common */
+
+/*  |xGv00|e72f21745417d350c82139eaad912676 */

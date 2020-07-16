@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="高清,在线观看,视频,演员表,剧情" />
+<meta name="description" content="视频," />
+<title> - 高清在线观看 - 腾讯视频</title> 
+<link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/news/css/zt_video/zt_video.css" media="screen" />
+<script type="text/javascript">
+	document.domain = "qq.com";
+	var ScriptEngineMajorVersion = function(){};
+	var ScriptEngineMinorVersion = function(){}
+</script>
+<!--[if IE 6]>
+		<script type="text/javascript">
+		document.execCommand("BackgroundImageCache", false, true);
+		</script>
+	<![endif]-->
+</head> 
+<body> 
+<div class="mod_player_wrap">
+	<div class="mod_inner">
+		<!-- 分段播放器区域 开始 -->
+		<div class="mod_player_section" id="mod_inner">
+			<div class="mod_player" id="mod_player" style=""></div>
+			<!-- 分段播放列表 开始 -->
+			<div class="mod_video_list_section" style="display:;">
+				<div class="mod_roll" id="mod_videolist">
+					<h3>节目片段：</h3>
+					<div class="mod_cont">
+						<ul></ul>
+					</div>	
+				</div>
+			</div>	
+			<!-- 分段播放列表 结束 -->	
+			
+						
+		</div>		
+		<!-- 分段播放器区域 结束 -->
+		
+	</div>
+</div>
+<script language="javascript">
+	 //document.domain="qq.com";
+	 function picerr(obj,i){
+		obj.onerror=null;
+		obj.src="http://imgcache.qq.com/mediastyle/tenvideo/img/nopic/"+(i||1)+".jpg";
+	 }
+	var d0 = new Date();
+	var timePoints=new Array();		
+	function _sreport(){
+		if(Math.random()<0.1){ 
+			var s = [];
+			for(var i=0;i<timePoints.length;i++)
+			if(!!timePoints[i]){
+				s.push((i+1)+"="+(timePoints[i]-d0));
+			}
+			var url = "http://isdspeed.qq.com/cgi-bin/r.cgi?flag1=1422&flag2=202&flag3=4&"+s.join("&");		 
+			var img = new Image();
+			img.src=url;
+		}
+	}
+	timePoints[0]=new Date();
+</script>
+<!--<script type="text/javascript" src="js/txv.base.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/txv.playutil_v2.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/txv.staticplay.min.js" charset="utf-8"></script>-->
+<script type="text/javascript" src="//mat1.gtimg.com/www/js/zt/txv.play.min_110720.js" charset="utf-8"></script>
+<script language="javascript">
+	function setValue(videoinfo){
+		var jsonData = typeof videoinfo == 'string' ? eval("("+videoinfo+")") : videoinfo;
+		var cid = jsonData.cid;
+		var content = jsonData.video;
+		var args = {
+				pageType:1,
+				tplType:2,
+				weiboTopic:"",
+				commentType:2,
+				coverTitle:"",
+				subTypeId:1,
+				hasPeriod:true,
+				relateType:0,
+				scoreSNS:0,
+				secTitle:"",
+				hasSideBar:true,
+				coverType:23,
+				coverid:"",
+				coverPic:"",
+				isVideoUnion:true,
+				simpleImgCnt:4,
+				showBook:true,
+				useHotrankRmd:true,
+				isSerial:true,
+				duration:"",
+				vid:""
+		};
+		var transfer = function(time){
+			if(!time) return 0;
+			if(time.toString().indexOf('\'') > -1) return time;
+			var tmpTime = parseInt(time / 60) +'\''+ time%60 +'"';
+			return tmpTime;
+		}
+		args.vid = content.length > 0 ? content[0].vid+'' : '0';
+		args.duration = content.length ? content[0].long+'' : '0';
+		args.coverid = cid;
+		args.coverTitle = content[0].title;
+		
+		if(typeof jsonData.adplay != 'undefined'){
+			args.adplay = jsonData.adplay;
+		}
+		if(typeof jsonData.autoplay != 'undefined'){
+			args.autoplay = jsonData.autoplay;
+		}
+		if(typeof content[0].coverpic!= 'undefined'){
+			args.pic = content[0].coverpic;
+			content[0].pic = content[0].coverpic;
+		}
+		txv.playpg.init(args);
+		var videoList = '';
+		for(var i=0,len = content.length; i<len; i++){				
+			videoList += '<li id="li_'+content[i].vid+'">';
+			videoList += '<im'+'g height="56" width="86" src="'+content[i].pic+'">';
+			videoList += '<p>';
+			videoList += '<a id="'+content[i].vid+'" href="javascript:void(0)">'+content[i].title+'</a>';
+			videoList += '<span> '+transfer(content[i].long)+' </span>';
+			videoList += '</p>';
+			videoList += '</li>';
+		}
+		var mod_videolist = document.getElementById('mod_videolist');
+		if(mod_videolist){
+			var ul = mod_videolist.getElementsByTagName('ul')[0];
+			if(ul){
+				ul.innerHTML = videoList;
+				Live.txv.playUtil.comm.initVideoList();
+			}
+		}
+		_sreport();
+	}
+</script>
+</body>
+</html><!--[if !IE]>|xGv00|7abb6c6b5b8c117c176edef75c244ec9<![endif]-->

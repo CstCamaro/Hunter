@@ -1,0 +1,648 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="http://mat1.gtimg.com/www/icon/favicon2.ico"/>
+<title>关注车系_个人中心_汽车频道_腾讯网</title>
+<link href="http://mat1.gtimg.com/auto/css/car2013/ucenter/20140306/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	document.domain = 'qq.com';
+	var login = login || {};
+	login.loginSuccess=function(){};
+	window.TXCAR_infomation = {host:'http://u.auto.qq.com/',index:'index',version:'20140306'};
+</script>
+</head>
+
+<body><div id="topNav" class="mininav">
+	<div class="mininavInner">
+		<div id="mininav" class="mininavLeft" bosszone="mininav">
+	<div class="fl mt5">
+		<a id="mbphone" target="_blank" class="mobileIcon" href="http://news.qq.com/mobile/" bosszone="appnews">手机新闻客户端</a><a id="wap" class="wap" target="_blank" href="http://3gqq.qq.com" bosszone="mbphone">WAP版</a><a id="ipad" target="_blank" class="ipadIcon" href="http://www.qq.com/itime/" bosszone="ipad">iPad版</a>|<a target="_self"  class="forIndex" target="_blank" href="http://www.qq.com/sheweishouye.htm">设为首页</a><a id="webmap" target="_blank" class="qqMap" href="http://www.qq.com/map/" bosszone="webmap">网站地图</a>
+	</div>
+	<div id="qqHelp" class="fl">
+		<a target="_blank" id="qqHelpLink" class="qqHelp" href="http://support.qq.com/discuss/806_1.shtml" bosszone="help">帮助</a>
+		<div id="qqHelpContent">
+			<ul>
+				<li><a id="service" target="_blank" href="http://kf.qq.com/index_login.html" bosszone="service">腾讯客服</a></li>
+				<li><a id="appeal" target="_blank" href="http://aq.qq.com/ss?source_id=2384" bosszone="appeal">帐号申诉</a></li>
+				<li><a id="advice" target="_blank" href="http://support.qq.com/discuss/806_1.shtml" bosszone="advice">反馈建议</a></li>
+				<li><a id="helpcenter" target="_blank" href="http://kf.qq.com/special_auto/qqbz.html" bosszone="helpcenter">帮助中心</a></li>
+				<li><a onclick="followMeBegin();registerZone2({bossZone:'new',url:''},1);return false;" href="javascript:void(0);">新版介绍</a></li>
+				<li><a onclick="registerZone2({bossZone:'zhutipifu',url:''},1);" target="_blank" href="http://www.qq.com/history/">主题回顾</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--[if !IE]>|xGv00|bef9a2b46f25babc66b319316be461af<![endif]-->
+<div id="logkey" class="mininavRight" bosszone="logkey">
+	<div class="fr" id="loginAll">
+		<!--
+		<a href="http://www.pengyou.com" class="pengyouLogin" id="friend" target="_blank"></a>
+		--->
+		<a target="_blank" id="qmail" class="mailLogin" href="http://mail.qq.com" bosszone="qmail"></a>
+		<a target="_blank" id="qzone" class="qzoneLogin" href="http://qzone.qq.com" bosszone="qzone"></a>
+		<a target="_blank" id="weibo" class="weiboLogin" href="http://t.qq.com?pref=qqcom.home.weiboIN" bosszone="weibo"></a>
+		<a id="onekey" target="_self" onclick="userLogin();" class="login" href="javascript:void(0);" bosszone="onekey"></a>
+		<!--
+		<div id="newGuide" style="width:78px;height:28px;float:right;margin-right:7px;display:inline;" onclick="registerZone2({bossZone:'zhutipifu',url:''},1);" title="主题皮肤回顾">
+			<a href="http://www.qq.com/history" target="_blank">主题皮肤回顾</a>
+		</div>
+		-->
+	</div>
+	<div style="display:none;" class="fr" id="logined">
+		<!--
+		<div id="pengyouIcon" class="fr">
+			<a href="http://www.pengyou.com" class="pengyou" id="pengyouNum" style="padding:0 16px 0 15px;" target="_blank"></a>
+			<div class="loginSmartBox undis" id="pengyouSmart" style="right:0;">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="pengyouTitle">朋友网:</li>
+							<li id="pengyouPassiveLi" class="undis"><a href="http://www.pengyou.com" target="_blank">我的动态 (<span id="pengyouPassiveNum"></span>)</a></li>
+							<li id="pengyouInitLi" class="undis"><a href="http://www.pengyou.com" target="_blank">朋友动态 (<span id="pengyouInitNum"></span>)</a></li>
+							<li id="pengyouAboutLi" class="undis"><a href="http://www.pengyou.com" target="_blank">我的参与 (<span id="pengyouAboutNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+		-->
+		<div class="fr" id="mailIcon" bosszone="qmailinfor">
+			<a target="_blank" style="padding:0 15px;" id="mailNum" class="mail" href="http://mail.qq.com"></a>
+			<div style="right:0;" id="mailSmart" class="loginSmartBox undis">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="mailTitle">QQ邮箱:</li>
+							<li class="undis" id="inboxLi"><a target="_blank" href="http://mail.qq.com">未读邮件 (<span id="inboxNum"></span>)</a></li>
+							<li class="undis" id="bottleLi"><a target="_blank" href="http://mail.qq.com">漂流瓶 (<span id="bottleNum"></span>)</a></li>
+							<li class="undis" id="gmailLi"><a target="_blank" href="http://mail.qq.com">群邮件 (<span id="gmailNum"></span>)</a></li>
+							<li class="undis" id="dmailLi"><a target="_blank" href="http://mail.qq.com">文件夹 (<span id="dmailNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+		<div class="fr" id="qzoneIcon" bosszone="qzoneinfor">
+			<a target="_blank" style="padding:0 16px;" id="qzoneNum" class="qzone" href="http://qzone.qq.com"></a>
+			<div style="right:0;" id="qzoneSmart" class="loginSmartBox undis">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="qzoneTitle">QQ空间:</li>
+							<li class="undis" id="passiveLi"><a target="_blank" href="http://qzone.qq.com">我的动态 (<span id="passiveNum"></span>)</a></li>
+							<li class="undis" id="InitLi"><a target="_blank" href="http://qzone.qq.com">好友动态 (<span id="InitNum"></span>)</a></li>
+							<li class="undis" id="AboutLi"><a target="_blank" href="http://qzone.qq.com">我的参与 (<span id="AboutNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+		<div class="fr" id="weiboIcon" bosszone="weiboinfor">
+			<a target="_blank" style="padding:0 14px;" id="weiboNum" class="weibo" href="http://t.qq.com?pref=qqcom.home.weiboenter"></a>
+			<div style="left:0;" id="weiboSmart" class="loginSmartBox undis">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="weiboTitle">腾讯微博:</li>
+							<li class="undis" id="msgLi"><a target="_blank" href="http://t.qq.com/messages/inbox?pref=qqcom.home.wbinbox">私信 (<span id="msgNum"></span>)</a></li>
+							<li class="undis" id="atLi"><a target="_blank" href="http://t.qq.com/at?pref=qqcom.home.wbat">提到我的 (<span id="atNum"></span>)</a></li>
+							<li class="undis" id="fansLi"><a target="_blank" href="http://t.qq.com/follower.php?pref=qqcom.home.wbfollow">新增听众 (<span id="fansNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+		<div class="qqNameLayout fr">
+			<span class="qqName">您好，<span id="userName"></span> <span>[</span><a target="_self" id="loginOut" href="javascript:void(0);" bosszone="logquit">退出</a><span>]</span></span>|
+		</div>
+<!--
+		<div id="newGuide02" style="width:78px;height:28px;float:right;margin-right:7px;display:inline;" onclick="registerZone2({bossZone:'zhutipifu',url:''},1);" title="主题皮肤回顾">
+			<a href="http://www.qq.com/history" target="_blank">主题皮肤回顾</a>
+		</div>
+-->
+	</div>
+</div>
+	</div>
+</div>
+<!--QQ_takeove div AD begin...."l=QQ_takeove&log=off"-->
+<div id="QQ_takeover" class="l_qq_com" style="display:none;overflow:visible;"></div>
+<!--QQ_takeove AD end -->
+
+<div id="layoutBg" class="layoutBg"></div>
+<div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;z-index:9999;visibility:hidden;">
+	<iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src="about:blank"></iframe>
+</div>
+<div id="mininav_space"></div><div class="head_top layout mt25">
+	<!--logo-->
+	<div class="logo_wrap fl">
+		<a href="http://auto.qq.com/" target="_blank"><img src="http://mat1.gtimg.com/auto/2014/images/auto_logo.png" alt="" /></a>
+	</div>
+    <!-- 城市 -->
+    <div class="select_city fl"></div>
+	
+	<!--搜车-->
+	<div class="search_car fl">
+		<form method="get" target="_blank" action="http://cgi.data.auto.qq.com/php/search.php?fuzzy_search=1" >
+			<input class="search_ipt" type="text" value="" name="keyword" />
+			<a href="javascript:;" class="search_car_btn"></a>
+		</form>
+	</div>
+
+	<!--版式切换-->
+	<div class="tab_format fr">
+		<a href="http://auto.qq.com/" target="_self">阅读版</a>
+		<a href="###"  class="active">个人版</a>
+	</div>
+</div>
+
+<div class="mainLine"></div>
+<div class="mainWrapper margin-t15">
+	<div class="barL800">
+		<ul class="mainNav" id="tagTit_a">
+	<li><a href="./index" class="hover">个人首页</a></li>
+	<li><a href="./attent">我关注的车系</a></li>
+	<li><a href="./news">我最新的资讯</a></li>
+	<li><a href="./favor">我收藏的资讯</a></li>
+
+</ul>		<div id="tagBod_a">
+			<div class="tagBods_a dis">
+				<!-- 我关注的车系 -->
+				<div class="column1 chexi">
+	<div class="title">
+		<h2>我关注的车系</h2>
+		<h4>已关注<span class="number"></span>款，还可关注<span class="total"></span>款</h4>
+		<div class="chexiAdd carModelsTopBar">
+			<form action="http://uc.v_sqlli.auto.qq.com/doattent" id="AjaxAddCarModelsForm" method="GET">
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td valign="top"><div class="select">
+								<select name="cars" id="carbrand">
+									<option value="">选择品牌</option>
+								</select>
+								</div>
+							</td>
+							<td valign="top"><div class="select">
+								<select name="serie_id" id="carserial">
+									<option value="">选择车系</option>
+								</select>
+								</div>
+							</td>
+							<td valign="top"><input type="submit" value="添加" class="addBtn" id="AddCarModelsBtn"></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+	</div>
+	<div class="body">
+	
+		<ul id="myChexiIdx" class="clearfix">
+				<div id="NoModelList">您还未关注车系。</div>
+				</ul>
+	
+		<div class="recommandBar clearfix" id="RecommandBar">
+			<div class="l"><strong>您可能感兴趣:</strong></div>
+	        <div class="r"><a href="http://uc.v_sqlli.auto.qq.com/attent/recommand?offset=0&count=3" id="ForChangeBtn" target="_blank">换一换</a></div>
+		</div>      
+		<ul class="clearfix" id="RecommendList"></ul>
+		<div class="cls"></div>
+	</div>
+</div>
+				<a class="more" style="display:none" href="/attent">查看更多</a>
+<!-- 我最新的资讯 -->
+				<div class="column1 news">
+	<div class="title">
+		<h2>我最新的资讯</h2>
+	</div>
+	<div class="body">
+		<ul class="sort">
+			<li>
+				<label>按车系浏览：</label>
+				<a href="#0" class="on">全部</a>
+							</li>
+			<li>
+				<label>按新闻类型：</label>
+				<a href="#" >新闻</a>
+				<a href="#" >图片</a>
+				<a href="#" >视频</a>
+				<a href="#" >行情</a>
+				<a href="#" >导购</a>
+				<a href="#" >试驾</a>
+				<a href="#" >点评</a>
+			</li>
+		</ul>
+		<ul class="newsList">
+				<div id="NoModelList">当前还没有最新的资讯，点击 <a target="_self" href="/attent">这里</a> 关注相关车系后才能看到。</div>
+						
+			</ul>
+	
+	</div>
+</div>
+			<a class="more" style="display:none" href="/news">查看更多</a>
+<!-- 我收藏的资讯 -->
+				<div class="column1 news">
+	<div class="title">
+		<h2>我收藏的资讯</h2>
+		<a class="self" href="http://ilike.qq.com/" target="_blank">我的腾讯资讯</a>
+	</div>
+	<div class="body">
+			<div id="NoModelList">您还没有收藏资讯，点击 <a target="_self" href="./news">这里</a> 收藏感兴趣的车系资讯。</div>
+				</div>
+</div>				<a class="more" style="display:none" href="/favor">查看更多</a>
+			</div>
+		</div>
+	</div>
+	<div class="barR100">
+		<!-- 个人信息 -->
+		<div class="info">
+	<a href="http://vip.qq.com/my/index.html" target="_blank">
+		<img src="http://mat1.gtimg.com/auto/images/car2013/ucenter/header.gif" alt="" class="uhead"/>
+		<h3 class="uname"></h3>
+	</a>
+</div>
+			</div>
+	<div class="cls"></div>
+</div>
+<!--二维码-->
+<div class="layout">
+	<div class="contact">
+		<div class="v_code">
+			<img src="http://mat1.gtimg.com/auto/2014/images/v_code.jpg" alt="二维码" />
+		</div>
+		<div class="tips fl">
+			<p>扫描左侧的二维码</p>
+			<p>下载<a href="http://news.qq.com/mobile/" target="_blank">手机客户端</a>，随时随地看新闻</p>
+		</div>
+		<ul class="ct_way fr">
+			<li><a href="http://auto.qq.com/weixin/index.htm" target="_blank" class="link"><em class="wx"></em>微信官号</a></li>
+			<li><a href="http://e.t.qq.com/qqauto" target="_blank" class="link"><em class="wb"></em>微博官号</a></li>
+			<li>
+				<a href="javascript:;" id="hgIcon" role="button" tabindex="0" class="link"><em class="hg"></em>首页回顾</a>
+				<style type="text/css">
+.datebar{width:232px;height:224px;border:1px solid #dedede;position:absolute;z-index:999;background:#fff;left:-20px;top:30px;display:none}
+#newChannel,#newTime{width:64px;height:24px;border:1px solid #cfcfcf;font:12px/22px "simsun";position:absolute;left:15px;top:190px;}
+#newTime{left:84px}
+#selected_date{display:none}
+.calendar {width:203px;height:171px;position:absolute;left:15px;top:12px;}
+#calendar {font-size:12px;font-family:verdana;cursor:default;width:100%}
+#calendar td{text-align:center;font:12px/18px "Arial";color:#3C3C3C;cursor:pointer;width:22px;height:18px;border:0}
+#c_today{border:1px solid #d5d5d5;background:#e6e6e6}
+#c_today .newSelectThis{background:none;border: 1px solid #fff;color:#3C3C3C}
+.newDWrap{border:1px solid #fff;}
+.newSelectThis{background:#c00;color:#fff;border-color:#c00}
+#selectYM{width:203px;height:19px;padding-bottom:7px;border-bottom:1px solid #d0d0d0;margin-bottom:4px}
+#calendar_title{font:bold 14px/19px "Arial";text-align:center;width:99px;float:left}
+.selectDataBtn{width:20px;height:19px;cursor:pointer;float:left;background:url(http://mat1.gtimg.com/news/news2013/img/icons.png) no-repeat;display:inline}
+#newPreY{background-position:0 -1381px}
+#newPreM{background-position:0 -1400px;margin-left:10px}
+#newNextM{background-position:right -1400px}
+#newNextY{background-position:right -1381px;margin-left:10px}
+#newDataBtn{background:url(http://mat1.gtimg.com/news/news2013/img/bg.png) no-repeat 0 -240px;width:60px;height:24px;font:12px/24px "simsun";text-align:center;position:absolute;left:158px;top:190px;cursor:pointer}
+
+</style>
+<script language="javascript">
+function ShowDateFileBak()
+{
+    var myfm = $C("index_history");
+
+    if(myfm.Channel.selectedIndex==0){ alert("请选择频道"); return false;}
+    if(myfm.Year.value=="")   { alert("请选择年份"); return false;}
+    if(myfm.Month.value=="")  { alert("请选择月份"); return false;}
+    if(myfm.Day.value=="")    { alert("请选择日期"); return false;}
+    if(myfm.Time.selectedIndex==0)   { alert("请选择时间"); return false;}
+	
+    channel = myfm.Channel.options[myfm.Channel.selectedIndex].value;
+    year    = myfm.Year.value;
+    month   = myfm.Month.value;
+    day     = myfm.Day.value;
+    time    = myfm.Time.options[myfm.Time.selectedIndex].value;
+
+    if((year==2005 && month<10)||(year==2005 && month==10 && day<20))
+    {
+        alert("各频道首页往日回顾是从2005年10月20日开始的");
+		return false;
+    }
+	    
+    if(channel == "stock")
+    {
+    	loadurl = "http://finance.qq.com/stock/b/history/index"+year+month+day+time+".shtml";
+    }
+    else
+    {   
+    	loadurl = "http://"+channel+".qq.com/b/history/index"+year+month+day+time+".shtml";
+    }
+
+   // controlWindow=window.open(loadurl,"_blank");
+   $C("history_submit").action=loadurl;
+   $C("history_submit").submit();
+    return false;
+}
+</script>
+				<form id="history_submit" action="" method="get"  target="_blank"></form>
+				<div class="datebar"> 
+					<form id="index_history" onSubmit="return false">
+					  <input id="Year" type="hidden" value="" />
+					  <input id="Month" type="hidden" value="" />
+					  <input id="Day" type="hidden" value="" />
+						<select name="Channel" id="newChannel">
+							<option value="00" >频道</option>
+							<option value="www">首页</option>
+							<option value="news">新闻</option>
+							<option value="sports" >体育</option>
+							<option value="ent" >娱乐</option>
+							<option value="finance" >财经</option>
+							<option value="tech" >科技</option>
+							<option value="gamezone" >游戏</option>
+							<option value="auto" selected>汽车</option>
+							<option value="house" >房产</option>
+							<option value="edu" >教育</option>
+							<option value="book" >读书</option>
+							<option value="fashion" >时尚</option>
+							<option value="comic" >动漫</option>
+							<option value="astro" >星座</option>
+							<option value="gongyi" >公益</option>
+						  </select>
+						<div id="selected_date" style="width:74px;height:20px;padding:1px 20px 0 11px;background: url(http://mat1.qq.com/news/images1/index09/news_nbg1.gif) -260px -245px no-repeat;cursor:pointer; font:12px/20px simsun">请选择日期</div>
+						  <div class="calendar" id="rili">
+							<div id="calendar_contain"></div>
+						  </div>
+						  <select name="Time" id="newTime">
+							<option value="00" >时间</option>
+							<option value="am" selected> 9:00</option>
+							<option value="pm" >21:00</option>
+						  </select>
+					   <div role="button" tabindex="0" onClick="ShowDateFileBak();return false;" id="newDataBtn">查看</div>
+					</form>
+				
+				</div>
+				<script>
+					function $C(objectId) {
+				  if(document.getElementById && document.getElementById(objectId)) {
+				// W3C DOM
+				return document.getElementById(objectId);
+				  } else if (document.all && document.all(objectId)) {
+				// MSIE 4 DOM
+				return document.all(objectId);
+				  } else if (document.layers && document.layers[objectId]) {
+				// NN 4 DOM.. note: this won't find nested layers
+				return document.layers[objectId];
+				  } else {
+				return false;
+				  }
+				
+				}
+				var today = new Date();
+				var  hours=today.getHours();
+				var  minutes=today.getMinutes();
+				var UrlS= location.href;
+				var DtaId =location.href.split("/");
+				//alert(DtaId[5].substring(0,2));
+				function getFullYear(d)
+					{
+						yr=d.getYear();if(yr<1000)
+						yr+=1900;return yr;
+					}
+				
+					function JCalendar (year,month,date) {
+					var _date = arguments.length == 0 ? new Date() : new Date(year,month-1,date);
+					//实例变量
+					this.year = _date.getFullYear();
+					this.month = _date.getMonth() + 1;
+					this.date = _date.getDate();
+					this.fday = new Date(this.year,this.month-1,1).getDay();//每月第一天的前一天星期数
+					this.dayNum = new Date(this.year,this.month,0).getDate();//每月的天数
+					//成员变量，当前年月日
+					JCalendar.cur_year = this.year;
+					JCalendar.cur_month = this.month;
+					JCalendar.cur_date = _date.getDate();
+					setCurTime({F:$C("index_history"),Y:JCalendar.cur_year,M:JCalendar.cur_month,D:JCalendar.cur_date});
+				}
+				JCalendar.prototype.show = function(){
+					var fday = new Date(this.year,this.month-1,1).getDay();//每月第一天的星期数
+					//日历里的每个单元格的数据，预先定义一段空数组，对应日历里第一周空的位置。[注意星期天对应的数是0]
+					var date = new Array(fday > 0 ? fday : 0);
+					var dayNum = new Date(this.year,this.month,0).getDate();//每月的天数
+					var html_str = new Array();//保存日历控件的HTML代码
+					var date_index = 0;//date数组的索引
+					var weekDay = ["一","二","三","四","五"];
+					for(var j = 1; j <= this.dayNum; j++){//初始化date数组
+						date.push(j);
+					}
+					html_str.push("<div id='selectYM'><span id='newPreY' class='selectDataBtn' role='button' title='上一年份' onclick=\"JCalendar.update(-12);return false\"></span><span id='newPreM' class='selectDataBtn' role='button' title='上一月份' onclick=\"JCalendar.update(-1);return false\"></span><p id='calendar_title'>" + this.year + "年" + this.month + "月</p><span id='newNextM' class='selectDataBtn' role='button' title='下一月份' onclick=\"JCalendar.update(1);return false\"></span><span id='newNextY' class='selectDataBtn' role='button' title='下一年份' onclick=\"JCalendar.update(12);return false\"></span></div>");
+					html_str.push("<table id='calendar'>");
+					html_str.push("<tr>");
+					html_str.push("<td style='color:#CC0000;padding:0 0 4px'>日</td>");
+					for(var i = 0; i < 5; i++){//填充日历头
+						html_str.push("<td style='padding:0 0 4px'>" + weekDay[i] + "</td>");
+					}
+					html_str.push("<td  style='color:#008000;padding:0 0 4px'>六</td>");
+					html_str.push("</tr>");
+					//日历主体
+					var tmp;
+					for(var i = 0; i < 6; i++){//填充日期，6行7列
+						html_str.push("<tr>");
+						for(var j = 0; j < 7; j++){
+							tmp = date[date_index++];
+							tmp = tmp ? tmp : "";
+							if(tmp == this.date)
+								html_str.push("<td><div class='newDWrap' id='c_today'><div class='newDWrap' onclick='JCalendar.click(this)'>" + JCalendar.cur_date + "</div></div></td>");
+							else if(tmp == "")
+								html_str.push("<td></td>");
+							else
+								html_str.push("<td><div class='newDWrap' onclick='JCalendar.click(this)'>" + tmp + "</div></td>");
+						}
+						html_str.push("</tr>");
+					}
+					
+					html_str.push("</table>");
+					return html_str.join("");
+				}
+				//静态方法
+				JCalendar.update = function(_month){
+					var date = new Date(JCalendar.cur_year,JCalendar.cur_month - 1 + _month,1);
+					var fday = date.getDay();//每月第一天的星期数
+					var year = date.getFullYear();
+					var month = date.getMonth() + 1;
+					var dayNum = new Date(JCalendar.cur_year,JCalendar.cur_month  + _month,0).getDate();//每月的天数
+					var tds = document.getElementById("calendar").getElementsByTagName("td");
+					for(var i = 7; i < tds.length; i++)//清空日历内容
+						tds[i].innerHTML = "";
+					document.getElementById("calendar_title").innerHTML = year + "年" + month + "月";//更新显示年月
+					//更新当前年月
+					JCalendar.cur_year = year;
+					JCalendar.cur_month = month;
+					for(var j = 1; j <= dayNum; j++){
+						if(j == JCalendar.cur_date)
+							tds[6 + fday + j].innerHTML = "<div id='c_today'><div class='newDWrap' onclick='JCalendar.click(this)'>" + JCalendar.cur_date + "</div></div>";
+						else
+							tds[6 + fday + j].innerHTML = "<div class='newDWrap' onclick='JCalendar.click(this)'>" + j + "</div>";
+					}
+					JCalendar.onupdate(year,month,JCalendar.cur_date);
+				}
+				
+				JCalendar.onupdate = function(year,month,date){//日历更改时执行的函数，可以更改为自己需要函数,控件传递过来的参数为当前日期
+					//alert(year + "年" + month + "月" + date + "日");
+				}
+				
+				JCalendar.click = function(obj){
+					
+					var newOAllTableDiv = document.getElementById('calendar').getElementsByTagName('div');	
+					for(var i=0,len = newOAllTableDiv.length;i<len;i++){
+							//console.log(newOAllTableDiv[i].parentNode.tagName)
+							if(newOAllTableDiv[i].parentNode.tagName.toLowerCase() == 'td'){
+								newOAllTableDiv[i].className = 'newDWrap';
+								}
+						}
+					obj.className = 'newDWrap newSelectThis';
+					var tmp = document.getElementById("c_today");
+					
+					//tmp.innerHTML = "<div class='newDWrap' onmouseover=\"this.className='newDWrap'\" onmouseout=\"this.className='newDWrap'\" onclick='JCalendar.click(this)'>" + tmp.innerHTML + "</div>";
+				
+					JCalendar.cur_date = parseInt(obj.innerHTML);
+					obj.innerHTML =  obj.innerHTML ;
+					JCalendar.onclick(JCalendar.cur_year,JCalendar.cur_month,JCalendar.cur_date);
+				
+				}
+				
+				/**/
+				JCalendar.onclick = function (year,month,date){
+						//alert(today.getYear())
+						//alert("today is:" + year + "-" + month + "-" + date);
+						var mo =today.getMonth()+1; 
+						if(month.toString().length==1){
+							month = "0"+month.toString();
+						}
+						if(date.toString().length==1){
+							date = "0"+date.toString();
+						}
+						var ty=year.toString();
+						var tm=month.toString();
+						var td=date.toString();
+						var url;
+						switch(true){
+							case year >getFullYear(today):
+								ty=getFullYear(today);tm=mo;td=today.getDate();
+								alert("今天才"+getFullYear(today)+"年"+mo+"月"+today.getDate()+"号哦~");
+								break;
+							case (year==getFullYear(today))&&(month>mo):
+								ty=getFullYear(today);tm=mo;td=today.getDate();
+								alert("今天才"+getFullYear(today)+"年"+mo+"月"+today.getDate()+"号哦~");
+								break;
+							case (year==getFullYear(today))&&(month==mo)&&(date>today.getDate()):
+								ty=getFullYear(today);tm=mo;td=today.getDate();
+								alert("今天才"+getFullYear(today)+"年"+mo+"月"+today.getDate()+"号哦~");
+								break;
+							case (year ==getFullYear(today))&&(month==mo)&&(date==today.getDate()):
+								ty=getFullYear(today);tm=mo;td=today.getDate();
+								alert("您正在查看这个页面！");
+								break;
+							case isNaN(year):case isNaN(month):case isNaN(date):break;
+						}
+						setCurTime({F:$C("index_history"),Y:ty,M:tm,D:td})
+				
+				}
+				function setCurTime(a){
+						if(typeof a != "object")	return;
+						a.M=a.M.toString();
+						a.D=a.D.toString();
+						if(a.M.length==1){
+							a.M = "0"+a.M;
+						}
+						if(a.D.length==1){
+							a.D = "0"+a.D;
+						}
+						var f=a.F;
+						setSelected(f.Year,a.Y);
+						setSelected(f.Month,a.M);
+						setSelected(f.Day,a.D);		$C("selected_date").innerHTML=a.Y+"-"+(a.M.length==1?"0"+a.M:a.M)+"-"+(a.D.length==1?"0"+a.D:a.D);
+					}
+					//alert("0"+parseInt("02").toString())
+					function setSelected(a,b){//a:select obj,b:value index_history
+						if(!a || typeof a != "object")	return;
+						if(!b)	return;
+						a.value=b;
+						/*
+						var l=a.options.length;
+						for(var i=0;i<l;i++){
+							if(a.options[i].value == b){
+								a.options[i].selected = true;
+							}
+						}
+						*/
+					}
+				function opens(){
+				$C('rili').style.display='block';
+				}
+				function cloese(){
+				$C('rili').style.display='none';
+				}
+				  document.getElementById("calendar_contain").innerHTML = new JCalendar().show();
+				</script>
+			</li>
+			<li><a href="mailto:auto@tencent.com" target="_blank" class="link"><em class="us"></em>联系我们</a></li>
+		</ul>
+		
+	</div>
+</div>
+<!-- 公共底部 -->
+<style>
+.tcopyright {width:960px;margin:0 auto;padding:8px 0;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both;}
+.tcopyright .en{font-family:Arial;}
+.tcopyright a{color:#333;text-decoration: none;}
+.tcopyright a:hover{color:#bd0a01;text-decoration: underline;}
+</style>
+<div role="contentinfo" bosszone="footer" class="tcopyright" id="tcopyright">
+	<div>
+		<a rel="nofollow" target="_blank" href="http://www.tencent.com/">关于腾讯</a> | <a rel="nofollow" target="_blank" href="http://www.tencent.com/index_e.shtml">About Tencent</a> | <a rel="nofollow" target="_blank" href="http://www.qq.com/contract.shtml">服务协议</a> | <a rel="nofollow" target="_blank" href="http://www.qq.com/privacy.htm">隐私权保护</a> | <a rel="nofollow" target="_blank" href="http://open.qq.com/">开放平台</a> | <a rel="nofollow" target="_blank" href="http://www.tencentmind.com/">广告服务</a> | <a rel="nofollow" target="_blank" href="http://hr.tencent.com/">腾讯招聘</a> | <a rel="nofollow" target="_blank" href="http://gongyi.qq.com/">腾讯公益</a> | <a rel="nofollow" target="_blank" href="http://service.qq.com/">客服中心</a> | <a rel="nofollow" target="_blank" href="http://www.qq.com/map/">网站导航</a>
+	</div>
+  	<div class="en">Copyright &copy; 1998 - 2014 Tencent. All Rights Reserved</div>
+    <div>
+		<a rel="nofollow" target="_blank" href="http://www.tencent.com/">腾讯公司</a> <a rel="nofollow" target="_blank" href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml">版权所有</a>
+	</div>
+</div>
+<!--<script type="text/javascript" src="http://mat1.gtimg.com/auto/js/autoapp/ucenter/core.js?v=1.0"></script> 
+<script type="text/javascript" src="http://mat1.gtimg.com/auto/js/autoapp/ucenter/uc.js?v=1.0"></script>
+<script type="text/javascript" charset="utf-8" src="http://mat1.gtimg.com/auto/js/car2013/Koala.min.1.5.js"></script>
+http://js.data.auto.qq.com/car_public/1/manufacturer_list_json.js
+-->
+<a onclick="window.scrollTo(0,0);return false;" title="返回顶部" id="toTop" target="_self" href="#">返回顶部</a>
+<script type="text/javascript" charset="utf-8" src="http://mat1.gtimg.com/auto/js/car2013/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://mat1.gtimg.com/auto/js/car2013/ucenter/20140306/core.js"></script>
+<script type="text/javascript">
+function $o(o){return document.getElementById(o);}
+//返回顶部
+window.onscroll = function toTopHide(){
+	$o("toTop").style.display = document.documentElement.scrollTop + document.body.scrollTop > 189 ? "block" : "none";
+	!!window.ActiveXObject&&!window.XMLHttpRequest&&($o("toTop").style.top = eval(document.documentElement.scrollTop) + 510);//IE6返回顶部按钮定位
+} 
+//热门品牌列表
+var g_HotBrandList="大众 丰田 本田 日产 别克 奥迪 雪佛兰 福特 宝马 现代 比亚迪 马自达 奇瑞 长城";
+
+var VAR = {
+	CANCEL_FAVORITES_REQUEST : "/dounfavor",
+	ADD_FAVORITES_REQUEST : "/dofavor",
+	LOAD_NEWS_NUMBER_REQUEST : "/unread",
+	IS_NEWS_TYPE : false,
+	NEWS_PER_PAGE : 5
+};
+</script>
+
+<script  type="text/javascript"  src="http://pingjs.qq.com/ping.js"></script>
+<script  type="text/javascript" >
+if(typeof(pgvMain) == 'function')pgvMain();
+</script>
+</script>
+</body>
+</html>

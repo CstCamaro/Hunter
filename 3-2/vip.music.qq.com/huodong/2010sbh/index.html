@@ -1,0 +1,599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent. ISRD WEB Rebuilder." />
+<meta name="Copyright" content="Copyright (c) 2000-2009 Tencent." />
+<meta name="Description" content="Regulations of WEB Code in Tencent." />
+<meta name="Keywords" content="Tencent,重构,web,xhtml,css,javascript,api,seo" />
+<title>QQ音乐-世博歌曲大展播</title>
+<link href="http://imgcache.qq.com/ACT/music/vip/091218_expo/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="http://imgcache.qq.com/music/player/js/client.js"></script>
+<script type="text/javascript" src="http://imgcache.qq.com/music/portal_v2/js/vip_v2/vip_v2.js"></script>
+<script type="text/javascript" src="http://imgcache.qq.com/music/activity/2010sbh/main.js"></script>
+<script type="text/javascript">
+   var current_date = "2010-04-20"; 
+   if(/^%/.test(current_date)){
+     var now = new Date();
+     current_date = now.getFullYear() + '-' + (now.getMonth()+1) + '-' + now.getDate();
+   }
+   var left_days = countDays(current_date, '2010-5-1');
+   left_days = 0;
+</script>
+</head>
+<body>
+<!-- 通用活动头部 开始 -->
+<div class="g_top" id="g_top_l">
+  <div class="g_top_con">
+	<div class="inner">
+		<a class="logo" href="http://music.qq.com"><img src="http://imgcache.qq.com/music/act/g_top/img/g_top_logo_beta.png" alt="QQ音乐" /></a>
+		<a class="logo_green" href="http://vip.music.qq.com"><img src="http://imgcache.qq.com/music/act/g_top/img/logo_green.png" alt="QQ音乐绿钻" /></a>
+		<div class="g_nav"><a href="http://music.qq.com/">首页</a>|<a href="http://music.qq.com/portal_v2/static/list/singerlist_0.html">正版音乐库</a>|<a href="http://music.qq.com/portal_v2/static/shoufa/shoufa_1.html">在线首发</a>|<a href="http://music.qq.com/portal_v2/static/hit/hit_5_1.html">点击榜</a>|<a href="http://player.music.qq.com/">播放器</a>|<a href="http://vip.music.qq.com">绿钻专区</a></div>
+
+		<div class="player"><a href="http://player.music.qq.com/">下载播放器</a>|<a href="#" onclick="javascript:window.location ='Tencent://QQMusic/?version==400&amp;&amp;cmd_count==1&amp;&amp;cmd_0==4003&amp;&amp;jmpurl_0==http://music.qq.com/miniportal/index.htm';return false;">打开播放器</a></div>
+	</div>
+  </div>
+</div>
+<!-- 通用活动头部 结束 -->
+<div class="wrap">
+	<div class="bgbox">
+		<div class="bg_01"><div></div></div>
+		<div class="bg_02"><div></div></div>
+		<div class="bg_03"><div></div></div>
+	</div>
+  
+	<div class="data">
+		<h1>世博歌曲大展播</h1>
+		<!--
+		<div class="login">您还未登录，请先<a href="#">登录</a></div>
+		-->
+		<a href="#" class="lk_enter" onclick="javascript:window.location ='Tencent://QQMusic/?version==400&amp;&amp;cmd_count==1&amp;&amp;cmd_0==4003&amp;&amp;jmpurl_0==http://music.qq.com/miniportal/index.htm';return false;" title="进入QQ音乐">进入QQ音乐</a>
+		<p class="lev_date" id="left_days_elm">0</p>	
+		
+		<div class="tc">
+			<h2>腾讯世博会</h2>
+			<p>
+			城市也许是一段温暖的记忆<br />
+			城市也许是一个梦想的开始<br />
+			城市 ，让我们的生活更美好<br />
+			我们能做什么，让天空变得更明净、<br />
+			空气变得更清新，城市变得更美好<br />
+			迎世博倒计时，QQ音乐携手网友共同呼吁：<br />
+			建设美好城市，从我做起<br />
+			请少开一天车.....<br />
+			请不要随手扔垃圾....<br />
+			请使用环保袋购物....<br />
+			请多使用文明用语..........
+			</p>
+			<a target="_blank" href="http://2010.qq.com/">点击进入腾讯世博</a>
+		</div>
+    <div class="mv_box">
+      <object id="flashplayerObj" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="337" height="252">
+        <param name="movie" value="http://imgcache.qq.com/music/common/commonupload/vip_present/videoplayer.swf" />
+        <param name="allowFullScreen" value="true" />
+        <param name="wmode" value="transparent" />
+        <param name="flashvars" value="vid=6mVDLAtcITM&auto=1&skin=http://imgcache.qq.com/music/common/commonupload/vip_present/videoplayerSkin.swf&autoplay=1&list=0&showcontrol=0&hidebg=1" />
+        <embed id="flashplayerObj_ff" type="application/x-shockwave-flash" src="http://imgcache.qq.com/music/common/commonupload/vip_present/videoplayer.swf?vid=6U2mzLObWMc&auto=1" width="337" height="252" name="flashplayerObj_ff"  wmode="transparent" quality="high" allowScriptAccess="always" allowFullScreen="true" flashvars="vid=6mVDLAtcITM&auto=1&skin=http://imgcache.qq.com/music/common/commonupload/vip_present/videoplayerSkin.swf&autoplay=0&list=0&showcontrol=0&hidebg=1"></embed>
+      </object>
+    </div>	
+		<div class="best">
+			<h2 class="none">世博歌曲</h2>
+			<div class="song_box" id="songbox1">
+					<table>
+						<colgroup>
+							<col class="col_num" />
+							<col class="col_song" />
+							<col class="col_bt" />
+							<col class="col_bt" />
+							<col class="col_bt" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>序</th>
+								<th class="song">歌曲名</th>
+								<th>播放</th>
+								<th>下载</th>
+								<th>添加</th>
+							</tr>
+						</thead>
+						<tbody>						
+							<tr songid="648679">
+								<td class="num">01</td>
+								<td class="song"><a href="#" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="大城之光">大城之光</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="654363">
+								<td class="num">02</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="2010等你来">2010等你来</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648733">
+								<td class="num">03</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="在你身边">在你身边</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648676">
+								<td class="num">04</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="Colorful World">Colorful World</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648717">
+								<td class="num">05</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="天下一家">天下一家</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+                
+							</tr>
+							<tr songid="648718">
+								<td class="num">06</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="开始 In City">开始 In City</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+                
+							</tr>
+							<tr songid="648720">
+								<td class="num">07</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="温暖·上海">温暖·上海</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648638">
+								<td class="num">08</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="欢聚在这里">欢聚在这里</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648660">
+								<td class="num">09</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="牵手世博">牵手世博</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- songbox -->
+        <div class="song_box" id="songbox2" style="display:none;">
+					<table>
+						<colgroup>
+							<col class="col_num" />
+							<col class="col_song" />
+							<col class="col_bt" />
+							<col class="col_bt" />
+							<col class="col_bt" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>序</th>
+								<th class="song">歌曲名</th>
+								<th>播放</th>
+								<th>下载</th>
+								<th>添加</th>
+							</tr>
+						</thead>
+						<tbody>						
+							<tr songid="648674">
+								<td class="num">10</td>
+								<td class="song"><a href="#" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="微笑说你好">微笑说你好</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648675">
+								<td class="num">11</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="我的城">我的城</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648677">
+								<td class="num">12</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="Better City Better Life">Better City Better Life</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648678">
+								<td class="num">13</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="梦想的翅膀">梦想的翅膀</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648716">
+								<td class="num">14</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="魅力上海">魅力上海</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648719">
+								<td class="num">15</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="不再遥远">不再遥远</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648673">
+								<td class="num">16</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="Our Expo">Our Expo</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648635">
+								<td class="num">17</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="亲爱的城市">亲爱的城市</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648637">
+								<td class="num">18</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="呼唤">呼唤</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+        <div class="song_box" id="songbox3" style="display:none;">
+					<table>
+						<colgroup>
+							<col class="col_num" />
+							<col class="col_song" />
+							<col class="col_bt" />
+							<col class="col_bt" />
+							<col class="col_bt" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>序</th>
+								<th class="song">歌曲名</th>
+								<th>播放</th>
+								<th>下载</th>
+								<th>添加</th>
+							</tr>
+						</thead>
+						<tbody>						
+							<tr songid="648639">
+								<td class="num">19</td>
+								<td class="song"><a href="#" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="我们要让世界充满爱">我们要让世界充满爱</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648641">
+								<td class="num">20</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="城市的脸">城市的脸</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648643">
+								<td class="num">21</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="闪耀之城">闪耀之城</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648659">
+								<td class="num">22</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="世界博览">世界博览</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648661">
+								<td class="num">23</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="牵手世博">牵手世博</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648662">
+								<td class="num">24</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="我们为着同一个">我们为着同一个</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="146346">
+								<td class="num">25</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="彩虹天堂">彩虹天堂</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="648636">
+								<td class="num">26</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="爱让一切更美好">爱让一切更美好</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="654354">
+								<td class="num">27</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="我的2010">我的2010</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+        <div class="song_box" id="songbox4" style="display:none;">
+					<table>
+						<colgroup>
+							<col class="col_num" />
+							<col class="col_song" />
+							<col class="col_bt" />
+							<col class="col_bt" />
+							<col class="col_bt" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>序</th>
+								<th class="song">歌曲名</th>
+								<th>播放</th>
+								<th>下载</th>
+								<th>添加</th>
+							</tr>
+						</thead>
+						<tbody>						
+							<tr songid="654355">
+								<td class="num">28</td>
+								<td class="song"><a href="#" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="等待你，上海">等待你，上海</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="654358">
+								<td class="num">29</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="彩虹天堂">彩虹天堂</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="654356">
+								<td class="num">30</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="SKY">SKY</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="654357">
+								<td class="num">31</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="期待">期待</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="654359">
+								<td class="num">32</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="相约美好">相约美好</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="654360">
+								<td class="num">33</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="EXPO永恒的呼唤">EXPO永恒的呼唤</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="654361">
+								<td class="num">34</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="龙在飞">龙在飞</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="654362">
+								<td class="num">35</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="晴空">晴空</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+							<tr songid="627957">
+								<td class="num">36</td>
+								<td class="song"><a onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" href="#" title="城市">城市</a> </td>
+								<td><button type="button" class="bt_play" onclick="g_PlayMusic(this.parentNode.parentNode.getAttribute('songid'));return false;" title="播放" >播放</button></td>
+								<td><button type="button"  class="bt_add" onclick="AddPlayer(this.parentNode.parentNode.getAttribute('songid'));return false;" title="添加" >添加</button></td>
+								<td><button type="button"  class='bt_down' onclick="g_Download(this.parentNode.parentNode.getAttribute('songid'));return false;" title='下载' >下载</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="op">
+					<button type="button" class="bt_play_all" title="全部播放" onclick="playAll('songbox1','songbox2','songbox3','songbox4');return false;" >全部播放</button>
+					<button type="button" class='bt_down_all' title="全部下载" onclick="downAll('songbox1','songbox2','songbox3','songbox4');return false;"  >全部下载</button>
+					<button type="button" class="bt_add_all" title="全部添加" onclick="addAll('songbox1','songbox2','songbox3','songbox4');return false;"  >全部添加</button>
+				</div>
+				<div class="pagebox">
+					<a href="#" class="curr" onclick="changeTab(1);return false;" id="tab1">1</a>
+					<a href="#" onclick="changeTab(2);return false;" id="tab2">2</a>
+					<a href="#" onclick="changeTab(3);return false;" id="tab3">3</a>
+					<a href="#" onclick="changeTab(4);return false;" id="tab4">4</a>
+				</div>
+		</div><!-- best -->
+		
+		<!-- 明星献声世博 开始 -->
+		<div class="starbox">
+			<h2>明星献声世博</h2>
+			<div class="con">
+				<ul>
+					<li>
+						<div class="pic"><a href="http://2010.qq.com/a/20090609/000016.htm#p=1" target="_blank" ><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic01.jpg" alt="世博明星献歌声" /></a></div>
+						<p class="tit"><a href="http://2010.qq.com/a/20090609/000016.htm#p=1" target="_blank" >长腿美女韩雪牵手海宝唱世博歌曲</a></p>
+						<p>第15届上海电视节隆重开幕。本届电视节主题为“城市，让生活更美好；电视，让生活更精彩”。韩雪作为青年演员和歌手代表的双重身份登台演唱了世博歌曲《2010等你来》，为中国电视剧30年和2010年上海......
+						</p>
+						<a href="http://2010.qq.com/a/20090609/000016.htm#p=1" target="_blank"  class="more">[详细]</a>
+					</li>
+					<li>
+						<div class="pic"><a href="http://2010.qq.com/a/20090501/000070.htm" target="_blank" ><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic02.jpg" alt="世博明星献歌声" /></a></div>
+						<p class="tit"><a href="http://2010.qq.com/a/20090501/000070.htm" target="_blank" >世博会倒计时牌启动 成龙现场演唱</a></p>
+						<p>2010年上海世博会倒计时一周年暨计时牌启动仪式在天安门广场举行，全国人大常委会委员长吴邦国启动计时牌。图为世博会形象大使成龙现场演唱了倒计时一周年纪念歌曲《城市》。
+						</p>
+						<a href="http://2010.qq.com/a/20090501/000070.htm" class="more" target="_blank" >[详细]</a>
+					</li>
+					<li>
+						<div class="pic"><a href="http://2010.qq.com/a/20090609/000010.htm" target="_blank" ><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic03.jpg" alt="世博明星献歌声" /></a></div>
+						<p class="tit"><a href="http://2010.qq.com/a/20090609/000010.htm" target="_blank" >上海电视节开幕 众星唱响世博主题</a></p>
+						<p>
+					第十五届上海电视节昨晚在上海大剧院举行了开幕庆典。今年电视节开幕晚会主题是“城市让生活更美好，电视让生活更精彩”。整个开幕晚会集怀旧、经典和现代、发展于一体，更结合了明年上海世博主题......
+                                  </p>
+						<a href="http://2010.qq.com/a/20090609/000010.htm" class="more" target="_blank" >[详细]</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 明星献声世博 结束 -->
+		
+		 <!-- 精美图片 开始 -->
+		<div class="picsbox">
+			<h2>精美图片</h2>
+			<div class="con">
+				<ul>
+					<li>
+						<div class="pic"><a target="_blank" href="http://2010.qq.com/a/20090427/000027.htm"><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic04.jpg" alt="精美图片" /></a></div>
+                                         <p>
+                                         </p>
+						<p><a target="_blank" href="http://2010.qq.com/a/20090427/000027.htm">天后首唱世博主题曲</a></p>
+					</li>
+					<li>
+						<div class="pic"><a target="_blank" href="http://2010.qq.com/a/20090413/000010.htm"><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic05.jpg" alt="精美图片" /></a></div>
+						<p>
+						</p>
+						<p><a target="_blank" href="http://2010.qq.com/a/20090413/000010.htm">"成家班"拍世博会MV</a></p>
+					</li>
+					<li>
+						<div class="pic"><a target="_blank" href="http://2010.qq.com/a/20090407/000014.htm"><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic06.jpg" alt="精美图片" /></a></div>
+						<p>
+				              </p>
+						<p><a target="_blank" href="http://2010.qq.com/a/20090407/000014.htm">海豚音“茉莉花”</a></p>
+					</li>
+					<li>
+						<div class="pic"><a target="_blank" href="http://2010.qq.com/a/20090319/000030.htm"><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic07.jpg" alt="精美图片" /></a></div>
+						<p>
+					       </p>
+						<p><a target="_blank" href="http://2010.qq.com/a/20090319/000030.htm">香港推广形象大使</a></p>
+					</li>
+					<li>
+						<div class="pic"><a target="_blank" href="http://2010.qq.com/a/20090429/000055.htm"><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic08.jpg" alt="精美图片" /></a></div>
+						<p>
+					       </p>
+						<p><a target="_blank" href="http://2010.qq.com/a/20090429/000055.htm">2009世界音乐周</a></p>
+					</li>
+					<li>
+						<div class="pic"><a target="_blank" href="http://2010.qq.com/a/20090429/000059.htm"><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic09.jpg" alt="精美图片" /></a></div>
+						<p>
+					       </p>
+						<p><a target="_blank" href="http://2010.qq.com/a/20090429/000059.htm">2009世界音乐周</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 精美图片 结束 -->
+		
+		<!-- 专题荟萃 开始 -->
+		<div class="spebox">
+			<h2>专题荟萃</h2>
+			<div class="con">
+				<ul>
+					<li>
+						<div class="pic"><a target="_blank" href="http://2010.qq.com/sametime/index.htm"><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic10.jpg" alt="专题荟萃" /></a></div>
+						<p><a href="http://2010.qq.com/sametime/index.htm" target="_blank">中国馆展示视频征集</a></p>
+					</li>
+					<li>
+						<div class="pic"><a target="_blank" href="http://2010.qq.com/icityiexpo/"><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic11.jpg" alt="专题荟萃" /></a></div>
+						<p><a target="_blank" href="http://2010.qq.com/icityiexpo/">腾讯打造最大世博社区</a></p>
+					</li>
+					<li>
+						<div class="pic"><a target="_blank" href="http://2010.qq.com/photo/ch/11.htm"><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic12.jpg" alt="专题荟萃" /></a></div>
+						<p><a target="_blank" href="http://2010.qq.com/photo/ch/11.htm">图片周刊：新沪上八景</a></p>
+					</li>
+					<li>
+						<div class="pic"><a target="_blank" href="http://2010.qq.com/zt/2009/history/9th.htm"><img src="http://imgcache.qq.com/ACT/music/vip/091218_expo/img/pic13.jpg" alt="专题荟萃" /></a></div>
+						<p><a target="_blank" href="http://2010.qq.com/zt/2009/history/9th.htm">名人都爱世博会</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<a target="_blank" href="http://2010.qq.com/sitemap/" class="more_spe">更多专题</a>
+		<!-- 专题荟萃 结束 -->
+		
+		<!-- 世博感言 开始 -->
+		<div class="wordsbox">
+			<h2>世博感言</h2>
+			<div class="frmbox">
+				<form id="commentForm" action="http://portalcgi.music.qq.com/fcgi-bin/shoufa/lovewall/fcg_shoufa_addcmt.fcg" method="post" target="postFrm" onsubmit="return g_userComments.publishComment();">
+					<fieldset>
+						<legend>填写世博感言</legend>
+						<div class="textarea"><textarea  id="input_issue" name="cmtContent" onblur="if(this.value==''){this.value='请留下您的世博感言，最多可输入32个中文字符。';}" onfocus="if(comm.check_login()==false) {comm.open_login();return false;}if(this.value.indexOf('请留下您的世博感言，最多可输入32个中文字符。') != -1) this.value='';" onchange="g_userComments.onKeyDown(event);" class="input_issue" cols="" rows="">请留下您的世博感言，最多可输入32个中文字符。</textarea></div>
+						<div class="very"><label>验证码：</label><input type="text" onfocus='this.value="";document.getElementById("verify_span").style.display="";nchangeImg("imgVerify");' onblur="with(document.getElementById('verify_span')){if(typeof pos=='undefined'||!pos){style.display='none'}}" id="verifycode" name="verifycode" class="verifycode text" maxlength="4" size="4" style="ime-mode:disabled;" value="点击获取验证码"/></div>
+            <span onmouseout="this.pos=0" onmouseover="this.style.display='block',this.pos=1" style="display:none;position:relative;top:21px;left:70px;" id="verify_span"><img width="130" height="53" src="about:blank" onclick="nchangeImg('imgVerify')" alt="看不清，换一张" style="" id="imgVerify"/></span>
+						<button type="submit">发表</button>
+            <input type="hidden" name="no" value="137" />
+					</fieldset>
+				</form>
+			</div>
+			<div class="feedbox">
+				<ul id="comment_list">
+				</ul>
+			</div>
+			<div id="page" class="page_list"></div>
+			<p class="number">（共<span id="cmtNum">...</span>条）</p>
+		</div>		
+		<!-- 世博感言 结束 -->
+		 
+	</div><!-- data -->
+	<div class="footer">
+		<p class="footermenu">
+			<a target="new" href="http://www.tencent.com/">关于腾讯</a> | 
+			<a target="new" href="http://www.tencent.com/index_e.shtml">About Tencent</a> | 
+			<a target="new" href="http://www.qq.com/contract.shtml">服务条款</a> | 
+			<a target="new" href="http://adver.qq.com/">广告服务</a> | 
+			<a target="new" href="http://hr.tencent.com/">腾讯招聘</a> | 
+			<a target="new" href="http://service.qq.com/">客服中心</a> | 
+			<a target="new" href="http://www.qq.com/map/">网站导航</a>
+		</p>
+		<p class="copyrighten">Copyright &copy; 1998 - <span id="copyendyear">2010</span> Tencent. 
+			<a target="new" class="clink" href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml">All Rights Reserved</a>.
+		</p>
+		<p class="copyrightzh">腾讯公司 
+			<a class="clink" target="new" href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml">版权所有</a> 
+			<a  target="new" href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm">腾讯网络文化经营许可证</a>
+		</p>
+	</div><!-- footer -->
+</div>
+<iframe name="postFrm" id="postFrm" src="about:blank" style="display:none;"></iframe>
+<script>
+    g_userComments.refresh();
+    if(left_days>0)
+      utils.element('left_days_elm').innerHTML = left_days;
+</script>
+<script type="text/javascript" src="http://pingjs.qq.com/ping.js"></script>
+<script type="text/javascript">
+if(typeof(pgvMain) == 'function'){pgvMain();}
+</script>
+</body>
+</html>
+<!--[if !IE]>|xGv00|d9ae4f64dd1b794cb8d164d3fdf601f3<![endif]-->

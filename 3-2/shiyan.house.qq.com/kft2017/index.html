@@ -1,0 +1,109 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>2017大楚十堰看房团</title>
+<style type="text/css">
+body{
+	background-color:#faecc4;
+	}
+.banner { 
+background:url(//mat1.gtimg.com/houseshiyan/kft2017/images/KF01.jpg) center no-repeat;
+	height: 708px;
+}
+.b2 { background:url(//mat1.gtimg.com/houseshiyan/kft2017/images/KF02.jpg) center no-repeat;
+	height: 283px;
+}
+.b3{ background:url(//mat1.gtimg.com/houseshiyan/kft2017/images/KF03.jpg) center no-repeat;	
+	height: 559px;
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+	}
+.text1{position:absolute; line-height: 47px;left:227px;top:79px;height: 47px;
+	width:201px;
+	font-size:18px;
+	border:0;
+	}
+.text2{position:absolute; line-height: 47px;left:733px;top:79px;height: 47px;
+	width:201px;
+	font-size:18px;
+	border:0;}
+.text3{position:absolute; line-height: 47px;left:227px;top:153px;height: 47px;
+	width:201px;
+	font-size:18px;
+	border:0;}
+.text4{position:absolute; line-height: 47px;left:733px;top:153px;height: 47px;
+	width:201px;
+	font-size:18px;
+	border:0;}
+.text5{position:absolute;left:227px;top:237px;height: 135px;
+	width:708px;
+	font-size:18px;
+	border:0;}
+.sub{ background:url(//mat1.gtimg.com/houseshiyan/kft2017/images/touming.png);
+	position:absolute;left:408px;top:455px;height: 65px;
+	width:200px;
+	border:0;}
+.b4 { background:url(//mat1.gtimg.com/houseshiyan/kft2017/images/KF04.jpg) center no-repeat;
+	height: 908px;
+}
+</style>
+</head>
+
+<body>
+<div class="banner"></div>
+<div class="b2"></div>
+<div class="b3">
+<iframe id="id_iframe" name="id_iframe" style="display:none;"></iframe>
+						<form name="form1" id="form1" method="post" action="http://huiyan.qq.com/userApply/apply" target="id_iframe" class="huiyan-form" accept-charset="UTF-8">
+							<input type="hidden" name="activity_id" value="9841">
+							<input type="hidden" name="attr_list" value="11367,11366,11365,70,1103">
+							<input type="hidden" name="site" value="autoshiyan">
+
+       <input name="form_70_1" type="text" class='text1'/>
+       <input name="form_1103_1" identifyName="form_1103_2" type="text" class='text2'/>
+       <input name="form_11365_1" type="text" class='text3'/>
+       <input name="form_11367_1" type="text" class='text4'/>
+       <textarea name="form_11366_1" cols="" rows="" class='text5'></textarea>
+       <input type="submit" value=""/ class="sub">
+    </form>
+<script>
+							(function($) {
+								$.getScript("//mat1.gtimg.com/tech/css/huiyan/huiyan_base_v1.3.min.js?r=" + Math.random(), function() {
+									$(document).ready(function() {
+										$.createToolkit.generatePhoneIdentify();
+									});
+									$("#submitBtn").click(function(event) {
+										event.preventDefault();
+										if ($.createToolkit.commonCheck()) {
+
+											$.createToolkit.escapeHtml();
+											var originCode = document.charset;
+											if (document.all)
+												document.charset = 'utf-8';
+											$("#form1").submit();
+											document.charset = originCode;
+											$.createToolkit.unescapeHtml();
+										}
+
+									});
+								});
+							})(jQuery);
+							document.domain = "qq.com";
+
+							//报名成功的回调函数，如有需要可以覆盖修改函数体，保留函数名不变。
+							//注：该函数仅支持慧眼系统同子域名（qq.com）内的回调，跨域回调操作不会被触发。
+							function huiyan_success_callback() {
+								huiyanAlert("报名成功", function() {});
+							}
+
+							function huiyan_fail_callback(errorMsg) {
+								huiyanAlert(errorMsg);
+							}
+						</script>
+</div>
+<div class="b4"></div>
+</body>
+</html>

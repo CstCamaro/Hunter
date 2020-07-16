@@ -1,0 +1,71 @@
+body{margin:0;padding:0; font-size:12px;}
+form,p,div,ul,li,input,select,pre{margin:0;padding:0;}
+td,body,{font-size:12px; text-decoration: none;}
+a{color:#333; text-decoration: none;}
+a:hover{color: #FF0000; text-decoration: underline;}
+img{border:none; padding:0; margin:0;}
+ul,li{list-style:none;}
+	
+.bai,.bai a{color:#fff;}
+	.bai a:hover{color: #fff;}
+	
+.lan,.lan a{color:#2a507d;}
+	.lan a:hover{color: #FF0000;}
+	
+.hong,.hong a{color:#e31b1b;}
+	.hong a:hover{color: #FF0000;}
+	
+.qhui,.qhui a{color:#777777;}
+	.qhui a:hover{color: #FF0000;}
+	
+.lv,.lv a{color:#13810b;}
+	.lv a:hover{color: #FF0000;}
+	
+.hui,.hui a{color:#7f7f7f;}
+	.hui a:hover{color: #FF0000;}
+	
+.ftsz14{font-size:14px;}	
+.ht18{font-family:"ºÚÌå"; font-size:18px;}
+
+.ti_2{text-indent:2em;}
+		
+.lh_24{line-height:24px;}
+.lh_30{line-height:30px;}
+.lh_26{line-height:26px;}
+.lh_22{line-height:22px;}
+.lh_20{line-height:20px;}
+
+.mgt_10{margin-top:10px;}
+
+.bg_bx{background-position:bottom; background-repeat:repeat-x;}
+.bg_ly{background-position:left; background-repeat:repeat-y;}
+.bg_tln{background-position:top left; background-repeat:no-repeat;}
+.bg_trn{background-position:top right; background-repeat:no-repeat;}
+
+.bd{border:1px solid #e5e4e9;}
+.bd_1{border:1px solid #e5e4e9; border-top:none;}
+.bd_2{border-bottom:1px dashed #d2d1d9;}
+.bd_3{border:1px solid #e4f1e4; border-top:none;}
+.bd_4{border-left:1px solid #d8dfe9; border-right:1px solid #d8dfe9;}
+.bd_5{border:1px solid #b3d7ef; border-top:none;}
+
+
+.pic_1 img{border:1px solid #d6d6d6; padding:2px; background:#fff;}
+.pic_2 img{border:1px solid #d6d6d6;}
+.pic_3 img{padding:2px; background:#fff;}
+
+.fl{float:left;}
+.fr{float:right;}
+
+/*½¹µãÍ¼*/
+#focus{width:340px; height:189px; position:relative;}
+#fc{width:56px; height:56px; position:absolute; top:47px; left:0;}
+#fc img{border:1px solid #d6d6d6; padding:2px; background:#fff;}
+#con{width:258px; line-height:26px; position:absolute; top:44px; left:66px;}
+#con .a{display:block; font-size:14px;}
+#con .b{display:none; font-size:14px;}
+#con span{color:#777777; font-size:12px;}
+#num{width:128px; height:28px; position:absolute; top:150px; *top:151px; _top:151px; right:0px;}
+#num li{float:left; width:26px; height:28px; font-family:"Tahoma"; font-size:10px; line-height:22px; margin-right:5px; text-align:center; font-weight:bold; cursor:pointer;}
+#num .nos{color:#333; background:url(//mat1.gtimg.com/worldcup/blog/twitter/jd_bg_01.png) !important; background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/worldcup/blog/twitter/jd_bg_01.png', sizingMethod='scale');}
+#num .s{color:#fff; background:url(//mat1.gtimg.com/worldcup/blog/twitter/jd_bg_02.png) !important; background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/worldcup/blog/twitter/jd_bg_02.png', sizingMethod='scale');}/*  |xGv00|bd3bec28066a5817b3f48cc2fc938600 */

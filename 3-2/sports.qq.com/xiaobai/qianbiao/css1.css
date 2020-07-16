@@ -1,0 +1,55 @@
+/*kennanwang*/
+body, td, selezs, input, div { font-size:12px; color:#333; font-family:"ËÎÌå"; }
+body { background:#fff; }
+a:link, a:visited { text-decoration:none; color:#333; }
+a:hover { color:#033E80!important; text-decoration:underline; }
+.Nborder { border:0px!important }
+#content { width:100%; margin:0px auto; overflow:hidden; }
+
+/*box1*/
+.main { width:930px; margin:0px auto; padding:20px 15px; overflow:hidden; background:#fff }
+.xlkBox{ margin-bottom:20px; overflow:hidden}
+.xlk{ width:140px; height:18px; border:1px solid #666; color:#666}
+/*scBox*/
+.scBox{ width:930px; margin:0px auto 30px; overflow:hidden}
+.scBox .hd{ width:928px; height:33px; line-height:33px; margin:0px auto 10px; overflow:hidden; border:1px solid #E5E5E5; background:url(//mat1.gtimg.com/sports/xiaobai/qianbiao/tabbg.png) repeat-x}
+.scBox .hd ul li{ display:inline; float:left; margin:0px 43px; overflow:hidden; font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; text-align:center}
+.scBox .hd ul li.line{ width:5px; height:33px; margin:0px; overflow:hidden; background:url(//mat1.gtimg.com/sports/xiaobai/qianbiao/line.png) no-repeat}
+.scBox .bd{ width:930px; overflow:hidden}
+.scBox .bd ul{ display:inline; float:left; width:110px; margin-left:20px; overflow:hidden;}
+.scBox .bd ul li{ float:left; width:108px; margin:0px auto 10px; overflow:hidden; border:1px solid #DFDFDF; background:#fff; cursor:pointer}
+.bUl li.on{ background:#F3F3F3!important; border:1px solid #85A4B8!important}
+.scBox .bd ul li span.blue{ display:block; width:90px; height:4px; margin:0px auto 4px; overflow:hidden; background:#C0D2DE}
+.scBox .bd ul.ul01 li{ height:36px; padding:10px 0px 0px;}
+.scBox .bd ul.ul02 li{ height:74px; padding:30px 0px 0px;}
+.scBox .bd ul.ul03 li{ height:180px; padding:40px 0px 0px;}
+.scBox .bd ul.ul04 li{ height:170px; padding:50px 0px 0px;}
+.scBox .bd ul.ul05 li{ height:157px; padding:63px 0px 0px;}
+.scBox .bd ul.ul06 li{ height:150px; padding:70px 0px 0px;}
+.scBox .bd ul.ul07 li{ height:110px; padding:110px 0px 0px;}
+.scBox .bd ul li .mb70{ margin-bottom:70px!important;}
+.scBox .bd ul li a{ display:block; width:108px;}
+/*dzBox*/
+.dzBox{ width:930px; margin:0px auto 50px; overflow:hidden}
+.dzBox .left{ float:left; width:30px; height:63px; margin:80px 30px 0px 0px; overflow:hidden}
+.dzBox .left a{ display:block; width:30px; height:63px; background:url(//mat1.gtimg.com/sports/xiaobai/qianbiao/left.png) no-repeat}
+.dzBox .left a:hover{ display:block; width:30px; height:63px; background:url(//mat1.gtimg.com/sports/xiaobai/qianbiao/leftOn.png) no-repeat}
+.dzBox .right{ float:right; width:30px; height:63px; margin:80px 0px 0px 30px; overflow:hidden}
+.dzBox .right a{ display:block; width:30px; height:63px; background:url(//mat1.gtimg.com/sports/xiaobai/qianbiao/right.png) no-repeat}
+.dzBox .right a:hover{ display:block; width:30px; height:63px; background:url(//mat1.gtimg.com/sports/xiaobai/qianbiao/rightOn.png) no-repeat}
+.dzBox2 .left{ margin:15px 30px 0px 0px!important}
+.dzBox2 .right{ margin:15px 0px 0px 30px!important}
+.dzBox .conBox{ float:left; width:810px; overflow:hidden}
+.con{ float:left; width:410px; border:1px solid #D1D1D1; overflow:hidden}
+.con ul{ width:410px; overflow:hidden}
+.w360{ width:360px!important; overflow:hidden; margin:55px 0px 0px;}
+.w360 li{ width:330px!important;}
+.dzBox2 .w360{ margin:30px 0px 0px!important;}
+.con ul li{ width:380px; height:54px; line-height:54px; padding-left:30px; overflow:hidden; border-bottom:1px dotted #C4C4C4; color:#507085}
+.con ul li a{ color:#507085}
+.con ul li em{ margin-left:10px; color:#333}
+.con ul li em a{ color:#333}
+.con ul li.solid{ border-bottom:1px solid #C4C4C4!important}
+.con ul li .fr{ display:inline-block; width:25px; height:25px; line-height:25px; overflow:hidden; text-align:center; margin:12px 20px 0px 0px; font-size:18px; font-weight:normal; font-family:Arial, Helvetica, sans-serif; color:#000; background:url(//mat1.gtimg.com/sports/xiaobai/qianbiao/iconK.png) no-repeat}
+.xian{ float:left; display:block; width:36px; height:1px; margin:109px 0px 0px; border-bottom:1px solid #C4C4C4}
+.dzBox2 .xian{ margin:54px 0px 0px!important;}/*  |xGv00|aac33f9158c6913739948d1e2260148f */

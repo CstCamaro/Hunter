@@ -1,0 +1,22 @@
+body{background:#fff}.banner{position:relative;width:100%;padding-top:33.3%}.banner .banner-text-box{position:absolute;top:10%;left:10%;color:#fff;line-height:31.05px;text-shadow:0 2px 6px rgba(13,157,166,0.5);width:240px}
+.banner .banner-text-box .fsz-25{font-size:25px;line-height:31.05px}.banner .banner-text-box .fsz-38{margin-top:6px;font-size:38px;line-height:51.2px}
+.banner .banner-img{position:absolute;left:0;top:0;width:100%;height:100%}.container{width:100%;max-width:1200px;margin:0 auto;padding:70px 100px;box-sizing:border-box}
+.container .content-block{margin-top:70px}.container .content-block:first-child{margin-top:0}
+.container .content-block .title{font-size:28px;color:#333;text-align:center}.container .content-block .cont-ul{margin-top:50px;display:flex;justify-content:space-between}
+.container .content-block .cont-ul .cont-li{display:block;width:245px}.container .content-block .cont-ul .cont-li .cont-img{width:178px;margin:0 auto}
+.container .content-block .cont-ul .cont-li .cont-name{padding:10px 0;font-size:20px;color:#333;text-align:center}
+.container .content-block .cont-ul .cont-li .cont-desc{font-size:16px;color:#999}
+.container .content-block .cont-ul .org-li{display:flex;width:100%;margin-top:30px}
+.container .content-block .cont-ul .org-li .org-img{width:100px;height:100px}.container .content-block .cont-ul .org-li .org-img img{width:100px;height:100px}
+.container .content-block .cont-ul .org-li .org-cont{margin-left:30px;display:flex;flex-direction:column;padding:5px 0}
+.container .content-block .cont-ul .org-li .org-cont .org-name{font-size:20px;color:#333;padding-bottom:10px;font-weight:bold}
+.container .content-block .cont-ul .org-li .org-cont .org-desc{font-size:14px;color:#666;letter-spacing:0}
+.container .content-block .cont-ul.vertical{flex-direction:column;justify-content:center}
+.login-popup{position:absolute;width:100%;height:100%;top:0;left:0;overflow:hidden}
+.login-popup .btn-close{position:absolute;top:50px;right:50px;width:100px;height:100px}
+.sprite{background:url('../imgs/spritesheet.png') no-repeat;display:block}.sprite.sprite-icon_gongmu{background-position:-5px -5px;width:178px;height:178px}
+.sprite.sprite-icon_manage{background-position:-193px -5px;width:178px;height:178px}
+.sprite.sprite-icon_mpay{background-position:-5px -193px;width:178px;height:178px}
+.sprite.sprite-icon_npo{background-position:-193px -193px;width:178px;height:178px}
+.sprite.sprite-icon_person{background-position:-381px -5px;width:178px;height:178px}
+.sprite.sprite-icon_plat{background-position:-381px -193px;width:178px;height:178px}

@@ -1,0 +1,1035 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+	<style>
+		html,body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, code,em, img, q, dl, dt, dd, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+		img{border:none;}
+		li{list-style:none;}
+		table{ border-collapse:collapse; width:100%;}
+		body{ font-family: Arial,'宋体'; font-size:14px; color:#000; background-color:#FFF;}
+		a{ text-decoration:none;color:#000;}
+		a:hover{text-decoration:underline;}
+		a:active{color:green;}
+
+		.hide{ display:none;}
+		.gray-bg{ background-color:#EFEDED;}
+		.em{color:#054da1;}
+		.cls:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+		.cls{zoom:1;}
+		/*---all---*/
+		.hd,.bd,.ft{text-align:center;}
+		.hd{border-bottom:2px solid #32AF00;background:url(http://www.hao123.com/redian/images/m-hd-main-bg.png) repeat-x;height:89px;}
+		.hd-inner{width:960px;margin:0 auto;position:relative;}
+		.ft{ text-align:center; color:#999; font-size:12px; margin-top:15px; padding-bottom:15px;}
+
+		.searchfod1 {font-weight: bold; color: #05974c; text-align:center; width:49px; font-size:14px}
+		.searchfod2 {cursor: pointer; text-align:center; width:49px; font-size:14px}
+
+		.logo{position:absolute; top:20px; left:0;}
+		.m-hd-search{position:absolute; top:42px; left:240px;}
+		.m-hd-search_color_gray{ color:#CECECE;}
+		.m-hd-search_d{ display:block; background:url(http://www.hao123.com/redian/images/m-hd-search-decorated-bg.png) no-repeat; height:28px; width:2px;}/*d-> decorated*/
+		.m-hd-search_text{background:url(http://www.hao123.com/redian/images/m-hd-search-text-bg.png) repeat-x; width:342px; outline:none; padding:7px 0px 6px 7px;border:none; height:28px}
+		.m-hd-search_btn{ height:28px; width:95px;background:url(http://www.hao123.com/redian/images/m-hd-search-btn-bg.png) no-repeat; border:none; outline:none; cursor:pointer;}/*btn-button*/
+		.m-hd-search_table{ width:auto;}
+
+		.search-list{position:absolute;left:240px;top:20px;}
+		.search-list li{float:left;}
+
+		.ft .links{height:24px;}
+		.ft .links a{color:#666;}
+		.ft .feedback a{color:#0053a5;}
+		/*---content---*/
+		.main{width:960px;text-align:left;margin:15px auto 0;color:#666;font-size:14px;}
+		.topbar{margin:8px 0;font-size:12px;}
+		.content{width:958px;border:solid 1px #dfdfe0;border-top:none;}
+		.location{float:left;}
+		.tool-box{float:right;}
+		.set-home,.response,.font{display:inline-block;padding:0 5px 0 20px;background:url(http://www.hao123.com/redian/images/icon.png) no-repeat;}
+		.set-home{background-position:0 -40px;}
+		.response{background-position:6px -70px;padding-left:24px;}
+		.font{background-position:8px -101px;}
+
+
+		.title-bar .item-content{padding:0 70px 25px;background-color:#f8fafc;height:65px;}
+		.title-bar .item-title{height:39px;line-height:38px;font-size:14px;font-weight:bold;background:url(http://www.hao123.com/redian/images/bg_sprites.png) repeat-x;}
+		.title-bar .item-inner{padding-top:25px;}
+		.title-bar .item-inner-title{margin-bottom:10px;}
+
+
+		.item{margin-bottom:2px;}
+		.item .item-content .item-inner{padding:0 70px 25px;}
+		.item .item-intro{height:36px;margin:13px;padding-left:40px;line-height:36px;background-color:#f1f1f1;}
+		.item .item-title{display:block;height:42px;line-height:42px;color:#054da1;font-size:14px;}
+
+		.icon-title{display:inline-block;float:left;height:38px;width:45px;background:url(http://www.hao123.com/redian/images/icon.png) no-repeat 13px 8px;}
+		/*展开样式*/
+		.extend{background:url(http://www.hao123.com/redian/images/bg_title.png) repeat-x 0px 0px;}
+		.extend:hover{background-color:#f0f0f0;background-position:0 -72px;}
+		.extend .icon-title{background:url(http://www.hao123.com/redian/images/icon_extend.png) no-repeat 11px 9px;}
+		.extend:hover .icon-title{background-position:11px -76px;}
+		/*收缩样式*/
+		.folder{background:url(http://www.hao123.com/redian/images/bg_title.png) repeat-x 0px -141px;}
+		.folder:hover{background-color:#f0f0f0;background-position:0 -72px;}
+		.folder .icon-title{background:url(http://www.hao123.com/redian/images/icon_extend.png) no-repeat 11px -33px;}
+		.folder:hover .icon-title{background-position:11px -120px;}
+
+		.item .item-inner{position:relative;}
+		.item .item-inner .down-img{position:absolute;top:5px;right:20px;line-height:41px;}
+		.item .item-inner-title{margin-bottom:10px;line-height:34px;}
+
+		a.link-img{display:inline-block;outline:none;text-indent:-999em;height:32px;width:177px;background:url(http://www.hao123.com/redian/images/quick.png) no-repeat 0 7px;}
+		/*浏览器icon*/
+		.icon-bro{display:inline-block;height:38px;width:27px;float:left;background:url(http://s0.hao123img.com/res/images/icon_browser04.png) no-repeat;}
+		.ico-liebao{display:inline-block;height:38px;width:27px;float:left;background:url(http://www.hao123.com/redian/images/liebao.JPG) no-repeat 0 10px;}
+
+		.ico-ie{background-position:0 10px;}
+		.ico-360{background-position:0 -30px;}
+		.ico-360js{background-position:0 -70px;}		
+		.ico-aoyou{background-position:0 -112px;}
+		.ico-sougou{background-position:0 -151px;}
+		.ico-qq{background-position:0 -194px;}
+		.ico-tt{background-position:0 -231px;}
+		.ico-ff{background-position:0 -274px;}
+		.ico-chrome{background-position:0 -317px;}
+		.ico-opera{background-position:0 -357px;}
+		.ico-world{background-position:0 -400px;}
+		.ico-safari{background-position:0 -440px;}
+		.ico-green{background-position:0 -480px;}
+                .ico-worldjs{background-position:0 -555px;}
+		.ico-kr{background-position:0 -520px;}
+		.ico-greenjs{background-position:0 -480px;}
+		
+
+	</style>
+<base target="_blank">
+<title>腾讯大浙网－－如何在360浏览器、傲游、搜狗等浏览器中设大浙网为主页</title>
+<script src="http://www.hao123.com/js/base.js"></script>
+<script src="http://www.hao123.com/js/config_201106211200.js"></script>
+<script src="http://www.hao123.com/js/usertrack.js"></script>
+    <script src="//mat1.gtimg.com/cd/201108/app/index_js.js?v3" type="text/javascript" charset="utf-8"></script>
+    <script src="//mat1.gtimg.com/www/mb/js/portal/mi.Portal_2012111404.js" charset="utf-8"></script>
+<script src="//mat1.gtimg.com/joke/Koala/Koala.min.1.3.3.js" type="text/javascript"></script>
+</head>
+<body>
+<SCRIPT  language=javascript>
+    (function (WIN) {
+        var host = 'http://www.hao123.com/images/track.gif',
+			hash = WIN.location.hash.substring(1),
+			data = {
+			    "level": "2",
+			    "page": "sheshouyef"
+			};
+
+        WIN.sendUserTrack = function (o) {
+            var k, undef;
+            if (!o) return;
+            for (k in o) {
+                o[k] != undef && (data[k] = o[k]);
+            }
+            UserTrack.send(data, host);
+        };
+
+        hash && sendUserTrack({
+            "type": "access",
+            "position": hash
+        });
+    })(this);
+
+
+    var haoCurrHighLight = document.getElementById("haoweb");
+    function trim(str) {
+        return str.replace(/(^\s*)|(\s*$)/g, "");
+    }
+    function setStyle(a, b) {
+        var c = document.styleSheets[0];
+        if (c.addRule) {
+            c.addRule(a, b);
+        } else if (c.insertRule) {
+            c.insertRule(a + " { " + b + " }", c.cssRules.length);
+        } 
+    }
+    function haoValidate(source) {
+        wval = trim(f.word.value);
+        changeIputName("word");
+        if (f.sc.value == "post") {
+            f.kw.value = f.word.value
+            f.ct.value = ""
+            f.tn.value = ""
+            f.rn.value = ""
+            f.lm.value = ""
+            f.rs2.value = 0
+            f.myselectvalue.value = 1
+            f.ie.value = ""
+            f.cl.value = ""
+            f.z.value = ""
+            f.from.value = ""
+        }
+        if (f.sc.value == "img") {
+            f.ct.value = 201326592
+            f.lm.value = -1
+            f.cl.value = 2
+            f.tn.value = "baiduimage"
+            f.pv.value = ""
+            f.rs2.value = ""
+            f.myselectvalue.value = ""
+            f.ie.value = ""
+            f.z.value = 0
+            f.rn.value = ""
+            f.from.value = ""
+            f.f.value = ""
+        }
+        if (f.sc.value == "zhidao") {
+            f.ct.value = 17
+            f.tn.value = "ikaslist"
+            f.rn.value = 10
+            f.lm.value = ""
+            f.cl.value = ""
+            f.ie.value = ""
+            f.rs2.value = ""
+            f.f.value = ""
+            f.myselectvalue.value = ""
+            f.z.value = ""
+            f.from.value = ""
+        }
+        if (f.sc.value == "web") {
+            f.cl.value = 3
+            f.tn.value = "hao123"
+            f.ct.value = 0
+            f.ie.value = "gb2312"
+            f.myselectvalue.value = ""
+            f.rn.value = ""
+            f.rs2.value = ""
+            f.z.value = ""
+            f.from.value = ""
+            f.lm.value = ""
+        }
+        if (f.sc.value == "mp3") {
+            changeIputName("key");
+            f.ct.value = 134217728;
+            f.lm.value = -1;
+            f.rn.value = "";
+            f.cl.value = "";
+            f.tn.value = "baidump3";
+            f.f.value = "ms";
+            f.myselectvalue.value = "";
+            f.ie.value = "gb2312";
+            f.z.value = "";
+            f.from.value = "";
+            f.fr.value = "hao123";
+        }
+        if (f.sc.value == "news") {
+            f.tn.value = "news"
+            f.cl.value = 2
+            f.rn.value = 20
+            f.ct.value = 0
+            f.z.value = ""
+            f.from.value = "news"
+            f.ie.value = ""
+            f.myselectvalue.value = ""
+            f.lm.value = ""
+            f.rs2.value = ""
+        }
+        return true;
+    }
+    function changeIputName(flag) {
+        if (flag == "key") {
+            G("kww").name = "key";
+        } else {
+            G("kww").name = "word";
+        }
+    }
+    function haoSubSearch(sc) {
+        changePage(sc);
+        if (sc != "baidu") {
+            if (sc == "post") {
+                f.action = "http://tieba.baidu.com/f";
+
+            }
+            else if (sc == "zhidao") {
+                f.action = "http://zhidao.baidu.com/q";
+
+            }
+            else if (sc == "mp3") {
+                f.action = "http://music.baidu.com/search";
+
+            }
+            else if (sc == "img") {
+                f.action = "http://image.baidu.com/i";
+
+            }
+            else if (sc == "news") {
+                f.action = "http://news.baidu.com/ns";
+
+            }
+            else if (sc == "video") {
+                f.action = "http://video.baidu.com/v";
+
+            }
+            else {
+                f.action = "http://www.baidu.com/s";
+
+            }
+            f.sc.value = sc;
+        }
+        else {
+            f.sc.value = "post";
+            haoGoSoba();
+        }
+    }
+
+    function haoGoSoba() {
+
+        f.action = "http://www.baidu.com/s";
+        f.kw.value = f.word.value;
+    }
+    function G(id) {
+        return document.getElementById(id);
+    }
+    function changePage(sc) {
+        if (haoCurrHighLight == null) {
+            haoCurrHighLight = document.getElementById("haoweb");
+        }
+        haoCurrHighLight.className = "searchfod2";
+        haoCurrHighLight = document.getElementById("hao" + sc);
+        haoCurrHighLight.className = "searchfod1";
+        document.f.word.focus()
+        f.word.value = "";
+    }
+    function isSoba() {
+        if (haoCurrHighLight == document.getElementById("haosoba")) {
+            haoGoSoba();
+            return true;
+        }
+        else {
+            return true;
+        }
+    }
+    function goSearch() {
+        if (!haoValidate(1)) {
+            return false;
+        }
+        else {
+            return false;
+        }
+    }
+
+</SCRIPT>
+<!--mini导航--> 
+<style>
+body{margin:0;}
+/*大浙网迷你导航 v20120118 1.0.0 ryanguo*/
+#mini_nav_qq_wrap{width:100%;height:25px;background:url(//mat1.gtimg.com/www/images/nav/mini_bg.png) top left repeat-x}
+#mini_nav_qq{width:960px;height:25px; margin:0 auto;padding:0;font-size:12px;font-family:"宋体","Arial Narrow";clear:both;}
+#mini_nav_qq div{color:#666;line-height:24px;}
+#mini_nav_qq .mini_nav_fl{float:left;}
+#mini_nav_qq ul,#mini_nav_qq li{margin:0;padding:0;list-style:none;}
+#mini_nav_qq .first{padding-left:4px;}
+#mini_nav_qq .first a{padding-right:13px;background:url(//mat1.gtimg.com/www/images/nav/mini_arrow.png)  right -1px no-repeat;}
+#mini_nav_qq .end{border:none;}
+#mini_nav_qq ul{padding:7px 3px 0 0;}
+#mini_nav_qq li{float:left;padding:0 8px;*padding-top:1px;border-right:#ddd 1px solid;line-height:12px;color:#666;}
+#mini_nav_qq a{color:#666; text-decoration:none;}
+#mini_nav_qq a:visited{color:#666;}
+#mini_nav_qq a:hover{color:#666; text-decoration: underline;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari 3.0 and Opera 9 rules here */
+#mini_nav_qq{font-family:宋体, STSong;}
+}
+</style>
+<div id="mini_nav_qq_wrap">
+	<div id="mini_nav_qq">
+		<div class="mini_nav_fl" bossZone="mainnav">
+			<ul>
+				<li><a href="http://www.qq.com/" target="_blank">腾讯网首页</a></li>
+				<li><a href="http://zj.qq.com" target="_blank">腾讯·大浙网首页</a></li>
+         <li> <a href="javascript:void(0);" onclick="SetHome(this,'http://zj.qq.com/');">设为首页</a>        </li>
+			</ul>
+		</div>
+		<style type="text/css">
+/*导航微博登录 v20120209 1.0.7 mblogin*/
+#site_nav_mblogin{float:right;height:25px;padding-right:8px;line-height:24px;color:#666;font-size:12px;font-family:"宋体","Arial Narrow",sans-serif;}
+#site_nav_mblogin div{float:left;}
+#site_nav_mblogin .mblog_logo{width:20px;height:24px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) -90px 5px no-repeat; }
+#site_nav_mblogin .mblog_logo span{display:none;}
+#site_nav_mblogin .mblog_login_info span{padding-right:12px;}
+#site_nav_mblogin .mblog_login_info em{font-family:Arial;font-style:normal;padding-right:12px;}
+#site_nav_mblogin .mblog_login_button span,#site_nav_mblogin .mblog_enter_button span{*padding-left:1px;_padding-left:1px;text-align:center;color:#fff;}
+#site_nav_mblogin .mblog_login_button,#site_nav_mblogin .mblog_enter_button{position:relative;z-index:10000;width:57px;height:17px;margin-top:2px;margin-right:12px;padding-top:2px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) 0 0 no-repeat;cursor:pointer;text-align:center;line-height:17px;overflow:visible;color:#fff;}
+#site_nav_mblogin .mblog_enter_button{display:none;}
+#site_nav_mblogin .mblog_login_text{*padding-top:1px;_padding-top:1px;}
+#site_nav_mblogin .mblog_loginout_text{display:none;*padding-top:1px;_padding-top:1px;}
+
+#site_nav_mblogin a{color:#666; text-decoration:none;}
+#site_nav_mblogin a:visited{color:#666;}
+#site_nav_mblogin a:hover{color:#666; text-decoration: underline;}
+#site_nav_mblogin .mblog_login_info em a,#site_nav_mblogin .mblog_login_info em a:visited,#site_nav_mblogin .mblog_login_info em a:hover{color:#0B3B8C}
+#site_nav_mblogin .mblog_login_info a.mbAtMe,#site_nav_mblogin .mblog_login_info a.mbAtMe:visited,#site_nav_mblogin .mblog_login_info a.mbAtMe:hover{color:#BD0A01;}
+#site_nav_mblogin .mblog_enter_button a,#site_nav_mblogin .mblog_enter_button a:visited,#site_nav_mblogin .mblog_enter_button a:hover{color:#fff;line-height:17px;}
+
+#site_nav_mblogin .mbCardUserInfo {position: absolute;z-index:999999;left:-160px; top:0;width:236px;margin-top: 26px; text-align:left;text-indent:0;overflow:visible;}
+#site_nav_mblogin .mbCardUserDetail div{line-height:18px;}
+#site_nav_mblogin .mbCardUserInfo{height:auto;padding:10px 24px 10px 10px;background:#ffffce;border:#f0e5ba 1px solid;color:#666;}
+#site_nav_mblogin .mbCardUserInfo .arrowBox{position:absolute;width:15px;height:8px;left:0;top:0;margin:-8px 0 0 180px;font-size:1px;line-height:1px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) 0 -30px no-repeat;celar:both;zoom:1;}
+#site_nav_mblogin .mbCardUserInfo .arrowBox div{font-size:1px;line-height:1px;}
+#site_nav_mblogin .mbCardUserInfo .mbClose {position:absolute;top:0;right:0;width:15px;height:15px;margin:4px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) 0 -45px no-repeat;font-size:1px;line-height:1px;cursor:pointer;}
+#site_nav_mblogin .mbCardUserInfo .mbClose span{display:none;}
+#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbTxt1,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbUserNick,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbFriends{color:#666;}
+#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg{padding-left:180px;text-align:left;}
+#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg a,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg a:visited{color:#2b4a78;text-decoration:underline;}
+
+#site_nav_mblogin .mbCardUserInfo {-moz-border-radius: 6px;-moz-box-shadow: 2px 2px 2px #f0e5ba;-webkit-border-radius: 6px;-webkit-box-shadow: 2px 2px 2px #f0e5ba;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari 3.0 and Opera 9 rules here */
+#site_nav_mblogin{font-family:宋体, STSong;}
+}
+
+/*=S 浮动层 */
+.share_layer { overflow:hidden; padding:7px; position:absolute; z-index:999999;zoom:1;font-size:12px; font-family:Arial, Sans-Serif; }
+.share_layer ul, .share_layer ul li { list-style-type:none; }
+.share_layer img { border:0 none; }
+.share_layer a { text-decoration:none; }
+.share_layer a:hover { text-decoration:underline; }
+.share_layer button,.share_layer label { cursor:pointer; border:0 none; }
+.share_layer input,.share_layer  button { font-size:12px; font-family:Arial, Sans-Serif; }
+.share_layer_main{ border:1px solid #b5c1ca; background-color:#FAFCFF; position:relative; z-index:5}
+.share_layer_title { height:24px; background:#EEF4F6 url(//mat1.gtimg.com/www/images/nav/loginpop_tbg.png) repeat-x; cursor:move; border-bottom:1px solid #CED3E4; }
+.share_layer_title h3 { float:left; margin:0;padding:3px 0 0 12px; color:#666; font-size:13px;font-weight:normal; line-height:18px; overflow:hidden; font-family:Arial, Helvetica, sans-serif;}
+.share_layer_title .mblogo{ padding-left:24px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt1.png) -84px 6px no-repeat;}
+.share_layer .bt_close { background:url(http://imgcache.qq.com/qzonestyle/qzone_app/app_news_share_v1/pop_bg.png) no-repeat 0 -39px; width:9px; height:10px;cursor:pointer; position:absolute; right:10px; top:11px; z-index:5px;}
+.share_layer_cont a:link, .share_layer_cont a:visited { color:#5F5F5F; text-decoration:underline; }
+.share_layer_cont a:hover, .share_layer_cont a:active { color:#494949; }
+.share_layer_cont { color:#000000; background-color:#FAFCFF;}
+.share_layer_hint { color:#9E9E9E; font-style:normal; }
+.global_tip_button { text-align:center; clear:both; width:100%;}
+.bt_tip_sure, .bt_tip_cancel { background-image:url(http://imgcache.qq.com/qzonestyle/qzone_app/app_news_share_v1/pop_bg.png); background-repeat:no-repeat; background-position:0 -58px; font-size:12px; line-height:19px; width:48px; height:23px; margin-right:6px; *overflow:visible;
+_padding-top:3px; _line-height:12px; cursor:pointer; }
+*:lang(zh) .bt_tip_sure, .bt_tip_cancel {padding-top /*\**/:4px\9}
+.bt_tip_cancel { color:#4D637F; background-color:#F3F4F5; background-position:-54px -58px; }
+.icon_hint_warn, .icon_hint_succeed { background:transparent url(http://imgcache.qq.com/qzonestyle/qzone_app/app_news_share_v1/pop_bg.png) no-repeat; display:-moz-inline-stack; display:inline-block; height:15px; width:15px; vertical-align:middle; }
+.icon_hint_warn { background-position:-39px -37px; _vertical-align:-2px; }
+.icon_hint_succeed { background-position:-18px -37px; }
+.layer_popup { background-color:#FFFFFF; border:2px solid #6792bc; }
+.icon_hint_warn span, .icon_hint_succeed span { display:none; }
+.share_layer .bg {position:absolute;top:0;left:0;height:100%;padding:500px;zoom:1;}
+.share_layer .del_fri{font-weight:bold;display:-moz-inline-stack;display:inline-block;line-height:9px;width:11px;height:10px;position:absolute;top:6px;right:10px;cursor:pointer; font-family:"Comic Sans MS","Verdana", cursive; color:#99ADBA;}
+.share_layer .del_fri:hover{text-decoration:none; color:#666666;}
+.share_layer_title .none { display:none !important; }
+/*=E 浮动层 */
+</style>
+	<div id="site_nav_mblogin" class="site_nav_mblogin" bossZone="mbLogin">
+		<div class="mblog_logo"><span>腾讯微博蒲公英</span></div>
+		<div class="mblog_login_info" id="mblog_logined_info"></div>
+		<div class="mblog_login_button" id="mblog_login_button"><span>登录微博</span><div class="mbCardUserInfo" id="mbCarduserNotLogin" style="display: none;">
+				<div class="arrowBox"><div class="arrow"></div></div>
+				<div class="mbClose"><a href="#"><span>关闭</span></a></div>
+				<div class="mbCardUserDetail">
+					<div class="mbConTxt">
+						<span class="mbTxt1">加入微博，记录点滴，分享感动，握手明星</span>
+					</div>
+					<div class="mbReg"><a target="_blank" href="http://t.qq.com?pref=qqcom.toptips">开通微博</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="mblog_enter_button" id="mblog_enter_button"><span>进入微博</span></div>
+		<div class="mblog_login_text" id="mblog_login_text"><a href="http://t.qq.com/reg/index.php?pref=qqcom.mininav" target="_blank">注册</a></div>
+		<div class="mblog_loginout_text" id="mblog_logout_text"><a href="javascript:void(0)" target="_blank">退出</a></div>
+	</div>
+
+<script src="//mat1.gtimg.com/www/mb/js/portal/mi.MiniNav_13090403.js" charset="utf-8"></script>
+
+
+<!--搜狗搜索-->
+<style type="text/css">
+#sosoSearch{width:154px;height:18px;float:right;margin-right:15px;display:inline;border:1px solid #d7d7d7;margin-top:5px;}
+#searchKey{width:129px;height:18px;float:left;border:0;margin:0;padding:0;}
+#searchBtn{width:24px;height:18px;float:right;border:0;text-indent:-9999px;cursor:pointer;background:url(//mat1.gtimg.com/www/images/qq2012/ztSougouBtn.png) no-repeat;}
+.soso-smart-m{position:absolute;z-index:9999;margin:0;background:#fff;border:1px solid #ccc;cursor:default;}
+.soso-smart-m td{font-size:13px;line-height:22px;font-family:"微软雅黑";}
+/* 未选中行的样式 */
+.soso-smart-a{}
+/* 选择行的样式 */
+.soso-smart-b{background:#D8ECFF;}
+/* 文本样式 */
+.soso-smart-c{padding-left:3px;white-space:nowrap;text-align:left;overflow:hidden;}
+</style>
+<form role="search" action="http://www.sogou.com/tx" id="sosoSearch" name="soso_search_box" method="get" target="_blank">
+	<input id="sogouSite" type="hidden" name="site" value="qq.com" />
+	<input type="text" id="searchKey" title="请输入关键词" name="query" x-webkit-speech x-webkit-grammar="builtin:translate" autocomplete="off" onfocus="if(this.value=='请输入关键词')this.value=''" />
+	<button id="searchBtn" aria-pressed="false" title="按下按钮，在搜狗中搜索相关内容" onClick="submit();bossSearch('submit',2537)"><span>搜索</span></button>
+</form>
+<script type="text/javascript">
+(function(d, fname, useSuggest,isChannelPage,pid) {
+	var frm = d.forms[fname], elems = frm.elements, input = elems['query'];
+	var IS_MSIE = navigator.userAgent.toLowerCase().indexOf('msie') != -1 && !window.opera;
+	var isIE6 = navigator.userAgent.toLowerCase().indexOf('msie 6.0') != -1;
+	var sHost = location.host||'www.qq.com',sitePrefix='www';
+	var CPID = new Array();
+	if(sHost){
+		var arr = sHost.replace(/\.qq\.com$/i,'').split('.');
+		sitePrefix = arr[0];
+		document.getElementById("sogouSite").value = sitePrefix + ".qq.com";
+	}
+	createHiddenInput('hdq',"sogou-wsse-b58ac8403eb9cf17-0100",false);
+	var scField = createHiddenInput('sourceid',"sugg",false);
+    var sub = document.getElementById("sub");
+	if(typeof sosoArticlKey != 'undefined' && sosoArticlKey.length){
+		setFieldValue(input,sosoArticlKey);
+	}
+	function createHiddenInput(name, value, disabled) {
+		if(elems[name]) {
+			elems[name].value = value;
+			if(disabled) elems[name].disabled = 'disabled';
+			else elems[name].removeAttribute('disabled');
+			return elems[name];
+		}
+		try{
+			var element = document.createElement('<input name="'+name+'" />');
+		}catch(e){}
+		
+		if(!element || element.nodeName.toUpperCase() != 'INPUT'){
+			var element = document.createElement('input');		
+		}
+		element.type = 'hidden';
+		element.name = name;
+		element.value = value;
+		if(disabled)
+			element.disabled = disabled;
+		frm.appendChild(element);
+		return element;
+	}
+
+	function disableHidden(inpt) {
+		inpt.disabled = 'disabled';
+	}	
+	function setFieldValue(field, val) {
+		field.value = val;
+	}
+	if(useSuggest) {
+		var fnToRun = function() {
+			var fileLoaded = function() {
+			  if (IS_MSIE && ac.readyState != "complete" && ac.readyState != "loaded") return;
+			  if(!sososmart) return;
+			  var divs = frm.getElementsByTagName('div');
+			  var inputWrap;
+			  for(var i=0,len=divs.length;i<len;i++){
+			  	if(divs[i].className != 'inputWarp') continue;
+			  	inputWrap = divs[i];
+			  	break;
+			  }
+			  sososmart.init(frm,input,true,'',true,inputWrap,null,null,CPID[0],scField);
+			}
+			var ac = d.createElement('script');
+			ac.type = 'text/javascript';
+			ac.async = true;
+			ac.src = '//mat1.gtimg.com/www/js/qq2012/suggestionZT.v1.0.1.js';
+			var s = d.getElementsByTagName('script')[0];
+			
+			if(IS_MSIE && !window.opera) {
+				ac.onreadystatechange = fileLoaded;
+			} else {
+				ac.onload = fileLoaded;
+			}
+			s.parentNode.insertBefore(ac, s);
+		};
+		if(IS_MSIE){
+			if(window.attachEvent){
+				window.attachEvent('onload',fnToRun,false);
+			}else{
+				window.addEventListener('load',fnToRun);
+			}
+		}else{
+			fnToRun();
+		}
+	}
+})(document, 'soso_search_box', true,true, "sogou-wsse-b58ac8403eb9cf17-0100");
+
+
+function bossSearch(zoneID,bossID){
+    //var bossID = 2537; 
+    try{		
+		var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+		var pvid=(a==null?"":"F"+unescape(a[2]));
+		a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+		var iQQ=(a==null?"":unescape(a[2]));
+		var iurl = 'http://btrace.qq.com/kvcollect?BossId='+bossID+'&sOp='+zoneID+'&sBiz=zt.qq.com&iQQ='+iQQ+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+		var gImageSerach = new Image(1,1);
+		gImageSerach.src = iurl;
+	}catch(e){}
+}
+
+function smartboxClick(){
+	bossSearch("smartbox",2537)
+}
+</script><!--[if !IE]>|xGv00|b59ac84256a86fb6e209deab0d5021ea<![endif]-->
+	</div>
+<script type="text/javascript">
+
+
+function SetHome(obj,url){
+
+    try{
+
+        obj.style.behavior='url(#default#homepage)';
+
+       obj.setHomePage(url);
+
+   }catch(e){
+
+       if(window.netscape){
+
+          try{
+
+              netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+         }catch(e){
+
+             window.open("http://zj.qq.com/sethome.htm","_blank");
+          }
+
+       }else{
+
+        window.open("http://zj.qq.com/sethome.htm","_blank");
+       }
+
+  }
+
+}
+
+</script>
+</div><!--[if !IE]>|xGv00|4bb92161f7c2c409a04597ef594252f6<![endif]-->
+<!--微博js--> 
+<div class="hd" style="display:none;">			
+				<form onSubmit="return haoValidate();" action=http://www.baidu.com/s name=f id="search-form" target="_blank" class="m-hd-search">
+	   			<input type="text" tabindex="1" id="kww" name="word" autocomplete="off" class="m-hd-search_text kw" value="" style="width:1px; display:none;">
+			  </form>
+
+
+</div>
+
+  <div class="bd">
+	<div class="main">
+		<div class="content" id="content">
+			<div class="title-bar">
+				<h3 class="item-title" style="position:relative;"><span class="icon-title"></span>如何在360浏览器、搜狗、Chrome等浏览器中设腾讯大浙网（http://zj.qq.com/）为首页？&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+			</div>
+			<div class="item">
+				<a href="#01" target="_self" name="01" class="item-title extend"><span class="icon-title"></span><span class="icon-bro ico-ie"></span>IE浏览器</a>
+				<div class="item-content">
+
+					<div class="item-inner">						
+						<div class="item-inner-title">
+						  <p>或按照如下方式操作：<br>
+						  1、打开IE浏览器，点击菜单里的工具 - Internet选项，如图所示：<br/>
+						  <img src="http://img1.gtimg.com/zj/pics/hv1/213/242/1316/85634823.jpg" width="447" height="287" class="pcbottom"><br/>
+						  2、选择常规选项， 在地址栏里输入<a class="em" href="http://zj.qq.com/"> http://zj.qq.com/ </a>。<br/>
+						  <img width="430" height="451" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/215/242/1316/85634825.jpg"><br/>
+						  3、点击确定后，重启浏览器后主页就是腾讯大浙网了。</p>
+
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#02" target="_self" name="02" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-360"></span>360浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开360浏览器， 工具（alt+t）-主页设置，如图所示：<br/>
+<img width="553" height="451" class="pcbottom" src="http://www.hao123.com/redian/images/360-082801.JPG"><br/>
+2、在浏览器启动时打开（主页设置） 内输入<a href="http://zj.qq.com/"> http://zj.qq.com/ </a>后，关闭即可。<br/>
+注：如输入框为灰色无法输入，请用<a href="http://www.hao123.com/redian/360suoding8.0.htm">360安全卫士内锁定主页</a><br/>
+<img width="381" height="193" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/13/244/1316/85635133.jpg">
+						  <br><br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					  </div>	
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<a href="#03" target="_self" name="03" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-aoyou"></span>傲游浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开傲游浏览器，点左上角的笑脸-选项，如图所示：<br/>
+<img width="612" height="424" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/45/249/1316/85636440.jpg"><br/>
+2、基本设置里在主页下面输入<a href="http://www.hao123.com/">http://zj.qq.com/ </a> 后,关闭重新打开即可 ，如下图： <br/>
+<img width="554" height="310" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/50/249/1316/85636445.jpg"><br/>
+						  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+</div>	
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#04" target="_self" name="04" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-sougou"></span>搜狗浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开搜狗浏览器，点击菜单里的工具 - 搜狗高速浏览器选项，如图所示：<br/><img width="465" height="328" class="pcbottom" src="http://www.hao123.com/redian/images/sy_5.jpg"><br/>2、选择常规选项， 在启动设置里选择自定义网址，并输入http://zj.qq.com/ ，点击确定，就可以设定腾讯大浙网为主页了。<br/><img width="514" height="300" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/178/250/1316/85636828.jpg"></div>
+												  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#05" target="_self" name="05" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-qq"></span>QQ浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开QQ浏览器，点击菜单 – QQ浏览器选项，如图所示：<br/><img  class="pcbottom" src="http://s0.hao123img.com/res/images/qq1.png">
+<br>
+2、常规设置-自定义网页内输入http://zj.qq.com ,启动浏览器时选择“主页”确定即可：<br/><img  class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/100/251/1316/85637005.jpg"><br/>
+</div>	
+												  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#06" target="_self" name="06" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-tt"></span>TT浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开TT浏览器，选择工具 - TT选项，如图所示：<br/><img width="535" height="233" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/38/253/1316/85637453.jpg"><br/>2、选择启动和退出，输入http://zj.qq.com/ 为主页，勾选启动时打开主页。最后别忘了点击保存按钮。<br/><img width="580" height="502" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/39/253/1316/85637454.jpg"></div>	
+						  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#ff" target="_self" name="ff" id="ff" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-ff"></span>Firefox浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>
+					  1、打开浏览器，选择菜单工具 - 选项，如图所示：<br/><img width="553" height="325" class="pcbottom" src="http://www.hao123.com/redian/images/sy_11.jpg"><br/>2、选择常规，依次选择显示我的主页；输入http://zj.qq.com/主页地址，点击使用当前页按钮。最后点击确定就可以了。<br/><img width="589" height="489" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/101/1/1317/85638281.jpg"></div>	
+												  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#08" target="_self" name="08" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-chrome"></span>Chrome浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开谷歌浏览器-点右上角小扳手-设置，如图所示：<br/><img width="501" height="523" class="pcbottom" src="http://www.hao123.com/redian/images/sy_13_0522.jpg"><br/>2、外观内-勾选 显示主页按钮-点更改<br/><img width="368" height="180" class="pcbottom" src="http://www.hao123.com/redian/images/sy_14_0522.jpg"><br/>3、在打开此页后输入 http://zj.qq.com确定即可。<br/><img width="403" height="176" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/204/2/1317/85638639.jpg"></div>	
+												  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#13" target="_self" name="13" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-360js"></span>360极速浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开360极速浏览器-点击小扳手-选项，如图所示：<br/><img width="553" height="373" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/89/7/1317/85639799.jpg"><br/>2、基本设置-打开此页里输入<a class="em" href="http://zj.qq.com/">http://zj.qq.com/ </a>。 <br/><img width="553" height="373" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/90/7/1317/85639800.jpg"><br/>3、输入完以后,关闭浏览器,重新打开即可。</div>	
+												  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>						
+			<div class="item">
+				<a href="#14" target="_self" name="14" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-worldjs"></span>世界之窗极速版浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开浏览器，然后选择工具 - 选项，如图所示：<br/><img width="338" height="440" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/190/8/1317/85640155.jpg"><br/>
+						  2、选择基本设置，选择“打开主页”，并把主页设置为http://zj.qq.com/，就可以了
+
+。<br/>
+<img width="668" height="418" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/191/8/1317/85640156.jpg"></div>	
+						  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="item">
+				<a href="#16" target="_self" name="16" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-liebao"></span>猎豹浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开猎豹浏览器输入并访问 <a href="http://zj.qq.com">http://zj.qq.com</a>后，点击左上角豹头>>选项<br/><img width="786" height="550" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/161/10/1317/85640636.jpg"><br/>
+						  2、基本设置>>打开主页>>使用当前已打开网页，关闭即可。<br/>
+<img width="785" height="607" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/163/10/1317/85640638.jpg"></div>	
+						  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="item">
+				<a href="#09" target="_self" name="09" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-opera"></span>Opera浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、1.	打开opera浏览器-左上角菜单-设置-首选项，如图所示：<br/><img width="554" height="515" class="pcbottom" src="http://www.hao123.com/redian/images/opera-11101001.jpg"><br/>
+						  2、常规-启动内选择-打开主页,主页内输入<a href="http://zj.qq.com">http://zj.qq.com</a>。最后确定保存就可以了。<br/>
+<img width="554" height="410" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/151/12/1317/85641136.jpg"></div>	
+						  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#10" target="_self" name="10" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-world"></span>世界之窗浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>
+					  1、打开浏览器，先登录到腾讯大浙网的页面，然后选择工具 - 选项，如图所示：<br/><img width="400" height="287" class="pcbottom" src="http://www.hao123.com/redian/images/sy_17.jpg"><br/>2、选择常规设置，在主页设置里输入网址，然后在任意位置点击鼠标左键保存，提示设置已保存就可以了。<br/><img width="691" height="439" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/216/13/1317/85641456.jpg"></div>	
+												  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#11" target="_self" name="11" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-safari"></span>Safari浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开浏览器-编辑-偏好设置，如图所示：<br/><img width="554" height="354" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/28/16/1317/85642033.jpg"><br/>
+						  2、常规-主页内输入<a href="http://zj.qq.com">http://zj.qq.com</a>,关闭即可 。<br/>
+<img width="554" height="432" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/30/16/1317/85642035.jpg"></div>	
+						  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#12" target="_self" name="12" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-green"></span>绿色浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开绿色浏览器-工具-GREENBROWSER选项，如图所示：<br/><img width="553" height="446" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/226/19/1317/85642996.jpg"><br/>
+						2、常规-启动/退出-自定义主页内输入 http://zj.qq.com 确定即可。<br/><img width="576" height="441" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/229/19/1317/85642999.jpg"></div>	
+												  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+			</div>
+			
+<div class="item">
+				<a href="#15" target="_self" name="15" class="item-title folder"><span class="icon-title"></span><span class="icon-bro ico-kr"></span>KR浏览器</a>
+				<div class="item-content">
+					 
+					<div class="item-inner">
+						<div class="item-inner-title">或按照如下方式操作：<br>1、打开KR浏览器-工具-修改主页，如图所示：<br/><img width="554" height="392" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/228/20/1317/85643253.jpg"><br/>
+						  2、在当前主页内输入 http://zj.qq.com 确定即可。<br/>
+<img width="369" height="186" class="pcbottom" src="http://img1.gtimg.com/zj/pics/hv1/229/20/1317/85643254.jpg"></div>	
+						  <br>
+						  <p style=" color:#FF0000"><b>*&nbsp;&nbsp;如仍然无法解决，请参考以下方法:</b></p>
+						  <ul>
+                            <li>（1）用杀毒软件、安全软件查杀病毒木马后重新启动电脑</li>
+                            <li>（2）删掉桌面浏览器快捷方式后，重新创建快捷方式（开始程序-浏览器上右键-发送到桌面快捷方式）</li>
+					      </ul>
+					</div>
+				</div>
+		  </div>
+
+		</div>
+	</div>
+  </div>
+<div class='ft'>
+   <div class="feedback">&copy;2013 腾讯大浙网&nbsp;&nbsp;</div>
+</div>
+</body>
+<script>
+    document.getElementById("content").onclick = function (e) {
+        e = e || window.event;
+        var el = e.srcElement || e.target,
+		href;
+        el.tagName === "A" && (href = el.href.split("#")[1]) && sendUserTrack({
+            "type": "click",
+            "position": href
+        });
+    }
+</script>
+<script src="/js/sethome.js"></script>
+<script language=javascript>
+
+    document.f.word.focus()
+    window.onload = function () {
+        haoSubSearch("web");
+        goSearch();
+        try {
+            if (window.location.hash.indexOf("ff") === 1) {
+                document.getElementById("ff").scrollIntoView(true); 
+            }
+        }
+        catch (e)
+        { }
+    }
+    var browserList = ["ie", "360", "aoyou", "sougou", "qq", "tt", "ff", "chrome", "opera", "world", "safari", "green", "360js", "worldjs", "kr", "liebao"];
+
+    (function () {
+        init();
+        var list = getElementsByClass("item", document.getElementById("content"));
+
+        var len = list.length, i = 0;
+        for (; i < len; i++) {
+            addEvent(getElementsByClass("item-title", list[i])[0], "click", toggle);
+        }
+    })();
+
+    function init() {
+        var url = location.href;
+        var str;
+        if (url.indexOf("#") != -1) {
+            str = url.split("#")[1];
+        }
+
+        var len = browserList.length;
+        for (var i = 0; i < len; i++) {
+            var target = getElementsByClass("ico-" + browserList[i])[0].parentNode;
+            var node = getElementsByClass("item-content", target.parentNode)[0];
+            if (str == i + 1 || browserList[i] == str) {
+                node.style.display = "block";
+                target.className = "item-title extend";
+            } else {
+                node.style.display = "none";
+                target.className = "item-title folder";
+            }
+        }
+    }
+    //展开、收缩内容
+    function toggle(event) {
+        var e = event || window.event,
+			target = e.srcElement || e.target,
+			el = target;
+
+        //stopDefault();
+
+        var len = browserList.length;
+        while (el && el.className != 'item') {
+            el = el.parentNode;
+        }
+
+        if (!el) {
+            return;
+        }
+
+        var aNode = el.getElementsByTagName('a')[0];
+
+        var content = getElementsByClass("item-content", el)[0];
+
+        if (aNode.className.indexOf('extend') > -1) {
+            aNode.className = 'item-title folder';
+            content.style.display = 'none';
+        } else {
+            aNode.className = 'item-title extend';
+            content.style.display = 'block';
+        }
+
+        for (var i = 0; i < len; i++) {
+            var target = getElementsByClass("ico-" + browserList[i])[0].parentNode;
+            var node = getElementsByClass("item-content", target.parentNode)[0];
+
+            if (aNode == target) {
+                continue;
+            }
+            node.style.display = "none";
+            target.className = "item-title folder";
+
+        }
+    }
+
+    function getElementsByClass(searchClass, node, tag) {
+        var classElements = new Array();
+        if (node == null)
+            node = document;
+        if (tag == null)
+            tag = '*';
+        var els = node.getElementsByTagName(tag);
+        var elsLen = els.length;
+        var pattern = new RegExp("(^|\\s)" + searchClass + "(\\s|$)");
+        for (i = 0, j = 0; i < elsLen; i++) {
+            if (pattern.test(els[i].className)) {
+                classElements[j] = els[i];
+                j++;
+            }
+        }
+        return classElements;
+    }
+    function stopDefault(e) {
+        if (e && e.preventDefault) {
+            e.preventDefault;
+        } else {
+            window.event.returnValue = false;
+        }
+        return false;
+    }
+    function addEvent(obj, type, fn) {
+        if (obj.attachEvent) {
+            obj['e' + type + fn] = fn;
+            obj[type + fn] = function () { obj['e' + type + fn](window.event); }
+            obj.attachEvent('on' + type, obj[type + fn]);
+        } else {
+            obj.addEventListener(type, fn, false);
+        }
+    }
+	
+</script>
+<script defer>(function initTrack(o){var d=document, x=d.createElement("script");x.src = "http://s0.hao123img.com/res/js/track.js?"+~(new Date/36e5);var a=[];if(o){for(i in o){a.push(i + ":" + (o[i]))}var config = a.join(";");x.setAttribute("data-log-config",config);var s=d.getElementsByTagName("script")[0].parentNode;var p= s||d.head;if(p){setTimeout(function(){p.appendChild(x)},0);}}})({pageId:"hao123-redian-sheshouyef",page:"hao123-redian-sheshouyef",level:2});</script>
+</html><!--[if !IE]>|xGv00|5e0a5e0e64fc95503dfae27eb4318bc9<![endif]-->

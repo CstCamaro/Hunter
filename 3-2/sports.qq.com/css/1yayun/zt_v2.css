@@ -1,0 +1,67 @@
+/*
+=======================================================
+	文件名：zt.css
+	作者：Rainaxin
+	说明：娱乐专题汇总
+=======================================================
+*/
+body,div,form,dl,dt,dd,img,h1,h2,h3,h4,h5,h6,ul,ol,li,p,span,table,th,td,a,sup,caption,button{border:0;border:none;padding:0;margin:0;}
+input,select,textarea{padding:0;margin:0;border:0;border:none;}
+body{padding-right:5px;font-family:"宋体","微软雅黑",Tahoma,sans-serif;font-size:12px;text-align:center;background:#FFFFFF;color:#333333;}
+ul,ol{list-style-type:none;}
+a:link,
+a:visited{color:#023499;text-decoration:none;}
+a:hover,
+a:active{text-decoration:underline;color:#FF0000;}
+
+/*迷你导航*/
+.mini_nav{background:url(//mat1.gtimg.com/www/images/nav/mini_bg.png) repeat-x;height:25px;line-height:25px;text-align:left;}
+.mini_nav .mini_nav_inner{width:960px;margin:0 auto;position:relative;}
+.mini_nav strong{font-weight:normal;font-size:14px;}
+.mini_nav strong img{vertical-align:-3px;margin-right:5px;width:16px;height:16px;}
+.mini_nav .mini_r{position:absolute;right:0;top:0;}
+.mini_nav a{color:#333333;}
+
+.page{width:960px;margin:20px auto;}
+.pageInner{text-align:left;}
+.banner{*zoom:1;position:relative;}
+.banner:after{content:"";display:block;clear:both;}
+.banner .toolbar{position:absolute;right:0;top:40px;}
+.banner h1{font-size:30px;font-family:"微软黑体";font-weight:bold;margin:0 0 0 10px;}
+
+.original{position:relative;margin:10px 0 0 0;font-size:14px;}
+.original h2{font-size:14px;}
+.original .zt_recom{position:absolute;right:0;top:0;}
+.original .zt_recom a{margin:0 5px;}
+/*当前位置*/
+.breadcrumb{height:28px;line-height:28px;padding:0 5px;margin:10px 0 0 0;}
+.breadcrumb a{background:url(//mat1.gtimg.com/ent/sitemap/arrow.png) 0 4px no-repeat;padding-left:12px;margin-left:10px;color:#333333;}
+.breadcrumb .home{background:none;margin-left:0px;color:#023499;padding-left:5px;}
+/*list*/
+.zt_wrap .topNav2{background:#4E7CBA url(//mat1.gtimg.com/finance/financeNav0531/bg_sbzxp_02.png) repeat-x;height:28px;line-height:28px;color:#FFFFFF;}
+.zt_wrap .topNav2 a{color:#FFFFFF;padding:6px 10px 8px 10px;}
+.zt_wrap .topNav2 a.on{background-color:#FFFFFF;color:#333333;}
+/*热点专题*/
+.ent_hot{border:1px solid #CBCBCB;border-top:none;padding:15px 10px 10px 10px;position:relative;}
+.ent_hot h2{font-size:14px;font-weight:normal;border-bottom:1px solid #E8E8EC;padding-bottom:8px;margin-right:150px;}
+.ent_hot .list_hot{*zoom:1;}
+.ent_hot .list_hot:after{content:"";display:block;clear:both;}
+.ent_hot .list_hot li{width:368px;margin-right:20px;float:left;font-size:14px;background:url(//mat1.gtimg.com/ent/sitemap/dot.gif) 5px 50% no-repeat;padding-left:15px;border-bottom:1px solid #E8E8EC;color:#AFAFAF;height:30px;line-height:30px;}
+.ent_hot .list_hot li a{float:left;}
+.ent_hot .list_hot .fun{float:right;font-size:12px;}
+.ent_hot .list_hot .fun a{margin-right:5px;color:#AFAFAF;}
+.ent_hot .list_hot .fun a em{font-style:normal;}
+.ent_hot .list_hot .fun a:hover{color:#FF0000;}
+.ent_hot .year_zt{width:135px;position:absolute;right:10px;top:20px;background-color:#E7F2FB;padding:5px 2px;border:1px solid #DBE4EB;-webkit-border-radius:5px;border-radius:5px;}
+.ent_hot .year_zt h3{font-size:14px;border-bottom:1px solid #DBE4EB;font-weight:normal;padding:0 0 5px 10px;margin:5px 2px 5px 2px;}
+.ent_hot .year_zt .list_year li{width:135px;height:24px;line-height:24px;}
+.ent_hot .year_zt .list_year a{padding-left:15px;display:block;}
+/*模块专题列表*/
+.zt_block{border:1px solid #CBCBCB;margin:10px 0;}
+.zt_block .zt_hd{position:relative;background-color:#D3E1F9;height:28px;line-height:28px;border-top:1px solid #FFFFFF;font-size:14px;}
+.zt_block .zt_hd h2{font-size:14px;font-weight:normal;margin-left:10px;}
+.zt_block .zt_hd .more{position:absolute;right:10px;top:0;}
+.zt_block .list_zt{*zoom:1;margin:10px 0 10px 10px;}
+.zt_block .list_zt:after{content:"";display:block;clear:both;}
+.zt_block .list_zt li{font-size:12px;text-align:right;width:438px;margin-right:20px;float:left;background:url(//mat1.gtimg.com/ent/sitemap/dot.gif) 5px 50% no-repeat;padding-left:15px;border-bottom:1px solid #E8E8EC;color:#AFAFAF;height:30px;line-height:30px;}
+.zt_block .list_zt a{float:left;font-size:14px;}/*  |xGv00|1a1181a56bc797558e855c033ce64050 */

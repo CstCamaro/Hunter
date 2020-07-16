@@ -1,0 +1,94 @@
+body{font-family:"ËÎÌו";font-size:12px;background:#fff;color:#333;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd{margin:0;padding:0;border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,p,select{margin:0;padding:0;font-size:12px;}
+a{color:#27507C;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.dis{display:block!important;}
+.undis{display:none;}
+.nobg{background:none!important;}
+.box10{height:10px;clear:both;overflow:hidden;}
+.wrap,.wrap2,.wrap3,.wrap4,.wrap5,.wrap6,.wrap7,.banner{width:960px;margin:0 auto;}
+.bg{width:100%;margin:0 auto;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/body_bg.gif) no-repeat center top;}
+.top{width:960px;height:29px;padding:8px 0;margin:0 auto;overflow:hidden;}
+.top .logo{float:left;}
+.top .boc{float:left;margin-left:375px;}
+.top .top-nav{float:right;}
+.top a{color:#575757;}
+.nav{width:100%;height:61px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/nav_bg.jpg) repeat-x;clear:both;}
+.nav .hd{height:30px;}
+.nav .hd li{float:left;height:30px;line-height:30px;padding:0 10px;font-size:14px;color:#fff;}
+.nav .hd li a{color:#fff;}
+.nav .hd li.current{background:#F0FDDF;font-weight:bold;color:#000;}
+.nav .hd li.current a{color:#000;}
+.nav .bd{height:31px;line-height:31px;text-align:center;color:#8FBA54;}
+.nav .bd a{color:#1B5800;}
+.banner img{float:left;}
+.wrap2 .left{width:310px;}
+.wrap2 .left .hd{width:260px;float:left;height:30px;line-height:30px;padding:0 15px 0 35px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/wrap2_left_hd.jpg) no-repeat left top;}
+.wrap2 .left .hd h2{font-size:14px;color:#fff;float:left;}
+.wrap2 .left .hd .more{float:right;color:#333;}
+.wrap2 .left .bd{width:290px;float:left;border:1px solid #A8CDA0;padding:7px 9px;}
+.wrap2 .left .bd .wrap2-left{width:290px;float:left;padding:9px 0;}
+.wrap2 .left .bd .wrap2-left img{width:80px;height:80px;padding:2px;border:1px solid #B4B4B4;float:left;}
+.wrap2 .left .bd .wrap2-left h3{width:194px;float:right;line-height:24px;}
+.wrap2 .left .bd .wrap2-left p{width:194px;float:right;color:#686868;line-height:20px;}
+.wrap2 .left .bd .wrap2-left a{color:#2B527B;}
+.wrap2 .center{width:380px;float:left;padding:0 10px;}
+.wrap2 .center .hd{width:350px;float:left;height:26px;line-height:26px;padding:3px 15px 0;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/wrap2_center_hd.jpg) no-repeat left top;}
+.wrap2 .center .hd h2{font-size:14px;color:#333;float:left;}
+.wrap2 .center .hd .more{float:right;color:#333;}
+.wrap2 .center .bd{width:380px;float:left;}
+.wrap2 .right{width:248px;border:1px solid #CBE2ED;}
+.wrap2 .right .hd{width:248px;height:29px;line-height:29px;float:left;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/wrap2_right_hd.jpg) no-repeat left top;}
+.wrap2 .right .hd h2{float:left;font-size:14px;color:#333;text-indent:20px;}
+.wrap2 .right .bd{width:206px;float:left;background:#EEF8FD;padding:7px 21px;}
+.wrap2 .right .bd ul{width:206px;float:left;}
+.wrap2 .right .bd li{width:200px;float:left;padding:2px;border:1px solid #B4B4B4;background:#fff;line-height:18px;margin:7px 0;text-align:center;}
+.wrap2 .right .bd li img{width:200px;height:115px;float:left;margin-bottom:4px;}
+.wrap3 .hd{width:960px;float:left;height:30px;line-height:30px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/wrap3_hd.jpg) no-repeat;}
+.wrap3 .hd h2{font-size:14px;float:left;text-indent:30px;color:#fff;}
+.wrap3 .bd{width:950px;float:left;border:1px solid #A8CDA0;padding:0 4px;}
+.wrap3 .bd .wrap3-bd{width:170px;float:left;text-align:center;padding:15px 10px;line-height:18px;}
+.wrap3 .bd .wrap3-bd h3{width:170px;float:left;height:29px;line-height:29px;color:#333;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/wrap3_bd_h3.jpg) no-repeat;}
+.wrap3 .bd .wrap3-bd img{width:168px;height:123px;border:1px solid #B7B7B7;margin-bottom:5px;float:left;}
+.wrap4 .left{width:310px;}
+.wrap4 .left .hd{width:260px;float:left;height:30px;line-height:30px;padding:0 15px 0 35px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/wrap2_left_hd.jpg) no-repeat left top;}
+.wrap4 .left .hd h2{font-size:14px;color:#fff;float:left;}
+.wrap4 .left .hd .more{float:right;color:#333;}
+.wrap4 .left .bd{width:290px;float:left;border:1px solid #A8CDA0;padding:7px 9px;}
+.wrap4 .left .bd .wrap2-left{width:290px;float:left;padding:4px 0 5px;}
+.wrap4 .left .bd .wrap2-left img{width:80px;height:80px;padding:2px;border:1px solid #B4B4B4;float:left;}
+.wrap4 .left .bd .wrap2-left h3{width:194px;float:right;line-height:24px;}
+.wrap4 .left .bd .wrap2-left p{width:194px;float:right;color:#686868;line-height:20px;}
+.wrap4 .left .bd .wrap2-left a{color:#2B527B;}
+.wrap4 .right{width:638px;border:1px solid #B6D6E8;background:#EEF8FD;}
+.wrap4 .right .hd{width:638px;float:left;height:29px;line-height:29px;}
+.wrap4 .right .hd h2{float:left;font-size:14px;color:#333;text-indent:15px;}
+.wrap4 .right .bd{width:630px;float:left;padding:8px 4px;}
+.wrap4 .right .bd .link{width:630px;float:left;height:474px;position:relative;}
+.wrap4 .right .bd .link .name{position:absolute;width:94px;height:21px;line-height:21px;padding:1px;display:block;color:#1C7A18;font-weight:bold;text-align:center;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/name_bg.gif) no-repeat;}
+.wrap5 .hd{width:910px;float:left;height:30px;line-height:30px;padding:0 20px 0 30px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/wrap3_hd.jpg) no-repeat;}
+.wrap5 .hd h2{font-size:14px;float:left;color:#fff;}
+.wrap5 .hd .more{float:right;color:#2B527B;}
+.wrap5 .bd{width:948px;float:left;border:1px solid #A8CDA0;padding:14px 5px;}
+.wrap5 .bd ul{width:948px;float:left;}
+.wrap5 .bd li{width:140px;float:left;text-align:center;padding:0 9px;line-height:18px;}
+.wrap5 .bd li img{width:138px;height:103px;border:1px solid #B7B7B7;margin-bottom:5px;float:left;}
+.wrap6 .hd{width:910px;float:left;height:30px;line-height:30px;padding:0 20px 0 30px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/wrap3_hd.jpg) no-repeat;}
+.wrap6 .hd h2{font-size:14px;float:left;color:#fff;}
+.wrap6 .hd .more{float:right;color:#2B527B;}
+.wrap6 .bd{width:948px;float:left;border:1px solid #A8CDA0;padding:14px 5px;}
+.wrap6 .bd ul{width:948px;float:left;}
+.wrap6 .bd li{width:140px;float:left;text-align:center;padding:0 9px;line-height:18px;}
+.wrap6 .bd li img{width:138px;height:103px;border:1px solid #B7B7B7;margin-bottom:5px;float:left;}
+.wrap7 .left,.wrap7 .right{width:473px;border:1px solid #CBE2ED;}
+.wrap7 .hd{width:473px;height:29px;line-height:29px;float:left;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/best/wrap7_hd.jpg) no-repeat;}
+.wrap7 .hd h2{float:left;font-size:14px;text-indent:20px;color:#333;}
+.wrap7 .bd{width:443px;float:left;padding:15px;}
+.wrap7 .bd ul{width:443px;float:left;}
+.wrap7 .bd li{width:443px;float:left;color:#9C9C9C;line-height:20px;margin:3px 0;}
+.wrap7 .bd li a{font-size:14px;color:#2B507D;}/*  |xGv00|81ba07d2f4f97889b5f59d259c22bc9a */

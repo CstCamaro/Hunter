@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>看比赛_体育直播_腾讯体育</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="腾讯体育">
+    <meta name="keywords" content="">
+    <script type="text/javascript">
+        document.domain="qq.com";
+        var script, fn, access_token, _timer, dt_cache;
+
+        var $Cookie = function () {
+            var domainPrefix = document.domain || "";
+            return {
+                set: function (name, value, domain, path, hour) {
+                    if (hour) {
+                        var expire = new Date();
+                        expire.setTime(expire.getTime() + 3600000 * hour);
+                    }
+                    document.cookie = name + "=" + value + "; " + (hour ? ("expires=" + expire.toGMTString() + "; ") : "") +
+                            (path ? ("path=" + path + "; ") : "path=/; ") + (domain ? ("domain=" + domain + ";") : ("domain=" +
+                            domainPrefix + ";"));
+                    return true;
+                },
+                get: function (name) {
+                    var r = new RegExp("(?:^|;+|\\s+)" + name + "=([^;]*)"),
+                            m = document.cookie.match(r);
+                    return (!m ? "" : m[1]);
+                },
+                del: function (name, domain, path) {
+                    document.cookie = name + "=; expires=Mon, 26 Jul 1997 05:00:00 GMT; " + (path ? ("path=" + path + "; ") :
+                                    "path=/; ") + (domain ? ("domain=" + domain + ";") : ("domain=" + domainPrefix + ";"));
+                }
+            }
+        }();
+        var VaildURL = function (sUrl) {
+            return (/^(https?:\/\/)?[\w\-.]+\.(qq|taotao)\.com($|\/|\\)/i).test(sUrl)||(/^[\w][\w\/\.\-_%]+$/i).test(sUrl)||(/^[\/\\][^\/\\]/i).test(sUrl) ? true : false
+        }
+
+        var _fireCallBack = function (openId, accessToken, _dt) {
+            var result = {mainLogin:"qq"}
+
+            $Cookie.set('vqq_openid', openId, 'sports.qq.com', '/', 2160)
+            $Cookie.set('vqq_access_token', accessToken, 'sports.qq.com', '/', 2160)
+            $Cookie.set('vqq_appid', '101481799', 'sports.qq.com', '/', 2160)
+            $Cookie.set('main_login', 'qq', 'sports.qq.com', '/', 2160)
+
+            var param=window.location.search.split("?")[1];
+            if (param) {
+                for (var queryList=param.split("&"),i=0;i<queryList.length;i++) {
+                    var keyValue=queryList[i].split("=");
+                    result[keyValue[0]]=keyValue[1]
+                }
+            }
+            result.access_token = accessToken
+            result.openId = openId
+
+            if (result.kbsUrl && VaildURL(result.kbsUrl)) {
+                setTimeout(function () {
+                    location.replace(decodeURIComponent(result.kbsUrl))
+                }, 10)
+            }
+
+            parent.login && parent.login.loginSuccess(result)
+        };
+
+        var getOpenId = function (_cb) {
+            !fn && (fn = window.callback);
+            window.callback = function (_dt) {
+                clearTimeout(_timer);
+                if (!_dt.openid) {
+                    return;
+                }
+                dt_cache = _dt;
+                var openId = _openId = _dt.openid;
+                _cb(openId, access_token, _dt);
+                script = null;
+                window.callback = fn;
+            };
+
+            if (dt_cache) {
+                window.callback(dt_cache);
+            } else {
+                if (script) return;
+                script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "https://graph.qq.com/oauth2.0/me?access_token=" + access_token;
+
+                var _head = document.getElementsByTagName("head")[0];
+                _head && _head.appendChild(script);
+                _timer = setTimeout(function () {
+                    // console.log()
+                }, 5000);
+            }
+        };
+        var matcher = location && location.hash.match(/access_token=([^&]*)/i)
+        if (matcher && matcher[1]) {
+            access_token = matcher[1]
+            getOpenId(_fireCallBack);
+
+        }
+
+    </script>
+    <style type="text/css">
+        html,body {
+            height: 100%;
+        }
+        .main {
+            height: 100%;
+            width: 100%;
+            background: url(https://mat1.gtimg.com/sports/kbsweb2/statics/loading.gif)
+            no-repeat
+            scroll
+            center center;
+        }
+    </style>
+    <link rel="shortcut icon" href="https://mat1.gtimg.com/sports/kbsweb/favicon.ico" type="image/x-icon">
+</head>
+<body class="main">
+</body>
+</html>
+<!--[if !IE]>|xGv00|bd73c926093a598f64ee3da3fe5a33be<![endif]-->

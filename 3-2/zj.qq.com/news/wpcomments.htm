@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<script type="text/javascript" src="http://zj.qq.com/js/dzcs_js/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://zj.qq.com/css/css/worldcup.css">
+<title>2014巴西世界杯专题-腾讯大浙网</title>
+
+
+</head>
+
+<body>
+<style>
+    .content02left,.content02right{position: relative;}
+    .content02left .wp{width: 43px; height: 95px; position: absolute; bottom: 0px; right: -15px;}
+    .content02left .wp img{width: 43px; height: 95px;}
+    .content02right  .wp2{width: 65px; height: 65px; position: absolute; top: -10px; right: 2px; z-index: 10}
+    .content02right  .wp2 img{width: 65px; height: 65px;  }
+    .title01{position: relative; }
+    .title01 span{color: #194863; font-size: 14px; font-family: "microsoft yahei", Arial, Helvetica, sans-serif; padding-left: 20px; font-weight: normal;}
+    .title01 img{ margin:6px auto auto -10px;*margin:0px auto auto -10px;  width:91px; height: 28px;  position: relative; z-index: 20;}
+    /*.title01 em{line-height: 40px;height: 40px; overflow:hidden; padding-top: 10px; display: table-cell; border: 1px solid red;}*/
+    .title01 ul{position: absolute; top:0px; left: 0px; width: 100%; height: 100%;}
+    .title01 ul li{width: 50%; float: left;  text-align: left;background: #194863; color: #ffffff; text-indent: 25px;}
+    .title01 ul li.active{background: #fbf200; color: #000000;text-indent: 105px;}
+    .sider-lists{width: 45px; height: 304px;  float: left;}
+    .sider-lists li{width: 45px; height: 38px; line-height: 38px;text-align: center; cursor: pointer; font-weight: bold; position: relative; font-size: 18px; color: #ffffff; font-family: "microsoft yahei", Arial, Helvetica, sans-serif; background: #194863;}
+    .sider-lists li .triangle{display: block; border-width:5px ; border-style: solid; border-color:transparent transparent transparent #194863 ;
+        height:0;
+        width:0;
+        overflow: hidden; /* 这里设置overflow, font-size, line-height */
+        font-size: 0;     /*是因为, 虽然宽高度为0, 但在IE6下会具有默认的 */
+        line-height: 0;
+        position: absolute ;right: -10px; top: 50%; margin-top:-5px; display: none;}
+    .sider-lists li.active .triangle{display: block;}
+    .sider-lists li.sl-1{background: #194863;}
+    .sider-lists li.sl-1 .triangle{border-color:transparent transparent transparent #194863 ;}
+    .sider-lists li.sl-2{background: #194863;}
+    .sider-lists li.sl-2 .triangle{border-color:transparent transparent transparent #194863 ;}
+    .sider-lists li.sl-3{background: #dc452a;}
+    .sider-lists li.sl-3 .triangle{border-color:transparent transparent transparent #dc452a ;}
+    .sider-lists li.sl-4{background: #dc452a;}
+    .sider-lists li.sl-4 .triangle{border-color:transparent transparent transparent #dc452a ;}
+    .sider-lists li.sl-5{background: #4b7a00;}
+    .sider-lists li.sl-5 .triangle{border-color:transparent transparent transparent #4b7a00 ;}
+    .sider-lists li.sl-6{background: #4b7a00;}
+    .sider-lists li.sl-6 .triangle{border-color:transparent transparent transparent #4b7a00 ;}
+    .sider-lists li.sl-7{background: #9b0aac;}
+    .sider-lists li.sl-7 .triangle{border-color:transparent transparent transparent #9b0aac ;}
+    .sider-lists li.sl-8{background: #9b0aac;}
+    .sider-lists li.sl-8 .triangle{border-color:transparent transparent transparent #9b0aac ;}
+    .wp-team{width: 250px; height: 256px; float: left; margin-top: 11px;  display: none}
+    .wp-team.active{display: block;}
+    .wp-line{border-right: 1px dotted #cfcfcf; height: 256px;width: 0px; margin-top:23px; float: left;}
+    .wp-team h1{text-align: center; color: #194863; font-size: 24px; overflow: hidden;  height:82px; line-height:82px;font-weight: bold;font-family: "microsoft yahei", Arial, Helvetica, sans-serif;}
+    .wp-team h1 span{ font-size: 60px; padding-right: 5px; }
+    .wp-tabel{width: 217px; border: 1px solid #878787; margin: auto auto;border-collapse:collapse}
+    .wp-tabel tr td{text-align: center ;height: 34px; line-height: 34px;border-bottom: 1px solid #878787; font-family: "microsoft yahei", Arial, Helvetica, sans-serif; color: #4a4a4a; font-size: 14px;}
+    .wp-tabel tr td.first{border-right: 1px solid #878787;}
+    .wp-tabel thead tr td{background: #eeeeee; }
+    .wp-ssb{margin-top:23px;}
+    .pop-mask{width: 100%; height: 100%; z-index: 9999; background: url("//mat1.gtimg.com/zj/images/2014worldcup/gray.png") left top repeat;  position: absolute; top:0px; left: 0px; display: none;}
+    .pop-mask .close{padding: 5px 10px; border:1px solid #fff; color: #fff; font-family: "microsoft yahei", Arial, Helvetica, sans-serif; font-size: 14px; position: absolute; top:30px;right: 30px; cursor: pointer;}
+    .pop-mask .pop{width: 800px; height: 400px; margin: auto auto; position: absolute;top:50%; left: 50%; margin-top:-200px; margin-left: -400px;}
+    .pop-mask .pop img{width: 800px; height: 400px;}
+    .wp-comment{width: 960px; padding: 15px 0; background: transparent; clear: both; overflow:hidden; }
+    .wp-c-proceed{width: 552px; height: 138px; border:1px solid #77b121; background: #fff;float: left;position: relative; z-index: 10; margin-top:12px;_margin-top:5px;}
+    .wp-c-proceed ul li{width: 250px; float: left; margin: 7px 10px 10px; border-bottom: 1px dotted #77060d; padding-bottom: 3px;}
+    .wp-c-proceed ul li.no-border{border-bottom: none;}
+    .wp-c-proceed ul li h1{padding: 5px 0px; position: relative}
+    .wp-c-proceed ul li h1,.wp-c-proceed ul li p{color: #194863; font-size: 14px; font-family: "microsoft yahei", Arial, Helvetica, sans-serif;}
+    .wp-c-proceed ul li h1 em{font-size: 12px;}
+    .wp-c-proceed ul li p{text-overflow: ellipsis; overflow:hidden; white-space: nowrap;}
+    .wp-c-proceed ul li p a{color: #878787;}
+    .wp-c-proceed ul li h1 .wp-status{width: 27px; height: 27px; background: #ff0cac; text-align: center; line-height: 27px; display: block;  color: #fff;
+        position: absolute;; right: -3px; top:0px;
+    }
+    .wp-c-proceed ul li h1 .wp-status.wp-status-sheng{background: #ff0cac;}
+    .wp-c-proceed ul li h1 .wp-status.wp-status-fu{background: #77b121;}
+    .wp-c-proceed ul li h1 .wp-status.wp-status-ping{background: #194863;}
+    .wp-c-content{position: relative; overflow:hidden; height: 163px;background: #fff;}
+    .wp-c-img{float: left ;width: 185px; height: 139px; margin: 12px auto 12px 20px; position: relative; z-index: 10}
+    .wp-c-img img{width: 185px; height: 139px;}
+    .wp-c-img p{background: rgba(0,0,0,0.5) url("//mat1.gtimg.com/zj/images/2014worldcup/gray.png") left top repeat; width: 100%;  text-align: center; line-height: 25px; padding: 3px 0px;
+        position: absolute; left: 0px; bottom: 0px; color: #fff; font-size: 12px;  display: none;}
+    .wp-c-img:hover p{display: block;}
+    .wp-c-txt{width: 139px; height: 139px; background: url("//mat1.gtimg.com/zj/images/2014worldcup/proceed.jpg") center center no-repeat; margin: 12px 20px;_margin: 12px 12px;
+        text-align: center; position: relative; z-index: 10;
+        float: left; color: #fff; font-size: 24px; font-weight: bold; font-family: "microsoft yahei", Arial, Helvetica, sans-serif;}
+    .wp-c-txt p{margin-top:20px; line-height: 32px;}
+    .wp-c-line{width: 185px; height: 0px ; line-height: 0px; border-bottom:1px solid  #77b121; position: absolute;top: 84px; left: 200px; _left:225px;}
+    .weixin_qr{position: fixed; top: 153px; right: 30px; width: 120px; display: none;}
+    .weixin_qr .sj-bar{width: 120px; background: #dc452a; width: 120px; height: 30px; line-height: 30px; margin-bottom: 3px;color: #fff; font-size: 14px;font-family: "microsoft yahei", Arial, Helvetica, sans-serif;text-align: center;}
+    .weixin_qr .wx{width: 122px ; height: 173px; background: #dc452a url("//mat1.gtimg.com/zj/images/2014worldcup/wx-bg.gif") center bottom no-repeat;text-align: center;}
+    .weixin_qr .wx img{width: 86px; height: 86px; margin:10px auto; }
+    .weixin_qr .wx p{color: #fff; font-size: 18px;font-family: "microsoft yahei", Arial, Helvetica, sans-serif; width: 86px; line-height: 22px;  margin: 3px auto; }
+</style>
+<div class="pop-mask">
+    <div class="close">关闭</div>
+    <div class="pop"><img src="http://pic7.nipic.com/20100520/3943165_132332018321_2.jpg" alt=""/></div>
+</div>
+<div class="weixin_qr" id="weixin_qr" >
+    <div class="sj-bar"><img src="//mat1.gtimg.com/zj/images/2014worldcup/logo_r.jpg" /></div>
+    <div class="wx">
+        <img src="//mat1.gtimg.com/zj/images/2014worldcup/wx.jpg" alt=""/>
+        <p>扫二维码送彩票哦</p>
+<p><a href="http://myzj.qq.com/t-114074-1.htm" target="_blank">点击查看详情></a></p>
+    </div>
+</div>
+<div style="width:960px; margin:0px auto 10px; overflow: hidden;">
+
+<div class="wp-comment">
+    <div class="title01">
+        <img src="//mat1.gtimg.com/zj/images/2014worldcup/logo_y.jpg" border="0" style="margin-right:10px;"/>专家预测  <span><a href="http://www.dacai.com/jcspf/buy?trackid=ads:dzwz1" target="_blank" style="text-decoration:underline;">跟专家投注，瞬间成土豪></a></span>
+    </div>
+    <div class="wp-c-content">
+        <div class="wp-c-img">
+            <a href="http://myzj.qq.com/t-112897-1.htm" target="_blank"><img src="http://img1.gtimg.com/zj/pics/hv1/178/123/1625/105697168.jpg" alt="" width="185" height="140">
+          <p>著名体育评论员</p></a>
+      </div>
+        <div class="wp-c-line"></div>
+        <div class="wp-c-txt">
+            <p><a href="http://myzj.qq.com/t-112897-1.htm" target="_blank">
+               黄健翔<br/>
+                的 <br/>
+                今日预测
+            </a></p>
+        </div>
+        <div class="wp-c-proceed">
+            <ul>
+
+                <li style="width:520px; ">
+                    <h1><em>2014-07-14</em>  德国 - 阿根廷<span class="wp-status wp-status-sheng">胜</span></h1>
+
+                    <p>德国强大的中后场对于阿根廷人简单乏力的攻击力，是难以逾越的屏障…<a href="http://myzj.qq.com/t-112897-1.htm" target="_blank">[详细] </a></p>
+                </li>
+
+
+                <li style="width:520px;">
+                    <h1><em>2014-07-13</em>  巴西 - 荷兰<span class="wp-status wp-status-sheng">胜</span></h1>
+
+                    <p>两支失意球队的碰撞，东道主巴西队战意更足，一场相对放松的比赛…<a href="http://myzj.qq.com/t-112897-1.htm"target="_blank">[详细] </a></p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    $(function(){
+        $('.sider-lists li').on('click',function(){
+            var index=$(this).index();
+            var team=$('.wp-team');
+            $(this).addClass('active').siblings().removeClass('active');
+            team.eq(index).addClass('active').siblings('.wp-team').removeClass('active');
+        });
+
+        //弹出层
+//        if(!$.cookie('isLogin')){
+//            var pop=$('.pop-mask');
+//            pop.slideDown(300);
+//            pop.children('.close').on('click',function(){
+//               pop.slideUp(300);
+//            });
+//            $.cookie('isLogin',1,{expires:7});   //cookie 做是否新手登入检查
+//        }
+    })
+</script>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="http://zj.qq.com/js/changyongjs/png.js" ></script>
+<script type="text/javascript">
+    DD_belatedPNG.fix('.msTitle');
+    DD_belatedPNG.fix('.nowDayImg img');
+    DD_belatedPNG.fix('.dzlogo');
+    DD_belatedPNG.fix('.sqImg span');
+    DD_belatedPNG.fix('.dztu_2 span');
+    DD_belatedPNG.fix('.shadow');
+    DD_belatedPNG.fix('.I1fBt li div');
+    DD_belatedPNG.fix('.guide-mask');
+    DD_belatedPNG.fix('.guide-mask img');
+    DD_belatedPNG.fix('div');
+    DD_belatedPNG.fix('img');
+</script>
+<![endif]-->
+
+</body>
+</html>
+<!--[if !IE]>|xGv00|4b83f7129eda8fc3125bde61875c6cc3<![endif]-->

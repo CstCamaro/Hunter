@@ -1,0 +1,23 @@
+/* CSS Document */
+body{margin:0px;padding:0px;background-color:#FFF;}
+td, body, select, input {font-size:12px; color:#d20401;line-height:21px;}
+
+
+A:link {	COLOR: #840200;TEXT-DECORATION: none;}
+A:visited {	COLOR: #840200;TEXT-DECORATION: none;}
+A:hover {	COLOR: #840200;TEXT-DECORATION: underline;}
+A:active {	COLOR: #840200;TEXT-DECORATION: none;}
+
+A.topnews:link,A.topnews:visited{text-decoration:none;color:#d20401;font-weight:bold;text-align:center;font-size:14px}
+A.topnews:hover,A.topnews:active{text-decoration:underline;color:#d20401;font-weight:bold;text-align:center;font-size:14px}
+A.hotnews:link,A.hotnews:visited,A.hotnews:hover,A.hotnews:active{text-decoration:none;color:#000000;font-size:14px}
+A.menu:link,A.menu:visited,A.menu:hover,A.menu:active{text-decoration:none;color:#000000;font-size:12px}
+A.hotnews1:link,A.hotnews1:visited,A.hotnews1:hover,A.hotnews1:active{text-decoration:none;color:#840200;font-size:14px}
+
+.l12{text-decoration:none;color:#ffffff;font-size:12px;font-weight:bold}
+.l13{text-decoration:none;color:#840200;font-size:12px;font-weight:bold}
+.l14{text-decoration:none;color:#ffffff;font-size:14px;font-weight:bold}
+.bddo{border:#D0E5F5 6px solid;border-top:0;}
+.bd89{border:1px solid #89B0D9;border-top:0;border-bottom:0;}
+.bd7b{border:1px solid #7BABDB;}
+.fcblue1{color:#ffffff;bold;font-size:16px;font-family:ºÚÌå;}

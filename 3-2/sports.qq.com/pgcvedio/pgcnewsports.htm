@@ -1,0 +1,2449 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>体育热门视频_腾讯体育_腾讯网</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="Keywords" content="PGC,原创,腾讯体育,体育,腾讯网,腾讯,QQ,Tencent" />
+    <meta name="description" content="更多精彩体育节目、体育视频，都在这里。" />
+    <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico" />
+    <link href="//mat1.gtimg.com/sports/PGCSPORTS/base.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="//mat1.gtimg.com/sports/PGCSPORTS/ycshipin.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="http://qzs.qq.com/tencentvideo_v1/js/txv.core.min.js?v=20130806&max_age=604800" charset="utf-8"></script>
+    <script type="text/javascript" src="//joke.qq.com/lucky/jquery.min.js"></script>
+    <script type="text/javascript" src="//mat1.gtimg.com/sports/PGCSPORTS/jquery.qqscroll.js"></script>
+    <script type="text/javascript" src="//joke.qq.com/lucky/jquery.tabs.js"></script>
+    <script type="text/javascript" src="//mat1.gtimg.com/joke/effect/js/scrollbar.js"></script>
+    <meta name="author" content="v_cxyu" />
+    <style type="text/css">
+    body {
+        background: url(//mat1.gtimg.com/sports/PGCSPORTS/bg.jpg) center top no-repeat;
+        background-color: #f3f3f3;
+    }
+    
+    .header {
+        height: 341px;
+    }
+    
+    .layout {
+        width: 1000px;
+        margin: 0 auto;
+        font-family: "微软雅黑";
+        clear: both;
+    }
+    
+    .mainM {
+        clear: both;
+    }
+    
+    .controll {
+        position: absolute;
+        top: -20px;
+        right: 0px;
+        background-color: #ffa70b;
+        font-size: 12px;
+        height: 18px;
+        line-height: 18px;
+        padding: 0px 5px 0px 5px;
+        color: #FFF;
+        cursor: pointer;
+    }
+    
+    .twP3 .i {
+        margin-top: 2px;
+    }
+    
+    .playList li.current {
+        background: #333374;
+        color: #FFF;
+        background: rgba(51, 51, 116, 0.68);
+        filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#68333374', endColorstr='#68333374');
+    }
+    
+    .list ol li b {
+        clear: both;
+        height: 28px;
+        width: 28px;
+        line-height: 28px;
+        font-size: 14px;
+        padding: 0px 17px 0px 0px;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .list .logo1,
+    .list .logo2 {
+        background: url(//mat1.gtimg.com/sports/PGCSPORTS/yuan.png) no-repeat;
+        margin-top: 5px;
+        line-height: 28px;
+        text-align: center;
+        height: 28px;
+        width: 28px;
+        display: block;
+    }
+    
+    .list .logo1 {
+        background-position: 0px 0px;
+    }
+    
+    .list .logo2 {
+        background-position: 0px -41px;
+    }
+    
+    .list .bfl {
+        height: 44px;
+        line-height: 44px;
+        margin-right: 13px;
+        font-size: 12px;
+        color: #a0a0a0;
+    }
+    
+    .jxlmP .bd ul li a {
+        display: block;
+    }
+    
+    .dyP {
+        float: right;
+        margin-top: -17px;
+        margin-right: 3px;
+        text-align: center;
+        background: #ffa70b;
+        line-height: 18px;
+        padding: 0px 6px;
+        height: 18px;
+        text-decoration: none;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+    }
+    
+    .dyP1 {
+        float: right;
+        margin-top: -22px;
+        margin-right: 3px;
+        text-align: center;
+        background: #ffa70b;
+        padding: 0px 6px;
+        line-height: 18px;
+        height: 18px;
+        text-decoration: none;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+    }
+    
+    .dyP .vi {
+        color: #FFF;
+    }
+    
+    .dyP1 .vi {
+        color: #FFF;
+    }
+    
+    .twP3 p span {
+        padding: 0px 6px;
+        line-height: 18px;
+        font-size: 12px;
+        height: 18px;
+        color: #333;
+        text-align: center;
+    }
+    
+    .jxlmM {
+        clear: both;
+    }
+    
+    .lxwmP .lx ul li {
+        position: relative;
+        z-index: 9;
+    }
+    
+    .ico_wx {
+        background: url(//mat1.gtimg.com/sports/PGCSPORTS/wx.png) no-repeat;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        display: block;
+        margin-left: 23px;
+    }
+    
+    .wxP a {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .wxP a img {
+        position: absolute;
+        left: 3px;
+        top: 45px;
+        display: none;
+        z-index: 9999;
+        width: 69px;
+        height: 66px;
+    }
+    
+    .wxP a:hover img {
+        display: block;
+        z-index: 9999;
+    }
+    
+    .ewmP {
+        padding: 16px 25px;
+    }
+    
+    .twP3 .text {
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .hzhbM .tal {
+        text-align: left;
+    }
+    
+    .moreP {
+        float: right;
+        font-size: 14px;
+        color: #333;
+        margin-top: 33px;
+    }
+    
+    .moreP a:hover {
+        color: #333;
+    }
+    
+    .action_item:hover .ico_collect {
+        text-decoration: none;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    
+    .action_item .ico_text:hover {
+        color: #FFF;
+        text-decoration: none;
+    }
+    
+    .mod_pop_alert_hint {
+        position: absolute;
+        width: auto;
+        white-space: nowrap;
+        left: 0;
+        top: 47px;
+        z-index: 4;
+    }
+    
+    .mod_pop_alert_hint .mod_pop_content {
+        white-space: nowrap;
+        font-size: 0;
+        letter-spacing: -5px
+    }
+    
+    .mod_pop_alert_hint .triangle,
+    .mod_pop_alert_hint .fix_left,
+    .mod_pop_alert_hint .fix_right,
+    .mod_pop_alert_hint .mod_pop_content_inner {
+        display: inline-block;
+        height: 23px;
+        overflow: hidden;
+        vertical-align: top;
+        background-image: url(//imgcache.qq.com/mediastyle/video_2013/style/img/play/mod_pop_alert_hint.32.png);
+        _background-image: url(//imgcache.qq.com/mediastyle/video_2013/style/img/play/mod_pop_alert_hint.ie6.png)
+    }
+    
+    .mod_pop_alert_hint .fix_left {
+        width: 4px
+    }
+    
+    .mod_pop_alert_hint .fix_right {
+        width: 5px;
+        background-position: right 0
+    }
+    
+    .mod_pop_alert_hint .triangle {
+        background: url(//imgcache.qq.com/mediastyle/video_2013/style/img/play/mod_pop_arrow.32.png) no-repeat 0 0;
+        _background: url(//imgcache.qq.com/mediastyle/video_2013/style/img/play/mod_pop_arrow.32.ie6.png) no-repeat 0 0;
+        position: absolute;
+        top: -7px;
+        left: 22px;
+        width: 15px;
+        height: 8px
+    }
+    
+    .mod_pop_alert_hint .mod_pop_content_inner {
+        background-position: 0 -25px;
+        overflow: visible
+    }
+    
+    .mod_pop_alert_hint .mod_pop_content_inner .text {
+        display: inline-block;
+        padding: 0 6px;
+        line-height: 22px;
+        color: #7e7e7e;
+        font-family: simsun;
+        font-size: 12px;
+        letter-spacing: normal
+    }
+    
+    .popup_wadint {
+        height: 36px;
+        line-height: 36px;
+        padding: 0 40px 0 10px;
+        color: #7d5818;
+        background: #ffffd7;
+        border: #e1d8bf 1px solid;
+        border-radius: 3px;
+        font-size: 14px
+    }
+    
+    .popup_wadint a {
+        color: #4580cf;
+        text-decoration: underline
+    }
+    
+    .mod_pop_alert_hint .tags_close {
+        font-size: 25px;
+        position: absolute;
+        right: 10px;
+        top: 2px;
+        color: #B89864;
+        cursor: pointer
+    }
+    
+    .dispnone {
+        clear: both;
+        overflow: hidden;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    #tcopyright {
+        background: #323277;
+    }
+    
+    .videoMod {
+        background: url() center no-repeat;
+        height: 437px;
+        position: relative;
+    }
+    /*视频列表*/
+    
+    .tellme {
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 195px;
+        padding-top: 5px;
+    }
+    
+    .book {
+        width: 100px;
+        padding: 0 6px 0 31px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        background: url(//mat1.gtimg.com/v/ayn2014/bg_spr.png) 0 -510px no-repeat;
+        float: left;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .book:hover {
+        text-decoration: none;
+    }
+    
+    .upadd {
+        float: left;
+        display: inline;
+        margin-left: 10px;
+        background: url(//mat1.gtimg.com/v/ayn2014/bg_spr.png) -148px -510px no-repeat;
+        width: 37px;
+        height: 37px;
+        text-indent: -999em;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .upadd:hover {
+        background-position: -185px -510px;
+    }
+    
+    .titLt .vList {
+        float: right;
+        display: inline;
+        width: 337px;
+        padding-left: 10px;
+        color: #fff;
+        overflow: hidden;
+    }
+    
+    .titLt .vList a {
+        color: #c4c4c4;
+    }
+    
+    .titLt .bntall {
+        float: right;
+        display: inline;
+        width: 14px;
+        height: 428px;
+        background: url(//mat1.gtimg.com/v/ttk/bntA.png) no-repeat;
+        margin: 1px 10px 0 0;
+        background: #222;
+    }
+    
+    .liveList {}
+    
+    .liveList li {
+        padding: 8px 11px 10px 10px;
+        font-size: 14px;
+        line-height: 22px;
+        overflow: hidden;
+        zoom: 1;
+        display: none;
+        cursor: pointer;
+        background: url(//mat1.gtimg.com/v/dpjdnew/bg_wzsp.png) 0 0 no-repeat;
+        font-family: "微软雅黑";
+    }
+    
+    .liveList li img {
+        width: 100px;
+        height: 56px;
+        float: left;
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    .onlive {
+        position: relative;
+        zoom: 1;
+        height: 108px;
+    }
+    
+    .oline {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        display: none;
+    }
+    
+    .liebiaoList {
+        overflow: hidden;
+        zoom: 1;
+    }
+    
+    .liebiaoList li {
+        overflow: hidden;
+        zoom: 1;
+        padding: 9px 15px 5px 10px;
+        height: 60px;
+        line-height: 22px;
+        font-size: 14px;
+        font-family: "微软雅黑";
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .liebiaoList li.cur {
+        background: #333374;
+        background: rgba(51, 51, 116, 0.68);
+        filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#68333374', endColorstr='#68333374');
+    }
+    
+    .liebiaoList li img {
+        float: left;
+        display: inline;
+        margin-right: 10px;
+        width: 100px;
+        height: 56px;
+    }
+    
+    .vBox {
+        _float: left;
+    }
+    
+    #mod_player {
+        float: left;
+        width: 650px;
+        height: 385px;
+        background: black;
+        overflow: hidden;
+    }
+    
+    .liebiao {}
+    
+    .liebiao h2 {
+        height: 43px;
+        line-height: 43px;
+        color: #9191f9;
+        font-weight: normal;
+        font-size: 20px;
+        margin-left: 11px;
+    }
+    
+    .liebiaoList li i {
+        display: none;
+    }
+    
+    .liebiaoList li b {
+        display: none;
+    }
+    
+    .liebiaoList li.cur b {
+        display: none;
+    }
+    
+    .liebiaoList li a {
+        color: #fff;
+    }
+    
+    .liebiaoList li.cur a {
+        font-weight: normal;
+        color: #FFF;
+    }
+    
+    .liebiaoList li.cur .living {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        display: none;
+    }
+    
+    .liebiaoList li a {
+        text-decoration: none;
+    }
+    
+    #scro2 {
+        height: 393px;
+        overflow: hidden;
+        position: relative;
+        zoom: 1;
+    }
+    
+    .ulbox {
+        position: absolute;
+        width: 100%;
+    }
+    
+    .scrollBarBg {
+        width: 8px;
+        height: 400px;
+        right: 0px;
+        bottom: 0px;
+        position: absolute;
+        background: #323283;
+    }
+    
+    .scrollBar {
+        background: #9b9bf7;
+        width: 8px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .videoBox .tit {
+        width: 650px;
+        float: left;
+        height: 43px;
+        line-height: 43px;
+        text-indent: 16px;
+    }
+    
+    .videoBox a {
+        color: #000;
+    }
+    
+    .videoBox .tit a {
+        display: none;
+        color: #dddddd;
+        font-weight: normal;
+        font-size: 18px;
+        font-family: "微软雅黑", "黑体";
+    }
+    
+    .videoBox .tit a:hover {
+        text-decoration: none;
+    }
+    
+    .liveing {
+        display: none;
+    }
+    
+    .gxtyP .logo,
+    .jxssP .logo,
+    .xkzqP .logo,
+    .jxlmP .logo,
+    .hzhbM .logo {
+        background: url(//mat1.gtimg.com/sports/PGCSPORTS/bg_lg.png) no-repeat;
+        padding-left: 40px;
+        line-height: 30px;
+        height: 33px;
+        font-size: 18px;
+        color: #FFF;
+        font-weight: normal;
+    }
+    
+    .rbphbP .logo {
+        background: url(//mat1.gtimg.com/sports/PGCSPORTS/bg_lg1.png) no-repeat;
+        padding-left: 30px;
+        line-height: 30px;
+        height: 33px;
+        font-size: 18px;
+        color: #FFF;
+        font-weight: normal;
+    }
+    /*yijunliu*/
+    
+    .list ol li.rankFirst {
+        padding: 0;
+        height: 144px;
+    }
+    
+    .twP2 span {
+        line-height: 22px;
+    }
+    
+    .twP2 span i {
+        margin-top: 4px;
+    }
+    
+    .list .ranklist2 .logo2,
+    .list .ranklist3 .logo2 {
+        background-position: 0 0;
+    }
+    
+    .list .ranklist3,
+    .list .ranklist5,
+    .list .ranklist7,
+    .list .ranklist9 {
+        background: #ffffff;
+    }
+    
+    body,
+    td,
+    th {
+        font-family: \5B8B\4F53, "Arial Narrow", HELVETICA;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 全站迷你导航 开始 -->
+    <style type="text/css">
+/*带一键登录全站迷你导航960宽 v20130219 loginall @goldenchen*/
+.mininav div{margin:0;padding:0;}
+.mininav{width:100%;height:28px;background:#fdfdfd url(//mat1.gtimg.com/www/images/qq2012/mininav.png) repeat-x top center;border-bottom:1px solid #ebebeb;}
+.mininavInner{width:960px;height:28px;margin:0 auto!important;}
+.mininavInner a{color:#666;text-decoration:none;font-family:"宋体";}
+.mininavInner a:hover{color:#2d374b;}
+.mininavInner .mininavLeft{float:left;margin-top:8px;color:#c7c7c7;font-size:12px;}
+.mininavInner .mininavLeft .fl{color:#c7c7c7;}
+</style>
+<div class="mininav">
+	<div class="mininavInner">
+		<div class="mininavLeft">
+			<div class="fl">
+				<a href="http://www.qq.com/" target="_blank" id="qqindex">腾讯网首页</a> | <a href="http://www.qq.com/map/" target="_blank" id="webmap">网站地图</a>
+			</div>
+		</div>
+		<style type="text/css">
+				ul,li{margin:0;padding:0;}
+				li{list-style:none;}
+				.fl{float:left;}
+				.fr{float:right;}
+				.dis{display:block;}
+				.undis{display:none;}
+				.loginSmartTop,.loginSmartBottom{background-image:url(//mat1.gtimg.com/www/images/qq2012/qqbg_1.5.2.png); background-repeat:no-repeat;}
+				a.login,a.login:hover,a.weiboLogin,a.weiboLogin:hover,a.qzoneLogin,a.qzoneLogin:hover,a.mailLogin,a.mailLogin:hover,a.pengyouLogin,a.pengyouLogin:hover,.mininavRight .weibo,.mininavRight .weibo:hover,.mininavRight .qzone,.mininavRight .qzone:hover,.mininavRight .mail,.mininavRight .mail:hover,.mininavRight .pengyou,.mininavRight .pengyou:hover{background-image:url(//mat1.gtimg.com/www/images/qq2012/loginall_1.2.png); background-repeat:no-repeat;}
+				a.login{width:70px;height:28px;display:block;float:right;background-position:left -450px;}
+				a.login:hover{background-position:left -500px;}
+				a.weiboLogin{width:30px;height:28px;display:block;float:right;background-position:left -50px;}
+				a.weiboLogin:hover{background-position:right -50px;}
+				a.qzoneLogin{width:30px;height:28px;display:block;float:right;background-position:left -100px;}
+				a.qzoneLogin:hover{background-position:right -100px;}
+				a.mailLogin{width:30px;height:28px;display:block;float:right;background-position:left -150px;}
+				a.mailLogin:hover{background-position:right -150px;}
+				a.pengyouLogin{width:28px;height:28px;display:block;float:right;background-position:left -200px;}
+				a.pengyouLogin:hover{background-position:right -200px;}
+				.mininavRight{font-size:12px;}
+				.mininavRight .weibo{background-position:7px -243px;}
+				.mininavRight .weibo:hover{background-position:-79px -243px;}
+				.mininavRight .qzone{background-position:7px -294px;}
+				.mininavRight .qzone:hover{background-position:-74px -294px;}
+				.mininavRight .mail{background-position:7px -340px;}
+				.mininavRight .mail:hover{background-position:-77px -340px;}
+				.mininavRight .pengyou{background-position:7px -394px;}
+				.mininavRight .pengyou:hover{background-position:-76px -394px;}
+				.mininavRight{float:right;color:#c7c7c7;line-height:28px;}
+				.mininavRight a{color:#666;}
+				.mininavRight .qqNameLayout{margin-right:4px;color:#c7c7c7;}
+				.mininavRight .qqName{margin-right:12px;color:#666;float:left;}
+				.mininavRight .weibo{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:17px;}
+				.mininavRight .weibo:hover{color:#fff;background-color:#458fce;}
+				.mininavRight .qzone{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:22px;}
+				.mininavRight .qzone:hover{color:#fff;background-color:#458fce;}
+				.mininavRight .mail{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:19px;}
+				.mininavRight .mail:hover{color:#fff;background-color:#458fce;}
+				.mininavRight .pengyou{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:20px;}
+				.mininavRight .pengyou:hover{color:#fff;background-color:#458fce;}
+				.loginSmartBox{width:120px;height:auto;background:#fffbef;position:absolute;top:28px;z-index:100;}
+				.loginSmartTop{width:120px;height:3px;overflow:hidden;background-position:-350px -210px;}
+				.loginSmartBottom{width:120px;height:3px;overflow:hidden;background-position:-350px -230px;}
+				.loginSmartContent{width:118px;border-left:1px solid #f1f1f1;border-right:1px solid #f1f1f1;}
+				.loginSmartInner{width:116px;border-left:1px solid #f4d9a4;border-right:1px solid #f4d9a4;}
+				.loginSmartInner ul{width:100%;padding:2px 0;}
+				.loginSmartInner li{width:100%;height:20px;line-height:20px;color:#666;text-indent:8px;text-align:left;}
+				.loginSmartInner li a{color:#666;}
+				.loginSmartInner li a:hover span{color:#cd0200;}
+				.loginSmartInner li a span,.loginSmartInner li a:hover span{font-family:Tahoma;}
+				#pengyouIcon{position:relative;z-index:10000;}
+				#mailIcon{position:relative;z-index:10000;}
+				#qzoneIcon{position:relative;z-index:10000;}
+				#weiboIcon{position:relative;z-index:10000;}
+				#loginOut:hover{text-decoration:underline;color:#cd0200;}
+				.loginBg{width:100%;min-width:1024px;position:absolute;top:0;left:0;z-index:8888;display:none;background:url(//mat1.gtimg.com/www/images/qq2012/alphabg.png); _background:#000;_opacity:0.3_;filter:alpha(opacity=30);}
+
+				.mininavRight .qzone{width:auto;}
+				.mininavLeft div{line-height:14px;}
+				.mininavRight div{line-height:28px;}
+				</style>
+				<div class="login mininavRight" id="loginWrap">
+    <a href="http://mail.qq.com" class="mailLogin" id="qmail" target="_blank" bosszone="qmail"></a>
+    <a href="http://qzone.qq.com" class="qzoneLogin" id="qzone" target="_blank" bosszone="qzone"></a>
+    <a href="javascript:void(0);" class="login" onclick="userLogin();" target="_self" id="onekey"></a>
+ 
+    <!-- <div class="quickArea menu">
+      <a href="http://qzone.qq.com" id="qzoneLink" target="_blank" class="quickLink menu-hd qzoneLink" aria-expanded="true" bosszone="gqqzone"><em>Qzone</em></a>
+    </div>
+    <div class="quickArea menu">
+      <a href="http://mail.qq.com" id="qmailLink" target="_blank" class="quickLink menu-hd qmailLink" aria-expanded="true" bosszone="gqqmail"><em>QQ邮箱</em></a>
+    </div>	   -->
+</div>
+
+<script type="text/javascript">var MI = {};(function(b){var a=document.createElement("script");a.setAttribute("charset","utf-8");a.setAttribute("type","text/javascript");a.setAttribute("src",b);document.getElementsByTagName("head")[0].appendChild(a)})("//mat1.gtimg.com/www/mb/js/portal/mi.MiniNav__v1.0.0.js");</script>
+<script type="text/javascript" src="//mat1.gtimg.com/www/ptlogin/js/ptlogiHL.js" charset="utf-8"></script>
+<!--[if !IE]>|xGv00|a06ce509e32367110c60d18e9ea9e530<![endif]--><!--[if !IE]>|xGv00|fcb7151e303110b6aedb3a23e34141e5<![endif]-->
+	</div>
+</div>
+<script type="text/javascript">
+(function(){var e={webmap:"webmap",qqindex:"qqindex",logkey:"logkey",onekey:"onekey",weibo:"weibo",qzone:"qzone",qmail:"qmail",friend:"friend",loginOut:"logquit",weiboIcon:"weiboinfor",qzoneIcon:"qzoneinfor",mailIcon:"qmailinfor",pengyouIcon:"friendinfor"},t=function(){for(var t in e){if(!e.hasOwnProperty(t))return;var n=document.getElementById(t);n&&n.setAttribute("bossZone",e[t])}};t()})()
+</script>
+<script type="text/javascript">
+//移动端左右边距
+if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){document.getElementsByTagName("body")[0].style.minWidth = "1028px";}
+</script><!--[if !IE]>|xGv00|391c10b45046351ab35a91ecc9e5bb6e<![endif]--><!--[if !IE]>|xGv00|d6de78c0121f60c58b8f148111b64fab<![endif]-->
+    <!-- 全站迷你导航 结束 -->
+    <!-- header区 S -->
+    <div class="header">
+    </div>
+    <!-- header区 E -->
+    <!--视频区 S-->
+    <div class="shipM">
+        <div class="layout">
+            <!--[if !IE]>|xGv00|323a3ac3c9c87681d02cd14f39b1e0c9<![endif]-->
+            <script language="JavaScript" src="//imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2_jq.js" charset="utf-8"></script>
+            <script type="text/javascript">
+            var plId = "in8jztlye4pdko3"; //此处填专辑id
+            </script>
+            <!--视频播放列表-->
+            <div class="clearfix videoBox">
+                <div class="clearfix titLt">
+                    <div class="vList">
+                        <!-- libiao -->
+                        <div class="liebiao">
+                            <h2 class="fyh">今日看点</h2>
+                            <div class="scrBox" id="scro2">
+                                <div class="ulbox">
+                                    <ul class="liebiaoList"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- libiao e-->
+                    </div>
+                    <div class="vBox">
+                        <div class="tit">
+                            <a href="##" title="" target="_blank"></a>
+                        </div>
+                        <div id="mod_player" class="player"></div>
+                    </div>
+                </div>
+            </div>
+            <!--/视频播放列表-->
+        </div>
+    </div>
+    <script type="text/javascript">
+    jQuery.getScript('http://data.video.qq.com/fcgi-bin/data?tid=69&idlist=' + plId + '&appid=10001007&appkey=e075742beb866145&otype=json&callback=videoLs', {});
+    window.videoLs = function(data) {
+        var vList = "";
+        var videos = data.results[0].fields.video_ids;
+        for (var i = 0, l = videos.length; i < l; i++) {
+            vList += '<li id="' + videos[i].vid + '"><a class="pic" href="javascript:;" title="' + videos[i].title + '"><img width="90" height="50" border="0" alt="' + videos[i].title + '" src="' + videos[i].pic_640_360 + '"><b></b><i></i><span class="title">' + videos[i].title + '</span><span class="liveing">正在播放</span></a></li>';
+        }
+        jQuery('.liebiaoList').html(vList);
+    }
+
+    //视频
+    setTimeout(function() {
+        var ua = navigator.userAgent;
+        Test = {
+            version: (ua.match(/.+(?:rv|it|ra|ie|me)[\/: ]([\d.]+)/i) || [])[1],
+            ie: /msie/i.test(ua) && !/opera/i.test(ua),
+            op: /opera/i.test(ua),
+            sa: /version.*safari/i.test(ua),
+            ch: /chrome/.test(ua),
+            ff: /gecko/i.test(ua) && !/webkit/i.test(ua),
+            wk: /webkit/i.test(ua),
+            mz: /mozilla/i.test(ua) && !/(compatible|webkit)/i.test(ua)
+        }
+
+        function addEvent(el, type, fn) {
+            (el.attachEvent) ? (el.attachEvent("on" + type, fn)) : (el.addEventListener(type, fn, false));
+        };
+
+        function fixMouseWheel(elem, fn, self) {
+            var mousewheel = Test.ff ? "DOMMouseScroll" : "mousewheel";
+            (elem == null || elem == window) && (elem = document);
+            return {
+                type: mousewheel,
+                elem: elem,
+                fn: function(e) {
+                    var delta = 0;
+                    e = e || window.event;
+                    if (e.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (Test.op && Test.version < 10) delta = -delta;
+                    } else if (e.detail) {
+                        delta = -e.detail / 3;
+                    }
+                    e.delta = Math.round(delta);
+                    fn.call(elem, e, self);
+                }
+            }
+        }
+
+        function scroll(id) {
+            var self = this;
+            self.id = id;
+            self.obj = document.getElementById(id);
+            self.content = self.obj.getElementsByTagName('div')[0];
+            self.barBgColor = document.createElement('div');
+            self.barBgColor.className = "scrollBarBg";
+            self.bar = document.createElement('div');
+            self.bar.className = 'scrollBar';
+            self.barBg = document.createElement('p');
+            self.barBg.className = 'barBg';
+            self.topBg = document.createElement('p');
+            self.topBg.className = 'topBg';
+            self.bar.style.marginTop = 0;
+            self.bar.style.height = parseInt((self.content.scrollHeight <= self.obj.offsetHeight ? 1 : self.obj.offsetHeight / self.content.scrollHeight) * self.obj.offsetHeight) + 'px';
+            self.obj.appendChild(self.barBgColor);
+            self.barBgColor.appendChild(self.bar);
+            self.bar.appendChild(self.barBg);
+            self.barBg.appendChild(self.topBg);
+            self.bar.y;
+            self.srcElement;
+            self.marginTop = 0;
+            self.bar.onmousedown = function(e) {
+                self.mousedown(e);
+            }
+            self.mosueScroll = fixMouseWheel(self.obj, self.onmousewheel, self);
+            addEvent(self.mosueScroll.elem, self.mosueScroll.type, self.mosueScroll.fn);
+        }
+        scroll.prototype = {
+            mousedown: function(e) {
+                var self = this;
+                var e = e || window.event;
+                self.bar.y = e.clientY;
+                self.bar.t = parseInt(self.bar.style.marginTop);
+                document.onmousemove = function(e) {
+                    self.mousemove(e);
+                }
+                stopDefault(e);
+            },
+            mousemove: function(e) {
+                if (this.content.scrollHeight <= this.obj.offsetHeight) {
+                    return false;
+                }
+                var e = e || window.event;
+
+                var m, eObj = e.srcElement ? e.srcElement : e.target;
+                if (!this.obj.contains(eObj)) {
+                    return;
+                }
+                this.marginTop = this.bar.t + (e.clientY - this.bar.y);
+                if (this.marginTop < 0) {
+                    this.marginTop = 0;
+                }
+                if (this.marginTop > this.obj.offsetHeight - parseInt(this.bar.style.height)) {
+                    this.marginTop = this.obj.offsetHeight - parseInt(this.bar.style.height);
+                }
+                this.bar.style.marginTop = this.marginTop + 'px';
+                m = this.marginTop / this.obj.offsetHeight * this.content.scrollHeight;
+                this.content.style.top = -m + 'px';
+                this.content.style.height = "auto";
+                this.content.scrollTop = (this.content.scrollHeight - this.obj.offsetHeight) * parseInt(this.marginTop) / (this.obj.clientHeight - this.bar.clientHeight);
+                document.onmouseup = function(e) {
+                    document.onmousemove = null;
+                }
+                stopDefault(e);
+            },
+            onmousewheel: function(e, self) {
+                if (self.content.scrollHeight <= self.obj.offsetHeight) {
+                    return false;
+                }
+                var e = e || window.event;
+                var m, n, eObj = e.srcElement ? e.srcElement : e.target;
+
+                if (e.delta > 0) {
+                    self.marginTop = parseInt(self.bar.style.marginTop) - 10;
+                } else if (e.delta < 0) {
+                    self.marginTop = parseInt(self.bar.style.marginTop) + 10;
+                }
+
+                if (self.marginTop < 0) {
+                    self.marginTop = 0;
+                }
+                if (self.marginTop > self.obj.offsetHeight - parseInt(self.bar.style.height)) {
+                    self.marginTop = self.obj.offsetHeight - parseInt(self.bar.style.height);
+                }
+                self.bar.style.marginTop = self.marginTop + 'px';
+                m = self.marginTop / self.obj.offsetHeight * self.content.scrollHeight;
+                self.content.style.top = -m + 'px';
+                self.content.style.height = "auto";
+                //setCurrTag(self.id,parseInt(m));
+                self.content.scrollTop = (self.content.scrollHeight - self.obj.offsetHeight) * parseInt(self.marginTop) / (self.obj.clientHeight - self.bar.clientHeight);
+                stopDefault(e);
+            }
+        }
+
+        function stopDefault(e) {
+            if (e && e.preventDefault) e.preventDefault();
+            else window.event.returnValue = false;
+            return false;
+        }
+        var p = new scroll('scro2');
+
+
+
+        var vidcur = 0,
+            yuncur = 0,
+            myurl = "",
+            mgh = 61;
+        titUrl = "", videos = [], vnum = jQuery('.liebiaoList li').length;
+
+        for (var i = 0, l = vnum; i < l; i++) {
+            var myId = jQuery('.liebiaoList li').eq(i).attr('id');
+            titUrl += '<a href="http://v.qq.com/cover/' + plId.substring(0, 1) + '/' + plId + '.html?vid=' + myId + '" target="_blank">' + jQuery('.liebiaoList').find('.title').eq(i).html() + '</a>';
+            videos.push(jQuery('.liebiaoList li').eq(i).attr("id"));
+        }
+
+        var str_sr = window.location.href.split('?vid=')[1];
+        if (str_sr != undefined) {
+            str_sr = str_sr.substring(0, 11);
+        };
+
+        jQuery('.vBox div').html(titUrl);
+        var getHt = jQuery('.liebiaoList').find('li').length - 1;
+        //alert(getHt);
+        jQuery('.ulbox').height(getHt * 61 + 'px');
+
+        function addCName(n) {
+            jQuery('.liebiaoList li').eq(yuncur).removeClass('cur');
+            jQuery('.liebiaoList li').eq(n).addClass('cur');
+            jQuery('.tit a').eq(yuncur).hide();
+            jQuery('.tit a').eq(n).show();
+
+            yuncur = n;
+        }
+        addCName(0);
+
+
+        var firstVid = jQuery('.liebiaoList li').eq(0).attr('id');
+
+        function setPlayer() {
+            var video = new tvp.VideoInfo();
+            video.setVid(firstVid);
+            for (var _Oi = 0; _Oi < jQuery('.liebiaoList li').length; _Oi++) {
+                if (jQuery('.liebiaoList li').eq(_Oi).attr('id') == str_sr) {
+                    vidcur = _Oi;
+                    addCName(_Oi);
+                    video.setVid(jQuery('.liebiaoList li').eq(_Oi).attr('id'));
+                }
+            }
+            var player = new tvp.Player();
+            player.ongetnext = function() {
+                var nextvid = "";
+                nextvid = videos[vidcur + 1];
+
+                if (vidcur < vnum - 1) {
+                    vidcur++;
+                    video.clear();
+                    video.setVid(nextvid);
+                    addCName(vidcur);
+                    return video;
+                } else {
+                    addCName(vnum - 1);
+                }
+            }
+            player.create({
+                width: 650,
+                height: 385,
+                video: video,
+                modId: "mod_player", //mod_player是刚刚在页面添加的div容器
+                autoplay: true
+            });
+
+            jQuery(".liebiaoList li").bind("click", function() {
+                vidcur = jQuery(this).index();
+                addCName(vidcur);
+                video.setVid(jQuery(this).attr("id"));
+                player.play(video);
+            });
+        }
+
+        function getFirstVid() {
+            if (firstVid != '' && firstVid != undefined) {
+                setPlayer();
+                return;
+            } else {
+                setTimeout("getFirstVid()", 1000);
+            }
+        }
+        getFirstVid();
+    }, 1500);
+    </script>
+    <!--视频区 E-->
+    <!--main区 S-->
+    <div class="mainM">
+        <div class="layout">
+            <!--焦点图区域 S-->
+            <div class="fl scroll">
+                <!--超级颜论 S-->
+                <div class="xkzqP">
+                    <h2 class="logo">超级颜论</h2>
+                    <div class="bd">
+                        <div id="scroll_E" class="scroll_A">
+                            <span class="controll" flag="false">开启滑动</span>
+                            <div class="inner">
+                                <ul class="list cf" id="bojiList">
+                                </ul>
+                            </div>
+                            <span class="btn prev"><img src="//mat1.gtimg.com/sports/PGCSPORTS/left.png" width="38" height="132"></span>
+                            <span class="btn next"><img src="//mat1.gtimg.com/sports/PGCSPORTS/right.png" width="38" height="132"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 超级颜论 E-->
+                <!--运动地理 S-->
+                <div class="jxssP">
+                    <h2 class="logo">运动地理</h2>
+                    <div class="bd">
+                        <div id="scroll_D" class="scroll_A">
+                            <span class="controll" flag="false">开启滑动</span>
+                            <div class="inner">
+                                <ul class="list cf" id="basketballList">
+                                </ul>
+                            </div>
+                            <span class="btn prev"><img src="//mat1.gtimg.com/sports/PGCSPORTS/left.png" width="38" height="132"></span>
+                            <span class="btn next"><img src="//mat1.gtimg.com/sports/PGCSPORTS/right.png" width="38" height="132"></span>
+                        </div>
+                    </div>
+                </div>
+                <!--运动地理E-->
+                <!--我是海叔 S-->
+                <div class=" gxtyP">
+                    <h2 class="lg logo">我是海叔</h2>
+                    <div class="bd">
+                        <div id="scroll_A" class="scroll_A">
+                            <span class="controll" flag="false">开启滑动</span>
+                            <div class="inner">
+                                <ul class="list cf" id="gaoxiaoList">
+                                </ul>
+                            </div>
+                            <span class="btn prev"><img src="//mat1.gtimg.com/sports/PGCSPORTS/left.png" width="38" height="132"></span>
+                            <span class="btn next"><img src="//mat1.gtimg.com/sports/PGCSPORTS/right.png" width="38" height="132"></span>
+                        </div>
+                    </div>
+                </div>
+                <!--我是海叔 E-->
+                <!--敢玩顽童 S-->
+                <div class="jxssP">
+                    <h2 class="logo">敢玩顽童</h2>
+                    <div class="bd">
+                        <div id="scroll_B" class="scroll_A">
+                            <span class="controll" flag="false">开启滑动</span>
+                            <div class="inner">
+                                <ul class="list cf" id="shisuList">
+                                </ul>
+                            </div>
+                            <span class="btn prev"><img src="//mat1.gtimg.com/sports/PGCSPORTS/left.png" width="38" height="132"></span>
+                            <span class="btn next"><img src="//mat1.gtimg.com/sports/PGCSPORTS/right.png" width="38" height="132"></span>
+                        </div>
+                    </div>
+                </div>
+                <!--敢玩顽童 E-->
+                <!--关你球事 S-->
+                <div class="xkzqP">
+                    <h2 class="logo">关你球事</h2>
+                    <div class="bd">
+                        <div id="scroll_C" class="scroll_A">
+                            <span class="controll" flag="false">开启滑动</span>
+                            <div class="inner">
+                                <ul class="list cf" id="zuqiuList">
+                                </ul>
+                            </div>
+                            <span class="btn prev"><img src="//mat1.gtimg.com/sports/PGCSPORTS/left.png" width="38" height="132"></span>
+                            <span class="btn next"><img src="//mat1.gtimg.com/sports/PGCSPORTS/right.png" width="38" height="132"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 关你球事 E-->
+            </div>
+            <!--焦点图区域 E-->
+            <!--热播排行榜 S-->
+            <div class="fl rbphbP">
+                <h2 class="logo">热播排行榜</h2>
+                <div class="list">
+                    <ol id="rankList">
+                    </ol>
+                </div>
+            </div>
+            <!-- 后续加的图片 S display:none隐藏-->
+            <div style=" margin-top:25px; float:right; width:340px; height:390px; ">
+                <a href="http://v.qq.com/jingzhe.html" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/239/176/1880/122292119.jpg" width="340" height="390"></a>
+            </div>
+            <!-- 后续加的图片 E-->
+            <!--热播排行榜 E-->
+        </div>
+    </div>
+    <!--main区 E-->
+    <!--精选栏目+广告+联系我们 S-->
+    <div class="layout jxlmM">
+        <!--精选栏目 S-->
+        <div class="jxlmP fl">
+            <div class="hd" style="clear:both; overflow:hidden;">
+                <h2 class="logo fl">精选栏目</h2>
+                <div class="moreP">
+                    <a href="#" target="_blank"></a>
+                </div>
+            </div>
+            <div class="bd">
+                <ul class="inner">
+                    <li>
+                        <div class="twP3">
+                            <div><i class="i fl"></i><a href="" target="_blank">北半球</a>
+                                <div class="player_container dyP">
+                                    <div class="mod_action mod_action1 cf">
+                                        <div class="action_item action_follow action_follow1" data-followid="h6nu43kltifub9b">
+                                            <!-- 收藏后，action_title 添加类名 action_follow_cancel -->
+                                            <a class="action_title" href="javascript:void(0);" role="button" title=""><i class="ico_collect" style="display:none;"></i><span class="ico_text">订阅</span></a>
+                                            <div style="display:none" class="mod_pop_alert_hint" data-role="tip">
+                                                <i data-role="triangle" class="triangle"></i>
+                                                <p data-role="content" class="popup_wadint">
+                                                </p>
+                                                <!-- <p class="popup_wadint">
+		                        关注成功，可前往<a href="http://v.qq.com/cover/h/h6nu43kltifub9b.html">个人中心</a>查看关注列表
+		                    </p> -->
+                                                <i data-role="closer" class="tags_close" title="关闭提示">&times;</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="http://v.qq.com/cover/h/h6nu43kltifub9b.html" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/56/66/1909/124149611.jpg" width="135" height="100">
+                                <p class="text">《疯狂大足球》</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="twP3">
+                            <div><i class="i fl"></i><a href="" target="_blank">北半球</a>
+                                <div class="player_container dyP">
+                                    <div class="mod_action mod_action1 cf">
+                                        <div class="action_item action_follow action_follow1" data-followid="ww3br1vitm0hyfr">
+                                            <!-- 收藏后，action_title 添加类名 action_follow_cancel -->
+                                            <a class="action_title" href="javascript:void(0);" role="button" title=""><i class="ico_collect" style="display:none;"></i><span class="ico_text">订阅</span></a>
+                                            <div style="display:none" class="mod_pop_alert_hint" data-role="tip">
+                                                <i data-role="triangle" class="triangle"></i>
+                                                <p data-role="content" class="popup_wadint">
+                                                </p>
+                                                <!-- <p class="popup_wadint">
+		                        关注成功，可前往<a href="http://v.qq.com/cover/w/ww3br1vitm0hyfr.html">个人中心</a>查看关注列表
+		                    </p> -->
+                                                <i data-role="closer" class="tags_close" title="关闭提示">&times;</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="http://v.qq.com/vplus/haodapao" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/117/233/1920/124907532.jpg" width="135" height="100">
+                                <p class="text">《郝大炮》</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="twP3">
+                            <div><i class="i fl"></i><a href="http://v.qq.com/cover/8/8vtvjx1vxuywtja.html" target="_blank">敢玩</a>
+                                <div class="player_container dyP">
+                                    <div class="mod_action mod_action1 cf">
+                                        <div class="action_item action_follow action_follow1" data-followid="8vtvjx1vxuywtja">
+                                            <!-- 收藏后，action_title 添加类名 action_follow_cancel -->
+                                            <a class="action_title" href="javascript:void(0);" role="button" title=""><i class="ico_collect" style="display:none;"></i><span class="ico_text">订阅</span></a>
+                                            <div style="display:none" class="mod_pop_alert_hint" data-role="tip">
+                                                <i data-role="triangle" class="triangle"></i>
+                                                <p data-role="content" class="popup_wadint">
+                                                </p>
+                                                <!-- <p class="popup_wadint">
+		                        关注成功，可前往<a href="http://v.qq.com/cover/8/8vtvjx1vxuywtja.html">个人中心</a>查看关注列表
+		                    </p> -->
+                                                <i data-role="closer" class="tags_close" title="关闭提示">&times;</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="http://v.qq.com/cover/8/8vtvjx1vxuywtja.html" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/244/15/2142/139287619.jpg" width="135" height="100">
+                                <p class="text">《敢玩顽童》</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="twP3">
+                            <div><i class="i fl"></i><a href="http://v.qq.com/cover/h/hgpim1llkcbdv50.html" target="_blank">珠元宝</a>
+                                <div class="player_container dyP">
+                                    <div class="mod_action mod_action1 cf">
+                                        <div class="action_item action_follow action_follow1" data-followid="hgpim1llkcbdv50">
+                                            <!-- 收藏后，action_title 添加类名 action_follow_cancel -->
+                                            <a class="action_title" href="javascript:void(0);" role="button" title=""><i class="ico_collect" style="display:none;"></i><span class="ico_text">订阅</span></a>
+                                            <div style="display:none" class="mod_pop_alert_hint" data-role="tip">
+                                                <i data-role="triangle" class="triangle"></i>
+                                                <p data-role="content" class="popup_wadint">
+                                                </p>
+                                                <!-- <p class="popup_wadint">
+		                        关注成功，可前往<a href="http://v.qq.com/cover/h/hgpim1llkcbdv50.html">个人中心</a>查看关注列表
+		                    </p> -->
+                                                <i data-role="closer" class="tags_close" title="关闭提示">&times;</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="http://v.qq.com/cover/h/hgpim1llkcbdv50.html" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/231/252/1877/122116416.jpg" width="135" height="100">
+                                <p class="text">《大球小珠》</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="twP3">
+                            <div><i class="i fl"></i><a href="" target="_blank">体坛视频</a>
+                                <div class="player_container dyP">
+                                    <div class="mod_action mod_action1 cf">
+                                        <div class="action_item action_follow action_follow1" data-followid="ilszjfnn8clixuh">
+                                            <!-- 收藏后，action_title 添加类名 action_follow_cancel -->
+                                            <a class="action_title" href="javascript:void(0);" role="button" title=""><i class="ico_collect" style="display:none;"></i><span class="ico_text">订阅</span></a>
+                                            <div style="display:none" class="mod_pop_alert_hint" data-role="tip">
+                                                <i data-role="triangle" class="triangle"></i>
+                                                <p data-role="content" class="popup_wadint">
+                                                </p>
+                                                <!-- <p class="popup_wadint">
+		                        关注成功，可前往<a href="http://v.qq.com/cover/i/ilszjfnn8clixuh.html">个人中心</a>查看关注列表
+		                    </p> -->
+                                                <i data-role="closer" class="tags_close" title="关闭提示">&times;</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="http://v.qq.com/cover/i/ilszjfnn8clixuh.html" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/42/11/1880/122249847.jpg" width="135" height="100">
+                                <p class="text">《关你球事》</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="twP3">
+                            <div><i class="i fl"></i><a href="" target="_blank">格斗时代</a>
+                                <div class="player_container dyP">
+                                    <div class="mod_action mod_action1 cf">
+                                        <div class="action_item action_follow action_follow1" data-followid="lzau20hb80ioxui">
+                                            <!-- 收藏后，action_title 添加类名 action_follow_cancel -->
+                                            <a class="action_title" href="javascript:void(0);" role="button" title=""><i class="ico_collect" style="display:none;"></i><span class="ico_text">订阅</span></a>
+                                            <div style="display:none" class="mod_pop_alert_hint" data-role="tip">
+                                                <i data-role="triangle" class="triangle"></i>
+                                                <p data-role="content" class="popup_wadint">
+                                                </p>
+                                                <!-- <p class="popup_wadint">
+		                        关注成功，可前往<a href="http://v.qq.com/vplus/gedoushidai">个人中心</a>查看关注列表
+		                    </p> -->
+                                                <i data-role="closer" class="tags_close" title="关闭提示">&times;</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="http://v.qq.com/vplus/gedoushidai" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/47/237/2164/140774582.jpg" width="135" height="100">
+                                <p class="text">《格斗时代》</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="twP3">
+                            <div><i class="i fl"></i><a href="" target="_blank">自制</a>
+                                <div class="player_container dyP">
+                                    <div class="mod_action mod_action1 cf">
+                                        <div class="action_item action_follow action_follow1" data-followid="cd3wz0tzj8pdpwm">
+                                            <!-- 收藏后，action_title 添加类名 action_follow_cancel -->
+                                            <a class="action_title" href="javascript:void(0);" role="button" title=""><i class="ico_collect" style="display:none;"></i><span class="ico_text">订阅</span></a>
+                                            <div style="display:none" class="mod_pop_alert_hint" data-role="tip">
+                                                <i data-role="triangle" class="triangle"></i>
+                                                <p data-role="content" class="popup_wadint">
+                                                </p>
+                                                <!-- <p class="popup_wadint">
+		                        关注成功，可前往<a href="http://v.qq.com/cover/c/cd3wz0tzj8pdpwm.html">个人中心</a>查看关注列表
+		                    </p> -->
+                                                <i data-role="closer" class="tags_close" title="关闭提示">&times;</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="http://sports.qq.com/pgcvedio/jway.htm" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/90/130/2049/133269465.jpg" width="135" height="100">
+                                <p class="text">《广场舞大赛》</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="twP3">
+                            <div><i class="i fl"></i><a href="" target="_blank">自制</a>
+                                <div class="player_container dyP">
+                                    <div class="mod_action mod_action1 cf">
+                                        <div class="action_item action_follow action_follow1" data-followid="frlfpb09m0s8633">
+                                            <!-- 收藏后，action_title 添加类名 action_follow_cancel -->
+                                            <a class="action_title" href="javascript:void(0);" role="button" title=""><i class="ico_collect" style="display:none;"></i><span class="ico_text">订阅</span></a>
+                                            <div style="display:none" class="mod_pop_alert_hint" data-role="tip">
+                                                <i data-role="triangle" class="triangle"></i>
+                                                <p data-role="content" class="popup_wadint">
+                                                </p>
+                                                <!-- <p class="popup_wadint">
+		                        关注成功，可前往<a href="http://v.qq.com/cover/f/fthv35ukd27mx33.html">个人中心</a>查看关注列表
+		                    </p> -->
+                                                <i data-role="closer" class="tags_close" title="关闭提示">&times;</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="http://v.qq.com/cover/f/frlfpb09m0s8633.html" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/55/11/1880/122249860.jpg" width="135" height="100">
+                                <p class="text">《酷炫篮球》</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--精选栏目 E-->
+        <!--广告+联系我们 S-->
+        <div class="fr" style=" margin-top:50px;">
+            <!-- 广告 S-->
+            <div class="guanggaoP">
+                <a href="http://v.qq.com/pay/login.html?j=http%3A%2F%2Fv.qq.com%2Fu%2Fapprove%2F" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/guangg.jpg" width="337" height="207"></a>
+            </div>
+            <!--广告 E-->
+            <!--联系我们 S-->
+            <div class="lxwmP">
+                <div class="fl lx">
+                    <h4>联系我们：</h4>
+                    <ul>
+                        <li>
+                            <a href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800079372&f=1&ty=1&ap=000011:400999:|a:-1|f:Gtxsp" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/qq.png" width="25" height="25">
+                                <p>在线客服</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://t.qq.com" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/wb.png" width="25" height="25">
+                                <p>腾讯微博</p>
+                            </a>
+                        </li>
+                        <li class="wxP"><a target="_blank"><i class="ico_wx"></i><p >微信公众号</p><img src="//mat1.gtimg.com/sports/PGCSPORTS/gz1.png" width="69" height="66"></a></li>
+                        <li>
+                            <a href="mailto:video@vip.qq.com" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/eml.png" width="25" height="25">
+                                <p>电子邮件</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="wxgzhP" style="display:none;"></div>
+                </div>
+                <div class="fl ewmP"><img src="//mat1.gtimg.com/sports/PGCSPORTS/ewm.jpg" width="110" height="110"></div>
+            </div>
+            <!--联系我们 E-->
+        </div>
+        <!--广告+联系我们 E-->
+    </div>
+    <!--精选栏目+广告+联系我们 E-->
+    <!--合作伙伴 S-->
+    <div class="layout hzhbM" id="tabs1">
+        <div class="hd">
+            <h2 class="logo fl">合作伙伴</h2>
+            <!-- 将ul内容隐藏 style="display:none;" 显示该部分内容 style="display:block;"   -->
+            <ul class="tab_hd cf fl" style="display:none;">
+                <li class="tab_hd_item">视频达人<i class="divide"><img src="//mat1.gtimg.com/sports/PGCSPORTS/bor.jpg" width="1" height="18"></i></li>
+                <li class="tab_hd_item ">媒体官方<i class="divide"><img src="//mat1.gtimg.com/sports/PGCSPORTS/bor.jpg" width="1" height="18"></i></li>
+                <li class="tab_hd_item">创意工作室</li>
+            </ul>
+        </div>
+        <div class="bd">
+            <!--页卡 S   -->
+            <div class="tabs tabs1">
+                <div class="tab_bd  dispnone">
+                    <div class="tab_bd_item ">
+                        <ul class="inner">
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <div class="mod_action mod_action1 cf">
+                                            <a data-act="set" data-vuin="0a3d433843287a199fcf6a40cd1fae90" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                        </div>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/nbachn" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/49/253/1877/122116489.jpg" width="100" height="100">
+                                        <p class="text tal">NBA中国官网</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="12d4649f4820972e7afa2888d66bd01c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/soccerapp" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/156/69/1909/124150476.jpg" width="100" height="100">
+                                        <p class="text tal">疯狂大足球</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="4120dd40eafe3913b865a967fcf9e3f7" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/chentucao" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/192/137/1904/123842727.jpg" width="100" height="100">
+                                        <p class="text tal">宸吐槽</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="b0b1487e0f5e040b28a7e9b8c5823141" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/haodapao" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/170/231/1920/124907075.jpg" width="100" height="100">
+                                        <p class="text tal">郝大炮</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="3b1f3d861902d21aced49e3d6d74a98f" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/scoresports" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/171/232/1949/126793056.jpg" width="100" height="100">
+                                        <p class="text tal">超级颜论</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="aa03d8fbeb20df673c127e842543015d" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/zhu" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/90/9/1880/122249385.jpg" width="100" height="100">
+                                        <p class="text tal">大球小珠</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="ddff7aac0d45a5467edffb7b1c782739" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/ddff7aac0d45a5467edffb7b1c782739%0A" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/122/9/1880/122249417.jpg" width="100" height="100">
+                                        <p class="text tal">牛男neo</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="48768c5cad2084f51dccdea65b26b83d" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/titanvideo" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/136/9/1880/122249431.jpg" width="100" height="100">
+                                        <p class="text tal">体坛视频</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="afc8318b1cab2139e370ba49c9e883e0" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/ouou" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/6/230/1920/124906656.jpg" width="100" height="100">
+                                        <p class="text tal">偶偶足球</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="f62b6428535ce56f0905ea2aaa949e12" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/y5zd" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/125/116/2026/131770355.jpg" width="100" height="100">
+                                        <p class="text tal">用武之地</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="4f0274c15455fd598942b02a2cd695da" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/gedoushidai" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/58/238/2164/140774848.jpg" width="100" height="100">
+                                        <p class="text tal">格斗时代</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="ec08d29248681b56def1e7c7ee68744c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/AirGoal" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/89/9/1880/122249384.jpg" width="100" height="100">
+                                        <p class="text tal">爱高体育</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="c0d9ac0c960f3b1c8372b1129f47827c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/tiezibang" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/145/9/1880/122249440.jpg" width="100" height="100">
+                                        <p class="text tal">铁子帮</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="82a9733bb76418198fdc29f30384c9b3" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/letour" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/92/9/1880/122249387.jpg" width="100" height="100">
+                                        <p class="text tal">朗途体育</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="ffffe98582aa53e2b87401b4530cff9a" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/K-1china" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/83/9/1880/122249378.jpg" width="100" height="100">
+                                        <p class="text tal">K-1中国</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="be287827009557690905ea2aaa949e12" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/ballislove" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/70/9/1880/122249365.jpg" width="100" height="100">
+                                        <p class="text tal">BALL IS LOVE</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="b8751b9a5c3bf4d76f356522325b0902" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/idd666" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/93/9/1880/122249388.jpg" width="100" height="100">
+                                        <p class="text tal">美久广场舞</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="132b228b8d64ca3285fc9e995a19b595" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/zhibo8" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/153/9/1880/122249448.jpg" width="100" height="100">
+                                        <p class="text tal">直播吧</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="53e387ad4f85630991069f1800862a96" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/cartv" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/81/9/1880/122249376.jpg" width="100" height="100">
+                                        <p class="text tal">CarTv车映画</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="83ee1c032f6bc261083dce956f48556c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/goonertv" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/12/231/1915/124581792.jpg" width="100" height="100">
+                                        <p class="text tal">中国枪迷频道</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="83ee1c032f6bc261083dce956f48556c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/sodasoccer" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/30/241/1915/124584360.jpg" width="100" height="100">
+                                        <p class="text tal">搜达足球</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="83ee1c032f6bc261083dce956f48556c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/bluetv" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/141/243/1915/124584981.jpg" width="100" height="100">
+                                        <p class="text tal">蓝军球迷频道</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="83ee1c032f6bc261083dce956f48556c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/juvetv" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/139/243/1915/124584979.jpg" width="100" height="100">
+                                        <p class="text tal">尤文球迷频道</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="83ee1c032f6bc261083dce956f48556c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/reddevilstv" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/140/243/1915/124584980.jpg" width="100" height="100">
+                                        <p class="text tal">中国红魔频道</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="83ee1c032f6bc261083dce956f48556c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/fiba3x3" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/242/245/1915/124585592.jpg" width="100" height="100">
+                                        <p class="text tal">FIBA 3X3</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="83ee1c032f6bc261083dce956f48556c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/100shuai" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/203/246/1915/124585808.jpg" width="100" height="100">
+                                        <p class="text tal">WWE百分摔角</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="83ee1c032f6bc261083dce956f48556c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/channelfive" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/222/247/1915/124586082.jpg" width="100" height="100">
+                                        <p class="text tal">第5频道</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="83ee1c032f6bc261083dce956f48556c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/zs8q" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/19/250/1915/124586644.jpg" width="100" height="100">
+                                        <p class="text tal">中式8球网</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="83ee1c032f6bc261083dce956f48556c" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/Highlight" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/229/252/1915/124587364.jpg" width="100" height="100">
+                                        <p class="text tal">Highlight瀚阑映像</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab_bd_item">
+                        <ul class="inner">
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="http://v.qq.com/vplus/shdy" target="_blank"><img src="http://img1.gtimg.com/sports/pics/hv1/132/9/1880/122249427.jpg" width="100" height="100">
+                                        <p class="text tal">四海钓鱼</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img12.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img12.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img15.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img12.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img11.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img14.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab_bd_item">
+                        <ul class="inner">
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img11.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img11.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img12.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img15.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img14.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img11.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img15.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img14.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img14.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twP3">
+                                    <div class="player_container dyP1">
+                                        <a data-act="set" data-vuin="84f851843748379ed2e414ecc3137397" title="订阅" href="javascript:void(0);" class="ico_collect">订阅</a>
+                                    </div>
+                                    <a href="#" target="_blank"><img src="//mat1.gtimg.com/sports/PGCSPORTS/img13.jpg" width="100" height="100">
+                                        <p class="text tal">天幕制作</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+            // tabs调用
+            $(function() {
+                $("#tabs1").tabs({
+                    index: 0,
+                    type: "mouseover",
+                    current: "current",
+                    hdItem: ".tab_hd_item",
+                    bdItem: ".tab_bd_item"
+                });
+            });
+            </script>
+            <!--页卡 E   -->
+        </div>
+    </div>
+    <!--合作伙伴 E-->
+    <script type="text/javascript">
+    txv.common.initPage();
+    //初始化关注
+    seajs.use('widget.follow', function(Follow) {
+        //下面的属性说明在follow类里都有
+        var follow1 = Follow.create({
+            //生效容器,默认docuemnt
+            container: '.mod_action1',
+            //关注按钮选择器,默认属性是[data-followid]
+            buttonSle: '.action_follow1',
+            //取关注id的属性，默认data-followid
+            idAttr: 'data-followid',
+            //取关注类别的属性，默认data-followtype
+            //typeAttr:'data-followtype',
+            //来自什么平台
+            //id:'http://v.qq.com',
+            f: 2,
+            t: 1,
+            /**
+             * [buttonText 按钮内文字标签的选择器,有可能按钮里面嵌套着文字标签.
+             * 用于修改文字显示,默认为空就操作按钮本身]
+             * @type {String}
+             */
+            buttonText: 'span',
+            //手动传入的tips的dom节点
+            tipsElement: $j('.action_follow1').find('.mod_pop_alert_hint'),
+
+            //tipContentElement:"[data-role=content]",      
+            showTips: false,
+            //tipsTitle:'测试文案32423234',
+            // tipsContent:'1111111',
+
+            openLogin: function() {
+                Live.login.openLogin();
+            },
+            isLogin: function() {
+                return Live.login.isLogin();
+            },
+            // onStatusChange:function(flag){
+            //     console.log('change:'+flag);
+            // },
+            // afterUserFollow:function(status,btn){
+            //     console.log('afterUserFollow:'+btn);
+            //     console.log('afterUserFollow:'+status);
+            // },      
+            /**
+             * [followedClass 关注按钮已关注后添加的样式]
+             * @type {String}
+             */
+            followedClass: 'btn_alert_cancel'
+        });
+
+        //登陆退出注册 关注回调方法
+        Live.login.addLoginCallback(Follow.onLogin);
+        Live.login.addClearLoginStatusCallback(Follow.onLogout);
+    });
+    </script>
+    <script type="text/javascript">
+    setTimeout(function() {
+
+        $(".dyP a").on('click', function() {
+            $(this).addClass('vi');
+        });
+
+        $(".dyP1 a").on('click', function() {
+            $(this).addClass('vi');
+        });
+
+    }, 1000);
+    </script>
+    <!-- 全站流量统计代码 开始 -->
+    <!--pgv 20160801 by 39815--><script charset="gbk" src="http://pingjs.qq.com/ping.js"></script>
+
+<script>!function(t,e){"use strict";function a(){var t,e,a=(""+p.catalog_full).replace(/-/g,".").replace(/_/g,"-");p.topic&&p.topic.name&&p.topic.name.length>0?(t="L.",e="Z."+a+"."+p.topic.name):(t="L."+a,e="Z.");var n="W."+p.type,o="M."+p.tpl.type+p.tpl.stype,i="P."+(""+p.site).replace(/_/g,"-"),c="F."+f,l=t+"_"+e+"_"+n+"_"+o+"_"+i+"_"+c;l&&r({pgUserType:l})}function n(t){o(e,"click",function(e){var a=e.target;"img"===a.tagName&&(a=a.parentNode);var n=a.tagName.toLowerCase(),o=a.getAttribute("href");if(!o||o.indexOf("qqcom_pgv_from=")>-1)return!1;if("a"===n&&a.hostname&&a.hostname.indexOf("qq.com")>-1){var r=o+(a.search?"&":"?")+"qqcom_pgv_from="+t;a.setAttribute("href",r)}})}function o(a,n,o){var r=function(a){return a=a||t.event,a.target||(a.target=a.srcElement||e),3===a.target.nodeType&&(a.target=a.target.parentNode),a};return a.addEventListener?a.addEventListener(n,function(t){o.call(t.currentTarget,r(t))},!1):a.attachEvent("on"+n,function(t){o.call(a,r(t))}),!0}if(!t||!t.location||"function"!=typeof t.pgvMain)return!1;var r=function(){var e=arguments;setTimeout(function(){t.pgvMain.apply(this,e)},0)},i=location.search.replace(/adtag=client\.qq\.\d+_\.0/i,"from=tips"),c=["aio","tips"],f="def";location.search.indexOf("qqcom_pgv_from=")>-1&&(f=location.host+location.pathname+location.search);var p=t.ARTICLE_INFO||null,l=p&&p.catalog_full;if(l)for(var g=0;g<c.length;g+=1)if(i.indexOf(c[g])>-1){n(c[g]);break}l&&a(),l||("undefined"!=typeof whatCatalog&&(t.pvCSTM=t.whatCatalog),r({pgUserType:"F."+f}))}(window,document);</script><!--/pgv 20160801-->
+<!-- 视频来源ptag --><script src="//mat1.gtimg.com/v/ptag/ptag_1.2.js" async="true"></script>
+<!--[if !IE]>|xGv00|a1d505b81f0731c97405c05986e06bb8<![endif]-->
+<!--[if !IE]>|xGv00|e495268dae03726664c77551e8df25e2<![endif]-->
+    <!--普通专题pgv统计代码请放在<body>标签下方,重大项目报道及频道首页改版pgv统计代码放于首屏后.-->
+    <!-- 全站流量统计代码 结束 -->
+    <!-- 版权页面片 开始 -->
+            <script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+        <style>
+          .tcopyright {
+            width: 960px;
+            margin: 0 auto;
+            padding: 8px 0;
+            font-size: 12px;
+            line-height: 28px;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+            clear: both;
+          }
+
+          .tcopyright .en {
+            font-family: Arial;
+          }
+
+          .tcopyright a {
+            color: #333;
+            text-decoration: none;
+          }
+
+          .tcopyright a:hover {
+            color: #bd0a01;
+            text-decoration: underline;
+          }
+          .footernew {
+              color: #515151;
+              font-size: 12px;
+              height: 70px;
+              line-height: 24px;
+              margin: 12px auto 0;
+              overflow: hidden;
+              text-align: center;
+              width: 1000px;
+          }
+          .footernew .footernewdiv {
+              margin: 0 auto;
+              width: 680px;
+          }
+          .footernew p {
+              border: 1px solid #D2D2D2;
+              float: left;
+              font-size: 12px;
+              height: 50px;
+              line-height: 20px;
+              margin: 6px;
+              padding: 0;
+              width: 120px;
+              overflow: hidden;
+          }
+          .footernew .fl {
+              padding: 3px;
+          }
+          .qq-footer .footernew .fr {
+              padding: 5px 3px 0;
+              width: 72px;
+          }
+          .qq-footer .footernew a {
+  color: #515151;
+  text-decoration: none;
+}
+        </style>
+        <div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a
+              href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a
+              href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a
+              href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a
+              href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a
+              href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a
+              href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/"
+              target="_blank" rel="nofollow">腾讯公益</a> | <a href="https://cloud.tencent.com/?from=txwdibu"
+              target="_blank" rel="nofollow">腾讯云</a> | <a href="http://service.qq.com/" target="_blank"
+              rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+              <br/>
+              <a href="http://szwljb.sz.gov.cn/" target="_blank" rel="nofollow">深圳举报中心</a> |
+              <a href="http://ga.sz.gov.cn" target="_blank" rel="nofollow">深圳公安局</a> | 
+              <a href="http://www.qq.com/dzwfggcns.htm" target="_blank" rel="nofollow">抵制违法广告承诺书</a> |
+              <a href="http://www.qq.com/copyright.shtml" target="_blank" rel="nofollow">版权保护投诉指引</a> |
+              <a href="https://gdca.miit.gov.cn/" target="_blank" rel="nofollow">广东省通管局</a>
+              <br>
+              <span>
+                <a href="http://www.qq.com/culture.shtml" target="_blank" rel="nofollow">粤网文[2017]6138-1456号</a> 
+                <a href="http://www.qq.com/internet_licence.htm" target="_blank" rel="nofollow">新出网证（粤）字010号</a> 
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                增值电信业务经营许可证：<a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">粤B2-20090059</a> 
+                <a href="http://www.qq.com/icp1.shtml" target="_blank" rel="nofollow">B2-20090028</a>
+              </span>
+              <br>
+              <a href="http://www.qq.com/scio.htm" target="_blank" rel="nofollow">新闻信息服务许可证</a>
+              <a href="http://www.qq.com/xwdz.shtml" target="_blank" rel="nofollow">粤府新函[2001]87号</a> 违法和不良信息举报电话：0755-83765566-9 
+              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002000001">
+                <span>粤公网安备44030002000001号</span>
+              </a>
+              <br>
+              <a href="http://www.qq.com/spyp.htm" target="_blank">互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a>
+              <br>
+              <div class="footernew">
+                <div class="footernewdiv">
+                <p>
+                  <span class="fl"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" target="_blank" rel="nofollow"><img width="35" height="43" border="0" alt="经营性网站备案信息" src="//mat1.gtimg.com/www/images/qq2012/ind36.gif"></a></span>
+                  <span class="fr"><a target="_blank" class="lcblack" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" rel="nofollow">经营性网站<br>
+                  备案信息</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.12377.cn/" target="_blank" rel="nofollow"><img width="44" height="44" border="0" alt="中国互联网举报中心" src="//mat1.gtimg.com/www/images/qq2012/buliang.png"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.12377.cn/" target="_blank" rel="nofollow">中国互联网<br>
+                  举报中心</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.wenming.cn" target="_blank" rel="nofollow"><img width="44" height="42" border="0" alt="中国文明网传播文明" src="//mat1.gtimg.com/www/images/qq2012/wmlogo.gif"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.wenming.cn" target="_blank" rel="nofollow">中国文明网<br>传播文明</a></span>
+                </p>
+                <p style="width:128px;height:52px;border:0;">
+                  <span style="padding:0;" class="fl"><a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&amp;ct=df&amp;a=1&amp;pa=337337" target="_blank" rel="nofollow"><img border="0" alt="诚信网站" src="//mat1.gtimg.com/www/images/qq2012/cxrz5.png"></a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow"><img src="//mat1.gtimg.com/www/images/qq2012/gswj2015.jpg" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow">工商网监<br>电子标识</a></span>
+                </p>
+                </div>
+              </div>
+
+          </div>
+          <div class="en">Copyright &copy; 1998 -
+            
+            2020 Tencent. All Rights Reserved</div>
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a
+              href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+          </div>
+        </div>
+<!--[if !IE]>|xGv00|1946a31bc73a15246842877bdfa16df2<![endif]-->
+    <!-- 版权页面片 结束 -->
+    <script type="text/javascript" src="//mat1.gtimg.com/joke/js/jm/template.js"></script>
+    <!--排行榜数据模板S-->
+    <script id="rank-data" type="text/html">
+        {{each topvideo as value i}} {{if i == 0}}
+        <li class="rankFirst ranklist{{i+1}}">
+            <div class="twP2">
+                <a href="{{value.playurl}}" target="_blank" title="{{value.title}}"> <span class="mask1"></span>
+                    <img width="138" height="122" src="http://{{value.pic}}">
+                    <p>{{value.title}}</p> <span><i></i>{{playFormat(value.playcount)}}</span>
+                </a>
+            </div>
+        </li>
+        {{/if}} {{if i > 0}}
+        <li class="ranklist{{i+1}}">
+            <b class="logo2 fl">
+				{{if i < 9 }}
+					0{{i+1}}
+				{{/if}}
+				{{if i > 8}}
+					{{i+1}}
+				{{/if}}
+			</b>
+            <a href="{{value.playurl}}" target="_blank" title="{{value.title}}">
+                <div>
+                    <span class="bfl fr"><i></i>
+					{{playFormat(value.playcount)}}
+					</span> {{textFormat(value.title,15)}}
+                </div>
+            </a>
+        </li>
+        {{/if}} {{/each}}
+    </script>
+    <!--排行榜数据模板E-->
+    <!--滚动列表数据模板S-->
+    <script id="scroll-data" type="text/html">
+        {{each videos as value i}}
+        <li class="split">
+            <a href="{{value.url}}" target="_blank" title="{{value.title}}">
+                <div class="twP">
+                    <img src="{{value.pic_640_360}}" width="180" height="100">
+                    <p><i class="fl"></i><span class="mask fl">{{textFormat(value.title,12)}}</span></p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <!--滚动列表数据模板E-->
+    <script>
+    //排行榜数据抓取
+    function rankData() {
+
+        var html = "";
+        jQuery.ajax({
+            url: "http://sns.video.qq.com/fcgi-bin/dlib/dataout_pc?auto_id=1879&otype=json",
+            dataType: "jsonp",
+            success: function(res) {
+                if (res) {
+                    html = "";
+                    var data = {
+                        topvideo: res.topvideo
+                    };
+                    html += template("rank-data", data);
+                    jQuery("#rankList").html(html);
+                    return true;
+                }
+            }
+        })
+        return true;
+    }
+    //滚动数据抓取
+    function scrollData(cid, objUl, obj) {
+        var html = "";
+        jQuery.ajax({
+            url: 'http://data.video.qq.com/fcgi-bin/data?tid=69&idlist=' + cid + '&appid=10001007&appkey=e075742beb866145&otype=json&callback=videoLs',
+            dataType: "jsonp",
+            success: function(res) {
+                var titUrl, urlList = [];
+                if (res) {
+                    html = "";
+                    var len = res.results[0].fields.video_ids;
+                    for (var i = 0; i < len; i++) {
+                        titUrl = 'http://v.qq.com/cover/' + cid.substring(0, 1) + '/' + cid + '.html?vid=' + res.videos[i].vid;
+                        //urlList.push(titUrl);  
+                        res.videos[i].titUrl = titUrl;
+                    };
+              
+                    var data = {
+                        videos: res.results[0].fields.video_ids
+                    };
+                    html += template("scroll-data", data);
+                    jQuery(objUl).html(html);
+                    return true;
+                }
+            }
+        }).done(function() {
+            $(obj).qqScroll({
+                direction: "left",
+                auto: false,
+                step: 3
+            });
+        });
+        return true;
+    }
+    seajs.use("module/template", function(mod) {
+        //播放量万单位转换
+        template.helper("playFormat", function(playcount) {
+            var wanCount;
+            if (playcount && playcount > 10000) {
+                wanCount = Math.ceil(playcount / 1000) / 10 + "万";
+            } else {
+                wanCount = playcount;
+            }
+            return wanCount;
+        });
+        //字符长度截取
+        template.helper("textFormat", function(text, len) {
+            var text;
+            if (text && text.length > len) {
+                text = text.substr(0, len - 2) + "..."
+            } else {
+                text = text;
+            }
+            return text;
+        });
+        scrollData("qp5bd5nnvp8lc8a", "#gaoxiaoList", "#scroll_A"); //我是海叔，分别为cid，填充内容ul上的id，左右滚动的id
+        scrollData("p0dodn84zc25gxe", "#zuqiuList", "#scroll_C"); //关你球事，同上
+        scrollData("63kvv3eqqvn1ush", "#shisuList", "#scroll_B"); //敢玩顽童，同上
+        scrollData("2567a9p5u27s3jg", "#basketballList", "#scroll_D"); //运动地理，同上
+        scrollData("kb18iqux8b9shrt", "#bojiList", "#scroll_E"); //超级颜论，同上
+        rankData(); //排行榜数据调用
+
+    })
+    </script>
+    <script type="text/javascript" src="//mat1.gtimg.com/joke/vjia/txv.follow.js"></script>
+<script type="text/javascript">
+    document.domain = "qq.com";
+    txv.common.initPage();
+
+    function initRssMod() {
+        var feedObj = new txv.Follow();
+
+        function set(uid, dom) {
+            var $mod = jQuery(dom);
+            $mod.addClass('ico_collect_cancel');
+            $mod.text('取消订阅');
+            $mod.attr('data-act', 'del');
+            $mod.attr('title', '取消订阅');
+        }
+
+        function cancel(uid, dom) {
+            var $mod = jQuery(dom);
+            $mod.removeClass('ico_collect_cancel');
+            $mod.attr('data-act', 'set');
+            $mod.text('订阅');
+            $mod.attr('title', '订阅');
+        }
+
+        feedObj.bindAddAndDel({
+            showTips: false,
+            showConfirm: false,
+            addSuccess: set,
+            cancelSuccess: cancel,
+            addError: function(arg1, arg2, arg3) {
+
+            }
+        });
+
+        jQuery('[data-vuin]').each(function(i, dom) { //进入页面时需要初始化已订阅的V+用户。需要遍历所有元素，然后用下面的接口来判断
+            var $mod = jQuery(dom);
+            (function(mod) {
+
+                var euin = mod.attr('data-vuin');
+                feedObj.isFollowed({
+                    uin: euin,
+                    success: function(bool) {
+                        if (bool) {
+                            set(euin, mod);
+                        } else {
+                            cancel(euin, mod);
+                        }
+                    }
+                });
+
+            })($mod);
+        });
+    }
+    initRssMod();
+    </script>
+</body>
+
+</html><!--[if !IE]>|xGv00|f82e6265300413d844d16f5df7299254<![endif]-->

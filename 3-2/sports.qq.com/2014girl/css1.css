@@ -1,0 +1,175 @@
+/*kennanwang*/
+body, td, selezs, input, div { font-size:12px; color:#333; font-family:"ËÎÌå"; }
+body { background:#fff; }
+a:link, a:visited { text-decoration:none; color:#333; }
+a:hover { color:#498c00!important; text-decoration:underline; }
+.Nborder { border:0px!important }
+.mb0 { margin-bottom:0px!important }
+#content { width:100%; margin:0px auto; overflow:hidden; }
+/*banner*/
+#banner { width:100%; height:700px; margin:0px auto; overflow:hidden; background:#ffff00 }
+.banner { position:relative; width:1060px; height:700px; margin:0px auto; overflow:hidden; z-index:99 }
+.txtAd{ position:absolute; width:340px; top:502px; right:0px; text-align:left; font-size:16px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#ff009c}
+.huaLogo{ float:right; display:inline-block; width:132px; height:58px; margin:5px 10px 0px 0px; background:url(//mat1.gtimg.com/sports/2014girl/images/huaLogo.jpg) no-repeat;}
+#banner h1 { display:none; }
+.greenMod{ position:absolute; top:30px; left:50%; margin-left:-600px; width:1220px; height:358px; background:url(//mat1.gtimg.com/sports/2014girl/images/green.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/green.png', sizingMethod='crop'); z-index:50}
+.line01{ position:absolute; top:-800px; left:50%; margin-left:-550px; width:753px; height:699px; background:url(//mat1.gtimg.com/sports/2014girl/images/line01.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/line01.png', sizingMethod='crop'); z-index:50}
+.line02{ position:absolute; top:-800px; right:50%; margin-right:-550px; width:834px; height:699px; background:url(//mat1.gtimg.com/sports/2014girl/images/line02.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/line02.png', sizingMethod='crop'); z-index:50}
+.suixie01{ position:absolute; top:395px; left:50%; margin-left:-640px; width:130px; height:193px; background:url(//mat1.gtimg.com/sports/2014girl/images/suixie01.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/suixie01.png', sizingMethod='crop'); z-index:50}
+.suixie02{ position:absolute; top:335px; right:50%; margin-right:-650px; width:164px; height:176px; background:url(//mat1.gtimg.com/sports/2014girl/images/suixie02.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/suixie02.png', sizingMethod='crop'); z-index:50}
+.suixie01:hover,.suixie02:hover{
+-webkit-animation:swing 1s .2s ease both;
+-moz-animation:swing 1s .2s ease both;}
+@-webkit-keyframes swing{
+20%,40%,60%,80%,100%{-webkit-transform-origin:top center}
+20%{-webkit-transform:rotate(15deg)}
+40%{-webkit-transform:rotate(-10deg)}
+60%{-webkit-transform:rotate(5deg)}
+80%{-webkit-transform:rotate(-5deg)}
+100%{-webkit-transform:rotate(0deg)}
+}
+@-moz-keyframes swing{
+20%,40%,60%,80%,100%{-moz-transform-origin:top center}
+20%{-moz-transform:rotate(15deg)}
+40%{-moz-transform:rotate(-10deg)}
+60%{-moz-transform:rotate(5deg)}
+80%{-moz-transform:rotate(-5deg)}
+100%{-moz-transform:rotate(0deg)}
+}
+.logo:hover{
+-webkit-animation:bounce 1s .2s ease both;
+-moz-animation:bounce 1s .2s ease both;}
+@-webkit-keyframes bounce{
+0%,20%,50%,80%,100%{-webkit-transform:translateY(0)}
+40%{-webkit-transform:translateY(-30px)}
+60%{-webkit-transform:translateY(-15px)}
+}
+@-moz-keyframes bounce{
+0%,20%,50%,80%,100%{-moz-transform:translateY(0)}
+40%{-moz-transform:translateY(-30px)}
+60%{-moz-transform:translateY(-15px)}
+}
+#focus01{ position:relative; width:550px; height:480px; margin:54px 0px 0px 60px; overflow:hidden; z-index:999}
+#focus01 .scrollBox{ position:relative; width:550px; height:480px; overflow:hidden}
+#focus01 .scrollUl{ position:absolute; top:0px; left:0px; width:999999px; height:480px; overflow:hidden; margin-left:-325px;}
+#focus01 .scrollUl li{ position:relative; float:left; width:400px; height:480px; margin-top:20px;}
+#focus01 .scrollUl li .mask{ position:absolute; top:0px; left:0px; width:100%; height:100%; background:#ffff00; opacity:0.5; filter:Alpha(Opacity=50);}
+#focus01 .scrollUl li.current .mask{ display:none}
+#focus01 .scrollUl li.current{ margin:0px; height:475px; border-top:5px solid #43a203;}
+#focus01 .pageBox{ position:absolute; bottom:20px; left:20px; width:550px; height:16px; text-align:center}
+#focus01 .pageBox span{ display:inline-block; width:16px; height:16px; margin-right:5px; background:url(//mat1.gtimg.com/sports/2014girl/images/iconD.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/iconD.png', sizingMethod='crop'); cursor:pointer}
+#focus01 .pageBox span.current{ background:url(//mat1.gtimg.com/sports/2014girl/images/iconDon.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/iconDon.png', sizingMethod='crop');}
+#focus01 .pageBox span:hover{ -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg);transition:all 0.3s ease-in 0s; -webkit-transition:all 0.3s ease-in 0s;  -moz-transition:all 0.3s ease-in 0s;-o-transition:all 0.3s ease-in 0s}
+.logo{ position:absolute; top:-500px; right:-400px; width:343px; height:327px; background:url(//mat1.gtimg.com/sports/2014girl/images/logo.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/logo.png', sizingMethod='crop');}
+.logo a{ display:block; width:343px; height:327px; background:url(//mat1.gtimg.com/sports/2014girl/images/logo.png) no-repeat scroll -999999px 0px; cursor:pointer}
+#babyTxt{ width:1060px; height:117px; background:url(//mat1.gtimg.com/sports/2014girl/images/txtBg.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/txtBg.png', sizingMethod='crop'); z-index:60}
+#babyTxt ul{ width:860px; height:70px; margin:20px 0px 0px 58px; overflow:hidden}
+#babyTxt ul li{ display:none; width:860px; height:70px;}
+#babyTxt ul li.current{ display:block}
+#babyTxt ul li dl{ float:left; width:275px; height:70px}
+#babyTxt ul li dl dt img{ display:block; float:left; width:70px; height:70px; margin-right:15px;}
+#babyTxt ul li dl dt{ margin-bottom:15px; font-size:24px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#fff}
+#babyTxt ul li dl dt a,#babyTxt ul li dl dt a:hover,#babyTxt ul li dl dd a,#babyTxt ul li dl dd a:hover{ color:#fff!important; text-decoration:none}
+#babyTxt ul li dl dd{ font-size:12px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#fff}
+.support{ float:right; width:440px; height:70px; line-height:70px; font-size:24px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#498c00}
+.support a{ color:#498c00}
+.support span{ margin-left:20px}
+#focus01 .btn{ position:absolute; top:20px; width:75px; height:460px; cursor:pointer; z-index:50}
+#leftBtn{ left:0px;}
+#rightBtn{ right:0px;}
+#leftBtn:hover{  background:url(//mat1.gtimg.com/sports/2014girl/images/left.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/left.png', sizingMethod='crop');}
+#rightBtn:hover{ background:url(//mat1.gtimg.com/sports/2014girl/images/right.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/right.png', sizingMethod='crop');}
+/*greenBox*/
+#greenBox { width:100%; height:534px; margin:0px auto; overflow:hidden; background:#61b702 }
+.greenBox { position:relative; width:1000px; height:534px; margin:0px auto; overflow:hidden }
+.greenBox .left{ float:left; width:560px; overflow:hidden;}
+#video{ width:560px; height:408px; margin-top:65px}
+.greenBox .right{ float:right; width:400px; margin-top:65px;}
+.rtBox .hd{ width:400px; height:38px; overflow:hidden}
+.rtBox .hd h2{ font-size:24px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#fff}
+.rtBox h2 a{ color:#fff}
+.bank h2{ padding-left:50px; line-height:38px; background:url(//mat1.gtimg.com/sports/2014girl/images/iconBank.png) no-repeat}
+.rtBox .hd .fr{ display:inline-block; line-height:40px; font-size:14px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#fff  }
+.rtBox .hd .fr em{ display:inline-block; width:17px; height:17px; margin-right:5px; background:url(//mat1.gtimg.com/sports/2014girl/images/more.png) no-repeat scroll 0px 0px; transition:all 0.3s ease-in 0s; -moz-transition:all 0.3s ease-in 0s; -webkit-transition:all 0.3s ease-in 0s; -o-transition:all 0.3s ease-in 0s}
+.rtBox .hd .fr:hover em{ -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg);}
+.bankUl{ width:400px; overflow:hidden}
+.bankUl li{ width:400px; height:45px; line-height:45px; overflow:hidden; border-bottom:1px dotted #4b8e00; font-size:16px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#fff}
+.bankUl li a,.bankUl li a:hover,.rtBox .hd .fr a,.rtBox .hd .fr a:hover{ color:#fff!important; text-decoration:none}
+.bankUl li span{ float:right; margin-right:5px; font-size:16px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#fff}
+.bankUl li span i{ color:#ffff00; margin-left:5px;}
+.bankUl li em{ margin-right:15px; font-size:24px; font-family:Georgia, "Times New Roman", Times, serif; color:#ffff00}
+.bankUl li.bb0{ border-bottom:0px}
+.canjia .hd{ border-bottom:1px solid #7bc32c}
+.canjiaUl{ margin-bottom:30px;}
+.canjiaUl li{ margin-top:10px; font-size:14px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#fff}
+.canjiaUl li a{ color:#fff}
+.baomingBtn{ display:block; width:144px; height:48px; line-height:48px; margin:0px auto; background:#ffff00; text-align:center; font-size:24px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#498c00!important}
+.baomingBtn:hover{ text-decoration:none; color:#498c00!important; background:#fff}
+#focus02{ width:400px; margin-top:30px; overflow:hidden}
+#focus02 .scrollBox{ position:relative; width:400px; height:100px; overflow:hidden; margin-bottom:15px;}
+#focus02 .scrollUl{ height:100px; position:absolute; top:0px; left:0px;}
+#focus02 .scrollUl li{ float:left; width:400px; height:100px}
+#focus02 .scrollUl li img{ width:400px; height:100px;}
+#focus02 .pageBox{ width:400px; text-align:center;}
+#focus02 .pageBox span{ display:inline-block; width:10px; height:10px; margin-left:10px; background:url(//mat1.gtimg.com/sports/2014girl/images/iconD.jpg) no-repeat; cursor:pointer}
+#focus02 .pageBox span.current{ background:url(//mat1.gtimg.com/sports/2014girl/images/iconDon.jpg) no-repeat}
+/*box1*/
+.main{ width:100%; margin:0px auto; padding-bottom:30px; overflow:hidden; background:#f6f6f6}
+.box1{ width:1000px; margin:58px auto 0px; overflow:hidden;}
+.box1 .hd{ width:100%; height:35px; overflow:hidden}
+.box1 .hd h2{ padding-left:54px; background:url(//mat1.gtimg.com/sports/2014girl/images/hdbg.jpg) no-repeat; font-size:30px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#498c00}
+.box1 .hd .fr{ display:inline-block; line-height:40px; font-size:14px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal;  }
+.box1 .hd .fr em{ display:inline-block; width:17px; height:17px; margin-right:5px; background:url(//mat1.gtimg.com/sports/2014girl/images/more.jpg) no-repeat scroll 0px 0px; transition:all 0.3s ease-in 0s; -moz-transition:all 0.3s ease-in 0s; -webkit-transition:all 0.3s ease-in 0s; -o-transition:all 0.3s ease-in 0s}
+.box1 .hd .fr:hover em{ -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg);}
+.box1 .bd{ width:100%;}
+.weishiUl{ width:1000px; overflow:hidden}
+.weishiUl li{ display:inline; float:left; width:235px; padding:0px 7px; margin:30px 0px 0px 0px; overflow:hidden}
+.weishiUl li .img{ position:relative; width:235px; height:235px;}
+.weishiUl li .img img{ width:235px; height:235px; opacity:1; filter:Alpha(Opacity=100);}
+.weishiUl li .img img:hover{ background:#000; opacity:0.8; filter:Alpha(Opacity=80); -webkit-transition:opacity 0.2s ease-in-out 0s; -moz-transition:opacity 0.2s ease-in-out 0s; -o-transition:opacity 0.2s ease-in-out 0s; transition:opacity 0.2s ease-in-out 0s;}
+.weishiUl li .play{ position:absolute; left:15px; bottom:15px; width:40px; height:30px; background:url(//mat1.gtimg.com/sports/2014girl/images/play.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/play.png', sizingMethod='crop');}
+.weishiUl li .play:hover,.weishiUl li .img:hover .play{ background:url(//mat1.gtimg.com/sports/2014girl/images/play2.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/play2.png', sizingMethod='crop'); -moz-transform:scale(1.1);-moz-transition:all 0.3s ease-in 0s ; transform:scale(1.1);transition:all 0.3s ease-in 0s;  -webkit-transform:scale(1.1);-webkit-transition:all 0.3s ease-in 0s; -o-transform:scale(1.1);-o-transition:all 0.3s ease-in 0s}
+.weishiUl li .txt{ width:235px; height:108px; overflow:hidden; border-bottom:1px solid #eaeaea; background:#fff}
+.nameBox{ width:215px; height:28px; margin:20px auto;}
+.nameBox .name{ float:left; width:100px; height:28px; line-height:28px}
+.nameBox .name em{ display:inline-block; width:20px; height:20px; margin-left:5px; background:url(//mat1.gtimg.com/sports/2014girl/images/iconHua.jpg) no-repeat scroll 0px 0px; vertical-align:middle; transition:all 0.3s ease-in 0s; -moz-transition:all 0.3s ease-in 0s; -webkit-transition:all 0.3s ease-in 0s; -o-transition:all 0.3s ease-in 0s}
+.nameBox .name:hover em,.weishiUl li:hover .name em{ -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg);}
+.nameBox .option{ float:right; width:113px; height:28px; line-height:28px; overflow:hidden;}
+.nameBox .option .digg{ float:left; width:28px; height:28px; text-align:center; font-size:14px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#fff; background:#498c00}
+.nameBox .option .digg a{ display:block; width:28px; height:28px; color:#fff;  -moz-transition:all 0.3s ease-out 0s; -webkit-transition:all 0.3s ease-out 0s;-o-transition:all 0.3s ease-out 0s;transition:all 0.3s ease-out 0s;}
+.nameBox .option .digg a:hover,.weishiUl li:hover .digg{ color:#fff!important; text-decoration:none; background:#fd71d2; font-size:15px; -moz-transition:all 0.3s ease-in 0s; -webkit-transition:all 0.3s ease-in 0s; -o-transition:all 0.3s ease-in 0s; transition:all 0.3s ease-in 0s;}
+.nameBox .option .count{ float:left; width:85px; height:28px; text-align:center; font-size:12px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#498c00; background:#eeeeee}
+.weishiUl li .zhichi{ width:215px; margin:0px auto; font-size:14px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal;}
+.zhichi em{ color:#498c00; margin-right:10px}
+.baobeiUl{ width:1000px; overflow:hidden}
+.baobeiUl li{ float:left; width:480px; border-top:1px solid #eaeaea; margin:30px 10px 0px 10px; background:#fff; overflow:hidden}
+.baobeiUl li .person{ width:480px; height:64px; line-height:64px; overflow:hidden; background:url(//mat1.gtimg.com/sports/2014girl/images/baby.jpg) no-repeat scroll 20px 20px;}
+.baobeiUl li .person span{ margin-left:132px; font-size:24px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal;}
+.baobeiUl li .img{ position:relative; width:480px; height:300px; }
+.baobeiUl li .img .play{ position:absolute; top:218px; left:20px; width:67px; height:67px; background:url("//mat1.gtimg.com/sports/index2013/images/focus_play.png") no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/index2013/images/focus_play.png', sizingMethod='crop');}
+.baobeiUl li .img img{ width:480px; height:300px; -moz-transition:all 0.3s ease-out 0s; -webkit-transition:all 0.3s ease-out 0s;-o-transition:all 0.3s ease-out 0s;transition:all 0.3s ease-out 0s;}
+.baobeiUl li:hover .img img{ -moz-transform:scale(1.01);-moz-transition:all 0.3s ease-in 0s ; transform:scale(1.1);transition:all 0.3s ease-in-out 0s;  -webkit-transform:scale(1.1);-webkit-transition:all 0.3s ease-in-out 0s; -o-transform:scale(1.1);-o-transition:all 0.3s ease-in-out 0s}
+.baobeiUl li .img .option{ position:absolute; right:30px; top:30px; width:82px; height:82px;}
+.baobeiUl li .img .option .digg{ width:82px; height:52px; line-height:52px; overflow:hidden; text-align:center; font-size:24px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#fff; background:#fd71d2;  -moz-transition:all 0.3s ease-out 0s; -webkit-transition:all 0.3s ease-out 0s;-o-transition:all 0.3s ease-out 0s;transition:all 0.3s ease-out 0s;}
+.baobeiUl li .img .option .digg a{  display:block; width:82px; height:52px; color:#fff; -moz-transition:all 0.3s ease-out 0s; -webkit-transition:all 0.3s ease-out 0s;-o-transition:all 0.3s ease-out 0s;transition:all 0.3s ease-out 0s;}
+.baobeiUl li .img .option .digg a:hover,.baobeiUl li:hover .img .digg{ color:#fff!important; text-decoration:none; background:#ff009c; font-size:25px; -moz-transition:all 0.3s ease-in 0s; -webkit-transition:all 0.3s ease-in 0s; -o-transition:all 0.3s ease-in 0s; transition:all 0.3s ease-in 0s;}
+.baobeiUl li .option .count{ float:left; width:82px; height:30px; line-height:30px; text-align:center; font-size:16px; font-family:Tahoma,Arial, Helvetica, sans-serif; font-weight:normal; color:#333; background:#fff}
+.baobeiUl li .zhichi{ width:460px; height:56px; line-height:56px; overflow:hidden; margin:0px auto; font-size:18px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal;}
+.box1 .left{ float:left; width:480px;}
+.box1 .left .bd,.box1 .right .bd{ width:480px; margin-top:20px; padding-bottom:25px; overflow:hidden; background:#fff}
+.box1 .right{ float:right; width:480px;}
+.hezuoUl{ width:480px; overflow:hidden}
+.hezuoUl li{ display:inline; float:left; width:140px; height:45px; margin:25px 0px 0px 15px; overflow:hidden}
+.box1 .left p{ margin:35px 0px 0px 15px;}
+.muhouUl{ width:480px; overflow:hidden}
+.muhouUl li{ display:inline; float:left; width:180px; height:70px; margin:25px 0px 0px 35px; overflow:hidden}
+.muhouUl li .img{ float:left; position:relative; width:70px; height:70px;}
+.muhouUl li .img .ball{ position:absolute; top:0px; left:0px; width:70px; height:70px; background:url(//mat1.gtimg.com/sports/2014girl/images/ball.png) no-repeat; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/2014girl/images/ball.png', sizingMethod='crop');}
+.muhouUl li .img .ball a{ display:block; width:70px; height:70px;}
+.muhouUl li .img .ball img{ width:70px; height:70px;}
+.muhouUl li dl{ float:right;width:90px;}
+.muhouUl li dl dt{ margin:10px 0px 10px; font-size:14px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal;}
+.muhouUl li dl dd{ text-align:left; margin:0px}
+/*toTop*/
+#toTop { background:url(//mat1.gtimg.com/sports/2014girl/images/toTop.jpg) no-repeat; bottom:45px; display:none; height:54px; position:fixed; right:30px; width:54px; _position:absolute; }
+#toTop:hover { background:url(//mat1.gtimg.com/sports/2014girl/images/toTopOn.jpg) no-repeat }/*  |xGv00|4626f69aab325320246c5ee819237c8e */

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="gb2312">
+	<title></title>
+<style type="text/css">
+*{margin:0; padding:0;}
+</style>
+</head>
+<body>
+<div id="player_box"></div>
+<script type="text/javascript" src="//mat1.gtimg.com/www/js/jquery-1.10.2.min.js"></script>
+<script language="javascript" src="//imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2.js" charset="utf-8"></script>
+<script language="javascript">
+var video = new tvp.VideoInfo();
+video.setChannelId("100300100");
+var player = new tvp.Player();
+player.create({
+	width:400,
+	height:300,
+	video:video,
+	type:1,
+	autoplay:1,
+	modId:"player_box"
+});
+
+$('.btn_close').click(function(){   
+   $('#zhibo_player').remove();
+})
+</script>
+</body>
+</html><!--[if !IE]>|xGv00|d11476840b6c0f67ae640c39e9db7b4e<![endif]-->

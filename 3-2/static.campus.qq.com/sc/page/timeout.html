@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>腾讯智慧校园</title>
+	<style type="text/css">
+		.error{
+			width:100%;
+			height:100%;
+			margin: 0 auto;
+			font-family: "微软雅黑";
+		}
+		.error-info{
+			text-align: center;
+			margin-top: 100px;
+		}
+		.big-text{
+			font-size: 28px;
+			font-weight: : 600;
+			margin: 30px 0 15px 0;
+		}
+		i{
+			display: inline-block;
+			width: 22px;
+			height: 20px;
+			vertical-align: bottom;
+  			background-repeat: no-repeat;
+		}
+		.mr10 {
+			margin-right: 10px;
+		}
+		.gray-text {
+			font-size: 22px;
+			margin-top: 20px;
+			color: #999999;
+		}
+		@media only screen and (max-width: 500px) {
+		    .error-img {
+		    	width: 70%;
+		    }
+		    .big-text {
+		    	font-size: 20px;
+		    	font-weight: normal;
+		    }
+		    .gray-text {
+				font-size: 18px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="error">
+		<div class="error-info">
+			<img src="//static.campus.qq.com/sc/img/server-error.jpg" class="error-img">
+		  	<p class="big-text">访问超时，可能网络有波动，请重试一下</p>
+		  	<p class="gray-text"><span class="hint-time" id="js-time">3</span>秒后返回主页</p>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var timer = setInterval(function () {
+		var ele = document.getElementById('js-time');
+		var val = parseInt(ele.innerHTML, 10);
+		if (val == 0) {
+			clearInterval(timer);
+			if (/micromessenger/.test(navigator.userAgent.toLowerCase()) && WeixinJSBridge) {
+				// 微信里打开 关闭浏览器
+				WeixinJSBridge.call('closeWindow');
+			} else {
+				// 其他 跳转到主页
+				window.location.href = location.protocol + '//campus.qq.com';
+			}
+		} else {
+			val --;
+			ele.innerHTML = val;
+		}
+	}, 1000);
+</script>

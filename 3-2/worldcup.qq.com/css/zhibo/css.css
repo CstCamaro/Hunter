@@ -1,0 +1,121 @@
+/*Style by Artis*/
+body{margin:0;padding:0;background:#fff;}
+form,input,select,ul,li,p,h1,h2,h3,h4,h5,h6,p,dd,dt,dl{margin:0;padding:0;}
+ul,ol,li{list-style:none;}
+body,table,select,input,div{font-size:12px;color:#5c5c5c}
+img{border:none;}
+a{color:#367f10;text-decoration:none;}
+a:hover{color:#006699;text-decoration:underline;}
+
+.nl,.nl a,.nl a:hover,a.nl,a.nl:hover{text-decoration:none;}
+.ul,.ul a,.ul a:hover,a.ul,a.ul:hover{text-decoration:underline;}
+
+.fontB{font-weight:bold;}
+.fontS14{font-size:14px;}
+.fontS15{font-size:15px;}
+.fontS16{font-size:16px;}
+.fontS18{font-size:18px;}
+.fontS20{font-size:20px;}
+.fontHt{font-family:"黑体";}
+.fontYh{font-family:"微软雅黑","黑体";}
+.fontV{font-family:Verdana;}
+.fontA{font-family:Arial;}
+.textInd{text-indent:2em;}
+.textInd2{text-indent:1em;}
+
+.colorWhite,.colorWhite a,.colorWhite a:hover{color:#fff;}
+.colorBlack,.colorBlack a{color:#333;}
+.colorBlack a:hover{color:#c00;}
+.colorGray,.colorGray a{color:#b0b0b0;}
+.colorGray a:hover{color:#c00;}
+.colorOrange,.colorOrange a{color:#d66a41;}
+.colorOrange a:hover{color:#c00;}
+.colorGreen,.colorGreen a{color:#367f10;}
+.colorGreen a:hover{color:#006699;}
+.colorRed,.colorRed a,.colorRed a:hover{color:#c00;}
+.colorBlue,.colorBlue a{color:#0b649c;}
+.colorBlue a:hover{color:#c00;}
+.colorMore,.colorMore a{color:#b75400;}
+.colorMore a:hover{color:#c00;}
+.colorTt,.colorTt a{color:#b75400;}
+.colorTt a:hover{color:#c00;}
+
+.lineH18{line-height:18px;}
+.lineH21{line-height:21px;}
+.lineH22{line-height:22px;}
+.lineH23{line-height:23px;}
+.lineH24{line-height:24px;}
+.lineH25{line-height:25px;}
+.lineH28{line-height:28px;}
+.lineH30{line-height:30px;}
+
+.floatL{float:left;}
+.floatR{float:right;}
+
+.textL{text-align:left;}
+.textR{text-align:right;}
+.textC{text-align:center;}
+
+.clear{clear:both;overflow:hidden;font-size:0;height:0px;}
+
+.dis{display:block;}
+.undis{display:none;}
+
+/* CSS空白 */
+.boxHr10,.boxHr,.boxHr6,.boxHr5{margin:0 auto;font-size:1px;clear:both;}
+.boxHr10{height:10px;}.boxHr6{height:6px;}.boxHr5{height:5px;}
+
+/*Border*/
+.imgbor1 img{border:1px solid #b5ca95;padding:3px;background:#fff;}
+.imgbor2 img{padding:3px 5px 16px 3px;background:url(//mat1.gtimg.com/worldcup/zhibo/zb05.png) no-repeat;}
+
+/*Background*/
+.bg1{background:url(//mat1.gtimg.com/worldcup/zhibo/zb06.png) no-repeat;}
+
+/*Margin*/
+.mt10{margin-top:10px;}
+
+/* 内容区 */
+.box{width:960px;margin:0 auto;}
+.box2{width:960px;margin:0 auto;border-bottom:1px solid #d8d8d8;padding-bottom:10px;overflow:hidden;}
+.title{height:43px;background:url(//mat1.gtimg.com/worldcup/zhibo/zb01.png) no-repeat;}
+.main1{width:695px;float:left;height:510px;background:url(//mat1.gtimg.com/worldcup/zhibo/main1.png) no-repeat;overflow:hidden;padding:4px 0 0 4px;}
+.side1{width:250px;float:right;background:#f8f8f8;}
+.main2{width:695px;float:left;height:406px;background:url(//mat1.gtimg.com/worldcup/zhibo/main2.png) no-repeat;overflow:hidden;padding:0 0 0 4px;}
+.side2{width:250px;float:right;background:url(//mat1.gtimg.com/worldcup/zhibo/side2.png) no-repeat;padding-top:5px;height:400px;}
+
+.time{color:#5c5c5c;padding-left:35px;background:url(//mat1.gtimg.com/worldcup/zhibo/zb04.png) 0 3px no-repeat;}
+.live{color:#5c5c5c;padding-left:55px;background:url(//mat1.gtimg.com/worldcup/zhibo/live.png) 0 1px no-repeat;}
+.watch,.spirit,.rss{line-height:25px;padding-left:26px;}
+.watch{background:url(//mat1.gtimg.com/worldcup/zhibo/watch.png) 0 3px no-repeat;}
+.spirit{background:url(//mat1.gtimg.com/worldcup/zhibo/spirit.png) 0 4px no-repeat;}
+.rss{background:url(//mat1.gtimg.com/worldcup/zhibo/rss.png) 0 4px no-repeat;}
+
+.list1 td{line-height:24px;height:24px;}
+
+.imgBox{width:182px;height:102px;margin:0 auto;border:1px solid #d7d7d7;padding:4px;margin-bottom:7px;}
+.imgBox img{border:1px solid #d7d7d7;}
+
+/*近期赛程*/
+.sc1{margin-top:5px;height:35px;background:url(//mat1.gtimg.com/worldcup/zhibo/zb07.png) no-repeat;}
+.sc2{margin-top:5px;height:35px;background:url(//mat1.gtimg.com/worldcup/zhibo/zb08.png) no-repeat;}
+.sc1,.sc2 td{height:35px;line-height:35px;}
+
+/*第一演播厅*/
+#videoList td{height:28px;line-height:27px;}
+#videoList{background:url(//mat1.gtimg.com/worldcup/zhibo/zb09.png) repeat-x;}
+#videoList tr.now{background:url(//mat1.gtimg.com/worldcup/zhibo/zb10.png) no-repeat;}
+#videoList tr.now td{background:url(//mat1.gtimg.com/worldcup/zhibo/zb11.png) repeat-x;}
+.gray,.gray a{color:#757575;}.gray a:hover{color:#c00;}
+.title1st{width:242px;height:42px;margin:0 auto 10px auto;}
+.title1st a{display:block;width:242px;height:42px;}
+
+/*按钮*/
+.btn1,.btn2,.btn3,.btn4,.btn5,.btn6,.btn1 .o,.btn2 .o,.btn3 .o,.btn4 .o,.btn5 .o,.btn6 .o{width:82px;height:25px; background:url(http://img1.gtimg.com/worldcup/pics/hv1/155/80/541/35199080.png) no-repeat;cursor:pointer;}
+.btn1 a,.btn2 a,.btn3 a,.btn4 a,.btn5 a,.btn6 a{width:82px;height:25px;display:block;overflow:hidden;}
+.btn1{background-position:0 0;}.btn1 .o{background-position:0 -25px;}
+.btn2{background-position:-82px 0;}.btn2 .o{background-position:-82px -25px;}
+.btn3{background-position:-164px 0;}.btn3 .o{background-position:-164px -25px;}
+.btn4{background-position:-246px 0;}.btn4 .o{background-position:-246px -25px;}
+.btn5{background-position:-328px 0;}.btn5 .o{background-position:-328px -25px;}
+.btn6{background-position:-410px 0;}.btn6 .o{background-position:-410px -25px;}/*  |xGv00|eec356c92612feb22b8d2b86bdfd1498 */

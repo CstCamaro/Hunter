@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="dns-prefetch" href="//mat1.gtimg.com">
+  <link rel="dns-prefetch" href="//imgcache.qq.com">
+  <link rel="dns-prefetch" href="//img.gtimg.cn">
+  <link rel="dns-prefetch" href="//trace.qq.com">
+  <link rel="dns-prefetch" href="//pingfore.qq.com">
+  <link rel="dns-prefetch" href="//btrace.qq.com">
+  <link rel="dns-prefetch" href="//www.qq.com">
+  <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="腾讯网" />
+  <meta content="24节气,节日,生活,传统,习俗,本地,快报,腾讯网,腾讯,QQ,Tencent" name="Keywords">
+  <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念" />
+  <title>时光画轴_腾讯网</title>
+  <meta name="renderer" content="webkit"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="alternate icon" type="image/png" href="//mat1.gtimg.com/www/icon/favicon2.ico">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="时光画轴" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="时光画轴" />
+  <meta name="msapplication-TileImage" content="//mat1.gtimg.com/www/icon/favicon2.ico" />
+  <meta name="msapplication-TileColor" content="#0e90d2" />
+  <link rel="apple-touch-icon" href="//mat1.gtimg.com/www/mobi/image/touch-icon-iphone.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="//mat1.gtimg.com/www/mobi/image/touch-icon-iphone-retina.png" />
+  <link rel="apple-touch-icon-precomposed" href="//mat1.gtimg.com/www/icon/favicon2.ico" />
+  <link rel="stylesheet" href="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/mindex.css" />
+  <script type="text/javascript" src="//mat1.gtimg.com/ipad/qq_time/lib/zepto.js"></script>
+  <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+ </head>
+ <body>
+    <div class="container" id="root">
+        <!-- 头部 -->
+        <div class="header" id="header">
+            <div class="site-header">
+                <a href="https://xw.qq.com" class="go-xw"><img src="//mat1.gtimg.com/ipad/qq_time/imgs/qq-logo.png" alt="移动腾讯网" /></a>
+                <h2><a class="title" href="//time.qq.com">时光画轴</a></h2>
+                <!-- <a href="javascript:;" target="_self" class="login" data-bosszone="timephone_login" id="J_login">
+                    <img src="http://mat1.gtimg.com/ipad/qq_time/imgs/m/mavatar.png" id="J_avatar">
+                </a> -->
+            </div>
+            <div class="top-nav" id="J_classify">
+                <ul>
+                    <li class="item item-on J_filter" data-bosszone="timephone_all" data-filter="0">全部</li>
+                    <li class="item J_filter" data-bosszone="timephone_jieqi" data-filter="1">节气</li>
+                    <li class="item J_filter" data-bosszone="timephone_festival" data-filter="2">节日</li>
+                    <li class="item J_filter" data-bosszone="timephone_hot" data-filter="3">热点</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="content">
+            <!-- 头图 -->
+            <div class="top-banner" id="J_banner"></div>
+
+            <!-- 本地天气信息 -->
+            <a class="m-weather" id="J_weather" href="https://xw.tianqi.qq.com"></a>
+
+            <!-- 文章列表 -->
+            <ul class="m-list" data-bosszone="timephone_allarticle" id="J_article"></ul>
+            
+        </div>
+
+        <!-- 底部 -->
+        <footer class="footer J_footer">
+            <span>Copyright &copy;1998 - 2018 Tencent. All Rights Reserved</span>
+        </footer>
+    </div>
+    <script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]-->
+    <script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/mindex-88d31445df7be3bbd753.js" charset="utf-8"></script>
+    <script language="javascript">
+        //曝光上报
+        var BZ = function (zoneId) {
+            var bossID = 1445; 
+            try
+            {		
+                //qq
+                var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+                var pvid=(a==null?"":"F"+unescape(a[2]));
+                a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+                var iQQ=(a==null?"":unescape(a[2]));
+                var purl='';
+                var zoneId= zoneId;
+                var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=time.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+                +'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+                gImage = new Image(1,1);
+                gImage.src = iurl;
+            } catch (e) {}
+        }
+        BZ('timephone_expo');
+    </script> 
+</body>
+</html><!--[if !IE]>|xGv00|7b16c141678b0bc37f1a6018138a3c1e<![endif]-->

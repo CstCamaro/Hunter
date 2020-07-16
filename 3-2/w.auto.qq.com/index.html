@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>首页-腾讯汽车</title>
+    <meta name="keywords" content="汽车，腾讯汽车，手机，汽车大全，车型大全，汽车报价，汽车图片、汽车评测、汽车资讯，汽车新闻，评测" />
+    <meta name="description" content="腾讯汽车触屏版为您提供厂商名称车系名称系列车型报价，参数配置、图片,经销商、试驾、降价、论坛等信息。" />
+    <meta charset="gbk" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="x5-page-mode" content="app" />
+    <link rel="dns-prefetch" href="//img1.gtimg.com">
+    <link rel="dns-prefetch" href="//mat1.gtimg.com">
+    <link rel="dns-prefetch" href="//auto.qq.com">
+    <link rel="dns-prefetch" href="//d.auto.qq.com">
+    <link rel="dns-prefetch" href="//pingjs.qq.com">
+    <link rel="dns-prefetch" href="//wecar.qq.com">
+    <!--样式文件，如有更新，修改此处版本号即可-->
+     <link type = "text/css" rel="stylesheet" href = "//mat1.gtimg.com/auto/css/mobi/main_180508.css" />
+  </head>
+  <body>
+  
+    <!--headTrap<body></body><head></head><html></html>-->
+<script type="text/javascript">
+  function hasClass(el, n){
+    if(!el || !el.className){
+      return false;
+    }
+    return el.className != el.className.replace(new RegExp('\\b' + n + '\\b'),'');
+  }
+
+  function addClass(el, n){
+    if(el){
+      if(!el.className){
+        el.className = n;
+      }
+      else if(!hasClass(el, n)){
+        el.className += ' ' + n;
+      }
+    }
+  }
+function getQs(t,e){e||(e=document.URL),t=t.replace(/[\[\]]/g,"\\$&");var n=new RegExp("[?&]"+t+"(=([^&#]*)|&|#|$)"),r=n.exec(e);return r?r[2]?decodeURIComponent(r[2].replace(/\+/g," ")):"":null}
+  var COMEFROM = getQs('comefrom');
+  var ISNIGHT = location.href.match(/themetype=1/);
+  if(COMEFROM){
+    COMEFROM = COMEFROM[1];
+
+    addClass(document.body, COMEFROM);
+
+    // 快报使用新闻客户端UI
+    if(COMEFROM == 'kb') {
+      addClass(document.body, 'newsApp');
+    }
+  }
+  if(ISNIGHT){//夜间模式
+    addClass(document.body, 'night');
+  }
+
+  var QosSS={};
+  QosSS.t=[];
+  QosSS.t[0]=+new Date();
+</script><!--[if !IE]>|xGv00|11239225d5b48b7d05e2758ed4e46852<![endif]-->
+  <header class = "logo">
+    <a href="/" boss="{sOp:'btnLogo'}"><span class = "hdLogo">&nbsp;</span></a>
+    <span class="loc"><em>北京</em><i></i></span>
+    <span class="gochannels"></span>
+    <span class = "hdSearch"></span>
+    <a class = "hdApp" href="qqcar://start" boss="{sOp:'downQQCarTop'}"></a>
+  </header>
+  
+  <header class = "header">
+  <div class="hdCont row1">
+    <a href="#" _href="http://w.auto.qq.com" class = "title tab-index" boss="{sOp:'btnIndexTab'}">首页</a>
+    <a href="#" _href="http://w.auto.qq.com/car_brand/index.shtml" class = "title tab-pick" boss="{sOp:'btnPickTab'}">找车</a>
+    <a href="#" _href="http://d.auto.qq.com/news/index" class = "title tab-news" boss="{sOp:'btnNewsTab'}">资讯</a>
+    <a href="#" _href="http://d.auto.qq.com/pricelow/list" class = "title tab-onsales" boss="{sOp:'btnOnSalesTab'}">降价</a>
+    <a href="#" _href="http://automall.qq.com" class = "title tab-mall" boss="{sOp:'btnMallTab'}">商城</a>
+  </div>
+  <div class="hdCont row2">
+    <a href="#" _href="http://zc.chezhuka.qq.com/h5/act/index" class = "title tab-ucar" boss="{sOp:'btnZcTab'}">众测</a>
+    <a href="#" _href="http://m.v.qq.com/auto.html" class = "title tab-video" boss="{sOp:'btnVideoTab'}">视频</a>
+    <a href="#" _href="http://d.auto.qq.com/show/index" class = "title tab-exhibition" boss="{sOp:'btnChezhanTab'}">车展</a>
+    <a href="#" _href="http://d.auto.qq.com/photo/index" class = "title tab-piclib" boss="{sOp:'btnPicLibTab'}">图片</a>
+    <a href="#" _href="http://d.auto.qq.com/baike/list" class = "title tab-qqcar" boss="{sOp:'btnBaiKeTab'}">百科</a>
+  </div>
+</header><!--[if !IE]>|xGv00|a69337b71eb18be01282344659fc3700<![endif]-->
+  
+  <section class="index">
+        <section class="model index-search">
+      <section class="input">
+        <span class="btn"><i class="searchIcon"></i></span>
+        <form method="get" action="//w.auto.qq.com/search.shtml">
+          <div type="search" class="inputBox">车型名称/拼音</div>
+          <i class="delInput" style="display: none;"></i>
+        </form>
+      </section>
+    </section>
+    <section class="model index-pickcar">
+      <ul class="nav">
+        <li class="hot cur" data-id="hot"><span>热车</span></li>
+        <li class="brand" data-id="brand"><span>品牌</span></li>
+        <li class="price" data-id="price"><span>价格</span></li>
+        <li class="level" data-id="level"><span>级别</span></li>
+      </ul>
+      <div class="hot">
+        <ul>
+                      <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="707" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=707" boss="{sOp:'btnHot', iCarId:707}">哈弗H6</a></li>
+                    <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="496" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=496" boss="{sOp:'btnHot', iCarId:496}">科鲁兹</a></li>
+                    <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="474" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=474" boss="{sOp:'btnHot', iCarId:474}">朗逸</a></li>
+                    <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="709" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=709" boss="{sOp:'btnHot', iCarId:709}">途观</a></li>
+                    <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="1187" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=1187" boss="{sOp:'btnHot', iCarId:1187}">长安CS75</a></li>
+                    <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="1261" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=1261" boss="{sOp:'btnHot', iCarId:1261}">本田XR-V</a></li>
+                    <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="509" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=509" boss="{sOp:'btnHot', iCarId:509}">奥迪A4L</a></li>
+                    <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="50" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=50" boss="{sOp:'btnHot', iCarId:50}">蒙迪欧</a></li>
+                    <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="935" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=935" boss="{sOp:'btnHot', iCarId:935}">福克斯</a></li>
+                    <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="189" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=189" boss="{sOp:'btnHot', iCarId:189}">速腾</a></li>
+                    <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="1440" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=1440" boss="{sOp:'btnHot', iCarId:1440}">陆风X7</a></li>
+                    <li class="f14"><i class="ico ico_holder"></i><a class="g_clipline" data-id="955" href="//ait.auto.qq.com/page/serial/detail?sfrom=index&serial_id=955" boss="{sOp:'btnHot', iCarId:955}">长安CS35</a></li>
+                  </ul>
+        <div class="morebtn"><a href="//ait.auto.qq.com/h5/select/selection/" boss="{sOp:'btnMoreHot'}">更多热车<i class="arr"></i></a></div>
+      </div>
+      <div class="brand g_hide">
+        <ul>
+                    <li class="f12 g_clipline"><a href="//ait.auto.qq.com/h5/select/brand/#/vehicle?name=迈巴赫&brand_id=56" boss="{sOp:'btnBrand', iCarId:56}"><img src="//img1.gtimg.com/datalib_img/Brand/20180515/20180515_193647_50109460_thumbnail_100_100.png">迈巴赫</a></li>
+                    <li class="f12 g_clipline"><a href="//ait.auto.qq.com/h5/select/brand/#/vehicle?name=玛莎拉蒂&brand_id=55" boss="{sOp:'btnBrand', iCarId:55}"><img src="//img1.gtimg.com/datalib_img/Brand/20180515/20180515_193629_60065230_thumbnail_100_100.png">玛莎拉蒂</a></li>
+                    <li class="f12 g_clipline"><a href="//ait.auto.qq.com/h5/select/brand/#/vehicle?name=马自达&brand_id=54" boss="{sOp:'btnBrand', iCarId:54}"><img src="//img1.gtimg.com/datalib_img/Brand/20180515/20180515_193559_56125330_thumbnail_100_100.png">马自达</a></li>
+                    <li class="f12 g_clipline"><a href="//ait.auto.qq.com/h5/select/brand/#/vehicle?name=名爵&brand_id=53" boss="{sOp:'btnBrand', iCarId:53}"><img src="//img1.gtimg.com/datalib_img/Brand/20180515/20180515_193721_77153880_thumbnail_100_100.png">名爵</a></li>
+                    <li class="f12 g_clipline"><a href="//ait.auto.qq.com/h5/select/brand/#/vehicle?name=MINI&brand_id=57" boss="{sOp:'btnBrand', iCarId:57}"><img src="//img1.gtimg.com/datalib_img/Brand/20191105/20191105_170958_11467070_thumbnail_100_100.png">MINI</a></li>
+                    <li class="f12 g_clipline"><a href="//ait.auto.qq.com/h5/select/brand/#/vehicle?name=讴歌&brand_id=58" boss="{sOp:'btnBrand', iCarId:58}"><img src="//img1.gtimg.com/datalib_img/Brand/20180515/20180515_193859_57568780_thumbnail_100_100.png">讴歌</a></li>
+                    <li class="f12 g_clipline"><a href="//ait.auto.qq.com/h5/select/brand/#/vehicle?name=起亚&brand_id=61" boss="{sOp:'btnBrand', iCarId:61}"><img src="//img1.gtimg.com/datalib_img/Brand/20180515/20180515_194104_31685750_thumbnail_100_100.png">起亚</a></li>
+                    <li class="f12 g_clipline"><a href="//ait.auto.qq.com/h5/select/brand/#/vehicle?name=奇瑞&brand_id=60" boss="{sOp:'btnBrand', iCarId:60}"><img src="//img1.gtimg.com/datalib_img/Brand/20141125/20141125_201010_85288970_thumbnail_100_100.png">奇瑞</a></li>
+                    <li class="f12 g_clipline"><a href="//ait.auto.qq.com/h5/select/brand/#/vehicle?name=欧宝&brand_id=59" boss="{sOp:'btnBrand', iCarId:59}"><img src="//img1.gtimg.com/datalib_img/Brand/20180515/20180515_193915_88555740_thumbnail_100_100.png">欧宝</a></li>
+                    <li class="f12 g_clipline"><a href="//ait.auto.qq.com/h5/select/brand/#/vehicle?name=路虎&brand_id=52" boss="{sOp:'btnBrand', iCarId:52}"><img src="//img1.gtimg.com/datalib_img/Brand/20141125/20141125_201810_16242220_thumbnail_100_100.png">路虎</a></li>
+                  </ul>
+        <div class="morebtn"><a href="//ait.auto.qq.com/h5/select/brand" boss="{sOp:'btnMoreBrand'}">更多品牌<i class="arr"></i></a></div>
+      </div>
+      <div class="price g_hide">
+        <ul>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?priceid=0" boss="{sOp:'btnPrice', iCarId:0}">7万以下</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?priceid=1" boss="{sOp:'btnPrice', iCarId:1}">7-10万</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?priceid=2" boss="{sOp:'btnPrice', iCarId:2}">10-15万</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?priceid=3" boss="{sOp:'btnPrice', iCarId:3}">15-22万</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?priceid=4" boss="{sOp:'btnPrice', iCarId:4}">22-35万</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?priceid=5" boss="{sOp:'btnPrice', iCarId:5}">35-50万</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?priceid=6" boss="{sOp:'btnPrice', iCarId:6}">50-100万</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?priceid=7" boss="{sOp:'btnPrice', iCarId:7}">100-300万</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?priceid=8" boss="{sOp:'btnPrice', iCarId:8}">300万以上</a></li>
+        </ul>
+        <div class="morebtn"><a href="//w.auto.qq.com/car_brand/select.shtml" boss="{sOp:'btnMoreFilter'}">更多条件<i class="arr"></i></a></div>
+      </div>
+      <div class="level g_hide">
+        <ul>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?levelid=wx" boss="{sOp:'btnLevel', sParam:'wx'}">微型车</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?levelid=xx" boss="{sOp:'btnLevel', sParam:'xx'}">小型车</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?levelid=jc" boss="{sOp:'btnLevel', sParam:'jc'}">紧凑型车</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?levelid=zx" boss="{sOp:'btnLevel', sParam:'zx'}">中型车</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?levelid=zd" boss="{sOp:'btnLevel', sParam:'zd'}">中大型车</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?levelid=hh" boss="{sOp:'btnLevel', sParam:'hh'}">豪华车</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?levelid=suv" boss="{sOp:'btnLevel', sParam:'suv'}">SUV</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?levelid=pc" boss="{sOp:'btnLevel', sParam:'pc'}">跑车</a></li>
+          <li class="f14 g_clipline"><a href="//w.auto.qq.com/car_brand/select.shtml?levelid=mpv" boss="{sOp:'btnLevel', sParam:'mpv'}">MPV</a></li>
+        </ul>
+        <div class="morebtn"><a href="//w.auto.qq.com/car_brand/select.shtml" boss="{sOp:'btnMoreFilter'}">更多条件<i class="arr"></i></a></div>
+      </div>
+    </section>
+    <section class="model index-mall1" style="display:none;">
+      <div class="title">热销车<a href="//automall.qq.com/h5" class="vmore" boss="{sOp:'btnHomeMallMore'}">更多<i class="ico"></i></a></div>
+      <div class="listwrap">
+        <ul class="list"></ul>
+      </div>
+    </section>
+    <section class="model index-news" style="display:none;">
+      <div class="title">资讯<a href="//d.auto.qq.com/news/index" class="vmore" boss="btnHomeNewsMore">更多<i class="ico"></i></a></div>
+      <ul class="list">
+      </ul>
+    </section>
+    <section class="model index-tools">
+      <ul class="list">
+        <li>
+          <a href="//automall.qq.com/h5" boss="btnHomeToolsMall">
+            <img src="//mat1.gtimg.com/auto/images/mobi/logo-mall.png">
+            <span class="title">汽车商城</span>
+          </a>
+        </li>
+        <li>
+          <a href="//ait.auto.qq.com/h5/select/selection/" boss="">
+            <img src="//mat1.gtimg.com/auto/2019/0426/img/ico_d1.png">
+            <span class="title">条件选车</span>
+          </a>
+        </li>
+        <li>
+          <a href="//ait.auto.qq.com/h5/topic/index.shtml?topic_id=10003546" boss="">
+            <img src="//mat1.gtimg.com/auto/2019/0426/img/ico_d2.png">
+            <span class="title">新车</span>
+          </a>
+        </li>
+        <li>
+          <a href="//zc.chezhuka.qq.com/h5/act/index" boss="btnHomeToolsZC">
+            <img src="//mat1.gtimg.com/auto/images/mobi/logo-measure.png">
+            <span class="title">汽车众测</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+        <section class="model index-video" style="display:none;">
+      <div class="title">视频<a href="//d.auto.qq.com/video/list" class="vmore">更多<i class="ico"></i></a></div>
+      <ul class="list">
+      </ul>
+    </section>
+    <section class="model index-pics" style="display:none;">
+      <div class="title">图吧<a href="//d.auto.qq.com/photo/index" class="vmore">更多<i class="ico"></i></a></div>
+      <ul class="list">
+      </ul>
+    </section>
+	<!--
+    <section class="model index-prof" style="display:none;">
+      <div class="title">热门人物</div>
+      <div class="wrap">
+        <ul class="list">
+        </ul>
+      </div>
+    </section>
+	</section>
+	-->
+    <section class="model index-onsales1" style="display:none;">
+      <div class="title">本地降价<span class="vmore">更多<i class="ico"></i></span></div>
+      <div class="wrap"></div>
+    </section>
+	<!--
+    <section class="model index-ucar" style="display:none;">
+      <div class="title">二手车<a href="//m.ucar.qq.com" class="vmore">更多<i class="ico"></i></a></div>
+      <ul class="list">
+      </ul>
+    </section>
+	-->
+  </section>
+  <script type="text/javascript">
+var CTRLFLAG = 1;
+</script><!--[if !IE]>|xGv00|5c66d8fa1a1ac9dcedfc73228864b2a6<![endif]-->
+  <script type="text/javascript">
+    var JSCFG ={"pages\/demo":"140922a","core":"190126","lib\/newsJsBridge":"170522","lib\/kuaibaoJsBridge":"160317","lib\/qqcarJsBridge":"161104a","module\/SideSlide":"151104","module\/CityList":"181217","module\/ImageSlide":"141218","module\/enquiry":"181220a","module\/sideDown":"141001","module\/carModel":"140929","module\/Checker":"181217","module\/AppGuide":"150205","module\/SearchPlug":"181217","module\/PopUp":"150115","module\/BrandList":"151208","module\/God":"180621","module\/TouchSlide":"160616","pages\/select_filter":"190424","pages\/brand_filter":"181217","pages\/serial_summary":"181217","pages\/serial_config":"181217","pages\/serial_images":"181217","pages\/image_show":"181217","pages\/model_summary":"181217","pages\/onsales_detail":"181217","pages\/search":"181217","pages\/icar":"181217","pages\/home":"190424a","pages\/news":"181217","pages\/newsdetail":"181217","pages\/photo":"181217","pages\/club_detail":"181217","pages\/baike":"181217a","router\/index":"190125","module.AppGuide":"160405","module.Checker":"181217","module.Loc":"190128a","module.tips":"150804","module.ImageSlide":"160704a"}
+    var pageType = 1002;
+  </script>
+  <script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript" src="//tajs.qq.com/h5?sId=500000560"></script>
+<script language="javascript" src="//mat1.gtimg.com/auto/js/common/module.badjs.js"></script>
+<script language="javascript" src="//mat1.gtimg.com/auto/js/lib/mobiJsBridge_161214.js"></script>
+<script type="text/javascript">
+  function loadScript(src, callback, charset){
+    var el=document.createElement('script');
+
+    if(callback){
+      el.onload=el.onerror=el.onreadystatechange=function(){
+        var s=this.readyState;
+        if(!s || (s && (s == 'loaded' || s == 'complete'))){
+          callback(src);
+        }
+      }
+    }
+
+    el.type='text/javascript';
+    el.src=src;
+    el.async='true';
+    if(charset){
+      el.charset = charset;
+    }
+
+    document.getElementsByTagName('head')[0].appendChild(el);
+  }
+  
+  function addSheet(url){
+    var css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.type = 'text/css';
+    css.href = url;
+    
+    document.getElementsByTagName('head')[0].appendChild(css);
+  }
+  
+  function NanoEvtProxy(){
+      this.handlers={};
+      this.isbinded={};
+  }
+  
+  NanoEvtProxy.prototype={
+    constructor:NanoEvtProxy,
+    on:function(type,handler){
+      if(typeof this.handlers[type]=='undefined'){
+        this.handlers[type]=new Array();
+      }
+      this.handlers[type].push(handler);
+    },
+    off:function(type,handler){
+      if(this.handlers[type] instanceof Array){
+        var handlers=this.handlers[type];
+        for(var i=0,len=handlers.length;i<len;i++){
+          if(handler[i]==handler){
+            handlers.splice(i,1);
+            break;
+          }
+        }
+      }
+    },
+    trigger:function(type, data){
+      if(this.handlers[type] instanceof Array){
+        var handlers=this.handlers[type];
+        for(var i=0,len=handlers.length;i<len;i++){
+          handlers[i](data);
+        }
+      }
+      this.isbinded[type] = true;
+    },
+    detect:function(type){
+      return this.isbinded[type];
+    }
+  }
+  
+  var nanoEvtProxy = new NanoEvtProxy();
+
+  if(window.COMEFROM == 'newsApp'){
+    //提供给ios调用的方法
+    var mutex = false;
+    window.onJsBridgeReady = function(){
+      if(mutex){
+        return;
+      }
+      try{
+        nanoEvtProxy.on('iosnews:settit', function(data){
+          jsBridge.postNotification('setTitle', {
+            title : data.value
+          });
+        });
+        nanoEvtProxy.trigger('iosnews:ready');
+      }catch(e){
+
+      }
+      mutex = true;
+    }
+  }
+
+  window.versionCb=function(vers, css){//获取版本号
+    var jsConf={
+      base : '//mat1.gtimg.com/auto/js/',
+      vers : vers
+    };
+    var core_key='core';
+    var cdn = (!window.sBiz ? 'mobi/' : window.sBiz + '/');
+    var mobiBase = jsConf.base + cdn;
+    var core_src=[mobiBase, core_key, '_', vers[core_key] + '.js'].join('');
+    
+    //页面未输出js配置，默认为测试环境
+    if(!window.JSCFG){
+      addSheet('//mat1.gtimg.com/auto/css/mobi/main_' + css.main + '.css');
+      document.body.style.display = 'block';
+    }
+    if(window.singlejs){//单js文件
+      var jssrc = [mobiBase, window.singlejs, '_', vers[window.singlejs] + '.js'].join('');
+      loadScript(jssrc, function(){
+        seajs.use(window.singlejs, function(Page){
+          Page.init();
+        });
+      });
+    }
+    else{
+      loadScript(core_src, function(){
+        var vers={};
+        //seajs配置
+        $.each(jsConf.vers, function(idx, ver){
+          var value = idx + '_' + ver + '.js';
+          if(/^lib\/.*/.test(idx)){//"lib/xxx"模块放在公共目录中
+            value = jsConf.base + value;
+          }
+          else if(/^module\..*/.test(idx)){//"module.xxx"公共模块
+            value = jsConf.base + 'common/' + value;
+          }
+          vers[idx]=value;
+        });
+        seajs.config({
+          base : mobiBase,
+          alias : vers
+        });
+
+        //程序入口
+        seajs.use(window.entry ? window.entry : 'router/index', function(entry){
+          var page = (typeof pageType == 'undefined' ? '' : pageType)
+          entry.init(page);
+        });
+      });
+    }
+  }
+
+  //CTRLFLAG - 1:走页面配置;其他:走接口
+  if(window.JSCFG && window.CTRLFLAG == 1){
+    versionCb(window.JSCFG);
+  }
+  else{
+    loadScript('//d.auto.qq.com/getjs/index?callback=versionCb&biz=' + window.sBiz);
+  }
+
+  if(typeof(pgvMain) == 'function'){
+    pgvMain();
+  }
+</script>
+<!--tailTrap<body></body><head></head><html></html>--><!--[if !IE]>|xGv00|47ab4d261a68bc3657e9e63e14f18da0<![endif]-->
+  </body>
+</html><!--[if !IE]>|xGv00|9fa0776bff379b8cca8b4feaf6edef3c<![endif]-->

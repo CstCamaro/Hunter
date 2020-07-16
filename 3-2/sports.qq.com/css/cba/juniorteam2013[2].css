@@ -1,0 +1,198 @@
+@charset "gb2312";
+/*
+author:johnnyhan
+date:2013-3-11
+*/
+
+/*reset*/
+body { margin:0; padding:0; background:#fff; font-family: "宋体", "Arial Narrow"; }
+div, form, input, select, ul, ol, li, p, h1, h2, h3, h4, h5, h6, p, dd, dt, dl { margin:0; padding:0; }
+ul, ol, li { list-style:none; }
+body, table, select, input { font-size:12px; color:#333; }
+img { border:none; }
+a { color:#333; text-decoration:none; }
+a:hover { color:#c00; text-decoration:underline; }
+h1 { font-size: 16px; }
+h2, h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 12px; }
+.fl { float:left; }
+.fr { float:right; }
+.yh{font-family:"Microsoft Yahei","黑体";font-weight:normal;}
+.f14{font-size: 14px;}
+.f26{font-size: 26px;}
+.l28{line-height: 28px;}
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.clearfix{*zoom:1;}
+.layout{ margin:5px auto; width:1000px; overflow:hidden; }
+.chief{width: 660px;overflow: hidden;}
+.extra{width: 300px;overflow: hidden;}
+
+/*box*/
+.box{width: 300px; margin-bottom: 30px; overflow: hidden;}
+.box .hd{height: 32px;background:url(//mat1.gtimg.com/sports/21/ba1.gif) 0 27px no-repeat;  overflow: hidden;}
+.box .hd h2{float: left; font:18px/1.1 "微软雅黑","黑体"; color:#000; }
+.box .hd h2 a{color:#333; }
+.box .bd{padding-top:15px;overflow: hidden; clear: both;}
+.box .dot{width: 330px;}
+.box .dot li{float: left;width: 135px; padding-right: 20px;vertical-align: bottom;}
+
+.box2{overflow: hidden; zoom:1;}
+.box2 .hd{height: 40px; padding-top: 26px; background: url(//mat1.gtimg.com/sports/vikkydu/huahua/bg_fgline.png) 0 0 repeat-x;}
+.box2 .hd h2{float: left;height: 40px; width: 150px; text-indent: -999em;overflow: hidden;}
+.box2 .hd .more{display: block;margin-top: 17px;}
+.box2 .hd .more:hover{background-position: 0 bottom;}
+.box2 .bd{padding-top: 20px;}
+
+.box3{overflow: hidden; zoom:1;}
+.box3 .hd{height: 20px;  background: url(//mat1.gtimg.com/sports/vikkydu/huahua/bg_fgline.png) 0 0 repeat-x;}
+.box3 .hd h2{float: left;height: 40px; width: 150px; text-indent: -999em;overflow: hidden;}
+.box3 .hd .more{display: block;margin-top: 17px;}
+.box3 .hd .more:hover{background-position: 0 bottom;}
+.box3 .bd{padding-top: 20px;}
+
+.box4{overflow: hidden; zoom:1;}
+.box4 .hd{height: 20px;  padding-top: 20px; background: url(//mat1.gtimg.com/sports/vikkydu/huahua/bg_fgline.png) 0 0 repeat-x;}
+.box4 .hd h2{float: left;height: 40px; width: 150px; text-indent: -999em;overflow: hidden;}
+.box4 .hd .more{display: block;margin-top: 17px;}
+.box4 .hd .more:hover{background-position: 0 bottom;}
+.box4 .bd{padding-top: 20px;}
+
+
+
+/*图文混排*/
+.news_list .news_item{border-bottom: 1px dotted #e6e6e6;padding:18px 0 20px 0;overflow:hidden;zoom:1;}
+.news_list .news_item:hover,
+.news_list .current{background:#F5F5F5;}
+.news_list .news_item h2{height:30px;line-height:30px;padding-bottom:18px;}
+.news_list .news_item h2 a:hover{background-color:#9CC7EE;text-decoration:none;color:#333;}
+.news_list .news_item h3{padding-bottom:10px; font: 18px/1.1 "微软雅黑","黑体";}
+.news_list .news_item h3 a{color: #333;}
+.news_list .news_item h3 a:hover{background-color:#9CC7EE;text-decoration:none;color:#333;}
+.news_list .news_item .mod_pic{margin:0 17px 0 0;}
+.news_list .news_item .news_txt{height:80px;line-height: 22px; color: #8c8c8c;margin-bottom:7px;overflow:hidden;}
+.news_list .news_txt a{color:#1d6cb5;}
+.news_list .news_item .h_auto{height:auto;}
+.news_list .news_info{height:24px; line-height: 18px;color: #8c8c8c;}
+.news_list .news_info .tag a:hover{background:#4192DD;color:#FFF;text-decoration:none;}
+.news_list .news_info .pl_btn{padding:4px 10px 0 0;display:none;}
+.news_list .big_pic .news_txt{height:auto;}
+.news_list .big_pic .mod_pic{width:660px;margin:0;padding:0 0 10px;float:none;}
+.news_list .big_pic .mod_pic img{margin-bottom:10px;}
+.news_list .area_more{display:none;}
+.picTxt{display:block;cursor:pointer;z-index:1;width: 195px;overflow:hidden;}
+.picTxt .shadow{display:block;position:relative;text-align:center;color:#FFF;height:27px;line-height:27px;margin-top:-27px;
+    /*background:rgba(0, 0, 0, 0.7);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#B2000000,endColorstr=#B2000000);*/
+    background:url(//mat1.gtimg.com/sports/index2013///mat1.gtimg.com/sports/vikkydu/huahua/shadowBg.png) repeat;
+    _background-image:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//mat1.gtimg.com/sports/index2013///mat1.gtimg.com/sports/vikkydu/huahua/shadowBg.png',sizingMethod='crop');
+}
+.picTxt:hover{text-decoration:none;}
+.mod_hot_news .news_item .news_txt{height:auto;margin-bottom:0;color: #dcdcdc;line-height: 28px;}
+.mod_hot_news .news_txt a{color: #333;}
+.twC{width: 195px;}
+.twC .pic{display: block;width: 195px; height: 110px; position: relative;}
+.twC .pic p{position: absolute; left: 0; top: 82px;height: 28px; line-height: 28px;background:rgba(0,0,0,0.6);filter: progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = "#60000000",endColorstr = "#60000000") 6}
+.twC .pic p span{display: block; width: 190px; height: 28px; text-align: right; padding-right: 5px; color: #e5e7e4;background: url(//mat1.gtimg.com/sports/vikkydu/huahua/bg_bf.png) 8px 6px no-repeat;}
+.twC .text p{line-height: 20px;padding-top: 5px;}
+.twC .text p a{color: #333;}
+.twC .text span{line-height: 24px; color: #8c8c8c;}
+
+.twC2,.twC3{overflow: hidden;zoom:1;}
+.twC2 .pic{float: left; display: inline; margin-right: 10px; _margin-right: 7px;width: 90px; height: 90px; overflow: hidden;}
+.twC2 .text{overflow: hidden;zoom:1;}
+.twC2 .text h4{line-height:24px; font-size: 14px;font-weight: normal;margin-top: -3px; _margin-top: 0;}
+.twC2 .text .info{line-height:24px; color: #999; }
+.twC2 .text .info a{ color: #1d6cb5; }
+
+.twC3{width: 205px;height: 320px;padding-top: 5px; border: 1px solid #d5d5d5;overflow: hidden;}
+.twC3 a{display: block;width: 195px; margin: 0 auto; color: #333;}
+.twC3 a p{height: 40px; padding: 5px 0; line-height: 20px;}
+.twC3 span{display: block; width: 205px;height: 20px; line-height: 20px; text-indent: 5px; background: #ededed;color: #8c8c8c;}
+
+
+
+.twC4{display: block;width: 135px; overflow: hidden;}
+.twC4 img{display: block; width: 135px; height: 90px; overflow: hidden;}
+.twC4 P{ height: 30px; line-height: 30px;text-align: center; cursor: pointer;}
+
+.twC6{width: 140px; overflow: hidden;}
+.twC6 .pic{display: block; width: 140px; height: 110px;margin-bottom: 7px; overflow: hidden;}
+.twC6 .text{clear: both; overflow: hidden; zoom:1;}
+.twC6 .text strong{font-size: 14px;}
+.twC6 .text .hqewm{float: right;display: inline-block; padding: 2px 4px 2px 5px; background: #65add7; color: #fff;}
+.twC6 .text .wxh{clear: both; overflow: hidden; height: 35px; line-height: 30px;}
+.twC6 .text .wxh span{color: #8c8c8c;}
+
+
+/*头条新闻*/
+.hotNews{overflow: hidden; zoom:1; padding-bottom: 20px; border-bottom: 1px dotted #e6e6e6;}
+.hotNews .pic{display: block; width: 660px; height: 330px; overflow: hidden;}
+.hotNews .text{padding-top: 5px;}
+.hotNews .text h2{height: 30px; font: 18px/30px "微软雅黑","黑体";}
+.hotNews .text h2 a{color: #333;}
+.hotNews .text .info{line-height: 22px; color: #8c8c8c;}
+.hotNews .text .info a{color: #1d6cb5;}
+.hotNews .text .time{display: block; height: 20px; line-height: 20px;padding-top: 20px;color: #8c8c8c;}
+
+/*精彩视频*/
+.jcspMod .hd h2{background: url(//mat1.gtimg.com/sports/vikkydu/huahua/bg_jc.png) 0 0 no-repeat;}
+.jcspMod .bd{width: 700px;}
+.jcspMod .twC{display: inline; float: left; margin:0 38px 25px 0;}
+
+/*精彩图片*/
+.jctpMod .hd h2{background: url(//mat1.gtimg.com/sports/vikkydu/huahua/bg_jc.png) 0 bottom no-repeat;}
+.jctpMod .bd{width: 700px;}
+.jctpMod .twC3{display: inline; float: left; margin:0 19px 24px 0;}
+
+/*F1新闻*/
+.xwsdMod .hd{background: none;}
+.xwsdMod .hd h2{background: url(http://img1.gtimg.com/sports/pics/hv1/142/226/1303/84785347.jpg) -22px -32px no-repeat;}
+
+/*中国新闻*/
+.wwsdMod .hd{background: none;}
+.wwsdMod .hd h2{background: url(http://img1.gtimg.com/sports/pics/hv1/143/226/1303/84785348.jpg) -22px -32px no-repeat;}
+
+/*世界新闻*/
+.zwsdMod .hd{background: none;}
+.zwsdMod .hd h2{background: url(//mat1.gtimg.com/sports/beppekong/2013/golf/chanye.jpg) -22px -32px no-repeat;}
+
+
+/*图标*/
+.ico_zf{margin-right: 5px;display: inline-block; width: 50px; height: 16px;line-height: 16px; text-indent: 8px;font-size: 12px; font-style: normal; color: #fff;background: url(http://img1.gtimg.com/sports/pics/hv1/66/31/1292/84020271.png) 0 0 no-repeat;vertical-align: middle;}
+.icon_play{background: url(//mat1.gtimg.com/sports/vikkydu/huahua/bg_bf2.png) 0 0 no-repeat;padding-left:21px;}
+
+/*人物志*/
+.rwzMod .twC2{border-bottom: 1px dotted #e6e6e6;padding-bottom: 20px; margin-bottom: 20px;}
+.rwzMod .last{border: none;margin-bottom: 0;}
+
+
+/*微信大明星*/
+
+.wxdmxMod ul{clear: both; overflow: hidden; }
+.wxdmxMod li{vertical-align: bottom; height:26px; line-height: 26px; overflow: hidden; color: #;}
+.typeLink{color: #1d6cb5;}
+#ewmBox{display:none;width:430px; height:430px; border:10px solid #ccc; position:fixed; _position: absolute; left:50%;top:50%; _top:1100px; margin:-225px 0 0 -225px;-moz-box-shadow:5px 5px 5px #999;  -webkit-box-shadow:5px 5px 5px #999; box-shadow:5px 5px 5px #999;  background: #fff;}
+#ewmBox img{width:430px; overflow: hidden;}
+#closeEwm{position:absolute; right:0; top:0; width: 30px; height:20px; line-height:20px; background:#fff; text-align:center;}
+
+/*封面人物*/
+.fmrwMod .bd{width: 330px;}
+.fmrwMod .twC4{display: inline; float: left; margin-right: 30px;}
+
+table { border-collapse:collapse; border-spacing:0;}
+.tiyuTable tr td{ height:30px; text-align:center; }
+.tiyuTable .dark td{ background:#ccc}
+
+
+/*add in 2013.3.21*/
+.news_list .news_item .news_txt{height: auto; margin-bottom: 10px;}
+.picTxt{width:auto;}
+.news_list .news_info span{padding-right:10px;}
+.twC .pic img{width:195px; height:110px;}
+.twC3{height:190px;}
+.twC3 .pic span{display:block; width:100%; height:120px; text-align:center; background:#fff;}
+.twC3 .pic img{  display:block;margin:0 auto;}
+.loadmore{height:25px; line-height:25px; text-align:center;border-top:1px solid #ddd;margin-top:5px;background:#eef3f8;}
+.loadmore a{color:#1d6cb5; margin-right:5px;}
+
+/*  |xGv00|ff7e9c8641efe1ca1c7236354a0949bc */

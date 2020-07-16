@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>腾讯云搜_开放搜索_云搜索解决方案</title>
+    <meta name="Copyright" content="Tencent" />
+    <meta name="Keywords" content="腾讯云搜 开放搜索 微信搜索 云搜索 腾讯搜索 搜索托管 " />
+    <meta name="Description" content="腾讯旗下开放搜索服务平台，提供定制化搜索托管服务，支持搜索排序自定义。腾讯开放搜索让您共享微信搜索、QQ搜索的经验，为您提供简单、稳定、低成本的搜索解决方案" />
+	<link rel="stylesheet" href="/public/yunsou/css/global.css">
+	<link rel="stylesheet" href="/public/yunsou/css/index.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9,IE=9,IE=edge" />
+<link rel="stylesheet" href="/public/yunsou/css/client.css">
+<!--link rel="stylesheet" href="/public/yunsou/plugin/jquery-ui/css/custom-theme/jquery-ui-1.9.2.custom.css"-->
+<script type="text/javascript" src="/public/yunsou/plugin/jquery/jquery-1.10.2.min.js"></script>
+<script src="/public/yunsou/plugin/jquery/jquery.form.js"></script>
+<script src="/public/nicetool/jquery/jquery.json-2.4.min.js"></script>
+<!--script src="/public/yunsou/plugin/jquery-ui/js/jquery-ui-1.9.2.custom.min.js"></script-->
+<script src="/public/nicetool/fgnass-spin.js-c170985/spin.min.js"></script>
+<script src="/public/plugin/block-ui/js/jquery.blockUI.js"></script>
+
+<script>
+function html_decode(str)
+{
+    var s = "";
+    if (str.length == 0) return "";
+    s = str.replace(/&amp;/g, "&");   //2
+    s = s.replace(/&lt;/g, "<");
+    s = s.replace(/&gt;/g, ">");
+    s = s.replace(/&nbsp;/g, "");
+    s = s.replace(/&#39;/g, "\'");
+    s = s.replace(/&quot;/g, "\"");
+    s = s.replace(/<br>/g,"\n");
+    return s;
+}
+</script>
+</head>
+<body>
+	<div class="layout_wrap">
+	<div class="layout_container clearfix">
+
+	<div class="index_header_wrapper">
+	<div class="index_header">
+		<h1 class="index_logo">
+			<a href="/">
+				<!--
+				<img class="logo_img" src="/public/yunsou/images/logo1.png" alt="云搜管理中心">
+				云搜管理中心
+				-->
+				<img class="logo_img" src="/public/yunsou/images/yunsoulogo_tmp.png" alt="腾讯云搜索">
+			</a>
+		</h1>
+
+		
+		<ul class="index_nav comm_head_list">
+			<li><a href="/">首页</a></li>
+			<li><a href="xtree_product_introduce.cgi">产品介绍</a></li>
+		    <li>
+                
+			        <a href="search_experience.cgi">产品体验</a>
+		        
+            </li>
+			<li><a href="xtree_app_access.cgi">应用接入</a></li>
+			<!--li><a href="help_center.cgi">帮助中心</a></li-->
+			<li><a target='_blank' href='http://wiki.qcloud.com/wiki/%E4%BA%91%E6%90%9C%E4%BB%8B%E7%BB%8D'>帮助中心</a></li>
+		</ul>
+		<div class="topbar_btn">
+	<div class="user_avatar">
+		
+			<a href="um_user_info.cgi" class="user_name mod_topbar_btn" style='font-size:14px;'>
+				<i class="bor"></i>
+				<div class="tooltip">
+					<i class="ico_ny ico_up_arrow"></i><span id="logout_action" onclick="logOut(event);">退出</span>
+				</div>
+			</a>
+			<em class="line">|</em> 
+		
+	</div>
+	
+	<a href="javascript:;" id="login_panel_manager_center" class="mod_topbar_btn index_mod_topbar_btn">管理中心</a>
+	
+</div>
+
+<script>
+function getCookie(name) {
+	if (document.cookie.length > 0) {
+		var start = document.cookie.indexOf("; " + name + "=");
+		if (start != -1) {
+			start = start + name.length + 3;
+			end = document.cookie.indexOf(";", start);
+			if(end == -1) {
+				end=document.cookie.length
+			}
+			return unescape(document.cookie.substring(start, end));
+		}
+	}
+	return "";
+}
+
+$("#login_panel_manager_center").click(function() {
+	var uin = getCookie("uin");
+	var uin_begin = 0;
+	while (uin[uin_begin] == "0" || uin[uin_begin] == "o")
+		++uin_begin;
+	uin = uin.substring(uin_begin);
+	var skey = getCookie("skey");
+	var new_href = "http://ptlogin2.qcloud.com/jump?uin=" + uin + "&skey=" + skey + "&u1=http%3A%2F%2Fconsole.qcloud.com%2Fyunso%2Fqcloud_open.cgi";
+	window.open(new_href);
+});
+</script>
+
+	</div>
+</div>
+
+    <script type="text/javascript" src="//tajs.qq.com/stats?sId=44508619" charset="UTF-8"></script>
+
+
+	<!-- end of header -->
+	<div class="index_banner">
+		<div class="index_banner_content">
+			<a class="index_banner_link" href="javascript:;">新建应用</a>
+		</div>
+	</div>
+	<!-- end of banner -->
+	<div class="index_content">
+		<div class="middle_line"></div>	
+		<div class="first_module">
+			<h2 class="con_title">让您定制专属的功能与服务</h2>
+			<ul class="service_list">
+				<li class="service_item clearfix">
+					<div class="service_description ui_fl">
+						<h3>检索串智能改写</h3>
+						<p>基于腾讯在大数据、中文文本识别、人工智能、机器学习等领域多年的积累，腾讯云搜索能够更智能地识别用户的检索意图，包括对用户query进行分词、纠错、同义词、词权重、意图识别、人工干预等多种差异化服务。</p>
+					</div>
+					<img class="txt_img" src="/public/yunsou/images/index/ico_index_1.png" alt="icon1">
+					<div class="service_img ui_fr">
+						<img src="/public/yunsou/images/index/index_pic1.png" alt="检索串智能改写">
+					</div>
+				</li>
+				<li class="service_item clearfix">
+					<div class="service_description ui_fr">
+						<h3>数据可定制</h3>
+						<p>数据是舞台，有了舞台才能够跳舞。云搜为用户提供可视化的数据定制服务，包括可视化的数据预处理和离线排序定制能力。</p>
+					</div>					
+					<img class="txt_img" src="/public/yunsou/images/index/ico_index_2.png" alt="icon2">
+					<div class="service_img ui_fl">
+						<img src="/public/yunsou/images/index/index_pic2.png" alt="检索串智能改写">
+					</div>
+				</li>
+				<li class="service_item clearfix">
+					<div class="service_description ui_fl">
+						<h3>排序可定制</h3>
+						<p>用户可根据自己的应用特性选择匹配的打分库模版，同时能够通过友好的可视化界面自定义排序表达式，充分定制自己的个性化搜索服务。</p>
+					</div>					
+					<img class="txt_img" src="/public/yunsou/images/index/ico_index_3.png" alt="icon3">
+					<div class="service_img ui_fr">
+						<img src="/public/yunsou/images/index/index_pic3.png" alt="排序可定制">
+					</div>
+				</li>
+				<li class="service_item clearfix">
+					<div class="service_description ui_fr">
+						<h3>多种功能组件</h3>
+						<p>云搜索除了基本的搜索功能，还提供更多的高级武器，如联想词推荐、高级纠错、人工干预、按域检索、个性化分词等。</p>
+					</div>
+					<img class="txt_img" src="/public/yunsou/images/index/ico_index_4.png" alt="icon4">
+					<div class="service_img ui_fl">
+						<img src="/public/yunsou/images/index/index_pic4.png" alt="多种功能组件">
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="second_module">
+			<h2 class="con_title">他们选择了云搜</h2>
+			<ul class="qq_product_list clearfix">
+				<li class="qq_product_item">
+					<div class="pto">
+						<a target='_blank' href='https://wx.qq.com/'>
+							<img src="/public/yunsou/images/index/ico_wechat.png" alt="wechat">
+						</a>
+					</div>
+					<span>微信</span>
+				</li>
+
+				<li class="qq_product_item">
+					<div class="pto">
+						<a target='_blank' href='http://im.qq.com/mobileqq/'>
+							<img src="/public/yunsou/images/index/ico_qq.png" alt="手机QQ">
+						</a>
+					</div>
+					<span>手机QQ</span>
+				</li>
+				
+				<li class="qq_product_item">
+					<div class="pto">
+						<a target='_blank' href='http://qzone.qq.com/'>
+							<img src="/public/yunsou/images/index/ico_qzone.png" alt="qq空间">
+						</a>
+					</div>
+					<span>QQ空间</span>
+				</li>
+				
+				<li class="qq_product_item">
+					<div class="pto">
+						<a target='_blank' href='http://y.qq.com'>
+							<img src="/public/yunsou/images/index/ico_qmusic.png" alt="QQ音乐">
+						</a>
+					</div>
+					<span>QQ音乐</span>
+				</li>	
+				
+				<li class="qq_product_item">
+					<div class="pto">
+						<a target='_blank' href='http://v.qq.com/search.html?pagetype=3&stj2=search.search&stag=txt.index&ms_key=肖申克的救赎'>
+							<img src="/public/yunsou/images/index/ico_qvideo.png" alt="腾讯视频">
+						</a>
+					</div>
+					<span>腾讯视频</span>
+				</li>
+				
+				<li class="qq_product_item">
+					<div class="pto">
+						<a target='_blank' href='http://android.myapp.com/myapp/search.htm?kw=qq'>
+							<img src="/public/yunsou/images/index/ico_qyyb.png" alt="应用宝">
+						</a>
+					</div>
+					<span>应用宝</span>
+				</li>
+				
+				<!--
+				<li class="qq_product_item">
+					<div class="pto">
+						<a target='_blank' href='http://map.qq.com/'>
+							<img src="/public/yunsou/images/index/ico_qmap.png" alt="腾讯地图">
+						</a>
+					</div>
+					<span>腾讯地图</span>
+				</li>
+				-->
+			</ul>
+		</div>
+		<div class="third_module">
+			<div class="horizontal_divider"></div>
+			<a href="javascript:;" class="down_arrow" style='cursor:default;'></a>			
+			<h2 class="con_title">简单接入，简单选择</h2>
+			<a href="javascript:;" class="ui_btn_big btn_blue use_now">马上使用</a>
+		</div>
+	</div>
+	<!-- end of content	 -->
+		
+	<div class="footer">
+		<div class="copyright ui_maxw" style='background-position-x: 52%;'>
+			<p class="txt">Copyright &copy; 1998 - 2020 Tencent. All Rights Reserved.</p>
+			<!--
+			<p class="txt"><a href="#" target="_blank">开发者协议</a> | <a href="#" target="_blank">联系我们</a> | <a href="#" target="_blank">投诉建议</a></p>
+			-->
+			<p class="txt infos"><a href="help_center.cgi?topic=protocol" target="_blank">开发者协议</a></p>
+			<div class="foot_link">
+			
+				<a target="_blank" class="ico_foot_mail"
+					href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=Tjc7ID0hOxEmKyI_Dj8-YC0hIw" style="text-decoration:none;">
+				</a>
+				<a href="javascript:void(0);" class="ico_foot_wechat">
+					<div class="link_show">
+						<b class="bar"></b>
+						<p class="tit">扫码关注“腾讯云搜”</p>
+						<div class="photo">
+							<img src="/public/yunsou/images/common/wechat_show.png" alt="扫码关注“腾讯云搜”">
+						</div>
+					</div>
+				</a>
+				<a target="_blank" class="ico_foot_qq">
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="common_alert_dialog" class="pop_wrapper" icon_type="" style="display:none">
+	<div class="add_data_pop">
+		<div class="pop_header">
+			<p id="common_alert_dialog_title"></p>
+			<i class="ico_ny ico_close" id="common_alert_dialog_close"></i>
+		</div>
+
+		<div class="pop_content empty_data_status_1">
+			<div class="empty_data_main">
+				<p id="common_alert_dialog_sub_title" class="pop_content_txt">
+					<i class="ico_ny"></i>
+				</p>
+				<p id="common_alert_dialog_tips" class="pop_content_sub_txt"></p>
+			</div>
+			<div class="btn_gp_area">
+				<div class="btn_gp">
+					<a href="javascript:;" class="ui_btn_big btn_blue" id="common_alert_dialog_yes">确认</a>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+
+	<div class="pop_bg">		
+	</div>
+</div>
+
+<div class="pop_wrapper" id="common_confirm_dialog" style="display: none;">
+	<div class="add_data_pop">
+
+		<div class="pop_header">
+			<p id="common_confirm_dialog_title"></p>
+			<i class="ico_ny ico_close common_confirm_dialog_close"></i>
+		</div>
+
+		<div class="pop_content empty_data_status_1" >
+			<div class="empty_data_main">
+				<p id="common_confirm_dialog_sub_title" class="pop_content_txt">
+					<i class="ico_ny ico_status_orange"></i>
+				</p>
+				<!--p class="pop_content_sub_txt common_confirm_dialog_tips"></p-->
+			</div>
+			<div class="btn_gp_area">
+				<div class="btn_gp">
+					<a href="javascript:;" class="ui_btn_big btn_blue" id="common_confirm_dialog_yes">确认</a>
+					<a href="javascript:;" class="ui_btn_big btn_white common_confirm_dialog_close">取消</a>
+				</div>
+			</div>	
+		</div>
+
+	</div>
+
+	<div class="pop_bg">	
+	</div>
+
+</div>
+
+
+
+<script>
+
+
+function common_alert(title, sub_title, tips, context)
+{
+	var icon_type = "";
+	if(context == "success"){
+		icon_type += "ico_status_green";
+	}
+	else if(context == "warning"){
+		icon_type += "ico_status_orange";
+	}
+	else if(context == "failed"){
+		icon_type += "ico_status_red_big";
+	}
+	else{
+		icon_type += "ico_status_green";
+	}
+
+    $('#common_alert_dialog_title').text(title);
+
+	$('#common_alert_dialog_sub_title').text('');
+	$('#common_alert_dialog_sub_title').append('<i class="ico_ny"></i>');
+	$('#common_alert_dialog_sub_title').find('i').addClass(icon_type);
+	$('#common_alert_dialog_sub_title').find('i').after(sub_title);
+
+	$('#common_alert_dialog_tips').text(tips);
+	$("#common_alert_dialog").attr('icon_type', icon_type);
+	
+	$("#common_alert_dialog").show();
+}
+
+function clean_common_alert_dialog()
+{
+	var icon_type = $("#common_alert_dialog").attr("icon_type");
+    $('#common_alert_dialog_title').text('');
+	$('#common_alert_dialog_sub_title').text('');
+	$('#common_alert_dialog_sub_title').append('<i class="ico_ny"></i>');
+	$('#common_alert_dialog_tips').text('');
+	$("#common_alert_dialog").attr('icon_type', '');
+}
+
+$("#common_alert_dialog_close").click(function(){
+	clean_common_alert_dialog();
+    $('#common_alert_dialog').hide();
+});
+
+$("#common_alert_dialog_yes").click(function(){
+	clean_common_alert_dialog();
+    $('#common_alert_dialog').hide();
+});
+
+
+
+
+
+function common_confirm(title, sub_title, tips, yes_callback)
+{
+    $('#common_confirm_dialog_title').text(title);
+	$('#common_confirm_dialog_sub_title').find('i').after(sub_title);
+
+	tips_arr = tips.split(";");
+	for (var idx = 0; idx < tips_arr.length; idx++){
+		one_tips = tips_arr[idx];
+	    html_str = '<p class="pop_content_sub_txt common_confirm_dialog_tips">' + one_tips + '</p>';
+	    $('#common_confirm_dialog_sub_title').after(html_str);
+	}
+
+	//$('#common_confirm_dialog_tips').text(tips);	
+	$("#common_confirm_dialog").show();
+	
+	$('#common_confirm_dialog_yes').bind("click",yes_callback);
+
+}
+
+function close_common_confirm_dialog()
+{
+    $('#common_confirm_dialog_title').text('');
+	$('#common_confirm_dialog_sub_title').text('');
+	$('#common_confirm_dialog_sub_title').append('<i class="ico_ny ico_status_orange"></i>');
+	$('.common_confirm_dialog_tips').remove('');
+
+	$('#common_confirm_dialog_yes').unbind();
+	$('#common_confirm_dialog').hide();
+}
+
+
+$(".common_confirm_dialog_close").click(function(){
+	close_common_confirm_dialog();    
+});
+
+
+</script>
+
+		
+	<!-- end of footer -->
+	<a href='javascript:void(0);' class='gototop'></a>
+
+	<!-- loading -->
+	<div class="modal"></div>
+	<script>
+		$(function(){
+			$body = $("body");
+			$(document).on({
+				ajaxStart: function() { 
+					//$body.addClass("loading");    
+					$(".do_loading_ajax").addClass('loading_ajax');
+				},
+				ajaxStop: function() { 
+					$(".do_loading_ajax").removeClass("loading_ajax"); 
+				}   
+			});
+			$('.ico_foot_qq').click(function(){
+				$('div.foot_link').find('iframe').remove();
+				$('div.foot_link').append("<iframe src='redirect.cgi?redirect_url=https://shang.qq.com/wpa/qunwpa?idkey%3d48b07622c3e15117ded5769cdb9b3bcd1b7a0eaa816d27337851af8948b3e69d' height='1px' width='1px'></iframe>");
+			})
+		})
+	</script>
+
+	<!-- the moust out div, important-->
+	</div>
+</div>
+
+
+	<!-- end of footer -->
+	<script type="text/javascript" src="//imgcache.qq.com/ptlogin/ac/v9/js/ptloginout.js"></script>
+<script type="text/javascript" src="/public/yunsou/js/user_login.js"></script>
+<script>
+	/*
+	$body = $("body");
+	$(document).on({
+		ajaxStart: function() { 
+			console.log('ajax start...');
+			$body.addClass("loading");    
+		},
+		ajaxStop: function() { 
+			console.log('ajax end...');
+			$body.removeClass("loading"); 
+		}   
+	});
+	*/
+function basename(str1)
+{
+	str2="/"
+
+	var s = str1.lastIndexOf(str2);
+	if (s == -1) {
+		return str1;
+	}
+	else{
+		return(str1.substring(s+1,str1.length));
+	}
+}
+
+
+	$(function(){
+
+		//first time, hide it
+		$(".gototop").hide();
+
+		(function(){
+			var select_page = '';
+			var url_path = window.location.pathname;
+			var url_part = url_path.split("/");
+			var cgi = url_part[url_part.length - 1];
+
+			if (select_page != ""){
+				cgi = select_page;
+			}
+			if (cgi.indexOf('cgi') == -1){
+				$('ul.index_nav').find('li').first().addClass('current');
+				return ;
+			}
+			$('ul.comm_head_list li a[href="' + cgi + '"]').parent().addClass('current');
+		})();
+	});
+
+
+
+	function is_only_regular_char(str)
+	{
+	    var pattern = new RegExp("[^A-z0-9_\u2E80-\u2EFF\u2F00-\u2FDF\u31C0-\u31EF\u3200-\u32FF\u3300-\u33FF\u3400-\u4DBF\u4DC0-\u4DFF\u4E00-\u9FBF\uF900-\uFAFF\uFE30-\uFE4F]"); 
+	    if(str != "" && pattern.test(str)){
+	    	return false; 
+	    }
+	    	
+	    return true; 
+	}
+
+	function is_only_en_char(str)
+	{
+	    var pattern = new RegExp("[^a-zA-Z0-9\-]"); 
+	    if(str != "" && pattern.test(str)){
+	    	return false; 
+	    }
+	    	
+	    return true; 
+	}
+	
+	function is_only_num(str)
+	{
+	    var pattern = new RegExp("[^0-9]"); 
+	    if(str != "" && pattern.test(str)){
+	    	return false; 
+	    }
+	    	
+	    return true; 
+	}
+
+
+
+	function has_special_char(str)
+	{
+	    var pattern = new RegExp("[`~!！\\-@%#$^&*()=|{}:;,\\[\\]<>/?.；：%……+￥（）【】《》‘’”“'\"。，、？]"); 
+	    if(str != "" && pattern.test(str)){
+	    	return true; 
+	    }
+	    	
+	    return false; 
+	}
+
+</script>
+
+	<script type="text/javascript" src="/public/yunsou/js/common.js"></script>
+	<script>
+	function getCookie(name) {
+		if (document.cookie.length > 0) {
+			var start = document.cookie.indexOf("; " + name + "=");
+			if (start != -1) {
+				start = start + name.length + 3;
+				end = document.cookie.indexOf(";", start);
+				if(end == -1) {
+					end=document.cookie.length
+				}
+				return unescape(document.cookie.substring(start, end));
+			}
+		}
+		return "";
+	}
+
+	$("a.index_banner_link").click(function() {
+		var uin = getCookie("uin");
+		var uin_begin = 0;
+		while (uin[uin_begin] == "0" || uin[uin_begin] == "o")
+			++uin_begin;
+		uin = uin.substring(uin_begin);
+		var skey = getCookie("skey");
+		var new_href = "http://ptlogin2.qcloud.com/jump?uin=" + uin + "&skey=" + skey + "&u1=http%3A%2F%2Fconsole.qcloud.com%2Fyunso%2Fapp_apply.cgi";
+		window.open(new_href);
+	});
+
+	$("a.use_now").click(function() {
+		var uin = getCookie("uin");
+		var uin_begin = 0;
+		while (uin[uin_begin] == "0" || uin[uin_begin] == "o")
+			++uin_begin;
+		uin = uin.substring(uin_begin);
+		var skey = getCookie("skey");
+		var new_href = "http://ptlogin2.qcloud.com/jump?uin=" + uin + "&skey=" + skey + "&u1=http%3A%2F%2Fconsole.qcloud.com%2Fyunso%2Fqcloud_open.cgi";
+		window.open(new_href);
+	});
+
+	</script>
+
+	
+</body>
+</html>

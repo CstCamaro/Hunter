@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>大浙家居 | 助力你的爱家</title>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <script src="//mat1.gtimg.com/zj/yuwanli/common/jquery/jquery-1.11.3.min.js" charset="utf-8"></script>
+    <script src="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/js/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/css/jquery.fancybox.css" type="text/css">
+    <link rel="stylesheet" href="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/css/flow.css" type="text/css">
+</head>
+<body>
+<script language="javascript" src="//mat1.gtimg.com/ping.js"></script>
+<script>
+    //db.house.qq.com --> db-house
+    var colSite = window.location.host.replace(/.qq.com$/,'').replace(/\./g, '-');
+    var pgvInfo = "L.";
+
+    //增加栏目信息
+    //注意:
+    //（1）、bpgv-XXX1是栏目名，请用你自已定义的栏目名替换其中的XXX1
+    //（2）、自定义栏目最多只支持3级，如下面的bpgv-XXX1，bpgv-XXX2，bpgv-XXX3
+    //（3）、自定义栏目名必须以bpgv-做为前缀，且其中不能含有点(.)，下划线(_)
+    //（4）、自定义栏目名必须发给PGV这边备案，可以联系alvazhang
+    pgvInfo = pgvInfo + colSite + ".bpgv-home.bpgv-zt";
+
+    //增加专题信息，增加如下代码，并替换相应的专题名bpgv-XXX1
+    //pgvInfo = pgvInfo + "_Z."+colSite+".bpgv-XXX1.bpgv-XXX2.bpgv-XXX3";
+    //特别注意：如需精确计算某一专题系列，请在各频道栏目管理中建立相应栏目，将所有专题栏目计算指向相应栏目即可。如有问题请咨询产品技术部，谢谢！！
+
+
+    if(typeof(pgvMain) == 'function'){
+        if (typeof(pgvInfo) != 'undefined') {
+            pgvMain({pgUserType:pgvInfo});
+        } else {
+            pgvMain();
+        }
+    }
+</script>
+<!-- 全站迷你导航 开始 -->
+<!-- 全站迷你导航 开始 -->
+<style type="text/css">
+/*带一键登录全站迷你导航 v20130219 loginall @goldenchen*/
+.mininav{width:100%;height:28px;background:#fdfdfd url(//mat1.gtimg.com/www/images/qq2012/mininav.png) repeat-x top center;border-bottom:1px solid #ebebeb;}
+.mininavInner{width:1000px;height:28px;margin:0 auto!important;}
+.mininavInner a{color:#666;text-decoration:none;font-family:"宋体";}
+.mininavInner a:hover{color:#2d374b;}
+.mininavInner .mininavLeft{float:left;margin-top:8px;color:#c7c7c7;font-size:12px;}
+.mininavInner .mininavLeft .fl{color:#c7c7c7;}
+</style>
+<div class="mininav" id="topNav">
+	<div class="mininavInner">
+		<div class="mininavLeft">
+			<div class="fl">
+				<a href="http://www.qq.com/" target="_blank" id="qqindex">腾讯网首页</a> | <a href="http://www.qq.com/map/" target="_blank" id="webmap">网站地图</a>
+			</div>
+		</div>
+
+
+		<style type="text/css">
+ul,li{margin:0;padding:0;}
+li{list-style:none;}
+.fl{float:left;}
+.fr{float:right;}
+.dis{display:block;}
+.undis{display:none;}
+.loginSmartTop,.loginSmartBottom{background-image:url(//mat1.gtimg.com/www/images/qq2012/qqbg_1.5.2.png); background-repeat:no-repeat;}
+a.login,a.login:hover,a.weiboLogin,a.weiboLogin:hover,a.qzoneLogin,a.qzoneLogin:hover,a.mailLogin,a.mailLogin:hover,a.pengyouLogin,a.pengyouLogin:hover,.mininavRight .weibo,.mininavRight .weibo:hover,.mininavRight .qzone,.mininavRight .qzone:hover,.mininavRight .mail,.mininavRight .mail:hover,.mininavRight .pengyou,.mininavRight .pengyou:hover{background-image:url(//mat1.gtimg.com/www/images/qq2012/loginall_1.2.png); background-repeat:no-repeat;}
+a.login{width:70px;height:28px;display:block;float:right;background-position:left -450px;}
+a.login:hover{background-position:left -500px;}
+a.weiboLogin{width:30px;height:28px;display:block;float:right;background-position:left -50px;}
+a.weiboLogin:hover{background-position:right -50px;}
+a.qzoneLogin{width:30px;height:28px;display:block;float:right;background-position:left -100px;}
+a.qzoneLogin:hover{background-position:right -100px;}
+a.mailLogin{width:30px;height:28px;display:block;float:right;background-position:left -150px;}
+a.mailLogin:hover{background-position:right -150px;}
+a.pengyouLogin{width:28px;height:28px;display:block;float:right;background-position:left -200px;}
+a.pengyouLogin:hover{background-position:right -200px;}
+.mininavRight{font-size:12px;}
+.mininavRight .weibo{background-position:7px -243px;}
+.mininavRight .weibo:hover{background-position:-79px -243px;}
+.mininavRight .qzone{background-position:7px -294px;}
+.mininavRight .qzone:hover{background-position:-74px -294px;}
+.mininavRight .mail{background-position:7px -340px;}
+.mininavRight .mail:hover{background-position:-77px -340px;}
+.mininavRight .pengyou{background-position:7px -394px;}
+.mininavRight .pengyou:hover{background-position:-76px -394px;}
+.mininavRight{float:right;color:#c7c7c7;line-height:28px;}
+.mininavRight a{color:#666;}
+.mininavRight .qqNameLayout{margin-right:4px;color:#c7c7c7;}
+.mininavRight .qqName{margin-right:12px;color:#666;float:left;}
+.mininavRight .weibo{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:17px;}
+.mininavRight .weibo:hover{color:#fff;background-color:#458fce;}
+.mininavRight .qzone{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:22px;}
+.mininavRight .qzone:hover{color:#fff;background-color:#458fce;}
+.mininavRight .mail{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:19px;}
+.mininavRight .mail:hover{color:#fff;background-color:#458fce;}
+.mininavRight .pengyou{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:20px;}
+.mininavRight .pengyou:hover{color:#fff;background-color:#458fce;}
+.loginSmartBox{width:120px;height:auto;background:#fffbef;position:absolute;top:28px;z-index:100;}
+.loginSmartTop{width:120px;height:3px;overflow:hidden;background-position:-350px -210px;}
+.loginSmartBottom{width:120px;height:3px;overflow:hidden;background-position:-350px -230px;}
+.loginSmartContent{width:118px;border-left:1px solid #f1f1f1;border-right:1px solid #f1f1f1;}
+.loginSmartInner{width:116px;border-left:1px solid #f4d9a4;border-right:1px solid #f4d9a4;}
+.loginSmartInner ul{width:100%;padding:2px 0;}
+.loginSmartInner li{width:100%;height:20px;line-height:20px;color:#666;text-indent:8px;text-align:left;}
+.loginSmartInner li a{color:#666;}
+.loginSmartInner li a:hover span{color:#cd0200;}
+.loginSmartInner li a span,.loginSmartInner li a:hover span{font-family:Tahoma;}
+#pengyouIcon{position:relative;z-index:10000;}
+#mailIcon{position:relative;z-index:10000;}
+#qzoneIcon{position:relative;z-index:10000;}
+#weiboIcon{position:relative;z-index:10000;}
+#loginOut:hover{text-decoration:underline;color:#cd0200;}
+.loginBg{width:100%;min-width:1024px;position:absolute;top:0;left:0;z-index:8888;display:none;background:url(//mat1.gtimg.com/www/images/qq2012/alphabg.png); _background:#000;_opacity:0.3_;filter:alpha(opacity=30);}
+
+.mininavRight .qzone{width:auto;}
+.mininavLeft div{line-height:14px;}
+.mininavRight div{line-height:28px;}
+</style>
+
+<div class="mininavRight" id="logkey">
+	<div id="loginAll" class="fr">
+		<!--
+		<a href="http://www.pengyou.com" class="pengyouLogin" id="friend" target="_blank"></a>
+		-->
+		<a href="http://mail.qq.com" class="mailLogin" id="qmail" target="_blank"></a>
+		<a href="http://qzone.qq.com" class="qzoneLogin" id="qzone" target="_blank"></a>
+		<a href="http://t.qq.com?pref=qqcom.home.weiboIN" class="weiboLogin" id="weibo" target="_blank"></a>
+		<a href="javascript:void(0);" class="login" onclick="userLogin();" target="_self" id="onekey"></a>
+	</div>
+	<div id="logined" class="fr" style="display:none;">
+		<!--
+		<div id="pengyouIcon" class="fr">
+			<a href="http://www.pengyou.com" class="pengyou" id="pengyouNum" style="padding:0 16px 0 15px;" target="_blank"></a>
+			<div class="loginSmartBox undis" id="pengyouSmart" style="right:0;">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="pengyouTitle">朋友网:</li>
+							<li id="pengyouPassiveLi" class="undis"><a href="http://www.pengyou.com" target="_blank">我的动态 (<span id="pengyouPassiveNum"></span>)</a></li>
+							<li id="pengyouInitLi" class="undis"><a href="http://www.pengyou.com" target="_blank">朋友动态 (<span id="pengyouInitNum"></span>)</a></li>
+							<li id="pengyouAboutLi" class="undis"><a href="http://www.pengyou.com" target="_blank">我的参与 (<span id="pengyouAboutNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+		-->
+		<div id="mailIcon" class="fr">
+			<a href="http://mail.qq.com" class="mail" id="mailNum" style="padding:0 15px;" target="_blank"></a>
+			<div class="loginSmartBox undis" id="mailSmart" style="right:0;">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="mailTitle">QQ邮箱:</li>
+							<li id="inboxLi" class="undis"><a href="http://mail.qq.com" target="_blank">未读邮件 (<span id="inboxNum"></span>)</a></li>
+							<li id="bottleLi" class="undis"><a href="http://mail.qq.com" target="_blank">漂流瓶 (<span id="bottleNum"></span>)</a></li>
+							<li id="gmailLi" class="undis"><a href="http://mail.qq.com" target="_blank">群邮件 (<span id="gmailNum"></span>)</a></li>
+							<li id="dmailLi" class="undis"><a href="http://mail.qq.com" target="_blank">文件夹 (<span id="dmailNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+		<div id="qzoneIcon" class="fr">
+			<a href="http://qzone.qq.com" class="qzone" id="qzoneNum" style="padding:0 16px;" target="_blank"></a>
+			<div class="loginSmartBox undis" id="qzoneSmart" style="right:0;">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="qzoneTitle">QQ空间:</li>
+							<li id="passiveLi" class="undis"><a href="http://qzone.qq.com" target="_blank">我的动态 (<span id="passiveNum"></span>)</a></li>
+							<li id="InitLi" class="undis"><a href="http://qzone.qq.com" target="_blank">好友动态 (<span id="InitNum"></span>)</a></li>
+							<li id="AboutLi" class="undis"><a href="http://qzone.qq.com" target="_blank">我的参与 (<span id="AboutNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+		<div id="weiboIcon" class="fr">
+			<a href="http://t.qq.com?pref=qqcom.home.weiboenter" class="weibo" id="weiboNum" style="padding:0 14px;" target="_blank"></a>
+			<div class="loginSmartBox undis" id="weiboSmart" style="left:0;">
+				<div class="loginSmartTop"></div>
+				<div class="loginSmartContent">
+					<div class="loginSmartInner">
+						<ul>
+							<li id="weiboTitle">腾讯微博:</li>
+							<li id="msgLi" class="undis"><a href="http://t.qq.com/messages/inbox?pref=qqcom.home.wbinbox" target="_blank">私信 (<span id="msgNum"></span>)</a></li>
+							<li id="atLi" class="undis"><a href="http://t.qq.com/at?pref=qqcom.home.wbat" target="_blank">提到我的 (<span id="atNum"></span>)</a></li>
+							<li id="fansLi" class="undis"><a href="http://t.qq.com/follower.php?pref=qqcom.home.wbfollow" target="_blank">新增听众 (<span id="fansNum"></span>)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="loginSmartBottom"></div>
+			</div>
+		</div>
+		<div class="qqNameLayout fr">
+			<span class="qqName">您好，<span id="userName"></span> <span>[</span><a href="javascript:void(0);" id="loginOut" target="_self">退出</a><span>]</span></span>|
+		</div>
+	</div>
+</div>
+
+<div id="loginBg" class="loginBg"></div>
+<div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+	<iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+</div> 
+
+<script type="text/javascript">var MI = {};(function(b){var a=document.createElement("script");a.setAttribute("charset","utf-8");a.setAttribute("type","text/javascript");a.setAttribute("src",b);document.getElementsByTagName("head")[0].appendChild(a)})("//mat1.gtimg.com/www/mb/js/portal/mi.MiniNav__v1.0.0.js");</script>
+
+<script type="text/javascript">
+//<![CDATA[ 
+document.domain="qq.com";
+function ptlogin2_onResize(width, height) {
+	//获得浮动Div对象
+	login_wnd = document.getElementById("login_div");
+	if (login_wnd)  {
+		//重新设置大小注意，一定要加px，否则firefox下有问题
+		login_wnd.style.width = width + "px";
+		login_wnd.style.height = height + "px";
+		//最好重新调整登录框的位置， 这儿略....
+		//先隐藏，在显示，这样可以避免滚动条的出现
+		login_wnd.style.visibility = "hidden"
+		login_wnd.style.visibility = "visible"
+		login_wnd.style.marginLeft = "-"+parseInt(width/2) + 'px';
+		login_wnd.style.marginTop = "-"+parseInt(height/2) + 'px';
+	}
+}
+function ptlogin2_onClose(){
+	document.getElementById("login_div").style.left = "-9999px";
+	document.getElementById("loginBg").style.display = "none";
+}
+function userLogin(){
+	document.getElementById("login_frame").src = "http://ui.ptlogin2.qq.com/cgi-bin/login?hide_title_bar=0&low_login=0&qlogin_auto_login=1&no_verifyimg=1&link_target=blank&appid=636014201&target=self&s_url=http%3A//www.qq.com/qq2012/loginSuccess.htm";
+	document.getElementById("login_div").style.left = "50%";
+	document.getElementById("loginBg").style.display = "block";
+	document.getElementById("loginBg").style.width= document.body.clientWidth + "px";
+	document.getElementById("loginBg").style.height= document.body.clientHeight + "px";
+}
+/*一键登录数据*/
+function loginAll(obj){
+	if(obj.result == 0){
+		MblogTotalnum = obj.info.Mblog.totalnum || 0; QQ.localData.set('Mblog-totalnum', obj.info.Mblog.totalnum); 
+		MblogMsgnum = obj.info.Mblog.msgnum || 0; QQ.localData.set('Mblog-msgnum', obj.info.Mblog.msgnum);
+		MblogAtnum = obj.info.Mblog.atnum || 0; QQ.localData.set('Mblog-atnum', obj.info.Mblog.atnum);
+		MblogFansnum = obj.info.Mblog.fansnum || 0; QQ.localData.set('Mblog-fansnum', obj.info.Mblog.fansnum);
+		QZoneTotalnum = obj.info.QZone.totalnum || 0; QQ.localData.set('QZone-totalnum', obj.info.QZone.totalnum);
+		QZonePassivenum = obj.info.QZone.passivenum || 0; QQ.localData.set('QZone-passivenum', obj.info.QZone.passivenum);
+		QZoneInitnum = obj.info.QZone.initnum || 0; QQ.localData.set('QZone-initnum', obj.info.QZone.initnum);
+		QZoneAboutnum = obj.info.QZone.aboutnum || 0; QQ.localData.set('QZone-aboutnum', obj.info.QZone.aboutnum);
+		QMailTotalnum = obj.info.QMail.totalnum || 0; QQ.localData.set('QMail-totalnum', obj.info.QMail.totalnum);
+		QMailInboxnum = obj.info.QMail.inboxnum || 0; QQ.localData.set('QMail-inboxnum', obj.info.QMail.inboxnum);
+		QMailBottlenum = obj.info.QMail.bottlenum || 0; QQ.localData.set('QMail-bottlenum', obj.info.QMail.bottlenum);
+		QMailGmailnum = obj.info.QMail.gmailnum || 0; QQ.localData.set('QMail-gmailnum', obj.info.QMail.gmailnum);
+		QMailDmailnum = obj.info.QMail.dmailnum || 0; QQ.localData.set('QMail-dmailnum', obj.info.QMail.dmailnum);
+		/*
+		FriendTotalnum = obj.info.Friend.totalnum || 0; QQ.localData.set('Friend-totalnum', obj.info.Friend.totalnum);
+		FriendPassivenum = obj.info.Friend.passivenum || 0; QQ.localData.set('Friend-passivenum', obj.info.Friend.passivenum);
+		FriendInitnum = obj.info.Friend.initnum || 0; QQ.localData.set('Friend-initnum', obj.info.Friend.initnum);
+		FriendAboutnum = obj.info.Friend.aboutnum || 0; QQ.localData.set('Friend-aboutnum', obj.info.Friend.aboutnum);
+		*/
+		userInfoUin = uin; QQ.localData.set('Uin', uin);
+		nick = userInfoName = obj.nick.replace(/</,"&lt;").replace(/>/,"&gt;"); QQ.localData.set('nick', userInfoName);
+		userInfoVip = obj.Vip; QQ.localData.set('Vip', userInfoVip || 0);
+		Face = userInfoFace = obj.Face || '//mat1.gtimg.com/news/dc/temp/c1.jpg'; QQ.localData.set('Face', userInfoFace || '//mat1.gtimg.com/news/dc/temp/c1.jpg');
+		
+		UI && UI.getScript("http://mini.t.qq.com/mini/mycheck.php?r=" + (new Date).getTime());//add 20130226
+
+		if(MblogTotalnum){
+			if(MblogTotalnum > 99){
+				document.getElementById("weiboNum").innerHTML = "99+";
+			}else{
+				document.getElementById("weiboNum").innerHTML = MblogTotalnum;
+			}
+			document.getElementById("weiboNum").style.padding = "0 7px";
+			if(MblogMsgnum != ""){
+				document.getElementById("msgNum").innerHTML = MblogMsgnum;
+				document.getElementById("msgLi").style.display = "block";
+			}
+			if(MblogAtnum != ""){
+				document.getElementById("atNum").innerHTML = MblogAtnum;
+				document.getElementById("atLi").style.display = "block";
+			}
+			if(MblogFansnum != ""){
+				document.getElementById("fansNum").innerHTML = MblogFansnum;
+				document.getElementById("fansLi").style.display = "block";
+			}
+		}else{
+			document.getElementById("weiboTitle").innerHTML = "<a href='http://t.qq.com' target='_blank'>点击查看腾讯微博</a>";
+		}
+		if(QZoneTotalnum){
+			if(QZoneTotalnum > 99){
+				document.getElementById("qzoneNum").innerHTML = "99+";
+			}else{
+				document.getElementById("qzoneNum").innerHTML = QZoneTotalnum;
+			}
+			document.getElementById("qzoneNum").style.padding = "0 7px";
+			if(QZonePassivenum != ""){
+				document.getElementById("passiveNum").innerHTML = QZonePassivenum;
+				document.getElementById("passiveLi").style.display = "block";
+			}
+			if(QZoneInitnum != ""){
+				document.getElementById("InitNum").innerHTML = QZoneInitnum;
+				document.getElementById("InitLi").style.display = "block";
+			}
+			if(QZoneAboutnum != ""){
+				document.getElementById("AboutNum").innerHTML = QZoneAboutnum;
+				document.getElementById("AboutLi").style.display = "block";
+			}
+		}else{
+			document.getElementById("qzoneTitle").innerHTML = "<a href='http://qzone.qq.com' target='_blank'>点击查看QQ空间</a>";
+		}
+		if(QMailTotalnum){
+			if(QMailTotalnum > 99){
+				document.getElementById("mailNum").innerHTML = "99+";
+			}else{
+				document.getElementById("mailNum").innerHTML = QMailTotalnum;
+			}
+			document.getElementById("mailNum").style.padding = "0 7px";
+			weiDu = QMailTotalnum - QMailInboxnum - QMailBottlenum - QMailGmailnum - QMailDmailnum;
+			if(QMailInboxnum != ""){
+				if(weiDu != 0){
+					document.getElementById("inboxNum").innerHTML = Number(QMailInboxnum) + Number(weiDu);
+					document.getElementById("inboxLi").style.display = "block";
+				}else{
+					document.getElementById("inboxNum").innerHTML = QMailInboxnum;
+					document.getElementById("inboxLi").style.display = "block";
+				}
+			}else if(weiDu != 0){
+				document.getElementById("inboxNum").innerHTML = weiDu;
+				document.getElementById("inboxLi").style.display = "block";
+			}
+			if(QMailBottlenum != ""){
+				document.getElementById("bottleNum").innerHTML = QMailBottlenum;
+				document.getElementById("bottleLi").style.display = "block";
+			}
+			if(QMailGmailnum != ""){
+				document.getElementById("gmailNum").innerHTML = QMailGmailnum;
+				document.getElementById("gmailLi").style.display = "block";
+			}
+			if(QMailDmailnum != ""){
+				document.getElementById("dmailNum").innerHTML = QMailDmailnum;
+				document.getElementById("dmailLi").style.display = "block";
+			}
+			if(QMailInboxnum == "" && QMailBottlenum == "" && QMailGmailnum == "" && QMailDmailnum == ""){
+				document.getElementById("mailTitle").innerHTML = "<a href='http://mail.qq.com' target='_blank'>点击查看QQ邮箱</a>";
+			}
+		}else{
+			document.getElementById("mailTitle").innerHTML = "<a href='http://mail.qq.com' target='_blank'>点击查看QQ邮箱</a>";
+		}
+		/*
+		if(FriendTotalnum){
+			if(FriendTotalnum > 99){
+				document.getElementById("pengyouNum").innerHTML = "99+";
+			}else{
+				document.getElementById("pengyouNum").innerHTML = FriendTotalnum;
+			}
+			document.getElementById("pengyouNum").style.padding = "0 7px";
+			if(FriendPassivenum != ""){
+				document.getElementById("pengyouPassiveNum").innerHTML = FriendPassivenum;
+				document.getElementById("pengyouPassiveLi").style.display = "block";
+			}
+			if(FriendInitnum != ""){
+				document.getElementById("pengyouInitNum").innerHTML = FriendInitnum;
+				document.getElementById("pengyouInitLi").style.display = "block";
+			}
+			if(FriendAboutnum != ""){
+				document.getElementById("pengyouAboutNum").innerHTML = FriendAboutnum;
+				document.getElementById("pengyouAboutLi").style.display = "block";
+			}
+		}else{
+			document.getElementById("pengyouTitle").innerHTML = "<a href='http://www.pengyou.com' target='_blank'>点击查看朋友网</a>";
+		}
+		
+		document.getElementById("pengyouIcon").onmouseover = function(){
+			document.getElementById("pengyouSmart").style.display = "block";
+		}
+		document.getElementById("pengyouIcon").onmouseout = function(){
+			document.getElementById("pengyouSmart").style.display = "none";
+		}
+		*/
+		document.getElementById("mailIcon").onmouseover = function(){
+			document.getElementById("mailSmart").style.display = "block";
+		}
+		document.getElementById("mailIcon").onmouseout = function(){
+			document.getElementById("mailSmart").style.display = "none";
+		}
+		document.getElementById("qzoneIcon").onmouseover = function(){
+			document.getElementById("qzoneSmart").style.display = "block";
+		}
+		document.getElementById("qzoneIcon").onmouseout = function(){
+			document.getElementById("qzoneSmart").style.display = "none";
+		}
+		document.getElementById("weiboIcon").onmouseover = function(){
+			document.getElementById("weiboSmart").style.display = "block";
+		}
+		document.getElementById("weiboIcon").onmouseout = function(){
+			document.getElementById("weiboSmart").style.display = "none";
+		}
+		
+		document.getElementById("userName").innerHTML = userInfoName;
+		document.getElementById("logined").style.display = "block";
+		document.getElementById("loginAll").style.display = "none";
+		document.getElementById("loginOut").onclick = function(){
+			login.loginOut();
+			//MI &&　MI.Login.logout();//打通微博一键登录
+			//新版评论add
+			if(window['ifr_cmt_status'] && document.getElementById('commentIframe')){
+				 document.getElementById('commentIframe').contentWindow.publicLogout();
+				 //registerCoralEvent.publicLogout();
+			}
+			return false;
+		}
+		if(typeof loginAllCallBack=="function"){
+			loginAllCallBack(userInfoName);
+		}
+	}
+	
+	//新版评论add
+	if(window['ifr_cmt_status'] && document.getElementById('commentIframe')){
+		//registerCoralEvent.publicLogined(uin, nick, Face);
+		document.getElementById('commentIframe').contentWindow.publicLogined(uin, nick, Face);
+	}
+}
+function reloadLoginInfo(){
+var _obj = {"result":"0","Uin":QQ.localData.get('Uin'),"nick":QQ.localData.get('nick'),"Vip":QQ.localData.get('Vip'),"Face":QQ.localData.get('Face'),"info":{"QZone":{"totalnum":parseInt(QQ.localData.get('QZone-totalnum')),"passivenum":parseInt(QQ.localData.get('QZone-passivenum')),"initnum":parseInt(QQ.localData.get('QZone-initnum')),"aboutnum":parseInt(QQ.localData.get('QZone-aboutnum'))},/*"Friend":{"totalnum":parseInt(QQ.localData.get('Friend-totalnum')),"passivenum":parseInt(QQ.localData.get('Friend-passivenum')),"initnum":parseInt(QQ.localData.get('Friend-initnum')),"aboutnum":parseInt(QQ.localData.get('Friend-aboutnum'))},*/"QMail":{"totalnum":parseInt(QQ.localData.get('QMail-totalnum')),"inboxnum":parseInt(QQ.localData.get('QMail-inboxnum')),"bottlenum":parseInt(QQ.localData.get('QMail-bottlenum')),"gmailnum":parseInt(QQ.localData.get('QMail-gmailnum')),"dmailnum":parseInt(QQ.localData.get('QMail-dmailnum'))},"Mblog":{"totalnum":parseInt(QQ.localData.get('Mblog-totalnum')),"msgnum":parseInt(QQ.localData.get('Mblog-msgnum')),"atnum":parseInt(QQ.localData.get('Mblog-atnum')),"fansnum":parseInt(QQ.localData.get('Mblog-fansnum'))}}}
+	loginAll(_obj);
+}
+window.QQ = {};
+QQ.localData = {
+	 hname:location.hostname ? location.hostname : 'localStatus',
+	 isLocalStorage:window.localStorage ? true : false,
+	 dataDom:null,
+	 initDom:function(){ //初始化userData
+		 if(!this.dataDom){
+			 try{
+				 this.dataDom = document.createElement('input');//这里使用hidden的input元素
+				 this.dataDom.type = 'hidden';
+				 this.dataDom.style.display = "none";
+				 this.dataDom.addBehavior('#default#userData');//这是userData的语法
+				 document.body.appendChild(this.dataDom);
+				 var exDate = new Date();
+				 exDate = exDate.getDate()+30;
+				 this.dataDom.expires = exDate.toUTCString();//设定过期时间
+			 }catch(ex){
+				 return false;
+			 }
+		 }
+		 return true;
+	 },
+	 set:function(key,value){
+		 if(this.isLocalStorage){
+			 window.localStorage.setItem(key,value);
+		 }else{
+			 if(this.initDom()){
+				 this.dataDom.load(this.hname);
+				 this.dataDom.setAttribute(key,value);
+				 this.dataDom.save(this.hname)
+			 }
+		 }
+	 },
+	 get:function(key){
+		 if(this.isLocalStorage){
+			 return window.localStorage.getItem(key);
+		 }else{
+			 if(this.initDom()){
+				 this.dataDom.load(this.hname);
+				 return this.dataDom.getAttribute(key);
+			 }
+		 }
+	 },
+	 remove:function(key){
+		 if(this.isLocalStorage){
+			 localStorage.removeItem(key);
+		 }else{
+			 if(this.initDom()){
+				 this.dataDom.load(this.hname);
+				 this.dataDom.removeAttribute(key);
+				 this.dataDom.save(this.hname)
+			 }
+		 }
+	 }
+}
+QQ.Cookie={
+	set:function(name,value,expires,path,domain){
+		if(typeof expires=="undefined"){
+			expires=new Date(new Date().getTime()+3600*1000);
+		}
+		document.cookie=name+"="+escape(value)+((expires)?"; expires="+expires.toGMTString():"")+((path)?"; path="+path:"; path=/")+((domain)?";domain="+domain:"");
+	},
+	get:function(name){
+		var arr=document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+		if(arr!=null){
+			return unescape(arr[2]);
+		}
+		return null;
+	},
+	clear:function(name,path,domain){
+		if(this.get(name)){
+			document.cookie=name+"="+((path)?"; path="+path:"; path=/")+((domain)?"; domain="+domain:"")+";expires=Fri, 02-Jan-1970 00:00:00 GMT";
+		}
+	}
+};
+function getExpires(a){//a:hour
+	var expires=new Date(new Date().getTime()+(a?a:1)*24*3600*1000);
+	return expires;
+}
+
+window["login"] = {
+	loginCheck:function(){
+		if(QQ.Cookie.get("skey")){
+			uin = Number(QQ.Cookie.get("uin").substring(1));
+			skey = QQ.Cookie.get("skey");
+			try{
+				var loginScript = document.createElement ("script");
+				loginScript.charset="utf-8";
+				loginScript.src = "//qfwd.qq.com/?uin=" + uin + "&skey=" + skey + "&func=loginAll&refresh=0&ran="+Math.random();
+				document.getElementsByTagName('head')[0].appendChild(loginScript);
+				QQ.localData.set("loginTime", (new Date()).getTime());
+			}catch(e){}
+		}
+	},
+	loginCountCheck:function(obj){
+		if(document.getElementById(obj).innerHTML != ""){
+			document.getElementById(obj).innerHTML = "";
+			document.getElementById(obj).parentNode.parentNode.style.display = "none";
+		}
+	},
+	loginOut:function(){
+		//var _this = this;
+		UI.getScript('https://ui.ptlogin2.qq.com/js/ptloginout.js', function(){
+			pt_logout.logout(function(n){
+				if(!n){
+					//fail
+				}
+				else{
+					//success
+					login.loginOutCall();
+				}
+			});
+		});
+	},
+	loginOutCall: function(){
+		var d = (new Date).getTime();
+		//QQ.Cookie.clear("skey", '/', "qq.com");
+		document.getElementById("logined").style.display = "none";
+		document.getElementById("loginAll").style.display = "block";
+		login.loginCountCheck("weiboNum");
+		login.loginCountCheck("msgNum");
+		login.loginCountCheck("atNum");
+		login.loginCountCheck("fansNum");
+		login.loginCountCheck("qzoneNum");
+		login.loginCountCheck("passiveNum");
+		login.loginCountCheck("InitNum");
+		login.loginCountCheck("AboutNum");
+		login.loginCountCheck("mailNum");
+		login.loginCountCheck("inboxNum");
+		login.loginCountCheck("bottleNum");
+		login.loginCountCheck("gmailNum");
+		login.loginCountCheck("dmailNum");
+		/*
+		login.loginCountCheck("pengyouNum");
+		login.loginCountCheck("pengyouPassiveNum");
+		login.loginCountCheck("pengyouInitNum");
+		login.loginCountCheck("pengyouAboutNum");
+		*/
+		document.getElementById("weiboTitle").innerHTML = "腾讯微博:";
+		document.getElementById("qzoneTitle").innerHTML = "QQ空间:";
+		document.getElementById("mailTitle").innerHTML = "QQ邮箱:";
+		//document.getElementById("pengyouTitle").innerHTML = "朋友网:";
+		
+		document.getElementById("weiboNum").style.padding = "0 14px";
+		document.getElementById("qzoneNum").style.padding = "0 16px";
+		document.getElementById("mailNum").style.padding = "0 15px";
+		//document.getElementById("pengyouNum").style.padding = "0 16px 0 15px";
+		if(typeof loginOutCallBack=="function"){
+			loginOutCallBack();
+		}
+		login.cbArr = [];
+		login.cleanCbLogin();
+	},
+	loginSuccess:function(){
+		document.getElementById("loginBg").style.display = "none";
+		document.getElementById("login_div").style.left = "-9999px";
+		document.getElementById("logined").style.display = "block";
+		document.getElementById("loginAll").style.display = "none";
+		//加载回调
+		if(login.cbArr.length > 0){
+			for(var i = login.cbArr.length-1; i >= 0; i--){
+				login.cbArr[i]();
+			}
+		}
+		//点击回调
+		login.loginCheck();
+		login.cbLogin();
+		login.cleanCbLogin();
+		
+	},
+	cbArr : new Array(),//加载回调
+	cbLogin : function(){},//点击回调
+	cleanCbLogin : function(){
+		this.cbLogin = function(){}
+	}
+}
+function EA( node, type, listener ) { 
+    if (node.addEventListener) {
+        node.addEventListener( type, listener, false );
+        return true;
+    } else if(node.attachEvent) {
+        node['e'+type+listener] = listener;
+        node[type+listener] = function(){node['e'+type+listener]( window.event );}
+        node.attachEvent( 'on'+type, node[type+listener] );
+        return true;
+    }
+    return false;
+}
+//登录本地存储
+EA(window, "load", function(){
+	if(QQ.Cookie.get("skey")){
+		var _t = QQ.localData.get('loginTime') || 0, t = new Date().getTime();
+		if(t - _t > 60000 || QQ.Cookie.get("uin") != QQ.localData.get('Uin')) {
+			login.loginCheck();
+		}else{
+			reloadLoginInfo();
+		}
+	}
+});
+//]]>
+</script><!--[if !IE]>|xGv00|21283af2180ac4338fa0fbea90958f17<![endif]-->
+	</div>
+</div>
+<script type="text/javascript">
+(function(){var e={webmap:"webmap",qqindex:"qqindex",logkey:"logkey",onekey:"onekey",weibo:"weibo",qzone:"qzone",qmail:"qmail",friend:"friend",loginOut:"logquit",weiboIcon:"weiboinfor",qzoneIcon:"qzoneinfor",mailIcon:"qmailinfor",pengyouIcon:"friendinfor"},t=function(){for(var t in e){if(!e.hasOwnProperty(t))return;var n=document.getElementById(t);n&&n.setAttribute("bossZone",e[t])}};t()})()
+</script>
+<script type="text/javascript">
+//移动端左右边距
+if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){document.getElementsByTagName("body")[0].style.minWidth = "1028px";}
+</script>
+<!-- 全站迷你导航 结束 --><!--[if !IE]>|xGv00|9074ed72288a500ffa9a36d576c1f247<![endif]-->
+<!-- 全站迷你导航 结束 -->
+<div class="top">
+    <div class="block">
+        <img src="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/images/space.png" alt="空间">
+        <ul>
+            <li><a href="http://zj.qq.com/home/kt.htm" target="_blank">客厅</a></li>
+            <li><a href="http://zj.qq.com/home/ws.htm" target="_blank">卧室</a></li>
+            <li><a href="http://zj.qq.com/home/wsj.htm" target="_blank">卫生间</a></li>
+            <li><a href="http://zj.qq.com/home/cf.htm" target="_blank">厨房</a></li>
+            <li><a href="http://zj.qq.com/home/xg.htm" target="_blank">玄关</a></li>
+            <li><a href="http://zj.qq.com/home/ct.htm" target="_blank">餐厅 </a></li>
+   </ul>
+</div>
+    <div class="block">
+        <img src="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/images/layout.png" alt="布局">
+        <ul>
+            <li><a href="http://zj.qq.com/home/dsbjq.htm" target="_blank">电视墙</a></li>
+            <li><a href="http://zj.qq.com/home/dj.htm" target="_blank">吊顶</a></li>
+            <li><a href="http://zj.qq.com/home/gd.htm" target="_blank">隔断</a></li>
+            <li><a href="http://zj.qq.com/home/pc.htm" target="_blank">飘窗</a></li>
+            <li><a href="http://zj.qq.com/home/bt.htm" target="_blank">吧台</a></li>
+            <li><a href="http://zj.qq.com/home/ttm.htm" target="_blank">榻榻米</a></li>
+        </ul>
+    </div>
+    <div class="block">
+        <img src="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/images/type.png" alt="户型">
+        <ul>
+            <li><a href="http://zj.qq.com/home/xiaohuxing.htm" target="_blank">小户型</a></li>
+            <li><a href="http://zj.qq.com/home/yiju.htm" target="_blank">一居</a></li>
+            <li><a href="http://zj.qq.com/home/erju.htm" target="_blank">二居</a></li>
+            <li><a href="http://zj.qq.com/home/sanju.htm" target="_blank">三居</a></li>
+            <li><a href="http://zj.qq.com/home/fushi.htm" target="_blank">复式</a></li>
+            <li><a href="http://zj.qq.com/home/bieshu.htm" target="_blank">别墅</a></li>
+        </ul>
+    </div>
+    <div class="block">
+        <img src="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/images/style.png" alt="风格">
+        <ul>
+            <li><a href="http://zj.qq.com/home/jianyue.htm" target="_blank">简约</a></li>
+            <li><a href="http://zj.qq.com/home/zhongshi.htm" target="_blank">中式</a></li>
+            <li><a href="http://zj.qq.com/home/tianyuan.htm" target="_blank">田园</a></li>
+            <li><a href="http://zj.qq.com/home/xiandai.htm" target="_blank">现代</a></li>
+            <li><a href="http://zj.qq.com/home/oushi.htm" target="_blank">欧式</a></li>
+            <li><a href="http://zj.qq.com/home/meishi.htm" target="_blank">美式</a></li>
+        </ul>
+    </div>
+    <div class="block" style="border-right: 0">
+        <img src="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/images/special_55.png" alt="推荐">
+        <ul>
+            <li><a href="http://zj.qq.com/home/yj.htm" target="_blank">宜家</a></li>
+            <li><a href="http://zj.qq.com/home/xiegui.htm" target="_blank">鞋柜</a></li>
+            <li><a href="http://zj.qq.com/home/qiangzhi.htm" target="_blank">壁纸</a></li>
+            <li><a href="http://zj.qq.com/home/chuangliann.htm" target="_blank">窗帘</a></li>
+            <li><a href="http://zj.qq.com/home/jiajuu.htm" target="_blank">家具</a></li>
+            <li><a href="http://zj.qq.com/home/zhaopq.htm" target="_blank">照片墙</a></li>
+        </ul>
+    </div><!--[if !IE]>|xGv00|ddc5775fd5d62efb290bbe0e4e67b7e4<![endif]-->
+</div>
+<div class="container">
+    <div class="content" id="content">
+
+    </div>
+    <div class="holder"></div>
+</div><!--[if !IE]>|xGv00|5fc33b0292be6cb737d8c5708cac346e<![endif]-->
+<!--通用底部导航-->
+<style>
+    .tcopyright {width:1000px;margin:40px auto 30px;;padding:8px 0;font-size:12px;line-height:28px;color:#888; text-align:center; overflow:hidden;clear:both;}
+    .tcopyright .en{font-family:Arial;}
+    .tcopyright a{color:#888;text-decoration: none;}
+    .tcopyright a:hover{color:#00b9ff;text-decoration: underline;}
+</style>
+<div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+    <div> <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私权保护</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a> </div>
+    <div class="en">Copyright &copy; 1998 - 2013 Tencent. All Rights Reserved</div>
+    <div> <a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a> </div>
+</div>
+<!--通用底部导航 结束-->
+
+<script src="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/js/workmark.js"></script>
+<script src="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/js/handlebars-v2.min.js"></script>
+<script src="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/js/jPages.min.js"></script>
+
+<script src="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/js/jquery.fancybox.js"></script>
+<script id="item" type="text/x-handlebars-template">
+    {{#each this}}
+    <a class="item" data-fancybox-group="{{#getGallery @index}}{{/getGallery}}" href="{{img}}" title="{{desc}}">
+        <div class="con">
+            <img src="{{img}}" alt="">
+        </div>
+        <p>{{desc}}</p>
+    </a>
+    {{/each}}
+</script>
+<script>
+    var perNum = 12;//每页的条数
+    var jsonData = [
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/120/154/2236/145435290.jpg',
+            desc:'ㄇ字型的厨具设备，从热炒区、洗涤槽到吧台一路延伸，顺畅的动线规划做起家事来也可以很优雅、有条不紊。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/121/154/2236/145435291.jpg',
+            desc:'ㄇ字型的烹调动线，即使是倚窗洗碗都有了好心情。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/122/154/2236/145435292.jpg',
+            desc:'白色整齐的洁净橱柜创造了大量储物空间，整体厨房也让人的三餐更加放心。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/123/154/2236/145435293.jpg',
+            desc:'冰箱摆在厨房门后的右侧，U形的厨房总体台面空间充足，而大面积的窗户也为厨房提供了充足的光线与透风，整体非常的舒适好用。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/124/154/2236/145435294.jpg',
+            desc:'厨房的外立面做色彩处理，有中房中房的感觉。红色的门楣一直延伸到门套，和门厅的吊灯呼应。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/125/154/2236/145435295.jpg',
+            desc:'厨房地面铺设灰色的瓷砖，墙壁选用白色瓷砖，白色的橱柜和灰色的台面分别呼应地板和墙壁的颜色，让厨房看起来非常整齐干净。一小块蓝色马赛克瓷砖和亮黄色的收纳柜点亮空间色彩，避免了一成不变的枯燥感。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/127/154/2236/145435297.jpg',
+            desc:'厨房地面通铺白色瓷砖，白色橱柜与吧台柜体，空间收纳功能强大，米色的橱柜台面延续至吧台部分，做好菜直接可以通过吧台传菜至餐厅，具有很好的便利性。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/128/154/2236/145435298.jpg',
+            desc:'厨房地面通铺黑色地砖，白色的橱柜搭配黑灰色的墙面，小方砖让空间更有格调，纳入后阳台的厨房，增加了使用面积，也得到了不错的采光效果。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/129/154/2236/145435299.jpg',
+            desc:'厨房可以说是妈妈最常待的地方，我的感受是厨房一定要有洗切炒的动线，平行布局的厨房一定是大户型的，空间大一些也会舒服一些，对小户型的话就不适应了。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/131/154/2236/145435301.jpg',
+            desc:'厨房空间以黑白配的格调，台面以黑色的石材，搭配白色的橱柜，显得非常的简约舒适。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/132/154/2236/145435302.jpg',
+            desc:'厨房没有过多餐桌椅赘述，餐桌椅与其他基础用品皆是通用色彩。这一分淡淡的内敛，不言而喻。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/133/154/2236/145435303.jpg',
+            desc:'厨房设计是L型的，空间过渡十分流畅、自然。橱柜一侧紧挨窗户，采光和通风非常好；半封闭式的布局，让狭小的面积看起来更有空间感。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/134/154/2236/145435304.jpg',
+            desc:'厨房是狭长型的，所以在开门和动向上做了改动。从餐厅的图中可以看出，厨房的门很大，方便主人通过；将烹饪区安排在最里面，可以减少油烟飘到屋内，当然也少不了一个吸烟能力强大的油烟机。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/136/154/2236/145435306.jpg',
+            desc:'厨房也拥有大采光，显得亮丽洁净。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/137/154/2236/145435307.jpg',
+            desc:'厨房用到了实用的复合板和简洁现代白色台面，很好地平衡了餐厅的木质材料所带来的古雅的感觉。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/138/154/2236/145435308.jpg',
+            desc:'纯白的厨房清新干净，似乎与尘垢绝缘。SPIDER吊灯造型简洁灵动，吧凳透明轻盈，组合出一种会呼吸的现代感。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/139/154/2236/145435309.jpg',
+            desc:'打造厨房照明。想要无需重新布线的简易工作照明？只需用粘性胶带将射灯安装在厨柜下方。用电线套隐藏线缆，剥下再粘上即可。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/140/154/2236/145435310.jpg',
+            desc:'大厨房，做成L字形+一字形操作台，同时也做了大容量的橱柜来收纳家中的杂物，米黄色砖与木色橱柜的搭配，看起来干净又明亮。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/141/154/2236/145435311.jpg',
+            desc:'改善你的垃圾回收和清洁习惯。充分利用储物柜空间，将容易清空的垃圾桶挂在杆上，用于分装回收物品。利用搁板插件，打造双倍储物空间。使用柜门存放清洁物品和旧灯泡等零碎物品，以备日后回收。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/142/154/2236/145435312.jpg',
+            desc:'给卫生间增加一层表皮，变成了厨房里的重要储物间。灶台区放在岛台处，新增加一块隔板，做成了用餐区。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/144/154/2236/145435314.jpg',
+            desc:'灰色与原木色碰撞的厨房很有工业风质感，简约时尚。业主夫妇非常注重生活品质，不仅装了中央净水系统，还在厨房加了二道净水。中央净水是全屋水质的第一道净化，该设备带有超滤膜，能够过滤水质当中的细菌和杂质，实际通过这道过滤已经使水质达到直接饮用的标准。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/145/154/2236/145435315.jpg',
+            desc:'将厨房设置成开放式的原因一方面是因为二人虽然在北京，却都是地道的南方人口味清淡不重油烟，另一方面是因为两个人轮流做饭，为了让彼此做饭时都不无聊就设置了开放式厨房并且在旁边设置了方便聊天的吧台。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/146/154/2236/145435316.jpg',
+            desc:'经典黑白极简橱柜。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/149/154/2236/145435319.jpg',
+            desc:'开放式厨房让格局多了层次性。橱柜选用白色，让现代风格的家居在这简约融入整个风格中。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/150/154/2236/145435320.jpg',
+            desc:'开放式的厨房，“L”型的厨房设计，在烹饪区域将洗，切，烹区域有效的划分开来。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/151/154/2236/145435321.jpg',
+            desc:'人造石台面游走至水槽处转折架高，增添空间层次段落，也符合男女主人身高有别的使用需求。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/152/154/2236/145435322.jpg',
+            desc:'三面整体式的橱柜限定出一个厨房的工作区，同时又有了宽敞的台面和储物区，甚至可以将一些尺寸相当的小冰箱或微波炉隐藏在里面，所有东西都有足够的空间可以分门别类地摆放，整个厨房空间方便又整洁。壁式的储物柜储物功能极强，厨房上方空间也得到了充分利用。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/153/154/2236/145435323.jpg',
+            desc:'天蓝色的橱柜特别亮眼，也显得厨房特别干净整洁。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/154/154/2236/145435324.jpg',
+            desc:'为操作台腾出更多空间。添置挂杆，用来存放器具、干燥的碗盘等物品。充分利用天花板高度，在烤箱上方添置一个墙面轨道，用来存放常用物品，方便拿取。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/155/154/2236/145435325.jpg',
+            desc:'鲜艳的橘色无论放在哪里都会十分显眼，轻快的色调只要看一眼就能让人想起那香甜可口、颜色鲜艳的橙子。充满快乐愉悦的亮丽色彩，在夏天里更能带给我们无限的热情，激起人们头脑中乐观的那一面。餐厨房被移到采光良好的阳台上，以温暖的橙色为主色调，橙色的皮质沙发和个性吊灯在绿植和白鹤的环绕下并没有被它们所淹没，相反在它们的映衬下更加的夺目靓丽。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/156/154/2236/145435326.jpg',
+            desc:'用不同款式的椅子和桌布焕新厨房餐桌。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/157/154/2236/145435327.jpg',
+            desc:'与室内氛围相结合的家具的颜色，无缝衔接洁白无暇融于一体，有时候，简单即是最华丽的装饰。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/158/154/2236/145435328.jpg',
+            desc:'增加厨房储物空间。在侧墙上添置一个开放式橱柜，用来摆放你最喜欢的瑞典美食手册和食品盒。利用可移动推车，打造更多工作空间和储物空间。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/159/154/2236/145435329.jpg',
+            desc:'之前厨房的结构密不透风，采光效果也差。居然做完常规尺寸的橱柜后，旧冰箱带不进来，也许这是在设计师设计户型时，就没准备给用双开门的大冰箱。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/240/238/2221/144481455.jpg',
+            desc:'香草色的橱柜，配以淡绿色的“蜜蜂四季”瓷砖，经久不衰，现在已成为诸多厨房空间设计的模板。'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/242/238/2221/144481457.jpg',
+            desc:'白色可以“借走”些许凌乱，这个餐厨空间正是大面积利用了白色的这个作用，将自在的的生活过的很有滋味...'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/244/238/2221/144481459.jpg',
+            desc:'厨房风格简约，吊灯也颇有设计感...'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/245/238/2221/144481460.jpg',
+            desc:'厨房与餐厅相连可以让格局更加归一。白色的厨柜设计让人有简洁的感觉...'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/246/238/2221/144481461.jpg',
+            desc:'厨房做成开放式的，黑白色的橱柜配上黑白色的餐桌椅，尽显高端品质生活；椭圆形的吊顶跟客厅相得益彰...'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/247/238/2221/144481462.jpg',
+            desc:'带着古典的独特韵味吸引着人们的目光,搭配浅色的厨柜让人觉得自然舒适...'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/248/238/2221/144481463.jpg',
+            desc:'淡木色，更能给生活带来清新亮丽的感觉，感受淡雅的田园之风...'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/249/238/2221/144481464.jpg',
+            desc:'定制的原木厨柜，烹饪时感受无压力的自然惬意...'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/250/238/2221/144481465.jpg',
+            desc:'经典的美式格子线条，漆上大自然的青草浅绿，点亮了缤纷的乡村生活...'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/252/238/2221/144481467.jpg',
+            desc:'开放式厨房是方正的户型中不多的亮点...'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/254/238/2221/144481469.jpg',
+            desc:'深色地板结合彩色家居搭配结合，空间区域对比划分明确，使空间充满世外桃源之感...'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/0/239/2221/144481470.jpg',
+            desc:'狭长的开放式厨房，完全不担心油烟问题，猫星人的爬架放在冰箱旁边，很有生活气息...'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/156/173/2223/144594846.jpg',
+            desc:'厨房应该是一个整洁利落的地方，设计师善于利用每个细小的空间…'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/158/173/2223/144594848.jpeg',
+            desc:'开放式的厨房，与餐厅一体的格局宽敞大方又情趣…'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/159/173/2223/144594849.jpg',
+            desc:'在墙上挂上一幅图片，更有了家居的趣味。黄铜用具在实用牢固的基础上，彰显出低调的贵气…'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/204/174/2223/144595149.jpg',
+            desc:'厨房选择做开放式厨房，显得空间更大一些…'
+        },
+        {
+            img:'http://img1.gtimg.com/zj/pics/hv1/206/174/2223/144595151.jpg',
+            desc:'装挂杆一类的小改动也能让厨房更加有条理，更容易使用和共享…'
+        },
+            ]
+
+</script>
+<script src="//mat1.gtimg.com/zj/yuwanli/dzw1706/home/js/flow.js"></script>
+</body>
+</html><!--[if !IE]>|xGv00|6e20e276ca3c5035512dd6d7b3ebf664<![endif]-->

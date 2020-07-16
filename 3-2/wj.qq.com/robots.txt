@@ -1,0 +1,12 @@
+User-Agent: *
+Allow: /index.html
+Allow: /article/
+Disallow: /text_editor.html
+Disallow: /guide.html
+Disallow: /mine.html
+Disallow: /create_survey_by_template.html
+Disallow: /template.html
+Disallow: /edit.html
+Disallow: /s/
+Disallow: /survey/
+Disallow: /survey.html

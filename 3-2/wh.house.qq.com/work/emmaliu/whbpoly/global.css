@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+/*技术支持:武汉矩阵科技-www.juzhen.com*/
+/*公司地址:武汉市江汉区青年路308号花园道写字楼5楼*/
+/*客户服务电话:027-83557163 83557165*/
+
+
+
+@media all {
+body,html {width: 100%; height: 100%; padding: 0; margin: 0;}
+.clearfix:after { clear: both; content: "Matrix"; display: block; font-size: 0; height: 0; visibility: hidden; }
+*html .clearfix { height: 1%; }
+*+html .clearfix { height: 1%; }
+.clearfix { display: inline-block; }
+.clearfix { display: block; }
+.clearfix { zoom: 1 }
+html>body .clearfix { overflow: hidden; }
+.clear { clear: both; height: 0px; line-height: 0px; font-size: 0px; overflow: hidden; }
+.floatbox { overflow: hidden; }
+* html .floatbox { display: table; width: 100%; }
+#ie_clearing { display: none; }
+html * { font-size: 100.01%; }
+* { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+* html body * { overflow: visible; }
+html { overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+div:target { outline: 0 none; }
+select, input, label { vertical-align: middle; }
+input,button,select,textarea{ outline:none;} 
+textarea{ resize:none; } 
+ul, li { list-style-type: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; }
+fieldset, img { border: 0 solid; }
+a img { border: none; }
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+audio, canvas, video { display: inline-block; }
+[hidden] {
+display:none;
+}
+input[type="search"] { -webkit-appearance: textfield; }
+input[type="search"]::-webkit-search-decoration {
+-webkit-appearance:none;
+}
+
+h1 { font-size: 250%; }
+h2 { font-size: 200%; }
+h3 { font-size: 150%; }
+h4 { font-size: 133.33%; }
+h5 { font-size: 116.67%; }
+h6 { font-size: 116.67%; }
+p { line-height: 1.5em; }
+hr { margin: 0 0 0.5em 0; padding: 0 0 0.5em 0; border: 0; border-bottom: 1px #eee solid; background: transparent; color: #fff; }
+a { color: #515151; text-decoration: none; background: transparent; outline: 0; behavior: url(/scripts/base/hscfsy.); }
+a:hover, a:focus { text-decoration: underline; }
+a:focus { outline: none; }
+a:hover, a:active { outline: 0; }
+img, figure { margin: 0; }
+.flexible { margin-top: 1.5em; max-width: 100%; }
+* html .flexible { width: 98%; }
+.bordered { margin-top: 1.5em; border: 2px #eee solid; border: 2px rgba(255,255,255,1) solid; -webkit-box-shadow: 0 0 3px rgba(0,0,0,.25); -moz-box-shadow: 0 0 3px rgba(0,0,0,.25); box-shadow: 0 0 3px rgba(0,0,0,.25); }
+.box { border-radius: 0.3em; border-width: 1px; border-style: solid; border-color: #888; border-color: rgba(0,0,0,.3); -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.2) inset; -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.2) inset; box-shadow: 1px 1px 3px rgba(0,0,0,0.2) inset; color: #444; color: rgba(0,0,0,.8); padding: 1.4286em; margin: 1.5em 0 0 0; }
+.box > *:first-child { margin-top: 0; }
+label { font-family: Tahoma, Geneva, sans-serif; }
+.text_overflow { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+/*.opacity { -moz-opacity: 0.65; filter: alpha(opacity=65); opacity: 0.65; }*/
+.empty_div { height: 0px; overflow: hidden; }
+.overflow_auto { overflow: auto; }
+.b { font-weight: bold; }
+.font_11 { font-size: 11px; }
+.font_14 { font-size: 14px; }
+.font_16 { font-size: 16px; }
+.font_18 { font-size: 18px; }
+.yahei { font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", sans-serif; }
+.heiti { font-family: "\9ED1\4F53"; }
+.red, .RegMsgErr { color: #FF0000; margin:0 3px 0 4px; }
+.green, .RegMsgOk { color: #006600; }
+.white { color: #fff; }
+.black { color: #000; }
+.inputface { padding: 4px; border: 1px solid #ccc; vertical-align: middle; font-size: 12px; color: #000; overflow: hidden; }
+.solid_line { margin: 1px 0; height: 1px; line-height: 1px; border-bottom: 1px #ccc solid; }
+.dashed_line { margin: 1px 0; height: 1px; line-height: 1px; border-bottom: 1px #ccc dashed; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+
+.left { display: inline; float: left; }
+.right { display: inline; float: right; }
+.none { display: none; }
+.block { display: block; }
+.hidden { visibility: hidden; }
+.tc { display: block; text-align: center; }
+.upp { text-transform: uppercase; }
+.mAuto{ margin:0 auto; }
+.maxWid1000 { max-width:1000px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?"1000px":"");overflow:hidden; }
+.minWid1000 { min-width:1000px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>1000?"1000px":""); }
+}
+/* Copyleft 2011-2012, xu-gang @lastmodified Date: 2013-4-19 *//*  |xGv00|de19eb11c5f039eac02a95b376a7e297 */

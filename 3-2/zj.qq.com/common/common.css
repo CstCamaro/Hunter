@@ -1,0 +1,17 @@
+html, body{overflow:hidden}
+body,h1,h2,h3,h4,blockquote,p,dl,dt,dd,ul,ol,li,th,td,form,fieldset,legend,button,input,textarea{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 \5b8b\4f53,arial,sans-serif; color:#333;text-align:left}
+button,input,select,textarea,h1,h2,h3,h4{font-size:100%}
+em,i{font-style:normal}
+ol,ul{list-style:none; list-style-position:outside}
+table{border-collapse:collapse;border-spacing:0}
+th{ text-align:left; font-weight:400}
+img,fieldset{border:0;vertical-align:middle}
+a{color:#333;text-decoration:none;outline:none}
+a:hover{color:#c00;text-decoration:underline}
+.hide{display:none;}
+.show{display:block}
+
+.clx:after{content:"\20";clear:both;height:0;display:block;overflow:hidden}
+.clx{*zoom:1}
+.clear{font-size:0; line-height:0; height:0; overflow:hidden; clear:both; visibility:hidden}/*  |xGv00|79c52537facfb260d0854bff09881948 */

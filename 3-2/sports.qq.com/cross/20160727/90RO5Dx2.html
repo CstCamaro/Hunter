@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<!--
+Cross Builder V2.0
+page version: 4.3
+by 网络媒体事业群办公室_商业体验中心
+合作请RTX shelleyhe
+-->
+<head>
+    <meta charset="gb2312">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="Keywords" content="360">
+    <title>在现场！里约奥运全景美图</title>
+	<link rel="stylesheet" href="//mat1.gtimg.com/www/mb/cb2/global/assets/css/crossbuilder.css">  
+	<link rel="stylesheet" href="//mat1.gtimg.com/www/mb/cb2/global/assets/css/loading.css">
+    <link rel="stylesheet" href="//mat1.gtimg.com/www/mb/cb2/publish/panorama_assets/css/panorama_kr_style_v.1.1.css">
+    <link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb/publish/assets/css/cb_toolbar_v1.css"> <!-- qq-toolbar -->
+</head>
+
+<body>
+
+<!-- Import :: krpano.js :: could be shared across several panos or projects-->
+<script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/kr/krpano.js"></script>
+<div id='wx_pic' style='margin:0 auto;display:none;'><img src='http://inews.gtimg.com/newsapp_ls/0/442400800/0' /></div>
+<link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb/publish/assets/css/cb_toolbar_v2.css"><div class="cb_toolbar" id="logoPanel"><div class="mod_inner"><div class="logo"><a href="http://sports.qq.com" class="sportslogo"></a></div><div class="link"><ul><li><a href="http://www.qq.com" target="_blank">腾讯网首页</a></li><li class="end"><a href="http://www.qq.com/map/" target="_blank">网站导航</a></li></ul></div>
+			<script language="JavaScript">
+				var hdPic ={url:location.href,title:"0",pic: [], pic1: []};
+				 var cbtb_url = "";
+					var login = {
+						loginSuccess: function(){
+							ptlogin2_onClose();
+							cbtb_init();
+						}
+					};
+			</script>
+			<div class="shareList">
+				<div class="share_btn">
+					<span>分享到：</span>
+				</div>
+					<ul class="menu-bd">
+						<li class="share2weibo" id="cb_share2weibo" title="转播腾讯微博"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTweibo"></a></li>
+						<li class="share2qzone" id="cb_share2qzone" title="分享到我的QQ空间"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTzone"></a></li>
+						<li class="share2qq" id="cb_share2qq" title="分享到QQ好友"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTQQ"></a></li>
+						<li class="share2sina" id="cb_share2sina" title="转播到新浪微博"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTsina"></a></li>
+						<li class="share2wx" id="cb_share2wx" title="分享到微信"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTwx"></a></li>
+						<li class="share2wxf" id="cb_share2wxf" title="分享到朋友圈"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTwxf"></a></li>
+					</ul>
+					
+				<div class="tb_wx_share" id="cb_share_div" style="display:none;">
+						<div class="tb_wx_share_triangleF" id="cb_ts_triangle"></div>
+						<div class="tb_wx_share_left"><img src="http://inews.gtimg.com/newsapp_ls/0/442221065/0"></div>
+						<div class="tb_wx_share_right">
+						  <ul>
+							<li class="a"><div></div><p>扫一扫二维码</p></li>
+							<li class="i"></li>
+							<li class="b"><div></div><p>点击右上角图标</p></li>
+							<li class="i"></li>
+							<li class="c" id="cb_ts_wx"><div></div><p>发送给微信好友</p></li>
+							<li class="d" id="cb_ts_wxf"><div></div><p>分享到朋友圈</p></li>
+						  </ul>
+						</div>
+					</div>
+			</div>
+			<script language="JavaScript" src="//mat1.gtimg.com/www/mb/cb/publish/assets/js/cb_share_v1.js"></script>
+		</div><div class="tb_login_content">
+                <div id="tb_login_content_in" style="display:none;">
+                    <a href="javascript:void(0);" id="http_login">
+                        [登录]
+                    </a>
+                </div>
+                <div id="tb_login_content_out" style="display:none;">
+                    <span>
+                        您好，
+                        <i id="tb_qq_uid">
+                        </i>
+                    </span>
+                    <a href="javascript:void(0);" id="http_logout">
+                        [退出]
+                    </a>
+                </div>
+            </div>
+            <div id="login_div" class="login_div">
+                <iframe id="login_frame" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div id="overlay"></div>
+        </div>
+		<script language="JavaScript" src="//imgcache.qq.com/ptlogin/ac/v9/js/ptloginout.js"></script>
+		<script language="JavaScript" src="//mat1.gtimg.com/www/mb/cb/publish/assets/js/cbtb_qq_wx_userlogin_v1.js" charset="utf-8"></script>
+        <script language="JavaScript">
+            cbtb_init();
+        </script><!-- Loading Page -->
+<div class="page-loading">
+    <div class="table_box">
+        <div class="table_cell">
+            <div class="box-loading">
+                <div class="icon"></div>
+                <div class="bar">
+                    <span class="progress"><i>0<em>%</em></i></span>
+                </div>
+                <h4>LOADING</h4>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo"></div>
+    </div>
+</div>
+
+<!-- Front Page : Mobile , if none Mobile then (Nothing) ; data-src : 欢迎页背景图 -->
+<div class="page-front cover pf-mobile" data-src="http://inews.gtimg.com/newsapp_ls/0/448782753/0">
+    <!-- 设置对齐方式:'align_left', 'align_mid', 'align_right' -->
+    <div class="pf_content align_mid">
+        <div class="pf_logo ani">
+            <div class="pf_logo_box">
+                <!-- 欢迎页标题图 -->
+                <img src="">
+            </div>
+        </div>
+        <div class="pf_title ani">
+            <div class="pf_title_box">
+                <!-- 欢迎页标题 -->
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Front Page : PC , if none Mobile then (Nothing); data-src : 欢迎页背景图 -->
+
+<!-- Main Page : Panorama - NavButton -->
+<!-- page-main must show , if none then krmenu not show txt -->
+<div class="page-main">
+    <!-- <div id="info"> Debug Msg </div> -->
+
+        
+    
+    <!-- 陀螺仪 Button -->
+    <div class="box-deviOriButton">
+        <a class="btn-vr"></a>
+        <a class="btn-deviorient"></a>
+    </div>
+
+    <div id="panorama">
+        <!-- Set 'pano' :: KrPano-DomParent - -->
+        <div id="pano">
+            <script>
+                var krpanoObj = null;
+                // * Attention : swf(不变) - 必须相同域名; xml(项目对应) - 必须相同域名.
+            embedpano({swf:'//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/kr/krpano.swf', xml:'http://sports.qq.com/crossPic/sports/xml/10345_cdn.xml', target:'pano', html5:'auto', passQueryParameters:true, mwheel:true, initvars:{ROOT:''}, onready:krpanoReady});                function krpanoReady(krpano)
+                {   
+                    krpanoObj = krpano;
+                    krpanoObj.call("trace(krpano is ready...)");
+                }
+            </script>
+        </div>
+    </div>
+</div>
+
+<script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/jquery-1.10.2.min.js"></script>
+<script src="//mat1.gtimg.com/www/mb/cb2/publish/panorama_assets/js/Main_Kr_v2.6.js" charset="utf-8"></script>
+<script src="//mat1.gtimg.com/www/mb/cb/publish/assets_auto/js/api_v2.js" charset="utf-8"></script>  
+<script>
+
+$(function() {
+	console.log('ready');
+    //* 模型形状 ： cube - 十字型；sphere - 球体; halfsphere - 半球体
+    var modelShape = '';  
+    //* 首个场景-图片素材
+    var listShapeImgSrc =[
+        'http://sports.qq.com/crossPic/sports/161485/1.jpg','http://sports.qq.com/crossPic/sports/161492/1.jpg','http://sports.qq.com/crossPic/sports/161489/1.jpg'    ];
+
+    //* Page Object
+    var page = {
+        init : function($modelShape, $listImgSrc, $krpanoObj){
+            tool.init();
+            pageObj.init($modelShape, $listImgSrc, $krpanoObj);
+            return;
+        }
+    }
+    page.init(modelShape, listShapeImgSrc, krpanoObj);
+})	
+try{
+    //分享
+    var wxShareUrl = "http://sports.qq.com/cross/20160727/90RO5Dx2.html";
+    if(window.location.host.indexOf('m.')=="0" || wxShareUrl==""){
+        var wxShareUrl= window.location.href;
+        wxShareUrl = wxShareUrl.replace(window.location.hash,"");
+        wxShareUrl = wxShareUrl.replace(window.location.search,"");
+    }
+    cbApi.wexin("http://inews.gtimg.com/newsapp_ls/0/442400800/0",wxShareUrl,"在现场 这里约！约你现场看奥运","这个夏天，小编约你现场看奥运！全景美图带你看最火热的赛场，最劲爆的比赛！");
+}catch(e){}
+
+</script>
+
+    <script language="javascript" src="//mat1.gtimg.com/ping.js"></script>
+    <script language="javascript">
+    if(typeof(pgvMain) == 'function') pgvMain();
+    </script>
+    
+</body>
+</html>
+<!--[if !IE]>|xGv00|fd5c0a4194c0bcb9c3fdc44b0360e7ef<![endif]-->

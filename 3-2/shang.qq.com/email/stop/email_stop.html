@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<style>
+*{font-size:12px;}
+.body{background:#fff padding:0; margin:0;}
+.outer{background:url(//pub.idqqimg.com/wpa/images/bg.jpg) repeat-x}
+.inner{width:910px;margin:0 auto;padding-top:70px; background:url(//pub.idqqimg.com/wpa/images/logo.jpg) no-repeat; position:relative;}
+.feed_back{position:absolute;right:20px;top:10px;font-size:12px;text-decoration:none;color:#25628F;}
+.box{width:910px; height:190px; margin-top:15px; background:url(//pub.idqqimg.com/wpa/images/bg2.jpg) no-repeat;}
+.box h4{font-weight:normal; padding:33px 0 0 30px}
+.add{color:#0072C1; text-decoration:underline;cursor:pointer;display:inline-block;width:70px;height:30px;line-height:30px;padding-left:30px;background:url(//pub.idqqimg.com/wpa/images/s_add.png) 0 0 no-repeat;text-decoration:none!important;}
+</style>
+<script language="JavaScript" type="text/javascript" src="//pub.idqqimg.com/wpa/js/old/LiteAjaxEngine.js"></script>
+<script language="JavaScript" type="text/javascript" src="//pub.idqqimg.com/wpa/js/old/ceshi_shengji.js"></script>
+<title>QQ在线状态</title>
+</head>
+<script type="text/javascript">getStop()</script>
+<body onLoad="whileLoad_stop()">
+	<div class="outer">
+		<div class="inner">
+        	<a class="feed_back" href="//support.qq.com/portal/discuss_pdt/515_1.html" target="_blank">反馈建议</a>
+			<div class="box">
+				<h4>亲爱的用户<strong>:</strong></h4>
+				<p style="margin-left:61px;"><span id="nick">对方</span>“QQ在线状态”服务尚未启用，您需要添加对方为好友后才能与其进行会话。<br /><br />您也可邀请对方到 <a href="/">“QQ在线状态”官网</a> 开启服务。</p>
+			<!--<p style="margin:18px 0 0 428px;"><a class="add" onclick="javascript:AddFri.add();" href="javascript:;"></a></p>-->
+			</div>
+		</div>
+	</div>
+<script>
+var qq = parseInt(window.location.search.replace(/(^\S*qq=)|(&sig\S*$)/g,""));
+var AddFri = {
+    add: function(u){
+		if(isNaN(qq))
+			return false;
+		var u = qq;
+		es.report();
+		if(typeof AddFri.idafInited == 'undefined'){
+			AddFri.loadIDAF("//id.qq.com/af/js/id_af.js?v=20110302", function(){id_af_init({"appid": 10021, "lang": 2052});id_af_show(u)});
+		}else{
+			id_af_show(u);
+		}
+	},
+	
+	//加载加好友所需JS文件
+	loadIDAF: function(src, callback){			
+		var head = document.getElementsByTagName('head')[0]; 
+		var script = document.createElement("script");
+		script.onload = script.onreadystatechange = function() {
+			if ( !this.readyState ||this.readyState === "loaded" || this.readyState === "complete") { 
+				callback();
+				script.onload = script.onreadystatechange = null;
+				if (head && script.parentNode) {  
+					head.removeChild(script);  
+				} 
+			}
+		};
+		script.src = src;
+		head.insertBefore(script, head.firstChild); 
+		AddFri.idafInited = true;
+	}
+};
+var es = {
+	report:function(){
+		if(typeof pgvSendClick == "function"){
+			pgvSendClick({hottag:'R1JT.wp.email_stop.add'});
+		}
+	},
+	reportBNL: function(id){
+        var timestamp = +(new Date());
+        var img = document.createElement('img');
+        img.src = '//cgi.connect.qq.com/report/report?strValue=0&nValue=' + id + '&tag=0&t=' + timestamp;
+    },
+	loadScript:function(src, callback){   
+		var tag = document.createElement("script");   
+		tag.onload = tag.onreadystatechange = function() {
+			if ( !this.readyState ||this.readyState === "loaded" || this.readyState === "complete") {
+				tag.onload = tag.onreadystatechange = null;
+				if (tag.parentNode ) {
+					tag.parentNode.removeChild( tag );
+				}
+				callback && callback();
+			}
+		};	
+		tag.src = src;   
+		document.getElementsByTagName("head")[0].appendChild(tag);   
+	},
+	dummy:""
+}
+es.reportBNL(10633);
+/*window.setTimeout(function(){
+	es.loadScript("//pingjs.qq.com/tcss.ping.js");
+},200);*/
+(function(win){//added on 17/10/20
+    if(window.addEventListener){
+        window.addEventListener('load', statReport, false);
+    }
+    else if(window.attachEvent){
+        window.attachEvent('onload', statReport);
+    }    
+    function statReport(){
+        var url_tajs = '//tajs.qq.com/stats?sId=63918574',//new applied
+            url_pingjs = '//pingjs.qq.com/tcss.ping.js'; //old code compatible
+        if(location.protocol == 'https:') {
+        	url_pingjs = '//pingjs.qq.com/tcss.ping.https.js';//new applied
+        }       
+        es.loadScript(url_tajs, function(){
+            es.loadScript(url_pingjs, function(){
+                if(typeof pgvMain === 'function' && (location.hostname === 'shang.qq.com' || location.hostname ==='wp.qq.com')) {
+                    pgvMain();
+                }
+            });
+        });     
+    }     
+})(window);
+</script>
+</body>
+</html>

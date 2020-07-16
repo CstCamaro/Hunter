@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta http-equiv="refresh" content="0; url=http://v.qq.com/mobile/" />
+<title>移动终端下载页-腾讯视频</title>
+
+<link rel="stylesheet" type="text/css" href="http://imgcache.qq.com/mediastyle/tenvideo/css/download_ter.css?v=20140424&max_age=86400" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://imgcache.qq.com//mediastyle/video_2013/style/head.css?v=20140702&max_age=86400?v=20140424&max_age=86400" media="screen" />
+<link rel="shortcut icon" type="image/x-icon" href="" />
+<script type="text/javascript">
+(function(){
+if (/(android)|(iphone)|(ipod)/i.test(navigator.userAgent) && (typeof document.referrer != "string" || document.referrer.indexOf("m.v.qq.com/play/") == -1)) {
+var url="http://m.v.qq.com/mobile.html";
+if(/ptag=/i.test(location.search)){
+url += location.search;
+}
+else{
+url += "?ptag=v.download_mobile.adaptor";
+}
+if(document.referrer){
+url += "&mreferrer=" + encodeURIComponent(document.referrer);
+}
+location.href = url;
+}
+else{
+location.href =  "http://v.qq.com/mobile/";
+}
+})();
+</script>
+<!-- ./../template/ ...  -->
+<!--[if IE 6]>
+<script type="text/javascript">document.execCommand("BackgroundImageCache", false, true);</script>
+<![endif]-->
+<script type="text/javascript">
+try{document.domain="qq.com";}catch(e){}
+function picerr(obj,i){
+obj.onerror=null;
+obj.src="http://imgcache.gtimg.cn/tencentvideo_v1/vstyle/web/v3/style/images/nopic/"+(i||1)+".jpg";
+}
+var d0 = new Date();
+var timePoints=new Array();
+function _sreport(){
+if(Math.random()<0.1){
+var s = [];
+for(var i=0;i<timePoints.length;i++)
+if(!!timePoints[i]){
+s.push((i+1)+"="+(timePoints[i]-d0));
+}
+var url = "http://isdspeed.qq.com/cgi-bin/r.cgi?flag1=1422&flag2=202&flag3=5&"+s.join("&");
+window._speed_img = new Image();
+window._speed_img.src=url;
+}
+}
+</script>
+</head>
+<body class="old_page">
+
+<div class="site_top">
+<div class="mod_inner">
+<div class="mod_top_main">
+<div class="mod_top_download">
+<ul class="mod_top_download_list">
+<li class="first"><a href="http://v.qq.com/download.html" target="_blank" class="app_link" _hot="mainnav.download.pc" title="PC客户端">PC客户端</a></li>
+<li><a href="http://v.qq.com/mobile/" target="_blank" class="app_link" _hot="mainnav.download.phone" title="手机APP">手机APP</a></li>
+<li><a href="http://v.qq.com/mobile/" target="_blank" class="app_link" _hot="mainnav.download.pad" title="平板APP">平板APP</a></li>
+</ul>
+</div>
+</div>
+<div class="mod_top_upload">
+<a href="http://v.qq.com/boke/upload.html" target="_blank" class="link_upload" _hot="mynav.upload.sort"><i class="ico_upload_small"></i><span class="ico_text">上传</span></a>
+</div>
+</div>
+</div>
+
+
+
+
+<div role="banner" class="site_head">
+<div class="mod_inner">
+<h1 class="site_logo"><a href="/index.html" rel="home" _hot="mainnav.logo">腾讯视频</a></h1>
+<div class="mod_ad_head"></div>
+
+<div class="mod_quick">
+
+<div class="mod_head_attention" id="mod_head_favorites">
+<a href="http://v.qq.com/u/playlist.html" target="_blank" _hot="mynav.followclick.sort" class="btn_head" id="mod_head_favorites_trigger"><span class="btn_inner">看单<i class="triangle_down"></i></span></a>
+
+<div class="pop_info_wrap mod_attention_pop mod_attention_pop_login" id="mod_head_favorites_pop">
+<div class="pop_info_main">
+<i class="triangle_up"></i>
+<div class="pop_info_content" id="mod_head_favorites_content">
+<div class="pop_info_nothing pop_info_login">
+<a href="javascript:;" class="btn_login">登录</a>
+<p class="hint_text">请登录查看看单</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="mod_head_history" id="modHistory">
+<a href="http://v.qq.com/u/history/" target="_blank" class="btn_head" id="toggleHistory" _hot="mynav.historyclick.sort"><span class="btn_inner">看过<i class="triangle_down"></i></span></a>
+
+<div class="pop_info_wrap mod_history_pop" id="history_pop">
+<div class="pop_info_main">
+<i class="triangle_up"></i>
+<div class="pop_info_content" id="modHistoryContent"></div>
+</div>
+</div>
+
+</div>
+
+
+<div class="mod_head_user mod_head_user_notice" id="mod_head_user"><!-- hover 展开下拉浮层，在这里添加类名： open -->
+<a href="http://v.qq.com/u/"  class="user_avatar" id="mod_head_notice_trigger" _hot="mynav.userclick.sort" title="未登录">
+<img src="http://imgcache.gtimg.cn/mediastyle/video_2013/style/img/common/default_avatar.png" data-type="avatar" data-avatarsize=40/>
+<i class="ico_vip_grey" data-type="viplogo" style="display:none;"></i>
+<sup class="user_notice_dot" style="display:none;" id="mod_nav_user_notice_dot"></sup>
+</a>
+<!-- 用户头像浮层 开始 -->
+<div class="pop_info_wrap mod_user_pop" id="mod_head_notice_pop">
+<div class="pop_info_main">
+<i class="triangle_up"></i>
+<div class="pop_info_content">
+<div class="user_info cf">
+<div class="user_name">您好，<a href="http://v.qq.com/u/" _hot="mynav.userclick.sort" class="link_name" data-type="nickname"></a><a href="javascript:void(0);" class="link_quit" data-type="logout">[退出]</a></div>
+</div>
+<div class="user_notice" id="mod_head_notice_content">
+<div class="pop_info_nothing">
+<i class="ico_notice_large"></i>
+<p class="hint_text">您暂时还没有收到新提醒</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<form action="http://v.qq.com/search.html" class="search_form" method="get" target="_blank" name="sform" id="sform" accept-charset="utf-8">
+<div class="mod_search" role="search">
+<label for="keywords">搜索关键词</label>
+<input type="hidden" name="pagetype" value="3" id="hid_srh_p">
+<input type="hidden" name="stj2" value="search.search" id="searchbox_hid_tj2btn">
+<input type="hidden" name="stag" value="txt.index" id="searchbox_hid_stag">
+<input type="text" id="iWord" class="inp_txt" name="ms_key" maxlength="40" value="你正常吗" autocomplete="off" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="zh-CN" onfocus='if((typeof txv == "undefined" || typeof txv.common == "undefined" || !txv.common.initPageFlag) && this.value=="你正常吗"){this.value="";}' onblur='if((typeof txv == "undefined" || typeof txv.common == "undefined" || !txv.common.initPageFlag) && this.value==""){this.value="你正常吗";}' />
+
+<button class="search_btn" type="submit" _hot="mainnav.soso"><span>搜索</span></button>
+</div>
+<div class="search_suggest_wrap" id="modHeadSearchSuggest" style="display:none;">
+<div class="mod_pop mod_pop_suggest" id="mod_keywords_list">
+<ul id="sgt_list" style=""></ul>
+</div>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+
+<div class="site_navigation" role="navigation sitemap" id="txvSitemap">
+<div class="mod_navigation">
+<div class="nav_all" id="txvLeftSitemap">
+<div class="nav_all_item" id="toggleShowNav">
+<span class="dots"><i class="dot c1"></i><i class="dot c2"></i><i class="dot c3"></i></span>
+<a href="javascript:;" id="modTxvMainHeadLink" class="nav_item" _hot="mainnav.home">分类导航</a>
+<a href="javascript:void(0);" class="nav_fold_btn"><i class="ico_td">展开所有导航</i></a>
+</div>
+<div class="mod_nav_site">
+<ul>
+<li class="nav_tv">
+<i class="dot c1"></i>
+<a href="/tv/"  title="电视剧" _hot="mainnav.ver_nav.tv" class="nav_item">电视剧</a>
+<a href="http://v.qq.com/tv/yingmei/"  target="_blank"  title="英美剧" class="nav_item_sub" _hot="mainnav.ver_nav.tv.1">英美剧</a>
+</li><li class="nav_movie">
+<i class="dot c2"></i>
+<a href="/movie/"  title="电影" _hot="mainnav.ver_nav.movie" class="nav_item">电影</a>
+<a href="http://v.qq.com/cinema/index.html"  target="_blank"  title="首播影院" class="nav_item_sub" _hot="mainnav.ver_nav.movie.1">首播影院</a><a href="http://v.qq.com/doco/"  target="_blank"  title="纪录片" class="nav_item_sub" _hot="mainnav.ver_nav.movie.2">纪录片</a>
+</li><li class="nav_variety">
+<i class="dot c3"></i>
+<a href="/variety/"  title="综艺" _hot="mainnav.ver_nav.variety" class="nav_item">综艺</a>
+<a href="http://v.qq.com/zgdrxV5/ChinatalentV5.htm"  target="_blank"  title="中国达人秀" class="nav_item_sub" _hot="mainnav.ver_nav.variety.1">中国达人秀</a><a href="http://v.qq.com/variety/column/column_5799.html"  target="_blank"  title="好歌曲" class="nav_item_sub" _hot="mainnav.ver_nav.variety.2">好歌曲</a>
+</li><li class="nav_ent">
+<i class="dot c4"></i>
+<a href="/ent/"  title="娱乐" _hot="mainnav.ver_nav.ent" class="nav_item">娱乐</a>
+<a href="http://v.qq.com/music/"  target="_blank"  title="MV" class="nav_item_sub" _hot="mainnav.ver_nav.ent.1">MV</a><a href="http://v.qq.com/fun/"  target="_blank"  title="搞笑" class="nav_item_sub" _hot="mainnav.ver_nav.ent.2">搞笑</a><a href="http://v.qq.com/fashion/"  target="_blank"  title="时尚" class="nav_item_sub" _hot="mainnav.ver_nav.ent.3">时尚</a>
+</li><li class="nav_news">
+<i class="dot c5"></i>
+<a href="/news/"  target="_blank"  title="新闻" _hot="mainnav.ver_nav.news" class="nav_item">新闻</a>
+<a href="http://v.qq.com/newsshow/"  target="_blank"  title="新闻晚8点" class="nav_item_sub" _hot="mainnav.ver_nav.news.1">新闻晚8点</a>
+</li><li class="nav_sports">
+<i class="dot c6"></i>
+<a href="/sports/"  title="体育" _hot="mainnav.ver_nav.sports" class="nav_item">体育</a>
+<a href="http://sports.qq.com/nbavideo/"  target="_blank"  title="NBA" class="nav_item_sub" _hot="mainnav.ver_nav.sports.1">NBA</a><a href="http://v.qq.com/sports/isocce/uefa/index.htm"  target="_blank"  title="欧冠" class="nav_item_sub" _hot="mainnav.ver_nav.sports.2">欧冠</a><a href="http://sports.qq.com/isocce/lavideo.htm"  target="_blank"  title="西甲" class="nav_item_sub" _hot="mainnav.ver_nav.sports.3">西甲</a>
+</li><li class="nav_life">
+<i class="dot c7"></i>
+<a href="/fashion/"  title="时尚" _hot="mainnav.ver_nav.life" class="nav_item">时尚</a>
+<a href="http://v.qq.com/life/"  target="_blank"  title="生活" class="nav_item_sub" _hot="mainnav.ver_nav.life.1">生活</a><a href="http://v.qq.com/baby/index.html"  target="_blank"  title="育儿" class="nav_item_sub" _hot="mainnav.ver_nav.life.2">育儿</a><a href="http://v.qq.com/travel/"  target="_blank"  title="旅游" class="nav_item_sub" _hot="mainnav.ver_nav.life.3">旅游</a>
+</li><li class="nav_cartoon">
+<i class="dot c8"></i>
+<a href="/cartoon/"  title="动漫" _hot="mainnav.ver_nav.cartoon" class="nav_item">动漫</a>
+<a href="http://v.qq.com/kid/"  target="_blank"  title="儿童动画片" class="nav_item_sub" _hot="mainnav.ver_nav.cartoon.1">儿童动画片</a>
+</li><li class="nav_games">
+<i class="dot c9"></i>
+<a href="/games/"  title="游戏" _hot="mainnav.ver_nav.games" class="nav_item">游戏</a>
+<a href="http://v.qq.com/games/list/502_50201/0_0_617/1_0.html"  target="_blank"  title="网游" class="nav_item_sub" _hot="mainnav.ver_nav.games.1">网游</a><a href="http://v.qq.com/games/list/502_50201/0_0_614/1_0.html"  target="_blank"  title="电竞" class="nav_item_sub" _hot="mainnav.ver_nav.games.2">电竞</a>
+</li><li class="nav_education">
+<i class="dot c10"></i>
+<a href="/class/"  target="_blank"  title="精品课" _hot="mainnav.ver_nav.education" class="nav_item">精品课</a>
+<a href="http://v.qq.com/v/"  target="_blank"  title="微讲堂" class="nav_item_sub" _hot="mainnav.ver_nav.education.1">微讲堂</a>
+</li>
+</ul>
+</div>
+</div>
+<span class="site_navigation_left"></span>
+<span class="site_navigation_right"></span>
+</div>
+</div>
+
+<div class="container_25">
+<div class="grid_25">
+<ul class="down_tabs clearfix">
+<!-- 切换selected -->
+<li class=""><a href="download.html">PC WINDOWS版</a></li>
+<li class="selected tab_other"><a href="http://v.qq.com/mobile/">移动终端版</a></li>
+</ul><!--.down_tabs -->
+</div><!--.grid_25 -->
+<div class="grid_25">
+<div class="down_banner" id="topfocus">
+
+<li ><img src="http://i.gtimg.cn/qqlive/images/20121030/i1351577679_1.jpg" /></li>
+
+<li style="display:none;"><img _src="http://imgcache.qq.com/qqlive/images/20110825/i1314239340_1.jpg" /></li>
+
+<li style="display:none;"><img _src="http://imgcache.qq.com/qqlive/images/20110430/i1310539381_1.jpg" /></li>
+
+</div>
+
+<p class="down_banner_tabs">
+
+<a href="javascript:;" class="selected"></a>
+
+<a href="javascript:;" ></a>
+
+<a href="javascript:;" ></a>
+
+</p>
+
+</div><!--.grid_25 -->
+<div class="grid_25">
+
+<div class="down_project clearfix" id="modMobile_0">
+<div class="down_1">
+<div class="down_pro">
+<img src="http://imgcache.qq.com/qqlive/images/20110913/i1315889380_1.jpg" onerror="picerr(this)"/>
+<div class="down_txt">
+<h3>腾讯视频For iPhone版</h3>
+<ul>
+<li>版本：v2.6.0</li>
+<li>支持：苹果iOS系统版本4.0或更高版本</li>
+<li>容量：6.2MB</li>
+<li>安装方法：通过App Store安装</li>
+</ul>
+<a href="http://itunes.apple.com/cn/app/id458318329?mt=8" class="down_btn" target="_blank">立即下载</a>
+</div>
+</div><!--.down_pro -->
+</div>
+<div class="down_2">
+<div class="down_intro">
+<h3>版本特性</h3>
+<ul>
+<li>1.新增视频分享到QQ、空间和新浪微博，小伙伴们一起来看视频！</li>
+<li>2.下载体验更爽！锁屏也能继续下载。</li>
+<li>3.设置又添新功能，支持下载超清、高清等多种清晰度。</li>
+<li>4.修复iOS4.3系统下无法缓存的问题。</li>
+<li>5.支持iOS7系统下观看视频。</li>
+
+</ul>
+</div>
+</div>
+<div class="down_3">
+<div class="down_intro">
+<h3>手机拍摄二维码</h3>
+<img src="http://i.gtimg.cn/qqlive/images/20131009/i1381288484_qr.jpg" alt="二维码图片" />
+</div>
+</div>
+</div><!--.dowm_project -->
+
+<div class="down_project clearfix" id="modMobile_2">
+<div class="down_1">
+<div class="down_pro">
+<img src="http://i.gtimg.cn/qqlive/images/20111219/i1324268758_1.jpg" onerror="picerr(this)"/>
+<div class="down_txt">
+<h3>腾讯视频For iPad版</h3>
+<ul>
+<li>版本：v2.3.0</li>
+<li>支持：苹果iOS系统版本4.0或更高版本</li>
+<li>容量：14MB</li>
+<li>安装方法：通过App Store安装</li>
+</ul>
+<a href="http://itunes.apple.com/cn/app/id407925512?mt=8" class="down_btn" target="_blank">立即下载</a>
+</div>
+</div><!--.down_pro -->
+</div>
+<div class="down_2">
+<div class="down_intro">
+<h3>版本特性</h3>
+<ul>
+<li>1.新增众多全网独播和腾讯原创内容，只为满足“视频控”。</li>
+<li>2.优化播放器快捷手势，大幅减少误操作。</li>
+<li>3.离线缓存增加文件夹管理功能，让你的剧集更一目了然。</li>
+<li>4.完善了airplay锁屏后无法继续播放、与电视进度不同步的问题。</li>
+<li>5.看完一部不知道再看啥？相关推荐告诉你，多维度精准命中！</li>
+
+</ul>
+</div>
+</div>
+<div class="down_3">
+<div class="down_intro">
+<h3>手机拍摄二维码</h3>
+<img src="http://i.gtimg.cn/qqlive/images/20131009/i1381288547_qr.jpg" alt="二维码图片" />
+</div>
+</div>
+</div><!--.dowm_project -->
+
+<div class="down_project clearfix" id="modMobile_3">
+<div class="down_1">
+<div class="down_pro">
+<img src="http://imgcache.qq.com/qqlive/images/20110825/i1314260010_1.jpg" onerror="picerr(this)"/>
+<div class="down_txt">
+<h3>腾讯视频For Android Phone版</h3>
+<ul>
+<li>版本：V2.8.1</li>
+<li>支持：Android系统版本2.0及更高版本；支持320x480、480x800、480x854等分辨率</li>
+<li>容量：8.3MB</li>
+<li>安装方法：下载应用后直接安装apk文件</li>
+</ul>
+<a href="http://dldir1.qq.com/qqmi/QQLive_Android_V3.1.0.5826_51.apk" class="down_btn" target="_blank">立即下载</a>
+</div>
+</div><!--.down_pro -->
+</div>
+<div class="down_2">
+<div class="down_intro">
+<h3>版本特性</h3>
+<ul>
+<li>1.提高稳定性，修复了部分机型的闪退。</li>
+<li>2.修复了缓存可能失败的问题。</li>
+<li>3.可以在电影频道中单独筛选出微电影了</li>
+
+</ul>
+</div>
+</div>
+<div class="down_3">
+<div class="down_intro">
+<h3>手机拍摄二维码</h3>
+<img src="http://i.gtimg.cn/qqlive/images/20131023/i1382529261_1.jpg" alt="二维码图片" />
+</div>
+</div>
+</div><!--.dowm_project -->
+
+<div class="down_project clearfix" id="modMobile_4">
+<div class="down_1">
+<div class="down_pro">
+<img src="http://imgcache.qq.com/qqlive/images/20110429/i1310475844_1.jpg" onerror="picerr(this)"/>
+<div class="down_txt">
+<h3>腾讯视频For Android Pad版</h3>
+<ul>
+<li>版本：V1.3.0</li>
+<li>支持：Android系统版本2.2及更高版本；支持1024*600、1024*768、1280*800几种分辨率，兼容800*600分辨率。</li>
+<li>容量：7.2MB</li>
+<li>安装方法：下载应用后直接安装apk文件</li>
+</ul>
+<a href="http://dldir1.qq.com/qqmi/QQLiveHD_Android_1.3.0.4112.apk" class="down_btn" target="_blank">立即下载</a>
+</div>
+</div><!--.down_pro -->
+</div>
+<div class="down_2">
+<div class="down_intro">
+<h3>版本特性</h3>
+<ul>
+<li>1.新增消息提醒，最新内容第一时间提醒您观看；</li>
+<li>2.优化交互体验，详情页支持手势滑动关闭；</li>
+<li>3.修正潜在问题，使用更轻松。</li>
+
+</ul>
+</div>
+</div>
+<div class="down_3">
+<div class="down_intro">
+<h3>手机拍摄二维码</h3>
+<img src="http://i.gtimg.cn/qqlive/images/20131009/i1381288587_qr.jpg" alt="二维码图片" />
+</div>
+</div>
+</div><!--.dowm_project -->
+
+<div class="down_project clearfix" id="modMobile_5">
+<div class="down_1">
+<div class="down_pro">
+<img src="http://i.gtimg.cn/qqlive/images/20120207/i1328598827_1.jpg" onerror="picerr(this)"/>
+<div class="down_txt">
+<h3>腾讯视频For Windows Phone版</h3>
+<ul>
+<li>版本：v1.29</li>
+<li>支持：Windows Phone系统版本7.5及更高版本；支持800*480分辨率，</li>
+<li>容量：2.0MB</li>
+<li>安装方法：访问Windwos Phone在线商店下载应用；</li>
+</ul>
+<a href="http://www.windowsphone.com/en-US/apps/f3e17c80-17ab-4e1f-9318-279d5402f150" class="down_btn" target="_blank">立即下载</a>
+</div>
+</div><!--.down_pro -->
+</div>
+<div class="down_2">
+<div class="down_intro">
+<h3>版本特性</h3>
+<ul>
+<li>1.完善了视频下载功能；</li>
+<li>2.新增了直播频道；</li>
+<li>3.增加了固定节目到桌面的功能，可以快速观看收藏的节目；</li>
+<li>4.优化了部分界面和操作体验。</li>
+
+</ul>
+</div>
+</div>
+<div class="down_3">
+<div class="down_intro">
+<h3>手机拍摄二维码</h3>
+<img src="http://i.gtimg.cn/qqlive/images/20131009/i1381288609_qr.jpg" alt="二维码图片" />
+</div>
+</div>
+</div><!--.dowm_project -->
+
+</div>
+</div>
+<div class="foot">
+<p class="footermenu">
+<a href="http://www.tencent.com/" rel="nofollow" target="_blank">关于腾讯</a> |
+<a href="http://www.tencent.com/index_e.shtml" rel="nofollow" target="_blank">About Tencent</a> |
+<a href="http://www.qq.com/contract.shtml" rel="nofollow" target="_blank">服务条款</a> |
+<a href="http://adver.qq.com/" rel="nofollow" target="_blank">广告服务</a> |
+<a href="http://hr.tencent.com/" rel="nofollow" target="_blank">腾讯招聘</a> |
+<a href="http://service.qq.com/" rel="nofollow" target="_blank">客服中心</a> |
+<a href="http://www.qq.com/map/" rel="nofollow" target="_blank">网站导航</a>
+</p>
+<p class="copyrighten">Copyright &copy; 1998 - <span><script language="javascript">document.write(new Date().getFullYear());</script></span> Tencent. <a target="_blank" href="http://www.tencent.com/en-us/le/copyrightstatement.shtml" rel="nofollow">All Rights Reserved.</a></p>
+<p class="copyrightzh">腾讯公司 <a  target="_blank" href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" rel="nofollow">版权所有</a> <a  target="_blank" href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" rel="nofollow">腾讯网络文化经营许可证</a></p>
+</div>
+<script language="javascript">timePoints[0]=new Date();</script>
+
+<script type="text/javascript" src="http://qzs.qq.com/tencentvideo_v1/js/txv.base.min.js?v=20150909&max_age=2592000"></script>
+
+<script type="text/javascript" src="http://qzs.qq.com/c/=/tencentvideo_v1/js/txv.base.min.js,/tencentvideo_v1/js/txv.download.min.js?v=20150909&max_age=2592000"></script>
+<script language="javascript">
+timePoints[1]=new Date();
+txv.download.init();
+timePoints[2]=new Date();
+_sreport();
+</script>
+</body>
+</html>

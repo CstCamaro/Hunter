@@ -1,0 +1,274 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/festival/chunjie/20190205-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="春节，新年，节日，开心，幸福，回家，时光画轴">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 20:20:48';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-02-05", //日期，格式为 年-月-日
+	"cmd_id": "3683135044", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "chunjie2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="chunjie2019" style="display:none;">
+<p>春节，是一年之岁首，农历新年，传统上的“年节”。传统名称分别有新春、新岁、新禧、大年等，口头上又称度岁、过年。春节历史悠久，由上古时代岁首祭祀活动演变来，其起源蕴含着丰厚深邃的人文与自然文化内涵。年节作为中华民族悠久历史文化的重要组成部分，反映了古代人民丰富的社会文化生活。在古代民间，人们从腊月的腊祭或腊月二十三或二十四的祭灶便开始“忙年”了，一直到正月十九日。现代的新年节期一般是指农历正月初一至正月十五（元宵节）。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7udmTQEIRHcbtOG9UkFGqPFiauHEGuCaNmWKxnOzf0xye8a9kibxeUPNxQ/640?wx_fmt=jpeg" title="chunjie1">
+<p>过春节前，别井离乡的人们都尽可能地回到家里和亲人团聚，共享天伦之乐。春节期间，亲朋好友之间都会相互走访拜年，表达对亲朋间的情怀以及对新一年生活的美好祝福。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7uVr6gaowP9SlQxr07DyvLgbyia0O2liauLaQpklXoV8guQfzJrpNMEiaXA/640?wx_fmt=jpeg" title="chunjie2">
+<p>春节活动均以除旧布新、迎禧接福、祭神祭祖、祈求丰年为主要内容，带有浓郁的各民族特色。受到中华文化的影响，属于汉字文化圈的一些国家和民族也有庆贺新春的习俗。春节与清明节、端午节、中秋节并称为中国四大传统节日。春节民俗经国务院批准列入第一批国家级非物质文化遗产名录。</p>
+<h2>民间习俗</h2>
+<h3>祭灶</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7uaKju8DLmv9FSXXHZduwuFkup9X7Nicd0747iaDMf0kmLsLquib3Ir9l3w/640?wx_fmt=jpeg" title="chunjie3">
+<p>农历十二月二十三日祭灶，是日入夜后要把灶台刷干净，把旧的灶君取下烧掉，除至夕日晨早把新像贴上，一送一迎，都要摆置酒肉、糖果、甘蔗、米果等，烧香、点烛、放纸炮。民间祭灶，源于古人拜火习俗，祭灶在中国民间有几千年历史了，灶神信仰都是中国百姓对“衣食有余”梦想追求的反映。</p>
+<h3>扫尘</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7ur22m7R77FZffgDheX6pC44vdfsKPZCYZnGbGyUicWKRpSKk2fXnW3oQ/640?wx_fmt=jpeg" title="chunjie4">
+<p>新年前夕“腊月二十四，扫尘（亦称扫屋）的习俗 。按民间的说法：因“尘”与“陈”谐音，新春扫尘有“除陈布新”的涵义，其用意是要把一切穷运、晦气统统扫出门。每逢春节来临，家家户户都要打扫环境，清洗各种器具，拆洗被褥窗帘，洒扫六闾庭院，掸拂尘垢蛛网，疏浚明渠暗沟。到处洋溢着欢欢喜喜搞卫生、干干净净迎新春的欢乐气氛。千百年来，每年从农历腊月二十三日起到年三十，民间把这段时间叫做“迎春日”，也叫“扫尘日”，在春节前扫尘搞卫生，是中国人民素有的传统习惯。</p>
+<h3>年夜饭</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7ud9xMJFmzicd8MWYQCaMNJpCCvlmGvrTYpoHMIrUtUjuOGDlCaZkRbmg/640?wx_fmt=jpeg" title="chunjie5">
+<p>年夜饭又称团年饭，一年一度的年夜饭对中国人是极其重要的，一家老小互敬互爱、共叙天伦，围坐餐桌旁，倍感幸福。人们十分注重除夕的“团年饭”，除合家团圆、聚天伦之乐外，也祈求一家大小平安，在外工作的人都赶回来过新年。团年饭是过春节的重头戏，不但丰富多彩，而且很讲究意头。吃团年饭前先祭祖或拜神，香烛烧完才开饭。席上一般有鸡（寓有计）、鱼（寓年年有余）、蚝豉（寓好市）、生菜（寓生财）、腐竹（寓富足）等以求吉利。</p>
+<h3>守岁</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7uwQaopSgqWHCQic1KbibxHAicWEic77icn07KGGUbj0pEIkcibRPMkUwWIScA/640?wx_fmt=jpeg" title="chunjie6">
+<p>除夕守岁是最重要的年俗活动之一，守岁之俗由来已久。魏晋时已形成除夕守岁的习俗。晋朝周处所著的《风土记》中说：除夕之夜大家各相与赠送，称“馈岁”；长幼聚欢，祝颂完备，称“分岁”；终岁不眠，以待天明，称“守岁”。新旧年交替的时刻一般为夜半时分。“一夜连双岁，五更分二天”，除夕之夜，全家团聚在一起，吃过年夜饭，点起蜡烛或油灯，围坐炉旁闲聊，等着辞旧迎新的时刻，通宵守夜，象征着把一切邪瘟病疫照跑驱走，期待着新的一年吉祥如意。</p>
+<h3>拜年</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7uBynSveofMcwu5RHA78FlnzoNYDmGw8d5t7KaPwsgSjZs8Ztib7fkosQ/640?wx_fmt=jpeg" title="chunjie7">
+<p>新年，人们都早早起来，穿上最漂亮的衣服，打扮得整整齐齐，出门去走亲访友，相互拜年，恭祝来年大吉大利。现代社会通行的贺年卡在中国古代已经实行，早在宋代，皇亲贵族士大夫的家族与亲族之间已使用专门拜年的贺年片，叫做“名刺”或“名贴”。</p>
+<h3>压岁钱</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_png/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7uGhGicCIp3LVUDD5ibaglXvu95q90v1QHpd1ibp4Ye0zvreSpnDCgd1buw/640?wx_fmt=png" title="chunjie8">
+<p>每年除夕夜长辈可将事先准备好的压岁钱分给晚辈，据说压岁钱可以压住邪祟，晚辈得到压岁钱就可以平平安安度过一岁。压岁钱有两种，一种是以彩绳穿线编作龙形，置于床脚，此记载见于《燕京岁时记》；另一种是最常见的，即由家长将钱装入红包里给小孩压岁。压岁钱可除夕夜当场赏给晚辈，亦可在除夕夜孩子睡着时，由家长偷偷地放在孩子的枕头底下。现在长辈给晚辈发压岁钱的习俗仍然盛行。</p>
+<h3>贴春联</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_png/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7uTvcH6wOibWnzK5U5Ac5D2jvtbWc0ahsY5u56hXYCAwexr4Waeia36jTQ/640?wx_fmt=png" title="chunjie9">
+<p>年二十八、二十九或三十日家家户户贴“年红”，年红亦称春联。根据《玉烛宝典》、《燕京岁时记》等著作记载，春联的原始形式就是人们所说的“桃符”。贴春联也叫贴门对、春贴、对联、对子、桃符等，它以工整、对偶、简洁、精巧的文字描绘时代背景，抒发美好愿望，是中国特有的文学形式。每逢春节，无论城市还是农村，家家户户都要精选一幅大红春联贴于门上，为节日增加喜庆气氛。据说这一习俗在明代开始盛行，到了清代，春联的思想性和艺术性都有了很大的提高。</p>
+<h3>燃爆竹</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmlVZYK2y8Jvcekw0LhpibnJicibwZpMZfOAWVxiaibU4adO1zWwGMvia8W8ZPMrpo6Cricj8fTPAgYYNQJGA/640?wx_fmt=jpeg" title="chunjie10">
+<p>中国民间有“开门爆竹”一说。即在新的一年到来之际，家家户户开门的第一件事就是燃放爆竹，以哔哔叭叭的爆竹声除旧迎新。爆竹是中国特产，亦称“爆仗”、“炮仗”、“鞭炮”。其起源很早，至今已有两千多年的历史。关于爆竹的演变过程，《通俗编排优》记载道：“古时爆竹。皆以真竹着火爆之，故唐人诗亦称爆竿。后人卷纸为之。称曰“爆竹”。</p>
+<h3>办年货</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7u8S0nvYtVVqx0zYrW4x01ZBVrt6Ek8HyeURRGybwEFtRCb6cIMicWMMw/640?wx_fmt=jpeg" title="chunjie11">
+<p>中国的年俗文化源远流长，全国各地衍生出纷繁多样的过年习俗，南北迥异，各成一派。但是，备年货、送年礼却是几乎全国上下的“过年必备”。中国的家庭过年前要购买大量的“年货”，春联，福字，新衣服，过年期间的食品（过年市场多不开门）。办年货是中国人过春节的一项重要活动。与过去相比，中国人办年货的方式变得更加现代，不拘泥于传统。</p>
+<h2>节令食品</h2>
+<h3>腊八粥</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7u3NyZTibKJR3VfLqu2HrqY2vwSq7qliawlMWyUhBqK2J7fdvHGIdD6Hqg/640?wx_fmt=jpeg" title="chunjie12">
+<p>“腊八节”这一天在中国民间有吃腊八粥的习俗。喝腊八粥在中国已有千年历史，腊八粥又称“大家饭”。腊，在远古时代本是一种祭礼的名称，夏朝称“清祀”，殷商称“嘉平”，周朝时改称“腊”。“腊”是从“猎”字演变而来，故“腊”“猎”相通。因为一岁之终，农作物已收晒完毕，农闲了，人们便到野外猎取禽兽，用来祭祖先、敬百神，以祈福求寿、避灾迎祥，称之为“腊祭”。先秦的腊日在冬至后的第三个戌日。中国吃腊八粥的历史，已有一千多年，目前见到的最早文字记载是宋代孟元老的《东京梦华录》。</p>
+<h3>年糕</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7ukJuicBjNVS3MuSu1U0ic0P9dyViczFvVJXMR9ibtiaia7Micia8vBbhIkYicNew/640?wx_fmt=jpeg" title="chunjie13">
+<p>在南方有过年吃年糕的习惯，甜甜的粘粘的年糕，象征新一年生活甜蜜蜜，步步高。春节吃年糕，“义取年胜年，籍以祈岁稔。”寓意万事如意年年高。年糕的种类有：北方有白糕饦、黄米糕；江南有水磨年糕；西南有糯粑粑；台湾有红龟糕。汉代杨雄的《方言》一书中就已有“糕”的称谓，魏晋南北朝时已流行。贾思勰《齐民要术》记载了制做方法。明、清时，是糕已发展成市面上一种常年供应的小食，并有南北风味之别。北方年糕有蒸、炸二种，南方年糕除蒸、炸外，尚有片炒、汤煮诸法。</p>
+<h3>饺子</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7urDXwccujLRGFn1nwMIAR6IkSpQqD4oe1WicF6uz3659RhHP9YtamZFQ/640?wx_fmt=jpeg" title="chunjie14">
+<p>北方年夜饭有吃饺子的传统，但各地吃饺子的习俗亦不相同，有的地方除夕之夜吃饺子，有的地方初一吃饺子，北方一些山区还有初一到初五每天早上吃饺子的习俗。吃饺子是表达人们辞旧迎新之际祈福求吉愿望的特有方式。按照中国古代记时法，晚上11时到第二天凌晨1时为子时。“交子”即新年与旧年相交的时刻。饺子就意味着更岁交子，过春节吃饺子被认为是大吉大利。</p>
+<h3>汤圆</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7u7AsDx5OVkZnribwB1hf44gGibLhFmuFdMaovrDvnxqiaO1lCC9S2qvJ4Q/640?wx_fmt=jpeg" title="chunjie15">
+<p>南方的元宵节庆食品叫做“汤圆”，在江苏，上海等地，大年初一早晨都有吃汤圆的习俗。元宵节，道教称之为“上元节”。据元代伊土珍《（女郎）环环记》引《三余帖》记：嫦娥奔月后，羿思念成疾。正月十四日夜忽有童子求见，自称为嫦娥之使，说：“夫人知君怀思，无从得降，明日乃月圆之候，君宜用米粉作丸，团团如月，置室西北方，叫夫人之名，三夕可降而。”羿如法而行，嫦娥果然降临。可见元宵节吃元宵，是取“团团如月”的吉祥之意。</p>
+<h3>春饼</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7uBMHRQ8pg2Tr4ibYSu3DaasPYhKrMibib2ecoB1yvMCmnbRbhpUmsjlLicQ/640?wx_fmt=jpeg" title="chunjie16">
+<p>春卷也叫春饼，立春吃春饼是中国一种古老风俗。晋代已有“五芋盘”即“春盘”，是将春饼与菜同置一盘之内。唐宋时立春吃春饼之风渐盛，皇帝并以之赐近臣百官，当时的春盘极为讲究：“翠缕红丝，金鸡玉燕，备极精巧，每盘直万钱”。民间也用以互相馈赠。吃春饼的食俗也影响了兄弟民族。传说耶律楚律随成吉思汗征西域时就曾命厨师作春盘，并作诗日：“昨朝春日偶然忘，试作春盘我一尝。本案初开银线乱，砂瓶煮熟藕丝长。匀和豌豆揉葱白，细剪萎蒿点韭黄。也与何曾同是饱，区区何必待膏梁”。春饼发展到今天，形制随地而异，食用时间也因地而别。有烙制、也有蒸制；或大如团扇，或小如荷甲。</p>
+<h2>年兽传说</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn5Xzs5v0icDqPemJ53ZiaT7uw2lq6DeD9PXROTM7boVvMfratnfrUbK18QteltEeyJu5Ecplc9LycQ/640?wx_fmt=jpeg" title="chunjie18">
+<p>传说，中国古时候有一种叫“年”的怪兽，头长触角，凶猛异常。“年”长年深居海底，每到除夕才爬上岸，吞食牲畜伤害人命。因此，每到除夕这天，村村寨寨的人们扶老携幼逃往深山，以躲避“年”兽的伤害。此后，人们每至年末岁首，家家户户就贴红纸、穿红袍、挂红灯、敲锣打鼓、燃放爆竹，这样年兽就不敢再来了。</p></div><!--[if !IE]>|xGv00|de38405273a676241ec6ab22a331c779<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|0540938fdae7c05332199b9ebf5efcfe<![endif]-->

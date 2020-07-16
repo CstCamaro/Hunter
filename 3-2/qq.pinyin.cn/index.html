@@ -1,0 +1,726 @@
+
+<!DOCTYPE html>
+<html><head>
+	<title>QQ输入法</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />	
+    <meta name="keywords" content="QQ拼音,QQ输入法,QQ打字,智能,皮肤,词库更新,占用资源小,快速,下载官方网站" />
+	<meta name="description" content="腾讯QQ拼音官方网站,提供全新的QQ拼音软件下载, QQ拼音是好用的拼音输入法,更快、更准、更绿色的输入法，让书写成为享受,具有词库随身带,精美皮肤更换和智能整句生成特点" />
+<!--	<meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=2.0;" />-->
+        <meta id=“viewport” content="width=device-width; initial-scale=1.0; minimum-scale=0.5; maximum-scale=2.0; user-scalable=yes;" />
+	<meta property="qc:admins" content="14412660260161166367" />
+    <link rel="icon" href="http://dl.qqpy.sogou.com/qq.pinyin.cn/icons/qq.pinyin.cn.ico" type="image/x-icon" />	
+        <link  href="css/main.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/css/idangerous.swiper.css">
+	<script type="text/javascript" src="http://dl.qqpy.sogou.com/static/jquery/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/js/idangerous.swiper.min.js"></script>
+        <script type="text/javascript" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/js/image_gallery.js"></script>
+        <script type="text/javascript" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/js/passport.js"></script>
+        <script type="text/javascript" src="js/skin.js"></script>
+<script type="text/javascript">
+    
+    function IsPC(){  
+               var userAgentInfo = navigator.userAgent;  
+               var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+               var flag = true;  
+               for (var v = 0; v < Agents.length; v++) {  
+                   if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+               }  
+               return flag;  
+    }
+    /*手机来源跳转*/
+    var source_url=document.referrer;
+    //alert(document.referrer.split('/')[2]);
+    if(!IsPC()){
+        if(source_url=="" || document.referrer.split('/')[2] != "qq.pinyin.cn")
+        window.location.href = "http://qq.pinyin.cn/index_mobile";
+    }
+    
+    var CURRENT_PAGE = "home";
+    
+    
+</script>    
+<style>
+     
+/*banner模块*/
+#banner_fullrow{
+    width:100%;
+}
+#banner{
+    height: 508px;
+    width:100%;
+    overflow:hidden;
+    position: relative;
+    text-align: center;
+/*    
+    left:50%;
+    margin-left: -960px;
+*/
+    margin: 0 auto;
+/*    background-color: #3293fe;*/
+}
+#banner .swiper-container{overflow: hidden;position:relative;height: 508px;width:100%;/*left:50%;margin-left: -960px;*/}
+#banner .swiper-wrapper{overflow:hidden;position:relative; }
+#banner .swiper-wrapper > div {float: left;position:relative;overflow: hidden;}
+#banner .swiper-slide { display: inline-block; width:100%;height: 508px;text-align:center; 
+/*                        
+       background: url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner.jpg) no-repeat center center;
+       background-size: 100% 100%;
+       background-repeat:no-repeat\9;  
+       background-image:none\9;        
+       filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner.jpg',sizingMethod='scale')\9;
+       text-align: center;
+*/
+}
+#banner .swiper_slide_pic2{
+/*    
+       background: url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner2.jpg) no-repeat center center;
+       background-size: 100% 100%;
+       background-repeat:no-repeat\9;  
+       background-image:none\9;        
+       filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner2.jpg',sizingMethod='scale')\9;
+*/
+}
+#banner .swiper-slide img{/*width:1920px;*/width:1920px;height: 508px;display: block;overflow: hidden;position:absolute;left:50%;margin-left:-960px;}
+.swiper-slide-visible{ z-index:1;}/*非常重要*/
+
+.banner_box_mainarea{
+    width:1024px;
+    position:relative;
+    text-align:center;
+}
+
+.banner_word{
+    width: 1000px;
+    display: block;
+    left:50%;
+    top:104px;
+    margin-left: -500px;
+    text-align: left;
+    position: absolute;
+    z-index: 100;    
+}
+.banner_word img{
+    display:block;
+    width:640px;
+    height:56px;
+}
+
+.banner_box{
+    width: 1000px;
+    display: block;
+    left:50%;
+    top:200px;
+    margin-left: -500px;
+    text-align: left;
+    position: absolute;
+    z-index: 100;
+}
+
+.banner_download {
+    width:298px;height: 64px;  
+    background-color: rgb(50,148,255)\9;
+    display: block;
+}
+/*
+.banner_download input{
+    display: block;
+    width:298px;height: 64px;
+    background-color: transparent;    
+    border: none;
+}
+*/
+.banner_download a{
+    display: block;
+    width:262px;height: 64px;
+    background-color: rgb(50,148,255)\9;
+    background-image: url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/download_pinyin_button3.png);
+}
+.banner_download a:hover{
+    background-image: url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/download_pinyin_button4.png);
+}
+.banner_download a:hover{position:relative;}
+.banner_download a:hover{zoom:1;}
+
+/*
+.banner_download_button_normal{
+    background-image: url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/download_wubi_button1.png);
+}
+.banner_download_button_click{
+    background-image: url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/download_wubi_button2.png);
+}
+*/
+.instruction{margin-top: 40px;height:118px;display:block;}
+.instruction_mobile_qr_code{width:95px;height:118px;position:relative;float:left;display:block;}
+.instruction_mobile_qr_code img{width:100%;height:100%}
+.instruction_word{position:relative;float:left; margin-left:20px;}
+.instruction_word2{position:relative;float:left; margin-left:20px;height:87px;top:50%;margin-top:-43px;}/*适用于只有三行文字*/
+.banner_box .instruction_word p{text-align: left;font-size: 16px;line-height: 16px;display: block; margin-bottom:5px;color: #ffffff; font: 16px/1.5 "Microsoft YaHei",Tahoma,"宋体",Verdana,Arial;}
+.banner_box .instruction_word p a{text-decoration:underline;color:#ccff62; }
+#banner_box_wubi{display:none;}
+#banner_box_wubi .banner_download a{background-image: url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/download_wubi_button3.png);}
+#banner_box_wubi .banner_download a:hover{background-image: url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/download_wubi_button4.png);}
+
+
+#banner_position{ display: inline-block;position: absolute;bottom:20px;left:50%;margin-left: -500px;  width:1000px; text-align:left;line-height: 9px; height: 9px;z-index: 100;}
+#banner_position li{ width:9px; height:9px;margin-right:14px;display:inline-block;background-image: url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner_dot2.png); position: relative;float: left;}
+#banner_position li.cur{ background-image:url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner_dot1.png);width: 26px;height: 9px; }
+/*end of banner模块*/ 
+/*main模块*/
+#main{margin: 0 auto;width:100%;display: block;}
+.main_full_row{width: 100%;display: inline-block;text-align: center;margin: 0 auto;}
+.main_full_row_color{background-color: #f6fafd; }
+.main_middlearea{width:1024px;text-align:center;margin:auto;}
+
+#fine_skin{width: 1000px;display: inline-block;height: 251px;margin-top: 90px;margin-bottom: 93px;}
+#rotary_skin{display: inline-block;position: relative;float: left;/*width: 421px;height: 251px;*/}
+
+.show_images_list {
+    
+    display:block;
+    position:relative;
+    z-index:0;
+    width:600px;
+    height:251px;
+}
+.show_images_list_li {
+    display: block;
+    position: absolute;
+    vertical-align: bottom;
+    background-color:#ffffff;
+    border: 1px solid #cacaca;
+    box-shadow:0px 6px 0px #e5e5e5;
+    border-radius: 6px;
+}
+.show_images_1 {
+    bottom: 0;
+    left: 125px;
+    z-index: 100;
+    height: 227px;
+    width: 298px;
+/*    
+    background:url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/lunbo_f_bg.png) no-repeat center center;
+    background-size: 100% 100%;
+*/
+    text-align: center;
+}
+.show_images_1 img {
+    display: block;
+    height: 90%;
+    width:  90%;
+    margin: 0 auto;
+ /*    
+    top: 50%;
+*/   
+    margin-top: 4%;
+    position: relative;
+}
+.show_images_2 {
+    bottom: 23px;
+    left: 50px;
+    z-index: 50;
+    height: 182px;
+    width: 239px;
+    text-align: center;    
+}
+.show_images_2 img {
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 4%;
+}
+.show_images_4 {
+    bottom: 41px;
+    left: 0;
+    z-index: 25;
+    height: 149px;
+    width: 196px;
+    text-align: center;     
+}
+.show_images_4 img {
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 4%;    
+}
+.show_images_3 {
+    bottom: 23px;
+    left: 259px;
+    z-index: 50;
+    height: 182px;
+    width: 239px;
+    text-align: center;    
+}
+.show_images_3 img {
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 4%;    
+}
+.show_images_5 {
+    bottom: 41px;
+    left: 352px;
+    z-index: 25;
+    height: 149px;
+    width: 196px;
+    text-align: center;     
+}
+.show_images_5 img {
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 4%;    
+}
+.show_images_6 {
+    bottom: 0;
+    left: 125px;
+    z-index: 1;
+    height: 227px;
+    width: 298px; 
+    text-align: center;
+}
+.show_images_6 img {
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 4%; 
+}
+
+#fine_skin_word_box{display: inline-block;position: relative;float: right;width: 360px;height: 107px;text-align: right;top:50%;margin-top: -54px;}
+#fine_skin_word_box_word1{display: block;width: 355px;height: 39px;margin-bottom: 45px;}
+#fine_skin_word_box_word2{display: block;width: 358px;height: 23px;}
+
+#word_library{width: 1000px;display: inline-block;margin-top: 70px;height:268px;margin-bottom: 90px; }
+#word_library_word_box{display: inline-block;position: relative;float: left;width: 342px;height: 97px;text-align: left;top:50%;margin-top: -48px;}
+#word_library_word_box_word1{display: block;width: 342px;height: 39px;margin-bottom: 45px;}
+#word_library_word_box_word2{display: block;width: 334px;height: 23px;}
+#word_library_pic{display: inline-block;position: relative;float: right;}
+#word_library_pic img{display: block;width:459px;height: 268px;}
+
+#synchronous{width: 1000px;display: inline-block;margin-top: 50px;height:319px; margin-bottom: 40px;}
+#synchronous_word_box{display: inline-block;position: relative;float: right;width: 360px;height: 107px;text-align: right;top:50%;margin-top: -48px;}
+#synchronous_word_box_word1{display: block;width: 353px;height: 39px;margin-bottom: 45px;}
+#synchronous_word_box_word2{display: block;width: 358px;height: 23px;}
+#synchronous_pic{display: inline-block;position: relative;float: left;}
+#synchronous_pic img{display: block;width:499px;height: 319px;}
+/*end of main模块*/
+
+/*
+@media (max-width:1000px){
+    #header{width:100%;}
+    #h_logo{width: 17%}
+    #h_navigation{width: 1.5%}
+    .h_navigation_word{margin-left: 10%;}
+    .h_navigation_word a{width: 10%}
+    #h_page_type{width: 7%}
+    #h_login{width: 7%}
+    
+}
+*/
+@media (max-width:100px){
+#banner{
+    height: 508px;
+    width:1000px;
+    position: relative;
+    text-align: center;
+/*    margin: 0 auto;*/
+/*    background-color: #3293fe;*/
+}
+#banner .swiper-container{overflow: hidden;position:relative;height: 100%;width:100%;left: 470px;}
+#banner .swiper-wrapper{overflow:hidden;position:relative;height: 100%;width:100%;}
+#banner .swiper-slide { display: inline-block; height: 100%;width:100%; overflow:hidden; 
+/*                        
+       background: url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner.jpg) no-repeat center center;
+       background-size: 100% 100%;
+       background-repeat:no-repeat\9;  
+       background-image:none\9;        
+       filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner.jpg',sizingMethod='scale')\9;
+       text-align: center;
+*/
+}
+#banner .swiper_slide_pic2{
+/*    
+       background: url(http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner2.jpg) no-repeat center center;
+       background-size: 100% 100%;
+       background-repeat:no-repeat\9;  
+       background-image:none\9;        
+       filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner2.jpg',sizingMethod='scale')\9;
+*/
+}
+/*#banner .swiper-slide img{height: 100%;width:100%;display: block;overflow: hidden;}*/
+#banner .swiper-slide img{display: block;overflow: hidden;left:-450px;position:relative;}
+.banner_box{
+    width: 1000px;
+    display: block;
+    left:0;
+    top:200px;
+    margin-left: 470px;
+    text-align: left;
+    position: absolute;
+    z-index: 100;
+}
+#banner_position{ display: inline-block;position: absolute;bottom:20px;left:50%;margin-left: -30px;  width:1000px; text-align:left;line-height: 9px; height: 9px;z-index: 100;}
+
+}
+ 
+</style>
+
+
+    </head>
+    <body>
+        <div id="top-menu" need_latest_msg="1">
+        </div> 
+        <!-- header模块 -->
+        <div id="header_fullrow">
+            <div id="header_mainarea"> 
+            <div id="header">
+                <div id="h_logo"><a href="http://qq.pinyin.cn/"></a></div>
+                <div id="h_navigation">
+                    <div class="h_navigation_word h_navigation_word_hlight"><a href="http://qq.pinyin.cn/">拼音</a></div>
+		    <div class="h_navigation_word"><a href="http://qq.pinyin.cn/wubi/">五笔</a></div>
+                    <div class="h_navigation_word"><a href="http://skin.qq.pinyin.cn/">皮肤</a></div>
+                    <div class="h_navigation_word"><a href="http://cdict.qq.pinyin.cn/">词库</a></div>
+                    <div class="h_navigation_word"><a href="http://qq.pinyin.cn/help/">帮助</a></div>
+                </div>
+                <div id="h_right_box">
+                    <div id="h_page_type"><a href="http://qq.pinyin.cn/index_mobile"></a></div>
+                    <div id="h_login"><a href="javascript:do_login('');"></a></div>
+                    <div id="h_login_after">
+                        <div id="h_login_user_pic"></div>
+                        <div id="h_login_after_right">    
+                            <div id="h_login_user_name"></div>
+                            <div id="h_login_user_level"></div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            </div>    
+        </div>    
+        <!-- end of header模块 -->
+        <!-- banner模块 -->
+        <div id="banner_fullrow">
+        <div id="banner">
+                <div class="swiper-container" id="mySwipe">
+                  <div class="swiper-wrapper">                  
+                      <div class="swiper-slide">
+                          <img src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner_6.0_pc.png">
+                      </div>
+                  </div>
+                </div>
+            
+                <!--<div class="banner_word">
+                    <img src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/banner_word_5.6.png">
+                </div>-->
+
+                <div class="banner_box" id="banner_box_pinyin">
+                    <div class="banner_download">
+                        <a href="http://qq.pinyin.cn/download_pc.php?t=py" target="_self"></a>
+                    </div>
+                    <div class="instruction">
+                        <div class="instruction_mobile_qr_code">
+                            <img src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/mobile_qr_code2.png">
+                        </div>
+                        <div class="instruction_word">                        
+                        <p>版本：6.5.6109.400</p>
+                        <p>更新时间：2020.05.25</p>
+                        <p><a href="http://qq.pinyin.cn/history_pc.php">查看更新日志</a></p>
+                        <p>支持：XP / WIN7 / WIN8 / WIN10</p>
+                        </div>
+                    </div>                              
+                </div>    
+<!--
+                <ul id="banner_position">
+                  <li class="cur"></li>
+                  <li class=""></li>   
+                </ul>
+-->
+<!--            
+                <div class="skin_pic_type_icon">
+                    <img src="http://dl.qqpy.sogou.com/static/util/icon_sound.png" class="skin_pic_type_icon_img skin_pic_type_icon_sound" >
+                    <img src="http://dl.qqpy.sogou.com/static/util/icon_dynamic.png" class="skin_pic_type_icon_img skin_pic_type_icon_dynamic" >
+                </div> 
+-->
+        </div>
+        </div>    
+        <!-- end of banner模块 -->
+        <!-- main模块 -->
+        <div id="main">
+            <div class="main_full_row">
+            <div class="main_middlearea">
+            <div id ="fine_skin">
+                <div id="rotary_skin">
+                         <ul class="show_images_list">
+                             <li  class="show_images_list_li show_images_1">
+                                <img class="show_images_1_img" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/lunbo1.jpg" alt="">
+                             </li>
+                             <li  class="show_images_list_li show_images_2">
+                               <img  class="show_images_2_img" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/lunbo2.jpg" alt="">
+                             </li>
+                             <li  class="show_images_list_li show_images_3">
+                                 <img  class="show_images_3_img" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/lunbo3.jpg" alt="">
+                             </li>
+                             <li  class="show_images_list_li show_images_4">
+                                <img  class="show_images_4_img" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/lunbo4.jpg" alt="">
+                             </li>
+                             <li  class="show_images_list_li show_images_5">
+                              <img  class="show_images_5_img" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/lunbo5.jpg" alt="">
+                             </li>
+                             <li  class="show_images_list_li show_images_6">
+                               <img  class="show_images_6_img" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/lunbo6.jpg" alt="">
+                             </li>                      
+                         </ul>
+                         <div class="header_text" id="belt" style="display: block;"></div>
+                         <div class="btn" style="display:none">
+                             <a class="btn1" rel="1"></a>
+                             <a class="btn2" rel="2"></a>
+                             <a class="btn3 active" rel="3"></a>
+                             <a class="btn4" rel="4"></a>
+                             <a class="btn5" rel="3"></a>
+                             <a class="btn6" rel="4"></a>
+                         </div>
+<!--                        <img class="skinbg" src="%E7%99%BE%E5%BA%A6%E6%89%8B%E6%9C%BA%E8%BE%93%E5%85%A5%E6%B3%95%E5%AE%98%E7%BD%91_files/skinbg_8c0ae9c.png">-->
+                </div>
+                
+                <div id="fine_skin_word_box">
+                    <a href="http://skin.qq.pinyin.cn"><img id="fine_skin_word_box_word1" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/skin1.png"></a>
+                    <img id="fine_skin_word_box_word2" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/skin2.png">
+                </div>
+            </div>
+            </div>    
+            </div>    
+                
+            <div class="main_full_row main_full_row_color">
+            <div class="main_middlearea">    
+            <div id="word_library">
+                <div id="word_library_word_box">
+                    <a href="http://cdict.qq.pinyin.cn">
+                        <img id="word_library_word_box_word1" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/ciku1.png">
+                    </a>    
+                    <img id="word_library_word_box_word2" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/ciku2.png">
+                </div>
+                <div id="word_library_pic">
+                    <img src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/ciku_pic.png">
+                </div>
+            </div>
+            </div>    
+            </div> 
+                
+            <div class="main_full_row">
+            <div class="main_middlearea">      
+            <div id="synchronous">
+                <div id="synchronous_pic">
+                    <img src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/synchronous_pic.png">
+                </div>
+                <div id="synchronous_word_box">
+                    <img id="synchronous_word_box_word1" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/synchronous1.png">
+                    <img id="synchronous_word_box_word2" src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/synchronous2.png">
+                </div>
+            </div>   
+            </div>    
+            </div>
+            
+        </div>
+        <!-- end of main模块 -->
+        <!-- footer模块 -->
+        <div id ="footer_fullrow">
+            <div class="footer_middlearea">
+            <div id="footer" align="center">
+                <div id="footer_icon_box">
+                    <div class="footer_icon">
+                        <a href="http://weibo.com/qqshurufa?refer_flag=1001030101_" target="_blank">
+                            <img  src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/weibo.png">
+                        </a>    
+                            <div class="footer_icon_word">新浪微博</div>
+
+                    </div>
+                    <div class="footer_icon">
+                         <a href="http://tieba.baidu.com/f?kw=qq%E8%BE%93%E5%85%A5%E6%B3%95&ie=utf-8" target="_blank">
+                            <img  src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/tieba.png">
+                        </a>
+                            <div class="footer_icon_word">百度贴吧</div>
+                    </div>
+                    <div class="footer_icon footer_icon_right">
+                        <a href="javascript:void(0);">
+                            <img  class="weixin"  src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/weixin.png">
+                        </a>
+                        <div class="footer_icon_word">微信公众号</div>
+                    </div>
+                    <div class="qrcode"><img src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/qrcode.png"></div>
+                </div> 
+            </div>
+            </div>
+        </div>
+        <div class="copyright_footer">
+            <p>© 2020 pinyin.cn 京ICP备11001839号-10</p>
+        </div>
+        <!--
+        <div class="qqpy_footer">
+            <p>© 2019 SOGOU.COM 京ICP证11001839号&nbsp;
+                <a href="http://www.sogou.com/docs/terms.htm" target="_blank">免责声明</a>&nbsp;
+                <a href="http://corp.sogou.com/private.html" target="_blank">搜狗隐私条款</a>
+            </p>
+            <br>
+            <p>北京搜狗科技发展有限公司 北京市海淀区中关村东路1号院9号楼搜狐网络大厦 010-56899999</p>
+        </div>
+        -->
+
+        <!-- end of footer模块 --><script> 
+ 
+var isIE = false;
+var browserVersion= window.navigator.userAgent.toUpperCase();
+if(browserVersion.indexOf("MSIE")>-1){
+    isIE = true;
+}
+
+/*$(function(){
+  var swiperSpeed = 600;
+  if(isIE){
+      swiperSpeed = 3000;
+  }
+  //var bullets = document.getElementById('banner_position').getElementsByTagName('li'); 
+  var bullets = $("#banner_position li");
+  var GlobalEndSlideTime = 0;
+  var mySwiper = $('.swiper-container').swiper({
+    loop: true,
+    autoplay:10000,
+    speed:swiperSpeed,
+    autoplayDisableOnInteraction : false,
+    slideChangeStart:true,
+    onSlideChangeStart: function(swiper){
+            //var html = $("#header").html();
+            //$("#header").html(swiper.activeLoopIndex+html);
+            var pos = swiper.activeLoopIndex;
+            var i = bullets.length;
+            if(pos >= i){
+                pos = 0;
+            }
+            while (i--) {
+              bullets[i].className = ' ';
+            }
+            bullets[pos].className = 'cur';
+            var timestamp = Date.parse(new Date());
+            if((timestamp - GlobalEndSlideTime)< 1000){
+                //return;
+            }            
+            if(isIE){
+                if(pos == 0){
+                    $("#banner_box_wubi").fadeOut(swiperSpeed/10);
+                    $("#banner_box_pinyin").fadeIn(swiperSpeed/10);
+                }else{
+                    $("#banner_box_pinyin").fadeOut(swiperSpeed/10);
+                    $("#banner_box_wubi").fadeIn(swiperSpeed/10);                    
+                }
+            }else{
+               // console.log(pos);
+                if(pos == 0){
+                    $("#banner_box_wubi").fadeOut(swiperSpeed/2);
+                    $("#banner_box_pinyin").fadeIn(swiperSpeed/2);
+                }else{                
+                    $("#banner_box_pinyin").fadeOut(swiperSpeed/2);
+                    $("#banner_box_wubi").fadeIn(swiperSpeed/2);
+                }
+            }
+            GlobalEndSlideTime = Date.parse(new Date());
+        },
+    onSlideChangeEnd: function(swiper){
+        
+            if(isIE){
+                $(".banner_box").fadeIn(swiperSpeed/10);
+            }else{
+                $(".banner_box").fadeIn(1);   
+            }
+        
+        }    
+    });
+$("#banner_position li").hover(function(){
+var i = bullets.length;
+        while (i--) {
+          bullets[i].className = ' ';
+        }
+        var pos = $(this).index();
+        this.className = 'cur'; 
+        mySwiper.swipeTo(pos, swiperSpeed, true);
+        
+},function(){});
+*/
+
+$(".footer_icon img").hover(function(){
+    $(this).css("opacity","1");
+},function(){$(this).css("opacity","0.52");});
+
+$(".footer_icon .weixin").hover(function(){
+    $(this).css("opacity","1");
+    $("#footer_icon_box .qrcode").css("display","block");
+},function(){$("#footer_icon_box .qrcode").css("display","none");});
+/*
+$(".banner_box").delegate(".banner_download", "mouseover", function(){
+    $("#header").html("1"+$("#header").html());
+    });
+*/
+    
+//$(".banner_download").mouseover(function(){$("#header").html("1"+$("#header").html())});
+//$("#banner").hover(function(){mySwiper.stopAutoplay();},function(){mySwiper.startAutoplay();});
+   // grabCursor: true,
+   // paginationClickable: true
+    //其他设置
+    
+    $().gallery({
+        current: [".show_images_1", ".show_images_1_img"],
+        left: [".show_images_2", ".show_images_2_img"],
+        left1: [".show_images_4", ".show_images_4_img"],
+        right: [".show_images_3", ".show_images_3_img"],
+        right1: [".show_images_5", ".show_images_5_img"],
+        none: [".show_images_6", ".show_images_6_img"],
+        duration: 500,
+        start: function() {
+           // $(".header_text").fadeOut(150)
+        },
+        end: function() {
+          //  $(".header_text").fadeIn(150)
+        },
+        autoChange: !0,
+        changeTimeout: 3e3,
+        stopTarget: ".header_stage",
+        actionTime: 1
+    });
+        
+   // alert( window.screen.width);
+   
+/*判断页面是否激活的状态,针对火狐的特殊处理*/
+if('mozHidden' in document){
+    var hiddenProperty = 'hidden' in document ? 'hidden' :    
+        'webkitHidden' in document ? 'webkitHidden' :    
+        'mozHidden' in document ? 'mozHidden' :    
+        null;
+    if(hiddenProperty != null){    
+        var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+    }
+    var onVisibilityChange = function(){
+        if (!document[hiddenProperty]) {    
+           // console.log('页面非激活');
+            //mySwiper.stopAutoplay();
+        }else{
+           // console.log('页面激活');
+            mySwiper.startAutoplay();
+            //mySwiper.startAutoplay();
+        }
+    }
+    document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+}
+//});    
+ 
+</script>  
+<div id="ID_QQLOVE_WAIT_BACKGND" style="position: absolute; z-index: 65529; left: 0px; top: 0px; width: 100%; height: 2633px; display: none; border: 1px solid rgb(204, 204, 204); background-color: rgb(0, 0, 0); opacity: 0.35;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=35);"></div>
+<div id="ID_QQLOVE_FLOAT_WIN" style="position: absolute; z-index: 65530; left: 0px; width: 100%; display: none; top: 100px;"></div>
+<img src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/download_wubi_button3.png" style="display: none;">
+<img src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/download_wubi_button4.png" style="display: none;">
+<img src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/download_pinyin_button3.png" style="display: none;">
+<img src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/download_pinyin_button4.png" style="display: none;">
+<img src="http://dl.qqpy.sogou.com/qq.pinyin.cn_new/login2.png" style="display: none;">
+</body>
+</html>

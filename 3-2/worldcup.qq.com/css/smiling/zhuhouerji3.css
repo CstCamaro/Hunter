@@ -1,0 +1,67 @@
+body{font-family:"ËÎÌו";font-size:12px;background:#6C150C;color:#000;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd,table,td{margin:0;padding:0;border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,p,select,input{margin:0;padding:0;font-size:12px;}
+a{color:#6B3C1B;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.left,.fleft{float:left;}
+.right,.fright{float:right;}
+.clear{clear:both;height:0;overflow:hidden;}
+.dis,.block{display:block!important;}
+.undis,.none{display:none;}
+.noborder{border:0!important;}
+.nobg{background:none!important;}
+.fbold{font-weight:bold;}
+.f14{font-size:14px;}
+.t24{text-indent:24px;}
+.t28{text-indent:28px;}
+.l20{line-height:20px;}
+.l22{line-height:22px;}
+.l26{line-height:26px;}
+.coffee{color:#6B3C1B;}
+.top,.bg02{width:960px;margin:0 auto;}
+.box10{height:10px;clear:both;overflow:hidden;}
+.bg{width:100%;background:#6C150C url(//mat1.gtimg.com/worldcup/smiling/yanyizhuhou/bg.jpg) no-repeat top center;}
+.top{height:68px;line-height:68px;color:#BF9E9B;}
+.top a{color:#BF9E9B;}
+.top .pandian{float:left;padding-left:190px;}
+.top .fanhui{float:right;padding-right:24px;}
+.bg02{width:960px;background:url(//mat1.gtimg.com/worldcup/smiling/yanyizhuhou/repeaty.jpg) repeat-y;}
+.bg03{width:960px;background:url(//mat1.gtimg.com/worldcup/smiling/yanyizhuhou/bg03.jpg) no-repeat top center;}
+.nav{width:960px;height:75px;float:left;margin-top:28px;}
+.nav img{float:left;}
+.zhuhou{width:960px;height:914px;float:left;position:relative;}
+.zhuhou01{width:960px;height:556px;float:left;position:relative;background:url(//mat1.gtimg.com/worldcup/smiling/yanyizhuhou/zhuhou01.jpg) no-repeat;}
+.zhuhou02{width:960px;height:358px;float:left;position:relative;background:url(//mat1.gtimg.com/worldcup/smiling/yanyizhuhou/zhuhou02.jpg) no-repeat;}
+.zhuhou .spanbtn{display:block;height:20px;position:absolute;cursor:pointer;}
+.zhuhou .yinggelan{width:48px;top:220px;left:97px;}
+.zhuhou .helan{width:34px;top:207px;left:179px;}
+.zhuhou .deguo{width:34px;top:216px;left:245px;}
+.zhuhou .faguo{width:34px;top:271px;left:170px;}
+.zhuhou .siluofake{width:64px;top:271px;left:332px;}
+.zhuhou .putaoya{width:48px;top:367px;left:45px;}
+.zhuhou .xibanya{width:48px;top:346px;left:117px;}
+.zhuhou .yidali{width:48px;top:346px;left:259px;}
+.zhuhou .baxi{width:34px;top:156px;left:774px;}
+.zhuhou .balagui{width:48px;top:201px;left:705px;}
+.zhuhou .agenting{width:48px;top:267px;left:678px;}
+.zhuhou .wulagui{width:48px;top:277px;left:751px;}
+.zhuhou .jiana{width:34px;top:111px;left:99px;}
+.zhuhou .nanfei{width:34px;top:289px;left:234px;}
+.zhuhou .hanguo{width:34px;top:32px;left:407px;}
+.zhuhou .chaoxian{width:34px;top:14px;left:449px;}
+.zhuhou .riben{width:34px;top:32px;left:490px;}
+.zhuhou .meiguo{width:34px;top:150px;left:790px;}
+.zhuhou .guojia{position:absolute;width:392px;height:192px;padding:8px;background:#954413;border:1px solid #784822;color:#E2D0C2;display:none;}
+.zhuhou .guojia a{color:#fff;}
+.zhuhou .guojia h2{height:30px;text-align:center;font-weight:normal;}
+.zhuhou .guojia .x{width:15px;height:15px;float:right;background:url(//mat1.gtimg.com/worldcup/smiling/yanyizhuhou/x.jpg) no-repeat;cursor:pointer;}
+.zhuhou .guojia p{text-indent:24px;width:210px;text-align:left;line-height:21px;}
+#yinggelan,#helan,#deguo,#faguo,#siluofake,#putaoya,#xibanya,#yidali,#baxi,#balagui,#agenting,#wulagui{top:300px;left:470px;}
+#jiana,#nanfei,#hanguo,#chaoxian,#riben,#meiguo{top:635px;left:305px;}
+.layout{width:900px;float:left;padding:30px 30px 15px;background:url(//mat1.gtimg.com/worldcup/smiling/yanyizhuhou/layout.jpg) no-repeat;}
+.layout .btn{width:860px;float:left;padding:20px 20px 40px;text-align:right;}
+.page{width:900px;float:left;margin-top:20px;}
+.page .prev{font-weight:bold;font-size:14px;float:left;padding:0 50px 8px 10px;background:url(//mat1.gtimg.com/worldcup/smiling/yanyizhuhou/page_bg.jpg) no-repeat center bottom;}
+.page .next{font-weight:bold;font-size:14px;float:right;padding:0 5px 8px;background:url(//mat1.gtimg.com/worldcup/smiling/yanyizhuhou/page_bg.jpg) no-repeat center bottom;}
+.bottom{width:100%;height:28px;clear:both;background:url(//mat1.gtimg.com/worldcup/smiling/yanyizhuhou/bottom.jpg) no-repeat center;}/*  |xGv00|89419d4f2efe003ef2c40c5be089f9c2 */

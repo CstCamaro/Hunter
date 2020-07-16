@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>天目新闻官网</title>
+<meta name="keywords" content="天目新闻官网,天目新闻客户端官方网站,推荐,天评,天网,天闻,天财,天行,天娱,天健,天府,潮客,网络直播,大观,天目号,战疫,浙江在线,短视频,原创新闻,突发新闻,独家报道,新闻,新型冠状病毒肺炎,NCP,浙江疫情,疫情最新情况,疫情新增"/>
+<meta name="description" content="天目新闻客户端是浙江日报报业集团推进媒体融合向纵深发展的新型平台，是浙江在线倾力打造的新闻视频客户端，秉持全国化、视频化、市场化理念，立足浙江、面向长三角、辐射全中国，是助力长三角更高质量一体化发展的开放式新闻平台，是拍友记录分享美好生活的互动平台，是方便用户办事的一站式服务平台。"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<link rel="shortcut icon" href="https://app-stc.zjol.com.cn/static-gw/images/favicon.ico" type="image/x-icon">
+<link href="https://app-stc.zjol.com.cn/static-gw/css/e9999all.css" rel="stylesheet"/>
+</head>
+<body>
+<!--导航 begin-->
+<div class="nav mb40">
+	<div class="navBar box">
+		<h1><a href="JavaScript:void(0);">天目新闻客户端官方网站</a></h1>
+		<ul class="navUl">
+			<!--<li>
+				<a href="JavaScript:void(0);">首页</a>
+			</li>-->
+			<li>
+				<a href="tm_daguan.html?5d8b4d25cf8dfd0001a4143c">大观</a>
+			</li>
+			<li>
+				<a href="tm_recommend.html?5d8c0b92cf8dfd0001a4143d">推荐</a>
+			</li>
+			<li>
+				<a href="tm_zhanyi.html?5e2e3cde6b9bb80001b26238">战疫</a>
+			</li>
+			<li>
+				<a href="tm_tide.html">潮客</a>
+			</li>
+			<li class="tmh">
+				<a href="tm_tmh.html">天目号</a>
+			</li>
+			<li class="channel">
+				<a href="JavaScript:void(0);" >频道</a>
+				<div class="chNav">
+					<span><a href="channel.html?5d8c0fd2cf8dfd0001a41449">天 评</a></span>
+					<span><a href="channel.html?5d8c0fc2ffebf500014a771a">天 闻</a></span>
+					<span><a href="channel.html?5d8c0fb2ffebf500014a7719">天 网</a></span>
+					<span><a href="channel.html?5d8c0fa4ffebf500014a7718">天 财</a></span>
+					<span><a href="channel.html?5d8c0f92ffebf500014a7717">天 行</a></span>
+					<span><a href="channel.html?5d8c0f84cf8dfd0001a41448">天 娱</a></span>
+					<span><a href="channel.html?5d8c0f76ffebf500014a7716">天 健</a></span>
+					<span><a href="channel.html?5d8c0f67ffebf500014a7715">天 府</a></span>
+				</div>
+			</li>
+			<li>
+				<a href="tm_live.html">直播</a>
+			</li>
+			<li class="act">
+				<a href="tm_address.html?5d8c0f39ffebf500014a7713">杭州</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--导航 end-->
+
+<div class="wrap tuijian box cf">
+	<!--左侧新闻区-->
+	<div class="masLeft">
+		<ul class="newsLeft" id="masonry"></ul>
+		<!-- loading按钮自己通过样式调整 -->
+		<div id="imloading">加载中...</div>
+	</div>
+	
+	<!--左侧新闻区end-->
+	<!--右侧列表区-->
+	<div class="newsRight">
+		<!--热点新闻-->
+		<div class="hotNews mb10">
+			<div class="titBar"><h6>热点新闻</h6></div>
+			<ul class="hotList"></ul>
+		</div>
+		<!--广告-->
+		<div class="ad mb10">
+			<div class="titBar"><h6>天目客户端</h6></div>
+			<img src="https://app-stc.zjol.com.cn/static-gw/images/rIcon.png"/>
+		</div>
+		<!--公告-->
+		<div class="notice" style="display: none;">
+			<div class="titBar"><h6>天目公告</h6></div>
+			<div class="noticeList"></div>
+		</div>
+	</div>
+	<!--右侧列表区end-->
+</div>
+<div class="footbar">
+	<div class="footImg"></div>
+	<ul class="footFont">
+		<li><a href="http://beian.miit.gov.cn/" target="_blank">工信部备案号:浙B2-20080242-1</a></li>
+		<li>互联网新闻信息服务许可证:33120170001</li>
+		<li><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010302000628
+" target="_blank"><img src="https://app-stc.zjol.com.cn/static-gw/images/police.png" >浙公网安备33010302000628号</a></li>
+	</ul>
+</div>
+<script type="text/javascript" src="https://app-stc.zjol.com.cn/static-gw/js/sha256.js"></script>
+<script type="text/javascript" src="https://app-stc.zjol.com.cn/static-gw/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://app-stc.zjol.com.cn/static-gw/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="https://pv.sohu.com/cityjson?ie=utf-8"  charset="utf-8"></script>
+<script type="text/javascript" src="https://app-stc.zjol.com.cn/static-gw/js/addNav.min.js"></script>
+<script type="text/javascript" src="https://app-stc.zjol.com.cn/static-gw/js/currency.min.js"></script>
+<script type="text/javascript" src="https://app-stc.zjol.com.cn/static-gw/js/right.min.js"></script>
+<script id="_trs_ta_js" src="https://ta.8531.cn/c/js/ta.js?mpid=181" async="async" defer="defer"></script>
+</body>
+</html>

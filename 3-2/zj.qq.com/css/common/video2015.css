@@ -1,0 +1,29 @@
+@charset "gb2312";
+/* CSS Document */
+
+
+.vico{ background:url(//mat1.gtimg.com/zj/images/vico2015.jpg) no-repeat;}
+.lmtit{ width:1000px; height:35px; padding-bottom:2px; position:relative;}
+.lmico{ width:150px; height:35px; overflow:hidden; }
+.lmc1{ background-position:0 0;}
+.lmc2{ background-position:0 -35px;}
+.lmc3{ background-position:0 -70px;}
+.lmc4{ background-position:0 -105px;}
+/* by bianguo //mat1.gtimg.com/zj/images/*/
+.yulegaoxiao{ width:1000px; height:250px; position:relative; overflow:hidden; margin:0 auto;}
+.weidianying{ width:1000px; height:320px; position:relative; overflow:hidden; margin:0 auto;}
+.weidianying li{display:inline-block;width:19.6%;}
+.weidianying .pic{width:190px;height:280px; position:relative;}
+.weidianying dd{height:40px;width:190px;position:absolute; bottom:0;background-color: rgba(0,0,0,0.6);color:#fff;}
+.weidianying span{width:90%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;position:absolute;left:20px;top:11px;}
+.weidianying .bf{width:13px; height:13px; display:block;position:absolute;left:5px;top:12px;}
+.weidianying .name{height:40px;line-height:40px;text-align:center;}
+.bofang{background-position:-190px 0;}
+
+.dzchupin{ width:1000px; height:190px; position:relative; overflow:hidden; margin:0 auto;}
+.dzchupin li{display:inline-block;width:19.6%;}
+.dzchupin .pic{width:190px;height:280px; position:relative;}
+.dzchupin dd{height:60px;width:190px; position:absolute; bottom:0;background-color: rgba(0,0,0,0.6);z-index:1;}
+.dzchupin span{width:90%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;position:absolute;left:20px;top:30px;color:#fff;}
+.dzchupin .bf{width:13px; height:13px; display:block;position:absolute;left:5px;top:32px;}
+.dzchupin .name{font-size:15px;position:absolute;bottom:32px;left:5px;color:#fff;z-index:2;}/*  |xGv00|606069fe792f1082c05d4760a888e594 */

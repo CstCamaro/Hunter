@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head> <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Tencent" />
+  <title>加入公开群，畅聊世界杯</title>  <link rel="stylesheet" type="text/css" href="http://pub.idqqimg.com/qqweb/activity/worldcup/css/main.css?1402476335.1" /> 
+
+</head>
+<body>
+	<div class="header">
+		<div class="body-width">
+		<div class="header-width">
+			<div class="header-city">
+				<div class="title">选择城市：</div>
+				<div class="header-info">
+					<ul>
+						<li data-name="北京">北京</li>
+						<li data-name="上海">上海</li>
+						<li data-name="广州">广州</li>
+						<li data-name="深圳">深圳</li>
+						<li data-name="天津">天津</li>
+						<li data-name="重庆">重庆</li>
+						<li data-name="包头">包头</li>	
+						<li data-name="长春">长春</li>
+						<li data-name="成都">成都</li>
+						<li data-name="长沙">长沙</li>
+						<li data-name="大连">大连</li>		
+					</ul>
+					<ul>
+						<li data-name="福州">福州</li>
+						<li data-name="贵阳">贵阳</li>
+						<li data-name="合肥">合肥</li>
+						<li data-name="哈尔滨">哈尔滨</li>
+						<li data-name="杭州">杭州</li>
+						<li data-name="济南">济南</li>
+						<li data-name="昆明">昆明</li>
+						<li data-name="宁波">宁波</li>
+						<li data-name="南京">南京</li>
+						<li data-name="南昌">南昌</li>
+						<li data-name="南宁">南宁</li>						
+					</ul>
+					<ul>
+						<li data-name="青岛">青岛</li>
+						<li data-name="石家庄">石家庄</li>	
+						<li data-name="沈阳">沈阳</li>
+						<li data-name="苏州">苏州</li>
+						<li data-name="太原">太原</li>	
+						<li data-name="唐山">唐山</li>						
+						<li data-name="武汉">武汉</li>
+						<li data-name="无锡">无锡</li>
+						<li data-name="西安">西安</li>
+						<li data-name="厦门">厦门</li>	
+						<li data-name="郑州">郑州</li>						
+					</ul>
+				</div>
+				<div class="header-right">
+					<span class="text">打开</span>
+					<span class="open"></span>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="body-bgs body-width">
+		<div class="sd-bg"></div>
+	</div>
+	<div class="body-width">
+		<div style="overflow:hidden;padding-bottom:10px">
+		<div class="body">
+			<h4 id="cityName"></h4>
+			<ul id="cityGroupList">
+
+			</ul>
+			<div class="clear"></div>
+		</div>
+		</div>
+	</div>
+	<div class='body-footer'>
+		<p>Copyright © 1998-2014 Tencent. All Rights Reserved. </p>
+		<p>腾讯公司 版权所有</p>
+	</div>	
+	<script type="text/template" id="groupListTmp">
+		<%
+			var n = 0;
+			cl.sort(rSort);
+			for(var i =0,l=list.length;i<l;i++){
+				var item = list[i];
+				n++;
+		%>
+			<li class="c<%=cl[n-1]%> <%if(n==4){ n=0;cl.sort(rSort);%>last<%}%>  ">
+				<img src="http://pub.idqqimg.com/qqweb/activity/worldcup/css/qcode/<%=item.code%>.png" width="130" />
+				<div><h5><%=html(item.name)%></h5></div>
+				<div class="clear"></div>
+			</li>	
+		<%
+			}
+		%>
+	</script>  
+	<script type="text/javascript" src="http://pub.idqqimg.com/lib/jquery/1.8.3/jquery.min.js?1402476335.1"></script>
+	<script type="text/javascript" src="http://pub.idqqimg.com/qqweb/activity/worldcup/js/lib/jquery.tmp.js?1402476335.1"></script>
+	<script type="text/javascript" src="http://pub.idqqimg.com/qqweb/activity/worldcup/js/lib/jq.ext.js?1402476335.1"></script>   
+	<script type="text/javascript" src="http://pub.idqqimg.com/qqweb/activity/worldcup/js/lib/qservice2.js?1402476335.1"></script>  	
+	<script data-main="js/main.js" src="http://pub.idqqimg.com/qqweb/activity/worldcup/js/activity.js?1402476335.1"></script>
+  	
+
+</body>
+</html>

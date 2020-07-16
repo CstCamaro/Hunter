@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+	<head>
+		<meta charset="gb2312" />
+		<meta http-equiv="Content-Language" content="zh-cn" />
+		<meta name="author" content="Tencent-ISUX-Vip" />
+		<meta name="Copyright" content="Tencent" />
+		<meta name="Description" content="页面描述" />
+		<meta name="Keywords" content="页面关键字" />
+		<title>QQ会员成长值体系</title>
+		<script type="text/javascript">
+            // 重定向到http://vip.qq.com/my_freedom/level.html#growthtask
+            var url = 'http://vip.qq.com/my_freedom/level.html' + window.location.search + '#growthtask';
+            window.location.replace(url);
+			var timePoint = {
+				initTime:new Date().getTime(),
+				pointMap:{},
+				/**
+				 *标记需要上报的时间点（注意：时间点标记要求页面加载后会被执行，需要用户触发的时间点将被上报延迟）
+				 *@param {string} name 当前时间点名称
+				 *@param {int} pointIndex 当前标记的时间点顺序，当pointIndex<0时表示不上报，当pointIndex>0时对应上报时的参数索引
+				 *@param {string=“initTime”} startPointName 当前时间点计算时的起始点，默认为initTime
+				 */
+				mark:function (name, pointIndex, startPointName) {
+					//记录当前时间点名称，时间，和比较时间点（默认为初始化时间）
+					startPointName = startPointName || 'initTime';
+					timePoint.pointMap[name] = [name, new Date().getTime(), startPointName, pointIndex];
+				}
+			};
+		</script>
+		<link rel="stylesheet" href="http://imgcache.qq.com/vipstyle/vipportal/v1/css/gb.css" media="screen" />
+        <link rel="stylesheet" rev="stylesheet" href="http://imgcache.qq.com/vipstyle/vipportal/v1/css/growth/index.css" type="text/css" media="screen" />
+		<script type="text/javascript">timePoint.mark("loadCss", 1);</script>
+		<script type="text/javascript" src="http://imgcache.qq.com/club/portal_new/js/vip_menu.js" charset="gb2312"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<script type="text/javascript">
+				_write_vip_portal_menu_();
+				timePoint.mark("loadHeader", 2);
+			</script>
+			<div class="vip_content">
+				<div class="grid_c1">
+					<!-- <div class="gr_banner">
+						<div class="gr_about">
+						<h3>什么是任务成长值？</h3>
+						<p>除常规的开通/续费可以获得每日成长值以外，完成任务也可以获得会员成长值，该部分成长值称为任务成长值</p></div>
+					</div> -->
+					<div class="gr_banner2">
+
+					</div>
+				</div>
+
+				<div class="grid_c1">
+					<div class="gr_tabs_box">
+						<div class="gr_tabs_nav f_tx1">
+							<ul class="clearfix s_tx1">
+								<li><a class="current" href="http://vip.qq.com/growtask/target_czz.html">成长值任务</a></li>
+								<li><a href="http://vip.qq.com/growtask/grow_czz.html">成长值排名</a></li>
+								<li style="display:none"><a href="http://vip.qq.com/growtask/my_czz.html">我的成长值</a></li>
+								<li id="growtask_mysave" style="display:none"><a href="http://vip.qq.com/growtask/mysave.html">储蓄罐开罐</a></li>
+							</ul>
+							<p class="ico_help"><a href="http://kf.qq.com/faq/120313RRj6Bv131216eaayy2.html" target="_blank">查看成长值热点问题帮助&gt;&gt;</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid_c1" id="id_userinfo">
+					<div class="gr_mod_box1 clearfix">
+						<div class="usr_info">
+							<div class="mod_userinfo_gb">
+								<!-- 已登录 -->
+								<div class="mod_userinfo_basic">
+									<div class="mod_userinfo_avatar">
+										<a href="http://face.qq.com" target="_blank"><img id="id_face_url" src="http://imgcache.qq.com/vipportal_v2/img/temp/img_face.jpg" onerror="" alt="用户名称" /></a>
+									</div>
+									<div class="mod_userinfo_name">
+										<span id="id_nickname">欢迎您</span>
+										<a href="http://vip.qq.com/my/index.html" class="mod_userinfo_center" target="_blank">个人中心</a>
+									</div>
+
+									<div class="mod_userinfo_mark">
+										<a href="http://vip.qq.com/my/level.html" target="_blank"><span class="ico_vip1_off" id="id_ico_vip"></span></a><!-- vip1到vip7，类名是ico_vip1,ico_vip2,..,.ico_vip7 -->
+										<a href="http://vip.qq.com/year_vip/year.html" target="_blank"><span class="ico_yvip1_off" id="id_ico_yvip"></span></a><!-- 年费vip1到vip7，类名是ico_yvip1,ico_yvip2,..,.ico_yvip7 -->
+										<a href="http://vip.qq.com/help/help_bank.html" target="_blank"><span class="ico_cft_off" id="id_ico_cft"></span></a>
+										<a href="http://vip.qq.com/year_vip/year.html" target="_blank" style="display:none"><span class="ico_yearvip_off" id="id_ico_yearvip"></span></a>
+										<a class="mod_userinfo_quit" href="javascript:logout()">退出</a>
+									</div>
+								</div>
+								<div class="usr_growth_total">
+									我的成长值共计：<strong class="c_tx1" id="id_total_growvalue">0</strong>
+								</div>
+							</div>
+						</div>
+						<div class="growth_info">
+							<div class="gr_progress_con" id="id_gr_progress_con">
+								本月任务成长值完成状况<span class="c_tx2"></span>
+								<div class="gr_progress_bar" id="id_gr_progress_bar">
+									<span class="gr_progress_value" id="id_gr_progress_value"></span>
+								</div>
+								<div class="gr_progress_tips1" id="id_growvalue">0</div>
+								<div class="gr_progress_tips2" id="id_gr_progress_tips2" style="display: none;">
+									<div class="gr_progress_hd">奖励双倍</div>
+									<div class="gr_progress_bd c_tx2">年费会员或者VIP6以上用户获得任务成长值上限及奖励翻倍！</div>
+								</div>
+								<div class="gr_progress_tips3" onmouseover="$e('#id_gr_progress_tips2').show()" onmouseout="$e('#id_gr_progress_tips2').hide()"></div>
+							</div>
+							<div class="gr_progress_about c_tx2" id="id_gr_progress_about"></div>
+							<div class="growth_remark" id="id_growth_remark" style="display:none;">
+								<h4>储值罐停用</h4>
+								<ul>
+									<li class="c_tx2">您的储值罐共有：<span class="c_tx1" id="id_jar_growvalue">0</span>分</li>
+									<p><a href="http://vip.qq.com/growtask/mysave.html" target="_blank">兑换储值罐&gt;&gt;</a></p>
+								</ul>
+							</div>
+						</div>
+					</div>
+                    <div class="gr_paytips">
+						年费会员尊享任务成长值双倍送特权，完成任务可获得双倍成长值，每月上限提升至200点。
+                        <a href="javascript:void(0);" data-minipay="1" data-month="12" data-aid="vipminipay.pingtai.vipsite.czz.yearvip" class="mod_yearvip vipbtn"></a>
+					</div>
+				</div>
+
+				<div class="grid_c1">
+					<div class="gr_mod_sort clearfix">
+						<div class="sort_option clearfix">
+							<div class="sort_label">
+								排序：
+							</div>
+							<div class="sort_options clearfix">
+								<span id="sort1" class="on"><a onclick='pgvSendClick({hottag:"growth.act.sort.default"});' href="javascript:sort('sort1')" class="first">默认</a></span>
+								<span id="sort2" style="display: none;"><a onclick='pgvSendClick({hottag:"vip.act.sort.popularity"});' href="javascript:sort('sort2')" >热度</a></span>
+								<span id="sort3" title="难度从高到低"><a onclick='pgvSendClick({hottag:"growth.act.sort.difficulty"});' href="javascript:sort('sort3')" class="last">难度<i class="ico_down"></i></a></span>
+							</div>
+						</div>
+					</div>
+					<div class="gr_mod_box3">
+						<ul id="id_growacts">
+							<li data-href="http://vip.qq.com/" style="display:none;">
+								<div class="photo">
+									<img src="http://tacs.oa.com/img.php?150x85" alt="" />
+									<div class="hard_star">
+										<span>任务难度：</span>
+										<span class="star">
+											<a href="#" class="on" target="_blank"></a>
+											<a href="#" class="on" target="_blank"></a>
+											<a href="#" class="on" target="_blank"></a>
+											<a href="#"  target="_blank"></a>
+											<a href="#" target="_blank"></a>
+										</span>
+									</div>
+								</div>
+								<div class="info">
+									<h4>拍拍信用卡还款</h4>
+									<div class="line clearfix">
+										<div class="label">任务说明：</div>
+										<div class="cont">电击QQ面板上的会员图标，进入会员官网，获得2点成长值，每天最多获赠1次。</div>
+									</div>
+									<div class="line clearfix">
+										<div class="label">完成次数：</div>
+										<div class="cont"><span class="c_tx1">1</span>/20</div>
+									</div>
+									<div class="name">成长值：奖励<span class="data c_tx1">2</span>点</div>
+									<div class="line">已有<span class="c_tx1">123456</span>位会员领取</div>
+								</div>
+								<i class="ico_task"></i>
+								<i class="ico_done"><span></span></i>
+							</li>
+							<li data-href="http://vip.qq.com/" style="display:none;">
+								<div class="photo">
+									<img src="http://tacs.oa.com/img.php?150x85" alt="" />
+									<div class="hard_star">
+										<span>任务难度：</span>
+										<span class="star">
+											<a href="#" class="on" target="_blank"></a>
+											<a href="#" class="on" target="_blank"></a>
+											<a href="#" class="on" target="_blank"></a>
+											<a href="#"  target="_blank"></a>
+											<a href="#" target="_blank"></a>
+										</span>
+									</div>
+								</div>
+								<div class="info">
+									<h4><span class="ico_hot"></span>拍拍信用卡还款</h4>
+									<div class="line clearfix">
+										<div class="label">任务说明：</div>
+										<div class="cont">电击QQ面板上的会员图标，进入会员官网，获得2点成长值，每天最多获赠1次。</div>
+									</div>
+									<div class="line clearfix">
+										<div class="label">完成次数：</div>
+										<div class="cont"><span class="c_tx1">1</span>/20</div>
+									</div>
+									<div class="name">成长值：奖励<span class="data c_tx1">2</span>点</div>
+									<div class="line">已有<span class="c_tx1">123456</span>位会员领取</div>
+								</div>
+								<i class="ico_task"></i>
+								<i class="ico_done"><span></span></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="grid_c1">
+					<div class="mod_pagenav_gb_v2">
+						<p class="mod_pagenav_main">
+							<span class="mod_pagenav_disable"><span id="lastPage"> 上一页</span></span>
+							<span id = "pageIndex" class="mod_pagenav_count">
+								<span class="current"><span>1</span></span>
+							</span>
+							<span class="mod_pagenav_disable"><span id="nextPage">下一页</span></span>
+						</p>
+						<p class="mod_pagenav_option">
+							<span id="pageNo" class="mod_pagenav_turn">到<input type="text" id="PageCount" name="PageCount">页<button id="btn_toPage" onclick="GrowthPager.toPage($('PageCount').value)" type="submit"><span>确定</span></button></span>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+        <!-- 内容主体 结束 -->
+		<script type="text/javascript">timePoint.mark("loadHtml", 3);</script>
+		<script type="text/javascript" src="http://imgcache.qq.com/ac/club/qqvip/v2.0/qqviplib_2.0.0.js?ver=2011" charset="gb2312"></script>
+		<script type="text/javascript" src="http://imgcache.qq.com/club/portal_new/js/vip_common.js?ver=2011" charset="gb2312"></script>
+		<!-- 公用版权 开始 -->
+		<script type="text/javascript">write_new_portal_footer();</script>
+		<script type="text/javascript" src="http://imgcache.qq.com/club/qv/pkg/qv_1.x.x.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			function sort(id){
+				$("sort1").className = "";
+				$("sort2").className = "";
+				$("sort3").className = "";
+				$(id).className="on";
+
+				if (id == "sort1"){
+					GrowthAct.sortType = 1;
+				}else if (id == "sort2"){
+					if(GrowthAct.sortType == 2){
+						$("sort2").title = "热度从低到高";
+						GrowthAct.sortType = 5;
+					}
+					else{
+						GrowthAct.sortType = 2;
+						$("sort2").title = "热度从高到低";
+					}
+				}
+				else if (id == "sort3"){
+					if(GrowthAct.sortType == 3){
+						$("sort3").title = "难度从高到低";
+						GrowthAct.sortType = 4;
+					}
+					else{
+						GrowthAct.sortType = 3;
+						$("sort3").title = "难度从低到高";
+					}
+				}
+				GrowthPager.createPager(GrowthAct.arrGrowActs.length, 1); // 初始化分页
+				GrowthAct.displayGrowActExt(GrowthAct.arrGrowActs, GrowthAct.userActsStatus, 1);
+			}
+		</script>
+		<script type="text/javascript">
+			jQuery.noConflict();
+			var hot_growact={
+				"new":[55,45,0],//第一排热门推荐
+				"user":[16,26,0]//第二排热门推荐
+			};
+		</script>
+		<script type="text/javascript" src="http://imgcache.qq.com/clubact/common/oz.js" charset="utf-8"></script>
+		<script type="text/javascript" src="http://imgcache.qq.com/club/portal_new/js/growtask/target_czz.js" charset="utf-8"></script>
+		<!--<script type="text/javascript" src="http://imgcache.qq.com/club/portal_new/js/growtask/target_czz_new20150121.js" charset="utf-8"></script>-->
+    <script type="text/javascript" src="http://imgcache.qq.com/clubact/common/swfobject.js"></script>
+    <script type="text/javascript" src="http://imgcache.qq.com/club/portal_new/js/growtask/tips.js" charset="utf-8"></script>
+		<script type="text/javascript" src="http://imgcache.qq.com/club/portal_new/bulletin.js" charset="gb2312"></script>
+		<script type="text/javascript" src="http://pingjs.qq.com/tcss.ping.js"></script>
+		<script type="text/javascript">
+			jQuery.noConflict();
+			timePoint.mark("loadJs", 4);
+			jQuery(window).load(function () {
+				// 文档加载完成
+				qq.speedReport.init({
+					productFlag:169, //业务标识：会员
+					webFlag:105, //站点标识：官网
+					delayTime:2,            //延迟上报
+					isReportPerformance:true
+				});
+				//添加延迟是为了统计到loadEventEnd的时间
+				setTimeout(function () {
+					qq.speedReport.report(timePoint, 41, 4);
+				}, 1000);
+			});
+
+			if (typeof(pgvMain) == 'function') {
+				pgvMain();
+			}
+		</script>
+		<!-- 公用版权 结束 -->
+		<!-- 以下JS代码不可删除 -->
+	</body>
+</html>

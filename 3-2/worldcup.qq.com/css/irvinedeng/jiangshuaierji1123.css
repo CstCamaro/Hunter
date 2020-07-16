@@ -1,0 +1,48 @@
+body{font-family:"ËÎÌå";font-size:12px;background:#6C150C;color:#000;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd,table,td{margin:0;padding:0;border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,p,select,input{margin:0;padding:0;font-size:12px;}
+a{color:#6B3C1B;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.left,.fleft{float:left;}
+.right,.fright{float:right;}
+.clear{clear:both;height:0;overflow:hidden;}
+.dis,.block{display:block!important;}
+.undis,.none{display:none;}
+.noborder{border:0!important;}
+.nobg{background:none!important;}
+.fbold{font-weight:bold;}
+.f14{font-size:14px;}
+.t24{text-indent:24px;}
+.t28{text-indent:28px;}
+.l20{line-height:20px;}
+.l22{line-height:22px;}
+.l26{line-height:26px;}
+.coffee{color:#6B3C1B;}
+.top,.bg02{width:960px;margin:0 auto;}
+.box10{height:10px;clear:both;overflow:hidden;}
+.bg{width:100%;background:#6C150C url(//mat1.gtimg.com/worldcup/images/irvinedeng/jiangshuai1/bg.jpg) no-repeat top center;}
+.top{height:68px;line-height:68px;color:#BF9E9B;}
+.top a{color:#BF9E9B;}
+.top .pandian{float:left;padding-left:190px;}
+.top .fanhui{float:right;padding-right:24px;}
+.bg02{width:960px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jiangshuai1/repeaty.jpg) repeat-y;}
+.bg03{width:960px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jiangshuai1/bg03.jpg) no-repeat top center;}
+.nav{width:960px;height:75px;float:left;margin-top:28px;}
+.nav img{float:left;}
+.layout{width:900px;float:left;padding:30px 30px 15px;}
+.layout .h2{font:18px/30px "ºÚÌå";}
+.layout .h2 a{color:#333;}
+.layout .p1{text-align:left;}
+.toupiao{width:900px;float:left;margin-top:40px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jiangshuai1/toupiao_bg.jpg);}
+.toupiao div{width:100px;height:115px;padding:11px 0;float:left;overflow:hidden;text-align:center;}
+.toupiao div .img{border:1px solid #696969;}
+.toupiao div dl{width:100%;float:left;line-height:20px;margin-top:5px;color:#E1E1E1;}
+.toupiao div dt{width:100%;float:left;cursor:pointer;}
+.toupiao div a,.toupiao div a:hover{color:#fff;}
+.toupiao div dd{width:100%;float:left;}
+.toupiao .current .img{border:1px solid #FFF600;}
+.page{width:900px;float:left;margin-top:20px;}
+.page .prev{font-weight:bold;font-size:14px;float:left;padding:0 5px 8px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jiangshuai1/page_bg.jpg) no-repeat center bottom;}
+.page .next{font-weight:bold;font-size:14px;float:right;padding:0 5px 8px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jiangshuai1/page_bg.jpg) no-repeat center bottom;}
+.bottom{width:100%;height:28px;clear:both;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jiangshuai1/bottom.jpg) no-repeat center;}/*  |xGv00|b4e0e52df62b86de441ec274dc1d67fa */

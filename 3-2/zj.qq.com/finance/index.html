@@ -1,0 +1,2881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml">
+<head>
+    <title>财经频道_腾讯·大浙网_浙江城市生活门户</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="Keywords" content="腾讯大浙网,大浙财经,杭州,财智汇" />
+    <meta name="description" content="大浙网财经频道（//zj.qq.com/finance/）浙江百姓的创富财智生活平台。关注浙商和浙江的民营经济，为你提供每天最及时丰富的财经资讯和你最需要的丰富投资创富信息。" />
+    <script src="//mat1.gtimg.com/www/js/Koala/Koala.min.1.5.js" type="text/javascript"></script>
+    <script type="text/javascript" src="//zj.qq.com/js/changyongjs/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="//mat1.gtimg.com/zj/lyen/finance-channel/index2017/css/cjstyle.css" />
+    <style type="text/css">
+        .adv1000{ width:1000px; height:60px; margin:10px auto 0;}
+        .palist a span{cursor:pointer;}
+        .focus .ftxt p{line-height:22px; height:110px; width:165px; overflow:hidden; }
+        .popTgr{ width:auto;}
+        .adv2{ z-index:10;}
+    </style>
+    <script type="text/javascript" >
+        $(document).on('mouseover', '.tabEvt', function() {
+            var _this = $(this);
+            if (_this.hasClass('tabCurrent')) { return; }
+            var id = _this.attr('id'), ag = _this.attr('action-group');
+            var cur = $('.tabEvt[action-group="' + ag + '"]').filter(".tabCurrent");
+            var cid = cur.attr('id');
+            $("#" + cid + 'Ctn').hide();
+            $('#' + id + "Ctn").show();
+            cur.removeClass('tabCurrent');
+            _this.addClass('tabCurrent');
+        });
+
+        $(function(){
+            $('.shareBtn').mouseover(function(){
+                $(this).find('ul').show();
+                $(this).addClass('shareHover');
+            }).mouseout(function(){
+                $(this).find('ul').hide();
+                $(this).removeClass('shareHover');
+            });
+
+            $('.split .shareBtn').each(function(){
+                $(this).find('a').click(function(){
+                    var $this = $(this);
+                    var $tit = $this.parents('.split').find('.tit a');
+                    var shareTitle = $tit.text();
+                    var shareUrl = $tit.attr('href');
+                    doShare(this.className, shareTitle, shareUrl);
+                });
+            });
+
+            $('.headNews .shareBtn').each(function() {
+                $(this).find('a').click(function(){
+                    var $this = $(this);
+                    var $tit = $this.parents('li').find('.nlink3');
+                    var shareTitle = $tit.text();
+                    var shareUrl = $tit.attr('href');
+                    doShare(this.className, shareTitle, shareUrl);
+                });
+            });
+
+            function doShare(type, shareTitle, shareUrl) {
+                switch(type){
+                    case 's_txwb':
+                        window.open('//v.t.qq.com/share/share.php?title='+encodeURIComponent(shareTitle)+'&url='+encodeURIComponent(shareUrl),'转播到腾讯微博', 'width=700,height=680,top=0,left=0,toolbar=no,menubar=no, scrollbars=no,location=yes,resizable=no,status=no');
+                        break;
+                    case 's_qzone':
+                        window.open('//sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?title='+encodeURIComponent(shareTitle)+'&url='+encodeURIComponent(shareUrl),'分享到QQ空间', 'width=700,height=680,top=0,left=0,toolbar=no,menubar=no, scrollbars=no,location=yes,resizable=no,status=no');
+                        break;
+                    case 's_qq':
+                        window.open('//connect.qq.com/widget/shareqq/index.html?title='+encodeURIComponent(shareTitle)+'&url='+encodeURIComponent(shareUrl),'分享给QQ好友和群组');
+                        break;
+                    case 's_sina':
+                        window.open('//v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(shareTitle)+'&url='+encodeURIComponent(shareUrl),'转播到新浪微博', 'width=700,height=680,top=0,left=0,toolbar=no,menubar=no, scrollbars=no,location=yes,resizable=no,status=no');
+                        break;
+                }
+            }
+            $(".cardShow,.picList, .invest .swiper").slides({
+                preload: true,
+                preloadImage:"//mat1.gtimg.com/zj/yuwanli/city_ningbo/images/loading.gif",
+                generatePagination: true,
+                currentClass: 'current',
+                effect: 'slide',
+                play: 5000,
+                pause: 1500,
+                hoverPause: true
+            });
+            $("#slides").slides({
+                preload: true,
+                preloadImage:"//mat1.gtimg.com/zj/yuwanli/city_ningbo/images/loading.gif",
+                generatePagination: true,
+                currentClass: 'current',
+                effect: 'slide',
+                play: 5000,
+                pause: 1500,
+                hoverPause: true,
+                slidesLoaded:function(e){
+                    $(".life .slideCon .text").html($($("#slides .slide")[0]).find(".caption").html());
+                },
+                animationComplete:function(e){
+                    $(".life .slideCon .text").html($($("#slides .slide")[e-1]).find(".caption").html());
+
+                }
+            });
+            $(".secure").slides({
+                preload: true,
+                preloadImage:"//mat1.gtimg.com/zj/yuwanli/city_ningbo/images/loading.gif",
+                generatePagination: false,
+                currentClass: 'current',
+                effect: 'slide',
+                play: 5000,
+                pause: 1500,
+                hoverPause: true
+            });
+            $(".pagination li a").hover(function () {
+                $(this).click();
+            });
+            $(".rightCon .new .secure .slide li").hover(function(e){
+                var index = $(this).index();
+                if($(this).index()>3){
+                    $(this).parent().stop(true,true).animate({
+                        top:-(index-3)*30-1+'px'
+                    },400);
+                }
+                $(this).find(".fold").stop(true,true).slideDown().show();
+            },function(){
+                $(this).find(".fold").stop(true,true).slideUp().hide();
+                $(this).parent().stop(true,true).animate({top:"0"},400);
+            });
+
+            $(".czhNew .zlyc_con").hover(function(){
+                $(this).find(".cover").stop(true,true).slideDown().show();
+                $(this).find("p").stop(true,true).delay(500).fadeIn();
+            },function(){
+                $(this).find("p").stop(true,true).hide();
+                $(this).find(".cover").stop(true,true).delay(200).slideUp();
+
+            })
+
+            $(".picList .slide").hover(function(){
+                $(this).find(".cover").stop(true,true).slideDown().show();
+                $(this).find("p").stop(true,true).delay(500).fadeIn();
+            },function(){
+                $(this).find("p").stop(true,true).hide();
+                $(this).find(".cover").stop(true,true).delay(200).slideUp();
+
+            })
+
+
+        });
+
+        $(document).ready(function() {
+            var autoPopSlide = function(e) {
+                var b = e.autoPopE.filter('.tabCurrent');
+                var n = b.next();
+                if (n.length == 0)
+                    n = e.autoPopE.eq(0);
+                n.mouseover();
+                setTimeout(function() { autoPopSlide(e); }, 6000);
+            }
+            $('#gotop').click(function() {
+                $("html, body").animate({ scrollTop: 0 }, 1000);
+            });
+            $('.popTgr').each(function() {
+                var _this = $(this);
+                _this.autoPopE = _this.find('.tabEvt');
+                setTimeout(function() { autoPopSlide(_this); }, 6000);
+            });
+
+            $(".split").each(function(){
+                $(this).mouseover(function(){
+                    $(this).addClass("bg7");
+                }).mouseout(function(){
+                    $(this).removeClass("bg7");
+                });
+
+
+            });
+
+            $(".split:gt(13)").hide();
+            $("#getmore").click(function(){
+                $(".split:gt(13)").show();
+                $(".mainLeft").height("4200");
+                $(".mainDiv").height("4200");
+                $(".blue").hide();
+                $(".morenew").show();
+            });
+            $(window).scroll(function() {
+                if($(window).scrollTop()>3215) {
+                    $('.scroll-fixed').css({'position':'fixed','top':'0px'});
+                }else {
+                    $('.scroll-fixed').css({'position':'absolute','top':'auto'});
+                }
+            });
+
+
+
+            $(".headimglb").mouseover(function(){
+                $(".btnpn").show();
+            }).mouseout(function(){
+                $(".btnpn").hide();
+            });
+
+            $(".midimglist a").mouseover(function(){
+                $(this).find("i").show();
+            }).mouseout(function(){
+                $(this).find("i").hide();
+            });
+
+
+
+            $(".ssd1").mouseover(function(){
+                $(this).css("background","#e7ab2b");
+            }).mouseout(function(){
+                $(this).css("background","#f4cc76");
+            });
+            $(".ssd2").mouseover(function(){
+                $(this).css("background","#e7ab2b");
+            }).mouseout(function(){
+                $(this).css("background","#f2bd4c");
+            });
+
+            $(".ssd3").mouseover(function(){
+                $(this).css("background","#e7ab2b");
+            }).mouseout(function(){
+                $(this).css("background","#f2bd4c");
+            });
+            $(".ssd4").mouseover(function(){
+                $(this).css("background","#e7ab2b");
+            }).mouseout(function(){
+                $(this).css("background","#f0b129");
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+<script type="text/javascript" src="//imgcache.qq.com/qzone/biz/comm/js/qbs.js"></script>
+<script type="text/javascript">
+var TIME_BEFORE_LOAD_CRYSTAL = (new Date).getTime();
+</script>
+<script src="//ra.gtimg.com/web/crystal/v4.6Beta02Build020/crystal-min.js" id="l_qq_com" arguments="{'extension_js_src':'//ra.gtimg.com/web/crystal/v4.6Beta02Build020/crystal_ext-min.js', 'jsProfileOpen':'false', 'mo_page_ratio':'0.01', 'mo_ping_ratio':'0.01', 'mo_ping_script':'//ra.gtimg.com/sc/mo_ping-min.js'}"></script>
+<script type="text/javascript">
+if(typeof crystal === 'undefined' && Math.random() <= 1) {
+  (function() {
+    var TIME_AFTER_LOAD_CRYSTAL = (new Date).getTime();
+    var img = new Image(1,1);
+    img.src = "//dp3.qq.com/qqcom/?adb=1&dm=zj&err=1002&blockjs="+(TIME_AFTER_LOAD_CRYSTAL-TIME_BEFORE_LOAD_CRYSTAL);
+  })();
+}
+</script>
+<style>.absolute{position:absolute;}</style>
+<!--[if !IE]>|xGv00|530be5c385925f404ebe1f3f4cda069d<![endif]-->
+
+<!--mini导航-->
+<style>
+    body{margin:0;}
+    /*大浙网迷你导航 v20120118 1.0.0 ryanguo*/
+    #mini_nav_qq_wrap{width:100%;height:25px;background:url(//mat1.gtimg.com/www/images/nav/mini_bg.png) top left repeat-x}
+    #mini_nav_qq{width:1000px;height:25px; margin:0 auto;padding:0;font-size:12px;font-family:"宋体","Arial Narrow";clear:both;}
+    #mini_nav_qq div{color:#666;line-height:24px;}
+    #mini_nav_qq .mini_nav_fl{float:left;}
+    #mini_nav_qq ul,#mini_nav_qq li{margin:0;padding:0;list-style:none;}
+    #mini_nav_qq .first{padding-left:4px;}
+    #mini_nav_qq .first a{padding-right:13px;background:url(//mat1.gtimg.com/www/images/nav/mini_arrow.png)  right -1px no-repeat;}
+    #mini_nav_qq .end{border:none;}
+    #mini_nav_qq ul{padding:7px 3px 0 0;}
+    #mini_nav_qq li{float:left;padding:0 8px;*padding-top:1px;border-right:#ddd 1px solid;line-height:12px;color:#666;}
+    #mini_nav_qq a{color:#666; text-decoration:none;}
+    #mini_nav_qq a:visited{color:#666;}
+    #mini_nav_qq a:hover{color:#666; text-decoration: underline;}
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        /* Safari 3.0 and Opera 9 rules here */
+        #mini_nav_qq{font-family:宋体, STSong;}
+    }
+    #main_nav_dxw_wrap { width:100%; height:35px; }
+    #main_nav_dxw { width:1000px; margin:0 auto; font-size:12px; font-family:"宋体", "Arial Narrow";}
+    #main_nav_dxw img { border:0; }
+    #main_nav_dxw .nav { width:1000px; height:35px;}
+    #main_nav_dxw .nav ul { padding:12px 0 9px; height:14px;}
+    #main_nav_dxw .nav li { list-style:none; }
+    #main_nav_dxw .nav li { padding:0 13px 0 13px; background:url(//mat1.gtimg.com/zj/nav_img/images/nav_line.png) right center no-repeat; line-height:14px; font-size:12px; float:left; }
+    #main_nav_dxw .nav li a { color:#333; text-decoration:none; }
+    #main_nav_dxw .nav li a:visited { color:#333; }
+    #main_nav_dxw .nav li a:hover { color:#333; text-decoration:underline;}
+    #main_nav_dxw .nav .end { background:none; }
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        /* Safari 3.0 and Opera 9 rules here */
+        #main_nav_dxw { font-family:宋体, STSong; }
+        #main_nav_dxw_wrap #main_nav_dxw .nav ul li{  padding-right:13px;}
+    }
+</style>
+<div id="mini_nav_qq_wrap">
+    <div id="mini_nav_qq" >
+        <div class="mini_nav_fl" bossZone="mainnav">
+            <ul>
+                <li><a href="http://www.qq.com/" target="_blank">腾讯网首页</a></li>
+                <li><a href="http://zj.qq.com" target="_blank">腾讯·大浙网首页</a></li>
+                <li> <a href="javascript:void(0);" onclick="SetHome(this,'http://zj.qq.com/');">设为首页</a>        </li>
+            </ul>
+        </div>
+        <style type="text/css">
+/*导航微博登录 v20120209 1.0.7 mblogin*/
+#site_nav_mblogin{float:right;height:25px;padding-right:8px;line-height:24px;color:#666;font-size:12px;font-family:"宋体","Arial Narrow",sans-serif;}
+#site_nav_mblogin div{float:left;}
+#site_nav_mblogin .mblog_logo{width:20px;height:24px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) -90px 5px no-repeat; }
+#site_nav_mblogin .mblog_logo span{display:none;}
+#site_nav_mblogin .mblog_login_info span{padding-right:12px;}
+#site_nav_mblogin .mblog_login_info em{font-family:Arial;font-style:normal;padding-right:12px;}
+#site_nav_mblogin .mblog_login_button span,#site_nav_mblogin .mblog_enter_button span{*padding-left:1px;_padding-left:1px;text-align:center;color:#fff;}
+#site_nav_mblogin .mblog_login_button,#site_nav_mblogin .mblog_enter_button{position:relative;z-index:10000;width:57px;height:17px;margin-top:2px;margin-right:12px;padding-top:2px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) 0 0 no-repeat;cursor:pointer;text-align:center;line-height:17px;overflow:visible;color:#fff;}
+#site_nav_mblogin .mblog_enter_button{display:none;}
+#site_nav_mblogin .mblog_login_text{*padding-top:1px;_padding-top:1px;}
+#site_nav_mblogin .mblog_loginout_text{display:none;*padding-top:1px;_padding-top:1px;}
+
+#site_nav_mblogin a{color:#666; text-decoration:none;}
+#site_nav_mblogin a:visited{color:#666;}
+#site_nav_mblogin a:hover{color:#666; text-decoration: underline;}
+#site_nav_mblogin .mblog_login_info em a,#site_nav_mblogin .mblog_login_info em a:visited,#site_nav_mblogin .mblog_login_info em a:hover{color:#0B3B8C}
+#site_nav_mblogin .mblog_login_info a.mbAtMe,#site_nav_mblogin .mblog_login_info a.mbAtMe:visited,#site_nav_mblogin .mblog_login_info a.mbAtMe:hover{color:#BD0A01;}
+#site_nav_mblogin .mblog_enter_button a,#site_nav_mblogin .mblog_enter_button a:visited,#site_nav_mblogin .mblog_enter_button a:hover{color:#fff;line-height:17px;}
+
+#site_nav_mblogin .mbCardUserInfo {position: absolute;z-index:999999;left:-160px; top:0;width:236px;margin-top: 26px; text-align:left;text-indent:0;overflow:visible;}
+#site_nav_mblogin .mbCardUserDetail div{line-height:18px;}
+#site_nav_mblogin .mbCardUserInfo{height:auto;padding:10px 24px 10px 10px;background:#ffffce;border:#f0e5ba 1px solid;color:#666;}
+#site_nav_mblogin .mbCardUserInfo .arrowBox{position:absolute;width:15px;height:8px;left:0;top:0;margin:-8px 0 0 180px;font-size:1px;line-height:1px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) 0 -30px no-repeat;celar:both;zoom:1;}
+#site_nav_mblogin .mbCardUserInfo .arrowBox div{font-size:1px;line-height:1px;}
+#site_nav_mblogin .mbCardUserInfo .mbClose {position:absolute;top:0;right:0;width:15px;height:15px;margin:4px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) 0 -45px no-repeat;font-size:1px;line-height:1px;cursor:pointer;}
+#site_nav_mblogin .mbCardUserInfo .mbClose span{display:none;}
+#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbTxt1,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbUserNick,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbFriends{color:#666;}
+#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg{padding-left:180px;text-align:left;}
+#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg a,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg a:visited{color:#2b4a78;text-decoration:underline;}
+
+#site_nav_mblogin .mbCardUserInfo {-moz-border-radius: 6px;-moz-box-shadow: 2px 2px 2px #f0e5ba;-webkit-border-radius: 6px;-webkit-box-shadow: 2px 2px 2px #f0e5ba;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari 3.0 and Opera 9 rules here */
+#site_nav_mblogin{font-family:宋体, STSong;}
+}
+
+/*=S 浮动层 */
+.share_layer { overflow:hidden; padding:7px; position:absolute; z-index:999999;zoom:1;font-size:12px; font-family:Arial, Sans-Serif; }
+.share_layer ul, .share_layer ul li { list-style-type:none; }
+.share_layer img { border:0 none; }
+.share_layer a { text-decoration:none; }
+.share_layer a:hover { text-decoration:underline; }
+.share_layer button,.share_layer label { cursor:pointer; border:0 none; }
+.share_layer input,.share_layer  button { font-size:12px; font-family:Arial, Sans-Serif; }
+.share_layer_main{ border:1px solid #b5c1ca; background-color:#FAFCFF; position:relative; z-index:5}
+.share_layer_title { height:24px; background:#EEF4F6 url(//mat1.gtimg.com/www/images/nav/loginpop_tbg.png) repeat-x; cursor:move; border-bottom:1px solid #CED3E4; }
+.share_layer_title h3 { float:left; margin:0;padding:3px 0 0 12px; color:#666; font-size:13px;font-weight:normal; line-height:18px; overflow:hidden; font-family:Arial, Helvetica, sans-serif;}
+.share_layer_title .mblogo{ padding-left:24px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt1.png) -84px 6px no-repeat;}
+.share_layer .bt_close { background:url(http://imgcache.qq.com/qzonestyle/qzone_app/app_news_share_v1/pop_bg.png) no-repeat 0 -39px; width:9px; height:10px;cursor:pointer; position:absolute; right:10px; top:11px; z-index:5px;}
+.share_layer_cont a:link, .share_layer_cont a:visited { color:#5F5F5F; text-decoration:underline; }
+.share_layer_cont a:hover, .share_layer_cont a:active { color:#494949; }
+.share_layer_cont { color:#000000; background-color:#FAFCFF;}
+.share_layer_hint { color:#9E9E9E; font-style:normal; }
+.global_tip_button { text-align:center; clear:both; width:100%;}
+.bt_tip_sure, .bt_tip_cancel { background-image:url(http://imgcache.qq.com/qzonestyle/qzone_app/app_news_share_v1/pop_bg.png); background-repeat:no-repeat; background-position:0 -58px; font-size:12px; line-height:19px; width:48px; height:23px; margin-right:6px; *overflow:visible;
+_padding-top:3px; _line-height:12px; cursor:pointer; }
+*:lang(zh) .bt_tip_sure, .bt_tip_cancel {padding-top /*\**/:4px\9}
+.bt_tip_cancel { color:#4D637F; background-color:#F3F4F5; background-position:-54px -58px; }
+.icon_hint_warn, .icon_hint_succeed { background:transparent url(http://imgcache.qq.com/qzonestyle/qzone_app/app_news_share_v1/pop_bg.png) no-repeat; display:-moz-inline-stack; display:inline-block; height:15px; width:15px; vertical-align:middle; }
+.icon_hint_warn { background-position:-39px -37px; _vertical-align:-2px; }
+.icon_hint_succeed { background-position:-18px -37px; }
+.layer_popup { background-color:#FFFFFF; border:2px solid #6792bc; }
+.icon_hint_warn span, .icon_hint_succeed span { display:none; }
+.share_layer .bg {position:absolute;top:0;left:0;height:100%;padding:500px;zoom:1;}
+.share_layer .del_fri{font-weight:bold;display:-moz-inline-stack;display:inline-block;line-height:9px;width:11px;height:10px;position:absolute;top:6px;right:10px;cursor:pointer; font-family:"Comic Sans MS","Verdana", cursive; color:#99ADBA;}
+.share_layer .del_fri:hover{text-decoration:none; color:#666666;}
+.share_layer_title .none { display:none !important; }
+/*=E 浮动层 */
+</style>
+	<div id="site_nav_mblogin" class="site_nav_mblogin" bossZone="mbLogin">
+		<div class="mblog_logo"><span>腾讯微博蒲公英</span></div>
+		<div class="mblog_login_info" id="mblog_logined_info"></div>
+		<div class="mblog_login_button" id="mblog_login_button"><span>登录微博</span><div class="mbCardUserInfo" id="mbCarduserNotLogin" style="display: none;">
+				<div class="arrowBox"><div class="arrow"></div></div>
+				<div class="mbClose"><a href="#"><span>关闭</span></a></div>
+				<div class="mbCardUserDetail">
+					<div class="mbConTxt">
+						<span class="mbTxt1">加入微博，记录点滴，分享感动，握手明星</span>
+					</div>
+					<div class="mbReg"><a target="_blank" href="http://t.qq.com?pref=qqcom.toptips">开通微博</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="mblog_enter_button" id="mblog_enter_button"><span>进入微博</span></div>
+		<div class="mblog_login_text" id="mblog_login_text"><a href="http://t.qq.com/reg/index.php?pref=qqcom.mininav" target="_blank">注册</a></div>
+		<div class="mblog_loginout_text" id="mblog_logout_text"><a href="javascript:void(0)" target="_blank">退出</a></div>
+	</div>
+
+<script src="//mat1.gtimg.com/www/mb/js/portal/mi.MiniNav_13090403.js" charset="utf-8"></script>
+
+
+<!--搜狗搜索-->
+<style type="text/css">
+#sosoSearch{width:154px;height:18px;float:right;margin-right:15px;display:inline;border:1px solid #d7d7d7;margin-top:5px;}
+#searchKey{width:129px;height:18px;float:left;border:0;margin:0;padding:0;}
+#searchBtn{width:24px;height:18px;float:right;border:0;text-indent:-9999px;cursor:pointer;background:url(//mat1.gtimg.com/www/images/qq2012/ztSougouBtn.png) no-repeat;}
+.soso-smart-m{position:absolute;z-index:9999;margin:0;background:#fff;border:1px solid #ccc;cursor:default;}
+.soso-smart-m td{font-size:13px;line-height:22px;font-family:"微软雅黑";}
+/* 未选中行的样式 */
+.soso-smart-a{}
+/* 选择行的样式 */
+.soso-smart-b{background:#D8ECFF;}
+/* 文本样式 */
+.soso-smart-c{padding-left:3px;white-space:nowrap;text-align:left;overflow:hidden;}
+</style>
+<form role="search" action="http://www.sogou.com/tx" id="sosoSearch" name="soso_search_box" method="get" target="_blank">
+	<input id="sogouSite" type="hidden" name="site" value="qq.com" />
+	<input type="text" id="searchKey" title="请输入关键词" name="query" x-webkit-speech x-webkit-grammar="builtin:translate" autocomplete="off" onfocus="if(this.value=='请输入关键词')this.value=''" />
+	<button id="searchBtn" aria-pressed="false" title="按下按钮，在搜狗中搜索相关内容" onClick="submit();bossSearch('submit',2537)"><span>搜索</span></button>
+</form>
+<script type="text/javascript">
+(function(d, fname, useSuggest,isChannelPage,pid) {
+	var frm = d.forms[fname], elems = frm.elements, input = elems['query'];
+	var IS_MSIE = navigator.userAgent.toLowerCase().indexOf('msie') != -1 && !window.opera;
+	var isIE6 = navigator.userAgent.toLowerCase().indexOf('msie 6.0') != -1;
+	var sHost = location.host||'www.qq.com',sitePrefix='www';
+	var CPID = new Array();
+	if(sHost){
+		var arr = sHost.replace(/\.qq\.com$/i,'').split('.');
+		sitePrefix = arr[0];
+		document.getElementById("sogouSite").value = sitePrefix + ".qq.com";
+	}
+	createHiddenInput('hdq',"sogou-wsse-b58ac8403eb9cf17-0100",false);
+	var scField = createHiddenInput('sourceid',"sugg",false);
+    var sub = document.getElementById("sub");
+	if(typeof sosoArticlKey != 'undefined' && sosoArticlKey.length){
+		setFieldValue(input,sosoArticlKey);
+	}
+	function createHiddenInput(name, value, disabled) {
+		if(elems[name]) {
+			elems[name].value = value;
+			if(disabled) elems[name].disabled = 'disabled';
+			else elems[name].removeAttribute('disabled');
+			return elems[name];
+		}
+		try{
+			var element = document.createElement('<input name="'+name+'" />');
+		}catch(e){}
+		
+		if(!element || element.nodeName.toUpperCase() != 'INPUT'){
+			var element = document.createElement('input');		
+		}
+		element.type = 'hidden';
+		element.name = name;
+		element.value = value;
+		if(disabled)
+			element.disabled = disabled;
+		frm.appendChild(element);
+		return element;
+	}
+
+	function disableHidden(inpt) {
+		inpt.disabled = 'disabled';
+	}	
+	function setFieldValue(field, val) {
+		field.value = val;
+	}
+	if(useSuggest) {
+		var fnToRun = function() {
+			var fileLoaded = function() {
+			  if (IS_MSIE && ac.readyState != "complete" && ac.readyState != "loaded") return;
+			  if(!sososmart) return;
+			  var divs = frm.getElementsByTagName('div');
+			  var inputWrap;
+			  for(var i=0,len=divs.length;i<len;i++){
+			  	if(divs[i].className != 'inputWarp') continue;
+			  	inputWrap = divs[i];
+			  	break;
+			  }
+			  sososmart.init(frm,input,true,'',true,inputWrap,null,null,CPID[0],scField);
+			}
+			var ac = d.createElement('script');
+			ac.type = 'text/javascript';
+			ac.async = true;
+			ac.src = '//mat1.gtimg.com/www/js/qq2012/suggestionZT.v1.0.1.js';
+			var s = d.getElementsByTagName('script')[0];
+			
+			if(IS_MSIE && !window.opera) {
+				ac.onreadystatechange = fileLoaded;
+			} else {
+				ac.onload = fileLoaded;
+			}
+			s.parentNode.insertBefore(ac, s);
+		};
+		if(IS_MSIE){
+			if(window.attachEvent){
+				window.attachEvent('onload',fnToRun,false);
+			}else{
+				window.addEventListener('load',fnToRun);
+			}
+		}else{
+			fnToRun();
+		}
+	}
+})(document, 'soso_search_box', true,true, "sogou-wsse-b58ac8403eb9cf17-0100");
+
+
+function bossSearch(zoneID,bossID){
+    //var bossID = 2537; 
+    try{		
+		var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+		var pvid=(a==null?"":"F"+unescape(a[2]));
+		a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+		var iQQ=(a==null?"":unescape(a[2]));
+		var iurl = 'http://btrace.qq.com/kvcollect?BossId='+bossID+'&sOp='+zoneID+'&sBiz=zt.qq.com&iQQ='+iQQ+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+		var gImageSerach = new Image(1,1);
+		gImageSerach.src = iurl;
+	}catch(e){}
+}
+
+function smartboxClick(){
+	bossSearch("smartbox",2537)
+}
+</script><!--[if !IE]>|xGv00|b59ac84256a86fb6e209deab0d5021ea<![endif]-->
+    </div>
+    <script type="text/javascript">
+
+
+        function SetHome(obj,url){
+
+            try{
+
+                obj.style.behavior='url(#default#homepage)';
+
+                obj.setHomePage(url);
+
+            }catch(e){
+
+                if(window.netscape){
+
+                    try{
+
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    }catch(e){
+
+                        window.open("http://zj.qq.com/sethome.htm","_blank");
+                    }
+
+                }else{
+
+                    window.open("http://zj.qq.com/sethome.htm","_blank");
+                }
+
+            }
+
+        }
+
+    </script>
+</div>
+<div id="main_nav_dxw_wrap">
+    <div id="main_nav_dxw">
+        <div class="nav">
+            <ul>
+                <li><a href="http://zj.qq.com/" target="_blank">首页</a></li>
+
+                <li bosszone="pic"><a href="http://zj.qq.com/pic/" target="_blank">图片</a></li>
+                <li><a href="http://zj.qq.com/zt2015/jinfumall/index.htm" target="_blank">理财</a></li>
+                <li><a href="http://zj.qq.com/finance/" target="_blank">财经</a></li>
+                <li><a href="http://zj.qq.com/tech/" target="_blank">创业</a></li>
+                <li><a href="http://www.gsdata.cn" target="_blank">清博</a></li>
+                <li><a href="http://zj.qq.com/ent/"  target="_blank" >娱乐</a></li>
+                <li bosszone="travel"><a href="http://zj.qq.com/travel/" target="_blank">旅游</a></li>
+                 <li bosszone="pet"><a href="http://zj.qq.com/pet/" target="_blank">宠物</a></li>
+                <li bosszone="sports"><a href="http://zj.qq.com/sports/" target="_blank">体育</a></li>
+                <li bosszone="health"><a href="http://zj.qq.com/health/" target="_blank">健康</a></li>
+                <li bosszone="food"><a href="http://zj.qq.com/food/" target="_blank">美食</a></li>
+                <li bosszone="foshion"><a href="http://zj.qq.com/fashion/" target="_blank">时尚</a></li>
+                <li bosszone="house"><a href="http://hz.house.qq.com/" target="_blank">房产</a></li>
+                <li bosszone="home"><a href="http://zj.qq.com/home/" target="_blank">家居</a></li>
+                <li bosszone="auto"><a href="http://zj.qq.com/auto/" target="_blank">汽车</a></li>
+                <li bosszone="marry"><a href="http://zj.qq.com/wedding/" target="_blank">结婚</a></li>
+                <li bosszone="baby"  ><a href="http://zj.qq.com/baby/" style="margin-right:0" target="_blank">亲子</a></li>
+                <li bosszone="edu"><a href="http://zj.qq.com/education/" target="_blank">教育</a></li>
+                <li class="end"><a href="http://zj.qq.com/fashion/index.htm#p3" target="_blank">家电</a></li>
+     
+
+            </ul>
+        </div>
+    </div>
+</div><!--[if !IE]>|xGv00|b4efc9bf16517160519a7b9083201482<![endif]-->
+
+<!--全屏广告 begin-->
+<center>
+    <!--ZJ_finance_Full_div AD begin...."l=ZJ_finance_Full&log=off"-->
+<div id="ZJ_finance_Full" style="width:1000px; margin:0 auto; display:none;" class="l_qq_com"></div> 
+<!--ZJ_finance_Full AD end --><!--[if !IE]>|xGv00|180ad5b57a4dcd150bd7aa90d6901f7e<![endif]-->
+</center>
+<!--全屏广告1 end-->
+
+<!--通栏广告 S-->
+
+<!--通栏广告 E-->
+
+<!--通栏广告 S-->
+<div style="width: 1000px;margin: 10px auto 0;">
+    <!--ZJ_finance_TopWidth1_div AD begin...."l=ZJ_finance_TopWidth1&log=off"--><div id="ZJ_finance_TopWidth1" class="l_qq_com" style="display:none;"></div><!--ZJ_finance_TopWidth1 AD end --><!--[if !IE]>|xGv00|b62fe0ae8fa1460d3457f9f77fcda831<![endif]-->
+</div>
+<!--通栏广告 E-->
+
+<!--财经导航 begin-->
+        <div class="innerSite">
+		    <div class="logo"><a href="http://zj.qq.com/finance/"  target="_blank">
+            <img alt="大浙财经" src="//mat1.gtimg.com/zj/images/cj_inc/cjogo.jpg" /></a></div>
+		    <div class="toolbar">
+    	        <div class="Form-Crumbs-Article-QQ">
+<form name="soso_search_box" action="http://www.sogou.com/tx" method="get" target="_blank" bosszone="soso">
+	                    <div class="inputWarp">
+<input id="sogouSite" type="hidden" name="site" value="qq.com"  />
+ <input type="text" onclick="value=''" value="请输入关键词" name="query" class="txtArea"></div>
+                        <input type="submit" value=" " class="submit">
+	                </form>
+
+
+
+                </div>
+		    </div>
+<div style="float:right;color:#878787;font-size: 16px;margin: 10px 20px 0 0;"></div>
+	    </div>
+
+     <div class="topNavs">
+         <div class="navLists">
+          <a href="http://zj.qq.com/finance/" class="indexlink">首页</a>
+
+          <a href="http://zj.qq.com/l/finance/finance_zx/list2012092511301.htm" target="_blank">财经资讯</a>
+
+          <a href="http://zj.qq.com/finance/finance_zt/zlfinance/index.htm" target="_blank">浙里有财</a>
+
+          <a href="http://zj.qq.com/finance/finance_zt/finance_observe/observe.htm" target="_blank">金融观察</a>
+
+          <a href="http://zj.qq.com/l/finance/list20160621144535.htm" target="_blank">银行理财</a>
+
+          <a href="http://zj.qq.com/l/finance/finance_gpzq/list20160621145830.htm" target="_blank">股票证券</a>
+
+
+
+         </div>
+        </div><!--[if !IE]>|xGv00|0aedbb106314581a819ece0a576e38f0<![endif]-->
+<!--财经导航 E-->
+
+
+<!--HeadLine S-->
+<div class="headLine">
+    <!--头条新闻 S-->
+    <div class="headNews">
+
+    <div class="newdiv1">
+        <a href="https://zj.qq.com/a/20200108/032168.htm" target="_blank" target="_blank" class="nlink1 yahei">折叠屏手机明年或爆发！你会买吗？</a>
+        <div class="n2">
+            <span class="nlink2">此前，2019年曾被业界认为是折叠屏手机的元年，而从现在来看，明年也许将成为华为、三星、摩托罗拉等手机生产商，围绕折叠屏手机市场展开厮杀的关键一年。韩联社昨天就报道说，三星将在明年2月抢先推出新款折叠屏手机...</span>
+            <a href="https://zj.qq.com/a/20200108/032168.htm" target="_blank" class="more">[详情]</a>
+        </div>
+    </div>
+
+    <ul class="newdiv2 yahei">
+
+<li>
+            <a href="https://zj.qq.com/a/20191216/017540.htm" target="_blank" class="nlink3">保健美白还包治百病？ 维C表示：拒绝捧杀</a>
+            <div class="shareBtn">
+                  <ul>
+                    <li>
+                      <a href="javascript:;" class="s_txwb">腾讯微博</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_qzone">QQ空间</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_qq">QQ好友</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_sina">新浪微博</a>
+                    </li>
+                  </ul>
+            </div>
+        </li>
+
+
+
+
+ <li>
+            <a href="https://zj.qq.com/a/20191216/017597.htm" target="_blank" class="nlink3">10分钟被划走近8万！央行新规防“黑手” </a>
+            <div class="shareBtn">
+                  <ul>
+                    <li>
+                      <a href="javascript:;" class="s_txwb">腾讯微博</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_qzone">QQ空间</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_qq">QQ好友</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_sina">新浪微博</a>
+                    </li>
+                  </ul>
+            </div>
+        </li>
+
+
+
+<li>
+            <a href="https://zj.qq.com/a/20191219/013405.htm" target="_blank" class="nlink3">今年中国平均每人花44元看电影</a>
+            <div class="shareBtn">
+                  <ul>
+                    <li>
+                      <a href="javascript:;" class="s_txwb">腾讯微博</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_qzone">QQ空间</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_qq">QQ好友</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_sina">新浪微博</a>
+                    </li>
+                  </ul>
+            </div>
+        </li>
+
+
+  <li>
+            <a href="https://zj.qq.com/a/20200108/032390.htm" target="_blank" class="nlink3">金融类APP信息“超采”将迎强监管</a>
+            <div class="shareBtn">
+                  <ul>
+                    <li>
+                      <a href="javascript:;" class="s_txwb">腾讯微博</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_qzone">QQ空间</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_qq">QQ好友</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="s_sina">新浪微博</a>
+                    </li>
+                  </ul>
+            </div>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+        
+
+
+       
+
+
+
+        
+    </ul>
+</div>
+
+<!--[if !IE]>|xGv00|425762f9517a8ea42689f4997264e4a2<![endif]-->
+    <!--头条新闻 E-->
+
+    <!--焦点图轮播 S-->
+    <div class="headimglb">
+    <!--焦点图-->
+    <!--增减轮播块时，不要忘记修改#A2fBt元素内部的i标签个数-->
+    <div id="fs_A2" class="focus">
+        <a href="javascript:void(0)" class="btnpn prev"></a>
+        <a href="javascript:void(0)" class="btnpn next"></a>
+        <div class="fPs">
+            <div class="fix">
+                <div id="A2fPic" class="fPic">
+
+                    <!--图片尺寸420*240-->
+                    <!--标题最多两行，摘要注意不要超出-->
+
+
+<!--轮播块 S-->
+                    <div class="fcon">
+                        <a href="https://zj.qq.com/a/20200113/001314.htm" target="_blank" class="lbimglink">
+                            <img src="http://img1.gtimg.com/zj/pics/hv1/63/63/2321/150939153.jpg" />
+                        </a>
+                        <div class="ftxt">
+                            <i class="bg"></i>
+                            <a href="https://zj.qq.com/a/20200113/001314.htm" target="_blank">杭州出租春节期间将调整 起步价23元</a>
+                        </div>
+                    </div>
+                    <!--轮播块 E-->
+
+
+
+<!--轮播块 S-->
+                    <div class="fcon">
+                        <a href="https://zj.qq.com/a/20200108/032275.htm" target="_blank" class="lbimglink">
+                            <img src="http://img1.gtimg.com/zj/pics/hv1/32/22/2321/150928667.jpg" />
+                        </a>
+                        <div class="ftxt">
+                            <i class="bg"></i>
+                            <a href="https://zj.qq.com/a/20200108/032275.htm" target="_blank">茅台假酒产业链：2700元飞天茅台酒瓶装70元王子酒</a>
+                        </div>
+                    </div>
+                    <!--轮播块 E-->
+
+<!--轮播块 S-->
+                    <div class="fcon">
+                        <a href="https://zj.qq.com/a/20191216/017712.htm" target="_blank" class="lbimglink">
+                            <img src="http://img1.gtimg.com/zj/pics/hv1/189/77/2320/150877824.jpg" />
+                        </a>
+                        <div class="ftxt">
+                            <i class="bg"></i>
+                            <a href="https://zj.qq.com/a/20191216/017712.htm" target="_blank">2020春运火车票开抢 别错过这些“捡漏”机会！</a>
+                        </div>
+                    </div>
+                    <!--轮播块 E-->
+
+<!--轮播块 S-->
+                    <div class="fcon">
+                        <a href="https://zj.qq.com/a/20191203/018565.htm" target="_blank" class="lbimglink">
+                            <img src="http://img1.gtimg.com/zj/pics/hv1/212/238/2319/150853877.jpg" />
+                        </a>
+                        <div class="ftxt">
+                            <i class="bg"></i>
+                            <a href="https://zj.qq.com/a/20191203/018565.htm" target="_blank">新能源电池行业加速洗牌锂价狂泻</a>
+                        </div>
+                    </div>
+                    <!--轮播块 E-->
+
+
+
+<!--轮播块 S-->
+                    <div class="fcon">
+                        <a href="https://zj.qq.com/a/20191125/003036.htm" target="_blank" class="lbimglink">
+                            <img src="http://img1.gtimg.com/zj/pics/hv1/116/104/2319/150819611.jpg" />
+                        </a>
+                        <div class="ftxt">
+                            <i class="bg"></i>
+                            <a href="https://zj.qq.com/a/20191125/003036.htm" target="_blank">国产羽绒服试水高端市场</a>
+                        </div>
+                    </div>
+                    <!--轮播块 E-->
+
+
+
+<!--轮播块 S-->
+                    <div class="fcon">
+                        <a href="https://zj.qq.com/a/20191122/007820.htm" target="_blank" class="lbimglink">
+                            <img src="http://img1.gtimg.com/zj/pics/hv1/175/13/2319/150796465.jpg" />
+                        </a>
+                        <div class="ftxt">
+                            <i class="bg"></i>
+                            <a href="https://zj.qq.com/a/20191122/007820.htm" target="_blank">预计达28亿件！快递业如何消化“双11”订单？</a>
+                        </div>
+                    </div>
+                    <!--轮播块 E-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!--轮播点 S-->
+        <div class="ftag" id="A2fBt">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+ <i></i>
+  
+        </div>
+        <!--轮播点 E-->
+    </div>
+    <script type="text/javascript">
+
+        Qfast.add('fx', { path: "https://mat1.gtimg.com/joke/Koala/plusfx1.0.min.js", type: "js" });
+        Qfast.add('widgets', { path: "https://mat1.gtimg.com/joke/Koala/plus/Terminator2.2.min.js", type: "js", requires: ['fx'] });
+        Qfast(false, 'widgets', function () {
+            K.tabs({
+                id: 'fs_A2',   //焦点图包裹id
+                conId: "A2fPic",  //** 大图域包裹id
+                tabId:"A2fBt", //** 按钮域包裹id
+                tabTn:"i", // ** 按钮配置元素
+                conCn: '.fcon', //** 大图域配置class
+                auto: 1,   //自动播放
+                effect: 'fade',   //效果配置
+                eType: 'mouseover', //** 鼠标事件
+                pageBt:true,//是否有按钮切换页码
+                bns: ['.prev', '.next'],//** 前后按钮配置class
+                interval: 4000  //** 停顿时间
+            })
+
+        })
+
+    </script>
+
+</div><!--[if !IE]>|xGv00|08acbf16e1f8990364865be129cbddcd<![endif]-->
+    <!--焦点图轮播 E-->
+
+</div>
+<!--HeadLine E-->
+
+<!--MainNew S-->
+<div class="mainDiv">
+
+    <div class="mainLeft">
+
+        <!--数说财经 S-->
+                  <div class="sscjDiv">
+              <div class="ss1">
+                <span class="sstit yahei">数说财经</span>
+
+
+
+                <div class="ssd1">
+
+                <a href="http://zj.qq.com/a/20190417/006629.htm" target="_blank" class="sslink1 yahei">
+                     <i>猪肉涨价70%</i><br />CPI上涨1.5个百分点</a>  
+                </div>
+
+
+                <div class="ssd2">
+               <a href="http://zj.qq.com/a/20190320/002960.htm" target="_blank" class="sslink1 yahei">
+                     <i>A股</i><br />站上3000点</a>  
+      
+  </div>
+
+              </div>
+
+              <div class="ss2">
+
+                <div class="ssd3">
+  <a href="http://zj.qq.com/a/20190320/003010.htm" target="_blank" class="sslink1 yahei">
+                     <i>白领跳槽</i><br />高于去年</a>  
+               
+                </div>
+                <div class="ssd4">
+
+<a href="http://zj.qq.com/a/20190304/005749.htm" target="_blank" class="sslink1 yahei">
+                     <i>杭州数字经济</i><br />增长15%</a>  
+
+
+ 
+</div>
+
+
+
+              </div>
+            </div>
+<!--[if !IE]>|xGv00|3015242073dd5855a586050d6d48a9c3<![endif]-->
+        <!--数说财经 E-->
+
+        <!--财智汇 S-->
+
+         <div class="czhDiv">
+            <a href="http://zj.qq.com/finance/finance_zt/zlfinance/index.htm" target="_blank" class="ztitle yahei">浙里有财</a>
+
+            <div class="czhNew">
+
+                <!--310*170-->
+                <div class="zlyc_con">
+                    <img src="http://img1.gtimg.com/zj/pics/hv1/172/94/2178/141648592.jpg" />
+                    <div class="caption">
+                        <div class="cover"></div>
+                        <p>通过互联网进行技能分享的玩法现在非常流行，知识与技能的分享，正在成为分享经济继闲置交易、拼车服务之后又一发展趋势。当你厌倦了朝九晚五的工作…</p>
+                    </div>
+                </div>
+
+                <a href="http://zj.qq.com/finance/finance_zt/zlfinance/share.htm" target="_blank" class="clink1">分享技能可变现 关键在于你是否有好东西</a>
+            </div>
+        </div><!--[if !IE]>|xGv00|8405f8b6e2c9963b16a9f441b19895e6<![endif]-->
+
+        <!--财智汇 E-->
+
+
+    </div>
+
+
+
+    <!--右边新闻区 S-->
+    <div class="mainRight">
+        <!--上面3条新闻 S-->
+        <dl class="split">
+                <dt class="imgdt">
+                <a href="https://zj.qq.com/a/20191008/002457.htm" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/187/187/2316/150645772.jpg" width="190" height="107" />
+                </a>
+                </dt>
+                <dd>
+                 <div class="tit f20 yahei">
+                  <a href="https://zj.qq.com/a/20191008/002457.htm" target="_blank">三季报最高预增80倍！节后6家公司首秀</a>
+                 </div>
+                 <div class="wz_con f14 yahei">近日，沪深交易所陆续公布了上市公司三季报预约披露时间表，节后三季报披露将正式拉开序幕。不少机构认为，节后伴随着三季报业绩预告进入集中披露期以及三季报披露正式展开……</div>
+                <div class="shareBtn">
+                      <ul>
+                        <li>
+                          <a href="javascript:;" class="s_txwb">腾讯微博</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_qzone">QQ空间</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_qq">QQ好友</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_sina">新浪微博</a>
+                        </li>
+                      </ul>
+                </div>  
+             </dd>                       
+            </dl>
+
+<dl class="split">
+                <dt class="imgdt">
+                <a href="https://zj.qq.com/a/20191015/007842.htm" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/36/243/2316/150659901.jpg" width="190" height="107" />
+                </a>
+                </dt>
+                <dd>
+                 <div class="tit f20 yahei">
+                  <a href="https://zj.qq.com/a/20191015/007842.htm" target="_blank">全国第四！杭州今秋求职期平均薪酬公布：9727元</a>
+                 </div>
+                 <div class="wz_con f14 yahei">正值“金九银十”求职招聘旺季，近日，智联招聘发布《2019年秋季杭州雇主需求与白领人才供给报告》。报告显示，杭州地区2019年秋季求职期的平均月薪为9727元，在全国38个主要城市的薪酬水平中……</div>
+                <div class="shareBtn">
+                      <ul>
+                        <li>
+                          <a href="javascript:;" class="s_txwb">腾讯微博</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_qzone">QQ空间</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_qq">QQ好友</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_sina">新浪微博</a>
+                        </li>
+                      </ul>
+                </div>  
+             </dd>                       
+            </dl>
+
+
+
+<dl class="split">
+                <dt class="imgdt">
+                <a href="https://zj.qq.com/a/20191108/006867.htm" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/197/79/2318/150748292.jpg" width="190" height="107" />
+                </a>
+                </dt>
+                <dd>
+                 <div class="tit f20 yahei">
+                  <a href="https://zj.qq.com/a/20191108/006867.htm" target="_blank">下沉市场消费需求进一步释放 商业地产景气回升</a>
+                 </div>
+                 <div class="wz_con f14 yahei">2019年以来，随着下沉市场消费需求进一步释放，商业地产景气回升。RET睿意德中国商业地产研究中心近期发布的《2019第三季度中国商业地产指数报告》（简称《报告》）显示，2019年第三季度……</div>
+                <div class="shareBtn">
+                      <ul>
+                        <li>
+                          <a href="javascript:;" class="s_txwb">腾讯微博</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_qzone">QQ空间</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_qq">QQ好友</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_sina">新浪微博</a>
+                        </li>
+                      </ul>
+                </div>  
+             </dd>                       
+            </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--[if !IE]>|xGv00|d154e2a42c432d81a048f65f332d8576<![endif]-->
+        <!--上面3条新闻 E-->
+    </div>
+    <!--右边新闻区 S-->
+
+</div>
+
+<!--通栏广告 S-->
+<div class="adv1000">
+    <!--ZJ_finance_Width1_div AD begin...."l=ZJ_finance_Width1&log=off"--><div id="ZJ_finance_Width1" style="width:1000px;height:60px;" class="l_qq_com"></div><!--ZJ_finance_Width1 AD end --><!--[if !IE]>|xGv00|b5d5a482ee89ccddbf3395f15ef80ad8<![endif]-->
+</div>
+<!--通栏广告 E-->
+
+<!--通栏广告 S-->
+<div class="adv1000">
+    <!--ZJ_finance_midWidth2_div AD begin...."l=ZJ_finance_midWidth2&log=off"--><div id="ZJ_finance_midWidth2" style="width:1000px;height:60px;" class="l_qq_com"></div><!--ZJ_finance_midWidth2 AD end --><!--[if !IE]>|xGv00|646028c85b2efccdbeb22e4c4d4a7c5c<![endif]-->
+</div>
+<!--通栏广告 E-->
+
+<div class="mainDiv">
+    <div class="mainLeft">
+
+        <!--理财收藏 S-->
+        <div class="lcscDiv">
+
+            
+
+
+            <!--理财计算器-->
+            <div class="counterDiv">
+                <span class="ztitle2 yahei"><a href="http://zj.qq.com/finance/" target="_blank">理财计算器</a></span>
+                <div class="ctlist">
+                    <a href="http://stock.finance.qq.com/jsq/Html/CalcActiveSave.htm" target="_blank" class="ct1">存款计算</a>
+                    <a href="http://stock.finance.qq.com/jsq/Html/LoanComp.htm" target="_blank" class="ct2">商贷计算</a>
+                    <a href="http://stock.finance.qq.com/jsq/Html/LoanAccumFund.htm" target="_blank" class="ct3">公积金贷款计算</a>
+                    <a href="http://stock.finance.qq.com/jsq/Html/CalcBuyHouse.htm" target="_blank" class="ct1">购房税费</a>
+                    <a href="http://stock.finance.qq.com/jsq/Html/CalcLoanAdv.htm" target="_blank" class="ct2">提前还款</a>
+                    <a href="http://stock.finance.qq.com/jsq/Html/CalcLoanOrRental.htm" target="_blank" class="ct3">购房与租房比较</a>
+                    <a href="http://stock.finance.qq.com/jsq/Html/CalcFundDeclare.htm" target="_blank" class="ct1">开基申购</a>
+                    <a href="http://stock.finance.qq.com/jsq/Html/CalcFundInvestLost.htm" target="_blank" class="ct2">封基收益</a>
+                    <a href="http://stock.finance.qq.com/jsq/Html/CalcOpenFundRet.htm" target="_blank" class="ct3">开基赎回计算器</a>
+                </div>
+            </div>
+
+
+        </div><!--[if !IE]>|xGv00|34b087b75cbb2522efd54b031e25eb21<![endif]-->
+        <!--理财收藏 E-->
+
+    </div>
+    <div class="mainRight">
+        <!--中间2条新闻 S-->
+        <dl class="split">
+                <dt class="imgdt">
+                <a href="https://zj.qq.com/a/20190826/003452.htm" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/38/210/2314/150521438.jpg" width="190" height="107" />
+                </a>
+                </dt>
+                <dd>
+                 <div class="tit f20 yahei">
+                  <a href="https://zj.qq.com/a/20190826/003452.htm" target="_blank">景区降票价、移动支付更便捷 文旅消费迎来更多实惠</a>
+                 </div>
+                 <div class="wz_con f14 yahei">8月23日，国务院新闻办公室举行国务院政策例行吹风会，文化和旅游部相关负责人介绍了进一步激发文化和旅游消费潜力有关情况。文化和旅游部党组成员王晓峰表示，我国文化和旅游的发展空间很大……</div>
+                <div class="shareBtn">
+                      <ul>
+                        <li>
+                          <a href="javascript:;" class="s_txwb">腾讯微博</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_qzone">QQ空间</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_qq">QQ好友</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_sina">新浪微博</a>
+                        </li>
+                      </ul>
+                </div>  
+             </dd>                       
+            </dl>
+
+<dl class="split">
+                <dt class="imgdt">
+                <a href="https://zj.qq.com/a/20190823/006223.htm" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/205/210/2314/150521605.jpg" width="190" height="107" />
+                </a>
+                </dt>
+                <dd>
+                 <div class="tit f20 yahei">
+                  <a href="https://zj.qq.com/a/20190823/006223.htm" target="_blank">理财收益低了 房贷要不要提前还？</a>
+                 </div>
+                 <div class="wz_con f14 yahei">本周，金融人都在朋友圈刷屏“新LPR”（贷款市场报价利率），对于广大市民来说，LPR是啥不重要，重要的是新LPR形成后，贷款利率降不降？房贷利率变不变？理财收益怎么走……</div>
+                <div class="shareBtn">
+                      <ul>
+                        <li>
+                          <a href="javascript:;" class="s_txwb">腾讯微博</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_qzone">QQ空间</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_qq">QQ好友</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" class="s_sina">新浪微博</a>
+                        </li>
+                      </ul>
+                </div>  
+             </dd>                       
+            </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+<!--[if !IE]>|xGv00|69ea2ff356e2548b34941e3db2f91345<![endif]-->
+        <!--中间2条新闻 E-->
+    </div>
+</div>
+
+<!--通栏广告 S-->
+<div class="adv1000">
+    <!--ZJ_finance_midWidth3_div AD begin...."l=ZJ_finance_midWidth3&log=off"--><div id="ZJ_finance_midWidth3" style="width:1000px;height:60px;" class="l_qq_com"></div><!--ZJ_finance_midWidth3 AD end --><!--[if !IE]>|xGv00|b1f77e57238a109e2ef72ecbde65dc67<![endif]-->
+</div>
+<!--通栏广告 E-->
+
+
+
+
+<!--2016/5/5 by jayyu-->
+<div class="container">
+
+
+    <!--惠生活s-->
+    <!--暂时隐藏-->
+    <div style="display: none">
+        <div class="life">
+        <div class="title">
+            惠生活
+        </div>
+        <div class="content">
+
+            <div class="slideCon">
+                <div class="slides" id="slides">
+                    <!--图片尺寸为310*185-->
+                    <div class="slides_container">
+
+ <div class="slide">
+                            <a href="http://zj.qq.com/a/20161110/028658.htm" target="_blank"><img src="http://img1.gtimg.com/zj/pics/hv1/42/214/2153/140053437.jpg" alt=""/></a>
+                            <div class="caption">
+                                <a href="http://zj.qq.com/a/20161110/028658.htm" target="_blank"><h1>浙江农信丰收购：囤粮先囤券，刮刮乐不停</h1></a>
+
+
+                                <p>丰收囤粮节，邀你来赶集！浙江农信丰收购电商平台，11月9日-11月31日，四重好礼，优惠送不停！…</p>
+                            </div>
+                        </div>
+
+
+       <div class="slide">
+                            <a href="http://zj.qq.com/a/20160921/038613.htm" target="_blank"><img src="http://img1.gtimg.com/zj/pics/hv1/22/229/2131/138626692.jpg" alt=""/></a>
+                            <div class="caption">
+                                <a href="http://zj.qq.com/a/20160921/038613.htm" target="_blank"><h1>金融界再掀支付热 银联也“造节”？</h1></a>
+
+
+                                <p>9月23日起，一场联合了浙江省内百家门店、40余家银行以及手机商的支付热潮席卷全省。消费者只需使用“银联云闪付”，即可在指定门店享受满减优惠…</p>
+                            </div>
+                        </div>
+
+
+                         <div class="slide">
+                            <a href="http://zj.qq.com/a/20160808/039888.htm" target="_blank"><img src="http://img1.gtimg.com/zj/pics/hv1/249/175/2110/137247624.jpg" alt=""/></a>
+                            <div class="caption">
+                                <a href="http://zj.qq.com/a/20160808/039888.htm" target="_blank"><h1>美好夏天从五元观影、四折美食开始</h1></a>
+
+
+                                <p>最新的大片儿，最舒适的温度，况且电影票只要5元哦，5元？对，不仅有5元，还有最低1元！带上浙商银联信用卡就可以享受哦，先到先得~…</p>
+                            </div>
+                        </div>
+
+ 
+
+                 
+
+                     
+
+                    </div>
+                    <!--图片尺寸为310*185-->
+                </div>
+
+                <div class="text">
+                </div>
+
+
+
+            </div>
+            <ul class="list">
+
+<li>
+
+                    <a href="http://zj.qq.com/a/20161110/028658.htm" target="_blank">
+                        <h1>
+                            <span style="background-color: #FF6600">1</span>
+                           囤粮先囤券，刮刮乐不停
+                        </h1>
+                        <p>
+                            活动机构：浙江农信
+                            &nbsp;&nbsp;
+                            起止时间： 2016年11月30日止
+                        </p>
+                    </a>
+
+                </li>
+
+
+
+                <li>
+
+                    <a href="http://zj.qq.com/zt2016/ylqmh/index.htm" target="_blank">
+                        <h1>
+                            <span style="background-color: #FFD200">2</span>
+                            挥货一周银联云闪付 满减超给力
+                        </h1>
+                        <p>
+                            活动银行：银联云闪付
+                            &nbsp;&nbsp;
+                            起止时间： 2016年9月30日止
+                        </p>
+                    </a>
+
+                </li>
+
+                
+                <li>
+
+                    <a href="http://zj.qq.com/a/20160628/046231.htm" target="_blank">
+                        <h1>
+                            <span style="background-color: #65D601">3</span>
+                          京东、一号店周六满120立减30元
+
+
+                        </h1>
+                        <p>
+                            活动银行：农业银行
+                            &nbsp;&nbsp;
+                            起止时间： 2017年3月15日止
+                        </p>
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="http://zj.qq.com/a/20160621/052636.htm" target="_blank">
+                        <h1>
+                            <span style="background-color: #00AEFF">4</span>
+                              龙卡周六哈根达斯满100减38
+                        </h1>
+                        <p>
+                            活动银行：建设银行
+                            &nbsp;&nbsp;
+                            起止时间： 2017年5月31日止
+                        </p>
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+            <div class="goods">
+
+
+ <div class="item">
+
+                    <a href="http://zj.qq.com/zt2016/ylqmh/index.htm" target="_blank">
+
+                        <div class="imgCon" style="background-image: url(http://img1.gtimg.com/zj/pics/hv1/94/99/2134/138788689.jpg)"></div>
+                        <div class="caption">
+                            <p>银联商旅IC卡</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+<div class="item">
+
+                    <a href="http://zj.qq.com/a/20160808/039888.htm" target="_blank">
+
+                        <div class="imgCon" style="background-image: url(http://img1.gtimg.com/zj/pics/hv1/71/177/2110/137247956.jpg)"></div>
+                        <div class="caption">
+                            <p>浙商银联信用卡</p>
+                        </div>
+
+                    </a>
+
+                </div>
+  
+
+               
+ <div class="item">
+                    <!--图片尺寸170*110-->
+
+                    <a href="http://zj.qq.com/zt2016/ylqmh/index.htm" target="_blank">
+
+                        <!--<img src="http://img1.gtimg.com/zj/pics/hv1/65/99/2134/138788660.jpg" alt=""/>-->
+                        <div class="imgCon" style="background-image: url(http://img1.gtimg.com/zj/pics/hv1/65/99/2134/138788660.jpg)"></div>
+                        <div class="caption">
+                            <p>银联白金IC卡</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+  
+
+
+                <div class="item">
+
+                    <a href="http://zj.qq.com/a/20160621/050776.htm" target="_blank">
+
+                        <div class="imgCon" style="background-image: url(//mat1.gtimg.com/zj/yuwanli/dzw1605/fiance/images/bank2.jpg)"></div>
+                        <div class="caption">
+                            <p>邮储青春信用卡</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+
+           
+              
+
+
+            </div>
+
+        </div>
+    </div><!--[if !IE]>|xGv00|59522dd6822f06fe80e535551b254a8a<![endif]-->
+    </div>
+    <!--惠生活e-->
+
+    <!--惠投资s-->
+    <div class="invest">
+
+        <div class="title">惠投资</div>
+
+        <div class="leftCon">
+
+            <!--互联网金融s-->
+            <!--暂时隐藏-->
+            <div style="display: none">
+                <div class="internet">
+
+                <div class="sub_title"><span>互联网金融</span><a href="http://zj.qq.com/l/finance/finance_p2p/list2015035174003.htm" target="_blank"><i></i></a></div>
+
+                <ul class="list">
+
+  <li>
+
+                        <a href="http://zj.qq.com/a/20160811/020167.htm" target="_blank">
+                            <span style="background-color: #FFD200">1</span>
+                         老牌P2P开心贷现兑付危机                         </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="http://zj.qq.com/a/20160802/028992.htm" target="_blank">
+                             <span style="background-color: #FF6600">2</span>
+                           P2P等平台须如实披露借款人信息 
+                        </a>
+
+                    </li>
+
+
+
+
+
+
+                    <li>
+
+                        <a href="http://zj.qq.com/a/20160726/010353.htm" target="_blank">
+                            <span style="background-color: #65D601">3</span>
+                          教你识别互联网金融平台六大骗术</a>
+
+                    </li>
+
+
+
+
+
+
+                    <li>
+
+                        <a href="http://zj.qq.com/a/20160803/011593.htm" target="_blank">
+                            <span style="background-color: #00AEFF">4</span>
+                            网贷行业收益率二季度首次跌破10%
+                        </a>
+
+                    </li>
+
+                
+
+                </ul>
+            </div><!--[if !IE]>|xGv00|8021cfc4957a7d4070c19844f3bff6b7<![endif]-->
+            </div>
+            <!--互联网金融e-->
+
+
+            <!--股票s-->
+            <div class="stock">
+
+                <div class="sub_title"><span>股票证券</span><a href="http://zj.qq.com/finance/longhubang/index.htm" target="_blank"><i></i></a></div>
+
+                <a href="http://zj.qq.com/finance/longhubang/index.htm" target="_blank">
+
+                    <!--图片尺寸310*185-->
+                    <img src="http://img1.gtimg.com/zj/pics/hv1/148/43/2087/135718288.jpg" alt=""/>
+
+                </a>
+
+                <a href="http://zj.qq.com/finance/longhubang/index.htm" target="_blank">
+
+                    <h1>股市走弱 独家揭秘后市走向</h1>
+
+                </a>
+
+                <p>《A股龙虎榜》由腾讯大浙网财经频道出品，帮助股民研究主力资金流向，洞悉主力操作方向，紧跟主力操盘步伐…</p>
+
+            </div><!--[if !IE]>|xGv00|7214c551c59e3d504da140aebea33041<![endif]-->
+            <!--股票e-->
+
+        </div>
+
+
+        <div class="rightCon">
+
+
+            <!--大家都在买s-->
+            <!--暂时隐藏-->
+            <div style="display: none">
+                <div class="recommend">
+
+                <div class="sub_title"><span>大家都在买</span><a href="http://zj.qq.com/zt2016/cnaidai/index.htm" target="_blank"><i></i></a></div>
+
+                <table>
+                    <thead>
+
+                    <tr>
+                        <td>产品名称</td>
+                        <td>预期收益</td>
+                        <td>期限</td>
+                    </tr>
+
+                    </thead>
+                    <tbody>
+
+<tr>
+                        <td><a href="http://zj.qq.com/zt2016/cnaidai/index.htm" target="_blank">爱贷网-企融贷-QRD01160914003</a> </td>
+                        <td>11%</td>
+                        <td>1个月</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="http://zj.qq.com/zt2016/cnaidai/index.htm" target="_blank">爱贷网-企融贷-QRD12160913007</a> </td>
+                        <td>14.8%</td>
+                        <td>12个月</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="http://zj.qq.com/zt2016/cnaidai/index.htm" target="_blank">爱贷网-企融贷-QRD06160913006</a> </td>
+                        <td>13.8%</td>
+                        <td>6个月</td>
+                    </tr>
+
+
+
+
+
+
+
+
+                    </tbody>
+
+                </table>
+
+            </div><!--[if !IE]>|xGv00|8f19146afad700de6f4848ca96644d67<![endif]-->
+            </div>
+            <!--大家都在买e-->
+
+            <!--图片轮播2s-->
+            <!--暂时隐藏-->
+            <div style="display: none">
+                <div class="picList">
+                <!--图片尺寸340*275-->
+                <div class="slides_container">
+<div class="slide">
+                        <a href="http://zj.qq.com/finance/finance_zt/finance_observe/market.htm" target="_blank">
+                            <img src="http://img1.gtimg.com/zj/pics/hv1/141/214/2140/139208211.jpg" alt=""/>
+                            <h1>炒楼路不通 股市是好去处吗？</h1>
+                            <div class="caption">
+                                 <div class="cover"></div>
+                                  <p>席卷全国的楼市限购、限贷政策给高歌猛进的楼市带来一丝阴霾，一夜间，楼市成交量出现急剧下滑。这让不少投资人意识到炒楼可能“此路不通”了。那么在此背景下，股市会是资金的好去处吗…</p>
+                             </div>
+                        </a>
+                    </div>
+
+                    <div class="slide">
+
+                        <a href="http://zj.qq.com/finance/finance_zt/finance_observe/xyd.htm" target="_blank">
+                            <img src="http://img1.gtimg.com/zj/pics/hv1/251/113/2128/138402266.jpg" alt=""/>
+                            <h1>校园贷变高利贷？当心落入它的重重陷阱</h1>
+                            <div class="caption">
+                                 <div class="cover"></div>
+                                  <p>今年以来，乱象滋生的“校园贷”让人瞠目结舌的同时也使其口碑跌入谷底。从大学生欠贷跳楼自杀到裸照借贷风波，校园贷的问题集中爆发 …</p>
+                             </div>
+                        </a>
+                    </div>
+
+                    <div class="slide">
+                        <a href="http://zj.qq.com/finance/finance_zt/finance_observe/loan.htm" target="_blank">
+                            <img src="http://img1.gtimg.com/zj/pics/hv1/252/113/2128/138402267.jpg" alt=""/>
+                            <h1>“首付贷”遭封杀 楼市去杠杆帷幕开启</h1>
+                            <div class="caption">
+                                 <div class="cover"></div>
+                                  <p>经过半年多来的诸多争议与清理，“首付贷”于近日迎来了最终的命运裁决。经住房城乡建设部、发改委、人民银行、银监会等七部委议定，“首付贷”被确认为违法违规金融产品…</p>
+                             </div>
+                        </a>
+                    </div>
+
+                    
+
+                </div>
+
+            </div><!--[if !IE]>|xGv00|38bd339d8de7fab4596310826a1664c4<![endif]-->
+            </div>
+            <!--图片轮播2e-->
+
+            <!--股市资讯s-->
+            <div class="xinpin">
+
+                <div class="sub_title"><span>股市资讯</span><a href="http://zj.qq.com/l/finance/finance_gpzq/list20160621145830.htm" target="_blank"><i></i></a></div>
+
+                <div class="item">
+
+<div class="item">
+
+                    <a href="http://zj.qq.com/a/20190422/006038.htm" target="_blank"><h1>恒指低开0.01%报28564点</h1></a>
+
+                    <p>
+                   截至发稿，恒生指数今早低开0.01%，报28564点；国企指数高开0.13%，报11246点…
+                        <a href="http://zj.qq.com/a/20190422/006038.htm" target="_blank">[详细]</a>
+                    </p>
+
+                </div>
+
+                    <a href="http://zj.qq.com/a/20180810/040762.htm" target="_blank"><h1>欧股收涨0.1% 助阿迪达斯大涨9%</h1></a>
+
+                    <p>
+                  据美国财经网站MarketWatch报道，欧洲股市周四收盘小幅上涨，盘中则一度走低，…
+                        <a href="http://zj.qq.com/a/20180810/040762.htm" target="_blank">[详细]</a>
+                    </p>
+
+                </div>
+
+                <div class="item">
+
+                    <a href="http://zj.qq.com/a/20180723/026684.htm" target="_blank"><h1>恒指跳水跌0.12%报28189点</h1></a>
+
+                    <p>
+                 截至发稿，恒生指数跌0.12%，报28189.65点；国企指数跌0.07%，报10675.8点…
+                        <a href="http://zj.qq.com/a/20180723/026684.htm" target="_blank">[详细]</a>
+                    </p>
+
+                </div>
+
+                
+
+            </div><!--[if !IE]>|xGv00|11b559d76d3e66e63bfed3c4f102e8d2<![endif]-->
+            <!--股市资讯e-->
+
+            <!--投资咨询s-->
+            <!--暂时隐藏-->
+            <div style="display: none">
+                <div class="investInfo">
+
+                <span class="label">
+                    投资咨询
+                </span>
+
+                <div class="box">
+
+                    <p>
+                        即将开放，敬请期待…
+
+                        <a href="#" target="_blank">[详细]</a>
+
+                    </p>
+ 
+                    <script type="text/javascript" src="http://vip.zjqq.mobi/themes/public/activity_js/activity_js.js" charset="utf-8"></script>
+                    <script type="text/javascript">
+                        //下面对应的id为会员系统建立报名活动的id
+                        var id = "1704";
+                        $(function(){
+                            $(".signCon").attr("id",id+"_reg_form");
+                            $(document).on("click",".signCon .submit",function(){
+                                alert("暂未开放");
+//                                reg_new(id);
+                            })
+                        });
+                    </script>
+                    <form class="signCon" method="post" action="">
+                        <div class="controls">
+                            <span><img src="//mat1.gtimg.com/zj/yuwanli/dzw1605/fiance/images/name.png" alt=""/>姓名</span>
+                            <input id="name" type="text" name="data[name]"/>
+                        </div>
+                        <div class="controls">
+                            <span><img src="//mat1.gtimg.com/zj/yuwanli/dzw1605/fiance/images/mobile.png" alt=""/>电话</span>
+                            <input id="mobile" type="text" name="data[mobile]"/>
+                        </div>
+                        <div class="controls">
+                            <span><img src="//mat1.gtimg.com/zj/yuwanli/dzw1605/fiance/images/qq.png" alt=""/>Q&nbsp;Q</span>
+                            <input id="qq" type="text" name="data[qq]"/>
+                        </div>
+                        <div class="submit">立即<br>报名</div>
+                    </form>
+
+                    <p class="tips">
+                        
+                        <!-- uin为咨询的qq号，如这里是5949702，可自行修改-->
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=5949702&amp;site=qq&amp;menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:5949702:41" alt="点击这里给我发消息" title="点击这里给我发消息"></a>
+                    </p>
+
+
+
+
+                </div>
+            </div><!--[if !IE]>|xGv00|5713263888665cbe228820077fcd47ef<![endif]-->
+            </div>
+            <!--投资咨询e-->
+
+            <!--惠投资轮播 S-->
+            <div class="swiper">
+<!--图片尺寸340*290-->
+    <div class="slides_container">
+
+
+<!--一个轮播块 S-->
+        <a href="http://zj.qq.com/a/20190417/006582.htm" target="_blank">
+            <div class="slide">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/131/116/2308/150107411.jpg" alt=""/>
+                <div class="caption">
+                    <div class="cover"></div>
+                    <span class="txt">杭州房价开始反弹？3月最新数据出炉 细看有门道</span>
+                </div>
+            </div>
+        </a>
+        <!--一个轮播块 E-->
+  
+
+<!--一个轮播块 S-->
+        <a href="http://zj.qq.com/a/20190416/001355.htm" target="_blank">
+            <div class="slide">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/32/116/2308/150107312.jpg" alt=""/>
+                <div class="caption">
+                    <div class="cover"></div>
+                    <span class="txt">受益于经济复苏 私募看好银行等大蓝筹</span>
+                </div>
+            </div>
+        </a>
+        <!--一个轮播块 E-->
+
+
+<!--一个轮播块 S-->
+        <a href="http://zj.qq.com/a/20190415/006585.htm" target="_blank">
+            <div class="slide">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/102/38/2308/150087492.jpg" alt=""/>
+                <div class="caption">
+                    <div class="cover"></div>
+                    <span class="txt">证券日报：降准是灵丹妙药 但不能包治百病</span>
+                </div>
+            </div>
+        </a>
+        <!--一个轮播块 E-->
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+       
+        
+     
+    </div>
+</div><!--[if !IE]>|xGv00|8bfcea535bec89b0ab4c8b5f4b470e78<![endif]-->
+            <!--惠投资轮播 E-->
+
+        </div>
+    </div>
+    <!--惠投资e-->
+
+
+    <!--惠理财s-->
+    <!--暂时隐藏-->
+    <div class="manage" style="display: none">
+
+        <div class="title">惠理财</div>
+        <div class="content">
+
+            <!--银行资讯&保险资讯s-->
+
+            <div class="info">
+
+                <div class="bank">
+
+    <div class="sub_title"><span>银行资讯</span><a href="http://zj.qq.com/l/finance/list20160621144535.htm" target="_blank"><i></i></a></div>
+
+
+
+    <ul class="list">
+
+
+            <li>
+                
+                <a href="http://zj.qq.com/a/20161108/017493.htm" target="_blank">
+                    <span style="background-color: #FFD200">1</span>
+                  首家地级市"坏账银行"落户温州 
+                </a>
+
+            </li>
+
+
+
+
+
+
+            <li>
+
+                <a href="http://zj.qq.com/a/20161012/020636.htm" target="_blank">
+                    <span style="background-color: #FF6600">2</span>
+                   9月银行理财收益跌至3.66％
+                </a>
+
+            </li>
+
+
+
+
+
+
+            <li>
+
+                <a href="http://zj.qq.com/a/20160930/011210.htm" target="_blank">
+                    <span style="background-color: #65D601">3</span>
+                工行业内率先推出二维码支付               </a>
+
+            </li>
+
+
+
+    </ul>
+</div><!--[if !IE]>|xGv00|a350f76812ece04ebd1bb4702e2a0efe<![endif]-->
+
+                <div class="safe" style="display:none">
+
+    <div class="sub_title"><span>保险资讯</span><i></i></div>
+
+    <h1>坑爹坑妈育儿法 新手爸妈千万别干</h1>
+
+
+    <ul class="list">
+
+
+            <li>
+
+                <a href="#" target="_blank">
+                    <span style="background-color: #FFD200">1</span>
+                    只许成功功不许个完美的仪式而仪式中最的正在苦心
+                </a>
+
+            </li>
+
+
+
+
+
+            <li>
+
+                <a href="#" target="_blank">
+                    <span style="background-color: #FF6600">2</span>
+                    只许成功功不许个完美的仪式而仪式中最的正在苦心
+                </a>
+
+            </li>
+
+
+
+
+
+            <li>
+                <a href="#" target="_blank">
+                    <span style="background-color: #65D601">3</span>
+                    只许成功功不许个完美的仪式而仪式中最的正在苦心
+                </a>
+            </li>
+
+
+
+    </ul>
+
+</div><!--[if !IE]>|xGv00|be1b1c29fa56e6478075c4fc14c0b315<![endif]-->
+
+            </div>
+            <!--银行资讯&保险资讯e-->
+
+            <div class="rightCon">
+
+                <div class="combine">
+
+                    <!--新品推荐s-->
+                    <div class="commend">
+
+                        <div class="sub_title"><span>新品推荐</span><a href="#" target="_blank"><i></i></a></div>
+                        
+                        <table>
+                            <thead>
+                            <tr>
+                                <td>产品名称</td>
+                                <td>预期收益</td>
+                                <td>期限</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr>
+                                <td>建行乾元-共享型 2016-69理财产品</td>
+                                <td>3.4%</td>
+                                <td>38天</td>
+                            </tr>
+
+                            <tr>
+                                <td>建行乾元-共享型 2016-70理财产品</td>
+                                <td> 3.5% </td>
+                                <td> 77天 </td>
+                            </tr>
+
+                            <tr>
+                                <td>建行乾元-私享型2016-64理财产品 </td>
+                                <td>3.6%</td>
+                                <td>63天</td>
+                            </tr>
+
+                            <tr>
+                                <td>建行乾元-私享型2016-65理财产品</td>
+                                <td>3.7%</td>
+                                <td>92天</td>
+                            </tr>
+
+                            <tr>
+                                <td>建行乾元-共享型 2016-68理财产品 </td>
+                                <td>3.7%</td>
+                                <td>119天</td>
+                            </tr>
+
+                      
+                            
+
+                            </tbody>
+                        </table>
+                    </div><!--[if !IE]>|xGv00|03cea553e162b51c870d20a920a491b0<![endif]-->
+                    <!--新品推荐e-->
+
+                    <!--e卡秀s-->
+                    <div class="cardShow">
+                        <!--图片尺寸340*240-->
+                        <div class="slides_container">
+
+                         <a href="http://zj.qq.com/a/20160621/052482.htm" target="_blank">
+                            <div class="slide">
+
+                                
+                                    <img src="http://img1.gtimg.com/zj/pics/hv1/101/86/2087/135729206.jpg" alt=""/>
+                                
+
+                                <div class="caption">
+                                    <div class="cover"></div>
+                                    龙卡星期六
+                                </div>
+
+                            </div>
+                         </a>
+
+                         <a href="http://zj.qq.com/a/20160621/056143.htm" target="_blank">
+                            <div class="slide">
+
+                                
+                                    <img src="http://img1.gtimg.com/zj/pics/hv1/213/86/2087/135729318.jpg" alt=""/>
+                                
+
+                                <div class="caption">
+                                    <div class="cover"></div>
+                                    邮储银行信用卡
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <a href="http://zj.qq.com/a/20160621/055314.htm" target="_blank">
+
+                            <div class="slide">
+
+                                
+                                    <img src="http://img1.gtimg.com/zj/pics/hv1/100/85/2087/135728950.jpg" alt=""/>
+                                
+                                
+                                <div class="caption">
+                                    <div class="cover"></div>
+                                  唯品会龙卡
+                                </div>
+
+                            </div>
+                        </a>
+
+                        </div>
+                    </div><!--[if !IE]>|xGv00|06c79f7b9d1a99d1867c1771f184ece6<![endif]-->
+                    <!--e卡秀e-->
+
+                </div>
+
+
+                <!--新品关注s-->
+                <div class="new" style="display:none">
+
+    <div class="sub_title"><span>新品关注</span></div>
+    <div class="secure">
+        <div class="slides_container">
+            <div class="slide">
+                <ul>
+
+                    <li>
+
+                        <p>
+                            0只许成功功不许个完美的仪式而仪式中最的正在苦心
+
+                            <span>￥9999.00</span>
+
+                        </p>
+
+                        <div class="fold">
+                            只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不 许个完美的仪式而仪式
+                        </div>
+                    </li>
+
+                    <li>
+
+                        <p>
+                            1只许成功功不许个完美的仪式而仪式中最的正在苦心
+
+                            <span>￥9999.00</span>
+
+                        </p>
+
+                        <div class="fold">
+                            只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不 许个完美的仪式而仪式
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <p>
+                            2只许成功功不许个完美的仪式而仪式中最的正在苦心
+
+                            <span>￥9999.00</span>
+
+                        </p>
+
+                        <div class="fold">
+                            只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不 许个完美的仪式而仪式
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <p>
+                            3只许成功功不许个完美的仪式而仪式中最的正在苦心
+
+                            <span>￥9999.00</span>
+
+                        </p>
+
+                        <div class="fold">
+                            只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不 许个完美的仪式而仪式
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <p>
+                            4只许成功功不许个完美的仪式而仪式中最的正在苦心
+
+                            <span>￥9999.00</span>
+
+                        </p>
+
+                        <div class="fold">
+                            只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不 许个完美的仪式而仪式
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <p>
+
+                            5只许成功功不许个完美的仪式而仪式中最的正在苦心
+
+                            <span>￥9999.00</span>
+
+                        </p>
+
+                        <div class="fold">
+                            只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不 许个完美的仪式而仪式
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <p>
+
+                            6只许成功功不许个完美的仪式而仪式中最的正在苦心
+
+                            <span>￥9999.00</span>
+
+                        </p>
+
+                        <div class="fold">
+                            只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不许个完美的仪式而仪式中最的正在苦心只许成功功不 许个完美的仪式而仪式
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+        <!--自行添加选项卡，a的href为#0、#1、#2、#3依次排序-->
+
+        <ul class="pagination">
+
+            <li class="current"><a href="#0">旅游保险</a></li>
+
+
+        </ul>
+
+
+    </div>
+
+</div><!--[if !IE]>|xGv00|cc423377cf184e926c9ba8ae065c5d31<![endif]-->
+                <!--新品关注e-->
+
+            </div>
+
+
+        </div>
+    </div>
+    <!--惠理财e-->
+
+
+
+
+
+</div>
+<!--行业合作s-->
+<div class="footinfo">
+    <!--合作伙伴-->
+    <div class="partner">
+        <span class="ftitle yahei">合作伙伴</span>
+        <div class="palist">
+            <!--110*50-->
+            <a href="http://zjrb.zjol.com.cn" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/64/162/1302/84703924.jpg" />
+                <span>浙江日报</span>
+            </a>
+            <a href="http://www.zjol.com.cn" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/65/162/1302/84703925.jpg" />
+                <span>浙江在线</span>
+            </a>
+            <a href="http://qjwb.zjol.com.cn" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/67/162/1302/84703927.jpg" />
+                <span>钱江晚报</span>
+            </a>
+            <a href="http://jrzb.zjol.com.cn" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/69/162/1302/84703929.jpg" />
+                <span>今日早报</span>
+            </a>
+            <a href="http://biz.zjol.com.cn" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/73/162/1302/84703933.jpg" />
+                <span>浙商网</span>
+            </a>
+            <a href="http://www.caixin.com" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/72/162/1302/84703932.jpg" />
+                <span>财新网</span>
+            </a>
+            <a href="http://www.zjsr.com" target="_blank">
+                <img src="http://img1.gtimg.com/zj/pics/hv1/75/162/1302/84703935.jpg" />
+                <span>世界浙商网</span>
+            </a>
+        </div>
+    </div>
+
+    <!--行业合作-->
+    <!--暂时隐藏-->
+    <div class="contact" style="">
+        <span class="ftitle yahei">行业合作</span>
+        <div class="bd">
+            <p style="line-height:30px; color:#999;"> 内容合作：15868162139（庄女士） | 联系人：庄女士 QQ:330971145<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2205337738&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2205337738:41" alt="点击这里给我发消息" title="点击这里给我发消息"/></a><br>
+            </p>
+        </div>
+        <div align="center">
+            <p>&nbsp;</p>
+            <p align="center"></p>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <p>&nbsp;</p>
+    
+    <!--暂时隐藏-->
+    <table width="600" border="0" align="center" cellpadding="1" cellspacing="1" style="">
+        <tr>
+            <td align="center">如对本频道有任何意见或建议，请发邮件至henryzhu@dazwang.com</td>
+        </tr>
+    </table>
+
+    <div class="aaaaaaaaaaaa">
+        <div align="center"></div>
+    </div>
+    <p>&nbsp;</p>
+</div>
+<!--底部合作信息 S-->
+
+<!--微信扫描 S-->
+<div class="backToTop" id="backToTop">
+    <div class="download"><span>大浙财经</span></div>
+    <div class="erweima"><img src="http://img1.gtimg.com/zj/pics/hv1/50/218/1452/94471940.jpg" width="54" height="54" /></div>
+</div>
+<!--微信扫描 E--><!--[if !IE]>|xGv00|d727e15b11a7712c1173d9ec29552143<![endif]-->
+<!--行业合作e-->
+
+<!--2016/5/5 by jayyu-->
+
+
+
+
+<!--MainNew E-->
+
+
+<!--通用底部导航-->
+<style>
+    .tcopyright {width:100%;margin:-14px auto 0 auto;padding:8px 0;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both;background-color: #f0f0f0;}
+    .tcopyright .en{font-family:Arial;}
+    .tcopyright a{color:#333;text-decoration: none;}
+    .tcopyright a:hover{color:#bd0a01;text-decoration: underline;}
+</style>
+<div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+    <div>
+        <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+    </div>
+    <div class="en">Copyright &copy; 1998 - 2016 Tencent. All Rights Reserved</div>
+    <div>
+        <a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+    </div>
+</div><!--[if !IE]>|xGv00|07bc716ae7c57a596b7f2c1192990353<![endif]-->
+<!--通用底部导航 结束-->
+
+
+<!--回到顶部 S-->
+<div class="backToTop" id="backToTop" style="z-index:11;">
+    <div class="erweima"><img src="http://img1.gtimg.com/zj/pics/hv1/198/58/1887/122717163.jpg" width="85" height="85"></div>
+    <div class="download">扫一扫关注我们</div>
+    <ul class="nav_link" id="c_nav_list">
+        <li class="fc">
+            <a href="http://zj.qq.com/" target="_blank" class="a1">首页</a>
+        </li>
+        <li class="b2">
+            <a href="http://zj.qq.com/news/" target="_blank" class="a1">城事</a>
+        </li>
+        <li class="b2">
+            <a href="http://zj.qq.com/education/" target="_blank" class="a1">教育</a>
+        </li>
+        <li class="ly">
+            <a href="http://zj.qq.com/ent/" target="_blank" class="a1">娱乐</a>
+        </li>
+        <li class="yl">
+            <a href="http://zj.qq.com/pic/" target="_blank" class="a1">图片</a>
+        </li>
+        <li class="b2 ms">
+            <a href="http://zj.qq.com/video/2014vedio.htm" target="_blank" class="a1">视频</a>
+        </li>
+        <li class="b2 jj">
+            <a href="http://hz.house.qq.com/" target="_blank" class="a1">房产</a>
+        </li>
+        <li class="gw">
+            <a href="http://zj.qq.com/home/" target="_blank" class="a1">家居</a>
+        </li>
+        <li class="hj">
+            <a href="http://zj.qq.com/auto/" target="_blank" class="a1">汽车</a>
+        </li>
+        <li class="b2 sm">
+            <a href="http://zj.qq.com/wedding/index.htm" target="_blank" class="a1">结婚</a>
+        </li>
+        <li class="b2 jy">
+            <a href="http://zj.qq.com/fashion/" target="_blank" class="a1">时尚</a>
+        </li>
+        <li class="qz">
+            <a href="http://zj.qq.com/food/" target="_blank" class="a1">美食</a>
+        </li>
+        <li>
+            <a href="http://zj.qq.com/travel/" target="_blank" class="a1">旅游</a>
+        </li>
+        <li class="b2 lc">
+            <a href="http://zj.qq.com/baby/" target="_blank" class="a1">亲子</a>
+        </li>
+        <li class="b2 lc">
+            <a href="javascript:" target="_blank" class="a1">理财</a>
+        </li>
+        <li class="ly">
+            <a href="http://zj.qq.com/jdsm/index.htm"  target="_blank" class="a1">家电</a>
+        </li>
+        <li class="bctop" id="gotop"></li>
+    </ul>
+</div><!--[if !IE]>|xGv00|443a442479b7a16c8d240a7bbc25161e<![endif]-->
+<!--回到顶部 E-->
+
+<script src="//mat1.gtimg.com/cd/201108/app/index_js.js?v3" type="text/javascript" charset="utf-8"></script>
+<script src="//mat1.gtimg.com/www/mb/js/portal/mi.Portal_2012111404.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="//tajs.qq.com/stats?sId=26447005" charset="UTF-8"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/zj/yuwanli/common/slider/slides.min.jquery.js" charset="UTF-8"></script>
+
+
+</body>
+</html>
+<!--[if !IE]>|xGv00|d3976c309a2796a4dab9f8446b43c891<![endif]-->

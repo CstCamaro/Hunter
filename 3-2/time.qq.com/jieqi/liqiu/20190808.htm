@@ -1,0 +1,290 @@
+  <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="https://time.qq.com/jieqi/liqiu/20190808-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="秋季,立秋,节气,时光画轴,腾讯网">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 18:53:29';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-08-08", //日期，格式为 年-月-日
+	"cmd_id": "4058021361", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "liqiu2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="liqiu2019" style="display:none;"><blockquote>“ 立秋三天遍地红”。</blockquote>
+<img src=" https://mmbiz.qpic.cn/mmbiz_png/M75eP40ibXmnDZlSibTgWTKPvlPV0TiaXm8umun9lia773XQmx9f4BZa1fNRcBpGO5phD1A3p42ZJtz3zjlXveGiafA/640?wx_fmt=png" title="立秋1">
+<p>立秋，是农历二十四节气中的第13个节气，更是秋天的第一个节气，标志着孟秋时节的正式开始：“秋”就是指暑去凉来。到了立秋，梧桐树开始落叶，因此有“落叶知秋”的成语。从文字角度来看，“秋”字由禾与火字组成，是禾谷成熟的意思。秋季是天气由热转凉，再由凉转寒的过渡性季节。</p>
+<p>立秋，七月节。立字解见春。秋，揫也，物于此而揫敛也。
+
+初候，凉风至。西方凄清之风曰凉风。温变而凉气始肃也。《周语》曰火见而清风戒寒是也。
+
+二候，白露降。大雨之後，清凉风来，而天气下降茫茫而白者，尚未凝珠，故曰白露降，示秋金之白色也。
+
+三候，寒蝉鸣。寒蝉，《尔雅》曰寒螿蝉，小而青紫者；马氏曰物生于暑者，其声变之矣。
+
+宋时立秋这天宫内要把栽在盆里的梧桐移入殿内，等到“立秋”时辰一到，太史官便高声奏道：“秋来了。”奏毕，梧桐应声落下一两片叶子，以寓报秋之意。</p>
+<h2>文化民俗</h2>
+<h3>晒秋</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnDZlSibTgWTKPvlPV0TiaXm81ly5ASSxkHFuAlz4gLibicp32N6PGmdonxEQGQNeAvUOFdgMJojN6aaQ/640?wx_fmt=jpeg" title="立秋2">
+<p>每年立秋，随着果蔬的成熟，篁岭进入了晒秋最旺季节。晒秋是一种典型的农俗现象，具有极强的地域特色。在湖南、江西、安徽等生活在山区的村民，由于地势复杂，村庄平地极少，只好利用房前屋后及自家窗台、屋顶架晒或挂晒农作物，久而久之就演变成一种传统农俗现象。这种村民晾晒农作物的特殊生活方式和场景，逐步成了画家、摄影家追逐创造的素材，并塑造出诗意般的“晒秋”称呼。</p>
+<h3>秋忙会</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnDZlSibTgWTKPvlPV0TiaXm8U07LhlPpMpA8HUdCsHZ4XgbjrKfUqrcIcC3LHWamPo5qFdW0HAPSJg/640?wx_fmt=jpeg" title="立秋3">
+<p>秋忙会一般在农历七八月份举行，是为了迎接秋忙而做准备的经营贸易大会。有与庙会活动结合起来举办的，也有单一为了秋忙而举办的贸易大会。其目的是为了交流生产工具，变卖牲口，交换粮食以及生活用品等。其规模和夏忙会一样，设有骡马市、粮食市、农具生产市、布匹、京广杂货市等。现今把这类集会，都叫做“经济贸易交流大会”。过会期间还有戏剧演出、跑马、耍猴等文艺节目助兴。</p>
+<h3>贴秋膘</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnDZlSibTgWTKPvlPV0TiaXm8jMIictqxjoJPsniam7xykjhqAuItzavpQHxpICbiaUXW7nnBicyhGl73dg/640?wx_fmt=jpeg" title="立秋4">
+<p>民间流行在立秋这天以悬秤称人，将体重与立夏时对比。因为人到夏天，本就没有什么胃口，饭食清淡简单，两三个月下来，体重大都要减少一点。秋风一起，胃口大开，想吃点好的，增加一点营养，补偿夏天的损失，补的办法就是“贴秋膘”：在立秋这天各种各样的肉，炖肉烤肉红烧肉等等，“以肉贴膘”。</p>
+<h3>啃秋</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnDZlSibTgWTKPvlPV0TiaXm8sK402OcuLogSbOAUicSYckKB9PZy6pY2uq7bPHkXg2JTbnib4G528rSw/640?wx_fmt=jpeg" title="立秋5">
+<p>“啃秋”在有些地方也称为“咬秋”。天津讲究在立秋这天吃西瓜或香瓜，称“咬秋”，寓意炎炎夏日酷热难熬，时逢立秋，将其咬住。江苏等地也在立秋这天吃西瓜以“咬秋”，据说可以不生秋痱子。在浙江等地，立秋日取西瓜和烧酒同食，民间认为可以防疟疾。城里人在立秋当日买个西瓜回家，全家围着啃，就是啃秋了。而农人的啃秋则豪放得多。他们在瓜棚里，在树荫下，三五成群，席地而坐，抱着红瓤西瓜啃，抱着绿瓤香瓜啃，抱着白生生的山芋啃，抱着金黄黄的玉米棒子啃。啃秋抒发的，实际上是一种丰收的喜悦。</p>
+<h3>秋社</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnDZlSibTgWTKPvlPV0TiaXm8TBm1KiaiauicZM5zQia9JtgVbzaDrNHwCKISzwIt6MH9kbkUKKdyDt003Q/640?wx_fmt=jpeg" title="立秋6">
+<p>秋社原是秋季祭祀土地神的日子，始于汉代，后世将秋社定在立秋后第五个戊日。此时收获已毕，官府与民间皆于此日祭神答谢。宋时秋社有食糕、饮酒、妇女归宁之俗。唐韩偓《不见》诗：“此身愿作君家燕，秋社归时也不归。”在一些地方，至今仍流传有“做社”、“敬社神”、“煮社粥”的说法。</p>
+<h2>文化民俗</h2>
+<h3>养生</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnDZlSibTgWTKPvlPV0TiaXm8b45NUOHZZOuwjOIH7qqYKO0JcCQ702HOolxXseicNEfBaYKA4ia4mZGg/640?wx_fmt=jpeg" title="立秋7">
+<p>秋内应于肺，肺在志为悲（忧），悲忧易伤肺，肺气虚则机体对不良刺激的耐受性下降，易生悲忧之情绪，所以在进行自我调养时切不可背离自然规律，循其古人之纲要“使志安宁，以缓秋刑，收敛神气，使秋气平；无外其志，使肺气清，此秋气之应，养收之道也”。</p>
+
+
+
+<p>起居调养立秋之季已是天高气爽之时，应开始“早卧早起，与鸡具兴”早卧以顺应阳气之收敛，早起为使肺气得以舒展，且防收敛之太过。立秋乃初秋之季，暑热未尽，虽有凉风时至，但天气变化无常，即使在同一地区也会出现“一天有四季，十里不同天”的情况。因而着衣不宜太多，否则会影响机体对气候转冷的适应能力，易受凉感冒。</p>
+<h3>食谱</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnDZlSibTgWTKPvlPV0TiaXm8jicxL5LKtEuHicmId5quQZqoO2DqCkYOtgNAsMic9wicOBDW5CAH6MsmNw/640?wx_fmt=jpeg" title="立秋8">
+<p>在饮食上要“增酸”
+
+
+
+以增加肝脏的功能，抵御过盛肺气之侵入。下列食品可供选择：</p>
+
+<p>1.苹果：中医认为，苹果具有生津、润肺、除烦、开胃、醒酒等功用，对消化不良、气壅不通者，可榨汁服之。现代医学认为，苹果还能预防和消除疲劳，苹果中的钾能与体内过剩的钠结合，并使之排出体外。食入过量盐分时，可吃苹果来帮助排除，所以吃苹果或饮苹果汁对高血压患者有益。</p>
+
+
+
+<p>2.葡萄：性味甘、酸，鲜食酸甜适口，生津止渴，开胃消食，但脾胃虚弱者不宜多食，食多令人腹泻。</p>
+
+
+
+<p>3.杨桃：性味甘、酸、平，其果能生津止渴。秋天若患风热咳嗽，可把杨桃洗净鲜食；若患小便热涩，用鲜杨桃2～3个，洗净切碎、捣烂成汁，温开水冲服，日服二次；若患咽喉肿痛，将鲜杨桃洗净生食，日2～3次，每次1～2个。但本品多食伤胃，尤其是平素脾胃虚寒者更要少食。</p>
+
+
+
+<p>4.柚子：性味酸、寒，可除胀、化痰止咳、健胃消食、消肿止痛，适用于胃病、消化不良、慢性咳嗽、痰多气喘等症。柚子以含维生素C丰富而着称，有益于心血管病及肥胖病患者。柚子所含的有机酸，大部分为枸橼酸，而枸橼酸具有消除人体疲劳的作用。</p>
+
+
+
+<p>5.柠檬：味极酸，具有生津、止渴、祛暑、安胎等功用，柠檬酸是各种水果中所含有机酸最多而命名。高血压、心肌梗塞患者常饮柠檬饮料，对改善症状大有益处。</p>
+
+
+
+<p>6.山楂：性味酸、甘、微温，有散瘀、消积、化痰、解毒、活血、提神、清胃、醒脑、防暑、增进食欲等功效，对高血压、冠心病、糖尿病等十多种疾病都有显着疗效。</p>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnDZlSibTgWTKPvlPV0TiaXm8zG1b51uV4WWvslW7ME47ibKHnEFPPBiblAoL5SLdLCTaUstAHVVBmRNg/640?wx_fmt=jpeg" title="立秋9">
+<p>一叶梧桐一报秋，稻花田里话丰收。
+
+虽非盛夏还伏虎，更有寒蝉唱不休。</p></div><!--[if !IE]>|xGv00|de54e2fe762ed4115000db813e3f6b3c<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|c3e94c275efa7df8ec0fd699112cadc3<![endif]-->

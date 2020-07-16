@@ -1,0 +1,29 @@
+<!DOCTYPE title PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>QQLive List Button</title>
+<style type="text/css">
+  body {overflow:hidden;width:100%;height:100%;}
+  body,div,a,object {margin:0;padding:0;}
+  #adWrapper {position:relative;margin: -100px auto 0 auto; top:50%;}
+</style>
+<!-- adInTurnTime参数可以覆盖crystal-min.js里面的默认参数[adInTurnTime]。而默认参数[adInTurnTime]里面有个all属性，只要有这个属性所有qq号段都按照这个字段所表示的时间间隔刷广告，而不是按照配置的号段分不同的时间间隔刷广告  -->
+<script
+  id="l_qq_com"
+  src="http://ra.gtimg.com/sc/cqq/tmp/crystal-min.js"
+  arguments="{'max_height':'404','extension_js_src':'http://ra.gtimg.com/web/crystal/qqlive_client/tmp/crystal_ext-min.js','lview_time_out':10,'mo_page_ratio':0.02,'mo_ping_ratio':0.01,'mo_ping_script':'http://ra.gtimg.com/sc/mo_ping-min.js','adInTurnTime':{'all':1200}}"></script>
+  <script type="text/javascript">
+    var clientVersion = window.external.GetProtocalVersion() + '';
+  // 由于50140117版本在xp下webkit会崩溃，暂时不显示广告,客户端内置的webkit内核的ua写死故无法判断os
+  if( clientVersion === '50140117' ) {
+    window.QQLive_Refresh = function () {};
+  }
+  </script>
+</head>
+<body>
+  <div id="adWrapper" style="overflow:hidden;width:250px;height:200px;">
+    <div id="QQlive_List_button_tb" class="l_qq_com has_qq_live_default_ad" style="width:250px;height:200px;"></div>
+  </div>
+</body>
+</html>

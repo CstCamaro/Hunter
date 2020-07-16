@@ -1,0 +1,834 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>腾讯体育电子竞技视频</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="Keywords" content="电竞，LOL,王者荣耀，英雄联盟,腾讯体育,体育,腾讯网,腾讯,QQ,Tencent" />
+    <meta name="description" content="体育，让电子竞技更加纯粹。" />
+    <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico" />
+    <link href="//mat1.gtimg.com/sports/v_cxyu/base.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/sports/v_cxyu/dzjj/css2018.css">
+    <script charset="utf-8" type="text/javascript" src="//qzs.qq.com/tencentvideo_v1/js/txv.core.min.js"></script>
+    <script language="JavaScript" src="//imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2_jq.js?max_age=86400&v=20160512" charset="utf-8"></script>
+    <script type="text/javascript" src='//mat1.gtimg.com/sports/yc2016/js/jquery.min.js'></script>
+    <meta name="author" content="v_cxyu" />
+    <style type="text/css">
+    .layout {
+        width: 1240px;
+        margin: 0 auto;
+    }
+
+    body,
+    td,
+    th {
+        font-family: "microsoft yahei", \5B8B\4F53, "Arial Narrow", HELVETICA;
+    }
+
+    .tabs .tab_hd_item {
+        *padding-right: 0px;
+    }
+
+    .tabs .tab_hd span {
+        *padding-left: 12px;
+    }
+
+    .news {
+        *padding-top: 0px;
+    }
+
+
+    .news_fl a {
+        font-family: microsoft yahei;
+    }
+
+    .tabs .tab_hd_item,
+    .tabs .tab_hd span {
+        display: inline;
+    }
+
+    .video {
+        height: 366px;
+        background-color: #0f0f0f;
+    }
+
+    .list4 ul li a,
+    .twP1 .img {
+        overflow: hidden;
+    }
+
+    .twP1 .img img,
+    .list4 ul li a img,
+    .focus_A .focus_con img {
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+    }
+
+    .twP1 .img:hover img,
+    .list4 ul li a:hover img,
+    .focus_A .focus_con:hover img {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .img1 .mask .zt {
+        *top: 10px;
+    }
+
+    .img2 .mask .zt {
+        *top: -5px;
+    }
+
+    .mod_jctp .bd a img {
+        height: 100%;
+    }
+    .news_fl p {
+        font: 16px/44px "microsoft yahei";
+    }
+    .news_fl h2 {
+        font: bold 22px/24px "microsoft yahei";
+    }
+    .news_fl {
+      width: 615px !important;
+   }
+    .news_fl p {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+   }
+    .news_fl h2 {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- nav S -->
+    <div class="nav_login">
+        <div class="layout site-head ft12">
+            <!-- 登录 开始 -->
+            <style type="text/css">
+            .nav_login .layout {
+                position: relative;
+            }
+
+            .vip-button {
+                position: absolute;
+                top: 0px;
+                right: 74px;
+            }
+
+            .vip-button a {
+                display: inline-block;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #fff;
+                border-radius: 2px;
+                font-size: 12px;
+                padding: 0 15px;
+            }
+
+            .vip-button a .icon-vip-logo {
+                float: left;
+                width: 15px;
+                height: 17px;
+                background: url(//mat1.gtimg.com/sports/v_cxyu/dzjj/huiyuan.png) no-repeat;
+                margin: 16px 10px 0 0;
+            }
+
+            .vip-button a .vip-text {
+                float: left;
+            }
+
+            #wrap_sportLoginV1 {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                width: 50px;
+                height: 50px;
+                background-color: #d72d36;
+                border-radius: 50%;
+                float: right;
+                z-index: 9999;
+                border: none;
+            }
+
+            .Sinfo-logined .list-top .vip-icons img {
+                margin-top: 20px;
+            }
+
+            .Sinfo-logined .list-top .sys-msg {
+                top: 20px
+            }
+
+            #login_div {
+                z-index: 9999999999!important;
+            }
+            </style>
+            <div class="vip-button">
+                <a class="vip-btn vip-login" href="http://vip.sports.qq.com/" target="_blank">
+                <span class="icon-vip-logo"></span>
+                <span class="vip-text">开通会员</span>
+              </a>
+            </div>
+            <div id="wrap_sportLoginV1"></div>
+            <script type="text/javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/dist/sportInfo/sportLogin.js" charset="utf-8"></script>
+            <!-- 登录  结束 -->
+        </div>
+    </div>
+    <!-- nav E -->
+    <!-- banner区 开始 -->
+    <div class="banner">
+        <div class="layout">
+            <!-- 赛程 通栏S -->
+            <div class="mod_saic" style="display:none">
+                <img src="//mat1.gtimg.com/sports/v_cxyu/dzjj/banner.jpg">
+            </div>
+            <!-- 赛程 通栏E -->
+            <div class="video">
+                <!-- 视频 开始 -->
+                <!--lid直播 cid视频集 有lid注意填写lid-title标题  lid=""-->
+                <div class="videocont clearfix" lid-title="" lid="" cid="si02ei0edrm3fv8">
+                    <div class="mod_player" id="mod_player"></div>
+                    <h2 class="videotitle">
+                        <p class="publicP zzbf"></p>
+                        <a id="shipinTitle" target="_blank"></a>
+                  </h2>
+                    <div class="playlist" id="playlist">
+                        <ul id="mod_con">
+                        </ul>
+                    </div>
+                </div>
+                <!-- 视频 结束 -->
+            </div>
+            <div class="list4">
+                <ul class="inner">
+                    <li>
+                        <a href="http://v.qq.com/x/page/s0029386aeh.html" target="http://v.qq.com/x/page/s0029386aeh.html">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/85/165/2299/149534635.jpg">  
+                            <p><span>LOL全明星首个五杀！大师兄探险家疯狂收割 </span></p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://v.qq.com/x/page/l0027bud5ar.html" target="http://v.qq.com/x/page/l0027bud5ar.html">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/203/87/2293/149124713.jpg">  
+                            <p><span>网友制作恶搞版S8MV Faker竟被剃光头？</span></p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://v.qq.com/x/page/p00291xp8mv.html" target="http://v.qq.com/x/page/p00291xp8mv.html">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/12/166/2299/149534817.jpg">  
+                            <p><span>S8官方纪录片：《英雄，登峰造极境》</span></p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://v.qq.com/x/page/y0029bl5wi0.html" target="http://v.qq.com/x/page/y0029bl5wi0.html">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/161/165/2299/149534711.jpg">  
+                             <p><span>专访TheShy：还不配第一上单的称号</span></p> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- banner区 结束 -->
+    <div class="layout" style="clear: both">
+        <!-- 要闻 开始 -->
+        <div class="news">
+            <div class="news_fl" id="newlist" style="width:624px; overflow: hidden;">
+            </div>
+            <div id="focus_05" class="focus_A">
+                <ul class="focus_con">
+                    <li class="item">
+                        <a href="http://sports.qq.com/a/20181006/008174.htm#p=1" target="http://sports.qq.com/a/20181006/008174.htm#p=1">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/185/87/2293/149124695.jpg" />
+                            <span class="shadow">Meiko甜笑竖大拇指 Scout妈妈笑靥如花</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="http://v.qq.com/x/page/g00276kl1w7.html" target="http://v.qq.com/x/page/g00276kl1w7.html">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/207/87/2293/149124717.jpg" />
+                            <span class="shadow">EDG入围赛集锦：厂长极限距离再抢大龙</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="http://sports.qq.com/a/20181001/009382.htm#p=1" target="http://sports.qq.com/a/20181001/009382.htm#p=1">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/187/87/2293/149124697.jpg" />
+                            <span class="shadow">苏小妍晒LPL定制版美甲 一头短发太帅气</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="http://sports.qq.com/a/20180920/013075.htm#p=1" target="http://sports.qq.com/a/20180920/013075.htm#p=1">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/180/115/2292/149066805.png" />
+                             <span class="shadow">回顾历届S赛举办地 时隔4年再回韩国</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="focus_dot">
+                    <a href="javascript:void(0);"></a>
+                    <a href="javascript:void(0);"></a>
+                    <a href="javascript:void(0);"></a>
+                    <a href="javascript:void(0);"></a>
+                </div>
+            </div>
+        </div>
+        <!-- 要闻 结束 -->
+        <!-- 王者荣耀 开始 -->
+        <div class="mod_wzry">
+            <div class="hd">王者荣耀</div>
+            <div id="tab1" class="tabs tabs1">
+                <ul class="tab_hd cf">
+                    <li class="tab_hd_item current">最新</li><span>/</span>
+                    <li class="tab_hd_item">全场回放</li><span>/</span>
+                    <li class="tab_hd_item">击杀集锦</li><span>/</span>
+                    <li class="tab_hd_item">精彩花絮</li>
+                </ul>
+                <div class="tab_bd">
+                    <div class="tab_bd_item" style="display:block;">
+                    </div>
+                    <div class="tab_bd_item" style="display:none;">
+                    </div>
+                    <div class="tab_bd_item" style="display:none;">
+                    </div>
+                    <div class="tab_bd_item" style="display:none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 王者荣耀 结束 -->
+        <!-- 英雄联盟 开始 -->
+        <div class="mod_wzry">
+            <div class="hd">英雄联盟</div>
+            <div id="tab2" class="tabs tabs1">
+                <ul class="tab_hd cf">
+                    <li class="tab_hd_item current">最新</li><span>/</span>
+                    <li class="tab_hd_item">全场回放</li><span>/</span>
+                    <li class="tab_hd_item">击杀集锦</li><span>/</span>
+                    <li class="tab_hd_item">精彩花絮</li>
+                </ul>
+                <div class="tab_bd">
+                    <div class="tab_bd_item" style="display:block;">
+                    </div>
+                    <div class="tab_bd_item" style="display:none;">
+                    </div>
+                    <div class="tab_bd_item" style="display:none;">
+                    </div>
+                    <div class="tab_bd_item" style="display:none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 英雄联盟 结束 -->
+        <!-- NBA2K online 开始 -->
+        <div class="mod_wzry">
+            <div class="hd">NBA2K online</div>
+            <div id="tab3" class="tabs tabs1">
+                <ul class="tab_hd cf lt">
+                    <li class="tab_hd_item current">视频汇总</li>
+                </ul>
+                <div class="tab_bd">
+                    <div class="tab_bd_item" style="display:block;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NBA2K online 结束 -->
+        <!-- FIFA online3 开始 -->
+        <div class="mod_wzry">
+            <div class="hd">FIFA online3</div>
+            <div id="tab4" class="tabs tabs1">
+                <ul class="tab_hd cf lt">
+                    <li class="tab_hd_item current">视频汇总</li>
+                </ul>
+                <div class="tab_bd">
+                    <div class="tab_bd_item" style="display:block;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIFA online3 结束 -->
+        <!-- 独家策划 开始 -->
+        <div class="mod_wzry">
+            <div class="hd bold">独家策划</div>
+            <div class="tabs tabs1">
+                <div class="tab_bd">
+                    <div style="width: 102%; height:265px;">
+                        <div class="twP1">
+                            <a class="img" href="http://v.qq.com/x/page/z0029xn02w6.html" target="http://v.qq.com/x/page/z0029xn02w6.html">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/114/166/2299/149534919.jpg">
+                            <p class="title"><span></span>《峡谷英雄传：Rookie》LPL最佳外援当之无愧</p>
+                            </a>
+                        </div>
+                        <div class="twP1 twP2">
+                            <a class="img" href="http://v.qq.com/x/page/d0029wwrgf5.html" target="http://v.qq.com/x/page/d0029wwrgf5.html">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/201/166/2299/149535006.jpg">
+                            <p class="title">《峡谷英雄传：Deft》风一样的勇士 为梦奋斗不止</p>
+                            </a>
+                        </div>
+                        <div class="twP1 twP2">
+                            <a class="img" href="http://v.qq.com/x/page/e0028u11w1l.html" target="http://v.qq.com/x/page/e0028u11w1l.html">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/33/167/2299/149535093.jpg">
+                            <p class="title">《峡谷英雄传：Faker》三冠大魔王无人能及 </p>
+                            </a>
+                        </div>
+                        <div class="twP1 twP2">
+                            <a class="img" href="http://v.qq.com/x/page/l0028gjuqz7.html" target="http://v.qq.com/x/page/l0028gjuqz7.html">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/102/167/2299/149535162.jpg">
+                            <p class="title">《峡谷英雄传：Clearlove》老将初心仍在</p>
+                            </a>
+                        </div>
+                        <div class="twP1 twP2">
+                            <a class="img" href="http://v.qq.com/x/page/p00271ouh1j.html" target="http://v.qq.com/x/page/p00271ouh1j.html">
+                            <img src="//img1.gtimg.com/sports/pics/hv1/208/167/2299/149535268.jpg">
+                            <p class="title">《峡谷英雄传：Uzi》魔咒消散 一年五冠</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 独家策划 结束 -->
+        <!-- 精彩图片 结束 -->
+        <div class="mod_jctp">
+            <div class="hd bold">精彩图片</div>
+            <div class="moreP" style="right: 15px"><a href="http://sports.qq.com/l/others/electronic/electronicpic/list20170922211345.htm" target="http://sports.qq.com/l/others/electronic/electronicpic/list20170922211345.htm">更多</a></div>
+            <div class="bd">
+                <a class="img1" target="_blank" href="/a/20190525/000186.htm"><img src="http://img1.gtimg.com/21/2163/216345/21634524.jpg"><span class="mask" style="display: none;"><span class="zt"></span><p>组图：刘国梁现场助阵 Snake正式更名为LNG电竞</p></span></a><a class="img1 img2" target="_blank" href="/a/20190511/004884.htm"><img src="http://img1.gtimg.com/21/2163/216302/21630202.jpg"><span class="mask" style="display: none;"><span class="zt"></span><p>组图：iG豪取四连胜 16分钟速胜破世界赛最快纪录</p></span></a><a class="img1 img2 img3" target="_blank" href="/a/20190421/003622.htm"><img src="http://img1.gtimg.com/21/2162/216227/21622798.jpg"><span class="mask" style="display: none;"><span class="zt"></span><p>高清：IG夺冠！现场席满粉丝拉横幅狂打call</p></span></a><a class="img1 fr" target="_blank" href="/a/20190113/005625.htm"><img src="http://img1.gtimg.com/21/2157/215706/21570657.jpg"><span class="mask" style="display: none;"><span class="zt"></span><p>组图：王者荣耀年度颁奖典礼举行 琪琪获人气解说</p></span></a>
+<!--[if !IE]>|xGv00|39cef63eb81f040ab3e3e316b5684fa8<![endif]-->
+            </div>
+        </div>
+        <!-- 精彩图片 结束 -->
+    </div>
+    <div class="footer">
+        <!-- 版权页面片 开始 -->
+                <script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+        <style>
+          .tcopyright {
+            width: 960px;
+            margin: 0 auto;
+            padding: 8px 0;
+            font-size: 12px;
+            line-height: 28px;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+            clear: both;
+          }
+
+          .tcopyright .en {
+            font-family: Arial;
+          }
+
+          .tcopyright a {
+            color: #333;
+            text-decoration: none;
+          }
+
+          .tcopyright a:hover {
+            color: #bd0a01;
+            text-decoration: underline;
+          }
+          .footernew {
+              color: #515151;
+              font-size: 12px;
+              height: 70px;
+              line-height: 24px;
+              margin: 12px auto 0;
+              overflow: hidden;
+              text-align: center;
+              width: 1000px;
+          }
+          .footernew .footernewdiv {
+              margin: 0 auto;
+              width: 680px;
+          }
+          .footernew p {
+              border: 1px solid #D2D2D2;
+              float: left;
+              font-size: 12px;
+              height: 50px;
+              line-height: 20px;
+              margin: 6px;
+              padding: 0;
+              width: 120px;
+              overflow: hidden;
+          }
+          .footernew .fl {
+              padding: 3px;
+          }
+          .qq-footer .footernew .fr {
+              padding: 5px 3px 0;
+              width: 72px;
+          }
+          .qq-footer .footernew a {
+  color: #515151;
+  text-decoration: none;
+}
+        </style>
+        <div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a
+              href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a
+              href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a
+              href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a
+              href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a
+              href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a
+              href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/"
+              target="_blank" rel="nofollow">腾讯公益</a> | <a href="https://cloud.tencent.com/?from=txwdibu"
+              target="_blank" rel="nofollow">腾讯云</a> | <a href="http://service.qq.com/" target="_blank"
+              rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+              <br/>
+              <a href="http://szwljb.sz.gov.cn/" target="_blank" rel="nofollow">深圳举报中心</a> |
+              <a href="http://ga.sz.gov.cn" target="_blank" rel="nofollow">深圳公安局</a> | 
+              <a href="http://www.qq.com/dzwfggcns.htm" target="_blank" rel="nofollow">抵制违法广告承诺书</a> |
+              <a href="http://www.qq.com/copyright.shtml" target="_blank" rel="nofollow">版权保护投诉指引</a> |
+              <a href="https://gdca.miit.gov.cn/" target="_blank" rel="nofollow">广东省通管局</a>
+              <br>
+              <span>
+                <a href="http://www.qq.com/culture.shtml" target="_blank" rel="nofollow">粤网文[2017]6138-1456号</a> 
+                <a href="http://www.qq.com/internet_licence.htm" target="_blank" rel="nofollow">新出网证（粤）字010号</a> 
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                增值电信业务经营许可证：<a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">粤B2-20090059</a> 
+                <a href="http://www.qq.com/icp1.shtml" target="_blank" rel="nofollow">B2-20090028</a>
+              </span>
+              <br>
+              <a href="http://www.qq.com/scio.htm" target="_blank" rel="nofollow">新闻信息服务许可证</a>
+              <a href="http://www.qq.com/xwdz.shtml" target="_blank" rel="nofollow">粤府新函[2001]87号</a> 违法和不良信息举报电话：0755-83765566-9 
+              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002000001">
+                <span>粤公网安备44030002000001号</span>
+              </a>
+              <br>
+              <a href="http://www.qq.com/spyp.htm" target="_blank">互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a>
+              <br>
+              <div class="footernew">
+                <div class="footernewdiv">
+                <p>
+                  <span class="fl"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" target="_blank" rel="nofollow"><img width="35" height="43" border="0" alt="经营性网站备案信息" src="//mat1.gtimg.com/www/images/qq2012/ind36.gif"></a></span>
+                  <span class="fr"><a target="_blank" class="lcblack" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" rel="nofollow">经营性网站<br>
+                  备案信息</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.12377.cn/" target="_blank" rel="nofollow"><img width="44" height="44" border="0" alt="中国互联网举报中心" src="//mat1.gtimg.com/www/images/qq2012/buliang.png"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.12377.cn/" target="_blank" rel="nofollow">中国互联网<br>
+                  举报中心</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.wenming.cn" target="_blank" rel="nofollow"><img width="44" height="42" border="0" alt="中国文明网传播文明" src="//mat1.gtimg.com/www/images/qq2012/wmlogo.gif"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.wenming.cn" target="_blank" rel="nofollow">中国文明网<br>传播文明</a></span>
+                </p>
+                <p style="width:128px;height:52px;border:0;">
+                  <span style="padding:0;" class="fl"><a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&amp;ct=df&amp;a=1&amp;pa=337337" target="_blank" rel="nofollow"><img border="0" alt="诚信网站" src="//mat1.gtimg.com/www/images/qq2012/cxrz5.png"></a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow"><img src="//mat1.gtimg.com/www/images/qq2012/gswj2015.jpg" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow">工商网监<br>电子标识</a></span>
+                </p>
+                </div>
+              </div>
+
+          </div>
+          <div class="en">Copyright &copy; 1998 -
+            
+            2020 Tencent. All Rights Reserved</div>
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a
+              href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+          </div>
+        </div>
+<!--[if !IE]>|xGv00|1946a31bc73a15246842877bdfa16df2<![endif]-->
+        <!-- 版权页面片 结束 -->
+    </div>
+    <script type="text/javascript">
+    //视频cid
+    function cidplay() {
+        var cid = $(".videocont").attr("cid");
+        var id;
+        var vid = new Array();
+        //  var cid = "shhqk9l166hrgkt"; //这里来填写视频列表的专辑id,与coverId相同
+        $.getScript('//data.video.qq.com/fcgi-bin/data?tid=69&idlist=' + cid + '&appid=10001007&appkey=e075742beb866145&otype=json&callback=videoLs', {});
+        window.videoLs = function(data) {
+            var vList = "";
+            var videos = data.results[0].fields.video_ids;
+            for (var i = 0, l = videos.length; i < l; i++) {
+                vList += '<li vid="' + videos[i].vid + '" title="' + videos[i].title + '"><a href="javascript:;"><img alt="' + videos[i].title + '" src="' + videos[i].pic_640_360 + '"><p><i></i>' + (videos[i].title).substring(0, 26) + '</p></a></li>';
+            }
+            $('#mod_con').html(vList);
+        };
+        setTimeout(function() {
+            //播放器开始
+            var vidcur = 0,
+                titUrl, yuncur = 0;
+
+            videos = [], titleList = [], videostt = [], vnum = jQuery('#playlist li').length;
+            var hasVideoObj = jQuery('#playlist li');
+            for (var i = 0, l = vnum; i < l; i++) {
+                titUrl = 'http://v.qq.com/cover/' + cid.substring(0, 1) + '/' + cid + '.html?vid=' + hasVideoObj.eq(i).attr("vid");
+                videos.push(jQuery('#playlist li').eq(i).attr("vid"));
+                videostt.push(hasVideoObj.eq(i).attr("title"));
+                titleList.push(titUrl);
+            }
+
+            function addCName(n) {
+                jQuery("#playlist li").eq(n).addClass('current').siblings().removeClass('current');
+            }
+            addCName(0);
+
+            var firstVid = videos[0];
+            $("#shipinTitle").text(videostt[0]);
+            $("#shipinTitle").attr("href", titleList[0]);
+
+            function setPlayer() {
+                var video = new tvp.VideoInfo();
+                video.setVid(firstVid);
+
+                var player = new tvp.Player();
+                player.setting('vodFlashExtVars', {
+                    'ptag': typeof window.Live != 'undefined' && typeof Live.cookie != 'undefined' ? Live.cookie.get("ptag") : ''
+                });
+                player.ongetnext = function() {
+                    var nextvid = "";
+                    nextvid = videos[vidcur + 1];
+
+                    if (vidcur < vnum - 1) {
+                        vidcur++;
+                        video.clear();
+                        video.setVid(nextvid);
+                        $("#shipinTitle").text(videostt[vidcur]);
+                        $("#shipinTitle").attr("href", titleList[vidcur]);
+                        addCName(vidcur);
+                        goto(jQuery("#playlist li").eq(vidcur));
+                        return video;
+                    } else {
+                        addCName(vnum - 1);
+                    }
+                }
+                player.create({
+                    width: 615,
+                    height: 335,
+                    video: video,
+                    modId: "mod_player",
+
+                    type: 0,
+                    autoplay: true,
+                    flashWmode: "transparent",
+                    vodFlashSkin: '//imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf',
+                    // coverId: "8w2h5lfps31j3ou", //投放的广告定向到指定的视频专辑上，coverId为视频专辑id
+                    // typeId: 10, //投放的为专辑id广告，typeId为视频分类id，比如综艺为10
+                    isHtml5UseUI: true, //ipad下播放广告
+                    isHtml5ShowLoadingAdOnStart: true, //ipad下播放广告
+                    isHtml5ShowLoadingAdOnChange: true //ipad下播放广告
+                });
+                player.onplay = function() {
+                    var i = player.getPlayer();
+                    i && i.mute && i.mute()
+                }
+                jQuery("#playlist li").bind("click", function() {
+                    vidcur = jQuery(this).index();
+                    addCName(vidcur);
+                    video.setVid(jQuery(this).attr("vid"));
+                    $("#shipinTitle").text(videostt[vidcur]);
+                    $("#shipinTitle").attr("href", titleList[vidcur]);
+                    player.play(video);
+                    goto(jQuery(this));
+                });
+            }
+
+            function getFirstVid() {
+                if (firstVid != '' && firstVid != undefined) {
+                    setPlayer();
+                    return;
+                } else {
+                    setTimeout("getFirstVid()", 1000);
+                }
+            }
+            getFirstVid();
+        }, 1500);
+        //滚动条控制
+        function goto(obj) {
+            var posTop = $(obj).position() || 0;
+            $("#playlist").scrollTop(posTop.top);
+        }
+    }
+
+    //lid
+    function zblid(lid) {
+        var lid_title = $(".videocont").attr("lid-title");
+        $("#shipinTitle").text(lid_title);
+        var video = new tvp.VideoInfo();
+        video.setChannelId(lid);
+        var player = new tvp.Player();
+        player.create({
+            width: 615,
+            height: 335,
+            type: 1,
+            video: video,
+            modId: "mod_player",
+            autoplay: true,
+            liveFlashExtVars: {
+                skin: "skins/TencentPlayerLiveMiniSkinV4.swf" //直播视频播放器皮肤
+            }
+        });
+
+    }
+
+    function Playpd() {
+        var data_lid = $(".videocont").attr("lid");
+        var data_cid = $(".videocont").attr("cid");
+        var id;
+        if (data_lid == 0) {
+            cidplay();
+        } else {
+            zblid(data_lid);
+        }
+    }
+    //播放初始化判断
+    Playpd();
+    </script>
+    <script type="text/javascript" src="//joke.qq.com/lucky/jquery.qqfocus.0.3.js"></script>
+    <script type="text/javascript" src="//joke.qq.com/lucky/jquery.tabs.js"></script>
+    <script type="text/javascript">
+    //头条区
+    $.ajax({
+        url: '//list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&platform=1&version=10000&intfname=web_sports_common_vid_list&tid=674&uappid=20001257&uappkey=86ff0af73276ade8&type=4&sort=3&c_category=11025&sourcetype=2&pagesize=24&offset=0&novalue=1',
+        dataType: "jsonp",
+        data: {},
+        success: function(res) {
+            var data = res.jsonvalue.results;
+            var _html2 = '';
+            jQuery.each(data, function(i) {
+                if (i < 1) {
+                    _html2 += '<h2><a href="' + data[i].fields.url + '" target="_blank">' + data[i].fields.title + '</a></h2>';
+                } else if (i >= 1 && i < 8) {
+                    //dom结构
+                    _html2 += '<p><a href="' + data[i].fields.url + '" target="_blank">' + data[i].fields.title + '</a></p>';
+                }
+            })
+            $('#newlist').html(_html2);
+        }
+
+    })
+    $(function() {
+        $("#focus_05").qqfocus({
+            effect: 'fade',
+            prev: ".prevBtn",
+            next: ".nextBtn"
+        });
+        for (var i = 1; i < 5; i++) {
+            $("#tab" + i).tabs({
+                index: 0,
+                type: "mouseover",
+                current: "current",
+                hdItem: ".tab_hd_item",
+                bdItem: ".tab_bd_item"
+            });
+        }
+        $(".img1").hover(function() {
+            $(this).find(".mask").show();
+        }, function() {
+            $(this).find(".mask").hide();
+        });
+    });
+
+    var url = [
+        //王者荣耀总视频接口
+        '//list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&platform=1&version=10000&intfname=web_sports_common_vid_list&tid=674&uappid=20001257&uappkey=86ff0af73276ade8&type=4&sourcetype=2&pagesize=24&offset=0&sort=3&c_column_id=69790&novalue=1',
+        //王者荣耀回放视频接口 
+        '//list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&platform=1&version=10000&intfname=web_sports_common_vid_list&tid=674&uappid=20001257&uappkey=86ff0af73276ade8&type=4&sourcetype=2&pagesize=24&offset=0&sort=3&c_column_id=81082&novalue=1&672=197337',
+        //王者荣耀击杀集锦视频接口
+        '//list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&platform=1&version=10000&intfname=web_sports_common_vid_list&tid=674&uappid=20001257&uappkey=86ff0af73276ade8&type=4&sourcetype=2&pagesize=24&offset=0&sort=3&c_column_id=81081&novalue=1&672=197335',
+        //王者荣耀花絮视频接口 
+        '//list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&platform=1&version=10000&intfname=web_sports_common_vid_list&tid=674&uappid=20001257&uappkey=86ff0af73276ade8&type=4&sourcetype=2&pagesize=24&offset=0&sort=3&c_column_id=66646&novalue=1&578=304195',
+        //英雄联盟总视频接口 
+        '//list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&platform=1&version=10000&intfname=web_sports_common_vid_list&tid=674&uappid=20001257&uappkey=86ff0af73276ade8&type=4&sourcetype=2&pagesize=24&offset=0&sort=3&c_column_id=68524&novalue=1',
+        //英雄联盟回放视频接口
+        '//list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&platform=1&version=10000&intfname=web_sports_common_vid_list&tid=674&uappid=20001257&uappkey=86ff0af73276ade8&type=4&sourcetype=2&pagesize=24&offset=0&sort=3&c_column_id=81136&novalue=1&672=197337',
+        //英雄联盟击杀集锦视频接口
+        '//list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&platform=1&version=10000&intfname=web_sports_common_vid_list&tid=674&uappid=20001257&uappkey=86ff0af73276ade8&type=4&sourcetype=2&pagesize=24&offset=0&sort=3&c_column_id=81060&novalue=1&672=197335',
+        //英雄联盟花絮视频接口 
+        '//list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&platform=1&version=10000&intfname=web_sports_common_vid_list&tid=674&uappid=20001257&uappkey=86ff0af73276ade8&type=4&sourcetype=2&pagesize=24&offset=0&sort=3&c_column_id=68524&novalue=1&578=304195',
+        // NBA2K接口 
+        '//list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&platform=1&version=10000&intfname=web_sports_common_vid_list&tid=674&uappid=20001257&uappkey=86ff0af73276ade8&type=4&sourcetype=2&pagesize=24&offset=0&sort=3&c_column_id=68829&novalue=1',
+        // FIFA接口
+        '//list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&platform=1&version=10000&intfname=web_sports_common_vid_list&tid=674&uappid=20001257&uappkey=86ff0af73276ade8&type=4&sourcetype=2&pagesize=24&offset=0&sort=3&c_column_id=68830&novalue=1'
+
+    ];
+    var _html = [];
+    window.w = 0;
+    for (w; w < url.length; w++) {
+        (function(w) {
+            $.ajax({
+                url: url[w],
+                dataType: "jsonp",
+                data: {},
+                success: function(res) {
+                    var data = res.jsonvalue.results;
+                    jQuery.each(data, function(i) {
+                        //时间换算
+                        var timerHour = parseInt(parseInt(data[i].fields.duration, 10) / 3600, 10);
+                        var timerMin = parseInt((parseInt(data[i].fields.duration, 10) - timerHour * 3600) / 60, 10);
+                        var timerSec = parseInt((parseInt(data[i].fields.duration, 10) - (timerHour * 3600 + timerMin * 60)), 10);
+                        if (timerMin <= 0) {
+                            tMin = "00:";
+                        } else if (timerMin > 0 && timerMin < 10) {
+                            tMin = "0" + timerMin + ":";
+                        } else {
+                            tMin = timerMin + ":";
+                        };
+                        if (timerSec <= 0) {
+                            tSec = "00";
+                        } else if (timerSec > 0 && timerSec < 10) {
+                            tSec = "0" + timerSec;
+                        } else {
+                            tSec = timerSec;
+                        };
+                        var time = tMin + tSec;
+                        //播放量换算
+                        var countUser
+                        var cunt = data[i].fields.view_all_count;
+                        if (cunt > 10000) {
+                            countUser = (parseInt(cunt, 10) * 0.0001).toFixed(1) + '万';
+                        } else {
+                            countUser = cunt;
+                        }
+
+                        if (i < 6) {
+                            //dom结构
+                            _html += '<div class="twP"><a class="img" href="' + data[i].fields.url + '" target="_blank"><img src="' + data[i].fields.pic_332_187 + '"><p class="shadow"><span class="time">' + time + '</span><span class="bfl">' + countUser + '</span></p></a><p class="title"><a href="' + data[i].fields.url + '" target="_blank">' + data[i].fields.title + '</a></p></div>';
+                        }
+                    })
+                    $('.tab_bd_item').eq(w).html(_html);
+                    window._html = [];
+                }
+
+            })
+
+        })(w)
+
+    };
+    </script>
+    <!-- 全站流量统计代码 开始 -->
+    <script charset="gbk" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+    <script type="text/javascript">
+    if (typeof(pgvMain) == 'function') pgvMain();
+    </script><!--[if !IE]>|xGv00|b87153dfeec5ca005fecaa8d2373657c<![endif]-->
+    <!--普通专题pgv统计代码请放在<body>标签下方,重大项目报道及频道首页改版pgv统计代码放于首屏后.-->
+    <!-- 全站流量统计代码 结束 -->
+</body>
+
+</html><!--[if !IE]>|xGv00|794900a514153ced41bb8f8d20075716<![endif]-->

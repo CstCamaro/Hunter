@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1.0,user-scalable=no,"
+  />
+  <link rel="icon" href="/favicon.ico"/>
+  <title>朋友App内测</title>
+  <script src="./js/jquery-1.11.2.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+<script>
+  (function () {
+    document.documentElement.style.fontSize =
+      document.documentElement.clientWidth / (375 / 35) + 'px'
+  })()
+</script>
+<div id="app">
+  <div class="page-container">
+    <img src="./images/shadow.png" class="background-shadow"/>
+
+    <div class="info-card">
+      <div class="slogan-panel">
+        <span class="slogan username">朋友</span>
+      </div>
+
+      <div class="accept-button">
+        去下载
+      </div>
+
+      <div class="info-panel">
+        <img src="./images/logo_36.png" alt=""/>
+        <span>快来建立自己的小圈子</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- built files will be auto injected -->
+<script src="https://res.tu.qq.com/assets/tu/pituconsole.js"></script>
+<script src="https://res.tu.qq.com/assets/tu/global-1.3.js?v=5"></script>
+<script src="https://res.tu.qq.com/assets/tu/qqapi.js?v=1"></script>
+<script src="https://res.tu.qq.com/assets/tu/launchapp-2.0.js?v=3"></script>
+<script src="./js/launchapp-3.0.js"></script>
+
+<script text="text/javascript">
+  const DOWNLOAD_PAGE_BASE_URL = 'https://tu.qq.com/pengyou/download/index.html'
+
+  function generateDownloadUrl(schemaStr) {
+    return `${DOWNLOAD_PAGE_BASE_URL}?v4&schemaUrl=${encodeURIComponent(schemaStr)}`
+  }
+
+
+  $('.accept-button').click(function () {
+    window.location.href = generateDownloadUrl('luckyclover://')
+  })
+</script>
+</body>
+</html>

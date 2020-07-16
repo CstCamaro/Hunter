@@ -1,0 +1,224 @@
+@charset "utf-8";
+html,body,h1,h2,h3,h4,h5,div,p,ul,li,dl,dt,dd,label,input,button,header,footer,artical{padding:0; margin:0; border:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul{list-style:none;}
+fieldset,img {border: 0;}
+del {text-decoration: line-through;}
+table,td {border-collapse: collapse;border-spacing: 0;}
+:focus {outline: 0;}
+input{-webkit-appearance:none;}
+
+html,body{width:100%;height:100%;}
+/*html{font-size:62.5%;}*/
+body {font-family:'微软雅黑','宋体',Arial, Helvetica, Tahoma;min-width:1010px;}
+/*body {font-family:Helvetica;font-size:1.4rem;}*/
+
+.clearfix:after{display:table;content:"";clear:both;}
+.fl-l {float: left;}
+.fl-r {float: right;}
+
+.none {display: none;}
+.block {display: block;}
+
+.t-l {text-align: left;}
+.t-r {text-align: right;}
+.t-c {text-align: center;}
+
+.mart-50 {margin-top: 50px;}
+.padb-5 {padding-bottom: 5px;}
+
+.ellipsis {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+
+/*背景*/
+.greybg,.blackbg,.logobg,.banner{
+    width:100%;min-width:1000px;
+}
+.logobg{
+     background:url(http://s0.ifengimg.com/2016/03/11/logobg_b55e24d3.png) no-repeat center center;background-size:100% 100%;
+}
+.greybg{
+     background-color:#252525;
+}
+.blackbg{
+    background-color:#212020;
+}
+.content{
+    width:1000px;margin:0 auto;overflow:hidden;color:#fff;
+}
+
+/*页头*/
+.header{
+    height:135px;position:relative;
+}
+.header img{
+    float:left;
+}
+.header .logo{
+    padding-left:10px;padding-top:43px;
+}
+.header .slogan{
+    padding-left:15px;padding-top:63px;
+}
+.header .iconHou{
+    position:absolute;right:-7px;top:0;
+}
+/*轮播*/
+.banner{position:relative;width:100%;height:562px;overflow:hidden;}
+.banner .d_img{position:relative;width:100%;height:562px;}
+.banner .d_img li{position:absolute;display:none;z-index:0;overflow: hidden;filter:alpha(opacity=50);opacity:.5;}
+.banner .d_img li img{height:562px;}
+.banner .d_img li h3{
+    position:absolute;top:200px;left:719px;z-index:200px;
+    width:187px;padding:28px 0 0 28px;line-height:33px;height:100px;color:#fff;font-size:16px;font-weight:normal;background:#212020;
+}
+
+.banner .d_img li.d_pos1{display:block;width:400px;left:0;top:0;z-index:1}
+.banner .d_img li.d_pos3{display:block;width:1000px;left:50%;top:0;z-index:3;filter:alpha(opacity=100);opacity:1}
+.banner .d_img li.d_pos5{display:block;width:400px;right:0;top:0;z-index:1}
+.banner .d_img li.d_pos1>img{
+    float:right;
+}
+.banner .d_menu{position:absolute;left:50%;top:404px;z-index:10;
+    width:99px;height:5px;background:url(http://s0.ifengimg.com/2016/03/11/line_1852c94f.png) no-repeat center center;
+}
+.banner .d_menu>span{
+    position:absolute;top:0;left:0;
+    display:block;width:20px;height:5px;background:#f54343;
+}
+
+.banner .d_next,.banner .d_prev{
+    position:absolute;left:50%;top:398px;z-index:15;cursor:pointer;
+    width:10px;height:17px;
+    background-image:url(http://s0.ifengimg.com/2016/03/11/btnMenu_961e542b.png);
+    background-repeat:no-repeat;
+}
+.banner .d_prev{background-position:0 0;}
+.banner .d_next{background-position:-139px 0;}
+
+.banner .font{position:absolute;left:50%;top:210px;z-index:5;width:215px;background:#2a2a2a;}
+.banner .font>h3{padding:28px 0 0 28px;line-height:33px;height:100px;color:#fff;font-size:16px;font-weight:normal;background:#212020;}
+.banner .font>p{height:97px;padding-top:30px;text-align:center;color:#fff;font-size:14px;}
+
+
+ /*视频弹层*/
+.overlay{background:url(http://s0.ifengimg.com/2016/01/11/overlay_bg_0f2ae817.png);width:100%; position:fixed; left:0; top:0; z-index:100;height:1500px;display:none; }
+.pop-video{ position:fixed; left:50%; margin-left:-400px; width:730px; height:480px; background:#000; z-index:100; top:100px;display:none; }
+.close{ position:absolute; top:0px; right:-34px;z-index:100;}
+#videoPlay1{ width:730px; height:480px;}
+
+/*内容区*/
+.section{
+    width:1010px;
+}
+.section .title{
+    padding:35px 5px 14px 5px;position:relative;height:22px;text-align: center;
+}
+.section .title>span{
+    display:inline-block;position:relative;top:-14px;padding:0 10px;background:#212020;font-weight:normal;font-size: 22px;
+}
+.section .title>h3{
+    padding-top:14px;border-bottom:1px solid #fff;
+}
+.section .intro{
+    font-size: 14px;line-height:20px;padding:0 5px 10px 5px;
+}
+.section .list a{
+    color:#fff;text-decoration:none;
+}
+.section .list a:hover{
+    text-decoration:underline;
+}
+.section .list>dl{
+    width:330px;height:263px;margin-top:20px;margin-left:5px;float:left;background:#141313;
+}
+.section .list>dl>dt{
+    width:330px;height:185px;background:#9a9a9a;position:relative;
+}
+.section .list>dl>dt a{
+    display:block;width:330px;height:185px;overflow:hidden;
+}
+.section .list>dl>dt img{
+    width:350px;height:185px;
+}
+.section .list .tt{
+    padding:0 10px;line-height:32px;font-size:14px;
+}
+.section .list .inf{
+    padding:0 20px 0 10px;color:#9c9c9c;font-size:12px;line-height:20px;height:40px;overflow: hidden;
+}
+.section .list>dl>dt>span{
+    position:absolute;right:0;bottom:-78px;
+    /*border-style:solid;*/
+    /*border-width:18px;*/
+    /*border-color:transparent #212020 transparent transparent;*/
+    width:18px;height:22px;display:block;
+    background:url(http://s0.ifengimg.com/2016/03/11/icon_df614f96.jpg) no-repeat;
+}
+.section .meter{
+    height:90px;width:100%;
+}
+.section .meter>div{
+    width:330px;height:17px;padding-top:27px;padding-right:5px;float:right;font-size:14px;line-height:17px;color:#797979;
+}
+.section .meter>div>span{
+    display:inline-block;float:left;
+}
+.section .meter>div>a{
+    display:inline-block;float:left;padding-left:10px;color:#797979;text-decoration:none;
+}
+.section .meter>div>a:hover{
+    text-decoration:underline;
+}
+.section .btnLeft,.section .btnRight{
+    width:10px;height:17px;background-image:url(http://s0.ifengimg.com/2016/03/11/seBtn_7cdb4151.png);background-repeat:no-repeat;cursor:pointer;
+}
+.section .btnRight{
+    background-position:-193px 0;
+}
+.section .seMeter{
+    width:155px;height:5px;background:url(http://s0.ifengimg.com/2016/03/11/sebg_0c2174c5.png) no-repeat center center;margin:8px 10px 0 10px;position: relative;
+}
+.section .seMeter>b{
+	position: absolute;
+	top: 8px;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 0px;
+	background: #fff;
+}
+.section .curPage{
+    padding-left:20px;
+}
+.section #gbg{
+    background-color:#252525;
+}
+
+.navigation{
+    position: fixed;
+    right:10px;
+    bottom: 20%;
+    z-index: 1000;
+    width: 130px;
+    height: 198px;
+    background: url(http://s0.ifengimg.com/2016/03/11/codebg_50076922.png) no-repeat;
+}
+.navigation>img{
+    display:block;
+    width:111px;height:111px;
+    margin:8px auto 0 auto;
+}
+.navigation>p{
+    margin-top:25px;text-align: center;
+    line-height: 22px;color:#fff;font-size: 14px;
+}
+.navigation>p>span{
+    font-size: 16px;
+}
+
+/*评论*/
+.cmt{
+    width: 1000px;margin: 0 auto;padding:10px 0 20px;
+}
+.cmtBox .tit02{border-top:0;margin-top:0 !important;}
+.generalFooter{margin-top:0 !important;}

@@ -1,0 +1,310 @@
+/* CSS Document */
+body {
+	margin: 0px;
+}
+body,td,th {
+	font-size: 12px;
+	line-height: 22px;
+}
+ul,li,img{ margin:0px; padding:0px; border:0px;}
+#tab ul{
+font-size:14px;
+color:#646464;
+margin:0;
+padding:0;
+list-style:none;
+}
+li{list-style:none;line-height: 24px;height:24px}
+.header{
+width:960px;
+height:40px;
+margin: 0px auto;
+background-image:url(file:///C|/Documents%20and%20Settings/Administrator/Local%20Settings/Temporary%20Internet%20Files/Content.IE5/CEFTS5L1/images/nav_bg.jpg);
+}
+.headers{
+display:block;
+float:left;
+margin-left:80px;
+width:880px;
+height:30px;
+margin: 0px auto;
+background-image:url(file:///C|/Documents%20and%20Settings/Administrator/Local%20Settings/Temporary%20Internet%20Files/Content.IE5/CEFTS5L1/images/nav_bg.jpg);
+}
+/* nav */
+.nav li{
+float:left;
+margin: 0px auto;
+}
+.nav li a{
+color:#c8eaff;
+text-decoration: none;
+display:block;
+width:60px;
+height:40px;
+margin-left:2px;
+line-height:26px;
+_line-height:40px;
+text-align:center;
+}
+.nav a:visited {
+	text-decoration: none;
+	color: #c8eaff;
+}
+.nav li a:hover{
+color:#ffffff;
+background-image:url(file:///C|/Documents%20and%20Settings/Administrator/Local%20Settings/Temporary%20Internet%20Files/Content.IE5/CEFTS5L1/images/nav_bg_hover.jpg);
+}
+/* spaces */
+.spaces_x{
+width:100px;
+height:10px;
+margin: 0px auto;
+}
+.spaces_y{
+float:left;
+width:10px;
+height:100px;
+margin: 0px auto;
+}
+/* font */
+.font12{
+	font-size:12px;
+	line-height:22px;
+	color: #646464;
+}
+.font12 a:link{
+	font-size:12px;
+	line-height:22px;
+	color: #646464;
+}
+.font12 a:hover{
+	font-size:12px;
+	line-height:22px;
+	color: #0072db;
+}
+.font12more{
+	color: #ffffff;
+}
+.font12more a:link{
+color: #ffffff;
+}
+.font12more a:hover{
+color: #0072db;
+}
+.font12blue{
+	font-size:12px;
+	line-height:22px;
+	color: #005fb6;
+}
+.font14{
+	font-size:14px;
+	line-height:24px;
+	color: #005fb6;
+}
+.font14gray{
+	font-size:14px;
+	line-height:24px;
+	color: #646464;
+}
+.font14blue{
+	font-size:14px;
+	line-height:24px;
+	color: #005fb6;
+}
+.font14blue a:link{
+color: #005fb6;
+}
+.font14blue a:visited{
+color: #005fb6;
+}
+.font14blue a:hover{
+color: #0072db;
+}
+/* h */
+.h3{
+font-family: "黑体", Arial;
+font-size:18px;
+line-height:30px;
+color: #005fb6;
+margin:0;
+padding:0;
+list-style:none;
+}
+.h3 a:link{
+color: #005fb6;
+}
+.h3 a:visited{
+color: #005fb6;
+}
+.h3 a:hover{
+font-family: "黑体", Arial;
+font-size:18px;
+line-height:30px;
+color: #0072db;
+}
+.h5{
+font-size:12px;
+line-height:22px;
+color:#676767;
+margin:0;
+padding:0;
+list-style:none;
+}
+.h5 a:link{
+color:#676767;
+}
+.h5 a:hover{
+font-size:12px;
+line-height:22px;
+color:#0072db;
+}
+/* cards */
+.cards{
+font-size:12px;
+color:#005fb6;
+line-height:22px;
+}
+.cards a:link{
+color:#005fb6;
+}
+.cards a:hover{
+font-size:12px;
+line-height:22px;
+color:#0072db;
+}
+.turn{float:left;height:220px;margin-bottom:5px;overflow:hidden;position:relative;}
+.turn #adpica{width:310px;height:220px;overflow:hidden;}
+.turn #adpica img{width:310px;height:220px;float:left;overflow:hidden;}
+.turn #adtipa{height:19px;position:absolute;right:2px;bottom:3px;}
+.turn #adtipa ul li{width:19px;height:19px;line-height:19px;float:left;text-align:center;display:inline;margin:0 1px;cursor:pointer;color:#fff;background:#000;}
+.turn #adtipa ul li.current{color:#fff;background:#005fb6;}
+.turn .hidden{display:none;}
+.turn .show{display:block!important;}
+#adpica span{position:absolute;bottom:0;left:0;;color:#fff;font-size:14px;height:30px;width:310px;filter:alpha(opacity=50);opacity:0.5;background:#000;text-indent:-9999em}
+#adpica p{
+	position:absolute;
+	bottom:-11px;
+	*bottom:3px;
+	left:0;
+	color:#fff;
+	font-size:14px;
+	height:20px;
+	line-height:20px;
+	padding-left:5px;
+	font-weight:bold;
+}
+#eightstep h4 a {float: right;font-weight: normal;}
+.color-dblue, .color-dblue a {color: #1D3457;}
+.tzcl-r #syzq h4 a, .tzcl-r #eightstep h4 a {font-size: 12px;}
+.color-blue ,.color-blue a{color:#2356a9;}
+.color-dblue ,.color-dblue a{color:#1d3457;}
+#syzq h4{padding:11px 8px 0 30px;font-size:12px;height:28px;}
+#syzq h4 span{float:left;}#syzq h4 a{float:right;font-weight:normal;}
+.tool_nav{margin:0 auto;width:944px;padding:10px 0 0 14px;height:90px;border:1px solid #BFD2ED;font-size:12px;clear:both;}
+.tool_nav a{color:#0C5AAF;}
+.tool_nav a:hover{color:#B00;}
+.tool_nav .h_line{height:19px;line-height:19px;margin-bottom:10px;overflow:hidden;}
+.tool_nav .h_tit{float:left;padding:0 7px;height:17px;line-height:19px;border:1px solid #CBDAE9;color:#3A414B;font-weight:bold;background:url(//mat1.gtimg.com/finance/fund/20100519/_bg1.png) repeat-x; overflow:hidden;}
+.tool_nav .h_col{float:left;}
+
+.news-list{width:352px;margin:0 auto;}
+.news-list dt{height:33px;line-height:33px;padding-left:45px;font-size:14px;color:#1D3457; font-weight:bold;background:url(//mat1.gtimg.com/finance/fund/20100519/_bg2.png) no-repeat;}
+.news-list dt span{float:right;margin-right:10px;font-size:12px;font-weight:normal;}
+.news-list ul{padding-left:6px;line-height:26px; padding-top:15px;color:#2356A9;font-size:14px;}
+.news-list li{height:26px;overflow:hidden;}
+.news-list li a{color:#2356A9;}
+.news-list li a:hover{color:#B00;}
+
+#tzcl{width:568px;height:373px; border:1px solid #BFD2ED;border-left:none;overflow:hidden; background:none;}
+.tzcl-l{width:310px;}
+.tzcl-l #zd h4,.tzcl-l #tz h4{display:block;padding:0 10px 0 30px;height:31px; line-height:33px;overflow:hidden;background:url(//mat1.gtimg.com/finance/fund/20100519/_bg3.png) no-repeat;font-size:14px;}
+
+.tzcl-l #zd h4 a,.tzcl-l #tz h4 a{font-size:12px;}
+.tzcl-l #zd h4{margin-top:1px;margin-bottom:5px;}
+.tzcl-l #tz h4{margin-top:8px;}
+
+.tzcl-r{width:229px;margin-left:14px;height:350px; overflow:hidden;}
+.tzcl-r #syzq h4,.tzcl-r #eightstep h4{display:block; padding:0 7px 0 22px;height:32px; line-height:32px; background:url(//mat1.gtimg.com/finance/fund/20100519/_bg4.png) bottom no-repeat;font-size:14px;overflow:hidden}
+.tzcl-r #syzq{height:120px;}
+.tzcl-r #syzq h4{height:37px;line-height:37px; margin-bottom:8px;}
+.tzcl-r #syzq h4 a,.tzcl-r #eightstep h4 a{font-size:12px;}
+.tzcl-r #syzq .sel-1{width:148px;}
+.tzcl-r #eight a{display:block;width:107px; height:30px;overflow:hidden;background-image:url(//mat1.gtimg.com/finance/fund/20100519/bg3.png);background-repeat:no-repeat;}
+
+.newbox{width:569px; height:205px;}
+.newbox .nleft{float:left;width:310px;height:205px;}
+.newbox .nleft h4{display:block;padding:0 10px 0 30px;height:31px;line-height:33px;overflow:hidden;background:url(//mat1.gtimg.com/finance/fund/20100519/_bg3.png) no-repeat;font-size:14px;}
+.newbox .nleft h4 a{float:right;font-size:12px; font-weight:normal;}
+.newbox .nleft table{border:1px solid #BFD2ED;border-bottom:none;border-right:none;}
+.newbox .nleft table th{font-weight:normal;border-right:1px solid #BFD2ED;}
+.newbox .nleft table td{border-bottom:1px solid #BFD2ED;border-right:1px solid #BFD2ED;}
+.newbox .nright{float:right;width:248px; height:203px; border:1px solid #BFD2ED;}
+.newbox .nright h4{display:block;padding:0 7px 0 22px;height:32px; line-height:32px; background:url(//mat1.gtimg.com/finance/fund/20100519/_bg4.png) bottom no-repeat;font-size:14px;overflow:hidden}
+.newbox .nright h4 a{float:right;font-size:12px; font-weight:normal;}
+.newbox .nright img{width:68px; height:48px; border:1px solid #D1D1D1;}
+.tabe-name {
+background:transparent url(//mat1.gtimg.com/finance/fund/hao/bg2_v1.png) 0 -161px no-repeat;
+}
+#body.fc_en .up{color:#129800 !important;}
+#body.fc_en .down{color:#FF0300 !important;}
+#body.fc_cn .up{color:#FF0300 !important;}
+#body.fc_cn .down{color:#129800 !important;}
+.float-l{float:left}
+#syzq{margin-top:15px}
+.inp9{background:url(//mat1.gtimg.com/finance/fund/hao/bg3.png) no-repeat;width:67px;height:19px;text-align:center; background-position:-462px -586px;border:0;line-height:20px;padding-bottom:2px;cursor:pointer}
+#hscroll {
+	overflow:hidden;
+	zoom:1
+}
+#hscroll {
+	background-position:0 0
+}
+#hscroll #scrllbox {
+	width:960px;
+	position:relative;
+	height:150px;
+	overflow:hidden;
+}
+#hscroll #pic {
+	height:150px;
+	overflow:hidden;
+	position:relative;
+	width:872px;
+	margin-left:50px;
+}/*宽度,overflow:hidden和相对定位是必须的属性*/
+.split{float:left}
+#hscroll #pic .split li {
+	float:left;
+	margin:0 15px;
+}/*水平滚动的话，滚动单元必须浮动，垂直则必须不能浮动*/
+#hscroll #pic .split p {
+	font-size:12px;
+	color:#fff;
+	padding:3px 10px 0 0;
+	line-height:18px
+}
+#hscroll #pic .split a.infotxt {
+	color:#fff;
+	font-family:"微软雅黑", "黑体";
+	font-size:16px;
+	height:28px;
+	line-height:28px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	text-indent:1em;
+	white-space:nowrap;
+}
+#hscroll #btn_left {
+	position:absolute;
+	left:0;
+	top:65px;
+	cursor:pointer;
+}/*左按钮*/
+#hscroll #btn_right {
+	position:absolute;
+	right:0;
+	top:65px;
+	cursor:pointer;
+}/*右按钮*//*  |xGv00|1c6f9365e1bc2afdcffa7020769ce842 */

@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>上海抗战历史地图系列三 一 慈善救助</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="Keywords" content="上海抗战历史地图系列,抗日救亡,抗战纪念" />
+<meta name="description" content="上海师范大学人文与传播学院、都市文化研究中心、腾讯大申网、腾讯地图 联合制作上海抗战历史地图系列" />
+<style type="text/css">
+html,body{width:100%;height:100%;overflow: hidden;}
+*{margin:0px;padding:0px;border:0;}
+body{font-family: "微软雅黑",Verdana, Helvetica, Arial, sans-serif;font-size:14px;line-height:150%;position: relative;-webkit-user-select:none;user-select:none;}
+h1{font-size:18px;color:#fff;line-height: 28px;}
+.kzpoint{}
+.kzpoint>h2{font-size: 16px;font-weight: normal;color:#000;}
+.kzpoint p{font-size: 13px;line-height: 150%;margin-top:5px;color:#666;}
+..kzpoint>div>p:last-child{line-height: 0;}
+.kzpoint p>img{width:100%;border:1px solid #e1e1ff;box-sizing:border-box;}
+
+.point-list {color:#333;min-height: 100px;}
+.point-list li{margin:1px 0;line-height: 100%;padding:5px 10px 5px 30px;height: 30px;font-size: 13px;cursor: pointer;}
+.point-list .famou {background-image:url("//mat1.gtimg.com/sh/2015/0727/lbs-yellow.png");background-repeat: no-repeat; background-position: 6px 6px;background-size: auto 26px;}
+.point-list .gov{background-image:url("//mat1.gtimg.com/sh/2015/0727/lbs-blue.png");background-repeat: no-repeat; background-position: 6px 6px;background-size: auto 26px;}
+.point-list .on{background-color:#ffcccc !important;}
+.point-list li:hover{background-color:#fff !important;}
+.guide-left {position: absolute;top:0;z-index: 1000;left:0px;width:240px;height: 100%;background-color:#fff;border-right: 1px solid #999;-webkit-transition:left .3s ease-in-out;transition:left .3s ease-in-out;}
+.guide-off {left:-240px;}
+.guide-left h2{font-size:16px;line-height: 200%;border-top:1px solid #999;border-bottom:1px solid #999;background-color:#f9f9f9;text-indent: 10px;}
+.guide-left .map-legend{font-size: 13px;}
+.guide-left .map-legend p{margin:10px;text-align: center;}
+.guide-left .map-legend span{display: inline-block;vertical-align: middle;}
+.guide-left .map-legend .famous{background-image: url("//mat1.gtimg.com/sh/2015/0727/lbs-yellow.png");background-repeat: no-repeat;line-height: 30px;text-indent: 26px;}
+.guide-left .map-legend .gov{background-image: url("//mat1.gtimg.com/sh/2015/0727/lbs-blue.png");background-repeat: no-repeat;line-height: 30px;text-indent: 26px;margin-left: 10px;}
+.guide-left .map-legend .color{width:30px;}
+.guide-left .search form{margin:10px;}
+.guide-left .search form:after{content:".";height: 0;display: block;visibility: hidden;clear: both;}
+.guide-left .search input{display: block;border:1px solid #1e8ae5;padding:5px;-webkit-box-sizing:border-box;box-sizing:border-box;float:left;width:120px;height: 27px;}
+.guide-left .guide-tips{position: absolute;top:50%;left:240px;line-height: 0;border:1px solid #999;border-left: 0;overflow: hidden;border-top-right-radius: 5px;border-bottom-right-radius: 5px;width:14px;text-align: left;background-color: #fff;text-align: center;cursor: pointer;}
+.guide-left .point-list{overflow-x: hidden;}
+::-webkit-scrollbar{width: 5px;height: 10px;background-color: #f8f8f8;}
+::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);box-shadow: inset 0 0 6px rgba(0,0,0, 0.3);border-radius: 10px;background-color: #f8f8f8;}
+::-webkit-scrollbar-thumb{border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);background-color: rgba(0,0,0, .5);}
+@keyframes flash {0%{-webkit-box-shadow: 0 0 0 #ff0000;box-shadow: 0 0 0 #ff0000;}50%{box-shadow: 0 0 10px #ff0000;);}100%{box-shadow: 0 0 0 #ff0000;}}
+.guide-off .guide-tips{animation:flash 1s infinite;}
+.guide-type {position: absolute;right: 10px;bottom: 10px;z-index: 1001;}
+.guide-type>button{border:1px solid #666;background-color:#fff;font-size: 12px;padding:5px 8px;display: block;float:right;font-family: "微软雅黑", arial;}
+.guide-type>button:nth-child(2){border-right: 0;border-left: 0;}
+.guide-type>button.on{background-color:rgb(38, 154, 234);color:#fff;font-weight: bold;}
+.map-pano{position: absolute;top:0;left: 0;height: 100%;width: 100%;z-index:100;display: none;}
+</style>
+</head>
+<body>
+<div style="width:100%;height:100%" id="container"></div>
+<div id="pano-container" class="map-pano"></div>
+<div style="position:absolute;top:0;z-index:1000;left:100px;width:320px;height:64px;background-color:#000;background-color:rgba(0,0,0,.7);line-height:120%;text-align:center;display:none;" id="map-title-id">
+	<h1>上海抗战历史地图系列三 一 慈善救助</h1>
+	<p style="width:100%;color:#eee;font-size:12px;">上海师范大学人文与传播学院、都市文化研究中心、<br />腾讯大申网、腾讯地图 联合制作</p>
+</div>
+<div class="guide-left guide-off" id="guide-left">
+	<div class="search">
+		<form action="return false;" method="post" id="search-form">
+			<input type="text" name="search" placeholder="输入搜索内容" />
+			<input type="submit" value="搜索" style="background-color:#3399cc;color:#fff;width:50px;margin-left:10px;" />
+		</form>
+		<h2>一二八期间/八一三期间</h2>
+	</div>
+	<div class="point-list">
+		<ul id="point-list"></ul>
+	</div>
+	<div class="map-legend">
+		<h2>图例</h2>
+		<div>
+			<p style="margin:20px 0;">
+				<span class="gov">一二八期间</span>
+				<span class="famous">八一三期间</span>
+			</p>
+			<p class="cp">
+				<span style="background-color:#c1defc;" class="color">&nbsp;</span>
+				<span style="width:80px;">霍山公园</span>
+				<span>建筑尚存</span>
+			</p>
+			<p class="cp">
+				<span style="background-color:#dedede;" class="color">&nbsp;</span>
+				<span style="width:80px;">灾童医院</span>
+				<span>建筑已失</span>
+			</p>
+		</div>
+	</div>
+	<div class="guide-tips" id="guide-tips">
+		<img src="//mat1.gtimg.com/sh/2015/0727/arrow.jpg" />
+	</div>
+	
+</div>
+<div class="guide-type">
+    <button data-val="panorama">街景</button>
+    <button data-val="satellite">卫星</button>
+    <button data-val="roadmap" class="on">地图</button>
+</div>
+<script type="text/javascript" src="//mat1.gtimg.com/sh/cdn/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/sh//20150802/points-3.0.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+(function(w, d, $){
+	var media = (function(){
+		var ag = w.navigator.userAgent;
+		if(ag.match(/(mobile)|(phone)/ig)){
+			return 'mobile';
+		}
+		return 'pc';
+	})();
+	var pano = null, panost = 0, gps= null, panocont = document.getElementById('pano-container'), ps = null, map = null;
+	var _open_pano_bypanoid = function(panoid, pov){
+		pano = null;
+		pano = new qq.maps.Panorama(panocont, {
+			pano:panoid,
+			zoom:1,
+			addressControl:true,
+			addressControlOptions:{
+				position:qq.maps.ControlPosition.RIGHT_TOP
+			}
+		});
+		pov && pano.setPov(pov);
+		pano.setZoom(1);
+		panocont.style['display'] = 'block';
+	};
+	var _open_pano_bygeo = function(latlng){
+		if(ps == null){
+			ps = new qq.maps.PanoramaService();
+		}
+		ps.getPano(latlng, 1000, function(result){
+			var svid = result?result.svid:null;
+			if(!svid){
+				alert('此处没有街景');
+				return;
+			}
+			_open_pano_bypanoid(svid);
+		});
+	};
+	w._go_pano = function(id){
+		var p = qq_map_points[id];
+		if(p.pano != ''){
+			_open_pano_bypanoid(p.pano, {
+				heading:p.heading,
+				pitch:p.pitch
+			});
+			$('.guide-type>button').removeClass('on');
+			$('.guide-type>button:nth-child(1)').addClass('on');
+		}
+	};
+	w.mapinit = function() {
+		var blue = new qq.maps.MarkerImage('//mat1.gtimg.com/sh/2015/0727/lbs-blue.png');
+		var purple = new qq.maps.MarkerImage('//mat1.gtimg.com/sh/2015/0727/lbs-yellow.png');
+		var mapcenter = new qq.maps.LatLng(31.231706, 121.472644);
+		var click = 'ontouchend' in w?'touchend':'click';
+		map = new qq.maps.Map(d.getElementById("container"), {
+			zoom: 14,
+			center: mapcenter,
+			mapTypeId: qq.maps.MapTypeId.ROADMAP,
+			mapTypeControl:false,
+			mapTypeControlOptions: {
+	            mapTypeIds: [
+	                qq.maps.MapTypeId.ROADMAP,
+	                qq.maps.MapTypeId.HYBRID,
+	                qq.maps.MapTypeId.SATELLITE
+	            ],
+	            position: qq.maps.ControlPosition.BOTTOM_RIGHT
+	        },
+	        panControlOptions: {
+            	position: qq.maps.ControlPosition.TOP_RIGHT
+        	},
+	        zoomControlOptions: {
+            	position: qq.maps.ControlPosition.TOP_RIGHT,
+	            style: qq.maps.ZoomControlStyle.BIG
+	        }
+		});
+		qq.maps.event.addListener(map,'mousemove',function(event) {
+			if(panost == 1){
+	        	var latLng = event.latLng,lat = latLng.getLat().toFixed(5),lng = latLng.getLng().toFixed(5);
+	        	if(gps == null){
+	        		gps = new qq.maps.Marker({
+						map:map,
+						position:new qq.maps.LatLng(lat, lng)
+					});
+					gps.setIcon(blue);
+	        	}else{
+	        		gps.setPosition(new qq.maps.LatLng(lat, lng));
+	        	}
+	        }
+	    });
+	    qq.maps.event.addListener(map,'click',function(event) {
+	    	if(panost == 1){
+	    		_open_pano_bygeo(event.latLng);
+	    	}
+	    });
+		var winfo = new qq.maps.InfoWindow({
+			map:map
+		});
+		var markers = [], labels=[], loop = 0, len = qq_map_points.length, ht = '';
+		var mhandle = function(){
+			var p = qq_map_points[this.id];
+			winfo.open();
+			ht = '<div class="kzpoint"><h2>'+p.title+'</h2><div>'+ p.descript+'</div>';
+			if(p.pano != ''){
+				ht += '<a href="javascript:_go_pano('+this.id+');">点击查看街景</a>';
+			}
+			ht += '</div>';
+			winfo.setContent(ht);
+			winfo.setPosition(this);
+		};
+		$('#point-list').delegate('li', 'click', function(){
+			var self = markers[$(this).attr('data-id')];
+			var p = qq_map_points[self.id];
+			map.setCenter(new qq.maps.LatLng(p.lat, p.lng));
+			winfo.open();
+			ht = '<div class="kzpoint"><h2>'+p.title+'</h2><div>'+ p.descript+'</div>';
+			if(p.pano != ''){
+				ht += '<a href="javascript:_go_pano('+self.id+');" class="panoto">点击查看街景</a>';
+			}
+			ht += '</div>';
+			winfo.setContent(ht);
+			winfo.setPosition(self);
+			var tt = this;
+			$('#point-list li').removeClass('on');
+			$(this).addClass('on');
+		});
+		/**
+	    var Label=function(opts){
+	    	qq.maps.Overlay.call(this, opts);
+	    };
+		Label.prototype = new qq.maps.Overlay();
+		Label.prototype.construct = function() {
+			this.dom = d.createElement('div');
+			this.dom.style.cssText = 
+				'color:#'+this.color+';position:absolute;' + 
+				'text-align:left;width:300px;font-size:16px;text-shadow:0 0 1px #ffffff;';
+			this.dom.innerHTML = this.text;
+			this.getPanes().overlayLayer.appendChild(this.dom);
+		};
+		Label.prototype.draw = function() {
+		    var position = this.get('position');
+			if (position) {
+				var pixel = this.getProjection().fromLatLngToDivPixel(position);
+				this.dom.style.left = pixel.getX() + 'px';
+				this.dom.style.top = pixel.getY() + 'px';
+			}
+		};
+		Label.prototype.destroy = function() {
+			this.dom.parentNode.removeChild(this.dom);
+		};
+		**/
+		var tout = setTimeout(function(){
+			var l = qq_map_points.length, lis = [];
+			for(var i=0; i<l; i++){
+				var marker = new qq.maps.Marker({
+					map:map,
+					id:i,
+					animation:qq.maps.MarkerAnimation.DROP,
+					position:new qq.maps.LatLng(qq_map_points[i].lat, qq_map_points[i].lng)
+				});
+				if(qq_map_points[i].type == 1){
+					if(qq_map_points[i].exist == 1){
+						lis.push('<li data-id="'+i+'" class="gov" style="background-color:#c1defc;">'+qq_map_points[i].title+'</li>');
+					}else{
+						lis.push('<li data-id="'+i+'" class="gov" style="background-color:#dedede;">'+qq_map_points[i].title+'</li>');
+					}
+					marker.setIcon(blue);
+				}else{
+					if(qq_map_points[i].exist == 1){
+						lis.push('<li data-id="'+i+'" class="famou" style="background-color:#c1defc;">'+qq_map_points[i].title+'</li>');
+					}else{
+						lis.push('<li data-id="'+i+'" class="famou" style="background-color:#dedede;">'+qq_map_points[i].title+'</li>');
+					}
+					marker.setIcon(purple);
+				}
+				markers.push(marker);
+				qq.maps.event.addListener(marker, 'click', mhandle);
+			}
+			$('#point-list').html(lis);
+			$('#guide-tips').on('click', function(){
+				$('#guide-left').toggleClass('guide-off');
+			});
+			var pl = new qq.maps.PanoramaLayer();
+			$('.guide-type>button').on('click', function(e){
+				var dv = $(this).attr('data-val');
+				$('.guide-type>button').removeClass('on');
+				$(this).addClass('on');
+				if(dv == 'roadmap'){
+					map.setMapTypeId(qq.maps.MapTypeId.ROADMAP);
+					panocont.style['display'] = 'none';
+					if(pl.getMap()){
+						panost = 0;
+						pl.setMap(null);
+					}
+				}else if(dv == 'satellite'){
+					map.setMapTypeId(qq.maps.MapTypeId.SATELLITE);
+					panocont.style['display'] = 'none';
+					if(pl.getMap()){
+						panost = 0;
+						pl.setMap(null);
+					}
+				}else if(dv == 'panorama'){
+					if(pl.getMap()){
+						panost = 0;
+						pl.setMap(null);
+					}else{
+						panost = 1;
+						pl.setMap(map);
+					}
+				}
+			});
+			if(media == 'pc'){
+				tout = w.setTimeout(function(){
+					$('#guide-left').removeClass('guide-off');
+					clearTimeout(tout);
+				}, 1500);
+			}
+		}, 1000);
+	};
+	w.onload = function(){
+		var d = document;
+		var tt = d.getElementById('map-title-id');
+		var ww = $(d).width(), hh = $(d).height();
+		if(ww == 0) ww = 1000;
+		if(hh == 0) hh = 500;
+		tt.style['left'] = ((ww - 320)/2) + 'px';
+		tt.style['display'] = 'block';
+		var lh = 0;
+		$('#guide-left>div').each(function(a,b){
+			if(a != 1){
+				lh += $(this).height();
+			}
+		});
+		lh = hh - lh;
+		$('.point-list').height(lh);
+		var mli = $('#map-list-id');
+		mli.height(hh - $('#map-area-id').height() - 74);
+		var script = d.createElement("script");
+		script.type = "text/javascript";
+		script.src = "http://map.qq.com/api/js?v=2.exp&callback=mapinit&key=d84d6d83e0e51e481e50454ccbe8986b";
+		d.body.appendChild(script);
+	};
+	$('#search-form').on('submit', function(e){
+		e.preventDefault();
+		var f = this;
+		if(f['search'].value == ''){
+			$('#point-list>li').show();
+		}else{
+			var k = f['search'].value,v = '';
+			$('#point-list>li').each(function(){
+				v = String($(this).text());
+				if(v.indexOf(k)>-1){
+					this.style['display'] = 'block';
+				}else{
+					this.style['display'] = 'none';
+				}
+			});
+		}
+		
+	});
+})(window, document, $);
+</script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=45754601" charset="UTF-8"></script>
+</body>
+</html><!--[if !IE]>|xGv00|343da5681078cc126177ef4dc221dda8<![endif]-->

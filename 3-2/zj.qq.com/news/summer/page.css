@@ -1,0 +1,278 @@
+
+.center{width:1000px; height:650px; margin:0 auto; position:relative;}
+
+.next{
+	width:1000px;
+	background:url(//mat1.gtimg.com/zj/news/summer/next.png) no-repeat center top;
+	position:absolute;
+	top:602px;
+	left:0px;
+	z-index:2;
+	cursor:pointer;
+	
+	filter:alpha(opacity=40);
+	-moz-opacity:0.4;
+	opacity:0.4;
+	
+	font-size:18px;
+	font-family:"Microsoft Yahei",arial;
+	font-weight:bold;
+	color:#ffffff;
+	text-shadow:1px 2px 1px #545454;
+	text-align:center;
+	padding-top:66px;
+}
+.next{
+	transition: opacity 0.8s;
+	-moz-transition: -moz-opacity 0.8s;	/* Firefox 4 */
+	-webkit-transition: opacity 0.8s;	/* Safari & Chrome */
+	-o-transition: opacity 0.8s;
+}
+.next:hover{
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity:0.8;
+}
+.mask_txt{
+    position:absolute;
+	width:277px;
+	height:316px;
+	right:-120px;
+	top:67px;
+	z-index:9;
+	/* *z-index:0; */
+}
+.page{
+	overflow:hidden;
+	position:relative;
+	background-size:conver;
+	background-color:#7a7a7a;
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+.links{display:block; position:absolute;}
+
+.nav .hd, .nav .control i, .nav .control .sublev i{background:url(//mat1.gtimg.com/zj/news/summer/ctrl.png) no-repeat}
+
+.nav{width:24px; position:fixed; top:50%; right:50px; margin-top:-260px}
+.nav .hd{display:block; height:66px; background-position:1px 0}
+.nav .control{ background:url(//mat1.gtimg.com/zj/news/summer/navbg.png) repeat-y center center; padding-top:14px}
+.nav .control i{display:block; width:23px; height:23px; cursor:pointer; margin:0 auto 5px}
+.nav .control i.c_b{background-position:-25px 5px}
+.nav .control i.c_g{background-position:-25px -15px}
+.nav .control i.c_o{background-position:-25px -35px}
+.nav .control i.c_r{background-position:-25px -55px}
+.nav .control i.cur{background-position:-51px 0px}
+
+.nav .control .sublev{display:none}
+.nav .control .sublev i{width:23px; height:23px; cursor:pointer; margin:0 auto 2px; background-position:-45px -33px}
+.nav .control .sublev i.cur{background-position:-48px -58px}
+
+#p1{
+	background:url(//mat1.gtimg.com/zj/news/summer/cover_bg.jpg) no-repeat;
+	background-size:cover;
+	position:relative;
+}
+#p1 img{
+	position:absolute;
+	overflow:visible
+}
+#p1 .news{
+	position:absolute; 
+	overflow:visible;
+	width:35%;
+	height:300px;
+	font-size:18px;
+	font-family:"Microsoft Yahei",arial;
+}
+#p1 .title{
+    position:absolute; 
+	overflow:visible;
+	width:100%;
+	top:-40px;
+	height:40px;
+	line-height:40px;
+	color:#232626;
+	text-align:right;
+	text-shadow:1px 1px rgba(0,0,0,.3);
+}
+#p1 .txt{
+    position:absolute; 
+	overflow:visible;
+	width:100%;
+	top:125px;
+	left:23px;
+	color:#ffffff;
+	font-size:16px;
+	font-weight:normal;
+	font-style:oblique;
+}
+
+.slider-container .header{
+	height:71px;
+	line-height:71px;
+	overflow:hidden;
+	font-size:0;
+	padding-bottom:6px;
+	
+}
+.slider-container .header li{
+    display:inline-block;
+	font-size:16px;
+	zoom:1;
+	*display:inline;
+	vertical-align:bottom;
+	overflow:hidden;
+}
+.slider-container  .bg-black{
+	width:103px;
+    height:45px;
+	line-height:45px;
+	font-size:14px;
+	background-color:black;
+	font-family:"Microsoft Yahei",arial;
+	color:#ffffff;
+	text-align:center;
+}
+.slider-container .header .tmp{
+    width:71px;
+	background:url("//mat1.gtimg.com/zj/news/summer/slider_c.png") left top no-repeat;
+	font-family:Georgia,arial;
+	font-size:32px;
+	color:#ffffff;
+	text-align:center;
+	margin:0 1px;
+}
+.slider-container .header .title{
+    width:638px;
+	padding-right:10px;
+	text-align:right;
+	font-size:22px;
+	font-family:"Microsoft Yahei",arial;
+}
+.slider-container .header .title h1{
+    width:633px;
+	height:71px;
+	overflow:hidden;
+}
+.slider-container .header .comment{
+    width:71px;
+	height:55px;
+	background-color:#0096ff;
+	color:#ffffff;
+	text-align:center;
+	font-size:16px;
+	padding-top:16px;
+	line-height:20px;
+	font-family:"Microsoft Yahei",arial;
+}
+.slider-container .header .comment a,
+.slider-container .header .comment a:visited{
+    color:#ffffff;
+}
+.slider-container .header .comment em{
+	display:block;
+	font-family:Georgia,arial;
+    font-style:italic;
+}
+
+
+.flexslider{
+	margin:0px auto;
+	height:510px;
+	overflow:hidden;
+	border:5px solid black;
+	zoom:1;
+}
+.flex-viewport{
+	max-height:2000px;
+	-webkit-transition:all 1s ease;
+	-moz-transition:all 1s ease;
+	transition:all 1s ease;
+}
+.flexslider .slides{
+	zoom:1;
+}
+.flex-direction-nav a{
+	width:53px;
+	height:139px;
+	line-height:99em;
+	overflow:hidden;
+	margin:-60px 0 0;
+	display:block;
+	background:url("//mat1.gtimg.com/zj/news/summer/slider_arrow.png") left 0 no-repeat;
+	position:absolute;
+	top:50%;
+	z-index:10;
+	cursor:pointer;
+	-webkit-transition:all .3s ease;
+}
+.flex-direction-nav .flex-next{
+	background-position:-55px 0;
+	right:0;
+}
+.flex-direction-nav .flex-prev{
+	background-position:left 0;
+	left:0;
+}
+.flex-control-nav,.flex-control-paging{
+	display:none;
+}
+.flexslider .slides li{
+    position:relative;
+	left:0;
+	top:0;
+	background-color:#cccccc;
+}
+
+.flexslider .slides .txt{
+	position:absolute;
+	left:0px;
+	bottom:0;
+	width:990px;
+	max-height:69px;
+	overflow:hidden;
+	z-index:2;
+	line-height:200%;
+	width:950px;
+	padding:15px 20px;
+	margin:0 auto;
+	text-indent:0;
+	text-align:left;
+	font-size:14px;
+	color:#ffffff;
+	font-family:"Microsoft Yahei",arial;
+	background:url("//mat1.gtimg.com/zj/news/summer/slider_txt_bg.png") left top repeat-y;
+}
+.flexslider .slides .txt em{
+    display:none;
+}
+.flexslider .slides .focus{
+	left:0px;
+	bottom:0;
+}
+.flexslider .slides .txt a{
+    text-indent:0;
+	text-align:left;
+	color:#ffffff;
+}
+
+.show-control-paging{
+    background-color:#000000;
+	width:71px;
+	height:45px;
+	line-height:45px;
+	position:absolute;
+	right:0;
+	font-family:Georgia,arial;
+	font-size:18px;
+	text-align:center;
+	color:#ffffff;
+}
+.show-control-paging em{
+    font-family:Georgia,arial;
+}
+
+
+
+/*  |xGv00|67b96fa4312349f8d9bc3093df957e0f */

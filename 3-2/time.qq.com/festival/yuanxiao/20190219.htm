@@ -1,0 +1,280 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/festival/yuanxiaojie/20190219-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="元宵节，元宵，回家，正月十五，节日，时光画轴">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 22:08:10';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-02-19", //日期，格式为 年-月-日
+	"cmd_id": "3727945484", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "yuanxiao2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="yuanxiao2019" style="display:none;">
+<p>元宵节，又称上元节、小正月、元夕或灯节，是春节之后的第一个重要节日，是中国亦是汉字文化圈的地区和海外华人的传统节日之一。正月是农历的元月，古人称夜为“宵”，所以把一年中第一个月圆之夜正月十五称为元宵节。</p>
+<p>中国古俗中，上元节（天官节、元宵节）﹑中元节（地官节、盂兰盆节）﹑下元节（水官节）合称三元。元宵节始于2000多年前的汉朝。汉文帝时下令将正月十五定为元宵节。汉武帝时，“太一神”祭祀活动定在正月十五（太一：主宰宇宙一切之神）。司马迁创建“太初历”时，就已将元宵节确定为重大节日。2008年6月，元宵节选入第二批国家级非物质文化遗产。</p>
+<h2>元宵节起源</h2>
+<p>目前元宵节的起源主要有两种学说，即汉文帝纪念平吕之战学说和汉明帝敬佛学说。</p>
+<h3>平吕说</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewTSs78vxs0feZqntKlOVhbXGrMHLCZQt4OVuxluxXA0IZP1qWWXG02A/640?wx_fmt=jpeg" title="yuanxiao1">
+<p>传说元宵节是汉文帝时为纪念“平吕”而设。 汉高祖刘邦死后，吕后之子刘盈登基为汉惠帝。惠帝生性懦弱，优柔寡断，大权渐渐落在吕后手中．汉惠帝病死后吕后独揽朝政把刘氏天下变成了吕氏天下，朝中老臣，刘氏宗室深感愤慨，但都惧怕吕后残暴而敢怒不敢言。</p>
+<p>吕后病死后，诸吕惶惶不安害怕遭到伤害和排挤。于是，在上将军吕禄家中秘密集合，共谋作乱之事，以便彻底夺取刘氏江山。此事传至刘氏宗室齐王刘襄耳中，刘襄为保刘氏江山，决定起兵讨伐诸吕随后与开国老臣周勃，陈平取得联系，设计解除了吕禄，“诸吕之乱”终于被彻底平定．平乱之后，众臣拥立刘邦的第二个儿子刘恒登基，称汉文帝．文帝深感太平盛世来之不易，便把平息“ 诸吕之乱”的正月十五，定为与民同乐日，京城里家家张灯结彩，以示庆祝。从此，正月十五便成了一个普天同庆的民间节日——“闹元宵”。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewmTmIMS6TAzT7ZLm8g8eacYe5uibhoyIIsdWaUgff2g6ahQEdxibnlRAA/640?wx_fmt=jpeg" title="yuanxiao2">
+<p>汉武帝时，“太一神”的祭祀活动定在正月十五。（太一：主宰宇宙一切之神）。司马迁创建“太初历”时，就已将元宵节确定为重大节日。</p>
+<h3>敬佛说</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLew9TvsfBDC0q3D6H7IzQj4AuicqCrOOsdXUK9dzOFkOibiaCzY5ELvdAksw/640?wx_fmt=jpeg" title="yuanxiao3">
+<p>源于佛教说。 这种说法主要是胡申生先生主编的 《社会风俗三百题》中：“佛教教义中把火光比作佛之威神，《无量寿经》有‘无量火焰，照耀无极’说法。在佛教教义中，灯一直是作为佛前的供具之一。而且佛教经典中反复宣传：‘百千灯明忏悔罪’(《菩萨藏经》)，‘为世灯明最福田’(《无量寿经》)。逢遇佛教盛会都要大明灯火。在佛教传说中，于正月十五张灯有关系的是有关佛祖神变的事迹。据《僧史略》载，佛祖释迦牟尼示现神变、降伏神魔是在西方12月30日，即东土正月十五日，为纪念佛祖神变，此日需举行燃灯法会。东汉明帝时，摩腾竺法兰东来传教，汉明帝就敕令正月十五佛祖神变之日燃灯，并亲自到寺院张灯，以示礼佛。自此以后，元宵灯便蔚然成风。”但是也有学者认为，此种观点站不住脚，认为佛教只是在这一天利用人们的节庆气氛来扩大自己的影响。</p>
+<h2>元宵节习俗</h2>
+<h3>张灯结彩</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewFlDBiaGhxqPm05qrkUPxXtz42zxHcoYagCXfzNRUTYHOAA9d9ghHfTw/640?wx_fmt=jpeg" title="yuanxiao4">
+<p>自从元宵张灯之俗形成以后， 历朝历代都以正月十五张灯观灯为一大盛事。 梁简文帝曾写过一篇《 列灯赋》：“南油俱满，西漆争燃。苏征安息，蜡出 龙川。斜晖交映，倒影澄鲜。”描绘了当时宫廷在元宵张灯的盛况。隋炀帝时，每年正月十五举行盛大的晚会，以招待万国来宾和使节。据《隋书·音乐志》记载：元宵庆典甚为隆重，处处张灯结彩，日夜歌舞奏乐，表演者达三万余众，奏乐者达一万八千多人，戏台有八里之长，游玩观灯的百姓更是不计其数，通宵达旦，尽情欢乐，热闹非常。在唐代发展成为盛况空前的灯市，中唐以后，已发展成为全民性的狂欢节。 唐玄宗（公元685——762）时的 开元盛世，长安的灯市规模很大， 燃灯五万盏，花灯花样繁多，皇帝命人做巨型的灯楼，广达20间，高150尺，金光璀璨，极为壮观。唐代是实行宵禁的，夜晚禁鼓一响就禁止出行，犯夜要受处罚；唯独在上元节，皇帝特许开禁三天，称为“放夜”。沿至宋朝，张灯由三夜延长至五夜， 灯彩以外还放焰火，表演各种杂耍，情景更加热闹。《 东京梦华录》中记载：每逢灯节，开封御街上，万盏彩灯垒成灯山，花灯焰火，金碧相射，锦绣交辉。京都少女载歌载舞，万众围观。"游人集御街两廊下，奇术异能，歌舞百戏，鳞鳞相切，乐音喧杂十余里。"大街小巷，茶坊酒肆灯烛齐燃，锣鼓声声，鞭炮齐鸣，百里灯火不绝。</p>
+<p>到了明代， 朱元璋在金陵即位后，为使京城繁华热闹，又规定正月初八 上灯，十七落灯，连张十夜，家家户户都悬挂五色灯彩，彩灯上描绘了各种人物，舞姿翩翩，鸟飞花放．龙腾鱼跃，花灯焰火照耀通宵．鼓乐游乐．喧闹达旦，这是中国最长的灯节，清代，满族入主中原，宫廷不再办灯会，民间的灯会却仍然壮观。日期缩短为五天，一直延续到今天。</p>
+<h3>吃元宵</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewXGOC4W3dDaqreFe0KH72icaKHc9PSERg6BiaMKN9R7xC4Crv8PMs1h8Q/640?wx_fmt=jpeg" title="yuanxiao5">
+<p>“元宵”作为食品，在中国也由来已久。宋代， 民间即流行一种元宵节吃的新奇食品。这种食品，最早叫“浮元子”后称“元宵”，生意人还美其名曰“元宝”。古时“元宵”价格比较贵，有一首诗说：“贵客钩帘看御街，市中珍品一时来。帘前花架无路行，不得金钱不得回。”</p>
+<p>北方“滚”元宵，南方“包”汤圆，这是两种做法和口感都不同的食品。</p>
+<h3>猜灯谜</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLew76KIV82j9DkHOPicPHEiapsRfkCgFYtga0DiaAOjycPkE1v0fT0gU0WYQ/640?wx_fmt=jpeg" title="yuanxiao6">
+<p>“ 猜灯谜”又叫“ 打灯谜",是元宵节后增的一项活动， 灯谜最早是由谜语发展而来的，起源于 春秋战国时期。它是一种富有讥谏、规戒、诙谐、笑谑的文艺游戏。谜语悬之于灯，供人猜射，开始于南宋。《武林旧事·灯品》记载："以绢灯剪写诗词，时寓讥笑，及画人物，藏头隐语，及旧京诨语，戏弄行人。"元宵佳节，帝城不夜，春宵 赏灯之会，百姓杂陈，诗谜书于灯，映于烛，列于通衢，任人猜度，所以称为"灯谜"。如今每逢元宵节，各个地方都打出灯谜，希望能喜气洋洋的，平平安安的。因为谜语能启迪智慧又饶有兴趣，所以流传过程中深受社会各阶层的欢迎。</p>
+<h3>耍龙灯</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewke8EiaiaTUxygflGvHZyPWTC3EB4l5huLicOFylHmC2sYJny8SNlibtghQ/640?wx_fmt=jpeg" title="yuanxiao7">
+<p>耍龙灯， 也称 舞龙灯或龙舞。它的起源可以追溯上古时代。传说，早在 黄帝时期，在一种《清角》的大型歌舞中，就出现过由人扮演的龙头鸟身的形象，其后又编排了六条蛟龙互相穿插的舞蹈场面。见于文字记载的龙舞，是汉代 张衡的《 西京赋》，作者在百戏的铺叙中对龙舞作了生动的描绘。而据《隋书·音乐志》记载， 隋炀帝时类似百戏中龙舞表演的《黄龙变》也非常精彩，龙舞流行于中国很多地方。中华民族崇尚龙，把龙作为吉祥的象征。</p>
+<h3>踩高跷</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewviaZpw8fgZvytgMFGC6T7ykQM4faBI5EibMWBRpyTvpeF94uUo9grsiaA/640?wx_fmt=jpeg" title="yuanxiao8">
+<p>踩高跷，是民间盛行的一种群众性技艺表演。高跷本属中国古代百戏之一种，早在春秋时已经出现。中国最早介绍高跷的是《 列子·说符》篇：“宋有兰子者，以技干宋元。宋元召而使见其技。</p>
+<h3>舞狮子</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewdVKxV4xKghYovNT0HIXZzmoCZqqWTqrqf4DD6e6f5iaNbnFJBUVia31Q/640?wx_fmt=jpeg" title="yuanxiao9">
+<p>舞狮子是中国优秀的民间艺术，每逢元宵佳节或集会庆典，民间都以狮舞前来助兴。这一习俗起源于三国时期，南北朝时开始流行，至今已有一千多年的历史。</p>
+<p>“舞狮子”始于魏晋，盛于唐，又称“狮子舞”、“太平乐”，一般由三人完成，二人装扮成狮子，一人充当狮头，一人充当狮身和后脚，另一人当引狮人，舞法上又有文武之分，文舞表现狮子的温驯，有抖毛、打滚等动作，武狮表现狮子的凶猛，有腾跃、蹬高、滚彩球等动作。</p>
+<h3>划旱船</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLew7WAFLNibHX7Yy653NKW2kOSldvBWoAze0Z3g9cZcEzQ6ddxj1UXibMhg/640?wx_fmt=jpeg" title="yuanxiao10">
+<p>划旱船，民间传说是为了纪念治水有功的 大禹的。划旱船也称跑旱船，就是在陆地上模仿船行功作，表演跑旱船的大多是姑娘。旱船不是真船，多用两片薄板，锯成船形，以竹木扎成，再蒙以彩布，套系在姑娘的腰间，如同坐于船中一样，手里拿着桨，做划行的姿势，一面跑，一面唱些地方小调，边歌边舞，这就是划旱船了。有时还另有一男子扮成坐船的船客，搭档着表演，则多半扮成丑角，以各种滑稽的动作来逗观众欢乐。划旱船流行于中国很多地区。</p>
+<h3>走百病</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewo1TeTJsiaw4Px8bOHlsQC5ryZdfv80vI8nycWBViaz7IqH43jlG47R0g/640?wx_fmt=jpeg" title="yuanxiao11">
+<p>“ 走百病”，也叫游百病，散百病，烤百病，走桥等，是一种消灾祈健康的活动。元宵节夜妇女相约出游，结伴而行，见桥必过，认为这样能祛病延年。</p>
+<p>走百病是明清以来北方的风俗，有的在十五日，但多在十六日进行。这天妇女们穿着节日盛装，成群结队走出家门，走桥渡危，登城，摸钉求子，直到夜半，始归。</p>
+<h2>经典故事</h2>
+<h3>元宵姑娘</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLew1J4589WSs3sA6FNIqqsvpb1mTiaIWuP4bhcdmPia4PLRZ6EZTZMOF0NQ/640?wx_fmt=jpeg" title="yuanxiao12">
+<p>汉武帝的宠臣东方朔风趣而善良。 一日冬天去御花园赏梅，遇一宫女欲投井。朔搭救后问明原委，原来宫女名叫元宵，因进宫后长久不能见到亲人而思念，遂起轻生念头。东方朔同情并答应帮忙。东方朔摆摊占卜，所有人问卦结果都是“正月十六火焚身”，长安城大恐慌。汉武帝向东方朔请教，朔言：“长安在劫，火焚帝阙，十五天火，焰红宵夜。”解释说：正月十五晚家家挂灯吃元宵，城外百姓进城看灯，好似满城大火，以瞒玉帝。是日晚，元宵双亲进城观灯。在东方朔的帮助下一家终于团圆。</p>
+<h3>皮影相思</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewH3s1cFeEWwjGWgCQCjfl4tppLRGETkq3xHxuW2DJRAwRN2woicaiawVw/640?wx_fmt=jpeg" title="yuanxiao13">
+<p>相传，汉武帝爱妃李夫人死后，汉武帝非常想念她，于是一位宫女就穿上这位妃子的衣服在月光下翩翩起舞。皇帝看到这位宫女影子以解思念之情。后人做诗：“张灯作戏调翻新，顾影徘徊却逼真，环佩姗姗莲步稳，帐前活见李夫人。”说的就是汉武帝思念爱妃的典故，这也是皮影戏的最初来源。</p>
+<h3>破镜重圆</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewuVsHuM24LSwxpqyLmpCOErTE0XJdUVJaOicAkjbhIb6jicSFYwvbZW5g/640?wx_fmt=jpeg" title="yuanxiao14">
+<p>隋朝军队灭南陈时，南陈昌乐公主与丈夫徐德言打破一面铜镜，各执一半，作为以后相见的凭证。并约定在正月十五元宵节卖镜于市，以探对方消息。隋灭南陈后，昌乐公主入杨素府做妾，次年元宵节徐德言果真在街市上看到一个老头在叫卖半片铜镜，价钱昂贵，无人问津。徐德言在破镜上题诗：“镜与人俱去，镜归人不归。无复嫦娥影，空留明月辉。”杨素得知，成人之美，昌乐夫妻终于团圆。</p>
+<h3>燃灯七盏</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewaX3BHsoIJSolvTWiadD529eWiaPrtSXFDxu4MXvvGNA6Z4G2ibic0kXWFw/640?wx_fmt=jpeg" title="yuanxiao15">
+<p>宋代福州有个太守名叫蔡君谟，面对千里饿殍却要粉饰太平。他下令一道，要求治下所有百姓，每家在元宵节之夜必须燃灯七盏。有个穷人叫陈列，制了一个一丈多高的大灯，上书一首诗：“富家一盏灯，太仓一粒粟；穷家一盏灯，父子相对哭。”消息传到太守耳中，他只好收回成命。</p>
+<h3>双喜临门</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnJfRn4DtJTPQMaWBjtWLewYI36fFd9K5MNCCpSvNCJZXVKxgGhOouwIgKTVgfWwoNpMIr22wCKgQ/640?wx_fmt=jpeg" title="yuanxiao16">
+<p>王安石20岁时进京赶考，元宵节时路过一地，一大户人家悬灯出题招亲。联曰：“走马灯，灯走马，灯熄马停步。”王安石不会答，却记在心中。到京后谁知主考官所出之联竟是：“飞虎旗，旗飞虎，旗卷虎藏身。”王安石提笔就以招亲联作答，得中进士。衣锦还乡时发现那联居然仍未有人会答，王安石便又以考题联作答，竟又得了个漂亮媳妇，实是双喜临门。</p></div><!--[if !IE]>|xGv00|a85bf2efdc17b958a3b80ac45585ba65<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|0ff0bcab2a9ea8affdd709309c0936f4<![endif]-->

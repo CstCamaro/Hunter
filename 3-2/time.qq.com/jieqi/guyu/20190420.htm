@@ -1,0 +1,255 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/jieqi/guyu/20190420-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="谷雨，阳光，下雨，农忙，腾讯网，时光画轴，节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 19:52:23';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-04-20", //日期，格式为 年-月-日
+	"cmd_id": "3846197415", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "guyu2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="guyu2019" style="display:none;">
+<p>谷雨是二十四节气的第六个节气，也是春季最后一个节气。谷雨源自古人“雨生百谷”之说，同时也是播种移苗、埯瓜点豆的最佳时节。</p>
+<p>“清明断雪，谷雨断霜”，气象专家表示，谷雨节气的到来意味着寒潮天气基本结束，气温回升加快，大大有利于谷类农作物的生长。</p>
+<h2>节气由来</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnIkZbsS9cBpDYR3HCKiaKSovFlTZyNUiaZZpBSbtkwyQg0TocXwHTsxDE3u4bO7awm2Z23ROT88Btw/640?wx_fmt=jpeg" title="谷雨1">
+<p>传言当年仓颉造字，被皇帝奖赏了一座金人，他自觉领之有愧，便又送了回去。一日睡觉时，听见有人喊他：“玉帝赏你的金人你都不要，那你到底想要什么?”仓颉在睡梦中喊：“百姓艰苦，要是天下百姓都有饭吃就好了。”第二天，仓颉要出门时，却遭遇了异常突如其来的大雨。漫天都在下这谷子，密密麻麻地下了将近半小时，把整个村子都铺满了。仓颉既高兴有奇怪，想起梦中场景，知道是玉帝对自己的奖励，便赶紧去派人告诉黄帝。黄帝感于仓颉功劳，就将下谷子雨的这天定为谷雨节，命令天下的人，美到了这一年都要欢歌狂舞来感谢上天，还有些地方甚至把这一天作为祭祀仓颉的节日。</p>
+<h2>谷雨气候</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnIkZbsS9cBpDYR3HCKiaKSo5NcVSqibm74L3iaDn5DJy84jNWQT4vy8Z9xHUj3KD5PlyRxdXcib8Nc3A/640?wx_fmt=jpeg" title="谷雨2">
+<p>谷雨的天气最主要的特点多雨，有利于谷物生长。中国古代将谷雨分为三候：“第一候萍始生;第二候鸣鸠拂其羽；第三候为戴胜降于桑。”是说谷雨后降雨量增多，浮萍开始生长，接着布谷鸟便开始提醒人们播种了，然后是桑树上开始见到戴胜鸟。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnIkZbsS9cBpDYR3HCKiaKSoBZhLrNgGD4iaiaS68t6ME01JsYaOeqvtrkTWFjWNbibuymvxw81Hb6Dtw/640?wx_fmt=jpeg" title="谷雨3">
+<p>谷雨节气后降雨增多，空气中的湿度逐渐加大，同时由于天气转温，人们的室外活动增加，北方地区的桃花、杏花等开放;杨絮、柳絮四处飞扬。雨生百谷。雨量充足而及时，谷类作物能茁壮成长。谷雨时节的南方地区，"杨花落尽子规啼"，柳絮飞落，杜鹃夜啼，牡丹吐蕊，樱桃红熟，自然景物告示人们：时至暮春了。这时，南方的气温升高较快，一般4月下旬平均气温，除了华南北部和西部部分地区外，已达20℃~22℃，比中旬增高2℃以上。华南东部常会有一、二天出现30℃以上的高温，使人开始有炎热之感。 低海拔河谷地带业以进入夏季。华南春季气温较高的气候特点，有利于在大春作物栽培措施上抓早。适宜红苕栽插的温度为18℃~22℃，这时已能满足。华南老旱区的经验证明，红苕在谷雨后早栽，能够在伏旱前使藤叶封厢，增强抗旱能力，获得高产稳产。</p>
+<h2>谷雨民俗</h2>
+<h3>祭海</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnIkZbsS9cBpDYR3HCKiaKSoFsT4NCpY9IDWA0GttPXrNjdqEdV1pOWpcJzpNAOEicjCxuAh9SBmeIQ/640?wx_fmt=jpeg" title="谷雨4">
+<p>谷雨时节海水回暖，百鱼行至浅海地带，是下海捕鱼的好日子。俗话说：“骑着谷雨上网场。”为了能够出海平安、满载而归，渔民们在谷雨这天要举行海祭，祈求海神保佑。因此，谷雨节也叫作渔民出海捕鱼的“壮行节”。旧时海边，村村都有海神庙或娘娘庙，祭祀时刻一到，渔民便抬着供品到庙前摆供祭祀，有的则将供品抬至海边，敲锣打鼓，燃放鞭炮，面海祭祀，场面十分隆重。</p>
+<h3>走谷雨</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnIkZbsS9cBpDYR3HCKiaKSoCthpempnMlkOAqziaPRG1xB5sMvY4dt9lRsuGXwqlLgJGaAhbiaFsAJw/640?wx_fmt=jpeg" title="谷雨5">
+<p>古时有“走谷雨”的风俗，谷雨这天青年妇女走村串亲，有的到野外走一圈就回来。寓意与自然相融合，强身健体。</p>
+<h3>喝谷雨茶</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnIkZbsS9cBpDYR3HCKiaKSoP6yeFb2UKmRFQud6INYshSvvlwNHenHJTlcK8JNKxIWHqayzicg4ZPA/640?wx_fmt=jpeg" title="谷雨6">
+<p>传说谷雨这天的茶喝了会清火，辟邪，明目等，所以南方有谷雨摘茶习俗，谷雨这天不管是什么天气，人们都会去茶山摘一些新茶回来喝，以祈求健康。</p>
+<h3>食香椿</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_png/M75eP40ibXmnIkZbsS9cBpDYR3HCKiaKSorTVT2K2wZfY6pZXvMLZoQJyOfcAxBZautlV0EzibjmcQLbzxe5QZ2UQ/640?wx_fmt=png" title="谷雨7">
+<p>北方则有谷雨食香椿的习俗，谷雨前后是香椿上市的时节，这时的香椿醇香爽口营养价值高，有“雨前香椿嫩如丝”之说。香椿具有提高机体免疫力，健胃、理气、止泻、润肤、抗菌、消炎、杀虫之功效。</p>
+<h3>赏花</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnIkZbsS9cBpDYR3HCKiaKSoHkjuBwEibgGRd8uuo4bc3KmNP4hmAfjaSZZQPdMw8aicUVWhIhqthRZQ/640?wx_fmt=jpeg" title="谷雨8">
+<p>谷雨前后也是牡丹花开的重要时段，因此，牡丹花也被称为“谷雨花”。“谷雨三朝看牡丹”，赏牡丹成为人们闲暇重要的娱乐活动。至今，山东、河南、四川等地还于谷雨时节举行牡丹花会，供人们游乐聚会。</p>
+<h2>节气养生</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnIkZbsS9cBpDYR3HCKiaKSogqhBdFhZbBLp3XIX5x7icTQnNAAx7Gkg2fGzgJNswzMwia3TqKa7O3BA/640?wx_fmt=jpeg" title="谷雨9">
+<p>谷雨节气后是神经痛的发病期，如肋间神经痛、坐骨神经痛、三叉神经痛等。同时天气转温，室外活动增加，北方地区的桃花、杏花等开放；杨絮、柳絮四处飞扬，过敏体质的朋友应注意防止花粉症及过敏性鼻炎、过敏性哮喘等。在饮食上应减少高蛋白质、高热量食物的摄入。春季，肝木旺盛，脾衰弱，谷雨前后15天及清明的最后3天中，脾处于旺盛时期。脾的旺盛会使胃强健起来，从而使消化功能处于旺盛的状态，消化功能旺盛有利于营养的吸收，因此这时正是补身的大好时机。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnIkZbsS9cBpDYR3HCKiaKSoCdRMntIj7AqcO8sTzZwbPrUDticX1oSjzsIp7jMPTejuBCwWREraJpQ/640?wx_fmt=jpeg" title="谷雨10">
+<p>由于谷雨节气后降雨增多，空气中的湿度逐渐加大，针对其气候特点进行调养，适宜的膳食有：参蒸鳝段、菊花鳝鱼等，具有祛风湿、舒筋骨、温补气血的功效；草菇豆腐羹、生地鸭蛋汤具有滋阴养胃、降压降脂、抗菌消炎、清热解毒、养血润燥的功效。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnIkZbsS9cBpDYR3HCKiaKSolovlQcAkK3Pq9XrJE7Uu4wzmic29B22WEk8h3NIKPdY1s4KNDITFJkg/640?wx_fmt=jpeg" title="谷雨11">
+<p>此外，谷雨节气气温偏高，雨水频繁，蛇蚁蚊虫的繁殖和活动也变得频繁，小伙伴们尽量穿长衣长裤，喷抹驱蚊水，以免被叮咬。</p></div><!--[if !IE]>|xGv00|235fc6fd3ad0702b9831116add01c495<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|47a7212c39edc9eddb7e726bd1cae191<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|b2a4d5deda9060fc18282f0ffd7a6f13<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|73112d46fb4bddd1cee24bb159fdb0c3<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|279dae4be8be197cbd1b1b70966fd993<![endif]-->

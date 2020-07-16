@@ -1,0 +1,127 @@
+body{font-family:"ËÎÌå";font-size:12px;background:#fff;color:#333;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd{margin:0;padding:0;border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,p,select{margin:0;padding:0;font-size:12px;}
+a{color:#0E4C97;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.dis,.block{display:block!important;}
+.undis,.none{display:none;}
+.nobg{background:none!important;}
+.box10{height:10px;clear:both;overflow:hidden;}
+.wrap,.wrap2,.wrap3,.wrap4,.banner{width:960px;margin:0 auto;}
+.bg{width:100%;margin:0 auto;background:url(//mat1.gtimg.com/worldcup/video/danxiang/body_bg.gif) no-repeat center top;}
+.top{width:960px;height:29px;padding:8px 0;margin:0 auto;overflow:hidden;}
+.top .logo{float:left;}
+.top .boc{float:left;margin-left:375px;}
+.top .top-nav{float:right;}
+.top a{color:#575757;}
+.nav{width:100%;height:61px;background:url(//mat1.gtimg.com/worldcup/video/danxiang/nav_bg.jpg) repeat-x;clear:both;}
+.nav .hd{height:30px;}
+.nav .hd li{float:left;height:30px;line-height:30px;padding:0 10px;font-size:14px;color:#fff;}
+.nav .hd li a{color:#fff;}
+.nav .hd li.current{background:#F0FDDF;font-weight:bold;color:#000;}
+.nav .hd li.current a{color:#000;}
+.nav .bd{height:31px;line-height:31px;text-align:center;color:#8FBA54;}
+.nav .bd a{color:#1B5800;}
+.banner img{float:left;}
+.wrap2 .left{width:310px;}
+#focus{width:308px;float:left;border:1px solid #E3E5E9;}
+#focus_big{width:302px;height:260px;float:left;display:inline;margin:3px;position:relative;}
+#focus_big li img{width:302px;height:260px;float:left;}
+#focus_big li .video{position:absolute;top:80px;left:115px;display:block;width:67px;height:67px;background:url(//mat1.gtimg.com/worldcup/video/jinqiu1/video1.png) no-repeat left top;}
+#focus_tip{width:308px;height:92px;float:left;padding-top:9px;background:url(//mat1.gtimg.com/worldcup/video/danxiang/focus_tip_bg.jpg) repeat-x left 15px;}
+#focus_tip ul{width:308px;float:left;}
+#focus_tip li{width:74px;height:74px;float:left;cursor:pointer;padding-top:12px;}
+#focus_tip li img{width:70px;height:70px;padding:1px;border:1px solid #D6D6D7;float:left;}
+#focus_tip li.current{width:70px;height:70px;padding:15px 8px 7px 8px;background:url(//mat1.gtimg.com/worldcup/video/danxiang/focus_tip_current.jpg) no-repeat;}
+#focus_tip li.current img{padding:0;border:0;}
+#focus_text_bg{position:absolute;left:0px;bottom:0px;z-index:1;width:302px;height:40px;background:#000;filter:alpha(opacity=60);opacity:0.6;}
+#focus_text{position:absolute;left:0px;bottom:0px;z-index:2;width:302px;height:40px;}
+#focus_text li{width:302px;height:40px;line-height:40px;color:#fff;font-size:14px;text-align:center;}
+#focus_text li a{color:#fff;}
+.wrap2 .left .paihang{width:310px;height:261px;float:left;}
+.mod-right .hd {background:url(//mat1.gtimg.com/news/scrollList09/prolist_bg.png) no-repeat scroll 0 0 transparent;height:29px;line-height:29px;width:310px;}
+.mod-right h2 {color:#1B2C58;font-size:14px;padding-left:12px;font-weight:normal;}
+.mod-right .bd {height:211px;background:#F3F8FF;border-color:#D9E4F3;border-right:1px solid #D9E4F3;border-style:none solid solid;border-width:0 1px 1px;padding:10px 0;width:308px;}
+.place-Article-QQ h2 {float:left;width:89px;}
+.place-Article-QQ .tabTit {float:right;margin-right:1px;overflow:hidden;width:200px;line-height:29px;}
+.place-Article-QQ .tabTit span {background:url(//mat1.gtimg.com/news/scrollList09/prolist_bg.png) no-repeat scroll 0 -31px transparent;cursor:pointer;float:right;height:29px;text-align:center;width:50px;}
+.place-Article-QQ .tabTit span.select {background-position:-60px -31px;}
+.place-Article-QQ ol {margin-left:11px;height:208px;overflow:hidden;background:url(http://img1.gtimg.com/worldcup/pics/hv1/75/127/504/32805060.jpg) no-repeat left top;}
+.place-Article-QQ li, .zt-Article-QQ ol li {margin:3px 0;float:left;height:20px;line-height:20px;overflow:hidden;width:100%;}
+.place-Article-QQ li em, .zt-Article-QQ ol li em {color:#FFFFFF;float:left;font-family:Arial;font-size:10px;height:15px;line-height:15px;margin-right:9px;margin-top:2px;text-align:center;width:16px;text-indent:-9999px;}
+.place-Article-QQ li a, .zt-Article-QQ ol li a {float:left;}
+.wrap2 .left .shijiajinqiu{width:308px;height:306px;float:left;border:1px solid #E3E5E9;}
+.wrap2 .left .shijiajinqiu .hd{width:278px;float:left;height:28px;line-height:28px;border-bottom:1px solid #E3E5E9;padding:0 15px;color:#27507C;}
+.wrap2 .left .shijiajinqiu .hd h2{float:left;font-size:14px;}
+.wrap2 .left .shijiajinqiu .hd .more{float:right;}
+.wrap2 .left .shijiajinqiu .hd a{color:#27507C;}
+.wrap2 .left .shijiajinqiu .bd{width:308px;float:left;}
+.wrap2 .left .shijiajinqiu .bd .shijiajinqiu-top{width:288px;float:left;padding:0 10px;}
+.wrap2 .left .shijiajinqiu .bd .shijiajinqiu-top ul{width:288px;float:left;}
+.wrap2 .left .shijiajinqiu .bd .shijiajinqiu-top li{width:116px;height:130px;float:left;line-height:18px;display:inline;margin:15px 14px;position:relative;}
+.wrap2 .left .shijiajinqiu .bd .shijiajinqiu-top li .video{position:absolute;top:50px;left:15px;display:block;width:25px;height:25px;background:url(//mat1.gtimg.com/worldcup/video/qiudui/video.png) no-repeat left top;}
+.wrap2 .left .shijiajinqiu .bd .shijiajinqiu-top li img{width:110px;height:85px;padding:2px;float:left;border:1px solid #D6D6D7;margin-bottom:3px;}
+.wrap2 .left .shijiajinqiu .bd .dotted{width:288px;height:1px;overflow:hidden;float:left;background:url(//mat1.gtimg.com/worldcup/video/danxiang/dotted.jpg) repeat-x;display:inline;margin:0 10px;}
+.wrap2 .left .shijiajinqiu .bd .shijiajinqiu-bottom{width:278px;float:left;padding:14px 15px;}
+.wrap2 .left .shijiajinqiu .bd .shijiajinqiu-bottom ul{width:278px;float:left;}
+.wrap2 .left .shijiajinqiu .bd .shijiajinqiu-bottom li{width:278px;float:left;line-height:18px;padding:2px 0;}
+.wrap2 .left .box10{width:309px;border-left:1px solid #E3E5E9;}
+.wrap2 .right{width:649px;border-top:1px solid #B4D2B7;border-right:1px solid #E3E5E9;border-bottom:1px solid #E3E5E9;background:url(//mat1.gtimg.com/worldcup/video/danxiang/wrap2_right_bg.jpg) no-repeat left top;}
+.wrap2 .right .hd{width:649px;float:left;text-align:center;color:#0E4C97;padding:20px 0;}
+.wrap2 .right .hd h2{font:20px/40px "ºÚÌå";}
+.wrap2 .right .hd a{color:#0E4C97;}
+.wrap2 .right .bd{width:649px;height:860px;float:left;}
+.wrap2 .right .bd .wrap2-right{width:590px;float:left;display:inline;margin:0 29px 0 30px;background:url(//mat1.gtimg.com/worldcup/video/danxiang/wrap2_right_bd.jpg) no-repeat left top;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-hd{width:525px;float:left;height:30px;line-height:30px;color:#27507C;padding:0 15px 0 50px;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-hd h2{float:left;font-size:14px;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-hd .more{float:right;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-hd a{color:#27507C;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd{width:576px;float:left;padding:20px 7px;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd ul{width:576px;float:left;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd li{width:110px;height:106px;padding:2px;border:1px solid #D6D6D7;float:left;line-height:18px;text-align:center;color:#27507C;display:inline;margin:0 14px;position:relative;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd li .video{position:absolute;top:50px;left:15px;display:block;width:25px;height:25px;background:url(//mat1.gtimg.com/worldcup/video/qiudui/video.png) no-repeat left top;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd li img{width:110px;height:85px;float:left;margin-bottom:3px;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd li a{color:#27507C;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd2{width:590px;float:left;padding:14px 0;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd2 .wrap2-bd2{width:260px;height:71px;float:left;color:#27507C;display:inline;margin:6px 17px;position:relative;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd2 .wrap2-bd2 .video{position:absolute;top:35px;left:15px;display:block;width:25px;height:25px;background:url(//mat1.gtimg.com/worldcup/video/qiudui/video.png) no-repeat left top;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd2 .wrap2-bd2 img{width:110px;height:65px;float:left;padding:2px;border:1px solid #D6D6D7;margin-bottom:3px;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd2 .wrap2-bd2 h3{width:134px;float:right;font-size:14px;line-height:28px;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd2 .wrap2-bd2 p{width:134px;float:right;color:#686868;height:40px;line-height:20px;overflow:hidden;}
+.wrap2 .right .bd .wrap2-right .wrap2-right-bd2 .wrap2-bd2 a{color:#27507C;}
+.wrap3 .hd{width:930px;height:38px;line-height:38px;padding:0 15px;text-align:right;border-bottom:2px solid #137F0B;float:left;background:url(//mat1.gtimg.com/worldcup/video/danxiang/zuixinshipin_hd.jpg) no-repeat;}
+.wrap3 .bd{width:960px;float:left;padding-bottom:31px;background:url(//mat1.gtimg.com/worldcup/video/danxiang/wrap3_bd_bg.jpg) no-repeat left bottom;}
+.wrap3 .bd2{width:958px;float:left;border-left:1px solid #D9E4F3;border-right:1px solid #D9E4F3;}
+.wrap3 .bd2 ul{width:912px;float:left;padding:15px 23px;}
+.wrap3 .bd2 li{width:146px;height:150px;float:left;line-height:18px;display:inline;margin:7px 3px;position:relative;}
+.wrap3 .bd2 li .video{position:absolute;top:70px;left:15px;display:block;width:25px;height:25px;background:url(//mat1.gtimg.com/worldcup/video/qiudui/video.png) no-repeat left top;}
+.wrap3 .bd2 li img{width:140px;height:105px;padding:2px;float:left;border:1px solid #D6D6D7;margin-bottom:3px;}
+.wrap4 .hd{width:705px;height:38px;line-height:38px;padding:0 15px 0 240px;text-align:right;color:#27507C;border-bottom:2px solid #137F0B;float:left;background:url(//mat1.gtimg.com/worldcup/video/danxiang/shijuedacan_hd.jpg) no-repeat;}
+.wrap4 .hd .right{width:50px;}
+.wrap4 .bd{width:960px;float:left;padding-bottom:31px;background:url(//mat1.gtimg.com/worldcup/video/danxiang/wrap3_bd_bg.jpg) no-repeat left bottom;}
+.wrap4 .bd2{width:958px;float:left;border-left:1px solid #D9E4F3;border-right:1px solid #D9E4F3;}
+.wrap4 .bd2 .left{width:707px;padding:10px 0;border-right:1px solid #D9E4F3;}
+.wrap4 .bd2 .left .wrap4-left{width:707px;float:left;}
+.wrap4 .bd2 .left .wrap4-left .wrap4-left-hd{width:642px;height:20px;line-height:20px;padding:6px 0 0 15px;float:left;display:inline;margin:0 25px;background:url(//mat1.gtimg.com/worldcup/video/danxiang/wrap4_left_hd.jpg) no-repeat left top;}
+.wrap4 .bd2 .left .wrap4-left .wrap4-left-hd h2{font-size:14px;float:left;color:#158F0B;}
+.wrap4 .bd2 .left .wrap4-left .wrap4-left-hd .more{float:right;color:#27507C;}
+.wrap4 .bd2 .left .wrap4-left .wrap4-left-bd{width:681px;padding:0 13px;float:left;}
+.wrap4 .bd2 .left .wrap4-left .wrap4-left-bd ul{width:680px;float:left;}
+.wrap4 .bd2 .left .wrap4-left .wrap4-left-bd li{width:116px;height:130px;float:left;line-height:18px;display:inline;margin:10px;position:relative;}
+.wrap4 .bd2 .left .wrap4-left .wrap4-left-bd li .video{position:absolute;top:50px;left:15px;display:block;width:25px;height:25px;background:url(//mat1.gtimg.com/worldcup/video/qiudui/video.png) no-repeat left top;}
+.wrap4 .bd2 .left .wrap4-left .wrap4-left-bd li img{width:110px;height:85px;padding:2px;float:left;border:1px solid #D6D6D7;margin-bottom:3px;}
+.wrap4 .bd2 .right{width:250px;}
+.wrap4 .bd2 .wrap4-right{width:250px;float:left;}
+.wrap4 .bd2 .wrap4-right .wrap4-right-hd{width:220px;height:28px;line-height:28px;float:left;padding:0 15px;border-top:1px solid #D9E4F3;border-bottom:1px solid #D9E4F3;}
+.wrap4 .bd2 .wrap4-right .wrap4-right-hd h2{float:left;font-size:14px;color:#27507C;}
+.wrap4 .bd2 .wrap4-right .wrap4-right-bd{width:250px;float:left;background:#F3F8FF;}
+.wrap4 .bd2 .wrap4-right .wrap4-right-bd .wrap4-right-bd-top{width:226px;float:left;display:inline;margin:12px;line-height:18px;text-align:center;position:relative;}
+.wrap4 .bd2 .wrap4-right .wrap4-right-bd .wrap4-right-bd-top img{width:220px;height:80px;float:left;padding:2px;border:1px solid #D6D6D7;margin-bottom:4px;}
+.wrap4 .bd2 .wrap4-right .wrap4-right-bd .wrap4-right-bd-top .video{position:absolute;top:22px;left:85px;display:block;width:44px;height:44px;background:url(//mat1.gtimg.com/worldcup/video/jinqiu1/video2.png) no-repeat left top;}
+.wrap4 .bd2 .wrap4-right .wrap4-right-bd .dotted{width:230px;float:left;height:1px;display:inline;margin:0 10px;overflow:hidden;background:url(//mat1.gtimg.com/worldcup/video/danxiang/dotted.jpg) repeat-x;}
+.wrap4 .bd2 .wrap4-right .wrap4-right-bd .wrap4-right-bd-bottom{width:220px;float:left;padding:15px;}
+.wrap4 .bd2 .wrap4-right .wrap4-right-bd .wrap4-right-bd-bottom li{width:220px;float:left;line-height:18px;padding:2px 0;}/*  |xGv00|cbd17a7d0e282c796c24c7385f914ea2 */

@@ -1,0 +1,65 @@
+
+body{
+	margin:0px auto;
+}
+.main{
+	width:960px;
+	height:auto;
+	margin:0px auto;
+}
+.wrap{
+	background:url(http://img1.gtimg.com/worldcup/pics/hv1/10/199/551/35879530.jpg);
+	width:960px;
+	height:auto;
+	float:left;
+}
+.header{
+	background:url(http://img1.gtimg.com/worldcup/pics/hv1/105/199/551/35879625.jpg);
+	width:898px;
+	height:70px;
+	float:left;
+}
+.footer{
+	background:url(http://img1.gtimg.com/worldcup/pics/hv1/103/199/551/35879623.jpg);
+	width:898px;
+	height:70px;
+	float:left;
+}
+.content{
+	background:url(http://img1.gtimg.com/worldcup/pics/hv1/254/199/551/35879774.jpg);
+	width:898px;
+	height:auto;
+	float:left;
+}
+.left{
+	width:87px;
+	height:auto;
+	float:left;
+	text-align:center;
+}
+.right{
+	width:730px;
+	height:auto;
+	float:left;
+	padding-right:20px;
+}
+.tab{
+	width:60px;
+	height:auto;
+	float:left;
+}
+.r_box p{
+	text-indent:2em;
+	margin:0px;
+	font-size:14px;
+	line-height:22px;
+}
+.r_box{
+	padding:1px;
+	border:1px solid #836a61;
+	margin-top:10px;
+	background:url(http://img1.gtimg.com/worldcup/pics/hv1/12/199/551/35879532.jpg) no-repeat bottom right;
+}
+</style>
+
+/*  |xGv00|84782e4b4e00a54b287fe51671120be6 */

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="GBK">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>综合体育_腾讯体育_腾讯网</title>
+  <meta name="author" content="samhou">
+  <meta name="keywords" content="F1,F1大奖赛,F1中国站,F1赛车,F1一级方程式,WRC,达喀尔,MotoGP,舒马赫,哈基宁,阿隆索,莱科宁,汉密尔顿,小汉,马萨,法拉利,巴顿,韩寒,迈凯轮,CTCC,CRC,CCR,COC,尚酷R杯">
+  <meta name="description" content="腾讯F1赛车频道是以报道F1为基础，同时报道国内外各种赛车如CTCC、CRC、WRC,MOTOGP,达喀尔等赛事的平台，报道舒马赫、阿隆索、莱科宁、马萨、汉密尔顿、巴顿、韩寒等巨星动态">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico">
+  <link rel="stylesheet" href="//mat1.gtimg.com/pingjs/ext2020/other_index/2019/styles/main-fff383d7b0.css">
+  <script type="text/javascript" src="//mat1.gtimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script charset="utf-8" src="//stdl.qq.com/stdl/qqbrowser/floatlayer/js/qb-ie-sports.js"></script>
+  <script>
+    if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (
+        /MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+      window.location.href = "https://xw.qq.com/m/sports";
+    }
+  </script>
+  <script>
+    (function() {
+      /*
+      腾讯网适配跳转
+      */
+      var reWriteUrl = function(url) {
+        if (url) {
+          if (url.indexOf("/a/") > 0) {
+            var Splits = url.split("/"),
+              siteName = Splits[2].split("qq.com")[0].split(".").length == 3 ? siteName = Splits[
+                2].split("qq.com")[0].split(
+                ".")[0] + "_" + Splits[2].split("qq.com")[0].split(".")[1] : siteName = Splits[
+                2].split("qq.com")[0].split(
+                ".")[0],
+              aids = url.split("/a/")[1].split(".htm")[0].replace(/[^0-9]/g, ""),
+              site = "";
+            if (typeof siteName !== "undefined" && typeof aids !== "undefined") {
+              if (siteName.split(".").length > 2) {
+                var len = siteName.split(".").length;
+                for (var i = 0; i < len; i++) {
+                  site += siteName.split(".")[i];
+                  if (i < len - 2) {
+                    site += "_";
+                  }
+                }
+              } else {
+                site = siteName.split(".")[0];
+              }
+              return "http://xw.qq.com/" + siteName + "/" + aids;
+            }
+          }
+        }
+      };
+      var goToMobile = function() {
+        var Aarry = document.getElementsByTagName("a"),
+          TmpArray = [];
+        for (var i = 0; i < Aarry.length; i++) {
+          TmpArray[i] = Aarry[i].href.toString();
+          if (TmpArray[i].split("/")[3] == "a") {
+            Aarry[i].href = reWriteUrl(TmpArray[i]);
+          }
+        }
+      }
+      var mobileSietList = {
+        news: "news",
+        photo: "photo",
+        video: "video",
+        view: "huati",
+        finance: "finance",
+        ent: "ent",
+        sports: "sports",
+        digi: "digi",
+        mil: "mil",
+        lady: "lady",
+        auto: "auto",
+        games: "games",
+        house: "house",
+        astro: "astro",
+        cul: "cul",
+        fashion: "fashion",
+        "2014": "shijiebei",
+        "edu": "edu",
+        nba: "nba"
+      };
+
+      if (/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navigator.userAgent)) {
+        /*底层页跳转*/
+        var url = window.location.href;
+        var pathname = window.location.pathname;
+        if (url.indexOf("/a/") > 0 && window.location.hostname != "www.nanjing2014.org") {
+          if (url.indexOf("?pc") < 0) {
+            try {
+              window.location.href = reWriteUrl(url);
+            } catch (e) {}
+          }
+        } else { // 频道首页跳转
+          if (url.indexOf("?mobile") < 0) {
+            var mobileUrl = window.location.hostname.split(".")[0];
+            var _pathname = window.location.pathname.split('.')[0].replace(/\//g, "").substring(0, 3);
+            if (
+              /news|pp|video|view|finance|ent|sports|digi|mil|fashion|auto|games|house|astro|cul|2014|edu/i
+              .test(
+                mobileUrl)) {
+              try {
+                if (_pathname == 'nba') {
+                  window.location.href = 'http://xw.qq.com/m/' + mobileSietList[_pathname] +
+                    '/index.htm'
+                } else {
+                  window.location.href = 'http://xw.qq.com/m/' + mobileSietList[mobileUrl] +
+                    '/index.htm';
+                }
+              } catch (e) {}
+            }
+          }
+        }
+        try {
+          document.addEventListener('DOMContentLoaded', goToMobile, false);
+        } catch (e) {}
+      }
+    })();
+  </script>
+  <style>
+    .toutiao-hotvideo .hot-video .list-view .hot-video-list .item {
+      display: block;
+      overflow: hidden;
+      height: 140px;
+    }
+
+    .play-action {
+      display: none;
+    }
+
+    .hot-pic {
+      display: none;
+    }
+
+    #schedule {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="layoutBg" class="layoutBg"></div>
+  <div class="wrapper">
+    <!-- header -->
+    <div class="header" id="header">
+      <div class="container">
+        <div class="header_box" bosszone="zhsy_db">
+          <div class="head">
+            <h1 class="head-logo"><a href="https://sports.qq.com/" target="_blank"><img src="http://mat1.gtimg.com/sports/mandyge/11120200225105316.png" alt=""></a></h1>
+            <div class="site-nav"><a href="https://www.qq.com/" target="_blank">腾讯网首页 </a></div>
+          </div><!-- Login -->
+          <div class="social-nav">
+            <div id="wrap_sportLoginV1"></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- nav-->
+    <div class="nav" id="nav">
+      <div class="nav_first primary" bosszone="zhsy_dh">
+        <div class="container">
+          <ul class="nav-list">
+            <li class="item selected"><a href="https://sports.qq.com/others/" target="_blank">综合首页</a> <span class="trangle"><i class="icon-trangle-up"></i></span></li>
+            <li class="item"><a href="https://sports.qq.com/lpl/" target="_blank">LPL</a></li>
+            <li class="item"><a href="https://sports.qq.com/KPL/" target="_blank">KPL</a></li>
+            <li class="item"><a href="https://sports.qq.com/pr/2019/" target="_blank">特步企鹅跑</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/running.htm" target="_blank">跑步</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/kungfu.htm" target="_blank">功夫搏击</a></li>
+            <li class="item"><a href="http://golf.qq.com/" target="_blank">高尔夫</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/athletics.htm" target="_blank">田径</a></li>
+            <li class="item"><a href="http://sports.qq.com/tennis/" target="_blank">网球</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/volleyball.htm" target="_blank">排球</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/tabletennis.htm" target="_blank">乒乓球</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/billiards.htm" target="_blank">台球</a></li>
+            <li class="item"><a href="http://sports.qq.com/racing/" target="_blank">赛车</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/swimming.htm" target="_blank">游泳</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/winters.htm" target="_blank">冰雪</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/xsports/jixian.htm" target="_blank">极限</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav_second" bosszone="zhsy_dh">
+        <div class="container">
+          <ul class="nav-list">
+            <li class="item"><a href="http://sports.qq.com/l/others/newsroll.htm" target="_blank">新闻</a></li>
+            <li class="item"><a href="http://sports.qq.com/l/others/othersvideo/roll.htm" target="_blank">视频</a></li>
+            <li class="item"><a href="http://sports.qq.com/l/others/zonghepic/list2013121215900.htm" target="_blank">图片</a></li>
+            <li class="item"><a href="http://sports.qq.com/elite/" target="_blank">精英频道</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/boxing.htm" target="_blank">拳力联盟</a></li>
+            <li class="item"><a href="https://sports.qq.com/a/20200103/036133.htm" target="_blank">赛事库</a></li>
+            <li class="item"><a href="http://sports.qq.com/a/20200219/026142.htm" target="_blank">2020赛车全年赛历</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/outdoorhw/toreadzt.htm" target="_blank">探路英雄</a></li>
+            <li class="item"><a href="http://sports.qq.com/others/criterium.htm" target="_blank">环法中国赛</a></li>
+           
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div><!--[if !IE]>|xGv00|0447cfbe3a582812e864f91c40135601<![endif]-->
+    <!-- schedule -->
+    <div class="schedule" id="schedule">
+      <div class="container">
+        <div class="match-area" bosszone="zhsy_sc">
+          <ul class="match-list">
+            <li class="item last">
+              <p class="match-name">排球</p>
+              <div class="match-detail">
+                <p class="time"><i class="icon-clock"></i>5.21-7.7</p>
+                <p class="name">世界女排联赛</p>
+              </div>
+            </li>
+            <li class="item last">
+              <p class="match-name">网球</p>
+              <div class="match-detail">
+                <p class="time"><i class="icon-clock"></i>5.26-6.9</p>
+                <p class="name">法网</p>
+              </div>
+            </li>
+            <li class="item last">
+              <p class="match-name">自行车</p>
+              <div class="match-detail">
+                <p class="time"><i class="icon-clock"></i>7.6-27</p>
+                <p class="name">环法</p>
+              </div>
+            </li>
+            <li class="item last">
+              <p class="match-name">游泳</p>
+              <div class="match-detail">
+                <p class="time"><i class="icon-clock"></i>7.12-27</p>
+                <p class="name">世锦赛</p>
+              </div>
+            </li>
+            <li class="item last">
+              <p class="match-name">排球</p>
+              <div class="match-detail">
+                <p class="time"><i class="icon-clock"></i>8.2-4</p>
+                <p class="name">女排奥运资格赛</p>
+              </div>
+            </li>
+            <li class="item last">
+              <p class="match-name">羽毛球</p>
+              <div class="match-detail">
+                <p class="time"><i class="icon-clock"></i>8.19-25</p>
+                <p class="name">世锦赛</p>
+              </div>
+            </li>
+            <li class="item last">
+              <p class="match-name">排球</p>
+              <div class="match-detail">
+                <p class="time"><i class="icon-clock"></i>9.14-29</p>
+                <p class="name">女排世界杯</p>
+              </div>
+            </li>
+            <li class="item last">
+              <p class="match-name">举重</p>
+              <div class="match-detail">
+                <p class="time"><i class="icon-clock"></i>9.16-25</p>
+                <p class="name">世锦赛</p>
+              </div>
+            </li>
+            <li class="item last">
+              <p class="match-name">田径</p>
+              <div class="match-detail">
+                <p class="time"><i class="icon-clock"></i>9.28-10.5</p>
+                <p class="name">世锦赛</p>
+              </div>
+            </li>
+            <li class="item last">
+              <p class="match-name">体操</p>
+              <div class="match-detail">
+                <p class="time"><i class="icon-clock"></i>10.4-13</p>
+                <p class="name">世锦赛</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- focus + videos -->
+    <div class="focus_video" id="focus_video">
+      <div class="container">
+        <div class="focus-area" bosszone="zhsy_jdt_tp">
+          <div class="qqslide">
+            <div class="focus-slider">
+              <ul class="focus-list focus_con">
+
+
+
+<li class="item">
+                  <div class="img-item middle">
+                         <a href="https://v.qq.com/x/cover/mzc002003v3h2ig/o003490obai.html" target="_blank">
+                      <img src="http://img1.gtimg.com/sports/pics/hv1/187/92/2324/151141747.jpg" alt="">
+                    </a>
+                    <div class="img-layer large">
+                      <p><a href="https://v.qq.com/x/cover/mzc002003v3h2ig/o003490obai.html" target="_blank">杨昊放弃音乐打排球 她用弹钢琴的手扣球拦网为国争光</a></p>      
+                     </div>
+                  </div>
+
+
+
+
+   <div class="img-item middle last">
+                         <a href="https://fans.sports.qq.com/post.htm?id=1671784429459079256&mid=175#1_allWithElite" target="_blank">
+                      <img src="http://img1.gtimg.com/sports/pics/hv1/188/92/2324/151141748.jpg" alt="">
+                    </a>
+                    <div class="img-layer large">
+                      <p><a href="https://fans.sports.qq.com/post.htm?id=1671784429459079256&mid=175#1_allWithElite" target="_blank">北体大校花、跳高女神胡麟鹏大长腿美照</a></p>       
+     
+
+                    </div>
+                  </div>
+                </li>
+
+
+
+
+<li class="item">
+                  <div class="img-item middle">
+                       <a href="https://v.qq.com/x/cover/mzc0020039dda1a/g00342h6jnk.html" target="_blank">
+                      <img src="http://img1.gtimg.com/sports/pics/hv1/151/69/2324/151135846.jpg" alt="">
+                    </a>
+                    <div class="img-layer large">
+                      <p><a href="https://v.qq.com/x/cover/mzc0020039dda1a/g00342h6jnk.html" target="_blank">赵蕊蕊腿都练骨折惊呆老医生 退役后写科幻小说获大奖</a></p>   
+ 
+                     </div>
+                  </div>
+
+
+                
+<div class="img-item middle last">
+                       <a href="https://www.vmall.com/product/10086397382774.html?cid=117060" target="_blank">
+                      <img src="http://img1.gtimg.com/sports/pics/hv1/244/214/2323/151107889.jpg" alt="">
+                    </a>
+                    <div class="img-layer large">
+                      <p><a href="https://www.vmall.com/product/10086397382774.html?cid=117060" target="_blank"></a></p>     
+                    </div>
+                  </div>
+
+                </li>
+
+
+
+  <li class="item">
+                  <div class="img-item middle">
+                       
+      <a href="https://new.qq.com/rain/a/SPO2020070400556000" target="_blank">
+                      <img src="http://img1.gtimg.com/sports/pics/hv1/142/73/2324/151136857.jpg" alt="">
+                    </a>
+                    <div class="img-layer large">
+                      <p><a href="https://new.qq.com/rain/a/SPO2020070400556000" target="_blank">传奇落幕！林丹正式宣布退役 无缘第五次征战奥运</a></p>     
+
+ 
+                     </div>
+                  </div>
+
+
+
+              <div class="img-item middle last">
+                           <a href="https://v.qq.com/x/cover/mzc00200qi6q7hr/z0034niu8rh.html" target="_blank">
+                      <img src="http://img1.gtimg.com/sports/pics/hv1/232/53/2324/151131847.jpg" alt="">
+                    </a>
+                    <div class="img-layer large">
+                      <p><a href="https://v.qq.com/x/cover/mzc00200qi6q7hr/z0034niu8rh.html" target="_blank">女排黄金一代队长冯坤出身田径 郎平说得她者得天下</a></p> 
+
+                    </div>
+                  </div>
+                </li>
+       
+            
+
+
+              
+
+
+
+
+    
+              </ul>
+            </div>
+          </div>
+        </div><!--[if !IE]>|xGv00|86e162d95b48c23c7a4c16cd0d8fddcc<![endif]-->
+        <div class="new-video">
+          <span class="videoid" id="videoid" data-cid="8236fpbh1k3bit7" data-zhiboid="" style="display:none !important;"></span><!--[if !IE]>|xGv00|2b5ac78d270109b8af1273d33010f88c<![endif]-->
+          <div class="video_title">
+            <h3></h3>
+          </div>
+          <div class="videoBox" id="videoBox"></div>
+          <div class="playlist" id="playlist">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- news + hotVideo -->
+    <div class="news_vList" id="news_vList">
+      <div class="container">
+        <div class="toutiao" bosszone="zhsy_tt">
+          <div class="toutiao-top">
+             <h3><a href="http://view.inews.qq.com/a/20200703A0CB1E00" target="_blank"><span class="label label-big">F1</span>法拉利已将米克-舒马赫列为替补人选</a></h3>  
+
+<!--[if !IE]>|xGv00|c34df4814f824e188458bbdb582744e2<![endif]-->
+            <ul class="item-list" id="top_news"></ul>
+          </div>
+        </div>
+        <div class="hot-video">
+          <div class="title">
+            <h2><a href="http://sports.qq.com/l/others/othersvideo/roll.htm" target="_blank" bosszone="zhsy_rmsp_bt">热门视频</a></h2>
+            <ul class="channel-nav" bosszone="zhsy_rmsp_rk">
+              <li class="item"><a href="http://sports.qq.com/l/others/kongfuboxing/kongfuboxingvideo/videoroll.htm" target="_blank">功夫搏击</a></li>
+              <li class="item"><a href="http://sports.qq.com/l/others/run/runvid/list2013041091243.htm" target="_blank">跑步</a></li>
+              <li class="item"><a href="http://v.qq.com/detail/7/78550.html" target="_blank">赛车</a></li>
+              <li class="item"><a href="http://sports.qq.com/l/others/dongji/djvideo/list20111027221954.htm" target="_blank">冰雪</a></li>
+              <li class="item"><a href="http://sports.qq.com/l/tennis/all_video/list201112363452.htm" target="_blank">网球</a></li>
+            </ul>
+          </div>
+          <div class="list-view" bosszone="zhsy_rmsp_lb">
+            <ul class="hot-video-list" id="hot_videos"></ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- channel -->
+    <div class="channel" id="channel">
+      <div class="container">
+        <div class="channel-area">
+          <ul class="areaTab">
+            <li data_name="头条" data_num="50" class="cur">头条</li>
+            <li data_name="跑步,马拉松,田径" data_num="50">跑步</li>
+            <li data_name="网球" data_num="50">网球</li>
+            <li data_name="功夫,搏击" data_num="50">功夫搏击</li>
+            <li data_name="跳水,游泳" data_num="50">游泳跳水</li>
+            <li data_name="台球,斯诺克" data_num="50">台球</li>
+          </ul>
+          <div class="areaBox">
+            <div class="areaItem active">
+              <ul class="arealist area1"></ul>
+              <div class="addMore"><a class="refresh">点击加载更多</a></div>
+            </div>
+            <div class="areaItem">
+              <ul class="arealist area2"></ul>
+              <div class="addMore"><a class="refresh">点击加载更多</a></div>
+            </div>
+            <div class="areaItem">
+              <ul class="arealist area3"></ul>
+              <div class="addMore"><a class="refresh">点击加载更多</a></div>
+            </div>
+            <div class="areaItem">
+              <ul class="arealist area4"></ul>
+              <div class="addMore"><a class="refresh">点击加载更多</a></div>
+            </div>
+            <div class="areaItem">
+              <ul class="arealist area5"></ul>
+              <div class="addMore"><a class="refresh">点击加载更多</a></div>
+            </div>
+            <div class="areaItem">
+              <ul class="arealist area6"></ul>
+              <div class="addMore"><a class="refresh">点击加载更多</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar" style="display:none">
+          <div class="original">
+            <div class="content">
+              <div class="type-item"><span class="original-label icon-label-gym" bosszone="zhsy_yclm_bt"><a href="http://sports.qq.com/l/others/othero/tiyuke/list20151222193215.htm" target="_blank">体育课</a></span>
+                <div bosszone="zhsy_yclm_lb" id="gym" beehivezone="qqCom_sports_others_rtTiyuke">
+                  <div class="img-item"><a href="##" target="_blank" class="gym-link"><img class="lazy" width="350" height="200" src="//mat1.gtimg.com/sports/others/v2.0/images/editor-gym.jpg" style="display: block"></a>
+                    <div class="img-layer middle">
+                      <p><a href="###" class="gym-link" target="_blank">体育课</a></p>
+                    </div>
+                  </div>
+                  <ul class="item-list" id="gym-list"></ul>
+                </div>
+              </div>
+              <div class="type-item" style="margin-bottom: 0"><span class="original-label icon-label-boundary" bosszone="zhsy_yclm_bt"><a href="http://sports.qq.com/boundary/index.htm" target="_blank">边界</a></span>
+                <div bosszone="zhsy_yclm_lb" id="boundary" beehivezone="qqCom_sports_others_rtBianjie"></div>
+              </div>
+            </div>
+          </div>
+          <div class="special" bosszone="zhsy_yyxq">
+            <div class="cooperation">
+              <div class="title">
+                <h2>合作专题</h2>
+              </div>
+              <div class="special-content">
+                <div class="img-item"><a href="http://golf.qq.com/" class="a_img" target="_blank"><img src="//img1.gtimg.com/sports/pics/hv1/58/123/2042/132812473.jpg" class="lazy" alt=""></a>
+                  <div class="img-layer middle">
+                    <p><a href="http://golf.qq.com/" target="_blank">腾讯高尔夫频道</a></p>
+                  </div>
+                </div>
+                <ul class="item-list">
+                  <li class="item">
+                    <p><a href="http://sports.qq.com/zt2015/olympicday/index.htm" target="_blank">中国奥委会2015奥林匹克日长跑</a></p>
+                  </li>
+                  <li class="item">
+                    <p><a href="http://sports.qq.com/zt2014/owg2022/index.htm" target="_blank">祝贺北京成功申办2022年冬奥会</a></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-title">
+                <h2>各项排名</h2>
+              </div>
+              <div class="special-content">
+                <ul class="item-list">
+                  <li class="item">
+                    <p><span class="type">网球</span> <span class="border"></span> <span class="type"><a href="http://www.atpworldtour.com/en/rankings/singles" target="_blank">ATP排名</a> <a href="http://www.wtatennis.com/rankings" target="_blank">WTA排名</a></span></p>
+                  </li>
+                  <li class="item">
+                    <p><span class="type">乒乓球</span> <span class="border"></span> <span class="type"><a href="http://sports.qq.com/a/20160205/006197.htm" target="_blank">男乒排名</a> <a href="http://sports.qq.com/a/20160205/013152.htm" target="_blank">女乒排名</a></span></p>
+                  </li>
+                  <li class="item">
+                    <p><span class="type">羽毛球</span> <span class="border"></span> <span class="type"><a href="http://sports.qq.com/a/20160317/056943.htm" target="_blank">世界羽联最新排名</a></span></p>
+                  </li>
+                  <li class="item">
+                    <p><span class="type">排球</span> <span class="border"></span> <span class="type"><a href="http://sports.qq.com/a/20170816/027269.htm" target="_blank">国际排联最新排名</a></span></p>
+                  </li>
+                  <li class="item">
+                    <p><span class="type">台球</span> <span class="border"></span> <span class="type"><a href="http://sports.qq.com/a/20170926/001942.htm" target="_blank">斯诺克临时排名</a></span></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-title">
+                <h2>实用信息</h2>
+              </div>
+              <div class="special-content">
+                <ul class="item-list">
+                  <li class="item">
+                    <p><a href="http://sports.qq.com/a/20170605/028155.htm" target="_blank">腾讯体育诚招综合体育实习生、综合体育写手</a></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-title">
+                <h2>媒体评论</h2>
+              </div>
+              <div class="special-content">
+                <ul class="item-list" id="media" beehivezone="qqCom_sports_others_rtMeitipinlun"></ul>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-title match-special-title">
+                <h2>赛事专题</h2>
+              </div>
+              <div class="special-content">
+                <div class="img-item"><a href="http://sports.qq.com/p/topic/20150903030487/index.html" class="a_img" target="_blank"><img src="//img1.gtimg.com/sports/pics/hv1/246/110/2038/132549246.jpg" class="lazy" alt=""></a>
+                  <div class="img-layer middle">
+                    <p><a href="http://sports.qq.com/p/topic/20150903030487/index.html" target="_blank">再见 梅威瑟</a></p>
+                  </div>
+                </div>
+                <div class="item-col">
+                  <div class="col-two">
+                    <ul class="item-list">
+                      <li class="item">
+                        <p><a href="http://sports.qq.com/tennis/2016ao.htm" target="_blank">2016年澳洲网球公开赛</a></p>
+                      </li>
+                      <li class="item">
+                        <p><a href="http://sports.qq.com/others/kashan2015.htm" target="_blank">2015年喀山游泳世锦赛</a></p>
+                      </li>
+                      <li class="item">
+                        <p><a href="http://wimbledon.qq.com/" target="_blank">温布尔登锦标赛</a></p>
+                      </li>
+                      <li class="item">
+                        <p><a href="http://sports.qq.com/others/wwcvol2015.htm" target="_blank">2015年女排世界杯</a></p>
+                      </li>
+                      <li class="item">
+                        <p><a href="http://sports.qq.com/tennis/2015fo/" target="_blank">2015法网公开赛</a></p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-two">
+                    <ul class="item-list">
+                      <li class="item">
+                        <p><a href="http://sports.qq.com/others/iaaf2015.htm" target="_blank">2015年北京田径世锦赛</a></p>
+                      </li>
+                      <li class="item">
+                        <p><a href="http://sports.qq.com/others/sudirman2015.htm" target="_blank">2015苏迪曼杯</a></p>
+                      </li>
+                      <li class="item">
+                        <p><a href="http://sports.qq.com/others/suzhou2015.htm" target="_blank">2015世乒赛</a></p>
+                      </li>
+                      <li class="item">
+                        <p><a href="http://sports.qq.com/others/2015schina.htm" target="_blank">2015斯诺克中国公开赛</a></p>
+                      </li>
+                      <li class="item">
+                        <p><a href="http://sports.qq.com/a/20150518/000719.htm" target="_blank">刘翔泪洒退役现场</a></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- footer -->
+    <div class="footer">
+      <div class="container">
+                <script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+        <style>
+          .tcopyright {
+            width: 960px;
+            margin: 0 auto;
+            padding: 8px 0;
+            font-size: 12px;
+            line-height: 28px;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+            clear: both;
+          }
+
+          .tcopyright .en {
+            font-family: Arial;
+          }
+
+          .tcopyright a {
+            color: #333;
+            text-decoration: none;
+          }
+
+          .tcopyright a:hover {
+            color: #bd0a01;
+            text-decoration: underline;
+          }
+          .footernew {
+              color: #515151;
+              font-size: 12px;
+              height: 70px;
+              line-height: 24px;
+              margin: 12px auto 0;
+              overflow: hidden;
+              text-align: center;
+              width: 1000px;
+          }
+          .footernew .footernewdiv {
+              margin: 0 auto;
+              width: 680px;
+          }
+          .footernew p {
+              border: 1px solid #D2D2D2;
+              float: left;
+              font-size: 12px;
+              height: 50px;
+              line-height: 20px;
+              margin: 6px;
+              padding: 0;
+              width: 120px;
+              overflow: hidden;
+          }
+          .footernew .fl {
+              padding: 3px;
+          }
+          .qq-footer .footernew .fr {
+              padding: 5px 3px 0;
+              width: 72px;
+          }
+          .qq-footer .footernew a {
+  color: #515151;
+  text-decoration: none;
+}
+        </style>
+        <div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a
+              href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a
+              href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a
+              href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a
+              href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a
+              href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a
+              href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/"
+              target="_blank" rel="nofollow">腾讯公益</a> | <a href="https://cloud.tencent.com/?from=txwdibu"
+              target="_blank" rel="nofollow">腾讯云</a> | <a href="http://service.qq.com/" target="_blank"
+              rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+              <br/>
+              <a href="http://szwljb.sz.gov.cn/" target="_blank" rel="nofollow">深圳举报中心</a> |
+              <a href="http://ga.sz.gov.cn" target="_blank" rel="nofollow">深圳公安局</a> | 
+              <a href="http://www.qq.com/dzwfggcns.htm" target="_blank" rel="nofollow">抵制违法广告承诺书</a> |
+              <a href="http://www.qq.com/copyright.shtml" target="_blank" rel="nofollow">版权保护投诉指引</a> |
+              <a href="https://gdca.miit.gov.cn/" target="_blank" rel="nofollow">广东省通管局</a>
+              <br>
+              <span>
+                <a href="http://www.qq.com/culture.shtml" target="_blank" rel="nofollow">粤网文[2017]6138-1456号</a> 
+                <a href="http://www.qq.com/internet_licence.htm" target="_blank" rel="nofollow">新出网证（粤）字010号</a> 
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                增值电信业务经营许可证：<a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">粤B2-20090059</a> 
+                <a href="http://www.qq.com/icp1.shtml" target="_blank" rel="nofollow">B2-20090028</a>
+              </span>
+              <br>
+              <a href="http://www.qq.com/scio.htm" target="_blank" rel="nofollow">新闻信息服务许可证</a>
+              <a href="http://www.qq.com/xwdz.shtml" target="_blank" rel="nofollow">粤府新函[2001]87号</a> 违法和不良信息举报电话：0755-83765566-9 
+              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002000001">
+                <span>粤公网安备44030002000001号</span>
+              </a>
+              <br>
+              <a href="http://www.qq.com/spyp.htm" target="_blank">互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a>
+              <br>
+              <div class="footernew">
+                <div class="footernewdiv">
+                <p>
+                  <span class="fl"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" target="_blank" rel="nofollow"><img width="35" height="43" border="0" alt="经营性网站备案信息" src="//mat1.gtimg.com/www/images/qq2012/ind36.gif"></a></span>
+                  <span class="fr"><a target="_blank" class="lcblack" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" rel="nofollow">经营性网站<br>
+                  备案信息</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.12377.cn/" target="_blank" rel="nofollow"><img width="44" height="44" border="0" alt="中国互联网举报中心" src="//mat1.gtimg.com/www/images/qq2012/buliang.png"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.12377.cn/" target="_blank" rel="nofollow">中国互联网<br>
+                  举报中心</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.wenming.cn" target="_blank" rel="nofollow"><img width="44" height="42" border="0" alt="中国文明网传播文明" src="//mat1.gtimg.com/www/images/qq2012/wmlogo.gif"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.wenming.cn" target="_blank" rel="nofollow">中国文明网<br>传播文明</a></span>
+                </p>
+                <p style="width:128px;height:52px;border:0;">
+                  <span style="padding:0;" class="fl"><a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&amp;ct=df&amp;a=1&amp;pa=337337" target="_blank" rel="nofollow"><img border="0" alt="诚信网站" src="//mat1.gtimg.com/www/images/qq2012/cxrz5.png"></a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow"><img src="//mat1.gtimg.com/www/images/qq2012/gswj2015.jpg" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow">工商网监<br>电子标识</a></span>
+                </p>
+                </div>
+              </div>
+
+          </div>
+          <div class="en">Copyright &copy; 1998 -
+            
+            2020 Tencent. All Rights Reserved</div>
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a
+              href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+          </div>
+        </div>
+<!--[if !IE]>|xGv00|1946a31bc73a15246842877bdfa16df2<![endif]-->
+      </div>
+    </div><!-- site-gotop -->
+    <div class="site-gotop">
+      <ul class="vertical-nav-list">
+        <li class="item qrcode"><a href="javascript: void(0);" target="_blank" title="体坛周报">体坛周报</a>
+          <div class="sports-weekly-qrcode"></div>
+        </li>
+        <li class="item" bosszone="zhsy_dtdh_yjfk"><a href="https://support.qq.com/products/2260" target="_blank" title="意见反馈">意见反馈</a></li>
+        <li class="item gotop" bosszone="zhsy_dtdh_fhdb"><a href="javascript: void(0);" title="返回顶部"><i class="icon-gotop"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <script charset="utf-8" src="//mat1.gtimg.com/sports/js/lib/require.min.js"></script>
+  <script charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/other_index/2019/scripts/main-484dc4a6c8.js"></script>
+</body><!-- 全站流量统计代码 开始 -->
+<!--pgv by Austinjin-->
+<script type="text/javascript" language="javascript" src="//mat1.gtimg.com/ping.js"></script>
+<script type="text/javascript" language="javascript">
+var pvCurDomain = "sports.qq.com";  //更改域名
+if(window['ARTICLE_INFO'] && window['ARTICLE_INFO']['catalog_full']){
+function newPgvDetail(){
+ var catalogPathR1 = ARTICLE_INFO.catalog_full.toString().replace(/-/g,".");
+ var catalogPath = catalogPathR1.toString().replace(/_/g,"-");
+ if(ARTICLE_INFO.topic.name.length>0){var L = "L.",Z = "Z." + catalogPath + "." + ARTICLE_INFO.topic.name;}else{var L = "L." + catalogPath,Z = "Z.";}
+ var W = "W." + ARTICLE_INFO.type,M = "M." + ARTICLE_INFO.tpl.type + ARTICLE_INFO.tpl.stype,P = "P." + ARTICLE_INFO.site.toString().replace(/_/g,"-"),pgvInfo = L + "_" + Z + "_" + W + "_" + M + "_" + P;
+ if(typeof(pgvMain) == 'function'){if(typeof(pgvInfo) != 'undefined'){pgvMain({pgUserType:pgvInfo});}}
+}newPgvDetail();}
+else if(typeof(pgvMain) == 'function'){if(typeof(whatCatalog) != 'undefined'){pvCSTM = whatCatalog;pgvMain();}else{pgvMain();}}
+</script>
+<!--pgv end--><!--[if !IE]>|xGv00|8f905d6d5c7977615c84d60d5b8a7ab3<![endif]-->
+<!-- 全站流量统计代码 结束 -->
+
+</html><!--[if !IE]>|xGv00|5624a07758371f8b04320e7cd2da8f64<![endif]-->

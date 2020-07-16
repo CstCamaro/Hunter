@@ -1,0 +1,74 @@
+/* 全局 背景 字体 颜色... */
+body,td,select,div{font-size:12px;line-height:21px;color:#333;}
+input{font-size:12px;color:#333;}
+
+
+/* 默认链接 */
+a{text-decoration:none;}
+
+a{color:#002277;}
+a:visited{color:#800080;}
+a:hover{color:#BD0A01;text-decoration:underline;}
+
+.font_w_b{font-weight:bold;}
+.color_red,a.color_red,a.color_red:hover,a.color_red:active,a.color_red:visited{color:#BD0A01;}
+.color_black,a.color_black,a.color_black:active,a.color_black:hover,a.color_black:visited{color:#333;}
+
+/* 头条 */
+H2 {COLOR: #000000;}
+H4 {COLOR: #000000;}
+
+/* banner */
+.zt_banner{}
+.zt_banner img{}
+
+/* 导航 */
+.zt_nav{height:29px;line-height:29px;color:#9DA5B1;font-size:14px;background-color: #0F3063;background-image: url(//mat1.gtimg.com/news/zt/style6/nav_bg.gif);background-repeat: no-repeat;background-position: left;}
+.zt_nav a:link,.zt_nav a:visited{color:#fff; text-decoration:none;padding:0px 2px;}
+.zt_nav a:hover{background:#6A83AA;}
+
+/* 栏目块 */
+/* 有标题有边框1 */
+.zt_u_1{border:1px solid #CFD6E0;}
+.zt_u_1 .zt_u_title{height:30px;background-color: #fff;background-image: url(//mat1.gtimg.com/news/zt/style6/bg1.gif);background-repeat: repeat;}
+.zt_u_1 .zt_u_title .zt_u_name{font-size:14px;float:left;line-height:30px;padding-left:20px;font-weight:bold;background-image: url(//mat1.gtimg.com/news/zt/style6/title1.gif);background-repeat: no-repeat ;background-position:left top; padding-top:2px}
+.zt_u_1 .zt_u_title .zt_u_name a{color:#333333}
+.zt_u_1 .zt_u_title .zt_u_more{float:right;padding-right:13px;line-height:30px;font-size:12px;background-image: url(//mat1.gtimg.com/news/zt/style6/mor1.gif);background-repeat: no-repeat ;background-position:right; padding-top:2px}
+.zt_u_1 .zt_u_body{}
+
+/* 有标题有边框2 */
+.zt_u_1a{border:1px solid #CFD6E0;}
+.zt_u_1a .zt_u_title{height:30px;background-color: #fff;background-image: url(//mat1.gtimg.com/news/zt/style6/bg2.gif);background-repeat: repeat;}
+.zt_u_1a .zt_u_title .zt_u_name{font-size:14px;float:left;line-height:30px;padding-left:20px;font-weight:bold;background-image: url(//mat1.gtimg.com/news/zt/style6/title2.gif);background-repeat: no-repeat ;background-position:left top; padding-top:2px}
+.zt_u_1a .zt_u_title .zt_u_name a{color:#333333}
+.zt_u_1a .zt_u_title .zt_u_more{float:right;padding-right:13px;line-height:30px;font-size:12px;background-image: url(//mat1.gtimg.com/news/zt/style6/mor2.gif);background-repeat: no-repeat ;background-position:right; padding-top:2px}
+.zt_u_1a .zt_u_body{}
+
+/* 有标题无边框1 */
+.zt_u_2{}
+.zt_u_2 .zt_u_title{height:30px;background-color: #fff;background-image: url(//mat1.gtimg.com/news/zt/style6/bg1.gif);background-repeat: repeat;}
+.zt_u_2 .zt_u_title .zt_u_name{font-size:14px;float:left;line-height:30px;padding-left:20px;font-weight:bold;background-image: url(//mat1.gtimg.com/news/zt/style6/title1.gif);background-repeat: no-repeat ;background-position:left top; padding-top:2px}
+.zt_u_2 .zt_u_title .zt_u_name a{color:#333333}
+.zt_u_2 .zt_u_title .zt_u_more{float:right;padding-right:13px;line-height:30px;font-size:12px;background-image: url(//mat1.gtimg.com/news/zt/style6/mor1.gif);background-repeat: no-repeat ;background-position:right; padding-top:2px}
+.zt_u_2 .zt_u_body{}
+
+/* 有标题无边框2 */	
+.zt_u_2a{}
+.zt_u_2a .zt_u_title{height:30px;background-color: #fff;background-image: url(//mat1.gtimg.com/news/zt/style6/bg2.gif);background-repeat: repeat;}
+.zt_u_2a .zt_u_title .zt_u_name{font-size:14px;float:left;line-height:30px;padding-left:20px;font-weight:bold;background-image: url(//mat1.gtimg.com/news/zt/style6/title3.gif);background-repeat: no-repeat ;background-position:left top; padding-top:2px}
+.zt_u_2a .zt_u_title .zt_u_name a{color:#333333}
+.zt_u_2a .zt_u_title .zt_u_more{float:right;padding-right:13px;line-height:30px;font-size:12px;background-image: url(//mat1.gtimg.com/news/zt/style6/mor1.gif);background-repeat: no-repeat ;background-position:right; padding-top:2px}
+
+/* 无标题有边框 */
+.zt_u_3{border:1px solid #CFD6E0;}
+.zt_u_3 .zt_u_body{}
+
+/* 无标题无边框 */
+.zt_u_4{}
+.zt_u_4 .zt_u_body{}
+
+/* 栏目间隔 */
+.zt_u_sp{height:10px;overflow:hidden;clear:both;}
+
+/* 内容块 */
+/*  |xGv00|51b5c6840f6881db8f451f97f59fc20f */

@@ -1,0 +1,47 @@
+body,td,th {
+	font-size: 12px;
+	color: #333333;
+}
+body {
+	background-color: #E0E0E0;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+}
+a {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF0000;
+}
+
+/**/
+.bordergay {border:1px solid #C6C6C6}
+.fsbig,.fsbig a {font-size:14px;font-weight:bold;}
+.fsbigt,.fsbigt a{font-size:18px;font-family:"ºÚÌå";}
+.blank8 {font-size:1px;height:9px; clear:both;}
+.line22 { line-height:22px;}
+.txtin { text-indent:2em;}
+.fsred {color:#EF2A2A}
+.line24 { line-height:24px;}
+.line26 { line-height:26px;}
+.line20 { line-height:20px;}
+.fsnub {color:#FF0000;font-family:Arial; letter-spacing:-1px;font-size:18px;font-weight:bold; line-height:18px;}
+/**/
+.daoji { background:url(http://mat1.qq.com/tech/images/2008/sbh/daoji.gif) no-repeat center top;}
+.imgborder {border:1px solid #b7b7b7;padding:3px;}
+.txtlist { line-height:20px; padding-left:13px;}
+.border {border:1px solid #b7b7b7;}
+/**/
+.comt {background:url(http://mat1.qq.com/tech/images/2008/sbh/tbg.gif) no-repeat bottom;padding-left:21px;padding-top:8px;}
+.linkt,.linkt a {font-size:14px;font-weight:bold;}
+.fswhit {color:#fff;}
+.fs14 {font-size:14px;}
+/**/
+.pl8 {padding-left:8px;}
+.bluelink {color:#1414D9; text-decoration:underline;}
+.fsgary {color:#868686}

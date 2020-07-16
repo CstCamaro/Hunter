@@ -1,0 +1,282 @@
+       <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="https://time.qq.com/festival/qixi/20190807-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="七夕,牛郎,织女,姻缘,腾讯网,时光画轴">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 22:16:30';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-08-07", //日期，格式为 年-月-日
+	"cmd_id": "4057645437", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "qixi2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="qixi2019" style="display:none;"><blockquote>“迢迢牵牛星，皎皎河汉女”。</blockquote>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNaHabicXZpQDH5PAKqSfYoiaEiaGAEzlAicDObR4oV4fwJ7XBtkFBZuncMg/640?wx_fmt=jpeg" title="七夕1">
+<p>农历七月初七是七夕节，又名乞巧节、七巧节或七姐诞。
+
+七夕始于汉朝，是流行于中国及汉字文化圈诸国的传统文化节日。相传农历七月七日夜或七月六日夜妇女在庭院向织女星乞求智巧，故称为“乞巧”。其起源于对自然的崇拜及妇女穿针乞巧，后被赋予了牛郎织女的传说使其成为象征爱情的节日。七夕节妇女穿针乞巧、祈祷福禄寿、礼拜七姐、陈列花果、女红（gōng）等诸多习俗影响至日本、朝鲜半岛、越南等汉字文化圈国家。
+
+2006年5月20日，七夕节被中华人民共和国国务院列入第一批国家级非物质文化遗产名录。</p>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNq88vLQrKyicNJaAXZ3N6UIuDW94u0olTBn8stThLhrcd0pD1wVISDDg/640?wx_fmt=jpeg" title="七夕2">
+<p>迢迢牵牛星，皎皎河汉女。纤纤擢素手，札札弄机杼。终日不成章，泣涕零如雨。河汉清且浅，相去复几许。盈盈一水间，脉脉不得语。
+
+                                                                     ——《古诗十九首·迢迢牵牛星》
+
+</p>
+<h2>节日起源</h2>
+<h3>星象崇拜</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbN4Z3JNQxCcANjicZd22S8EUKYvo1GMDPAcIdo4FgbFg1m7sTgLmRgHjw/640?wx_fmt=jpeg" title="七夕3">
+<p>人们对牛郎织女自然天象的崇拜由来已久，可追溯到远古时代。《春秋命历序》：“天地开辟，万物浑浑，无知无识；阴阳所凭…日月五纬俱起牵牛；四万五千年，日月五纬一轮转；…定天之象，法地之仪，作干支以定日月度。”《开元占经》卷61引石氏曰：“牵牛生于列泽之邑，以主越国”。按：牵牛星是吴、越之地的分野星。关于“牛郎织女”的天文星空区域所对应地面上的具体地域分野，收录于《汉书·地理志》：“粤（越）地，牵牛（牛郎）、婺女（织女）之分野也，今苍梧、郁林、合浦、交趾、九真、南海、日南皆粤分也”。“牵牛婺女”最初的含义是粤（越）地用以作天文星区对应地理分野的“分星”。相传每年七月初七，牛郎织女会于天上的鹊桥相会，后来民间把故事进一步发挥，赋予了“牛郎织女”的美丽爱情传说。</p>
+<h3>时间崇拜</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNV4FZqARlg6wLUZjiatfx1ia8OOqpGciab749C5zdeDC9TICEhWceX7g4Q/640?wx_fmt=jpeg" title="七夕4">
+<p>“七夕”月逢七、日逢七。在古代，古人把日、月与水、火、木、金、土五大行星合在一起叫“七曜”。《尚书考灵曜》：“（天地开辟），七曜俱在牵牛初度”。《易纬通卦验补遗》：“天皇氏之先，与乾曜合德”。按：此言天皇氏祖先与日、月、五星（七曜）合德，即其身份极为崇高。《易传》：“日、月、五星，起于牵牛。”《汉书·天文志》：“牵牛，日、月、五星所从起，历数之元，三正之始。”</p>
+<h3>七姐诞</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNFesuxruT5PVbxxDkqjNuqmekDJ7cgd3wPhLR37VB1Cg3mV4aHNvZ3Q/640?wx_fmt=jpeg" title="七夕5">
+<p>七姐诞，又称七娘会、七娘妈诞等。七姐（织女星）是编织云彩、纺织业者，是情侣、妇女、儿童的保护神，七月七日是其诞辰。在新中国成立之前，“七姐诞”是靓女们的盛大节日。“七姐诞”（七娘妈诞）的主要活动有祈福许愿、乞求巧艺、祈祷姻缘、保护小孩平安等。拜七姐这类活动已为人遗忘，只有极少数的宗乡会馆还在这个节日设香案，拜祭七姐；香案一般在七月初七日就备妥，傍晚时分开始向七姐祈福、乞巧。七夕节乞巧是向七姐（织女）祈求心灵手巧，希望婚姻幸福，家庭美满。</p>
+<h3>生殖崇拜</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNibNyIkUkGqbPa1ibafNys7Feo85u9hdd6TnlVJSJrAx0BTOPqEEfXJcw/640?wx_fmt=jpeg" title="七夕6">
+<p>”七七"是生命周期。《黄帝内经·素问·上古天真论》："男不过尽八八，女不过尽七七，而天地之精气皆竭矣。"它说男子以8岁一个周期，女子以7岁一个周期。女子7岁肾气盛，换牙齿头发变长；二七天癸至，任脉通。天癸是肾精，任督二脉，以中医说法，"为一身阴阳之海，五气贞元"，也就是说，二七就来月经，可以生子。三七肾气平均，最后的牙齿长齐，发育完全成熟。四七筋骨坚，头发长极，身体盛壮，到了顶点。五七阳明脉衰，面容开始焦黄，头发开始掉。六七"三阳脉衰于上，面皆焦，发始白"。七七"任脉虚，太冲脉衰，天癸竭，地道不通，故形坏而无子也"，是一个生命周期结束。</p>
+<h2>民间习俗</h2>
+<h3>香桥会</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNSt3EkVlDeZ9REyBPhbSbG3LrMOCOib25C8r464hgBOZ742dbWBx8xMQ/640?wx_fmt=jpeg" title="七夕7">
+<p>在江苏宜兴，有七夕香桥会习俗。每年七夕，人们都赶来参与，搭制香桥。所谓香桥，是用各种粗长的裹头香（以纸包着的线香）搭成的长四五米、宽约半米的桥梁，装上栏杆，于栏杆上扎上五色线制成的花装饰。入夜，人们祭祀双星、乞求福祥，然后将香桥焚化，象征着双星已走过香桥，欢喜地相会。这香桥是由传说中的鹊桥传说衍化而来的。</p>
+<h3>乞求姻缘</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNmGCU4jOsLVucVsVhaDqtTAAxWzCe9Qg4iaiadorahP2QorPDtQ4E18icA/640?wx_fmt=jpeg" title="七夕8">
+<p>在晴朗的夏秋之夜，天上繁星闪耀，一道银河横贯南北，银河的东西两岸，各有一颗闪亮的星星，隔河相望，遥遥相对，那就是牵牛星和织女星。婺女星后来衍化成神话中的女神，民间即称为七姐、天仙娘娘、七娘妈等，是编织云彩、情侣、妇女、儿童的保护神。世间无数的有情男女都会在七夕夜晚对着星空向织女祈祷自己的姻缘美满。</p>
+<h3>游七姐水</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNQa0VYBZGktkbYlE0adhZeZKfWX6cLWvRngBvXdr3HSz7G18my8PQ1A/640?wx_fmt=jpeg" title="七夕9">
+<p>民间传说七夕节天上的七位仙女会下凡到河流中洗澡，这时的河水因沾了仙气，人们洗了不但会带来桃花运，还可以预防疾病。在广西百色、靖西等民间认为，农历七月初七这一天的水是非常圣洁干净的，七夕的水既可以驱邪避病，又能使其爱情美满、生活幸福。这个习俗和当地七仙女下凡洗澡的传说有关。</p>
+<h3>为牛庆生</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbN0b6CZxB6LLh61BeCQImZA0jRls5wibWicjJxdibEDCDnF7hENPcicLW9LQ/640?wx_fmt=jpeg" title="七夕10">
+<p>旧时儿童会在七夕之日采摘野花挂在牛角上，又叫“贺牛生日”。因为传说西王母用天河把牛郎织女分开后，老牛为了让牛郎能够跨越天河见到织女，让牛郎把它的皮刨下来，驾着它的牛皮去见织女。人们为了纪念老牛的牺牲精神，便有了“为牛庆生”的习俗。</p>
+<h3>晒书晒衣</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm5OrK1lobPMGCTZahLGYYOQqjmRIHAdfQO20caMlGV4pIXEAfS9NVm41ricpib7r6FuZ29ptls6Png/640?wx_fmt=jpeg" title="七夕11">
+<p>古代，“七夕”节还有晒书、晒衣的习俗，据说是可以避免虫蛀。人们选择七夕晒书据说是因为七月七日，天门洞开，阳光强烈，是龙王爷“晒鳞日”，人们多在此日暴晒衣服、棉被之类，以防虫蛀，读书人也往往在这一天曝晒书籍。汉后各地文化上的交流使节俗融合传播，主要的传统节日都已经普及全国。东汉崔实《四民月令》云：“七月七日，曝经书及衣裳，不蠹。”</p>
+<h2>应节食品</h2>
+<h3>巧果</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNlGg4TvWSAAt6VF82Cdf0Au0FMhrLDKaSfudIm7NWQibxok06Qia2WkgA/640?wx_fmt=jpeg" title="七夕12">
+<p>七夕乞巧的应节食品，以巧果最为有名。巧果又叫“乞巧果子”，款式极多。“乞巧果子”是七夕节的传统祭品和美点。七夕晚上人们把“乞巧果子”端到庭院，全家人围坐，品尝做“巧果”人的手艺。现在这种习俗在许多地方都已经不流传了，“乞巧果子”这种传统食品，也演变成多种花色糕点。</p>
+<h3>酥糖</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNeliakaFqk30VjapvYU9x0Ncr8XQ8fMG6hwB1icugwqMW3Y8Xy5X78AIA/640?wx_fmt=jpeg" title="七夕13">
+<p>在我国一些地方的糕点铺，这一天还要制作一些织女形象的酥糖，俗称“巧人”“巧酥”，出售时又称为“送巧人”，民间认为，吃了这种“酥糖”的人会变得心灵手巧。</p>
+<h3>巧巧饭</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNHta7e98ErPyk1MgXiboPXobTnVKr8bUCC3rDYyV8c0LicHMiaxA7UG5KQ/640?wx_fmt=jpeg" title="七夕14">
+<p>在我国山东，这一天要吃巧巧饭，乞巧的风俗十分有趣：七个要好的姑娘集粮集菜包饺子，把一枚铜钱、一根针和一个红枣分别包到三个水饺里，乞巧活动以后，她们聚在一起吃水饺，传说吃到钱的有福，吃到针的手巧，吃到枣的早婚。</p>
+<h3>瓜果</h3>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNJribEBrURMct5aibYRBXhibgrt2w5wia8RvNRicV488IF1vJbvklBGPsmBw/640?wx_fmt=jpeg" title="七夕15">
+<p>在福建，七夕节时要让织女欣赏、品尝瓜果，以求她保佑来年瓜果丰收。供品包括茶、酒、新鲜水果、五子（桂圆、红枣、榛子、花生、瓜子）、鲜花和妇女化妆用的花粉。一般是斋戒沐浴后，大家轮流在供桌前焚香祭拜，默祷心愿。</p>
+<img src=" https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmnwGbSziaG79sjEe3Vjl6UbNaHabicXZpQDH5PAKqSfYoiaEiaGAEzlAicDObR4oV4fwJ7XBtkFBZuncMg/640?wx_fmt=jpeg" title="七夕16">
+<p>鸾扇斜分凤幄开，星桥横过鹊飞回。争将世上无期别，换得年年一度来。
+
+                                                                                     —— 李商隐《七夕》</p>
+</div>
+<!--[if !IE]>|xGv00|9902a3842bb7591f59a7c360abcf0a6a<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|fd5efb036280b6051eef9b99a7402870<![endif]-->

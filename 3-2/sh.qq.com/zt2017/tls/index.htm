@@ -1,0 +1,783 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>太姥山</title>
+    <meta name="keywords" content="太姥山">
+    <meta name="description" content="太姥山">
+    <style type="text/css">
+        /*common*/
+        body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select { margin: 0; padding: 0 }
+        body { color: #333;font: 12px/22px "黑体", "Arial Narrow","HELVETICA";background: #fff; -webkit-text-size-adjust: 100%; }
+        a { color: #333; text-decoration: none;}
+        a:hover {  text-decoration: underline;}
+        em,i { font-style: normal }
+        h1, h2, h3, h4, h5, h6 { font-family: "微软雅黑", "黑体"; font-size: 14px; font-weight: normal;}
+        li { list-style: none }
+        img { border:none; vertical-align: middle;}
+        table { border-collapse: collapse; border-spacing: 0 }
+        input{ background:none;}
+        p { word-wrap: break-word;}
+
+        .fl{float:left;}
+        .fr{float:right;}
+        .clearfix:before, .clearfix:after {content: "";display: table;}
+        .clearfix:after {clear: both;overflow: hidden;}
+        .clearfix {zoom: 1;}
+
+        /*private*/
+        .bg1{background:url(//mat1.gtimg.com/sh/00-2017/0310/bg1.jpg) no-repeat center center;height:787px;}
+        .bg2{background:url(//mat1.gtimg.com/sh/00-2017/0310/bg2.jpg) no-repeat center center;height:383px;}
+        .bg3{background:url(//mat1.gtimg.com/sh/00-2017/0310/bg3.jpg) no-repeat center center;height:574px;}
+        .bg4{background:url(//mat1.gtimg.com/sh/00-2017/0310/bg4.jpg) no-repeat center center;height:530px;}
+        .bg5{background:url(//mat1.gtimg.com/sh/00-2017/0310/bg5.jpg) no-repeat center center;height:697px;}
+        .bg6{background:url(//mat1.gtimg.com/sh/00-2017/0310/bg6.jpg) no-repeat center center;height:589px;}
+        .bg7{background:url(//mat1.gtimg.com/sh/00-2017/0310/bg7.jpg) no-repeat center center;height:806px;}
+        .wrapCenter{width:1000px;margin:0 auto;}
+        #video{width:665px;}
+        .bg2 .activeJS{width:305px;padding-top:32px;}
+        .bg2 .activeJS h2{padding-bottom:16px;font-size:24px;font-weight:bold;text-align:center;}
+        .bg2 .activeJS p{padding:0 15px;font-weight:bold;font-size:14px;line-height:20px;text-align:justify;}
+        .bg3 .wrapCenter{padding-top:164px;}
+        .bg3 .rule{width:650px;}
+        .bg3 .rule ul{padding-left:30px;}
+        .bg3 .rule li{font-weight:bold;font-size:16px;line-height:24px;padding-left:60px;margin-bottom:13px;}
+        .bg3 .rule .li1{background:url(//mat1.gtimg.com/sh/00-2017/0310/icon1.png) no-repeat;}
+        .bg3 .rule .li2{background:url(//mat1.gtimg.com/sh/00-2017/0310/icon2.png) no-repeat;}
+        .bg3 .rule .li3{background:url(//mat1.gtimg.com/sh/00-2017/0310/icon3.png) no-repeat;}
+        .bg3 .rule .li4{background:url(//mat1.gtimg.com/sh/00-2017/0310/icon4.png) no-repeat;}
+        .bg3 .rule .li5{background:url(//mat1.gtimg.com/sh/00-2017/0310/icon5.png) no-repeat;}
+        .bg3 .prize{width:315px;padding-top:95px;}
+        .bg3 .prize p{margin-bottom:15px;line-height:34px;text-align:center;color:#fff;font-size:30px;font-weight:bold;}
+        .bg4 .day{font-family:"华康俪金黑";float:left;width:265px;padding-top:184px;margin:0 22px 0 41px;}
+        .bg4 .day h2{padding-bottom:44px;color:#fff;font-size:30px;text-align:center;font-weight:bold;}
+        .bg4 .day p{line-height:30px;font-size:24px;text-align:center;font-weight:bold;}
+        #yxtm{height:30px;margin-top:53px;}
+        .bg5 .wrapCenter{padding-top:48px;}
+        .bg5 .list{width:273px;padding-left:47px;padding-top:40px;}
+        .bg5 .list li{height:50px;line-height:50px;padding-bottom:20px;background:url(//mat1.gtimg.com/sh/00-2017/0310/textBg1.png) no-repeat 50px 17px;font-weight:bold;color:#646464;cursor:pointer;margin-bottom:10px;font-size:50px;text-align:center;}
+        .bg5 .list li.cur{color:#000;background:url(//mat1.gtimg.com/sh/00-2017/0310/textBg2.png) no-repeat 50px 20px;}
+        .bg5 .list .li1{line-height:30px;}
+        .bg5 .list .li4{line-height:30px;}
+        .bg5 .imgWrap{width:650px;}
+        .bg5 .imgWrap .box{padding:0px 0 0 0px;width:100%;display:none;}
+        .bg5 .box .text1{display:block;position:relative;}
+        .bg5 .box .text2{padding:10px 3%;position:absolute;color:#fff;bottom:0;left:0;line-height:26px;font-size:18px;width:94%;margin:0 auto;background:url(//mat1.gtimg.com/sh/00-2017/0310/bg.png) repeat;}
+        .bg5 .box .text2 a{color:#025369;}
+        #cygl{height:20px;margin-top:100px;}
+        .prev-next-style{width:96px;height:175px;margin-top:105px;cursor:pointer;}
+        .prev-no-style{background:url(//mat1.gtimg.com/sh/00-2017/0310/left.png) no-repeat;margin-right:60px;}
+        .next-no-style{background:url(//mat1.gtimg.com/sh/00-2017/0310/right.png) no-repeat;margin-left:60px;}
+        .carousel-no-style li{margin:0 21px;width:250px;overflow:hidden;}
+        .bg6 .wrapCenter{width:1200px;padding-top:50px;}
+        .bg6 .item{background:#fff;padding-top:10px;padding-bottom:10px;}
+        .bg6 .item h2{font-size:24px;padding-bottom:10px;text-align:center;}
+        .bg6 .item p{font-size:18px;line-height:22px;color:#646464;text-align:justify;padding:0 5px;}
+        .bg6 .znTab ul{padding-left:48px;}
+        .bg6 .znTab{width:1000px;margin:0 auto;margin-top:20px;}
+        .bg6 .znTab li{cursor:pointer;font-weight:bold;margin-right:25px;padding-left:68px;height:42px;line-height:42px;background:url(//mat1.gtimg.com/sh/00-2017/0310/text1.png) no-repeat;float:left;color:#646464;font-size:30px;}
+        .bg6 .znTab .cur{background:url(//mat1.gtimg.com/sh/00-2017/0310/text2.png) no-repeat;color:#000;}
+        .bg6 .slideWrap .slideItem{display:none;}
+        .bg6 .slideWrap .active{display:block;}
+        .bg7 .wrapCenter{padding-top:50px;}
+        .shop_items .front{margin-top:0}
+        .shop_items .front img{margin:0px}
+        .shop_items .front h6{font-size:36px}
+        .shop_items .front span{font-size:14px;}
+        .shop_items .behind{margin-top:25px}
+        .shop_items .behind img{margin:6px}
+        .shop_items .behind h6{font-size:22px}
+        .shop_items .behind span{font-size:12px; margin:0;}
+        .shop_items .back{margin-top:40px}
+        .shop_items .back h6{font-size:12px}
+        .shop_items .back span{font-size:8px; margin:0;}
+        .shop_items{height:413px;padding:0;position:relative;z-index:1;display:block;}
+        .shop_items li{cursor:pointer;margin:0;padding:8px;list-style:none;position:absolute;z-index:1;display:none;border:1px solid #bbb;background:#fff;}
+        .shop_items img{border:0;vertical-align:bottom;width:580px;height:395px}
+        .shop_items span{display:none;position:absolute;left:0;right:0;bottom:0px;text-align:left;cursor:default;}
+        .shop_items h6{cursor:default;display:none;}
+        .shop_items a{cursor:default;text-decoration:none}
+        .shop_items em{font-style:normal;font-family:Verdana;font-weight:bold;color:#cc0000;}
+        .nav{padding-left:20px;padding-top:65px;position:fixed;left:50%;top:35%;margin-left:510px;background:url(//mat1.gtimg.com/sh/00-2017/0310/nav.png) no-repeat;width:178px;height:354px;}
+        .nav a{margin-bottom:9px;display:block;width:127px;height:37px;}
+        .bmImg{z-index:999;position:fixed;top:30%;left:50%;margin-left:212px;display:none;}
+        .bg2 .activeJS .codeImg{width:45%;margin:0 auto;padding-top:10px;}
+        .bg2 .activeJS .codeTip{text-align:center;}
+        .w100{width:100%;}
+    </style>
+</head>
+<body>
+<style>
+body{margin:0;}
+/*大申网迷你导航 v20120118 1.0.0 ryanguo*/
+#mini_nav_qq_wrap{width:100%;height:25px;background:url(http://mat1.gtimg.com/www/images/nav/mini_bg.png) top left repeat-x}
+#mini_nav_qq{width:960px;height:25px; margin:0 auto;padding:0;font-size:12px;font-family:"宋体","Arial Narrow";clear:both;}
+#mini_nav_qq div{color:#666;line-height:24px;}
+#mini_nav_qq .mini_nav_fl{float:left;}
+#mini_nav_qq ul,#mini_nav_qq li{margin:0;padding:0;list-style:none;}
+#mini_nav_qq .first{padding-left:4px;}
+#mini_nav_qq .first a{padding-right:13px;background:url(http://mat1.gtimg.com/www/images/nav/mini_arrow.png)  right -1px no-repeat;}
+#mini_nav_qq .end{border:none;}
+#mini_nav_qq ul{padding:7px 3px 0 0;}
+#mini_nav_qq li{float:left;padding:0 8px;*padding-top:1px;border-right:#ddd 1px solid;line-height:12px;color:#666;}
+#mini_nav_qq a{color:#666; text-decoration:none;}
+#mini_nav_qq a:visited{color:#666;}
+#mini_nav_qq a:hover{color:#666; text-decoration: underline;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari 3.0 and Opera 9 rules here */
+#mini_nav_qq{font-family:宋体, STSong;}
+}
+</style>
+<style type="text/css">
+#mbCarduserNotLogin {display:none;}
+</style>
+
+<div id="mini_nav_qq_wrap">
+<div id="mini_nav_qq">
+	<div class="mini_nav_fl" bossZone="miniNav">
+		<ul>
+			<li><a href="http://www.qq.com/" target="_blank">腾讯网首页</a></li>
+      <li><a href="http://sh.qq.com" target="_blank">腾讯新闻·上海首页</a></li>
+      <li><a href="http://www.qq.com/map/" target="_blank">网站导航</a></li>
+  <li><a href="http://sh.qq.com/aboutus.htm" target="_blank">关于我们</a></li>
+ <li>合作热线：021-26063770</li>
+
+
+     		</ul>
+	</div>
+	<style type="text/css">
+/*导航微博登录 v20120209 1.0.7 mblogin*/
+#site_nav_mblogin{float:right;height:25px;padding-right:8px;line-height:24px;color:#666;font-size:12px;font-family:"宋体","Arial Narrow",sans-serif;}
+#site_nav_mblogin div{float:left;}
+#site_nav_mblogin .mblog_logo{width:20px;height:24px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) -90px 5px no-repeat; }
+#site_nav_mblogin .mblog_logo span{display:none;}
+#site_nav_mblogin .mblog_login_info span{padding-right:12px;}
+#site_nav_mblogin .mblog_login_info em{font-family:Arial;font-style:normal;padding-right:12px;}
+#site_nav_mblogin .mblog_login_button span,#site_nav_mblogin .mblog_enter_button span{*padding-left:1px;_padding-left:1px;text-align:center;color:#fff;}
+#site_nav_mblogin .mblog_login_button,#site_nav_mblogin .mblog_enter_button{position:relative;z-index:10000;width:57px;height:17px;margin-top:2px;margin-right:12px;padding-top:2px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) 0 0 no-repeat;cursor:pointer;text-align:center;line-height:17px;overflow:visible;color:#fff;}
+#site_nav_mblogin .mblog_enter_button{display:none;}
+#site_nav_mblogin .mblog_login_text{*padding-top:1px;_padding-top:1px;}
+#site_nav_mblogin .mblog_loginout_text{display:none;*padding-top:1px;_padding-top:1px;}
+
+#site_nav_mblogin a{color:#666; text-decoration:none;}
+#site_nav_mblogin a:visited{color:#666;}
+#site_nav_mblogin a:hover{color:#666; text-decoration: underline;}
+#site_nav_mblogin .mblog_login_info em a,#site_nav_mblogin .mblog_login_info em a:visited,#site_nav_mblogin .mblog_login_info em a:hover{color:#0B3B8C}
+#site_nav_mblogin .mblog_login_info a.mbAtMe,#site_nav_mblogin .mblog_login_info a.mbAtMe:visited,#site_nav_mblogin .mblog_login_info a.mbAtMe:hover{color:#BD0A01;}
+#site_nav_mblogin .mblog_enter_button a,#site_nav_mblogin .mblog_enter_button a:visited,#site_nav_mblogin .mblog_enter_button a:hover{color:#fff;line-height:17px;}
+
+#site_nav_mblogin .mbCardUserInfo {position: absolute;z-index:999999;left:-160px; top:0;width:236px;margin-top: 26px; text-align:left;text-indent:0;overflow:visible;}
+#site_nav_mblogin .mbCardUserDetail div{line-height:18px;}
+#site_nav_mblogin .mbCardUserInfo{height:auto;padding:10px 24px 10px 10px;background:#ffffce;border:#f0e5ba 1px solid;color:#666;}
+#site_nav_mblogin .mbCardUserInfo .arrowBox{position:absolute;width:15px;height:8px;left:0;top:0;margin:-8px 0 0 180px;font-size:1px;line-height:1px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) 0 -30px no-repeat;celar:both;zoom:1;}
+#site_nav_mblogin .mbCardUserInfo .arrowBox div{font-size:1px;line-height:1px;}
+#site_nav_mblogin .mbCardUserInfo .mbClose {position:absolute;top:0;right:0;width:15px;height:15px;margin:4px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt_v3.png) 0 -45px no-repeat;font-size:1px;line-height:1px;cursor:pointer;}
+#site_nav_mblogin .mbCardUserInfo .mbClose span{display:none;}
+#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbTxt1,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbUserNick,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbFriends{color:#666;}
+#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg{padding-left:180px;text-align:left;}
+#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg a,#site_nav_mblogin .mbCardUserInfo .mbCardUserDetail .mbReg a:visited{color:#2b4a78;text-decoration:underline;}
+
+#site_nav_mblogin .mbCardUserInfo {-moz-border-radius: 6px;-moz-box-shadow: 2px 2px 2px #f0e5ba;-webkit-border-radius: 6px;-webkit-box-shadow: 2px 2px 2px #f0e5ba;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari 3.0 and Opera 9 rules here */
+#site_nav_mblogin{font-family:宋体, STSong;}
+}
+
+/*=S 浮动层 */
+.share_layer { overflow:hidden; padding:7px; position:absolute; z-index:999999;zoom:1;font-size:12px; font-family:Arial, Sans-Serif; }
+.share_layer ul, .share_layer ul li { list-style-type:none; }
+.share_layer img { border:0 none; }
+.share_layer a { text-decoration:none; }
+.share_layer a:hover { text-decoration:underline; }
+.share_layer button,.share_layer label { cursor:pointer; border:0 none; }
+.share_layer input,.share_layer  button { font-size:12px; font-family:Arial, Sans-Serif; }
+.share_layer_main{ border:1px solid #b5c1ca; background-color:#FAFCFF; position:relative; z-index:5}
+.share_layer_title { height:24px; background:#EEF4F6 url(//mat1.gtimg.com/www/images/nav/loginpop_tbg.png) repeat-x; cursor:move; border-bottom:1px solid #CED3E4; }
+.share_layer_title h3 { float:left; margin:0;padding:3px 0 0 12px; color:#666; font-size:13px;font-weight:normal; line-height:18px; overflow:hidden; font-family:Arial, Helvetica, sans-serif;}
+.share_layer_title .mblogo{ padding-left:24px;background:url(//mat1.gtimg.com/www/images/nav/wblogin_bt1.png) -84px 6px no-repeat;}
+.share_layer .bt_close { background:url(http://imgcache.qq.com/qzonestyle/qzone_app/app_news_share_v1/pop_bg.png) no-repeat 0 -39px; width:9px; height:10px;cursor:pointer; position:absolute; right:10px; top:11px; z-index:5px;}
+.share_layer_cont a:link, .share_layer_cont a:visited { color:#5F5F5F; text-decoration:underline; }
+.share_layer_cont a:hover, .share_layer_cont a:active { color:#494949; }
+.share_layer_cont { color:#000000; background-color:#FAFCFF;}
+.share_layer_hint { color:#9E9E9E; font-style:normal; }
+.global_tip_button { text-align:center; clear:both; width:100%;}
+.bt_tip_sure, .bt_tip_cancel { background-image:url(http://imgcache.qq.com/qzonestyle/qzone_app/app_news_share_v1/pop_bg.png); background-repeat:no-repeat; background-position:0 -58px; font-size:12px; line-height:19px; width:48px; height:23px; margin-right:6px; *overflow:visible;
+_padding-top:3px; _line-height:12px; cursor:pointer; }
+*:lang(zh) .bt_tip_sure, .bt_tip_cancel {padding-top /*\**/:4px\9}
+.bt_tip_cancel { color:#4D637F; background-color:#F3F4F5; background-position:-54px -58px; }
+.icon_hint_warn, .icon_hint_succeed { background:transparent url(http://imgcache.qq.com/qzonestyle/qzone_app/app_news_share_v1/pop_bg.png) no-repeat; display:-moz-inline-stack; display:inline-block; height:15px; width:15px; vertical-align:middle; }
+.icon_hint_warn { background-position:-39px -37px; _vertical-align:-2px; }
+.icon_hint_succeed { background-position:-18px -37px; }
+.layer_popup { background-color:#FFFFFF; border:2px solid #6792bc; }
+.icon_hint_warn span, .icon_hint_succeed span { display:none; }
+.share_layer .bg {position:absolute;top:0;left:0;height:100%;padding:500px;zoom:1;}
+.share_layer .del_fri{font-weight:bold;display:-moz-inline-stack;display:inline-block;line-height:9px;width:11px;height:10px;position:absolute;top:6px;right:10px;cursor:pointer; font-family:"Comic Sans MS","Verdana", cursive; color:#99ADBA;}
+.share_layer .del_fri:hover{text-decoration:none; color:#666666;}
+.share_layer_title .none { display:none !important; }
+/*=E 浮动层 */
+</style>
+	<div id="site_nav_mblogin" class="site_nav_mblogin" bossZone="mbLogin">
+		<div class="mblog_logo"><span>腾讯微博蒲公英</span></div>
+		<div class="mblog_login_info" id="mblog_logined_info"></div>
+		<div class="mblog_login_button" id="mblog_login_button"><span>登录微博</span><div class="mbCardUserInfo" id="mbCarduserNotLogin" style="display: none;">
+				<div class="arrowBox"><div class="arrow"></div></div>
+				<div class="mbClose"><a href="#"><span>关闭</span></a></div>
+				<div class="mbCardUserDetail">
+					<div class="mbConTxt">
+						<span class="mbTxt1">加入微博，记录点滴，分享感动，握手明星</span>
+					</div>
+					<div class="mbReg"><a target="_blank" href="http://t.qq.com?pref=qqcom.toptips">开通微博</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="mblog_enter_button" id="mblog_enter_button"><span>进入微博</span></div>
+		<div class="mblog_login_text" id="mblog_login_text"><a href="http://t.qq.com/reg/index.php?pref=qqcom.mininav" target="_blank">注册</a></div>
+		<div class="mblog_loginout_text" id="mblog_logout_text"><a href="javascript:void(0)" target="_blank">退出</a></div>
+	</div>
+
+<script src="//mat1.gtimg.com/www/mb/js/portal/mi.MiniNav_13090403.js" charset="utf-8"></script>
+
+
+<!--搜狗搜索-->
+<style type="text/css">
+#sosoSearch{width:154px;height:18px;float:right;margin-right:15px;display:inline;border:1px solid #d7d7d7;margin-top:5px;}
+#searchKey{width:129px;height:18px;float:left;border:0;margin:0;padding:0;}
+#searchBtn{width:24px;height:18px;float:right;border:0;text-indent:-9999px;cursor:pointer;background:url(//mat1.gtimg.com/www/images/qq2012/ztSougouBtn.png) no-repeat;}
+.soso-smart-m{position:absolute;z-index:9999;margin:0;background:#fff;border:1px solid #ccc;cursor:default;}
+.soso-smart-m td{font-size:13px;line-height:22px;font-family:"微软雅黑";}
+/* 未选中行的样式 */
+.soso-smart-a{}
+/* 选择行的样式 */
+.soso-smart-b{background:#D8ECFF;}
+/* 文本样式 */
+.soso-smart-c{padding-left:3px;white-space:nowrap;text-align:left;overflow:hidden;}
+</style>
+<form role="search" action="http://www.sogou.com/tx" id="sosoSearch" name="soso_search_box" method="get" target="_blank">
+	<input id="sogouSite" type="hidden" name="site" value="qq.com" />
+	<input type="text" id="searchKey" title="请输入关键词" name="query" x-webkit-speech x-webkit-grammar="builtin:translate" autocomplete="off" onfocus="if(this.value=='请输入关键词')this.value=''" />
+	<button id="searchBtn" aria-pressed="false" title="按下按钮，在搜狗中搜索相关内容" onClick="submit();bossSearch('submit',2537)"><span>搜索</span></button>
+</form>
+<script type="text/javascript">
+(function(d, fname, useSuggest,isChannelPage,pid) {
+	var frm = d.forms[fname], elems = frm.elements, input = elems['query'];
+	var IS_MSIE = navigator.userAgent.toLowerCase().indexOf('msie') != -1 && !window.opera;
+	var isIE6 = navigator.userAgent.toLowerCase().indexOf('msie 6.0') != -1;
+	var sHost = location.host||'www.qq.com',sitePrefix='www';
+	var CPID = new Array();
+	if(sHost){
+		var arr = sHost.replace(/\.qq\.com$/i,'').split('.');
+		sitePrefix = arr[0];
+		document.getElementById("sogouSite").value = sitePrefix + ".qq.com";
+	}
+	createHiddenInput('hdq',"sogou-wsse-b58ac8403eb9cf17-0100",false);
+	var scField = createHiddenInput('sourceid',"sugg",false);
+    var sub = document.getElementById("sub");
+	if(typeof sosoArticlKey != 'undefined' && sosoArticlKey.length){
+		setFieldValue(input,sosoArticlKey);
+	}
+	function createHiddenInput(name, value, disabled) {
+		if(elems[name]) {
+			elems[name].value = value;
+			if(disabled) elems[name].disabled = 'disabled';
+			else elems[name].removeAttribute('disabled');
+			return elems[name];
+		}
+		try{
+			var element = document.createElement('<input name="'+name+'" />');
+		}catch(e){}
+		
+		if(!element || element.nodeName.toUpperCase() != 'INPUT'){
+			var element = document.createElement('input');		
+		}
+		element.type = 'hidden';
+		element.name = name;
+		element.value = value;
+		if(disabled)
+			element.disabled = disabled;
+		frm.appendChild(element);
+		return element;
+	}
+
+	function disableHidden(inpt) {
+		inpt.disabled = 'disabled';
+	}	
+	function setFieldValue(field, val) {
+		field.value = val;
+	}
+	if(useSuggest) {
+		var fnToRun = function() {
+			var fileLoaded = function() {
+			  if (IS_MSIE && ac.readyState != "complete" && ac.readyState != "loaded") return;
+			  if(!sososmart) return;
+			  var divs = frm.getElementsByTagName('div');
+			  var inputWrap;
+			  for(var i=0,len=divs.length;i<len;i++){
+			  	if(divs[i].className != 'inputWarp') continue;
+			  	inputWrap = divs[i];
+			  	break;
+			  }
+			  sososmart.init(frm,input,true,'',true,inputWrap,null,null,CPID[0],scField);
+			}
+			var ac = d.createElement('script');
+			ac.type = 'text/javascript';
+			ac.async = true;
+			ac.src = '//mat1.gtimg.com/www/js/qq2012/suggestionZT.v1.0.1.js';
+			var s = d.getElementsByTagName('script')[0];
+			
+			if(IS_MSIE && !window.opera) {
+				ac.onreadystatechange = fileLoaded;
+			} else {
+				ac.onload = fileLoaded;
+			}
+			s.parentNode.insertBefore(ac, s);
+		};
+		if(IS_MSIE){
+			if(window.attachEvent){
+				window.attachEvent('onload',fnToRun,false);
+			}else{
+				window.addEventListener('load',fnToRun);
+			}
+		}else{
+			fnToRun();
+		}
+	}
+})(document, 'soso_search_box', true,true, "sogou-wsse-b58ac8403eb9cf17-0100");
+
+
+function bossSearch(zoneID,bossID){
+    //var bossID = 2537; 
+    try{		
+		var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+		var pvid=(a==null?"":"F"+unescape(a[2]));
+		a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+		var iQQ=(a==null?"":unescape(a[2]));
+		var iurl = 'http://btrace.qq.com/kvcollect?BossId='+bossID+'&sOp='+zoneID+'&sBiz=zt.qq.com&iQQ='+iQQ+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+		var gImageSerach = new Image(1,1);
+		gImageSerach.src = iurl;
+	}catch(e){}
+}
+
+function smartboxClick(){
+	bossSearch("smartbox",2537)
+}
+</script><!--[if !IE]>|xGv00|b59ac84256a86fb6e209deab0d5021ea<![endif]-->
+</div>
+</div><!--[if !IE]>|xGv00|10371c0a92340ade2c201a8cd93629ac<![endif]-->
+<div class="wrap">
+    <div class="bg1"></div>
+    <div class="bg2">
+        <div class="wrapCenter clearfix">
+            <div id="video" class="fl video"></div>
+            <div class="activeJS fr">
+                <h2>太姥山优秀游记评选中</h2>
+                <p>
+                    “从上海魔都来，到太姥仙都去”主题活动已圆满落下帷幕！现有50篇精彩游记等你来看！快来跟着这些游记游览太姥山吧！5000元现金大奖已备好，就差你的一票啦！更有福鼎特产等你拿哦！
+                </p>
+                <p class="codeImg"><img class="w100" src="//mat1.gtimg.com/sh/00-2017/0310/code.png" /></p>
+                <p class="codeTip">扫一扫二维码<br/>即可参与投票哦</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg3" id="rule">
+        <div class="wrapCenter clearfix">
+            <div class="rule fl">
+                <ul>
+                    <li class="li1">
+                        “从上海魔都来，到太姥仙都去”主题活动是由太姥山景区主办的免费线下体验活动，本次活动招募50名体验师。</li>
+                    <li class="li2">
+                       体验师可免费参与太姥山三天两夜游，3月24日统一游玩。活动中需听从工作人员安排，不得擅自脱队。
+                    </li>
+                    <li class="li3">
+                        体验结束7天内，需在大申社区输出原创体验报告，报告内容至少含有20张高清美图+500个文字。体验报告参与投票评选及专家评审，根据体验报告的图文质量选出3名优秀体验师，分别将获得5000元，3000元，2000元的现金奖励。
+                    </li>
+                    <li class="li4">
+                        参加本活动，即默认将产生的图片、游记免费授予太姥山景区、腾讯大申网使用，并授权主办方免费使用肖像。
+                    </li>
+                    <li class="li5">
+                        本次招募，如遇极端天气，线下活动将延后，日期另行通知。50个体验师资格名单将于3月22日在上海玩乐微信（lvyouSH）公布。
+                    </li>
+                </ul>
+            </div>
+            <div class="prize fr">
+                <p>
+                    最高奖为<br/>
+                    5000元现金大奖
+                </p>
+                <p>
+                    第二名<br/>
+                    3000元
+                </p>
+                <p>
+                    第三名<br/>
+                    2000元
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg4">
+        <div class="wrapCenter clearfix">
+            <div class="day">
+                <h2>第一天</h2>
+                <p>
+                    美食搜索大比拼<br/>
+                    赏海岸线独有围网风光
+                </p>
+            </div>
+            <div class="day">
+                <h2>第二天</h2>
+                <p>
+                    游太姥山享海鲜大餐<br/>
+                    创意照大比拼玩出天性
+                </p>
+            </div>
+            <div class="day">
+                <h2>第三天</h2>
+                <p>
+                    海浪沙滩浪漫回忆<br/>
+                    品福鼎白茶享福鼎文化
+                </p>
+            </div>
+        </div>
+        <div id="yxtm"></div>
+    </div>
+    <div class="bg5">
+        <div class="wrapCenter clearfix">
+            <ul class="list fl">
+                <li class="cur">太姥山岳</li>
+                <li>晴川海滨</li>
+                <li>福瑶列岛</li>
+                <li>九鲤溪瀑</li>
+            </ul>
+            <div class="imgWrap fr">
+                <div class="box" style="display:block;">
+                    <a class="text1" href="http://sh.qq.com/a/20170309/035483.htm#p=2" target="_blank">
+                        <img width="650" height="380" src="http://img1.gtimg.com/sh/pics/hv1/123/219/2192/142590768.jpg" />
+                        <p class="text2">
+                            山岳景区是太姥山整个风景名胜区的精华所在，这里峰林簇簇、怪石累累、岩洞层层、云雾漫漫…<i style="color:#fff;" href="javascript:;" target="_blank">【详情】</i>
+                        </p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a class="text1" href="http://sh.qq.com/a/20170309/035483.htm#p=7" target="_blank">
+                        <img width="650" height="380" src="http://img1.gtimg.com/sh/pics/hv1/124/219/2192/142590769.jpg" />
+                        <p class="text2">
+                            晴川海滨景区长达30多公里的海岸线上散布着牛郎岗、小白鹭等众多细软洁净的沙滩，这里海水湛蓝，远离尘嚣，是海滨旅游的好去处…<i style="color:#fff;" href="javascript:;" target="_blank">【详情】</i>
+                        </p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a class="text1" href="http://sh.qq.com/a/20170309/035483.htm#p=9" target="_blank">
+                        <img width="650" height="380" src="http://img1.gtimg.com/sh/pics/hv1/121/219/2192/142590766.jpg" />
+                        <p class="text2">
+                            在福瑶列岛景区内，有着“海上明珠”大嵛山岛，它是全国十大最美海岛之一。吹着南国海岛的海风，枕着北国万亩草场入眠，妙不可言…<i style="color:#fff;" href="javascript:;" target="_blank">【详情】</i>
+                        </p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a class="text1" href="http://sh.qq.com/a/20170309/035483.htm#p=11" target="_blank">
+                        <img width="650" height="380" src="http://img1.gtimg.com/sh/pics/hv1/122/219/2192/142590767.jpg" />
+                        <p class="text2">
+                            九鲤溪景区是太姥山山海川岛景观中“川”的重要组成部分，溪两岸青山环绕，怪石嶙峋，乘坐竹筏漂流而下，如在画中…<i style="color:#fff;" href="javascript:;" target="_blank">【详情】</i>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="cygl"></div>
+    </div>
+    <div class="bg6">
+        <div class="wrapCenter">
+            <div class="slideWrap clearfix">
+                <!--b:舌尖上的福鼎-->
+                <div class="slideItem slideItem0 active">
+                    <div class="prev-no-style prev-next-style fl"></div>
+                    <div class="carousel-no-style fl">
+                        <ul>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/017702.htm#p=1" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/230/223/2192/142591895.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>福鼎肉片</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/017702.htm#p=2" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/228/223/2192/142591893.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>蜜汁鸡翅</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/017702.htm#p=3" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/229/223/2192/142591894.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>面茶糕</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/017702.htm#p=4" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/227/223/2192/142591892.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>福鼎煎包</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/017702.htm#p=5" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/231/223/2192/142591896.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>畲家乌米饭</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/017702.htm#p=6" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/232/223/2192/142591897.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>荷香小笼包</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/017702.htm#p=7" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/230/223/2192/142591895.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>福鼎鱼片</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/017702.htm#p=8" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/233/223/2192/142591898.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>芋泥</h2>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="next-no-style prev-next-style fl"></div>
+                </div>
+                <!--e:舌尖上的福鼎-->
+
+                <!--b:地方特产-->
+                <div class="slideItem slideItem1">
+                    <div class="prev-no-style prev-next-style fl"></div>
+                    <div class="carousel-no-style fl">
+                        <ul>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/030002.htm#p=1" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/148/224/2192/142592068.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>白茶</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/030002.htm#p=2" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/149/224/2192/142592069.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>福鼎槟榔芋</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/030002.htm#p=3" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/151/224/2192/142592071.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>福鼎四季柚</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/030002.htm#p=4" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/152/224/2192/142592072.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>桐江鲈鱼</h2>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="next-no-style prev-next-style fl"></div>
+                </div>
+                <!--e:地方特产-->
+
+                <!--b:交通指南-->
+                <div class="slideItem slideItem2">
+                    <div class="prev-no-style prev-next-style fl"></div>
+                    <div class="carousel-no-style fl">
+                        <ul>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/027911.htm" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/196/224/2192/142592116.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>快速便捷之旅</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/027911.htm" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/194/224/2192/142592114.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>经济舒适之旅</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/027911.htm" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/197/224/2192/142592117.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>自由惬意之旅</h2>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="next-no-style prev-next-style fl"></div>
+                </div>
+                <!--e:交通指南-->
+
+                <!--b:线路推荐-->
+                <div class="slideItem slideItem3">
+                    <div class="prev-no-style prev-next-style fl"></div>
+                    <div class="carousel-no-style fl">
+                        <ul>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/029402.htm#p=1" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/106/225/2192/142592281.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>一日游推荐线路</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/029402.htm#p=2" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/103/225/2192/142592278.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>二日特色游推荐线路A</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/029402.htm#p=3" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/108/225/2192/142592283.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>二日特色游推荐线路B</h2>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://sh.qq.com/a/20170310/029402.htm#p=4" target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/111/225/2192/142592286.jpg" style="width:250px;height:300px;" /></a>
+                                <div class="item">
+                                    <h2>深度三日游推荐线路</h2>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="next-no-style prev-next-style fl"></div>
+                </div>
+                <!--e:线路推荐-->
+            </div>
+
+            <!--出游攻略tab-->
+            <div class="znTab">
+                <ul class="clearfix">
+                    <li class="cur">舌尖上的福鼎</li>
+                    <li>地方特产</li>
+                    <li>交通指南</li>
+                    <li>线路推荐</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="bg7" id="jctj">
+        <div class="wrapCenter">
+            <ul id="shop_items" class="shop_items clearfix">
+                <li><a href="javascript:;  " target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/143/49/2194/142677488.jpg"alt="0" /></a></li>
+                <li><a href="javascript:;  " target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/142/226/2192/142592572.jpg" alt="1" /></a></li>
+                <li><a href="javascript:;  " target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/143/226/2192/142592573.jpg" alt="2" /></a></li>
+                <li><a href="javascript:;  " target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/145/226/2192/142592575.jpg"alt="3" /></a></li>
+                <li><a href="javascript:;  " target="_blank"><img src="http://img1.gtimg.com/sh/pics/hv1/147/226/2192/142592577.jpg"alt="4" /></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!--导航-->
+    <div class="nav">
+        <a class="bmBt" href="javascript:;"></a>
+        <a href="#rule"></a>
+        <a href="#yxtm"></a>
+        <a href="#cygl"></a>
+        <a href="#jctj" style="margin-bottom:0px;"></a>
+        <a href="#top"></a>
+    </div>
+
+    <p class="bmImg"><img src="//mat1.gtimg.com/sh/00-2017/0310/bmImg.png" /></p>
+</div>
+
+
+<script src="http://h5.dashenw.cn/hp/public/js/jquery-1.8.3.min.js"></script>
+<script language="javascript" src="http://qzs.qq.com/tencentvideo_v1/js/tvp/tvp.player.js"></script>
+<script src="//mat1.gtimg.com/sh/2016/0113_usx/jquery.jcarousellite.min.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/sh/0page/js/focusImg.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/sh/0page/js/slideImg.js"></script>
+<script src="//mat1.gtimg.com/sh/images/fasion/v1/jquery.boutique_min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    /*视频js*/
+    var video = new tvp.VideoInfo();
+    video.setVid("u0377g9iyni");
+    video.setTitle("太姥山");
+    var player = new tvp.Player(665,375);
+    player.setCurVideo(video);
+    player.addParam("adplay","0");
+    player.addParam("showcfg","0");
+    player.addParam("autoplay","0");
+    player.addParam("pic","http://img1.gtimg.com/sh/pics/hv1/12/223/2192/142591677.jpg");
+    player.addParam("flashskin","http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf")
+    player.write("video");
+
+    $(function(){
+        $(".bg5 .list li").on("click",function(){
+            var index = $(this).index();
+            $(".bg5 .list li").removeClass("cur");
+            $(this).addClass("cur");
+
+            $(".imgWrap .box").hide();
+            $(".imgWrap .box").eq(index).show();
+        });
+        $('#imgPlay').maiPlayer({speedSwitch:3000});//焦点图
+        $('#shop_items').boutique({autoplay:true ,autointerval:4000});
+
+        getSlide(0);
+
+        $(".znTab li").on("click",function(){
+            $(".znTab li").removeClass("cur");
+            $(this).addClass("cur");
+            var index = $(this).index();
+
+            $(".slideWrap .slideItem").removeClass("active");
+            $(".slideWrap .slideItem").eq(index).addClass("active");
+            getSlide(index);
+        });
+
+        $(".bmBt").on("mouseenter",function(){
+            $(".bmImg").show();
+        });
+        $(".bmBt").on("mouseleave",function(){
+            $(".bmImg").hide();
+        })
+    });
+    var getSlide = function(num){
+        var obj = $(".slideWrap .slideItem").eq(num);
+        /*obj.find("ul").css("left",-876+"px");*/
+        obj.find(".carousel-no-style").jCarouselLite({
+            btnNext:".slideItem"+num+" .next-no-style",
+            btnPrev:".slideItem"+num+" .prev-no-style"
+        });
+    }
+</script>
+
+<script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+<style>
+.tcopyright {width:960px;margin:0 auto;padding:8px 0;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both;}
+.tcopyright .en{font-family:Arial;}
+.tcopyright a{color:#333;text-decoration: none;}
+.tcopyright a:hover{color:#bd0a01;text-decoration: underline;}
+</style>
+<div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+	<div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+	</div>
+  	<div class="en">Copyright &copy; 1998 - 2020 Tencent. All Rights Reserved</div>
+    <div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+	</div>
+</div><!--[if !IE]>|xGv00|b6614ae390f3ba6a8cbcc269055b42da<![endif]-->
+<!--pgv 20160801 by 39815--><script charset="gbk" src="//mat1.gtimg.com/ping.js"></script>
+
+<script>!function(t,e){"use strict";function a(){var t,e,a=(""+p.catalog_full).replace(/-/g,".").replace(/_/g,"-");p.topic&&p.topic.name&&p.topic.name.length>0?(t="L.",e="Z."+a+"."+p.topic.name):(t="L."+a,e="Z.");var n="W."+p.type,o="M."+p.tpl.type+p.tpl.stype,i="P."+(""+p.site).replace(/_/g,"-"),c="F."+f,l=t+"_"+e+"_"+n+"_"+o+"_"+i+"_"+c;l&&r({pgUserType:l})}function n(t){o(e,"click",function(e){var a=e.target;"img"===a.tagName&&(a=a.parentNode);var n=a.tagName.toLowerCase(),o=a.getAttribute("href");if(!o||o.indexOf("qqcom_pgv_from=")>-1)return!1;if("a"===n&&a.hostname&&a.hostname.indexOf("qq.com")>-1){var r=o+(a.search?"&":"?")+"qqcom_pgv_from="+t;a.setAttribute("href",r)}})}function o(a,n,o){var r=function(a){return a=a||t.event,a.target||(a.target=a.srcElement||e),3===a.target.nodeType&&(a.target=a.target.parentNode),a};return a.addEventListener?a.addEventListener(n,function(t){o.call(t.currentTarget,r(t))},!1):a.attachEvent("on"+n,function(t){o.call(a,r(t))}),!0}if(!t||!t.location||"function"!=typeof t.pgvMain)return!1;var r=function(){var e=arguments;setTimeout(function(){t.pgvMain.apply(this,e)},0)},i=location.search.replace(/adtag=client\.qq\.\d+_\.0/i,"from=tips"),c=["aio","tips"],f="def";location.search.indexOf("qqcom_pgv_from=")>-1&&(f=location.host+location.pathname+location.search);var p=t.ARTICLE_INFO||null,l=p&&p.catalog_full;if(l)for(var g=0;g<c.length;g+=1)if(i.indexOf(c[g])>-1){n(c[g]);break}l&&a(),l||("undefined"!=typeof whatCatalog&&(t.pvCSTM=t.whatCatalog),r({pgUserType:"F."+f}))}(window,document);</script><!--/pgv 20160801-->
+<!-- 视频来源ptag --><script src="//mat1.gtimg.com/v/ptag/ptag_1.2.js" async="true"></script>
+<!--[if !IE]>|xGv00|a1d505b81f0731c97405c05986e06bb8<![endif]-->
+<!--[if !IE]>|xGv00|e495268dae03726664c77551e8df25e2<![endif]-->
+</body>
+</html><!--[if !IE]>|xGv00|78cdd5cd4bbf6f93ac83f7973a199661<![endif]-->

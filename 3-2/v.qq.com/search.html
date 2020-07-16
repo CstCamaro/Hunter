@@ -1,0 +1,3639 @@
+<!DOCTYPE html><!--[if lte IE 6 ]> <html class="ie ie6 lte_ie7 lte_ie8" lang="zh-CN"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie ie7 lte_ie7 lte_ie8" lang="zh-CN"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie ie8 lte_ie8" lang="zh-CN"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9" lang="zh-CN"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="zh-CN"> <!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="腾讯视频搜索结果页" />
+<meta name="keywords" content="腾讯视频 搜索 搜全网 全网搜" />
+<title>搜索 - 腾讯视频</title>
+<script type="text/javascript">
+var search_spe_words = {
+'快乐elife' : {'wurl':'http://v.qq.com/elife/','wcase':'3'},'快乐elife 连续剧' : {'wurl':'http://v.qq.com/elife/','wcase':'1'}
+};
+
+(function(){
+var getUrlParam = function(p, u) {
+u = u || document.location.toString();
+var oRegex = new RegExp('[\?&#]' + p + '=([^&#]+)', 'i');
+var oMatch = oRegex.exec(u);
+if (oMatch && oMatch.length > 1)
+return oMatch[1];
+return '';
+};
+var k = getUrlParam('ms_key');
+k = decodeURIComponent(k.replace(/(^\+*)|(\+*$)/g, '').replace(/\++/g, '+').replace(/\+/g, "%20"));
+k = k.toLowerCase();
+if(typeof(search_spe_words[k]) != 'undefined'){
+var o = search_spe_words[k];
+if(o.wurl &&((o.wcase & 0x1)>0)){
+window.location.href = o.wurl;
+}
+}
+})();
+window._speed_search = {};
+window._speed_search.page_start = (new Date()).valueOf();
+</script>
+
+
+
+<link rel="stylesheet" href="http://imgcache.gtimg.cn/tencentvideo_v1/vstyle/web/v3/style/base.css?v=20150428&max_age=86400" />
+<link rel="stylesheet" href="http://imgcache.gtimg.cn/tencentvideo_v1/vstyle/web/v3/style/search/search.css?v=20150428&max_age=86400" />
+
+<!--[if IE 6]>
+<script type="text/javascript">document.execCommand("BackgroundImageCache", false, true);</script>
+<![endif]-->
+<script type="text/javascript">
+try{document.domain="qq.com";}catch(e){}
+function picerr(obj,i){
+obj.onerror=null;
+obj.src="http://imgcache.gtimg.cn/tencentvideo_v1/vstyle/web/v3/style/images/nopic/"+(i||1)+".jpg";
+}
+</script>
+<script type="text/javascript">
+function picerr2(obj,i){
+obj.onerror=function (){
+picerr(obj, i);
+};
+obj.src=obj.src.replace("160_90_3", "1");
+obj.setAttribute("ll_src", obj.src);
+}
+</script>
+</head>
+<body class="page_search page_search_film">
+
+<!--头部 开始-->
+<div class="site_head_simple site_head_simple_promotion" id="head_v3">
+	<div class="head_inner">
+
+		<h1 class="site_logo"><a href="http://v.qq.com/" class="link_logo"><strong class="link_inner">腾讯视频</strong></a></h1>
+
+      <div class="promotion_logo">
+          
+        
+    <a target="_blank" href="http://v.qq.com/tv/p/topic/jztkc/index.html" class="link_promotion">
+        <img src="http://puui.qpic.cn/tv/0/4357473_4560/0">
+        <span class="link_inner">九州天空城</span>
+    </a>
+    <!--[if !IE]>|xGv00|2e82cd1af353ed94e97da9717042960c<![endif]-->
+      </div>
+		<!-- 导航 开始 -->
+		<div class="navigation_simple">
+			<div class="navigation_main">
+				<div class="navigation_inner cf">
+					 
+    
+
+    <ul class="navigation_area">    <li class="list_item">
+		<a target="_blank" href="http://v.qq.com/movie" _hot="{pagetype}.mininav.movie" class="link_nav"><span class="link_inner">电影</span><i class="nav_sign"></i></a>
+	</li>    <li class="list_item">
+		<a target="_blank" href="http://v.qq.com/tv" _hot="{pagetype}.mininav.tv" class="link_nav"><span class="link_inner">电视剧</span><i class="nav_sign"></i></a>
+	</li>    <li class="list_item">
+		<a target="_blank" href="http://v.qq.com/variety" _hot="{pagetype}.mininav.variety" class="link_nav"><span class="link_inner">综艺</span><i class="nav_sign"></i></a>
+	</li>    </ul><!--[if !IE]>|xGv00|637e81d9f45a288bfb530c146ca4d5ec<![endif]-->
+					 
+    
+
+    <ul class="navigation_area">    <li class="list_item">
+		<a target="_blank" href="http://v.qq.com/ent/" _hot="{pagetype}.mininav.ent" class="link_nav"><span class="link_inner">娱乐</span><i class="nav_sign"></i></a>
+	</li>    <li class="list_item">
+		<a target="_blank" href="http://v.qq.com/music/" _hot="{pagetype}.mininav.mv" class="link_nav"><span class="link_inner">音乐</span><i class="nav_sign"></i></a>
+	</li>    <li class="list_item">
+		<a target="_blank" href="http://v.qq.com/cartoon/" _hot="{pagetype}.mininav.cartoon" class="link_nav"><span class="link_inner">动漫</span><i class="nav_sign"></i></a>
+	</li>    </ul><!--[if !IE]>|xGv00|930ea97db857b757f914c41983b7e2a1<![endif]-->
+					 
+    
+
+    <ul class="navigation_area navigation_area_last">    <li class="list_item">
+		<a target="_blank" href="http://film.qq.com/" _hot="{pagetype}.mininav." class="link_nav"><span class="link_inner">VIP影院</span><i class="nav_sign"></i></a>
+	</li>    <li class="list_item">
+		<a target="_blank" href="http://v.qq.com/tv/yingmei/" _hot="{pagetype}.mininav." class="link_nav"><span class="link_inner">英美剧</span><i class="nav_sign"></i></a>
+	</li>    <li class="list_item">
+		<a target="_blank" href="http://2016.qq.com/video/" _hot="{pagetype}.mininav." class="link_nav"><span class="link_inner">奥运会</span><i class="nav_sign"></i></a>
+	</li>    </ul><!--[if !IE]>|xGv00|865f579c4e47ca5bc1e4f0957ebc06bf<![endif]-->
+				</div>
+				<div class="navigation_more" data-hovercls="navigation_more_hover" id="modNavChannels">
+					<a href="javascript:;" class="link_more" id="modSimpleNavMore"><span class="more_inner">更多</span><i class="triangle_right"></i></a>
+					<div class="pop_more">
+					
+    
+<div class="pop_cont">
+	<ul class="pop_list">
+<li class="list_hide"><a target="_blank" href="http://film.qq.com" class="pop_link" tabindex="-1" _hot="{pagetype}.mini.other.hlw"><span class="link_inner">好莱坞</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/sports/" _hot="{pagetype}.mini.other.1" class="pop_link"><span class="link_inner">体育</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/dv/" _hot="{pagetype}.mini.other.2" class="pop_link"><span class="link_inner">微电影</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/doco/" _hot="{pagetype}.mini.other.3" class="pop_link"><span class="link_inner">纪录片</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/fashion/" _hot="{pagetype}.mini.other.4" class="pop_link"><span class="link_inner">时尚</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/rank/index/-1_-1_-1.html" _hot="{pagetype}.mini.other.5" class="pop_link"><span class="link_inner">排行榜</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/finance/" _hot="{pagetype}.mini.other.6" class="pop_link"><span class="link_inner">财经</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/tv/korea/" _hot="{pagetype}.mini.other.7" class="pop_link"><span class="link_inner">韩剧</span></a></li>			</ul>
+			<ul class="pop_list"><li class="list_hide"><a target="_blank" href="http://v.qq.com/tv/yingmei/" class="pop_link" tabindex="-1" _hot="{pagetype}.mini.other.atv"><span class="link_inner">英美剧</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/news/" _hot="{pagetype}.mini.other.8" class="pop_link"><span class="link_inner">新闻</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/games/" _hot="{pagetype}.mini.other.9" class="pop_link"><span class="link_inner">游戏</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/life/" _hot="{pagetype}.mini.other.10" class="pop_link"><span class="link_inner">生活</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/travel/" _hot="{pagetype}.mini.other.11" class="pop_link"><span class="link_inner">旅游</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/videoplus/" _hot="{pagetype}.mini.other.12" class="pop_link"><span class="link_inner">原创</span></a></li>	   <li><a target="_blank" href="http://class.qq.com/" _hot="{pagetype}.mini.other.13" class="pop_link"><span class="link_inner">精品课</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/class/" _hot="{pagetype}.mini.other.14" class="pop_link"><span class="link_inner">微讲堂</span></a></li>			</ul>
+			<ul class="pop_list"><li class="list_hide"><a target="_blank" href="http://v.qq.com/program/" class="pop_link" tabindex="-1" _hot="{pagetype}.mini.other.program"><span class="link_inner">腾讯出品</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/fun/" _hot="{pagetype}.mini.other.15" class="pop_link"><span class="link_inner">搞笑</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/paike/" _hot="{pagetype}.mini.other.16" class="pop_link"><span class="link_inner">拍客</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/baby/index.html" _hot="{pagetype}.mini.other.17" class="pop_link"><span class="link_inner">母婴</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/x/live/index.html" _hot="{pagetype}.mini.other.18" class="pop_link"><span class="link_inner">直播</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/tech/" _hot="{pagetype}.mini.other.19" class="pop_link"><span class="link_inner">科技</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/livemusic/" _hot="{pagetype}.mini.other.20" class="pop_link"><span class="link_inner">演唱会</span></a></li>	   <li><a target="_blank" href="http://v.qq.com/child/" _hot="{pagetype}.mini.other.21" class="pop_link"><span class="link_inner">少儿</span></a></li>    </ul>
+</div><!--[if !IE]>|xGv00|6dca447023cc9743191c1b2d7aabf40f<![endif]-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 导航 结束 -->
+		<div class="mod_search">
+			<form action="http://v.qq.com/search.html" method="get" target="_blank" class="search_form cf" name="sform" id="sform">
+				<div class="search_inner" role="search">
+					<label class="search_label" for="keywords">搜索关键词</label>
+					<i class="ico_search"></i>
+					<input type="hidden" name="pagetype" value="3" id="hid_srh_p">
+					<input type="hidden" name="stj2" value="search.search" id="searchbox_hid_tj2btn">
+					<input type="hidden" name="stag" value="txt.index" id="searchbox_hid_stag">
+					<input type="text" id="iWord" class="search_ipt" name="ms_key" maxlength="40" value="战狼2" autocomplete="off" placeholder ="战狼2" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="zh-CN" onfocus='if((typeof txv == "undefined" || typeof txv.common == "undefined" || !txv.common.initPageFlag) && this.value=="战狼2"){this.value="";}' onblur='if((typeof txv == "undefined" || typeof txv.common == "undefined" || !txv.common.initPageFlag) && this.value==""){this.value="战狼2";}' /><!--[if !IE]>|xGv00|85fc9e309c6a3ea1f0a4af3706478794<![endif]-->
+					<button class="search_btn" type="submit" _hot="{pagetype}.mini.search"><span class="btn_inner">搜索</span></button>
+
+					<!-- 搜索提示浮层 开始 -->
+					<div class="search_suggest_wrap" style="display: none;" id="modHeadSearchSuggest">
+						<div class="mod_pop mod_pop_suggest" style="display: none;" id="mod_keywords_list">
+						<ul id="sgt_list" style="display: none;"></ul>
+						</div>
+					</div>
+					<!-- 搜索提示浮层 结束 -->
+				</div>
+				<!-- 顶部搜索框 结束 -->
+			</form>
+		</div>
+
+		<!-- 快捷入口 开始 -->
+		<div class="mod_quick cf">
+			<div class="quick_item quick_history" id="modHistory">
+				<a href="http://v.qq.com/u/history/" class="quick_link _checklogin" target="_blank"  id="toggleHistory" _hot="{pagetype}.mini.history"><i class="ico_history_26"></i><span class="quick_txt">看过</span><i class="divide"></i></a>
+
+				<!-- 历史播放浮层 开始 -->
+				<div class="mod_quick_pop mod_pop_history" id="history_pop">
+					<div class="quick_pop_inner">
+						<i class="triangle_up triangle_up_wrap"><i class="triangle_up"></i></i>
+						<div class="pop_info_content" id="modHistoryContent">											
+						</div>
+					</div>
+				</div>
+				<!-- 历史播放浮层 结束 -->
+			</div>
+			<div class="quick_item quick_attention" id="mod_head_favorites">
+				<a href="http://v.qq.com/u/playlist.html" target="_blank" class="quick_link _checklogin" id="mod_head_favorites_trigger" _hot="{pagetype}.mini.follow"><i class="ico_collect_26"></i><span class="quick_txt">看单</span><i class="divide"></i></a>
+
+				<!-- 收藏列表浮层 开始 -->
+				<div class="mod_quick_pop mod_pop_attention" id="mod_head_favorites_pop">
+					<div class="quick_pop_inner">
+						<i class="triangle_up triangle_up_wrap"><i class="triangle_up"></i></i>
+						<div class="pop_info_content" id="mod_head_favorites_content">
+						</div>
+					</div>
+				</div>
+				<!-- 收藏列表浮层 结束 -->
+			</div>
+			<div class="quick_item quick_upload" id="mod_head_upload">
+				<a href="http://v.qq.com/u/upload.html" target="_blank" class="quick_link _checklogin" _hot="{pagetype}.mini.upload" id="mod_head_upload_trigger"><i class="ico_upload_26"></i><span class="quick_txt">上传</span><i class="divide"></i></a>
+				<div class="mod_quick_pop mod_pop_upload" id="mod_head_upload_pop">
+					<div class="quick_pop_inner">
+						<i class="triangle_up triangle_up_wrap"><i class="triangle_up"></i></i>
+						<div class="pop_info_content" id="mod_head_upload_content">
+							<!-- 上传列表内容 开始 -->
+							<ul class="head_upload_list">
+								<li class="item"><i class="icon_upload"></i><a href="http://v.qq.com/boke/upload.html" target="_blank" class="inner" _hot="{pagetype}.mini.popupload">上传视频</a></li>
+								<li class="item"><i class="icon_vmanage"></i><a href="http://v.qq.com/u/videos.html" target="_blank" class="inner" _hot="{pagetype}.mini.popguanli">视频管理</a></li>
+							</ul>
+							<!-- 上传列表内容 结束 -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="quick_item quick_user" id="mod_head_user">
+				<a href="http://v.qq.com/u/" class="quick_link _checklogin" _hot="{pagetype}.mini.mytv" id="mod_head_notice_trigger"><img src="http://imgcache.gtimg.cn/tencentvideo_v1/vstyle/web/v3/style/images/default_avatar.png" data-type="avatar" data-avatarsize="40"><i class="ico_vip_grey" data-type="viplogo" style="display:none;"></i><i class="icon_account_qq20" data-type="account_type_logo" style="display: none;"></i><sup class="dot_notice" id="mod_nav_user_notice_dot" style="display:none;"></sup></a>
+				<div class="mod_quick_pop mod_pop_user" id="mod_head_notice_pop">
+					<div class="quick_pop_inner pop_info_main">
+						<i class="triangle_up triangle_up_wrap"><i class="triangle_up"></i></i>
+						<div class="pop_info_content">
+
+							<div class="quick_pop_user">您好，<a href="http://v.qq.com/u/" class="user_name _nickname"></a><a href="javascript:;" class="link_quit" title="退出" data-type="logout">【退出】</a></div>
+<div class="quick_pop_account" id="mod_head_vipInfo" style="display:none;">
+</div>
+<div class="quick_pop_btnopen" id="mod_head_vipPay" style="display:none;">
+	<a href="javascript:;" class="btn_open">开通好莱坞会员</a>
+</div>							
+<div class="quick_pop_moneybag" id="mod_head_moneybag" style="display:none">
+    <div class="quick_pop_moneybag_in">
+        <h4>钱包余额：</h4>
+        <ul class="cf">
+            <li><a href="http://v.qq.com/u/wallet/" class="link"><i class="icon-diamond"></i><span class="text _diamond">0 钻石</span></a></li>
+            <li class="last"><a href="http://v.qq.com/u/wallet/" class="link"><i class="icon-vcoin"></i><span class="text _vcoin">0 V币</span></a></li>
+        </ul>
+    </div>
+</div>
+							<div class="info_content_inner"  id="mod_head_notice_content"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 快捷入口 结束 -->
+	</div>
+	<div class="head_bottom"><div class="inner"></div></div>
+</div>
+<!--[if !IE]>|xGv00|881fec3858eb6d409029476544272617<![endif]-->
+<!--头部 结束-->
+
+<div class="site_container">
+<!--搜索框 S-->
+<!--要显示智能搜索提示，加上类open-->
+<div class="mod_custom_header cf" id="modCustomHeader">
+<a href="http://v.qq.com/voice/" class="search_logo" title="中国好声音·第三季" target="_blank" _hot="search.voice" vmd="searchbar_voice" _log_sec="4">中国好声音·第三季</a>
+<input type="hidden" id="dayInfo" data-now="0" data-daylist="" >
+<div class="mod_big_search mod_big_search_new">
+<form action="/search.html" method="get" name="sformMid" id="sformMid" accept-charset="utf-8">
+<fieldset>
+<legend>
+<span>搜索</span>
+</legend>
+<p>
+<label for="search">搜索：</label>
+<input name="pagetype" value="3" id="hid_srh_p_Mid" type="hidden" />
+<input class="mod_search_txt" value="" id="iWordMid" name="ms_key" maxlength="40" autocomplete="off" type="text" x-webkit-speech lang="zh-CN"/>
+<button type="submit" class="mod_search_bt" id="sbuttonMid">
+<span>搜索</span>
+</button>
+<input name="stj2" value="search.search" id="web_search_tj2btn" type="hidden" />
+<input name="stag" value="txt.result" id="web_search_stag" type="hidden" />
+</p>
+<div class="mod_big_search_info" style="display: none;" id="ret_count">搜索"<strong class="c_txt2" id="s_key"></strong>" 总共有<strong class="c_txt3" id="s_a1"></strong>项结果</div>
+<!-- 智能匹配框 开始 -->
+<div class="mod_smartbox" id="mod_keywords_list_mid" style="display:none;">
+<div class="mod_pop mod_pop_suggest">
+<ul id="sgt_list_mid" class="suggest_wrap">
+</ul>
+</div>
+</div>
+<!-- 智能匹配框 结束 -->
+</fieldset>
+</form>
+</div>
+</div>
+<!--搜索框 E-->
+<!--纠错结构-->
+<div class="mod_search_correct" id="jiucuo_cont" style="display:none;">
+<p class="correct_txt" id="jiucuo_words"></p>
+</div>
+<!--相关搜索-->
+<div class="mod_search_correct" id="related_cont" style="display:none;">
+<p class="correct_txt" id="related_words"></p>
+</div>
+</div>
+<!-- 热门（综艺）专题 开始-->
+<div id="variety_special" style="display: none;"></div>
+<textarea id="variety_special_tpl" style="display: none;">
+{var banner = model_area.banner}
+{var normal = model_area.normal}
+{var blooper = model_area.blooper}
+{var human = model_area.human}
+{var more = model_area.more}
+{if banner}
+<div class="banner_devision" style="background-image:url(${banner.pic_url})">
+<div class="banner_devision_mask"></div>
+<div class="wrapper">
+<h3 class="title_rm"><a href="${banner.url || 'javascript:;'}" _hot="search.vs.banner.title">${banner.title}</a></h3>
+
+<ul class="info_item">
+{for item in banner.second_line}
+<li class="item">${item}</li>
+{/for}
+</ul>
+
+<p class="info_txt">${banner.desc|getStrByByte:210}</p>
+
+<div class="info_btm">
+<a href="${banner.url || 'javascript:;'}" class="btn_normal btn_living" target="_blank" _hot="search.vs.banner.btn"><i class="icon_live_large"></i>${banner.play_btn}</a>
+</div>
+</div>
+</div>
+{/if}
+<div class="site_container">
+{if normal}
+{var iconUrl = normal.icon_url}
+<div class="mod_row mod_row_version {if iconUrl} mod_row_slogo{/if}">
+<div class="mod_row_title">
+<h6 class="title">{if iconUrl}<img class="s_icon" src="${iconUrl}">{/if}${normal.title}</h6>
+{if normal.url}<div class="option"><a href="${normal.url}" class="more" target="_blank" _hot="search.vs.normal.more">查看全部<i class="arrow"></i></a></div>{/if}
+</div>
+<div class="mod_row_cont mod_row_cont_bg">
+<div class="mod_figures mod_figure_h_115 mod_figure_rm_h115">
+<ul class="figures_list">
+{for item in normal.list}
+<li class="list_item">
+<a href="${item.url || 'javascript:void(0);'}" class="figure" target="_blank" _hot="search.vs.normal.pic">
+<img src="${item.pic_url}" alt="${item.first_line}" onerror="picerr(this,2);" />
+</a>
+<strong class="figure_title"><a href="${item.url || 'javascript:void(0);'}" title="${item.first_line}" target="_blank" _hot="search.vs.normal.title">${item.first_line}</a></strong>
+<p class="figure_desc">${item.second_line}</p>
+{if item.play_count}<div class="mod_playnum"><i class="icon_play_s"></i><span class="playnum_inner">${item.play_count|getNewFormatNum}</span></div>{/if}
+</li>
+{/for}
+</ul>
+</div>
+</div>
+</div>
+{/if}
+
+{if blooper}
+{var iconUrl = blooper.icon_url}
+<div class="mod_row mod_row_figure {if iconUrl} mod_row_slogo{/if}">
+<div class="mod_row_title">
+<h6 class="title">{if iconUrl}<img class="s_icon" src="${iconUrl}">{/if}${blooper.title}</h6>
+<div class="option"><span class="mod_page_count" id="blooper_paging_point"></span></div>
+</div>
+<div class="mod_row_cont">
+<div class="mod_figures_search" id="blooper_slide">
+<div class="mod_figures_limit">
+<ul class="mod_figure_list mod_figure_list_190 mod_figure_v_110">
+{for item in blooper.list}
+<li class="list_item">
+<a title="" class="figure" href="${item.url || 'javascript:void(0);'}" target="_blank" _hot="search.vs.blooper.pic">
+<img data-src="${item.pic_url}" alt="${item.first_line}" onerror="picerr(this,2);" />
+{if item.imgtag}${item.imgtag|getCoverImgtagHtml:[1]}{/if}
+{if item.time}<div class="mod_sign"><span class="mod_info">${item.time}</span></div>{/if}
+</a>
+<strong class="figure_title figure_title_two_row"><a href="${item.url || 'javascript:void(0);'}" title="${item.first_line}" target="_blank" _hot="search.vs.blooper.title">${item.first_line}</a></strong>
+</li>
+{/for}
+</ul>
+</div>
+
+<a href="javascript:;" class="btn_prev_50" title="上一页" _hot="search.vs.blooper.prev"><!-- 不显示添加类名 btn_prev_none --></a>
+<a href="javascript:;" class="btn_next_50" title="下一页" _hot="search.vs.blooper.next"><!-- 不显示添加类名 btn_next_none --></a>
+</div>
+</div>
+</div>
+{/if}
+
+{if human}
+{var iconUrl = human.icon_url}
+<div class="mod_row mod_row_avatar {if iconUrl} mod_row_slogo{/if}">
+<div class="mod_row_title">
+<h6 class="title">{if iconUrl}<img class="s_icon" src="${iconUrl}">{/if}${human.title}</h6>
+{if human.url}<div class="option"><a href="${human.url}" class="more" target="_blank" _hot="search.vs.human.more">查看全部<i class="arrow"></i></a></div>{/if}
+</div>
+<div class="mod_row_cont">
+<div class="mod_figures_search">
+<div class="mod_figures_limit">
+<ul class="figure_list_people">
+{var isRank = human.is_rank == 1}
+{var num = 0}
+{for item in human.list}
+{var num = num + 1}
+<li class="item">
+<a href="${item.url || 'javascript:void(0);'}" class="figure" target="_blank" _hot="search.vs.human.pic"><img src="${item.pic_url}" alt="${item.first_line}" onerror="picerr(this,4);" />
+{if isRank}<span class="ranking_title {if num > 3}{elseif num ===1} ranking_first{elseif num ===2} ranking_second{elseif num ===3} ranking_third{/if}"><em>${num}</em></span>{/if}</a>
+<h5 class="name"><a href="${item.url || 'javascript:void(0);'}" target="_blank" _hot="search.vs.human.title">${item.first_line}</a></h5>
+<p class="info">${item.second_line}</p>
+</li>
+{/for}
+</ul>
+</div>
+</div>
+</div>
+</div>
+{/if}
+
+{if more}
+{var iconUrl = more.icon_url}
+<div class="mod_row mod_row_figure {if iconUrl} mod_row_slogo{/if}">
+<div class="mod_row_title">
+<h6 class="title">{if iconUrl}<img class="s_icon" src="${iconUrl}">{/if}${more.title}</h6>
+<div class="option"><span class="mod_page_count" id="more_paging_point"></span></div>
+</div>
+<!-- 1 横图/2 竖图/3 圆图/4 方图 -->
+{if more.render_type == 1}
+<div class="mod_row_cont">
+<div class="mod_figures_search" id="more_slide">
+<div class="mod_figures_limit">
+<ul class="mod_figure_list mod_figure_list_190 mod_figure_v_110">
+{for item in more.list}
+<li class="list_item">
+<a class="figure" href="${item.url || 'javascript:void(0);'}" target="_blank" _hot="search.vs.more.pic">
+<img data-src="${item.pic_url}" alt="${item.first_line}" onerror="picerr(this,2);" />
+{if item.episode}<div class="mod_sign"><span class="mod_info">${item.episode}</span></div>{/if}
+</a>
+<strong class="figure_title figure_title_two_row"><a href="${item.url || 'javascript:void(0);'}" target="_blank" title="${item.first_line}" _hot="search.vs.more.title">${item.first_line}</a></strong>
+</li>
+{/for}
+</ul>
+</div>
+
+<a href="javascript:;" class="btn_prev_50" title="上一页" _hot="search.vs.more.prev"><!-- 不显示添加类名 btn_prev_none --></a>
+<a href="javascript:;" class="btn_next_50" title="下一页" _hot="search.vs.more.next"><!-- 不显示添加类名 btn_next_none --></a>
+</div>
+</div>
+{elseif more.render_type == 2}
+<div class="mod_bd cf">
+<div class="mod_figures mod_figures_search mod_figure_v_190" id="more_slide">
+<div class="mod_figure_wrap">
+<ul class="mod_figure_list">
+{for item in more.list}
+<li class="list_item">
+<a class="figure" href="${item.url || 'javascript:void(0);'}" target="_blank" _hot="search.vs.more.pic">
+<img data-src="${item.pic_url}" alt="${item.first_line}" onerror="picerr(this,1);" />
+{if item.episode}<div class="figure_more"><span class="figure_more_title">${item.episode}</span></div>{/if}
+</a>
+<strong class="figure_title"><a href="${item.url || 'javascript:void(0);'}" target="_blank" title="${item.first_line}" _hot="search.vs.more.title">${item.first_line}</a></strong>
+</li>
+{/for}
+</ul>
+</div>
+
+<a href="javascript:;" class="btn_prev_50" title="上一页" _hot="search.vs.more.prev"></a><!-- 不显示添加类名 btn_prev_none -->
+<a href="javascript:;" class="btn_next_50" title="下一页" _hot="search.vs.more.next"></a><!-- 不显示添加类名 btn_next_none -->
+</div>
+</div>
+{/if}
+</div>
+{/if}
+</div>
+
+</textarea>
+<!-- 热门（综艺）专题 结束-->
+
+<!-- 因为我们十五个banner 宽度需要占全屏 故将site_container 断开  -->
+<!-- 我们15个直达区banner模块 开始-->
+<div id="we15_banner_mod_cont" class="banner_we15" style="display:none">
+<div id="we15_banner_conid" class="wrapper">
+<textarea id="we15_banner_tplid" style="display:none">
+{var subtypes = subtype.split(',',3);}
+{var we15Url = 'http://15.qq.com';}
+{var we15DetailUrl = 'http://v.qq.com/detail/1/11352.html';}
+{var we15Live = 'http://15.qq.com/live/index.htm';}
+
+<h3 class="title_we15"><a href="${we15Url}" target="_blank" title="${title}">${title}</a><span class="type">${type}</span></h3>
+
+<ul class="info_item">
+<li class="item">地区：${area}</li>
+<li class="item">类型：
+{for subType in subtypes}
+${subType  }
+{/for}
+</li>
+</ul>
+
+<p class="info_txt">《我们15个》平顶之上是一个大型生活实验节目</p>
+<p class="info_txt">15个背景迥异的陌生人将离开原来的生活，来到一个美丽的山顶，共同生活一年 <a class="detail" href="${we15DetailUrl}" target="_blank">详情</a><i class="arrow"></i></p>
+
+<div class="info_btm">
+<a href="${we15Url}" class="btn_bule_large btn_detail" target="_blank">查看详情</a>
+</div>
+
+<span class="icon_we15"></span>
+</textarea>
+</div>
+</div>
+<!-- 我们15个直达区banner模块 结束-->
+<!-- 由于加 视频 和 相关用户 tab 故将我们十五个直达区独立出来 -->
+<div class="site_container">
+<!-- 我们15个内容区 开始 -->
+<div id="we15_mod_cont" style="display:none">
+<!-- 日播 开始 -->
+<div id="we15_daily_contid" class="mod_row mod_row_day">
+</div>
+<textarea id="we15_daily_tplid" style="display:none">
+<div class="mod_row_title">
+<h6 class="title">日播版</h6>
+</div>
+<div class="mod_row_cont mod_row_cont_bg">
+{if daily.listIsArray}
+<div class="list_num_wrap">
+<ul class="mod_list_num">
+{for item in daily.list}
+<!-- <li class="missing"><a href="javascript:;">200上</a></li> --> <!-- 暂无missing需求 -->
+<li><a href="${item.url}" title="${item.episode_number}" _log_st="4_3" _log_clid="we15" _hot="search.we15.daily.list" target="_blank">${item.episode_number}</a>{if item.is_new == 1}<i class="icon_new"></i>{/if}</li>
+{/for}
+</ul>
+</div>
+{else}
+<!-- daily.list若为object 需对年份及年份下的月份排序 -->
+{var getArrSortDesc = txv.search.we15_direct.getArrSortDesc;}
+{var getArrGrep = txv.search.we15_direct.getArrGrep;}
+{var yearArr = Object.keys(daily.list);}
+{var yearArr = getArrSortDesc(getArrGrep(yearArr,'new')); }
+{var isUsedNew = !daily.list['new'];}
+{var monthArr = [];}
+<div class="filter_wrap" id="we15_daily_tab">
+{for yearItem in yearArr}
+{var monthArr = getArrSortDesc(Object.keys(daily.list[yearItem])); }
+<span class="fitler_title">${yearItem}年</span>
+<ul class="mod_tab_list">
+{if !isUsedNew}
+<li class="item active" data-date="new"><a href="javascript:void(0);" class="inner">最新</a></li>
+{var isUsedNew=true;}
+{/if}
+{for monthItem in monthArr}
+<li class="item" data-date="${[yearItem,monthItem].join('')}"><a href="javascript:void(0);" class="inner">${monthItem}月</a></li>
+{/for}
+</ul>
+{/for}
+</div>
+<div class="list_num_wrap" id="we15_daily_list">
+<ul class="mod_list_num" data-date="new">
+{for item in daily.list['new']}
+<li><a href="${item.url}" title="${item.episode_number}" _log_st="4_3" _log_clid="we15" _hot="search.we15.daily.list" target="_blank">${item.episode_number}</a>{if item.is_new == 1}<i class="icon_new"></i>{/if}</li>
+{/for}
+</ul>
+{for yearItem in yearArr}
+{var monthArr = getArrSortDesc(Object.keys(daily.list[yearItem]));}
+{for monthItem in monthArr}
+<ul class="mod_list_num none" data-date="${[yearItem,monthItem].join('')}">
+{for item in daily.list[yearItem][monthItem]}
+<li><a href="${item.url}" title="${item.episode_number}" _log_st="4_3" _log_clid="we15" _hot="search.we15.daily.list" target="_blank">${item.episode_number}</a>{if item.is_new == 1}<i class="icon_new"></i>{/if}</li>
+{/for}
+</ul>
+{/for}
+{/for}
+</div>
+{/if}
+
+</div>
+</textarea>
+<!-- 日播 结束 -->
+
+<!-- 周播 开始 -->
+<div id="we15_weekly_contid" class="mod_row mod_row_week">
+</div>
+<textarea id="we15_weekly_tplid" style="display:none">
+{if weekly.list.length > 0}
+<div class="mod_row_title">
+<h6 class="title">周播版</h6>
+<div class="option">
+<a href="${weekly.more}" class="more" _log_st="4_5" _log_clid="we15" _hot="search.we15.weekly.more" target="_blank">全部专辑<i class="arrow"></i></a>
+</div>
+</div>
+<div class="mod_row_cont mod_row_cont_bg">
+<div class="mod_figures mod_figure_h_115 mod_figure_we15_h115">
+<ul class="figures_list">
+{for item in weekly.list}
+{var dates = item.date.split('-');}
+<li class="list_item">
+<a href="${item.url}" class="figure" tabindex="-1" _log_st="4_4" _log_clid="we15" _hot="search.we15.weekly.list" target="_blank">
+<img src="${item.pic}" alt="${item.title}" onerror="picerr(this,2);">
+<!-- <span class="figure_mask"><em class="mask_txt">${item.date}期</em></span> -->
+</a>
+<strong class="figure_title"><a href="${item.url}" title="${item.title}" _log_st="4_4" _log_clid="we15" _hot="search.we15.weekly.list" target="_blank">${item.title}</a></strong>
+<p class="figure_desc">${dates[1] + '月' + dates[2] + '日' + ' 第' + item.day + '天'}</p>
+<div class="figure_info">
+<div class="mod_playnum"><i class="icon_play_s"></i><span class="playnum_inner">${item.view|getNewFormatNum}</span></div>
+</div>
+</li>
+{/for}
+</ul>
+</div>
+</div>
+{/if}
+</textarea>
+<!-- 周播 结束 -->
+
+<!-- 花絮 平顶那些事 开始 -->
+<div id="we15_huaxu_mod_cont" class="mod_row mod_row_figure" style="display:none">
+<div class="mod_row_title">
+<h6 class="title">未播花絮</h6>
+<div class="option">
+<span id="we15_huaxu_page_more" class="mod_page_count">
+</span>
+</div>
+</div>
+<div id="we15_hx_slide_ctrl_cont" class="mod_row_cont">
+<div class="mod_figures_search">
+<div class="mod_figures_limit">
+<ul id="we15_huaxu_contid" class="mod_figure_list mod_figure_list_190 mod_figure_v_110">
+</ul>
+<textarea id="we15_huaxu_tplid" style="display:none">
+{for item in huaxu.list}
+<li class="list_item">
+<a title="${item.title}" class="figure" href="${item.url}" _log_st="4_6" _log_etp="1" _log_clid="we15" _hot="search.we15.huaxu.list" target="_blank">
+<img alt="${item.title}" src="${item.pic}" onerror="picerr(this,2);">
+<div class="mod_sign">
+<span class="mod_info"><span class="new_info">${item.time|getTimeLong3}</span></span>
+</div>
+</a>
+<strong class="figure_title figure_title_two_row"><a href="${item.url}" _log_st="4_6" _log_etp="2" _log_clid="we15" _hot="search.we15.huaxu.list" target="_blank" title="${item.title}">${item.title|gethlsubstr:23}</a></strong>
+</li>
+{/for}
+</textarea>
+</div>
+<a href="javascript:void(0);" class="btn_prev_50" data-role="prev" title="上一页"></a><!-- 不显示添加类名 btn_prev_none -->
+<a href="javascript:void(0);" class="btn_next_50" data-role="next" title="下一页"></a><!-- 不显示添加类名 btn_next_none -->
+</div>
+</div>
+</div>
+<!-- 花絮 平顶那些事 结束 -->
+
+<!-- 15居民 开始 -->
+<div id="we15_people_mod_cont" class="mod_row mod_row_avatar" style="display:none">
+<div class="mod_row_title">
+<h6 class="title">15居民</h6>
+<div class="option">
+<span id="we15_people_page_more" class="mod_page_count">
+</span>
+</div>
+</div>
+<div id="we15_pp_slide_ctrl_cont" class="mod_row_cont">
+<div class="mod_figures_search">
+<div class="mod_figures_limit">
+<ul id="we15_people_contid" class="figure_list_people">
+</ul>
+<textarea id="we15_people_tplid" style="display:none">
+{for item in starrank}
+{var tags = item.tag.replace(/\|/g,'<span class="divid">|</span>');}
+<li class="item">
+<a href="${item.surl}" class="figure" _log_st="4_7" _log_clid="we15" _hot="search.we15.people.list" target="_blank"><img alt="${item.name}" src="${item.pic}" onerror="picerr(this,4);">
+<!-- <span class="icon_new36"></span> --><!-- 尚未有接口提供 -->
+</a>
+<h5 class="name"><a href="${item.surl}" _log_st="4_7" _log_clid="we15" _hot="search.we15.people.list" target="_blank">${item.name}</a></h5>
+<p class="info">${tags}</p>
+</li>
+{/for}
+</textarea>
+</div>
+<a href="javascript:void(0);" class="btn_prev_50" data-role="prev" title="上一页"></a><!-- 不显示添加类名 btn_prev_none -->
+<a href="javascript:void(0);" class="btn_next_50" data-role="next" title="下一页"></a><!-- 不显示添加类名 btn_next_none -->
+</div>
+</div>
+</div>
+<!-- 15居民 结束 -->
+
+<!-- 其它搜索结果 标题 开始-->
+<div class="mod_row_title">
+<h6 class="title">其它搜索结果</h6>
+</div>
+<!-- 其它搜索结果 标题 结束-->
+</div>
+<!-- 我们15个内容区 结束 -->
+</div>
+<div class="container_place">
+
+<div class="mod_tablist">
+<ul class="site_container _big_tab">
+<li class="item current" data-tab="videoTab">
+<a href="javascript:;" class="inner" _hot="search.tablist.video">视频</a>
+</li>
+<li class="item" id="userTab" data-tab="userTab" style="display:none">
+<em></em><a href="javascript:;" class="inner" _log_etp="306" _log_pt="8" _log_st="0_0" _log_sec="5" _log_pos="1" _log_schg="0" _hot="search.tablist.user">用户</a>
+</li>
+</ul>
+</div>
+
+
+<div class="_tab_content" data-tab="videoTab">
+<div class="wrapper">
+<!--图片广告直达区-->
+<div class="mod_search_hybird" id="mod_pic_ad" style="display:none;"></div>
+
+<!--mod_global S--><!--这是包括人名、体育、电视台等特殊展现的最外层容器，新增一个演唱会-->
+<div id="mod_global">
+<!--演唱会直达区 start-->
+<div id="mod_live_cont"></div>
+<textarea id="live_tpl" style="display:none">
+{var showNum = 2;}
+{var listCount = 0;}
+{var pos = 1}
+{for item in live_list}
+{var listCount = listCount + 1;}
+{var bIsPayLive = item.pay === 1;}
+{var bHasGift = item.gift === 1;}
+{var reportStr = ' _log_sec="1" _log_pt="202" _log_st="5_0" _log_pos="'+(pos++)+'" '}
+<div class="mod_search_detail search_detail_event cf" {if listCount > showNum} data-more="true" style="display:none;"{/if} >
+<span class="detail_img"><img ll_src="${item.AU}" alt="${item.TI}" onerror="picerr(this,4);"></span>
+<div class="detail_wrap detail_wrap_long">
+<div class="detail_hd">
+<strong class="name"><a href="${item.AW}" target="_blank" title="${item.TI}" ${reportStr} _hot="search.live.title.${item.ID}">${item.TI}</a></strong>
+</div>
+<div class="detail_bd">
+<ul class="info_list">
+<li class="list_item">
+<span class="item_inner">直播时间：${item.AT}</span>
+{if item.AR>0}
+<span class="item_back_count" id="countdown_${item.ID}">倒计时：<em class="count_in _day" >${item.DAY}</em> 天 <em class="count_in _hour">${item.HOUR}</em> 时 <em class="count_in _minute">${item.MINUTE}</em> 分 <em class="count_in _second">${item.SECOND}</em> 秒</span>
+{/if}
+</li>
+<li class="list_item">
+<span class="item_desc">${item.TX}</span>
+</li>
+</ul>
+</div>
+<div class="detail_btn {if bHasGift} detail_btn_static{/if}">
+{if !bIsPayLive}
+<a href="${item.AW}" target="_blank" class="${item.buttonCls}" data-status="${item.btnStatus}" ${reportStr} _hot="search.live.play.${item.ID}">{if item.AR<=0}${item.buttonText}<i class="ico_playbtn"></i>{else}<span class="btn_inner">查看详情</span>{/if}</a>
+{if item.AR>0}
+<a href="javascript:;" class="btn_normal_w _follow_liveshow" data-followliveid="${item.ID}" data-followtype="0" _hot="search.live.follow.${item.ID}"><i class="ico_timebtn"></i><span class="btn_inner">直播预约</span></a>
+{/if}
+{else}
+<a href="${item.AW}" target="_blank" class="${item.buttonCls} _pay_play" data-status="${item.btnStatus}" ${reportStr} _hot="search.live.play.${item.ID}">{if item.AR<=0}${item.buttonText}<i class="ico_playbtn"></i>{else}<span class="btn_inner">查看详情</span>{/if}</a>
+{/if}
+
+</div>
+{if bHasGift}
+<div class="mod_detail_gift">
+<h6 class="title"><i class="icon_bigbang"></i>BIGBANG 全球巡演礼包，购买即获得。</h6>
+<div class="mod_figure_wrap">
+<ul class="list_figure_radius">
+<li class="item">
+<a href="http://v.qq.com/gift/bigbang/index.html?ptag=websearch" class="figure" target="_blank" _hot="search.live.gift.${item.ID}">
+<img src="http://i.gtimg.cn/qqlive/images/20150929/i1443513006_1.jpg" alt="亲笔签名手机壁纸">
+<span class="figure_title">亲笔签名手机壁纸</span>
+</a>
+</li>
+<li class="item">
+<a href="http://v.qq.com/gift/bigbang/index.html?ptag=websearch" class="figure" target="_blank" _hot="search.live.gift.${item.ID}">
+<img src="http://i.gtimg.cn/qqlive/images/20150929/i1443513011_1.jpg" alt="全球巡演独家纪录片">
+<span class="figure_title figure_title_long">全球巡演独家纪录片</span>
+</a>
+</li>
+<li class="item">
+<a href="http://v.qq.com/gift/bigbang/index.html?ptag=websearch" class="figure" target="_blank" _hot="search.live.gift.${item.ID}">
+<img src="http://i.gtimg.cn/qqlive/images/20150929/i1443513000_1.jpg" alt="选他陪你看视频">
+<span class="figure_title">选他陪你看视频</span>
+</a>
+</li>
+</ul>
+</div>
+<a href="http://v.qq.com/gift/bigbang/index.html?ptag=websearch" class="btn_function_arrow" title="更多" target="_blank" _hot="search.live.gift.more.${item.ID}"><i class="arrow"></i></a>
+<a href="http://v.qq.com/gift/bigbang/index.html?ptag=websearch" class="btn_normal" target="_blank" _hot="search.live.gift.support.${item.ID}">支持BIGBANG</a>
+</div>
+{/if}
+</div>
+</div>
+{/for}
+{if live_list && live_list.length > showNum}
+<a href="javascript:;" data-next="open" class="mod_load_more" id="live_direct_load_more" _hot="search.live.more">
+<span class="load_btn">展开更多</span>
+</a>
+{/if}
+</textarea>
+<!--演唱会直达区 end-->
+
+<!--专题直达区 start-->
+<div id="mod_special_cont"></div>
+<textarea id="special_tpl" style="display:none">
+{var showNum = 2;}
+{var listCount = 0;}
+{for item in special_list}
+{var listCount = listCount + 1;}
+<div class="mod_search_detail search_detail_event cf" {if listCount > showNum} data-more="true" style="display:none;"{/if} >
+<span class="detail_img">
+<a href="${item.AW}" target="_blank" _hot="search.special.pic.${item.ID}">
+<img ll_src="${item.AU}" alt="${item.TI}" onerror="picerr(this,4);">
+</a>
+</span>
+<div class="detail_wrap detail_wrap_long">
+<div class="detail_hd">
+<strong class="name"><a href="${item.AW}" target="_blank" title="${item.TI}" _hot="search.special.title.${item.ID}">${item.TI}</a></strong>
+</div>
+<div class="detail_bd">
+<ul class="info_list">
+<li class="list_item"></li>
+<li class="list_item">
+<span class="item_desc">${item.TX}</span>
+</li>
+</ul>
+</div>
+<div class="detail_btn">
+<a href="${item.AW}" target="_blank" class="btn_bule_large" _hot="search.special.play.${item.ID}"><span class="btn_inner">查看详情</span></a>
+</div>
+</div>
+</div>
+{/for}
+{if special_list && special_list.length > showNum}
+<a href="javascript:;" data-next="open" class="mod_load_more" id="special_direct_load_more" _hot="search.special.more">
+<span class="load_btn">展开更多</span>
+</a>
+{/if}
+</textarea>
+<!--专题直达区 end-->
+
+<!--人名直达区开始-->
+<div id="human_placeholder" style="display: none;"></div>
+<textarea id="human_tpl" style="display:none">
+<div id="mod_human_cont" style="display:none;">
+<!-- 人名直达区 同名展示 - 开始 -->
+<div class="relat_recommend"  style="display:none">
+<span class="label">同名明星：</span>
+<ul class="relat_list" id="h_same_name_cont">
+</ul>
+
+</div>
+<!-- 人名直达区 同名展示 - 结束 -->
+
+<!--人名直达头像、热门资讯区开始-->
+<div class="mod_search_hybird___" id="h_avatar_contid" style="display:;">
+</div>
+<!--人名直达头像、热门资讯区结束-->
+
+<!--人名直达精品Tab区开始-->
+<div class="mod_row_search mod_row_expand" id="human_jingpin_cont" style="display:;">
+<div class="mod_title_simple mod_title_hybird" id="h_tab_title_contid"></div>
+<!--人名直达精品Tab Title-->
+<!-- S:热门作品 -->
+<div class="mod_bd cf" style="display:none;">
+<div class="mod_figures mod_figures_search ">
+<div class="mod_figure_wrap">
+<ul class="mod_figure _mod_figure" id="h_tab_group_contid"></ul>
+</div>
+</div>
+</div>
+<!-- E:热门作品 -->
+
+<!-- S:电影 -->
+<div class="mod_bd cf" style="display:none;">
+<div class="mod_figures mod_figures_search ">
+<div class="mod_figure_wrap">
+<ul class="mod_figure _mod_figure" id="h_tab_movie_contid"></ul>
+</div>
+</div>
+</div>
+
+<!-- E:电影 -->
+
+<!-- S:电视剧 -->
+<div class="mod_bd cf" style="display:none;">
+<div class="mod_figures mod_figures_search ">
+<div class="mod_figure_wrap">
+<ul class="mod_figure _mod_figure" id="h_tab_tv_contid"></ul>
+</div>
+</div>
+</div>
+<!-- E:电视剧 -->
+
+<!-- S:MV -->
+<div class="mod_bd cf" style="display:none;">
+<div class="mod_figures_search mod_figures_row ">
+<div class="mod_cont mod_cont_w" style="padding-bottom: 25px;">
+<ul class="figures_list figure_w190 cf _mod_figure" id="h_tab_mv_contid"></ul>
+</div>
+</div>
+</div>
+<!-- E:MV -->
+
+<!-- S:体育 -->
+<div class="mod_bd cf" style="display:none;">
+<div class="mod_figures_search mod_figures_row ">
+<div class="mod_cont mod_cont_w" style="padding-bottom: 25px;">
+<ul class="figures_list figure_w190 cf _mod_figure" id="h_tab_sport_contid"></ul>
+</div>
+</div>
+</div>
+<!-- E:体育 -->
+
+<!-- S:综艺 -->
+<div class="mod_bd cf" style="display:none;">
+<div class="mod_figures_search mod_figures_row">
+<div class="mod_cont mod_cont_w" style="padding-bottom: 25px;">
+<ul class="figures_list figure_w190 cf _mod_figure" id="h_tab_variety_contid"></ul>
+</div>
+</div>
+</div>
+<!-- E:综艺 -->
+
+<!-- S:娱乐 -->
+<div class="mod_bd cf" style="display:none;">
+<div class="mod_figures_search mod_figures_row">
+<div class="mod_cont mod_cont_w" style="padding-bottom: 25px;">
+<ul class="figures_list figure_w190 cf _mod_figure" id="h_tab_yule_contid"></ul>
+</div>
+</div>
+</div>
+<!-- E:娱乐 -->
+
+<!-- S:主持人 -->
+<div class="mod_bd cf" style="display:none;">
+<div class="mod_figures mod_figures_search ">
+<div class="mod_figure_wrap">
+<ul class="mod_figure _mod_figure" id="h_tab_host_contid"></ul>
+</div>
+</div>
+
+</div>
+<!-- E:主持人 -->
+
+<a href="javascript:;" data-next="open" class="mod_load_more" id="human_direct_load_more" style="display: none;">
+<span class="load_btn">展开更多</span>
+<span class="load_status"><i class="ico_loading"></i>正在加载...</span>
+</a>
+</div>
+<!--人名直达精品Tab区结束-->
+
+<!--人名直达音乐Tab区开始-->
+<div class="mod_row_search mod_row_expand" id="human_music_cont" style="display:none;">
+<div class="mod_title_simple mod_title_hybird">
+<ul class="list_tab" id="human_music_tab_title">
+</ul>
+</div>
+
+<!-- S:热门音乐 -->
+<div class="mod_bd cf _cf" id="h_music_hot_cont">
+</div>
+<!-- E:热门音乐 -->
+
+<!-- S:MV -->
+<div class="mod_bd cf _cf" id="h_music_mv_cont" style="display:none;">
+</div>
+<!-- E:MV -->
+
+<!-- S:音乐作品 -->
+<div class="mod_bd cf _cf" id="h_music_song_cont" style="display:none;">
+</div>
+<!-- E:音乐作品 -->
+
+<a href="javascript:void(0);" class="mod_load_more _more" _hot="search.human.music.mv.more" style="display:none;"><!-- 点击loading加载状态添加类名'load_triggle',完成以后移除 -->
+<span class="load_btn">展开更多</span>
+<span class="load_status"><i class="ico_loading"></i>正在加载...</span>
+</a>
+</div>
+<!--人名直达音乐Tab区结束-->
+</div>
+</textarea>
+<!-- 同名 -->
+<textarea id="h_same_name_tpl" style="display:none;">
+{for item in head.others}
+{var starUrl = "http://v.qq.com/x/star/"+item.hid;}
+<li class="item">
+<a href="${starUrl}" class="figure" target="_blank" _hot="search.human.samename">
+<img ll_src="${item.pic}" alt="${item.name|escHTML}">
+<span class="c_txt3">${item.name|escHTML}</span>
+{if item.profession}
+<span class="divid">/</span>
+<span class="unit">${item.profession|escHTML}</span>
+{/if}
+</a>
+</li>
+{/for}
+</textarea>
+<!-- 最新资讯 -->
+<textarea id="h_hot_tplid" style="display:none">
+{var BC_DY=1;}
+{var BC_LXJ=2;}
+{var BC_DM=3;}
+{var BC_JLP=9;}
+{var BC_ZY=10;}
+{var BC_YC=103;}
+{var BC_BOKE=7;}
+{var BC_MV=22;}
+{for item in list}
+{var videotype = item.Z1.type;}
+{var isNeedPay = item.Z9.PAY;}
+{var cpos = txv.search.main.getVideoPos('h', 'hot');}
+{var pUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):item.AW;}
+
+<li class="list_item">
+<a title="${item.title}{if item.AP == 1 && item.BN>0}(${item.BN}){/if}" target="_blank"  class="figure" href="${pUrl}" _log_pt="1" _log_sec="1" _log_st="1_9999" _log_ctl="1_9999_${item.ID}" _log_pos="${cpos}" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="0" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${pUrl};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}" _hot="search.human.hot.datu">
+{if item.BB == 1}
+<img ll_src="${item.Z1.pic2}" onerror="picerr(this,2);" />
+{else}
+<img ll_src="${item.AU}" onerror="picerr(this,2);" />
+{/if}
+
+{if videotype == BC_DY || videotype == BC_LXJ || videotype == BC_DM || videotype == BC_JLP || videotype == BC_ZY || videotype == BC_YC}
+{if !!item.imgtag}
+${item.imgtag|getCoverImgtagHtml}
+{else}
+{if isNeedPay == true}<span class="mod_pay_sign">付费</span>{/if}
+<div class="mod_sign">
+<span class="mod_info"><span class="type">[${item.BC}]</span>
+{if (videotype == BC_LXJ || videotype == BC_DM) && item.AP == 2}
+<span class="new_info">${item.SY}</span>
+{elseif videotype == BC_ZY && item.AP == 2 && item.BN!=0}
+<span class="new_info">${item.BN|getDateFormat}期</span>
+{elseif item.AL && item.AL>0}
+<span class="new_info">${item.AL|getTimeLong3}</span>
+{/if}
+{if item.AQ != ""}<span class="mode">${item.AQ}</span>{/if}
+<span class="icon_play">播放</span></span>
+</div>
+{/if}
+{elseif videotype == BC_MV}
+{if isNeedPay == true}<span class="mod_pay_sign">付费</span>{/if}
+{if item.AF!="" && item.AF==3}<sup class="mark_trailer">预告片</sup>{/if}
+<div class="mod_sign">
+<span class="mod_info"><span class="type">[${item.BC}]</span>
+{if item.AL && item.AL>0}
+<span class="new_info">${item.AL|getTimeLong3}</span>
+{/if}
+{if item.AQ != ""}<span class="mode">${item.AQ}</span>{/if}
+<span class="icon_play">播放</span></span>
+</div>
+{else}
+{if isNeedPay == true}<span class="mod_pay_sign">付费</span>{/if}{if item.AF!="" && item.AF==3}<sup class="mark_trailer">预告片</sup>{/if}
+<div class="mod_sign">
+<span class="mod_info"><span class="type">[${item.BC}]</span>
+{if item.AL && item.AL>0}
+<span class="new_info">${item.AL|getTimeLong3}</span>
+{/if}
+{if item.AQ != ""}<span class="mode">${item.AQ}</span>{/if}
+<span class="icon_play">播放</span></span>
+</div>
+{/if}
+</a>
+
+<strong class="figure_title figure_title_two_row">
+<a title="${item.title}{if item.AP == 1 && item.BN>0}(${item.BN}){/if}" target="_blank" _log_pt="1" _log_clid="1_9999_${item.ID}" _hot="search.human.hot.title" href="${pUrl}">{if item.AP == 1}${item.TI|gethlsubstr:22}{else}${item.TI}{/if}{if item.AP == 1 && item.BN>0} (${item.BN}){/if}</a>
+</strong>
+<p>发布时间：{if item.AT.length>0}${item.AT.substring(0,10)}{else}暂无{/if}</p>
+</li>
+{/for}
+</textarea>
+<!-- 精品tab -->
+<textarea id="h_tab_movie_tplid" style="display:none;">
+{var BC_DY=1;}
+{var BC_LXJ=2;}
+{var BC_DM=3;}
+{var BC_JLP=9;}
+{var BC_ZY=10;}
+{var item_idx = 0;}
+{var nInitShowLen = txv.search.main.screenType === 'small' ? 5 : 6;}
+{for item in list}
+{var item_idx = item_idx+1;}
+{var videotype = item.Z1.type;}
+{var isNeedPay = item.Z9.PAY;}
+{var itx = item.TX.replace(/(^\s*)|(\s*$)/g, "").replace(/^([\u3000]*)/g, "");}
+{var pDetailUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):txv.common.getDetailUrl(item.ID, videotype);}
+{var pUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):item.AW;}
+{var YF_YG=(item.YF ? item.YF+";" : "") + item.YG;}
+{var itembm = item.BM.replace(/(^;+)|(;+$)/g, "");}
+<li class="list_item" {if item_idx>nInitShowLen}style="display:none;" data-more="true"{/if}>
+<a href="{if item._AW}${item._AW}{else}javascript:;{/if}" {if item._AW} target="_blank"{/if} title="${item.title}" _log_pt="6" _log_clid="1_${listType}_${item.ID}" class="figure" _hot="search.human.${ty}.datu">
+<img ll_src="${item.AU}" onerror="picerr(this,1);" />${item.imgtag|getCoverImgtagHtml:[1,2]}
+<div class="figure_more">
+<span class="figure_more_title">${item.Z9.BC}</span>
+</div>
+</a>
+{if (videotype==BC_DY || videotype==BC_LXJ || videotype==BC_DM) && (item.STAT==3 || item.STAT==12)}
+<a href="javascript:;" class="wrap_follow" title="加入看单" data-followid="{if item.AP==3}${item._columnid}{else}${item.ID}{/if}" data-followtype="{if item.AP==3}5{else}1{/if}" followpos="2" _hot="search.follow.human">
+<i class="icon_follow" title="" ></i>
+</a>
+{/if}
+<strong class="figure_title"><a href="{if item._AW}${item._AW}{else}javascript:;{/if}" {if item._AW} target="_blank"{/if} title="${item.title}" _log_pt="6" _log_sec="1" _log_st="1_${listType}" _log_ctl="1_${listType}_${item.ID}" _log_pos="${item.cpos}" _log_schg="0" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="${listType}" vedit="${item.is_edit || 0}" {if item.defaultSource} vsource="${item.defaultSource.source}" {/if} _hot="search.human.${ty}.title">${item.TI}</a></strong>
+<p class="figure_more_desc">
+{if videotype==BC_ZY}${itembm.replace(/;+/g,'、')}
+{else}
+{if item.AG}${item.AG}{/if}
+{if item.CR}/${item.CR}{/if}
+{if item.AY}/${item.AY}{/if}
+{/if}
+</p>
+</li>
+{/for}
+</textarea>
+<textarea id="h_tab_mv_tplid" style="display:none;">
+{var item_idx=0;}
+{var BC_DY=1;}
+{var BC_LXJ=2;}
+{var BC_DM=3;}
+{var BC_JLP=9;}
+{var BC_ZY=10;}
+{var nInitShowLen = txv.search.main.screenType === 'small' ? 5 : 6;}
+{for item in list}
+{var item_idx = item_idx +1;}
+{var videotype = item.Z1.type;}
+{var isNeedPay = item.Z9.PAY;}
+{var itx = item.TX.replace(/(^\s*)|(\s*$)/g, "").replace(/^([\u3000]*)/g, "");}
+{var pDetailUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):txv.common.getDetailUrl(item.ID, videotype);}
+{var pUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):item.AW;}
+<li class="list_item" {if item_idx>nInitShowLen}style="display:none;" data-more="true"{/if}>
+<a title="${item.title}" target="_blank" class="figure" href="${pUrl}" _log_pt="6" _log_clid="1_${listType}_${item.ID}" _hot="search.human.${ty}.pic">
+{if item.BB == 1}
+<img ll_src="${item.Z1.pic2}" onerror="picerr(this,2);" />
+{else}
+<img ll_src="${item.AU}" onerror="picerr(this,2);" />
+{/if}
+${item.imgtag|getCoverImgtagHtml:[1]}
+<div class="mod_sign">
+<span class="mod_info">
+<span class="type">${item.Z9.BC}</span>
+<span class="icon_play">播放</span>
+</span>
+</div>
+</a>
+<strong class="figure_title"><a href="${pUrl}" target="_blank" _log_pt="6" _log_sec="1" _log_st="1_${listType}" _log_ctl="1_${listType}_${item.ID}" _log_pos="${item.cpos}" _log_schg="0" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="${listType}" vedit="${item.is_edit || 0}" _hot="search.human.${ty}.title">{if listType==3}${item.TF}{else}${item.TI}{/if}</a></strong>
+<p class="figure_info">发布：{if item.AT.length>0}${item.AT.substring(0,10)}{else}暂无{/if}</p>
+</li>
+{/for}
+</textarea>
+<textarea id="h_tab_host_tplid" style="display:none;">
+{var BC_DY=1;}
+{var BC_LXJ=2;}
+{var BC_DM=3;}
+{var BC_JLP=9;}
+{var BC_ZY=10;}
+{var item_idx=0;}
+{var nInitShowLen = txv.search.main.screenType === 'small' ? 5 : 6;}
+{for item in list}
+{var item_idx = item_idx +1;}
+{var videotype = item.Z1.type;}
+{var isNeedPay = item.Z9.PAY;}
+{var itx = item.TX.replace(/(^\s*)|(\s*$)/g, "").replace(/^([\u3000]*)/g, "");}
+{var pDetailUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):txv.common.getDetailUrl(item.ID, videotype);}
+{var pUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):item.AW;}
+<li class="list_item" {if item_idx>nInitShowLen}style="display:none;" data-more="true"{/if}>
+<a href="{if item._AW}${item._AW}{else}javascript:;{/if}" {if item._AW} target="_blank"{/if} title="${item.title}" _log_pt="1" _log_clid="1_1001_${item.ID}" class="figure" _hot="search.human.${ty}.datu">
+<img ll_src="${item.AU}" onerror="picerr(this,1);" />${item.imgtag|getCoverImgtagHtml:[1,2]}
+{if videotype==BC_LXJ || videotype==BC_DM}{if item.SS}<span class="figure_mask"><em class="mask_txt">${item.SS}</em></span>{else}${item.imgtag|getCoverImgtagHtml:[3]}{/if}{/if}
+</a>
+<strong class="figure_title"><a href="{if item._AW}${item._AW}{else}javascript:;{/if}" {if item._AW} target="_blank"{/if} title="${item.title}" _log_pt="1" _log_sec="1" _log_st="1_1001" _log_ctl="1_1001_${item.ID}" _log_pos="${item.cpos}" _log_schg="0" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="0" vedit="${item.is_edit || 0}" {if item.defaultSource} vsource="${item.defaultSource.source}" {/if} _hot="search.human.${ty}.title">${item.TI}</a></strong>
+
+<p class="figure_desc">${item.Z9.BC}&nbsp;{if item.defaultSource}(${item.defaultSource._source.cnName}){/if}</p>
+</li>
+{/for}
+</textarea>
+<!-- 音乐tab -->
+<textarea id="h_music_hot_tpl" style="display:none;">
+<div class="mod_figures_search mod_figures_row">
+<div class="mod_cont mod_cont_w">
+<ul class="figures_list figure_w190 cf _mod_figure">
+{var mv_list = mv_list || false;}
+{var song_list = song_list || false;}
+{if mv_list}
+{var item_idx=0;}
+{var nInitShowLen = txv.search.main.screenType === 'small' ? 5 : 6;}
+{for item in mv_list}
+{var item_idx = item_idx +1;}
+<li class="list_item" {if item_idx>nInitShowLen}style="display:none;" data-more="true"{/if}>
+<a title="${item.mv_title}" target="_blank" class="figure" href="${item.url}" _hmvhot _hot="search.human.music.hot"> <img alt="${item.mv_title}" ll_src="${item.mv_pic}" onerror="picerr(this,2);">
+<div class="mod_sign">
+<span class="mod_info">
+<span class="new_info">${item.play_time}</span>
+<span class="icon_play">播放</span>
+</span>
+</div>
+</a>
+<strong class="figure_title"><a href="${item.url}" target="_blank" title="${item.mv_title}" _hmvhot _hot="search.human.music.hot">${item.mv_title}</a></strong>
+<p class="figure_desc">发布：${item.pub_date || "暂无"}</p>
+</li>
+{/for}
+{/if}
+
+{if song_list}
+<li class="list_item item_extra">
+<div class="music_list">
+<ul class="list cf">
+{var itemCount = 0;}
+{var id = "hid" + head.hid + "_hot";}
+{for item in song_list}
+{var liId = id + "_" + item.song_id;}
+{var itemCount = itemCount + 1;}
+{var rowClass = itemCount%2 ? "odd" : "even";}
+<li class="${rowClass} music_default" data-rsource="7" data-url="${item.url}" id="${liId}" data-cid="${id}" data-songid="song_${item.song_id}" data-songids="${item.song_id}" data-songname="${item.song_name}" data-albumid="${item.album_id}" data-albummid="${item.album_mid}" data-albumname="${item.album_name}" data-movietitle="" data-mvid="${item.mv_id}">
+<div class="info">
+<span class="name{if (item.mv_url)} name_short{/if}" title="${item.song_name}">${item.song_name}</span>
+{if (item.mv_url)}
+<a href="${item.mv_url}" target="_blank" class="icon_music_mv" data-songid="${item.song_id}" data-cid="${id}" _hot="search.human.music.mv.${liId}"></a>
+{/if}
+<i class="icon_music_now"></i>
+</div>
+<p class="item_singer" title="${item.album_name}">${item.album_name}</p>
+<div class="btn">
+<a href="javascript:;" class="icon_play" title="点击播放" data-songid="${item.song_id}" data-cid="${id}" _hot="search.human.music.play.${liId}"></a>
+<a href="javascript:;" class="icon_pause" title="暂停音乐" data-songid="${item.song_id}" data-cid="${id}" _hot="search.human.music.pause.${liId}" ></a>
+<a href="javascript:;" class="icon_download" title="下载音乐" data-songid="${item.song_id}" data-cid="${id}" data-rsource="7" data-vtitle="${head.hname}" _hot="search.human.music.download.${liId}"></a>
+</div>
+</li>
+{/for}
+</ul>
+<a href="javascript:void(0);" class="more_option" data-cid="${id}" data-rsource="7" data-vtitle="${head.hname}" _hot="search.human.music.more.${id}">下载QQ音乐，畅听更多《${head.hname}》音乐作品（共${head.total_song}首）</a>
+</div>
+</li>
+{/if}
+</ul>
+</div>
+</div>
+</textarea>
+<textarea id="h_music_mv_tpl" style="display:none;">
+<div class="mod_figures_search mod_figures_row">
+<div class="mod_cont mod_cont_w">
+<ul class="figures_list figure_w190 cf _mod_figure">
+{var item_idx=0;}
+{var nInitShowLen = txv.search.main.screenType === 'small' ? 5 : 6;}
+{for item in mv_list}
+{var item_idx = item_idx +1;}
+<li class="list_item" {if item_idx>nInitShowLen}style="display:none;" data-more="true"{/if}>
+<a title="${item.mv_title}" target="_blank" class="figure" href="${item.url}" _hmvhot _hot="search.human.music.mv"> <img alt="${item.mv_title}" ll_src="${item.mv_pic}" onerror="picerr(this,2);">
+<div class="mod_sign">
+<span class="mod_info">
+<span class="new_info">${item.play_time}</span>
+<span class="icon_play">播放</span>
+</span>
+</div>
+</a>
+<strong class="figure_title"><a href="${item.url}" target="_blank" title="${item.mv_title}" _hmvhot _hot="search.human.music.mv">${item.mv_title}</a></strong>
+<p class="figure_desc">发布：${item.pub_date || "暂无"}</p>
+</li>
+{/for}
+</ul>
+</div>
+</div>
+</textarea>
+<textarea id="h_music_song_tpl" style="display:none;">
+<div class="music_list">
+<ul class="list cf">
+{var itemCount = 0;}
+{var id = "hid" + head.hid + "_song";}
+{var rowClass = "odd";}
+{for item in song_list}
+{var liId = id + "_" + item.song_id;}
+{var itemCount = itemCount + 1;}
+<li class="${rowClass} music_default" data-rsource="7" data-url="${item.url}" id="${liId}" data-cid="${id}" data-songid="song_${item.song_id}" data-songids="${item.song_id}" data-songname="${item.song_name}" data-albumid="${item.album_id}" data-albummid="${item.album_mid}" data-albumname="${item.album_name}" data-movietitle="" data-mvid="${item.mv_id}">
+<div class="info">
+<span class="name{if (item.mv_url)} name_short{/if}" title="${item.song_name}">${item.song_name}</span>
+{if (item.mv_url)}
+<a href="${item.mv_url}" target="_blank" class="icon_music_mv" data-songid="${item.song_id}" data-cid="${id}" _hot="search.human.music.mv.${liId}"></a>
+{/if}
+<i class="icon_music_now"></i>
+</div>
+<p class="item_singer" title="${item.album_name}">${item.album_name}</p>
+<div class="btn">
+<a href="javascript:;" class="icon_play" title="点击播放" data-songid="${item.song_id}" data-cid="${id}" _hot="search.human.music.play.${liId}"></a>
+<a href="javascript:;" class="icon_pause" title="暂停音乐" data-songid="${item.song_id}" data-cid="${id}" _hot="search.human.music.pause.${liId}" ></a>
+<a href="javascript:;" class="icon_download" title="下载音乐" data-songid="${item.song_id}" data-cid="${id}" data-rsource="7" data-vtitle="${head.hname}" _hot="search.human.music.download.${liId}"></a>
+</div>
+</li>
+{var rowClass = itemCount%2 !== 0 ? rowClass : rowClass === "odd" ? "even" : "odd";}
+{/for}
+</ul>
+{if song_list}
+<a href="javascript:void(0);" class="more_option" data-cid="${id}" data-rsource="7" data-vtitle="${head.hname}" _hot="search.human.music.more.${id}">下载QQ音乐，畅听更多《${head.hname}》音乐作品（共${head.total_song}首）</a>
+{/if}
+</div>
+</textarea>
+<!--人名直达区结束-->
+
+<!--体育直达区开始-->
+<div id="mod_sport_cont" style="display:none;">
+<!--赛事 S-->
+<div class="team_wrapper" id="mod_sport_match" style="display:none;">
+
+<div class="side_tab" id="sport_slide_ctrl_cont">
+<a href="javascript:;" class="tab_scroll_left" data-role="prev" _log_clid="2_1_match" _log_etp="202"  _hot="search.sport.match.btnprev"><i class="arrow_left"><i class="arrow_i"></i></i></a>
+<div class="tab_list">
+<ul class="list_wrap" id="sport_match_datetab_contid" style="width:9999px">
+
+</ul>
+</div>
+<a href="javascript:;" class="tab_scroll_right" data-role="next"  _log_clid="2_1_match" _log_etp="202"  _hot="search.sport.match.btnnext"><i class="arrow_right"><i class="arrow_i"></i></i></a>
+</div>
+
+<div class="mod_team_list" id="sport_match_datedetail_contid">
+
+</div>
+
+<textarea id="sport_match_datetab_tplid" style="display:none;">
+{for item in list}
+<li class="list_item {if item._isCurDate} list_item_current{/if}" data-dt="${item.date}">
+<a href="javascript:;" _log_clid="2_1_match" _log_etp="201"  _hot="search.sport.match.date">
+<strong class="date">${item._date}</strong>
+</a>
+</li>
+{/for}
+</textarea>
+<textarea id="sport_match_datedetail_tplid" style="display:none;">
+{for sport in sports}
+<ul class="cf" data-dt="${sport.date}" data-total="${head.total_num}">
+{for match in sport.matches}
+<li class="list_item">
+<div class="match_meta">
+<div class="match_line">
+<!-- <div class="match_status ${match._statusClass}">${match._statusText}</div> -->
+<div class="match_time">
+<strong class="date">${match._date}</strong>
+<span class="time">${match._time}</span>
+</div>
+</div>
+<div class="match_season"><a href="${match.q_competition_name|getSearchUrl}" _log_clid="2_1_match" _log_sec="1" _log_st="2_1" _log_pt="8" _log_etp="205" _log_ctl="2_1_match" _log_pos="1" _hot="search.sport.match.compname">${match.q_competition_name}</a><i class="arr_i"></i></div>
+</div>
+<div class="match_detail">
+<div class="battle_info">
+<div class="team_left">
+<a href="${match.q_home_name|getSearchUrl}" class="figure" _log_clid="2_1_match" _log_etp="203" _hot="search.sport.match.teamlogo" title="${match.q_home_name}"><img alt="${match.q_home_name}" l_src="${match.q_home_badge}" style="" onerror="picerr(this,8);"><span class="team_name">${match.q_home_name}</span></a>
+<!-- {if match._followworldcup == '1'}
+<a href="javascript:;" class="btn_follow_icon" title="${match.q_home_name}队有比赛第一时间提醒我" follow_tips="${match.q_home_name}队有比赛第一时间提醒我" sport-followid="${match.q_home_follow_id}" sport-followtype="37" follow_class="btn_followed_icon">加入看单</a>
+{/if} -->
+</div>
+<div class="team_right">
+<a href="${match.q_away_name|getSearchUrl}" class="figure" _log_clid="2_1_match" _log_etp="203" _hot="search.sport.match.teamlogo" title="${match.q_away_name}"><img alt="${match.q_away_name}" l_src="${match.q_away_badge}" style="" onerror="picerr(this,8);"><span class="team_name">${match.q_away_name}</span></a>
+<!-- {if match._followworldcup == '1'}
+<a href="javascript:;" class="btn_follow_icon" title="${match.q_away_name}队有比赛第一时间提醒我" follow_tips="${match.q_away_name}队有比赛第一时间提醒我" sport-followid="${match.q_away_follow_id}" sport-followtype="37" follow_class="btn_followed_icon">加入看单</a>
+{/if} -->
+</div>
+<div class="team_board ${match._boardClass}">
+<p class="score">
+<strong class="bold">${match.q_home_goal}</strong>
+<em>{if match.q_is_ended == '2' || match.q_is_ended == '4'}vs{else}-{/if}</em>
+<strong class="bold">${match.q_away_goal}</strong>
+</p>
+<!-- {if match.q_is_ended === '3'}
+{if match.q_live_url}
+<a href="${match.q_live_url}" class="btn_active" target="_blank" _log_clid="2_1_match" _hot="search.sport.match.living"><i class="icon_live"></i><span class="btn_inner">直播中</span>	</a>
+{/if}
+{elseif match.q_is_ended === '2' || match.q_is_ended === '4'}
+{if match.q_follow_id && match.q_follow_id != '0' && match.q_competition_id != '4'}
+<a href="javascript:;" class="btn_notice" sport-followid="${match.q_follow_id}" sport-followtype="0" _log_clid="2_1_match" _hot="search.sport.match.follow"><i class="icon_follow_s"></i><span class="btn_inner">加入看单</span></a>
+{/if}
+{elseif match.q_is_ended === '1' && match.q_play_url}
+<a href="${match.q_play_url}" class="btn_active" target="_blank" _log_clid="2_1_match" _hot="search.sport.match.play"><span class="btn_inner">观看比赛</span></a>
+{/if} -->
+</div>
+</div>
+<!-- <div class="battle_lights">
+{if match.video_list.length===0}
+<a class="lights_empty" href="http://2014.qq.com" target="_blank"_log_clid="2_1_match" _hot="search.sport.default">{if match.q_is_ended === '2' || match.q_is_ended === '4'}比赛暂未开始{else}暂无花絮{/if}</a>
+{else}
+<div class="mod_box">
+<div class="mod_box_hd">
+<strong class="title">赛场花絮</strong>
+<a href="${match._moreUrl}" class="more" target="_blank" _log_clid="2_1_match" _hot="search.sport.match.trailermore"><i class="arrow_left"></i>更多</a>
+</div>
+<div class="mod_box_bd">
+<ul class="mod_lights_list">
+{for v in match.video_list}
+<li class="list"><a href="${v.url}" target="_blank" _log_clid="2_1_match" _hot="search.sport.match.trailer">${v.title|escHTML}</a><span class="desc"><i class="icon_play"></i>${v.duration|getTimeLong3}</span></li>
+{/for}
+</ul>
+</div>
+</div>
+{/if}
+
+</div> -->
+</div>
+<div class="match_status ${match._statusClass}">
+{if match.q_is_ended == '3'}
+{if match.q_live_url}
+<span class="txt">${match._statusText}</span>
+{if match.q_live_type == 1}
+<a href="${match.q_live_url}" class="btn_match btn_onair" target="_blank" _log_clid="2_1_match" _log_pt="201" _log_etp="206" _hot="search.sport.match.living.pic"><i class="ico_match ico_reserve_3"></i><span class="btn_inner">图文直播</span></a>
+{else}
+<a href="${match.q_live_url}" class="btn_match btn_live" target="_blank" _log_clid="2_1_match" _log_pt="201" _log_etp="206" _hot="search.sport.match.living"><i class="ico_match ico_reserve_2"></i><span class="btn_inner">查看直播</span></a>
+{/if}
+{else}${match._statusText}
+{/if}
+{elseif match.q_is_ended == '2' || match.q_is_ended == '4'}
+{var bIsPayLive = match.q_live_sports_is_pay == 1}
+<span class="txt">${match._statusText}</span>
+<!-- 非付费视频直播才可预约 -->
+{if match.q_live_sports_id && !bIsPayLive && match.q_live_type == 3}
+<a href="javascript:void(0);" class="btn_match btn_reserve _follow_sports" data-followliveid="${match.q_live_sports_id}" data-followtype="0" _hot="search.sport.match.follow.${match.q_live_sports_id}"><i class="ico_match ico_reserve_1"></i><span class="btn_inner">直播预约</span></a>
+{/if}
+{elseif match.q_is_ended == '1'}
+<ul class="mod_lights_list {if match.q_play_url} mod_lights_list_dianbo{/if}">
+<li class="list">
+{if match.video_list.length>0}
+<p>
+<a href="${match.video_list[0].url}" title="${v.title|escHTML}" target="_blank" _log_clid="2_1_match" _log_pt="1" _log_etp="207" _hot="search.sport.match.trailer">${v.title|escHTML}</a>
+</p>
+{else}
+${match._statusText}
+{/if}
+{if match.q_play_url}
+<a href="${match.q_play_url}" class="dianbo" target="_blank" _log_clid="2_1_match" _log_pt="1" _log_etp="208" _hot="search.sport.match.play" title="查看点播">查看点播</a>
+{/if}
+</li>
+</ul>
+{/if}
+</div>
+</li>
+{/for}
+</ul>
+{/for}
+</textarea>
+</div>
+<!--赛事 E-->
+
+<!--球队 S-->
+<div class="team_wrapper" id="mod_sport_team" style="display:none;">
+<div class="mod_team_list">
+<ul class="cf" id="sport_team_datedetail_contid">
+
+</ul>
+<textarea id="sport_team_datedetail_tplid" style="display:none;">
+{for sport in sports}
+{for match in sport.matches}
+<li class="list_item">
+<div class="match_meta">
+<div class="match_line">
+<!-- <div class="match_status ${match._statusClass}">${match._statusText}</div> -->
+<div class="match_time">
+<strong class="date">${match._date}</strong>
+<span class="time">${match._time}</span>
+</div>
+</div>
+<div class="match_season"><a href="${match.q_competition_name|getSearchUrl}" _log_clid="2_2_team" _log_sec="1" _log_st="2_2" _log_pt="8" _log_etp="205" _log_ctl="2_2_team" _log_pos="1" _hot="search.sport.team.compname">${match.q_competition_name}</a><i class="arr_i"></i></div>
+</div>
+<div class="match_detail">
+<div class="battle_info">
+<div class="team_left">
+<a href="${match.q_home_name|getSearchUrl}" class="figure" _log_clid="2_2_team" _log_etp="203" _hot="search.sport.team.teamlogo" title="${match.q_home_name}"><img alt="${match.q_home_name}" ll_src="${match.q_home_badge}" style="" onerror="picerr(this,8);"><span class="team_name">${match.q_home_name}</span></a>
+<!-- {if match._followworldcup == '1'}
+<a href="javascript:;" class="btn_follow_icon" title="${match.q_home_name}队有比赛第一时间提醒我" follow_tips="${match.q_home_name}队有比赛第一时间提醒我" sport-followid="${match.q_home_follow_id}" sport-followtype="37" follow_class="btn_followed_icon">加入看单</a>
+{/if} -->
+</div>
+<div class="team_right">
+<a href="${match.q_away_name|getSearchUrl}" class="figure" _log_clid="2_2_team" _log_etp="203" _hot="search.sport.team.teamlogo" title="${match.q_away_name}"><img alt="${match.q_away_name}" ll_src="${match.q_away_badge}" style="" onerror="picerr(this,8);"><span class="team_name">${match.q_away_name}</span></a>
+<!-- {if match._followworldcup == '1'}
+<a href="javascript:;" class="btn_follow_icon" title="${match.q_away_name}队有比赛第一时间提醒我" follow_tips="${match.q_away_name}队有比赛第一时间提醒我" sport-followid="${match.q_away_follow_id}" sport-followtype="37" follow_class="btn_followed_icon">加入看单</a>
+{/if} -->
+</div>
+<div class="team_board ${match._boardClass}">
+<p class="score">
+<strong class="bold">${match.q_home_goal}</strong>
+<em>{if match.q_is_ended == '2' || match.q_is_ended == '4'}vs{else}-{/if}</em>
+<strong class="bold">${match.q_away_goal}</strong>
+</p>
+<!-- {if match.q_is_ended === '3'}
+{if match.q_live_url}
+<a href="${match.q_live_url}" class="btn_active" target="_blank" _log_clid="2_2_team" _hot="search.sport.team.living"><i class="icon_live"></i><span class="btn_inner">直播中</span>	</a>
+{/if}
+{elseif match.q_is_ended === '2' || match.q_is_ended === '4'}
+{if match.q_follow_id && match.q_follow_id != '0' && match.q_competition_id != '4'}
+<a href="javascript:;" class="btn_notice" sport-followid="${match.q_follow_id}" sport-followtype="0" _log_clid="2_2_team" _hot="search.sport.team.follow"><i class="icon_follow_s"></i><span class="btn_inner">加入看单</span></a>
+{/if}
+{elseif match.q_is_ended === '1' && match.q_play_url}
+<a href="${match.q_play_url}" class="btn_active" target="_blank" _log_clid="2_2_team" _hot="search.sport.team.play"><span class="btn_inner">观看比赛</span></a>
+{/if} -->
+</div>
+</div>
+<!-- <div class="battle_lights">
+{if match.video_list.length===0}
+<a class="lights_empty" href="http://2014.qq.com" target="_blank" _log_clid="2_2_team" _hot="search.sport.default">{if match.q_is_ended === '2' || match.q_is_ended === '4'}比赛暂未开始{else}暂无花絮{/if}</a>
+{else}
+<div class="mod_box">
+<div class="mod_box_hd">
+<strong class="title">赛场花絮</strong>
+<a href="${match._moreUrl}" class="more" target="_blank" _log_clid="2_2_team" _hot="search.sport.team.trailermore"><i class="arrow_left"></i>更多</a>
+</div>
+<div class="mod_box_bd">
+<ul class="mod_lights_list">
+{for v in match.video_list}
+<li class="list"><a href="${v.url}" target="_blank" _log_clid="2_2_team" _hot="search.sport.team.trailer">${v.title|escHTML}</a><span class="desc"><i class="icon_play"></i>${v.duration|getTimeLong3}</span></li>
+{/for}
+</ul>
+</div>
+</div>
+{/if}
+
+</div> -->
+</div>
+<div class="match_status ${match._statusClass}">
+{if match.q_is_ended == '3'}
+{if match.q_live_url}
+<span class="txt">${match._statusText}</span>
+{if match.q_live_type == 1}
+<a href="${match.q_live_url}" class="btn_match btn_onair" target="_blank" _log_clid="2_2_team" _log_pt="201" _log_etp="206" _hot="search.sport.team.living.pic"><i class="ico_match ico_reserve_3"></i><span class="btn_inner">图文直播</span></a>
+{else}
+<a href="${match.q_live_url}" class="btn_match btn_live" target="_blank" _log_clid="2_2_team" _log_pt="201" _log_etp="206" _hot="search.sport.team.living"><i class="ico_match ico_reserve_2"></i><span class="btn_inner">查看直播</span></a>
+{/if}
+{else}${match._statusText}
+{/if}
+{elseif match.q_is_ended == '2' || match.q_is_ended == '4'}
+{var bIsPayLive = match.q_live_sports_is_pay == 1}
+<span class="txt">${match._statusText}</span>
+{if match.q_live_sports_id && !bIsPayLive && match.q_live_type == 3}
+<a href="javascript:void(0);" class="btn_match btn_reserve _follow_sports" data-followliveid="${match.q_live_sports_id}" data-followtype="0" _hot="search.sport.team.follow.${match.q_live_sports_id}"><i class="ico_match ico_reserve_1"></i><span class="btn_inner">直播预约</span></a>
+{/if}
+{elseif match.q_is_ended == '1'}
+<ul class="mod_lights_list {if match.q_play_url} mod_lights_list_dianbo{/if}">
+<li class="list">
+{if match.video_list.length>0}
+<p>
+<a href="${match.video_list[0].url}" target="_blank" title="${v.title|escHTML}" _log_clid="2_2_team" _log_pt="1" _log_etp="207" _hot="search.sport.team.trailer">${v.title|escHTML}</a>
+</p>
+{else}
+${match._statusText}
+{/if}
+{if match.q_play_url}
+<a href="${match.q_play_url}" class="dianbo" target="_blank" _log_clid="2_2_team" _log_pt="1" _log_etp="208" _hot="search.sport.team.play" title="查看点播">查看点播</a>
+{/if}
+</li>
+</ul>
+{/if}
+</div>
+</li>
+{/for}
+{var sportidx = sportidx+1;}
+{/for}
+</textarea>
+</div>
+</div>
+<!--球队 E-->
+</div>
+<!--体育直达区结束-->
+</div>
+<!--mod_global E-->
+</div>
+
+<!--直达区前段 S-->
+<div class="mod_search_result" id="accurate_search_g">
+<div class="mod_result">
+<div class="wrapper" id="g_comm_filter_cont"></div>
+<a href="javascript:;" class="wrapper mod_load_more _comm_load_more _comm_up_load_more" style="display: none;">
+<span class="load_btn">加载失败，请点击刷新</span>
+</a>
+<div class="wrapper_loading load_type_m _comm_up_loading" style="display: none;margin-bottom: -30px;height: 30px;min-height: 0px;"></div>
+<div class="mod_result_list" id="g_comm_cont"></div>
+<div class="wrapper_loading load_type_m _comm_down_loading" style="display: none;margin-top: -30px;height: 30px;min-height: 0px;"></div>
+<a href="javascript:;" class="wrapper mod_load_more _comm_load_more _comm_down_load_more" style="display: none;">
+<span class="load_btn">加载失败，请点击刷新</span>
+</a>
+<div class="mod_pagenav" id="g_comm_pager" style="display: none;"></div>
+</div>
+<textarea id="g_comm_tplid" style="display:none">
+{var defaultImg = "http://i.gtimg.cn/qqlive/images/20140318/i1395112323_1.jpg";}
+{var RT_JP= 1}
+{var RT_ZH= 2}
+{var RT_VJ= 3}
+{var RT_XL= 4}
+{var RT_RM= 5}
+{var RT_YT= 6}
+{var cur = head._cur;}
+{var itemCount = 0;}
+{for item in list}
+{var itemCount = itemCount + 1;}
+{var cpos = txv.search.main.getVideoPos('g', 'comm');}
+{var itx = (item.TX || '').replace(/(^\s*)|(\s*$)/g, "").replace(/^([\u3000]*)/g, "");}
+{var itemObj = new Object();itemObj.item = item}
+{if item.render_type === RT_JP}
+<div class="list_item _albums_cont" data-md="${item.MD}">
+${itemObj|template:'g_comm_album_tplid'}
+</div>
+{elseif item.render_type === RT_ZH}
+<div class="list_item general_item _zh_cont">
+${itemObj|template:'g_comm_zh_tplid'}
+</div>
+{elseif item.render_type === RT_VJ}
+<div class="list_item list_item_user" data-vplusId="${item.ID}">
+<div class="item_cont">
+<ul class="complex_figure complex_figure_combo">
+<li class="item cf">
+<div class="box_left">
+<a href="${item.AW}" target="_blank" title="${item.title}" _log_clid="${item.ID}" _log_etp="301" class="img" _hot="search.zd.vplus.img"><img ll_src="${item.AU || defaultImg}" alt="${item.title}" onerror="picerr(this,1);"></a>
+<div class="box_hd">
+<h3 class="title"><a href="${item.AW}" _log_etp="302" _log_pt="9" {if item.vflg == 1}_log_st="3_0"{else}_log_st="6_0"{/if} _log_sec="1" _log_ctl="${item.ID}" _log_pos="${cpos}" _log_schg="0" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="0" vedit="${item.is_edit || 0}" {if item.defaultSource} vsource="${item.defaultSource.source}" {/if} target="_blank" _hot="search.zd.vplus.title">${item.TI}</a></h3>
+<a href="${item.AW}" _log_etp="302" _log_clid="${item.ID}" target="_blank" class="weak" _hot="search.zd.vplus.vico"><i class="ico_vplus_24"></i>腾讯视频认证</a>
+</div>
+<div class="box_bd">
+<p class="intro" {if !!itx}title="${itx}"{/if}>{if !itx}暂无简介{else}${itx}{/if}</p>
+<ul class="count_data">
+<li class="unit">
+<span class="nums">${(item.take_num || 0)|getNewFormatNum}</span>
+<span class="name">订阅</span>
+</li>
+<li class="unit">
+<span class="nums">${(item.video_num || 0)|getNewFormatNum}</span>
+<span class="name">视频</span>
+</li>
+<li class="unit">
+<span class="nums">${(item.cover_num || 0)|getNewFormatNum}</span>
+<span class="name">专辑</span>
+</li>
+<li class="unit">
+<span class="nums">${(item.VA || 0)|getNewFormatNum}</span>
+<span class="name">播放</span>
+</li>
+</ul>
+</div>
+<a href="javascript:;" class="btn_normal btn_subscript btn_subscripted" data-act="set" data-vuin="${item.euin}" _log_pt="8" _log_etp="303" _log_clid="${item.ID}" _hot="search.zd.vplus.follow"><span class="inner">订阅</span></a>
+{if txv.search.main.flag.hasUserTab === true}
+<a href="javascript:;" id="btnMoreUser" class="btn_more" _log_etp="306" _log_clid="${item.ID}"  _hot="search.zd.vplus.moreuser">更多用户<i class="arrow_more"></i></a>
+{/if}
+</div>
+<div class="box_right">
+{if item.defaultSource}
+{var maxLen = 3}
+<div class="figure_wrap">
+<ul class="figures_list cf">
+{var playurlobj_index=0;}
+{for playurlobj in item.defaultSource.playlist.slice(0,maxLen)}
+<li class="list_item">
+<a href="${playurlobj.url}" class="figure" title="${playurlobj.title}" vsource="${item.defaultSource.source}" _log_pt="1" _log_etp="304" _log_clid="${item.ID}" _hot="search.zd.vplus.video.play" target="_blank">
+<img ll_src="${playurlobj.pic}" alt="" onerror="picerr(this,2);">
+{if playurlobj.tl || playurlobj.play_count || playurlobj.play_count === 0}
+<span class="figure_mask">
+<em class="mask_txt">${playurlobj.tl|getTimeLong3}</em>
+<em class="play_count"><i class="icon_play_s"></i>${playurlobj.play_count|getNewFormatNum}</em>
+</span>
+{/if}
+</a>
+<strong class="figure_title figure_title_two_row">
+<a href="${playurlobj.url}" _log_pt="1" _log_etp="304" _log_clid="${item.ID}" _hot="search.zd.vplus.video.play" target="_blank" title="${playurlobj.title}">${playurlobj.title|gethlsubstr:23}</a>
+</strong>
+</li>
+{var playurlobj_index=playurlobj_index+1;}
+{/for}
+</ul>
+</div>
+{if parseInt(item.defaultSource.total_episode, 10) > maxLen}
+<a href="${item.AW}" class="arrow_more" target="_blank" _log_etp="305" _log_clid="${item.ID}" _hot="search.zd.vplus.more"></a>
+{/if}
+{/if}
+</div>
+</li>
+</ul>
+</div>
+</div>
+{elseif item.render_type === RT_XL}
+{if item.series && item.series.album_list && item.series.album_list.length}
+{var albumId = item.album && item.album.album_id}
+<div class="list_item item_series {if itemCount === 1 && cur == 0} item_series_first{/if}">
+<div class="series_wrap _albums_cont">
+<div class="mod_side_list _series_slider">
+<div class="loading_warp">
+<i class="ico_loading"></i>
+</div>
+<ul class="sidenav_list">
+{var idx = 1}
+{var maxLen = 10}
+{for albumItem in item.series.album_list}
+<li class="item {if albumItem.album_id === albumId} current {/if} _series_list" data-seriesid="${item.series.series_id}" data-albumid="${albumItem.album_id}" {if idx > maxLen} style="display: none;" {/if}>
+<a href="javascript:;" _hot="search.zd.series.list.${item.series.series_id}" title="${albumItem.name}">
+<span class="inner">${txv.search.common.getSubStrByByte(albumItem.name, 38)}</span></a>
+</li>
+{var idx = idx + 1}
+{/for}
+</ul>
+{if item.series.album_list.length > maxLen}
+<div class="side_flex_func">
+<a href="javascript:;" class="btn_arrow btn_arrow_lft btn_disable _prev" title="左翻" _hot="search.zd.series.leftmore.${item.series.series_id}"><i class="arrow"><i></i></i></a>
+<a href="javascript:;" class="btn_arrow btn_arrow_rgt _next" title="右翻" _hot="search.zd.series.rightmore.${item.series.series_id}"><i class="arrow"><i></i></i></a>
+</div>
+{/if}
+</div>
+${itemObj|template:'g_comm_album_tplid'}
+</div>
+</div>
+{/if}
+{elseif item.render_type === RT_RM}
+{if item.extra_info}
+<div class="list_item name_item">
+<div class="item_cont">
+${itemObj|template:'human_tpl'}
+</div>
+</div>
+{/if}
+{elseif item.render_type === RT_YT}
+{var ytList = item.extra_info && item.extra_info.list;}
+{if ytList && ytList.length}
+<div class="list_item purpose_item">
+<div class="item_cont">
+<div class="mod_row_search mod_row_expand _yt">
+<div class="mod_single_list">
+<h2 class="mod_title"><span class="c_txt3">${item.TI}</span>{if item.extra_info.query_type == 7}出品{/if}</h2>
+<a href="javascript:;" class="btn_arrow _yt_filter_text"><span class="btn_inner">相关</span><i class="arrow"><i></i></i></a>
+<ul class="mod_filter_list _yt_filter" style="display: none;">
+<li sort_type="0" class="current"><a href="javascript:void(0);" _hot="search.zd.yt.filter.relevant"><span class="link_inner">相关</span></a></li>
+<li sort_type="1"><a href="javascript:void(0);" _hot="search.zd.yt.filter.new"><span class="link_inner">最新</span></a></li>
+<li sort_type="2"><a href="javascript:void(0);" _hot="search.zd.yt.filter.hot"><span class="link_inner">最热</span></a></li>
+</ul>
+</div>
+<div class="_yt_list">
+${itemObj|template:'g_comm_yt_tplid'}
+</div>
+</div>
+</div>
+</div>
+{/if}
+{/if}
+{/for}
+
+</textarea>
+<textarea id="g_comm_album_tplid" style="display:none">
+{var BC_DY=1;}
+{var BC_LXJ=2;}
+{var BC_DM=3;}
+{var BC_JLP=9;}
+{var BC_ZY=10;}
+{var BC_SS=25;}
+{var BC_JY=27;}
+{var BC_QC=29;}
+{var BC_MV=22;}
+{var BC_CJ=24;}
+{var BC_YL=5;}
+{var BC_SH=31;}
+{var BC_WH=51;}
+{var BC_KJ=28;}
+
+{var RT_LM=1;}
+{var RT_JJ=2;}
+{var RT_YG=3;}
+{var RT_DHDY = '动画电影';}
+{var videotype = item.Z1.type;}
+{var isNeedPay = item.Z9.PAY;}
+{var itx = item.TX.replace(/(^\s*)|(\s*$)/g, "").replace(/^([\u3000]*)/g, "");}
+{var cpos = txv.search.main.getVideoPos('g', 'comm');}
+{var pDetailUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):txv.common.getDetailUrl(item.ID, videotype);}
+{var pUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):item.AW;}
+{var IS_YGP=txv.search.main.check_trailer(item)}
+{var YGP_URL = IS_YGP?Live.txv.search.main.get_trailer_source_url(item.prev_list):""}
+{var hasSeries = !!(item.series && item.series.series_id)}
+{var hasAlbum = !!(item.album && item.album.album_id)}
+{var hasMultiMedia = !!(hasAlbum && item.album.media_list && item.album.media_list.length)}
+{var seriesId = hasSeries && item.series.series_id || ''}
+{var albumId = hasAlbum && item.album.album_id || ''}
+{var itemObj = new Object();itemObj.item = item}
+
+<div class="item_cont _item_cont" data-md="${item.MD}" data-seriesid="${seriesId}" data-albumid="${albumId}" data-mediaid="${item.ID}" data-lang="${item.seperate_language || ''}">
+<a href="{if (videotype==BC_DY&& IS_YGP &&YGP_URL)}${YGP_URL}{elseif item._AW}${item._AW}{else}javascript:;{/if}" {if item._AW} target="_blank"{/if} title="${item.title}" class="figure result_film_figure" {if item.AP == 3 && (videotype == BC_DY || videotype == BC_ZY || videotype == BC_SS)}_log_pt="2"{elseif videotype == BC_DY || videotype == BC_LXJ || videotype == BC_DM}_log_pt="3"{else}_log_pt="1"{/if} _log_clid="${item.ID}" _hot="search.zd.datu">
+<img alt="${item.title}" ll_src="${item.AU}" onerror="picerr(this,1);" />${item.imgtag|getCoverImgtagHtml:[2]}{if (videotype==BC_DY || videotype==BC_LXJ || videotype==BC_DM || videotype==BC_JLP) && item.defaultSource && item.defaultSource.source=='qq'}${item.imgtag|getCoverImgtagHtml:[1]}{/if}
+{if item.AP==3}
+{if item.SY}
+<span class="figure_mask"><em class="mask_txt">${item.SY}</em></span>
+{/if}
+{if item.ST==1}
+<span class="mark_custom"><em class="mark_inner">独播</em></span>
+{/if}
+{elseif videotype==BC_LXJ || videotype==BC_DM}
+{if item.SS}
+<span class="figure_mask"><em class="mask_txt">${item.SS}</em></span>
+{else}
+${item.imgtag|getCoverImgtagHtml:[3]}
+{/if}
+{/if}
+</a>
+<h2 class="result_title"><a href="{if item._AW}${item._AW}{else}javascript:;{/if}" title="${item.title}" vtype="${videotype}" vap="${item.AP}" {if item.AP == 3 && (videotype == BC_DY || videotype == BC_ZY || videotype == BC_SS)}_log_pt="2"{elseif videotype == BC_DY || videotype == BC_LXJ || videotype == BC_DM}_log_pt="3"{else}_log_pt="1"{/if} _log_sec="1" _log_ctl="${item.ID}" _log_pos="${cpos}" _log_schg="0" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="0" vedit="${item.is_edit || 0}" vfh="{if item.FH==4}2{else}1{/if}" {if item.defaultSource} vsource="${item.defaultSource.source}" {/if} _hot="search.zd.title" {if item._AW} target="_blank"{/if}>${item.TI}{if item._title_ext1}<span class="title_year">{if item._title_ext1!="原版"}(${item._title_ext1|no_original_edition}){/if}</span>{/if}</a>{if (item.AP==3 && item.ST==1) || (item.imgtag && item.imgtag.tag_2 && item.imgtag.tag_2.id == 20001)}<span class="mark_custom"><em class="mark_inner">全网独播</em></span>{/if}<sub class="title_sub">${item.Z9.BC}</sub></h2>
+{if item.VC}
+<div class="result_data">
+<div class="result_data_score">
+<label class="data_lbl">评分：</label><span class="data_num">{if item.VC % 10 == 0}${item.VC / 10}.0{else}${item.VC / 10}{/if}</span>
+</div>
+</div>
+{/if}
+{if item.FH!=4 && (item.STAT==3 || item.STAT==12) && (videotype==BC_DY || videotype==BC_LXJ || videotype==BC_DM || videotype==BC_JY || videotype==BC_WH || videotype==BC_KJ)}
+<div class="mod_conner_func mod_conner_func_hover">
+<a href="javascript:void(0);" class="btn_notice" data-followid="{if item.AP==3}${item._columnid}{else}${item.ID}{/if}" data-followtype="{if item.AP==3}5{else}1{/if}" followpos="1" _log_pt="1" _log_clid="${item.ID}" _hot="search.follow.zd">
+<i class="ico_follow"></i>
+<span class="btn_inner">加入看单</span>
+</a>
+<!--
+<div class="mod_pop_alert_hint __hint" style="{if !item.SS}display:none;{/if}">
+<i class="triangle"></i>
+<p class="popup_wadint" data-role="content">
+{if item.SS}${item.SS}，{/if}关注后第一时间通知你
+</p>
+</div>
+-->
+</div>
+{/if}
+{var existName = item.TO||(item.TE&&videotype!=BC_ZY);}
+{var existAreaOrSt = (videotype==BC_DY || videotype==BC_LXJ || videotype==BC_DM || videotype==BC_ZY)&&(!$j.isEmptyObject(item.area)||!$j.isEmptyObject(item.st));}
+{var existBdOrBm = (videotype==BC_DY || videotype==BC_LXJ)&&(item.BD.length>0||item.BM.length>0);}
+{var existTfOrBm = (videotype==BC_ZY || item.AP==3)&&(item.TF||item.BM.length>0);}
+{var existSubtype = (videotype!=BC_ZY && item.Z1.subtype);}
+{var isOnlyItx = itx && !existName && !existAreaOrSt && !existBdOrBm && !existTfOrBm && !existSubtype}
+<div class="result_info {if isOnlyItx} result_placeholder{/if}">
+<ul>
+{if existName}
+<li class="info_item info_item_actor">
+{if item.TO}
+<div class="item_wrap">
+<label class="result_info_lbl">别&nbsp;&nbsp;&nbsp;名：</label>
+<div class="result_info_cont">
+{for bm in item.TO.split(';')}
+{if bm}
+<span class="info_desc">${bm}</span>
+{/if}
+{/for}
+</div>
+</div>
+{/if}
+{if item.TE&&videotype!=BC_ZY}
+<div class="item_wrap item_right">
+<label class="result_info_lbl">英文名：</label>
+<div class="result_info_cont">
+{for bm in item.TE.split(';')}
+{if bm}
+<span class="info_desc">${bm}</span>
+{/if}
+{/for}
+</div>
+</div>
+{/if}
+</li>
+{/if}
+{if existAreaOrSt}
+<li class="info_item info_item_actor">
+{if !$j.isEmptyObject(item.area)}
+<div class="item_wrap">
+<label class="result_info_lbl">地&nbsp;&nbsp;&nbsp;区：</label>
+<div class="result_info_cont">
+{for a in item.area}
+{if a.url.length>0}<a href="${a.url}" _hot="search.zd.Area" target="_blank" class="result_info_link">${a.name}</a>{else}<a href="${a.name|getSearchUrl:'word.jp_all'}" class="result_info_link" target="_blank">${a.name}</a>{/if}
+{forelse}
+暂无
+{/for}
+</div>
+</div>
+{/if}
+{if !$j.isEmptyObject(item.st)}
+<div class="item_wrap item_right">
+<label class="result_info_lbl">类&nbsp;&nbsp;&nbsp;型：</label>
+<div class="result_info_cont">
+{for l in item.st}
+{if l.url.length>0}<a href="${l.url}" _hot="search.zd.Class" target="_blank" class="result_info_link">${l.name}</a>{else}<a href="${l.name|getSearchUrl:'word.jp_all'}" class="result_info_link">${l.name}</a>{/if}
+{forelse}
+暂无
+{/for}
+</div>
+</div>
+{/if}
+</li>
+{/if}
+{if existBdOrBm}
+<li class="info_item info_item_actor">
+{if (item.BD.length>0)}
+<div class="item_wrap">
+<label class="result_info_lbl">导&nbsp;&nbsp;&nbsp;演：</label>
+<div class="result_info_cont">
+{for director in item.BD.split(';')}<a target="_blank" _hot="search.zd.daoyan" href="${director|getSearchUrl:'word.jp_all'}" class="result_info_link">${director}</a>{/for}
+</div>
+</div>
+{/if}
+{if (item.BM.length>0)}
+{if (item.BD.length>0)}<div class="item_wrap item_right">{/if}
+<label class="result_info_lbl">主&nbsp;&nbsp;&nbsp;演：</label>
+<div class="result_info_cont">
+{var bms=item.BM.split(';').slice(0, 10);}{for actor in bms}<a target="_blank" _hot="search.zd.zhuyan" href="${actor|getSearchUrl:'word.jp_all'}" class="result_info_link">${actor}</a>{/for}{if item.BM.split(';').length>10}<a title="${item.BM.split(';').slice(10).join(' ')}">...</a>{/if}
+</div>
+{if (item.BD.length>0)}</div>{/if}
+{/if}
+</li>
+{/if}
+{if existTfOrBm}
+<li class="info_item info_item_actor">
+{if item.TF}
+<div class="item_wrap" style="display:none">
+<label class="result_info_lbl">电视台：</label>
+<div class="result_info_cont">
+{if item.TF}
+<a href="${item.Z1.churl|getZY_TV_URL}" _hot="search.zd.dianshitai" target="_blank" class="result_info_link">${item.TF}</a>
+{else}
+暂无
+{/if}
+</div>
+</div>
+{/if}
+{if item.BM.length>0}
+{if item.TF}<div class="item_wrap">{/if}
+<label class="result_info_lbl">主持人：</label>
+<div class="result_info_cont">
+{var bms=item.BM.split(';').slice(0, 10);}{for actor in bms}<a target="_blank" _hot="search.zd.zhuyan" href="${actor|getSearchUrl:'word.jp_all'}" class="result_info_link">${actor}</a>{/for}{if item.BM.split(';').length>10}<a title="${item.BM.split(';').slice(10).join(' ')}">...</a>{/if}
+</div>
+{if item.TF}</div>{/if}
+{/if}
+</li>
+{/if}
+{if existSubtype}
+<li class="info_item">
+<label class="result_info_lbl">类&nbsp;&nbsp;&nbsp;型：</label>
+<div class="result_info_cont">
+{for l in item.Z1.subtype}
+<a href="${l.id|getZY_TP_URL}" _hot="search.zd.Class" target="_blank" class="result_info_link">${l.name}</a>
+{forelse}
+暂无
+{/for}
+</div>
+</li>
+{/if}
+{if itx}
+<li class="info_item">
+<label class="result_info_lbl">简&nbsp;&nbsp;&nbsp;介：</label>
+<div class="result_info_cont">
+<p class="result_info_txt">
+${itx}{if !itx}暂无{/if}
+{if itx.length>50}<a href="javascript:void(0);" _hot="search.zd.desc.more" class="btn_more"><span class="btn_inner">详情</span><i class="ico_arrow"></i></a>{/if}
+</p>
+</div>
+</li>
+{/if}
+</ul>
+{var commObj = item.commentary;}
+{if commObj && commObj.total_talk}
+<div class="mod_talks_box">
+<a class="weak" href="${commObj.url}" target="_blank" _hot="search.zd.filmreview.title">影评</a>
+<div class="row_txt {if commObj.type === 0} row_one{else} row_two{/if}">
+<a href="${commObj.url}" target="_blank" _hot="search.zd.filmreview.content">
+<img ll_src="${commObj.pic}" alt="${commObj.name}" class="avatar" onerror="picerr(this,8);">
+<strong class="user">${commObj.name} :</strong>“{if commObj.type === 0}${commObj.content|gethlsubstr:28}{else}${commObj.content|gethlsubstr:60}{/if}”
+</a>
+</div>
+<a class="talks_count" href="${commObj.url}" target="_blank" _hot="search.zd.filmreview.review">
+{if commObj.total_talk === 1}
+写下你的精彩评论
+{else}
+还有<strong>${commObj.total_talk-1}</strong>条{if commObj.type === 0}精彩短评{else}深度解读{/if}
+{/if}
+</a>
+</div>
+{/if}
+{if !hasMultiMedia && !hasSeries}
+${itemObj|template:'g_comm_infosource_tplid'}
+{/if}
+</div>
+{if hasMultiMedia || hasSeries}
+<div class="mutiltab_cont {if hasMultiMedia} mutiltab_cont_s01{/if}">
+{if hasMultiMedia}
+<ul class="mod_mutitle_list">
+{for ml in item.album.media_list}
+<li class="tablist {if ml.id === item.ID && (ml.seperate_language || '') === (item.seperate_language || '')} current{/if} _album_version" data-seriesid="${seriesId}" data-albumid="${albumId}" data-mediaid="${ml.id}" data-lang="${ml.seperate_language || ''}" _hot="search.zd.series.version">
+<span class="inner">${ml.version || '未知'}</span>
+<i class="border"></i>
+</li>
+{/for}
+</ul>
+{/if}
+${itemObj|template:'g_comm_infosource_tplid'}
+</div>
+{/if}
+{if (videotype==BC_DY || videotype==BC_LXJ || videotype==BC_DM || videotype==BC_ZY)}
+{if videotype==BC_DY || videotype==BC_LXJ}
+{var YG_LIST=Live.txv.search.main.show_no_positive(item.prev_list,videotype==BC_LXJ?'lxj':'dy')}
+{/if}
+{if videotype==BC_ZY}
+{var YG_LIST=Live.txv.search.main.show_no_positive(item.prev_list,'zy')}
+{/if}
+{var YY_LIST=item.song_list}
+
+{var isExistLeft = !!(YG_LIST && YG_LIST.length && videotype != BC_DM);}
+{var isExistRight = !!(YY_LIST&&YY_LIST.length);}
+{var isExistBoth = !!(isExistLeft && isExistRight);}
+
+{if (isExistLeft || isExistRight)}
+<div class="mutiltab_cont cf">
+{if isExistBoth}<div class="cont_left">{/if}
+{if isExistLeft}
+<ul class="mod_mutitle_list">
+<li class="tablist current">
+{if videotype==BC_DY || videotype==BC_LXJ}
+<span class="inner">预告片/花絮</span>
+{elseif videotype==BC_ZY}
+<span class="inner">片花</span>
+{/if}
+<i class="border"></i>
+</li>
+</ul>
+
+<!-- 预告片/花絮 -->
+<div class="mod_album_titlist">
+<div class="mod_figures_preview">
+<ul class="mod_figure cf">
+{var lisCount = 0;}
+{for playurlobj in YG_LIST}
+{if lisCount < 3 || !isExistRight}
+<li>
+<a href="${playurlobj.url}" class="figure" title="${playurlobj.title}"  _log_pt="1" _log_clid="${item.ID}" _hot="search.zd.yugao.pic" _log_etp="1" _log_vid="${playurlobj.id}" target="_blank">
+<img ll_src="${playurlobj.pic}" alt="" onerror="picerr(this,2);">
+{if playurlobj.tl || playurlobj.sharp}
+<span class="figure_mask"><em class="mask_txt">${playurlobj.tl|getTimeLong3}</em></span>
+<sup class="mark_hd">${playurlobj.sharp}</sup>
+{/if}
+{if videotype==BC_ZY}
+<sup class="mark_clips">片花</sup>
+{elseif videotype==BC_DY || videotype==BC_LXJ}
+{if playurlobj.type=="2"}
+<sup class="mark_trailer">预告片</sup>
+{elseif (playurlobj.type!="1"&&playurlobj.type!="2")}
+<sup class="mark_titbit">花絮</sup>
+{/if}
+{/if}
+</a>
+<strong class="figure_title figure_title_two_row"><a href="${playurlobj.url}" _log_etp="2" _log_vid="${playurlobj.id}" _log_pt="1" _log_clid="${item.ID}" _hot="search.zd.yugao.title" target="_blank" title="${playurlobj.title}">${playurlobj.title|gethlsubstr:23}</a></strong>
+</li>
+{var lisCount = lisCount + 1;}
+{/if}
+{/for}
+</ul>
+</div>
+</div>
+<!-- 预告片/花絮 -->
+{/if}
+{if isExistBoth}
+</div>
+<div class="cont_right">
+{/if}
+{if isExistRight}
+<ul class="mod_mutitle_list">
+<li class="tablist current">
+<i class="icon_qqmusic"></i>
+<span class="inner">影视原声</span>
+<i class="border"></i>
+</li>
+</ul>
+<!-- 影视原声 -->
+<div class="mod_album_titlist {if !isExistLeft} mod_album_music{/if}">
+<div class="music_list">
+<ul class="list cf">
+{var lisCount = 0;}
+{for yyobj in YY_LIST}
+{if lisCount < 3 || !isExistLeft}
+{var liId = item.ID + "_" + yyobj.song_id}
+{var rowClass = isExistLeft ? yyobj.rowClassOneColumn : yyobj.rowClass;}
+<li class="${rowClass} music_default" data-url="${yyobj.url}" id="${liId}" data-cid="${item.ID}" data-songid="song_${yyobj.song_id}" data-songids="${yyobj.song_id}" data-songname="${yyobj.song_name}" data-albumid="${yyobj.album_id}" data-albummid="${yyobj.album_mid}" data-albumname="${yyobj.album_name}" data-movietitle="${item.title}" data-mvid="${yyobj.mv_id}">
+<div class="info">
+<span class="name{if (yyobj.mv_url)} name_short{/if}" title="${yyobj.song_name}">${yyobj.song_name}</span>
+{if (yyobj.mv_url)}
+<a href="${yyobj.mv_url}" target="_blank" class="icon_music_mv" data-songid="${yyobj.song_id}" data-cid="${item.ID}" _hot="search.music.mv.${liId}"></a>
+{/if}
+<i class="icon_music_now"></i>
+</div>
+<p class="item_singer" title="${yyobj.album_name}">${yyobj.album_name}</p>
+<div class="btn">
+<a href="javascript:;" class="icon_play" title="点击播放" data-songid="${yyobj.song_id}" data-cid="${item.ID}" _hot="search.music.play.${liId}"></a>
+<a href="javascript:;" class="icon_pause" title="暂停音乐" data-songid="${yyobj.song_id}" data-cid="${item.ID}" _hot="search.music.pause.${liId}" ></a>
+<a href="javascript:;" class="icon_download" title="下载音乐" data-songid="${yyobj.song_id}" data-cid="${item.ID}" data-vtitle="${item.title}" _hot="search.music.download.${liId}"></a>
+</div>
+</li>
+{var lisCount = lisCount + 1;}
+{/if}
+{/for}
+</ul>
+<a href="javascript:;" class="more_option" data-cid="${item.ID}" data-vtitle="${item.title}" _hot="search.music.more.${item.ID}">下载QQ音乐，畅听更多《${item.title|gethlsubstr:7}》影视原声（共${item.total_song_num}首）</a>
+</div>
+</div>
+<!-- 影视原声 -->
+{/if}
+{if isExistBoth}</div>{/if}
+</div>
+{/if}
+{/if}
+</div>
+
+</textarea>
+<textarea id="g_comm_infosource_tplid" style="display:none">
+{var BC_DY=1;}
+{var BC_LXJ=2;}
+{var BC_DM=3;}
+{var BC_JLP=9;}
+{var BC_ZY=10;}
+{var BC_SS=25;}
+{var BC_JY=27;}
+{var BC_QC=29;}
+{var BC_MV=22;}
+{var BC_CJ=24;}
+{var BC_YL=5;}
+{var BC_SH=31;}
+{var BC_WH=51;}
+{var BC_KJ=28;}
+{var RT_LM=1;}
+{var RT_JJ=2;}
+{var RT_YG=3;}
+{var RT_DHDY = '动画电影';}
+{var videotype = item.Z1.type;}
+{var isNeedPay = item.Z9.PAY;}
+{var itx = item.TX.replace(/(^\s*)|(\s*$)/g, "").replace(/^([\u3000]*)/g, "");}
+{var cpos = txv.search.main.getVideoPos('g', 'comm');}
+{var pDetailUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):txv.common.getDetailUrl(item.ID, videotype);}
+{var pUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):item.AW;}
+{var IS_YGP=txv.search.main.check_trailer(item)}
+{var YGP_URL = IS_YGP?Live.txv.search.main.get_trailer_source_url(item.prev_list):""}
+{var hasSeries = !!(item.series && item.series.series_id)}
+{var hasAlbum = !!(item.album && item.album.album_id)}
+{var seriesId = hasSeries && item.series.series_id || ''}
+{var albumId = hasAlbum && item.album.album_id || ''}
+<div class="info_source infoSource">
+{var isPlayChunk1 = !!(videotype==BC_DY&& IS_YGP &&YGP_URL);}
+{var isPlayChunk2 = !!(videotype == BC_DM && item.defaultSource && item.defaultSource.videotype == 2);}
+{var isPlayChunk3 = !!(item.FH!=4 && (videotype==BC_LXJ || videotype==BC_SS || videotype==BC_DM || videotype==BC_ZY || videotype==BC_QC || videotype==BC_MV || videotype==BC_CJ || videotype==BC_YL || videotype==BC_SH || videotype==BC_WH || videotype==BC_KJ || (videotype==BC_DY && (!item.defaultSource || (item.defaultSource && (item.defaultSource.rendertype==RT_YG || item.defaultSource.rendertype==RT_LM))))));}
+
+{var isPlayChunk3_1 = isPlayChunk3 && !!((videotype==BC_DM&&(item.defaultSource && item.defaultSource.rendertype==RT_YG && item.defaultSource.playlist && item.defaultSource.playlist.length>0 && item.defaultSource.videotype != 2)) || (videotype==BC_DM&&(item.defaultSource && item.BY==RT_DHDY && item.defaultSource.playlist && item.defaultSource.playlist.length>0 && item.defaultSource.videotype == 1)));}
+
+{var isPlayChunk3_2 = isPlayChunk3 && !!(!item.ticket);}
+
+{var existPlayChunk = (isPlayChunk1 || isPlayChunk2 || isPlayChunk3_1 || isPlayChunk3_2);}
+
+{if existPlayChunk}
+<div class="info_version_play">
+{if isPlayChunk1}
+<a href="${YGP_URL}" target="_blank" class="btn_play"><span class="btn_inner">播放预告片</span><i class="ico_playbtn"></i></a>
+{if (!!item.ticket)}
+<a href="${item.ticket.ticket_url}" target="_blank" class="btn_ticket">买电影票</a>
+<a href="${item.ticket.ticket_url}" target="_blank" class="btn_tips">${item.ticket.ticket_city}最低价：￥${item.ticket.ticket_price}元</a>
+{/if}
+{/if}
+{if isPlayChunk2}
+<a href="${item.defaultSource.playlist[0].url}" target="_blank" class="btn_play"><span class="btn_inner">播放预告片</span><i class="ico_playbtn"></i></a>
+{/if}
+{if isPlayChunk3}
+{if isPlayChunk3_1}
+<a href="${item.defaultSource.playlist[0].url}" _log_pt="1" _log_clid="${item.ID}" _hot="search.zd.video.play" target="_blank" class="btn_play"><span class="btn_inner">播放全片</span><i class="ico_playbtn"></i></a>
+{/if}
+{if isPlayChunk3_2}
+<a href="${item._AW}" class="btn_bule_large" {if item.AP == 3 && (videotype == BC_DY || videotype == BC_ZY || videotype == BC_SS)}_log_pt="2"{elseif videotype == BC_DY || videotype == BC_LXJ || videotype == BC_DM}_log_pt="3"{else}_log_pt="1"{/if} _log_clid="${item.ID}" _hot="search.zd.detail" target="_blank"><span class="btn_inner">查看详情</span></a>
+{/if}
+{/if}
+</div>
+{/if}
+
+{var existClipsTab = !!(item._clipsSource && item._play_list && item._play_list.length);}
+{var hideSrcStr = existClipsTab ? ' style="display:none;"' : '';}
+
+{if !item.defaultSource}
+{if IS_YGP || hasSeries}
+{else}
+<a class="text_gray" _hot="search.zd.tellmenoeat" href="http://support.qq.com/write.shtml?fid=832" target="_blank">看不到视频？小编也在跪求，如果你知道请告诉我们吧！</a>
+{/if}
+{else}
+<div class="info_source_title _infoSourceTitle" ${hideSrcStr}>
+<label class="result_info_lbl">播放源：</label>
+<div class="result_info_cont">
+{if item.defaultSource}
+{var deSource = item.defaultSource}
+<span href="javascript:void(0);" class="link_source_default currentSource" title="${deSource._source.cnName}" _hot="search.zd.source.curSourceIcon"><i class="ico_source ${deSource._source.clsName}"></i><span class="source_inner">${deSource._source.cnName}{if deSource.pay_type == 2}<i class="ico_text_vip_small"></i>{/if}</span></span>
+{/if}
+{if item._play_list && item._play_list.length>0}
+<div class="mod_play_source">
+<ul class="mod_play_source_list">
+{for ps in item._play_list}
+{if item.defaultSource && item.defaultSource.source==ps.source}
+<li title="${ps._source.cnName}" data-pay_type="${ps.list[0].pay_type}" data-bt="${item.BT}" sourcespeed="${ps._source.speed}" sourcename="${ps.source}" sourceid="${ps.defaultVideoKey}" vtype="${videotype}" vap="${item.AP}" _aw="${ps._AW}" sourceIcon="${ps._source.clsName}" class="current"><a href="javascript:void(0);" _hot="search.zd.source.icon"><i class="ico_source ${ps._source.clsName}"></i><span class="source_inner">${ps._source.cnName}{if ps.list[0].pay_type == 2}<i class="ico_text_vip_small"></i>{/if}</span></a></li>
+{else}
+<li title="${ps._source.cnName}" data-pay_type="${ps.list[0].pay_type}" data-bt="${item.BT}" sourcespeed="${ps._source.speed}" sourcename="${ps.source}" sourceid="${ps.defaultVideoKey}" vtype="${videotype}" vap="${item.AP}" _aw="${ps._AW}" sourceIcon="${ps._source.clsName}"><a href="javascript:void(0);" _hot="search.zd.source.icon"><i class="ico_source ${ps._source.clsName}"></i><span class="source_inner">${ps._source.cnName}{if ps.list[0].pay_type == 2}<i class="ico_text_vip_small"></i>{/if}</span></a></li>
+{/if}
+{/for}
+</ul>
+{if item._play_list.length>1}<a href="javascript:void(0);" class="btn_source_more" title="切换播放源" _hot="search.zd.source.more"><i class="ico_arrow"></i></a>{/if}
+</div>
+{/if}
+{if !IS_YGP && (!item._play_list || item._play_list.length==0)}
+<p class="info_source_empty">暂无播放源</p>
+{/if}
+</div>
+</div>
+{if existClipsTab}
+<div class="info_source_title _clipsInfoSourceTitle">
+<label class="result_info_lbl">播放源：</label>
+<div class="result_info_cont">
+{var clipsSource = item._clipsSource}
+<span href="javascript:void(0);" class="link_source_default currentSource" title="${clipsSource._source.cnName}" _hot="search.zd.source.curSourceIcon"><i class="ico_source ${clipsSource._source.clsName}"></i><span class="source_inner">${clipsSource._source.cnName}</span></span>
+</div>
+</div>
+<div class="mutiltab_cont cf sourceTabCont" >
+<ul class="mod_mutitle_list">
+<li class="tablist current" data-sourceType="clips">
+<span class="inner">片花</span>
+<i class="border"></i>
+</li>
+<li class="tablist" data-sourceType="positive">
+<span class="inner">正片</span>
+<i class="border"></i>
+</li>
+</ul>
+</div>
+<div class="info_version clipsSourceCont" sourcename="${clipsSource.source}" vid="${item.ID}" vtype="${videotype}" vap="${item.AP}" req-flag="true">
+<div class="mod_album_titlist langCont" sourceid="${clipsSource.key}" req-flag="true">
+{if clipsSource.rendertype==RT_LM || clipsSource.rendertype==RT_JJ}
+<div class="mod_album_titlist_title mod_album_titlist_title_multiline {if clipsSource.rendertype==RT_JJ || clipsSource.nplaylisttab.length<2} none{/if}">
+<ul>
+{for zyyear in clipsSource.nplaylisttab}
+<li data-group="${zyyear.groupIdx}" vtype="${videotype}" data-start="${zyyear.start}" data-end="${zyyear.end}" data-year="${zyyear.year}" data-loadstatus="0" class="{if zyyear.groupChecked}current{/if}">
+<a href="javascript:void(0);" _hot="search.zd.juji.tab">${zyyear.groupName}<i class="triangle_down"></i></a>
+</li>
+{/for}
+
+</ul>
+</div>
+{var itemObj = new Object();itemObj.vplist = clipsSource; itemObj.vsource = clipsSource.source; itemObj.vid = item.ID; itemObj.vAP = item.AP; itemObj.vtype = item.BT; itemObj.rendertype = clipsSource.rendertype; itemObj.hasSeries = hasSeries;}
+${itemObj|template:'g_vplist_list_tplid'}
+<div class="wrapper_loading load_type_m _loading" style="display:none;"></div>
+{/if}
+</div>
+</div>
+{/if}
+{/if}
+{for ps in item._play_list}
+{if item.defaultSource && ps.defaultVideoKey==item.defaultSource.videokey}
+<div class="info_version sourceCont" sourcename="${ps.source}" defaultsourceid="${ps.defaultVideoKey}" vid="${item.ID}" vtype="${videotype}" vap="${item.AP}" req-flag="true" ${hideSrcStr}>
+
+{for lang in ps.list}
+{if !existPlayChunk && (lang.rendertype==RT_LM || lang.rendertype==RT_JJ)}
+<div class="info_version_play"></div>
+{/if}
+{if lang.videokey==item.defaultSource.videokey}
+<div class="mod_album_titlist langCont" sourceid="${lang.videokey}" req-flag="true">
+{if lang.rendertype==RT_LM || lang.rendertype==RT_JJ}
+<div class="mod_album_titlist_title mod_album_titlist_title_multiline {if lang.rendertype==RT_JJ || item.defaultSource.nplaylisttab.length<2} none{/if}">
+<ul>
+{for zyyear in item.defaultSource.nplaylisttab}
+<li data-group="${zyyear.groupIdx}" vtype="${videotype}" data-start="${zyyear.start}" data-end="${zyyear.end}" data-year="${zyyear.year}" data-loadstatus="0" class="{if zyyear.groupChecked}current{/if}">
+<a href="javascript:void(0);" _hot="search.zd.juji.tab">${zyyear.groupName}<i class="triangle_down"></i></a>
+</li>
+{/for}
+
+</ul>
+</div>
+{/if}
+{if lang.rendertype==RT_LM || lang.rendertype==RT_JJ}
+{var itemObj = new Object();itemObj.vplist = item.defaultSource; itemObj.vsource = ps.source; itemObj.vid = item.ID; itemObj.vAP = item.AP; itemObj.vtype = item.BT; itemObj.rendertype = lang.rendertype; itemObj.hasSeries = hasSeries;}
+${itemObj|template:'g_vplist_list_tplid'}
+{else}
+{var playurlobj_detail = 0;}
+{var playurlobj_detail2= 0;}
+{for playurlobj in item.defaultSource.playlist}
+{if item.defaultSource && item.defaultSource.rendertype!=RT_YG && playurlobj_detail2==0  && (playurlobj.type=="1" || !playurlobj.type)}
+<div class="info_version_play">
+<a data-s-type="player" data-s-src="${ps.source}" data-s-eponum="" data-s-id="${item.ID}" data-s-cty="${item.BT}" data-s-mdtype="${item.AP}" href="${playurlobj.url}" class="btn_play" vsource="${ps.source}" _log_pt="1" _log_clid="${item.ID}" _hot="search.zd.video.play" target="_blank">
+<span class="btn_inner" data-source="${item.PLNAME}" data-buy="${item.c_user_buy}" data-btntype="play"
+{if item.PLNAME == 'qq'}
+data-pay="${item.pay}"
+{else}
+data-paytype="${item.defaultSource.pay_type}"
+{/if}
+></span><i class="ico_playbtn"></i></a>
+{if item.FH!=4 && videotype==BC_DY}
+{if (!!item.ticket)}
+<a href="${item.ticket.ticket_url}" target="_blank" class="btn_ticket">买电影票</a>
+<a href="${item.ticket.ticket_url}" target="_blank" class="btn_tips">${item.ticket.ticket_city}最低价：￥${item.ticket.ticket_price}元</a>
+{else}
+<a href="${item._AW}" class="btn_bule_large" _log_pt="3" _log_clid="${item.ID}" _hot="search.zd.detail" target="_blank"><span class="btn_inner">查看详情</span></a>
+{/if}
+{/if}
+<a href="javascript:void(0);" class="btn_option" style="display:none">开通会员看全片</a>
+</div>
+{var playurlobj_detail = playurlobj_detail+1;}
+{var playurlobj_detail2= playurlobj_detail2+1;}
+{/if}
+{/for}
+{if item.defaultSource && item.defaultSource.rendertype!=RT_YG && playurlobj_detail==0}
+<div class="info_version_play">
+{if item.FH!=4 && videotype==BC_DY}
+<a href="${item._AW}" class="btn_bule_large" _log_pt="1" _log_clid="${item.ID}" _hot="search.zd.detail" target="_blank"><span class="btn_inner">查看详情</span></a>
+{/if}
+</div>
+{/if}
+{/if}
+<div class="wrapper_loading load_type_m _loading" style="display:none;"></div>
+</div>
+{else}
+<div class="mod_album_titlist langCont" sourceid="${lang.videokey}" req-flag="false" style="display:none;"></div>
+{/if}
+{/for}
+</div>
+{else}
+<div class="info_version sourceCont" sourcename="${ps.source}" defaultsourceid="${ps.defaultVideoKey}" vid="${item.ID}" vtype="${videotype}" vap="${item.AP}" vfh="${item.FH}" req-flag="false" style="display:none;">
+
+{for lang in ps.list}
+<div class="mod_album_titlist langCont" sourceid="${lang.videokey}" req-flag="false" style="display:none;"></div>
+{/for}
+</div>
+{/if}
+{/for}
+</div>
+</textarea>
+<!-- 栏目/剧集 播放列表-页面模板 -->
+<textarea id="g_vplist_list_tplid" style="display:none;">
+{var RT_LM=1;}
+{var RT_JJ=2;}
+{var isMix = (vplist.hasOwnProperty('is_mix_free_vip_episode') ? vplist.is_mix_free_vip_episode : vplist.mix_free_vip_episode) == '1'}
+{var bIsQqSource = vsource == 'qq';}
+{var hasFirstMore = vplist.has_more == 1}
+{var display = typeof(isHide) != 'undefined' && isHide ? 'display: none;' : ''}
+{if rendertype==RT_LM}
+{var zyyear = vplist.nplaylist}
+<div class="mod_album_titlist_lists video_play_list_cont" data-group="${zyyear.groupIdx}" style="${display}">
+<ul data-group="${zyyear.groupIdx}">
+{var yl_index=0;}
+{var zyyear_len=zyyear.list.length;}
+{for yl in zyyear.list}
+{var episodePay = yl.hasOwnProperty('pay_type') ? yl.pay_type : yl.episode_pay}
+{var bNeedPay = !!(isMix && vplist.pay_type == '2' && episodePay != '0');}
+{var sSType = bNeedPay && !bIsQqSource ? "noplay" : "player";}
+{var maxLen = 6}
+{var exNone = ''}
+
+{if !hasFirstMore && zyyear_len>maxLen && yl_index>(maxLen-2)}
+{var exNone = 'ex none'}
+{/if}
+<li class="${exNone}">
+<a data-s-type="${sSType}" data-s-src="${vsource}" data-s-eponum="${yl.episode_number}" data-s-id="${vid}" data-s-mdtype="${vAP}" data-s-mdid="${vtype}" title="${yl.title}" href="${yl.url}" target="_blank" vsource="${vsource}" _log_pt="1" _log_clid="${vid}" _hot="search.zd.zongyi.juji" >{if vAP==3}
+<span class="date">${yl.episode_number|getYearDateFormat}</span>&nbsp; {/if}
+${yl.title}{if bNeedPay}<i class="{if bIsQqSource}icon_vip{else}icon_pay{/if}"></i>{elseif yl.is_new==1}<i class="ico_new"></i>{/if}
+</a>
+</li>
+
+{var yl_index=yl_index+1;}
+{/for}
+{var zyyear_len_yu = 0}
+{var ctrlClass = 'ctrl_unfold'}
+{var _hot = ''}
+{if hasFirstMore}
+{var zyyear_len_yu = parseInt(vplist.cnt,10) - zyyear_len;}
+{var ctrlClass = '_ctrl_first_unfold'}
+{var _hot = '.first'}
+{elseif zyyear_len>maxLen}
+{var zyyear_len_yu = zyyear_len-(maxLen-1);}
+{/if}
+{if zyyear_len_yu}
+<li class="${ctrlClass}"><a href="javascript:void(0);" _hot="search.zd.zongyi.more${_hot}" class="btn_ablum_titlist">展开更多 （余<span class="high_color">${zyyear_len_yu}</span>集）<i class="triangle_down"></i></a></li>
+<li class="ctrl_fold none"><a href="javascript:void(0);" _hot="search.zd.zongyi.more" class="btn_ablum_titlist">收起全部<i class="triangle_up"></i></a></li>
+{/if}
+</ul>
+</div>
+{elseif rendertype==RT_JJ}
+{var group = vplist.nplaylist}
+{var renderedMore = false}
+<div class="mod_album_notitlist_lists video_play_list_cont" data-group="${group.groupIdx}" style="${display}">
+<ul data-group="${group.groupIdx}">
+{var gl_index=0;}
+{var group_len = group.list.length;}
+{for gl in group.list}
+{var episodePay = gl.hasOwnProperty('pay_type') ? gl.pay_type : gl.episode_pay}
+{var bNeedPay = !!(isMix && vplist.pay_type == '2' && episodePay != '0');}
+{var sSType = bNeedPay && !bIsQqSource ? "noplay" : "player";}
+{var limitRowLen = hasSeries ? 13 :16}
+{var rowLen = limitRowLen, twoRowLen = 2*rowLen, firstRowLastIndex = rowLen - 3}
+{var exNone = ''}
+
+{if group_len>twoRowLen && gl_index>firstRowLastIndex && gl_index<(group_len-rowLen)}
+{var exNone = 'ex none '}
+{/if}
+<li class="${exNone} {if gl.entity_flag == 1} missing{/if}">
+<a data-s-type="${sSType}" data-s-src="${vsource}" data-s-eponum="${gl.episode_number}" data-s-id="${vid}" data-s-mdtype="${vAP}" data-s-cty="${vtype}" href="{if gl.url}${gl.url}{else}javascript:void(0){/if}" target="_blank" vsource="${vsource}" _log_pt="1" _log_clid="${vid}" _hot="search.zd.dd.juji" >${gl.episode_number}
+{if bNeedPay}
+<i class="{if bIsQqSource}icon_vip{else}icon_pay{/if}"></i>
+{elseif gl.type && gl.type!=1}
+<i class="icon_trailer"></i>
+{elseif gl.is_new==1}
+<i class="ico_new"></i>
+{/if}
+</a>
+</li>
+{if !renderedMore && gl_index==firstRowLastIndex}
+{var ctrlClass = ''}
+{var _hot = ''}
+{if hasFirstMore}
+{var ctrlClass = ' _ctrl_first_unfold'}
+{var _hot = '.first'}
+{elseif group_len>twoRowLen}
+{var ctrlClass = ' ctrl_unfold'}
+{var _hot = ''}
+{/if}
+{if ctrlClass}
+{var renderedMore = true}
+<li class="item_trailer ${ctrlClass}"><a href="javascript:void(0);" _hot="search.zd.dd.more${_hot}"><i class="sign_ellipsis">······</i></a></li>
+{/if}
+{/if}
+
+{var gl_index=gl_index+1;}
+{/for}
+</ul>
+{if renderedMore}
+<a href="javascript:void(0);" class="btn_album_up ctrl_fold none" _hot="search.zd.dd.fold"><span class="up_txt">收起</span><i class="triangle_up"></i></a>
+{/if}
+</div>
+{/if}
+</textarea>
+<!--拉取不同播放源的播放列表-页面模板-->
+<textarea id="g_vplist_tplid" style="display:none;">
+{var BC_DY=1;}
+{var BC_LXJ=2;}
+{var BC_DM=3;}
+{var BC_JLP=9;}
+{var BC_ZY=10;}
+
+{var RT_LM=1;}
+{var RT_JJ=2;}
+{var RT_YG=3;}
+{if rendertype==RT_LM || rendertype==RT_JJ}
+<div class="mod_album_titlist_title mod_album_titlist_title_multiline {if rendertype==RT_JJ || vplist.nplaylisttab.length<2} none{/if}">
+<ul>
+{for zyyear in vplist.nplaylisttab}
+<li data-group="${zyyear.groupIdx}" vtype="${vtype}" data-start="${zyyear.start}" data-end="${zyyear.end}" data-year="${zyyear.year}" data-loadstatus="0" class="{if zyyear.groupChecked}current{/if}">
+<a href="javascript:void(0);" _hot="search.zd.juji.tab">${zyyear.groupName}<i class="triangle_down"></i></a>
+</li>
+{/for}
+</ul>
+</div>
+{/if}
+{if rendertype==RT_LM || rendertype==RT_JJ}
+{var itemObj = new Object();itemObj.vplist = vplist; itemObj.vsource = vsource; itemObj.vid = vid; itemObj.vAP = vAP; itemObj.vtype = vtype; itemObj.rendertype = rendertype; itemObj.hasSeries = hasSeries;}
+${itemObj|template:'g_vplist_list_tplid'}
+{elseif rendertype==RT_YG && vplist.playlist}
+<div class="mod_figures_preview">
+<ul class="mod_figure cf">
+{var playurlobj_index=0;}
+{for playurlobj in vplist.playlist.slice(0,3)}
+<li>
+<a href="${playurlobj.url}" class="figure" title="${playurlobj.title}" vsource="${vsource}" _log_pt="1" _log_clid="${vid}" _hot="search.zd.yugao.pic" target="_blank">
+<img src="${playurlobj.pic}" alt="" onerror="picerr(this,2);">
+{if playurlobj.tl || playurlobj.sharp}
+<span class="figure_mask"><em class="mask_txt">${playurlobj.tl|getTimeLong3}</em></span>
+<sup class="mark_hd">${playurlobj.sharp}</sup>
+{/if}
+</a>
+<strong class="figure_title figure_title_two_row"><a href="${playurlobj.url}" _log_pt="1" _log_clid="${vid}" _hot="search.zd.yugao.title" target="_blank" title="${playurlobj.title}">${playurlobj.title|gethlsubstr:23}</a></strong>
+</li>
+{var playurlobj_index=playurlobj_index+1;}
+{/for}
+</ul>
+{if vplist.playlist.length>0}
+{var firstPlayurlobj = vplist.playlist[0];}
+<a href="${firstPlayurlobj.url}" class="btn_more" _log_pt="1" _log_clid="${vid}" _hot="search.zd.yugao.more" target="_blank"><span class="btn_inner">更多片段</span><i class="triangle_right"></i></a>
+{/if}
+</div>
+{else}
+{var playurlobj_index=0;}
+{for playurlobj in vplist.playlist}
+<div class="info_version_play {if playurlobj_index>0} none{/if}">
+<a data-s-type="player" data-s-src="${vsource}" data-s-eponum="" data-s-id="${vid}" data-s-mdtype="${vAP}" data-s-cty="${vtype}" href="${playurlobj.url}" class="btn_play" vsource="${vsource}" _log_pt="1" _log_clid="${vid}" _hot="search.zd.video.play" target="_blank"><span class="btn_inner" data-source="${vsource}" data-buy="${vplist.c_user_buy}" data-btntype="play" data-pay="${vplist.pay_type}" data-paytype="${vplist.pay_type}"></span><i class="ico_playbtn"></i></a>
+{if vfh!=4 && vtype==BC_DY}
+<a href="${vid|getNewDetailUrl}" class="btn_bule_large" _log_pt="1" _log_clid="${vid}" _hot="search.zd.detail" target="_blank"><span class="btn_inner">查看详情</span></a>
+{/if}
+</div>
+{var playurlobj_index=playurlobj_index+1;}
+{/for}
+{/if}
+<div class="wrapper_loading load_type_m _loading" style="display:none;"></div>
+</textarea>
+<!--混排 综合结果-->
+<textarea id="g_comm_zh_tplid" style="display:none;">
+{var BC_MV=22;}
+{var isNeedPay = item.Z9.PAY;}
+{var videotype = item.Z1.type;}
+{var cpos = txv.search.main.getVideoPos('g', 'comm');}
+{var pUrl = (isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):item.AW) || 'javascript:;';}
+{var itx = item.TX.replace(/(^\s*)|(\s*$)/g, "").replace(/^([\u3000]*)/g, "");}
+{var bn = item.AP == 1 && item.BN>0 ? '('+item.BN+')':''}
+<div class="item_cont">
+<a class="figure" href="${pUrl}" target="_blank" _hot="search.zd.zh.img" _log_pt="1" _log_sec="2" _log_ctl="2_${item.ID}" _log_pos="${cpos}" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${pUrl};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">
+<img ll_src="${item.AU}" onerror="picerr(this,2);" alt="${item.title + bn}">${item.imgtag|getCoverImgtagHtml:[1]}
+{if item.AL}
+<div class="mod_sign">
+<span class="mod_info">
+<span class="new_info">${item.AL|getTimeLong3}</span>
+</span>
+</div>
+{/if}
+</a>
+{if item.TJ && item.AP == 2 && item.TF}
+<h2 class="result_title"><a href="${pUrl}" target="_blank" _hot="search.zd.zh.title" _log_pt="1" _log_clid="2_${item.ID}">${item.TF}</a></h2>
+{else}
+<h2 class="result_title"><a href="${pUrl}" target="_blank" title="${item.title + bn}" _hot="search.zd.zh.title" _log_pt="1" _log_clid="2_${item.ID}">${item.TI + bn}</a></h2>
+{/if}
+<div class="result_info">
+<ul>
+{if item.TJ && item.AP == 2 && item.TF}
+<li class="info_item">
+<label class="result_info_lbl">节&nbsp;&nbsp;&nbsp;目：</label>
+<div class="result_info_cont">
+<p class="result_info_txt">${item.TJ}</p>
+</div>
+</li>
+{if item.BJ}
+<li class="info_item">
+<label class="result_info_lbl">明&nbsp;&nbsp;&nbsp;星：</label>
+<div class="result_info_cont">
+<p class="result_info_txt">{for actor in item.BJ.split(';')}<a href="/search.html?stag=word.zh_all&pagetype=3&ms_key=${actor|encode2}" _hot="search.zd.zh.actor" target="_blank">${actor}</a>&nbsp;{/for}</p>
+</div>
+</li>
+{/if}
+{elseif item.TJ}
+<li class="info_item">
+{var itemTJ = _MODIFIERS["getSignedStr"](item.TJ,item.TF)}
+<label class="result_info_lbl">{if itemTJ === item.TJ}节&nbsp;&nbsp;&nbsp;目{else}主&nbsp;&nbsp;&nbsp;题{/if}：</label>
+<div class="result_info_cont">
+<p class="result_info_txt">${itemTJ}</p>
+</div>
+</li>
+{if item.BJ}
+<li class="info_item">
+<label class="result_info_lbl">明&nbsp;&nbsp;&nbsp;星：</label>
+<div class="result_info_cont">
+<p class="result_info_txt">{for actor in item.BJ.split(';')}<a href="/search.html?stag=word.zh_all&pagetype=3&ms_key=${actor|encode2}" _hot="search.zd.zh.actor" target="_blank">${actor}</a>&nbsp;{/for}</p>
+</div>
+</li>
+{/if}
+{else}
+{if item.AM}
+<li class="info_item info_item_prop">
+<div class="item_wrap">
+<label class="result_info_lbl">上传者：</label>
+<div class="result_info_cont">
+{if item._uploader && item._uploader.vflg === 1}
+<a href="javascript:;" class="result_info_link _uploader_pop">${item.AM}<i class="ico_vplus_14"></i></a>
+<div class="prop_vplus _uploader_pop">
+<div class="prop_hd">
+<strong class="vplus_name">${item._uploader.up_nick}</strong>
+<div class="vplus_meta">
+<span>视频<em>${(item._uploader.video_num || 0)|getNewFormatNum}</em></span>
+<span class="meta_line"></span>
+<span>订阅<em>${(item._uploader.take_num || 0)|getNewFormatNum}</em></span>
+</div>
+<img class="vplus_avatar" ll_src="${item._uploader.pic}">
+</div>
+<div class="prop_bd">
+<a class="btn_book" href="javascript:;" data-act="set" data-vuin="${item._uploader.up_uin}" _hot="search.zd.zh.pop.book" _log_pt="8" _log_etp="303" _log_clid="2_${item.ID}"><span class="inner">订阅</span></a>
+<p class="vplus_desc">${item._uploader.desc}</p>
+</div>
+</div>
+{else}
+<span>${item.AM}</span>
+{/if}
+</div>
+</div>
+</li>
+{/if}
+{if itx || (!!item.BM) || item.TF}
+<li class="info_item">
+{if (!!item.BM)}
+<label class="result_info_lbl">{if videotype== BC_MV}歌&nbsp;&nbsp;&nbsp;手{else}明&nbsp;&nbsp;&nbsp;星{/if}：</label>
+<div class="result_info_cont">
+<p class="result_info_txt">{for actor in item.BM.split(';')}<a href="/search.html?stag=word.zh_all&pagetype=3&ms_key=${actor|encode2}" _hot="search.zd.zh.actor" target="_blank">${actor}</a>&nbsp;{/for}</p>
+</div>
+{elseif item.TF}
+<div class="result_info_cont result_info_lbl">
+<p class="result_info_txt">${item.TF}</p>
+</div>
+{else}
+<label class="result_info_lbl">简&nbsp;&nbsp;&nbsp;介：</label>
+<div class="result_info_cont">
+<p class="result_info_txt">${itx}</p>
+</div>
+{/if}
+</li>
+{/if}
+{/if}
+{if item.AT || item.Z9.VA}
+<li class="info_item">
+{if item.AT}
+<div class="item_wrap item_left"><!-- item_publish -->
+<label class="result_info_lbl">发&nbsp;&nbsp;&nbsp;布：</label>
+<div class="result_info_cont">
+<span class="info_desc">${item.AT.substring(0,10)}</span>
+</div>
+</div>
+{/if}
+{if item.Z9.VA}
+<div class="item_wrap item_right">
+<label class="result_info_lbl">播放量：</label>
+<div class="result_info_cont">
+<span class="info_desc">${item.Z9.VA}</span>
+</div>
+</div>
+{/if}
+</li>
+{/if}
+</ul>
+{if item.PLNAME}
+<div class="info_source_title">
+{var s = txv.search.sosolist.getSourceMap(item.PLNAME)}
+<label class="result_info_lbl">播放源：</label>
+<div class="result_info_cont">
+<span href="javascript:void(0);" class="link_source_default" title="${s.cnName}" _hot="search.zd.source.curSourceIcon"><i class="ico_source ${s.clsName}"></i><span class="source_inner">${s.cnName}</span></span>
+</div>
+</div>
+{/if}
+</div>
+</div>
+</textarea>
+<textarea id="g_comm_yt_tplid" style="display: none;">
+{var BC_DY=1;}
+{var BC_LXJ=2;}
+{var BC_DM=3;}
+{var BC_JLP=9;}
+{var BC_ZY=10;}
+{var BC_YC=103;}
+{var BC_BOKE=7;}
+{var BC_MV=22;}
+<div class="wrapper_loading load_type_m _loading" style="display: none;margin-top: -30px;height: 30px;min-height: 0px;"></div>
+<div class="mod_bd cf">
+<div class="mod_figures mod_figures_search">
+<div class="mod_figure_wrap">
+<div class="mod_figure">
+{var showNum = txv.search.main.screenType === 'big'? 6: 5;}
+{var num = 0;}
+{for it in item.extra_info.list}
+{var num = num + 1;}
+{var videotype = it.Z1.type;}
+{var isNeedPay = it.Z9.PAY;}
+{var cpos = txv.search.main.getVideoPos('g', 'comm');}
+{var pUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(it.ID):it.AW;}
+{var itbm = it.BM.replace(/(^;+)|(;+$)/g, "");}
+<div class="list_item _list_item" {if num>showNum}style="display: none;"{/if}>
+<a title="${it.title}" target="_blank" class="figure" href="{if it.URL}${it.URL}{else}javascript:;{/if}" _hot="search.zd_yt.nav.datu" _log_pt="1" _log_sec="1" _log_ctl="2_${it.ID}" _log_pos="${cpos}" vduration="${it.AL}" vcheckuptime="${it.AT}" vmd="${it.MD}" vedit="${it.is_edit || 0}" _log_ext="${cpos};${it.title|encode2};${pUrl};${it.BB};${it.AP};${it.BC|encode2};${it.AY+""|encode2};${it.AT};${it.AL}">
+<img ll_src="${it.AU || ''}" {if num>showNum}ll_src_q="true"{/if} onerror="picerr(this,1);" />${it.imgtag|getCoverImgtagHtml:[1, 2]}
+<div class="figure_more">
+<span class="figure_more_title">${it.Z9.BC}</span>
+</div>
+</a>
+{if (videotype==BC_DY || videotype==BC_LXJ || videotype==BC_DM) && (it.STAT==3 || it.STAT==12)}
+<a href="javascript:;" class="wrap_follow" title="加入看单" data-followid="{if it.AP==3}${it._columnid}{else}${it.ID}{/if}" data-followtype="{if it.AP==3}5{else}1{/if}" followpos="2" _hot="search.zd_yt.nav.follow">
+<i class="icon_follow"></i>
+</a>
+{/if}
+<strong class="figure_title"><a title="${it.title}" target="_blank" href="{if it.URL}${it.URL}{else}javascript:;{/if}" _hot="search.zd_yt.nav.title" _log_pt="1" _log_sec="1" _log_ctl="2_${it.ID}" _log_pos="${cpos}" vduration="${it.AL}" vcheckuptime="${it.AT}" vmd="${it.MD}" vedit="${it.is_edit || 0}" _log_ext="${cpos};${it.title|encode2};${pUrl};${it.BB};${it.AP};${it.BC|encode2};${it.AY+""|encode2};${it.AT};${it.AL}">${it.TI}</a>
+{if it.VC}
+<span class="figure_info_score">
+<em class="score_l">${parseInt(it.VC / 10)}</em>
+<em class="score_s">.${it.VC % 10}</em>
+</span>
+{/if}
+</strong>
+<p class="figure_more_desc">
+{if videotype==BC_ZY}${itbm.replace(/;+/g,'、')}
+{else}
+${it.MDESC}
+{/if}
+</p>
+</div>
+{/for}
+</div>
+</div>
+</div>
+</div>
+<a href="javascript:;" class="mod_load_more _more" _hot="search.zd_yt.nav.more" {if num<=showNum}style="display: none;"{/if}><!-- 点击loading加载状态添加类名'load_triggle',完成以后移除 -->
+<span class="load_btn _text">展开更多</span>
+<span class="load_status"><i class="ico_loading"></i>正在加载...</span>
+</a>
+</textarea>
+</div>
+<!--直达区前段 E-->
+
+<div class="wrapper">
+<!-- 更多精品搜索 开始 -->
+<div class="mod_row mod_row_search" id="comm_more_bigcont" style="display:none;">
+<div class="mod_title_simple mod_title_simple_line_b">
+<span class="mod_page_count" id="mod_page_count_more"></span>
+<span class="mod_page_simple none"><em class="page_inner curPageNum">1</em>/<span id="comm_more_pagetotal">1</span></span>
+</div>
+<div class="mod_bd cf" id="slide_ctrl_cont">
+<div class="mod_figures mod_figures_search">
+<div class="mod_figure_wrap">
+<ul class="mod_figure" id="g_data_more_cont"></ul>
+</div>
+<a href="javascript:void(0);" class="btn_prev_50 btn_prev_none" data-role="prev" data-exp="search.zd.more.prev" title="上一页"></a><!-- 不显示添加类名 btn_prev_none -->
+<a href="javascript:void(0);" class="btn_next_50 btn_next_none" data-role="next" data-exp="search.zd.more.next" title="下一页"></a><!-- 不显示添加类名 btn_next_none -->
+</div>
+</div>
+<textarea id="g_data_more_tplid" style="display:none;">
+{var BC_DY=1;}
+{var BC_LXJ=2;}
+{var BC_DM=3;}
+{var BC_JLP=9;}
+{var BC_ZY=10;}
+{for item in _list_more}
+{var videotype = item.Z1.type;}
+{var isNeedPay = item.Z9.PAY;}
+{var itx = item.TX.replace(/(^\s*)|(\s*$)/g, "").replace(/^([\u3000]*)/g, "");}
+{var cpos = txv.search.main.getVideoPos('g', 'comm');}
+{var pDetailUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):txv.common.getDetailUrl(item.ID, videotype);}
+{var pUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):item.AW;}
+<li class="list_item">
+<a href="{if item._AW}${item._AW}{else}javascript:;{/if}" {if item._AW} target="_blank"{/if} title="${item.title}" _log_pt="6" _log_clid="${item.ID}" class="figure" _hot="search.zd.more.datu">
+<img ll_src="${item.AU}" onerror="picerr(this,1);" />${item.imgtag|getCoverImgtagHtml:[1,2]}
+<!-- {if videotype==BC_LXJ || videotype==BC_DM}{if item.SS}<span class="figure_mask"><em class="mask_txt">${item.SS}</em></span>{else}${item.imgtag|getCoverImgtagHtml:[3]}{/if}{/if} -->
+<div class="figure_more">
+<span class="figure_more_title">${item.Z9.BC}</span>
+<!-- <span class="figure_more_desc">{if item.AP==3}${item.BM.replace(';','、')}{else}${item.TF}{/if}</span>
+<span class="figure_more_update">{if item.AP==3 || videotype==BC_LXJ}${item.SY}{elseif videotype==BC_DM}${item.SY}{else}${item.YF}{/if}</span> -->
+</div>
+</a>
+{if videotype==BC_DY || videotype==BC_LXJ || videotype==BC_DM}
+<a href="javascript:;" class="wrap_follow" title="加入看单" data-followid="{if item.AP==3}${item._columnid}{else}${item.ID}{/if}" data-followtype="{if item.AP==3}5{else}1{/if}" followpos="2" _hot="search.follow.zdmore">
+<i class="icon_follow" title="" ></i>
+</a>
+{/if}
+<strong class="figure_title"><a href="{if item._AW}${item._AW}{else}javascript:;{/if}" {if item._AW} target="_blank"{/if} title="${item.title}" _log_pt="6" _log_sec="1" _log_ctl="${item.ID}" _log_pos="${cpos}" _log_schg="0" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="0" vedit="${item.is_edit || 0}" {if item.defaultSource} vsource="${item.defaultSource.source}" {/if} _hot="search.zd.more.title">${item.TI}</a></strong>
+<p class="figure_summary">${item._title_ext1|no_original_edition}</p>
+<!-- {if item._title_ext1}<p class="figure_summary">${item._title_ext1}</p>{/if} -->
+<!-- <p class="figure_desc">${item.Z9.BC}&nbsp;{if item.defaultSource}(${item.defaultSource._source.cnName}){/if}</p> -->
+</li>
+{/for}
+</textarea>
+</div>
+<!-- 更多精品搜索 结束 -->
+
+
+<!--电视台搜索直达区 页面引入 开始-->
+<!-- <div id="accurate_search_tv" style="display: none;">
+
+</div> -->
+<!--电视台搜索直达区 页面引入 结束-->
+
+<!--人名搜索直达区 开始-->
+<!-- 艺人资料开始 --><!-- 最后一个搜索模块加"last"消除下边框线 -->
+<!-- <div class="mod_search_box mod_search_artist last" style="display: none;">
+<div class="mod_cont" id="p_profile_cont">
+
+</div>
+<textarea id="p_profile_tplid" style="display: none;">
+<div class="avatar"> <a target="_blank" _hot="search.person.post" href="/star/${c_id%100}/${c_id}.html"><img alt="${c_name}" src="${c_poster}" /></a> </div>
+<dl class="about film_about">
+<dt class="title"><a target="_blank" _hot="search.person.name" href="/star/${c_id%100}/${c_id}.html">${c_name}</a> {if c_en_name.length>0}(<em class="en">英文名：${c_en_name}</em>){/if}</dt>
+<dd class="tags">
+<span><strong>职业：</strong>${c_job1} ${c_job2} ${c_job3}</span>
+<span><strong>出生日期：</strong>{if c_year.length>0 || c_birth.length>0}${c_year}${c_birth}{else}暂无{/if}</span>
+<span><strong>身高：</strong>{if c_height.length>0}${c_height}{else}暂无{/if}</span>
+<span><strong>星座：</strong>{if c_sign.length>0}${c_sign}{else}暂无{/if}</span>
+</dd>
+<dd class="about_content">简介：{if c_desc.length>0}${c_desc.substring(0,190)}{if c_desc.length>190}...{/if}{else}暂无{/if} <a target="_blank" _hot="search.person.more" href="/star/${c_id%100}/${c_id}.html">了解更多&gt;&gt;</a></dd>
+</dl>
+</textarea>
+</div> -->
+<!-- 艺人资料结束 -->
+
+<!-- 艺人精品视频-开始 -->
+<!-- <div class="mod_video_list details" id="accurate_search_p" style="display: none;">
+<h2 class="title" style="display:none;">精品搜索结果<span>(<span id="p_comm_result_num"></span>条)</span></h2>
+<div class="mod_search_tabs">
+<a href="javascript:void(0);" _hot="search.person.Class.movie" ty="1">电影(<span id="p_comm_movie_num"></span>)</a><a href="javascript:void(0);" _hot="search.person.Class.tv" ty="2">连续剧(<span id="p_comm_tv_num"></span>)</a><a href="javascript:void(0);" _hot="search.person.Class.zy" ty="3">综艺(<span id="p_comm_zy_num"></span>)</a><a href="javascript:void(0);" _hot="search.person.Class.mv" ty="5">MV(<span id="p_comm_mv_num"></span>)</a>
+</div>
+<div class="mod_search_sort mod_sort">排序方式：<a class="current" sid="0" _hot="search.person.sort.relevant" href="javascript:void(0);">相关</a><a sid="1" _hot="search.person.sort.new" href="javascript:void(0);">最新</a><a sid="2" _hot="search.person.sort.hot" href="javascript:void(0);">最热</a></div>
+
+<div class="mod_cont mod_cont_film avatar" ty="1" style="display: none;">
+<ul class="mod_list_pic_116" id="p_movie_cont">
+</ul>
+<div class="item_more" id="p_comm_movie_more" style="display: none;">
+<span style="display: none;">正在努力加载中...</span>
+<a href="javascript:void(0);" _hot="search.person.movie.more" ty="1">还有<strong class="c_txt3" id="p_comm_movie_more_num">1</strong>条隐藏内容，点击查看更多<i class="tri"></i></a>
+</div>
+</div>
+<div class="mod_cont mod_cont_film" ty="2" style="display: none;">
+<ul class="mod_list_pic_116" id="p_tv_cont">
+</ul>
+<div class="item_more" id="p_comm_tv_more" style="display: none;">
+<span style="display: none;">正在努力加载中...</span>
+<a href="javascript:void(0);" _hot="search.person.tv.more" ty="2">还有<strong class="c_txt3" id="p_comm_tv_more_num">2</strong>条隐藏内容，点击查看更多<i class="tri"></i></a>
+</div>
+</div>
+<div class="mod_cont" ty="3" style="display: none;">
+<ul class="mod_list_pic_170" id="p_zy_cont">
+</ul>
+<div class="item_more" id="p_comm_zy_more" style="display: none;">
+<span style="display: none;">正在努力加载中...</span>
+<a href="javascript:void(0);" _hot="search.person.zy.more" ty="3">还有<strong class="c_txt3" id="p_comm_zy_more_num">3</strong>条隐藏内容，点击查看更多<i class="tri"></i></a>
+</div>
+</div>
+<div class="mod_cont" ty="5" style="display: none;">
+<ul class="mod_list_pic_170" id="p_mv_cont">
+</ul>
+<div class="item_more" id="p_comm_mv_more" style="display: none;">
+<span style="display: none;">正在努力加载中...</span>
+<a href="javascript:void(0);" _hot="search.person.mv.more" ty="5">还有<strong class="c_txt3" id="p_comm_mv_more_num">5</strong>条隐藏内容，点击查看更多<i class="tri"></i></a>
+</div>
+</div>
+<textarea id="p_movie_tplid" style="display: none;">
+{for item in list}
+{var isNeedPay = item.Z9.PAY;}
+{var pDetailUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):txv.common.getDetailUrl(item.ID, 1);}
+{var cpos = txv.search.main.getVideoPos('p','movie');}
+<li>
+<a title="${item.title}" _hot="search.person.movie.datu" target="_blank" class="mod_poster_v_116" href="${item.AW}" _log_pt="3" _log_clid="${item.ID}">
+<img alt="${item.title}" ll_src="${item.AU}" onerror="picerr(this,1);" />
+${item.imgtag|getCoverImgtagHtml}
+</a>
+<h6 class="scores"><a title="${item.title}" _hot="search.person.movie.title" target="_blank" href="${item.AW}" _log_pt="3" _log_sec="1" _log_ctl="${item.ID}" _log_pos="${cpos}" vmd="${item.MD}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${pDetailUrl};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">${item.TI}</a><strong class="c_txt3">${item.Z9.VC}</strong></h6>
+<p>${item.TK}</p>
+<p>播放：${item.Z9.VA}</p>
+</li>
+{/for}
+</textarea>
+<textarea id="p_tv_tplid" style="display: none;">
+{for item in list}
+{var isNeedPay = item.Z9.PAY;}
+{var pDetailUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):txv.common.getDetailUrl(item.ID, 2);}
+{var cpos = txv.search.main.getVideoPos('p','tv');}
+<li>
+<a title="${item.title}" _hot="search.person.tv.datu" target="_blank" class="mod_poster_v_116" href="${item.AW}" _log_pt="3" _log_clid="${item.ID}">
+<img alt="${item.title}" ll_src="${item.AU}" onerror="picerr(this,1);" />
+${item.imgtag|getCoverImgtagHtml}
+</a>
+<h6 class="scores"><a title="${item.title}" _hot="search.person.tv.title" target="_blank" href="${item.AW}" _log_pt="3" _log_sec="1" _log_ctl="${item.ID}" _log_pos="${cpos}" vmd="${item.MD}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${pDetailUrl};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">${item.TI}</a><strong class="c_txt3">${item.Z9.VC}</strong></h6>
+<p>${item.TK}</p>
+<p>播放：${item.Z9.VA}</p>
+</li>
+{/for}
+</textarea>
+<textarea id="p_zy_tplid" style="display: none;">
+{for item in list}
+{var isNeedPay = item.Z9.PAY;}
+{var cpos = txv.search.main.getVideoPos('p','zy');}
+<li>
+<a title="${item.title}" _hot="search.person.zy.datu" target="_blank" class="mod_poster_170" href="${item.AW}" _log_pt="1" _log_clid="${item.ID}">
+<img alt="${item.title}" ll_src="${item.AU}" onerror="picerr(this,2);" />
+${item.imgtag|getCoverImgtagHtml}
+</a>
+<h6 class="scores"><a title="${item.title}" _hot="search.person.zy.title" target="_blank" href="${item.AW}" _log_pt="1" _log_sec="1" _log_ctl="${item.ID}" _log_pos="${cpos}" vmd="${item.MD}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${item.AW};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">${item.TI}</a><strong class="c_txt3">${item.Z9.VC}</strong></h6>
+<p>${item.TF}</p>
+<p>播放：${item.Z9.VA}</p>
+</li>
+{/for}
+</textarea>
+<textarea id="p_mv_tplid" style="display: none;">
+{for item in list}
+{var isNeedPay = item.Z9.PAY;}
+{var cpos = txv.search.main.getVideoPos('p','mv');}
+<li>
+<a title="${item.title}" _hot="search.person.mv.datu" target="_blank" class="mod_poster_170" href="${item.AW}" _log_pt="1" _log_clid="${item.ID}">
+<img alt="${item.title}" ll_src="${item.AU}" onerror="picerr(this,2);" />
+<div class="mod_sign">{if item.AL!=""}<span class="mod_info"><span class="new_info">${item.AL|getTimeLong3}</span></span>{/if}{if item.AQ!=""}<span class="mode">${item.AQ}</span>{/if}</div>
+</a>
+<h6 class="scores"><a title="${item.title}" _hot="search.person.mv.title" target="_blank" href="${item.AW}" _log_pt="1" _log_sec="1" _log_ctl="${item.ID}" _log_pos="${cpos}" vmd="${item.MD}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${item.AW};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">${item.TI}</a><strong class="c_txt3">${item.Z9.VC}</strong></h6>
+<p>播放：${item.Z9.VA}</p>
+</li>
+{/for}
+</textarea>
+</div> -->
+<!-- 艺人精品视频-结束 -->
+<!--人名搜索直达区 结束-->
+
+<div id="ad_container">
+<div style="width:955px;height:80px;" class="mod_ad_search l_qq_com" id="QQlive_SP_SS_Width" _hot="search.guanggao"></div> <!--广告-->
+</div>
+
+<!-- 综合视频开始 -->
+<div class="mod_row mod_video_list mod_search_total" id="total_search" style="display: none;">
+<div class="mod_title_simple mod_title_simple_line_b" style="display:none"></div>
+<div class="mod_search_filter"><!-- 这里展开样式添加类名'filter_toggle' -->
+<ul class="mod_search_filter_list">
+<li class="list_item">
+<label class="search_filter_lbl">排序</label>
+<ul class="mod_filter_list">
+<li sort_type="0"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.relevant"><span class="link_inner">相关</span></a></li>
+<li sort_type="1"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.new"><span class="link_inner">最新</span></a></li>
+<li sort_type="2"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.hot"><span class="link_inner">最热</span></a></li>
+</ul>
+</li>
+<li class="list_item">
+<label class="search_filter_lbl">发布时间</label>
+<ul class="mod_filter_list">
+<li pubtime="0"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.pubtime.0"><span class="link_inner">全部</span></a></li>
+<li pubtime="1"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.pubtime.1"><span class="link_inner">一天</span></a></li>
+<li pubtime="7"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.pubtime.7"><span class="link_inner">一周</span></a></li>
+<li pubtime="14"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.pubtime.14"><span class="link_inner">两周</span></a></li>
+<li pubtime="30"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.pubtime.30"><span class="link_inner">一个月</span></a></li>
+</ul>
+</li>
+<li class="list_item">
+<label class="search_filter_lbl">时长</label>
+<ul class="mod_filter_list">
+<li pltimefilter="0"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.pltimefilter.0"><span class="link_inner">全部</span></a></li>
+<li pltimefilter="1"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.pltimefilter.1"><span class="link_inner">10分钟以下</span></a></li>
+<li pltimefilter="2"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.pltimefilter.2"><span class="link_inner">10-30分钟</span></a></li>
+<li pltimefilter="3"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.pltimefilter.3"><span class="link_inner">30-60分钟</span></a></li>
+<li pltimefilter="4"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.pltimefilter.4"><span class="link_inner">60分钟以上</span></a></li>
+</ul>
+</li>
+<li class="list_item">
+<label class="search_filter_lbl">分类</label>
+<ul class="mod_filter_list" id="coxTabId">
+<li _typeid="0"><a href="javascript:void(0);" class="filter_list_link" _hot="search.zhonghe.Class"><span class="link_inner">全部</span></a></li>
+</ul>
+</li>
+</ul>
+<a href="javascript:;" class="btn_arrow _cox_filter_btn"><i class="arrow"><i></i></i></a>
+</div>  <!--筛选条件容器结束-->
+
+<div class="mod_cont">
+<div class="loading_warp _loading" style="display: none;">
+<i class="ico_loading"></i>
+<span class="txt">正在加载数据</span>
+</div>
+<ul class="mod_figure_list mod_figure_list_190" id="cox_cont">
+
+</ul>
+</div> <!--综合区-模板容器-结束-->
+
+<div class="mod_search_noresult" id="mod_no_result_sort" style="display: none;">
+<div class="mod_search_noresult_inner">
+<i class="ico_noresult"></i>
+<h4 class="noresult_title">很抱歉，您筛选的条件没有相关结果</h4>
+<p class="noresult_txt">腾讯视频建议您：</p>
+<p class="noresult_txt">1. 更换筛选条件</p>
+<p class="noresult_txt">2. 更换关键词</p>
+</div>
+</div>
+
+<textarea id="cox_tplid" style="display:none">
+{var BC_DY=1;}
+{var BC_LXJ=2;}
+{var BC_DM=3;}
+{var BC_JLP=9;}
+{var BC_ZY=10;}
+{var BC_YC=103;}
+{var BC_BOKE=7;}
+{var BC_MV=22;}
+{var SDT_QEZB=1;}
+{for item in list}
+{var videotype = item.Z1.type;}
+{var isNeedPay = item.Z9.PAY;}
+{var specialDataType = item.SDT}
+{var cpos = txv.search.main.getVideoPos('cox');}
+{var pUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):item.AW;}
+{if item.TJ}
+<li class="list_item">
+{var itemTitle = item.AP==2 && item.TF || item.TI}
+<a title="${itemTitle|getNoEmStr}{if item.AP == 1 && item.BN>0}(${item.BN}){/if}" target="_blank" _hot="search.zhonghe.datu" class="img" href="${pUrl}" _log_pt="1" _log_sec="2" _log_ctl="2_${item.ID}" _log_pos="${cpos}" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="${_tabid}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${itemTitle|encode2};${pUrl};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">
+{if item.BB == 1}
+<img ll_src="${item.Z1.pic2}" onerror="picerr(this,2);" />
+{else}
+<img ll_src="${item.AU}" onerror="picerr(this,2);" />
+{/if}
+{if !!item.imgtag}
+${item.imgtag|getCoverImgtagHtml:[1,2,3,4]}
+{else}
+{if isNeedPay == true}<span class="mod_pay_sign">付费</span>{/if}
+<div class="mod_sign">
+<span class="mod_info"><span class="type">[${item.BC}]</span>
+{if (videotype == BC_LXJ || videotype == BC_DM) && item.AP == 2}
+<span class="new_info">${item.SY}</span>
+{elseif videotype == BC_ZY && item.AP == 2 && item.BN!=0}
+<span class="new_info">${item.BN|getDateFormat}期</span>
+{elseif item.AL && item.AL>0}
+<span class="new_info">${item.AL|getTimeLong3}</span>
+{/if}
+{if item.AQ != ""}<span class="mode">${item.AQ}</span>{/if}
+<span class="icon_play">播放</span></span>
+{/if}
+</div>
+</a>
+<h6 class="scores">
+<a title="${itemTitle|getNoEmStr}{if item.AP == 1 && item.BN>0}(${item.BN}){/if}" target="_blank" _log_pt="1" _log_clid="2_${item.ID}" _hot="search.zhonghe.title" href="${pUrl}">${itemTitle}{if item.AP == 1 && item.BN>0} (${item.BN}){/if}</a>
+</h6>
+{var itemTF = item.AP==2 && item.TF ? (_MODIFIERS["getSignedStr"](item.TJ,item.BJ)) : (_MODIFIERS["getSignedStr"](item.TJ,item.TF,item.BJ))}
+{if itemTF === item.BJ}
+<p>明星：{for actor in itemTF.split(';')}<a _hot="search.zhonghe.singer" href="/search.html?stag=word.zh_all&pagetype=3&ms_key=${actor|encode2}">${actor}</a>{forelse}暂无{/for}</p>
+{else}
+<p>${(itemTF === item.TJ ? '节目：' : '主题：') + itemTF}</p>
+{/if}
+<p>发布：{if item.AT.length>0}${item.AT.substring(0,10)}{else}暂无{/if}</p>
+<p>播放：${item.Z9.VA}</p>
+</li>
+{elseif specialDataType == SDT_QEZB}
+<li class="list_item">
+<a title="${item.title}" target="_blank" _hot="search.zhonghe.datu" class="img" href="${pUrl}" _log_pt="1" _log_sec="2" _log_ctl="2_${item.ID}" _log_pos="${cpos}" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="${_tabid}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${pUrl};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">
+{if item.BB == 1}
+<img ll_src="${item.Z1.pic2}" onerror="picerr(this,2);" />
+{else}
+<img ll_src="${item.AU}" onerror="picerr(this,2);" />
+{/if}
+${item.imgtag|getCoverImgtagHtml:[1]}
+{if isNeedPay == true}<span class="mod_pay_sign">付费</span>{/if}{if item.AF!="" && item.AF==3}<sup class="mark_trailer">预告片</sup>{/if}
+<div class="mod_sign">
+<span class="mod_info"><span class="type">[${item.BC}]</span>
+{if item.AL && item.AL>0}
+<span class="new_info">${item.AL|getTimeLong3}</span>
+{/if}
+{if item.AQ != ""}<span class="mode">${item.AQ}</span>{/if}
+<span class="icon_play">播放</span></span>
+</div>
+</a>
+<h6 class="scores">
+<a title="${item.title}" target="_blank" _log_pt="1" _log_clid="2_${item.ID}" _hot="search.zhonghe.title" href="${pUrl}">${item.TI}</a>
+</h6>
+{if item.TF.length>0}
+<p>${item.TF}</p>
+{/if}
+{if item.up_nick}
+<span class="colum_tags"><i class="ico_vplus_14"></i>${item.up_nick}</span>
+{/if}
+<p>发布：{if item.AT.length>0}${item.AT.substring(0,10)}{else}暂无{/if}</p>
+<p>播放：${item.Z9.VA}</p>
+</li>
+{elseif videotype == BC_DY || videotype == BC_LXJ || videotype == BC_DM || videotype == BC_JLP || videotype == BC_ZY || videotype == BC_YC}
+<li class="list_item">
+<a title="${item.title}{if item.AP == 1 && item.BN>0}(${item.BN}){/if}" target="_blank" _hot="search.zhonghe.datu" class="img" href="${pUrl}" _log_pt="1" _log_sec="2" _log_ctl="2_${item.ID}" _log_pos="${cpos}" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="${_tabid}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${pUrl};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">
+{if item.BB == 1}
+<img ll_src="${item.Z1.pic2}" onerror="picerr(this,2);" />
+{else}
+<img ll_src="${item.AU}" onerror="picerr(this,2);" />
+{/if}
+{if !!item.imgtag}
+${item.imgtag|getCoverImgtagHtml:[1,2,3,4]}
+{else}
+{if isNeedPay == true}<span class="mod_pay_sign">付费</span>{/if}
+<div class="mod_sign">
+<span class="mod_info"><span class="type">[${item.BC}]</span>
+{if (videotype == BC_LXJ || videotype == BC_DM) && item.AP == 2}
+<span class="new_info">${item.SY}</span>
+{elseif videotype == BC_ZY && item.AP == 2 && item.BN!=0}
+<span class="new_info">${item.BN|getDateFormat}期</span>
+{elseif item.AL && item.AL>0}
+<span class="new_info">${item.AL|getTimeLong3}</span>
+{/if}
+{if item.AQ != ""}<span class="mode">${item.AQ}</span>{/if}
+<span class="icon_play">播放</span></span>
+{/if}
+</div>
+</a>
+<h6 class="{if item.AP == 1}xtitle{else}scores{/if}">
+<a title="${item.title}{if item.AP == 1 && item.BN>0}(${item.BN}){/if}" target="_blank" _log_pt="1" _log_clid="2_${item.ID}" _hot="search.zhonghe.title" href="${pUrl}">{if item.AP == 1}${item.TI|gethlsubstr:22}{else}${item.TI}{/if}{if item.AP == 1 && item.BN>0} (${item.BN}){/if}</a>
+</h6>
+{if item.up_nick}
+<span class="colum_tags"><i class="ico_vplus_14"></i>${item.up_nick}</span>
+{elseif item.AP==2 && (item.TF.length>0 || item.TK.length>0)}
+{if videotype == BC_ZY || videotype == BC_YC}
+<p>${item.TF}</p>
+{else}
+<p>${item.TK}</p>
+{/if}
+{/if}
+<p>发布：{if item.AT.length>0}${item.AT.substring(0,10)}{else}暂无{/if}</p>
+<p>播放：${item.Z9.VA}</p>
+</li>
+{elseif videotype == BC_MV}
+<li class="list_item">
+<a title="${item.title}" target="_blank" _hot="search.zhonghe.datu" class="img" href="${pUrl}" _log_pt="1" _log_sec="2" _log_ctl="2_${item.ID}" _log_pos="${cpos}" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="${_tabid}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${pUrl};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">
+{if item.BB == 1}
+<img ll_src="${item.Z1.pic2}" onerror="picerr(this,2);" />
+{else}
+<img ll_src="${item.AU}" onerror="picerr(this,2);" />
+{/if}
+${item.imgtag|getCoverImgtagHtml:[1]}
+{if isNeedPay == true}<span class="mod_pay_sign">付费</span>{/if}{if item.AF!="" && item.AF==3}<sup class="mark_trailer">预告片</sup>{/if}
+<div class="mod_sign">
+<span class="mod_info"><span class="type">[${item.BC}]</span>
+{if item.AL && item.AL>0}
+<span class="new_info">${item.AL|getTimeLong3}</span>
+{/if}
+{if item.AQ != ""}<span class="mode">${item.AQ}</span>{/if}
+<span class="icon_play">播放</span></span>
+</div>
+</a>
+<h6 class="scores">
+<a title="${item.title}" target="_blank" _log_pt="1" _log_clid="2_${item.ID}" _hot="search.zhonghe.title" href="${pUrl}">${item.TI}</a>
+</h6>
+{if item.up_nick}
+<span class="colum_tags"><i class="ico_vplus_14"></i>${item.up_nick}</span>
+{elseif (!!item.BM)}
+<p>歌手：{for actor in item.BM.split(';')}<a _hot="search.zhonghe.singer" href="/search.html?stag=word.zh_all&pagetype=3&ms_key=${actor|encode2}">${actor}</a>{forelse}暂无{/for}</p>
+{/if}
+<p>发布：{if item.AT.length>0}${item.AT.substring(0,10)}{else}暂无{/if}</p>
+<p>播放：${item.Z9.VA}</p>
+</li>
+{else}
+<li class="list_item">
+<a title="${item.title}" target="_blank" _hot="search.zhonghe.datu" class="img" href="${pUrl}" _log_pt="1" _log_sec="2" _log_ctl="2_${item.ID}" _log_pos="${cpos}" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="${_tabid}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${pUrl};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">
+{if item.BB == 1}
+<img ll_src="${item.Z1.pic2}" onerror="picerr(this,2);" />
+{else}
+<img ll_src="${item.AU}" onerror="picerr(this,2);" />
+{/if}
+${item.imgtag|getCoverImgtagHtml:[1]}
+{if isNeedPay == true}<span class="mod_pay_sign">付费</span>{/if}{if item.AF!="" && item.AF==3}<sup class="mark_trailer">预告片</sup>{/if}
+<div class="mod_sign">
+<span class="mod_info"><span class="type">[${item.BC}]</span>
+{if item.AL && item.AL>0}
+<span class="new_info">${item.AL|getTimeLong3}</span>
+{/if}
+{if item.AQ != ""}<span class="mode">${item.AQ}</span>{/if}
+<span class="icon_play">播放</span></span>
+</div>
+</a>
+<h6 class="xtitle">
+<a title="${item.title}" target="_blank" _log_pt="1" _log_clid="2_${item.ID}" _hot="search.zhonghe.title" href="${pUrl}">${item.TI|gethlsubstr:22}</a>
+</h6>
+{if item.up_nick}
+<span class="colum_tags"><i class="ico_vplus_14"></i>${item.up_nick}</span>
+{/if}
+<p>发布：{if item.AT.length>0}${item.AT.substring(0,10)}{else}暂无{/if}</p>
+<p>播放：${item.Z9.VA}</p>
+</li>
+{/if}
+{/for}
+</textarea>
+
+<textarea id="cox_nav_tplid" style="display:none">
+{var BC_DY=1;}
+{var BC_LXJ=2;}
+{var BC_DM=3;}
+{var BC_JLP=9;}
+{var BC_ZY=10;}
+{var BC_YC=103;}
+{var BC_BOKE=7;}
+{var BC_MV=22;}
+{for item in list}
+{var videotype = item.Z1.type;}
+{var isNeedPay = item.Z9.PAY;}
+{var cpos = txv.search.main.getVideoPos('cox');}
+{var pUrl = isNeedPay==true?txv.search.main.getPayPlayUrl(item.ID):item.AW;}
+{var itembm = item.BM.replace(/(^;+)|(;+$)/g, "");}
+<li class="list_item">
+<a title="${item.title}" target="_blank" class="figure" href="{if item.URL}${item.URL}{else}javascript:;{/if}" _hot="search.zhonghe.nav.datu" _log_pt="1" _log_sec="2" _log_ctl="2_${item.ID}" _log_pos="${cpos}" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="${_tabid}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${pUrl};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">
+<img ll_src={if item.AU}"${item.AU}"{else}"http://imgcache.gtimg.cn/mediastyle/video_2013/style/img/common/no-img.png"{/if} onerror="picerr(this,1);" />${item.imgtag|getCoverImgtagHtml:[1, 2]}
+<div class="figure_more">
+<span class="figure_more_title">${item.Z9.BC}</span>
+</div>
+</a>
+{if (videotype==BC_DY || videotype==BC_LXJ || videotype==BC_DM) && (item.STAT==3 || item.STAT==12)}
+<a href="javascript:;" class="wrap_follow" title="加入看单" data-followid="{if item.AP==3}${item._columnid}{else}${item.ID}{/if}" data-followtype="{if item.AP==3}5{else}1{/if}" followpos="2" _hot="search.follow.human">
+<i class="icon_follow" title="" ></i>
+</a>
+{/if}
+<strong class="figure_title"><a title="${item.title}" target="_blank" href="{if item.URL}${item.URL}{else}javascript:;{/if}" _hot="search.zhonghe.nav.datu" _log_pt="1" _log_sec="2" _log_ctl="2_${item.ID}" _log_pos="${cpos}" vduration="${item.AL}" vcheckuptime="${item.AT}" vmd="${item.MD}" vtabid="${_tabid}" vedit="${item.is_edit || 0}" _log_ext="${cpos};${item.title|encode2};${pUrl};${item.BB};${item.AP};${item.BC|encode2};${item.AY+""|encode2};${item.AT};${item.AL}">${item.TI}</a></strong>
+<p class="figure_more_desc">
+{if videotype==BC_ZY}${itembm.replace(/;+/g,'、')}
+{else}
+${item.MDESC}
+{/if}
+</p>
+</li>
+{/for}
+</textarea>
+<div class="mod_pagenav" id="coxPager" style="display: none;"></div>
+</div> <!--综合区-整个容器-结束-->
+<!-- 综合视频结束 -->
+
+<!--人名直达区二期-页面模板-->
+<textarea id="g_humen_direct_2_tplid" style="display:none;">
+{if human.head.has_human_info}
+{var profession=human.head.profession ? human.head.profession.split('|') : []}
+{var alias=human.head.alias ? human.head.alias.split('|') : []}
+{var masterpiece=human.head.masterpiece ? human.head.masterpiece.split('|') : []}
+{var relative_star=(human.head.relative_stars_list && human.head.relative_stars_list.relative_star)?human.head.relative_stars_list.relative_star:[]}
+{var hot_star=(human.head.hot_stars_list && human.head.hot_stars_list.hot_star)?human.head.hot_stars_list.hot_star:[];}
+{var human_hot=txv.search.main.get_human_hots(human.head.hot_video_list)}
+{var starUrl = "http://v.qq.com/x/star/"+human.head.hid;}
+{var hasDetailDesc = !!(human.head.desc && human.head.desc.length);}
+{var detailLen = hasDetailDesc ? 2 : 4;}
+{var detailCount = 0;}
+<div class="mod_search_detail cf">
+<span class="detail_img">
+<a _log_clid="${human.head.name}_${human.head.hid}" _log_etp="3" _log_pt="10" _log_st="1_6" target="_blank;" href="${starUrl}"><img src="${human.head.pic}" alt="${human.head.name}"></a>
+</span>
+<!--屏蔽“热门明星”relative_star.length ? relative_star : hot_star-->
+{var _starts = relative_star;}
+<div class="detail_wrap {if !_starts.length} detail_wrap_long{/if}">
+<div class="detail_hd">
+<strong class="name"><a target="_blank" href="${starUrl}" _log_ctl="${human.head.name}_${human.head.hid}" _log_clid="${human.head.name}_${human.head.hid}" _log_etp="4" _log_pt="10" _log_st="1_6">${human.head.name}</a></strong>
+{if human.head.fansid}
+<a _log_clid="${human.head.name}_${human.head.hid}" _log_etp="7" _log_pt="7" _log_st="1_6" target="_blank;" href="http://v.qq.com/bar/${human.head.fansid}" class="icon"><i class="icon_bar_21"></i></a>
+<a target="_blank;" href="http://v.qq.com/bar/${human.head.fansid}" class="more" _log_clid="${human.head.name}_${human.head.hid}" _log_pt="7" _log_etp="7" _log_st="1_6">企鹅饭团</a>
+{/if}
+{if human.head.vplus_url}
+<a href="${human.head.vplus_url}" class="icon" target="_blank" _log_clid="${human.head.name}_${human.head.hid}" _log_pt="9" _log_st="1_6" _log_etp="8">
+<i class="ico_vplus_24"></i><span class="icon_inner">V+频道</span>
+</a>
+{/if}
+</div>
+<div class="detail_bd">
+<ul class="info_list">
+{if profession.length}
+<li class="list_item">
+<span class="label">职　业：</span>
+{for p in profession}
+${p}&nbsp;
+{/for}
+</li>
+{var detailCount = detailCount + 1;}
+{/if}
+
+{if alias.length}
+<li class="list_item">
+<span class="label">别　名：</span>
+<span class="nowrap">
+{for a in alias}
+${a}&nbsp;
+{/for}
+</span>
+</li>
+{var detailCount = detailCount + 1;}
+{/if}
+{if human.head.birthday && detailCount < detailLen}
+<li class="list_item">
+<span class="label">生　日：</span>
+${human.head.birthday}
+</li>
+{var detailCount = detailCount + 1;}
+{/if}
+{if human.head.area && detailCount < detailLen}
+<li class="list_item">
+<span class="label">地　区：</span>
+${human.head.area}
+</li>
+{/if}
+<!-- 					<li class="list_item list_item_hot">
+<span class="label">热门作品：</span>
+{if human_hot.length}
+{for h in human_hot}
+{if h}
+<a target="_blank" href="${h.url}" class="btn_tag" _log_clid="${human.head.name}_${human.head.hid}" _log_etp="5" _log_pt="8" _log_st="1_6">${h.title}</a>
+{/if}
+{/for}
+{else}
+<span style="color:#888;">完善中...</span>
+{/if}
+</li>-->
+{if hasDetailDesc}
+{var descLens = txv.search.main.screenType === 'small' ? [92, 190] : [146, 252]}
+{var humanDesc = jQuery ? jQuery.trim(human.head.desc) : human.head.desc}
+<li class="list_item">
+<span class="label">简　介：</span>
+<p class="summary">${txv.search.common.getSubStrByByte(humanDesc,(_starts.length ? descLens[0] : descLens[1]))}<a href="${starUrl+'#!view=detail'}" target="_blank" _log_clid="${human.head.name}_${human.head.hid}" _log_etp="10" _log_pt="10" _log_st="1_6" class="sum_more">详情</a></p>
+</li>
+{/if}
+</ul>
+</div>
+</div>
+
+{if _starts.length}
+<div class="detail_recommend">
+<strong class="title">
+{if relative_star.length==0}热门明星{else}相关明星{/if}
+</strong>
+<ul class="recommend_list cf">
+{for r in _starts}
+{var _starUrl = "http://v.qq.com/x/star/"+r.hid;}
+<li class="list_item">
+<a target="_blank" href="${_starUrl}" class="figure" title="${r.star_name}" title="${r.star_name}" _log_clid="${human.head.name}_${human.head.hid}" _log_pt="10" _log_st="1_6" _log_etp="6">
+<img src="{if r.star_pic}${r.star_pic}{else}http://imgcache.gtimg.cn/mediastyle/video_2013/style/img/search/name_bg.png{/if}" alt="${r.star_name}">
+<span class="name">${r.star_name}</span>
+</a>
+</li>
+{/for}
+</ul>
+</div>
+{/if}
+</div>
+{else}
+<div class="mod_search_detail search_detail_null"><!--搜索为空显示-->
+<div class="detail_wrap detail_wrap_long">
+<div class="detail_hd">
+<strong class="name"><a target="_blank;" href="http://v.qq.com/search.html?pagetype=3&stj2=search.search&stag=txt.index&ms_key=${encodeURIComponent(human.head.name)}">${human.head.name}</a></strong>
+<span class="null_text">暂无资料</span>
+</div>
+</div>
+</div>
+{/if}
+<div class="mod_cont_nowrap">
+<div class="mod_title_simple">
+<h2 class="mod_title"><span>最新娱乐资讯</span></h2>
+</div>
+<ul class="figures_list figure_w190 cf" id="h_hot_contid"></ul>
+<div class="mod_loading">
+<i class="ico_loading"></i>
+<p class="load_inner">正在努力加载...</p>
+</div>
+</div>
+</textarea>
+
+<!-- 搜索框无结果 开始 -->
+<!-- 非屏蔽无结果提醒 -->
+<div class="mod_search_noresult" id="mod_no_result_total" style="display: none;">
+<div class="mod_search_noresult_inner">
+<i class="ico_noresult"></i>
+<h4 class="noresult_title">很抱歉，没有找到与"<span class="title_keyword" id="search_words"></span>"相关的视频</h4>
+<p class="noresult_txt">腾讯视频建议您：</p>
+<p class="noresult_txt">1. 请检查输入的关键词是否有误</p>
+<p class="noresult_txt">2. 请缩短关键词</p>
+</div>
+</div>
+
+<!-- 屏蔽提醒 -->
+<div class="mod_search_noresult noresult_illigal" id="no_result_forbid" style="display: none;">
+<div class="mod_search_noresult_inner">
+<i class="ico_noresult"></i>
+<h4 class="noresult_title">根据相关法律法规和政策，搜索结果未予显示</h4>
+</div>
+</div>
+<!-- 热门搜索 -->
+<div class="mod_row mod_row_hotkey" id="no_result_hotkey" style="display: none;">
+<div class="hotkey_list" id="no_result_hotkey_fill"></div>
+<textarea id="no_result_hotkey_tpl" style="display:none;">
+<span class="label">热门搜索：</span>
+{for word in words}
+<a href="${word.c_title|getSearchUrl:'word.noresult'}" target="_blank" _hot="search.noresult.hotkey.word.${word.c_title}">${word.c_title}</a>
+{/for}
+</textarea>
+</div>
+
+<!-- 全网追剧 -->
+<div class="mod_row mod_row_drama" id="no_result_drama" style="display: none;">
+<div class="mod_row_hd"><h5 class="tit">全网追剧</h5></div>
+<div class="mod_row_bd">
+<div class="drama_figure_wrap">
+
+<ul class="drama_figure_list cf" id="no_result_drama_fill"></ul>
+
+<a href="/zhuiju/" class="mod_load_more" target="_blank" _hot="search.noresult.drama.more">查看更多</a>
+
+<textarea id="no_result_drama_tpl" style="display:none;">
+{for item in list}
+<li class="item">
+<a href="${item.curUrl}" class="img" target="_blank" _hot="search.noresult.drama.img">
+<img src="${item.pic}" alt="${item.title}" onerror="picerr(this,2);">
+{if item.needTag}
+<span class="mark_custom"><em class="mark_inner">已更新</em></span>
+{/if}
+</a>
+<div class="figure_title">
+<h3 class="title">
+<a href="${item.curUrl}" target="_blank" _hot="search.noresult.drama.title" title="${item.title}">${item.title}</a>
+{if item.total_episode}
+<span class="mark_update">全${item.total_episode}集</span>
+{/if}
+</h3>
+<span class="mod_score">
+{if item.score}
+{var scores = (item.score + '').split('.')}
+<em class="score_l">${scores[0]}</em><em class="score_s">.${scores[1] || 0}</em>
+{/if}
+</span>
+<h6 class="summary">${item.desc}</h6>
+</div>
+<div class="figure_status">
+{if item.toupdate}
+将更新第
+{for upItem in item.toupdate}
+${upItem.episode|intFormat:'00'}
+{/for} 集
+{else}
+更新至第
+{for upItem in item.updated}
+{if upItem.url}
+<a href="${upItem.url}" target="_blank" _hot="search.noresult.drama.updated"><em class="strong">${upItem.episode|intFormat:'00'}</em></a>
+{else}
+${upItem.episode|intFormat:'00'}
+{/if}
+{/for} 集
+{/if}
+{if item.history}
+<span class="divid">|</span>观看至第 ${item.history|intFormat:'00' } 集
+{/if}
+</div>
+{if item.is_attent}
+<a href="javascript:void(0);" class="btn_collect btn_collected" title="已加入看单" _hot="search.noresult.drama.follow" data-topo-followid="${item.id}" data-followtype="1"><i class="ico_collect_20"></i><span class="btn_inner">移出看单</span></a>
+{else}
+<a href="javascript:void(0);" class="btn_collect" title="加入看单" _hot="search.noresult.drama.follow" data-topo-followid="${item.id}" data-followtype="1"><i class="ico_collect_20"></i><span class="btn_inner">加入看单</span></a>
+{/if}
+{if item.tovip}
+<span class="btn_member" title="会员可观看全集"><i class="icon_hlw"></i>会员可观看全集</span>
+{/if}
+</li>
+{/for}
+</textarea>
+
+</div>
+</div>
+</div>
+
+<!-- 大家都在看 -->
+<div class="mod_row mod_row_recommend" id="no_result_kan" style="display: none;">
+<div class="mod_row_hd"><h5 class="tit">大家都在看</h5></div>
+<div class="mod_row_bd">
+<div class="mod_figures mod_figures_filter mod_figure_h mod_figure_h_medium">
+<ul class="figures_list cf" id="no_result_kan_fill"></ul>
+
+<textarea  id="no_result_kan_tpl" style="display:none;">
+{var count = 0}
+{for item in reclist}
+{var count = count + 1}
+<li class="list_item">
+<a href="{if item.AW}${item.AW}{else}javascript:void(0);{/if}" class="figure" target="_blank" _hot="search.noresult.kan.img">
+<img src="${item.AU}" alt="${item.title}" onerror="picerr(this,1);">
+<span class="figure_mask"><em class="mask_txt">${item.BC}</em></span>
+${item.imgtag|getCoverImgtagHtml:[1,2]}
+</a>
+
+<strong class="figure_title"><a href="{if item.AW}${item.AW}{else}javascript:void(0);{/if}" target="_blank" title="${item.title}" _hot="search.noresult.kan.title">${item.TI}</a></strong>
+
+<div class="figure_desc">
+{if item.AG && item.AY}
+${[item.AG, item.AY].join('/')}
+{elseif item.AG}
+${item.AG}
+{elseif item.AY}
+${item.AY}
+{/if}
+</div>
+
+<div class="figure_info">
+<span class="figure_info_brand">
+{if item.VA || item.VA === 0}
+<i class="ico_play_12"></i>
+<span class="info_inner">${item.VA|getNewFormatNum}</span>
+{/if}
+</span>
+<span class="mod_score">
+{if item.VC}
+<em class="score_l">${Math.floor(item.VC / 10)}</em><em class="score_s">.${item.VC % 10}</em>
+{/if}
+</span>
+</div>
+
+{var followIds = item.ID.split('_')}
+<div class="figure_option" title="加入看单" data-topo-followid="${followIds[followIds.length-1]}" data-followtype="{if item.AP==3}5{else}1{/if}" _hot="search.noresult.kan.follow">
+<i class="icon_collect"></i>
+{if item.SS}
+<span class="tips {if count%5 === 0 || count%6 === 0} tips_left{/if}">${item.SS}<i class="arrow"><em></em></i></span>
+{/if}
+</div>
+</li>
+{/for}
+</textarea>
+
+</div>
+</div>
+</div>
+<!-- 搜索框无结果 结束 -->
+
+<div class="mod_loading loading_large" id="query_loading">
+<i class="ico_loading"></i>
+<p class="load_inner">正在努力加载内容……</p>
+</div>
+</div>
+
+</div>
+<!-- 过滤器 -->
+<textarea id="g_filter_tplid" style="display: none;">
+{var hotArea = item.hotArea || 'filter'}
+<div class="mod_search_filter"><!-- 这里展开样式添加类名'filter_toggle' -->
+<ul class="mod_search_filter_list">
+<li class="list_item">
+<label class="search_filter_lbl">排序</label>
+<ul class="mod_filter_list">
+<li sort_type="0"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.relevant"><span class="link_inner">相关</span></a></li>
+<li sort_type="1"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.new"><span class="link_inner">最新</span></a></li>
+<li sort_type="2"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.hot"><span class="link_inner">最热</span></a></li>
+</ul>
+</li>
+<li class="list_item">
+<label class="search_filter_lbl">发布时间</label>
+<ul class="mod_filter_list">
+<li pubtime="0"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.pubtime.0"><span class="link_inner">全部</span></a></li>
+<li pubtime="1"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.pubtime.1"><span class="link_inner">一天</span></a></li>
+<li pubtime="7"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.pubtime.7"><span class="link_inner">一周</span></a></li>
+<li pubtime="14"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.pubtime.14"><span class="link_inner">两周</span></a></li>
+<li pubtime="30"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.pubtime.30"><span class="link_inner">一个月</span></a></li>
+</ul>
+</li>
+<li class="list_item">
+<label class="search_filter_lbl">时长</label>
+<ul class="mod_filter_list">
+<li pltimefilter="0"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.pltimefilter.0"><span class="link_inner">全部</span></a></li>
+<li pltimefilter="1"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.pltimefilter.1"><span class="link_inner">10分钟以下</span></a></li>
+<li pltimefilter="2"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.pltimefilter.2"><span class="link_inner">10-30分钟</span></a></li>
+<li pltimefilter="3"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.pltimefilter.3"><span class="link_inner">30-60分钟</span></a></li>
+<li pltimefilter="4"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.pltimefilter.4"><span class="link_inner">60分钟以上</span></a></li>
+</ul>
+</li>
+<li class="list_item">
+<label class="search_filter_lbl">分类</label>
+<ul class="mod_filter_list _type_list">
+<li _typeid="0"><a href="javascript:void(0);" class="filter_list_link" _hot="search.${hotArea}.Class"><span class="link_inner">全部</span></a></li>
+{if item.typeHtml}${item.typeHtml}{/if}
+</ul>
+</li>
+</ul>
+<a href="javascript:;" class="btn_arrow _toggle_btn">{if item.btnTxts}<span class="btn_inner">${item.btnTxts[0]}</span>{/if}<i class="arrow"><i></i></i></a>
+</div>  <!--筛选条件容器结束-->
+</textarea>
+<div class="_tab_content" data-tab="userTab" style="display:none">
+<div class="wrapper">
+<ul class="complex_figure" id="userCont">
+
+</ul>
+<textarea id="userTpl"  style="display:none">
+{var defaultImg = "http://i.gtimg.cn/qqlive/images/20140318/i1395112323_1.jpg";}
+{for item in list}
+{var itx = item.TX.replace(/(^\s*)|(\s*$)/g, "").replace(/^([\u3000]*)/g, "");}
+{var cpos = txv.search.main.getVideoPos('user');}
+{var defaultSource = item.src_list && item.src_list.vsrcarray && item.src_list.vsrcarray[0];}
+{var euin = item.vflg && item.vflg==1 && txv.common.getUrlParam('uin', item.AW);}
+<li class="item cf">
+<div class="box_left">
+<a href="${item.AW}" target="_blank" _log_clid="u${item.ID}" _log_etp="301" class="img" _hot="search.usertab.img"><img ll_src="${item.AU || defaultImg}" onerror="picerr(this,1);"></a>
+<div class="box_hd">
+<h3 class="title"><a href="${item.AW}" _log_etp="302" _log_pt="9" {if item.vflg == 1}_log_st="3_0"{else}_log_st="6_0"{/if} _log_sec="5" _log_ctl="u${item.ID}" _log_pos="${cpos}" _log_schg="0" vmd="${item.MD}" vtabid="0" vedit="${item.is_edit || 0}" vsource="${defaultSource && defaultSource.name}"  target="_blank" _hot="search.usertab.title">${item.TI}</a></h3>
+{if item.vflg && item.vflg==1}
+<a href="${item.AW}" _log_etp="302" _log_clid="u${item.ID}" target="_blank" class="weak" _hot="search.usertab.vico"><i class="ico_vplus_24"></i>腾讯视频认证</a>
+{/if}
+</div>
+<div class="box_bd">
+<p class="intro" {if !!itx}title="${itx}"{/if}>{if !itx}暂无简介{else}${itx}{/if}</p>
+<ul class="count_data">
+{if item.vflg && item.vflg==1}
+<li class="unit">
+<span class="nums">${(item.take_num || 0)|getNewFormatNum}</span>
+<span class="name">订阅</span>
+</li>
+{/if}
+<li class="unit">
+<span class="nums">${(item.video_num || 0)|getNewFormatNum}</span>
+<span class="name">视频</span>
+</li>
+<li class="unit">
+<span class="nums">${(item.cover_num || 0)|getNewFormatNum}</span>
+<span class="name">专辑</span>
+</li>
+<li class="unit">
+<span class="nums">${(item.VA || 0)|getNewFormatNum}</span>
+<span class="name">播放</span>
+</li>
+</ul>
+</div>
+{if euin}
+<a href="javascript:;" class="btn_normal btn_subscript btn_subscripted" data-act="set" data-vuin="${euin}" _log_pt="8" _log_etp="303" _log_clid="u${item.ID}" _hot="search.usertab.follow"><span class="inner">订阅</span></a>
+{/if}
+</div>
+<div class="box_right">
+{if defaultSource}
+{var maxLen = 3}
+<div class="figure_wrap">
+<ul class="figures_list cf">
+{var playurlobj_index=0;}
+{for playurlobj in defaultSource.playlist.slice(0,maxLen)}
+<li class="list_item">
+<a href="${playurlobj.url}" class="figure" title="${playurlobj.title}" vsource="${defaultSource.name}" _log_pt="1" _log_etp="304" _log_clid="u${item.ID}" _hot="search.usertab.video.play" target="_blank">
+<img ll_src="${playurlobj.pic}" alt="" onerror="picerr(this,2);">
+{if playurlobj.tl || playurlobj.play_count || playurlobj.play_count === 0}
+<span class="figure_mask">
+<em class="mask_txt">${playurlobj.tl|getTimeLong3}</em>
+<em class="play_count"><i class="icon_play_s"></i>${playurlobj.play_count|getNewFormatNum}</em>
+</span>
+{/if}
+</a>
+<strong class="figure_title figure_title_two_row">
+<a href="${playurlobj.url}" _log_pt="1" _log_etp="304" _log_clid="u${item.ID}" _hot="search.usertab.video.play" target="_blank" title="${playurlobj.title}">${playurlobj.title|gethlsubstr:23}</a>
+</strong>
+</li>
+{var playurlobj_index=playurlobj_index+1;}
+{/for}
+</ul>
+</div>
+{if parseInt(defaultSource.total_episode, 10) > maxLen}
+<a href="${item.AW}" class="arrow_more" target="_blank" _log_etp="305" _log_clid="u${item.ID}" _hot="search.usertab.more"></a>
+{/if}
+{/if}
+</div>
+</li>
+{/for}
+</textarea>
+<div class="mod_loading" id="goPageLoading" style="display: none;">
+<i class="ico_loading"></i>
+<p class="load_inner">正在努力加载内容……</p>
+</div>
+<div class="mod_pagenav" id="userPagerId" style="display: none;"></div>
+</div>
+</div>
+</div> <!--container_place 大容器结束-->
+
+
+<div class="mod_backtop" style="display: block;">
+<div class="backtop_inner">
+<div class="backtop_function">
+<a href="javascript:void(0);" id="aGiveMeSuggest" class="backtop_item backtop_item_feedback" title="意见反馈"><i class="ico_feedback"></i><div class="item_inner">意见反馈</div></a>
+</div>
+<a href="javascript:void(0);" class="backtop_item backtop_item_top" id="btn_backtop" title="返回顶部" style="display:none;"><i class="ico_top"></i><div class="item_inner">返回顶部</div></a>
+</div>
+</div>
+
+<!--底部 开始-->
+<div class="site_footer" role="contentinfo">
+<div class="mod_inner">
+<div class="mod_footer">
+<div class="footermenu">
+<a href="http://www.tencent.com/" rel="nofollow" target="_blank">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" rel="nofollow" target="_blank">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" rel="nofollow" target="_blank">服务条款</a> | <a href="http://adver.qq.com/" rel="nofollow" target="_blank">广告服务</a> | <a href="http://hr.tencent.com/" rel="nofollow" target="_blank">腾讯招聘</a> | <a href="http://service.qq.com/" rel="nofollow" target="_blank">客服中心</a> | <a href="http://www.qq.com/map/" rel="nofollow" target="_blank">网站导航</a>
+</div>
+<div class="copyrighten">Copyright © 1998 - <span><script>document.write(new Date().getFullYear());</script></span> Tencent. <a target="_blank" href="http://www.tencent.com/en-us/le/copyrightstatement.shtml" rel="nofollow">All Rights Reserved.</a></div>
+<div class="copyrightzh">腾讯公司 <a target="_blank" href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" rel="nofollow">版权所有</a> <a target="_blank" href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" rel="nofollow">腾讯网络文化经营许可证</a></div>
+</div>
+</div>
+</div>
+<!--底部 结束-->
+
+<!--图片广告直达区关键词配置-->
+<script>
+var PIC_AD_KEYWORD = [{
+"plid":"bentley",
+"keyword":["Bentley","宾利","宾利汽车","宾利汽车中国","宾利慕尚","宾利飞驰","宾利GT","宾利欧陆","宾利SUV"]
+}];
+</script>
+
+
+
+
+<script type="text/javascript" src="http://qzs.qq.com/tencentvideo_v1/js/txv.core.min.js?v=20160923"></script>
+<!-- injector:js -->
+<script type="text/javascript" src="http://qzs.qq.com/tencentvideo_v1/script/txv.search_v3.min.be3a6d80.js?v=20151231"></script>
+<!-- endinjector -->
+
+<script language="javascript">
+var _whiteList = '1916176985;23526786;14491986;407056064;3245034279;263050382;526775866;623362057;17541313'.split(';'),
+_tail = -1,
+_uin = txv.login.getUin(),
+_urlStag = txv.common.getUrlParam('stag'),
+_urlSmartboxAb = txv.common.getUrlParam('smartbox_ab');
+if(_tail === -1 || (_uin && _uin%10 >= _tail) || $j.inArray(''+_uin, _whiteList) > -1){
+location.href = '//v.qq.com/x/search/?q=' + txv.common.getUrlParam('ms_key') + (_urlStag && '&stag='+_urlStag || '') + (_urlSmartboxAb && '&smartbox_ab='+_urlSmartboxAb || '')
+}else{
+window._speed_search.page_end = (new Date()).valueOf();
+txv.search.main.GetSearchBody();
+}
+</script>
+<script src="//ra.gtimg.com/sc/vqq/crystal-min.js" id="l_qq_com" arguments="{'mo_page_ratio':0.02,'mo_ping_ratio':0.01,'mo_ping_script':'//ra.gtimg.com/sc/mo_ping-min.js'}"></script>
+<script>
+	if(typeof crystal == "object" && typeof(crystal.setRegisterCallback) == "function"){					
+		crystal.setRegisterCallback("QQlive_SP_HP_DKB",{
+			"show":function() {
+				var mod = document.getElementById("QQlive_SP_HP_DKB_wrapper");
+				if(mod){
+					mod.style.width = "100%";
+					mod.style.height = "425px";
+				}
+			},
+			"hide":function() {
+				var mod = document.getElementById("QQlive_SP_HP_DKB_wrapper");
+				if(mod){
+					mod.style.display = "none";
+				}
+			}
+		});
+	}
+</script><!--back to source site at 2020-07-10 23:17:20-->
+</body>
+</html>

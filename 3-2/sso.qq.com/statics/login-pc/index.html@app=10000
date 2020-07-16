@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang=zh-CN><head><meta http-equiv=Content-Type content="text/html; charset=UTF-8"><title>腾讯智慧校园身份认证中心</title><link href=//edu.qq.com/scampus/index/public.css rel=stylesheet type=text/css><link href=//campus.qq.com/css/index2.css rel=stylesheet type=text/css><link href=//campus.qq.com/css/nav.css rel=stylesheet type=text/css><link rel=icon href=//v.campus.qq.com/static/img/campus.ico><link rel="shortcut icon" href=//v.campus.qq.com/static/img/campus.ico><script src=//static.campus.qq.com/sc/js/v.0.15.min.js></script><script src=//res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js></script><script src=https://ssl.captcha.qq.com/TCaptcha.js></script><script src="https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js?_bid=3977"></script><script>console.log("master");
+        let ProjectId = "master" == 'master' ? 2426 : 2436;
+        const aegis = new Aegis({
+            id: ProjectId,
+            delay: 0,
+            reportApiSpeed: true,
+            reportAssetSpeed: true,
+            beforeReport(log) {
+                // 12008:手机号不存在, 12050:重置密码
+                if (log.msg) {
+                    if (log.msg.indexOf('code: 12008') > -1 || log.msg.indexOf('code: 12050') > -1 || log.msg.indexOf('code: 0') > -1) {
+                        return false;
+                    }
+                }
+            }
+        });
+        window.aegis = aegis;</script><link href=//v.campus.qq.com/static/login-idaas/login-idaas.0.0.1/app.7fcfbea253dc237c9f65d3fc25fc84ff.css rel=stylesheet></head><body><div id=app v-cloak><router-view></router-view></div><script type=text/javascript>// 统计分析
+        // window.onload = function () {
+        //     var a = document.createElement("script");
+        //     a.src = "//pingjs.qq.com/ping_video.js";
+        //     document.getElementsByTagName("body")[0].appendChild(a);
+        //     try {
+        //         if (typeof (pgvMain) == "function") {
+        //             pgvMain()
+        //         }
+        //     } catch (e) {}
+        // };</script><script src=//v.campus.qq.com/static/js/scom.js></script><script type=text/javascript src=//v.campus.qq.com/static/login-idaas/login-idaas.0.0.1/manifest.417ff6942f6f4b81e92f.js></script><script type=text/javascript src=//v.campus.qq.com/static/login-idaas/login-idaas.0.0.1/vendor.afc0e1208b183e704b89.js></script><script type=text/javascript src=//v.campus.qq.com/static/login-idaas/login-idaas.0.0.1/app.873a5737afbc097a1828.js></script></body></html>

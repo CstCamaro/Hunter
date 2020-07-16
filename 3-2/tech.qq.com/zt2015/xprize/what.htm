@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XPRIZE中文站</title>
+    <link rel="stylesheet" href="//tech.qq.com/00Jamesdu/2015/column/xprize/css/d_base.css">
+    <link rel="stylesheet" href="//tech.qq.com/00Jamesdu/2015/column/xprize/css/default.css">
+    <script src="//tech.qq.com/00Jamesdu/2015/column/xprize/js/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+    <style type="text/css">
+/*带一键登录全站迷你导航 v20130219 loginall @goldenchen*/
+.mininav{width:100%;height:28px;background:#fdfdfd url(//mat1.gtimg.com/www/images/qq2012/mininav.png) repeat-x top center;border-bottom:1px solid #ebebeb;}
+.mininavInner{width:1000px;height:28px;margin:0 auto!important;}
+.mininavInner a{color:#666;text-decoration:none;font-family:"宋体";}
+.mininavInner a:hover{color:#2d374b;}
+.mininavInner .mininavLeft{float:left;margin-top:8px;color:#c7c7c7;font-size:12px;}
+.mininavInner .mininavLeft .fl{color:#c7c7c7;}
+</style>
+<div class="mininav" id="topNav">
+	<div class="mininavInner">
+		<div class="mininavLeft">
+			<div class="fl">
+				<a href="http://www.qq.com/" target="_blank" id="qqindex">腾讯网首页</a> | <a href="http://www.qq.com/map/" target="_blank" id="webmap">网站地图</a>
+			</div>
+		</div>
+
+
+		<style type="text/css">
+				ul,li{margin:0;padding:0;}
+				li{list-style:none;}
+				.fl{float:left;}
+				.fr{float:right;}
+				.dis{display:block;}
+				.undis{display:none;}
+				.loginSmartTop,.loginSmartBottom{background-image:url(//mat1.gtimg.com/www/images/qq2012/qqbg_1.5.2.png); background-repeat:no-repeat;}
+				a.login,a.login:hover,a.weiboLogin,a.weiboLogin:hover,a.qzoneLogin,a.qzoneLogin:hover,a.mailLogin,a.mailLogin:hover,a.pengyouLogin,a.pengyouLogin:hover,.mininavRight .weibo,.mininavRight .weibo:hover,.mininavRight .qzone,.mininavRight .qzone:hover,.mininavRight .mail,.mininavRight .mail:hover,.mininavRight .pengyou,.mininavRight .pengyou:hover{background-image:url(//mat1.gtimg.com/www/images/qq2012/loginall_1.2.png); background-repeat:no-repeat;}
+				a.login{width:70px;height:28px;display:block;float:right;background-position:left -450px;}
+				a.login:hover{background-position:left -500px;}
+				a.weiboLogin{width:30px;height:28px;display:block;float:right;background-position:left -50px;}
+				a.weiboLogin:hover{background-position:right -50px;}
+				a.qzoneLogin{width:30px;height:28px;display:block;float:right;background-position:left -100px;}
+				a.qzoneLogin:hover{background-position:right -100px;}
+				a.mailLogin{width:30px;height:28px;display:block;float:right;background-position:left -150px;}
+				a.mailLogin:hover{background-position:right -150px;}
+				a.pengyouLogin{width:28px;height:28px;display:block;float:right;background-position:left -200px;}
+				a.pengyouLogin:hover{background-position:right -200px;}
+				.mininavRight{font-size:12px;}
+				.mininavRight .weibo{background-position:7px -243px;}
+				.mininavRight .weibo:hover{background-position:-79px -243px;}
+				.mininavRight .qzone{background-position:7px -294px;}
+				.mininavRight .qzone:hover{background-position:-74px -294px;}
+				.mininavRight .mail{background-position:7px -340px;}
+				.mininavRight .mail:hover{background-position:-77px -340px;}
+				.mininavRight .pengyou{background-position:7px -394px;}
+				.mininavRight .pengyou:hover{background-position:-76px -394px;}
+				.mininavRight{float:right;color:#c7c7c7;line-height:28px;}
+				.mininavRight a{color:#666;}
+				.mininavRight .qqNameLayout{margin-right:4px;color:#c7c7c7;}
+				.mininavRight .qqName{margin-right:12px;color:#666;float:left;}
+				.mininavRight .weibo{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:17px;}
+				.mininavRight .weibo:hover{color:#fff;background-color:#458fce;}
+				.mininavRight .qzone{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:22px;}
+				.mininavRight .qzone:hover{color:#fff;background-color:#458fce;}
+				.mininavRight .mail{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:19px;}
+				.mininavRight .mail:hover{color:#fff;background-color:#458fce;}
+				.mininavRight .pengyou{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:20px;}
+				.mininavRight .pengyou:hover{color:#fff;background-color:#458fce;}
+				.loginSmartBox{width:120px;height:auto;background:#fffbef;position:absolute;top:28px;z-index:100;}
+				.loginSmartTop{width:120px;height:3px;overflow:hidden;background-position:-350px -210px;}
+				.loginSmartBottom{width:120px;height:3px;overflow:hidden;background-position:-350px -230px;}
+				.loginSmartContent{width:118px;border-left:1px solid #f1f1f1;border-right:1px solid #f1f1f1;}
+				.loginSmartInner{width:116px;border-left:1px solid #f4d9a4;border-right:1px solid #f4d9a4;}
+				.loginSmartInner ul{width:100%;padding:2px 0;}
+				.loginSmartInner li{width:100%;height:20px;line-height:20px;color:#666;text-indent:8px;text-align:left;}
+				.loginSmartInner li a{color:#666;}
+				.loginSmartInner li a:hover span{color:#cd0200;}
+				.loginSmartInner li a span,.loginSmartInner li a:hover span{font-family:Tahoma;}
+				#pengyouIcon{position:relative;z-index:10000;}
+				#mailIcon{position:relative;z-index:10000;}
+				#qzoneIcon{position:relative;z-index:10000;}
+				#weiboIcon{position:relative;z-index:10000;}
+				#loginOut:hover{text-decoration:underline;color:#cd0200;}
+				.loginBg{width:100%;min-width:1024px;position:absolute;top:0;left:0;z-index:8888;display:none;background:url(//mat1.gtimg.com/www/images/qq2012/alphabg.png); _background:#000;_opacity:0.3_;filter:alpha(opacity=30);}
+
+				.mininavRight .qzone{width:auto;}
+				.mininavLeft div{line-height:14px;}
+				.mininavRight div{line-height:28px;}
+				</style>
+				<div class="login mininavRight" id="loginWrap">
+    <a href="http://mail.qq.com" class="mailLogin" id="qmail" target="_blank" bosszone="qmail"></a>
+    <a href="http://qzone.qq.com" class="qzoneLogin" id="qzone" target="_blank" bosszone="qzone"></a>
+    <a href="javascript:void(0);" class="login" onclick="userLogin();" target="_self" id="onekey"></a>
+ 
+    <!-- <div class="quickArea menu">
+      <a href="http://qzone.qq.com" id="qzoneLink" target="_blank" class="quickLink menu-hd qzoneLink" aria-expanded="true" bosszone="gqqzone"><em>Qzone</em></a>
+    </div>
+    <div class="quickArea menu">
+      <a href="http://mail.qq.com" id="qmailLink" target="_blank" class="quickLink menu-hd qmailLink" aria-expanded="true" bosszone="gqqmail"><em>QQ邮箱</em></a>
+    </div>	   -->
+</div>
+
+<script type="text/javascript">var MI = {};(function(b){var a=document.createElement("script");a.setAttribute("charset","utf-8");a.setAttribute("type","text/javascript");a.setAttribute("src",b);document.getElementsByTagName("head")[0].appendChild(a)})("//mat1.gtimg.com/www/mb/js/portal/mi.MiniNav__v1.0.0.js");</script>
+<script type="text/javascript" src="//mat1.gtimg.com/www/ptlogin/js/ptlogiHL.js" charset="utf-8"></script>
+<!--[if !IE]>|xGv00|a06ce509e32367110c60d18e9ea9e530<![endif]--><!--[if !IE]>|xGv00|fcb7151e303110b6aedb3a23e34141e5<![endif]-->
+	</div>
+</div>
+<script type="text/javascript">
+(function(){var e={webmap:"webmap",qqindex:"qqindex",logkey:"logkey",onekey:"onekey",weibo:"weibo",qzone:"qzone",qmail:"qmail",friend:"friend",loginOut:"logquit",weiboIcon:"weiboinfor",qzoneIcon:"qzoneinfor",mailIcon:"qmailinfor",pengyouIcon:"friendinfor"},t=function(){for(var t in e){if(!e.hasOwnProperty(t))return;var n=document.getElementById(t);n&&n.setAttribute("bossZone",e[t])}};t()})()
+</script>
+<script type="text/javascript">
+//移动端左右边距
+if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){document.getElementsByTagName("body")[0].style.minWidth = "1028px";}
+</script><!--[if !IE]>|xGv00|391c10b45046351ab35a91ecc9e5bb6e<![endif]--><!--[if !IE]>|xGv00|f05dc60e89d8cdcee830e5616292c425<![endif]-->
+    <div class="banner">
+
+	<div class="nav">
+		<div class="logo">
+			<a href="http://xprize.qq.com">
+				<img src="http://img1.gtimg.com/tech/pics/hv1/227/196/1802/117225257.png" alt=""></a>
+		</div>
+		<ul>
+			<li>
+				<a href="http://tech.qq.com/zt2015/xprize/lasted.htm" target="_blank" class="nav_1">
+					<span class="tocn">最新消息</span>
+					<span class="toen">Latest News</span>
+				</a>
+
+			</li>
+			<li>
+				<a href="http://tech.qq.com/zt2015/xprize/what.htm" target="_blank" class="nav_2">
+					<span class="tocn">关于XPRIZE</span>
+					<span class="toen">About XPRIZE</span>
+				</a>
+				<ul>
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/what.htm">XPRIZE是什么？</a>
+					</li>
+					
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/contact.htm">联系我们</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="http://tech.qq.com/zt2015/xprize/active.htm" target="_blank" class="nav_3">
+					<span class="tocn">进行中奖项</span>
+					<span class="toen">Active XPRIZES</span>
+				</a>
+				<ul>
+
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/oceanhealth.htm">温迪·施密特海洋健康竞赛</a>
+					</li>
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/tricorder.htm">高通三录仪XPRIZE竞赛</a>
+					</li>
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/lunar.htm">谷歌登月XPRIZE竞赛</a>
+					</li>
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/learning.htm">全球学习XPRIZE竞赛</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="http://www.xprize.org/donate" target="_blank" class="nav_5">
+					<span class="tocn">捐赠</span>
+					<span class="toen">Donation</span>
+				</a>
+
+			</li>
+		</ul>
+	</div>
+</div><!--[if !IE]>|xGv00|f55c32a48854f9dbc07e25909085cf31<![endif]-->
+<div class="layout">
+        <div class="chief">
+            <div class="headline article">
+                <!-- 大标题开始 -->
+                <h2>XPRIZE是什么？</h2>
+                <!-- 大标题结束 --> </div>
+            <div class="container">
+                <!-- 正文开始 -->
+             <P align=center><IMG src="http://img1.gtimg.com/tech/pics/hv1/75/84/1803/117261570.jpg"></P>
+
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">XPRIZE-创新引擎</STRONG> </P>
+<P style="TEXT-INDENT: 2em">在XPRIZE我们所为大家提供的是思想的领袖以及愿景，目的是为了寻找我们当今时代重大的挑战 - 全球危机和市场失灵的地方，以及在很多人看来遥不可及甚至是不可能完成的任务。为此我们设计并且举办了相应的大奖赛来解决这些难题。那么结果如何呢？危机解除了，市场复活了，技术改善了，行业涌现了，人类强大了！</P>
+<P style="TEXT-INDENT: 2em">XPRIZE的使命就是寻找我们这个时代的重大挑战——这其中包含了多种国家危机和全球危机，以及市场失灵和商业机会，更多是在很多人看来遥不可及甚至是不可能完成的任务。为此我们设计和举办了相应的大奖赛，希望通过技术突破来造福人类。</P>
+<P style="TEXT-INDENT: 2em">作为我们基因的组成部分，更是人类与生俱来的特质，我们相信竞争所产生的力量，竞争可以激发百折不挠的精神，而这种精神可突破现实表面，碰撞出难以预想，不可思议的火花。</P>
+<P style="TEXT-INDENT: 2em">我们相信- 有激励，就有成就。没有目标，就没有方向。与其盲目的投资，我们将会通过激励的方式来寻找对策，鼓励全世界互动起来解决问题。</P>
+<P style="TEXT-INDENT: 2em">我们相信- 挑战固然需要勇气，但也必须切实可行、目标明确，让所有人都能百分百的理解。</P>
+<P style="TEXT-INDENT: 2em">我们相信- 最终的方案可出自任何人、任何地方。我们也相信，世间依然有很多未被挖掘的伟大思想和睿智头脑，他们有着极度的渴望，期待着通过彻底的突破来造福全人类。</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">XPRIZE是什么？</STRONG> </P>
+<P style="TEXT-INDENT: 2em">XPRIZE是一种高水准、高激励的竞赛，它力求突破一切极限，推翻一切不可能，让世界变得更加美好。</P>
+<P style="TEXT-INDENT: 2em">它汇聚世间各种奇想，启迪他人达成相似的目标，以此促进创新，加快积极变化的速度。</P>
+<P style="TEXT-INDENT: 2em">XPRIZE的挑战项目必须满足以下标准：</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">目标大胆</STRONG> </P>
+<P style="TEXT-INDENT: 2em">XPRIZE竞赛希望通过突破人类的极限，来关注在当今社会看似无法解决或者没有明确解决途径的问题。</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">瞄准市场失灵的要害</STRONG> </P>
+<P style="TEXT-INDENT: 2em">我们瞄准三种市场失灵问题：(1)虽有资本介入，但却未能达成预期；(2)因为问题不为人知，所以没有资本介入；(3)问题已为人知，但却没人相信此问题还未被解决。</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">明确问题本身，而非盲目找对策</STRONG> </P>
+<P style="TEXT-INDENT: 2em">XPRIZE从来不考虑具体对策，只明确挑战的本身，从而激励世界各地的团队来寻找最有效的方案。</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">虽然困难重重，但仍切实可行</STRONG> </P>
+<P style="TEXT-INDENT: 2em">被挑战的项目固然应当鼓励冒险，但也必须切实可行，让所有参赛团队都相信自己能够最终成功的完成。</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">小团队也能胜出</STRONG> </P>
+<P style="TEXT-INDENT: 2em">任何形式的团队都有在最终胜出的可能，既可以是业界专家团队，也可以是初生牛犊的高中生团队。</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">合理安排时间</STRONG> </P>
+<P style="TEXT-INDENT: 2em">挑战的项目旨在影响可以预见的未来，所以在持续2至5年中，让团队有足够的时间来取得成功，同时确保势头，不要让行业的发展超越了挑战目标的本身。</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">遵循清晰、客观、简单的原则</STRONG> </P>
+<P style="TEXT-INDENT: 2em">终点线必须是简单易懂以及明确的规则，需可以衡量、人人都懂。</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">适于拍摄电视节目，易于传达</STRONG> </P>
+<P style="TEXT-INDENT: 2em">挑战项目的最终成功本身是有趣、引人入胜的，而且还要具备先天的叙事特征，以便轻松传达给我们的观众。</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">可运用杠杆</STRONG> </P>
+<P style="TEXT-INDENT: 2em">通过为某项方案的解决来吸引额外的支持，便可为赞助者提供投资杠杆。通过将风险从资助者转移到竞争者，便可用奖项吸引投资者投入资金，以及吸引参与者投入时间。一旦通过这些奖项达成了可行的解决方案，便可吸引进一步的投资。</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">创造“后端业务”</STRONG> </P>
+<P style="TEXT-INDENT: 2em">XPRIZE竞赛应当催生新的行业，也可改革或复兴现有的行业，为其带来持久的利益。</P>
+<P style="TEXT-INDENT: 2em; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">提供愿景和希望</STRONG> </P>
+<P style="TEXT-INDENT: 2em">通过你对更加美好未来世界的愿景来激发人们的希望，最终胜出的团队将向世界证明，原本看似无解的问题也是可以而且最终被解决的。</P>
+<P style="TEXT-ALIGN: center; WIDTH: auto; DISPLAY: block; BORDER-TOP: #e1e1e1 1px solid"><STRONG style="PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #00a0e9; COLOR: #fff; PADDING-TOP: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-radius: 5px; box-shadow: 2px 2px 2px #ccc">视野+突破=希望</STRONG> </P>
+<P style="TEXT-INDENT: 2em">欲了解更多信息，请访问：<A target=_blank href="http://www.xprize.org">www.xprize.org</A></P>
+
+
+                <!-- 正文结束 --> </div>
+                <div class="bbs">
+                   
+                </div>
+        </div>
+       <!-- <div class="extra">
+           
+            <div class="catbox">
+            
+             <div class="hd">
+                    <h3>SNS账号</h3>
+                </div>
+                <div class="bd">
+                    <ul>
+                       <table class="img_ct" border="0" cellspacing="0"><tbody><tr><td><div class="img_area"><a href="https://twitter.com/xprize" target="_blank"><img width=165px src="http://img1.gtimg.com/tech/pics/hv1/244/84/1803/117261739.jpg" /></a><br />
+                       </div></td><td><div class="img_area"><a href="https://www.facebook.com/xprize" target="_blank"><img width=165px  src="http://img1.gtimg.com/tech/pics/hv1/39/85/1803/117261789.jpg" /></a><br />
+                       </div></td></tr><tr><td><div class="img_area"><a href="https://plus.google.com/102997835182088845710/posts" target="_blank"><img src="http://img1.gtimg.com/tech/pics/hv1/40/85/1803/117261790.jpg" /></a><br />
+                       </div></td><td><div class="img_area"><a href="https://www.youtube.com/user/xprize/" target="_blank"><img src="http://img1.gtimg.com/tech/pics/hv1/41/85/1803/117261791.jpg" /></a><br />
+                       </div></td></tr><tr><td><div class="img_area"><a href="https://www.linkedin.com/company/x-prize-foundation" target="_blank"><img src="http://img1.gtimg.com/tech/pics/hv1/42/85/1803/117261792.jpg" /></a><br />
+                       </div></td></tr></tbody></table>
+                    </ul>
+                </div>
+            
+            
+            
+               
+            </div>
+        </div>-->
+    </div>
+
+    <script src="//tech.qq.com/00Jamesdu/2015/column/xprize/js/default.js"></script>
+
+    <!--公共 copyright-->
+    <script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+<style>
+.tcopyright {width:960px;margin:0 auto;padding:8px 0;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both;}
+.tcopyright .en{font-family:Arial;}
+.tcopyright a{color:#333;text-decoration: none;}
+.tcopyright a:hover{color:#bd0a01;text-decoration: underline;}
+</style>
+<div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+	<div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+	</div>
+  	<div class="en">Copyright &copy; 1998 - 2020 Tencent. All Rights Reserved</div>
+    <div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+	</div>
+</div><!--[if !IE]>|xGv00|b6614ae390f3ba6a8cbcc269055b42da<![endif]-->
+    <!--pgv 20160801 by 39815--><script charset="gbk" src="//mat1.gtimg.com/ping.js"></script>
+
+<script>!function(t,e){"use strict";function a(){var t,e,a=(""+p.catalog_full).replace(/-/g,".").replace(/_/g,"-");p.topic&&p.topic.name&&p.topic.name.length>0?(t="L.",e="Z."+a+"."+p.topic.name):(t="L."+a,e="Z.");var n="W."+p.type,o="M."+p.tpl.type+p.tpl.stype,i="P."+(""+p.site).replace(/_/g,"-"),c="F."+f,l=t+"_"+e+"_"+n+"_"+o+"_"+i+"_"+c;l&&r({pgUserType:l})}function n(t){o(e,"click",function(e){var a=e.target;"img"===a.tagName&&(a=a.parentNode);var n=a.tagName.toLowerCase(),o=a.getAttribute("href");if(!o||o.indexOf("qqcom_pgv_from=")>-1)return!1;if("a"===n&&a.hostname&&a.hostname.indexOf("qq.com")>-1){var r=o+(a.search?"&":"?")+"qqcom_pgv_from="+t;a.setAttribute("href",r)}})}function o(a,n,o){var r=function(a){return a=a||t.event,a.target||(a.target=a.srcElement||e),3===a.target.nodeType&&(a.target=a.target.parentNode),a};return a.addEventListener?a.addEventListener(n,function(t){o.call(t.currentTarget,r(t))},!1):a.attachEvent("on"+n,function(t){o.call(a,r(t))}),!0}if(!t||!t.location||"function"!=typeof t.pgvMain)return!1;var r=function(){var e=arguments;setTimeout(function(){t.pgvMain.apply(this,e)},0)},i=location.search.replace(/adtag=client\.qq\.\d+_\.0/i,"from=tips"),c=["aio","tips"],f="def";location.search.indexOf("qqcom_pgv_from=")>-1&&(f=location.host+location.pathname+location.search);var p=t.ARTICLE_INFO||null,l=p&&p.catalog_full;if(l)for(var g=0;g<c.length;g+=1)if(i.indexOf(c[g])>-1){n(c[g]);break}l&&a(),l||("undefined"!=typeof whatCatalog&&(t.pvCSTM=t.whatCatalog),r({pgUserType:"F."+f}))}(window,document);</script><!--/pgv 20160801-->
+<!-- 视频来源ptag --><script src="//mat1.gtimg.com/v/ptag/ptag_1.2.js" async="true"></script>
+<!--[if !IE]>|xGv00|a1d505b81f0731c97405c05986e06bb8<![endif]-->
+<!--[if !IE]>|xGv00|e495268dae03726664c77551e8df25e2<![endif]-->
+
+</body>
+</html><!--[if !IE]>|xGv00|1289ba1bafd7089363cb4068abcedc51<![endif]-->

@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*上下加载*/
+.scrollermain{overflow:hidden;width:100%;}
+.scrollermain article{padding:0}
+#pullDown,#pullUp{height:50px;line-height:50px;font-sizE:1.5rem;text-align:center;}
+#pullDown .pullDownIcon,#scroller .flip .pullDownIcon,#scroller .loading .pullDownIcon,#pullDown .pullDownLabel,#pullUp .pullUpLabel,#pullUp .flip .pullUpIcon,#scroller .loading .pullUpIcon,#pullUp .pullUpIcon{display:inline-block;vertical-align:middle;line-height:25px;}
+#pullDown .pullDownLabel,#pullUp .pullUpLabel{width:100%;}
+#pullDown .pullDownIcon,#pullUp .pullUpIcon{width:25px;height:25px;background:url(../images/slice/filp_aww.png) no-repeat;background-size:25px 100%;}
+#scroller .flip .pullDownIcon{-webkit-transform:rotate(-180deg) translateZ(0);}
+#scroller .loading .pullDownIcon,#scroller .loading .pullUpIcon{background:url(../images/slice/yyy_loading_ww.gif) no-repeat;background-size:auto 100%;}
+#pullUp .pullUpIcon{-webkit-transform:rotate(-180deg) translateZ(0);}
+#scroller .flip .pullUpIcon{-webkit-transform:rotate(-360deg) translateZ(0);}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon  {-webkit-transition-property:-webkit-transform;-webkit-transition-duration:250ms;}

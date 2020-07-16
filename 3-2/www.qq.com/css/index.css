@@ -1,0 +1,376 @@
+BODY
+{
+    BACKGROUND-COLOR: #FFFFFF;
+    MARGIN-LEFT: 0px;
+    MARGIN-TOP: 0px;
+    MARGIN-RIGHT: 0px;
+    MARGIN-BOTTOM: 0px;
+}
+
+TD
+{
+    FONT-SIZE: 12px;
+    COLOR: #00007F;
+    LINE-HEIGHT: 16px;
+    TEXT-DECORATION: none
+}
+
+.FONT01
+{
+    FONT-SIZE: 12px;
+    COLOR: #FFFFFF;
+    LINE-HEIGHT: 16px;
+    TEXT-DECORATION: none
+}
+
+.FONT02
+{
+    FONT-SIZE: 12px;
+    COLOR: #FF6600;
+    LINE-HEIGHT: 16px;
+    TEXT-DECORATION: none
+}
+
+.FONT03
+{
+    FONT-SIZE: 12px;
+    COLOR: #000000;
+    LINE-HEIGHT: 16px;
+    TEXT-DECORATION: none
+}
+
+A:link
+{
+    FONT-SIZE:12px;
+    COLOR:#00007F;
+    TEXT-DECORATION:underline
+}
+A:visited
+{
+    FONT-SIZE:12px;
+    COLOR:#00007F;
+    TEXT-DECORATION:underline
+}
+A:active
+{
+    FONT-SIZE:12px;
+    COLOR:#00007F;
+    TEXT-DECORATION:underline
+}
+A:hover
+{
+    FONT-SIZE:12px;
+    color:#FF0000;
+    TEXT-DECORATION:underline
+}
+
+A.A01:link
+{
+    FONT-SIZE:12px;
+    COLOR:#FFFFFF;
+    TEXT-DECORATION:none
+}
+A.A01:visited
+{
+    FONT-SIZE:12px;
+    COLOR:#FFFFFF;
+    TEXT-DECORATION:none
+}
+A.A01:active
+{
+    FONT-SIZE:12px;
+    COLOR:#FFFFFF;
+    TEXT-DECORATION:none
+}
+A.A01:hover
+{
+    FONT-SIZE:12px;
+    color:#FFFFFF;
+    TEXT-DECORATION:none
+}
+
+A.A02:link
+{
+    FONT-SIZE:12px;
+    COLOR:#FF0000;
+    TEXT-DECORATION:underline
+}
+A.A02:visited
+{
+    FONT-SIZE:12px;
+    COLOR:#FF0000;
+    TEXT-DECORATION:underline
+}
+A.A02:active
+{
+    FONT-SIZE:12px;
+    COLOR:#FF0000;
+    TEXT-DECORATION:underline
+}
+A.A02:hover
+{
+    FONT-SIZE:12px;
+    color:#FF0000;
+    TEXT-DECORATION:underline
+}
+
+A.A03:link
+{
+    FONT-SIZE:12px;
+    COLOR:#7FC5E6;
+    TEXT-DECORATION:underline
+}
+A.A03:visited
+{
+    FONT-SIZE:12px;
+    COLOR:#7FC5E6;
+    TEXT-DECORATION:underline
+}
+A.A03:active
+{
+    FONT-SIZE:12px;
+    COLOR:#7FC5E6;
+    TEXT-DECORATION:underline
+}
+A.A03:hover
+{
+    FONT-SIZE:12px;
+    color:#FF0000;
+    TEXT-DECORATION:underline
+}
+
+A.A04:link
+{
+    FONT-SIZE:12px;
+    COLOR:#3B3B3B;
+    TEXT-DECORATION:none
+}
+A.A04:visited
+{
+    FONT-SIZE:12px;
+    COLOR:#3B3B3B;
+    TEXT-DECORATION:none
+}
+A.A04:active
+{
+    FONT-SIZE:12px;
+    COLOR:#3B3B3B;
+    TEXT-DECORATION:none
+}
+A.A04:hover
+{
+    FONT-SIZE:12px;
+    color:#FF6600;
+    TEXT-DECORATION:none
+}
+
+A.A05:link
+{
+    FONT-SIZE:12px;
+    COLOR:#1A74B3;
+    TEXT-DECORATION:none
+}
+A.A05:visited
+{
+    FONT-SIZE:12px;
+    COLOR:#1A74B3;
+    TEXT-DECORATION:none
+}
+A.A05:active
+{
+    FONT-SIZE:12px;
+    COLOR:#1A74B3;
+    TEXT-DECORATION:none
+}
+A.A05:hover
+{
+    FONT-SIZE:12px;
+    color:#1A74B3;
+    TEXT-DECORATION:none
+}
+
+A.A06:link
+{
+    FONT-SIZE:12px;
+    COLOR:#B37810;
+    TEXT-DECORATION:none
+}
+A.A06:visited
+{
+    FONT-SIZE:12px;
+    COLOR:#B37810;
+    TEXT-DECORATION:none
+}
+A.A06:active
+{
+    FONT-SIZE:12px;
+    COLOR:#B37810;
+    TEXT-DECORATION:none
+}
+A.A06:hover
+{
+    FONT-SIZE:12px;
+    color:#B37810;
+    TEXT-DECORATION:none
+}
+
+A.A07:link
+{
+    FONT-SIZE:12px;
+    COLOR:#B72A0E;
+    TEXT-DECORATION:none
+}
+A.A07:visited
+{
+    FONT-SIZE:12px;
+    COLOR:#B72A0E;
+    TEXT-DECORATION:none
+}
+A.A07:active
+{
+    FONT-SIZE:12px;
+    COLOR:#B72A0E;
+    TEXT-DECORATION:none
+}
+A.A07:hover
+{
+    FONT-SIZE:12px;
+    color:#B72A0E;
+    TEXT-DECORATION:none
+}
+
+A.A08:link
+{
+    FONT-SIZE:12px;
+    COLOR:#FFFFFF;
+    TEXT-DECORATION:none
+}
+A.A08:visited
+{
+    FONT-SIZE:12px;
+    COLOR:#FFFFFF;
+    TEXT-DECORATION:none
+}
+A.A08:active
+{
+    FONT-SIZE:12px;
+    COLOR:#FFFFFF;
+    TEXT-DECORATION:none
+}
+A.A08:hover
+{
+    FONT-SIZE:12px;
+    color:#FEE789;
+    TEXT-DECORATION:none
+}
+
+A.A09:link
+{
+    FONT-SIZE:12px;
+    COLOR:#000000;
+    TEXT-DECORATION:none
+}
+A.A09:visited
+{
+    FONT-SIZE:12px;
+    COLOR:#000000;
+    TEXT-DECORATION:none
+}
+A.A09:active
+{
+    FONT-SIZE:12px;
+    COLOR:#000000;
+    TEXT-DECORATION:none
+}
+A.A09:hover
+{
+    FONT-SIZE:12px;
+    color:#000000;
+    TEXT-DECORATION:none
+}
+
+A.A10:link
+{
+    FONT-SIZE:12px;
+    COLOR:#FF0000;
+    TEXT-DECORATION:none
+}
+A.A10:visited
+{
+    FONT-SIZE:12px;
+    COLOR:#FF0000;
+    TEXT-DECORATION:none
+}
+A.A10:active
+{
+    FONT-SIZE:12px;
+    COLOR:#FF0000;
+    TEXT-DECORATION:none
+}
+A.A10:hover
+{
+    FONT-SIZE:12px;
+    color:#FF0000;
+    TEXT-DECORATION:none
+}
+
+.SOLID01
+{
+    BORDER-TOP: #6D6D6D 1px solid;
+    BORDER-LEFT: #6D6D6D 1px solid;
+    BORDER-RIGHT: #6D6D6D 1px solid;
+    BORDER-BOTTOM: #6D6D6D 1px solid
+}
+
+.SOLID02
+{
+    BORDER-RIGHT: #6D6D6D 1px solid
+}
+
+.SOLID03
+{
+    BORDER-LEFT: #6D6D6D 1px solid;
+    BORDER-RIGHT: #6D6D6D 1px solid;
+    BORDER-BOTTOM: #6D6D6D 1px solid
+}
+
+.SOLID04
+{
+    BORDER-LEFT: #A97402 1px solid
+}
+
+.SOLID05
+{
+    BORDER-TOP: #A97402 1px solid
+}
+
+.SOLID06
+{
+    BORDER-TOP: #6D6D6D 1px solid;
+    BORDER-LEFT: #6D6D6D 1px solid;
+    BORDER-RIGHT: #6D6D6D 1px solid
+}
+
+.SOLID07
+{
+    BORDER-LEFT: #6D6D6D 1px solid;
+    BORDER-RIGHT: #6D6D6D 1px solid
+}
+
+.DASH01
+{
+    BORDER-TOP: #ACACAC 1px dotted;
+    BORDER-LEFT: #ACACAC 1px dotted;
+    BORDER-RIGHT: #ACACAC 1px dotted;
+    BORDER-BOTTOM: #ACACAC 1px dotted
+}
+
+.INPUTFORM
+{
+    BORDER-RIGHT: #989790 1px solid;
+    BORDER-TOP: #989790 1px solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: #989790 1px solid;
+    BORDER-BOTTOM: #989790 1px solid;
+    FONT-FAMILY: свт╟
+}

@@ -1,0 +1,269 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/jieqi/lixia/20190506-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="立夏，下雨，夏天，回暖，腾讯网，时光画轴，节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 19:31:40';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-05-06", //日期，格式为 年-月-日
+	"cmd_id": "3871822100", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "lixia2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="lixia2019" style="display:none;"><p>立夏是农历二十四节气中的第7个节气，夏季的第一个节气，表示盛夏时节的正式开始。斗指东南，维为立夏，万物至此皆长大，故名立夏也。</p>
+<p>《月令七十二候集解》：“立夏，四月节。立字解见春。夏，假也。物至此时皆假大也。”在天文学上，立夏表示即将告别春天，是夏天的开始。人们习惯上都把立夏当作是温度明显升高，炎暑将临，雷雨增多，农作物进入旺季生长的一个重要节气。</p>
+<h2>气候特点</h2>
+<h3>节气气温</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9ufqRVfChXxkkgU5NYibo2FdjricgxTZVTFHMXuehRAZsUXI7ib0X1a7vA/640?wx_fmt=jpeg" title="立夏1">
+<p>按气候学的标准，日平均气温稳定升达22℃以上为夏季开始，“立夏”前后，中国只有福州到南岭一线以南地区真正进入夏季，而东北和西北的部分地区这时则刚刚进入春季，全国大部分地区平均气温在18--20℃上下。</p>
+<p>立夏时节我国南北的气温差异较大，而且同一地区波动频繁，华南其余的地区气温为20℃左右；而低海拔河谷则早在4月中旬初即感夏热，立夏时气温已达24℃以上。故此时也是农作物病虫害的多发期和人们易于犯感冒的时期，正如左河水所云：“南国似暑北国春，绿秀江淮万木荫。时病时虫人撒药，忽寒忽热药搪人。”</p>
+<h3>降水特点</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9cDTpmrFEsGqWibCr8wgxeImm5icoPvia2E4bbmEgmDP9nZmzS6GIVTu4w/640?wx_fmt=jpeg" title="立夏2">
+<p>立夏以后，江南正式进入雨季，雨量和雨日均明显增多，连绵的阴雨不仅导致作物的湿害，还会引起多种病害的流行。小麦抽穗扬花是最易感染赤霉病的时期，若预计未来有温暖但多阴雨的天气，要抓紧在始花期到盛花期喷药防治。南方的棉花在阴雨连绵或乍暖乍寒的天气条件下，往往会引起炭疽病、立枯病等病害的暴发，造成大面积的死苗、缺苗。应及时采取必要的增温降湿措施，并配合药剂防治，以保全苗争壮苗。“多插立夏秧，谷子收满仓”，立夏前后正是大江南北早稻插秧的火红季节。“能插满月秧，不薅满月草”，这时气温仍较低，栽秧后要立即加强管理，早追肥，早耘田，早治病虫，促进早发。中稻播种要抓紧扫尾。茶树这时春梢发育最快，稍一疏忽，茶叶就要老化，正所谓“谷雨很少摘，立夏摘不辍”，要集中全力，分批突击采制。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9S2r1MbAFRrR2wFnzTCQhEfp0Sn4WqFLwdpzYEUzsxs2MXGpYTIhhnA/640?wx_fmt=jpeg" title="立夏3">
+<p>立夏前后，华北、西北等地气温回升很快，但降水仍然不多，加上春季多风，蒸发强烈，大气干燥和土壤干旱常严重影响农作物的正常生长。尤其是小麦灌浆乳熟前后的干热风更是导致减产的重要灾害性天气，适时灌水是抗旱防灾的关键措施。“立夏三天遍地锄”，这时杂草生长很快，“一天不锄草，三天锄不了。”中耕锄草不仅能除去杂草，抗旱防渍，又能提高地温，加速土壤养分分解，对促进棉花、玉米、高梁、花生等作物苗期健壮生长有十分重要的意义。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9wq1CJqicXbNSsH3GSDauHrh1n3iaxr8p4XXCKhrP9pEmSgtW26gDWicuQ/640?wx_fmt=jpeg" title="立夏4">
+<p>立夏后，是早稻大面积栽插的关键时期，而且这时期雨水来临的迟早和雨量的多少，与日后收成关系密切。农谚说得好：“立夏不下，犁耙高挂。”“立夏无雨，碓头无米。”民间还有畏忌夏季炎热而称体重的习俗，江西一带还有立夏饮茶的习俗，说是不饮立夏茶，会一夏苦难熬。</p>
+<h2>节气习俗</h2>
+<h3>迎夏仪式</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9ZRtpCRibGCEhvVXJ4HicR0DFnsC46HFXqouGRaBQQ606V3IFGoicMH8jg/640?wx_fmt=jpeg" title="立夏5">
+<p>“立夏”的“夏”是“大”的意思，是指春天播种的植物已经直立长大了。古代，人们非常重视立夏的礼俗。在这一天，古代帝王要率文武百官到京城南郊去迎夏，举行迎夏仪式。君臣一律穿朱色礼服，配朱色玉佩，连马匹、车旗都要朱红色的，以表达对丰收的祈求和美好的愿望。宫廷里“立夏日启冰，赐文武大臣”。冰是上年冬天贮藏的，由皇帝赐给百官。</p>
+<p>江浙一带，人们因大好的春光明媚过去了，未免有惜春的伤感，故备酒食为欢，好像送人远去，名为饯春。崔骃在赋里说：“迎夏之首，末春之垂。”吴藕汀《立夏》诗也说：“无可奈何春去也，且将樱笋饯春归。”</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9NXkLkgxbhic490mlQJOv2CsNWjU9IEoWJwWGXFgxOiaiak0fBoB81zT1w/640?wx_fmt=jpeg" title="立夏6">
+<p>在民间，立夏日人们则喝冷饮来消暑。立夏日，江南水乡有烹食嫩蚕豆的习俗。有的地方还有立夏日称人的习俗。</p>
+<h3>尝新活动</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9dXibgWRCTpzOsNG9VXAYb54G89U4Lib4IxF4ozDvibVHZcTmVjKpicQN4Q/640?wx_fmt=jpeg" title="立夏7">
+<p>在后世，立夏还有尝新等节日活动。如苏州有“立夏见三新”之谚，三新为樱桃、青梅、麦子，用以祭祖。在常熟，尝新的食物更为丰盛，有“九荤十三素”之说，九荤为鲫、咸蛋、螺鰤、熄（即放在微火上煨熟；一种烹调方法，用多种香料加工而成为熄鸡）鸡、腌鲜、卤虾、樱桃肉；十三素包括樱桃、梅子、麦蚕（新麦揉成细条煮熟）、笋、蚕豆、矛针、豌豆、黄瓜、莴笋、草头、萝卜、玫瑰、松花。在南通，则吃煮鸡、鸭蛋。</p>
+<h3>斗蛋游戏</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9qnhrMc9w3YbXGATop555qic1lvtF9X2UYYAoQ8PRjBv9VRNBU2mWibGw/640?wx_fmt=jpeg" title="立夏8">
+<p>一般立夏当天中午，家家户户煮好囫囵蛋（鸡蛋带壳清煮，不能破损），用冷水浸上数分钟之后再套上早已编织好的丝网袋，挂于孩子颈上。孩子们便三五成群，进行斗蛋游戏。蛋分两端，尖者为头，圆者为尾。斗蛋时蛋头斗蛋头，蛋尾击蛋尾。一个一个斗过去，破者认输，最后分出高低。蛋头胜者为第一，蛋称大王；蛋尾胜者为第二，蛋称小王或二王。谚称：“立夏胸挂蛋，孩子不疰夏（疰夏是夏日常见的腹涨厌食，乏力消瘦，小孩尤易疰夏。）。”中饭是糯米饭，饭中掺杂豌豆。桌上必有煮鸡蛋、全笋、带壳豌豆等特色菜肴。乡俗蛋吃双，笋成对，豌豆多少不论。民间相传立夏吃蛋拄心。因为蛋形如心，人们认为吃了蛋就能使心气精神不受亏损。</p>
+<h3>立夏称人</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9qFCrbyWxevQ5RT57XPskQV4FqWibL3eZE3ic3uC4EsImpvPeywB4bFAQ/640?wx_fmt=jpeg" title="立夏9">
+<p>立夏吃罢中饭还有秤人的习俗。人们在村口或台门里挂起一杆大木秤，秤钩悬一根凳子，大家轮流坐到凳子上面秤人。司秤人一面打秤花，一面讲着吉利话。秤老人要说“秤花八十七，活到九十一”。秤姑娘说“一百零五斤，员外人家找上门。勿肯勿肯偏勿肯，状元公子有缘分。”秤小孩则说“秤花一打二十三，小官人长大会出山。七品县官勿犯难，三公九卿也好攀”。打秤花只能里打出（即从小数打到大数），不能外打里。民间相传诸葛亮与孟获和刘阿斗的故事有关。据说孟获被诸葛亮收服，归顺蜀国之后，对诸葛亮言听计从。诸葛亮临终嘱托孟获每年要来看望蜀主一次。诸葛亮嘱吒之日，正好是这年立夏，孟获当即去拜阿斗。从此以后，每年夏日，孟获都依诺来蜀拜望。过了数年，晋武帝司马炎灭掉蜀国，掳走阿斗。而孟获不忘丞相嘱托，每年立夏带兵去洛阳看望斗，每次去则都要秤阿斗的重量，以验证阿斗是否被晋武帝亏待。他扬言如果亏待阿斗，就要起兵反晋。晋武帝为了迁就孟获，就在每年立夏这天，用糯米加豌豆煮成中饭给阿斗吃。阿斗见豌豆糯米饭又糯又香，就加倍吃下。孟获进城秤人，每次都比上年重几斤。阿斗虽然没有什么本领，但有孟获立夏秤人之举，晋武帝也不敢欺侮他，日子也过得清静安乐，福寿双全。这一传说，虽与史实有异，但百姓希望的即是“清静安乐，福寿双全”的太平世界。立夏秤人会对阿斗带来福气，人们也祈求上苍给他们带来好运。</p>
+<h2>节气饮食</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S97G06BfOmly4ibMwAIHicsibZ2htnMmjuwSrOYqS5hdUCGmqQDxYeGeScQ/640?wx_fmt=jpeg" title="立夏10">
+<p>立夏过后，便是炎热的夏天，人们在立夏吃一些食物，往往寄托着祈福保平安的愿望。浙江嵊州人在立夏日吃蛋拄心，吃笋拄腿，吃豌豆拄眼，秤人拄身，其目的是出于祈求身、心、腿等重要部位健康无恙，防止生病，顺利度过炎夏的愿望。旧时，乡间用赤豆、黄豆、黑豆、青豆、绿豆等五色豆拌合白粳米煮成“五色饭”，后演变改为倭豆肉煮糯米饭，菜有苋菜黄鱼羹，称吃“立夏饭”。用红茶或胡桃壳煮蛋，称“立夏蛋”，相互馈送。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9j7ibVGbgVuDzxziaP0VfY4OicLFknyOwZ6iajtXGIUdOXDTZSd8Nsz2SIA/640?wx_fmt=jpeg" title="立夏11">
+<p>是日，宁波习俗要吃“脚骨笋”，用乌笋烧煮，每根三四寸长，不剖开，吃时要拣两根相同粗细的笋一口吃下，说吃了能“脚骨健”(身体康健)。再是吃软菜(君踏菜)，说吃后夏天不会生痱子，皮肤会像软菜一样光滑。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9ia79dmwibx32XQUfPFibDx6U6hFF8ygf3Hw2rY7WXib6SJVrqcNQ5ASTAA/640?wx_fmt=jpeg" title="立夏12">
+<p>湖南长沙人立夏日吃糯米粉拌鼠曲草做成的汤丸，名“立夏羹”，民谚云“吃了立夏羹，麻石踩成坑”，“立夏吃个团(音为“坨”)，一脚跨过河”，意喻力大无比，身轻如燕。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9bsT87iaQJVWWIeP6YnrLPln9U4JiazSjfiaV5ohSzMxHXBMibcTia3hTzTA/640?wx_fmt=jpeg" title="立夏13">
+<p>福建闽东地区立夏以吃“光饼”（面粉加少许食盐烘制而成）为主。闽东周宁、福安等地将光饼入水浸泡后制成菜肴，而蕉城、福鼎等地则将光饼剖成两半，将炒熟了的豆芽、韭菜、肉、糟菜等夹而食之。周宁县纯池镇一些乡村吃“立夏糊”，主要有两类，一是米糊，一是地瓜粉糊。大锅熬糊汤，汤中内容极其丰富，有肉、小笋、野菜、鸡鸭下水、豆腐，等等，邻里互邀喝糊汤。这与浙东农村立夏吃“七家粥”风俗有点相似。“七家粥”与“七家茶”也算是立夏尝新的另一种形式，七家粥是汇集了左邻右舍各家的米，再加上各色豆子及红糖，煮成一大锅粥，由大家来分食。七家茶则是各家带了白己新烘焙好的茶叶，混合后烹煮或泡成一大壶茶，再由大家欢聚一堂共饮。这些粥或茶并不见得是多么可口的食物，但这些仪式，却可以说是过去农村社会中重要的联谊活动。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9w6PSFxQTIenck2wL8yHnhhK7fkk8X9rrNZeYMRb1WKCDxJyBoiaESVA/640?wx_fmt=jpeg" title="立夏14">
+<p>闽南地区立夏吃虾面，即购买海虾掺入面条中煮食，海虾熟后变红，为吉祥之色，而虾与夏谐音，以此为对夏季之祝愿。</p>
+<h2>立夏养生</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9FFcbUAId5crbfic3qdwUmmmAB1EhKNicbnqgYaUd4ckHibfNdvOQs6q0Q/640?wx_fmt=jpeg" title="立夏15">
+<p>传统中医认为，人们在春夏之交要顺应天气的变化，重点关注心脏。心为阳脏，主阳气。心脏的阳气能推动血液循环，维持人的生命活动。心脏的阳热之气不仅维持其本身的生理功能，而且对全身有温养作用，人体的水液代谢、汗液调节等，都与心阳的重要作用分不开。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9XicVXXMVCmVXyHOXT2iaOjiazkxN9SYo1taQjzLtNxtLKTOrsgh6sDPRQ/640?wx_fmt=jpeg" title="立夏16">
+<p>初夏之时，老年人气血易滞，血脉易阻，每天清晨可吃少许葱头，喝少量的酒，促使气血流通，心脉无阻，便可预防心病发生。立夏之后，天气逐渐转热，饮食宜清淡，应以易消化、富含维生素的食物为主，大鱼大肉和油腻辛辣的食物要少吃。立夏以后饮食原则是“春夏养阳”，养阳重在养心，养心可多喝牛奶、多吃豆制品、鸡肉、瘦肉等，既能补充营养，又起到强心的作用。平时多吃蔬菜、水果及粗粮，可增加纤维素、维生素B、C的供给，能起到预防动脉硬化的作用。总之立夏之季要养心，为安度酷暑做准备，使身体各脏腑功能正常，以达到“正气充足，邪不可干”的境界。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmkLhmic6v1k2hLZJABw2d6S9zYZiarnl1Bthh1z7fwp7CeLARaWuia5h75ORPIM7N8ltPD6UZzVeUulQ/640?wx_fmt=jpeg" title="立夏17">
+<p>立夏节气常常衣单被薄，即使体健之人也要谨防外感，一旦患病不可轻易运用发汗之剂，以免汗多伤心。老年人更要注意避免气血瘀滞，以防心脏病的发作。故立夏之季，情宜开怀，安闲自乐，切忌暴喜伤心。清晨可食葱头少许，晚饭宜饮红酒少量，以畅通气血。具体到膳食调养中，我们应以低脂、低盐、多维、清淡为主。</p></div><!--[if !IE]>|xGv00|06051ee4c5d8f62d6d113fe425f51e75<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|5b1184630c7ec62e654c30a24b083290<![endif]-->

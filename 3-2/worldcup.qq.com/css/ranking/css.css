@@ -1,0 +1,38 @@
+body{margin:0;padding:0; font-size:12px;}
+form,p,div,ul,li,input,select,pre{margin:0;padding:0;}
+td,body,{font-size:12px; text-decoration: none;}
+a{color:#333; text-decoration: none;}
+a:hover{color: #FF0000; text-decoration: underline;}
+img{border:none; padding:0; margin:0;}
+	
+.lan,.lan a{color:#015bb3;}
+	.lan a:hover{color: #FF0000;}
+	
+.slan,.slan a{color:#2b507d;}
+	.slan a:hover{color: #FF0000;}
+	
+.hui,.hui a{color:#9d9d9d;}
+	.hui a:hover{color: #FF0000;}
+	
+.lv,.lv a{color:#158f0b;}
+	.lv a:hover{color: #FF0000;}
+	
+.hong,.hong a{color:#cd0100;}
+	.hong a:hover{color: #FF0000;}
+	
+.ftsz14, .ftsz14 a{font-size:14px;}
+	.ftsz14 a:hover{font-size:14px;}
+	
+.bold{font-weight:bold;}	
+		
+.lh_26{line-height:26px;}
+.lh_32{line-height:32px;}
+
+.mgt_10{margin-top:10px;}
+.mgtb_10{margin:10px 0;}
+.pdtb_20{padding:20px 0;}
+
+
+.bd_1{border:1px solid #e5e5ed; border-top:none;}
+
+.pic_1 img{border:1px solid #c8cbca;}/*  |xGv00|3f7d063e40d06adbb422e98745ff4225 */

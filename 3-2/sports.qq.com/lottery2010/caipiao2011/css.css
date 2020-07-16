@@ -1,0 +1,218 @@
+body { margin:0; padding:0; background-color:#FFF; }
+form, input, selezs, ul, li, p, h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
+body, td, selezs, input, div { font-size:12px; color:#333;}
+img { border:none; }
+.nl, .nl a, .nl a:hover, a.nl, a.nl:hover { text-decoration: none; }
+.ul, .ul a, .ul a:hover, a.ul, a.ul:hover { text-decoration: underline; }
+.color_black { color:#333; }
+.color_white { color:#FFF; }
+.color_red { color:#F00; }
+.color_blue { color:#0F0CBF; }
+.color_grey { color:#888888; }
+.line_h_16 { line-height:16px; }
+.line_h_18 { line-height:18px; }
+.line_h_21 { line-height:21px; }
+.line_h_22 { line-height:22px; }
+.line_h_24 { line-height:24px; }
+.line_h_26 { line-height:26px; }
+.text_ind { text-indent:2em; }
+.font_z_14 { font-size:14px; }
+.font_w_b { font-weight:bold; }
+.pad_lr_6 { padding-left:6px; padding-right:6px; }
+.redh a:hover, a.redh:hover { color:#F00; }
+.float_l { float:left; }
+.float_r { float:right!important; }
+.text_l { text-align:left }
+.text_r { text-align:right }
+.text_c { text-align:center }
+.dis { display:block; }
+.undis { display:none; }
+.text_title1 { font-family:ºÚÌå,"Arial Narrow",HELVETICA; font-size:18px; line-height:28px; }
+.text_title2 { font-family:ºÚÌå,"Arial Narrow",HELVETICA; font-size:20px; line-height:28px; }
+/* CSS¿Õ°× */
+.box_hr { margin:0 auto; font-size:1px; background:#fff; clear:both; }
+.box_hr4 { margin:0 auto; height:4px; font-size:1px; background:#fff; clear:both; }
+.box_hr6 { margin:0 auto; height:6px; font-size:1px; background:#fff; clear:both; }
+.box_hr8 { margin:0 auto; height:8px; font-size:1px; background:#fff; clear:both; }
+.box_hr10 { margin:0 auto; height:10px; font-size:1px; background:#fff; clear:both; }
+.Nborder{ border:0px!important}
+.bl0{ border-left:0px!important}
+.br0{ border-right:0px!important}
+.bb0{ border-bottom:0px!important}
+.bbd{ border-bottom:1px dotted #A8A8A8}
+.pb14{ padding-bottom:14px;}
+.pd10{ padding:10px 0px}
+.mb0{ margin-bottom:0px!important}
+.mb15{ margin-bottom:15px!important}
+.mr0{ margin-right:0px!important}
+.Npading{ padding:0px!important}
+.pt0{ padding-top:0px!important}
+.h130{ height:130px;}
+.h150{ height:150px;}
+.h155{ height:155px;}
+.h172{ height:172px;}
+.h180{ height:180px;}
+.h192{ height:192px;}
+.h285{ height:285px;}
+.h335{ height:335px;}
+.h355{ height:355px;}
+.h578{ height:578px;}
+.h585{ height:585px;}
+.h655{ height:655px;}
+.h985{ height:985px;}
+.h1202{ height:1202px;}
+.h925{ height:925px;}
+
+#content{ width:100%; overflow:hidden; background:#fff;}
+ul, ol { list-style:none; }
+a:link, a:visited { text-decoration:none; }
+a:hover { color:#FF0000!important; text-decoration:underline; }
+.topBox{ position:relative; width:960px; height:68px; margin:0px auto 10px; overflow:hidden; background-position:0px 0px!important;}
+.topBox ul{ height:58px; overflow:hidden;}
+.caipiao{ position:absolute; top:6px; left:46px; width:42px;}
+.zucai{ position:absolute; top:6px; left:137px; width:157px;}
+.fucai{ position:absolute; top:6px; left:344px; width:155px;}
+.ticai{ position:absolute; top:6px; left:549px; width:97px;}
+.goucai{ position:absolute; top:6px; left:696px; width:157px;}
+.hudong{ position:absolute; top:6px; left:901px; width:42px;}
+.topBox ul li{ display:inline; float:left; height:29px; margin:0px 0px 0px 10px; line-height:29px; text-align:center; color:#063F74}
+.topBox ul li a{ color:#063F74}
+.topBox ul li a:hover{ text-decoration:none!important}
+
+.box1{ width:960px; margin:0px auto 10px; overflow:hidden}
+.box1_l{ float:left; width:310px;}
+.focus_wrap{ float:left; width:310px; margin:0px auto 10px; overflow:hidden;}
+.box1_lBox{ width:310px; margin:0px auto; overflow:hidden }
+.box1_lt{ width:310px; height:36px; line-height:36px; background-position:0px -77px!important}
+.box1_lt h3{ margin-left:30px; font-size:14px; font-weight:bold; color:#09569E}
+.box1_lc{ width:308px; border:1px solid #BBD1E5; border-top:0px!important}
+.box_dl,.box_dl1{ border:0px!important}
+
+.box1_m{ float:left; width:384px; overflow:hidden}
+.box1_m h2{ width:328px; margin:0px auto 10px; padding-left:14px; overflow:hidden; background:url(//mat1.gtimg.com/sports/lottery2010/caipiao2011/h2bg.gif) no-repeat scroll 0px 7px; font-size:14px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå","Arial Narrow",HELVETICA; font-weight:bold; color:#6C6C6C}
+.box1_m ul,.box1_m p{ display:block; width:364px; margin:0px auto 13px; overflow:hidden;}
+.box1_m h3{ margin:0px 0px 10px; font-size:20px; font-family:"ºÚÌå","Arial Narrow",HELVETICA; font-weight:normal; color:#ff0000; text-align:center}
+.box1_m h3 a{ color:#ff0000}
+.box1_m ul li{ margin:0px!important; _margin:0px; overflow:hidden; line-height:25px; font-size:14px; color:#0C479F; text-align:center}
+.box1_m il li a,.dl_l a,.dl_r a{ color:#0C479F}
+.dl_l{ float:left; width:60px; height:22px; margin:0px; overflow:hidden; line-height:25px; *line-height:22px; _height:26px; _line-height:26px;font-size:14px; text-align:left!important; color:#0C479F }
+.dl_r{ float:left; width:304px; margin:0px; overflow:hidden; line-height:25px; *line-height:22px; _height:26px;_line-height:26px; font-size:14px; text-align:left!important; color:#0C479F }
+.box1_m p{ text-align:center; color:#6C6C6C}
+.box1_m p a{  color:#6C6C6C}
+.reds{ margin-right:8px; font-weight:bold;color:#6C6C6C!important}
+.box1_m table{ width:354px!important; margin:0px auto}
+.box1_m table tr td{ height:25px; line-height:25px; font-size:14px; color:#0C479F; text-align:left}
+.box1_m table tr td a{ color:#0C479F;}
+.box1_m table tr td span{ float:right}
+.box1_r .box2_rBox{ width:266px!important; margin:10px auto 0px!important;}
+.box1_r .box2_rt{ width:266px!important; height:38px; line-height:38px; background:url(//mat1.gtimg.com/sports/lottery2010/caipiao2011/box1_rh3.gif) repeat-x;}
+.box1_r .box2_rc{ width:264px!important; border:1px solid #BBD1E5!important; }
+.box1_r .box2_rc ul{ width:238px!important; margin:0px auto; padding:10px 0px; overflow:hidden;}
+
+.box1_r,.box3_r{ float:right; width:266px; overflow:hidden;}
+.box1_rBox,.expert,.box3_rBox{ width:266px; margin:0px auto 10px; overflow:hidden;}
+.box1_rt,.box3_rt{ width:266px; height:38px; line-height:38px; background:url(//mat1.gtimg.com/sports/lottery2010/caipiao2011/box1_rh3.gif) repeat-x;}
+.box1_rt h3,.box2_rt h3,.box3_rt h3{ margin-left:20px; font-size:14px; font-weight:bold; color:#09569E}
+.box1_rc,.box3_rc{ width:264px; border:1px solid #BBD1E5;}
+.expert_t{ width:266px; height:33px; line-height:33px; background-position:-468px -77px!important}
+.expert_t h3{ margin-left:20px; font-size:14px; font-weight:bold; color:#fff}
+.expert_c{ width:262px; height:96px; margin:0px auto; border:2px solid #E2750F; overflow:hidden}
+.expert_c ul{ padding:10px 0px; overflow:hidden;}
+.expert_c ul li{ display:inline; float:left; width:54px; margin:0px 0px 0px 9px; overflow:hidden}
+.expert_c ul li img{ width:50px; height:50px; margin-bottom:4px; padding:1px; border:1px solid #D2D2D2}
+.expert_c ul li p{ text-align:center; color:#333}
+.box1_rc dl{ width:244px; margin:0px auto; padding:8px 0px; overflow:hidden; border-bottom:1px dotted #D2D2D2}
+.box1_rc dl dt{ margin:0px 0px 4px; font-size:20px; font-family:"ºÚÌå","Arial Narrow",HELVETICA; font-weight:normal; color:#333}
+.box1_rc dl dt a{ color:#333}
+.box1_rc dl dt img{ float:left; width:45px; height:45px; padding:1px; margin-right:5px; border:1px solid #D2D2D2; overflow:hidden}
+.box1_rc dl dd{ float:left; margin:0px;}
+.yjst{ display:block; width:73px!important; height:21px!important; background-position:-887px -77px!important}
+.wbq{ width:264px; padding:10px 0px; overflow:hidden;}
+.wbq li{ display:inline; float:left; margin-left:10px; color:#09569E; line-height:23px; white-space:nowrap}
+.wbq li a{ color:#09569E;white-space:nowrap}
+
+.box2{ width:960px; margin:0px auto 10px; overflow:hidden}
+.box2_t{ width:960px; height:46px;}
+.box2_t h2,.box3_lt h2{ text-indent:-999em}
+.gczq{ background-position:0px -150px!important}
+.zjjc{ background-position:0px -203px!important}
+.zcdz{ background-position:0px -262px!important}
+.cpxw{ background-position:0px -421px!important}
+.box2_c{ width:958px; overflow:hidden; border:1px solid #BBD1E5; border-top:0px!important}
+.zjjcUl{ padding:23px 0px; overflow:hidden;}
+.zjjcUl li{ display:inline; float:left; width:76px; margin:0px 0px 0px 39px; overflow:hidden}
+.zjjcUl li img{ width:70px; height:70px; margin-bottom:13px; padding:2px; border:1px solid #D2D2D2}
+.zjjcUl li p{ text-align:center; color:#333}
+.zjjcUl li p a{ color:#333}
+
+.adver{ width:960px; height:90px; margin:0px auto 10px;}
+
+.box3{ width:960px; margin:0px auto 10px; overflow:hidden;}
+.box3_l{ float:left; width:680px;}
+.box3_lt{ width:680px; height:46px; background-position:0px -258px!important}
+.box3_lc{ width:678px; overflow:hidden; border:1px solid #BBD1E5; border-top:0px!important}
+.box3_rc h4{ margin:20px 0px 10px; text-align:center; font-size:14px; font-weight:bold; color:#09569E}
+.voteTable tr td{ height:27px!important; line-height:27px!important; text-align:center;}
+.voteTable{ margin-bottom:10px;}
+.voteUl{ padding:0px 0px 10px 10px; overflow:hidden;}
+.voteUl li{ display:inline; float:left; margin:0px 10px 10px 0px; overflow:hidden;}
+.box3_rc p{ text-align:center;}
+.vote_Button{ width:86px; height:26px; line-height:26px; border:0px; font-size:14px; color:#fff; text-align:center; cursor:pointer; background-position:-171px -122px!important}
+.box3_rc table tr.hui2 td,.box2_rc table tr.hui2 td{ background:#F5F5F5}
+.box3_rc table tr td{ height:26px; color:#333; text-align:center;}
+.box3_rc table tr td a{ color:#0C479F}
+.box3_rc table tr.hui td{ background:#EDEDED; border-bottom:1px solid #CECECE}
+.box3_rc table tr td span{ display:inline-block; width:14px; height:13px; line-height:13px; font-size:10px; font-weight:bold; color:#fff;background-position:-270px -122px!important}
+.num01{ background-position:-296px -127px!important}
+.tabcontent{ overflow:hidden;}
+.tabcontent2{ height:270px; overflow:hidden;}
+#tabs,#wtabs,#ptabs{ width:244px; height:27px; padding-left:20px;  margin:0px auto; background:#fff; border-bottom:1px solid #BBBFDA}
+#jtabs{ width:218px; height:27px; padding-left:20px;  margin:0px auto; background:#fff; border-bottom:1px solid #BBBFDA}
+#tabs div,#wtabs div,#jtabs div,#ptabs div{ float:left; width:40px; height:28px;line-height:27px; font-size:12px; text-align:center; color:#0C479F;cursor:pointer;}
+#ptabs div,#ptabs div.on{ width:60px!important}
+#tabs div.on,#wtabs div.on,#jtabs div.on,#ptabs div.on{ background:url(//mat1.gtimg.com/sports/lottery2010/caipiao2011/tabbg.gif) repeat-x!important; color:#333!important; border-left:1px solid #BBBFDA; border-right:1px solid #BBBFDA }
+.clear{clear:both; overflow:hidden; font-size:0; height:0px;}
+.dis{ display:block; overflow:hidden;}
+.undis{ display:none; overflow:hidden}
+
+.box2_l{ float:left; width:719px; overflow:hidden; border-right:1px solid #BBD1E5;}
+.box2_lt{ width:719px; height:39px; margin:0px auto 10px; overflow:hidden; line-height:39px; background-position:-1px -318px!important}
+.box2_lt h3{ margin-left:20px; font-size:14px; font-weight:bold; color:#09569E}
+.box2_lc{ width:719px;  overflow:hidden; }
+.newsBox{ display:inline; float:left; width:335px; margin:0px 11px 13px; overflow:hidden;}
+.newsBox h4{ width:325px; height:28px; margin-bottom:10px; padding-left:10px; line-height:28px; background:url(//mat1.gtimg.com/sports/lottery2010/caipiao2011/h4bg.gif) no-repeat bottom; font-size:14px; font-weight:bold; color:#434343}
+.more{ float:right; font-weight:normal!important; color:#BABABA}
+.more a{ color:#BABABA}
+.newsBox ul{ width:335px;}
+.newsBox ul li{ line-height:25px; font-size:14px; color:#0C479F}
+.newsBox ul li a{ color:#0C479F}
+.date{ float:right; color:#BABABA !important}
+.box2_r{ float:right; width:238px;}
+.box2_rBox{ width:238px;}
+.box2_rt{ width:238px; height:38px; line-height:38px; background:url(//mat1.gtimg.com/sports/lottery2010/caipiao2011/box1_rh3.gif) repeat-x;}
+.box2_rc{ width:238px; border-top:1px solid #BBD1E5; border-bottom:1px solid #BBD1E5}
+.box2_rc table tr td{ height:27px; line-height:27px; text-align:center; color:#333}
+.box2_rc table tr td .date{ color:#828282!important}
+.box2_rc table tr td .red{ color:#FF0000!important}
+.box2_rc ul{ width:218px; margin:0px auto; padding:10px 0px; overflow:hidden;}
+.box2_rc ul li{ line-height:25px; color:#434343}
+.box2_rc ul li a{ color:#434343}
+.box2_rp{ display:block; height:27px; line-height:27px; text-align:right; border-top:1px solid #DEDEDE; background:#F5F5F5; color:#1044BA}
+.box2_rp a{ margin-right:10px; color:#1044BA}
+.box2_rc ul li em{ color:#0C479F!important; font-weight:bold}
+
+.box4{ width:958px; margin:0px auto; border:1px solid #BBD1E5; overflow:hidden}
+.box4_t{ width:958px; height:35px; line-height:35px;}
+.box4_t h2{ margin-left:15px; font-size:18px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå","Arial Narrow",HELVETICA; font-weight:normal; color:#2F689F}
+.box4_c{ width:958px; padding:15px 0px; border-top:1px solid #BBD1E5; overflow:hidden }
+.box4_c h3{ margin:0px 0px 30px 15px; font-size:14px; font-weight:bold; color:#434343}
+.box4_c ul{ width:958px; overflow:hidden}
+.linkUl{ margin-bottom:15px!important}
+.linkUl li{ margin:0px 0px 15px 32px!important}
+.box4_c ul li{ display:inline; float:left; width:100px; margin:0px 0px 15px 51px; overflow:hidden}
+.box4_c ul li img{ width:100px; height:40px; margin-bottom:5px;}
+.box4_c p{ text-align:center; color:#333}
+.box4_c p a{ color:#333}
+.lianxi{ margin-left:40px; text-align:left!important}
+
+.topBox,.box1_lt,.expert_t,.yjst,.gczq,.zjjc,.zcdz,.cpxw,.box3_lt,.vote_Button,.box3_rc table tr td span,.num01,.box2_lt{ background:url(//mat1.gtimg.com/sports/lottery2010/caipiao2011/css_sprite.jpg) no-repeat}/*  |xGv00|7ffdbc0382c83b126a7c51f7a998b67b */

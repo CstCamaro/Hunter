@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9,chrome=1">
+		<meta name="renderer" content="webkit">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+        <meta charset="utf-8">
+        <title>腾讯公益开放平台 - open.gongyi.qq.com</title>
+        <link type="text/css" href="/assets/css/lib/bootstrap.min.css?v=1" rel="stylesheet">
+        <!-- <link type="text/css" href="/assets/css/bootstrap-theme.css?v=2" > -->
+                <link href="/assets/css/lib/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/lib/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/common.css">
+        <link rel="stylesheet" href="/assets/css/inside-page.css">
+        <link rel="stylesheet" href="/assets/css/skins/green.css">
+		<link rel="stylesheet" href="/assets/css/lib/custom.min.css">
+		<link rel="stylesheet" href="/assets/css/lib/bootstrap-table.css">
+                <script type="text/javascript" src="/assets/js/lib/jquery-3.2.1.min.js?v=1"></script>
+		<script type="text/javascript" src="/assets/js/lib/bootstrap.min.js?v=1"></script>
+		<script type="text/javascript" src="/assets/js/lib/gy.pc.1.0.0.min.js?v=1"></script>
+		<script src="/assets/js/aloader.min.js"></script>
+		<!-- <script type="text/javascript" src="/assets/js/lib/layer-v3.1.1/layer/layer.min.js?v=1"></script> -->
+		<style>
+		ul.bar_tabs>li.active{
+			border-right: 0;
+		}
+		ul.bar_tabs>li a{
+			border-top-right-radius:4px;
+		}
+	</style>
+    <link href="/assets/css/index.css?_=26573039.666667" type="text/css" rel="stylesheet" /><link href="/assets/css/bootstrap.min.css?_=26573039.666667" type="text/css" rel="stylesheet" /></head>
+	<body>
+	            <style type="text/css" rel="stylesheet">
+#loginPopup .modal-header{
+    padding:5px;padding-right:8px;
+}
+#loginPopup .modal-body{
+    padding:0px;
+}
+#loginPopup .modal-footer{
+    padding:0px;
+}
+#loginPopup .outside-login{
+    padding:10px 0;
+}
+#login_container,#login_container_qq{
+    width:398px;height:400px;overflow:hidden;
+}
+#login_container_qq iframe div.login{
+    border:none;
+}
+
+.login-popup .qywx-login-icon {
+    background: url(data:image/png;base64,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) no-repeat center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+</style>
+<div id="pageContainer" class="page-container container-fluid" style="padding: 0;">
+    <div class="open-head">
+        <div class="head-logo">
+            <div class="gy-logo-red"></div>
+            <p>&nbsp;&bull;&nbsp;开放平台</p>
+        </div>
+                
+                <div class="login-btn-box">
+            <div class="btn-login" data-toggle="modal" href='#loginPopup'>登录</div>
+            <a href="//gongyi.qq.com/loveplan/donations_help.htm" class="btn-help">使用帮助</a>
+        </div>
+            </div>
+    <!--banner start-->
+    <div class="banner">
+        <img src="../../assets/imgs/banner.jpg" class="img-responsive banner-img" alt="Cinque Terre">
+    </div>
+    <!--banner end-->
+    <!--footer start-->
+    <div class="container">
+        <!--认证分类-->
+        <div class="content-block category">
+            <div class="title">认证分类</div>
+            <ul class="cont-ul">
+                <li class="cont-li">
+                    <div class="cont-img sprite sprite-icon_person"></div>
+                    <div class="cont-name">个人认证</div>
+                    <div class="cont-desc">适合个人。可以个人名义发起有限个度的短期公益项目。 </div>
+                </li>
+                <li class="cont-li">
+                    <div class="cont-img sprite sprite-icon_npo"></div>
+                    <div class="cont-name">非公募机构认证</div>
+                    <div class="cont-desc">适合非公募基金会或NPO组织。可以机构或组织名义发起区域性公益项目。</div>
+                </li>
+                <li class="cont-li">
+                    <div class="cont-img sprite sprite-icon_gongmu"></div>
+                    <div class="cont-name">公募机构认证</div>
+                    <div class="cont-desc">适合民政部批准的具有公募资质的基金会。可以发起大型公益项目，同时为个人和非公募公益机构发起的项目进行公募支持。</div>
+                </li>
+            </ul>
+        </div>
+        <!--核心功能-->
+        <div class="content-block function">
+            <div class="title">核心功能</div>
+            <ul class="cont-ul">
+                <li class="cont-li">
+                    <div class="cont-img sprite sprite-icon_manage"></div>
+                    <div class="cont-name">高效的项目管理</div>
+                    <div class="cont-desc">简单便捷管理项目，随时随地编辑项目信息。</div>
+                </li>
+                <li class="cont-li">
+                    <div class="cont-img sprite sprite-icon_plat"></div>
+                    <div class="cont-name">多平台项目发布</div>
+                    <div class="cont-desc">一站式公益项目发起，微信、手Q、腾讯公益web端等多平台同步上线传播与募款。</div>
+                </li>
+                <li class="cont-li">
+                    <div class="cont-img sprite sprite-icon_mpay"></div>
+                    <div class="cont-name">支持移动支付</div>
+                    <div class="cont-desc">可在微信、手Q公众号中传播，支持微信支付、手Q支付等多种支付方式，让筹款不再难。</div>
+                </li>
+            </ul>
+        </div>
+            </div>
+    <!--container end-->
+    <!--footer start-->
+    <div class="open-footer">
+        <div class="footer-inner">
+            <div class="logo-box">
+                <div class="gy-logo-white"></div>
+                <div class="copyright">Copyright © 1998-2018 Tencent.All Rights Reserved 腾讯公司 版权所有</div>
+            </div>
+            <div class="link-box">
+                <ul class="link-ul">
+                    <li><a href="http://gongyi.qq.com/jjhgy/index.htm">腾讯公益慈善基金会</a></li>
+                    <li><a href="http://www.tencent.com/">关于腾讯</a></li>
+                    <li><a href="http://www.tencent.com/index_e.shtml">About Tencent</a></li>
+                </ul>
+            </div>
+            <div class="link-box">
+
+                <ul class="link-ul">
+                    <li><a href="https://gongyi.qq.com/term.htm">服务条款</a></li>
+                    <li><a href="http://adver.qq.com/">广告服务</a></li>
+                    <li><a href="http://hr.tencent.com/">腾讯招聘</a></li>
+                </ul>
+            </div>
+
+            <div class="link-box">
+
+                <ul class="link-ul">
+                    <li><a href="http://service.qq.com/">客服中心</a></li>
+                    <li><a href="http://www.qq.com/map/">网站导航</a></li>
+                </ul>
+            </div>
+            <div class="contact-box">
+                <div class="title">联系我们</div>
+                <ul class="contact-ul">
+                    <li>项目合作：gongyi_HZ@tencent.com</li>
+                    <li>媒体合作：gongyi_HZ@tencent.com</li>
+                    <li><a href="http://support.qq.com/discuss/358_1.shtml">意见反馈</a> | <a href="http://service.qq.com/">网友投诉</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--footer end-->
+
+
+
+    <!--loginbox start-->
+    <div class="modal fade login-popup" id="loginPopup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                </div>
+                <div class="modal-body">
+
+                    <div class="login-tab">
+                        <div id="login_container" class="text-center" ></div>
+                    </div>
+                    <div class="login-tab">
+                        <!--QQ登录-->
+                        <div class="login-content-box J-ptloginBox text-center" style="display: none;" id="login_container_qq">
+                            <div class="center-block">
+                            <!-- <div class="lg-qr-box center-block">
+                                <iframe name="login_frame" id="login_frame" style="position: fixed; left: 15px; height: 280px; width: 370px; top: 40px;"  frameborder="0" scrolling="auto" src=""></iframe>
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-tab">
+                    <div id="login_container_qywx" class="text-center" ></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="outside-login">
+                        <div class="outside-login-tit"><span class="J-txtMoreLoginType">更多登录方式</span></div>
+                        <div class="outside-login-con">
+                            <div class="outside-login-list">
+                                <a class="outside-login-btn wx J-btnSwitchLoginType" data-type="wx"
+                                   href="javascript:;" data-hot="login.wx" hotrep="login.wx"> <em><i class="wx-login-icon"></i></em> <span>微信账号</span>
+                                </a>
+                                <a class="outside-login-btn qq J-btnSwitchLoginType actived"
+                                   href="javascript:;" data-type="qq" data-hot="login.qq" hotrep="login.qq">
+                                    <em><i class="qq-login-icon"></i></em> <span>QQ账号</span>
+                                </a>
+                                <a class="outside-login-btn qq J-btnSwitchLoginType actived"
+                                   href="javascript:;" data-type="qywx" data-hot="login.qq" hotrep="login.qq">
+                                    <em style="background-color:transparent;"><i class="qywx-login-icon"></i></em> <span>企业微信</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+window.config={
+    id:"login_container",
+    appid: "wx8c8794d4e40e5027",
+    scope: "snsapi_login",
+    redirect_uri: encodeURIComponent("http://open.gongyi.qq.com/gy_index/check?ref_url=project%2Fsubmit%2Findex"),
+    state: "75420c992a1bc0df33a109270c99624a",
+    style: "black",
+    href: ""
+};
+window.qq_config={
+	id:"login_container_qq",
+    appid: "30000101",
+    redirect_uri: encodeURIComponent("http://open.gongyi.qq.com/gy_index/check?ref_url=project%2Fsubmit%2Findex"),
+    href: ""
+}
+window.qywx_config={
+    id:"login_container_qywx",
+    appid: "ww52c145978d8cfd92",
+    scope: "snsapi_login",
+    redirect_uri: encodeURIComponent("http://open.gongyi.qq.com/gy_index/check?ref_url=project%2Fsubmit%2Findex"),
+    state: "75420c992a1bc0df33a109270c99624a",
+    style: "black",
+    href: ""
+}
+</script>
+<script src="//res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>        <script type="text/javascript">(function(){window["_JS_REQUIRED"]=["/service/base/jscfg","/assets/js/base.min.js?_=26573039.666667","/assets/js/custom.min.js?_=26573039.666667","/assets/js/lib/layer-v3.1.1/layer/layer.min.js?_=26573039.666667"];})();</script><script type="text/javascript">+function(){;var _JREQUIRED=window['_JS_REQUIRED'] || [];_JREQUIRED.push('/assets/js/pages/gy_index.js');$(function(){$.aLoader.loadJs(_JREQUIRED,function(){
+try{GY.Sys.run({"ctr":"gy_index","act":"index"});}catch(e){console.error('ERR',e);}
+})});}();</script></body>
+</html>

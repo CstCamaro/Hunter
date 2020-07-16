@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>腾讯汽车众测 - 汽车用品免费试用平台</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="baidu-site-verification" content="elM09FkRTW" />
+    <!--<link rel="dns-prefetch" href="http://img1.gtimg.com">-->
+    <link type="text/css" rel="stylesheet" href="/fe/web/online/css/main.css"/>
+
+    <link rel="shortcut icon" href="/fe/web/src/images/favicon.ico"/>
+    <link rel="bookmark" href="/fe/web/src/images/favicon.ico"/>
+    <script type="text/javascript">
+    	var $CONFIG = {};
+    </script>
+</head><style>
+        *{ padding:0px; margin:0px;}
+        html,body{_overflow-x:hidden;padding:0px; margin:0px;}
+        body{font-family:"Microsoft YaHei", Helvetica, STHeiTi, sans-serif;overflow-x:hidden; }
+        a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-touch-callout:none;color:#333;}
+        a:link,a:visited,a:active{text-decoration:none;}
+        a:focus {outline:none;  -moz-outline:none;}
+        li{list-style: none;}
+        #minNav{height: 30px;line-height: 30px;border-bottom: 1px solid #f3f3f7;}
+        #minNav .minNavContainer{width: 1000px;margin:0 auto;}
+        #minNav .minNavContainer .left{float: left;margin-left: -20px;}
+        #minNav .minNavContainer .right {float: right;margin-right: -20px;}
+        #minNav .minNavContainer .right a{color: #6f7378;padding:0 20px;}
+        #minNav .minNavContainer a.in,#minNav a:hover,#minNav .minNavContainer a:hover{color: #fc5438;}
+        #minNav .minNavContainer a.changeCity{padding-right: 0px;}
+        #minNav .minNavContainer a.currentCity,#minNav .minNavContainer a.currentCity:hover{padding-left: 10px;color: #333;}
+        #minNav a{font-size: 12px;float: left;padding:0 20px;}
+        #minNav .minNavContainer .right a.mobile{position: relative;border-left:1px solid #fff;border-right:1px solid #fff;width: 118px;padding:0px;text-align: center;}
+        #minNav .minNavContainer .right a.mobile:hover{border-left:1px solid #dedfe5;width:120px;border-right:1px solid #dedfe5;margin-left: -1px;margin-right: -1px;}
+
+        #minNav .mobileCode{position: absolute;display: block;z-index: 9;width: 120px;height: 120px;background-color: #fff;left:-1px;border:1px solid #dedfe5;border-top: 0px;display: none;}
+        #minNav .mobileCode em{width: 100px;height: 100px;background-position:0 0;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAt1BMVEX/////5eD+raD9fWf8X0X8UjYrMkD+08z9eGL8TjH/+fn9lYT8TzL/8/D9dl//+Pf9dF39emX+uKz+4dz/9fP9k4L8Zk3+0sr9eGH/8vD8Z07/8e/8aVH+3tn+1c+/wcVhZnE1PEnAwsb+1s/9pZeRlZz9fWj9e2b/5eH/+fg2PEr/4t3/4979pZa+wMU0O0j8alH9eWP/9fT+08v9lYP8aFD/9vT9dmD/49/+rJ/8X0T8UTUAAADveq44AAAAAWJLR0Q8p2phzwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAvRJREFUaN7tmWtX4jAQhqtAEEVBxAteluIFRNZ1db37///XZgql02QySdp82OPm/dJmmr5Py2RSzpkkiaqojc1Gs9VqNjY3cFRIlefpEYtFofZWZ62tdiWIySLX9k63g9Td2faGmC1W2t3rKNrb9YQwFkv1+ll0f3AwHB4M9rNBv1dYrlxXR1GECh5nsdQhhI6O8+HxEYwPvSCcxTJh8GOejNCrQwa7bQ8Ia5HpRI5Pz/CrDc/hHg8IawG6gDf7AWfjdDJJL+HsCmIXCKI4lyMWC9C1HDTg5GZ51w2cT2Xw2hnCW4BmcjCQx8v8trEcDGCpOEN4C1BTDm7lMc1npHJwK4NNXBk6BCXAbtGSg7k83uUz7uRgLoMtZ4jdAmYM8YwJLA5vCG8B77pQ3/Wn98/FW+RZGxsTX6ptqk54i3z9Tan1d+8M4S3WlXQFZ7/Sh4d0rBejFcJbFHsC2ndkzn6XthUrhLfIlO1uj09F4OkRdrc/67Fw2yA5iyR5hjd7KfZp2Ns6z4kHxGqBvjiL19cF8cVxgNgspEZ99dvZHxUAbKfz7Ba55uq/gF7iCWEsUPbfiglvKGHOELMF1vvH7PPr63P28Y6jHhCThZvovUvfwmopQhQL3c3gY6xL7ETcGiFeEAJEX6GXAuFsWBLfA8JPRiF6vuEe5fkixAtCSHBVREeZZ4wQbwgBNSdekJVKP/P/BFE92Keg85cQN0RIDYhh3QtbyXnXSYQYIES2dbyaTGO2dadvCGF/UCJbZMIMdRUhfhBeghS9FKyLJEI8IeZ2kygVF2GFrrAgrt0UCMK3m8JALO2mIBDHdhPhzCa+fNWx3VQL4tpuqgVxbTcpEkYRk53aTXUhTu2muhCndlNdCN8rEq4qJ1/l8b2igBBzrygQhO8VBYLYe0V6pldD5Gr4a4uX8JRawvcBIQ69ovoQe6+ItqEfwQTxaTdVhvi0m6pDPNpN1SEO7SaFp1zU64R6Emu7KQTE2m4KA7G0m0JBov4N/QUbbp3kRxg7MQAAAABJRU5ErkJggg==');display: block;margin:12px auto;}
+        #minNav .mobile:hover .mobileCode{display: block;}
+        #minNav .mobileIcon{display: inline-block;width: 10px;height: 12px;background-position:0 0;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMBAMAAACpRTGTAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAFVBMVEUAAABvc3hvc3hvc3hvc3hvc3gAAAC34IF6AAAABXRSTlMAwzw7xCtZsjwAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAI0lEQVQI12MQDQ0NDWQIBQGGUAYGBoIkRGWoEphUBpIgE0IAubcNCelfsncAAAAASUVORK5CYII=');margin-right: 7px;position: relative;top:2px;}
+        #minNav .navLine{display: inline-block;width: 0px;border-left:1px solid #d1d5db;height: 8px;float: left;margin-top: 12px;}
+        #header{width: 1000px;margin:0 auto;height:80px;line-height: 80px;}
+        #header .logo{float:left;background-position:0 0;background-image: url('data:image/png;base64,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');width:204px;height:57px;margin-top:11px;}
+        #header .navList{float: right;}
+        #header .navList li{float: right;margin-right: 2px;}
+        #header .navList a{display: block;padding:0 22px;border-bottom: 4px solid #fff;height: 76px;line-height: 76px;padding-bottom: 1px;font-size: 16px;}
+        #header .navList a:hover,#header .navList a.on{color: #fc5438;background-color: #f3f3f7;border-bottom: 4px solid #fc5438;}
+        .headerDiv{box-shadow:0px 3px 3px 0px rgba(0,0,0,0.22);border-bottom: 1px solid #e6e6e6;}
+    </style>
+
+
+   
+    <div id="minNav">
+        <div class="minNavContainer">
+            <div class="left">
+                <a href="http://auto.qq.com/" target="_blank">腾讯汽车首页</a><em class="navLine"></em>
+                <a href="http://www.qq.com/map/" target="_blank">网站地图</a><em class="navLine"></em>
+            </div>
+            <div class="right">
+                 <a href="/web/evaluation/order" target="_blank">我的众测</a><em class="navLine" ></em>
+                 <a href="http://automall.qq.com/login?s_url=https%3A%2F%2Fzc.chezhuka.qq.com%2Fweb%2Fact">请登录</a><em class="navLine" ></em>
+                <a href="http://support.qq.com/write.shtml?fid=389">意见反馈</a>
+             </div>
+        </div>
+    </div>
+    <script>
+        (function(){
+            
+            var publicHeader = {
+                    trim : function(str){
+                        return str.replace(/(^\s*)|(\s*$)/g,'');
+                    },
+                    checkDomain : function(){
+                        var domain = document.domain;
+                        if(domain.indexOf("qq.com") < 0){
+                            throw new Error('The domain is not "qq.com"!');
+                        }else{
+                            document.domain = "qq.com";
+                        }
+                    },
+                    getCookie : function (name){
+                        var cookie  = document.cookie;
+                        var cookieArr = cookie.split(';');
+                        for(var i=0;i<cookieArr.length;i++){
+                            var cookieOne = cookieArr[i].split('=');
+                            if(this.trim(cookieOne[0]) === this.trim(name)){
+                                return cookieOne[1];
+                            }
+                        }
+                    },
+                    removeCookie : function(obj){
+                        var expires = new Date();
+                        expires.setTime(expires.getTime()-1);
+                        if(!!this.getCookie(obj.name)){
+                            document.cookie = obj.name+'=; expires='+expires+';path='+obj.path+';domain='+obj.domain;
+                        }
+                    }
+            }
+            var logout = document.getElementById('logout');
+            if(!!logout){
+                logout.onclick = function(){
+                    publicHeader.checkDomain();
+                    publicHeader.removeCookie({domain:'.qq.com',name:'uin',path:'/'});    
+                    publicHeader.removeCookie({domain:'.qq.com',name:'skey',path:'/'});       
+                    window.location.reload();
+                }    
+            }
+            
+        })(window)
+        
+    </script>
+                        
+<style type="text/css">
+    html,body {
+        height: 100%;
+    }
+    .wrap {
+        position: relative;
+        min-height: 100%;
+        height: auto;
+    }
+    .footer-fix {
+        padding-bottom: 334px;
+    }
+
+    /*小编评测*/
+    .bg-fa{
+        background:#fafafa;
+    }
+    .editor-list {
+        position: relative;
+        padding-top:30px;
+        padding-bottom: 40px;
+        background-color: #f7f7f7;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+    .editor-tit{
+        padding:0 0 20px 20px;
+        font-family:MicrosoftYaHei;
+        font-size:18px;
+        font-weight: bold;
+        color:#333333;
+        text-align:left;
+    }
+    .editor-list ul{
+        overflow:hidden;
+        padding-left:20px;
+    }
+    .editor-item{
+        float:left;
+        margin:0 16px 30px 0;
+        width:278px;
+        height:236px;
+        background:#fff;
+    }
+    .deitor-img{
+        display:block;
+        width:278px;
+        height:186px;
+    }
+    .deitor-txt{
+        padding:0 20px 0 16px;
+        width:242px;
+        height:50px;
+        line-height:50px;
+        font-family:'MicrosoftYaHei';
+        font-size:16px;
+        color:#666666;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
+    .pos-link {
+        position: relative;
+    }
+    .pos-link .g-block-down-link {
+        display: block;
+        position: absolute;
+        padding: 7px 8px 0;
+        top: 24px;
+        right: 0;
+        width: 17px;
+        height: 70px;
+        line-height: 1;
+        border-radius: 4px 0 0 4px;
+        background: -webkit-linear-gradient(315deg ,#fa9b2e, #fa682e);
+        background: -moz-linear-gradient(315deg, #fa682e, #fa9b2e);
+        background: -o-linear-gradient(315deg, #fa682e, #fa9b2e);
+        background: -ms-linear-gradient(315deg, #fa682e, #fa9b2e);
+        background: linear-gradient(315deg, #fa682e, #fa9b2e);
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Microsoft Yahei';
+        text-align: center;
+    }
+
+    /*评测报告右侧开始*/
+    .main-report-container {
+        float: right;
+        width: 370px;
+        background: #fff;
+        overflow: hidden;
+    }
+    .main-report-container .mian-center-right {
+        float: none;
+    }
+    .main-placeholder-box {
+        width: 100%;
+        height: 20px;
+        background: #fafafa;
+    }
+    .main-report-right-box {
+        padding: 0 20px;
+        width: 330px;
+        background: #fff;
+    }
+    .main-report-head {
+        width: 100%;
+        height: 82px;
+        overflow: hidden;
+        color: #333;
+        font-family: 'Microsoft Yahei';
+        line-height: 82px;
+    }
+    .main-report-head-title {
+        float: left;
+        font-size: 24px;
+    }
+    .main-report-all {
+        float: right;
+        font-size: 15px;
+    }
+    .main-report-items {
+        margin-bottom: 30px;
+        padding-bottom: 27px;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #edebe8;
+    }
+    .main-report-items-img-box {
+        position: relative;
+        width: 100%;
+        height: 246px;
+    }
+    .main-report-items-img {
+        width: 100%;
+        height: 246px;
+        overflow: hidden;
+    }
+    .main-report-items-tit {
+        margin-top: 16px;
+        width: 100%;
+        height: 24px;
+        font-size: 18px;
+        font-family: 'Microsoft Yahei';
+        color: #333;
+        overflow: hidden;
+    }
+    .main-report-items-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 258px;
+        height: 212px;
+        line-height: 30px;
+        background: rgba(255,105,48);
+        padding-top: 34px;
+        padding-right: 36px;
+        padding-left: 36px;
+        color: #fff;
+        font-size: 16px;
+        opacity: 0;
+        transition: all .5s ease;
+    }
+    .main-report-items-hover-time {
+        color: #babab0;
+    }
+    .main-report-items-hover-stage {
+        word-wrap: break-word;
+        margin-top: 4px;
+        height: 90px;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        display: -webkit-box!important;
+    }
+    .main-report-items-hover-icon {
+        margin: 27px auto 0;
+        background-position: 0 -528px;
+        width: 36px;
+        height: 36px;
+        background-image: url(../images/sprite-2x.png);
+    }
+
+
+</style>
+<body class="bg-grey">
+<div class="wrap">
+<!--头部-->
+<header class="header">
+    <div class="w1200">
+        <h1 class="header-logo icon icon-logo">
+            <a href="/web">
+                腾讯汽车众测
+            </a>
+        </h1>
+        <ul class="header-nav">
+            <li class="current">
+                <a href="/web" bossZone="pc_home">首页</a>
+            </li>
+
+            <li class="">
+                <a href="/web/evaluation/boutique" bossZone="pc_boutique">评测报告</a>
+            </li>
+
+            <li class="">
+                <a href="/web/act/list" bossZone="pc_actList">往期评测</a>
+            </li>
+            <li class="">
+                <a href="/web/evaluation/editor">小编测评</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="J_Banner" style="position: relative; height: 500px;">
+    <ul class="banner-wrap">
+        <li class="bg-banner" style="background-image: url(/fe/web/online/images/bg-banner.jpg);"></li>
+        <li class="bg-banner" style="background-image: url(/fe/web/online/images/bg-banner.jpg);"></li>
+        <li class="bg-banner" style="background-image: url(/fe/web/online/images/bg-banner.jpg);"></li>
+        <li class="bg-banner" style="background-image: url(/fe/web/online/images/bg-banner.jpg);"></li>
+        <li class="bg-banner" style="background-image: url(/fe/web/online/images/bg-banner.jpg);"></li>
+        <li class="bg-banner" style="background-image: url(/fe/web/online/images/bg-banner.jpg);"></li>
+    </ul>
+</div>
+<style type="text/css">
+    .banner-wrap {
+        position: absolute;
+        top: 0;
+        width: 99999px;
+    }
+    .banner-wrap li {
+        float: left;
+    }
+</style>
+
+<div class="flexslider">
+    <ul class="slides">
+        
+<li style="background-image:url(http://img1.gtimg.com/auto/pics/hv1/183/165/2323/151095333.jpg); background-position: center center;"><a
+        href="https://zc.chezhuka.qq.com/web/act/detail?act_id=10067"></a></li>
+
+
+<li style="background-image:url(http://img1.gtimg.com/auto/pics/hv1/191/234/2322/151047911.jpg); background-position: center center;"><a
+        href="http://zc.chezhuka.qq.com/web/act/detail?act_id=10066"></a></li>
+
+<li style="background-image:url(http://img1.gtimg.com/auto/pics/hv1/94/51/2321/150936124.jpg); background-position: center center;"><a
+        href="http://zc.chezhuka.qq.com/web/act/detail?act_id=10065"></a></li>
+
+<li style="background-image:url(http://img1.gtimg.com/auto/pics/hv1/168/103/2320/150884433.jpg); background-position: center center;"><a
+        href="http://zc.chezhuka.qq.com/web/act/detail?act_id=10064"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ul>
+</div>
+<!--评测指南-->
+<div id="J_shopFlow" class="guide shopFlow w1200" style="width: 1200px; margin-top: 0; box-shadow: 0 0px 40px rgba(216,216,216,.5);">
+    <article class="guide-left icon icon-leftnav">
+        评测指南
+    </article>
+    <ul id="J_shopFlowList">
+        <li class="t1 tip" style="padding-right: 50px;">
+            <a href="javascript:;" style="width: 64px; opacity: 1;">
+                            <span>
+                                报名申请
+                            </span>
+                <em>
+                    免费报名参与评测
+                </em>
+            </a>
+        </li>
+        <li class="shopFlow-right" style="padding-right: 50px; opacity: 1;">
+                        <span>
+                        </span>
+        </li>
+        <li class="t2 tip" style="padding-right: 50px;">
+            <a href="javascript:;" style="opacity: 1; width: 64px;">
+                <span>名单审核</span>
+                <em>
+                    试用名单审核与确认
+                </em>
+            </a>
+        </li>
+        <li class="shopFlow-right" style="padding-right: 50px;  opacity: 1;">
+                    <span>
+                    </span>
+        </li>
+        <li class="t3 tip" style="padding-right: 50px; opacity: 1;">
+            <a href="javascript:;" style="opacity: 1; width: 64px;">
+                <span>商品体验</span>
+                <em>
+                    深入体验评测商品或服务 </em>
+            </a>
+        </li>
+        <li class="shopFlow-right" style="padding-right: 50px; opacity: 1;">
+                        <span>
+                        </span>
+        </li>
+
+        <li class="t4 tip" style="padding-right: 50px; opacity: 1;">
+            <a href="javascript:;" style="opacity: 1; width: 64px;">
+                            <span>
+                                提交报告
+                            </span>
+                <em>
+                    在线提交试用报告
+                </em>
+            </a>
+        </li>
+        <li class="shopFlow-right" style="padding-right: 50px; opacity: 1;">
+                        <span>
+                        </span>
+        </li>
+
+        <li class="t5 tip" style="padding-right: 50px; opacity: 1;">
+            <a href="javascript:;" style="popacity: 1; width: 64px;">
+                            <span>
+                                更多机会
+                            </span>
+                <em>
+                    优质用户获得更多机会
+                </em>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="sub-title sub-title1">
+    <div class="sub-title-left icon icon-line1"></div>
+    <div class="sub-title-text">
+        <h2>热门众测活动</h2>
+        <p class="text">POPULAR REVIEWS</p>
+    </div>
+    <div class="sub-title-right icon icon-line2"></div>
+</div>
+<div class="main-cont">
+                        <span class="J_MainCont main-cont-item">
+            <div class="left">
+                <a href="/web/act/detail?act_id=10067">
+                	<img src="http://p.qpic.cn/automall_pic/0/20200519110200_90083/2000" alt="">
+                    <div class="layer">
+                        <div class="icon icon-right"></div>
+                        <p class="text">查看详情</p>
+                    </div>
+                 </a>
+            </div>
+            <div class="right">
+                <a href="/web/act/detail?act_id=10067">
+                    <h3>
+                    	腾讯用车众测第80期：驾驰TIGEAR全合成润滑油保养免费体验                    </h3>
+                </a>
+                <div class="g-block">
+                    <div class="g-block-top">
+                        <ul>
+                            <li class="br1">
+                            	<span class="person icon icon-person"></span>
+                                报名人数
+                                <p class="num">1198</p>
+                            </li>
+                            <li class="br1">
+                            	<span class="apply icon icon-num"></span>
+                                数量
+                                <p class="num">15</p>
+                            </li>
+                            <li>
+                            	<span class="market icon icon-market"></span>
+                                市场价格
+                                <p class="num">¥298</p>
+                            </li>
+                        </ul>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="g-block-down" data-start-time="2020-05-19 09:46:05"
+                         data-end-time="2020-05-27 12:00:00">
+                        
+                    </div>
+                </div>
+
+                <!-- 状态 -->
+                <div class="g-block-sta">
+                    <p class="g-block-status g-block-status-exp">
+                        <span class="icon icon-status-no status-no1"></span>
+                        <span class="icon icon-status-no status-no2"></span>
+                        <span class="icon icon-status-no-end status-no-end"></span>
+
+                        <span class="icon icon-status-start start"></span>
+                        <span class="icon icon-status-apply apply"></span>
+                        <span class="icon icon-status-exp exp"></span>
+                        <span class="icon icon-status-end end"></span>
+
+                        <span class="start-text text">即将开始</span>
+                        <span class="apply-text text">申请中</span>
+                        <span class="exp-text text">体验中</span>
+                        <span class="end-text text">已结束</span>
+                    </p>
+                </div>
+                <!-- end 状态 -->
+            </div>
+            <div class="cb"></div>
+        </span>
+                    <span class="J_MainCont main-cont-item">
+            <div class="left">
+                <a href="/web/act/detail?act_id=10066">
+                	<img src="http://p.qpic.cn/automall_pic/0/20200403151549_22000/2000" alt="">
+                    <div class="layer">
+                        <div class="icon icon-right"></div>
+                        <p class="text">查看详情</p>
+                    </div>
+                 </a>
+            </div>
+            <div class="right">
+                <a href="/web/act/detail?act_id=10066">
+                    <h3>
+                    	腾讯用车众测第79期：免费体验价值1299元锦湖高性能轮胎                    </h3>
+                </a>
+                <div class="g-block">
+                    <div class="g-block-top">
+                        <ul>
+                            <li class="br1">
+                            	<span class="person icon icon-person"></span>
+                                报名人数
+                                <p class="num">1209</p>
+                            </li>
+                            <li class="br1">
+                            	<span class="apply icon icon-num"></span>
+                                数量
+                                <p class="num">12</p>
+                            </li>
+                            <li>
+                            	<span class="market icon icon-market"></span>
+                                市场价格
+                                <p class="num">¥1299</p>
+                            </li>
+                        </ul>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="g-block-down" data-start-time="2020-04-03 15:05:31"
+                         data-end-time="2020-04-16 12:00:00">
+                        
+                    </div>
+                </div>
+
+                <!-- 状态 -->
+                <div class="g-block-sta">
+                    <p class="g-block-status g-block-status-end">
+                        <span class="icon icon-status-no status-no1"></span>
+                        <span class="icon icon-status-no status-no2"></span>
+                        <span class="icon icon-status-no-end status-no-end"></span>
+
+                        <span class="icon icon-status-start start"></span>
+                        <span class="icon icon-status-apply apply"></span>
+                        <span class="icon icon-status-exp exp"></span>
+                        <span class="icon icon-status-end end"></span>
+
+                        <span class="start-text text">即将开始</span>
+                        <span class="apply-text text">申请中</span>
+                        <span class="exp-text text">体验中</span>
+                        <span class="end-text text">已结束</span>
+                    </p>
+                </div>
+                <!-- end 状态 -->
+            </div>
+            <div class="cb"></div>
+        </span>
+                    <span class="J_MainCont main-cont-item">
+            <div class="left">
+                <a href="/web/act/detail?act_id=10065">
+                	<img src="http://p.qpic.cn/automall_pic/0/20200110183314_37305/2000" alt="">
+                    <div class="layer">
+                        <div class="icon icon-right"></div>
+                        <p class="text">查看详情</p>
+                    </div>
+                 </a>
+            </div>
+            <div class="right">
+                <a href="/web/act/detail?act_id=10065">
+                    <h3>
+                    	腾讯用车众测第78期：免费体验价值1999元国产轮胎                    </h3>
+                </a>
+                <div class="g-block">
+                    <div class="g-block-top">
+                        <ul>
+                            <li class="br1">
+                            	<span class="person icon icon-person"></span>
+                                报名人数
+                                <p class="num">1403</p>
+                            </li>
+                            <li class="br1">
+                            	<span class="apply icon icon-num"></span>
+                                数量
+                                <p class="num">10</p>
+                            </li>
+                            <li>
+                            	<span class="market icon icon-market"></span>
+                                市场价格
+                                <p class="num">¥1999</p>
+                            </li>
+                        </ul>
+                        <div class="cb"></div>
+                    </div>
+                    <div class="g-block-down" data-start-time="2020-01-10 17:52:39"
+                         data-end-time="2020-01-20 07:00:00">
+                        
+                    </div>
+                </div>
+
+                <!-- 状态 -->
+                <div class="g-block-sta">
+                    <p class="g-block-status g-block-status-end">
+                        <span class="icon icon-status-no status-no1"></span>
+                        <span class="icon icon-status-no status-no2"></span>
+                        <span class="icon icon-status-no-end status-no-end"></span>
+
+                        <span class="icon icon-status-start start"></span>
+                        <span class="icon icon-status-apply apply"></span>
+                        <span class="icon icon-status-exp exp"></span>
+                        <span class="icon icon-status-end end"></span>
+
+                        <span class="start-text text">即将开始</span>
+                        <span class="apply-text text">申请中</span>
+                        <span class="exp-text text">体验中</span>
+                        <span class="end-text text">已结束</span>
+                    </p>
+                </div>
+                <!-- end 状态 -->
+            </div>
+            <div class="cb"></div>
+        </span>
+            
+            <!-- 二级标题 -->
+        <div class="main-other">
+            <div class="sub-title">
+                <div class="sub-title-left icon icon-line1"></div>
+                <div class="sub-title-text">
+                    <h2>精选评测报告</h2>
+                    <p class="text">FEATURED&nbsp;&nbsp; REPORTS</p>
+                </div>
+                <div class="sub-title-right icon icon-line2"></div>
+            </div>
+            <div class="w1200 list-cont-wrap">
+                <ul class="list-cont">
+
+                                            <li>
+                            <a href="/web/evaluation/detail?order_id=58773">
+                                <div class="img" style="background-image: url(http://p.qpic.cn/automall_pic/0/20200512095919_37857/2000)"></div>
+                                <p class="text clipline">ECOWING ES01：带给你舒适的驾乘操控享受</p>
+                                <div class="layer">
+                                    <p class="time">2020-05-11</p>
+                                    <p class="stage cliplines line3">
+                                        对于自己的爱车来说，虽然轮胎更换不需要像更换机油养护那般频繁，但其也是爱车养护中必不可少的零配件之一。轮胎的优劣对于爱车而言自然十分的重要，其关系到爱车的驾乘安全及操控性能体验，同时也影响着驾乘舒适性体验。今天要为大家介绍的便是锦湖的新品ECOWING ES01 高性能轮胎，对于锦湖这个品牌相信很多人并不陌生，锦湖轮胎本身来自于韩国，在2018年出售给了青岛双星，无论从产能还是科技研发实力看，锦湖轮胎都有着十分出色的表现。十分感谢腾讯汽车众测和途虎养车提供的这次体验机会，在此之前个人体验过几次途虎养车的机油更换保养服务，此次体验采用了途虎线上下单发货，店面享受更换服务的方式，整个体验过程十分的便捷舒适，相较于传统的更换体验更加的自主高效。爱车原有轮胎行驶了4万公里左右，但是因为驾驶路况较差，其实轮胎的磨损程度还是比较严重的，轮胎表面也存在小的割痕和缺失现象，对于行车安全还是有着较大的影响。途虎小哥十分细心地核对了轮胎型号等信息，便轻松的将原车的轮胎拆卸了下来，操作上十分的麻利。轮胎表面的花纹是一款轮胎设计上的重心之一，其不仅有效保证了操控性，更很好地起到了静音效果，减小胎噪，带来更为舒适的驾乘体验。ECOWING ES01 高性能轮胎的胎面和胎肩都采用了酒窝状C型沟槽切口和V型沟槽设计的等距花纹块，有效改善了胎面的耐磨性能，大大增强了操控及制动性能。ECOWING ES01 高性能轮胎的胎面分布有三条排水沟，排水沟的宽度和深度分布上都较为平均，很好的保证了湿地的通行性能和刹车表现。途虎养车附送了动平衡检测和铝合金气门，十分的贴心，整个的的安装更换过程十分顺畅，小哥做的也十分细致，看着爱车新的轮胎，又可以更加肆意的撒欢奔跑了，当然了，安全还是第一位的，不过操控性和驾乘体验上更加舒适，安全上也必然更有保障。实际的驾乘体验来说，ECOWING ES01 高性能轮胎无论是在干湿地的通行操控、刹车，胎噪，以及不同路面环境的通行体验上都有着很不错的表现，整体体验上十分的舒适。特别是在一些相对颠簸的路面环境，ECOWING ES01 高性能轮胎有着很好的缓冲，总体表现上还是十分满意的，是一个很不错的性价比选择。</p>
+                                    <div class="icon icon-right-s"></div>
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/web/evaluation/detail?order_id=58936">
+                                <div class="img" style="background-image: url(http://p.qpic.cn/automall_pic/0/20200507094650_32158/2000)"></div>
+                                <p class="text clipline">节能耐磨低胎噪，性价比高：锦湖ECOWING ES01轮胎</p>
+                                <div class="layer">
+                                    <p class="time">2020-05-01</p>
+                                    <p class="stage cliplines line3">
+                                        前言对于现在人们生活水平的提高，汽车已经是现在人们最便捷的代步工具了。不论贵贱几乎是家家都有一台，这也就导致现在出行道路的拥堵现状。这里建议如果能绿色出行，还是选择绿色出行的方式。大家都知道汽车的轮胎就如同我们人脚上穿的鞋子对车来说至关重要。作为汽车的易损件，轮胎在一定周期是必须要更换的。而且更换周期不是单单看轮胎标记处的沟槽磨损小于1.6毫米，使用时间也是需要考虑在内；一般新胎大概6万—8万公里或4年到5年就必须及时进行更换，具体情况还需看行车路面。除此平时必须养成对车胎进行检查习惯，确保在行车过程中能安全行驶。笔者购车于2015年1月份，是一台北京现代名图1.8排量。在轮胎方面原厂配置的是耐克森CP672，轮胎生产日期为2015年11月份。可以看到车胎磨损程度已经出现细小的裂痕，磨损程度和使用时间确实已经需要进行更换了。笔者行驶至今公里数为已经快8万公里，本来近期就在考虑换轮胎，然而在一次偶然的机会发现“腾讯汽车众测”平台，刚好新一期众测的产品是锦湖ECOWING ES01轮胎，真可谓是雪中送炭。就这样抱着试一试的心态点击申请，没想到被幸运女神眷顾。如愿获得体验测评机会，在此感谢腾讯汽车众测平台！品牌历史首先，测评前必须先对这款轮胎的品牌历史做个了解，因为笔者也是初次认识这款轮胎。它“来自韩国的锦湖轮胎历史源于1960年。目前已成为全球大型轮胎制造企业之一。锦湖轮胎拥有完备生产线，覆盖乘用车轮胎、商用车轮胎、高科技轮胎等多个类别。锦湖轮胎除拥有辐射全国的上海销售总部外，设立了南京工厂，并在2005年完成南京二期工厂建设。此外，锦湖于2006年设立天津工厂以及研发中心、2007年设立长春工厂、2008年南京TBR工厂建成投产，至此，锦湖轮胎在中国的年生产规模达到3000万条。“（引用360百科）”这样的销量可见还是得到消费者的高度认可。锦湖ECOWING ES01 外观细节再看，本次锦湖ECOWING ES01笔者选择的尺寸为215/60R16规格尺寸。比之前原车轮胎宽度稍微大一点，稳定性理论更好些，原车是205/60R60。新旧轮胎直径相差误差控制在3%之间，安装基本没啥问题。这款轮胎是节能舒适系列，其有着节能、耐磨、舒适的特性。轮胎的重量为：10.66kg，锦湖ECOWING ES01轮胎比起原车耐克森轮胎要更软一些很有弹性轮胎侧边上可以看到印制的有立体感的规格尺寸：215/60R16 95V，这是什么意思呢？想必不少开车一族也不懂，那么这里科普一下。215是车胎面宽度尺寸即215mm，60轮胎扁平比 R是子午线轮胎的国际代号是&quot;R&quot;， 俗称为&quot;钢丝轮胎&quot;。16 是轮毂尺寸即16寸。95V就是轮胎载重指数与速度级别，下面官方图一目了然，不懂的可以作为了解。轮胎除了那些印制较大的logo型号之外，这块比较小的英文就是轮胎的层数，锦湖ECOWING ES01有5层： 2层花纹钢+2层聚酯纤维+1层尼龙 ，胎侧也有2层聚酯，整体在做工和结构方面看着比较扎实。这也为行车提供了保障！轮胎的生产日期在这块0920，“20”表示2020年，“09”表示第9周期生产，也就是2020年2月份生产。注：一般在选择轮胎建议不要选择库车超过3年的轮胎。在看轮胎整体花纹设计，采用非对称式设计方式。中间纵向花纹对于排水方面有很好的帮助，对于雨天道路有良好的抓地能力。锦湖ECOWING ES01针对性的花纹设计对于轮胎的降噪、耐磨、节油方面都有不错的性能，具体究竟表现如何，还得等实际中考量。到店安装体验本次从订货、发货、预约安装提醒等，都是由途虎养车平台提供服务。预约离笔者地址最近的门店，进行配送安装。期间从发货到收货也非常快只用了2天时间就到达门店，然后通过手机号登录途虎养车APP，便可查看轮胎订单和预约门店的联系电话及位置。由于周末人比较多，所以与门店约另约了时间。因为平时上班没时间去，所以只能中午下班抽时间。午饭都没吃直奔到门店进行安装更换，因为门店很近3分钟就到店。通过核对单号和姓名等信息确定仓库轮胎将其取出，4条轮胎两个一组都用塑料膜包裹着。轮胎上还贴有绿色产品信息贴纸说明。在安装师傅细心的将膜全部撕开后，展现在我们眼前的就是“锦湖ECOWING ES01 ”庐山真面目。看着四条崭新的轮胎展现在眼前，心中迫不及待想试试它换后的表现。轮胎更换在门店外进行，首先，要将旧轮胎卸下，安装师傅用卧式千斤顶将车顶起。然后开始将螺丝拧下来，整个卸载的过程非常娴熟分分钟搞定。接着将旧轮胎放置卸胎机器上，将其卸下。接着给新车胎涂抹防滑剂后，让换胎更加顺畅，也避免轮胎与钢圈、轮辋装时的损伤。随着机器启动，新轮胎非常快的就装好了。然后，进行从新补气。补气环节完毕后，将轮胎又进行动平衡这也是最后一步操作。动平衡结束后，将轮胎安装与车上就完成了。对了，这次锦湖ECOWING ES01的更换还赠送了4个铝合金气门嘴，不但气门嘴外观高大尚了，而且它的密闭性和强度都得到了很好提升。下面是安装前和安装后的对比效果，笔者对于这次更换不论是途虎养车平台的服务还安装后的效果都非常满意。实际行驶体验在安装好后笔者在开车的时候，就有一个很明显的感觉，就是方向盘扭动要比之前的轻了些。而且稳定性方面也比之前要好，然后经过这些天的行驶体验，可以得出自己个人体验结论。外形外观：胎纹设计和做工精细整体美观度也不错，笔者也比较喜欢。噪音能力：在此前笔者对旧胎行驶速度为80KM/h的快速路行驶，用手机软件进行了噪音检测，结果是70分贝。而新车胎则为65分贝，在车胎噪音方面确实比之前要好，也可以感觉到。（原车胎）（新车胎）耐磨能力：整体来说，这款轮胎比之前原车车胎要软一些，经过10天左右的行驶可以看出轮胎磨损很小。可见它双层胎体结构加上内部结构优化，在耐磨性有比较不错的表现。油耗方面：在每天相同行驶路线，耗油量比之前原车旧胎要低0.2。原车百公里油耗为9.4，而换新胎后为9.2。要知道新胎要比原车旧胎宽度大，所以理论上耗油量也会增大，但是实际上比之前还低。这就说明了，这款轮胎针对性的胎面花纹设计，确实在油耗方面有节油的加强。最后总结通过这段时间的体验，对于这款轮胎的表达能力比较满意。锦湖ECOWING ES01这款主打节能、舒适、耐磨的轮胎，在整体性价比方面可圈可点。在高速行驶中也非常平稳，操纵性，稳定性好。对于一条售价刚300出头的轮胎来说，这个价格相信大部分消费者都完全可以接受。锦湖ECOWING ES01在价格亲民的同时，还有着不错的舒适度、低胎噪、节油以及耐磨度。这样一款高性价比的轮胎，定会深受广大消费者的青睐，目前京东15万+的销量98%的好评也能说一切。</p>
+                                    <div class="icon icon-right-s"></div>
+                                </div>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/web/evaluation/detail?order_id=58766">
+                                <div class="img" style="background-image: url(http://p.qpic.cn/automall_pic/0/20200507094553_45249/2000)"></div>
+                                <p class="text clipline">耐用性超强的锦湖ECOWING ES01轮胎体验</p>
+                                <div class="layer">
+                                    <p class="time">2020-05-05</p>
+                                    <p class="stage cliplines line3">
+                                        再这里再次感谢腾讯用车平台和途虎养平台，能够给予我这次锦湖ECOWING ES01高性能轮胎的众测体验机会，对于途虎我也是非常的熟悉，因为我平时的洗车和保养都在我们当地途虎养车工厂店里去完成的，我对于途虎养车工厂店的印象也特别的好，当然这次去换胎也是一次非常愉快的事情。     从下单及到货速度飞快，轮胎到店后，我们当地的途虎养车工厂店就给我来电话，和我预约换胎时间，非常的贴心，到了预约时间当天，我开车到了途虎养车工厂店，一进门，就有专门的技师出来迎接，并且和我对接完成后，把我的车开至工位上，全程都非常的热心，给个好评。     当把车开至工位的升降平台后，技师将我的四个锦湖ECOWING ES01高性能轮胎全部拿到车子旁边，并且和我核对了信息。     我也看了一下这款锦湖ECOWING ES01高性能轮胎确实非常的不错，因为我之前的爱车就是锦湖轮胎，所以对于锦湖轮胎也非常有好感，这次的锦湖ECOWING ES01高性能轮胎，是新品，也是一款全地型的轮胎，非常的适合家庭轿车使用，可以看到轮胎表面有酒窝状沟槽和C型切口，能够提升花纹块的强度，并且V型沟槽的设计，能够大大增强操控及制动性能。     当拆开轮胎外面的尼龙包装后，技术还给我看了一下这款锦湖ECOWING ES01高性能轮胎的出厂年份和轮胎的规格型号，出厂年份是1220，也就是说这款轮胎是2020年的第12周（3月份左右）。    当以上步骤完成之后，技师就开始拆我原车上的轮胎了，拆卸非常的快，因为现在都有扒胎机了，拆卸一个轮胎也就1-2分钟左右。   四个轮胎都拆卸完成之后，下面就是安装新胎了，安装和拆卸的步骤基本上也一样，都要用到扒胎机，安装一个胎和拆一个胎的时间基本上也差不多。   下面就是进行动平衡的测试了，动平衡是赠送的，每个新胎换上去都需要做的，在做的时候技师看上去也非常的闲熟，操作手法上也非常的快。    并且也告诉我，动平衡机上的数字代表什么，什么样才算达到动平衡的要求，因为我的轮胎轮毂之前有过碰撞，所以一个轮毂上加了好几块平衡块。     完成了动平衡后，技师就开始测试轮胎的密封度了，通过洒水进行轮胎四周有没有漏水。   因为我平时都用氮气的，正好途虎也是用的氮气，在4S店里，充一次氮气还要10块钱了，在途虎这里免费，点赞，因为现在是夏季了，所以我把四个轮胎的气压都打至2.4BAR，这样可以给轮胎一个升温的空间。     技师的操作全程都非常的娴熟，换了四个轮胎速度也很快，大概也就是30分钟左右吧，当换好之后，就可以紧螺丝了，技师先紧一遍，然后另外一个技师在进行复检，工作上非常的细致。   就这样轮胎已经安装完毕了，技师就将我的车开至停车位上，帮助还问我要不要进行洗车，本来想洗一下的，但是想着，这两天要下雨我就没洗，现在想想后悔了，有点脏啊，不过也是谢谢途虎养车工厂店的技师的前台小姐姐。      对于这套锦湖ECOWING ES01高性能轮胎我还是非常喜欢的，我之前原车就用的锦湖，所以对于其驾驶上还是比较放心的，而且这款又是新品，带有混合冠带层，增强耐用性，防止胎面变形，UA的材质，也能够防止沟槽开裂，真心的不错。   总体上来说锦湖ECOWING ES01高性能轮胎还是非常好的，通过这几天的驾驶，我非常的满意，首先来说一下静音效果确实好，因为我之前的胎比较老了，所以胎噪特别的大，而用了这套轮胎之后，明显能够在胎噪上进行降低很多，其次就是驾驶上，转向特别的棒，基本方向盘指那里就往哪里，非常的灵活操控上非常的不错，最后就是对于一些坑洼路面也能够很好的应对，还有就是过减速带的时候，基本上没有什么感觉和影响，所以我也是给大家极力的推荐这套锦湖ECOWING ES01高性能轮胎。</p>
+                                    <div class="icon icon-right-s"></div>
+                                </div>
+                            </a>
+                        </li>
+                    
+                </ul>
+                <!-- <span class="icon icon-prev"></span>
+                <span class="icon icon-next"></span> -->
+                <div class="cb"></div>
+            </div>
+        </div>
+    </div>
+<div class="footer-fix"></div>
+    <!--底部-->
+    <div class="footer-wrap">
+        <div class="footer-cont">
+            <div class="w1200">
+                <div class="footer-cont-left">
+                    <div class="icon icon-footer-logo"></div>
+                    <div class="info">
+                        <div class="icon icon-tel tel"></div>
+                        <div class="other">
+                            <p class="num">400-921-7663</p>
+                            <p class="text">周一至周五（09:00-22:00）</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-cont-right">
+                    <img src="/fe/web/online/images/er.png"">
+                    <p>腾讯汽车众测手机版</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="w1200">
+                <p>
+                    <a href="http://www.tencent.com/">关于腾讯</a>
+                    |<a href="http://www.tencent.com/index_e.shtml">About Tencent</a>
+                    |<a href="http://www.qq.com/contract.shtml">服务协议</a>
+                    |<a href="http://www.qq.com/privacy.htm">隐私政策</a>
+                    |<a href="http://open.qq.com/">开放平台</a>
+                    |<a href="http://www.tencentmind.com/">广告服务</a>
+                    |<a href="http://hr.tencent.com/">腾讯招聘</a>
+                    |<a href="http://gongyi.qq.com/">腾讯公益</a>
+                    |<a href="http://service.qq.com/">客服中心</a>
+                    |<a href="http://www.qq.com/map/">网站导航</a>
+                </p>
+                <p>
+                    Copyright © 1998－2020 Tencent.All Right.Reserved
+                </p>
+                <p>
+                    腾讯公司 版权所有
+                </p>
+            </div>
+        </footer>
+    </div>
+</div>
+<script language="javascript" src="//pingjs.qq.com/ping.js"></script>
+<script language="javascript">
+    if(typeof(pgvMain) == 'function')
+        pgvMain();
+</script>
+<script type="text/javascript">
+    var gBossZoneHandler = new bossZoneHandler();
+    var gImage;
+    var registerZone2 = gBossZoneHandler.registerZone2;
+
+    if(document.addEventListener)
+        document.addEventListener("click", registerZone2, false);
+    else if(document.attachEvent)
+        document.attachEvent("onclick", registerZone2);
+
+    function bossZoneHandler()
+    {
+        var sFlag=false;
+        this.registerZone2 = function (ev,clickType)
+        {
+            var loopTryNum = 10;
+            var bossID = 3702;
+            var column = "yc.qq.com";
+
+            try
+            {
+                //qq
+                var a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+                var iQQ=(a==null?"":unescape(a[2]));
+                var purl='';
+                var zoneId='';
+
+                if(typeof clickType == 'undefined')
+                {
+                    if(sFlag) return true;
+                    var ev = window.event || ev;
+                    var et = ev.srcElement || ev.target;
+                    var type=et.tagName;
+                    if (type != "A" && type != "IMG" )
+                    {
+                        return false;
+                    }
+
+                    if (type == "A")
+                    {
+                        purl = et.href;
+                    }
+                    else if (type == "IMG")
+                    {
+                        purl = et.parentNode.href;
+                    }
+
+                    //pseudo attr
+                    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+                    {
+                        if(tagNode.attributes['bossZone'])
+                        {
+                            zoneId = tagNode.attributes['bossZone'].nodeValue;
+                        } else if(tagNode.attributes['bosszone'])
+                        {
+                            zoneId = tagNode.attributes['bosszone'].nodeValue;
+                        }
+                        else if(tagNode.attributes['BossZone'])
+                        {
+                            zoneId = tagNode.attributes['BossZone'].nodeValue;
+                        }
+                        else if(tagNode.attributes['Bosszone'])
+                        {
+                            zoneId = tagNode.attributes['Bosszone'].nodeValue;
+                        }
+
+                        if(zoneId) break;
+                    }
+                    if(!zoneId) return;
+                }
+                else
+                {
+                    zoneId = ev.bossZone;
+                    purl = ev.url;
+                    sFlag = true;
+                    setTimeout(function (){sFlag = false;},200);
+                }
+
+                var localUrl = location.href;
+                var site = localUrl.substring(7,localUrl.indexOf('.qq.com'));
+                site = site.substr(site.lastIndexOf('.')+1);
+
+                var iurl = 'http://btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz='+column+'&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sSite='+site+'&sUrl='+escape(purl)+'&sLocalUrl='+escape(location.href)+'&'+Math.random();
+                gImage = new Image(1,1);
+                gImage.src = iurl;
+            } catch (e) {}
+        }
+    }
+</script></body>
+</html>
+<script type="text/javascript">
+    $CONFIG.time = "2020-07-10 22:12:47";
+</script>
+<script src="/fe/web/src/js/entry/static/jq.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $CONFIG.w = $(window).width();
+        $('.bg-banner,.J_Banner').width($CONFIG.w);
+        $('.banner-wrap').css('left',-$CONFIG.w + 'px');
+    });
+</script>
+<script type="text/javascript" src="/fe/web/src/js/vendor/j-scroll.js"></script>
+<script type="text/javascript" src="/fe/web/src/js/entry/page/index.js"></script>
+

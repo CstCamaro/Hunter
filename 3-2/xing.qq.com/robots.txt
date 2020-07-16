@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /index.html
+Allow: /system.html
+Allow: /actlist.html
+Allow: /dress.html
+Allow: /intro/*

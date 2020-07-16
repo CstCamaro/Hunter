@@ -1,0 +1,98 @@
+body{font-family:"ËÎÌו";font-size:12px;background:#fff;color:#333;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd{margin:0;padding:0;border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,p,select{margin:0;padding:0;font-size:12px;}
+a{color:#27507C;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.dis{display:block!important;}
+.undis{display:none;}
+.nobg{background:none!important;}
+.box10{height:10px;clear:both;overflow:hidden;}
+.wrap,.wrap2,.wrap3,.title{width:960px;margin:0 auto;}
+.bg{width:100%;margin:0 auto;background:url(//mat1.gtimg.com/worldcup/xiaobai/jiebao/body_bg.gif) no-repeat center top;}
+.top{width:960px;height:29px;padding:8px 0;margin:0 auto;overflow:hidden;}
+.top .logo{float:left;}
+.top .boc{float:left;margin-left:375px;}
+.top .top-nav{float:right;}
+.top a{color:#575757;}
+.nav{width:100%;height:61px;background:url(//mat1.gtimg.com/worldcup/xiaobai/jiebao/nav_bg.jpg) repeat-x;clear:both;}
+.nav .hd{height:30px;}
+.nav .hd li{float:left;height:30px;line-height:30px;padding:0 10px;font-size:14px;color:#fff;}
+.nav .hd li a{color:#fff;}
+.nav .hd li.current{background:#F0FDDF;font-weight:bold;color:#000;}
+.nav .hd li.current a{color:#000;}
+.nav .bd{height:31px;line-height:31px;text-align:center;color:#8FBA54;}
+.nav .bd a{color:#1B5800;}
+.title img{float:left;}
+.wrap2 .left{width:639px;}
+#focus{width:629px;height:421px;padding:4px;border:1px solid #E6E5ED;float:left;}
+#focus .left{width:434px;height:421px;}
+#focus .left img{width:434px;height:421px;float:left;}
+#focus .right{width:184px;height:421px;}
+#focus .right .btn{float:left;margin:0 66px;cursor:pointer;}
+#tips{width:184px;height:392px;float:left;margin:15px 0 1px 0;overflow:hidden;}
+#focus .right dl{width:162px;height:;float:left;border-bottom:1px solid #E1E1E6;height:36px;line-height:18px;padding:10px 0 9px 22px;}
+#focus .right dl.current{background:#E6F9E9;}
+#focus .right dt{width:162px;height:18px;float:left;font-weight:bold;color:#666;overflow:hidden;}
+#focus .right dd{width:162px;height:18px;float:left;color:#27507C;overflow:hidden;}
+.wrap2 .left .blog-hot{width:639px;height:423px;float:left;margin-top:10px;}
+.wrap2 .left .blog-hot .hd{width:617px;float:left;padding:0 10px;height:30px;line-height:30px;border-left:1px solid #E5E5ED;border-right:1px solid #E5E5ED;background:url(//mat1.gtimg.com/worldcup/xiaobai/jiebao/wrap2_left_hd.jpg) no-repeat;}
+.wrap2 .left .blog-hot .hd h2{font-size:14px;float:left;color:#27507C;}
+.wrap2 .left .blog-hot .bd{width:637px;float:left;height:392px;border:1px solid #E5E5ED;border-top:0;}
+.wrap2 .left .blog-hot .bd .blog-hot-hd{width:613px;float:left;padding:10px 12px;}
+.wrap2 .left .blog-hot .bd .blog-hot-hd ul{width:613px;float:left;}
+.wrap2 .left .blog-hot .bd .blog-hot-hd li{width:84px;float:left;line-height:18px;text-align:center;padding:0 9px;}
+.wrap2 .left .blog-hot .bd .blog-hot-hd li img{width:80px;height:80px;padding:1px;border:1px solid #D6D6D8;float:left;margin-bottom:4px;}
+.wrap2 .left .blog-hot .bd .dotted{width:613px;height:1px;float:left;margin:10px 0;overflow:hidden;background:url(//mat1.gtimg.com/worldcup/xiaobai/jiebao/dotted.jpg) repeat-x;}
+.wrap2 .left .blog-hot .bd .blog-hot-bd{width:613px;float:left;padding:0 12px;}
+.wrap2 .left .blog-hot .bd .blog-hot-bd ul{width:613px;float:left;}
+.wrap2 .left .blog-hot .bd .blog-hot-bd li{width:306px;float:left;line-height:18px;}
+.wrap2 .left .blog-hot .bd .blog-hot-ft{width:613px;float:left;padding:0 12px;}
+.wrap2 .left .blog-hot .bd .blog-hot-ft dl{width:613px;float:left;}
+.wrap2 .left .blog-hot .bd .blog-hot-ft dt{width:613px;float:left;font-weight:bold;line-height:18px;padding:4px 0;}
+.wrap2 .left .blog-hot .bd .blog-hot-ft dd{width:613px;float:left;text-indent:26px;}
+.wrap2 .right{width:311px;}
+.wrap2 .right .hd{width:289px;height:30px;line-height:30px;float:left;padding:0 10px;background:url(//mat1.gtimg.com/worldcup/xiaobai/jiebao/wrap2_right_hd.jpg) no-repeat;}
+.wrap2 .right .hd h2{font-size:14px;float:left;color:#27507C;}
+.wrap2 .right .bd{width:289px;height:833px;float:left;border:1px solid #E5E5ED;border-top:0;padding:0 10px;}
+.wrap2 .right .bd .wrap2-top{width:289px;float:left;padding:15px 0;}
+.wrap2 .right .bd .wrap2-top ul{width:289px;float:left;}
+.wrap2 .right .bd .wrap2-top li{width:289px;float:left;font-size:14px;line-height:20px;padding:3px 0;}
+.wrap2 .right .bd .dotted{width:289px;height:1px;float:left;margin:5px 0;overflow:hidden;background:url(//mat1.gtimg.com/worldcup/xiaobai/jiebao/dotted.jpg) repeat-x;}
+.wrap2 .right .bd .wrap2-bottom{width:289px;float:left;padding:15px 0;}
+.wrap2 .right .bd .wrap2-bottom ul{width:289px;float:left;}
+.wrap2 .right .bd .wrap2-bottom li{width:289px;float:left;line-height:18px;padding:4px 0;}
+.wrap3 .hd{width:958px;height:37px;float:left;padding:1px 1px 0;background:url(//mat1.gtimg.com/worldcup/xiaobai/jiebao/baozhi_hd.jpg) no-repeat;}
+.wrap3 .hd img{float:left;}
+.wrap3 .bd{width:960px;float:left;}
+.wrap3 .bd .left{width:648px;height:321px;float:left;border-left:1px solid #D8EDD6;border-top:1px solid #E5E5ED;border-bottom:1px solid #E5E5ED;}
+.wrap3 .bd .left .wrap3-left{width:301px;float:left;line-height:18px;text-align:center;padding:10px 10px 0;}
+.wrap3 .bd .left .wrap3-left img{width:295px;height:273px;float:left;padding:2px;border:1px solid #E5E5ED;margin-bottom:5px;}
+.wrap3 .bd .left .wrap3-top{width:297px;float:left;padding-left:20px;}
+.wrap3 .bd .left .wrap3-top .wrap3-top-hd{width:297px;float:left;margin:10px 0;}
+.wrap3 .bd .left .wrap3-top .wrap3-top-hd h2{padding-left:10px;font-size:14px;color:#137F0B;line-height:18px;background:url(//mat1.gtimg.com/worldcup/xiaobai/jiebao/wrap3_top_hd.jpg) no-repeat left 2px;}
+.wrap3 .bd .left .wrap3-top .wrap3-top-hd h2 a{color:#137F0B;}
+.wrap3 .bd .left .wrap3-top .wrap3-top-bd{width:297px;float:left;}
+.wrap3 .bd .left .wrap3-top .wrap3-top-bd ul{width:297px;float:left;}
+.wrap3 .bd .left .wrap3-top .wrap3-top-bd li{width:297px;float:left;line-height:18px;padding:2px 0;}
+.wrap3 .bd .left .wrap3-bottom{width:317px;float:left;}
+.wrap3 .bd .left .wrap3-bottom .wrap3-bottom-hd{width:297px;float:left;padding-left:20px;margin:10px 0;}
+.wrap3 .bd .left .wrap3-bottom .wrap3-bottom-hd h2{padding-left:10px;font-size:14px;color:#137F0B;line-height:18px;background:url(//mat1.gtimg.com/worldcup/xiaobai/jiebao/wrap3_top_hd.jpg) no-repeat left 2px;}
+.wrap3 .bd .left .wrap3-bottom .wrap3-bottom-hd h2 a{color:#137F0B;}
+.wrap3 .bd .left .wrap3-bottom .wrap3-bottom-bd{width:317px;float:left;}
+.wrap3 .bd .left .wrap3-bottom .wrap3-bottom-bd ul{width:317px;float:left;margin-top:8px;}
+.wrap3 .bd .left .wrap3-bottom .wrap3-bottom-bd li{width:136px;float:left;line-height:18px;text-align:center;padding:0 11px;}
+.wrap3 .bd .left .wrap3-bottom .wrap3-bottom-bd li img{width:130px;height:88px;float:left;padding:2px;border:1px solid #E6E6EE;margin-bottom:5px;}
+.wrap3 .bd .right{width:311px;height:323px;float:left;}
+.wrap3 .bd .right .wrap3-right-hd{width:289px;height:28px;line-height:28px;border:1px solid #D8DFE9;float:left;padding:0 10px;}
+.wrap3 .bd .right .wrap3-right-hd h2{font-size:14px;float:left;color:#27507C;}
+.wrap3 .bd .right .wrap3-right-bd{width:290px;height:272px;padding:10px;float:left;border-right:1px solid #C3CDE2;border-bottom:1px solid #C3CDE2;background:#F3F8FF;}
+.wrap3 .bd .right .wrap3-right-bd h3{width:290px;float:left;font-size:14px;text-align:center;line-height:20px;padding:5px 0;}
+.wrap3 .bd .right .wrap3-right-bd p{width:270px;float:left;padding:0 10px;line-height:20px;text-indent:24px;color:#686868;}
+.wrap3 .bd .right .wrap3-right-bd ul{width:290px;float:left;padding:10px 0;}
+.wrap3 .bd .right .wrap3-right-bd li{width:290px;float:left;line-height:18px;padding:2px 0;}
+.wrap3 .bd .right .wrap3-right-bd .dotted{width:290px;height:1px;float:left;overflow:hidden;background:url(//mat1.gtimg.com/worldcup/xiaobai/jiebao/dotted.jpg) repeat-x;}
+.wrap3 .bd .right .wrap3-right-bd .more{float:right;margin:10px 5px 0 0;}/*  |xGv00|5ad6774fe950712d4435aa0f2afc9aab */

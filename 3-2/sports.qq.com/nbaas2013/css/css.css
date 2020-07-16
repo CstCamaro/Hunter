@@ -1,0 +1,241 @@
+/*kennanwang*/
+body, td, selezs, input, div { font-size:12px; color:#333333; font-family:"ËÎÌå"; }
+body { background:#ffffff; }
+a:link, a:visited { text-decoration:none; color:#333333; }
+a:hover { color:#D20E44!important; text-decoration:underline; }
+.Nborder { border:0px!important }
+.mb0 { margin-bottom:0px!important }
+/*sprite*/
+.box1 .newsBoxc .hd,.box1 .rBox .hd, .box1 .rBox .hd .koulan,.huiyuan,.box1 .rBox .t,#zlk .hd,.box2 .hd,.ScA2 .prev,.ScA2 .next,.ScA2 .prev:hover,.ScA2 .next:hover,.btshouting,#djfw .hd,#qmxsp .hd,#zjstp .hd,#qmxxx .hd,#qmxtl .hd,#qmxkl .hd,#qmxjq .hd,#qmxsfq .hd{ background:url(//mat1.gtimg.com/sports/nbaas2013/images/sprite.png) no-repeat }
+#content { width:100%; margin:0px auto; overflow:hidden; }
+/*banner*/
+#banner { width:100%; height:320px; margin:0px auto 20px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/banner.jpg) no-repeat top center}
+.banner { position:relative; width:1000px; height:320px; margin:0px auto; z-index:999 }
+.banner h1 { display:none; }
+.banner .nav { position:absolute; left:160px; bottom:0px; width:715px; height:50px; line-height:50px; font-size:12px; color:#fff; z-index:999 }
+.navUl li { float:left; }
+.navUl li a { display:block; float:left; height:50px; padding:0px 10px; font-size:12px; color:#fff }
+.navUl li a:hover { background:#9F0722 }
+.navUl li.current a { background:#9F0722 }
+.navUl li.current .menu { display:block }
+.nav a:hover { color:#fff!important; text-decoration:none }
+.menu { display:none; position:absolute; left:0px; bottom:-40px; width:1000px; height:40px; line-height:40px; overflow:hidden; background:#9F0722; z-index:10 }
+.menu a { display:block; float:left; height:40px; padding:0px 10px; font-size:14px; font-family:"Î¢ÈíÑÅºÚ", "ºÚÌå"; font-weight:normal; color:#fff }
+.menu a:hover { background:none }
+/*main*/
+.main { width:100%; margin:0px auto; overflow:hidden; position:relative; z-index:9 }
+/*box1*/
+.box1 { width:1000px; margin:0px auto 25px; overflow:hidden }
+.box1 .l{ float:left; width:620px; overflow:hidden}
+/*ppt*/
+#focus2{ position:relative; width:620px; height:350px; margin-bottom:20px; overflow:hidden; z-index:9}
+#focus2 ul{ height:350px;}
+#focus2 ul li{ float:left}
+.foucsTit{ position:absolute; right:0px; bottom:0px; width:200px; height:34px; overflow:hidden; text-align:right;  z-index:12 }
+.foucsTit span{ display:inline-block; width:7px; height:7px; margin:13px 10px 0px 0px; overflow:hidden; background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconWhite.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/iconWhite.png'); cursor:pointer}
+.foucsTit span.on{ background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconRed.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/iconRed.png');}
+#focus2 .bg{ position:absolute; left:0px; bottom:0px; width:620px; height:34px; background:#000; opacity:0.7; filter:Alpha(Opacity=70); z-index:4}
+#focus2 ul.focusTxt{ width:620px; height:34px; position:absolute; left:0px; bottom:0px; z-index:11;}
+#focus2 ul.focusTxt li{ width:620px; height:34px; line-height:34px; overflow:hidden; text-indent:1em; font-size:18px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#fff; }
+#focus2 ul.focusTxt li a{ color:#fff!important; text-decoration:none}
+#focus2 .focusBtnL{position:absolute; width:41px; height:65px; font-size:9px; bottom:47px; left:0px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/prev.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/prev.png'); cursor:pointer;}
+#focus2 .focusBtnR{position:absolute; width:41px; height:65px; font-size:9px; bottom:47px; right:0px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/next.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/next.png');cursor:pointer;}
+#focus2 .focusBtnL img,#focus2 .focusBtnR img { display:none}
+#focus2 .focusBtnLHover{ z-index:11; width:154px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/prevOn.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/prevOn.png'); }
+#focus2 .focusBtnRHover{ z-index:11; width:154px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/nextOn.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/nextOn.png'); }
+#focus2 .focusBtnLHover img ,#focus2 .focusBtnRHover img{margin:2px 2px 0px 0px; display:inline; float:right; }
+#focus2 .focusBtnRHover img{ float:left; margin:6px 0px 0px 6px;}
+#focus2 .focusBtnR img ,#focus2 .focusBtnRHover img{ float:left;}
+#focus2 .focusBtnL ,#focus2 .focusBtnLHover ,#focus2 .focusBtnR, #focus2 .focusBtnRHover { z-index:10;}
+.box1 .lBox{ float:left; width:620px; _margin-bottom:-20px;overflow:hidden}
+.lBoxUl{ float:left; width:150px; overflow:hidden}
+.lBoxUl li{ margin:0px auto 20px;}
+.videoUl2 li{ width:150px; overflow:hidden}
+.videoUl2 li .img{ position:relative; width:150px; height:100px; overflow:hidden}
+.videoUl2 li .img img{ width:150px; height:100px;}
+.videoUl2 li .img .bg{ position:absolute; left:0px; bottom:0px; width:100%; height:20px; background:#000; opacity:0.7; filter:Alpha(Opacity=70); z-index:4}
+.videoUl2 li .img .text{ position:absolute; left:0px; bottom:0px; width:100%; height:20px; line-height:20px; text-align:center; overflow:hidden; color:#fff; z-index:5}
+.videoUl2 li .img .play{ position:absolute; bottom:0px; left:2px; width:21px; height:22px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/play.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/play.png');z-index:5}
+.videoUl2 li .img .text a,.videoUl2 li .img .text a:hover{ color:#fff!important; text-decoration:none}
+.videoUl2 li p{ text-align:center; height:20px; line-height:20px; overflow:hidden; text-align:center; color:#DADEE0}
+.videoUl2 li .indent{ text-indent:1.5em}
+#qmxsp .bg,#qmxsp .text{ height:40px!important}
+#qmxsp .img .play{ bottom:11px!important}
+#qmxsp .text{ width:120px!important; padding:0px 5px 0px 25px; text-align:left!important}
+.toutiaoBox{ float:right; width:435px; overflow:hidden}
+.toutiaoBox .last{ margin:0px!important; padding:0px!important; border:0px!important}
+.hotBox{ width:435px; margin:0px auto 15px; padding-bottom:10px; overflow:hidden; border-bottom:1px dashed #DADEE0}
+.hotBox h2{ margin:0px 0px 7px; font-size:18px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#D20E44;}
+.hotBox h2 a{ color:#D20E44!important}
+.hotBox p{ line-height:25px; font-size:14px; overflow:hidden}
+.hotBox p .xm{ display:inline-block; width:50px; color:#666}
+.hotBox p .xm a{ color:#666}
+.hotBox p .wz{ display:inline-block; width:385px}
+.iconWb{ padding-left:15px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconWb.png) no-repeat scroll left 1px}
+.iconVideo{ padding-left:20px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconVideo.png) no-repeat scroll left 3px}
+.box1 .newsBox{ width:620px; overflow:hidden}
+.box1 .newsBoxc{ float:left; width:294px; overflow:hidden}
+.box1 .newsBoxc .hd{ width:294px; height:31px; line-height:31px; overflow:hidden; background-position:0px -313px}
+.box1 .newsBoxc .hd h3,.box1 .rBox h3{ font-size:14px; font-weight:bold; margin-left:20px;}
+.box1 .newsBoxc ul li{ font-size:14px; margin-top:11px;}
+.box1 .newsBox .fr{ float:right!important}
+.box1 .r{ float:right; width:360px; overflow:hidden; background:#F0F0F0}
+.xly{ position:relative; width:360px; height:120px; overflow:hidden; margin-bottom:20px;}
+.xly .bg{ position:absolute; left:0px; bottom:0px; width:100%; height:20px; background:#000; opacity:0.7; filter:Alpha(Opacity=70); z-index:4}
+.xly .text{ position:absolute; left:0px; bottom:0px; width:100%; height:20px; line-height:20px; text-align:center; overflow:hidden; color:#fff; z-index:5}
+.xly .text a,.xly a:hover{ color:#fff!important; text-decoration:none}
+.box1 .rBox{ width:360px; overflow:hidden}
+.box1 .rBox .hd{ width:360px; height:37px; line-height:37px; overflow:hidden; background-position:-385px -264px}
+.box1 .rBox .hd h2{ font-size:14px; font-weight:bold; color:#fff; margin-left:13px;}
+.box1 .rBox .hd .koulan{ display:inline-block; width:124px; height:20px; margin:7px 0px 0px 10px; padding-right:2px; line-height:20px; overflow:hidden; color:#978F80; text-align:right; background-position:-385px -313px}
+.box1 .rBox .hd .koulan a{ color:#978F80}
+.box1 .rBox .hd .fr{ color:#fff}
+.box1 .rBox .hd .fr a{ margin-right:5px;}
+.box1 .rBox .hd .fr a,.box1 .rBox .hd .fr a:hover{ color:#fff!important; text-decoration:none}
+.huiyuan{ display:inline-block!important; width:66px; height:21px; margin:0px!important; background-position:892px -264px; text-indent:-9999em}
+.box1 .rBox .t{ width:360px; height:31px; line-height:31px; overflow:hidden; background-position:0px -264px}
+.box1 .rBox h3{ margin-left:30px!important}
+.videoUl li{ display:inline; float:left; width:105px; overflow:hidden}
+.videoUl li .img{ position:relative; width:105px; height:70px; overflow:hidden}
+.videoUl li .img img{ width:105px; height:70px;}
+.videoUl li .img .bg{ position:absolute; left:0px; bottom:0px; width:100%; height:20px; background:#000; opacity:0.6; filter:Alpha(Opacity=60); z-index:4}
+.videoUl li .img .time{ position:absolute; left:0px; bottom:0px; width:100%; height:20px; line-height:20px; color:#fff; text-align:right; z-index:5}
+.videoUl li .img .play{ position:absolute; bottom:3px; left:5px; width:21px; height:22px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/play.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/play.png');z-index:5}
+.videoUl li p{ text-align:center; line-height:25px; color:#666}
+.videoUl li p a{ color:#666}
+.box1 .rBox .videoUl{ width:360px; margin-bottom:15px; overflow:hidden}
+.box1 .rBox .videoUl li{ margin:10px 0px 0px 11px;}
+#cardBtn1{ width:360px; height:30px; background:#DEDEDE}
+#cardBtn1 li{ display:inline; float:left; height:30px; line-height:30px; padding:0px 8px; overflow:hidden; cursor:pointer}
+#cardBtn1 li.current{ font-weight:bold; background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconSj.png) no-repeat bottom center}
+#cardBody1{width:360px; position:relative; z-index:1; } 
+#zlk .hd{ background-position:-632px -313px!important} 
+#zlk p{ width:360px; height:35px; line-height:35px; overflow:hidden; font-size:14px;}
+#zlk p.dark{ background:#E9E9E9}
+#zlk p .xm{ display:inline-block; width:108px; padding-left:10px; text-align:left}
+#zlk p .wz{ display:inline-block; width:242px; text-align:left}
+/*box2*/
+.box2{ width:1000px; margin:0px auto 30px; overflow:hidden}
+.box2 .hd{ width:1000px; height:45px; line-height:45px; overflow:hidden; background-position:0px 0px}
+.box2 .hd h2{ margin-left:47px; font-size:27px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#fff}
+.box2 .hd .fr{ margin-right:10px; color:#fff}
+.box2 .hd .fr a,.box2 .hd .fr a:hover{ color:#fff!important; text-decoration:none}
+.box2 .l{ float:left; width:705px; overflow:hidden}
+.wbBox{ width:705px; margin-bottom:20px;}
+.wbBox .t{ width:705px; height:45px; line-height:45px; overflow:hidden}
+.box2 .t h3{ font-size:14px; font-weight:bold}
+.wbBox .con{ width:705px; overflow:hidden}
+.ScA2 { position:relative; float:left; width:614px; }
+.ScA2 .scwr { position:relative; top:0px; left:44px; overflow: hidden; zoom: 1; width:518px; height:80px; } /*¿ÉÊÓ¿í¶Èwidth,heightÐèÉèÖÃÕýÈ· */
+.ScA2 .split { float:left; width:56px; margin-right:21px; }
+.ScA2 .split img{ display:block; width:50px; height:50px; padding:2px; margin-bottom:5px; overflow:hidden; border:1px solid #D2D2D2}
+.ScA2 .split p{ color:#666}
+.ScA2 .split p a{ color:#666}
+.ScA2 .split .userCheckItem{ *margin-right:-6px}
+.ScA2 .prev, .ScA2 .next { position:absolute; cursor:pointer; display:block; width:21px; height:24px; top:15px; }
+.ScA2 .prev { left:13px; background-position:-772px -264px }
+.ScA2 .next { right:20px; background-position:-799px -264px }
+.ScA2 .prev:hover { background-position:-828px -264px}   /*Êó±ê»®¹ý×´Ì¬*/
+.ScA2 .next:hover { background-position:-856px -264px}  /*Êó±ê»®¹ý×´Ì¬*/
+.btbox{ float:right; width:91px; height:54px; overflow:hidden}
+.btshouting{ width:91px; height:54px; border:0px; text-align:center; background-position:-523px -313px; font-size:14px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; cursor:pointer}
+.weibo{ width:705px; height:350px; overflow:hidden}
+.box2 .r{ float:right; width:275px; overflow:hidden; background:#F0F0F0}
+.box2 .r .t{ height:45px; line-height:45px; overflow:hidden}
+.box2 .r .t h3{ margin-left:10px;}
+.box2 .r .t span{ margin-right:10px; color:#666}
+.box2 .r .t span a{ color:#666}
+.guanzhuBox{ width:275px; padding-bottom:14px; overflow:hidden}
+.guanzhuBox h3{ width:265px; height:26px; line-height:26px; padding-left:10px; overflow:hidden; font-size:14px; font-weight:normal; background:url(//mat1.gtimg.com/sports/nbaas2013/images/box2rh3.png) repeat-x}
+.guanzhuBox ul{ width:275px; padding-bottom:12px; border-bottom:1px dotted #C5CDD3; overflow:hidden}
+.guanzhuBox ul li{ display:inline; float:left; width:42px; padding-left:15px; margin:12px 0px 0px 10px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconWb2.png) no-repeat scroll 0px 1px;}
+.guanzhuBox ul li a{ display:block}
+.guanzhuBox p{ padding-left:10px; margin:10px 0px 0px; overflow:hidden}
+.shipinBox,.rdpl{ width:705px; padding-top:18px; border-top:1px solid #DDE3E8; overflow:hidden}
+.shipinBox .shipin{ float:left; width:334px; overflow:hidden}
+.shipinBox .shipin .t{ width:334px; height:25px; line-height:25px; overflow:hidden}
+.shipinBox .shipin .t span,.shipinBox .shipin .t span a{ color:#666}
+.shipinBox .fr{ float:right!important}
+.shipinBox ul{ width:334px; overflow:hidden}
+.shipinBox ul li{ float:left; margin:14px 0px 0px;}
+#wbList1{ width:260px; height:265px; margin:0px auto; overflow:hidden}
+.wbList li { float:left; width:100%; padding:12px 0px 10px; font-size:12px; line-height:1.75; border-bottom:1px dotted #aaa; }
+.wbList li a { color:#999 }
+.wbList li em, .wbList li em a { font-style:normal !important }
+.wbList .pt { width:100%; margin-bottom:10px; overflow:hidden }
+.wbList .pic { float:left; width:66px; overflow:hidden; }
+.wbList .pic img { display:block; width:50px; height:50px; padding:2px; margin:0px 0px 5px; border:1px solid #d2d2d2; }
+.wbList .inter { float:right; width:190px; font-size:12px; color:#888888 }
+.wbList .inter strong { color:#3776B5}
+.wbList .msgCnt { overflow:hidden; word-wrap:break-word; color:#666; font-size:12px; line-height:22px; }
+.wbList .msgCnt a { color:#666; }
+.wbList .msgCnt strong { font-size:normal; margin-right:5px; color:#A36B18; }
+.wbList .msgCnt strong a { color:#666; }
+.wbList .pubInfo { font-size:12px; line-height:1.231; margin-top:4px; color:#666; }
+.wbList .time .fl { color:#A1A1A1 }
+.wbList .time .fr, .wbList .time .fr a { color:#3776B5!important }
+.attentBoxWrap{ width:56px; height:22px; line-height:22px; overflow:hidden; text-align:center; background:#C5CED4; color:#fff}
+.attentBoxWrap a,.attentBoxWrap a:hover{ color:#fff!important; text-decoration:none}
+.mjUl{ width:705px; overflow:hidden}
+.mjUl li{ display:inline; float:left; width:56px; overflow:hidden; margin-right:14px;}
+.mjUl li img { display:block; width:50px; height:50px; padding:2px; margin:0px; border:1px solid #d2d2d2; }
+.mjUl li p{ margin:5px 0px; text-align:center}
+.mjUl li .userCheckItem{ display:none}
+.rdpl dl{ float:left; width:344px; margin:20px 8px 0px 0px; overflow:hidden}
+.rdpl dl dt{ line-height:20px; color:#666; margin:0px}
+.rdpl dl dt img{ display:block; float:left; width:134px; height:73px; margin-right:10px; overflow:hidden}
+.rdpl dl dd{ line-height:20px; color:#666}
+.rdpl dl dd a{ color:#333}
+.rdpl dl dd.bold{ font-weight:bold; color:#333}
+.hezuoUl{ width:275px; *padding-bottom:13px; overflow:hidden}
+.hezuoUl li{ display:inline; float:left; width:118px; height:48px; border:1px solid #D2D2D2; overflow:hidden; margin:0px 0px 23px 12px;}
+#djfw .hd{ background-position:0px -66px!important}
+#qmxsp .hd{ background-position:0px -131px!important}
+#zjstp .hd{ background-position:0px -201px!important}
+#qmxxx .hd,#qmxtl .hd,#qmxkl .hd,#qmxjq .hd,#qmxsfq .hd{ background-position:0px -375px!important}
+#qmxxx .hd h2,#qmxtl .hd h2,#qmxkl .hd h2,#qmxjq .hd h2,#qmxsfq .hd h2{ margin-left:37px!important; }
+#djfw .videoUl2,#qmxsp .videoUl2,#zjstp .videoUl2{ width:1000px; overflow:hidden}
+#djfw .videoUl2 li,#qmxsp .videoUl2 li,#zjstp .videoUl2 li{ display:inline; float:left; margin:15px 0px 0px 14px;}
+.box2 .last{ padding:0px!important; border:0px!important}
+.box2 .last2{ border:0px!important}
+.textUl{ width:705px; margin:15px auto 0px; padding-bottom:15px; overflow:hidden; border-bottom:1px dashed #C6C6C6}
+.textUl li{ font-size:14px; line-height:26px;}
+.textUl li span{ color:#666; font-family:Arial, Helvetica, sans-serif}
+.zhenrongUl{ width:275px; padding:10px 0px; *padding:10px 0px 20px; overflow:hidden}
+.zhenrongUl li{ display:inline; float:left; width:50px; height:75px; margin:0px 0px 13px 13px; border:1px solid #D2D2D2; overflow:hidden}
+.zhenrongUl li img{ width:50px; height:50px;}
+.zhenrongUl li p{ width:50px; height:25px; line-height:25px; overflow:hidden; text-align:center}
+.iconDb{ padding-left:30px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconEast.png) no-repeat scroll 0px 10px;}
+.iconXb{ padding-left:30px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconWest.png) no-repeat scroll 0px 10px;}
+.tlzx{ padding-left:50px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconTl.png) no-repeat scroll 0px 10px;}
+.klds{ padding-left:55px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconDunk.png) no-repeat scroll 0px 10px}
+.jqtz{ padding-left:40px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconJq.png) no-repeat scroll 0px 4px}
+.sfq{ padding-left:30px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/iconSfq.png) no-repeat scroll 0px 10px}
+.zhenrongDiv{ width:275px; margin:0px auto 7px; padding:10px 0px; overflow:hidden; border-bottom:1px dotted #C6C6C6}
+.zhenrongDiv .img{ display:inline; float:left; width:105px; margin:0px 10px; overflow:hidden}
+.zhenrongDiv .imgBox{ position:relative; width:105px; height:70px;}
+.zhenrongDiv .imgBox img{ width:105px; height:70px;}
+.zhenrongDiv .imgBox .bg{ position:absolute; left:0px; bottom:0px; width:100%; height:20px; background:#000; opacity:0.6; filter:Alpha(Opacity=60); z-index:4}
+.zhenrongDiv .imgBox .time{ position:absolute; left:0px; bottom:0px; width:100%; height:20px; line-height:20px; color:#fff; text-align:right; z-index:5}
+.zhenrongDiv .imgBox .play{ position:absolute; bottom:3px; left:5px; width:21px; height:22px; background:url(//mat1.gtimg.com/sports/nbaas2013/images/play.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src='images/play.png');z-index:5}
+.zhenrongDiv .img p{ text-align:center; line-height:25px; color:#666}
+.zhenrongDiv .img p a{ color:#666}
+.zhenrongDiv .text{ float:left; width:137px; line-height:22px; color:#666}
+.zhenrongDiv .text a{ color:#D20E44}
+/*dibu*/
+.dibu{ width:100%; margin:0px auto; overflow:hidden; background:url(//mat1.gtimg.com/sports/nbaas2013/images/dibu.png) repeat}
+.dibuBox{ width:1000px; margin:0px auto 20px; overflow:hidden}
+.dibuBox .hd{ width:1000px; height:60px; line-height:60px; overflow:hidden}
+.dibuBox .hd h2{ font-size:22px; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"; font-weight:normal; color:#fff}
+.dibuBox .hd .fr,.dibuBox .hd .fr a,.dibuBox .hd .fr a:hover,.huifangUl li p a,.huifangUl li p a:hover,.bianjiUl li p a,.bianjiUl li p a:hover{ color:#fff!important; text-decoration:none}
+.huifangUl,.bianjiUl{ width:1000px; overflow:hidden}
+.huifangUl li{ display:inline; float:left; width:182px; margin:0px 0px 0px 15px; overflow:hidden}
+.huifangUl li img{ display:block; width:180px; height:120px; margin-bottom:10px; border:1px solid #fff; overflow:hidden}
+.huifangUl li p{ text-align:center; color:#fff}
+.bianjiUl{ padding-bottom:40px; border-bottom:1px solid #392807}
+.bianjiUl li{ display:inline; float:left; width:56px; margin:0px 0px 0px 25px; overflow:hidden}
+.bianjiUl li img{ display:block; width:50px; height:50px; margin-bottom:10px; border:3px solid #fff; overflow:hidden}
+.bianjiUl li p{ text-align:center; color:#fff}
+/*toTop*/
+#toTop { background:url(//mat1.gtimg.com/sports/nbaas2013/images/toTop.png) no-repeat; bottom:45px; display:none; height:50px; opacity:0.4; filter:Alpha(Opacity=40); position:fixed; right:50%; margin-right:-600px; width:50px; _position:absolute; }
+#toTop:hover { opacity:1; filter:Alpha(Opacity=100); }/*  |xGv00|0be4c6a0d4525d46d0ae4773eba0f009 */

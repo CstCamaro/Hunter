@@ -1,0 +1,256 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/jieqi/xiazhi/20190621-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="夏至，北回归线，炎热，降雨，吃面，腾讯网，时光画轴，节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 18:28:17';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-06-21", //日期，格式为 年-月-日
+	"cmd_id": "3957029953", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "xiazhi2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="xiazhi2019" style="display:none;">
+<p>夏至是二十四节气之一，这一天，太阳直射地面的位置到达一年的最北端，几乎直射北回归线，此时，北半球各地的白昼时间达到全年最长。对于北回归线及其以北的地区来说，夏至日也是一年中正午太阳高度最高的一天。这天北半球得到的太阳辐射最多，比南半球多了将近一倍。这天过后它将走“回头路”，阳光直射点开始从北回归线（北纬23°26'）向南移动，北半球白昼将会逐日减短。夏至日过后，北回归线及其以北的地区，正午太阳高度角也开始逐日降低。同时，夏至到来后，夜空星象也逐渐变成夏季星空。</p>
+<h2>气候状况</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZlZUsacm2yKdC9cM0mfWc2yrU0icicc1kObp7DJVDnMNL6ibMAnW7NQ27g/640?wx_fmt=jpeg" title="xiazhi1">
+<p>夏至以后地面受热强烈，空气对流旺盛，午后至傍晚常易形成雷阵雨。这种热雷雨骤来疾去，降雨范围小，人们称“夏雨隔田坎”。唐代诗人刘禹锡，曾巧妙地借喻这种天气，写出“东边日出西边雨，道是无晴却有晴”的著名诗句。对流天气带来的强降水，不都像诗中描写的那么美丽，常常带来局地灾害。 诗人徐书信“在暑雨”一诗中，也对夏日雷雨天气进行了恰如其分的描述：“夏日熏风暑坐台，蛙鸣蝉噪袭尘埃。靑天霹雳金锣响，冷雨如钱扑面来。”</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZ0lL50r1hIPwibUicBudF2aFouic8WicjYlCsKxia9G50nj4HAYKqr0oriaWg/640?wx_fmt=jpeg" title="xiazhi2">
+<p>夏至过后，虽然太阳直射点开始从北回归线逐渐向南移动，北半球白昼开始逐渐变短，对于北回归线及其以北的地区，正午太阳高度也开始逐日降低，但由于太阳辐射到地面的热量仍比地面向空中散发的多，故在以后的一段时间内，气温将继续升高，因此有“夏至不过不热”的说法。夏至这天虽然日照时间最长，但并不是一年中天气最热的时候。</p>
+<h2>节气食物</h2>
+<h3>北京</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZa6EeQaF3fSg2rFZEVXltCtlf2otm8J9xpN0icZZdmgCKvrdicNsJgRjw/640?wx_fmt=jpeg" title="xiazhi3">
+<p>“冬至饺子夏至面”，好吃的北京人在夏至这天讲究吃面。按照老北京的风俗习惯，每年一到夏至节气就可以大啖生菜、凉面了，因为这个时候气候炎热，吃些生冷之物可以降火开胃，又不至于因寒凉而损害健康。夏至这天，北京各家面馆人气很旺。无论面馆的四川凉面、担担面、红烧肉面还是炸酱面等等，各种面条都很“畅销”。</p>
+<h3>绍兴</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZsTB9KN6pWiaAEqibr306Lvic9icFRsiaO7AQlTbXmPobYx2ibWJp29vpwcDg/640?wx_fmt=jpeg" title="xiazhi4">
+<p>旧时，在浙江绍兴地区，人们不分贫富，夏至日皆祭其祖，俗称“做夏至”，除常规供品外，特加一盘蒲丝饼。而绍兴地区龙舟竞渡因气候故，明、清以来多不在端午节，而在夏至，此风俗至今尚存。</p>
+<h3>无锡</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZltRj3evcRSgz3J8XP9BPdaqibiaFB0EM9uNy9QrHv19Q8f2z982IOt3g/640?wx_fmt=jpeg" title="xiazhi5">
+<p>夏至这天，无锡人早晨吃麦粥，中午吃馄饨，取混沌和合之意。有谚语说：“夏至馄饨冬至团，四季安康人团圆。”吃过馄饨，为孩童称体重，希望孩童体重增加更健康。</p>
+<h3>山东</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZ1mCInjQrGq5UOicdVubQAgO4iaU8smHJS4aS24hQWnc84lEribdNa61Pg/640?wx_fmt=jpeg" title="xiazhi6">
+<p>夏至这天山东各地普遍要吃凉面条，俗称过水面，有“冬至饺子夏至面”的谚语。莱阳一带夏至日荐新麦，黄县（今龙口市）一带则煮新麦粒吃，儿童们用麦秸编一个精致的小笊篱，在汤水中一次一次地向嘴里捞，既吃了麦粒，又是一种游戏，很有农家生活的情趣。平阴一带，夏至日祭祀祖先。</p>
+<h3>岭南</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZUicf4uiaEG0icxDrQYIB9sMyBrseMysAibmmnQmnhdIictaeztYgiaIyf4gg/640?wx_fmt=jpeg" title="xiazhi7">
+<p>夏至吃狗肉和荔枝，是岭南一带的习俗。广西的钦州、玉林等地区的人也是非常喜欢在夏至吃狗肉和荔枝的。据说夏至日的狗肉和荔子合吃不热，有“冬至鱼生夏至狗”之说，故此夏至吃狗肉和荔枝的习惯延续到今。“吃了夏至狗，西风绕道走”，大意是人只要在夏至日这天吃了狗肉，其身体就能抵抗西风恶雨的入侵，少感冒，身体好。正是基于这一良好愿望，成就了“夏至狗肉”这一独特的民间饮食文化。</p>
+<h2>风俗活动</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZ3XuPghEicTR2Q1icSumWbbeYlAeSqLlpMyLApPwpvkJQKMGT76ur4ybw/640?wx_fmt=jpeg" title="xiazhi8">
+<p>夏至时值农作物收，自古以来有在此时庆祝丰收、祭祀祖先之俗，以祈求消灾年丰。因此，夏至作为节日，纳入了古代祭神礼典。汉《周礼·春官》有载：“以夏日至，致地方物魈。”夏至日正是麦收之后，农人既感谢天赐丰收，又祈求获得“秋报”。夏至前后，有的地方举办隆重的“过夏麦”，系古代“夏祭”活动的遗存。消夏避伏：夏至日，妇女们即互相赠送折扇、脂粉等什物。《酉阳杂俎·礼异》：“夏至日，进扇及粉脂囊，皆有辞。”“扇”，借以生风；“粉脂”，以之涂抹，散体热所生浊气，防生痱子。</p>
+<h2>节令养生</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZtDiaSLsibL5Vu1av5ul9Abo1SnckKJzYjBrFcsVB1hHv3oVUICC4HOsg/640?wx_fmt=jpeg" title="xiazhi9">
+<p>夏季阳气盛于外。夏至过后，阳极阴生，阴气居于内，所以，在夏至后，饮食要以清泄暑热、增进食欲为目的，因此要多吃苦味食物，宜清补。《吕氏春秋·尽数篇》指出：“凡食无强厚味，无以烈味重酒。”唐朝的孙思邈提倡人们“常宜轻清甜淡之物，大小麦曲，粳米为佳”，又说：“善养生者常须少食肉，多食饭”。在强调饮食清补的同时，勿过咸、过甜，宜多吃具有祛暑益气、生津止渴的食物。绿叶菜和瓜果类等水分多的蔬菜水果都是不错的选择，如白菜、苦瓜、丝瓜、黄瓜等，都是很好的健胃食物。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZomDY5JnibFWfQbPZ3lwJxnhjd3sQkQHibs73oKlZv4RiaDjRBibwAzuqkg/640?wx_fmt=jpeg" title="xiazhi10">
+<p>有俗话说：“饭不香，吃生姜”、“冬吃萝卜，夏吃姜”、“早上三片姜，赛过喝参汤”，都是对生姜所具有的营养价值和医疗作用所做的精辟的概括。夏季暑热，多数人食欲不振，而生姜有利于食物的消化和吸收，对于防暑度夏有一定益处。另有“男子不可百日无姜”的说法。夏季万物生长，阳极阴生，心旺肾衰，因此，适量进补对男子性功能的保护和提升还是很有好处的。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZadymia0TibqQ7DD0k0v2IrYktUU1Sus6SVKc6AROnCJdsFGia6jVsndnQ/640?wx_fmt=jpeg" title="xiazhi11">
+<p>夏至后，气温逐渐升高，人体出汗量也会随之增加，因此人体需水量大。对此，还可以在饮食上加以调节，如喝些绿豆汤、淡盐水等。需注意的是，绿豆汤不要多喝，更不能当水喝。属于寒凉体质和体质虚弱之人也不适宜饮用绿豆汤。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmm7Z1K5Uj5s25OQ3LicVF8xZKc0ckyibkYEHsg72WJr0wLwicSIiaxNzXxnahqpoQtyLnJWa3Yn6I6s9g/640?wx_fmt=jpeg" title="xiazhi12">
+<p>以上是从饮食上注意养生保健，而在精神上也要注意调养。夏属火，对应五脏之心。因此，夏至后重在养心。夏日炎炎，往往让人心烦意乱，而烦则更热，可影响人体的功能活动，从而产生许多精神方面的不良影响。俗话说：“心静自然凉”，因此，要善于调节，多静坐，排除心中杂念。</p></div><!--[if !IE]>|xGv00|c7e40240f468fb2aa542f55b7ef20ad3<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|9bdca19a66ad28775fbc07f5c8f46a6a<![endif]-->

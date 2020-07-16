@@ -1,0 +1,87 @@
+/*Style by Artis*/
+body{margin:0;padding:0;background:#1f1c57;}
+form,input,select,ul,li,p,h1,h2,h3,h4,h5,h6,p,dd,dt,dl{margin:0;padding:0;}
+ul,ol,li{list-style:none;}
+body,table,select,input,div{font-size:12px;color:#333}
+img{border:none;}
+a{color:#333;text-decoration:none;}
+a:hover{color:#c00;text-decoration:underline;}
+
+.nl,.nl a,.nl a:hover,a.nl,a.nl:hover{text-decoration:none;}
+.ul,.ul a,.ul a:hover,a.ul,a.ul:hover{text-decoration:underline;}
+
+.fontB{font-weight:bold;}
+.fontS14{font-size:14px;}
+.fontS16{font-size:16px;}
+.fontS18{font-size:18px;}
+.fontS20{font-size:20px;}
+.fontHt{font-family:"ºÚÌå";}
+.fontV{font-family:Verdana;}
+.textInd{text-indent:2em;}
+.textInd2{text-indent:1em;}
+
+.colorWhite,.colorWhite a,.colorWhite a:hover{color:#fff;}
+.colorBlack,.colorBlack a{color:#333;}
+.colorBlack a:hover{color:#c00;}
+.colorGray,.colorGray a{color:#828282;}
+.colorGray a:hover{color:#c00;}
+.colorOrange,.colorOrange a{color:#d66a41;}
+.colorOrange a:hover{color:#c00;}
+.colorGreen,.colorGreen a{color:#5c7779;}
+.colorGreen a:hover{color:#c00;}
+.colorRed,.colorRed a,.colorRed a:hover{color:#c00;}
+.colorBlue,.colorBlue a{color:#0b649c;}
+.colorBlue a:hover{color:#c00;}
+.colorMore,.colorMore a{color:#b75400;}
+.colorMore a:hover{color:#c00;}
+.colorTt,.colorTt a{color:#b75400;}
+.colorTt a:hover{color:#c00;}
+
+.lineH18{line-height:18px;}
+.lineH21{line-height:21px;}
+.lineH22{line-height:22px;}
+.lineH23{line-height:23px;}
+.lineH24{line-height:24px;}
+.lineH25{line-height:25px;}
+.lineH28{line-height:28px;}
+.lineH30{line-height:30px;}
+
+.floatL{float:left;}
+.floatR{float:right;}
+
+.textL{text-align:left;}
+.textR{text-align:right;}
+.textC{text-align:center;}
+
+.clear{clear:both;overflow:hidden;font-size:0;height:0px;}
+
+.dis{display:block;}
+.undis{display:none;}
+
+/* CSS¿Õ°× */
+.boxHr10,.boxHr{margin:0 auto;font-size:1px;clear:both;}
+.boxHr10{height:10px;}
+
+/* ÄÚÈÝÇø */
+.box{width:960px;margin:0 auto;}
+.box2{width:960px;margin:0 auto;background:#1a0c2a;padding-bottom:10px;}
+#topbg{background:url(//mat1.gtimg.com/worldcup/ft/face/tbg.jpg) center top no-repeat;}
+
+.mainNav{height:32px;background:url(//mat1.gtimg.com/worldcup/ft/face/mainnav.png) no-repeat;padding-left:50px;padding-top:6px;height:26px;}
+.mainNav li{float:left;padding:0 6px;height:20px;line-height:20px;background:url(//mat1.gtimg.com/worldcup/ft/face/b01.png) right top no-repeat;}
+.mainNav li.index{background:#b93abc;height:18px;overflow:hidden;}
+.mainNav li.n{background:none;}
+.l{float:left;width:321px;}
+.m{float:left;width:369px;}
+.r{float:left;}
+.imgb1 img{border:1px solid #000;}
+.imgb2 img{border:1px solid #6769ae;}
+.colorTitle,.colorTitle a,.colorTitle a:hover{color:#e4fdff;}
+.colorPur ,.colorPur a,.colorPur a:hover{color:#9ca8ff;}
+.ml20{margin-left:20px;}
+.pl54{padding-left:54px;}
+.list{background:url(//mat1.gtimg.com/worldcup/ft/face/b222.jpg) repeat-y;width:940px;margin:0 auto;overflow:hidden;border-bottom:1px solid #443D45;}
+.list div{width:235px;height:216px;float:left;text-align:center;line-height:30px;}
+.list img{border:1px solid #827793;}
+.cur{cursor:pointer;}
+#flashC{width:367px;height:309px;margin-left:1px;background:#000;}/*  |xGv00|e1b8a33e97ef51f633d23cb4437746a2 */

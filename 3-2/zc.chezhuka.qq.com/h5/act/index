@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>腾讯汽车众测</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="baidu-site-verification" content="elM09FkRTW" />
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link href="/fe/h5/css/index.css" rel="stylesheet">
+    <link href="/fe/h5/css/loading.css" rel="stylesheet">
+    <style type="text/css">
+        html,body{height:100%;}
+        .wrap-main { position:relative; height:auto; min-height:100%;}
+        .footer-fix { padding-bottom:4rem; }
+        footer { width:100%;left:0; position:absolute; bottom:0;}
+    </style>
+    <script src="/fe/h5/js/zepto.js"></script>
+    <script src="/fe/h5/js/jquery.js"></script>
+    <script src="/fe/h5/js/iscroll.js"></script>
+    <script src="/fe/h5/js/index.js"></script>
+
+</head>
+<body>
+<div class="wrap-main">
+    <header>
+        <div class="logo" href="/5">
+            <img src="/fe/h5/images/slice/logo.png" alt=""/>
+        </div>
+        <div class="user">
+            <a href="/h5/evaluation/orderl">
+                <img src="/fe/h5/images/slice/uc-logo.png" alt=""/></a>
+        </div>
+    </header>
+
+    <!--111 -->
+    <div id="wrapper" class="scrollermain">
+        <div id="scroller">
+            <div id="pullDown" class="sxnew" style="display: none">
+                <span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+            </div>
+            <!-- -->
+            <div id="main-content">
+                                                    <section class="textSection">
+                                                    <p class="secTitle">众测产品</p>
+                                                <a href="/h5/act/detail?act_id=10067">
+                            <div class="secPic">
+                                <img
+                                    src="http://p.qpic.cn/automall_pic/0/20200519110153_44843/2000" alt=""/>
+
+                                <div
+                                    class="state">体验中</div>
+                                <div class="stateBg testing"></div>
+                            </div>
+                            <p class="intro"><span>腾讯用车众测第80期：驾驰TIGEAR全合成润滑油保养免费体验</span></p>
+
+                            <div class="clearfix grey">
+                                <p>数量：<span>15</span></p>
+
+                                <p>市场价：<span>￥298</span></p>
+
+                                <p>报名人数：<span class="orange">1198</span></p>
+                            </div>
+                                                                                                                    <p class="countDown" id="first">
+                                    报名已经结束 2020-05-27 12:00:00                                </p>
+                                                    </a>
+                    </section>
+                                    <section class="textSection">
+                                                <a href="/h5/act/detail?act_id=10066">
+                            <div class="secPic">
+                                <img
+                                    src="http://p.qpic.cn/automall_pic/0/20200403151047_89368/2000" alt=""/>
+
+                                <div
+                                    class="state">已结束</div>
+                                <div class="stateBg end"></div>
+                            </div>
+                            <p class="intro"><span>腾讯用车众测第79期：免费体验价值1299元锦湖高性能轮胎</span></p>
+
+                            <div class="clearfix grey">
+                                <p>数量：<span>12</span></p>
+
+                                <p>市场价：<span>￥1299</span></p>
+
+                                <p>报名人数：<span class="orange">1209</span></p>
+                            </div>
+                                                                                                            </a>
+                    </section>
+                                    <section class="textSection">
+                                                <a href="/h5/act/detail?act_id=10065">
+                            <div class="secPic">
+                                <img
+                                    src="http://p.qpic.cn/automall_pic/0/20200110183229_32350/2000" alt=""/>
+
+                                <div
+                                    class="state">已结束</div>
+                                <div class="stateBg end"></div>
+                            </div>
+                            <p class="intro"><span>腾讯用车众测第78期：免费体验价值1999元国产轮胎</span></p>
+
+                            <div class="clearfix grey">
+                                <p>数量：<span>10</span></p>
+
+                                <p>市场价：<span>￥1999</span></p>
+
+                                <p>报名人数：<span class="orange">1403</span></p>
+                            </div>
+                                                                                                            </a>
+                    </section>
+                                    <section class="textSection">
+                                                <a href="/h5/act/detail?act_id=10064">
+                            <div class="secPic">
+                                <img
+                                    src="http://p.qpic.cn/automall_pic/0/20191224104314_43315/2000" alt=""/>
+
+                                <div
+                                    class="state">已结束</div>
+                                <div class="stateBg end"></div>
+                            </div>
+                            <p class="intro"><span>腾讯用车众测第77期：360  G300隐藏式高清行车记录仪免费体验</span></p>
+
+                            <div class="clearfix grey">
+                                <p>数量：<span>10</span></p>
+
+                                <p>市场价：<span>￥369</span></p>
+
+                                <p>报名人数：<span class="orange">1378</span></p>
+                            </div>
+                                                                                                            </a>
+                    </section>
+                                    <section class="textSection">
+                                                <a href="/h5/act/detail?act_id=10063">
+                            <div class="secPic">
+                                <img
+                                    src="http://p.qpic.cn/automall_pic/0/20191129101444_81195/2000" alt=""/>
+
+                                <div
+                                    class="state">已结束</div>
+                                <div class="stateBg end"></div>
+                            </div>
+                            <p class="intro"><span>腾讯用车众测第76期：免费体验价值1756元东风轮胎</span></p>
+
+                            <div class="clearfix grey">
+                                <p>数量：<span>12</span></p>
+
+                                <p>市场价：<span>￥1756</span></p>
+
+                                <p>报名人数：<span class="orange">1388</span></p>
+                            </div>
+                                                                                                            </a>
+                    </section>
+                                    <section class="textSection">
+                                                <a href="/h5/act/detail?act_id=10062">
+                            <div class="secPic">
+                                <img
+                                    src="http://p.qpic.cn/automall_pic/0/20191018094709_90546/2000" alt=""/>
+
+                                <div
+                                    class="state">已结束</div>
+                                <div class="stateBg end"></div>
+                            </div>
+                            <p class="intro"><span>腾讯用车众测第75期：价值459元壳牌超凡喜力天然气全合成机油保养免费体验</span></p>
+
+                            <div class="clearfix grey">
+                                <p>数量：<span>15</span></p>
+
+                                <p>市场价：<span>￥459</span></p>
+
+                                <p>报名人数：<span class="orange">1571</span></p>
+                            </div>
+                                                                                                            </a>
+                    </section>
+                                    <section class="textSection">
+                                                <a href="/h5/act/detail?act_id=10061">
+                            <div class="secPic">
+                                <img
+                                    src="http://p.qpic.cn/automall_pic/0/20190917100716_41132/2000" alt=""/>
+
+                                <div
+                                    class="state">已结束</div>
+                                <div class="stateBg end"></div>
+                            </div>
+                            <p class="intro"><span>腾讯用车众测第74期：价值989元途虎王牌儿童安全座椅免费体验</span></p>
+
+                            <div class="clearfix grey">
+                                <p>数量：<span>10</span></p>
+
+                                <p>市场价：<span>￥989</span></p>
+
+                                <p>报名人数：<span class="orange">1676</span></p>
+                            </div>
+                                                                                                            </a>
+                    </section>
+                                    <section class="textSection">
+                                                <a href="/h5/act/detail?act_id=10060">
+                            <div class="secPic">
+                                <img
+                                    src="http://p.qpic.cn/automall_pic/0/20190822103721_49088/2000" alt=""/>
+
+                                <div
+                                    class="state">已结束</div>
+                                <div class="stateBg end"></div>
+                            </div>
+                            <p class="intro"><span>腾讯用车众测第73期：途虎王牌DT8高清夜视行车记录仪16G版免费体验</span></p>
+
+                            <div class="clearfix grey">
+                                <p>数量：<span>10</span></p>
+
+                                <p>市场价：<span>￥208</span></p>
+
+                                <p>报名人数：<span class="orange">1584</span></p>
+                            </div>
+                                                                                                            </a>
+                    </section>
+                                    <section class="textSection">
+                                                <a href="/h5/act/detail?act_id=10059">
+                            <div class="secPic">
+                                <img
+                                    src="http://p.qpic.cn/automall_pic/0/20190723112143_27648/2000" alt=""/>
+
+                                <div
+                                    class="state">已结束</div>
+                                <div class="stateBg end"></div>
+                            </div>
+                            <p class="intro"><span>腾讯用车众测第72期：价值499元壳牌鹏致全合成机油保养免费体验</span></p>
+
+                            <div class="clearfix grey">
+                                <p>数量：<span>15</span></p>
+
+                                <p>市场价：<span>￥499</span></p>
+
+                                <p>报名人数：<span class="orange">1744</span></p>
+                            </div>
+                                                                                                            </a>
+                    </section>
+                                    <section class="textSection">
+                                                <a href="/h5/act/detail?act_id=10058">
+                            <div class="secPic">
+                                <img
+                                    src="http://p.qpic.cn/automall_pic/0/20190613110439_89057/2000" alt=""/>
+
+                                <div
+                                    class="state">已结束</div>
+                                <div class="stateBg end"></div>
+                            </div>
+                            <p class="intro"><span>腾讯用车众测第71期：价值899元途虎王牌儿童安全座椅免费体验</span></p>
+
+                            <div class="clearfix grey">
+                                <p>数量：<span>10</span></p>
+
+                                <p>市场价：<span>￥899</span></p>
+
+                                <p>报名人数：<span class="orange">1427</span></p>
+                            </div>
+                                                                                                            </a>
+                    </section>
+                            </div>
+            
+                            <div id="pullUp" class="sxnew J_Pull">
+                    <span class="pullUpIcon" style="display: none;"></span><span class="pullUpLabel">点击加载更多</span>
+                </div>
+                        <div class="footer-fix"></div>
+
+            <footer>Copyright © 1998－2020 Tencent.All Right.All Rights Reserved</footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="/fe/h5/js/countDown.js"></script>
+
+<!--分享-->
+
+
+<!--微信分享-->
+
+<!--QQ分享-->
+    <script src="https://pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
+    <script>
+                mqq.data.setShareInfo({
+            share_url: 'https://zc.chezhuka.qq.com/h5/act/index',
+            title: '腾讯汽车评测旋风来袭！',
+            desc: '汽车礼包源源不断，槌音落定惊喜连连，速速猛戳报名参与评测啦！',
+            image_url: 'https://zc.chezhuka.qq.com/fe/h5/images/default.png'
+        }, function () {
+            alter('1');
+        });
+    </script>
+
+
+<script language="javascript" src="http://pingjs.qq.com/ping.js"></script>
+<script language="javascript">
+    if(typeof(pgvMain) == 'function')
+        pgvMain();
+</script>
+<script type="text/javascript">
+    var gBossZoneHandler = new bossZoneHandler();
+    var gImage;
+    var registerZone2 = gBossZoneHandler.registerZone2;
+
+    if(document.addEventListener)
+        document.addEventListener("click", registerZone2, false);
+    else if(document.attachEvent)
+        document.attachEvent("onclick", registerZone2);
+
+    function bossZoneHandler()
+    {
+        var sFlag=false;
+        this.registerZone2 = function (ev,clickType)
+        {
+            var loopTryNum = 10;
+            var bossID = 3702;
+            var column = "yc.qq.com";
+
+            try
+            {
+                //qq
+                var a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+                var iQQ=(a==null?"":unescape(a[2]));
+                var purl='';
+                var zoneId='';
+
+                if(typeof clickType == 'undefined')
+                {
+                    if(sFlag) return true;
+                    var ev = window.event || ev;
+                    var et = ev.srcElement || ev.target;
+                    var type=et.tagName;
+                    if (type != "A" && type != "IMG" )
+                    {
+                        return false;
+                    }
+
+                    if (type == "A")
+                    {
+                        purl = et.href;
+                    }
+                    else if (type == "IMG")
+                    {
+                        purl = et.parentNode.href;
+                    }
+
+                    //pseudo attr
+                    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+                    {
+                        if(tagNode.attributes['bossZone'])
+                        {
+                            zoneId = tagNode.attributes['bossZone'].nodeValue;
+                        } else if(tagNode.attributes['bosszone'])
+                        {
+                            zoneId = tagNode.attributes['bosszone'].nodeValue;
+                        }
+                        else if(tagNode.attributes['BossZone'])
+                        {
+                            zoneId = tagNode.attributes['BossZone'].nodeValue;
+                        }
+                        else if(tagNode.attributes['Bosszone'])
+                        {
+                            zoneId = tagNode.attributes['Bosszone'].nodeValue;
+                        }
+
+                        if(zoneId) break;
+                    }
+                    if(!zoneId) return;
+                }
+                else
+                {
+                    zoneId = ev.bossZone;
+                    purl = ev.url;
+                    sFlag = true;
+                    setTimeout(function (){sFlag = false;},200);
+                }
+
+                var localUrl = location.href;
+                var site = localUrl.substring(7,localUrl.indexOf('.qq.com'));
+                site = site.substr(site.lastIndexOf('.')+1);
+
+                var iurl = 'http://btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz='+column+'&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sSite='+site+'&sUrl='+escape(purl)+'&sLocalUrl='+escape(location.href)+'&'+Math.random();
+                gImage = new Image(1,1);
+                gImage.src = iurl;
+            } catch (e) {}
+        }
+    }
+</script>
+
+

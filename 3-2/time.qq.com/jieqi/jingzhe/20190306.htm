@@ -1,0 +1,271 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/jieqi/jingzhe/20190306-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="惊蛰，春雷，回春，万物生长，腾讯网，时光画轴，节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 20:30:02';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+  /*
+   * date: 专题日期，格式为 年-月-日
+   * festivalName: 专题名称，展示在左侧时间轴节点
+   * title: 标题
+   * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+   * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+   * abstract: 摘要/导语内容
+   * commentNum: 评论数
+   * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+   * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+   * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+   */
+  window.QA_Config = {
+    "date": "2019-03-06", //日期，格式为 年-月-日
+    "cmd_id": "3753222937", //评论id
+    "vid": "", //视频vid，如果没有视频可以为空
+    "domId": "jingzhe2019"    /*, //内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+
+    "title": "", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url
+    */
+
+  };
+</script>
+<div id="jingzhe2019" style="display:none;">
+  <p>惊蛰，是二十四节气中的第三个节气，标志着仲春时节的开始。《月令七十二候集解》：“二月节……万物出乎震，震为雷，故曰惊蛰，是蛰虫惊而出走矣。”</p>
+  <p>此前，动物入冬藏伏土中，不饮不食，称为“蛰”；到了“惊蛰节”，天上的春雷惊醒蛰居的动物，称为“惊”。故惊蛰时，蛰虫惊醒，天气转暖，渐有春雷，中国大部分地区进入春耕季节。古代分惊蛰为三候：“一候桃始华；二候仓庚（黄鹂）鸣；三候鹰化为鸠。”惊蛰三候所代表的花信为：“一候桃花，二候杏花，三候蔷薇。”</p>
+  <h2>节气由来</h2>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcfe98PvnjRrP2OQYaFjHLgMWowibQyDBKd4MZMwNRd3DxJfxoMibttQ5Pw/640?wx_fmt=jpeg" title="jingzhe1">
+  <p>该节气在历史上也曾被称为“启蛰”。《夏小正》曰：“正月启蛰”。汉朝第六代皇帝汉景帝的讳为“启”，为了避讳而将“启”改为了意思相近的“惊”字。同时，孟春正月的惊蛰与仲春二月节的“雨水”的顺序也被置换。同样的，“谷雨”与“清明”的顺次也被置换。进入唐代以后，“启”字的避讳已无必要，“启蛰”的名称又重新被使用。但由于也有不用惯的原因，大衍历再次使用了“惊蛰”一词，并沿用至今。日本与中国一样，在历代的具注历中使用“惊蛰”。此后，日本也采用了大衍历与宣明历。“启蛰”的名称在日本的使用始于贞享改历的时候。</p>
+  <h2>气候特点</h2>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcfXs7RwcmmvBuwGcmKEq6bP1XOk2oQnqWebLYXCLuvMsDNw5NVIoOw5A/640?wx_fmt=jpeg" title="jingzhe2">
+  <p>“春雷响，万物长”，惊蛰时节正是大好的“九九”艳阳天，气温回升，雨水增多，农家无闲。可谓左河水之“一声霹雳醒蛇虫，几阵潇潇染紫红。九九江南风送暖，融融翠野启春耕“。这时，我国除东北、西北地区仍是银妆素裹的冬日景象外，其他大部分地区平均气温已升到0℃以上，华北地区日平均气温为3—6℃，江南地区为8℃以上，而西南和华南还达10—15℃，早已是一派融融的春光了。</p>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcfdNUiap1TWY4bGI3lfZqicWibZyfD9icCGIarvAYkadu9paDCxOHBQiaE6sQ/640?wx_fmt=jpeg" title="jingzhe3">
+  <p>“春雷惊百虫”，温暖的气候条件却利于多种病虫害的发生和蔓延，田间杂草也相继萌发，应及时搞好病虫害防治和中耕除草。“桃花开，猪瘟来”，家禽家畜的防疫也要引起重视了。这时，气温回升较快，长江流域大部地区已渐有春雷。我国南方大部分地区，常年雨水、惊蛰亦可闻春雷初鸣；而华北西北部除了个别年份以外，一般要到清明才有雷声。</p>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcfT2dcLRWKUEmwYSXNicib2wOgAe2ZbeojCBZ6VUVxoHCr1WIAKfbMhyJw/640?wx_fmt=jpeg" title="jingzhe4">
+  <p>惊蛰雷鸣最引人注意。如“未过惊蛰先打雷，四十九天云不开”。惊蛰节气正处乍寒乍暖之际，根据冷暖预测后期天气的谚语有：“冷惊蛰，暖春分”等。惊蛰节的风也有用来作预测后期天气的依据。如“惊蛰刮北风，从头另过冬”、"惊蛰吹南风，秧苗迟下种"。现代气象科学表明，“惊蛰”前后，之所以偶有雷声，是大地湿度渐高而促使近地面热气上升或北上的湿热空气势力较强与活动频繁所致。从我国各地自然物候进程看，由于南北跨度大，春雷始鸣的时间迟早不一。云南南部在1月底前后即可闻雷，而北京的初雷日却在4月下旬。“惊蛰始雷”的说法仅与沿长江流域的气候规律相吻合。</p>
+  <h2>惊蛰农事</h2>
+  <h3>果树管理</h3>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcfqCgnFm8GAia3a61Kmsszs5ruq9I5gnZYfrM6tJibWGvDN5E2tBD6lGLg/640?wx_fmt=jpeg" title="jingzhe5">
+  <p>惊蛰后气候逐渐变暖，万物开始复苏，是梨、桃、李等落叶果树的开花抽梢期和柑桔、杨梅等常绿果树的萌芽前期，也是果园年周期管理中非常重要的一个时期，在生产管理中主要应做好以下几点：</p>
+  <blockquote>1. 注意清除越冬病原菌和越冬代害虫一是及早清除园内枯枝、落叶、僵果及杂草等，并集中烧毁；二是清理刮除枝干上的粗皮、烂疤，处理后用百菌敌1～10倍液涂抹伤口；三是抽梢前选晴暖日子全园喷石硫合剂一次，落叶果树用波美3～5度（也可用晶体石硫合剂20倍代替），常绿果树用波美1度（也可用晶体石硫合剂100倍代替）。<br />2.
+    加强芽前肥施用主要施用尿素和有机质肥料，梨、桃、李等在惊蛰前开环状沟或放射沟株施有机复合肥2.5～5kg加尿素0.1～0.2kg，施后覆土；在新梢展叶期和花蕾期各喷一次有机液肥；梨、桃、李等在花蕾期喷“果大多”每包加水90kg，谢花后再喷“果大多”每包加水45kg。<br />3. 合理用药，适时化学防治梨在花蕾期，桃、李在花谢后即用2.5%消虱蚜1000倍加40%毒死蜱1000倍加80%果菌速净800倍液（梨再加20%三唑酮乳油2000倍或20%粉锈星1500倍）喷1～2次。<br />及时疏花或花序梨在现蕾期先疏去弱花序，再根据需要每隔5～10cm留一花序，其余一律疏除(仅疏去花蕾)，授粉条件好的每花序留一半左右的边花蕾，疏去中心花蕾；桃、李等也宜加强疏花和疏果工作。</blockquote>
+  <h3>蔬菜管理</h3>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcflcOicW3o8YDibOicdu8eF9eu6uh2iboSvcV47fic3uwe74vZZCLvhvVugDw/640?wx_fmt=jpeg" title="jingzhe6">
+  <blockquote>1. 保护地蔬菜作物的栽培管理对节能型日光温室栽培的越冬黄瓜、西葫芦、番茄、辣椒的管理应进行中耕划锄，提高地温增加透气性，促进新根生长。在管理上要结合防病进行叶面追肥，对受冻害或长势较弱（沤根）的作物要尽快换茬提高春季产量。<br />2.做好病虫害防治由于温度低，阴天较多，灰霉病、叶霉病、霜霉病、早疫病、晚疫病、根腐病发生较为普遍，要及时喷施各类杀菌剂，防止病菌扩散造成更大危害。</blockquote>
+  <h3>畜牧管理</h3>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcfpRbiaXuND6PHApAfl31b0Ex3kicUUjJldE7hQxyC2Z1hVUWOunDKT4mg/640?wx_fmt=jpeg" title="jingzhe7">
+  <p>惊蛰后气温开始回升，降雨量增加。此时，田野间青草开始生长、绿肥红花草子和黄花草子生长旺盛，给草食家畜开始提供青绿饲料。这一时期，畜禽重点是抓好耕牛补料催膘，家畜的春防、春配及防病工作都必须抓紧。一般在春耕前半个月至一个月开始给牛增加营养。</p>
+  <blockquote>1. 春季也是母牛配种季节，为不失时机抓好春配，适当加强种公牛和繁殖母牛的饲养管理。<br />2. 生猪重点抓好春季猪瘟和牲畜“五号病”的预防注射，同时预防猪只受凉感冒发热。<br />3. 春季是家兔繁殖的黄金季节，要抓好长毛兔和肉用兔的春繁工作。要做到适时配种。<br />4. 养鸡专业户，早春三月，天气多变，必须采取薄膜保温室育雏，提高育雏成活率。<br />5.防止饲料霉变，日粮中应添加抗霉剂，同时防止孕畜流产<br />6. 防止兔、禽球虫病、流感等病。</blockquote>
+  <h2>民间习俗</h2>
+  <h3>祭白虎化解是非</h3>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcfY9LCDZEZfWHSWckha3bFefAPpXib1VKaVbNvW2lwT28lShaLTpExiaCw/640?wx_fmt=jpeg" title="jingzhe8">
+  <p>中国的民间传说白虎是口舌、是非之神，每年都会在这天出来觅食，开口噬人，犯之则在这年之内，常遭邪恶小人对你兴波作浪，阻挠你的前程发展，引致百般不顺。大家为了自保，便在惊蛰那天祭白虎。所谓祭白虎，是指拜祭用纸绘制的白老虎，纸老虎一般为黄色黑斑纹，口角画有一对獠牙。拜祭时，需以肥猪血喂之，使其吃饱后不再出口伤人，继而以生猪肉抹在纸老虎的嘴上，使之充满油水，不能张口说人是非。</p>
+  <h3>惊蛰吃梨</h3>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcfXFu5UcSO6TxoQaOrplLm3ocrMsU74vs62ics47wuO2reaSDmR0ZOXiag/640?wx_fmt=jpeg" title="jingzhe9">
+  <p>在民间素有“惊蛰吃梨”的习俗。惊蛰吃梨源于何时，无迹可寻，但祁县民间却有这样一则代代相传的故事。传说闻名海内的晋商渠家，先祖渠济是上党长子县人，明代洪武初年，带着信、义两个儿子，用上党的潞麻与梨倒换祁县的粗布、红枣，往返两地间从中赢利，天长日久有了积蓄，在祁县城定居下来。雍正年间，十四世渠百川走西口，正是惊蛰之日，其父拿出梨让他吃后说，先祖贩梨创业，历经艰辛，定居祁县，今日惊蛰你要走西口，吃梨是让你不忘先祖，努力创业光宗耀祖。渠百川走西口经商致富，将开设的字号取名“长源厚”。后来走西口者也仿效吃梨，多有“离家创业”之意，再后来惊蛰日也吃梨，亦有“努力荣祖”之念。</p>
+  <h3>蒙鼓皮</h3>
+  <img src="https://mmbiz.qpic.cn/mmbiz_png/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcfW29OoTeMMuSpyQYhxqZLIt8ibWudXk6Vjxic9MT7jqSqQPaW83UkumXQ/640?wx_fmt=png" title="jingzhe">
+  <p>惊蛰是雷声引起的。古人想象雷神是位鸟嘴人身，长了翅膀的大神，一手持锤，一手连击环绕周身的许多天鼓，发出隆隆的雷声。惊蛰这天，天庭有雷神击天鼓，人间也利用这个时机来蒙鼓皮。《周礼》卷四十《挥人》篇上说："凡冒鼓必以启蛰之日。“注：“惊蛰，孟春之中也，蛰虫始闻雷声而动；鼓，所取象也；冒，蒙鼓以革。”可见不但百虫的生态与一年四季的运行相契合，万物之灵的人类也要顺应天时，凡事才能达到事半功倍之效。</p>
+  <h3>打小人</h3>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcf9KR2a2m6pb6Zpj34tl0zWuolT13icCfkH3K26qQzv3mic6BJnW6tHFEQ/640?wx_fmt=jpeg" title="jingzhe10">
+  <p>运惊蛰象征二月份的开始，会平地一声雷，唤醒所有冬眠中的蛇虫鼠蚁，家中的爬虫走蚁又会应声而起，四处觅食。所以古时惊蛰当日，人们会手持清香、艾草，熏家中四角，以香味驱赶蛇、虫、蚊、鼠和霉味，久而久之，渐渐演变成不顺心者拍打对头人和驱赶霉运的习惯，亦即“打小人”的前身。</p>
+  <p>所以每年惊蛰那天便会出现一个有趣的场景：妇人一边用木拖鞋拍打纸公仔，一边口中念念有词地念：“打你个小人头，打到你有气冇定抖，打到你食亲野都呕”的打小人咒语。</p>
+  <h2>惊蛰养生</h2>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcfiaKFZWC1hQQB8kyoOr3I0kg35LI9POvia3RqFicL4ESO8NTIoicOGE9Ytg/640?wx_fmt=jpeg" title="jingzhe11">
+  <p>惊蛰过后万物复苏，是春暖花开的季节，同时却也是各种病毒和细菌活跃的季节。惊蛰时节人体的肝阳之气渐升，阴血相对不足，养生应顺乎阳气的升发、万物始生的特点，使自身的精神、情志、气血也如春日一样舒展畅达，生机盎然。从饮食方面来看，惊蛰时节饮食起居应顺肝之性，助益脾气，令五脏和平。宜多吃富含植物蛋白质、维生素的清淡食物，少食动物脂肪类食物。可多食鸭血、菠菜、芦荟、水萝卜、苦瓜、木耳菜、芹菜、油菜、山药、莲子、银耳等食物。由于春季与肝相应，如养生不当则可伤肝。现代流行病学调查亦证实，惊蛰属肝病的高发季节。此外，诸如流感、流脑、水痘、带状疱疹、流行性出血热等在这一节气都易流行爆发，因此要严防此类疾病。</p>
+  <img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXml2Ovvyk7zXibQye6sQlTtcfBFKaTibT02onEfDmePbhGfSVUFSgbKLU30lpCicH6Y41UpmrXAaQraKg/640?wx_fmt=jpeg" title="jingzhe12">
+  <p>乍暖还寒，气候比较干燥，很容易使人口干舌燥、外感咳嗽。生梨性寒味甘，有润肺止咳、滋阴清热的功效。梨的吃法很多，比如生食、蒸、榨汁、烤或者煮水，特别是冰糖蒸梨对咳嗽具有很好的疗效，而且制作简单方便，平时不妨把其当作甜点食用。另外，咳嗽患者还可食用莲子、枇杷、罗汉果等食物缓解病痛，饮食宜清淡，油腻的食物最好不吃，刺激性的食物，如辣椒、葱蒜、胡椒也应少吃。</p>
+
+</div><!--[if !IE]>|xGv00|01c83bec092617b85fb134c9b4cb0dcf<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|e48011dfb4264cfee2f47b2afe7551cb<![endif]-->

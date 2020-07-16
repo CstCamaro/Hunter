@@ -1,0 +1,262 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/jieqi/lichun/20190204-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="立春，回暖，好天气，过年，腾讯网，时光画轴，节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 21:55:04';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-02-04", //日期，格式为 年-月-日
+	"cmd_id": "3683090973", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "lichun2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="lichun2019" style="display:none;"><p>立春，农历二十四节气中的第一个节气。立春是中国民间重要的传统节日之一。“立”是“开始”的意思，自秦代以来，中国就一直以立春作为孟春时节的开始。所谓“一年之计在于春”，春是温暖，鸟语花香；春是生长，耕耘播种。</p>
+<p>立春之日迎春已有三千多年历史，中国自官方到民间都极为重视。立春时，天子亲率三公九卿、诸侯大夫去东郊迎春，祈求丰收。回来之后，要赏赐群臣，布德令以施惠兆民。这种活动影响到庶民，使之成为后来世世代代的全民的迎春活动。</p>
+<h2>气候变化</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1IqGo8CvRZQGCctUlF59bK5PNSZWVTBicQkXv95rveicnibmBOu3O2R89BA/640?wx_fmt=jpeg" title="lichun1">
+<p>在自然界、在人们的心目中，春意味着风和日暖、鸟语花香，也意味着万物生长、春耕播种，所谓“一年之计在于春”。在气候学中，春季是指候（5天为一候）平均气温10℃至22℃的时段。时至立春，人们明显地感觉到白昼长了，太阳暖了。气温、日照、降雨，这时常处于一年中的转折点，趋于上升或增多。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1Ice7fZwroFSBMaYU5iaqYlUH9KweV3W8hU4HObuHbQ47otcnIrvNvIGA/640?wx_fmt=jpeg" title="lichun2">
+<p>中国传统将立春的十五天分为三候：“一候东风解冻，二候蛰虫始振，三候鱼陟负冰”，说的是东风送暖，大地开始解冻。“立春节气，东亚南支西风急流已开始减弱，隆冬气候已快要结束。但北支西风急流强度和位置基本没有变化，蒙古冷高压和阿留申低压仍然比较强大，大风降温仍是盛行的主要天气。但在强冷空气影响的间隙期，偏南风频数增加，并伴有明显的气温回升过程。春雨惊春清谷天，夏满芒夏暑相连；秋处露秋寒霜降，冬雪雪冬小大寒。”这首中国人熟知的“节气歌”，暗含了二十四节气的先后顺序。</p>
+<h2>民间习俗</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1IVAV49x6f1RRDH7ZdFRWEsvOpm6aedgMZIo0GNWabBibPE0SKicoC9C6g/640?wx_fmt=jpeg" title="lichun3">
+<p><b>县里派报春送春牛帖子和立春帖子：</b>旧俗立春前一日，有两名艺人顶冠饰带，称春吏。沿街高喊：“春来了”，俗称“报春”。无论士、农、工、商，见春官都要作揖礼谒。一个人站在田间敲锣打鼓（找小男孩穿青衣戴青帽），唱着迎春的赞词，到每家去报春，挨家挨户送上一张春牛图或迎春帖子（或众农家敲锣打鼓将小孩拜请回家叫迎春民间摆上果品春盘在案等待春的到来）。在这红纸印的春牛图上，印有一年二十四个节气和人，牵着牛耕地，人们称其为“春帖子”。这送春牛图，其意在催促提醒人们要抓紧时间务农，莫误春光。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1IwAoPc5393VZr40y08dedBZWr89lN9cKsECb8Oe1uQjQ6cNUUucetsw/640?wx_fmt=jpeg" title="lichun4">
+<p><b>赶春牛：</b>打牛前一天，先把土牛放在东郊,称为立牛旁边放携带农具鞭牛的假人为耕夫然后农民向其拜击鼓打牛之后人们把土牛的土块带回自家牲圈，象征收成好促进牛的繁殖。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1ID5LuibFdXL0CF2uXfIJgJE6bkcYLbFZn0qT78hjeLYHchInpGLt295A/640?wx_fmt=jpeg" title="lichun5">
+<p><b>游春（探春、游行）：</b>县里活动之后，民间也不甘示弱，他们纷纷装扮起来，开始游行。队伍先是报春人打扮成公鸡的样子走在最前面，之后一群人抬着巨大春牛形象，之后的人打扮成牧童牵牛的、打扮成大头娃娃送春桃的、打扮成燕子的应有尽有。另外还有的意义就是：这次游春之后就是可以开始踏青的信号，一直到端午之间都是游春的好时候（立春那日游春叫探春）。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1Iicib3XkO1kjTiaYclcJLkiahHWMXgHx07UhhSibHgIvo6gOeaVx9riaeic4Sw/640?wx_fmt=jpeg" title="lichun6">
+<p><b>糊春牛：</b>在家里用米或纸糊成春牛，摆放在家中</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1IE1JpCwTj48fbyy9icnKBj4NLoFC9lmh8JTF3NmBib6Youaqy043MevEg/640?wx_fmt=jpeg" title="lichun7">
+<p><b>贴春字画：</b>家家在门上张贴迎春的字画字和春字有关的画，如腊梅迎春之类</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1IhO1RRFXssGuyoYFibCDg7UhzJ7jM3ur1IJwDiayL1IBNkpXur01HWSTg/640?wx_fmt=jpeg" title="lichun8">
+<p><b>搭燕子窝：</b>给花树戴燕子胜帛条</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1IJmdpSrsDhjnnU3bwUSicrWhcoIPPnbRGlYqBnyCeK43sBfzPFsRd4PA/640?wx_fmt=jpeg" title="lichun9">
+<p><b>种迎春花：</b>种植迎春花卉</p>
+<h2>立春饮食</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1IVMlF5RPbicI13NMdiakMVibP1PzlEaJPtZqiaFS3mzcZBjnH5uGz834yaA/640?wx_fmt=jpeg" title="lichun10">
+<p><b>春饼：</b>馅（萝卜，豆芽，豆子，为主）</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1Ijw31ZtsMW4KegZ0QnFxicO1tYFzhj63CqZKrKdyZWRcy76Cufj3qGjQ/640?wx_fmt=jpeg" title="lichun11">
+<p><b>春盘：</b>主要是蔬菜取生菜瓜果饼糖放盘中为春盘（或拼成盘）馈送亲友或自食取迎春之意。盘里主要有：果品、蔬菜、糖果、饼、饵五种。蔬菜主要有：豆芽、萝卜、韭菜、菠菜、生菜、豆子、鸡蛋、土豆丝。杜甫《立春》：“春日春盘细生菜，忽忆两京梅发时。”</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1ICJhDglpG8taAIYliam6SaqOgcdFD5emQGScttN5iaMribe96nbndliaxBg/640?wx_fmt=jpeg" title="lichun12">
+<p><b>春卷（春蚕）：</b>《岁时广记》：“京师富贵人家造面蚕，名曰‘探官蚕’。又因立春日做此，故又称‘探春蚕’。”</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1IXA9shU4IfrWRNmCKHfm5HTLJBO429VX0Rm7xd1CicGN7ua8GmSV674A/640?wx_fmt=jpeg" title="lichun13">
+<p><b>咬春（吃萝卜）：</b>明《酌中志》：“立春之时，无贵贱嚼罗卜，曰‘咬春’。”</p>
+<h2>立春养生</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1IGjQXuhljvRGzuIpAE7ZZvPF5gur6f8S7CFT5W7pPRYYbIia6ajbcRqw/640?wx_fmt=jpeg" title="lichun14">
+<p>在养生上主要是护肝。在作息时间上，人们也应顺应自然界的规律，早睡早起。在精神养生方面，要力戒暴怒，更忌忧郁，做到心胸开阔，保持心境愉悦。对于健康人群而言，饮食要清淡，不要过度食用干燥、辛辣的食物。同时，因为此时阳气上升容易伤阴，所以要特别注重养阴，可以多选用百合、山药、莲子、枸杞等食物。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1IQSEvnN5vbUdYgkQXWxP80VKzAXsgLDlr0dw3mSZMq9KibwMTUIhXu0g/640?wx_fmt=jpeg" title="lichun15">
+<p>立春之后的一段时间往往冷暖不定，要当心“到春寒”的侵扰，特别是对于体弱的人来说，感冒、发烧是常有的事情。对此专家表示，要想杀菌并防寒，在饮食上可增加吃大蒜、洋葱、芹菜等“味冲”食物的次数，对预防伤寒感冒等春季多发的呼吸道感染大有益处。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1Ikv6Xv2DweYt7XUsbVPPRYzg9W15qyP1qSq8LpgcdXaMZsppyNDxhRQ/640?wx_fmt=jpeg" title="lichun16">
+<p>中医认为，洋葱、姜、蒜、芹菜这些带味食物，既可疏风散寒，又能杀菌防病。其中，大蒜含有挥发性辣素，可消除积存在血管中的脂肪。洋葱含有前列腺素，有舒张血管及降低血压的功能，还有促使血凝块溶解的作用。芹菜含有挥发油、甘露醇等，具有降压、镇静、健胃、利尿等作用。不过，儿童可能会对这类食物有些抵触，这时可把芹菜、姜末做饺子馅吃，也可以用碎洋葱来炒饭。此外，将洋葱、蒜、芹菜等加热时间长一些可减少气味，但烹饪时间越长，气味儿中的健康物质保留越少。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmn7dqgcerpSd2P4TVE1YQ1IXGzmxq6JZjpVZsGAD8lmJiaNbYwM9iaO5ylLp5CAsaNic6ogT1dRMwROg/640?wx_fmt=jpeg" title="lichun17">
+<p>立春之后依然比较干燥，喝花茶可以帮助驱散冬季聚积在人体内的寒气和邪气。由于每一种花、草都有其相应的性、味、功效，如果使用得当，花草茶的确有一定的保健疗效，但需根据自身的体质进行调整，饮用过量也会造成身体不适。性温的食用花草主要包括梅花、茉莉花、玫瑰花、月季花、藏红花等；性寒的食用花草主要有夏枯草、金银花、菊花、槐花等；性平的花草主要有合欢花、玉米须、芙蓉花、薰衣草等。在搭配时，那些药性温的花草最好不要和性寒的花草配伍食用。</p>
+<p>除了药性搭配，喝花草茶还需注意身体状况。每一种花草茶都有特别的功效，所以在选择时，一方面需分清自己的体质情况，如热性体质的人，宜选用性寒的花草，而虚寒体质的人则适用性温的花草，对于那些性平的花草则大多都可选用。此外，如果正在服用药物，选用花草茶更应慎重。</p></div><!--[if !IE]>|xGv00|361b9fe5f7caf59441ac67365a2846a0<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|6b69309c9a13338012e0b72092988132<![endif]-->

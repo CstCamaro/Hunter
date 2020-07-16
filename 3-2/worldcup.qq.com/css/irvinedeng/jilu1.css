@@ -1,0 +1,102 @@
+/*Style by Artis*/
+body{font-family:"ËÎÌå";font-size:12px;background:#6C150C;color:#000;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd,table,td{margin:0;padding:0;border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,p,select,input{margin:0;padding:0;font-size:12px;}
+a{color:#6B3C1B;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+.nl,.nl a,.nl a:hover,a.nl,a.nl:hover{text-decoration:none;}
+.ul,.ul a,.ul a:hover,a.ul,a.ul:hover{text-decoration:underline;}
+
+.fontB{font-weight:bold;}
+.fontS14{font-size:14px;}
+.fontS16{font-size:16px;}
+.fontS18{font-size:18px;}
+.fontS20{font-size:20px;}
+.fontHt{font-family:"ºÚÌå";}
+.fontV{font-family:Verdana;}
+.textInd{text-indent:2em;}
+.textInd2{text-indent:1em;}
+
+.colorWhite,.colorWhite a,.colorWhite a:hover{color:#fff;}
+.colorBlack,.colorBlack a{color:#333;}
+.colorBlack a:hover{color:#c00;}
+.colorGray,.colorGray a{color:#828282;}
+.colorGray a:hover{color:#c00;}
+.colorOrange,.colorOrange a{color:#d66a41;}
+.colorOrange a:hover{color:#c00;}
+.colorGreen,.colorGreen a{color:#5c7779;}
+.colorGreen a:hover{color:#c00;}
+.colorRed,.colorRed a,.colorRed a:hover{color:#c00;}
+.colorBlue,.colorBlue a{color:#0b649c;}
+.colorBlue a:hover{color:#c00;}
+.colorMore,.colorMore a{color:#b75400;}
+.colorMore a:hover{color:#c00;}
+.colorTt,.colorTt a{color:#b75400;}
+.colorTt a:hover{color:#c00;}
+
+.lineH18{line-height:18px;}
+.lineH21{line-height:21px;}
+.lineH22{line-height:22px;}
+.lineH23{line-height:23px;}
+.lineH24{line-height:24px;}
+.lineH25{line-height:25px;}
+.lineH28{line-height:28px;}
+.lineH30{line-height:30px;}
+
+.left,.fleft{float:left;}
+.right,.fright{float:right;}
+.clear{clear:both;height:0;overflow:hidden;}
+.dis,.block{display:block!important;}
+.undis,.none{display:none;}
+.noborder{border:0!important;}
+.nobg{background:none!important;}
+.fbold{font-weight:bold;}
+.f14{font-size:14px;}
+.t24{text-indent:24px;}
+.t28{text-indent:28px;}
+.l20{line-height:20px;}
+.l22{line-height:22px;}
+.l26{line-height:26px;}
+.coffee{color:#6B3C1B;}
+.top,.bg02{width:960px;margin:0 auto;}
+.box10{height:10px;clear:both;overflow:hidden;}
+.bg{width:100%;background:#6C150C url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/bg.jpg) no-repeat top center;}
+.top{height:68px;line-height:68px;color:#BF9E9B;}
+.top a{color:#BF9E9B;}
+.top .pandian{float:left;padding-left:190px;}
+.top .fanhui{float:right;padding-right:24px;}
+.bg02{width:960px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/repeaty.jpg) repeat-y;}
+.bg03{width:960px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/bg03.jpg) no-repeat top center;}
+.nav{width:960px;height:75px;float:left;margin-top:28px;}
+.nav img{float:left;}
+.layout{width:900px;float:left;padding:0px 30px 10px;}
+.layout .h2{font:18px/30px "ºÚÌå";}
+.layout .h2 a{color:#333;}
+.layout .p1{text-align:left;}
+.toupiao{width:900px;float:left;margin-top:40px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/bg10.jpg);height:609px;}
+.toupiao div{width:180px;height:192px;padding:11px 0 0 0;float:left;overflow:hidden;text-align:center;}
+.toupiao div .img{border:1px solid #696969;}
+.toupiao div a,.toupiao div a:hover{color:#fff;}
+.toupiao .current .img{border:1px solid #FFF600;}
+.page{width:900px;float:left;margin-top:20px;}
+.page .prev{font-weight:bold;font-size:14px;float:left;padding:0 5px 8px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/page_bg.jpg) no-repeat center bottom;}
+.page .next{font-weight:bold;font-size:14px;float:right;padding:0 5px 8px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/page_bg.jpg) no-repeat center bottom;}
+.bottom{width:100%;height:28px;clear:both;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/bottom.jpg) no-repeat center;}
+.bg11{background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/bg11.png) no-repeat;}
+.bg11 img{margin-top:1px;}
+
+/**/
+.title1{height:62px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/title1.jpg) no-repeat;}
+.title2{height:62px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/title2.jpg) no-repeat;}
+.tmore{padding:0 13px 0 28px;}
+.tmore2{padding:0 13px 0 35px;}
+.tmore strong,.tmore2 strong{font-size:14px;}
+.tmore a,.tmore2 a{float:right;}
+.toplist{width:292px;height:167px;background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/toplist.jpg) no-repeat;overflow:hidden;color:#7a3306;}
+.pl7{padding-left:7px;}.pl11{padding-left:11px;}
+.colorName a,.colorName a:hover{color:#df6800;}.fa{font-family:Arial;font-size:11px;}
+.newslist{background:url(//mat1.gtimg.com/worldcup/images/irvinedeng/jilu/rbg.jpg) right top no-repeat;height:266px;}
+.n1,.n2{font-size:14px;line-height:24px;float:left;width:340px;padding:6px 0 0 20px;color:#000;}
+.n1 a,.n1 a:hover,.n2 a,.n2 a:hover{color:#000;}/*  |xGv00|d1a9484c54529550337138ed437f5381 */

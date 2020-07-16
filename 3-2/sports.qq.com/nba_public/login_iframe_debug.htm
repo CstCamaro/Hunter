@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="GBK">
+    <meta http-equiv=X-UA-Compatible content="IE=Edge,chrome=1">
+    <title>登录iframe</title>
+    <script src="//mat1.gtimg.com/www/asset/lib/jquery/jquery-1.11.3.min.js"></script>
+    <style>html,body{height:100%}html,body,div,ul{display:block;margin:0;padding:0}.login-main{display:block;position:relative;width:620px;margin:0 auto;border:1px solid #ddd}.login-main ul{list-style:none;margin:0;padding:0}.login-main ul.tab{height:50px;line-height:50px;border-bottom:1px solid #e6e6e6;background:#f1f1f1}.login-main ul.tab li{display:block;height:49px;width:50%;float:left;border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:transparent;text-align:center;cursor:pointer;font-size:16px;font-weight:400;color:#000}.login-main ul.tab .qq.active{border-bottom-color:#31a4f6}.login-main ul.tab .wx.active{border-bottom-color:#4ab218}.login-main ul.cont{width:100%;height:366px}.login-main ul.cont li{display:none;width:100%;height:100%;overflow:hidden}.login-main ul.cont li .cont-inner{height:100%}.login-main ul.cont li .cont-inner iframe.iframe-qq{margin:-1px 0 0 -1px}.login-main ul.cont li.active{display:block}.login-main .btn-close{display:block;width:30px;height:30px;line-height:30px;position:absolute;top:0;right:0;font-size:26px;font-weight:100;font-family:Arial,sans-serif;color:#888;text-decoration:none;text-align:center}.login-main .btn-close:hover{color:#000}</style>
+</head>
+<body>
+
+
+    <div class="login-main">
+        <ul class="tab">
+            <li class="qq active">QQ账号登录</li>
+            <li class="wx">微信登录</li>
+        </ul>
+        <ul class="cont">
+            <li class="active">
+                <div class="cont-inner cont-qq">
+                    <iframe class="iframe-qq" id="iframe_qq" height="100%" width="100%" scrolling="no" frameborder="0" src="about:blank"></iframe>
+                </div>
+            </li>
+            <li>
+                <div class="cont-inner cont-wx">
+                    <iframe class="iframe-wx" id="iframe_wx" height="100%" width="100%" scrolling="no" frameborder="0" src="about:blank"></iframe>
+                </div>
+            </li>
+        </ul>
+        <a href="javascript:;" class="btn-close" title="关闭 (取消登录)">×</a>
+    </div>
+
+    <script>!function(n,i,o){i.domain="qq.com";var t=$(".login-main"),e=function(n,i){if(n&&i){for(var o=i.split("."),t=0;t<o.length&&n;t+=1)n=n[o[t]];return n}},c=function(){var n=location.search.match(/callback\=([a-zA-Z0-9_\.]+)/);return n?n[1]:null}(),s=function(){var n=location.search.match(/onclose\=([a-zA-Z0-9_\.]+)/);return n?n[1]:null}();if(c){var l=e(n.parent,c)||function(){},a=e(n.parent,s)||function(){},r={};r.loginSuccess=function(n){l(n),a()},n.login=r,success_url="http://sports.qq.com/nba_public/login_success.htm";var u={};u.qq="http://xui.ptlogin2.qq.com/cgi-bin/xlogin?hide_title_bar=1&hide_close_icon=1&low_login=1&qlogin_auto_login=1&no_verifyimg=1&link_target=blank&appid=636014201&target=self&s_url="+success_url,u.wx="http://open.weixin.qq.com/connect/qrconnect?appid=wx5ed58254bc0d6b7f&redirect_uri=http%3A//video.qq.com/fcgi-bin/wx_login%3fredirect_url%3d"+success_url+"&response_type=code&scope=snsapi_login&state="+Math.random()+"&style=black&href=http%3A//mat1.gtimg.com/sports/sportAppWeb/css/iframe_login_wx.css",$.each(["qq","wx"],function(n,i){t.find("iframe#iframe_"+i).attr("src",u[i])});var f=t.find("ul.tab li"),p=t.find("ul.cont li");f.on("mouseenter",function(n){var i=$(this),o=f.index(i),t="active";f.removeClass(t).eq(o).addClass(t),p.removeClass(t).eq(o).addClass(t)}),t.find(".btn-close").click(function(n){n.preventDefault(),a()})}}(window,document);</script>
+
+</body>
+</html>
+<!--[if !IE]>|xGv00|fc05e46b5cf7aee9c0060639f66c555c<![endif]-->

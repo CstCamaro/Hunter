@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XPRIZE中文站</title>
+	<link rel="stylesheet" href="//tech.qq.com/00Jamesdu/2015/column/xprize/css/d_base.css">
+	<link rel="stylesheet" href="//tech.qq.com/00Jamesdu/2015/column/xprize/css/default.css">
+	<script src="//tech.qq.com/00Jamesdu/2015/column/xprize/js/jquery-1.11.1.min.js"></script>
+	<style>
+	.lasted .opic img,.lasted .opic{
+		width: 200px;height: 130px;
+	}
+	.lasted ul li a,.lasted ul li span{
+		margin-left:  220px;
+	}
+	.lasted ul li span{
+
+	}
+	</style>
+</head>
+<body>
+	<style type="text/css">
+/*带一键登录全站迷你导航 v20130219 loginall @goldenchen*/
+.mininav{width:100%;height:28px;background:#fdfdfd url(//mat1.gtimg.com/www/images/qq2012/mininav.png) repeat-x top center;border-bottom:1px solid #ebebeb;}
+.mininavInner{width:1000px;height:28px;margin:0 auto!important;}
+.mininavInner a{color:#666;text-decoration:none;font-family:"宋体";}
+.mininavInner a:hover{color:#2d374b;}
+.mininavInner .mininavLeft{float:left;margin-top:8px;color:#c7c7c7;font-size:12px;}
+.mininavInner .mininavLeft .fl{color:#c7c7c7;}
+</style>
+<div class="mininav" id="topNav">
+	<div class="mininavInner">
+		<div class="mininavLeft">
+			<div class="fl">
+				<a href="http://www.qq.com/" target="_blank" id="qqindex">腾讯网首页</a> | <a href="http://www.qq.com/map/" target="_blank" id="webmap">网站地图</a>
+			</div>
+		</div>
+
+
+		<style type="text/css">
+				ul,li{margin:0;padding:0;}
+				li{list-style:none;}
+				.fl{float:left;}
+				.fr{float:right;}
+				.dis{display:block;}
+				.undis{display:none;}
+				.loginSmartTop,.loginSmartBottom{background-image:url(//mat1.gtimg.com/www/images/qq2012/qqbg_1.5.2.png); background-repeat:no-repeat;}
+				a.login,a.login:hover,a.weiboLogin,a.weiboLogin:hover,a.qzoneLogin,a.qzoneLogin:hover,a.mailLogin,a.mailLogin:hover,a.pengyouLogin,a.pengyouLogin:hover,.mininavRight .weibo,.mininavRight .weibo:hover,.mininavRight .qzone,.mininavRight .qzone:hover,.mininavRight .mail,.mininavRight .mail:hover,.mininavRight .pengyou,.mininavRight .pengyou:hover{background-image:url(//mat1.gtimg.com/www/images/qq2012/loginall_1.2.png); background-repeat:no-repeat;}
+				a.login{width:70px;height:28px;display:block;float:right;background-position:left -450px;}
+				a.login:hover{background-position:left -500px;}
+				a.weiboLogin{width:30px;height:28px;display:block;float:right;background-position:left -50px;}
+				a.weiboLogin:hover{background-position:right -50px;}
+				a.qzoneLogin{width:30px;height:28px;display:block;float:right;background-position:left -100px;}
+				a.qzoneLogin:hover{background-position:right -100px;}
+				a.mailLogin{width:30px;height:28px;display:block;float:right;background-position:left -150px;}
+				a.mailLogin:hover{background-position:right -150px;}
+				a.pengyouLogin{width:28px;height:28px;display:block;float:right;background-position:left -200px;}
+				a.pengyouLogin:hover{background-position:right -200px;}
+				.mininavRight{font-size:12px;}
+				.mininavRight .weibo{background-position:7px -243px;}
+				.mininavRight .weibo:hover{background-position:-79px -243px;}
+				.mininavRight .qzone{background-position:7px -294px;}
+				.mininavRight .qzone:hover{background-position:-74px -294px;}
+				.mininavRight .mail{background-position:7px -340px;}
+				.mininavRight .mail:hover{background-position:-77px -340px;}
+				.mininavRight .pengyou{background-position:7px -394px;}
+				.mininavRight .pengyou:hover{background-position:-76px -394px;}
+				.mininavRight{float:right;color:#c7c7c7;line-height:28px;}
+				.mininavRight a{color:#666;}
+				.mininavRight .qqNameLayout{margin-right:4px;color:#c7c7c7;}
+				.mininavRight .qqName{margin-right:12px;color:#666;float:left;}
+				.mininavRight .weibo{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:17px;}
+				.mininavRight .weibo:hover{color:#fff;background-color:#458fce;}
+				.mininavRight .qzone{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:22px;}
+				.mininavRight .qzone:hover{color:#fff;background-color:#458fce;}
+				.mininavRight .mail{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:19px;}
+				.mininavRight .mail:hover{color:#fff;background-color:#458fce;}
+				.mininavRight .pengyou{font-family:Tahoma,"宋体";padding:0 7px;display:block;height:28px;float:left;text-indent:20px;}
+				.mininavRight .pengyou:hover{color:#fff;background-color:#458fce;}
+				.loginSmartBox{width:120px;height:auto;background:#fffbef;position:absolute;top:28px;z-index:100;}
+				.loginSmartTop{width:120px;height:3px;overflow:hidden;background-position:-350px -210px;}
+				.loginSmartBottom{width:120px;height:3px;overflow:hidden;background-position:-350px -230px;}
+				.loginSmartContent{width:118px;border-left:1px solid #f1f1f1;border-right:1px solid #f1f1f1;}
+				.loginSmartInner{width:116px;border-left:1px solid #f4d9a4;border-right:1px solid #f4d9a4;}
+				.loginSmartInner ul{width:100%;padding:2px 0;}
+				.loginSmartInner li{width:100%;height:20px;line-height:20px;color:#666;text-indent:8px;text-align:left;}
+				.loginSmartInner li a{color:#666;}
+				.loginSmartInner li a:hover span{color:#cd0200;}
+				.loginSmartInner li a span,.loginSmartInner li a:hover span{font-family:Tahoma;}
+				#pengyouIcon{position:relative;z-index:10000;}
+				#mailIcon{position:relative;z-index:10000;}
+				#qzoneIcon{position:relative;z-index:10000;}
+				#weiboIcon{position:relative;z-index:10000;}
+				#loginOut:hover{text-decoration:underline;color:#cd0200;}
+				.loginBg{width:100%;min-width:1024px;position:absolute;top:0;left:0;z-index:8888;display:none;background:url(//mat1.gtimg.com/www/images/qq2012/alphabg.png); _background:#000;_opacity:0.3_;filter:alpha(opacity=30);}
+
+				.mininavRight .qzone{width:auto;}
+				.mininavLeft div{line-height:14px;}
+				.mininavRight div{line-height:28px;}
+				</style>
+				<div class="login mininavRight" id="loginWrap">
+    <a href="http://mail.qq.com" class="mailLogin" id="qmail" target="_blank" bosszone="qmail"></a>
+    <a href="http://qzone.qq.com" class="qzoneLogin" id="qzone" target="_blank" bosszone="qzone"></a>
+    <a href="javascript:void(0);" class="login" onclick="userLogin();" target="_self" id="onekey"></a>
+ 
+    <!-- <div class="quickArea menu">
+      <a href="http://qzone.qq.com" id="qzoneLink" target="_blank" class="quickLink menu-hd qzoneLink" aria-expanded="true" bosszone="gqqzone"><em>Qzone</em></a>
+    </div>
+    <div class="quickArea menu">
+      <a href="http://mail.qq.com" id="qmailLink" target="_blank" class="quickLink menu-hd qmailLink" aria-expanded="true" bosszone="gqqmail"><em>QQ邮箱</em></a>
+    </div>	   -->
+</div>
+
+<script type="text/javascript">var MI = {};(function(b){var a=document.createElement("script");a.setAttribute("charset","utf-8");a.setAttribute("type","text/javascript");a.setAttribute("src",b);document.getElementsByTagName("head")[0].appendChild(a)})("//mat1.gtimg.com/www/mb/js/portal/mi.MiniNav__v1.0.0.js");</script>
+<script type="text/javascript" src="//mat1.gtimg.com/www/ptlogin/js/ptlogiHL.js" charset="utf-8"></script>
+<!--[if !IE]>|xGv00|a06ce509e32367110c60d18e9ea9e530<![endif]--><!--[if !IE]>|xGv00|fcb7151e303110b6aedb3a23e34141e5<![endif]-->
+	</div>
+</div>
+<script type="text/javascript">
+(function(){var e={webmap:"webmap",qqindex:"qqindex",logkey:"logkey",onekey:"onekey",weibo:"weibo",qzone:"qzone",qmail:"qmail",friend:"friend",loginOut:"logquit",weiboIcon:"weiboinfor",qzoneIcon:"qzoneinfor",mailIcon:"qmailinfor",pengyouIcon:"friendinfor"},t=function(){for(var t in e){if(!e.hasOwnProperty(t))return;var n=document.getElementById(t);n&&n.setAttribute("bossZone",e[t])}};t()})()
+</script>
+<script type="text/javascript">
+//移动端左右边距
+if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){document.getElementsByTagName("body")[0].style.minWidth = "1028px";}
+</script><!--[if !IE]>|xGv00|391c10b45046351ab35a91ecc9e5bb6e<![endif]--><!--[if !IE]>|xGv00|f05dc60e89d8cdcee830e5616292c425<![endif]-->
+	<div class="banner">
+
+	<div class="nav">
+		<div class="logo">
+			<a href="http://xprize.qq.com">
+				<img src="http://img1.gtimg.com/tech/pics/hv1/227/196/1802/117225257.png" alt=""></a>
+		</div>
+		<ul>
+			<li>
+				<a href="http://tech.qq.com/zt2015/xprize/lasted.htm" target="_blank" class="nav_1">
+					<span class="tocn">最新消息</span>
+					<span class="toen">Latest News</span>
+				</a>
+
+			</li>
+			<li>
+				<a href="http://tech.qq.com/zt2015/xprize/what.htm" target="_blank" class="nav_2">
+					<span class="tocn">关于XPRIZE</span>
+					<span class="toen">About XPRIZE</span>
+				</a>
+				<ul>
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/what.htm">XPRIZE是什么？</a>
+					</li>
+					
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/contact.htm">联系我们</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="http://tech.qq.com/zt2015/xprize/active.htm" target="_blank" class="nav_3">
+					<span class="tocn">进行中奖项</span>
+					<span class="toen">Active XPRIZES</span>
+				</a>
+				<ul>
+
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/oceanhealth.htm">温迪·施密特海洋健康竞赛</a>
+					</li>
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/tricorder.htm">高通三录仪XPRIZE竞赛</a>
+					</li>
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/lunar.htm">谷歌登月XPRIZE竞赛</a>
+					</li>
+					<li>
+						<a href="http://tech.qq.com/zt2015/xprize/learning.htm">全球学习XPRIZE竞赛</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="http://www.xprize.org/donate" target="_blank" class="nav_5">
+					<span class="tocn">捐赠</span>
+					<span class="toen">Donation</span>
+				</a>
+
+			</li>
+		</ul>
+	</div>
+</div><!--[if !IE]>|xGv00|f55c32a48854f9dbc07e25909085cf31<![endif]-->
+	<div class="layout">
+		<div class="chief">
+			<div class="headline article">
+				<!-- 大标题开始 -->
+				<h2>最新消息</h2>
+				<!-- 大标题结束 -->
+			</div>
+			<div class="container lasted">
+				<!-- 正文开始 -->
+
+				<ul>
+					<style type="text/css">
+#pageZone{padding:0;}
+#pageZone .loadmore{display:block;height:35px;line-height:35px;text-align:center;background:#EEF3F8;color:#333;font-weight:bold;font-size:14px;border:1px solid #E2E2E2;}
+#pageZone a.loadmore:hover{color:#BC0902;text-decoration:none;background:#D1E0EE;}
+#pageZone span.loadmore{width:100%;border:none;color:#ccc;}
+#pageZone span.loadmore:hover{background:none;color:#ccc;cursor:defalut;}
+.newsinfo .fl{float:none;position:static;}
+#hotnews .newsinfo .fl{float:none;position:static;}
+#hotnews .Q-tpList:hover .newsinfo .fl{display:block;}
+.hotlist .similarity{line-height:24px;}
+.hotlist .similarity a{font-size:14px;background:none;font-family:微软雅黑;color:#000;background:url(//mat1.gtimg.com/tech/2012/2012keji/dot2.png) no-repeat 0 center;padding-left: 15px;}
+.hotlist .similarity a:hover{background-position:left center;color:#cc0000;;}
+
+</style>
+<div id="listZone">
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20160202/038521.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/78/50/2016/131103228.jpg" alt="这是一款专供盲人使用的智能手表"></a><a target="_blank" href="http://tech.qq.com/a/20160202/038521.htm" title="这是一款专供盲人使用的智能手表">这是一款专供盲人使用的智能手表</a><span>最近，一款价格亲民且使用方便的盲文手表在美国问世，单次充电可以续航5天，盲人将不再需要抱着笨重的盲文书学习。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20160202/038152.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/82/50/2016/131103232.jpg" alt="环保新科技：能否用垃圾点亮非洲大陆？"></a><a target="_blank" href="http://tech.qq.com/a/20160202/038152.htm" title="环保新科技：能否用垃圾点亮非洲大陆？">环保新科技：能否用垃圾点亮非洲大陆？</a><span>随着生活水平提高，非洲电力需求也在迅猛增长，但是很多国家电力普及度都很低。如果非洲能够启用垃圾发电技术，到2025年，便可为2700万非洲家庭供电。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20160202/037829.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/87/50/2016/131103237.jpg" alt="新技术可以把残羹剩饭变成LED灯泡"></a><a target="_blank" href="http://tech.qq.com/a/20160202/037829.htm" title="新技术可以把残羹剩饭变成LED灯泡">新技术可以把残羹剩饭变成LED灯泡</a><span>如果说把昨天吃剩的三明治和苏打水做成LED灯泡，你相信吗？近日，美国犹他大学的科研人员给出了肯定的回答。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20160202/031387.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/98/50/2016/131103248.jpg" alt="风力发电在新英格兰海岸蔚然成风"></a><a target="_blank" href="http://tech.qq.com/a/20160202/031387.htm" title="风力发电在新英格兰海岸蔚然成风">风力发电在新英格兰海岸蔚然成风</a><span>随着越来越多清洁能源技术投入使用，世界很多国家选择了风力发电。在美国新英格兰地区，大规模的风力发电厂即将在远离海岸的海上展开施工。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20160202/030765.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/117/50/2016/131103267.jpg" alt="这种耐用的板房是专为难民设计的"></a><a target="_blank" href="http://tech.qq.com/a/20160202/030765.htm" title="这种耐用的板房是专为难民设计的">这种耐用的板房是专为难民设计的</a><span>近日，宜家旗下的瑞典社会企业Better Shelter为中东难民设计了一种金属板房结构，牢固程度远超帐篷且价格低廉，联合国难民署2015年共订购了1万套，希望为世界各地的难民提供帮助。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20160202/029892.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/127/50/2016/131103277.jpg" alt="全球最大聚焦式太阳能项目回应公众质疑"></a><a target="_blank" href="http://tech.qq.com/a/20160202/029892.htm" title="全球最大聚焦式太阳能项目回应公众质疑">全球最大聚焦式太阳能项目回应公众质疑</a><span>近日，已运营两年的全球最大聚焦式太阳能发电厂饱受公众质疑，质疑原因包括这个发电厂对生态的影响、是否浪费政府资金等，不过现在判断利弊为时过早。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151221/050443.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/85/80/1990/129420235.jpg" alt="机器人警察：昼夜巡逻 不用休息"></a><a target="_blank" href="http://tech.qq.com/a/20151221/050443.htm" title="机器人警察：昼夜巡逻 不用休息">机器人警察：昼夜巡逻 不用休息</a><span>在美国硅谷，有24台日夜巡逻的机器人警察，它们不携带武器，但是可以利用大量的传感器收集实时数据传递给警方。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151221/050000.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/79/80/1990/129420229.jpg" alt="日本：用自给自足的能源展开灾后重建"></a><a target="_blank" href="http://tech.qq.com/a/20151221/050000.htm" title="日本：用自给自足的能源展开灾后重建">日本：用自给自足的能源展开灾后重建</a><span>在福岛核事故爆发后，日本人似乎不再像以前那样欢迎核电。日本东松岛市计划综合利用太阳能、风能、生物燃料等能源，在2022年实现100%的自给自足，实现44兆瓦的可再生发电能力。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151221/049644.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/100/80/1990/129420250.jpg" alt="发现“新星球”：探索我们的海洋"></a><a target="_blank" href="http://tech.qq.com/a/20151221/049644.htm" title="发现“新星球”：探索我们的海洋">发现“新星球”：探索我们的海洋</a><span>我们对地球海洋的认知甚至不如火星。近日，壳牌海洋探索XPRIZE竞赛邀请世界各地团队开发先进的深海水下机器人，开辟一条高效、高清的自动化海洋探索之路。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151221/049104.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/182/73/1990/129418547.jpg" alt="美公司计划利用海水温差发电"></a><a target="_blank" href="http://tech.qq.com/a/20151221/049104.htm" title="美公司计划利用海水温差发电">美公司计划利用海水温差发电</a><span>在赤道地区，温暖海平面与深海冰冷海水之间存在约三十华氏度的温差。近日，美国一家公司计划利用这种温差发电。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151221/048071.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/186/73/1990/129418551.jpg" alt="卢旺达计划利用淡水湖底沼气的能量发电"></a><a target="_blank" href="http://tech.qq.com/a/20151221/048071.htm" title="卢旺达计划利用淡水湖底沼气的能量发电">卢旺达计划利用淡水湖底沼气的能量发电</a><span>在卢旺达和刚果民主共和国交界处有一座美丽的湖泊--基伍湖，湖底蕴藏着约2万亿立方英尺的沼气。近日，卢旺达计划利用湖底沼气燃烧产生的能量发电。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151221/047555.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/203/73/1990/129418568.jpg" alt="如何教孩子们理解全球性问题"></a><a target="_blank" href="http://tech.qq.com/a/20151221/047555.htm" title="如何教孩子们理解全球性问题">如何教孩子们理解全球性问题</a><span>说到儿童玩具，几十年来似乎没太大变化，比如没有一篇童话的公主是程序员或工程师。美国一位前教师培训主管想出了“多特侦探”这样的创意，向儿童传授公平贸易、性别特质和环保等知识。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151208/040534.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/65/247/1981/128877575.jpg" alt="人工光合作用：做与植物相似的事情"></a><a target="_blank" href="http://tech.qq.com/a/20151208/040534.htm" title="人工光合作用：做与植物相似的事情">人工光合作用：做与植物相似的事情</a><span>温室气体排放过多？除了植物可以光合作用吸收二氧化碳外。近日，美国科研人员正在努力完善人工光合作用，在没有植物的情况下完成植物该做的事情。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151208/039796.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/211/236/1981/128874916.jpg" alt="如何减少空气污染：给大气安装巨型净化器"></a><a target="_blank" href="http://tech.qq.com/a/20151208/039796.htm" title="如何减少空气污染：给大气安装巨型净化器">如何减少空气污染：给大气安装巨型净化器</a><span>我们可以像在家安装空气净化器一样，利用巨型净化器将大气中碳化合物抽取出来，进行压缩再利用，甚至可以制成珠宝。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151208/039175.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/202/234/1981/128874397.jpg" alt="木制芯片：可降解的环保新型芯片"></a><a target="_blank" href="http://tech.qq.com/a/20151208/039175.htm" title="木制芯片：可降解的环保新型芯片">木制芯片：可降解的环保新型芯片</a><span>全世界每年产生的电子垃圾多达数百万吨。近日，美国研究人员利用木材提取物制作出可降解的全新芯片。这种芯片可降解无污染，非常环保。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151208/038710.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/210/232/1981/128873895.jpg" alt="海平面上升威胁美国国家公园400亿美元资产"></a><a target="_blank" href="http://tech.qq.com/a/20151208/038710.htm" title="海平面上升威胁美国国家公园400亿美元资产">海平面上升威胁美国国家公园400亿美元资产</a><span>全球暖化造成的海平面上升，不但会对地球自然环境造成很大影响，也会给人类社会带来不可估量的财产损失。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151208/038439.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/207/232/1981/128873892.jpg" alt="替代能源成败的关键：电池技术"></a><a target="_blank" href="http://tech.qq.com/a/20151208/038439.htm" title="替代能源成败的关键：电池技术">替代能源成败的关键：电池技术</a><span>未来新型电池将对能源行业产生举足轻重的影响，全球电池存储市场规模可能在15年内达到4000亿美元。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151208/033541.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/3/230/1981/128873178.jpg" alt="机器人管理的自动化菜园：可全年供应蔬菜"></a><a target="_blank" href="http://tech.qq.com/a/20151208/033541.htm" title="机器人管理的自动化菜园：可全年供应蔬菜">机器人管理的自动化菜园：可全年供应蔬菜</a><span>在未来，菜地或许不再需要人类亲自耕种，机器人就可以完成，而且可以全年产出蔬菜。</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151030/027565.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/184/89/1958/127341829.jpg" alt="水力压裂法引发的争论"></a><a target="_blank" href="http://tech.qq.com/a/20151030/027565.htm" title="水力压裂法引发的争论">水力压裂法引发的争论</a><span>水力压裂是一种复杂而充满争议的技术。它是环境的灾难，还是环境的救星？</span>
+</li>
+<li>
+<a target="_blank" class="opic" href="http://tech.qq.com/a/20151030/026317.htm"><img src="http://img1.gtimg.com/tech/pics/hv1/175/89/1958/127341820.jpg" alt="漂浮的农场"></a><a target="_blank" href="http://tech.qq.com/a/20151030/026317.htm" title="漂浮的农场">漂浮的农场</a><span>新型水上农场的设计将生态理念发展到了极致，巨大的三层驳船容纳了鱼塘、花园和为整个设施供电的光伏面板。</span>
+</li>
+</div>
+<div id="LKDisputeList" bosszone="tech_Sequence" sop="tech_sequence_load"></div>
+<script type="text/javascript">
+function $(v) {return document.getElementById(v);}
+var xmlHttp='';     
+var listID='listZone';
+var loadUrl='/c/xprizelasted';
+
+var ggetTime = function(sDate){        // 修改输出时间  code by chuanwang
+    var span =/<(span|SPAN) class="?aTime"?>|<\/(span|SPAN)>/g;
+    trueTime = sDate.replace(span,"");
+    var tmp = trueTime.split(" "),dateToTs;
+    dateToTs=tmp[0].split("-")[0]+"/"+tmp[0].split("-")[1]+"/"+tmp[0].split("-")[2]+" "+tmp[1];
+    var date = new Date(dateToTs),
+    now = new Date(),
+    seconds = Math.ceil(Math.abs(now - date) / 3000),
+    minutes = Math.ceil(Math.abs(now - date) / 60000),
+    hours = Math.ceil(Math.abs(now - date) / 3600000), 
+    time;
+    if(seconds < 60){
+        return '<span class="aTime">约' + seconds + '秒前</span>';
+    }else if(minutes < 60){
+        return '<span class="aTime">约' + minutes + '分钟前</span>';
+    }else if(hours < 3){
+        return '<span class="aTime">约' + hours + '小时前</span>';
+    }
+    return '';
+}
+var firstStr='<div id='+listID+'>'+$(listID).innerHTML+'</div>';
+var span =/<(span|SPAN) class="?aTime"?>(.*?)<\/(span|SPAN)>/g;
+firstStr = firstStr.replace(span,function(word){return ggetTime(word)});
+function SplitPages(name,pageID,listID) {
+    this.name = name; 
+    this.pageID = pageID;   
+    this.page = 1; 
+    this.pageCount = 1;
+    this.argName = 'p'; 
+}
+function timer(){
+    var popUp = document.getElementById('Comment-Article-QQ');
+    popUp.style.display = "none";
+    document.body.appendChild(popUp);
+    document.documentElement.scrollTop  = 0;
+    document.body.scrollTop  = 0;
+}
+function cleartime(){}
+SplitPages.prototype.RequestHTML = function() {
+    try {xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");} 
+    catch(e){       
+        try {xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");} 
+        catch(e){xmlHttp=false;}
+    }
+    if(!xmlHttp&&typeof XMLHttpRequest!='undefined'){xmlHttp=new XMLHttpRequest();}
+    return xmlHttp;
+} 
+SplitPages.prototype.getStateChange = function() {  
+    if(xmlHttp.readyState == 4) { 
+        switch(xmlHttp.status){ 
+            case 200: 
+                var re =/<div id="listZone">(.*?)<\/div>/; 
+                var Html=xmlHttp.responseText.replace(re,"");//将剩下的text祛除<script>部分，插入模版页
+                $(listID).innerHTML  += Html;
+                break;
+            case 404:
+                alert('未找到您请求的页面，请重试或浏览本站其他精彩内容：）');
+                break;
+            default:
+                $(listID).innerHTML='';
+        } 
+    }
+} 
+SplitPages.prototype.loadMe = function(n) {
+    this.RequestHTML();
+    var url = loadUrl+'_'+n+'.htm?'+Math.random(999);
+    xmlHttp.onreadystatechange = this.getStateChange; 
+    xmlHttp.open("GET", url, true); 
+    xmlHttp.send(null);
+    
+}   
+SplitPages.prototype.loadFirst = function(n) {
+     $(listID).innerHTML=firstStr;
+}
+SplitPages.prototype.getUrlPage = function(){
+    var args = location.search;
+    var reg = new RegExp('[\?&]?' + this.argName + '=([^&]*)[&$]?', 'gi');
+    var chk = args.match(reg);
+    this.page = RegExp.$1; 
+    this.Output(RegExp.$1);
+    
+}
+SplitPages.prototype.checkPages = function(){
+    if (isNaN(parseInt(this.page))) this.page = 1;
+    if (isNaN(parseInt(this.pageCount))) this.pageCount = 1;
+    if (this.page < 1) this.page = 1;
+    if (this.pageCount < 1) this.pageCount = 1;
+    if (this.page > this.pageCount) this.page = this.pageCount;
+    this.page = parseInt(this.page);
+    this.pageCount = parseInt(this.pageCount);
+    
+}
+SplitPages.prototype.createHtml = function(mode){ 
+    var strHtml = '', prevPage = this.page - 1, nextPage = this.page + 1;
+    if (mode == '' || typeof(mode) == 'undefined') mode = 0;
+    
+    if (nextPage > this.pageCount) {
+        <!--strHtml += '<span class="loadmore"><a href="http://tech.qq.com/zt2015/xprize/" target="_blank">查看所有</a></span> ';-->
+		 strHtml += '<span class="loadmore">没有了，别点了</span> ';
+    } else {
+        strHtml += '<a class="loadmore" href="javascript:' + this.name + '.Output(' + nextPage + ');">更多&gt;&gt;</a>';
+    }    
+    return strHtml;
+    
+
+}
+SplitPages.prototype.Output = function(mode){
+    this.page=mode;
+    this.checkPages();
+   
+    
+    $(this.pageID).innerHTML = this.createHtml(mode);
+    if(this.page==1){
+        this.loadFirst(this.page);}
+    else{
+        this.loadMe(this.page);}
+    if(!!mode){
+        if(typeof(pgvMain) == 'function'){
+            pvCurDomain ="tech.qq.com";
+            pvCurUrl = "/";
+            pvRepeatCount=1
+            pgvMain();
+        }
+    }    
+    setTimeout('checkTag();', 1000)
+   
+    // getString.checkBigImg();
+}
+
+var checkTag = function(){   
+    var lists = document.getElementById("listZone"),
+        // Qtps = lists.getElementsByClassName("columnlisttag"),
+        Qtps_a = lists.getElementsByTagName("a"),
+        Qtps_p = lists.getElementsByTagName("p"),
+        Qtps = [],
+        xtimer = null;
+
+
+
+        // alert(Qtps_a.length)
+        for (var x = 0; x < Qtps_a.length; x++) {
+               if (Qtps_a[x].className == 'columnlisttag') {
+                Qtps.push(Qtps_a[x]);
+               }               
+           }
+        for(var y=0;y<Qtps_p.length;y++){
+            Qtps_p[y].innerHTML = substrname(Qtps_p[y].innerHTML,76)
+        }
+        // console.log(Qtps.length);
+        // alert(Qtps.length);
+
+    xtimer = setTimeout(function(){  
+
+        for (var i = 0; i < Qtps.length; i++) {
+         var columnfit = Qtps[i].innerHTML,
+             ems = Qtps[i].parentNode,
+             emas = ems.getElementsByTagName("a");            
+        
+        // delete undefined tag
+        for(var n= 0;n<emas.length;n++){
+           emas[n].innerHTML.indexOf("独家") != -1 ? emas[n].parentNode.removeChild(emas[n]):"";           
+        }             
+        switch (columnfit) {            
+            case 'recode':
+               // columnfit="这里是recode中文站"
+               appendTag(Qtps, i, 'recode','http://tech.qq.com/recode.htm','recode中文站');
+                break;
+            case 'Nowagain':
+               appendTag(Qtps, i, 'diezhao','http://tech.qq.com/zt2015/now_again/index.htm','叠照');
+               checkImgSize(Qtps, i,{width:300,height:220});
+                break;               
+            case 'bi':
+               appendTag(Qtps, i, 'bizwz','http://bi.qq.com/','Businessinsider中文站');
+                break;
+            case 'tnw':
+               appendTag(Qtps, i, 'tnwzwz','http://tech.qq.com/tnw.htm','TNW中文站');
+                break;
+           
+        }
+
+    }
+
+
+    }, 1000)
+  
+
+}
+   // check title lenght
+ var substrname = function(name, len) {
+   var _tmpname = '';
+   if (name.length > len) {
+     _tmpname = name.substring(0, len * 1 - 1) + "...";
+   } else {
+     _tmpname = name
+   };
+   return _tmpname;
+ }
+var appendTag = function(obj,i,Tag,href,des){
+    // alert(obj+" "+i+" "+Tag)   
+
+    var addweb = document.createElement("a");
+        addweb.href= href;
+        addweb.target = '_blank';
+        addweb.title = des;
+        addweb.className = Tag;
+        addFather = obj[i].parentNode.parentNode.parentNode.parentNode.parentNode;
+        // alert(addFather.className);
+        // console.log(addFather.className);           
+        addFather.appendChild(addweb);
+
+
+
+}
+
+var checkImgSize = function(obj,i,json){
+    var First_a = obj[i].parentNode.parentNode.parentNode.parentNode.parentNode.getElementsByTagName("a"),
+        ImgSize = First_a[0].getElementsByTagName("img")[0]; 
+        for (attr in json){
+           ImgSize.setAttribute(attr, json[attr]); 
+        } 
+    
+            
+       
+}
+// SplitPages.prototype.checkBigImg = function(){
+//      var list_s = document.getElementById("listZone"),
+//          Qtp_s = lists.getElementsByClassName("picc");
+//          console.log(Qtp_s.length);
+//     for (var i = 0; i < Qtp_s.length; i++) {
+//         var sims = Qtp_s[i].parentNode.getElementsByClassName("similarity")[0];
+//         if (sims) {
+//             sims.style.display="none";
+//         }
+        
+//     };
+// }
+</script><div id="pageZone"></div>
+<script type="text/javascript">
+    var getString = new SplitPages('getString','pageZone');
+    getString.pageCount = 4;
+    getString.Output();
+</script>
+<!--[if !IE]>|xGv00|34b3aba1ea24c111c1e074a0bb9829f2<![endif]-->
+				</ul>
+				<!-- 正文结束 -->
+			</div>
+			<div class="bbs"></div>
+		</div>
+		<!--<div class="extra">
+
+			<div class="catbox">
+
+				<div class="hd">
+					<h3>SNS账号</h3>
+				</div>
+				<div class="bd">
+					<ul>
+						<table class="img_ct" border="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td>
+										<div class="img_area">
+											<a href="https://twitter.com/xprize" target="_blank">
+												<img width=165px src="http://img1.gtimg.com/tech/pics/hv1/244/84/1803/117261739.jpg" />
+											</a>
+											<br />
+										</div>
+									</td>
+									<td>
+										<div class="img_area">
+											<a href="https://www.facebook.com/xprize" target="_blank">
+												<img width=165px  src="http://img1.gtimg.com/tech/pics/hv1/39/85/1803/117261789.jpg" />
+											</a>
+											<br />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="img_area">
+											<a href="https://plus.google.com/102997835182088845710/posts" target="_blank">
+												<img src="http://img1.gtimg.com/tech/pics/hv1/40/85/1803/117261790.jpg" />
+											</a>
+											<br />
+										</div>
+									</td>
+									<td>
+										<div class="img_area">
+											<a href="https://www.youtube.com/user/xprize/" target="_blank">
+												<img src="http://img1.gtimg.com/tech/pics/hv1/41/85/1803/117261791.jpg" />
+											</a>
+											<br />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="img_area">
+											<a href="https://www.linkedin.com/company/x-prize-foundation" target="_blank">
+												<img src="http://img1.gtimg.com/tech/pics/hv1/42/85/1803/117261792.jpg" />
+											</a>
+											<br />
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</ul>
+				</div>
+
+			</div>
+		</div>-->
+	</div>
+
+	<script src="//tech.qq.com/00Jamesdu/2015/column/xprize/js/default.js"></script>
+
+	<!--公共 copyright-->
+	<script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+<style>
+.tcopyright {width:960px;margin:0 auto;padding:8px 0;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both;}
+.tcopyright .en{font-family:Arial;}
+.tcopyright a{color:#333;text-decoration: none;}
+.tcopyright a:hover{color:#bd0a01;text-decoration: underline;}
+</style>
+<div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+	<div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+	</div>
+  	<div class="en">Copyright &copy; 1998 - 2020 Tencent. All Rights Reserved</div>
+    <div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+	</div>
+</div><!--[if !IE]>|xGv00|b6614ae390f3ba6a8cbcc269055b42da<![endif]-->
+	<!--pgv 20160801 by 39815--><script charset="gbk" src="//mat1.gtimg.com/ping.js"></script>
+
+<script>!function(t,e){"use strict";function a(){var t,e,a=(""+p.catalog_full).replace(/-/g,".").replace(/_/g,"-");p.topic&&p.topic.name&&p.topic.name.length>0?(t="L.",e="Z."+a+"."+p.topic.name):(t="L."+a,e="Z.");var n="W."+p.type,o="M."+p.tpl.type+p.tpl.stype,i="P."+(""+p.site).replace(/_/g,"-"),c="F."+f,l=t+"_"+e+"_"+n+"_"+o+"_"+i+"_"+c;l&&r({pgUserType:l})}function n(t){o(e,"click",function(e){var a=e.target;"img"===a.tagName&&(a=a.parentNode);var n=a.tagName.toLowerCase(),o=a.getAttribute("href");if(!o||o.indexOf("qqcom_pgv_from=")>-1)return!1;if("a"===n&&a.hostname&&a.hostname.indexOf("qq.com")>-1){var r=o+(a.search?"&":"?")+"qqcom_pgv_from="+t;a.setAttribute("href",r)}})}function o(a,n,o){var r=function(a){return a=a||t.event,a.target||(a.target=a.srcElement||e),3===a.target.nodeType&&(a.target=a.target.parentNode),a};return a.addEventListener?a.addEventListener(n,function(t){o.call(t.currentTarget,r(t))},!1):a.attachEvent("on"+n,function(t){o.call(a,r(t))}),!0}if(!t||!t.location||"function"!=typeof t.pgvMain)return!1;var r=function(){var e=arguments;setTimeout(function(){t.pgvMain.apply(this,e)},0)},i=location.search.replace(/adtag=client\.qq\.\d+_\.0/i,"from=tips"),c=["aio","tips"],f="def";location.search.indexOf("qqcom_pgv_from=")>-1&&(f=location.host+location.pathname+location.search);var p=t.ARTICLE_INFO||null,l=p&&p.catalog_full;if(l)for(var g=0;g<c.length;g+=1)if(i.indexOf(c[g])>-1){n(c[g]);break}l&&a(),l||("undefined"!=typeof whatCatalog&&(t.pvCSTM=t.whatCatalog),r({pgUserType:"F."+f}))}(window,document);</script><!--/pgv 20160801-->
+<!-- 视频来源ptag --><script src="//mat1.gtimg.com/v/ptag/ptag_1.2.js" async="true"></script>
+<!--[if !IE]>|xGv00|a1d505b81f0731c97405c05986e06bb8<![endif]-->
+<!--[if !IE]>|xGv00|e495268dae03726664c77551e8df25e2<![endif]-->
+
+</body>
+</html><!--[if !IE]>|xGv00|ec6b8a27d9b825b0f487c6f776ca3478<![endif]-->

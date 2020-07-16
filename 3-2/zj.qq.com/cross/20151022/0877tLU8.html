@@ -1,0 +1,570 @@
+<!-- <html><head><title></title></head><body></body></html>  -->
+<!DOCTYPE HTML>
+<html>
+<!--
+Cross Builder V2.0
+page version: 
+by 网络媒体事业群办公室_商业体验中心
+合作请RTX shelleyhe
+-->
+<head>
+	<meta charset="gb2312">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="Keywords" content="">
+	<title>我是车手集合页</title>
+    <!-- //mat1.gtimg.com/www/mb/cb2/global/assets/css/crossbuilder.css
+         ../../../global/assets/css/crossbuilder.css
+    -->
+    <link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb2/global/assets/css/crossbuilder.css">
+   	<link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb2/publish/prj_usual_1/assets/css/pbt_style_v.1.4.css">
+<link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb2/publish/prj_usual_1/assets/css/mc_dianzan/dianzan_style_v1.0.css">
+    <!-- html5.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+        <script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/html5.js"></script>
+    <![endif]-->
+
+    <style>
+
+			/* 背景颜色设置 */
+        html, .pbt_intro_wrapper.style-0 .box_icon{ background-color: #fafafa!important;}
+
+        /* 整体颜色设置 */
+        div,span,p,a, h2, h3,h4{color: #555555!important;}
+        h2,h3,h4{border-color:#555555!important;}
+        /* 针对财经频道 */
+        @media only screen and (max-width: 480px){
+            /* 针对财经频道 */
+            .pbt_container.size_full {margin: 0px auto 10px auto; }
+        }
+
+    </style>
+</head>
+
+<body data-src="">
+<div id='wx_pic' style='margin:0 auto;display:none;'><img src='' /></div>
+<link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb/publish/assets/css/cb_toolbar_v2.css"><div class="cb_toolbar" id="logoPanel"><div class="mod_inner"><div class="logo"><a href="http://zj.qq.com" class="logo_zj_qq_com"></a></div><div class="link"><ul><li><a href="http://www.qq.com" target="_blank">腾讯网首页</a></li><li class="end"><a href="http://www.qq.com/map/" target="_blank">网站导航</a></li></ul></div>
+            <script language="JavaScript">
+                var hdPic ={url:location.href,title:"0",pic: [], pic1: []};
+                 var cbtb_url = "";
+                    var login = {
+                        loginSuccess: function(){
+                            ptlogin2_onClose();
+                            cbtb_init();
+                        }
+                    };
+            </script>
+            <div class="shareList">
+                <div class="share_btn">
+                    <span>分享到：</span>
+                </div>
+                    <ul class="menu-bd">
+                        <li class="share2weibo" id="cb_share2weibo" title="转播腾讯微博"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTweibo"></a></li>
+                        <li class="share2qzone" id="cb_share2qzone" title="分享到我的QQ空间"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTzone"></a></li>
+                        <li class="share2qq" id="cb_share2qq" title="分享到QQ好友"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTQQ"></a></li>
+                        <li class="share2sina" id="cb_share2sina" title="转播到新浪微博"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTsina"></a></li>
+                        <li class="share2wx" id="cb_share2wx" title="分享到微信"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTwx"></a></li>
+                        <li class="share2wxf" id="cb_share2wxf" title="分享到朋友圈"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTwxf"></a></li>
+                    </ul>
+
+                <div class="tb_wx_share" id="cb_share_div" style="display:none;">
+                        <div class="tb_wx_share_triangle" id="cb_ts_triangle"></div>
+                        <div class="tb_wx_share_left"><img src="http://inews.gtimg.com/newsapp_ls/0/2291571681/0"></div>
+                        <div class="tb_wx_share_right">
+                          <ul>
+                            <li class="a"><div></div><p>扫一扫二维码</p></li>
+                            <li class="i"></li>
+                            <li class="b"><div></div><p>点击右上角图标</p></li>
+                            <li class="i"></li>
+                            <li class="c" id="cb_ts_wx"><div></div><p>发送给微信好友</p></li>
+                            <li class="d" id="cb_ts_wxf"><div></div><p>分享到朋友圈</p></li>
+                          </ul>
+                        </div>
+                    </div>
+            </div>
+            <script language="JavaScript" src="//mat1.gtimg.com/www/mb/cb/publish/assets/js/cb_share_v1.js"></script>
+        </div><div class="tb_login_content">
+                <div id="tb_login_content_in" style="display:none;">
+                    <a href="javascript:void(0);" id="http_login">
+                        [登录]
+                    </a>
+                </div>
+                <div id="tb_login_content_out" style="display:none;">
+                    <span>
+                        您好，
+                        <i id="tb_qq_uid">
+                        </i>
+                    </span>
+                    <a href="javascript:void(0);" id="http_logout">
+                        [退出]
+                    </a>
+                </div>
+            </div>
+            <div id="login_div" class="login_div">
+                <iframe id="login_frame" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div id="overlay"></div>
+        </div>
+        <script language="JavaScript" src="http://imgcache.qq.com/ptlogin/ac/v9/js/ptloginout.js"></script>
+        <script language="JavaScript" src="//mat1.gtimg.com/www/mb/cb/publish/assets/js/cbtb_qq_wx_userlogin_v1.js" charset="utf-8"></script>
+        <script language="JavaScript">
+            cbtb_init();
+        </script><!-- Main Content -->
+<div class="pbt_main_container pbt_m_main anim main_content">
+
+    <div class="pbt_container size_full">
+        <div class="pbt_one_grid">
+            <div class="pbt_img_wrap one init-banner">
+                <img class="MobileOrPC lazyCB" data-size="" data-original="" data-mobile-src="" data-mobile-size="x" data-pc-src="http://inews.gtimg.com/newsapp_ls/0/79084054/0" data-pc-size="1440x300" >
+            </div>
+        </div>
+    </div>
+    <div class="pbt_container">
+        <div class="pbt_intro_wrapper style-0">
+            <!-- 边框配色 : 如果为 Default 则不设置 -->
+            <div class="box_wrapper" style="border-color: #D80000">
+                
+            <div class="box_icon top">
+                <!-- 框顶配图 -->
+                <img src="//mat1.gtimg.com/www/mb/cb2/publish/prj_usual_1/assets/images/intro_style_0_2x.png">
+            </div>
+        
+            <div class="box_icon bottom">
+                <!-- 框底配图 -->
+                <img src="//mat1.gtimg.com/www/mb/cb2/publish/prj_usual_1/assets/images/intro_style_1_2x.png">
+            </div>
+        
+                <div class="pbt_text_wrap pc-style">                    
+                    <p>
+                        <!-- 标题颜色 及 标题文字-->
+                        <span class="title" style="color:#4B4B4B!important">浙江地区首档网络试驾真人秀</span>
+                        <!-- PC端文字详情 -->
+                        《我是车手》是腾讯大浙网汽车频道的一档全新栏目，摒弃传统专业汽车编辑试驾的套路，邀请各路玩咖、普通消费者、各行业意见领袖来亲身试驾，告诉你他们最真实的客观的试驾体验。
+                    </p>
+                </div>
+                <div class="pbt_text_wrap mobile-style">
+                    <p>
+                        <!-- 标题颜色 及 标题文字 -->
+                        <span class="title" style="color:#4B4B4B!important">浙江地区首档网络试驾真人秀</span>
+                        <!-- Mobile端文字详情 -->
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pbt_container">
+        <div class="po_container">
+            <div class="row">
+                <ul>
+                    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20170925/40DPDu26.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="320x240" data-original="http://inews.gtimg.com/newsapp_ls/0/2291434338/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20170925/40DPDu26.html" data-vid="" target="_blank" >白羊女神试驾新宝马5系</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20170925/40DPDu26.html" data-vid="" target="_blank"><p class="pbt_inline_title" style="box-sizing: border-box; margin: 0px 0px 15px; padding: 0px; border-width: 0px; border-style: initial; border-image: initial; list-style: none; outline: 0px; color: rgb(85, 85, 85)!important; font-size: 18px; line-height: 1.4; font-family: Helvetica, Tahoma, Arial, &quot;Microsoft YaHei&quot;, 寰?蒋闆呴粦, SimSun, 瀹嬩綋, Heiti, 榛戜綋, sans-serif; white-space: normal; background-color: rgb(250, 250, 250)!important; border-color: rgb(85, 85, 85)!important !important;">我喜欢的车要大，还要操控好</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20170915/zj1x37O7.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="320x240" data-original="http://inews.gtimg.com/newsapp_ls/0/2291458096/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20170915/zj1x37O7.html" data-vid="" target="_blank" >别克老车主体验新君威</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20170915/zj1x37O7.html" data-vid="" target="_blank"><p>别克老君威车主试驾新君威</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20170930/4aq6TR28.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="320x240" data-original="http://inews.gtimg.com/newsapp_ls/0/2291488490/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20170930/4aq6TR28.html" data-vid="" target="_blank" >“都市白领”的充电之旅</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20170930/4aq6TR28.html" data-vid="" target="_blank"><p>都市白领体验新能源车充电之旅</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    <div class="clearfix"></div>
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20170704/083Zx1RS.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="320x240" data-original="http://inews.gtimg.com/newsapp_ls/0/1861482749/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20170704/083Zx1RS.html" data-vid="" target="_blank" >程序员试驾柯迪亚克</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20170704/083Zx1RS.html" data-vid="" target="_blank"><p>我喜欢开大空间硬派SUV</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20170421/W283a8MZ.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="320x240" data-original="http://inews.gtimg.com/newsapp_ls/0/1488212160/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20170421/W283a8MZ.html" data-vid="" target="_blank" >阳光运动男试驾昂克赛拉</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20170421/W283a8MZ.html" data-vid="" target="_blank"><p>我喜欢充满时尚潮流气息的车</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://hangzhou.auto.qq.com/zt2015/tesla_0905/index.htm" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/79122851/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://hangzhou.auto.qq.com/zt2015/tesla_0905/index.htm" data-vid="" target="_blank" >CEO试驾特斯拉P85D</a></h3><a class="btn_use" href="http://hangzhou.auto.qq.com/zt2015/tesla_0905/index.htm" data-vid="" target="_blank"><p>特斯拉颠覆了传统燃油汽车弊端更环保。</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    <div class="clearfix"></div>
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://hangzhou.auto.qq.com/yuanchuanglanmu/woshicheshou/landroversport/index.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/79122985/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://hangzhou.auto.qq.com/yuanchuanglanmu/woshicheshou/landroversport/index.html" data-vid="" target="_blank" >路虎迷试驾新揽运</a></h3><a class="btn_use" href="http://hangzhou.auto.qq.com/yuanchuanglanmu/woshicheshou/landroversport/index.html" data-vid="" target="_blank"><p>老路虎车主试驾新路虎揽胜运动版。</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://hangzhou.auto.qq.com/a/20150430/028365.htm" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/79123333/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://hangzhou.auto.qq.com/a/20150430/028365.htm" data-vid="" target="_blank" >摩托玩咖试驾昂科威</a></h3><a class="btn_use" href="http://hangzhou.auto.qq.com/a/20150430/028365.htm" data-vid="" target="_blank"><p>途观终结者，一辆大排量豪华车的感觉。</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20151210/q1j4M125.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/193952778/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20151210/q1j4M125.html" data-vid="" target="_blank" >美系控试驾野马2.3T</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20151210/q1j4M125.html" data-vid="" target="_blank"><p>不用迷信5.0的动力，开这车绝对不“娘”！</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    <div class="clearfix"></div>
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20160401/0OzO026u.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/240677393/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20160401/0OzO026u.html" data-vid="" target="_blank" >美女老板试驾斯柯达昕动</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20160401/0OzO026u.html" data-vid="" target="_blank"><p>我喜欢的车要精致小巧却又不失大空间<br/></p><p><br/></p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://hangzhou.auto.qq.com/zt2016/sjftSUVxl/index.htm" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/284958330/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://hangzhou.auto.qq.com/zt2016/sjftSUVxl/index.htm" data-vid="" target="_blank" >户外三剑客测3款福特SUV</a></h3><a class="btn_use" href="http://hangzhou.auto.qq.com/zt2016/sjftSUVxl/index.htm" data-vid="" target="_blank"><p>在这个春天，开着这三款车去寻找诗和远方。</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://hangzhou.auto.qq.com/zt2016/sjskdxd/index.htm" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/284945040/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://hangzhou.auto.qq.com/zt2016/sjskdxd/index.htm" data-vid="" target="_blank" >90后小鲜肉试驾斯柯达昕动</a></h3><a class="btn_use" href="http://hangzhou.auto.qq.com/zt2016/sjskdxd/index.htm" data-vid="" target="_blank"><p>颜值高空间大，我对昕动有种一见倾心的感觉！</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    <div class="clearfix"></div>
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20160420/9v78ScP2.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/315101448/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20160420/9v78ScP2.html" data-vid="" target="_blank" >改装狂人试驾宝马535Li</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20160420/9v78ScP2.html" data-vid="" target="_blank"><p>对车不再局限于性能，舒适性也很重要。</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20160601/192TZ7zZ.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/338047863/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20160601/192TZ7zZ.html" data-vid="" target="_blank" >85后电商玩咖试驾比亚迪唐</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20160601/192TZ7zZ.html" data-vid="" target="_blank"><p>我追求驾驶乐趣和家庭实用的双重需求</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://hangzhou.auto.qq.com/zt2016/sjbkakw/index.htm" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/411691462/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://hangzhou.auto.qq.com/zt2016/sjbkakw/index.htm" data-vid="" target="_blank" >80后金融精英试驾昂科威20T</a></h3><a class="btn_use" href="http://hangzhou.auto.qq.com/zt2016/sjbkakw/index.htm" data-vid="" target="_blank"><p>选昂科威可以和家人更好的享受生活</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    <div class="clearfix"></div>
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://hangzhou.auto.qq.com/zt2016/wscsxtl/index.htm" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="320x240" data-original="http://inews.gtimg.com/newsapp_ls/0/786195611/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://hangzhou.auto.qq.com/zt2016/wscsxtl/index.htm" data-vid="" target="_blank" >专业技师评测雪铁龙C4L</a></h3><a class="btn_use" href="http://hangzhou.auto.qq.com/zt2016/wscsxtl/index.htm" data-vid="" target="_blank"><p>为你揭秘拔河冠军车背后的故事<br/></p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20161229/j87DIm53.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="307x230" data-original="http://inews.gtimg.com/newsapp_ls/0/1075961935/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20161229/j87DIm53.html" data-vid="" target="_blank" >视觉设计师试驾瑞风A60</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20161229/j87DIm53.html" data-vid="" target="_blank"><p>我喜欢的车要大气豪华，开出去有面子</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20170106/6DSH346F.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="307x230" data-original="http://inews.gtimg.com/newsapp_ls/0/1075962089/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20170106/6DSH346F.html" data-vid="" target="_blank" >美女教师试驾众泰E200</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20170106/6DSH346F.html" data-vid="" target="_blank"><p>我喜欢的车要呆萌可爱，还要好开好停</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    <div class="clearfix"></div>
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20161229/DOt2767P.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="307x230" data-original="http://inews.gtimg.com/newsapp_ls/0/1075951134/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20161229/DOt2767P.html" data-vid="" target="_blank" >健身房老板试驾宝马750L</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20161229/DOt2767P.html" data-vid="" target="_blank"><p>就算是舒适取向的车，动力也必须要好</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20161228/T49P50Oq.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="307x230" data-original="http://inews.gtimg.com/newsapp_ls/0/1075955003/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20161228/T49P50Oq.html" data-vid="" target="_blank" >淘宝店主试驾别克昂科拉</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20161228/T49P50Oq.html" data-vid="" target="_blank"><p>车的外观要年轻运动，空间要宽敞</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20161229/40Gu7D4P.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="307x230" data-original="http://inews.gtimg.com/newsapp_ls/0/1075953960/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20161229/40Gu7D4P.html" data-vid="" target="_blank" >保险精英试驾斯柯达YETI</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20161229/40Gu7D4P.html" data-vid="" target="_blank"><p>我喜欢造型硬朗 空间大的车</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    <div class="clearfix"></div>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>                        
+    </div>
+
+    <div class="pbt_container">
+        <div class="po_container">
+            <div class="row">
+                <ul>
+                    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://zj.qq.com/cross/20151010/813VR7pU.html" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/79121774/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://zj.qq.com/cross/20151010/813VR7pU.html" data-vid="" target="_blank" >杭漂美女试驾福克斯</a></h3><a class="btn_use" href="http://zj.qq.com/cross/20151010/813VR7pU.html" data-vid="" target="_blank"><p>我喜欢的车要颜值高，还要开着轻松。</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://hangzhou.auto.qq.com/zt2015/530le0929/index.htm" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/79122232/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://hangzhou.auto.qq.com/zt2015/530le0929/index.htm" data-vid="" target="_blank" >留德才子试混动宝马</a></h3><a class="btn_use" href="http://hangzhou.auto.qq.com/zt2015/530le0929/index.htm" data-vid="" target="_blank"><p>喜欢车的初衷是肾上腺素飙升的感觉。</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    
+        <!-- 如果没有图片 addClass(noPic) -->
+        <li class="col third ">
+            <div class="header">
+                <a href="http://hangzhou.auto.qq.com/zt2015/wscs_0723/index.htm" data-vid="" target="_blank" >
+                    <img class="lazyCB" data-size="" data-original="http://inews.gtimg.com/newsapp_ls/0/79122475/0"></a>
+            </div>
+            <div class="detail">
+                <h3><a href="http://hangzhou.auto.qq.com/zt2015/wscs_0723/index.htm" data-vid="" target="_blank" >80后老板试驾斯巴鲁</a></h3><a class="btn_use" href="http://hangzhou.auto.qq.com/zt2015/wscs_0723/index.htm" data-vid="" target="_blank"><p>我喜欢纯粹的汽车应有的功能和乐趣。</p></a>
+            </div>
+            <div class="clearfix"></div>
+        </li>
+    <div class="clearfix"></div>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>                        
+    </div>
+    <!-- 版权页  -->
+    <div id="copyrightPanel">
+        <div class="just-pc">
+            <p>Copyright &copy; 1998 - 2017 Tencent. All Rights Reserved</p>
+            <p>腾讯公司 版权所有</p>
+        </div>
+            </div>
+    <!-- 版权页 End  -->
+</div>
+<!-- Button : Goto Top -->
+<div id="pbt_backToTop" style="background-color:#eeeeee; visibility:visible;"></div>
+
+<script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/jquery-1.10.2.min.js"></script>        <!-- 必需加载 ：jQuery -->
+<script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/cbtools.1.0.js"></script>              <!-- Global Tools -->
+<script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/jquery.lazyload.js"></script>          <!-- 必需加载 ：lazyload -->
+<script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/require.js"></script>
+<script src="//mat1.gtimg.com/www/mb/cb/publish/assets_auto/js/api_v2.js" charset="utf-8"></script>
+<!-- 微信登陆态获取-->
+<script src="//mat1.gtimg.com/www/mb/cb2/publish/js/comment_v3.js"></script>
+
+<script type="text/javascript">
+var device = '';
+var chartDataArr = [];
+
+$(function() {
+		try{
+		//分享
+        var wxShareUrl = "http://zj.qq.com/cross/20151022/0877tLU8.html";
+		if(window.location.host.indexOf('m.')=="0" || wxShareUrl==""){
+			var wxShareUrl= window.location.href;
+			wxShareUrl = wxShareUrl.replace(window.location.hash,"");
+			wxShareUrl = wxShareUrl.replace(window.location.search,"");
+		}
+		cbApi.wexin("",wxShareUrl,"我是车手集合页","详情：http://zj.qq.com/cross/20151022/0877tLU8.html");
+        //腾讯直播qqlive app------------------------------
+        if(isQQLiveApp()){
+            wxShareUrl += '?';
+            initQQLiveApp();
+        }
+	}catch(e){}
+    cbTools.tencentNewsLinkFix();
+    var page = {
+        init : function(){
+            requirejs.config({
+                baseUrl: '//mat1.gtimg.com/www/mb/cb2/publish/prj_usual_1/assets/js/',        //* Set : base-root :: //mat1.gtimg.com/www/mb/cb2/publish/prj_usual_1/assets/js/
+                paths: {
+                    "global-tools": "//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools"   //* Set : my-define-src`
+                }
+            });
+
+            // Start loading the main app file.
+            requirejs(['Main_v3.8']);
+        }
+    }
+
+    page.init();
+
+    function isQQLiveApp (){
+        var u = navigator.userAgent.toLowerCase();
+        if(u.indexOf('qqlivebrowser') > -1 || u.indexOf('qqlivebroadcast') > -1 ){
+            return true;
+        }
+        return false;
+    }
+    function initQQLiveApp(){
+        //alert(typeof TenvideoJSBridge )
+        var obj = {
+                "hasRefresh":false,
+                "hasShare":true,
+                "hasFollow":false,
+                "shareInfo":{
+                "title":"我是车手集合页",
+                "subTitle":"我是车手集合页",
+                "singleTitle":"我是车手集合页",
+                "content":"详情：http://zj.qq.com/cross/20151022/0877tLU8.html",
+                "contentTail":"",
+                "imageUrl":"",
+                "url":wxShareUrl
+                }
+            }
+        if (typeof TenvideoJSBridge == "object") {
+            TenvideoJSBridge.invoke("setMoreInfo", obj);
+        } else {
+            if(document.addEventListener){
+                document.addEventListener("onTenvideoJSBridgeReady", function(){
+                    TenvideoJSBridge.invoke("setMoreInfo", obj);
+                }, false);
+            } else if(document.attachEvent){
+                document.attachEvent("onTenvideoJSBridgeReady", function(){
+                    TenvideoJSBridge.invoke("setMoreInfo", obj);
+                });
+            }
+        }
+    }
+});
+
+</script>
+	<script language="javascript" src="//mat1.gtimg.com/ping.js"></script>
+	<script language="javascript">
+	if(typeof(pgvMain) == 'function') pgvMain();
+	</script>
+	</body>
+</html>
+<!--[if !IE]>|xGv00|e01d6bf125a7608c516b5179093f71c0<![endif]-->

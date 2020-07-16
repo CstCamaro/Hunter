@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>腾讯体育兑换中心</title>
+    <script>
+        var getParams = function (search) {
+            var queryString = search || window.location.search.split('?')[1];
+            var result = {};
+            if (queryString) {
+                var queryList = queryString.split('&');
+                for (var i = 0; i < queryList.length; i++) {
+                    var keyValue = queryList[i].split('=');
+                    result[keyValue[0]] = decodeURIComponent(keyValue[1]);
+                }
+            }
+            return result;
+        }
+        var code = getParams().code ? '?code=' + getParams().code : '';
+        window.location.href = location.protocol + '//sports.qq.com/mvip/card.htm' + code;
+    </script>
+</head>
+<body>
+<script src="//mat1.gtimg.com/sports/kbsweb2/qosboss.js?app=h5_card_index"></script>
+</body>
+</html><!--[if !IE]>|xGv00|28d92d5846f05347e864abe937a369dc<![endif]-->

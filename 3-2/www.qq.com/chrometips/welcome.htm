@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>感谢订阅！腾讯网推荐服务</title>
+<meta name="description" content="感谢订阅腾讯网推荐服务">
+<meta name="keywords" content="推荐服务,腾讯网,腾讯,Tencent,QQ">
+<link href="//mat1.gtimg.com/news/lmz/navnotice/css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="//mat1.gtimg.com/libs/animate/3.5.0/animate.css"/>
+<script type="text/javascript" src="//mat1.gtimg.com/www/mobi/js/jquery.min.js"></script>
+<script>
+(function($){
+    $(document).ready(function () {
+        var pt2= $(".section2").offset().top,
+        	pt3 = $(".section3").offset().top,
+        	pt4 = $(".section4").offset().top,
+        	pt5 = $(".section5").offset().top,
+        	h2 = $(".section2").height()/2,
+        	h3 = $(".section3").height(),
+        	h4 = $(".section4").height()/2,
+        	h5 = $(".section5").height()/2;
+        $(window).scroll(function () {
+            if (pt2 + h2 <= ($(window).scrollTop()+$(window).height())) {
+                $(".stars").addClass("leftIn").show();
+                $(".section2 .bigtxt").addClass("rightIn").show();
+            }
+            if (pt3 + h3 <= ($(window).scrollTop()+$(window).height())) {
+                $(".section3 .zdbs").addClass("leftInbounce").show();
+                $(".section3 .subtxt").addClass("rightInbounce").show();
+            }
+            if (pt4 + h4 <= ($(window).scrollTop()+$(window).height())) {
+                $(".section4 .bigtxt").addClass("leftIn").show();
+                $(".section4 .paopao").addClass("rightIn").show();
+                setTimeout(function(){
+                	$(".section4 .paopao").addClass("tada");
+                },1000);
+            }
+            if (pt5 + h5 <= ($(window).scrollTop()+$(window).height())) {
+                $(".section5 .un1").addClass("upIn").show();
+                $(".section5 .un2,.section5 .un3").addClass("upIn").show();
+                $(".section5 .mark").addClass("rightIn").show();
+                $(".section5 .settings").addClass("pulseIn").show();
+            }
+        });
+		$(".unsubscribe").on("click",function(){
+			$("html,body").stop().animate({scrollTop:pt5},1000)
+		});
+    });
+})(jQuery);
+</script>
+<style>.un3{display:none;margin-bottom:24px;}.section5{height: 995px;background: url(//mat1.gtimg.com/news/lmz/navnotice/images/bg5new.jpg) center no-repeat;}</style>
+</head>
+<body>
+<!-- 全站流量统计代码 开始 -->
+<!--pgv 20160801 by 39815<script charset="gbk" src="//pingjs.qq.com/ping.js"></script>-->
+<!--pgv 20181101 by suxiawang-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js" charset="gbk"></script>
+
+<script>!function(t,e){"use strict";function a(){var t,e,a=(""+p.catalog_full).replace(/-/g,".").replace(/_/g,"-");p.topic&&p.topic.name&&p.topic.name.length>0?(t="L.",e="Z."+a+"."+p.topic.name):(t="L."+a,e="Z.");var n="W."+p.type,o="M."+p.tpl.type+p.tpl.stype,i="P."+(""+p.site).replace(/_/g,"-"),c="F."+f,l=t+"_"+e+"_"+n+"_"+o+"_"+i+"_"+c;l&&r({pgUserType:l})}function n(t){o(e,"click",function(e){var a=e.target;"img"===a.tagName&&(a=a.parentNode);var n=a.tagName.toLowerCase(),o=a.getAttribute("href");if(!o||o.indexOf("qqcom_pgv_from=")>-1)return!1;if("a"===n&&a.hostname&&a.hostname.indexOf("qq.com")>-1){var r=o+(a.search?"&":"?")+"qqcom_pgv_from="+t;a.setAttribute("href",r)}})}function o(a,n,o){var r=function(a){return a=a||t.event,a.target||(a.target=a.srcElement||e),3===a.target.nodeType&&(a.target=a.target.parentNode),a};return a.addEventListener?a.addEventListener(n,function(t){o.call(t.currentTarget,r(t))},!1):a.attachEvent("on"+n,function(t){o.call(a,r(t))}),!0}if(!t||!t.location||"function"!=typeof t.pgvMain)return!1;var r=function(){var e=arguments;setTimeout(function(){t.pgvMain.apply(this,e)},0)},i=location.search.replace(/adtag=client\.qq\.\d+_\.0/i,"from=tips"),c=["aio","tips"],f="def";location.search.indexOf("qqcom_pgv_from=")>-1&&(f=location.host+location.pathname+location.search);var p=t.ARTICLE_INFO||null,l=p&&p.catalog_full;if(l)for(var g=0;g<c.length;g+=1)if(i.indexOf(c[g])>-1){n(c[g]);break}l&&a(),l||("undefined"!=typeof whatCatalog&&(t.pvCSTM=t.whatCatalog),r({pgUserType:"F."+f}))}(window,document);</script><!--/pgv 20160801-->
+<!-- 视频来源ptag --><script src="//mat1.gtimg.com/v/ptag/ptag_1.2.js" async="true"></script>
+<!--[if !IE]>|xGv00|a1d505b81f0731c97405c05986e06bb8<![endif]-->
+<!--[if !IE]>|xGv00|acbdc96983b52069d1691358cae3dd24<![endif]-->
+<!-- 全站流量统计代码 结束 -->
+    <div class="section1">
+    	<div class="layout">
+	    	<div class="logo"><img src="//mat1.gtimg.com/news/lmz/navnotice/images/logo.png"></div>
+			<div class="thx">
+				<div class="txt">感谢<span>订阅！</span></div>
+				<div class="txt gxh">腾讯网个性化推荐服务</div>
+				<div class="unsubscribe">取消订阅</div>
+			</div>
+			<div class="pic">
+				<div class="notice"></div>
+			</div>
+    	</div>
+    </div>
+    <div class="section2">
+    	<div class="layout">
+			<div class="stars">
+				<div class="pc_star">
+					<div class="pc_star_1"></div>
+					<div class="pc_star_2"></div>
+				</div>
+				<img class="avatar1" src="//mat1.gtimg.com/news/lmz/navnotice/images/s1.png" width="70">
+				<img class="avatar2" src="//mat1.gtimg.com/news/lmz/navnotice/images/s2.png" width="70">
+				<img class="avatar3" src="//mat1.gtimg.com/news/lmz/navnotice/images/s3.png" width="70">
+				<img class="avatar4" src="//mat1.gtimg.com/news/lmz/navnotice/images/s4.png" width="90">
+			</div>
+			<div class="bigtxt">
+				<div>重大比赛结果</div>
+				<div class="subtxt">全球热点赛事，无时差追踪</div>
+			</div>
+    	</div>
+    </div>
+    <div class="section3">
+    	<div class="layout">
+			<div class="bigtxt">
+				<div class="zdbs">NBA 最新动态</div>
+				<div class="subtxt">NBA 战绩，聚焦明星球员与战队</div>
+			</div>
+    	</div>
+    </div>
+    <div class="section4">
+    	<div class="layout">
+			<div class="bigtxt">
+				<div>猜你喜欢的新闻</div>
+				<div class="subtxt">个性化算法，量身定制新闻推荐</div>
+			</div>
+			<div class="paopao"></div>
+    	</div>
+    </div>
+    <div class="section5">
+    	<div class="layout">
+			<div class="untit">如何取消订阅？</div>
+			<ul>
+				<li class="un1">
+					<div>1. 在通知中点击齿轮图标</div>
+					<div class="extxt">例如：</div>
+					<div class="expic expic1">
+						<img src="//mat1.gtimg.com/news/lmz/navnotice/images/notice.jpg">
+						<div class="tips">
+							<div class="mark"></div>
+							<div class="settings"></div>
+						</div>
+					</div>
+				</li>
+				<li class="un3">
+					<div>2. 或点击 Chrome 或 QQ 浏览器左上角选单  >  选取 “<strong>设置</strong>”  ></div>
+					<div class="extxt">页面下方点选 “<strong>显示高级设置</strong>”  >  隐私设置选项下 “<strong>内容设置</strong>”  ></div>
+					<div class="extxt">通知选项下 “<strong>管理例外情况</strong>”</div>
+				</li>
+				<li class="un2">
+					<div>3. 在弹出面板中管理通知，将 sports.qq.com 设置为“<strong>禁止</strong>”</div>
+					<div class="extxt">例如：</div>
+					<div class="expic expic2">
+						<img src="//mat1.gtimg.com/news/lmz/navnotice/images/example.jpg">
+					</div>
+				</li>
+			</ul>
+    	</div>
+    </div>
+<script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+<style>
+.tcopyright {width:960px;margin:0 auto;padding:8px 0;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both;}
+.tcopyright .en{font-family:Arial;}
+.tcopyright a{color:#333;text-decoration: none;}
+.tcopyright a:hover{color:#bd0a01;text-decoration: underline;}
+</style>
+<div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+	<div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+	</div>
+  	<div class="en">Copyright &copy; 1998 - 2020 Tencent. All Rights Reserved</div>
+    <div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+	</div>
+</div><!--[if !IE]>|xGv00|d45ebf88b09e160bc0e29e6ba1bdeaee<![endif]-->
+</body>
+</html><!--[if !IE]>|xGv00|a6a5f6d5176de00abeedf1557d39c617<![endif]-->

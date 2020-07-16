@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>评论上下文</title>
+    <link href="//mat1.gtimg.com/www/coral2.0/css/coral_v9.0.css?v2" rel="stylesheet" type="text/css" media="screen">
+    <link href="//mat1.gtimg.com/www/coral3.0/css/coralImg.css" rel="stylesheet" type="text/css" media="screen">
+    <style type="text/css">
+        html, body { width: 100%; height: 100%; margin: 0px; padding: 0px; }
+        /* .np-post-footer { visibility: hidden; padding-bottom: 0; position: relative; top: -3px; }
+        */
+        #tab1_allComments { position: relative; top: 1px; }
+        #tab1_allComments li.np-post-key .np-post-body { border-right: 3px solid #FF2968; padding-right: 10px; }
+        #tab1_allComments li.np-post-key .children .np-post-body { border-right: none; }
+        #tab1_allComments li.np-post-key .np-post-key-children { margin-right: 10px; }
+        #tab1_allComments .post-body { position: relative; zoom: 1; }
+        .np-popframe-content .scrollbar, .np-popframe-content .scrollbar .bottom, .np-popframe-content .thumb .end { background: none; }
+        .np-popframe-content .thumb { background: #aaa; }
+        .np-popframe-bg-opacity { filter: alpha(opacity=50); /* IE */
+            -moz-opacity: 0.5; /* MOZ, FF */
+            opacity: 0.5; /* CSS3, FF1.5 */ }
+        #tab1_allComments .popClick, #tab1_allComments .post-header .publisher { cursor: default; }
+        .np-comment-list a.report, .np-notice-list a.report { right: 10px; }
+        .list_w100 .list_item .figure img {
+            cursor: default;
+        }
+    </style>
+
+
+</head>
+
+<body id="mainBody" style="background:none; width:100%; height:100%;">
+<!--style="background-color=transparent;overflow:hidden" onselectstart="return false;"-->
+<div class="np-popframe-bg-opacity" style="height: 100%; width:100%; background-color:#000;"></div>
+<div class="np-popframe-bg" style="height: 100%; width:100%; position:absolute; top:0px; left:0px;"></div>
+
+<div class="np-popframe" id="content" style="display:none;width:780px;z-index:10002;">
+    <div id="np-popframe-content" class="np-popframe-content" style="margin-top:20px; padding:0 10px 0 10px;">
+        <div class="scrollbar">
+            <div class="track" style="width:1px;">
+                <div class="thumb">
+                    <div class="end"></div>
+                </div>
+                <div class="bottom"></div>
+            </div>
+        </div>
+        <div class="viewport" style=" margin-left:50px; margin-right:50px;">
+            <div class="overview" id="allComments">
+                <!-- timeline -->
+                <div class="np-load-more" id="loadMoreTop" style="background:none; visibility:hidden; color:#999;">
+                    加载中
+                </div>
+
+
+                <div id="tab1_allComments" class="np-comment-list">
+
+                    <ul id="commentList">
+
+
+
+                    </ul>
+
+                </div>
+
+
+                <div id="reportSpace" style="height:250px; display:none;"></div>
+                <div class="np-load-more" id="loadMoreBottom" style="background:none; visibility:hidden; color:#999;">
+                    加载中
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pop_reply np-reply-box np-reply-box-inline" id="public_reply" style="display:none">
+
+    <div class="textarea np-reply-box-content">
+        <textarea tabindex="1" autocomplete="off" name="content" accesskey="u" id="top_textarea"></textarea>
+    </div>
+    <div id="insertPicList_reply" class="box_inner" style="display: none;">
+        <ul class="insert_piclist cf" style="display: block;">
+            <li class="list_item upAddPic" ><a href="javascript:;" class="add_pic"><i class="add">+</i></a>
+                <form action="//upload.coral.qq.com/image/upload" method="post" enctype="multipart/form-data" target="iframe0" id="form10">
+                    <input type="file" class="add_file" name="picture" accept="image/*">
+
+                    <input name="thrdes" type="hidden" value="insertPicList">
+                    <input name="type" type="hidden" value="1">
+                    <input name="format" type="hidden" value="SCRIPT">
+                    <input name="callback" type="hidden" value="parent.upLoadImg">
+                    <input name="_method" type="hidden" value="put">
+                    <!-- <input name="plat" type="hidden" value="1"> -->
+                    <input name="g_tk" type="hidden" value="">
+                    <input name="code" type="hidden" value="0">
+                    <input name="source" type="hidden" value="1">
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div class="commtSub" id="p_login_btn">
+
+        <div class='np-reply-box-footer'>
+
+            <div class="np-reply-box-info">
+
+                <span class='pop_user_login'>登录</span>
+                <span class='pop_user_info'></span>
+                <span class="list_item sybol_pic" id="sybol_pic_reply" style="display:none"><i class="icon_pic"></i>图片
+                        <form action="//upload.coral.qq.com/image/upload" method="post" enctype="multipart/form-data" target="iframe0" id="form12">
+                            <input type="file" class="add_file" name="picture" accept="image/*" >
+
+                            <input name="thrdes" type="hidden" value="insertPicList">
+                            <input name="type" type="hidden" value="1">
+                            <input name="format" type="hidden" value="SCRIPT">
+                            <input name="callback" type="hidden" value="parent.upLoadImg">
+                            <input name="_method" type="hidden" value="put">
+                            <!-- <input name="plat" type="hidden" value="1"> -->
+                            <input name="g_tk" type="hidden" value="">
+                            <input name="code" type="hidden" value="0">
+                            <input name="source" type="hidden" value="1">
+                        </form>
+
+                    </span>
+                <span class="tips"></span>
+
+            </div>
+
+            <a href="javascript:void(0)" class="submit np-btn np-btn-submit" id="pop_post_btn">回复</a>
+
+        </div>
+
+    </div>
+
+</div>
+<!--弹出举报框-->
+
+
+<div class="np-report" id='public_report' style="display:none">
+    <div class="np-report-header">
+        <h4>举报</h4>
+        <a href="javascript:void(0)" class='close'></a>
+    </div>
+    <div class="np-report-content">
+        <h5>
+            <img src="//mat1.gtimg.com/www/coral2.0/images/transparent.gif" />您为什么要举报此信息?</h5>
+        <ul>
+            <li>
+                <input name="impeach_content" id="content1" type="radio" value="1" />
+                <label for="content1">色情淫秽</label>
+            </li>
+
+            <li>
+                <input name="impeach_content" id="content4" type="radio" value="8" />
+                <label for="content4">骚扰谩骂</label>
+            </li>
+
+            <li>
+                <input name="impeach_content" id="content1024" type="radio" value="1024" />
+                <label for="content1024">广告欺诈</label>
+            </li>
+
+            <li>
+                <input name="impeach_content" id="content16384" type="radio" value="32" />
+                <label for="content16384">地域攻击</label>
+            </li>
+            <li>
+                <input name="impeach_content" id="content0" type="radio" value="0" />
+                <label for="content0">其他</label>
+            </li>
+        </ul>
+        <div>
+            <h6>举报说明（可选）：</h6>
+            <input name="impeach_desc" value="描述恶意行为" style=" color:#bbb;" id="impeach_desc" type="text" maxlength="200/" />
+        </div>
+    </div>
+    <div class="np-report-footer">
+        <a class="np-btn np-report-submit" href="javascript:void(0)">提交</a>
+        <a class="np-btn np-report-cancel" href="javascript:void(0)">取消</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="//mat1.gtimg.com/www/js/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="//mat1.gtimg.com/www/niuping2013/postframe/scroll.js"></script>
+<!-- <script type="text/javascript" chartset="gbk" src="//mat1.gtimg.com/www/niuping2013/postframe/pop1.3.js"></script> -->
+
+<!--<script type="text/javascript" chartset="gbk" src="//mat1.gtimg.com/www/coral3.0/js/pop3.0.6.js"></script>-->
+
+<script type="text/javascript" charset="UTF-8" src="//mat1.gtimg.com/www/coral3.0/js/pop-x3.0.7.js?201501"></script>
+
+
+</body>
+
+</html>
+<!--[if !IE]>|xGv00|3e583c68137960b55779812a5a813357<![endif]-->

@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang=cn><head><meta charset=gbk><title>腾讯新闻视频</title><meta name=keywords content=新闻,新闻中心,事实派,新闻频道,时事报道><meta name=description content=腾讯新闻，事实派。新闻中心,包含有时政新闻、国内新闻、国际新闻、社会新闻、时事评论、新闻图片、新闻专题、新闻论坛、军事、历史、的专业时事报道优质视频><meta http-equiv=X-UA-Compatible content="IE=Edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=0.45,maximum-scale=0.45"><!--[if lte IE 8]><meta http-equiv="refresh" content="0; url=http://sports.qq.com/kbsweb/upgrade.htm"><![endif]--><link rel=dns-prefetch href=//mews.qq.com><link rel=dns-prefetch href=//mat1.gtimg.com><link rel=dns-prefetch href=//img1.gtimg.com><link rel="shortcut icon" href=//mat1.gtimg.com/www/icon/favicon2.ico type=image/x-icon><link rel=stylesheet href=//mat1.gtimg.com/www/asset/lib/yui/cssreset/cssreset-min.css><script src=//mat1.gtimg.com/libs/jquery/3.1.1/jquery.min.js></script><script src=https://vm.gtimg.cn/tencentvideo/txp/js/txplayer.js></script><script src=//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js></script><script>
+  //点击触发点击上报
+  if(document.addEventListener){
+    document.addEventListener("click", registerZone, false);
+  }else if(document.attachEvent){
+    document.attachEvent("onclick", registerZone);
+  }else{
+    document.onclick = registerZone;
+  }
+  
+  var gImage;
+  //点击上报
+  function registerZone(param,clickType){
+    var loopTryNum = 10;//向上查询级数
+    var loop=4;//标签向上查询的级数
+    var bossID = 1408; //上报ID，通常固定
+    var pwd='0';//和bossId对应
+    var purl='';
+    var zoneId='';
+    try{
+      var num=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+      var iQQ=(num==null?"":unescape(num[2]));
+      if(typeof clickType == 'undefined'){//页面结构上加bosszone触发上报
+        var ev = window.event || param;
+            var et = ev.srcElement || ev.target;
+            //向上查找A标签
+            while(loop-- > 0){
+          if("A"==et.tagName || "BODY"==et.tagName){
+            break;
+          }else{
+            et = et.parentNode;
+          }
+        }
+          var type=et.tagName;
+          if (type != "A") {return;}
+          //获取点击链接
+          purl = et.href;
+          for(var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode){
+              if(tagNode.attributes['bossZone']){
+                  zoneId = tagNode.attributes['bossZone'].nodeValue;
+            }else if(tagNode.attributes['bosszone']){
+                zoneId = tagNode.attributes['bosszone'].nodeValue;
+            }else if(tagNode.attributes['BossZone']){
+                zoneId = tagNode.attributes['BossZone'].nodeValue;
+            }else if(tagNode.attributes['Bosszone']){
+                zoneId = tagNode.attributes['Bosszone'].nodeValue;
+            }
+              if(zoneId) break; 
+          }
+          if(!zoneId){return;}
+          
+      }else{//js手动触发上报
+        zoneId = param.bossZone;
+        purl = param.url || '';
+      }
+      var localUrl = location.href;//当前页面url
+      var iurl = 'http://btrace.qq.com/kvcollect?BossId='+bossID+'&Pwd='+pwd+'&sBiz=qq.com&sOp='+zoneId+'&iQQ='+iQQ+'&iTy='+bossID+'&sIp=&ftime=&vertical=vsports&site=vvsports&sUrl='+escape(purl)+'&sLocalUrl='+escape(location.href)+'&ran='+Math.random();
+
+      gImage = new Image(1,1);
+      gImage.src = iurl;
+    }catch(e){}
+  }
+
+  //曝光上报
+  function ExposureBoss(id,name){
+    var bossID = id || 1604; //上报ID，通常固定
+    var pwd='0';//和bossId对应
+    try{
+      var num = document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+      var iQQ = (num==null?"":unescape(num[2]));
+      var iurl = 'http://btrace.qq.com/kvcollect?BossId='+bossID+'&Pwd='+pwd+'&sBiz=qq.com&sOp='+name+'&iTy='+bossID+'&iQQ='+iQQ+'&sIp=&ftime=&vertical=vsports&site=vvsports&sUrl='+escape(location.href)+'&ran='+Math.random();
+      gImage = new Image(1,1);
+      gImage.src = iurl;
+    }catch(e){}
+  }
+</script><!--[if !IE]>|xGv00|0313bada93b1b71bee87a4accdcf84fb<![endif]--><!-- 2016.7.13 jackiejiang add house.com use-->
+<script src="//mat1.gtimg.com/house/js/h5rewrite.js"></script>
+
+<!--2014.3.20 byAustinjin-->
+<!--20140225 menshen-->
+<script type="text/javascript" src="//js.aq.qq.com/js/aq_common.js"></script><!--[if !IE]>|xGv00|135a509a6ac85759a2a10161f645f1ba<![endif]-->
+<script>
+!function(){var dfzlist=['bj_jjj','sh','gd','hb','cd','cq','xian','hn','hb','fj','henan','zj','ln', 'js', 'hb_jjj', 'tj_jjj'];var i=function(i){if(i&&i.indexOf("/a/")>0){var end='?f=dfz';var t=i.split("/")[2].split("qq.com")[0].split("."),e=i.split("/a/")[1].split(".htm")[0].replace(/[^0-9]/g,""),n="",o="",s="";if(o=3===t.length?t[0]+"_"+t[1]:t[0],s=o.indexOf("_")>0&&o.split("_")[0].length<3?(o.split("_")[0]+o.split("_")[1]).substring(0,3).toUpperCase():o.substring(0,3).toUpperCase(),o.indexOf("house")>0&&(s="HOU"),o.indexOf("auto")>0&&(s="AUT"),/cd|fj|cq|hb|gd|zj|ln|js/.test(o)&&(s=o.toUpperCase()+"C"),/hb_jjj|tj_jjj|bj_jjj/.test(o)&&(s=""),/henan/.test(o)&&(s="HNC"),/xian/.test(o)&&(s="XAC"),/hn/.test(o)&&(s="HNN"),/2016/.test(o)&&(s="BCP"),"undefined"!=typeof o&&"undefined"!=typeof e){if(o.split(".").length>2)for(var a=o.split(".").length,l=0;a>l;l++)n+=o.split(".")[l],a-2>l&&(n+="_");else n=o.split(".")[0];if(dfzlist.indexOf(o)<0){return"https://xw.qq.com/"+o+"/"+e+"/"+s+e+"00"}else{return"https://xw.qq.com/cmsid/"+e+"00?f=dfz"}}}},t={news:"news",photo:"photo",video:"video",view:"huati",finance:"finance",ent:"ent",sports:"sports",digi:"digi",mil:"mil",lady:"lady",auto:"auto",games:"games",house:"house",astro:"astro",cul:"cul",fashion:"fashion",2014:"shijiebei",2016:"2016",edu:"edu",nba:"nba",stock:"stock",health:"health",foxue:"fx",ly:"visit",vlike:"shipin",baby:"baby",tech:"tech",money:"lic",comic:"ac",society:"shehui"};if(/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navigator.userAgent)){var e=window.location.href;window.location.pathname;if(e.indexOf("/a/")>0&&"www.nanjing2014.org"!=window.location.hostname){if(e.indexOf("?pc")<0)try{window.location.href=i(e)}catch(n){}}else if(e.indexOf("?mobile")<0){var o=window.location.hostname.split(".")[0],s=window.location.pathname.split(".")[0].replace(/\//g,"").substring(0,3);if(/news|pp|video|view|finance|ent|sports|digi|mil|fashion|auto|games|house|astro|cul|2014|2016|stock|health|foxue|ly|vlike|edu|baby|tech|money|comic|society/i.test(o))try{"nba"==s?window.location.href="https://xw.qq.com/m/"+t[s]+"/":window.location.href="https://xw.qq.com/m/"+t[o]+"/?f=c_"+o}catch(n){}}try{}catch(n){}}}();
+</script><!--[if !IE]>|xGv00|3f98d66bf86ebf7c7553e9efc10369a8<![endif]-->
+<script type="text/javascript" src="//mat1.gtimg.com/js/speed_v1.9-min.js"></script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!--[if !IE]>|xGv00|3a6aa141504dafc8d218e23e3f098200<![endif]--><link href=//mat1.gtimg.com/pingjs/ext2020/p/fashion-videos/static/css/app.1e96355be7cb74afa42f96ecbc9c7562.css rel=stylesheet></head><body><div id=app><router-view></router-view></div><div id=loginBg class=loginBg></div><div id=login_div style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden"><iframe id=login_frame height=100% scrolling=auto width=100% frameborder=0 src=""></iframe></div><script type=text/javascript src=//mat1.gtimg.com/pingjs/ext2020/p/fashion-videos/static/js/manifest.04cd198bd11863cca7dc.js></script><script type=text/javascript src=//mat1.gtimg.com/pingjs/ext2020/p/fashion-videos/static/js/vendor.6286ffbb30df03eb602d.js></script><script type=text/javascript src=//mat1.gtimg.com/pingjs/ext2020/p/fashion-videos/static/js/app.977ac7f5f75bc9959c37.js></script></body></html><!-- Deploy at: Tue Jan 23 2018 17:29:34 GMT+0800 (CST) --><!--[if !IE]>|xGv00|b448099c1be9898936ef33a0138a8d0c<![endif]-->

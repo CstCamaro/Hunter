@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>腾讯视频</title>
+	<link rel="stylesheet" href="//vm.gtimg.cn/tencentvideo/vstyle/web/common/style/x_tips_v2.css" />
+	<style>
+		body {margin: 0;padding: 0px;background-color: transparent;overflow: hidden;}
+    	[r-text],[r-html],[r-show] {display: none}
+	</style>
+	<script>
+		try {
+			document.domain = 'qq.com'
+		} catch(e) {
+			
+		}
+	</script>
+</head>
+<body scroll="no">
+	<div r-component="p-index" r-data="{pageId: pageId}" r-notemplate="true">
+
+	<!-- 模板一 -->
+	<div class="x_tips " r-component="c-video" r-data="{recStr: recStr}" r-notemplate="true">
+	<div class="x_tips_hd">
+		<div class="x_tips_logo">
+			<i class="x_logo_icon"></i>
+			<span class="x_logo_text">腾讯视频</span>
+		</div>
+		
+		<a href="javascript:;" class="x_change" title="换一换" r-on="{click: onChange}" _stat="video:change" r-show="{showChange}">换一换</a>
+		
+		<a href="javascript:;" class="x_close" title="关闭" r-on="{click: onClose}" _stat="video:close"><i class="svg_icon svg_icon_close_sm"></i></a>
+	</div>
+	<div class="x_tips_body_img_text" r-attr="{_recommend: recStr || undefined}">
+		<a class="x_tips_img_wrapper" _stat="video:play"
+				href="http://v.qq.com/page////.html" 
+	target="_blank" 
+	data-type=""
+	data-id=""
+	r-on="{click: onPlay}"
+
+		>
+			<div class="img_wrap">
+				<img src="undefined" alt="图片">
+			</div>
+		</a>
+		<div class="x_tips_con">
+			<a class="x_tips_title" _stat="video:play"
+					href="http://v.qq.com/page////.html" 
+	target="_blank" 
+	data-type=""
+	data-id=""
+	r-on="{click: onPlay}"
+
+			></a>
+			
+		</div>
+		
+		<label class="x_slt_pc" _stat="video:clientplay:check" r-show="{clientInstalled}"><input class="x_slt_pc_check" 
+			type="checkbox" 
+			r-on="{change: onCheck}"
+			r-model="clientPlay"
+		>客户端播放</label>
+		<a class="x_btn_base x_btn_play" _stat="video:play"
+				href="http://v.qq.com/page////.html" 
+	target="_blank" 
+	data-type=""
+	data-id=""
+	r-on="{click: onPlay}"
+
+		>
+			<i class="svg_icon svg_icon_play_sm"></i>
+			<span class="x_tips_text">播放</span>
+		</a>
+	
+	</div>
+</div>
+
+
+</div>
+
+	<script src="//vm.gtimg.cn/tencentvideo_v1/script/txv.core.js?max_age=1800"></script>
+	<!-- here:js$ --><script src="//vm.gtimg.cn/tencentvideo/script/webtips/page/vwebtips_lib_f76f7c.min.js"></script><script src="//vm.gtimg.cn/tencentvideo/script/webtips/page/vwebtips_d749d0.min.js"></script><!-- /here -->
+	<script>
+		
+		window.AppBoot()
+	</script>
+</body>
+</html>
+

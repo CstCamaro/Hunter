@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="GBK">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>平昌冬奥会视频页</title>
+    <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon.ico">
+    <link rel="stylesheet" href="//mat1.gtimg.com/pingjs/ext2020/pyeongchang/video_cs1/styles/main-70ae8a7611.css">
+    <script type="text/javascript" src="//mat1.gtimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--[if lte IE 8]><meta http-equiv="refresh" content="0; url=http://sports.qq.com/kbsweb/upgrade.htm"><![endif]-->
+    <style type="text/css">
+    .video-list-wrapper ul>li .main-text {
+        height: 36px;
+        overflow: hidden;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 全站登录 -->
+    <style> 
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;     
+    }
+    
+    body {
+        width:100%;
+        position: relative;
+        margin:0 auto;
+                min-width: 1240px;
+   
+        background:url(//mat1.gtimg.com/sports/game/homebodybj2_03.jpg) no-repeat center top;
+    }
+    .Follow {
+        /*width:1581px;*/
+                width:100%;
+                min-width:1240px;
+        height:323px;
+        background:url(//mat1.gtimg.com/sports/game/topdtt_03.png) no-repeat center top;
+        position:absolute;
+        top:-10px;
+        left:-10px;
+        z-index: 0;
+    }
+   .FollowW {
+       width:100%;
+       height:323px;
+       min-width:1240px;
+       position:absolute;
+       top:0;
+       left:0;
+       overflow:hidden;
+   }
+    
+    .header {
+        width:100%;
+        padding-top:0px;
+                position:relative;
+        z-index: 999;
+                min-width: 1240px;
+    }
+    .header-wrap {
+        width:1240px;
+        height:170px;
+        padding-left:2px;
+        background:url(//mat1.gtimg.com/sports/GIF2017/syjpbbj2.png) no-repeat 8px bottom;
+        margin:0 auto;
+        position:relative;
+    }
+    .header .slogan {
+        width:266px;
+        height:39px;
+        line-height:39px;
+        font-size:24px;
+        font-family:Arial;
+       color:#fff;
+       font-style: italic;
+       float:left;
+       margin-top:126px;
+       margin-left:10px;
+       text-indent: 20px;
+       font-family: "Microsoft yahei";
+    }
+    .header .MbState {
+        display:block;
+        width:54px;
+        height:18px;
+        position: absolute;
+        top:94px;
+       right: 317px;
+       font-size:12px;
+       color:#059eff;
+       padding-left: 20px;
+       background:url(//mat1.gtimg.com/sports/game/vip.png) no-repeat center left; 
+    }
+   .header .loginbox {
+       position: absolute;
+       width:45px;
+       height:45px;
+       top:80px;
+       right: 265px;  
+       color:#fff;
+        z-index: 999;
+   }
+   .header .sportLoginV1 .loginbtn {
+        background-color:#059eff;
+   }
+   .header .medal {
+       width:238px;
+       height:170px;
+       float:right;
+       margin-right:-4px;
+       background:url(//mat1.gtimg.com/sports/ty/olympic/jpbbj2.png) no-repeat center top;
+   }
+   .header .medalTit {
+       width:204px;
+       height:32px;
+       line-height:32px;
+       padding:0 10px;
+       float:left;
+       margin-top:6px;
+       margin-bottom:4px;
+   }
+   .header .medalTit h3 {
+       font-size:14px;
+       color:#fff;
+       display:inline-block;
+       width:76px;
+       margin:0;
+       *float:left;
+   }
+   .header .medalTit h3 a {
+       color: #fff;
+   }
+   .header .medalTit img {
+       width:87px;
+       height:35px;
+       vertical-align:middle;
+       display:inline;
+   }
+   .header .meadalUl {
+       padding:0 10px;
+       width:204px;
+       height:24px;
+       float:left;
+        margin: 0;
+   }
+   .header .meadalUl li {
+       float:left;
+       height:24px;
+       line-height:24px;
+       font-size:12px;
+       color:#fff;
+       width:28px;
+       text-align: center;
+   }
+   .header .meadalUl li:first-child {
+       width:90px;
+       text-align: left;
+   }
+   .header .meadalUl li span {
+       display:inline-block;
+       width:17px;
+       height:17px;
+       text-align: center;
+       line-height:17px;
+       background-color:#fff;
+       font-size:12px;
+       color:#059eff;
+       margin-right:2px;
+   }
+   .header .meadalUl img {
+       width:15px;
+       height:16px;
+       vertical-align: middle;
+       display:inline;
+   }
+   .Sinfo-logined .list-top .vip-icons>img{display:inline-block;}
+   
+   /*foot*/
+   .tcopyright {
+             background:#059eff;
+             width:100% !important;
+             height:150px;
+             padding:60px 0 0!important;
+             color:#fff!important;
+                             min-width:1240px;
+             
+   }
+   .tcopyright a {
+             color:#fff !important;
+   }
+   </style>
+   <div class="FollowW">
+       <div class="Follow"></div>
+   </div>
+   <div class="header">
+               <div class="header-wrap">
+                   <div class="slogan">&nbsp;&nbsp;&nbsp;&nbsp;为&nbsp; 热&nbsp; 爱&nbsp; 加&nbsp; 冕</div>
+                   <!--wrap_sportLoginV1是必须的,样式需要定义宽高-->
+   <a href="http://vip.sports.qq.com" target="_blank" class="MbState">体育会员</a>
+                   <div class="loginbox" id="wrap_sportLoginV1"></div>
+                   <div class="medal">
+                       <div class="medalTit">
+                           <h3><a href="http://sports.qq.com/Pyeongchang2018/medals2018/Session.htm" target="_blank">奖牌榜</a></h3>
+                           <img src="http://img1.gtimg.com/sports/pics/hv1/158/98/2261/147046673.png" alt="" />
+                       </div>
+                        <!-- 奖牌榜 -->
+       <style>
+.meadalUl li span {
+	
+	width:17px;
+	height:17px;
+	line-height:17px;
+	
+}
+
+</style>
+
+<div class="nameWrap">
+<ul class="meadalUl name2">
+    						<li>国家/地区</li>
+    						<li><img src="//mat1.gtimg.com/sports/ty/olympic/jp.png" alt="" /></li>
+    						<li><img src="//mat1.gtimg.com/sports/ty/olympic/yp.png" alt="" /></li>
+    						<li><img src="//mat1.gtimg.com/sports/ty/olympic/tp.png" alt="" /></li>
+    						<li>总数</li>
+    				</ul>
+                     <ul class="meadalUl">
+    						<li><span>1</span> 挪威</li>
+    						<li>14</li>
+    						<li>14</li>
+    						<li>11</li>
+    						<li>39</li>
+    				</ul>
+                    <ul class="meadalUl">
+    						<li><span>2</span> 德国</li>
+    						<li>14</li>
+    						<li>10</li>
+    						<li>7</li>
+    						<li>31</li>
+    				</ul>
+                   
+                    
+                    
+                    
+                    
+                    <ul class="meadalUl">
+    						<li><span>3</span> 加拿大</li>
+    						<li>11</li>
+    						<li>8</li>
+    						<li>10</li>
+    						<li>29</li>
+    				</ul>
+                    
+    				
+    				<ul class="meadalUl">
+    						<li><span>16</span> 中国</li>
+    						<li>1</li>
+    						<li>6</li>
+    						<li>2</li>
+    						<li>9</li>
+    				</ul>
+    				
+    				
+</div>
+    <!--[if !IE]>|xGv00|3a83fad64bfe27a0e66443084afa0802<![endif]-->
+       <!-- 奖牌榜 -->			
+   </div> 
+               </div>
+           </div>
+     <script src="//mat1.gtimg.com/libs/jquery/1.12.0/jquery.min.js" ></script>
+       <script src="http://sports.qq.com/ext2020/dc2017/dist/sportInfo/sportLogin.js" async="async"></script>
+   <script>	
+   var pagex,pagey;
+       var base=20;//基数
+       var Follow=$(".Follow");
+       var width=$(window).width();
+       var height=$(window).height();
+       $(document).mousemove(function(e){
+           pagex=parseInt((e.pageX/width).toFixed(2)*base)-10;
+           pagey=parseInt((e.pageY/height).toFixed(2)*base)-10;
+           Follow.css({"top":pagey,"left":pagex});
+       });
+           
+               </script>		
+   <!--[if !IE]>|xGv00|2f96684d761e76e9af447c111319f179<![endif]-->
+     <div id="pl-nav">
+        <div class="pl-content">
+            <div id="header-bar"></div>
+            <ul class="nav" bosszone="PLG_nav">
+                <li class="on">
+                    <a target="_blank" href="http://sports.qq.com/Pyeongchang2018/video2018/index.htm">视频首页</a>
+                    <div class="nav-border-bottom"></div>
+                </li>
+                <li>
+                    <a target="_blank" href="http://kbs.sports.qq.com/#100500">比赛库</a>
+                    <div class="nav-border-bottom"></div>
+                </li>
+                <li>
+                    <a target="_blank" href="http://v.sports.qq.com/#/cover/6xjo2ztzwc4qhuz">中国荣耀</a>
+                    <div class="nav-border-bottom"></div>
+                </li>
+                <li>
+                    <a target="_blank" href="http://v.sports.qq.com/#/cover/y60rtwpyjyh1mwx">小冰冰路边摄</a>
+                    <div class="nav-border-bottom"></div>
+                </li>
+                <li>
+                    <a target="_blank" href="http://v.sports.qq.com/#/cover/vq6ex50a4p4b9bf">冬奥经典</a>
+                    <div class="nav-border-bottom"></div>
+                </li>
+                <li>
+                    <a target="_blank" href="http://v.sports.qq.com/#/cover/3buoe5kz684cnmi">热雪hi-par</a>
+                    <div class="nav-border-bottom"></div>
+                </li>
+                <li>
+                    <a target="_blank" href="http://v.qq.com/x/cover/y71fw1wqn6d0kbn.html">冰上战争</a>
+                    <div class="nav-border-bottom"></div>
+                </li>
+                <li>
+                    <a target="_blank" href="http://sports.qq.com/Pyeongchang2018/">冬奥首页</a>
+                    <div class="nav-border-bottom"></div>
+                </li>
+            </ul>
+        </div>
+    </div><!--[if !IE]>|xGv00|818adcdc14c87c72fd81aa323e863eb0<![endif]-->
+    <!-- 导航 E-->
+    <!-- 赛程表 -->
+    <div id="schendule">
+        <div class="schenWrap">
+            <div class="btn-prev"></div>
+            <div class="main"></div>
+            <div class="btn-next"></div>
+        </div>
+    </div>
+    <!-- 导航 S -->
+    <!-- 焦点图 -->
+    <div id="focus-videos" class="module" bosszone="PLG_play" style="margin-top: 30px">
+        <div id="pl-content" class="ct-scroll pl-content">
+            <div class="mask_l"></div><a href="javascript:;" class="btn-prev prev1 btn_pl"></a>
+            <div id="video_player"></div>
+            <ul class="ct-slider cf"></ul>
+            <ul id="nav-special" bosszone="PLG_play_tab"></ul><a href="javascript:;" class="btn-next next1 btn_pl"></a>
+            <div class="mask_r"></div>
+        </div>
+    </div>
+    <!-- 冬奥会精品栏目 S-->
+    <div class="jingpin" id="qqscroll">
+        <div class="pl-content">
+            <div class="module-title-row">
+                <div class="module-title">
+                    <div>冬奥会精品栏目</div>
+                    <div class="line-center"></div>
+                </div>
+                <div class="module-subtitle">
+                    <div class="line-center"></div>
+                </div>
+            </div>
+            <div class="module-content">
+                <div class="video-container">
+                    <div class="lanmu_list"></div>
+                </div>
+                <div class="btn btn-prev" style="display: none"></div>
+                <div class="btn btn-next" style="display: none"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 冬奥会精品栏目 E-->
+    <!-- 全景冬奥 S-->
+    <div class="layout_main"></div>
+    <!-- 全景冬奥 E-->
+    <!-- 视频库 S-->
+          <style type="text/css">
+    .mod_spk {
+        height: 624px!important;
+    }
+    </style>  
+<div class="mod_spk">
+        <div class="pl-content">
+            <div class="module-title-row">
+                <div class="module-title">
+                    <div>冬奥视频库</div>
+                    <div class="line-center"></div>
+                </div>
+                <div class="module-subtitle">
+                    <div class="line-center"></div>
+                </div>
+            </div>
+            <div class="module-content">
+                <div class="leftP" id="leftP">
+                    <div id="xiangmu" class="xiangmu">
+                        <h3>按项目</h3>
+                        <div class="bd"><span>速度滑冰</span> <span>短道速滑</span> <span>花样滑冰</span> <span>自由式滑雪</span> <span class="pd">冰壶</span> <span class="pd45">越野滑雪</span> <span>钢架雪车</span> <span>跳台滑雪</span> <span>冰球</span> <span>滑板滑雪</span> <span>北欧两项</span> <span>冬季两项</span> <span>有舵雪橇</span> <span>无舵雪橇</span> <span>高山滑雪</span></div>
+                    </div>
+                    <div id="guojia" class="xiangmu mt gj">
+                        <h3>按国家</h3>
+                        <div class="bd"><span class="current">中国</span> <span>美国</span> <span>韩国</span> <span>加拿大</span> <span>德国</span> <span>瑞士</span> <span>挪威</span> <span>荷兰</span></div>
+                    </div>
+                    <div id="fenl" class="xiangmu mt">
+                        <h3>按分类</h3>
+                        <div class="bd"><span>全程回顾</span> <span>集锦</span> <span>经典</span> <span>花絮</span></div>
+                    </div>
+                </div>
+                <div class="rightP"></div>
+            </div>
+        </div>
+    </div><!--[if !IE]>|xGv00|82a79c16b1b5e2bd5a1768594d0977eb<![endif]-->
+    <!-- 视频库 E-->
+    <div id="pub-footer">
+                <script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+        <style>
+          .tcopyright {
+            width: 960px;
+            margin: 0 auto;
+            padding: 8px 0;
+            font-size: 12px;
+            line-height: 28px;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+            clear: both;
+          }
+
+          .tcopyright .en {
+            font-family: Arial;
+          }
+
+          .tcopyright a {
+            color: #333;
+            text-decoration: none;
+          }
+
+          .tcopyright a:hover {
+            color: #bd0a01;
+            text-decoration: underline;
+          }
+          .footernew {
+              color: #515151;
+              font-size: 12px;
+              height: 70px;
+              line-height: 24px;
+              margin: 12px auto 0;
+              overflow: hidden;
+              text-align: center;
+              width: 1000px;
+          }
+          .footernew .footernewdiv {
+              margin: 0 auto;
+              width: 680px;
+          }
+          .footernew p {
+              border: 1px solid #D2D2D2;
+              float: left;
+              font-size: 12px;
+              height: 50px;
+              line-height: 20px;
+              margin: 6px;
+              padding: 0;
+              width: 120px;
+              overflow: hidden;
+          }
+          .footernew .fl {
+              padding: 3px;
+          }
+          .qq-footer .footernew .fr {
+              padding: 5px 3px 0;
+              width: 72px;
+          }
+          .qq-footer .footernew a {
+  color: #515151;
+  text-decoration: none;
+}
+        </style>
+        <div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a
+              href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a
+              href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a
+              href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a
+              href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a
+              href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a
+              href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/"
+              target="_blank" rel="nofollow">腾讯公益</a> | <a href="https://cloud.tencent.com/?from=txwdibu"
+              target="_blank" rel="nofollow">腾讯云</a> | <a href="http://service.qq.com/" target="_blank"
+              rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+              <br/>
+              <a href="http://szwljb.sz.gov.cn/" target="_blank" rel="nofollow">深圳举报中心</a> |
+              <a href="http://ga.sz.gov.cn" target="_blank" rel="nofollow">深圳公安局</a> | 
+              <a href="http://www.qq.com/dzwfggcns.htm" target="_blank" rel="nofollow">抵制违法广告承诺书</a> |
+              <a href="http://www.qq.com/copyright.shtml" target="_blank" rel="nofollow">版权保护投诉指引</a> |
+              <a href="https://gdca.miit.gov.cn/" target="_blank" rel="nofollow">广东省通管局</a>
+              <br>
+              <span>
+                <a href="http://www.qq.com/culture.shtml" target="_blank" rel="nofollow">粤网文[2017]6138-1456号</a> 
+                <a href="http://www.qq.com/internet_licence.htm" target="_blank" rel="nofollow">新出网证（粤）字010号</a> 
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                增值电信业务经营许可证：<a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">粤B2-20090059</a> 
+                <a href="http://www.qq.com/icp1.shtml" target="_blank" rel="nofollow">B2-20090028</a>
+              </span>
+              <br>
+              <a href="http://www.qq.com/scio.htm" target="_blank" rel="nofollow">新闻信息服务许可证</a>
+              <a href="http://www.qq.com/xwdz.shtml" target="_blank" rel="nofollow">粤府新函[2001]87号</a> 违法和不良信息举报电话：0755-83765566-9 
+              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002000001">
+                <span>粤公网安备44030002000001号</span>
+              </a>
+              <br>
+              <a href="http://www.qq.com/spyp.htm" target="_blank">互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a>
+              <br>
+              <div class="footernew">
+                <div class="footernewdiv">
+                <p>
+                  <span class="fl"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" target="_blank" rel="nofollow"><img width="35" height="43" border="0" alt="经营性网站备案信息" src="//mat1.gtimg.com/www/images/qq2012/ind36.gif"></a></span>
+                  <span class="fr"><a target="_blank" class="lcblack" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" rel="nofollow">经营性网站<br>
+                  备案信息</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.12377.cn/" target="_blank" rel="nofollow"><img width="44" height="44" border="0" alt="中国互联网举报中心" src="//mat1.gtimg.com/www/images/qq2012/buliang.png"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.12377.cn/" target="_blank" rel="nofollow">中国互联网<br>
+                  举报中心</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.wenming.cn" target="_blank" rel="nofollow"><img width="44" height="42" border="0" alt="中国文明网传播文明" src="//mat1.gtimg.com/www/images/qq2012/wmlogo.gif"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.wenming.cn" target="_blank" rel="nofollow">中国文明网<br>传播文明</a></span>
+                </p>
+                <p style="width:128px;height:52px;border:0;">
+                  <span style="padding:0;" class="fl"><a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&amp;ct=df&amp;a=1&amp;pa=337337" target="_blank" rel="nofollow"><img border="0" alt="诚信网站" src="//mat1.gtimg.com/www/images/qq2012/cxrz5.png"></a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow"><img src="//mat1.gtimg.com/www/images/qq2012/gswj2015.jpg" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow">工商网监<br>电子标识</a></span>
+                </p>
+                </div>
+              </div>
+
+          </div>
+          <div class="en">Copyright &copy; 1998 -
+            
+            2020 Tencent. All Rights Reserved</div>
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a
+              href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+          </div>
+        </div>
+<!--[if !IE]>|xGv00|1946a31bc73a15246842877bdfa16df2<![endif]-->
+    </div>
+    <script>
+    // 赛程地址
+    var sc_url ='//mat1.gtimg.com/apps/hpage2/twoDayWinterOlyPhase_2018_callback.json';
+    // 视频轮播  title栏目名称  lid栏目id
+    window.player_lid = [{
+        title: '精选',
+        lid: '5973'
+    }, {
+        title: '全景',
+        lid: '73314'
+    }];
+
+    // 精品栏目   title栏目名称    url栏目接口地址  sw_logo 商务logo
+
+    window.lanm_data = [{
+            title: '中国荣耀',
+            sw_logo: '',
+            url: 'http://list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&novalue=1&platform=1&version=10000&intfname=winter_olympic_vid&tid=1096&appkey=11b98b00eb557fd6&appid=20001536&type=4&sourcetype=2&sort=3&pagesize=30&offset=0&c_column_id=51704'
+        },
+        {
+            title: '冰雪英雄谱',
+            sw_logo: '',
+            url: 'http://list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&novalue=1&platform=1&version=10000&intfname=winter_olympic_vid&tid=1096&appkey=11b98b00eb557fd6&appid=20001536&type=4&sourcetype=2&sort=3&pagesize=30&offset=0&c_column_id=77118'
+        }, {
+            title: '奔向2022',
+            sw_logo: '',
+            url: 'http://list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&novalue=1&platform=1&version=10000&intfname=winter_olympic_vid&tid=1096&appkey=11b98b00eb557fd6&appid=20001536&type=4&sourcetype=2&sort=3&pagesize=30&offset=0&c_column_id=75736'
+        }, {
+            title: '热雪hi-par',
+            sw_logo: '',
+            url: 'http://list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&novalue=1&platform=1&version=10000&intfname=winter_olympic_vid&tid=1096&appkey=11b98b00eb557fd6&appid=20001536&type=4&sourcetype=2&sort=3&pagesize=30&offset=0&c_column_id=72739'
+        }, {
+            title: '第一时间',
+            sw_logo: '',
+            url: 'http://list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&novalue=1&platform=1&version=10000&intfname=winter_olympic_vid&tid=1096&appkey=11b98b00eb557fd6&appid=20001536&type=4&sourcetype=2&sort=3&pagesize=30&offset=0&c_column_id=75735'
+        }
+    ];
+    //各个通栏   title栏目名称    lid栏目id  num 个数  sw_logo商务logo
+    window.lid_data = [{
+            title: '金牌时刻',
+  url: 'http://list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&novalue=1&platform=1&version=10000&intfname=winter_olympic_vid&tid=1096&appkey=11b98b00eb557fd6&appid=20001536&type=4&sourcetype=2&sort=3&pagesize=30&offset=0&c_column_id=48714&c_category=10754',
+            sw_logo: '', //商务logo
+            num: 6
+        },
+        {
+            title: '全景冬奥',
+            url: 'http://list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&novalue=1&platform=1&version=10000&intfname=winter_olympic_vid&tid=1096&appkey=11b98b00eb557fd6&appid=20001536&type=4&sourcetype=2&sort=3&pagesize=30&offset=0&c_column_id=73314',
+            sw_logo: '', //商务logo
+            num: 12
+        },
+        {
+            title: '冬奥原创节目',
+            url: 'http://list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&novalue=1&platform=1&version=10000&intfname=winter_olympic_vid&tid=1096&appkey=11b98b00eb557fd6&appid=20001536&type=4&sourcetype=2&sort=3&pagesize=30&offset=0&c_column_id=72739,75735,75736',
+            sw_logo: '', //商务logo
+            num: 6
+        },
+        {
+            title: '爆笑冬奥会',
+            url: 'http://list.video.qq.com/fcgi-bin/list_common_cgi?otype=json&novalue=1&platform=1&version=10000&intfname=winter_olympic_vid&tid=1096&appkey=11b98b00eb557fd6&appid=20001536&type=4&sourcetype=2&sort=3&pagesize=30&offset=0&c_category=10754&672=197336',
+            sw_logo: '', //商务logo
+            num: 6
+        }
+    ];
+    </script>
+    <script src="//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js"></script>
+    <script src="//mat1.gtimg.com/sports/js/bundesliga/lib/require.min.js"></script>
+  <script charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/pyeongchang/video_cs1/scripts/main-9e6f6cf681.js"></script>
+    <script type="text/javascript">
+var iboss = {
+    qq: "",
+    getQQ: function() {
+        var num = document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+        return num==null?Math.floor(Math.random()*10000000000000000):unescape(num[2]);
+    },
+    init: function(sop) {
+        this.qq = this.getQQ();
+        var params = "BossId=1604&Pwd=0&vertical=pcda&sUrl="+escape(location.href)+"&site=sports.qq.com&iQQ="+this.qq + "&sOp="+sop;
+        this.pushRequest(params);
+    },
+    pushRequest: function(params) {
+        try{
+            var iurl = 'http://btrace.qq.com/kvcollect?' + params + '&ran='+Math.random();
+            var gImage = new Image(1,1);
+            gImage.src = iurl;
+            
+        }catch(e){}
+    },
+    pushVV:function() {
+        var params = "BossId=2619&Pwd=0&vertical=pcda&sUrl="+escape(location.href)+"&sDomain=sports.qq.com&iQQ="+this.qq + "&sOp=pcda-bf";
+        this.pushRequest(params);
+    }
+}
+</script><!--[if !IE]>|xGv00|85a50b6abd49354a495395e58d0ef083<![endif]-->
+    <script type="text/javascript">
+    iboss.init("pcda-v");
+    </script>
+    <script language="javascript" src="//mat1.gtimg.com/ping.js"></script>
+    <script language="javascript">
+    if (typeof(pgvMain) == 'function') {
+        pvCSTM = "others";
+        pgvMain();
+    }
+
+    </script>
+</body>
+
+</html><!--[if !IE]>|xGv00|5d612298ff7e197f9f06f83fca44c6af<![endif]-->

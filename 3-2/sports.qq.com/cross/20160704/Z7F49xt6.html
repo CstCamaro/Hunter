@@ -1,0 +1,753 @@
+<!-- <html><head><title></title></head><body></body></html>  -->
+<!DOCTYPE HTML>
+<html>
+<!--
+Cross Builder V2.0
+page version: 5.2
+by 网络媒体事业群办公室_商业体验中心
+合作请RTX shelleyhe
+-->
+<head>
+    <meta charset="gb2312">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="Keywords" content="家园 保卫战">
+    <title>留在上帝的筛子上</title>
+    
+    <link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb2/global/assets/css/crossbuilder.css">
+    <link rel="stylesheet" href="//mat1.gtimg.com/www/mb/cb2/global/assets/css/comment.css">
+    <link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb2/global/assets/css/tools/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb2/publish/book_assets/css/book_style-v2.css">
+    <link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb2/publish/book_assets/css/book_style_rio_olympic_pic_page_v1.1.css">
+
+    <link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb/publish/assets/css/cb_toolbar_v1.css"> <!-- qq-toolbar -->
+</head>
+
+<body>
+<style type="text/css">
+
+    @media only screen and (max-width : 767px){
+        
+    }
+</style>
+<div id='wx_pic' style='margin:0 auto;display:none;'><img src='http://inews.gtimg.com/newsapp_ls/0/463278768/0' /></div>
+<link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb/publish/assets/css/cb_toolbar_v2.css"><div class="cb_toolbar" id="logoPanel"><div class="mod_inner"><div class="logo"><a href="http://sports.qq.com" class="sportslogo"></a></div><div class="link"><ul><li><a href="http://www.qq.com" target="_blank">腾讯网首页</a></li><li class="end"><a href="http://www.qq.com/map/" target="_blank">网站导航</a></li></ul></div>
+			<script language="JavaScript">
+				var hdPic ={url:location.href,title:"0",pic: [], pic1: []};
+				 var cbtb_url = "";
+					var login = {
+						loginSuccess: function(){
+							ptlogin2_onClose();
+							cbtb_init();
+						}
+					};
+			</script>
+			<div class="shareList">
+				<div class="share_btn">
+					<span>分享到：</span>
+				</div>
+					<ul class="menu-bd">
+						<li class="share2weibo" id="cb_share2weibo" title="转播腾讯微博"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTweibo"></a></li>
+						<li class="share2qzone" id="cb_share2qzone" title="分享到我的QQ空间"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTzone"></a></li>
+						<li class="share2qq" id="cb_share2qq" title="分享到QQ好友"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTQQ"></a></li>
+						<li class="share2sina" id="cb_share2sina" title="转播到新浪微博"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTsina"></a></li>
+						<li class="share2wx" id="cb_share2wx" title="分享到微信"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTwx"></a></li>
+						<li class="share2wxf" id="cb_share2wxf" title="分享到朋友圈"><a href="javascript:void(0)" hidefocus="true" class="g-btn-b" bosszone="gqTwxf"></a></li>
+					</ul>
+					
+				<div class="tb_wx_share" id="cb_share_div" style="display:none;">
+						<div class="tb_wx_share_triangleF" id="cb_ts_triangle"></div>
+						<div class="tb_wx_share_left"><img src="http://inews.gtimg.com/newsapp_ls/0/448957327/0"></div>
+						<div class="tb_wx_share_right">
+						  <ul>
+							<li class="a"><div></div><p>扫一扫二维码</p></li>
+							<li class="i"></li>
+							<li class="b"><div></div><p>点击右上角图标</p></li>
+							<li class="i"></li>
+							<li class="c" id="cb_ts_wx"><div></div><p>发送给微信好友</p></li>
+							<li class="d" id="cb_ts_wxf"><div></div><p>分享到朋友圈</p></li>
+						  </ul>
+						</div>
+					</div>
+			</div>
+			<script language="JavaScript" src="//mat1.gtimg.com/www/mb/cb/publish/assets/js/cb_share_v1.js"></script>
+		</div><div class="tb_login_content">
+                <div id="tb_login_content_in" style="display:none;">
+                    <a href="javascript:void(0);" id="http_login">
+                        [登录]
+                    </a>
+                </div>
+                <div id="tb_login_content_out" style="display:none;">
+                    <span>
+                        您好，
+                        <i id="tb_qq_uid">
+                        </i>
+                    </span>
+                    <a href="javascript:void(0);" id="http_logout">
+                        [退出]
+                    </a>
+                </div>
+            </div>
+            <div id="login_div" class="login_div">
+                <iframe id="login_frame" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div id="overlay"></div>
+        </div>
+		<script language="JavaScript" src="//imgcache.qq.com/ptlogin/ac/v9/js/ptloginout.js"></script>
+		<script language="JavaScript" src="//mat1.gtimg.com/www/mb/cb/publish/assets/js/cbtb_qq_wx_userlogin_v1.js" charset="utf-8"></script>
+        <script language="JavaScript">
+            cbtb_init();
+        </script>
+<!-- Browser Resize  -->
+<div id="browserresizing" class="browser-resizing" style="display:none;"></div>
+<!-- /Browser Resize -->
+
+<!-- JustPc : Btn-Prev && Btn-Next -->
+<div class="menu-container" style="display:none;">
+    <div class="box-nav-next">
+        <div class="page-nav-next"></div>
+    </div>
+
+    <div class="box-nav-prev">
+        <div class="page-nav-prev"></div>
+    </div>
+
+    <div class="box-nav-home">
+        <div class="page-nav-home"></div>
+    </div>
+</div>
+<!-- /Btn-Prev && Btn-Next -->
+
+<!-- Just Mobile : Btn-Home -->
+<div class="btn-mobile-home" style="display:none;"></div>
+
+<!-- Hover Tips -->
+<div class="grad-line" style="display:none;">
+    <div class="container width50 bg-alpha">
+        <div class="box-prev gl-prev" style="display:none;"></div>
+    </div>
+    <div class="container width50 bg-alpha">
+        <div class="box-next gl-next" style="display:none;"></div>
+    </div>
+</div>
+<!-- /Hover Tips -->
+
+<!-- Keyboard Tips -->
+<div class="keyboard-container" style="display:none">
+    <div class="keyboard-pic"><span class="pic"></span></div>
+    <span class="text">键盘翻动页面</span>
+    <!-- <div class="arrow-block">
+        <span class="box-key key-prev"></span>
+        <span class="box-key key-next"></span>
+    </div> -->
+</div>
+<!-- /Keyboard Tips -->
+
+<!-- Page Container -->
+<div class="main-container" style="display:none;">
+<!-- 10 内页 Dom - 封面 : 两列 50%-50% -->
+<div class="page flip-item" data-type="normal">
+    <!-- 左封面 -->
+    <div class="container width50 cover-container">
+        <div class="inner">
+            <div class="page-block">
+                <!-- 封面背景图 -->
+                <div class="loaded" data-src="http://inews.gtimg.com/newsapp_ls/0/454588263/0"></div>
+                <div class="box_table">
+                    <div class="box_table-td vl-bottom-large">
+                        <!-- 标题图 , 对齐方式(0:al-left, 1:al-center, 2:al-right)-->
+                        <span class="title-img al-left">
+                            <img data-src="">
+                        </span>
+
+                        <!-- 页面标题：h3 (字体颜色；标题对齐；文字底色) -->
+                        <!-- 标题对齐：al-left ; al-center; al-right -->
+                        <!-- 文字底色：light-bg; dark-bg; Default-->
+                        <h3 style="color:#000000" class="al-left Default"></h3>
+                        
+                        <!-- 期刊号：al-left ; al-center; al-right -->
+                        <p style="color:#000000" class="al-left"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右导语 -->
+    <div class="container width50">
+        <div class="inner">
+            <div class="page-block">
+                <div class="purecolor" style="background:#fff;"></div>
+                <div class="box_table">
+                    <div class="box_table-td">
+                        <div class="box_block mod-s">
+                            <div class="article-block scrollBar-contatiner" data-type="100">
+                                <!-- 标题图 , 对齐方式(0:al-left, 1:al-center, 2:al-right)-->
+                                <span class="title-img al-center">
+                                    <img data-src="http://inews.gtimg.com/newsapp_ls/0/414509703/0">
+                                </span>
+                                <!-- 页面标题：h3 (字体颜色；标题对齐) -->
+                                    <!-- 标题对齐：al-left ; al-center; al-right -->
+                                <h3 style="color:#000000" class="mb-mid al-left"></h3>
+
+                                <div class="box-article">
+                                    <!-- 文字详情 -->
+                                    <p><strong>这世界大多时候是一面歌舞升平，而另一面则是悲怆满地。</strong></p><p>当家园一步步远离，他们用坚持重获希望。</p><p>摄影摄像丨冈萨雷斯 &nbsp;后期丨任阳 &nbsp;编辑丨zoe &nbsp;设计丨徐静</p>                                </div>
+
+                                <!-- 超链接按钮 -->
+                                                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+Array
+(
+    [0] => 1_5
+    [1] => 1
+    [2] => 奥运图片模块
+    [3] => 0
+    [4] => Default
+    [5] => Default
+    [6] => 2
+    [7] => 154715
+    [8] => 0
+    [9] => ffffff
+    [10] => Array
+        (
+            [0] => 153782
+            [1] => 奥托德罗莫村是巴西奥运会主办城市里约热内卢七百多个贫民窟中的一个，在2009年里约申奥成功后，一夜之间，这里的居民们发现自己的家被圈入了奥林匹克公园
+        )
+
+    [11] => Array
+        (
+            [0] => 153780
+            [1] => 上世纪60年代，当奥托德罗莫村渔民们开始在巴哈区定居时，这里还是一片沼泽，然而随着90年代里约房地产重心的西移，奥托德罗莫村便屡次成为市政府拆迁的目标
+        )
+
+    [12] => Array
+        (
+            [0] => 153781
+            [1] => 最终打破平静的是里约奥运会的日益临近，从2014年2月开始，奥托德罗莫村就像是陷入了一场噩梦，小小的一个贫民窟经历了一个拆迁工程可能面临的所有遭遇：真假难辨的诺言，恐惧以及流血冲突
+        )
+
+    [13] => Array
+        (
+            [0] => 153783
+            [1] => 里约市长称，市政府从来没有强迫居民搬迁，去留全凭自愿。然而事实并非如此，实际上居民受到了巨大的压迫。市卫队的警察对居民发起攻击，打伤了人，他们使用警棍，制暴喷雾，橡皮子弹，那是历史会铭记的一天
+        )
+
+    [14] => Array
+        (
+            [0] => 153789
+            [1] => 村民若昂这样说：“我在这里生活工作，奥运会并没有给我带来好处。我的家被推倒了，工作没有了。我并不反对奥运会，但我反对以奥运为借口的所作所为。”图为废墟墙上涂写着的“公平”二字
+        )
+
+    [15] => Array
+        (
+            [0] => 153797
+            [1] => 眺望远方，与奥托德罗莫村一墙之隔的奥林匹克公园清晰可见
+        )
+
+    [16] => Array
+        (
+            [0] => 153790
+            [1] => 无论从哪个角度看上去，奥林匹克公园也都近在咫尺
+        )
+
+    [17] => Array
+        (
+            [0] => 153796
+            [1] => 为奥运而建的奢华酒店与奥托德罗莫村也仅有一墙之隔，而这，都不是故事的结尾
+        )
+
+    [18] => Array
+        (
+            [0] => 153788
+            [1] => 故事的最后并不是一个习以为常的悲剧，因为奥托德罗莫村居民没有继续隐忍，开始进行了守护家园的漫长之旅。图为电影专业的学生以奥托德罗莫村的废墟为背景拍摄纪录片
+        )
+
+    [19] => Array
+        (
+            [0] => 153792
+            [1] => 而贫民窟唯一的教堂成为了居民聚会协商的场所
+        )
+
+    [20] => Array
+        (
+            [0] => 153791
+            [1] => 仅在2009年至2013年期间，就有近7万人因为里约奥运会搬家，是里约历史上搬迁人数最多的一次。7万人，其中又有几个肯为家园坚守的奥托德罗莫村呢？图为经历长期抗争的村民桑德拉，事隔多年后她会为自己的坚持感到自豪
+        )
+
+    [21] => Array
+        (
+            [0] => 153786
+            [1] => 当家园渐渐远去，他们没有逆来顺受，他们用坚持守护了自己的家园。
+        )
+
+    [22] => Array
+        (
+            [0] => 153787
+            [1] => 最终2016年4月，里约市政府宣布放弃拆迁计划，并将对奥托德罗莫村进行城市规划，为剩余的20个家庭建设统一的住所，并在奥运会开幕前交房。图为等待新家的一对夫妇
+        )
+
+    [23] => Array
+        (
+            [0] => 153784
+            [1] => 奥托德罗莫村的胜利代表着坚持力量的胜利。当这种情况再次发生时，他们要记得，奥托德罗莫靠坚持守护了自己的家园。如果奥托德罗莫村能够做到，其他人也有可能
+        )
+
+    [24] => Array
+        (
+            [0] => 153785
+            [1] => 在一片废墟上，新的社区正逐渐成型。每天，居民总会去工地里看上一眼，坐一坐，才能安心
+        )
+
+    [25] => Array
+        (
+            [0] => 153794
+            [1] => 奥托德罗莫村村民桑德拉相信经历过劫难的奥托德罗莫村将成为榜样
+        )
+
+    [26] => Array
+        (
+            [0] => 153793
+            [1] => 最重要的是要有耐心，有耐心的人才能自我拯救。最后能留下来的人就像是上帝在摇筛子，摇啊摇，从缝隙中掉下去的都是劣质的，没有价值的，而最后留下来的就在这里。若昂说：“现在，觉得自己留在了上帝的筛子上”。
+        )
+
+)
+<!--  Dom - 奥运图片浏览 -->
+<div class="page flip-item olympic2016" data-type="jumbotron-bg-img">
+    <div data-page-id="" class="container width100 rio_book">
+        <div class="inner">
+            <div class="page-block">
+                <!-- 页面背景图 -->
+                <!-- 背景图位置 -->
+                <div class="loaded jumbotron-img leftBottom" data-src="http://inews.gtimg.com/newsapp_ls/0/396034271/0"></div>
+                <!-- L/R : 如果为 0 , 则 addClass(fl-r) ；如果为 1 ,则无需操作  -->
+                <div class="container width35 bg-alpha fl-l rio_list_pic " >
+                <!-- fl-l fl-r right   :   fl-r fl-l left -->
+                   <div class="box_table" style="background-color:#Default;">
+                        <div class="rio_show_list">
+                            <ul>
+                                <li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388886660_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388886660/0" data-title="奥托德罗莫村是巴西奥运会主办城市里约热内卢七百多个贫民窟中的一个，在2009年里约申奥成功后，一夜之间，这里的居民们发现自己的家被圈入了奥林匹克公园" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388886510_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388886510/0" data-title="上世纪60年代，当奥托德罗莫村渔民们开始在巴哈区定居时，这里还是一片沼泽，然而随着90年代里约房地产重心的西移，奥托德罗莫村便屡次成为市政府拆迁的目标" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388886592_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388886592/0" data-title="最终打破平静的是里约奥运会的日益临近，从2014年2月开始，奥托德罗莫村就像是陷入了一场噩梦，小小的一个贫民窟经历了一个拆迁工程可能面临的所有遭遇：真假难辨的诺言，恐惧以及流血冲突" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388886750_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388886750/0" data-title="里约市长称，市政府从来没有强迫居民搬迁，去留全凭自愿。然而事实并非如此，实际上居民受到了巨大的压迫。市卫队的警察对居民发起攻击，打伤了人，他们使用警棍，制暴喷雾，橡皮子弹，那是历史会铭记的一天" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388887234_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388887234/0" data-title="村民若昂这样说：“我在这里生活工作，奥运会并没有给我带来好处。我的家被推倒了，工作没有了。我并不反对奥运会，但我反对以奥运为借口的所作所为。”图为废墟墙上涂写着的“公平”二字" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388887766_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388887766/0" data-title="眺望远方，与奥托德罗莫村一墙之隔的奥林匹克公园清晰可见" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388887302_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388887302/0" data-title="无论从哪个角度看上去，奥林匹克公园也都近在咫尺" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388887711_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388887711/0" data-title="为奥运而建的奢华酒店与奥托德罗莫村也仅有一墙之隔，而这，都不是故事的结尾" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388887164_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388887164/0" data-title="故事的最后并不是一个习以为常的悲剧，因为奥托德罗莫村居民没有继续隐忍，开始进行了守护家园的漫长之旅。图为电影专业的学生以奥托德罗莫村的废墟为背景拍摄纪录片" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388887436_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388887436/0" data-title="而贫民窟唯一的教堂成为了居民聚会协商的场所" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388887352_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388887352/0" data-title="仅在2009年至2013年期间，就有近7万人因为里约奥运会搬家，是里约历史上搬迁人数最多的一次。7万人，其中又有几个肯为家园坚守的奥托德罗莫村呢？图为经历长期抗争的村民桑德拉，事隔多年后她会为自己的坚持感到自豪" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388886984_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388886984/0" data-title="当家园渐渐远去，他们没有逆来顺受，他们用坚持守护了自己的家园。" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388887066_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388887066/0" data-title="最终2016年4月，里约市政府宣布放弃拆迁计划，并将对奥托德罗莫村进行城市规划，为剩余的20个家庭建设统一的住所，并在奥运会开幕前交房。图为等待新家的一对夫妇" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388886821_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388886821/0" data-title="奥托德罗莫村的胜利代表着坚持力量的胜利。当这种情况再次发生时，他们要记得，奥托德罗莫靠坚持守护了自己的家园。如果奥托德罗莫村能够做到，其他人也有可能" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388886904_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388886904/0" data-title="在一片废墟上，新的社区正逐渐成型。每天，居民总会去工地里看上一眼，坐一坐，才能安心" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388887577_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388887577/0" data-title="奥托德罗莫村村民桑德拉相信经历过劫难的奥托德罗莫村将成为榜样" data-size="798x1054"><span></span><div class="mask"></div></li><li data-thumb-path="http://inews.gtimg.com/newsapp_ls/0/388887506_300x300s/0" data-large-pic-path="http://inews.gtimg.com/newsapp_ls/0/388887506/0" data-title="最重要的是要有耐心，有耐心的人才能自我拯救。最后能留下来的人就像是上帝在摇筛子，摇啊摇，从缝隙中掉下去的都是劣质的，没有价值的，而最后留下来的就在这里。若昂说：“现在，觉得自己留在了上帝的筛子上”。" data-size="798x1054"><span></span><div class="mask"></div></li>                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="rio_bottom_text right">
+                            <!-- rig-bg-white rig-bg-black -->
+                            <div class="box_block mod size-l rio_bg_black" >
+                                <div class="leftArrowPic"></div>
+                                <div class="article-block scrollBar-contatiner" data-type="100" style="color:#ffffff;">
+                                </div>
+                                <div class="pageshow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧背景颜色 -->
+                <div class="container width65 bg-alpha fl-r rio_big_container" style="background-color:#Default;">
+                     <div class="box_table">
+                        <div class="box_table-td vl-bottom-large">
+                            <span class="title-img al-center">
+                                <img src="">
+                            </span>
+                            <a title="上一张" hidefocus="true" class="preArrow contextDiv" href="javascript:void(0);"><span class="preArrow_A"></span></a>
+                            <a title="下一张" hidefocus="true" class="nextArrow contextDiv" href="javascript:void(0);"><span class="nextArrow_A"></span></a>
+                            <div class="rio_big_bottom_text left">
+                                <div class="leftArrowPic"></div>
+                                <div class="text_content" style="color:#fff;">
+                                    一个可选的布尔值。规定了装载到窗口的 URL 是在窗口的浏览历史中创建一个新条目，还是替换浏览历史中的当前条目。一个可选的布尔值。规定了装载到窗口的 URL 是在窗口的浏览历史中创建一个新条目，还是替换浏览历史中的当前条目。
+                                </div>
+                                <div class="pageshow">0/100</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 固定移动端背景颜色为黑色 -->
+                <div class="container width100 bg-alpha fl-r rio_mobile" style="background-color:#000;">
+                     <div class="box_table">
+                        <div class="box_table-td vl-top-large">
+                            <div class="title_container"><p></p></div>
+                            <div class="vl-top-large">
+                                <span class="title-img al-center">
+                                    <img src="">
+                                </span>
+                                <a title="上一张" hidefocus="true" class="preArrow contextDiv" href="javascript:void(0)"><span class="preArrow_A"></span></a>
+                                <a title="下一张" hidefocus="true" class="nextArrow contextDiv" href="javascript:void(0)"><span class="nextArrow_A"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 13 内页 Dom - 视频 : 单例-图文叠加，垂直居右, 视频  -->
+<div class="page flip-item" data-type="jumbotron-bg-img">
+    <div data-page-id="3" class="container width100">
+        <div class="inner">
+            <div class="page-block">
+                <!-- 页面背景图 -->
+                <div class="loaded jumbotron-img" data-src="http://inews.gtimg.com/newsapp_ls/0/399178814/0"></div>
+                <!-- L/R : 如果为 0 , 则 addClass(fl-r) ；如果为 1 ,则无需操作  -->
+                <div class="container width50 bg-alpha fl-r">                        
+                    <div class="box_table">
+                        <div class="box_table-td">
+                            <div class="box_block">
+                                <div class="">
+                                    <div class="box_video">
+                                        <!-- 视频 VID -->
+                                        <a class="box_btn-play prevent-area" data-vid="p00217ytm5z" data-pic="">
+                                            <i class="ico-play"></i>
+                                            <!-- 视频配图 -->
+                                            <img data-src="http://inews.gtimg.com/newsapp_ls/0/448953612/0">
+                                        </a>    
+                                    </div>
+
+                                    <!-- 文字背景：light-bg; dark-bg; Default-->
+                                    <div class="box_block light-bg  mod size-l">
+                                        <div class="article-block scrollBar-contatiner" data-type="50">
+                                            <!-- 标题图 , 对齐方式(0:al-left, 1:al-center, 2:al-right)-->
+                                            <span class="title-img al-left">
+                                            <img data-src="">
+                                            </span>
+
+                                            <!-- 页面标题：h3 (字体颜色；标题对齐) -->
+                                            <!-- 标题对齐：al-left ; al-center; al-right -->
+                                            <h3 style="color:#000000;" class="al-left style-b-line">渺小的坚持换来久违的家园</h3>
+
+                                            <div class="box-article color-white al-mid">
+                                                <!-- 文字详情 -->
+                                                <p style="text-align: left;">最重要的是要有耐心，有耐心的人才能自我拯救。最后能留下来的人就像是上帝在摇筛子，摇啊摇，从缝隙中掉下去的都是劣质的，没有价值的，而最后留下来的就在这里。</p>                                                
+                                            </div>
+
+                                            <!-- 超链接按钮 -->
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container width50 bg-alpha empty"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 14 内页 Dom - 自定义左右 : 两列 50%-50% -->
+<!-- 14 内页 Dom - 自定义左右 : 两列 50%-50% -->
+<div class="page flip-item" data-type="normal">
+    <!-- 左页 -->
+    <div data-page-id="0" class="container width50">
+        <!-- 00 : 大图+文1 -->
+<div class="inner w-br" style="display:block">
+    <div class="page-block">
+        <div class="purecolor">
+            <!-- 页面背景图 -->
+            <div class="loaded" data-src="http://inews.gtimg.com/newsapp_ls/0/454640153/0"></div>
+        </div>
+        <div class="box_table">
+            <div class="box_table-td al-left vl-bottom">
+                <!-- 标题图 , 对齐方式(0:al-left, 1:al-center, 2:al-right)-->
+                <span class="title-img al-left">
+                    <img data-src="">
+                </span>
+
+                <!-- 页面标题：h3 (字体颜色；标题对齐) -->
+                <!-- 标题对齐：al-left ; al-center; al-right -->
+                <!-- 标题无输入：style="display:none" -->
+                <h3 style="color:#FFFFFF; " class="mid al-left text-shadow">留在上帝的筛子上</h3>
+
+                <div class="box-article color-white text-shadow">
+                    <!-- 文字详情 -->
+                    <p>不是每个人都能坚守到最后，而奥托德罗莫村最后20户村民留在了上帝的筛子上。<br/></p>                </div>
+
+                <!-- 超链接按钮 -->
+                            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <!-- 右页 -->
+    <div data-page-id="0" class="container width50">
+        <!-- 07 : 评论 -->
+<div class="inner">
+    <div class="page-block">
+        <div class="box_table">
+            <div class="box_table-td vl-top-large">
+                <div class="box_block mod-s size-l">
+                    <div class="article-block">
+                        <div class="pcomment comment_wrapper">
+                            <div class="row">
+                                <div class="top-container">
+                                    <h3><span id='comment_total_num_1486329034'></span> 条评论</h3>
+                                    <p>添加评论</p>
+
+                                    <form method="post" id="commentForm_1486329034" target="ajaxUpload" action="http://w.coral.qq.com/article/comment/">
+                                        <div class="textarea_wrapper" >
+                                            <textarea name="content" id='comment_content_1486329034'></textarea>
+                                        </div>
+                                        <input type="hidden" name="targetid" id="targetid_1486329034" value="">
+                                        <input type="hidden" name="format" value="SCRIPT">
+                                        <input type="hidden" name="source" value="3">
+                                        <input type="hidden" name="callback" value="parent.topCallback">
+                                        <input type="hidden" name="code" value="1">
+                                        <input type="hidden" name="g_tk" id="token_1486329034" value="">
+                                        <input type="hidden" name="_method" value="put">
+                                        <input type="hidden" name="appid" id="appid_1486329034" value="wxabf7956d52750cd9">
+                                        <input type="hidden" name="access_token" id="access_token_1486329034" value="">
+                                        <input type="hidden" name="openid" id="openid_1486329034" value="">
+                                        <input type="hidden" name="logintype" id="logintype_1486329034" value="1">
+                                        <input type="hidden" name="wxapi" id="wxapi_1486329034" value="2.1">
+                                    </form>
+                                    <iframe name="ajaxUpload" style="display:none"></iframe>
+
+                                    <!-- 已经登录：直接评论 -->
+                                    <div id='hasLogin_1486329034' class="row hasLogin" style="display:block">
+                                        <div class="nav_wrapper">
+                                            <a id='comment_submit_1486329034' class="btn-submit btn-loginSubmit">发表评论 &gt; </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- 没有登录：点击登录 -->
+                                    <div id='noLogin_1486329034' class="row hasLogin" style="display:none">
+                                        <div class="nav_wrapper">
+                                            <a id="login_qq_btn_1486329034" class="btn-submit btn-gotoLogin">登录并发表评论 &gt; </a>
+                                        </div>    
+                                    </div>
+
+                                </div>
+
+                                <div class="scrollBar-contatiner" data-type="spec-comment" style="padding-right:15px;">
+                                    <ul id='comment_list_show_1486329034'>
+                                    </ul>
+                                    <div class="nav_wrapper">
+                                        <a id='get_more_comment_1486329034' class="btn-more">加载更多</a>
+                                        <span style="display:none">正在加载更多评论...</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/mb/cb2/global/assets/css/comment.css">   
+<script type="text/javascript">
+var backUrl = window.location.href;
+var __uin ="";
+var $targetId = 1486329034;
+//初始化获取文章信息
+$(document).ready(function () {
+    var comment_1486329034 = new Comment();
+    comment_1486329034.initStart({
+        targetId : 1486329034,
+        __uin : getUin(),
+    });
+});
+</script>
+    </div>
+</div>
+
+
+    <!-- 动态 ：下一页 Next Dom -->
+    <div id="flip-next" class ="flip-container" style="display:none;">
+        <!-- 平躺的包含左右两侧的 Dom -->
+        <div class="flip-left-a">
+            <!-- 不处理：当前页 左侧 内容 -->
+            <div class="flip-html-here">
+                <!-- Insert : Current Page -->
+            </div>
+            <!--<div class="shadow">阴影</div>-->
+            <div class="flip-right-b">
+                <!-- 需处理：下一页 右侧 内容 -->
+                <div class="flip-html-here">
+                    <!-- Insert : Next Page -->
+                </div>
+                <!--<div class="shadow"></div>-->
+            </div>
+        </div>
+
+        <!-- 3D 旋转的包含正反两面的 Dom -->
+        <div class="flip-rotating-pages-container" style="">
+            <!-- transform: matrix3d(0.4, 0, 0.8, 0, 0, 1, 0, 0, -0.8, 0, 0.4, 0, 0, 0, 0, 1); -->
+            <div class="flip-right-a flip-rotating-pages">
+                <div class="flip-rotating-pages-content">
+                    <!-- 正面：当前页 右侧 内容 -->
+                    <div class="flip-html-here">
+                        <!-- Insert : Current Page -->                        
+                    </div>
+                    <!--<div class="shadow">阴影</div>-->
+                </div>
+            </div>
+
+            <!-- transform: matrix3d(-0.4, 0, -0.8, 0, 0, 1, 0, 0, 0.8, 0, -0.4, 0, 0, 0, 0, 1); -->
+            <div class="flip-left-b flip-rotating-pages">
+                <div class="flip-rotating-pages-content">
+                    <!-- 反面：下一页 左侧 内容 -->
+                    <div class="flip-html-here">
+                        <!-- Insert : Next Page -->                        
+                    </div>
+                    <!--<div class="shadow">阴影</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 动态：上一页 Prev Dom -->
+    <div id="flip-prev" class ="flip-container" style="display:none;">
+        <!-- 平躺的包含左右两侧的 Dom -->
+        <div class="flip-right-a">
+            <!-- 不用处理：当前页 右侧 内容 -->
+            <div class="flip-html-here">
+                <!-- Insert : Current Page -->
+            </div>
+            <!--<div class="shadow">阴影</div>-->
+            <div class="flip-left-b">
+                <!-- 需处理：上一页 左侧 内容 -->
+                <div class="flip-html-here">
+                    <!-- Insert : Prev Page -->
+                </div>
+                <!--<div class="shadow">阴影</div>-->
+            </div>
+        </div>
+
+        <!-- 3D 旋转的包含正反两面的 Dom -->
+        <div class="flip-rotating-pages-container">
+            <div class="flip-left-a flip-rotating-pages">
+                <div class="flip-rotating-pages-content">
+                    <!-- 当前页 左侧 内容 -->
+                    <div class="flip-html-here">
+                        <!-- Insert : Current Page -->
+                    </div>
+                    <!--<div class="shadow">阴影</div>-->
+                </div>
+            </div>
+
+            <div class="flip-right-b flip-rotating-pages">
+                <div class="flip-rotating-pages-content">
+                    <!-- 上一页 右侧 内容 -->
+                    <div class="flip-html-here">
+                        <!-- Insert : Prev Page -->
+                    </div>
+                    <!--<div class="shadow">阴影</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Page Container -->
+
+<!-- mainvideo -->
+<!-- <div id="mainvideo" class="main-video">-->
+<!--     <div class="close" id="close"><i class="ico"></i></div>-->
+<!--     <div id="mod_player"></div>-->
+<!-- </div>-->
+<!-- /mainvideo -->
+
+<!-- popuppanel -->
+<div id="popuppanel" class="popup-panel">
+    <div class="close" id="ppClose"><i class="ico"></i></div>
+    <div id="textScroller" class="text-scroller">
+        <div class="box_block mod size-l">
+            <div class="scrollBar-contatiner article-block color-white" data-type="100">
+                <div class="box-article color-white">
+                    <p class="textContainer"><!--详情文字--></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /popuppanel -->
+<!-- Loading : Start -->
+<div class="loading" id="loading" style="display:block;">
+    <div class="loading-box pa" id="loading-box" style="padding-top: 234px;">
+        <div class="loading-shadow">
+            <div class="loading-bg">
+                <span class="loading-ico" id="loadw"><i></i></span>
+            </div>
+        </div>
+        <div class="loading-txt">
+            <span class="loading-percent" id="loadingPerdent"><i>0%</i></span>LOADING
+        </div>
+        <div class="we_container">
+            <div class="we_copyright"></div>
+        </div>
+    </div>
+</div>
+<!-- Loading : End -->
+<!--<script src="../../global/assets/js/tools/jquery-1.10.2.min.js"></script>-->
+<script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/jquery-1.10.2.min.js"></script>
+<script src="//mat1.gtimg.com/www/mb/cb/publish/assets_auto/js/api_v2.js" charset="utf-8"></script>
+
+<script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/cbtools.1.0.js"></script>
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>
+    <script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/html5.js"></script>
+<![endif]-->
+
+<script src="//imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2_jq.js"></script>           <!-- 腾讯视频播放器 -->
+<script src="//mat1.gtimg.com/www/mb/cb2/global/assets/js/tools/jquery.mCustomScrollbar.js"></script>
+<script src="//mat1.gtimg.com/www/mb/cb2/publish/book_assets/js/tools/mlellipsis.js"></script>
+<script src="//mat1.gtimg.com/www/mb/cb2/publish/book_assets/js/tools/loading.js"></script>
+<!-- <script src="//mat1.gtimg.com/www/mb/cb2/publish/book_assets/js/main-v1.8.6.js"></script> -->
+<script src="//mat1.gtimg.com/www/mb/cb2/publish/book_assets/js/main-rio-pic-v1.8.8.2.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+try{
+    //分享
+    var wxShareUrl = "http://sports.qq.com/cross/20160704/Z7F49xt6.html";
+    if(window.location.host.indexOf('m.')=="0" || wxShareUrl==""){
+        var wxShareUrl= window.location.href;
+        wxShareUrl = wxShareUrl.replace(window.location.hash,"");
+        wxShareUrl = wxShareUrl.replace(window.location.search,"");
+    }
+    cbApi.wexin("http://inews.gtimg.com/newsapp_ls/0/463278768/0",wxShareUrl,"【奥运B面】留在上帝的筛子上-里约奥运钉子户的坚守","最重要的是要有耐心，有耐心的人才能自我拯救。");
+}catch(e){}
+$(function() {
+    var page = {
+        pageIndex : 0,      //* 设置显示的页数
+        init : function(){
+            //* get : hash-pageIndex
+            page.pageIndex = tool.getHashIndex();
+            //
+            main.init(page.pageIndex, function($index){
+                //* flip-complete
+                window.location.hash = "#" + $index;
+                console.log('flipDone: insert pageIndex to weixin:' + window.location.hash);
+            });
+        }
+    }
+
+    //* Define : 只载入第一页的背景图及第一页内的图片
+    var loadFileArr = ['//mat1.gtimg.com/www/mb/cb2/global/assets/images/blank.gif','//mat1.gtimg.com/www/mb/cb2/global/assets/images/blank.gif'];
+    //
+    loader.init(loadFileArr,function(){
+        //* After-loadComplete : CallBack-Func
+        page.init();
+    });
+
+});
+</script>
+<script src="//mat1.gtimg.com/www/mb/cb2/publish/js/comment3.js?v=4"></script>
+    <script language="javascript" src="//mat1.gtimg.com/ping.js"></script>
+    <script language="javascript">
+    if(typeof(pgvMain) == 'function') pgvMain();
+    </script>
+    
+</body>
+</html>
+<!--[if !IE]>|xGv00|a498d49860c918ebe81564fe22c5e020<![endif]-->

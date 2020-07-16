@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>登录页-腾讯视频</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="http://imgcache.qq.com/mediastyle/tenvideo/css/login.css" media="screen" />
+<script language="javascript">
+document.domain="qq.com";
+</script>
+</head>
+<body>
+<div class="container_25 clearfix">
+<div class="grid_25">
+<div class="wrap">
+<h1 class="logo">
+<span></span>
+<a href="http://v.qq.com/index.html"><img src="http://imgcache.qq.com/mediastyle/tenvideo/img/logo.png" alt="腾讯视频" /></a>
+</h1>
+<div class="content">
+<h2>用户登录</h2>
+
+<iframe allowtransparency="true" name="embed_login_frame" id="embed_login_frame" frameborder="0" scrolling="no" width="100%" height="100%"
+src="about:blank">
+</iframe>
+
+<div class="mod_register">
+还没QQ帐号？<a href="http://zc.qq.com/chs/index.html">立即注册</a>
+</div>
+</div>
+<div class="mod_nav"><a href="http://v.qq.com/download.html">下载客户端</a>|<a href="http://v.qq.com/help/live_1.html">帮助</a>|<a href="http://support.qq.com/discuss/616_1.shtml">用户反馈</a></div>
+<div class="mod_pic"><a href="http://v.qq.com/download_mobile.html" title="腾讯视频登录"><img src="http://imgcache.qq.com/mediastyle/tenvideo/css/img/login_pic.jpg" alt="腾讯视频登录" /></a></div>
+</div>
+</div>
+</div>
+<div class="foot">
+<p class="footermenu">
+<a href="http://www.tencent.com/" rel="nofollow" target="_blank">关于腾讯</a> |
+<a href="http://www.tencent.com/index_e.shtml" rel="nofollow" target="_blank">About Tencent</a> |
+<a href="http://www.qq.com/contract.shtml" rel="nofollow" target="_blank">服务条款</a> |
+<a href="http://adver.qq.com/" rel="nofollow" target="_blank">广告服务</a> |
+<a href="http://hr.tencent.com/" rel="nofollow" target="_blank">腾讯招聘</a> |
+<a href="http://service.qq.com/" rel="nofollow" target="_blank">客服中心</a> |
+<a href="http://www.qq.com/map/" rel="nofollow" target="_blank">网站导航</a>
+</p>
+<p class="copyrighten">Copyright &copy; 1998 - <span><script language="javascript">document.write(new Date().getFullYear());</script></span> Tencent. <a target="_blank" href="http://www.tencent.com/en-us/le/copyrightstatement.shtml" rel="nofollow">All Rights Reserved.</a></p>
+<p class="copyrightzh">腾讯公司 <a  target="_blank" href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" rel="nofollow">版权所有</a> <a  target="_blank" href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" rel="nofollow">腾讯网络文化经营许可证</a></p>
+</div>
+</body>
+
+<script type="text/javascript" src="http://qzs.qq.com/tencentvideo_v1/js/txv.base.min.js?v=20130823&max_age=604800"></script>
+<script language="javascript">
+function full(_1){if(/^https?:\/\/.+?\.qq\.com/.test(decodeURIComponent(_1))){return _1;}var h=window.location.host;if(h=="sns.video.qq.com"){h="v.qq.com";}return[window.location.protocol,"//",h,_1].join("");};function up(p,u){var u=u||document.location.toString();var _2=new RegExp("(^|&|\\?)"+p+"=([^&]*)(&|$|#)");var r;if(r=u.match(_2)){return r[2];}return"";};var oj=up("j");var j=full(up("j"));var p=up("p");if(p=="checkedBuy"){txv.login.addLoginCallback(function(){var _3=up("id",unescape(j));$j.ajax({url:"http://pay.video.qq.com/fcgi-bin/pay?otype=json",data:{"id":_3,"uin":txv.login.getUin()},dataType:"jsonp",CSRF:true,success:function(_4){if(!_4){return false;}if(!!_4.pay){window.location.href=txv.common.getPlayUrl(_3);}else{window.location.href=["/pay/newpay.html?id=",_3].join("");}}});});txv.login.setStatus(true,true);}else{var low_login=txv.common.getUrlParam("low_login"),param = low_login==1?"&low_login=1":"";if(p=="checkBuy"){$e("#embed_login_frame").attr("src",["http://ui.ptlogin2.qq.com/cgi-bin/login?appid=532001601&s_url=",escape("http://imgcache.qq.com/liveportal_v1/toolpages/redirect.html?jumpurl=&clientjumpurl="),encodeURI(escape(full("/pay/login.html?")+"j="+oj+"&p=checkedBuy")),"&target=top&link_target=blank&qlogin_auto_login=0&f_url=loginerroralert&hide_title_bar=1&css=http%3A//imgcache.qq.com/ptcss/b2/szmt/532001601/login.css",param].join(""));}else{$e("#embed_login_frame").attr("src",["http://ui.ptlogin2.qq.com/cgi-bin/login?appid=532001601&s_url=",escape("http://imgcache.qq.com/liveportal_v1/toolpages/redirect.html?jumpurl=&clientjumpurl="),escape(j),"&target=top&link_target=blank&qlogin_auto_login=0&f_url=loginerroralert&hide_title_bar=1&css=http%3A//imgcache.qq.com/ptcss/b2/szmt/532001601/login.css",param].join(""));}}
+</script>
+</html>

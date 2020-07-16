@@ -1,0 +1,27 @@
+/*by curls 20100626*/
+/*gobal*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+body { font:12px/1.75 "ËÎÌו", arial, sans-serif;  background:#fff; border-top:1px solid #eef7fc; }
+a{color:#5b5b5b; text-decoration:none;}
+a:hover{color:#C00;}
+img{ border:none;}
+.w937{ width:937px; margin:0 auto; overflow:hidden; zoom:1;}
+.tc{ text-align:center;}
+.en{ font-family:Arial;}
+.zt_head{ text-align:right; line-height:45px;}
+.zt_head h1{ background:url(//mat1.gtimg.com/worldcup/images/imgcss_article_qq/danhang2_top.png) no-repeat 0 0; height:45px; width:560px; float:left;}
+.zt_head h1 a{ height:45px; width:113px; float:left;}
+.zt_head h1 a.a_cup{ margin-left:23px;width:400px; display:inline;}
+
+.zt_top{ background:url(//mat1.gtimg.com/worldcup/2010/zt_video/zt_top_bg.jpg) no-repeat center;}
+.zt_btn{ position:relative; height:173px;}
+.zt_top a{ position:absolute; right:145px; bottom:8px;}
+.zt_top a.zhibo{ position:absolute; left:90px; top:24px; display:inline-block; width:560px; height:100px;}
+
+.zt_bottom{ background:url(//mat1.gtimg.com/worldcup/2010/zt_video/zt_bottom_bg.jpg) no-repeat center top;}
+
+.zt_footer{ text-align:center; color:#000000; line-height:24px; margin-top:22px;}
+.zt_footer a{ color:#000;}
+.zt_footer a:hover{ text-decoration:underline;color:#C00;}
+
+/*  |xGv00|c2aa4b3709112ae4b9f4fd0c89d273a7 */

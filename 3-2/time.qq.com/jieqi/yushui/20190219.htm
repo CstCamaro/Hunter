@@ -1,0 +1,267 @@
+      <!DOCTYPE html>
+      <html>
+      <head lang="zh-cn">
+          <meta charset="gb2312">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>时光画轴 - 腾讯网</title>
+          <script type="text/javascript">
+              if(window.location.toString().indexOf('pref=padindex') != -1){
+              }else{
+                if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || /\(Android.*Mobile.+\).+Gecko.+Firefox/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){  
+                    if(window.location.href.indexOf("?mobile")<0){
+                  try{
+                    if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                      window.location.href="http://time.qq.com/jieqi/yushui/20190219-m.htm";
+                    }else if(/iPad/i.test(navigator.userAgent)){
+                      //window.location.href="http://www.qq.com/pad/"
+                    }else{
+                      window.location.href="http://xw.qq.com/simple/s/index/"
+                    }
+                  }catch(e){}
+                  }
+                }
+              }
+          </script>
+          <meta name="renderer" content="webkit">
+          <link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico"/>
+          <meta name="description" content="腾讯网重大专题回顾，包括中国传统24节气，大型节日热点事件等。时光画轴，拾起光阴，点滴珍藏，我们经过的，都值得纪念">
+          <meta name="keywords" content="雨水，回暖，春天，腾讯网，时光画轴，节气">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <link rel="stylesheet" href="//mat1.gtimg.com/ipad/qq_time/lib/amazeui.min.css"/>
+          <style type="text/css">
+              body{font-size:16px;}
+              .am-u-sm-4 {width:33.33333333%;}
+              .am-u-sm-8 {width: 66.66666667%;}
+              .body-area .am-article-bd img {margin: 0 auto;}
+              .body-area .am-article-bd iframe {margin: 0 auto;display: block;}
+              /*管家图片hover效果*/
+              .guanjian-tips{position:absolute;bottom:180px;left:80px;color:#fff;font-size:14px;line-height:18px}
+              .guanjian-tips span.w-icon{position:relative;display:block;float:right;width:18px;height:18px;margin-left:10px;cursor:default;background:url(//pc1.gtimg.com/act/brand/201709life/images/pages-2-icon-12f52ce309.png) no-repeat}
+              i.guanjia-tips-content{position:absolute;width:209px;height:70px;top:24px;left:40px;background:url(//s.pc.qq.com/guanjia/images/fa/76/fa76532b810a875fac9aff7284ae4806.png) no-repeat;transition:all .2s ease-out;opacity:0}
+              .guanjian-tips:hover i.guanjia-tips-content{opacity:1}
+
+          </style>
+          <script type="text/javascript">
+          //<!--
+              
+              var globalServerTime = '2020/07/10 19:14:20';
+              var curDateObj = new Date(globalServerTime);
+              var curTime = curDateObj.getTime();
+              var curMonth = curDateObj.getMonth() + 1;
+              var curDate = curDateObj.getDate();
+              var curDay = '星期'+ '日一二三四五六'.charAt(curDateObj.getDay());
+              document.domain = "qq.com";
+          //-->
+          </script>
+      </head>
+      <body>
+          <div id="app"></div>
+
+          <!-- 登录 开始 -->
+          <div id="loginBg" class="loginBg"></div>
+          <div id="login_div" style="position:fixed;_position:absolute;width:400px;height:382px;padding:0;margin:0;top:50%;left:-9999px;margin:-165px 0 0 -276px;_margin-top:0;z-index:99999;visibility:hidden;">
+              <iframe id="login_frame" height="100%" scrolling="auto" width="100%" frameborder="0" src=""></iframe>
+          </div>
+          <!-- 登录 结束 -->
+
+          <script type="text/javascript">
+/*
+* date: 专题日期，格式为 年-月-日
+ * festivalName: 专题名称，展示在左侧时间轴节点
+ * title: 标题
+ * url: 专题链接，需和产品核对专题栏目分类和日期，栏目分类有：jieqi/festival/baike/event，页面命名为对应的日期如20171222.htm
+ * murl: 移动端专题链接，和url分类一致，页面名称命名为在后缀前添加-m，例如 20171222-m.htm
+ * abstract: 摘要/导语内容
+ * commentNum: 评论数
+ * festivalType: 节气 "1"，节日 "2"，热点 "3"(baike和event均为3)
+ * imgUrl: 素材1-首页图片, 格式为 年月日_英文名.jpg(350*150, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+ * imgUrl2: 素材2-移动底层图片名, 格式为 年月日_英文名_base.jpg(750*320, 可以为已上传的图片素材url)，默认上传目录为 http://mat1.gtimg.com/ipad/qq_time/imgs/
+*/
+window.QA_Config = {
+"date": "2019-02-19", //日期，格式为 年-月-日
+	"cmd_id": "3727960914", //评论id
+	"vid": "", //视频vid，如果没有视频可以为空
+	"domId": "yushui2019"/*, 内容节点id，格式为 专题拼音标题 + 年份，同步到移动版，如果确认壁纸不是来自管家，那么取消注释title和url字段，使第二张轮播图点击跳转到Q首
+	"title": "　", //第二张轮播图片的hover文字
+    "url": "http://www.qq.com?pgv_ref=jieqi" //第二章轮播图片的点击跳转url*/
+};
+</script>
+<div id="yushui2019" style="display:none;">
+<p>雨水是24节气中的第2个节气。此时，气温回升、冰雪融化、降水增多，故取名为雨水。雨水节气时段一般从公历2月18日或19日开始，到3月4日或5日结束。雨水和谷雨、小雪、大雪一样，都是反映降水现象的节气。</p>
+<p>《月令七十二候集解》：“正月中，天一生水。春始属木，然生木者必水也，故立春后继之雨水。且东风既解冻，则散而为雨矣。”意思是说，雨水节气前后，万物开始萌动，春天就要到了。如在《逸周书》中就有雨水节后“鸿雁来”,“草木萌动”等物候记载。</p>
+<h2>节气天气</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBYh7mvkxHl2PtHuMKsBpGBZ4MQPkAWEwVbyUhILu2LNrVsia8XT46NicIA/640?wx_fmt=jpeg" title="yushui1">
+<p>雨水季节，天气变化不定，是全年寒潮过程出现最多的时节之一，忽冷忽热，乍暖还寒的天气对已萌动和返青生长的作物、林、果等生长及人们的健康危害很大。这时的大气环流处于调整阶段，全国各地的气候特点，总的趋势是由冬末的寒冷向初春的温暖过渡。</p>
+<h3>黄河中下游地区</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBY7THNgYtzfEiabhFcSS6nJHuIOsKsRf3Qy3licEBIfySE2sbc6LeYDvLw/640?wx_fmt=jpeg" title="yushui2">
+<p>这时冷暖空气的交锋，带来的已经不是气温骤降、雪花飞舞，而是春风春雨的降临。此时这一地区的平均气温都已经升到0℃以上，甚至白天极端最高气温可达到20多℃，已经没有了降雪的条件，即便先人们以第一场春雨命名“雨水”，也是恰如其分的。</p>
+<p>雨水时节，小麦进入了返青阶段，这时的小麦对水分的要求较高。而此时的雨量又是全年最少的时段。据《1971～2000年中国地面气候资料》统计，2月份石家庄、太原、北京的平均降雨量分别只有7.4、5.2和4.9毫米，真可谓“春雨贵如油”。</p>
+<h3>西北、东北地区</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBYDF9vt8cVPmriaO8XxOpiaibwIPOYqRmRRkfqckDpXeb2FITtNeicXAlD7Q/640?wx_fmt=jpeg" title="yushui3">
+<p>雨水节气期间，我国的西北、东北依然没有走出冬天的范畴。从2月份的平均气温来看：兰州、西宁、乌鲁木齐、沈阳的月平均气温分别-1.0℃、-3.9℃、-9.7℃和-6.9℃，可见这些地方还没有摆脱冬季的寒冷，天气仍以寒为主，降水也以雪为主。</p>
+<h3>西南、江南地区</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBY8yMwqRictJS9dtq5utVDIicEjfchyZ5wMNYceA9FFQ7ZoDJ4c3uCIh5g/640?wx_fmt=jpeg" title="yushui4">
+<p>雨水期间，除了云南南部地区已是春色满园以外，西南、江南的大多数地方还是一幅早春的景象：日光温暖，早晚湿寒，田野青青，春江水暖。</p>
+<p>按照四季的划分标准：连续5天，每日日平均气温都在10℃-22℃时，春天便开始了。一般来说，这些地方真正意义上的"春天"要在3月下旬，也就是一个月以后的"春分"时节才能到来。但也有特殊的情况，如2004年的武汉在2月10日、长沙2月11日、南昌2月11日、南京2月13日就进入真正的春季了，时间足足提前了1个月。</p>
+<p>根据1月和2月份的多年平均雨量显示：武汉为43.4、58.7毫米，长沙66.1、95.2毫米，南昌74.0、100.7毫米，福建48.0、86.6毫米，可见上述地方的雨量，2月份相对1月份明显增加，能够满足小麦、油菜的生长需要。</p>
+<h3>华南地区</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBYW5NbDY64nVq4AW3ntzic9fhfv6D1fxMcic4tZwLCPia59nyj8MRMo76Sg/640?wx_fmt=jpeg" title="yushui5">
+<p>雨水节气期间，华南地区是春意盎然，百花盛开。</p>
+<p>华南地区下列城市2月份的多年平均气温是：广州14.5℃、南宁14.1℃、海南岛海口18.7℃；上述城市2月份平均降水量分别是：69.4毫米、42.6毫米、35.0毫米。虽说雨量比黄河中下游地区多出好几倍，但这里气温高、蒸发量大，还是缺水。尤其是华南南部和海南岛的局部地区，这一时期的雨量仍比较少，往往会出现春旱。若受强冷空气影响，平均气温低于10℃的话，对早稻育秧、育苗十分不利。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBYOsR9jGxwaeIkjExohWcTakOERyicbOLiaU3cGwZzlSvqAL8dIo2kLN2g/640?wx_fmt=jpeg" title="yushui6">
+<p>如果说这些地区，“立春”是春天的第一乐章“奏鸣曲”：春意萌发、春寒料峭。雨水之后，便进入了春天的第二乐章“变奏曲”：气温回升、乍寒乍暖。雨水期间“七九河开、八九雁来”，一幅冬末春初的风景。</p>
+<h2>雨水农事</h2>
+<h3>蔬菜农事概要</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBYAruJC3a20qC0hzQmKDaib1icn0A3icaFeZcUmPic0ryR6HWYHv7Drm4zpg/640?wx_fmt=jpeg" title="yushui6">
+<blockquote>1. 继续做好大棚蔬菜、瓜果的防冻保温工作。<br/> 2. 加强大棚温湿度管理，做好通风透气。<br/> 3. 继续做好保花保果工作。<br/> 4. 雨水后播种萝卜，宜选择生长期短、耐寒性强、春化要求比较严格、抽薹迟，不易空心的品种进行栽培，如白玉春、春白2号等。</blockquote>
+<h3>果树农事概要</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_png/M75eP40ibXmna8q099BBibWj4fwfOKQFBYrRLXWnfK8a22qHDDhEEVUdXia53mopicXv4f0WmEVhA3oIbDUrXrK8vQ/640?wx_fmt=png" title="yushui7">
+<blockquote>1. 柑橘雨水完成修剪和施重肥。喷药消灭越冬病害虫，可喷0.8～1波美度石硫合剂或95%机油乳剂100倍+40%速扑杀800－1000倍（机油乳剂宜在回暖后使用），若选用先喷机油乳剂，待萌芽前再喷石硫合剂。特早品种土施速效氮为主的催芽肥，施肥量以树龄大小和产量多少而定。对有树脂病的树干，及时刮除病部，并用波尔多液或新鲜牛粪和黏土的混合物涂布伤口。继续做好道路、沟渠的整修疏理。<br/> 2. 杨梅及时施好芽前肥。以草木灰（钾肥）为主，搭配磷肥和氮肥，施肥量：大树一般每株施草木灰15kg，或焦泥灰20～25kg，或硫酸钾1.0kg。旺树不施氮肥。</blockquote>
+<h3>畜牧农事概要</h3>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBYHWO5X23DUAPZyqedzNC8oLKspUPlaUomdRAxBbZtBwngkdbeVO0N7A/640?wx_fmt=jpeg" title="yushui8">
+<blockquote>1. 继续做好栏舍保暖工作。<br/> 2. 山羊放牧，宜在太阳出来后，露水已干，约上午九时左右放牧上山，同时必须做到放牧在阳坡上，提高放牧的温度。<br/> 3. 加强畜禽宰杀场地消毒工作，防止疫病扩散。在总结前一年的生产、经营的基础上，广大畜禽专业户要抓紧制订好全年的发展计划，待到清明后，大地回春，气温回升，着手全面发展畜禽业生产。</blockquote>
+<h2>雨水养生</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBY57efViaUTyG6Cvv4wg8OEe8BXTxmtFWiaWstibmcOImaJqNNIichxwsqXg/640?wx_fmt=jpeg" title="yushui9">
+<p>中医认为肝主生发，故春季肝气旺盛，肝木易克脾土，故春季养生不当容易损伤脾脏，从而导致脾胃功能的下降。在雨水节气之后，随着降雨有所增多，寒湿之邪最易困着脾脏。同时湿邪留恋，难以去除，故雨水前后应当着重养护脾脏。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBYCOuvXWPHiaSAiaiaPF2Y2e5KDuKpZomWXIkH0dZA6nKOibLOzBMhmH3zAg/640?wx_fmt=jpeg" title="yushui10">
+<p>春季养脾的重点首先在于调畅肝脏，保持肝气调和顺畅，在饮食上要保持均衡，食物中的蛋白质、碳水化合物、脂肪、维生素、矿物质等要保持相应的比例。同时还要保持五味不偏，尽量少吃辛辣食品，多吃新鲜蔬菜等。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBYnO55KQS7Ix8Ihy46ia5tjw1fQWBUT4M0ftP8cB2BwWAvRPRSw03BHibQ/640?wx_fmt=jpeg" title="yushui11">
+<p>其次，要注意健脾利湿。内以养护脾气，外以清利湿邪，从而达到养脾的目的。春寒料峭，湿气一般夹“寒”而来，因此雨水前后必须注意保暖，切勿受凉。同时少食生冷之物，以顾护脾胃阳气。平时可多吃些诸如鲫鱼、胡萝卜、山药、小米等食物，以达到健脾的目的。 雨水时节，还要预防“倒春寒”。这是因为初春的降雨会引起气温的骤然下降，这尤其对老年人和小孩的身体健康威胁较大，特别是温度骤然下降的时候，老年人的血压会明显升高，容易诱发心脏病、心肌梗塞等；小孩则容易因气温的改变而引起呼吸系统疾病，导致感冒和发烧。所以这里还要再次提醒大家，春季要注意保暖，不要过早减少衣物。</p>
+<h2>民间习俗</h2>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBYoUqLpMrKNB2ibKOiaICibuFKTuU8N5JKZcB84dHibSIuUmRWeGibKzsogzg/640?wx_fmt=jpeg" title="yushui12">
+<p>在川西民间，雨水节是一个非常富有想象力和人情味的节气。这天不管下雨不下雨都充满一种雨意蒙蒙的诗情画意：早晨天刚亮，雾蒙蒙的大路边就有一些年轻妇女，手牵了幼小的儿子或女儿，在等待第一个从面前经过的行人。而一旦有人经过，也不管是男是女，是老是少，拦住对方，就把儿子或女儿按捺在地，磕头拜寄，给对方做干儿子或干女儿。这在川西民间称为“撞拜寄”，即事先没有预定的目标，撞着谁就是谁。“撞拜寄”的目的，则是为了让儿女顺利、健康的成长。当然“撞拜寄”现代社会一般只在农村还保留着这一习俗，城里人一般或朋友或同学或同事相互“拜寄”子女。</p>
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/M75eP40ibXmna8q099BBibWj4fwfOKQFBYO5LEvUu3mY93fIoQCxNvsXXzT6mrPg3c1GtBL3wTJcusJacfibXRctg/640?wx_fmt=jpeg" title="yushui13">
+<p>雨水节回娘屋是流行于川西一带的另一项风俗。民间到了雨水节，出嫁的女儿纷纷带上礼物回娘家拜望父母。生育了孩子的妇女，须带上罐罐肉、椅子等礼物，感谢父母的养育之恩。久不怀孕的妇女，则由母亲为其缝制一条红裤子，穿到贴身处，据说，这样可使其尽快怀孕生子。此项风俗现仍在农村流行。</p></div><!--[if !IE]>|xGv00|7f718dfaa16a970f53c6ac8220719aa5<![endif]-->
+          <!--boss脚本 开始-->
+<script type="text/javascript">
+var gBossZoneHandler = new bossZoneHandler();
+var gImage;
+var registerZone2 = gBossZoneHandler.registerZone2;
+
+if(document.addEventListener)
+    document.addEventListener("click", registerZone2, false);
+else if(document.attachEvent)
+    document.attachEvent("onclick", registerZone2);
+
+function bossZoneHandler(){
+    var sFlag=false;
+	this.registerZone2 = function (ev,clickType) {
+	    var loopTryNum = 10;
+	    var bossID = 1445; 
+		  
+	    try
+		{		
+		    //qq
+			var a=document.cookie.match(new RegExp('(^|)pgv_pvid=([^;]*)(;|$)'));
+			var pvid=(a==null?"":"F"+unescape(a[2]));
+			a=document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+			var iQQ=(a==null?"":unescape(a[2]));
+			var purl='';
+			var zoneId='';
+			
+			if(typeof clickType == 'undefined')
+			{
+			    if(sFlag) return true;
+		        var ev = window.event || ev;
+		        var et = ev.srcElement || ev.target;
+			    var type=et.tagName;
+		        /*if (type != "A" && type != "IMG" ) 
+			    {
+			        return false;
+			    } */
+			
+			    if (type == "A")
+			    {
+			        purl = et.href;
+			    }
+			    else if (type == "IMG")
+			    {
+			        purl = et.parentNode.href;
+			    }
+			
+			    //pseudo attr
+			    for (var i=loopTryNum-1,tagNode=et;i>=0;i--,tagNode=tagNode.parentNode)
+			    {
+			    	if (tagNode.attributes['data-bosszone']) {
+			            zoneId = tagNode.attributes['data-bosszone'].nodeValue;
+				    }
+			        /*if(tagNode.attributes['bossZone'])
+				    {
+			            zoneId = tagNode.attributes['bossZone'].nodeValue;
+				    } else if(tagNode.attributes['bosszone'])
+				    {
+				        zoneId = tagNode.attributes['bosszone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['BossZone'])
+				    {
+				        zoneId = tagNode.attributes['BossZone'].nodeValue;
+				    }
+				    else if(tagNode.attributes['Bosszone'])
+				    {
+				        zoneId = tagNode.attributes['Bosszone'].nodeValue;
+				    }*/
+
+			        if(zoneId) break; 
+			    }		
+			    if(!zoneId) return;
+			}
+			else
+			{
+			    zoneId = ev.bossZone;
+				purl = ev.url;
+				sFlag = true;
+				setTimeout(function (){sFlag = false;},200);
+			}
+			
+			var iurl = '//btrace.qq.com/collect?sIp=&iQQ='+iQQ+'&sBiz=new.qq.com&sOp='+zoneId+'&iSta=&iTy='+bossID+'&iFlow=&sUrl='+escape(purl)
+			+'&sLocalUrl='+escape(location.href)+'&ext1='+pvid+'&ext2=&'+Math.random();
+			gImage = new Image(1,1);
+			gImage.src = iurl;
+		} catch (e) {}
+	}
+}
+</script>
+<!--boss脚本 结束--><!--[if !IE]>|xGv00|400f3384091e3f391179baed80184e85<![endif]-->
+          <script src="//imgcache.qq.com/ptlogin/ac/v9/js/ptlogin_v1.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-shim.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/es5-sham.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react.min.js"></script>
+          <script src="//mat1.gtimg.com/ipad/qq_time/lib/react-dom.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/skin2018/timelist_f5fb57.js"></script>
+<script>
+        function is404() {
+            if (window.data) {
+                window.data.data.list = null;
+            }
+
+            var data = window['timelist_f5fb57'];
+            for (var i = 0, len = data.length; i < len; i++) {
+                if (window.QA_Config && window.QA_Config.date == data[i].date) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (is404()) {
+            location.href = "http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+    </script><!--[if !IE]>|xGv00|21481ea3a254585edfb0c5aab09863f2<![endif]-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/qqtime/public/main-e10617e2b77bd164ea83.js" charset="utf-8"></script>
+<script language="javascript" src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js"></script>
+<script language="javascript">document.domain = 'qq.com';if(typeof(pgvMain) == 'function')pgvMain();</script><!--[if !IE]>|xGv00|2420700024f78330e1a46a9cd0a7788d<![endif]--><!--[if !IE]>|xGv00|fdc9fc8bb6ddebc6ff7c19b306e97500<![endif]-->
+
+          <script src="//mat1.gtimg.com/ipad/js/time/share.js" charset="UTF-8"></script>
+          <script type="text/javascript">
+          //<!--
+          var args = {
+              el : document.getElementById('share_list'), // 父节点 必选参数
+              list : ['wx', 'sinawb', 'qzone'], // 要分享的列表，会按顺序输出
+              conf: {} // 可选参数，比如微博话题 分享配图 页面标题等
+          }
+          share.init(args);
+          //-->
+          </script>
+      </body>
+      </html><!--[if !IE]>|xGv00|69192af823aa0e046176e3a86ac1541c<![endif]-->

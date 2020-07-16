@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>ESPN中文官方站</title>
+  <meta name="author" content="wpzheng 2016 03-22">
+  <meta name="description" content="ESPN中文官方站">
+  <meta name="keywords" content="ESPN中文官方站">
+  <link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/topicmenu/espn/css/espn.css">
+  <script src="//mat1.gtimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script charset="utf-8" src="//stdl.qq.com/stdl/qqbrowser/floatlayer/js/qb-ie-sports.js"></script>
+  <style>
+    .layout1 {
+      width: 50px;
+      position: absolute;
+      right: 0px;
+      top: 10px;
+    }
+
+    .nav .loginDom {
+      display: none;
+    }
+  </style>
+</head>
+
+<body data_page="0">
+  <!-- 全站迷你导航 开始 -->
+  
+  <!-- 全站迷你导航 结束 -->
+  <style>
+    .nav_text .no a {
+      padding: 0 33px;
+    }
+
+    .no .uptop {
+      margin-left: -80px;
+    }
+
+    .no .nba {
+      margin-left: 22px;
+    }
+
+    .no .ncaa {
+      margin-left: 128px;
+    }
+
+    .no .football {
+      margin-left: 248px;
+    }
+
+    .nav_text .inner a {
+      padding: 0 21px;
+    }
+
+    .newTxt h3 a {
+      display: inline-block;
+      overflow: hidden;
+      height: 30px;
+      width: 388px;
+    }
+
+    .newTxt .newFoot h5 {
+      bottom: -6px;
+    }
+
+    .newFoot .share {
+      bottom: -6px;
+    }
+
+    .newFoot .comment {
+      bottom: -6px;
+    }
+  </style>
+  <!--导航 开始-->
+  
+    <style>
+    .getlistinfo {
+      top: 130px;
+    }
+
+    .selected {
+      color: #fff !important;
+    }
+  </style>
+  <div class="nav">
+    <p class="bg"></p>
+    <div class="nav_text">
+      <div class="layout1">
+        <div id="wrap_sportLoginV1"></div>
+      </div>
+      <img class="logo" style="width:504px;height:130px" src="//mat1.gtimg.com/www/topicmenu/espn/images/espnlogovv.png">
+      <div class="inner">
+        <div class="list">
+          <a href="/espn/index.htm" target="_self">首页</a>
+          <a href="/espn/nba.htm" target="">NBA</a>
+          <a href="/espn/soccer.htm" target="">国际足球</a>
+          <a href="/espn/ncaa.htm" target="">NCAA</a>
+          <a href="/espn/others.htm" target="">综合体育</a>
+          <a href="/espn/video.htm" target="">视频</a>
+          <a href="javascript:void(0);" class="last" id="lastlist" target="_self">更多
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="getlistinfo" id="getlistinfo">
+      <span></span>
+      <ul>
+        <li>
+          <a href="/espn/xgames.htm" target="">X Games</a>
+        </li>
+        <!--li><a href="javascript:void(0)" target="">大学橄榄球</a></li>-->
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">
+    //分享到新浪微博
+    function shareToSina(articleTitle, articleURL) {
+      var url = "http://v.t.sina.com.cn/share/share.php",
+        _url = articleURL,
+        _title = articleTitle,
+        _appkey = '',
+        _ralateUid = '',
+        c = '',
+        pic = [];
+      w = window.screen.width, h = window.screen.height;
+      c = url + "?url=" + encodeURIComponent(_url) + "&appkey=" + _appkey + "&title=" + _title + "&pic" + pic +
+        "&ralateUid=" + _ralateUid + "&language=";
+      window.open(c, "shareQQ", "height=480,width=608,top=" + (h - 480) / 2 + ",left=" + (w - 608) / 2 +
+        ",toolbar=no,menubar=no,resizable=yes,location=yes,status=no");
+    }
+
+    var loginHtml = '<div class="nba-header nba-header-wide  nba-header-short">' +
+      '<div class="nba-header-top">' +
+      '<div class="nba-header-layout">' +
+      '<div class="nba-header-login" bosszone="SY_Toplogin">' +
+      '<div class="qqcom-login" id="nba-dl">' +
+      '<a class="sports-vip-status" href="http://sports.qq.com/vip/" target="_blank" bosszone="SY_Toploginhy">开通体育会员</a>' +
+      '<a class="avatar"  href="javascript:;" target="_self" bosszone="SY_Toploginan">\u767b\u5f55</a>' +
+      '</div>' +
+      '</div>' +
+      '</div>' +
+      '</div>' +
+      '</div>';
+    $("#loginDom").html(loginHtml);
+  </script>
+  <script type="text/javascript" src="//mat1.gtimg.com/www/topicmenu/espn/js/nbaloginv1.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="//mat1.gtimg.com/www/topicmenu/espn/css/nbaloginv1.1.css">
+  <script>
+    var data_page = [0, 1, 2, 3, 4, 5, 6];
+    var bodyattr = $('body').attr('data_page');
+    $.each(data_page, function (i) {
+      if (bodyattr == i) {
+        $('.nav_text .inner a').eq(i).addClass('selected').siblings().removeClass('selected');
+      }
+    })
+  </script><!--[if !IE]>|xGv00|3f0518c44614b51955997f9fc451b5ef<![endif]-->
+  <!--导航 结束-->
+  <div class="wrapper"><span class="uptop"></span>
+    <div class="inner">
+      <div class="conLeft">
+        <ul class="newslist">
+          <li class="list-item s headpic" style="display:none"><div class="newTxt">
+<h3 style="width:680px"><a style="width:680px" target="_blank" href="/a/20190713/002356.htm">揭秘NBA第一薪资专家 他与沃神统治球员市场</a></h3>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">07月13日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190713/002356.htm" name="揭秘NBA第一薪资专家 他与沃神统治球员市场">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4007856474"><em></em><span></span></a></div>
+</div>
+<a target="_blank" class="bigimg" href="/a/20190713/002356.htm"><img name="page_cnt_3" src="http://img1.gtimg.com/sports/pics/hv1/112/242/2312/150399622.jpg" alt="揭秘NBA第一薪资专家 他与沃神统治球员市场" title="揭秘NBA第一薪资专家 他与沃神统治球员市场"></a>
+</div></li>
+<!--[if !IE]>|xGv00|68044441b9af1d4bf1a445ab0c4ccbb6<![endif]-->
+        </ul>
+        <ul class="newslist">
+          <li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190925/008638.htm">ESPN：法拉利本赛季至少再赢两场 2020年仍难挑战梅奔</a></h3>
+<p>法拉利在今年下半赛季强势复苏，近期已经拿下了三连胜。ESPN邀请多位专家对于法拉利本赛季剩余比赛以及新赛季的夺冠可能性进行了预测。大部分观点认为，在本赛季剩余六...
+                <a target="_blank" href="/a/20190925/008638.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月25日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190925/008638.htm" name="ESPN：法拉利本赛季至少再赢两场 2020年仍难挑战梅奔">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4216971651"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190924/002153.htm">获得赞助还是成为母亲？女性运动员的两难抉择何时能解决</a></h3>
+<p>获得九枚奥运会奖牌的艾立森-菲利克斯与自己的女儿合照腾讯体育9月24讯（文/ESPN编译/昌西）在2016年12月，卡米-法萨尼（KimmyFasani）赢得了...
+                <a target="_blank" href="/a/20190924/002153.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月24日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190924/002153.htm" name="获得赞助还是成为母亲？女性运动员的两难抉择何时能解决">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4210036176"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190923/009505.htm">ESPN：进站策略决定新加坡站冠军归属 法拉利并未偏袒维特尔</a></h3>
+<p>法拉利包揽一二撰文/埃德蒙森（LaurenceEdmondson），ESPN专栏作家编译/李田友维特尔终于找到了一些可以微笑的理由，在上周末的新加坡大奖赛中，他...
+                <a target="_blank" href="/a/20190923/009505.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月23日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190923/009505.htm" name="ESPN：进站策略决定新加坡站冠军归属 法拉利并未偏袒维特尔">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4208384170"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190922/002134.htm">NFL前瞻：牛仔爱国者遇鱼腩 桥水鲁道夫遭考验</a></h3>
+<p>腾讯体育讯(文/ESPN编译/Star)北京时间9月23日，2019-20赛季NFL第3周的大部分比赛都将正式进行。除了参加周四夜赛的田纳西泰坦队和杰克逊维尔美...
+                <a target="_blank" href="/a/20190922/002134.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月22日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=NFL">NFL</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%94%B0%E7%BA%B3%E8%A5%BF%E6%B3%B0%E5%9D%A6%E9%98%9F">田纳西泰坦队</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%9D%B0%E5%85%8B%E9%80%8A%E7%BB%B4%E5%B0%94%E7%BE%8E%E6%B4%B2%E8%99%8E%E9%98%9F">杰克逊维尔美洲虎队</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190922/002134.htm" name="NFL前瞻：牛仔爱国者遇鱼腩 桥水鲁道夫遭考验">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4202151066"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190922/001618.htm">风城踢球手有毒 熊队绝杀踢球手在健身房意外受伤</a></h3>
+<p>腾讯体育9月22日讯（文/ESPN编译/大白）芝加哥熊21日伤病报告中的一位球员让所有人感到惊讶又哭笑不得&#8212;&#8212;踢球手埃迪-皮尼罗（EddyPineiro）。皮尼...
+                <a target="_blank" href="/a/20190922/001618.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月22日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%86%8A%E9%98%9F">熊队</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=NFL">NFL</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190922/001618.htm" name="风城踢球手有毒 熊队绝杀踢球手在健身房意外受伤">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4201707984"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190922/001567.htm">擒杀与罚款齐飞！布朗防守悍将连续第二周收到罚单</a></h3>
+<p>腾讯体育9月22日讯（文/ESPNJakeTrotter编译/爱宝）克利夫兰布朗队的防守端锋迈尔斯-加雷特（MylesGarrett）在本赛季证明了自己公之于众...
+                <a target="_blank" href="/a/20190922/001567.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月22日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%85%8B%E5%88%A9%E5%A4%AB%E5%85%B0%E5%B8%83%E6%9C%97%E9%98%9F">克利夫兰布朗队</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=NFL">NFL</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190922/001567.htm" name="擒杀与罚款齐飞！布朗防守悍将连续第二周收到罚单">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4201669579"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190922/001536.htm">超人旧伤添新伤缺席比赛 黑豹替补四分卫与状元郎上演同窗对决</a></h3>
+<p>腾讯体育9月22日讯（文/ESPNDavidNewton编译/大白）当地时间9月20日，卡罗莱纳黑豹宣布主力四分卫坎姆-牛顿（CamNewton）因为伤病无法参...
+                <a target="_blank" href="/a/20190922/001536.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月22日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=NFL">NFL</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%8D%A1%E7%BD%97%E8%8E%B1%E7%BA%B3%E9%BB%91%E8%B1%B9">卡罗莱纳黑豹</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190922/001536.htm" name="超人旧伤添新伤缺席比赛 黑豹替补四分卫与状元郎上演同窗对决">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4201643922"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190920/007900.htm">ESPN：拉沃尔杯的成功远超预期 费德勒为男网带来别样欢乐</a></h3>
+<p>撰文/皮特-波多（PeterBodo），ESPN专栏作家编译/李田友当费德勒在几年之前提出举办拉沃尔杯的构想时，他仅仅是想要把它打造成为一个“网球的周末节日”，...
+                <a target="_blank" href="/a/20190920/007900.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月20日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190920/007900.htm" name="ESPN：拉沃尔杯的成功远超预期 费德勒为男网带来别样欢乐">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4195998245"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190918/001546.htm">海盗终结者瓦兹奎兹被捕 面临性侵未成年等多项重罪指控</a></h3>
+<p>腾讯体育讯北京时间9月18日，匹兹堡海盗队投手费利佩-瓦兹奎兹在匹兹堡被捕。他被控在宾夕法尼亚州和佛罗里达州犯下包括性侵未成年人在内的多项重罪。瓦兹奎兹最初被佛...
+                <a target="_blank" href="/a/20190918/001546.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月18日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E8%B4%B9%E5%88%A9%E4%BD%A9-%E7%93%A6%E5%85%B9%E5%A5%8E%E5%85%B9">费利佩-瓦兹奎兹</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%9C%AA%E6%88%90%E5%B9%B4">未成年</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%AE%BE%E5%A4%95%E6%B3%95%E5%B0%BC%E4%BA%9A%E5%B7%9E">宾夕法尼亚州</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%80%A7%E4%BE%B5">性侵</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%BB%88%E7%BB%93%E8%80%85">终结者</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA">未成年人</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=mlb">mlb</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%B5%B7%E7%9B%97">海盗</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190918/001546.htm" name="海盗终结者瓦兹奎兹被捕 面临性侵未成年等多项重罪指控">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4186434138"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190914/001494.htm">小熊教练：球队状态需要更放松 不担心续约问题专注进季后赛</a></h3>
+<p>腾讯体育讯（文ESPN）小熊队教练马登今天驳斥了外界关于球队打球没有灵气的说法，但是总经理埃普斯泰因却表示小熊队全队上下可能过于紧张。小熊队即将开始在主场的10...
+                <a target="_blank" href="/a/20190914/001494.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月14日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190914/001494.htm" name="小熊教练：球队状态需要更放松 不担心续约问题专注进季后赛">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4172127164"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190913/002444.htm">国联MVP耶利奇骨折无严重影响 躲过手术但仍需长期修养</a></h3>
+<p>腾讯体育9月13日讯（文/ESPN编作/巴尼罗伊）密尔沃基酿酒人的超级明星、本赛季MLB大联盟国联分区MVP的热门候选人&#8212;&#8212;克里斯蒂安-耶利奇（Christia...
+                <a target="_blank" href="/a/20190913/002444.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月13日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%85%8B%E9%87%8C%E6%96%AF%E8%92%82%E5%AE%89-%E8%80%B6%E5%88%A9%E5%A5%87">克里斯蒂安-耶利奇</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%89%8B%E6%9C%AF">手术</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=mvp">mvp</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%A4%A7%E5%8D%AB-%E6%96%AF%E7%89%B9%E6%81%A9%E6%96%AF">大卫-斯特恩斯</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%AF%86%E5%B0%94%E6%B2%83%E5%9F%BA%E9%85%BF%E9%85%92%E4%BA%BA">密尔沃基酿酒人</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E8%BF%88%E5%85%8B-%E7%A9%86%E6%96%AF%E5%A1%94%E5%8D%A1%E6%96%AF">迈克-穆斯塔卡斯</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=mlb">mlb</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E9%85%BF%E9%85%92%E4%BA%BA">酿酒人</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190913/002444.htm" name="国联MVP耶利奇骨折无严重影响 躲过手术但仍需长期修养">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4169005640"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190912/006118.htm">ESPN：美国男网缘何落伍？孩子都想成为詹姆斯而不是费德勒</a></h3>
+<p>撰文/皮特-波多（Peterbodo），ESPN专栏作家编译/李田友美网赛场上的聚光灯，对美国女网的关注一直没有停下来过。从15岁的天才少女高芙到37岁的老将小...
+                <a target="_blank" href="/a/20190912/006118.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月12日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190912/006118.htm" name="ESPN：美国男网缘何落伍？孩子都想成为詹姆斯而不是费德勒">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4165763716"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190910/007684.htm">ESPN：从满场嘘声到报以掌声 梅德韦杰夫赢走纽约人的心</a></h3>
+<p>梅德韦杰夫这两周在纽约的经历足够神奇，他用两场比赛让自己成为纽约球迷的公敌，球迷们喜欢嘘这个家伙，而梅德韦杰夫则挑衅的回应：你们越是嘘我，我就会赢得更多的比赛。...
+                <a target="_blank" href="/a/20190910/007684.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月10日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190910/007684.htm" name="ESPN：从满场嘘声到报以掌声 梅德韦杰夫赢走纽约人的心">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4157635552"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190910/005397.htm">MLB常规赛进入尾声：前田健太转型 太空人已经无人可挡？</a></h3>
+<p>腾讯体育9月10日讯（文/ESPNDavidSchoenfield编作/巴尼罗伊）北京时间9月10日本周二，MLB大联盟常规赛展开了新一周的对决。随着常规赛程进...
+                <a target="_blank" href="/a/20190910/005397.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月10日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%89%8D%E7%94%B0%E5%81%A5%E5%A4%AA">前田健太</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%9D%B0%E5%85%8B-%E5%BC%97%E8%8E%B1%E5%8E%84%E8%92%82">杰克-弗莱厄蒂</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E8%BF%88%E5%85%8B%E5%B0%94-%E6%B4%9B%E4%BC%A6%E5%B2%91">迈克尔-洛伦岑</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=mlb">mlb</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%9C%A3%E8%B7%AF%E6%98%93%E6%96%AF%E7%BA%A2%E9%9B%80%E9%98%9F">圣路易斯红雀队</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E9%81%93%E5%A5%87">道奇</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%BA%A2%E4%BA%BA">红人</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%B0%8F%E7%86%8A">小熊</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190910/005397.htm" name="MLB常规赛进入尾声：前田健太转型 太空人已经无人可挡？">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4156664505"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190910/004688.htm">已经痊愈？奥尔提兹现身红袜球场开球  直言芬威球场就是家</a></h3>
+<p>腾讯体育讯（文/ESPN）最近红袜球迷比较郁闷，先是总经理东布罗夫斯基被炒，球队管理层进入动荡之秋。和死敌扬基队的四场比赛中1胜3负，距离外卡区也越来越遥远。不...
+                <a target="_blank" href="/a/20190910/004688.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月10日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%A4%A7%E5%8D%AB-%E5%A5%A5%E5%B0%94%E6%8F%90%E5%85%B9">大卫-奥尔提兹</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E8%8A%AC%E5%A8%81%E7%90%83%E5%9C%BA">芬威球场</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%BA%A2%E8%A2%9C%E9%98%9F">红袜队</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%89%AC%E5%9F%BA">扬基</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%B3%A2%E5%A3%AB%E9%A1%BF">波士顿</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E4%B8%96%E7%95%8C%E5%A4%A7%E8%B5%9B">世界大赛</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=mlb">mlb</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190910/004688.htm" name="已经痊愈？奥尔提兹现身红袜球场开球  直言芬威球场就是家">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4156307601"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190909/007653.htm">ESPN分析美网男单决赛胜负手 纳达尔多拍拉锯占据优势</a></h3>
+<p>腾讯体育讯（撰文/皮特-波多（PeterBodo），ESPN专栏作家编译/李田友）相比女单决赛，今年美网的男单决赛显得缺少一些话题性，但是，纳达尔和梅德韦杰夫两...
+                <a target="_blank" href="/a/20190909/007653.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月09日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%BA%B3%E8%BE%BE%E5%B0%94">纳达尔</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%BD%91%E7%90%83">网球</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%BE%8E%E7%BD%91">美网</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190909/007653.htm" name="ESPN分析美网男单决赛胜负手 纳达尔多拍拉锯占据优势">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4152947334"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190909/007169.htm">ESPN：三巨头和小威都正在走向黄昏 网坛因此变得更加迷人</a></h3>
+<p>腾讯体育讯（撰文/皮特-波多（PeterBodo），ESPN专栏作家编译/李田友）在美网半决赛取胜之后，纳达尔被问到这样一个问题：你如此渴望赢得这个冠军，是否是...
+                <a target="_blank" href="/a/20190909/007169.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月09日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%BD%91%E7%90%83">网球</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%BE%8E%E7%BD%91">美网</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190909/007169.htm" name="ESPN：三巨头和小威都正在走向黄昏 网坛因此变得更加迷人">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4152541623"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190907/003110.htm">稳了！包装工四分卫罗杰斯将揭幕战用球赠予主帅 高兴与其共事</a></h3>
+<p>众所周知，如果你想成为绿湾包装工的主教练，那么你必须得到精英四分卫&#8212;&#8212;阿隆-罗杰斯（AaronRodgers）的认可。而经历了2019赛季NFL常规赛揭幕战之后...
+                <a target="_blank" href="/a/20190907/003110.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月07日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190907/003110.htm" name="稳了！包装工四分卫罗杰斯将揭幕战用球赠予主帅 高兴与其共事">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4144449282"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190906/007369.htm">ESPN：安德莱斯库已成现象级明星 纳什和小威都是她球迷</a></h3>
+<p>加拿大新星撰文/D'ArcyMaine，ESPN专栏作家编译/李田友第一次杀进大满贯女单八强，安德莱斯库在与比利时选手梅尔滕斯的比赛中一度先丢一盘，当她在盘间走...
+                <a target="_blank" href="/a/20190906/007369.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月06日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190906/007369.htm" name="ESPN：安德莱斯库已成现象级明星 纳什和小威都是她球迷">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4141711242"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190906/001082.htm">NFL新劳资协议谈判陷入僵局 怎么分钱成问题关键</a></h3>
+<p>腾讯体育讯NFL球员工会和老板之间的劳资协议谈判将继续持续下去，准确的说是僵持下去，因为双方始终无法在新合同最关键的金钱方面达成一致。据了解内幕的消息人士说，本...
+                <a target="_blank" href="/a/20190906/001082.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月06日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190906/001082.htm" name="NFL新劳资协议谈判陷入僵局 怎么分钱成问题关键">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4139103954"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190905/007770.htm">ESPN：2019美网将成男子网坛转折点 三巨头统治正在瓦解</a></h3>
+<p>撰文/皮特-波多（PeterBodo），ESPN专栏作家编译/李田友在一周多以前，迪米特洛夫绝对不会想到自己会处于这样的位置&#8212;&#8212;在美网男单四分之一决赛中面对费德...
+                <a target="_blank" href="/a/20190905/007770.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月05日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190905/007770.htm" name="ESPN：2019美网将成男子网坛转折点 三巨头统治正在瓦解">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4137409469"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190905/003681.htm">NFL新赛季掀博彩热潮！15%成年人都在玩 爱国者是超级碗大热</a></h3>
+<p>腾讯体育9月5日讯（文/ESPNDavidPurdum编译/爱宝）当今世界体育产业的蓬勃发展与体育博彩领域的飞速扩张不无关系，不过对于美国的狂热投注者们来说，有...
+                <a target="_blank" href="/a/20190905/003681.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月05日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=NFL">NFL</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%8D%9A%E5%BD%A9">博彩</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%96%B0%E8%8B%B1%E6%A0%BC%E5%85%B0%E7%88%B1%E5%9B%BD%E8%80%85">新英格兰爱国者</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190905/003681.htm" name="NFL新赛季掀博彩热潮！15%成年人都在玩 爱国者是超级碗大热">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4135458386"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190905/002427.htm">NFL“第一高薪跑卫”续约美滋滋：我自信我就是联盟最佳</a></h3>
+<p>腾讯体育9月5日讯（文/EPSNToddArcher编译/爱宝）达拉斯牛仔队明星跑卫伊泽基尔-埃利奥特（EzekielElliott）终于如愿以偿，以6年900...
+                <a target="_blank" href="/a/20190905/002427.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月05日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=NFL">NFL</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%9F%83%E5%88%A9%E5%A5%A5%E7%89%B9">埃利奥特</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%A9%84%E6%A6%84%E7%90%83">橄榄球</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190905/002427.htm" name="NFL“第一高薪跑卫”续约美滋滋：我自信我就是联盟最佳">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4135183267"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190904/007316.htm">ESPN：维特尔渐成过去式 法拉利应将勒克莱尔定为一号车手</a></h3>
+<p>在夏休期之后的首场比赛比利时大奖赛中，勒克莱尔终于帮助法拉利打破了本赛季的分站冠军荒，而刚刚晋升到红牛一队的阿尔本也表现不俗拿到了第5名。ESPN邀请四位F1专...
+                <a target="_blank" href="/a/20190904/007316.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月04日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190904/007316.htm" name="ESPN：维特尔渐成过去式 法拉利应将勒克莱尔定为一号车手">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4133407530"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190902/003805.htm">芝加哥熊敲定首发踢球手 皮内罗能否顶住揭幕战压力？</a></h3>
+<p>腾讯体育9月2日讯（文/ESPNJeffDickerson编译/爱宝）没有哪支球队的首发踢球手位置会像芝加哥熊队这样受关注。不过正所谓“用人不疑，疑人不用”，熊...
+                <a target="_blank" href="/a/20190902/003805.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月02日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%9A%AE%E5%86%85%E7%BD%97">皮内罗</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E8%8A%9D%E5%8A%A0%E5%93%A5%E7%86%8A">芝加哥熊</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E8%B8%A2%E7%90%83%E6%89%8B">踢球手</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%8F%AD%E5%B9%95%E6%88%98">揭幕战</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E9%A9%AC%E7%89%B9-%E7%BA%B3%E5%90%89">马特-纳吉</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%86%8A%E9%98%9F">熊队</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=nfl">nfl</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190902/003805.htm" name="芝加哥熊敲定首发踢球手 皮内罗能否顶住揭幕战压力？">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4122940155"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190902/002931.htm">突袭者签下罗杰斯替补凯泽 大名单竟囤积四名四分卫</a></h3>
+<p>腾讯体育9月2日讯（文/ESPNPaulGutierrez编译/爱宝）奥克兰突袭者队总会在不经意间带来一些出人意表的动作，在NFL各队公布了53人大名单之后，他...
+                <a target="_blank" href="/a/20190902/002931.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月02日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190902/002931.htm" name="突袭者签下罗杰斯替补凯泽 大名单竟囤积四名四分卫">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4122726197"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190902/001825.htm">世界大赛MVP佐布里斯特结束场外纠纷 时隔3月重回小熊名单</a></h3>
+<p>腾讯体育讯世界大赛MVP本-佐布里斯特(BenZobrist)重返芝加哥小熊名单。此前，他和妻子提起离婚诉讼，导致他缺席四个月照顾家人。佐布里斯特自5月以来首次...
+                <a target="_blank" href="/a/20190902/001825.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月02日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190902/001825.htm" name="世界大赛MVP佐布里斯特结束场外纠纷 时隔3月重回小熊名单">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4122519092"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190902/001648.htm">维兰德生涯第三次无安打比赛 虎王诠释什么是MLB王牌投手</a></h3>
+<p>腾讯体育讯北京时间9月2日，休斯顿太空人客战多伦多蓝鸟，太空人先发投手贾斯丁-维兰德投出职业生涯第三场无安打比赛。在这个开局投手、五局先发和联手无安打的年代，维...
+                <a target="_blank" href="/a/20190902/001648.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月02日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E8%B4%BE%E6%96%AF%E4%B8%81-%E7%BB%B4%E5%85%B0%E5%BE%B7">贾斯丁-维兰德</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%97%A0%E5%AE%89%E6%89%93%E6%AF%94%E8%B5%9B">无安打比赛</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%8E%8B%E7%89%8C%E6%8A%95%E6%89%8B">王牌投手</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=mlb">mlb</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%A4%AA%E7%A9%BA%E4%BA%BA">太空人</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E8%93%9D%E9%B8%9F">蓝鸟</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E7%BB%B4%E5%85%B0%E5%BE%B7">维兰德</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%A5%A5%E5%9B%BE%E7%BB%B4">奥图维</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%A0%BC%E5%85%B0%E5%9F%BA">格兰基</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190902/001648.htm" name="维兰德生涯第三次无安打比赛 虎王诠释什么是MLB王牌投手">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4122439638"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190901/002249.htm">比尔裁掉6届职业碗跑卫勒肖恩-麦凯伊 欲补强球队后场</a></h3>
+<p>腾讯体育讯(文/ESPN作者MarcelLouisJaceques编译254号秀）据报道，布法罗比尔已经裁掉了6届职业碗跑卫勒肖恩-麦考伊（LeSeanMcCo...
+                <a target="_blank" href="/a/20190901/002249.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">09月01日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190901/002249.htm" name="比尔裁掉6届职业碗跑卫勒肖恩-麦凯伊 欲补强球队后场">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4119500192"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190901/002108.htm">尘埃落定！休斯顿德州人将克劳尼交易至西雅图海鹰</a></h3>
+<p>腾讯体育讯(文/ESPN作者BradyHenderson编译/254号秀），休斯顿德州人与西雅图海鹰达成协议，前者送出贾德维昂-克劳尼(JadeveonClow...
+                <a target="_blank" href="/a/20190901/002108.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月01日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=NFL">NFL</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190901/002108.htm" name="尘埃落定！休斯顿德州人将克劳尼交易至西雅图海鹰">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4119450514"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190901/001431.htm">NFL德州人疯狂出手！两首轮签加一次轮签交换海豚二将</a></h3>
+<p>腾讯体育讯虽然送走了2014年的状元郎贾德维昂-克劳尼（JadeveonClowney），但是休斯顿德州人队并没有忘记他们力求补强进攻组的初衷。ESPN报道称，...
+                <a target="_blank" href="/a/20190901/001431.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">09月01日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=NFL">NFL</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190901/001431.htm" name="NFL德州人疯狂出手！两首轮签加一次轮签交换海豚二将">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4119222929"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190831/003922.htm">ESPN：费德勒确实占了赛程便宜 但这并非他本人意愿</a></h3>
+<p>撰文/PeterBodoESPN专栏作家编译/李田友（新闻背景：费德勒在本次美网男单第三轮比赛中直落三盘击败了英国选手埃文斯，赛后埃文斯抱怨：自己本来就因为下雨...
+                <a target="_blank" href="/a/20190831/003922.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月31日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190831/003922.htm" name="ESPN：费德勒确实占了赛程便宜 但这并非他本人意愿">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4117492546"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190831/002578.htm">扬基左投沙巴西亚再因膝伤离场 本赛季能否重回投手丘成疑</a></h3>
+<p>腾讯体育讯北京时间8月31日，MLB“邪恶帝国”纽约扬基先发左投CC-沙巴西亚（C.C.Sabathia）在今天对阵奥克兰运动家的比赛中只投3局就被换下场，原因...
+                <a target="_blank" href="/a/20190831/002578.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月31日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190831/002578.htm" name="扬基左投沙巴西亚再因膝伤离场 本赛季能否重回投手丘成疑">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4116130314"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190831/001390.htm">突袭者中锋完成3年续约 哈德森成为NFL年薪最高的中锋</a></h3>
+<p>突袭者中锋罗德尼-哈德森（RodneyHudson）已与球队完成3年3340万美元的续约，其中有2440万美元的保障部分，这使他一举成为NFL中年薪最高的中锋，...
+                <a target="_blank" href="/a/20190831/001390.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月31日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190831/001390.htm" name="突袭者中锋完成3年续约 哈德森成为NFL年薪最高的中锋">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4115575153"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190828/003245.htm">日本投手达比修有重拾王牌身手 期待带领小熊冲进季后赛</a></h3>
+<p>芝加哥小熊的日本投手达比修有近来状态火热，即便考虑到他被打的本垒打数字有点多，他最近的这波表现依然是历史级的，可最近媒体的注意力并没有转到他的身上。达比修状态火...
+                <a target="_blank" href="/a/20190828/003245.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5>
+<span style="margin-right:10px;">08月28日</span>标签：
+              <a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E8%BE%BE%E6%AF%94%E4%BF%AE%E6%9C%89">达比修有</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%97%A5%E6%9C%AC">日本</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E6%9D%B0%E5%85%8B-%E9%98%BF%E7%91%9E%E5%9F%83%E5%A1%94">杰克-阿瑞埃塔</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E4%B9%94-%E9%BA%A6%E7%99%BB">乔-麦登</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%AD%A3%E5%90%8E%E8%B5%9B">季后赛</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E8%BE%BE%E6%AF%94%E4%BF%AE">达比修</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=mlb">mlb</a><a target="_blank" class="blue" href="http://sports.qq.com/dc_unique_article/nba_general/tagsList.htm?tags=%E5%B0%8F%E7%86%8A">小熊</a>
+</h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190828/003245.htm" name="日本投手达比修有重拾王牌身手 期待带领小熊冲进季后赛">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4105855445"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190827/008587.htm">NFL新一轮劳资谈判开启 常规赛或扩充至18场</a></h3>
+<p>NFL常规赛或扩充腾讯体育讯（文/ESPN作者DanGraziano编译/大白）或许在不远的将来，我们将看到NFL在一个赛季打18场常规赛，还有多一轮的季后赛。...
+                <a target="_blank" href="/a/20190827/008587.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月27日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190827/008587.htm" name="NFL新一轮劳资谈判开启 常规赛或扩充至18场">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4105144778"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190827/003649.htm">前坦帕湾光芒队的持有人文斯&#183;耐莫利离世 享年81岁</a></h3>
+<p>坦帕湾光芒队在本周一发布一则新闻，在大约5年前被诊断出罕见脑部疾病的文斯&#183;耐莫利，于上周日与世长辞，享年81岁。这名来自坦帕湾的商人，在1995年获得了美国联盟...
+                <a target="_blank" href="/a/20190827/003649.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月27日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190827/003649.htm" name="前坦帕湾光芒队的持有人文斯&#183;耐莫利离世 享年81岁">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4103861746"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190827/001961.htm">耶利奇将全裸出镜ESPN杂志 系今年唯一入选的MLB球员</a></h3>
+<p>大名鼎鼎的ESPN《BodyIssue》杂志于今天宣布了他们年终特别版的运动员名单，其中本赛季表现出色的酿酒人外野手耶利奇成功入选。本赛季耶利奇打出了MVP级的...
+                <a target="_blank" href="/a/20190827/001961.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月27日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190827/001961.htm" name="耶利奇将全裸出镜ESPN杂志 系今年唯一入选的MLB球员">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4103683913"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190824/003451.htm">特殊技巧！海豚主帅连放8首JayZ歌曲 只为刺激斯蒂尔斯？</a></h3>
+<p>腾讯体育讯文/ESPN作者CameronWolfe编译Slash）近来，伴随着美国的体育平台TMZ发布“NFL历史上即将迎来第一任黑人老板Jay-Z”等类似消息...
+                <a target="_blank" href="/a/20190824/003451.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月24日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190824/003451.htm" name="特殊技巧！海豚主帅连放8首JayZ歌曲 只为刺激斯蒂尔斯？">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4098372505"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190824/003284.htm">海鹰新赛季或变“跑跑跑”？又一外接手因伤缺席常规赛</a></h3>
+<p>资料图腾讯体育8月24日讯（文/ESPN作者BradyHenderson编译/爱宝）如果说不久前新秀外接手DK-梅特卡尔夫（DKMetcalf）的受伤让西雅图海...
+                <a target="_blank" href="/a/20190824/003284.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月24日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190824/003284.htm" name="海鹰新赛季或变“跑跑跑”？又一外接手因伤缺席常规赛">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4098281903"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190824/002620.htm">战绩不佳球队换血！MLB金莺辞退11名员工 重建迈出关键一步</a></h3>
+<p>腾讯体育讯北京时间8月24日，巴尔的摩金莺队总经理迈克-伊莱亚斯将11位球探部门和管理部门的员工扫地出门，此举意在加快球队重建的步伐。菜鸟总经理伊莱亚斯没有公布...
+                <a target="_blank" href="/a/20190824/002620.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月24日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190824/002620.htm" name="战绩不佳球队换血！MLB金莺辞退11名员工 重建迈出关键一步">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4098118027"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190821/004325.htm">前MLB两球员因涉嫌贩毒洗钱被捕 都曾获得世界大赛冠军</a></h3>
+<p>腾讯体育讯据多米尼加政府消息，该国警方在今天逮捕了前MLB投手奥克塔维奥-多泰尔（OctavioDotel）和前内野手路易斯-卡斯蒂略（LuisCastillo...
+                <a target="_blank" href="/a/20190821/004325.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月21日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190821/004325.htm" name="前MLB两球员因涉嫌贩毒洗钱被捕 都曾获得世界大赛冠军">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4092114778"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190820/006567.htm">乌鸦的新世代：二年级四分卫如何从冲跑猛兽变身完美领袖</a></h3>
+<p>拉马尔-杰克逊腾讯体育8月20日讯（文/ESPN作者JamisonHensley编译/爱宝）从休赛期巴尔的摩乌鸦队决定将四分卫乔-弗拉科（JoeFlacco）送...
+                <a target="_blank" href="/a/20190820/006567.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月20日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190820/006567.htm" name="乌鸦的新世代：二年级四分卫如何从冲跑猛兽变身完美领袖">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4090186176"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190820/006170.htm">NFL闪电明星跑卫称随时可以出场比赛：就等球队电话</a></h3>
+<p>戈登称可以随时出战腾讯体育8月20日讯（ESPN作者/JeremyFowler编译/爱宝）洛杉矶闪电队的梅尔文-戈登（MelvinGordon）与球队的合约问题...
+                <a target="_blank" href="/a/20190820/006170.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月20日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190820/006170.htm" name="NFL闪电明星跑卫称随时可以出场比赛：就等球队电话">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4090099126"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190817/002501.htm">外接手阵容美如画！NFL爱国者大外接解禁复出</a></h3>
+<p>腾讯体育讯虽然在台风的席卷之下，国内的众多球迷整日处于阴雨笼罩的境况。但是新英格兰爱国者队的球迷是幸运的，因为他们的头顶终于出现了他们期盼已久的“一缕阳光”。当...
+                <a target="_blank" href="/a/20190817/002501.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月17日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190817/002501.htm" name="外接手阵容美如画！NFL爱国者大外接解禁复出">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4083969491"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190812/001657.htm">喷气机复兴大业受阻 头号角卫约翰逊无限期伤停</a></h3>
+<p>腾讯体育讯想要在本赛季翻身的纽约喷气机今天遭遇严重打击，当家角卫特鲁梅恩-约翰逊（TrumaineJohnson）在8月11日训练中受伤，将面临无限期的伤停，这...
+                <a target="_blank" href="/a/20190812/001657.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月12日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190812/001657.htm" name="喷气机复兴大业受阻 头号角卫约翰逊无限期伤停">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4072525019"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190807/002223.htm">小将维杜戈进入伤病名单 道奇外野深度遭受严峻考验</a></h3>
+<p>腾讯体育讯北京时间8月7日，洛杉矶道奇队将腹斜肌拉伤的菜鸟外野手阿莱克斯-维杜戈放上10日伤病名单，同时将昨天对阵圣路易斯红雀表现出色，六局无失分的菜鸟先发投手...
+                <a target="_blank" href="/a/20190807/002223.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月07日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190807/002223.htm" name="小将维杜戈进入伤病名单 道奇外野深度遭受严峻考验">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4061699335"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190806/004747.htm">尼克-福尔斯的末节进攻哲学：我只在乎这一刻</a></h3>
+<p>在过去的五个赛季里，想在NFL里拿下一场比赛，平均每场要多赢11.4分。在比赛末尾的最后一次对球权的掌握变得越来越重要，第四节的球队表现变得也愈发重要，尤其是四...
+                <a target="_blank" href="/a/20190806/004747.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月06日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190806/004747.htm" name="尼克-福尔斯的末节进攻哲学：我只在乎这一刻">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4059903186"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190806/004064.htm">渐入佳境！喷气机满意探花秀四分卫达诺德状态：臂力大有长进</a></h3>
+<p>纽约喷气机队目前还没有使用测速枪来测萨姆-达诺德（SamDarnold）的快速球，但他们相信这位2018年的探花秀四分卫的手臂力量比前一年更大更强了。“这很有趣...
+                <a target="_blank" href="/a/20190806/004064.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月06日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190806/004064.htm" name="渐入佳境！喷气机满意探花秀四分卫达诺德状态：臂力大有长进">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4059774364"><em></em><span></span></a></div>
+</div>
+</div></li>
+<li class="list-item s nopic" style="display:none"><div class="newTxt">
+<h3><a target="_blank" href="/a/20190806/003153.htm">131公斤的怪兽瓦特体验绿湾参训传统 骑爆了小孩子的自行车！</a></h3>
+<p>在休斯顿德州人和绿湾包装工周一进行联合训练之前，德州人的绝对核心、顶级防守端锋J.J.瓦特（J.J.Watt）好好体验了一把绿湾的传统：骑着小孩子的车去训练场，...
+                <a target="_blank" href="/a/20190806/003153.htm">
+                  [详细]
+                </a>
+</p>
+<div class="newFoot">
+<h5><span style="margin-right:10px;">08月06日</span></h5>
+<div class="share" title="我要分享"><div class="shareList">
+<a class="sharesina" title="分享到新浪微博" onClick="shareToSina(this.name,this.id); return false;" href="javascript:void(0);" id="http://sports.qq.com/a/20190806/003153.htm" name="131公斤的怪兽瓦特体验绿湾参训传统 骑爆了小孩子的自行车！">
+                        分享到新浪微博
+                      </a><a href="javascript:void(0)" class="sharewx">微信</a><div class="wxcode">
+<img src="http://mat1.gtimg.com/www/topicmenu/threevs/images/ercode.png"><p>扫一扫，用手机看新闻！用微信扫描还可以分享至好友和朋友圈</p>
+</div>
+</div></div>
+<div class="comment" title="我要评论"><a target="_blank" href="http://coral.qq.com/4059670567"><em></em><span></span></a></div>
+</div>
+</div></li>
+<!--[if !IE]>|xGv00|4b07f6ae962fec660d3bddd9a7535c9a<![endif]-->
+        </ul>
+        <div style="display: block" class="getMore">
+          <div class="txt">点击查看更多 <span class="downArr"></span></div>
+        </div>
+      </div>
+      <div class="conRight">
+        <div class="title"><span>原创</span></div>
+        <!-- 沃神来了 -->
+<h3>沃神来了</h3>
+<div class="video">
+	<a href="https://v.qq.com/x/cover/p2uikr1opni3ug4/c0031g7mr6h.html?">
+		<img src="http://img1.gtimg.com/sports/pics/hv1/62/183/2311/150319502.png">
+		<span></span>
+	</a>
+            <p>范甘迪深情回忆火箭岁月</p>
+</div>
+
+<!-- 冬特奥会 -->
+				<h3>佩耳朵信箱</h3>
+				<div class="video">
+					<a href="https://sports.qq.com/a/20190314/009207.htm">
+						<img src="http://img1.gtimg.com/sports/pics/hv1/236/127/2298/149460071.jpg">
+					</a>
+					<p>哈登巅峰赛季强过乔丹？湖人为何挣扎？</p>
+				</div>
+
+
+<!-- 球队实力榜 -->
+<h3>球队实力榜</h3>
+<div class="video">
+	<a href="http://sports.qq.com/a/20190401/010054.htm">
+		<img src="http://img1.gtimg.com/sports/pics/hv1/150/155/2307/150052350.jpg">
+	</a>
+	<p>实力榜：火箭稳居前三 猛龙第四掘金第五</p>
+</div>
+
+
+<div class="img" style="text-align:center;margin-top:20px;padding-top:10px;border-top: 1px solid #e3e3e3;">
+	<img src="http://mat1.gtimg.com/www/topicmenu/espn/images/espncode.png">
+</div><!--[if !IE]>|xGv00|5b059766e89d7b51b6be1b89f89a09b9<![endif]-->
+      </div>
+    </div>
+  </div>
+  <div class="footcon">
+    <!-- 版权页面片 开始 -->
+            <script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+        <style>
+          .tcopyright {
+            width: 960px;
+            margin: 0 auto;
+            padding: 8px 0;
+            font-size: 12px;
+            line-height: 28px;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+            clear: both;
+          }
+
+          .tcopyright .en {
+            font-family: Arial;
+          }
+
+          .tcopyright a {
+            color: #333;
+            text-decoration: none;
+          }
+
+          .tcopyright a:hover {
+            color: #bd0a01;
+            text-decoration: underline;
+          }
+          .footernew {
+              color: #515151;
+              font-size: 12px;
+              height: 70px;
+              line-height: 24px;
+              margin: 12px auto 0;
+              overflow: hidden;
+              text-align: center;
+              width: 1000px;
+          }
+          .footernew .footernewdiv {
+              margin: 0 auto;
+              width: 680px;
+          }
+          .footernew p {
+              border: 1px solid #D2D2D2;
+              float: left;
+              font-size: 12px;
+              height: 50px;
+              line-height: 20px;
+              margin: 6px;
+              padding: 0;
+              width: 120px;
+              overflow: hidden;
+          }
+          .footernew .fl {
+              padding: 3px;
+          }
+          .qq-footer .footernew .fr {
+              padding: 5px 3px 0;
+              width: 72px;
+          }
+          .qq-footer .footernew a {
+  color: #515151;
+  text-decoration: none;
+}
+        </style>
+        <div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a
+              href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a
+              href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a
+              href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a
+              href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a
+              href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a
+              href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/"
+              target="_blank" rel="nofollow">腾讯公益</a> | <a href="https://cloud.tencent.com/?from=txwdibu"
+              target="_blank" rel="nofollow">腾讯云</a> | <a href="http://service.qq.com/" target="_blank"
+              rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+              <br/>
+              <a href="http://szwljb.sz.gov.cn/" target="_blank" rel="nofollow">深圳举报中心</a> |
+              <a href="http://ga.sz.gov.cn" target="_blank" rel="nofollow">深圳公安局</a> | 
+              <a href="http://www.qq.com/dzwfggcns.htm" target="_blank" rel="nofollow">抵制违法广告承诺书</a> |
+              <a href="http://www.qq.com/copyright.shtml" target="_blank" rel="nofollow">版权保护投诉指引</a> |
+              <a href="https://gdca.miit.gov.cn/" target="_blank" rel="nofollow">广东省通管局</a>
+              <br>
+              <span>
+                <a href="http://www.qq.com/culture.shtml" target="_blank" rel="nofollow">粤网文[2017]6138-1456号</a> 
+                <a href="http://www.qq.com/internet_licence.htm" target="_blank" rel="nofollow">新出网证（粤）字010号</a> 
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+                增值电信业务经营许可证：<a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">粤B2-20090059</a> 
+                <a href="http://www.qq.com/icp1.shtml" target="_blank" rel="nofollow">B2-20090028</a>
+              </span>
+              <br>
+              <a href="http://www.qq.com/scio.htm" target="_blank" rel="nofollow">新闻信息服务许可证</a>
+              <a href="http://www.qq.com/xwdz.shtml" target="_blank" rel="nofollow">粤府新函[2001]87号</a> 违法和不良信息举报电话：0755-83765566-9 
+              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002000001">
+                <span>粤公网安备44030002000001号</span>
+              </a>
+              <br>
+              <a href="http://www.qq.com/spyp.htm" target="_blank">互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a>
+              <br>
+              <div class="footernew">
+                <div class="footernewdiv">
+                <p>
+                  <span class="fl"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" target="_blank" rel="nofollow"><img width="35" height="43" border="0" alt="经营性网站备案信息" src="//mat1.gtimg.com/www/images/qq2012/ind36.gif"></a></span>
+                  <span class="fr"><a target="_blank" class="lcblack" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" rel="nofollow">经营性网站<br>
+                  备案信息</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.12377.cn/" target="_blank" rel="nofollow"><img width="44" height="44" border="0" alt="中国互联网举报中心" src="//mat1.gtimg.com/www/images/qq2012/buliang.png"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.12377.cn/" target="_blank" rel="nofollow">中国互联网<br>
+                  举报中心</a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://www.wenming.cn" target="_blank" rel="nofollow"><img width="44" height="42" border="0" alt="中国文明网传播文明" src="//mat1.gtimg.com/www/images/qq2012/wmlogo.gif"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://www.wenming.cn" target="_blank" rel="nofollow">中国文明网<br>传播文明</a></span>
+                </p>
+                <p style="width:128px;height:52px;border:0;">
+                  <span style="padding:0;" class="fl"><a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&amp;ct=df&amp;a=1&amp;pa=337337" target="_blank" rel="nofollow"><img border="0" alt="诚信网站" src="//mat1.gtimg.com/www/images/qq2012/cxrz5.png"></a></span>
+                </p>
+                <p>
+                  <span style="width:44px;" class="fl"><a href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow"><img src="//mat1.gtimg.com/www/images/qq2012/gswj2015.jpg" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示"></a></span>
+                  <span style="width:64px;" class="fr"><a class="lcblack" href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow">工商网监<br>电子标识</a></span>
+                </p>
+                </div>
+              </div>
+
+          </div>
+          <div class="en">Copyright &copy; 1998 -
+            
+            2020 Tencent. All Rights Reserved</div>
+          <div>
+            <a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a
+              href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+          </div>
+        </div>
+<!--[if !IE]>|xGv00|1946a31bc73a15246842877bdfa16df2<![endif]-->
+    <!-- 版权页面片 结束 -->
+  </div>
+  <style>
+    #tcopyright a,
+    #tcopyright .en {
+      color: #858585;
+    }
+  </style>
+  <!-- 全站流量统计代码 开始 -->
+  <!--pgv by Austinjin-->
+<script type="text/javascript" language="javascript" src="//mat1.gtimg.com/ping.js"></script>
+<script type="text/javascript" language="javascript">
+var pvCurDomain = "sports.qq.com";  //更改域名
+if(window['ARTICLE_INFO'] && window['ARTICLE_INFO']['catalog_full']){
+function newPgvDetail(){
+ var catalogPathR1 = ARTICLE_INFO.catalog_full.toString().replace(/-/g,".");
+ var catalogPath = catalogPathR1.toString().replace(/_/g,"-");
+ if(ARTICLE_INFO.topic.name.length>0){var L = "L.",Z = "Z." + catalogPath + "." + ARTICLE_INFO.topic.name;}else{var L = "L." + catalogPath,Z = "Z.";}
+ var W = "W." + ARTICLE_INFO.type,M = "M." + ARTICLE_INFO.tpl.type + ARTICLE_INFO.tpl.stype,P = "P." + ARTICLE_INFO.site.toString().replace(/_/g,"-"),pgvInfo = L + "_" + Z + "_" + W + "_" + M + "_" + P;
+ if(typeof(pgvMain) == 'function'){if(typeof(pgvInfo) != 'undefined'){pgvMain({pgUserType:pgvInfo});}}
+}newPgvDetail();}
+else if(typeof(pgvMain) == 'function'){if(typeof(whatCatalog) != 'undefined'){pvCSTM = whatCatalog;pgvMain();}else{pgvMain();}}
+</script>
+<!--pgv end--><!--[if !IE]>|xGv00|8f905d6d5c7977615c84d60d5b8a7ab3<![endif]-->
+  <script type="text/javascript">
+    if (typeof pgvMain == "function") {
+      pvCurDomain = "sports.qq.com";
+      pvCurUrl = "/espn/";
+      pgvMain();
+    }
+  </script>
+  <!-- 全站流量统计代码 结束 -->
+  <script type="text/javascript">
+    $(function() {
+      $(".shareList").each(function() {
+        var _index = $(this);
+        _index.find(".sharewx").hover(function() {
+          _index.find(".wxcode").show();
+        }, function() {
+          _index.find(".wxcode").hide();
+        })
+      })
+      var vclick = true;
+      $("#lastlist").on("click", function() {
+        if (vclick) {
+          $("#getlistinfo").show();
+          vclick = false;
+        } else {
+          $("#getlistinfo").hide();
+          vclick = true;
+        }
+      });
+      var svote = 0;
+
+      function showNum(n, m) {
+        for (var i = n; i < (m + n); i++) {
+          $(".newslist .list-item").eq(i).removeClass("s").show();
+        }
+        svote = i;
+        if (!$(".newslist li").hasClass("s")) {
+          $(".getMore").hide();
+        }
+      }
+      var lengthL = $(".newslist .list-item").length;
+      if (lengthL < 5) {
+        $(".newslist li").show();
+        $(".newslist li").removeClass("s");
+      } else {
+        showNum(svote, 15);
+      }
+      $(".getMore").on("click", function() {
+        showNum(svote, 10);
+      })
+    })
+  </script>
+  <script charset="utf-8" src="//mat1.gtimg.com/sports/js/lib/require.min.js"></script>
+  <script charset="utf-8" src="//mat1.gtimg.com/pingjs/ext2020/espn/20180710/scripts/main-e93ae5f6dd.js"></script>
+  <!-- <script charset="utf-8" src="//mat1.gtimg.com/sports/kbsweb2/scripts/sports-web-api-1.1.js"></script> -->
+</body>
+
+</html><!--[if !IE]>|xGv00|dc1afee88838b2a9fa7b02a8461918ec<![endif]-->

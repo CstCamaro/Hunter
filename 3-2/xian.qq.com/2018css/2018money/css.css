@@ -1,0 +1,179 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul { margin: 0; padding: 0; font-size: 14px; font-family: Microsoft YaHei, arial, STHeiti; color: #67737e}
+ol, ul {list-style: none}
+img{border:none;display:block}
+body a {text-decoration:none;color:#333}
+body a:hover {text-decoration:underline;color:#f33}
+.clearfix {
+	*zoom: 1
+}
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: table;
+	line-height: 0
+}
+.f14 { font-size: 14px;}
+.f16 { font-size: 16px; }
+.l24 { line-height: 24px}
+em {font-style: normal;}
+.gg { margin:0px auto 3px; text-align:center; width:1000px;}
+.ad-495-60{float: left;width:495px;}
+.ad-mr-10{margin-right:10px;}
+.l_qq_com { margin:0px auto;}
+
+.nav { width: 100%; height: 50px; background-color: #d73f33;}
+.nav_content { width: 1000px; height: 50px; margin: 0 auto; background-image: url(//mat1.gtimg.com/xian/hangye/gaiban/logo_cj.png); background-position: 0px 9px; background-repeat: no-repeat;}
+.nav_content ul { margin-left: 200px; }
+.nav_content ul .on { background-color: #bd1f00}
+.nav_content ul li { float: left; height: 50px; line-height: 50px}
+.nav_content ul li a { color: #fff; font-size: 18px; padding: 0 25px; text-decoration:none;}
+.nav_content ul li:hover { background-color: #bd1f00}
+
+.layout {width:1000px;margin:0 auto;}
+.layout:after {clear:both; content:" "; display:table}
+.layout h2{color:#7f6c4f}
+.mt20{margin-top:20px}
+
+.maincont{width:660px;float:left;display:inline}
+
+.focus{position:relative;width:660px;height:345px;overflow:hidden;background:#000; float:left;}
+.focus ul{position:relative;overflow:hidden}
+.focus li{position:relative;float:left;width:660px;height:345px;overflow:hidden}
+.focus li span{position:relative;width:450px;margin-left:20px;z-index:111;font-size:24px;bottom:42px;color:#fff}
+.focus li a { text-decoration:none;}
+.focus img{width:660px;height:345px}
+.focus .bg{position:absolute;left:0;z-index:1;width:100%;bottom:0;height:112px;background:url(//mat1.gtimg.com/xian/hangye/gaiban/opacitybg70.png) repeat-x 0 bottom;cursor:pointer}
+.focus .btn{width:34px;height:66px;background:rgba(0,0,0,.5);position:absolute;top:50%;margin-top:-33px;display:none;cursor:pointer}
+.focus .btn i{display:block;width:14px;height:25px;overflow:hidden;margin-top:22px}
+.focus .btn:hover{background:rgba(0,0,0,.8)}
+.focus .btn.prevBtn{left:0}
+.focus .btn.prevBtn i{margin-left:7px;background-image:url(//mat1.gtimg.com/xian/hangye/gaiban/sprite.png);background-position:-93px -25px;background-size:143px 134px!important}
+.focus .btn.nextBtn{right:0}
+.focus .btn.nextBtn i{margin-left:10px;background-image:url(//mat1.gtimg.com/xian/hangye/gaiban/sprite.png);background-position:0 -25px;background-size:143px 134px!important}
+.lte_ie8 .focus .btn{background:#000;filter:alpha(opacity=50)}
+.lte_ie8 .focus .btn:hover{filter:alpha(opacity=80)}
+.focus .focusDot{position:absolute;width:100px;height:8px;bottom:34px;right:20px;z-index:9;text-align:right;display:none}
+.focus .focusDot span{display:inline-block;width:8px;height:8px;overflow:hidden;border-radius:50%;margin:0 5px;background:#fff;font-size:0;text-indent:-9999px;cursor:pointer;transition:all .3s}
+.focus .focusDot span.on{background:#a49174}
+
+.list { width:660px; float:left;}
+.list .title { font-size: 22px; font-weight: bold; border-bottom: 3px solid #7f6c4f; padding-bottom: 8px;}
+.list .title span { color: #7f6c4f;}
+.list .photos {color: #fff; font-size: 14px; background: #a49174;padding: 1px 4px; margin-right: 12px;}
+.list .con {margin-bottom: 22px;}
+.list .first .item {border-bottom: 1px solid #f5f5f5; padding: 10px 0;position: relative;}
+.list .first .linkto {font-size: 20px;font-weight: bold;}
+.list .first .st {position: absolute; bottom: 11px;right: 0;width: 100px;}
+.list .sst {display: none;} 
+.list .second {display: block;}
+.list a:hover{ color: #f33; text-decoration: none;}
+
+.Q-tpList {border-bottom: 1px solid #f0f0f0;position: relative; padding-bottom: 15px}
+.Q-tpList .pic {float: left;margin-right: 10px; overflow: hidden;display: inline;text-align: center;}
+.Q-tpList .Q-tpWrap {padding-top: 20px}
+.Q-tpList .Q-tpWrap .picto {width: 144px; height: 96px; vertical-align: bottom;}
+.Q-tpList .Q-tpWrap .text {margin-left: 163px; position: relative;height: 96px}
+.head .Q-tpList .Q-tpWrap .text, .major .Q-tpList .Q-tpWrap .text {height: 88px;}
+.Q-tpList .Q-tpWrap .text .st {bottom: 0px; position: absolute; width: 100%;left: 0;}
+.Q-pList:hover, .Q-tpList:hover {background: #fafafa}
+.Q-tpList .pic {margin: 0 19px 0 0;width: 144px;height: 96px;position: relative}
+.Q-tpList img {border: 0}
+.Q-tpList em {font-size: 20px; line-height: 30px; font-weight: 400;display: inline-block; margin: 0px 20px 0px 0px;}
+.Q-tpList .red a {color: #b80b0b}
+.Q-tpList .red a:hover {color: #cd0001}
+.Q-tpWrap p { color: #818181;  padding: 1px 15px 0 0;}
+
+.st {position:relative; height:20px;}
+.st .info {color:#9e9e9e; font-size:12px;}
+.st .info .from{}
+.st .info em { display:inline-block; height:11px; width:0; border-right:1px solid #e5e5e5; margin:0 12px 0 12px; vertical-align:-1px;}
+.st .info .keywords{*vertical-align:-2px; display:none}
+.st .info .pub_time{font-size:14px}
+.st .info a {display:inline-block; color:#9e9e9e; background:#f5f5f5; padding:3px 6px; margin-right:12px}
+.st .info a:hover {color:#699cbb; background:#f4f0e8}
+
+.btns{width:118px;height:16px;position:absolute;top:3px;right:0}
+.btns .forStyle { width: 15px; height: 14px; float: right; display: inline}
+
+.list .more { display: block; background: #f5f5f5; width: 100%; height: 36px; line-height: 36px; text-align: center; font-size: 14px;}
+.list .more:hover { color: #333; background: #ece6db;}
+
+.subcont{width:320px;float:right;display:inline}
+.extra { position:relative;}
+.extra img { width:320px; height:220px;}
+.extra h2 { font-size: 16px; line-height:40px; text-align:center;}
+.extra p { font-size: 14px; line-height: 24px; color: #9e9e9e;}
+.extra h3 { font-size: 16px; line-height: 24px; color: #b36e2b; font-weight:normal; }
+.extra h3 p { float:left; width:230px;font-size: 16px; line-height: 36px;color: #b36e2b; text-align:center;}
+.extra h3 a { width: 78px; height: 34px; line-height: 34px; position: absolute; right: 0;}
+.extra h3 a:hover { color:#fff;}
+.extra .baoming { background: #f2912c; border-radius: 5px; color: #fff; text-align: center; border: 1px solid #f2912c;}
+
+.title { height: 30px; position: relative; border-bottom: 1px solid #d4d4d4;} 
+.title strong { padding-left: 10px; font-size: 18px; height: 20px; line-height: 20px; border-left: 4px solid #d73f33; color: #d73f33;}
+.title a { padding-left: 10px; font-size: 14px; height: 20px; line-height: 20px; color: #d73f33; position: relative; left: 194px; top: 6px; cursor: pointer; font-weight: normal !important; }
+
+.subcont ul { margin:20px 0px; padding:0px; list-style:none;}
+
+.cjps .tuw { position: relative; margin-top:10px;}
+.cjps .tuw img { width:320px; height:220px;}
+.cjps h4 {background: rgba(0,0,0,0.8);filter: progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#B2000000',endColorstr = '#B2000000')\9;width: 100%;position: absolute; bottom: 0px; left: 0px; height: 30px;line-height: 30px;color: #fff;text-align: center;}
+.cjps h4 a {color: #fff; display:block; overflow:hidden; height:30px; line-height:30px;}
+.cjps ul { margin:0 0 20px 0;}
+
+.wenz { text-align:left; margin:10px 0px; padding: 0 0 0 10px; background: url(//mat1.gtimg.com/xian/hangye/gaiban/inco-bg.jpg) left center no-repeat;}
+.wenz a { line-height:20px; font-size:14px; display:block; height:20px; overflow:hidden;}
+
+.tus img { width:280px; height:160px; margin-bottom:10px;}
+.tus a { line-height:20px; font-size:14px; font-weight:bold;}
+.tus { text-align:center; margin:10px 20px;}
+
+.hezuo ul { margin:10px; }
+.hezuo ul li {text-align:left; margin:5px 9px; float:left; border:1px #ccc dotted;}
+.hezuo ul li img { width:120px; height:70px;} 
+
+.youlian ul { margin:10px; }
+.youlian ul li {text-align:left; margin:5px 9px; float:left; border:1px #ccc dotted; padding:5px 10px; width:100px; height:30px; line-height:30px; overflow:hidden; text-align: center;}
+
+.lianxi ul { margin:10px; }
+.lianxi ul li {text-align:left; margin:5px 9px; float:left;  padding:5px 10px; width:350px; overflow:hidden; }
+.lianxi ul li p { margin:5px 0px;}
+.lianxi .qq { width:110px; height:80px; position:relative; margin-left:20px;}
+.lianxi .qq a { display: block; background-image: url(//mat1.gtimg.com/xian/hangye/gaiban/qqlx.png); background-position: 0px 0px; background-repeat: no-repeat; width: 125px; height: 55px; position: absolute; top: 0px; right: 0;}
+
+.discuzBtn, .shareBtn {float:right;display:inline; cursor:pointer; right:10px;}
+.shareBtn:focus{outline:0}
+.shareBtn {width:19px; height:15px; background:url(//mat1.gtimg.com/xian/hangye/gaiban/share_icon.png) no-repeat 0 0; margin-left:9px; position:relative}
+.discuzBtn {margin-left:16px; padding:0 5px 0 20px; font-size:14px; color:#d3d3d3; line-height:14px;height:16px; background:url(//mat1.gtimg.com/xian/hangye/gaiban/share_icon.png) no-repeat -83px 0;display:block;}
+.shareBtnHover {background-position:0 -39px;height:25px;display:block;}
+.discuzBtn:hover{background-position:-83px -65px;}
+#shares {width:95px; padding:6px 0; position:absolute; border:1px solid #f0f0f0; top:20px; left:-12px; z-index:2; background:#fff; display:none}
+#shares .jiantou{display:block; position:absolute; width:12px;height:12px;background:url(//mat1.gtimg.com/xian/hangye/gaiban/share_icon.png) 0 -105px no-repeat; top: -8px; left:14px}
+#shares .shareButton {height:26px;cursor:pointer;margin:0;color:grey;overflow:hidden;clear:both;float:left;width:100%;text-align:left; font-size:12px;}
+#shares .shareButton a {display:block; padding-left:37px;display:block;background:url(//mat1.gtimg.com/xian/hangye/gaiban/icons.png) no-repeat}
+#shares #share2wb {display:none;}
+#shares #share2wb a{background-position:13px -1421px}
+#shares #share2qzone a{background-position:13px -1448px}
+#shares #share2qq a{background-position:13px -1473px}
+#shares #share2sina a{background-position:13px -1499px}
+
+.share_layer {overflow:hidden;padding:7px;position:absolute;z-index:999999;zoom:1;font-size:12px;font-family:Arial,Sans-Serif}
+.share_layer ul,.share_layer ul li{list-style-type:none}
+.share_layer img{border:0none}
+.share_layer a{text-decoration:none}
+.share_layer a:hover {text-decoration:underline}
+.share_layer button,.share_layer label{cursor:pointer;border:0none}
+.share_layer input,.share_layer button{font-size:12px;font-family:Arial,Sans-Serif}
+.share_layer_main{border:1px solid #b5c1ca;background-color:#FAFCFF;position:relative;z-index:5}
+.share_layer_title{height:24px;background:#EEF4F6 url(//mat1.gtimg.com/xian/hangye/gaiban/loginpop_tbg.png) repeat-x;cursor:move;border-bottom:1px solid #CED3E4}
+.share_layer_title h3{float:left;margin:0;padding:3px 0 0 12px;color:#666;font-size:13px;font-weight:normal;line-height:18px;overflow:hidden;font-family:Arial,Helvetica,sans-serif}
+.share_layer_title .mblogo{padding-left:24px;background:url(//mat1.gtimg.com/xian/hangye/gaiban/wblogin_bt1.png)-84px 6px no-repeat}
+.share_layer .bt_close{background:url(//mat1.gtimg.com/xian/hangye/gaiban/pop_bg.png) no-repeat 0 -39px;width:9px;height:10px;cursor:pointer;position:absolute;right:10px;top:11px;z-index:5px}
+.share_layer_cont a:link,.share_layer_cont a:visited{color:#5F5F5F;text-decoration:underline}
+.share_layer_cont a:hover,.share_layer_cont a:active{color:#494949}
+.share_layer_cont{color:#000000;background-color:#FAFCFF}
+.share_layer_hint{color:#9E9E9E;font-style:normal}
+.share_layer .bg { position: absolute; top: 0; left: 0; height: 100%; padding: 500px; zoom: 1}
+.share_layer .del_fri { font-weight: bold; display: -moz-inline-stack; display: inline-block; line-height: 9px; width: 11px; height: 10px; position: absolute; top: 6px; right: 10px; cursor: pointer; font-family: "Comic Sans MS", "Verdana", cursive; color: #99ADBA}
+.share_layer .del_fri:hover { text-decoration: none; color: #666666}
+.share_layer_title .none { display: none !important}/*  |xGv00|e8ac191f96a279f024dbc20f9ed5d651 */

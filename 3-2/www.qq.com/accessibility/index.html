@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="keywords" content="腾讯网无障碍说明 网页无障碍">
+<meta name="description" content="腾讯网致力于可访问性无障碍的推广和实施。以Federal Acquisition Regulation中的508法案和Illinois Center for Information Technology and Web Accessibility为基础。由OMG前端研发中心维护。">
+<title>腾讯网无障碍说明</title>
+<style type="text/css">
+h1,h2,p{margin:0; padding:0;}
+body{font:62.5%/2.3 "微软雅黑","Arial"}
+li{font-size:1.3em}
+</style>
+</head>
+
+<body>
+腾讯网，<a href="http://accessibilityunion.org/" target="_blank">中国信息无障碍产品联盟</a>成员<!--[if !IE]>|xGv00|4b226801d98a71042407126a1416a3ac<![endif]-->
+<h1>腾讯网无障碍说明</h1>
+<p>12-27-2012 更新</p>
+<h2>频道、专题页快捷键列表(有相应提示则表示此页面已部署)</h2>
+<p>12-27-2012 建立</p>
+	<ul>
+		<li>按alt+Q 访问网页大纲（通过网页大纲，您可以在各个内容区域间进行快速切换）</li>
+	</ul>
+
+<h2>新闻底层页快捷键列表(已部署频道：新闻、财经、娱乐、体育、公益、数码、科技、女性、时尚、健康)</h2>
+<p>10-29-2012 建立, 12-27-2012 更新</p>
+	<ul>
+		<li>按alt+0 访问无障碍说明链接</li>
+		<li>按alt+1 访问首页链接</li>
+		<li>按alt+2 访问导航</li>
+		<li>按alt+3 访问正文</li>
+		<li>按alt+4 访问评论</li>
+		<li>按alt+5 访问相关新闻列表链接</li>
+		<li>当听到“视频区域，按回车播放（视频载入可能需要几秒），在播放过程中，按空格键暂停或者继续，您也可以按Esc键跳出视频。”的时候，可根据相关提示进行操作。</li>
+		<li>支持WAI-ARIA landmark</li>
+	</ul>
+<script type="text/javascript">
+function rwAccess(){
+	var iurl = '//btrace.qq.com/collect?sIp=&iQQ=&sBiz=&sOp=accessdoc&iSta=&iTy=1617&iFlow=&iSite=&sUrl=&sRefer=' + escape(document.referrer) + '&sLink=&iUseragent=&iScreen=&iRes1=&iRes2=&iRes3=&iRes4=' + Math.random();
+		rwImage = new Image(1,1);
+		rwImage.src = iurl;
+
+}
+rwAccess()
+</script>
+<h2>屏幕阅读器测试环境</h2>
+<ol>
+<li>NVDA</li>
+<li>争渡读屏软件公益版</li>
+<li>永德读屏软件6.3</li>
+</ol>
+
+<h2>可访问性代码校验点参考</h2>
+<p>10-29-2012 建立, 11-09-2012 更新</p>
+<p>基于Federal Acquisition Regulation中的508<span class="amp">&amp;</span>Illinois Center for Information Technology and Web Accessibility，并且结合qq.com的实际环境</p>
+<h3>W3C要求</h3>
+<ol>
+	<li>必须有DOCTYPE</li>
+	<li>必须指定字符编码</li>
+</ol>
+<h3>语言</h3>
+<ol>
+	<li>每个页面的html标签要指定lang属性，&lt;html xml:lang=&quot;zh&quot; lang=&quot;zh&quot;&gt;</li>
+</ol>
+<h3>线性阅读</h3>
+<ol>
+	<li>不以表格作为布局使用</li>
+	<li>采用定位的时候，将css去除，查看内容的阅读顺序是否符合有意义</li>
+</ol>
+<h3>焦点与键盘</h3>
+<ol>
+	<li>禁止移除焦点</li>
+	<li>不可禁用键盘操作</li>
+</ol>
+<h3>标题</h3>
+<ol>
+	<li>页面中必须包含一个title元素，并且不应为空</li>
+	<li>title中的内容应该少于60个字 </li>
+	<li>title应该包含网站名字和页面的主题</li>
+	<li>页面中必须包含至少一个h1，并且不能为空 </li>
+	<li>h1和title中应该包含有相同的某些词汇</li>
+	<li>h1和title应该使用相同的词序（<a href="http://baike.baidu.com/view/619427.htm" target="_blank">词序</a>） </li>
+	<li>h1的内容不应该仅仅来自于图片的alt属性值 </li>
+</ol>
+<h3>hn</h3>
+<ol>
+	<li>所有的hn应该在h1后面适当的嵌套</li>
+	<li>从h2开始，每一个hn前面至少有一个h(n-1)，比如：h3前面至少有一个h2；h5前面至少有一个h4</li>
+	<li>页面中至少并只能包含一个h1。（html5中已经提倡可以使用多个hn）</li>
+	<li>h1..h6元素应该在页面中用于构建信息</li>
+	<li>h1..h6 或者 作用等于 （heading|region|main|secondary|navigation|banner|contentinfo|definition|note|seealso|search）的元素应该在页面中用于构建信息</li>
+	<li>每一个h1...h6必须有文字内容</li>
+	<li>hn中的内容通常少于65个字</li>
+	<li>h2...h6中除了img的alt属性外，还应该包含文字内容</li>
+	<li>相同级别的标题内容应该是唯一的。（比如：不能有两个h1的内容都是“腾讯网”）</li>
+</ol>
+<h3>菜单和导航</h3>
+<ol>
+	<li>ul是用来作为导航的最合适的元素，其次是ol</li>
+	<li>
+		<p>推荐的导航结构：</p>
+		<p>&lt;h2   class="offscreen"  &gt;&lt;/h2&gt;&lt;!--h2~h6后面紧挨着ul或者ol，这样才会被认为是navigation bar，并且这里的hn出现在h1前面被视为符合要求的--&gt;</p>
+		<p>&lt;ul&gt;</p>
+		<p style="text-indent:2em">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;栏目1&lt;/a&gt;&lt;/li&gt; </p>
+		<p style="text-indent:2em">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;栏目2&lt;/a&gt;&lt;/li&gt; </p>
+		<p>&lt;/ul&gt;</p>
+		<p>/*css style*/</p>
+		<p> .offscreen {&nbsp;<br>
+			position: absolute;&nbsp;<br>
+			top: -30em;&nbsp;<br>
+			left: -300em;&nbsp;<br>
+			}&nbsp; </p>
+	</li>
+	<li>绝大多数的网页应该至少含有一个导航栏</li>
+	<li>每个map，ul，ol元素不要在最后一个h1之前，如果必须有个导航在标题之前，这个标题请用h2。(参见推荐的导航结构)</li>
+	<li>每一个嵌套的table，热点区域，ol，ul作为导航的话，他们的头部要有一个h2(或者是h2~h6，参见推荐的导航结构) </li>
+</ol>
+<h3>文本样式</h3>
+<ol>
+	<li>请勿使用blink(闪啊闪的)和marquee(移动移动的)！！！会引发癫痫和视觉损伤</li>
+	<li>禁止使用font和center元素，请用css实现</li>
+	<li>斜体样式禁用i元素，标题用h1...h6，要强调的词、短语和句子，请用em实现</li>
+	<li>加粗字体样式禁用b元素，标题用h1...h6，要强调的词、短语和句子，请用em实现</li>
+	<li>下划线样式禁用u元素，标题用h1...h6，要强调的词、短语和句子，请用strong实现</li>
+</ol>
+<h3>列表</h3>
+<ol>
+	<li>如果将p一行行的有顺序的排列，就该考虑是不是应该用有序列表了（ol）</li>
+	<li>如果将p一行行的排列，就该考虑是不是应该用无序列表了（ul）</li>
+	<li>如果列表嵌套深度大于5层的话，应该考虑用h1...h6这样的元素来进行转换。尤其是屏幕阅读器的用户</li>
+	<li>列表嵌套别超过5层</li>
+</ol>
+<h3>链接</h3>
+<ol>
+	<li>避免使用脱离文章上下文无法理解的文字链接（比如最常用的“详细”的文字）</li>
+	<li>如果一个链接包含一个图片和文字，并且alt中的内容和文字匹配（相同），那么alt的属性应该为空</li>
+	<li>避免使用小于16*16的图片作为链接</li>
+	<li>避免把链接密密麻麻的放在一起（指的是<a>链接</a><a>链接</a>...<a>链接</a>这种吧）</li>
+	<li>确保不同的链接地址用不同的链接文字（也就是说最好避免重复的锚（链接）文字）</li>
+	<li>确保相同的链接地址用相同的链接文字（如果多个链接都指向http://www.qq.com，那么这些链接都应该使用相同的锚（链接）文字。如果有的是“腾讯”，有的是“腾讯网”，有的是“腾讯网首页”，这样就不合适了，况且对SEO也不合适）</li>
+	<li>避免文字链接少于四个字（在中文网站中这一点很难避免）</li>
+	<li>内部的锚点目标要有tabindex="-1"。这是由于当内部链接被激活时，IE可以移动焦点</li>
+	<li>如果锚点目标是a或者表单等可以获得焦点的元素，如果使用tabindex=&quot;1&quot;，在使用tab键切换的时候就会被跳过</li>
+	<li>最安全的tabindex属性是0，但是非焦点元素在获得焦点的时候会激活outline，ie中会显示虚线，且无法使用样式去除。</li>
+</ol>
+<h3>图片</h3>
+<ol>
+	<li>宽或高不到8px或者没有alt的图片（特别是装饰性的图片）应该被移除，css技术可以用来控制样式</li>
+	<li>alt是用来描述图片的，而非单纯的新闻标题或者名词</li>
+	<li>alt属性不应包含图片的文件名</li>
+	<li>alt值不应包含冗长的信息（如果很长可以使用&lt;img longdesc="很长很长的内容很长很长的内容" /&gt;） </li>
+	<li>每个img要有alt</li>
+	<li>不能只依赖图片上的文字信息</li>
+	<li>banner、头图上的文字信息必须在代码中有所体现</li>
+</ol>
+<h3>Objects</h3>
+<ol>
+	<li>每个applet元素应有alt值</li>
+	<li>每个embed元素应有alt值</li>
+	<li>每个object应包含文字内容</li>
+</ol>
+<h3>表单</h3>
+<ol>
+	<li>ID必须唯一，特别是表单</li>
+	<li>每一个fieldset应该有一个legend元素</li>
+	<li>每个label必须有文字内容</li>
+	<li>每个legend必须有文字内容</li>
+	<li>每一个有效的label (legend + label)必须是唯一的（也就是说&lt;label for="唯一"&gt;&lt;/label） </li>
+	<li>label不应该包裹select和textarea元素（平时我们可能会这样书写&lt;label&gt;&lt;select /&gt;&lt;/label&gt;）</li>
+	<li>当input = images是必须有alt或者titile属性，且不为空</li>
+	<li>每一个button必须包含文字内容</li>
+	<li>核实文本域、密码、下拉框、textarea和按钮的时候，最好设置为相对字体</li>
+	<li>禁止让表单元素不能获得焦点</li>
+	<li>如果input、select、textarea、button的title被定义了，一定不能为空</li>
+	<li>type等于button、reset、submit的input必须要有value或者title</li>
+	<li>最好为每一个表单元素定义一个label并且指向他的id或者拥有title</li>
+	<li>必须填写的字段，在代码层面一定要有所体现，推荐：&lt;abbr title="required"&gt;*&lt;/abbr&gt; </li>
+</ol>
+<h3>框架</h3>
+<ol>
+	<li>不应使用隐藏或者引入空的frame</li>
+	<li>每个frame必须有一个title属性用来介绍这个frame的作用，隐藏的frame可以将title设置为"hidden 1", "hidden 2", "hidden 3," 等等</li>
+	<li>frameset中的每一个frame的title要有内容</li>
+</ol>
+<h3>事件</h3>
+<ol>
+	<li>有onmouseover行为的焦点的元素应有类似onfocus的相同效果解决方案</li>
+	<li>有onmouseout行为的焦点的元素应有类似onblur的相同效果解决方案</li>
+	<li>鼠标的onmousedown, onmouseup 和onmousemove功能，要有相应的键盘解决方案（比如用keydown、keyup、onblur）</li>
+	<li>没有焦点的元素的onmouseover 或 onmouseout 应该用css中的:hover来实现（可惜ie6不给力）</li>
+	<li>onClick事件应该绑定在有能有焦点的元素上</li>
+	<li>onChange事件不应使用在select元素上，会导致自动改变焦点或者载入到一个页面中</li>
+</ol>
+<h3>accesskey属性</h3>
+<ol>
+	<li>属性值必须是唯一的</li>
+	<li>不要与浏览器本身的快捷键重复，比如：IE中的A C E F H J M P R T V X Home；chrome中的E F D；firefox：B E F H S T V 另外有的插件会把自己安装在菜单栏里，并且绑定一个字母作为快捷键</li>
+	<li>最好不要使用字母</li>
+</ol>
+<h3>缩放</h3>
+<ol>
+	<li>禁止使用-webkit-text-size-adjust:none，推荐使用-webkit-text-size-adjust:100%，保证在小尺寸IOS设备上的字体比例</li>
+	<li>在chrome中使用-webkit-text-size-adjust:none实现小于12px的文字的信息一定不能是重要信息</li>
+</ol>
+<h3>颜色</h3>
+<ol>
+	<li>禁止在html标签中使用color属性，用css来实现</li>
+	<li>颜色对比对最少应是3：1</li>
+	<li>颜色对比度最佳值是7：1</li>
+	<li>不能只用颜色作为唯一的信息标识（比如股票中的红涨绿跌）</li>
+	<li>不能只用图形作为唯一的信息标识（比如星星评级，柱状图等）</li>
+</ol>
+<h2>检测工具</h2>
+<ol>
+	<li><a href="https://addons.mozilla.org/zh-CN/firefox/addon/accessibility-evaluation-toolb/" target="_blank" rel="nofollow">Firefox Accessibility Extension</a></li>
+	<li><a href="http://fae.cita.uiuc.edu" target="_blank" rel="nofollow">Functional Accessibility Evaluator 1.1</a></li>
+</ol>
+<p>期待您的意见和建议，您可以关注我们的微信公众号:FERD并留言咨询。</p>
+<!--pgv 20160801 by 39815<script charset="gbk" src="//pingjs.qq.com/ping.js"></script>-->
+<!--pgv 20181101 by suxiawang-->
+<script src="//mat1.gtimg.com/pingjs/ext2020/dc2017/publicjs/m/ping.js" charset="gbk"></script>
+
+<script>!function(t,e){"use strict";function a(){var t,e,a=(""+p.catalog_full).replace(/-/g,".").replace(/_/g,"-");p.topic&&p.topic.name&&p.topic.name.length>0?(t="L.",e="Z."+a+"."+p.topic.name):(t="L."+a,e="Z.");var n="W."+p.type,o="M."+p.tpl.type+p.tpl.stype,i="P."+(""+p.site).replace(/_/g,"-"),c="F."+f,l=t+"_"+e+"_"+n+"_"+o+"_"+i+"_"+c;l&&r({pgUserType:l})}function n(t){o(e,"click",function(e){var a=e.target;"img"===a.tagName&&(a=a.parentNode);var n=a.tagName.toLowerCase(),o=a.getAttribute("href");if(!o||o.indexOf("qqcom_pgv_from=")>-1)return!1;if("a"===n&&a.hostname&&a.hostname.indexOf("qq.com")>-1){var r=o+(a.search?"&":"?")+"qqcom_pgv_from="+t;a.setAttribute("href",r)}})}function o(a,n,o){var r=function(a){return a=a||t.event,a.target||(a.target=a.srcElement||e),3===a.target.nodeType&&(a.target=a.target.parentNode),a};return a.addEventListener?a.addEventListener(n,function(t){o.call(t.currentTarget,r(t))},!1):a.attachEvent("on"+n,function(t){o.call(a,r(t))}),!0}if(!t||!t.location||"function"!=typeof t.pgvMain)return!1;var r=function(){var e=arguments;setTimeout(function(){t.pgvMain.apply(this,e)},0)},i=location.search.replace(/adtag=client\.qq\.\d+_\.0/i,"from=tips"),c=["aio","tips"],f="def";location.search.indexOf("qqcom_pgv_from=")>-1&&(f=location.host+location.pathname+location.search);var p=t.ARTICLE_INFO||null,l=p&&p.catalog_full;if(l)for(var g=0;g<c.length;g+=1)if(i.indexOf(c[g])>-1){n(c[g]);break}l&&a(),l||("undefined"!=typeof whatCatalog&&(t.pvCSTM=t.whatCatalog),r({pgUserType:"F."+f}))}(window,document);</script><!--/pgv 20160801-->
+<!-- 视频来源ptag --><script src="//mat1.gtimg.com/v/ptag/ptag_1.2.js" async="true"></script>
+<!--[if !IE]>|xGv00|a1d505b81f0731c97405c05986e06bb8<![endif]-->
+<!--[if !IE]>|xGv00|acbdc96983b52069d1691358cae3dd24<![endif]-->
+<script>
+var NavNoticeSiteName = ["sports","tech","games","cul","edu","fashion","house","auto","finance","ent"]; 
+</script>
+<script src="//mat1.gtimg.com/www/chrometips/notification2017_v0118.js"></script><!--[if !IE]>|xGv00|160405494288ecc3516e240c185c4fd7<![endif]-->
+<style>
+.tcopyright {width:960px;margin:0 auto;padding:8px 0;font-size:12px;line-height:28px;color:#333; text-align:center; overflow:hidden;clear:both;}
+.tcopyright .en{font-family:Arial;}
+.tcopyright a{color:#333;text-decoration: none;}
+.tcopyright a:hover{color:#bd0a01;text-decoration: underline;}
+</style>
+<div id="tcopyright" class="tcopyright" bossZone="footer" role="contentinfo">
+	<div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私政策</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a> | <a href="http://service.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://news.qq.com/zt2014/2014qtnews/ccybspxd.htm
+" target="_blank" rel="nofollow">举报中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a>
+	</div>
+  	<div class="en">Copyright &copy; 1998 - 2020 Tencent. All Rights Reserved</div>
+    <div>
+		<a href="http://www.tencent.com/" target="_blank" rel="nofollow">腾讯公司</a> <a href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" target="_blank" rel="nofollow">版权所有</a>
+	</div>
+</div><!--[if !IE]>|xGv00|d45ebf88b09e160bc0e29e6ba1bdeaee<![endif]--><!--[if !IE]>|xGv00|cde1431e73dc57ec9f6d00197dec688f<![endif]-->
+<span style="display:none">
+<script language="javascript" src="//mat1.gtimg.com/ping.js"></script>
+<script language="javascript">
+if(typeof(pgvMain) == 'function')
+{
+        pgvMain();
+}
+</script>
+</span>
+</body>
+</html><!--[if !IE]>|xGv00|6e5a09e19962896b0de7add46bdb1d97<![endif]-->

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>腾讯体育社区·汇聚心跳</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="体育" />
+    <meta name="description" content="腾讯体育社区" />
+    <meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.3,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no,email=no,address=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="dns-prefetch" href="//mat1.gtimg.com">
+    <link rel="dns-prefetch" href="//img1.gtimg.com">
+    <link rel="shortcut icon" href="//mat1.gtimg.com/sports/kbsweb/fav.ico" type="image/x-icon">
+    <script charset="UTF-8" src="//mat1.gtimg.com/sports/sportAppWeb/m-kbs-app/rem.js"></script>
+    <script>
+        var ua = navigator.userAgent
+        var ipad = /(iPad).*OS\s([\d_]+)/.test(ua)
+        var iphone = !ipad && /(iPhone\sOS)\s([\d_]+)/.test(ua)
+        var uaParttern = /MQQBrowser\/([\.\d]+)/i;
+        var uaPartternNegative = /MQQBrowser\/([\.\d]+)[\s\S]+?TBS\/[\d]+/i;
+        var isInIosQB = uaParttern.test(ua) && !uaPartternNegative.test(ua)
+        if (location.href.indexOf('topic.htm') < 0 && iphone && isInIosQB) {
+            location.href = '//m.sports.qq.com/mkbsapp/topic.htm#' + location.pathname + location.search
+        }
+    </script>
+<link href="//mat1.gtimg.com/sports/sportAppWeb/mobile/styles/0e434e6495f8e51b2466.css" rel="stylesheet"></head>
+
+<body>
+  <div id="appContainer">
+    <!--vue-ssr-outlet-->
+  </div>
+  <script charset="UTF-8" src="//mat1.gtimg.com/sports/sportAppWeb/tua-app-sdk/tua-mlogin.js" charset="utf-8"></script>
+  <script charset="UTF-8" src="//mat1.gtimg.com/sports/sportAppWeb/tua-app-sdk/bossv2.js" charset="utf-8"></script>
+  <!-- 2019-10-31 16:28:17 -->
+  <script type="text/javascript" charset="UTF-8">
+    (function () {
+        try {
+            /*----------------------------------
+             pgvMain arguments
+             -----------------------------------*/
+            var pgvMainArgs = {
+                virtualDomain: "function.sports.qq.com"
+            };
+
+            var node = document.createElement('script'),
+                    script = document.getElementsByTagName('script')[0];
+            node.src = "//pingjs.qq.com/ping_video.js";
+            node.type = 'text/javascript';
+            node.onload = node.onerror = node.onreadystatechange = function () {
+                /loaded|complete|undefined/.test(node.readyState) && function () {
+                    node.onload = node.onerror = node.onreadystatechange = null;
+                    node.parentNode.removeChild(node);
+                    node = undefined;
+                    pgvMain(pgvMainArgs);
+                }();
+            };
+            script.parentNode.insertBefore(node, script);
+        } catch (e) {
+
+        }
+    })();
+</script>
+<script>
+!function(){try{for(var e=[/projection\-detail/i],t=function(){return/qqsports/i.test(navigator.userAgent)},n=function(){function e(){for(var e=0,t={};e<arguments.length;e++){var n=arguments[e];for(var o in n)t[o]=n[o]}return t}return function t(n){function o(t,i,r){var a;if("undefined"!=typeof document){if(arguments.length>1){if("number"==typeof(r=e({path:"/"},o.defaults,r)).expires){var c=new Date;c.setMilliseconds(c.getMilliseconds()+864e5*r.expires),r.expires=c}r.expires=r.expires?r.expires.toUTCString():"";try{a=JSON.stringify(i),/^[\{\[]/.test(a)&&(i=a)}catch(e){}i=n.write?n.write(i,t):encodeURIComponent(String(i)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),t=(t=(t=encodeURIComponent(String(t))).replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent)).replace(/[\(\)]/g,escape);var l="";for(var s in r)r[s]&&(l+="; "+s,!0!==r[s]&&(l+="="+r[s]));return document.cookie=t+"="+i+l}t||(a={});for(var p=document.cookie?document.cookie.split("; "):[],d=/(%[0-9A-Z]{2})+/g,u=0;u<p.length;u++){var f=p[u].split("="),m=f.slice(1).join("=");this.json||'"'!==m.charAt(0)||(m=m.slice(1,-1));try{var g=f[0].replace(d,decodeURIComponent);if(m=n.read?n.read(m,g):n(m,g)||m.replace(d,decodeURIComponent),this.json)try{m=JSON.parse(m)}catch(e){}if(t===g){a=m;break}t||(a[g]=m)}catch(e){}}return a}}return o.set=o,o.get=function(e){return o.call(o,e)},o.getJSON=function(){return o.apply({json:!0},[].slice.call(arguments))},o.defaults={},o.remove=function(t,n){o(t,"",e(n,{expires:-1}))},o.withConverter=t,o}(function(){})}(),o={path:"/",domain:"sports.qq.com"},i=function(e,t){var n,o;/iphone|ipad|ipod|ios/i.test(navigator.userAgent)?function(e,t){t&&t.callback&&(t.callbackName="jsBridgeCallback___100",window[t.callbackName]=function(e){t.callback(e),window[t.callbackName]=void 0});var n=[];for(var o in t)"callback"!=o&&n.push(o+"="+encodeURIComponent(t[o]));var i="http://sports.qq.com/jsBridge/"+e+"?"+n.join("&"),r=document.createElement("iframe");r.src=i,r.style.width="0",r.style.height="0",r.style.border="none",r.style.visibility="hidden",document.body.appendChild(r),setTimeout(function(){r.parentNode.removeChild(r)},1e3)}(e,t):/android/i.test(navigator.userAgent)&&(n=e,(o=t)&&o.callback&&(o.callbackName="jsBridgeCallback___100",window[o.callbackName]=function(e){o.callback(e),window[o.callbackName]=void 0}),alert("js_"+n+"("+JSON.stringify(o)+")"))},r=function(){return e="h5_page_step",+n.get(e)||0;var e},a=!1,c=function(){return a?r():r()+1},l=function(){var e,t;e="h5_page_step",t=c(),n.set(e,t,o),a=!0},s=function(){if(t()){var e={};e.h5_page_name=location.pathname.replace(/\/|\.htm|\.html/g,"_").replace(/index_$/,""),e.h5_page_step=c(),i("setLog",e)}},p=0;p<e.length;p++)if(e[p]&&e[p].test&&e[p].test(location.pathname))return;t()&&setTimeout(function(){s(),l()},0)}catch(e){}}();</script>
+<!--[if !IE]>|xGv00|6f5abd60baedf0c432e910d2fd0ebb99<![endif]-->
+<!--[if !IE]>|xGv00|6c01d80fce0ebdf41af7670e69303433<![endif]-->
+  <!--vue-ssr-time-->
+<script charset="UTF-8" src="//mat1.gtimg.com/sports/sportAppWeb/tua-app-sdk/tua-app-sdk.js"></script><script charset="UTF-8" src="//mat1.gtimg.com/sports/kbsweb2/cgiqosboss.js?app=h5_topic"></script><script charset="UTF-8" src="//mat1.gtimg.com/sports/sportAppWeb/tua-app-sdk/bossv2.js" charset="utf-8"></script><script charset="UTF-8" type="text/javascript" src="//mat1.gtimg.com/sports/sportAppWeb/mobile/scripts/dll__7fac01f793e0ef17274c.js"></script><script type="text/javascript">(function(e){function r(r){for(var n,l,i=r[0],p=r[1],a=r[2],c=0,s=[];c<i.length;c++)l=i[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in p)Object.prototype.hasOwnProperty.call(p,n)&&(e[n]=p[n]);f&&f(r);while(s.length)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,i=1;i<t.length;i++){var p=t[i];0!==o[p]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={0:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"===typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e["default"]}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="//mat1.gtimg.com/sports/sportAppWeb/mobile";var i=window["webpackJsonp"]=window["webpackJsonp"]||[],p=i.push.bind(i);i.push=r,i=i.slice();for(var a=0;a<i.length;a++)r(i[a]);var f=p;t()})([]);
+</script><script charset="UTF-8" type="text/javascript" src="//mat1.gtimg.com/sports/sportAppWeb/mobile/scripts/topic__62c1559958b514eae655.js"></script></body>
+</html>
+<!--[if !IE]>|xGv00|1f3f8646c2e1f80ef1551399efa95d13<![endif]-->

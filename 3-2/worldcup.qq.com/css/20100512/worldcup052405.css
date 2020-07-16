@@ -1,0 +1,676 @@
+/*
+=======================================================
+	文件名：wordcup0506.css
+	作者：Rainaxin
+	说明：世界杯首页
+=======================================================
+*/
+body,div,form,dl,dt,dd,img,h1,h2,h3,h4,h5,h6,ul,ol,li,p,span,table,th,td,a,sup,caption,button{border:0;border:none;padding:0;margin:0;}
+input,select,textarea{padding:0;margin:0}
+body{font-family:"宋体","Arial Narrow";font-size:12px;text-align:center;color:#2D2D2D;}
+ul,ol{list-style-type:none;}
+th,
+td,
+input{font-size:12px;}
+button{cursor:pointer;font-size:12px;background-color:transparent;}
+select{font-size:12px;}
+.none,.undis{display:none;}
+.show{display:block;}
+.wrap{text-align:left;width:958px;margin:0 auto;background:url(//mat1.gtimg.com/worldcup/20100506/bg_wrap.png) repeat-y;}
+/*文字颜色*/
+a:link,
+a:visited{color:#2C517E;text-decoration:none;}
+a:hover,
+a:active{text-decoration:underline;}
+.c_tx{color:#676767;}
+.grey{color:#8C8C8C;}
+.em{color:#E04F16!important;}
+.emlink{color:#0B499C!important;}
+.box1{width:37px;float:left;height:178px;}
+.mlink{color:#137E08!important;}
+.video{background:url("//mat1.gtimg.com/worldcup/video/qiudui/video.png") no-repeat scroll left top transparent;display:block;height:25px;left:15px;position:absolute;top:50px;width:25px;}
+.video1{background:url("//mat1.gtimg.com/worldcup/video/jinqiu1/video2.png") no-repeat scroll left top transparent;display:block;height:44px;left:103px;position:absolute;top:33px;width:44px;}
+.header{width:958px;height:125px;position:relative;margin:0 auto;}
+.header .skins{position:absolute;top:9px;left:0;}
+.header .skins .bg_trans{position:absolute;top:0;left:0;width:69px;height:17px;background-color:#000000;filter:alpha(Opacity=40);-moz-opacity:0.4;opacity:0.4;}
+.header .skins .notice{color:#FFFFFF;float:left;position:absolute;width:69px;height:17px;line-height:17px;left:-5px;background:url(//mat1.gtimg.com/worldcup/20100506/arrow.png) right no-repeat;}
+.header .skins .list_skins{float:left;margin-left:72px;_margin-left:36px;width:138px;height:17px;overflow:hidden;}
+.header .skins .list_skins li{float:left;margin-right:5px;}
+.header .skins .list_skins img{background:url(//mat1.gtimg.com/worldcup/20100506/skins.png) no-repeat;width:16px;height:15px;border:1px solid #E5FFDA;}
+.header .skins .list_skins a.on img{border:1px solid #D5FF00;}
+.header .skins .list_skins .skin_0{background-position:-322px 0;}
+.header .skins .list_skins .skin_1{background-position:0 0;}
+.header .skins .list_skins .skin_2{background-position:-23px 0;}
+.header .skins .list_skins .skin_3{background-position:-46px 0;}
+.header .skins .list_skins .skin_4{background-position:-69px 0;}
+.header .skins .list_skins .skin_5{background-position:-92px 0;}
+.header .skins .list_skins .skin_6{background-position:-115px 0;}
+.header .skins .list_skins .skin_7{background-position:-138px 0;}
+.header .skins .list_skins .skin_8{background-position:-161px 0;}
+.header .skins .list_skins .skin_9{background-position:-184px 0;}
+.header .skins .list_skins .skin_10{background-position:-207px 0;}
+.header .skins .list_skins .skin_11{background-position:-230px 0;}
+.header .skins .list_skins .skin_12{background-position:-253px 0;}
+.header .skins .list_skins .skin_13{background-position:-276px 0;}
+.header .skins .list_skins .skin_14{background-position:-299px 0;}
+.header .skins .more{color:#2D2D2D!important;vertical-align:-14px;*vertical-align:-5px;}
+.header .top_link{position:absolute;top:9px;right:0;color:#2D2D2D;height:21px;line-height:21px;}
+.header .top_link a{color:#2D2D2D!important;}
+.header .top_link .bg_trans{position:absolute;top:0;right:0;background-color:#000000;filter:alpha(Opacity=25);-moz-opacity:0.25;opacity:0.25;width:160px;height:21px;}
+.header .top_link .links{position:relative;z-index:2;margin-right:25px;margin-top:1px;}
+/*首屏公用*/
+.wrapper{width:100%;}
+.wrap{background:url(//mat1.gtimg.com/worldcup/20100506/bg_wrap.png) repeat-y;}
+.nav_clum{color:#6FC5A2;height:66px;font-size:14px;}
+.nav_clum a{color:#FFFEFF!important;padding:2px 3px 1px 3px;}
+.nav_clum a:hover{background-color:#06522B;text-decoration:none;}
+.nav_clum .line_one{padding-top:11px;margin-bottom:12px;margin-left:120px;}
+.nav_clum .line_two{margin-left:116px;}
+.nav_clum .line_two a{margin:0 4px;}
+.nav_wrap .sc_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/bg_nav.png) no-repeat;margin:0 0 0 9px;height:158px;}
+.icon_excel{background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) -339px -39px no-repeat;padding-left:10px;}
+.saicheng{position:relative;}
+.saicheng .block_sc{margin:0 0 0 91px;line-height:18px;color:#AFC1CF;_padding-top:5px;}
+.saicheng .block_sc strong{color:#2C2C2C;}
+.saicheng .block_sc a{color:#2D2D2D;display:inline-block;width:18px;height:15px;text-align:center;line-height:15px;margin:0 3px;*position:relative;*zoom:1;}
+.saicheng .block_sc a:hover,
+.saicheng .block_sc a.on{color:#FFFFFF;background-color:#05512A;text-decoration:none;}
+.saicheng .bt_dfz{position:absolute;right:32px;top:13px;_padding-top:3px;background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) 0 -206px no-repeat;width:174px;height:22px;text-decoration:none;line-height:22px;text-align:center;}
+.shikuang{padding-top:15px;}
+.shikuang .zhibo{float:left;width:236px;margin-top:-2px;}
+.shikuang h3{text-align:center;font-size:14px;}
+.shikuang img{border:1px solid #6B6B6B;vertical-align:-2px;}
+.shikuang .zhibo em{color:#CA0205;font-size:16px;font-style:normal;}
+.shikuang .zhibo .tit_sb{color:#FFFFFF;background-color:#CD0007;padding:1px 3px 0 3px;margin-right:5px;}
+.shikuang .zhibo p{line-height:18px;margin-top:8px;margin-left:16px;}
+.shikuang .zhibo table{text-align:center;margin-top:13px;}
+.shikuang .zhibo table tr td div span{float:left;width:115px;height:20px;line-height:20px;overflow:hidden;}
+.shikuang .zhibo table tr td{line-height:20px;height:20px;}
+.shikuang .block_next{float:left;width:235px;}
+.shikuang .block_next h3{margin-bottom:8px;font-size:14px;}
+.shikuang .block_next p{margin:0 0 0 12px;line-height:18px;}
+.shikuang .block_next .place{margin:15px 0 0 0;}
+.shikuang .block_next .place span{float:left;width:117px;height:20px;line-height:20px;overflow:hidden;text-align:center;}
+.list_video{*zoom:1;}
+.list_video:after{content:"";display:block;clear:both;}
+.list_video li{background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) -330px -63px no-repeat;padding-left:22px;line-height:18px;margin:3px 0;}
+/*赛程2样式*/
+.nav_wrap .sksec{background:url(//mat1.gtimg.com/worldcup/20100506/shikuang_1.png) 0 1px no-repeat;height:96px;margin-left:2px;}
+.nav_wrap .sksec .duizhan_1{width:338px;float:left;margin:0 0 0 130px;_margin-left:65px;}
+.nav_wrap .sksec .duizhan_1 .tit_dz{font-weight:bold;margin-left:20px;color:#1D6B3C;}
+.nav_wrap .sksec .duizhan_1 table{margin-top:12px;}
+.nav_wrap .sksec .duizhan_1 table tr td{height:21px;}
+/*赛程3样式*/
+.nav_wrap .skthird{background:url(//mat1.gtimg.com/worldcup/20100506/shikuang_2.png) 0 1px no-repeat;height:96px;margin-left:2px;}
+.nav_wrap .skthird .duizhan_1{width:338px;float:left;margin:0 0 0 130px;_margin-left:65px;}
+.nav_wrap .skthird .duizhan_1 .tit_dz{font-weight:bold;margin-left:20px;color:#1D6B3C;}
+.nav_wrap .skthird .duizhan_1 table{margin-top:12px;}
+.nav_wrap .skthird .duizhan_1 table tr td{height:21px;}
+.nav_wrap .skthird .pandian{margin:10px 0 0 0;}
+.nav_wrap .skthird .pandian a{margin:0 5px;}
+/*赛程4样式*/
+.nav_wrap .skfour{background:url(//mat1.gtimg.com/worldcup/20100506/shikuang_2.png) 0 1px no-repeat;height:96px;margin-left:2px;}
+.nav_wrap .skfour .duizhan_1{width:338px;float:left;margin:0 0 0 130px;_margin-left:65px;}
+.nav_wrap .skfour .duizhan_1 .tit_dz{font-weight:bold;margin-left:20px;color:#1D6B3C;}
+.nav_wrap .skfour .duizhan_1 table{margin-top:12px;}
+.nav_wrap .skfour .duizhan_1 table tr td{height:21px;}
+.nav_wrap .skfour .pandian{margin:10px 0 0 0;}
+.nav_wrap .skfour .pandian a{margin:0 5px;}
+.nav_wrap .skfour .links{color:#B0C1CD;height:21px;line-height:18px;margin-left:-5px;}
+.nav_wrap .skfour .links a{margin:0 5px;}
+/*赛程5样式*/
+.nav_wrap .skfive{padding-top:1px;margin-left:1px;_padding-top:2px;}
+/*首屏焦点新闻*/
+.const_cup{margin:13px 9px 8px 9px;*zoom:1;*margin-bottom:0px;clear:both;}
+.const_cup:after{content:"";display:block;clear:both;}
+.const_cup .sidebar{float:left;width:348px;margin-right:13px;}
+.const_cup .cotent{*zoom:1;}
+.const_cup .cotent:after{content:"";display:block;clear:both;}
+.const_cup .cotent .news_big{float:left;width:359px;}
+.const_cup .cotent .right{float:right;width:210px;}
+
+.const_cup .pic_focus{border:1px solid #E4E5E9;background-color:#FFFEFF;padding-bottom:1px;margin-bottom:10px;}
+.const_cup #focus{margin-bottom:2px;}
+.const_cup #focus #show{margin:4px 4px 0 4px;width:340px;height:265px;position:relative;}
+.const_cup #focus #show #Focus_Img{filter:progid:DXImageTransform.Microsoft.Fade ( duration=0.5,overlap=1.0 ); width:340px; height:265px;}
+.const_cup #focus #show #t_bar{position:absolute;height:40px;bottom:0px;left:0;background:#000;filter: alpha(opacity=40);opacity: 0.4;-moz-opacity:0.4;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";width:340px;}
+.const_cup #focus #show #f_bar{position:absolute;bottom:0;left:0;line-height:40px;height:40px;text-align:center;width:340px;text-align:center;}
+.const_cup #focus #show #f_bar #f_title{font-size:14px;}
+.const_cup #focus #show #f_bar #f_title a{color:#fff;}
+.const_cup #focus #show #f_bar #f_title a:hover{color:#fff;}
+.const_cup #focus #show #f_bar #f_btn{float:left;width:84px;color:#fff}
+.const_cup #focus #show #f_bar #f_btn .btn_on{background-color:#FF7E00;}
+.const_cup #focus #r_img{width:346px;height:71px;margin-top:10px;*zoom:1;background:#EAECEF url(//mat1.gtimg.com/worldcup/20100506/bg_grad.png) repeat-x;padding-top:7px;}
+.const_cup #focus #r_img:after{content:"";display:block;clear:both;}
+.const_cup #focus #r_img div{float:left;display:inline;width:86px;cursor:pointer;text-align:center;position:relative;}
+.const_cup #focus #r_img div img{width:75px;height:59px;background-color:#FFFFFF;padding:2px;border:1px solid #D6D6D8;margin:0 auto;}
+.const_cup #focus #r_img .f_on img{width:75px;height:59px;border:1px solid #FFFFFF;}
+.const_cup #focus #r_img .f_on .bg{display:block;background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) -213px -33px no-repeat;width:86px;height:84px;position:absolute;left:0;top:-13px;}
+
+.const_cup .bg_mode_l{margin-bottom:9px;}
+.const_cup .bg_mode_l .mode_title_l{background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) no-repeat;width:348px;height:30px;line-height:30px;position:relative;}
+.const_cup .bg_mode_l .mode_title_l h3{font-size:14px;margin-left:15px;}
+.const_cup .bg_mode_l .mode_title_l h3 a{color:#2D2D2B!important;}
+.const_cup .bg_mode_l .mode_title_l .fun_r{position:absolute;right:10px;top:0;}
+/*比赛集锦*/
+.bsjj{border:1px solid #DAE8D9;border-top:none;position:relative;}
+.bsjj .list_pic_s{*zoom:1;margin:0 0 0 3px;}
+.bsjj .list_pic_s:after{content:"";display:block;clear:both;}
+.bsjj .list_pic_s li{float:left;margin:9px 0 0 5px;text-align:center;position:relative;}
+.bsjj .list_pic_s .video{top:40px;left:7px;}
+.bsjj .list_pic_s img{padding:2px;background-color:#FCFFFD;border:1px solid #D6D6D8;display:block;margin-bottom:4px;width:100px;height:65px;}
+.bsjj .list_video{padding:10px 0 5px 13px;}
+.bsjj .list_video li{float:left;width:144px;}
+/*独家访谈*/
+.djft{padding:0 6px;border:1px solid #DAE8D9;border-top:none;position:relative;}
+.djft .block_dj{border-bottom:1px dashed #D1D2D6;padding-bottom:6px;padding-top:10px;*zoom:1;}
+.djft .block_dj:after{content:"";display:block;clear:both;}
+.djft .block_dj .pic_dj{float:left;width:106px;margin-right:8px;text-align:center;}
+.djft .block_dj .pic_dj img{width:100px;height:65px;border:1px solid #D6D6D8;padding:2px;margin-bottom:4px;}
+.djft .block_dj .tx_dj{float:left;width:220px;}
+.djft .block_dj .tx_dj .title{background-color:#EAECEF;height:17px;line-height:17px;padding-left:7px;color:#2A517A;}
+.djft .block_dj .tx_dj .list_video{margin:8px 0 0 7px;}
+.djft .cata_dj{color:#2A517A;margin:8px 0;}
+.djft .cata_dj p{line-height:18px;margin:3px 0;}
+.djft .cata_dj .icon_tub{background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) -330px -65px no-repeat;padding-left:22px;}
+/*世界杯博客*/
+.blog_cup{padding:0 6px;border:1px solid #DAE8D9;border-top:none;}
+.blog_cup .block_dj{padding-top:10px;*zoom:1;}
+.blog_cup .block_dj:after{content:"";display:block;clear:both;}
+.blog_cup .block_dj .pic_dj{float:left;width:106px;margin-right:8px;text-align:center;}
+.blog_cup .block_dj .pic_dj img{width:100px;height:65px;border:1px solid #D6D6D8;padding:2px;margin-bottom:4px;}
+.blog_cup .block_dj .tx_dj{float:left;width:220px;}
+.blog_cup .block_dj .tx_dj .title{background-color:#EAECEF;height:17px;line-height:17px;padding-left:7px;color:#2A517A;}
+.blog_cup .block_dj .tx_dj .list_info_s{margin:8px 0 0 7px;*margin-top:3px;}
+.blog_cup .blog_mr{color:#2A517A;margin:10px 0;}
+/*快讯*/
+.kuaixun{height:27px;line-height:27px;background-color:#F5F6FA;margin-bottom:10px;overflow:hidden;position:relative;}
+.kuaixun #apica{overflow:hidden; width:470px;position:absolute;top:0;left:100px;}
+.kuaixun #apica #apica2{*position:relative;*top:0px;}
+.kuaixun .link_kx{border:1px solid #BED1D8;background-color:#EAF1F7;display:inline-block;width:85px;height:25px;line-height:25px;text-align:center;text-decoration:none;color:#2B2D2C!important;font-weight:bold;margin-right:5px;}
+/*要点新闻*/
+.icon_video{background:url(//mat1.gtimg.com/worldcup/20100506/icon_cup.png) right -66px no-repeat;padding-right:21px;}
+.icon_dj{background:url(//mat1.gtimg.com/worldcup/20100506/icon_cup.png) right 0 no-repeat;padding-right:33px;}
+.news_big .mode_title_m{background-color:#DAF4EB;height:30px;line-height:30px;position:relative;}
+.news_big .mode_title_m h3{font-size:14px;margin-left:8px;color:#2C2E2D!important;}
+.news_big .mode_title_m .fun_r{position:absolute;top:0;right:9px;}
+.news_big .mode_title_m .fun_r em{font-style:normal;font-size:16px;font-weight:bold;margin:0 5px;}
+.news_big .block_news{border-bottom:1px solid #EBECF0;padding-bottom:12px;margin-bottom:15px;}
+.news_big .block_news h4{font-size:18px;font-family:"黑体";font-weight:normal;text-align:center;margin:12px 0 6px -5px;}
+.news_big .block_news h4 a{color:#0D4C99!important;}
+.news_big .block_news .tx_s{line-height:22px;padding:0 0 8px 5px;color:#2B507D;border-bottom:1px dashed #D3D2DA;margin-bottom:8px;}
+.news_big .block_news .tx{padding:0 0 0 5px;font-size:14px;line-height:26px;}
+.news_big .block_news .tit_b{padding:0 0 0 5px;font-size:14px;line-height:26px;color:#2B507D;}
+.news_big .block_news .tx_b .const_b{margin-left:47px;font-size:14px;line-height:24px;}
+/*腾讯独家*/
+.juxian_qq{background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) 0 -34px no-repeat;width:210px;height:168px;}
+.juxian_qq h3{padding:9px 0 0 20px;font-size:14px;}
+.juxian_qq h3 a{color:#11723A!important;}
+.juxian_qq .table_top{border-bottom:1px dashed #D3D2DA;padding-bottom:5px;margin:9px 0 8px 10px;}
+.juxian_qq .table_top tr td{height:22px;line-height:22px;}
+.juxian_qq .table_btm{margin-left:3px;text-align:center;}
+.juxian_qq .table_btm img{width:40px;height:40px;padding:1px;background-color:#FFFFFF;border:1px solid #9DB2C5;}
+.juxian_qq .table_btm .link_login{background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) -213px -143px no-repeat;display:block;width:94px;height:20px;line-height:20px;text-align:center;color:#0F743C!important;text-decoration:none;margin:0 auto;margin-top:5px;}
+.big_wrap .right .bg_mode_r{margin-top:8px;}
+/*积分榜*/
+.spacer{border-right:1px solid #94A6B4;}
+.jfb_big{border-top:1px solid #FFFFFF;}
+.jfb_big .tab{background-color:#D9E4EE;height:27px;line-height:27px;padding-left:2px;}
+.jfb_big .tab span{cursor:default;color:#748A9A;display:inline-block;width:26px;height:23px;line-height:23px;margin-top:4px;text-align:center;}
+.jfb_big .tab span.on{background-color:#FFFFFF;color:#2D2D2D;}
+.jfb_big .table_jifen{border-bottom:1px solid #C3D3E2;}
+.jfb_big .table_jifen tr th{background-color:#F4F6F9;height:28px;font-weight:normal;text-align:center;}
+.jfb_big .table_jifen tr td{background-color:#F4F6F9;text-align:center;height:26px;}
+.jfb_big .table_jifen .odd td{background-color:#EAF2F7;}
+/*射手榜*/
+.table_ss{border-bottom:1px solid #C3D3E2;}
+.table_ss tr th{background-color:#F4F6F9;height:28px;font-weight:normal;text-align:center;}
+.table_ss tr td{background-color:#F4F6F9;text-align:center;height:26px;}
+.table_ss .odd td{background-color:#EAF2F7;}
+.table_ss .num{display:block;width:14px;height:14px;font-weight:bold;background-color:#94A6B4;color:#FFFFFF;text-align:center;line-height:14px;margin:0 auto;}
+/*赛程赛果*/
+.table_scsg{border:1px solid #D1DFEA;border-top:none;width:210px;}
+.table_scsg table{height:400px;overflow:hidden;}
+.table_scsg tr th{background-color:#D9E4EE;border-top:1px solid #FFFFFF;height:25px;font-weight:normal;text-align:center;}
+.table_scsg tr td{text-align:center;height:25px;}
+.table_scsg .odd td{background-color:#F4F6F9;}
+.table_scsg .link_data{text-decoration:none!important;}
+.table_scsg .icon_data{text-decoration:none;background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) -260px -175px no-repeat;display:-moz-inline-stack;display:inline-block;vertical-align:-3px;font-size:0px;line-height:40px;width:10px;height:10px;overflow:hidden;*display:block;cursor:pointer;cursor:hand;}
+.table_scsg .bt_up,
+.table_scsg .bt_down{background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) no-repeat;width:54px;height:19px;font-size:0px;line-height:50px;overflow:hidden;}
+.table_scsg .bt_up{background-position:-213px -120px;margin-top:-7px;}
+.table_scsg .bt_down{background-position:-271px -119px;margin-top:5px;}
+/*球迷中心*/
+.center_qm{background-color:#F4F6F9;padding-bottom:8px;}
+.center_qm .block_qm{*zoom:1;padding:12px 0 0 10px;}
+.center_qm .block_qm:after{content:"";display:block;clear:both;}
+.center_qm .block_qm .pic_qm{float:left;width:40px;height:40px;margin-right:10px;}
+.center_qm .block_qm .pic_qm img{width:40px;height:40px;padding:1px;background-color:#FFFFFF;border:1px solid #C4D4E3;}
+.center_qm .block_qm .tx_qm{float:left;width:140px;line-height:21px;margin-top:-2px;}
+.center_qm .num_have{background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) -333px -99px no-repeat;margin:12px 0 0 10px;padding-left:20px;line-height:21px;}
+.center_qm .num_have .num{background-color:#13800B;color:#FEF7B7;padding:1px 12px;font-family:tahoma;font-size:14px;}
+/*数据中心*/
+.center_data{background-color:#F4F6F9;padding-bottom:8px;}
+.center_data p{padding:8px 0 0 10px;}
+.center_data .bt_search{background:url(//mat1.gtimg.com/worldcup/20100506/bg_shouping.png) -213px -165px no-repeat;width:44px;height:21px;line-height:21px;text-align:center;margin-left:5px;}
+.center_data input{border:1px solid #C2D4E2;padding-left:3px;height:17px;*height:15px;padding-top:1px;*padding-top:3px;width:132px;}
+.center_data select{width:135px;*width:137px;}
+.center_data .c_tx2{color:#B5B5B5;}
+/*世界杯观战*/
+.tool_wrap,
+.act_wrap{background-color:#F4F6F9;}
+.tool_wrap .list_info_s{padding:8px 0 5px 10px;}
+.tool_wrap .list_info_s li{float:left;margin:2px 10px 2px 0;}
+.act_wrap .list_info_s{padding:10px 0 10px 10px;}
+.act_wrap .list_info_s li{margin:3px 0;*margin:5px 0;}
+/*默认皮肤*/
+.skin_0{background:url(//mat1.gtimg.com/worldcup/20100506/0/bg_body.png) 0 -6px repeat-x;width:100%;}
+.skin_0 .header{background:url(//mat1.gtimg.com/worldcup/20100506/0/bg_head_s.jpg) 0 -6px no-repeat;}
+.skin_0 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/0/bg_nav_wrap.png) no-repeat;}
+.skin_0 .const_cup .cotent .right .bg_mode_r .mode_title_r{background:url(//mat1.gtimg.com/worldcup/20100506/0/bg_default.png) no-repeat;height:27px;line-height:27px;}
+.skin_0 .jfb_big{border-top:1px solid #DAF1E9;}
+.skin_0 .jfb_big .table_jifen,
+.skin_0 .table_ss{border-bottom:1px solid #78BBAE;}
+.skin_0 .jfb_big .tab{background:url(//mat1.gtimg.com/worldcup/20100506/0/bg_default.png) 0 -29px no-repeat;}
+.skin_0 .jfb_big .tab span.on{background:url(//mat1.gtimg.com/worldcup/20100506/0/bg_default.png) 0 -59px no-repeat;}
+.skin_0 .jfb_big .table_jifen tr th{background-color:#F4FCF9;border-bottom:1px solid #AFDCCD;}
+.skin_0 .jfb_big .table_jifen .fst{border-left:1px solid #AFDCCD;}
+.skin_0 .jfb_big .table_jifen .lasted{border-right:1px solid #AFDCCD;}
+.skin_0 .jfb_big .table_jifen tr td,
+.skin_0 .table_ss tr td,
+.skin_0 .table_scsg tr td{background-color:#DAF1E9;}
+.skin_0 .jfb_big .table_jifen .odd td,
+.skin_0 .table_ss .odd td,
+.skin_0 .table_scsg .odd td{background-color:#C5E8DC;}
+.skin_0 .table_ss tr th{background-color:#DAF1E9;}
+.skin_0 .table_ss .num{background-color:#309B0D;}
+.skin_0 .table_scsg{border:1px solid #DAE8D9;}
+.skin_0 .table_scsg tr th{background-color:#F4FCF9;border-top:none;}
+.skin_0 .table_scsg .bt_up{background:url(//mat1.gtimg.com/worldcup/20100506/0/bg_default.png) -29px -59px no-repeat;height:20px;margin-top:-6px;*margin-top:0px;}
+.skin_0 .table_scsg .bt_down{background:url(//mat1.gtimg.com/worldcup/20100506/0/bg_default.png) -86px -59px no-repeat;}
+.skin_0 .center_qm,
+.skin_0 .center_data,
+.skin_0 .tool_wrap,
+.skin_0 .act_wrap{background-color:#DAF1E9;}
+.skin_0 .center_data .bt_search{background:url(//mat1.gtimg.com/worldcup/20100506/0/bg_default.png) -143px -59px no-repeat;}
+.skin_0 .center_data input{border:1px solid #A3CFC0;}
+.skin_0 .header .top_link a,
+.skin_0 .header .top_link,
+.skin_0 .header .skins .more{color:#FFFFFF!important;}
+.skin_0 .nav_clum .line_one{padding-top:5px;}
+/*巴西皮肤*/
+.skin_1{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/1/bg_body_s.jpg) center top no-repeat;}
+.skin_1 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/1/bg_nav_wrap.png) no-repeat;}
+.skin_1 .header .top_link .bg_trans{display:none;}
+.skin_1 .nav_clum{color:#9BC943;}
+.skin_1 .nav_clum a:hover{background-color:#326D01;}
+/*卡卡皮肤*/
+.skin_2{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/2/bg_body_s.jpg) center top no-repeat;}
+.skin_2 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/2/bg_nav_wrap.png) no-repeat;}
+.skin_2 .header .top_link .bg_trans{display:none;}
+.skin_2 .nav_clum{color:#1CB3C6;}
+.skin_2 .nav_clum a:hover{background-color:#025E73;}
+/*阿根廷皮肤*/
+.skin_3{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/3/bg_body_s.jpg) center top no-repeat;}
+.skin_3 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/3/bg_nav_wrap.png) no-repeat;}
+.skin_3 .header .top_link .bg_trans{display:none;}
+.skin_3 .nav_clum{color:#59C5EE;}
+.skin_3 .nav_clum a:hover{background-color:#0572A9;}
+/*梅西皮肤*/
+.skin_4{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/4/bg_body_s.jpg) center top no-repeat;}
+.skin_4 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/4/bg_nav_wrap.png) no-repeat;}
+.skin_4 .header .top_link .bg_trans{display:none;}
+.skin_4 .nav_clum{color:#1DB3C2;}
+.skin_4 .nav_clum a:hover{background-color:#0B3278;}
+/*西班牙皮肤*/
+.skin_5{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/5/bg_body_s.jpg) center top no-repeat;}
+.skin_5 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/5/bg_nav_wrap.png) no-repeat;}
+.skin_5 .header .top_link .bg_trans{display:none;}
+.skin_5 .nav_clum{color:#FFC318;}
+.skin_5 .nav_clum a:hover{background-color:#910001;}
+/*英格兰皮肤*/
+.skin_6{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/6/bg_body_s.jpg) center top no-repeat;}
+.skin_6 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/6/bg_nav_wrap.png) no-repeat;}
+.skin_6 .header .top_link .bg_trans{display:none;}
+.skin_6 .nav_clum{color:#E48A90;}
+.skin_6 .nav_clum a:hover{background-color:#83031A;}
+/*意大利皮肤*/
+.skin_7{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/7/bg_body_s.jpg) center top no-repeat;}
+.skin_7 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/7/bg_nav_wrap.png) no-repeat;}
+.skin_7 .header .top_link .bg_trans{display:none;}
+.skin_7 .nav_clum{color:#3D96D2;}
+.skin_7 .nav_clum a:hover{background-color:#07519F;}
+/*德国皮肤*/
+.skin_8{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/8/bg_body_s.jpg) center top no-repeat;}
+.skin_8 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/8/bg_nav_wrap.png) no-repeat;}
+.skin_8 .header .top_link .bg_trans{display:none;}
+.skin_8 .nav_clum{color:#E48A90;}
+.skin_8 .nav_clum a:hover{background-color:#83031A;}
+/*法国皮肤*/
+.skin_9{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/9/bg_body_s.jpg) center top no-repeat;}
+.skin_9 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/9/bg_nav_wrap.png) no-repeat;}
+.skin_9 .header .top_link .bg_trans{display:none;}
+.skin_9 .nav_clum{color:#3D96D2;}
+.skin_9 .nav_clum a:hover{background-color:#07519F;}
+/*荷兰皮肤*/
+.skin_10{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/10/bg_body_s.jpg) center top no-repeat;}
+.skin_10 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/10/bg_nav_wrap.png) no-repeat;}
+.skin_10 .header .top_link .bg_trans{display:none;}
+.skin_10 .nav_clum{color:#FFBF9A;}
+.skin_10 .nav_clum a:hover{background-color:#AE2505;}
+/*南非风情皮肤*/
+.skin_11{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/11/bg_body_s.jpg) center top no-repeat;}
+.skin_11 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/11/bg_nav_wrap.png) no-repeat;}
+.skin_11 .header .top_link .bg_trans{display:none;}
+.skin_11 .nav_clum{color:#F7931D;}
+.skin_11 .nav_clum a:hover{background-color:#851214;}
+/*黑哨皮肤*/
+.skin_12{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/12/bg_body_s.jpg) center top no-repeat;}
+.skin_12 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/12/bg_nav_wrap.png) no-repeat;}
+.skin_12 .header .top_link .bg_trans{display:none;}
+.skin_12 .nav_clum{color:#137F0B;}
+.skin_12 .nav_clum a:hover{background-color:#2B2B2B;}
+/*中场休息皮肤*/
+.skin_13{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/13/bg_body_s.jpg) center top no-repeat;}
+.skin_13 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/13/bg_nav_wrap.png) no-repeat;}
+.skin_13 .header .top_link .bg_trans{display:none;}
+.skin_13 .nav_clum{color:#A9D0EF;}
+.skin_13 .nav_clum a:hover{background-color:#2E79B4;}
+/*环保皮肤*/
+.skin_14{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/14/bg_body_s.jpg) center top no-repeat;}
+.skin_14 .nav_wrap{background:url(//mat1.gtimg.com/worldcup/20100506/14/bg_nav_wrap.png) no-repeat;}
+.skin_14 .header .top_link .bg_trans{display:none;}
+.skin_14 .nav_clum{color:#F3C800;}
+.skin_14 .nav_clum a:hover{background-color:#055229;}
+/*首屏以下共用模块*/
+.title_fst,
+.title_sec,
+.title_third{background:#FFFFFF url(//mat1.gtimg.com/worldcup/20100506/bg_title_cata.png) no-repeat;width:940px;position:relative;}
+.title_fst{background-position:0 0;height:49px;}
+.title_sec{background-position:0 -58px;height:49px;}
+.title_third{background-position:0 -116px;height:42px;}
+.title_fst .more,
+.title_sec .more,
+.title_third .more{position:absolute;top:20px;right:10px;color:#FFFFFF!important;}
+.title_third .more{top:15px;}
+
+.bg_mode_r .mode_title_r{background:url(//mat1.gtimg.com/worldcup/20100506/bg_repeat.png) repeat-x;height:29px;line-height:29px;position:relative;}
+.bg_mode_r .mode_title_r h3{font-size:14px;margin-left:8px;}
+.bg_mode_r .mode_title_r .fun_r{position:absolute;right:8px;top:0;}
+.bg_mode_r .mode_title_r .fun_r a{color:#2E2C2B!important;}
+
+.list_pic{*zoom:1;}
+.list_pic:after{content:"";display:block;clear:both;}
+.list_pic li{border:1px solid #E2E6E9;padding:2px;width:160px;}
+.list_pic a{text-decoration:none!important;}
+.list_pic img{margin-bottom:5px;width:160px;height:80px;}
+
+.list_info li{font-size:14px;background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) -336px -258px no-repeat;padding-left:8px;line-height:18px;margin:8px 0;position:relative;_zoom:1;}
+.list_info_s{*zoom:1;}
+.list_info_s:after{content:"";display:block;clear:both;}
+.list_info_s li{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) -336px -258px no-repeat;padding-left:8px;line-height:18px;margin:5px 0;}
+
+.pic_mode{border:1px solid #D6D6D8;padding:2px 2px 5px 2px;width:160px;background-color:#FFFFFF;text-align:center;}
+.pic_mode a{text-decoration:none!important;}
+.pic_mode img{margin-bottom:5px;}
+/*图片模块*/
+.pic_wrap{margin:0 9px;border:1px solid #E4E5E9;border-top:none;}
+.pic_wrap .title_fst{margin-top:-6px;margin-left:-1px;}
+.pic_wrap .const{margin:0 8px 0 6px;}
+.pic_wrap .bg_mode_title{position:relative;border-bottom:1px dashed #E4E8E9;padding-bottom:3px;margin-top:12px;_zoom:1;}
+.pic_wrap .bg_mode_title h3{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) 0 -93px no-repeat;font-size:14px;padding-left:10px;margin-left:3px;display:inline;}
+.pic_wrap .bg_mode_title .fun_r{font-size:12px;position:absolute;right:0;top:2px;}
+.pic_wrap .list_pic{margin-left:-20px;}
+.pic_wrap .list_pic li{float:left;margin:8px 0 0 22px;_margin:8px 3px 0 15px;text-align:center;padding-bottom:5px;}
+.pic_wrap .pic_block{margin-bottom:10px;}
+/*豪门模块*/
+.haomen_wrap{margin:8px 9px 10px 9px;border:1px solid #E4E5E9;border-top:none;}
+.haomen_wrap .title_sec{margin-left:-1px;}
+.haomen_wrap .const{margin-top:8px;*zoom:1;}
+.haomen_wrap .const:after{content:"";display:block;clear:both;}
+.haomen_wrap .news_hm{margin-left:6px;float:left;width:701px;_height:1068px;_overflow:hidden;}
+.haomen_wrap .bg_mode_l{height:178px;float:left;width:332px;}
+.haomen_wrap .bg_mode_l .mode_title_l{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) no-repeat;width:332px;height:29px;line-height:29px;position:relative;}
+.haomen_wrap .bg_mode_l .mode_title_l h3{font-size:14px;margin-left:8px;}
+.haomen_wrap .bg_mode_l .mode_title_l .fun_r{position:absolute;right:0px;top:0;}
+.haomen_wrap .bg_mode_l .list_info{font-size:14px;margin:11px 0 0 1px;}
+.haomen_wrap .bg_mode_l .list_info .time{font-size:12px;position:absolute;right:0px;top:0;}
+.haomen_wrap .sidebar_hm{width:209px;float:right;background-color:#F4F6F9;height:1068px;}
+.haomen_wrap .list_pic_s{*zoom:1;margin:5px 0 0 3px;}
+.haomen_wrap .list_pic_s:after{content:"";display:block;clear:both;}
+.haomen_wrap .list_pic_s li{float:left;margin:10px 0 8px 5px;text-align:center;}
+.haomen_wrap .list_pic_s img{padding:2px;background-color:#FCFFFD;border:1px solid #D6D6D8;display:block;margin-bottom:4px;width:55px;height:55px;}
+.haomen_wrap .pic_mode{margin:12px 0 0 20px;}
+.haomen_wrap .list_info_s{margin:18px 0 0 12px;}
+/*视频模块*/
+.shipin_wrap{margin:8px 9px 10px 9px;border:1px solid #E4E5E9;border-top:none;}
+.shipin_wrap .title_third{margin-left:-1px;}
+.shipin_wrap .const{margin-top:8px;*zoom:1;}
+.shipin_wrap .const:after{content:"";display:block;clear:both;}
+.shipin_wrap .news_sp{margin-left:6px;float:left;width:701px;_height:520px;_overflow:hidden;}
+.shipin_wrap .bg_mode_l{height:260px;float:left;width:332px;}
+.shipin_wrap .bg_mode_l .mode_title_l{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) no-repeat;width:332px;height:29px;line-height:29px;position:relative;}
+.shipin_wrap .bg_mode_l .mode_title_l h3{font-size:14px;margin-left:8px;}
+.shipin_wrap .bg_mode_l .mode_title_l .fun_r{position:absolute;right:0px;top:0;}
+.shipin_wrap .bg_mode_l .list_info{font-size:14px;margin:11px 0 0 1px;}
+.shipin_wrap .bg_mode_l .list_info .time{font-size:12px;position:absolute;right:0px;top:0;}
+.shipin_wrap .sidebar_sp{width:209px;float:right;background-color:#F4F6F9;height:520px;}
+.shipin_wrap .mode_title_r{background:url(//mat1.gtimg.com/worldcup/20100506/bg_repeat.png) repeat-x;height:29px;line-height:29px;}
+.shipin_wrap .mode_title_r h3{font-size:14px;margin-left:8px;}
+.shipin_wrap .list_pic_s{*zoom:1;margin:5px 0 0 3px;}
+.shipin_wrap .list_pic_s:after{content:"";display:block;clear:both;}
+.shipin_wrap .list_pic_s li{float:left;margin:10px 0 8px 5px;text-align:center;}
+.shipin_wrap .list_pic_s img{padding:2px;background-color:#FCFFFD;border:1px solid #D6D6D8;display:block;margin-bottom:4px;}
+.shipin_wrap .pic_mode{margin:12px 0 0 20px;}
+.shipin_wrap .list_info_s{margin:15px 0 0 12px;*margin-top:8px;}
+/*访谈模块*/
+.fangtan_wrap{margin:0 9px 8px 9px;border:1px solid #E4E5E9;border-top:none;}
+.fangtan_wrap .title_fst{margin-left:-1px;}
+.fangtan_wrap .title_fst h2{background:url(//mat1.gtimg.com/worldcup/20100506/bg_title_cata.png) 0 -168px no-repeat;width:103px;height:54px;line-height:150px;font-size:0px;overflow:hidden;}
+.fangtan_wrap .const{margin-top:5px;*zoom:1;}
+.fangtan_wrap .const:after{content:"";display:block;clear:both;}
+.fangtan_wrap .list_pic{border-bottom:1px dashed #E4E8E9;padding-bottom:10px;margin:0 4px;}
+.fangtan_wrap .list_pic li{float:left;margin:8px 9px 0 11px;_margin:8px 10px 0 5px;text-align:center;padding-bottom:5px;position:relative;}
+.fangtan_wrap .list_pic img{width:160px;height:80px;}
+.fangtan_wrap .list_pic .video{left:7px;top:52px;}
+/*前线直击*/
+.qxzj_wrap{margin:0 9px 10px 9px;border:1px solid #E4E5E9;border-top:none;}
+.qxzj_wrap .title_sec{margin-left:-1px;}
+.qxzj_wrap .title_sec h2{background:url(//mat1.gtimg.com/worldcup/20100506/bg_title_cata.png) -119px -169px no-repeat;width:322px;height:56px;line-height:150px;font-size:0px;overflow:hidden;}
+.qxzj_wrap .const{margin:5px 0 0 5px;*zoom:1;}
+.qxzj_wrap .const:after{content:"";display:block;clear:both;}
+.qxzj_wrap .left{width:341px;float:left;margin-right:10px;}
+.qxzj_wrap .mid{width:362px;float:left;}
+.qxzj_wrap .right{width:209px;float:right;background-color:#F4F6F9;padding-bottom:8px;}
+.qxzj_wrap .mode_title_l{background-color:#F4F6F9;height:28px;line-height:28px;border-bottom:1px solid #C7CACF;position:relative;}
+.qxzj_wrap .mode_title_l h3{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) 0 -93px no-repeat;font-size:14px;padding-left:10px;margin-left:3px;display:inline;}
+.qxzj_wrap .mode_title_l .fun_r{position:absolute;right:8px;top:0;}
+.qxzj_wrap .mode_title_l .fun_r a{color:#2E2C2B!important;}
+.qxzj_wrap .nfly_wrap .pic_big{border:1px solid #BEBEBE;margin:2px 0 0 0;}
+.qxzj_wrap .nfly_wrap .list_pic{margin-left:-9px;}
+.qxzj_wrap .nfly_wrap .list_pic li{float:left;margin:13px 0 0 9px;_margin-left:5px;padding-bottom:5px;text-align:center;position:relative;}
+.qxzj_wrap .nfly_wrap .list_pic img{width:160px;height:80px;}
+.qxzj_wrap .nfly_wrap .list_pic .video1{left:65px;top:20px;}
+.qxzj_wrap .mode_title_m{background:url(//mat1.gtimg.com/worldcup/20100506/bg_repeat.png) 0 -41px repeat-x;height:29px;line-height:29px;position:relative;}
+.qxzj_wrap .mode_title_m h3{font-size:14px;margin-left:8px;}
+.qxzj_wrap .mode_title_m h3 a,
+.qxzj_wrap .mode_title_m .fun_r a{color:#2E2C2B!important;}
+.qxzj_wrap .mode_title_m .fun_r{position:absolute;right:8px;top:0;}
+.qxzj_wrap .mid .reporter{background:url(//mat1.gtimg.com/worldcup/20100506/bg_repeat.png) 0 -78px repeat-x;margin-top:2px;padding:5px 0 0px 8px;position:relative;height:25px;line-height:25px;overflow:hidden;}
+.qxzj_wrap .mid .reporter #apicaId{position:absolute;top:5px;left:74px;height:25px;line-height:25px;overflow:hidden;width:284px;}
+.qxzj_wrap .mid .list_info{margin:0 0 20px 8px;}
+.qxzj_wrap .mid .list_info li{position:relative;}
+.qxzj_wrap .mid .list_info .time{position:absolute;font-size:12px;top:0;right:8px;}
+.qxzj_wrap .mid .list_pic li{width:101px;text-align:center;float:left;padding-bottom:5px;margin:13px 6px 0 7px;_margin:13px 8px 0 3px;position:relative;}
+.qxzj_wrap .mid .list_pic img{width:101px;height:80px;}
+.qxzj_wrap .mid .list_pic .video{left:6px;}
+.qxzj_wrap .list_jz li{*zoom:1;margin:14px 0 0 10px;*margin-top:10px;}
+.qxzj_wrap .list_jz li:after{content:"";display:block;clear:both;}
+.qxzj_wrap .list_jz .pic_wrap_s{float:left;}
+.qxzj_wrap .list_jz .pic_wrap_s img{width:55px;height:55px;border:1px solid #D6D6D8;padding:2px;background-color:#FFFFFF;}
+.qxzj_wrap .list_jz .tx_jz{float:left;width:125px;margin-left:8px;line-height:21px;}
+.qxzj_wrap .list_jz .tx_jz .name{font-weight:bold;margin-top:-1px;}
+.qxzj_wrap .right .list_info_s{margin:10px 0 0 10px;*margin-top:5px;}
+/*微博*/
+.mblog_wrap{margin:0 9px 10px 9px;border:1px solid #E4E5E9;border-top:none;}
+.mblog_wrap .title_third{margin-left:-1px;}
+.mblog_wrap .title_third h2{background:url(//mat1.gtimg.com/worldcup/20100506/bg_title_cata.png) -456px -174px no-repeat;width:102px;height:45px;line-height:150px;font-size:0px;overflow:hidden;}
+.mblog_wrap .const{margin:10px 0 0 5px;*zoom:1;}
+.mblog_wrap .const:after{content:"";display:block;clear:both;}
+.mblog_wrap .news_mb{width:705px;float:left;}
+.mblog_wrap .news_mb .list_pic{margin-left:-5px;}
+.mblog_wrap .news_mb .list_pic li{float:left;width:55px;text-align:center;padding-bottom:3px;margin:0 0 0 10px;_margin:0 4px 0 5px;}
+.mblog_wrap .news_mb .list_pic img{width:55px;height:55px;}
+.mblog_wrap .news_mb .list_mblog{margin:12px 0 0 5px;}
+.mblog_wrap .news_mb .list_mblog li{border-top:1px dashed #E2E5E8;padding-top:10px;width:350px;float:left;height:83px;margin-bottom:10px;}
+.mblog_wrap .news_mb .list_mblog .pic_mode{width:55px;float:left;padding-bottom:3px;}
+.mblog_wrap .news_mb .list_mblog .pic_mode img{width:55px;height:55px;}
+.mblog_wrap .news_mb .list_mblog .tx_msg{float:left;width:255px;margin-left:10px;line-height:18px;}
+.mblog_wrap .sidebar_mb{width:210px;float:right;}
+.mblog_wrap .sidebar_mb .hot_mb{border-left:1px solid #D1DFEA;height:376px;}
+.mblog_wrap .sidebar_mb .title_hot{height:21px;line-height:21px;border-top:1px solid #FFFFFF;background-color:#D9E4EE;}
+.mblog_wrap .sidebar_mb .title_hot h4{margin-left:8px;font-size:12px;font-weight:normal;}
+.mblog_wrap .sidebar_mb .hot_mb table{margin:8px 0;}
+.mblog_wrap .sidebar_mb .hot_mb table tr td{height:25px;line-height:25px;padding-left:8px;}
+.mblog_wrap .sidebar_mb .hot_mb table .odd td{background-color:#F4F6F9;}
+/*博客*/
+.blog_wrap{margin:0 9px 10px 9px;border:1px solid #E4E5E9;border-top:none;}
+.blog_wrap .title_fst{margin-left:-1px;}
+.blog_wrap .title_fst h2{background:url(//mat1.gtimg.com/worldcup/20100506/bg_title_cata.png) -576px -171px no-repeat;width:102px;height:52px;line-height:150px;font-size:0px;overflow:hidden;}
+.blog_wrap .const{margin:10px 0 0 5px;*zoom:1;}
+.blog_wrap .const:after{content:"";display:block;clear:both;}
+.blog_wrap .news_blog{width:705px;float:left;_overflow:hidden;_height:455px;}
+.blog_wrap .news_blog .list_pic{margin-left:-5px;}
+.blog_wrap .news_blog .list_pic li{float:left;width:55px;text-align:center;padding-bottom:3px;margin:0 0 0 10px;_margin:0 4px 0 5px;}
+.blog_wrap .news_blog .list_pic img{width:55px;height:55px;}
+.blog_wrap .bg_mode_l{height:335px;float:left;width:332px;margin-top:26px;}
+.blog_wrap .bg_mode_l .mode_title_l{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) no-repeat;width:332px;height:29px;line-height:29px;position:relative;}
+.blog_wrap .bg_mode_l .mode_title_l h3{font-size:14px;margin-left:8px;}
+.blog_wrap .bg_mode_l .mode_title_l .fun_r{position:absolute;right:0px;top:0;}
+.blog_wrap .bg_mode_l .list_info{font-size:14px;margin:11px 0 0 1px;}
+.blog_wrap .bg_mode_l .list_info .time{font-size:12px;position:absolute;right:0px;top:0;}
+.blog_wrap .box1{width:32px;_width:30px;}
+.blog_wrap .sidebar_blog{width:210px;float:right;background-color:#F4F6F9;_height:455px;}
+.blog_wrap .list_num{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) -336px 0 no-repeat;margin:10px 0 0 10px;padding-left:24px;}
+.blog_wrap .list_num li{margin:0 0 9px 0;line-height:17px;}
+.blog_wrap .recommon{margin:10px 0 10px 23px;}
+/*对阵*/
+.duizhen_wrap{margin:0 9px 10px 9px;border:1px solid #E4E5E9;border-top:none;}
+.duizhen_wrap .title_sec{margin-left:-1px;}
+.duizhen_wrap .title_sec h2{background:url(//mat1.gtimg.com/worldcup/20100506/bg_title_cata.png) -697px -173px no-repeat;width:102px;height:52px;line-height:150px;font-size:0px;overflow:hidden;}
+.duizhen_wrap .const{margin:10px 0 0 10px;*zoom:1;}
+.duizhen_wrap .news_dz{width:705px;float:left;}
+.duizhen_wrap .news_dz .kemp_num{background:url(//mat1.gtimg.com/worldcup/20100506/bg_tuiyan.jpg) no-repeat;width:718px;height:136px;margin:0 0 8px -10px;position:relative;}
+.duizhen_wrap .kemp_num .table_kemp{margin:0 0 0 288px;*margin-left:275px;text-align:center;}
+.duizhen_wrap .kemp_num .table_kemp table{color:#2B507D;font-weight:bold;font-family:verdana;}
+.duizhen_wrap .kemp_num .table_kemp table .emfise td{font-size:14px;}
+.duizhen_wrap .kemp_num .table_kemp table .em{font-weight:normal;}
+.duizhen_wrap .kemp_num .table_kemp .login{width:289px;padding-top:18px;*width:274px;}
+.duizhen_wrap .kemp_num .table_kemp .colum1{width:122px;*width:116px;}
+.duizhen_wrap .kemp_num .table_kemp .colum2{width:152px;*width:177px;}
+.duizhen_wrap .login_wrap{position:absolute;width:280px;top:66px;left:0;text-align:center;}
+.duizhen_wrap .login_wrap .num{background-color:#FFFFFF;color:#2B507D;font-family:verdana;font-weight:bold;padding:1px 5px;}
+.duizhen_wrap .login_wrap .bt_login{background:url("//mat1.gtimg.com/worldcup/20100506/bg_sec.png") no-repeat scroll -127px -34px;width:71px;height:25px;font-size:0px;line-height:80px;overflow:hidden;display:block;margin:0 auto;margin-top:10px;}
+.duizhen_wrap .const:after{content:"";display:block;clear:both;}
+.duizhen_wrap .bg_mode_l{height:256px;float:left;width:332px;}
+.duizhen_wrap .bg_mode_l .mode_title_l{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) no-repeat;width:332px;height:29px;line-height:29px;position:relative;}
+.duizhen_wrap .bg_mode_l .mode_title_l h3{font-size:14px;margin-left:8px;}
+.duizhen_wrap .bg_mode_l .mode_title_l .fun_r{position:absolute;right:0px;top:0;}
+.duizhen_wrap .bg_mode_l .list_info{font-size:14px;margin:11px 0 0 1px;}
+.duizhen_wrap .bg_mode_l .list_info .time{font-size:12px;position:absolute;right:0px;top:0;}
+.duizhen_wrap .sidebar_dz{width:210px;float:right;background-color:#F4F6F9;padding-bottom:20px;}
+.duizhen_wrap .jingcai{margin:10px 5px 10px 10px;color:#2C517E;}
+.duizhen_wrap .jingcai .quetion,
+.duizhen_wrap .survey .question{font-weight:bold;background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) 0 -128px no-repeat;padding-left:22px;line-height:18px;margin:5px 0;}
+.duizhen_wrap .jingcai .ctrl{text-align:center;margin-top:10px;}
+.duizhen_wrap .jingcai .ctrl a{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) 0 -34px no-repeat;width:67px;height:20px;text-align:center;line-height:20px;color:#116718!important;display:block;margin:0 auto;}
+.duizhen_wrap .survey{margin:10px 5px 10px 10px;color:#2C517E;}
+.duizhen_wrap .survey p{margin:8px 0 8px 2px;}
+.duizhen_wrap .survey input{vertical-align:-3px;margin-right:5px;}
+.duizhen_wrap .survey .ctrl{text-align:center;}
+.duizhen_wrap .survey .bt_tx{border:none;background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) -71px -34px no-repeat;width:44px;height:20px;line-height:20px;text-align:center;margin:0 10px;}
+.duizhen_wrap .list_act{*zoom:1;}
+.duizhen_wrap .list_act:after{content:"";display:block;clear:both;}
+.duizhen_wrap .list_act li{margin:10px 0 10px 13px;_margin-left:8px;float:left;text-align:center;}
+.duizhen_wrap .list_act img{width:80px;height:69px;padding:2px;background-color:#FFFFFF;border:1px solid #E1E6E8;0}
+.duizhen_wrap .cata_title{border-top:1px dashed #D4D7D8;margin:15px 5px 0 0;}
+.duizhen_wrap .cata_title h4{background-color:#F2F7FD;position:relative;top:-7px;width:28px;padding-left:8px;font-size:12px;*zoom:1;}
+.duizhen_wrap .list_cata{*zoom:1;margin:0px 0 0 2px;}
+.duizhen_wrap .list_cata:after{content:"";display:block;clear:both;}
+.duizhen_wrap .list_cata li{float:left;text-align:center;width:51px;}
+.duizhen_wrap .list_cata a{text-decoration:none!important;}
+.duizhen_wrap .list_cata img{margin-bottom:5px;width:47px;height:31px;}
+/*捷报联盟*/
+.jiebao_wrap{margin:0 9px 5px 9px;border:1px solid #E4E5E9;border-top:none;}
+.jiebao_wrap .title_third{margin-left:-1px;}
+.jiebao_wrap .title_third h2{background:url(//mat1.gtimg.com/worldcup/20100506/bg_title_cata.png) 0 -232px no-repeat;width:323px;height:42px;line-height:150px;font-size:0px;overflow:hidden;}
+.jiebao_wrap .const{margin:10px 0 0 5px;*zoom:1;}
+.jiebao_wrap .news_dz{width:705px;float:left;}
+.jiebao_wrap .const:after{content:"";display:block;clear:both;}
+.jiebao_wrap .left{width:364px;float:left;margin-right:10px;}
+.jiebao_wrap .bg_mode_l h3{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) 0 -93px no-repeat;font-size:14px;padding-left:10px;margin-left:3px;display:inline;}
+.jiebao_wrap .left .list_pic{margin:8px 0 20px -8px;}
+.jiebao_wrap .left .list_pic li{width:100px;float:left;text-align:center;margin:0 8px;_margin:0 6px;padding-bottom:5px;}
+.jiebao_wrap .left .list_pic img{width:100px;height:80px;}
+.jiebao_wrap .mid{width:349px;float:left;}
+.jiebao_wrap .mid .list_info .time{position:absolute;top:0;right:10px;font-size:12px;}
+.jiebao_wrap .right{width:209px;float:right;background-color:#F4F6F9;height:299px;}
+.jiebao_wrap table tr td .pic{text-align:center;display:block;width:80px;background-color:#FFFFFF;padding:2px 2px 5px 2px;border:1px solid #E1E6E8;}
+.jiebao_wrap table tr td .pic img{width:80px;height:80px;margin-bottom:5px;}
+.jiebao_wrap table tr td{padding:10px 0 10px 17px;}
+.jiebao_wrap table .odd td{background-color:#FFFFFF;height:21px;line-height:21px;padding:0 0 0 17px;}
+/*世界杯社区*/
+.shequ_cup{margin:0 9px 10px 9px;border:1px solid #E4E5E9;border-top:none;}
+.shequ_cup .title_fst{margin-left:-1px;}
+.shequ_cup .title_fst h2{background:url(//mat1.gtimg.com/worldcup/20100506/bg_title_cata.png) -336px -226px no-repeat;width:323px;height:49px;line-height:150px;font-size:0px;overflow:hidden;}
+.shequ_cup .const{margin:10px 0 0 5px;*zoom:1;}
+.shequ_cup .news_dz{width:705px;float:left;}
+.shequ_cup .const:after{content:"";display:block;clear:both;}
+.shequ_cup .left{width:364px;float:left;margin-right:10px;}
+.shequ_cup .bg_mode_l h3{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) 0 -93px no-repeat;font-size:14px;padding-left:10px;margin-left:3px;display:inline;}
+.shequ_cup .left .list_pic{margin:8px 0 20px -8px;}
+.shequ_cup .left .list_pic li{width:100px;float:left;text-align:center;margin:0 8px;_margin:0 6px;padding-bottom:5px;}
+.shequ_cup .left .list_pic img{width:100px;height:80px;}
+.shequ_cup .mid{width:349px;float:left;}
+.shequ_cup .mid .list_block{font-size:14px;margin-top:23px;}
+.shequ_cup .mid .list_block p{margin:10px 0;}
+.shequ_cup .right{width:209px;float:right;background-color:#F4F6F9;height:304px;}
+.shequ_cup .list_jz li{*zoom:1;margin:14px 0 0 10px;*margin-top:10px;}
+.shequ_cup .list_jz li:after{content:"";display:block;clear:both;}
+.shequ_cup .list_jz .pic_wrap_s{float:left;}
+.shequ_cup .list_jz .pic_wrap_s img{width:55px;height:55px;border:1px solid #D6D6D8;padding:2px;background-color:#FFFFFF;}
+.shequ_cup .list_jz .tx_jz{float:left;width:125px;margin-left:8px;line-height:21px;}
+.shequ_cup .list_jz .tx_jz .name{font-weight:bold;margin-top:-1px;}
+.shequ_cup .right .list_info_s{margin:10px 0 0 10px;*margin-top:5px;}
+.shequ_cup .right .list_info_s li{margin:3px 0;}
+/*专家阵容*/
+.mode_title{background:url(//mat1.gtimg.com/worldcup/20100506/bg_repeat.png) 0 -107px repeat-x;height:38px;line-height:38px;border-bottom:1px solid #E2E5E8;position:relative;}
+.mode_title h2{background:url(//mat1.gtimg.com/worldcup/20100506/bg_sec.png) no-repeat;font-size:0px;line-height:80px;overflow:hidden;width:72px;height:18px;position:absolute;top:10px;left:10px;}
+.zjzr_wrap{margin:0 9px 10px 9px;border:1px solid #E4E5E9;}
+.zjzr_wrap .mode_title h2{background-position:0 -64px;}
+.zjzr_wrap .list_zr{*zoom:1;margin:7px 5px 0 9px;border-bottom:1px dashed #E4E4E4;}
+.zjzr_wrap .list_zr:after{content:"";display:block;clear:both;}
+.zjzr_wrap .list_zr li{float:left;margin:5px 5px 8px 0;text-align:center;}
+.zjzr_wrap .list_zr a{text-decoration:none!important;}
+.zjzr_wrap .list_zr img{border:1px solid #E1E4E7;width:35px;height:45px;margin-bottom:3px;}
+.zjzr_wrap .list_name{*zoom:1;color:#2C4F7C;height:20px;line-height:20px;overflow:hidden;}
+.zjzr_wrap .list_name:after{content:"";display:block;clear:both;}
+.zjzr_wrap .list_name li{float:left;margin:5px 0 5px 8px;}
+.zjzr_wrap .list_name a{margin-right:4px;}
+/*合作伙伴*/
+.hzhb_wrap{margin:0 9px 10px 9px;border:1px solid #E4E5E9;padding-bottom:10px;}
+.hzhb_wrap .mode_title h2{background-position:-85px -64px;}
+.mode_hzhb img{width:100px;height:60px;border:1px solid #E2E5EA;margin:17px 0 4px 9px;}
+/*捷报联盟*/
+.jblm_wrap{margin:0 9px 10px 9px;border:1px solid #E4E5E9;padding-bottom:10px;}
+.jblm_wrap .mode_title h2{background-position:-168px -64px;}
+.mode_jblm img{width:100px;height:60px;border:1px solid #E2E5EA;margin:17px 0 4px 9px;}
+/*合作媒体*/
+.hzmt_wrap{margin:0 9px 10px 9px;border:1px solid #E4E5E9;padding-bottom:10px;}
+.hzmt_wrap .mode_title h2{background-position:-251px -64px;}
+.mode_hzmt img{width:100px;height:60px;border:1px solid #E2E5EA;margin:17px 0 4px 9px;}
+
+
+
+
+/*  |xGv00|8e729c6e3a7c81c27e227bc6abe6b48f */

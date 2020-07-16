@@ -1,0 +1,619 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>浙江高手</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keyword" content="value" />
+    <meta name="description" content="value"/>
+    <meta name="author" content="yuwanli,604073367@qq.com"/>
+    <link rel="stylesheet" href="//mat1.gtimg.com/zj/yuwanli/common/fullpage/jquery.fullPage.css">
+    <!--<link rel="stylesheet" href="//mat1.gtimg.com/zj/yuwanli/gaoshou/css/style.css">-->
+    <link rel="stylesheet" href="//mat1.gtimg.com/zj/yuwanli/gaoshou/css/style.css">
+    <style>
+        #commentBox {
+            min-width: 980px;
+            max-width: 980px;
+            width: 980px;
+            margin: 0 auto;
+        }
+        #commentScroll {
+            display: none;
+            width: 100%;
+            overflow: hidden;
+            height: 80%;
+            margin-top: 25px;
+        }
+        #commentWrap {
+            padding: 10px;
+        }
+        .footer{
+            width: 100%;
+            height: 142px;
+            margin-top: 20px;
+            background: #1e1e1e;
+            position: absolute;
+            bottom: 0;
+        }
+        .footer .inner{
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            background: url(//mat1.gtimg.com/news/spotlight/image/footer.png) right bottom no-repeat;
+            height: 100%;
+        }
+        .footer .inner p,.footer .inner p a {
+            color: #7d7d7d;
+            font-size: 12px;
+            text-decoration: none;
+            margin-top: 5px;
+        }
+        .footer .inner p a:hover {
+            text-decoration: underline;
+        }
+        .footer .copyright {
+            padding-top: 85px;
+            padding-left: 30px;
+        }
+
+        .footer{
+            width: 100%;
+            height:auto;
+            background: #000;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .footer .inner{
+            width: 100%;
+            position: relative;
+            height: 100%;
+            text-align: center;
+        }
+        .footer .inner p {
+            display: inline;
+        }
+        .footer .inner p,.footer .inner p a {
+            color: #FFF;
+            font-size: 12px;
+            text-decoration: none;
+            margin-top: 5px;
+        }
+        .footer .inner p a:hover {
+            text-decoration: underline;
+        }
+        .topbanner {
+            background: url(http://img1.gtimg.com/zj/pics/hv1/175/37/1852/120435910.jpg) center no-repeat;
+            height:92px;
+        }
+        .info {
+            width:1000px;
+            height:100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .info div {
+            position: absolute;
+            top:50%;
+            margin-top: -230px;
+            width: 100%;
+        }
+        .info div img {
+            float: left;
+            padding-right: 30px;
+        }
+        .info div p {
+            line-height: 3.5;
+        }
+        .info div h3 {
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 60px;
+            margin-bottom: 30px;
+        }
+        #page5 {
+            position: relative;
+        }
+        .middlediv{
+            position: absolute;
+            width: 1000px;
+            left: 50%;
+            margin-left: -500px;
+            top:52%;
+        }
+        .article strong {
+            font-weight: 900;
+        }
+        .article em {
+            font-style: italic;
+        }
+        .shareButton{
+            width: 150px;
+            height: 26px;
+            position: absolute;
+            bottom: 50px;
+            right: 0;
+            z-index: 9999;
+            display: block;
+
+            background: url(//mat1.gtimg.com/news/ninja/live/comm_ico.png) left top no-repeat;
+        }
+        .shareButton .comm{
+            background: url(//mat1.gtimg.com/news/ninja/live/comm_ico.png) left top no-repeat;
+        }
+        .shareButton .share{
+            background: url(//mat1.gtimg.com/news/ninja/live/share_ico.png) left top no-repeat;
+        }
+        .shareButton .text{
+            width: 82px;
+            height:26px;
+            line-height:26px;
+            font-family: '微软雅黑';
+            font-size: 12px;
+            color: #FFF;
+            text-align: center;
+            background: rgba(0,0,0,0.5);
+            display: block;
+            padding-left: 30px;
+        }
+        .shareButton .text:hover{
+            background: rgba(0,0,0,0.7);
+            display: block;
+            padding-left: 30px;
+        }
+        .share_qrcode_box {
+            position: relative;
+        }
+        .share_qrcode {
+            position: absolute;
+            top: -25px;
+            left: 85px;
+            display: none;
+            z-index: 999999;
+            font-size: 12px;
+            background: #FAFAFA;
+        }
+        .share_qrcode p {
+            display: block;
+            text-align: center;
+            line-height: 26px;
+        }
+        .cmtmore {
+            display: block;
+            height: 30px;
+            width: 100%;
+            background: #DDD;
+            text-align: center;
+            text-decoration: none;
+            line-height: 30px;
+            margin-top: 5%;
+            color: #333;
+        }
+
+        #fp-nav ul li, .fp-slidesNav ul li{
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            width: 88px;
+            height: 40px;
+
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #fp-nav ul li a, .fp-slidesNav ul li a{
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: #ABABAB;
+        }
+        #fp-nav ul li a span, .fp-slidesNav ul li a span{
+            display: none;
+        }
+        #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
+            display: none;
+        }
+        /*#fp-nav ul li .active{*/
+            /*background-color: #B22323;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!-- 导航条开始 -->
+<style>
+    /*专题导航*/
+    #topic_nav_box{width:100%;height:35px;background:#000;overflow:hidden; position:fixed; z-index: 10000;}
+    #topic_nav{width:1000px;height:35px; margin:0 auto;padding:0;font-size:12px;font-family:"宋体","Arial Narrow"; background:#000;clear:both;}
+    #topic_nav img{border:none;}
+    #topic_nav ul,#topic_nav li{margin:0;padding:0;list-style:none;}
+    #topic_nav .logo{float:left;padding:6px 8px 3px 10px;}
+    #topic_nav .link{float:left;width:230px;}
+    #topic_nav .end{border:none;}
+    #topic_nav ul{float:right;padding:12px 3px 0 0;}
+    #topic_nav li{float:left;padding:0 8px;*padding-top:1px;border-right:#8f8f8f 1px solid;line-height:12px;color:#666;}
+    #topic_nav .link a{color:#8f8f8f; text-decoration:none;line-height:14px;}
+    #topic_nav .link a:visited{color:#8f8f8f;}
+    #topic_nav .link a:hover{color:#8f8f8f; text-decoration: underline;}
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        /* Safari 3.0 and Opera 9 rules here */
+        #topic_nav{font-family:宋体, STSong;}
+    }
+    #site_nav_mblogin{margin-top:4px;}
+    #site_nav_mblogin a{line-height:24px;}
+
+    body, h1, h2, p, dl, dt, dd, ul, ol, li {margin:0;padding:0}
+    .loginWrap {float:right;height:35px}
+    .login {text-align:center;font:12px/35px Tahoma,"宋体";margin-right:5px}
+    .login a {text-decoration:none;outline:0}
+    .login a:hover {text-decoration:none}
+    .login .active {color:#3a9bea}
+    .login em {font-style:normal}
+    .login img {border:none}
+    .quickArea {position:relative;float:left}
+    .quickLink {float:left;height:35px;display:block;padding:0 8px 0 27px;overflow:hidden;background-repeat:no-repeat}
+    .clearfix {*zoom:1}.clearfix:after{content:'';display:table;clear:both}
+    .quickLink em{display:none}
+    .loginBtn {width:27px;height:24px;margin:7px 5px 0 10px}
+
+    .logined .hover .quickLink{}
+    .loginBtn:hover {background-position:0 -42px}
+    .infoNum{text-decoration:none;display:block}
+    .quickArea dl{width:102px;padding:6px 14px;background:#fff;position:absolute;top:35px;font:12px/23px Tahoma,"宋体";border:1px solid #e2e2e2;border-width:0 1px 1px;text-align:left;display:none;box-shadow:1px 2px 2px #e2e2e2;z-index:9999}
+    .quickArea dl a span{margin-left:10px}
+    .loginNav {float:left;border-left:1px solid #d6d6d6;height:26px;line-height:18px;margin:6px 0 0 20px;padding-left:9px}
+    #login_layer_bg{width:100%;position:absolute;top:0;left:0;z-index:9999;background:url(//mat1.gtimg.com/www/login/images/alphabg.png);_background:#000;_opacity:0.3;_filter:alpha(opacity=30);height:100%}
+    #login_layer_main {position:fixed;_position:absolute;width:624px;height:369px;top:50%;left:50%;margin:-165px 0 0 -276px;z-index:10000}
+    /* user */
+    .user {font-family:tohama;padding:5px 0 4px 10px}
+    .user .menu-hd {width:28px;line-height:0;margin-top:0;margin-right:5px;display:block;position:relative;text-decoration:none}
+    .user img {vertical-align:top}
+    .user .menu-hd img {width:22px;height:22px;overflow:hidden;background:#d6edff;padding:2px}
+    .user .menu-hd:hover .userVip{visibility:visible}
+    .user .menu-bd {position:absolute;top:39px;width:185px;display:none;z-index:9999}
+    .user .menu-bd-in {border:1px solid #e2e2e2;border-top:none;background:#fff;padding:5px 10px 10px;border-radius:4px;box-shadow:1px 2px 2px #e2e2e2}
+    .user .menu-hd .userVip .icon_member {position:absolute;width:13px;height:13px;right:-3px;bottom:0px;padding:0;border:none;background:none}
+    .user .menu-bd .userVip  {margin-right:10px}
+    .picT-p {width:38px;height:38px;overflow:hidden;background:#fff;border:1px solid #d9d9d9;padding:2px;float:left;margin-right:7px;margin-top:5px}
+    .picT-t p {line-height:24px;color:#666;text-align:left}
+    .picT-t a {color:#333}
+    .user .menu-bd .picT-p {width:38px;height:38px;overflow:hidden;background:#fff;border:1px solid #d9d9d9;padding:2px}
+    .quickLink {background-image:url(//mat1.gtimg.com/www/login/images/loginall_24_1x_v1.png);_background-image:url(//mat1.gtimg.com/www/login/images/loginall_8_1x_v1.png)}
+
+    @media only screen and (-webkit-min-device-pixel-ratio:2) {.quickLink{background-size:62px auto;background-image:url(//mat1.gtimg.com/www/login/images/loginall_24_2x_v2.png)}}
+
+    @media only screen and (min--moz-device-pixel-ratio:2) {.quickLink{background-size:62px auto;background-image:url(//mat1.gtimg.com/www/login/images/loginall_24_2x_v2.png)}}
+
+    @media only screen and (-o-min-device-pixel-ratio:2/1) {.quickLink{background-size:62px auto;background-image:url(//mat1.gtimg.com/www/login/images/loginall_24_2x_v2.png)}}
+
+    @media only screen and (min-device-pixel-ratio:2) {.quickLink{background-size:62px auto;background-image:url(//mat1.gtimg.com/www/login/images/loginall_24_2x_v2.png)}}
+
+
+    /* sprite图 */
+    .loginBtn {background-position:0 0}
+    .weiboLink {background-position:2px -87px}
+    .qzoneLink {background-position:2px -130px}
+    .qmailLink {background-position:2px -171px}
+    .dyLink {background-position:2px -256px}
+    .dyLike {background-position:2px -297px}
+    /* color */
+
+    .login a {color:#fff} /* 登录数字颜色 */
+    .login .menu-bd a {color:#5c5c5c} /* 隐藏框内链接颜色 */
+    .login .menu-bd a:hover {color:#000} /* 隐藏框内链接颜色 */
+    .logined .hover .quickLink {color:#fff} /* 鼠标滑过背景色和字体颜色 */
+    .quickArea dl a span {color:#5c5c5c}
+
+    .loginBg_def {background:#379be9} /*默认背景色*/
+    .loginBg_def .logined .hover .quickLink{background-color:#1669ab}
+    .loginBg_def .quickArea dl{border-top:1px solid #1669ab}
+
+    .loginBg_green{background:#539325}/*可配置的绿色*/
+    .loginBg_green .logined .hover .quickLink{background-color:#3b7710}
+    .loginBg_green .quickArea dl{border-top:1px solid #3b7710}
+
+    .loginBg_darkgreen{background:#329B97}/*可配置的深绿色*/
+    .loginBg_darkgreen .logined .hover .quickLink{background-color:#00847D}
+    .loginBg_darkgreen .quickArea dl{border-top:1px solid #00847D}
+
+    .loginBg_red{background:#c32728}/*可配置的红色*/
+    .loginBg_red .logined .hover .quickLink{background-color:#a20202}
+    .loginBg_red .quickArea dl{border-top:1px solid #a20202}
+
+    .loginBg_black{background:#000}/*可配置的黑色*/
+    .loginBg_black .logined .hover .quickLink{background-color:#333}
+    .loginBg_black .quickArea dl{border-top:1px solid #666}
+
+    .loginBg_white{background:#fff;color:#5c5c5c}/*可配置的白色*/
+    .loginBg_white .logined .hover .quickLink{background-color:#cc1c1c;color:#fff}
+    .loginBg_white #oneKey{width:73px;height:35px;text-align:center;border:1px solid #e6e6e6;border-width:0 1px;color:#5c5c5c;background:none;margin:0;padding:0}
+    .loginBg_white #oneKey:hover{color:#fff;background:#cc1c1c}
+    .loginBg_white #oneKey em{display:block}
+
+    .loginBg_white .quickLink{color:#5c5c5c}
+
+    .loginBg_white .weiboLink {background-position:0 -335px}
+    .loginBg_white .qzoneLink {background-position:0 -375px}
+    .loginBg_white .qmailLink {background-position:0 -412px}
+    .loginBg_white .dyLink {background-position:0 -452px}
+    .loginBg_white .dyLike {background-position:0 -495px}
+
+    .loginBg_white .weiboLink:hover,.loginBg_white .logined .weiboLink {background-position:0 -535px}
+    .loginBg_white .qzoneLink:hover,.loginBg_white .logined .qzoneLink {background-position:0 -575px}
+    .loginBg_white .qmailLink:hover,.loginBg_white .logined .qmailLink {background-position:0 -612px}
+    .loginBg_white .dyLink:hover,.loginBg_white .logined .dyLink {background-position:0 -652px}
+    .loginBg_white .dyLike:hover,.loginBg_white .logined .dyLike {background-position:0 -695px}
+
+
+    .loginBg_white .logined .weiboLink:hover {background-position:0 -87px}
+    .loginBg_white .logined .qzoneLink:hover {background-position:0 -129px}
+    .loginBg_white .logined .qmailLink:hover {background-position:0 -170px}
+    .loginBg_white .logined .dyLink:hover {background-position:0 -254px}
+    .loginBg_white .logined .dyLike:hover {background-position:0 -296px;background-color:#cc1c1c}
+
+    .loginBg_white .logined .hover .quickLink {background-color:#cc1c1c;color:#fff}
+</style>
+<div id="topic_nav_box">
+    <div id="topic_nav">
+        <div class="logo"><a  href="http://news.qq.com/" target="_blank"><img src="http://img1.gtimg.com/zj/pics/hv1/177/161/1842/119817282.png" /></a></div>
+        <div class="link">
+            <ul>
+                <li><a href="http://zj.qq.com/" target="_blank">大浙网首页</a></li>
+                <li><a href="http://zj.qq.com/pic/" target="_blank">大浙图片</a></li>
+                <li class="end"><a href="http://zj.qq.com/video/2014vedio.htm" target="_blank">大浙视频</a></li>
+            </ul>
+        </div>
+        <!-- login -->
+        <div class="loginWrap" id="loginWrap">
+            <div class="login" id="login">
+                <div class="quickArea menu">
+                    <a href="javascript:;" role="button" aria-haspopup="true" aria-pressed="false" id="oneKey" class="quickLink loginBtn" onClick="userLogin()" bosszone="onekey"><em>一键登录</em></a>
+                </div>
+                <div class="quickArea menu">
+                    <a href="http://t.qq.com" id="weiboLink" target="_blank" class="quickLink weiboLink" aria-expanded="true" bosszone="gqweibo" title="微博"><em>微博</em></a>
+                </div>
+                <div class="quickArea menu">
+                    <a href="http://qzone.qq.com" id="qzoneLink" target="_blank" class="quickLink qzoneLink" aria-expanded="true" bosszone="gqqzone" title="Qzone"><em>Qzone</em></a>
+                </div>
+                <div class="quickArea menu">
+                    <a href="http://mail.qq.com" id="qmailLink" target="_blank" class="quickLink qmailLink" aria-expanded="true" bosszone="gqqmail" title="QQ邮箱"><em>QQ邮箱</em></a>
+                </div>
+                <div class="quickArea menu">
+                    <a href="http://dy.qq.com" id="dyLink" target="_blank" class="quickLink dyLink" aria-expanded="true" bosszone="booking" title="订阅"><em>订阅</em></a>
+                </div>
+                <div class="quickArea menu">
+                    <a href="http://ilike.qq.com/" id="dyLike" target="_blank" class="quickLink dyLike" aria-expanded="true" bosszone="collectinpage" title="收藏"><em>收藏</em></a>
+                </div>
+            </div>
+        </div><!-- /login -->
+        <script src="//mat1.gtimg.com/www/asset/seajs/sea.js"></script>
+        <script>
+            seajs.config({
+                alias: { 'ui': 'lib/ui', 'boss': 'widget/boss_min'},
+                preload: ['ui']
+            });
+
+            seajs.use('project/login/oneLogin_v1.5', function(){
+                login.init();
+            });
+            (function(){
+                function ExposureBoss(id, name){
+                    var a = document.cookie.match(new RegExp('(^|)o_cookie=([^;]*)(;|$)'));
+                    var iQQ = (a==null?"":unescape(a[2]));
+                    var iurl = 'http://btrace.qq.com/collect?sIp=&iQQ=' + iQQ + '&sBiz=' + (arguments[2] ? arguments[2] : '') + '&sOp=' + name + '&iSta=&iTy=' + id + '&iFlow=&sUrl=' + escape(location.href) + '&iBak=&sBak=&ran=' + Math.random();
+                    gImage = new Image(1,1);
+                    gImage.src = iurl;
+                }
+                ExposureBoss(1604, 'EXmainNav', 'dc');
+            })()
+        </script>
+        <script type="text/javascript">
+            var loginBg_customer = {
+                style: 'black'//可选值，red | green | white | darkgreen | black
+            }
+        </script>
+    </div>
+</div>
+<!-- 导航条结束 -->
+<ul id="menu">
+    <li data-menuanchor="page1" class="active">视频</li>
+    <li data-menuanchor="page2">回顾</li>
+    <li data-menuanchor="page3">评论</li>
+</ul>
+<div class="video" data-vid="w01652fe2jq" data-status="0">
+    <div width="100%" height="100%" id="videoBox" > </div>
+</div>
+<div id="container">
+    <!--第一页-->
+    <div class="section section1 page1" >
+        <img class="big_bg" src="http://img1.gtimg.com/zj/pics/hv1/162/158/1921/124953477.jpg" alt="">
+        <div class="container">
+            <img src="//mat1.gtimg.com/zj/yuwanli/gaoshou/images/logo.png" alt="">
+            <p class="red">腾讯大浙网新闻中心出品</p>
+        </div>
+        <div class="title">
+            <p class="bold">这高逼格的事</p>
+            <p>为何没年轻人干？</p>
+            <p class="text">
+
+
+ </p>
+        </div>
+        <div class="play">
+            <img src="//mat1.gtimg.com/zj/yuwanli/gaoshou/images/play.png" alt="">
+        </div>
+        <!--<div class="video" data-vid="w01652fe2jq" data-status="0">-->
+            <!--<div width="100%" height="100%" id="videoBox" > </div>-->
+        <!--</div>-->
+
+    </div>
+    <!--第二页-->
+    <div class="section section2 page2">
+
+        <div class="box">
+            <ul>
+                <li>
+                    <img src="//mat1.gtimg.com/zj/yuwanli/gaoshou/images/example.jpg" alt="">
+                    <a href="http://zj.qq.com/zt2015/gaoshou01/index.htm" target="_blank">
+                        <div class="play">
+                            <img src="//mat1.gtimg.com/zj/yuwanli/gaoshou/images/play.png" alt="">
+                        </div>
+                    </a>
+                    <div class="cover"></div>
+                    <div class="profile">【第01期】几十万的鸟笼，该关什么好鸟？</div>
+                </li>
+                <li style="margin-right: 0">
+                    <img src="http://img1.gtimg.com/zj/pics/hv1/138/5/1919/124784388.jpg" alt="">
+                    <a href="http://zj.qq.com/zt2015/gaoshou02/index.htm" target="_blank">
+                        <div class="play">
+                            <img src="//mat1.gtimg.com/zj/yuwanli/gaoshou/images/play.png" alt="">
+                        </div>
+                    </a>
+                    <div class="cover"></div>
+                    <div class="profile">【第02期】我们不是面疙瘩 我们是米筛爬</div>
+                </li>
+                <li style="margin-bottom: 0">
+                    <img src="http://img1.gtimg.com/zj/pics/hv1/199/13/1919/124786489.jpg" alt="">
+                    <a href="http://zj.qq.com/zt2015/gaoshou03/index.htm" target="_blank">
+                        <div class="play">
+                            <img src="//mat1.gtimg.com/zj/yuwanli/gaoshou/images/play.png" alt="">
+                        </div>
+                    </a>
+                    <div class="cover"></div>
+                    <div class="profile">【第03期】这群年轻人做了件光宗耀祖的事</div>
+                </li>
+                <li style="margin-right: 0;margin-bottom: 0">
+                    <img src="http://img1.gtimg.com/zj/pics/hv1/179/159/1921/124953749.jpg" alt="">
+                    <a href="http://zj.qq.com/zt2015/gaoshou04/index.htm" target="_blank">
+                        <div class="play">
+                            <img src="//mat1.gtimg.com/zj/yuwanli/gaoshou/images/play.png" alt="">
+                        </div>
+                    </a>
+                    <div class="cover"></div>
+                    <div class="profile">【第04期】这高逼格的事为何没年轻人干？</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--第三页-->
+    <div class="section section3 page3">
+        <div class="comment" id="commentBox">
+            <div id="commentScroll">
+                <div id="commentWrap" style="display:none;">
+                    <!-- 评论 开始 -->
+                    <!-- 新评论 依赖旧导航 -->
+                    <script type='text/javascript'>
+                        document.domain = "qq.com";
+                        var cmt_id = '1205188463';
+                    </script>
+                    <iframe frameborder="no" scrolling="no" id="commentIframe" style="width: 100%; height: 2503px; overflow: hidden; margin-bottom: 30px; display: block; -webkit-transition: height 0.6s ease; transition: height 0.6s ease;" src="http://www.qq.com/coral/coralBeta2/coralMainDom2.0.htm"></iframe>
+                    <script src="//mat1.gtimg.com/www/mb/js/portal/mi.MiniNav_110901V1.js" charset='utf-8'></script>
+
+                    <script>
+                        var registerCoralEvent =  {
+                            code: 1,
+                            loginEvent: function(){
+                                MI && MI.Login.logout();
+                                if(document.getElementById('mblog_login_button')){
+                                    document.getElementById('mblog_login_button').onclick();
+                                }
+                                if(typeof userLogin == 'function'){
+                                    userLogin();
+                                }
+
+                            },
+
+                            publicLogined: function(uin,nick,headUrl){
+                                document.getElementById('commentIframe').contentWindow.publicLogined(uin,nick,headUrl);
+                            },
+
+                            publicLogout: function(){
+                                document.getElementById('commentIframe').contentWindow.publicLogout();
+                            }
+                        }
+                        var ifr_cmt = document.getElementById('commentIframe'), ifr_cmt_status = 0, uin, nick, Face;
+
+
+                        var loadIfra = function(){
+                            ifr_cmt_status = 1;
+                            ifr_cmt.style.display = 'block';
+                            ifr_cmt.src= 'http://www.qq.com/coral/coralBeta2/coralMainDom2.0.htm';
+
+                            if (ifr_cmt.attachEvent){
+                                ifr_cmt.attachEvent("onload", function(){
+                                    if(ifr_cmt_status && document.getElementById('commentIframe') && nick){
+                                        registerCoralEvent.publicLogined(uin, nick, Face);
+                                    }
+                                });
+                            } else {
+                                ifr_cmt.onload = function(){
+                                    if(ifr_cmt_status && document.getElementById('commentIframe') &&　nick){
+                                        registerCoralEvent.publicLogined(uin, nick, Face);
+                                    }
+                                };
+                            }
+                        }
+
+                        UI.EA(window, 'load', function(){
+                            //参数设置
+                            uin = MI.AccountInfo.uin || (UI.cookie("uin") && UI.cookie("uin").substring(1)) || '', nick = MI.S('account_mbnick_' + uin) || '', Face = MI.S('Face') || '//mat1.gtimg.com/news/dc/images/user.png';
+
+                            var winH = UI.windowHeight(),  ifrH = UI.getY(ifr_cmt);
+                            if(ifrH < winH) {
+                                loadIfra();
+                            }
+                        });
+
+                        UI.EA(window, 'scroll', function(){
+                            var t = UI.scrollY();
+                            //推荐浮层
+                            var winH = UI.windowHeight(),  ifrH = UI.getY(ifr_cmt);
+                            if(!ifr_cmt_status && t + winH + 500 > ifrH){
+                                loadIfra();
+                            }
+                        });
+
+                    </script>
+                    <!-- 评论 结束 -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="inner">
+                <p class="copyright">Copyright &copy; 2015 Tencent. All Rights Reserved</p>
+                <p>
+                    <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a> | <a href="http://www.qq.com/privacy.htm" target="_blank" rel="nofollow">隐私权保护</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a> | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> | <a href="http://www.tencent.com/about/corp.shtml" target="_blank" rel="nofollow">商务洽谈</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a> | <a href="http://kf.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a> | <a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank" rel="nofollow">版权所有</a></p><!--[if !IE]>|xGv00|8ed6cc26fd479894a7c2dabfa5935754<![endif]-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="//mat1.gtimg.com/zj/yuwanli/common/jquery/jquery-1.11.3.min.js"></script>
+<script src="//mat1.gtimg.com/zj/yuwanli/common/fullpage/jquery.fullPage.js"></script>
+<script src="http://imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2.js"></script>
+<script src="//mat1.gtimg.com/zj/yuwanli/gaoshou/js/gaoshou.js"></script>
+<script>
+    $("#commentIframe").on('load',function(){
+        $("#commentBox").html($("#commentScroll").show())
+        $("#commentWrap").show()
+        if(cmt_id){
+            $("#commentBox").append("<a id='cmtmore' class='cmtmore'></a>");
+            $("#cmtmore").attr({
+                "href":"//coral.qq.com/"+cmt_id,
+                "target":"_blank"
+            }).text('查看更多跟帖');
+        }
+    })
+</script>
+</body>
+</html><!--[if !IE]>|xGv00|ecfa37f0a7f7db0758d0831978860e09<![endif]-->
